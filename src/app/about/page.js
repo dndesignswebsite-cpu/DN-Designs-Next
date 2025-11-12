@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      About us page
+      About us page ne w change
     </div>
   )
 }
