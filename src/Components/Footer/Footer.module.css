@@ -1,0 +1,49 @@
+.main-footer-div{
+    background-color: #CA2734;
+}
+
+.ff{
+    font-family: 'Corbert', sans-serif;
+}
+.ff p{
+    font-family: 'Roboto-Regular';
+}
+
+.footer-li ul li a{
+    font-size:48px;
+    line-height: 0;
+    font-weight: bold;
+}
+
+.footer-add-conn{
+    font-size:20px;
+}
+
+.footer-add-conn p a{
+    font-size:20px;
+    columns: red;
+}
+
+.contact-details a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-hr{
+    border-top:1.5px solid #FFFFFF;
+}
+@media screen and (max-width:991px){
+    .footer-li ul li a{
+    font-size:38px;
+    line-height: 0;
+    font-weight: bold;
+}
+}
+@media screen and (max-width:767px){
+    .footer-li ul li a{
+    font-size:35px;
+    line-height: 0;
+    font-weight: bold;
+}
+}
