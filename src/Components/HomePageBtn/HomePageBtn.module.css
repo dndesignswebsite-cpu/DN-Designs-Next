@@ -1,0 +1,37 @@
+.hero button {
+  font-family: "Roboto";
+  padding: 14px 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 15px;
+}
+
+.hero button::after{
+  content: "\2192";
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.hero button:first-child {
+  background-color: #ca2734;
+  color: white;
+}
+
+.hero button:last-child {
+  background-color: #000;
+  color: white;
+}
+
+
+@media(max-width:992px){
+  .hero button {
+    margin: 5px;
+    width: 100%;
+  }
+}

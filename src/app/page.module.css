@@ -1,0 +1,101 @@
+/* home hero section */
+.hero .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.hero-rows{
+display: flex !important;
+justify-content: center;
+align-items: center;
+
+}
+.left-hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: bold;
+  font-family: Corbert;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  width: 70%;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  line-height: 1.4em;
+}
+
+
+
+.hero-img {
+  position: relative;
+  z-index: 1; 
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1; 
+  animation: anime 1.5s ease forwards;
+  height: 97%;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+    left:100%
+  }
+  100% {
+    opacity: 1;
+    left:0%
+  }
+}
+
+.hero-img-main {
+  position: relative; 
+  width: 100%;
+  object-fit: cover;
+  z-index: 2; 
+}
+
+
+
+@media (max-width: 992px) {
+  .hero .container {
+     padding-top: 40px;
+  padding-bottom: 40px;
+
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero img {
+    margin-top: 30px;
+  }
+
+  
+
+  .hero-rows{
+    flex-direction: column;
+  }
+
+  .hero p {
+  width:90%;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+}
