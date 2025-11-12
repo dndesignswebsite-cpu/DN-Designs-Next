@@ -1,4 +1,5 @@
 /* home hero section */
+
 .hero .container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -97,5 +98,232 @@ align-items: center;
   width:90%;
   font-size: 18px;
   margin-bottom: 30px;
+}
+}
+
+
+/* our brand */
+
+.our-brand {
+  padding-top: 70px;
+}
+
+:root {
+  --cards: 4;
+  --cardHeight: 95vh;
+  --cardTopPadding: 0em;
+  --cardMargin: 0vw;
+}
+
+.our-brand .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card1 {
+  --index: 1;
+}
+.card2 {
+  --index: 2;
+}
+.card3 {
+  --index: 3;
+}
+.card4 {
+  --index: 4;
+}
+
+.card {
+  position: sticky;
+  top: 20px;
+  border: none;
+  border-radius: 40px;
+}
+
+.cards {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.card-body {
+  box-sizing: border-box;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  padding: 0;
+  position: relative;
+}
+
+.card-body img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.card-body video {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.brand-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 80% );
+  opacity: 1;
+  border-radius: 40px;
+}
+
+.our-brand-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  bottom: 0px;
+}
+
+.our-brand-content h3 {
+  color: rgb(255, 255, 255);
+  font-family: Corbert, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.brand-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.brand-buttons button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  background: transparent;
+  flex: 1 1 0;
+  max-width: 200px;
+  margin: 5px;
+}
+
+.our-brand-content p {
+  color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-top: 10px;
+}
+
+.our-brand-heading {
+  font-size: 50px;
+  font-family: Corbert, sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.mobile-view-our-brand {
+  display: none;
+}
+
+@media (max-width: 867px) {
+  .our-brand {
+    display: none;
+  }
+
+  .mobile-view-our-brand {
+    display: block;
+  }
+}
+
+
+
+/* our brand mobile view */
+
+.mobile-view-our-brand{
+  padding: 80px 0;
+}
+
+.mobile-view-our-brand h2{
+  font-size: 40px;
+  font-family: "Corbert";
+  color: #000;
+}
+
+.mobile-view-our-brand-h3 {
+  color: #ca2734;
+  font-family: "Corbert", Sans-serif;
+  font-size: 32px;
+}
+
+.our-brand-mobile-all-div{
+   padding: 20px;
+}
+
+.our-brand-mobile-div{
+  border: 1px solid #A8A8A8;
+  border-radius: 12px;
+  padding: 0px;
+  margin: 20px 0;
+}
+
+.our-brand-mobile-div img{
+  border-radius:12px 12px 0 0 ;
+}
+.our-brand-mobile-div video{
+  border-radius:12px 12px 0 0 ;
+}
+
+.our-brand-mobile-div-content{
+  padding: 10px;
+}
+
+
+.our-brand-mobile-btn {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ca2734;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px;
+}
+
+.our-brand-mobile-btn-up{
+  display: flex;
+  gap: 10px;
+}
+
+.our-brand-mobile-btn-up h4 {
+  width: 50%;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Roboto";
+}
+.our-brand-mobile-btn-bottom {
+  width: 100%;
+  padding: 10px;
+}
+
+.our-brand-mobile-btn-bottom{
+  font-size: 15px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.our-brand-mobile-div-content p{
+      color: #888888;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+@media(max-width:767px){
+  .mobile-view-our-brand{
+  padding: 40px 0;
 }
 }

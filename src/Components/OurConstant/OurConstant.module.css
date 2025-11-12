@@ -1,0 +1,84 @@
+
+.our-constant-companions {
+  margin-top: 50px;
+}
+
+.our-constant-comapny-heqadg-red{
+  color: #ca2734;
+}
+.companies img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 0px;
+  transition: filter 0.5s ease;
+ filter: brightness(93%) contrast(129%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+
+.companies {
+  margin-top: 20px;  
+}
+
+.companies img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  filter: none;
+}
+
+.comapnies-logo-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tab-screen{
+    display: none;
+  }
+
+  .our-constant-mobile-screen{
+    display: none;
+  }
+
+  .large-screen{
+     display: block;
+  }
+
+@media(max-width:1199px){
+  .large-screen{
+     display: none;
+  }
+
+  .tab-screen{
+    display: block;
+  }
+
+  .our-constant-mobile-screen{
+    display: none;
+  }
+}
+
+
+@media(max-width:767px){
+  .large-screen{
+     display: none;
+  }
+
+  .tab-screen{
+    display: none;
+  }
+
+  .our-constant-mobile-screen{
+    display: block;
+  }
+
+  .our-constant-mobile-screen{
+    padding: 10px 0;
+  }
+
+  .our-constant-mobile-screen h2{
+       font-size: 40px;
+  font-family: "Corbert";
+  color: #000;
+  }
+}
