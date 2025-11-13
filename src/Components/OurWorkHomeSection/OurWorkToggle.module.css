@@ -1,0 +1,13 @@
+.showmore-btn {
+  font-family: Roboto;
+  cursor: pointer;
+  background-color: #ca2734;
+  border: 2px solid #ca2734;
+  padding: 5px 20px;
+  border-radius: 50px 50px;
+  color: #fff;
+}
+.showmore-btn:hover {
+  background-color: black;
+  border: 2px solid black;
+}

@@ -1,0 +1,152 @@
+.all-page-form{
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-row{
+  background-color: #ca2734;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px 16px 16px 0px ;
+}
+
+
+
+.inpt label{
+    font-family: "Corbert", Sans-serif;
+        cursor: pointer;
+        color: #000;
+        font-size: 16px;
+        font-weight:400;
+}
+
+.inpt label span{
+  color: #ca2734;
+}
+
+.inpt input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ADADAD;
+  border-radius: 12px;
+  font-family: "Roboto", Sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  margin:10px 0px;
+}
+.inpt textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ADADAD;
+  border-radius: 12px;
+  font-family: "Roboto", Sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.inpt input::placeholder,
+.inpt textarea::placeholder {
+  color: #ADADAD;
+  opacity: 1;
+  font-family: "Roboto", Sans-serif;
+}
+
+.sbmt-btn {
+  width: 100%;
+  padding: 16px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Roboto";
+} 
+
+.form-box{
+  padding: 10px;
+  background-color: #ca2734;
+  margin: 0;
+  height: 100%;
+}
+
+.main-form{
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 20px;
+  height: 100%;
+}
+
+
+.form-left-content{
+  border-right: 10px solid #ca2734;
+  border-top: 10px solid #ca2734;
+  border-bottom: 10px solid #ca2734;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.form-main-content{
+  background-color: #ffffff;
+  border-radius: 0px 16px 16px 0px ;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+.form-main-content h3{
+    color: #000000;
+    font-family: "Corbert";
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    
+}
+
+.form-main-content p{
+        font-family: "Roboto";
+        color: #000000;
+        line-height: 32px;
+        font-weight: 300;
+        font-size: 18px;
+}
+/* .form-main-content.animate{
+  opacity: 0;
+  transform: translateX(-100px); 
+  animation: fadeInLeft 1s ease-out forwards;
+} */
+
+/* @keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+} */
+
+
+@media(max-width:1025px){
+  .form-box{
+  padding: 10px 0px 10px 0px ;
+}
+
+.form-main-content h3{
+  font-size: 40px;
+}
+}
+
+
+

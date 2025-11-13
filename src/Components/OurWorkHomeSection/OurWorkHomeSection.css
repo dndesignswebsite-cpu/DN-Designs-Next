@@ -1,0 +1,101 @@
+.our-work{
+  padding: 80px 0;
+}
+
+.our-work h2{
+  color: #000000;
+  font-family: "Corbert", Sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+.imag-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  border: 1px solid #d8d5d5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.imag-cont:hover .overlay {
+  opacity: 1;
+}
+
+.imag-cont img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.imag-cont video {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.imag-cont:hover .overlay-box {
+  transform: translateY(0px);
+}
+
+.overlay-title {
+  font-family: "Corbert";
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 0px 10px;
+}
+
+.Pras {
+  color: white;
+  font-family: "Roboto";
+  margin: 0px 0px 0px 10px;
+}
+
+
+
+.our-work-row{
+  margin-top: 20px;
+}
+
+@media(max-width:767px){
+  .our-work h2{
+  font-size: 40px;
+}
+.our-work-row{
+  margin-top: 10px;
+}
+
+.our-work-div-unit{
+  margin-top: 10px;
+}
+}
