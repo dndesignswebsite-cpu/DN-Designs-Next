@@ -1,0 +1,42 @@
+.packaging-heading{
+    font-size: 50px;
+    padding: 30px 0;
+    color: black;
+}
+.packaging-images{
+  border-radius: 20px !important;
+}
+.packaging-point-number{
+  font-size: 50px;
+  font-family: "Corbert";
+  color: #000;
+}
+.packaging-points-title{
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-family: "Corbert";
+  color: #000;
+}
+.packaging-points-para{
+  color: #888;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+.packaging-cards:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px !important;
+}
+.active-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px !important;
+}
+
+@media (max-width:1024px){
+  .packaging-points-title{
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family: "Corbert";
+    text-align: center;
+  }
+}
