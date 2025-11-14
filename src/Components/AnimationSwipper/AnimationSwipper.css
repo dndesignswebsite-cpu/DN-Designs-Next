@@ -1,0 +1,21 @@
+.animation-video-swipper-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation-video-swipper-bottom h4{
+font-style: "Corbert";
+font-size: 18px;
+}
+
+.animation-video-swipper-bottom p{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.animation-video-swipper-content-only{
+    padding-top: 25px;
+}
+
+.swipper-content{
+    padding-top: 30px;
+}

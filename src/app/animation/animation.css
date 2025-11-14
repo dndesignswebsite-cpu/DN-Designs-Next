@@ -1,0 +1,404 @@
+.logo-designing-hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-designing-hero h1 {
+  font-size: 62px;
+  color: #000;
+  font-family: "Corbert";
+  font-weight: 700;
+}
+
+.logo-designing-hero h3 {
+  font-size: 35px;
+  color: #000;
+  font-family: Corbert;
+  font-weight: 500;
+}
+
+.logo-designing-hero p {
+  margin-top: 30px;
+  color: #000000;
+  line-height: 1.7em;
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+.talk-to-us-mobile{
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+.talk-to-us-desktop{
+    display: none;
+}
+ 
+.talk-to-us-mobile{
+    display: block;
+}
+
+.logo-designing-hero h1 {
+    font-size: 40px;
+  }
+
+.logo-designing-hero p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* We Are The Leading Video */
+.we-are-the-leading{
+  padding: 80px 0;
+}
+
+.we-are-the-leading h3{
+    font-size: 50px;
+    font-family: "Corbert";
+    color: #000;
+    width: 70%;
+}
+
+.we-are-the-leading-para{
+  padding-top: 30px;
+}
+
+.we-are-the-leading-para p{
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+  line-height: 1.6em;
+}
+
+@media (max-width: 991px) {
+  .we-are-the-leading h3{
+    font-size: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .we-are-the-leading h3{
+    font-size: 35px;
+    width: 100%;
+  }
+  .we-are-the-leading-para{
+  padding-top: 20px;
+}
+}
+
+
+
+/* Characteristics of Good Brand Name? */
+
+.characteristics-of-good {
+  padding: 80px 0;
+}
+
+.characteristics-of-good h2 {
+  font-size: 56px;
+  font-family: "Corbert";
+  font-weight: 700;
+}
+
+.characteristics-of-good p {
+  color: #000000;
+  font-family: "Roboto-Regular", Sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.characteristics-of-good-check-eye {
+  width: 50px;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+
+.characteristics-of-good-div {
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 400px;
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 30px 20px;
+}
+
+.characteristics-of-good-div .cap-img{
+  width: 100px;
+}
+
+.characteristics-of-good-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  padding: 20px 20px 10px 20px;
+}
+
+.characteristics-of-good-main-div {
+  transition: all 0.6s ease;
+  position: relative;
+}
+.characteristics-of-good .headg {
+  padding-bottom: 80px;
+}
+
+.characteristics-of-good-back-content {
+  opacity: 0;
+  color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.characteristics-of-good-back-content p {
+  color: #fff;
+}
+
+.characteristics-of-good-main-div:hover {
+  .cap-img {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-btm {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-div {
+    background-color: #ca2734;
+  }
+
+  .characteristics-of-good-back-content {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .characteristics-of-good h2 {
+    font-size: 40px;
+  }
+
+  .headg {
+    padding: 30px 0;
+  }
+  .characteristics-of-good {
+  padding: 50px 0;
+}
+}
+
+/* The Protagonists  */
+
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.appr-pro {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.appr-pro .appr-pro-main-head {
+  font-size: 56px;
+  font-family: "Corbert";
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.appr-pro-main-para {
+  margin-top: 10px;
+  color: #000000;
+  line-height: 32px;
+  font-size: 18px;
+  width: 100%;
+  font-family: "Roboto";
+  margin-bottom: 40px;
+}
+
+.every-pr {
+  color: #ca2734;
+}
+
+.app-pro-div-white {
+  box-shadow: 0px 0px 2px 1px #d5d5d5;
+}
+.app-pro-div-gray {
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 1.16px 0px
+    rgba(
+      240.99999999999997,
+      240.99999999999997,
+      240.99999999999997,
+      0.1803921568627451
+    );
+}
+.app-pro-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+.appr-pro-row-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-pro-div h3 {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: "Corbert";
+  font-weight: 500;
+  color: #ca2734;
+}
+
+.app-pro-div p {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-family: "Roboto-Regular";
+}
+
+.app-pro-div-up{
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .appr-pro {
+    padding-top: 40px;
+  }
+  .appr-pro h2 {
+    font-size: 40px;
+  }
+  .appr-pro p {
+    width: 100%;
+  }
+ .appr-pro .appr-pro-main-head {
+  font-size: 40px;
+}
+}
+
+/* power of animation */
+.power-of-animation{
+  padding: 80px 0;
+}
+
+
+.power-of-animation-row h3{
+font-size: 50px;
+    font-family: "Corbert";
+    font-weight: 700;
+    color: #000;
+}
+
+.power-of-animation-row p{
+    font-size: 18px;
+    color:#000;
+    font-family: "Roboto";
+    padding: 20px 0;
+} 
+.horror-image-col{
+    position: relative;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.normal-img{
+    border-radius: 24px;
+}
+
+.horror-img{
+    position: absolute;
+    transition: opacity 0.3s ease;
+    border-radius: 24px;
+}
+
+.horror-image-col:hover{
+    .horror-img{
+   opacity: 0;
+}
+}
+
+@media(max-width:768px){
+    .horror-image-col{
+        margin: 10px 0;
+    }
+}
+
+
+
+ /* User Engagement  User Conversion */
+.user-engagement{
+    padding-bottom: 80px;
+}
+
+.user-engagement-div{
+    
+    border-radius: 24px;
+    height: 100%;
+}
+
+.user-engagement-div-sh{
+padding: 20px;
+    box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.user-eng-up-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-eng-up-div h4{
+     font-family: "Corbert";
+     color: #000;
+     font-size: 18px;
+}
+
+.user-eng-up-div img{
+     width: 60px;
+}
+
+.user-engagement-div h3{
+    font-family: "Corbert";
+    font-size: 24px;
+    padding-top: 30px;
+    color: #000;
+}
+
+.user-engagement-div p{
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+.user-engagement-number{
+    font-family: "Corbert";
+    font-size:40px;
+    color: #000;
+}
+
+
+/* faqs */
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: Corbert;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
+}
