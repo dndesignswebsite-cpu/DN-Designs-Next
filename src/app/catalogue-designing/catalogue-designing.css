@@ -1,23 +1,23 @@
-.packaging-design-hero {
+.logo-designing-hero {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.packaging-design-hero h1 {
+.logo-designing-hero h1 {
   font-size: 62px;
   color: #000;
   font-family: "Corbert";
   font-weight: 700;
 }
 
-.packaging-design-hero h3 {
+.logo-designing-hero h3 {
   font-size: 35px;
   color: #000;
   font-family: Corbert;
   font-weight: 500;
 }
 
-.packaging-design-hero p {
+.logo-designing-hero p {
   margin-top: 30px;
   color: #000000;
   line-height: 1.7em;
@@ -39,181 +39,186 @@
     display: block;
 }
 
-.packaging-design-hero h1 {
+.logo-designing-hero h1 {
     font-size: 40px;
   }
 
-.packaging-design-hero p {
+.logo-designing-hero p {
     margin-top: 20px;
     margin-bottom: 30px;
   }
 }
 
- /* Our Work Portfolio */
- 
-.port-row {
-  padding: 10px 0;
+/* The Protagonists  */
+
+.cont {
+  display: flex;
+  flex-direction: column;
 }
 
-.port-div {
-  border: 1px solid #a8a8a8;
-  padding: 0;
-  border-radius: 12px;
-  height: 100%;
+.appr-pro {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.port-div img {
-  margin: 0;
-  padding: 0;
-  border-radius: 12px 12px 0 0;
-}
-
-.port-div video {
-  margin: 0;
-  padding: 0;
-  border-radius: 12px 12px 0 0;
-  object-fit: cover;
-}
-
-.portfolio {
-  padding: 90px 0;
-}
-
-.portfolio h2 {
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
-  font-size: 50px;
+.appr-pro .appr-pro-main-head {
+  font-size: 56px;
+  font-family: "Corbert";
   font-weight: 700;
-  line-height: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.appr-pro-main-para {
+  margin-top: 10px;
+  color: #000000;
+  line-height: 32px;
+  font-size: 18px;
+  width: 100%;
+  font-family: "Roboto";
+  margin-bottom: 40px;
 }
 
 .every-pr {
   color: #ca2734;
 }
 
-.potfolio-div-btns {
+.app-pro-div-white {
+  box-shadow: 0px 0px 2px 1px #d5d5d5;
+}
+.app-pro-div-gray {
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 1.16px 0px
+    rgba(
+      240.99999999999997,
+      240.99999999999997,
+      240.99999999999997,
+      0.1803921568627451
+    );
+}
+.app-pro-div {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+.appr-pro-row-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-pro-div h3 {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: "Corbert";
+  font-weight: 500;
+  color: #ca2734;
+}
+
+.app-pro-div p {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-family: "Roboto-Regular";
+}
+
+.app-pro-div-up{
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .appr-pro {
+    padding-top: 40px;
+  }
+  .appr-pro h2 {
+    font-size: 40px;
+  }
+  .appr-pro p {
+    width: 100%;
+  }
+ .appr-pro .appr-pro-main-head {
+  font-size: 40px;
+}
+}
+
+
+/* E-Catalogues */
+
+.e-catalogues{
+  padding: 50px 0;
+}
+
+.e-catalogues-left{
+  background-color: #ca2734;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.e-catalogues-left h4{
+  font-family: "Corbert";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.e-catalogues-left h3{
+      color: #FFFFFF;
+    font-family: "corbert bold", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.e-catalogues-left p{
+          color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding-top: 20px;
+}
+
+
+.e-catalogues-right img{
+      border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #CCCCCC;
+    border-radius: 16px 16px 16px 16px;
+}
+.e-catalogues-right-row-d{
+  margin-top: 20px;
+}
+
+.e-catalogues-right{
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.our-port-btn {
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
-  padding: 10px;
-  font-family: "Roboto-Regular";
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-radius: 6px 6px 6px 6px;
-  font-size: 16px;
-  color: #000;
-}
-
-.our-port-btn-up {
+.e-catalogues-right-row {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  align-items: stretch; 
 }
 
-.our-port-btn-up button {
-  font-family: "Corbert";
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
-  font-size: 18px;
-}
-
-.port-content {
-  padding: 20px;
-}
-.port-div-headg h3 {
-  color: #ca2734;
-  font-family: "Corbert", Sans-serif;
-  font-size: 32px;
-}
-
-.port-content p {
-  color: #888888;
-  font-family: "Roboto-Regular", Sans-serif;
-  font-size: 16px;
-  line-height: 1.4em;
-  padding-top: 20px;
-  padding-bottom:0 ;
-}
-
-@media (max-width: 768px) {
-  .our-port-btn-up button {
-    font-size: 14px;
-  }
-
-  .port-div-headg h3 {
-    font-size: 24px;
-  }
-  .our-port-btn {
-    padding: 5px;
-  }
-  .port-content {
-    padding: 15px;
-  }
-  .potfolio-div-btns {
-    flex-direction: column;
-  }
-
-  .port-div {
-    margin: 10px 0;
-  }
-
-  .port-row {
-  padding: 0px 0px;
-}
-
-.port-main-div{
-  margin-top: 10px;
-}
-
-.portfolio h2{
-  font-size:40px ;
-}
-.portfolio {
-  padding: 50px 0;
-}
-}
-
-@media(max-width:1200px){
-.port-div-headg h3 {
-  font-size: 25px;
-}
-}
-
-@media(max-width:992px){
-.port-div-headg h3 {
-  font-size: 22px;
-}
- .potfolio-div-btns{
+.e-catalogues-main-col{
   display: flex;
-  flex-direction: column;
- }
+  margin-top: 20px;
+}
 
- .our-port-btn{
-  width: 50%;
-  text-align: center;
- }
- .our-port-btn-up{
-  margin: 0;
-  padding: 0;
- }
+.e-catalogues-left,
+.e-catalogues-right {
+  flex: 1; 
+} 
 
- .port-content p{
-  padding-top: 10px;
- }
+@media(max-width:991.98px){
+  .e-cata-right-img{
+  margin-top:20px ;
+}
 }
 
 
-
-/* creating-your-brand desktop view*/
+/* Creative Catalogue Designing - Our Process desktop view */
 .creating-your-brand{
   padding: 50px 0;
 }
@@ -355,7 +360,7 @@
 }
 }
 
-/* creating-your-brand mobile view*/
+/*  Creative Catalogue Designing - Our Process mobile view */
 
 .creating-your-brand-mobile{
   padding: 50px 0;
@@ -403,102 +408,3 @@
     line-height: 1.4em;
     padding: 5px 0px;
 }
-
-
-/* top-cap */
-
-.top-cap {
-  padding: 40px 0;
-}
-
-.top-cap h2 {
-  font-size: 56px;
-  font-family: "Corbert";
-  font-weight: 700;
-}
-
-.top-cap p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
-  font-size: 16px;
-  line-height: 1.4em;
-}
-.top-cap-check-eye {
-  width: 50px;
-  position:absolute;
-  right:5px;
-  top:0;
-}
-
-.top-cap-div {
-  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  position: relative;
-  height: 400px;
-  transition: all 0.6s ease;
-  border-radius: 20px;
-  cursor: pointer;
-  padding: 30px 20px;
-}
-
-.top-cap-div .cap-img{
-  width: 100px;
-}
-
-.top-cap-btm {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 0.6s ease;
-  padding: 20px 20px 10px 20px;
-}
-
-.top-cap-main-div {
-  transition: all 0.6s ease;
-  position: relative;
-}
-.top-cap .headg {
-  padding-bottom: 80px;
-}
-
-.top-cap-back-content {
-  opacity: 0;
-  color: #fff;
-  padding: 20px 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.top-cap-back-content p {
-  color: #fff;
-}
-
-.top-cap-main-div:hover {
-  .cap-img {
-    opacity: 0;
-  }
-
-  .top-cap-btm {
-    opacity: 0;
-  }
-
-  .top-cap-div {
-    background-color: #ca2734;
-  }
-
-  .top-cap-back-content {
-    opacity: 1;
-  }
-}
-
-@media (max-width: 767px) {
-  .top-cap h2 {
-    font-size: 40px;
-  }
-
-  .headg {
-    padding: 30px 0;
-  }
-}
-
-

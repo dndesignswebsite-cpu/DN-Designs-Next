@@ -1,0 +1,240 @@
+.logo-designing-hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-designing-hero h1 {
+  font-size: 62px;
+  color: #000;
+  font-family: "Corbert";
+  font-weight: 700;
+}
+
+.logo-designing-hero h3 {
+  font-size: 35px;
+  color: #000;
+  font-family: Corbert;
+  font-weight: 500;
+}
+
+.logo-designing-hero p {
+  margin-top: 30px;
+  color: #000000;
+  line-height: 1.7em;
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+.talk-to-us-mobile{
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+.talk-to-us-desktop{
+    display: none;
+}
+ 
+.talk-to-us-mobile{
+    display: block;
+}
+
+.logo-designing-hero h1 {
+    font-size: 40px;
+  }
+
+.logo-designing-hero p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Characteristics of Good Brand Name? */
+
+.characteristics-of-good {
+  padding: 80px 0;
+}
+
+.characteristics-of-good h2 {
+  font-size: 56px;
+  font-family: "Corbert";
+  font-weight: 700;
+}
+
+.characteristics-of-good p {
+  color: #000000;
+  font-family: "Roboto-Regular", Sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.characteristics-of-good-check-eye {
+  width: 50px;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+
+.characteristics-of-good-div {
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 400px;
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 30px 20px;
+}
+
+.characteristics-of-good-div .cap-img{
+  width: 100px;
+}
+
+.characteristics-of-good-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  padding: 20px 20px 10px 20px;
+}
+
+.characteristics-of-good-main-div {
+  transition: all 0.6s ease;
+  position: relative;
+}
+.characteristics-of-good .headg {
+  padding-bottom: 80px;
+}
+
+.characteristics-of-good-back-content {
+  opacity: 0;
+  color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.characteristics-of-good-back-content p {
+  color: #fff;
+}
+
+.characteristics-of-good-main-div:hover {
+  .cap-img {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-btm {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-div {
+    background-color: #ca2734;
+  }
+
+  .characteristics-of-good-back-content {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .characteristics-of-good h2 {
+    font-size: 40px;
+  }
+
+  .headg {
+    padding: 30px 0;
+  }
+  .characteristics-of-good {
+  padding: 50px 0;
+}
+}
+
+
+/* Winning Brand Names - Crafted By Us */
+.winning-brand-names{
+    padding: 80px 0;
+}
+
+.winning-brand-names-heading-div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.winning-brand-names-heading-div h2{
+    font-size: 56px;
+    font-family: "Corbert";
+    font-weight: 700;
+    color: #000;
+}
+
+.winning-brand-names-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winning-brand-names p {
+  margin-top: 20px;
+  color: #000000;
+  line-height: 1.7em;
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+
+.winning-brand-companies{
+    margin: 30px 20px;
+    background-color: #fff;
+}
+
+.winning-brand-companies-col{
+    background-color: #F1F1F1;
+}
+
+.winning-brand-companies img {
+  
+  margin: 10px;
+  border-radius: 8px;
+  padding: 30px;
+  transition: filter 0.5s ease;
+ filter: brightness(93%) contrast(129%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+
+.winning-brand-companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1); 
+}
+
+.winning-brand-companies img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  filter: none;
+}
+
+@media(max-width:767px){
+  .winning-brand-names{
+    padding: 50px 0;
+  }
+  .winning-brand-names-heading-div h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+ /* faqs */
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: Corbert;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
+}

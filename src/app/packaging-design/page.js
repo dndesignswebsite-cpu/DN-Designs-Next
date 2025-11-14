@@ -3,8 +3,39 @@ import TalkToUs from '@/Components/TalkToUs/TalkToUs'
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
 import "./packaging-design.css"
 import StandAlonePackaging from '@/Components/StandAlonePackaging/StandAlonePackaging'
+import Faqs from '@/Components/Faqs/Faqs'
+import Form from '@/Components/Form/Form'
 
 function page() {
+  const leftFaqs = [
+    {
+      question: "How can I contact your team?",
+      answer:
+        "You can use the contact form or call us directly at +91-9999999999.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+  ];
+
+  const rightFaqs = [
+    {
+      question: "Where is your office located?",
+      answer: "We are based in Noida, India, but work with clients worldwide.",
+    },
+    {
+      question: "What is your response time?",
+      answer: "We usually reply within 24 hours of receiving your query.",
+    },
+  ];
+
   return (
     <div>
        {/*Breadcrumb*/}
@@ -412,7 +443,30 @@ function page() {
 
 
 {/* stand alone packaging design */}
-   {/* <StandAlonePackaging/> */}
+   <StandAlonePackaging/>
+
+    {/* faqs */}
+
+      <section className="faqs">
+        <div className="container">
+          <div className="row text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        
+      </section>
+
+
+      {/* Form */}
+      <Form/>
+
+
+
+
+
+   
 
     </div>
   )

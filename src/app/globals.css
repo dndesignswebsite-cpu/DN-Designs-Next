@@ -1,3 +1,39 @@
 body{
   overflow-x: hidden;
 }
+
+@font-face {
+  font-family: 'Corbert-Medium';
+   src: url('../../public/fonts/Corbert-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corbert';
+  src: url('../../public/fonts/Corbert-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corbert-Bold';
+  src: url('../../public/fonts/Corbert-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+ src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

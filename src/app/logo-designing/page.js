@@ -108,147 +108,145 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
-              <div className="port-div">
+            <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
+              <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/I-organic.jpg"
+                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
                   className="img-fluid"
                 />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>iOrganic</h3>
+                <div className="brand-identity-content">
+                  <div className="brand-identity-div-btns">
+                    <div className="brand-identity-div-headg">
+                      <h3>Enlite</h3>
                     </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Packaging</h4>
+                    <div className="brand-identity-btn-up">
+                      <h4 className="brand-identity-btn">Brand Identity</h4>
+                      <h4 className="brand-identity-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    For the organic dairy & food brand, iOrganic, we created a
-                    vibrant and engaging packaging design. Additionally, we
-                    provided professional photography services for their
-                    e-commerce sale and advertising purposes.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="row port-row">
-            <div className="col-12 col-md-6 px-2 port-main-div">
-              <div className=" port-div">
-                <video className="img-fluid" autoPlay muted loop playsInline>
-                  <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/Bombzy.mp4#t=,3"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Mr. Bomzy</h3>
+          <div className="row brand-identity-row">
+            <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
+              <div className="brand-identity-div">
+                <img
+                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  className="img-fluid"
+                />
+                <div className="brand-identity-content">
+                  <div className="brand-identity-div-btns">
+                    <div className="brand-identity-div-headg">
+                      <h3>Enlite</h3>
                     </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Brand Identity</h4>
-                      <h4 className="our-port-btn">Label Design</h4>
+                    <div className="brand-identity-btn-up">
+                      <h4 className="brand-identity-btn">Brand Identity</h4>
+                      <h4 className="brand-identity-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    We delivered comprehensive services to the cocktail bombs
-                    brand Mr. Bomzy. This included creating their identity,
-                    crafting brand guidelines, designing the package, developing
-                    UI/UX design & website, and framing social media strategy.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
-              <div className=" port-div">
+            <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
+              <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Deeproots.jpg"
+                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
                   className="img-fluid"
                 />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Deeproot</h3>
+                <div className="brand-identity-content">
+                  <div className="brand-identity-div-btns">
+                    <div className="brand-identity-div-headg">
+                      <h3>Enlite</h3>
                     </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Brand Identity</h4>
-                      <h4 className="our-port-btn">Label Design</h4>
+                    <div className="brand-identity-btn-up">
+                      <h4 className="brand-identity-btn">Brand Identity</h4>
+                      <h4 className="brand-identity-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    Deeproot, offering wholesome snacks, collaborated with our
-                    creative design agency to strengthen their brand presence in
-                    the market. Our range of services for them included identity
-                    design, packaging design, UI/UX design and website
-                    development.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="row port-row">
-            <div className="col-12 col-md-6 px-2 port-main-div">
-              <div className=" port-div">
+
+          <div className="row brand-identity-row">
+            <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
+              <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.jpg"
+                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
                   className="img-fluid"
                 />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Thames</h3>
+                <div className="brand-identity-content">
+                  <div className="brand-identity-div-btns">
+                    <div className="brand-identity-div-headg">
+                      <h3>Enlite</h3>
                     </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Web Design</h4>
+                    <div className="brand-identity-btn-up">
+                      <h4 className="brand-identity-btn">Brand Identity</h4>
+                      <h4 className="brand-identity-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    Created an alluring packaging design for Thames dried
-                    blueberries product to capture the attention of the
-                    audience. To boost their online presence, we also designed
-                    their UI/UX and provided website development solutions.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
-              <div className=" port-div">
+            <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
+              <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Smartyums.jpg"
+                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
                   className="img-fluid"
                 />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Smartyums</h3>
+                <div className="brand-identity-content">
+                  <div className="brand-identity-div-btns">
+                    <div className="brand-identity-div-headg">
+                      <h3>Enlite</h3>
                     </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Merchandising</h4>
+                    <div className="brand-identity-btn-up">
+                      <h4 className="brand-identity-btn">Brand Identity</h4>
+                      <h4 className="brand-identity-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    Smartyums, with their crunchy protein bite products, wanted
-                    a packaging design that focussed on, and attracted kids.
-                    Expert designers at our agency created a playful and
-                    visually appealing packaging design for them.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 

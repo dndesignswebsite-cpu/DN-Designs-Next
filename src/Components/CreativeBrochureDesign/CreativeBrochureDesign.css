@@ -1,0 +1,28 @@
+/* Creative Brochure Design But With A Twist */
+
+.creative-brochure{
+  padding: 120px 0;
+}
+
+.swipper-slide-div-brochure img{
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.2);
+  margin: 50px 20px;
+  padding: 30px;
+}
+
+.creative-brochure-div h2{
+  font-size: 50px;
+  font-family: "Corbert";
+  color: #000;
+  padding: 0 20px;
+}
+
+@media(max-width:767px){
+  .creative-brochure-div h2{
+  font-size: 40px;
+}
+.creative-brochure{
+  padding: 50px 0;
+}
+}
