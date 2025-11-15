@@ -53,7 +53,7 @@ export default function Header() {
     <div>
       <header className={`${styles['header']} container`}>
         <div className={`${styles['logo']}`}>
-          <Link href="/">
+          <Link href="/" onClick={handleLinkClick}>
             <img
               src="https://dndesigns.co.in/wp-content/uploads/2019/02/cropped-dn_new-logolines.png"
               alt="DN Designs Logo"
@@ -120,6 +120,11 @@ export default function Header() {
               <li>
                 <Link href="/animation" onClick={handleLinkClick}>
                   Animation
+                </Link>
+              </li>
+               <li>
+                <Link href="/digital-marketing-agency-in-noida" onClick={handleLinkClick}>
+                 Digital Marketing
                 </Link>
               </li>
             </ul>
