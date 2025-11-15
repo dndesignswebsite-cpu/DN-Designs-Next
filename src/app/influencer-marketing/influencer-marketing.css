@@ -50,79 +50,60 @@
 }
 
 
+/* grow-your-business */
 
-/* Switch on your potential with digital marketing */
-.switch-on-div{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-    box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  border: 1px solid #E5E7EB;
+.grow-your-bussiness-col-main{
+    display: flex;
+  flex-direction: column;
+    height: 100%; 
 }
 
-.switch-on-div h3{
-  font-size: 43px;
-  color: #ca2734;
-  font-family: "Corbert";
-  font-weight: 700;
+.grow-your-bussiness-col-1{
+       padding:50px 20px;
+        box-shadow: 0 2px 11px -1px #0000001a;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: auto;
 }
 
-.switch-on-div p{
-  font-size: 18px;
-  color: #000;
-  font-family: "Roboto";
-  font-weight: 700;
-  line-height: 1em;
+.grow-your-bussiness-col-1 img, .grow-your-bussiness-col-3 img{
+    width: 50px;
+}
+
+.grow-your-bussiness-col-1 h3, .grow-your-bussiness-col-3 h3{
+    font-size: 22px;
+    font-family: "Corbert";
+    color: #000;
+    padding-top:25px;
+}
+
+.grow-your-bussiness-col-1 p, .grow-your-bussiness-col-3 p{
+   text-align: center;
+   font-family: "Roboto";
+   font-size: 18px;
+   color: #888;
+   padding-top: 10px;
+}
+
+.grow-your-bussiness-col-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-
-
-
-.switch-on-main-row{
-  align-items: stretch;
+.grow-your-bussiness-col-3{
+       padding:50px 20px;
+        box-shadow: 0 2px 11px -1px #0000001a;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 }
-
-@media(max-width:991px){
-  .switch-on-div{
-   margin:20px 20px;
-}
-}
-
-.vertical-bar{
-    height: 130px;
-    width: 4px;
-    background-color: #000;
-    margin: 20px;
-}
-
-.switch-on-div-content{
-    padding: 20px;
-}
-
-/* .switch-on-middle-div-para{
-padding: 0;
-} */
-
-.switch-on-middle-div-para p{
-     font-size: 18px;
-     font-family: "Corbert";
-    padding: 18px;
-    box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-    border-radius:18px;
-}
-
-.switch-on-middle-div-img{
-    box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    
-}
-
-.main-switch-img img{
- box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-}
-
 
 /* We Are The Leading Video */
 .we-are-the-leading{
@@ -163,6 +144,8 @@ padding: 0;
 }
 }
 
+
+/* top-cap */
 
 .top-cap {
   padding: 40px 0;
@@ -256,31 +239,4 @@ padding: 0;
   .headg {
     padding: 30px 0;
   }
-}
-
-
-/* organic-sessions  */
-
-.organic-sessions-row{
-    background-color: #ca2734;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.organic-sessions-col h3{
-   text-align: center;
-   font-size: 38px;
-   font-family: "Corbert";
-   color: #fff;
-}
-
-.organic-sessions-col p{
-   text-align: center;
-   font-size: 18px;
-   font-family: "Roboto";
-   color: #fff;
-   padding-top:20px;
 }

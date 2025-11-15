@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="container breadCrump">
           <div className="row">
             <div className="col">
               <Link className="Bread" href="/">Home</Link>

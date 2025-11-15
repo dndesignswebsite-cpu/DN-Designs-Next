@@ -127,6 +127,30 @@ export default function Header() {
                  Digital Marketing
                 </Link>
               </li>
+
+               <li>
+                <Link href="/influencer-marketing" onClick={handleLinkClick}>
+                 Influencer Marketing
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/social-media-marketing" onClick={handleLinkClick}>
+                 Social Media Marketing
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/seo-marketing-agency-in-noida" onClick={handleLinkClick}>
+                 SEO
+                </Link>
+              </li>
+
+               <li>
+                <Link href="/ui-ux-design" onClick={handleLinkClick}>
+                 Ui/Ux Design
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

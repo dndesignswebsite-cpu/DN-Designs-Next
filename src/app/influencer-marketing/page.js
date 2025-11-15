@@ -1,17 +1,14 @@
 import React from 'react'
-import "./digital-marketing-agency-in-noida.css"
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
 import TalkToUs from '@/Components/TalkToUs/TalkToUs'
+import "./influencer-marketing.css"
 import StandAlonePackaging from '@/Components/StandAlonePackaging/StandAlonePackaging'
-import AutoCounter from '@/Components/AutoCounter/AutoCounter'
-import OurConstant from '@/Components/OurConstant/OurConstant'
 import Faqs from '@/Components/Faqs/Faqs'
 import Form from '@/Components/Form/Form'
 
 function page() {
 
-
-   const leftFaqs = [
+    const leftFaqs = [
     {
       question: "How can I contact your team?",
       answer:
@@ -40,10 +37,9 @@ function page() {
     },
   ];
 
-
   return (
     <div>
-      {/*Breadcrumb*/}
+       {/*Breadcrumb*/}
       <section>
         <Breadcrumb/>
       </section>
@@ -78,69 +74,44 @@ function page() {
         </div>
       </section>
 
-{/* Switch on your potential with digital marketing */}
 
-<section className='switch-on'>
-  <div className='container'>
-    <div className='row'>
-
-      <div className='col'>
-
+{/*grow-your-business  */}
+<section className='grow-your-business'>
+    <div className='container'>
         <div className='row'>
-            <div className='col-6'>
-              <div className='switch-on-div'>
-                <div className='vertical-bar'></div>
-                <div className='switch-on-div-content'>
-                 <h3>30+</h3>
-                 <p>of the global population uses the Internet</p>
-                
-                 </div>
-              </div>
+
+            <div className='col-3'>
+            <div className='grow-your-bussiness-col-main'>
+                <div className='grow-your-bussiness-col-1'>
+                   <img src='https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg' className='img-fluid'></img>
+                     <h3>Grow Your Business</h3>
+                     <p>Leverage established credibility and personal connections to build authentic brand trust and loyalty.</p>
+                </div>
+                </div>
             </div>
+
             <div className='col-6'>
-              <div className='switch-on-div'>
-                <div className='vertical-bar'></div>
-                <div className='switch-on-div-content'>
-                 <h3>30+</h3>
-                 <p>of the global population are social media users.</p>
-                 
-                 </div>
-              </div>
+                <div className='grow-your-bussiness-col-2'>
+                    <img src='https://dndesigns.co.in/wp-content/uploads/2023/10/kerfin7_nea_3157.png' className='img-fluid'></img>
+                    </div>
             </div>
-          </div>
 
-          <div className='mt-3'>
-      <div className='col-9 '>
-      <div className='switch-on-middle-div-para'>
-      <p>Switch on your potential with digital marketing</p>
-      </div>
-      </div>
-      <div className='col-2'>
-  
-      </div>
-    </div>
+              <div className='col-3'>
+            <div className='grow-your-bussiness-col-main'>
+                <div className='grow-your-bussiness-col-3'>
+                   <img src='https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg' className='img-fluid'></img>
+                     <h3>Grow Your Business</h3>
+                     <p>Leverage established credibility and personal connections to build authentic brand trust and loyalty.</p>
+                </div>
+                </div>
+            </div>
 
-
-  <div className=''>
-      <div className='col switch-on-middle-div-img'>
-
-        <img src='https://dndesigns.co.in/wp-content/uploads/2025/06/1-01-01.png' className='img-fluid'></img>
-      </div>
-    </div>
-      </div>
-
-      <div className='col main-switch-img'>
-            <img  src='https://dndesigns.co.in/wp-content/uploads/2025/07/ghfh.jpg' className='img-fluid'/>
         </div>
     </div>
-
-    
-  </div>
 </section>
 
 
-
-{/* We Are The Leading Video */}
+ {/* We Are The Leading Video */}
       <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
@@ -172,8 +143,11 @@ function page() {
       </section>
 
 
+{/* standalone */}
+<StandAlonePackaging/>
 
- {/* top capibilities */}
+
+{/* top capibilities */}
 
       <section className="top-cap">
         <div className="container">
@@ -209,7 +183,10 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
@@ -238,7 +215,10 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
@@ -267,7 +247,10 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
           </div>
 
@@ -300,7 +283,10 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
@@ -329,7 +315,10 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
@@ -358,138 +347,18 @@ function page() {
                   </p>
                 </div>
               </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className=" top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
-                    className="cap-img"
-                  ></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
-                  </p>
-                </div>
-              </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
-                    className="cap-img"
-                  ></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
-                  </p>
-                </div>
-              </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
-                    className="cap-img"
-                  ></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>Design</h3>
-                  <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
-                  </p>
-                </div>
-              </div>
-              <img className="top-cap-check-eye" src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png" />
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+              />
             </div>
           </div>
         </div>
       </section>
 
 
-<StandAlonePackaging/>
 
-{/* Organic Sessions */}
-<section className='organic-sessions'>
-  <div className='container'>
-    <div className='row organic-sessions-row'>
-      <div className='col-12 col-md-3 organic-sessions-col'>
-        <h3><AutoCounter target={150}/>%</h3>
-        <p>Organic Sessions (6 mo)</p>
-      </div>
-
-      <div className='col-12 col-md-3 organic-sessions-col'>
-        <h3><AutoCounter target={150}/>%</h3>
-        <p>Organic Sessions (6 mo)</p>
-      </div>
-
-      <div className='col-12 col-md-3 organic-sessions-col'>
-        <h3><AutoCounter target={150}/>%</h3>
-        <p>Organic Sessions (6 mo)</p>
-      </div>
-
-      <div className='col-12 col-md-3 organic-sessions-col'>
-        <h3><AutoCounter target={150}/>%</h3>
-        <p>Organic Sessions (6 mo)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<OurConstant/>
-
-
-
-{/* faqs */}
+       {/* faqs */}
 
       <section className="faqs">
         <div className="container">
@@ -497,12 +366,14 @@ function page() {
             <h2>Frequently Asked Questions</h2>
           </div>
         </div>
+
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
-    
       </section>
+
 
       {/* Form */}
       <Form/>
+
     </div>
   )
 }
