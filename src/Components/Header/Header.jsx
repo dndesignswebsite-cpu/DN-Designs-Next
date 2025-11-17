@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from "next/link"; 
-import styles from "./Header.module.css"
+import Link from "next/link";
+import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -53,8 +53,8 @@ export default function Header() {
 
   return (
     <div>
-      <header className={`${styles['header']} container`}>
-        <div className={`${styles['logo']}`}>
+      <header className={`${styles["header"]} container`}>
+        <div className={`${styles["logo"]}`}>
           <Link href="/" onClick={handleLinkClick}>
             <img
               src="https://dndesigns.co.in/wp-content/uploads/2019/02/cropped-dn_new-logolines.png"
@@ -64,141 +64,191 @@ export default function Header() {
         </div>
 
         <button
-         className={`${styles['nav-toggle-btn']} ${isAnimating ? styles['is-active'] : ''}`}
+          className={`${styles["nav-toggle-btn"]} ${
+            isAnimating ? styles["is-active"] : ""
+          }`}
           onClick={toggleNav}
           aria-label="Toggle Navigation"
           aria-expanded={isAnimating}
         >
-          <span className={`${styles['toggle-icon']}`}></span>
+          <span className={`${styles["toggle-icon"]}`}></span>
         </button>
       </header>
 
       <nav
         // className={`full-screen-nav ${isAnimating ? "is-open" : ""}`}
-        className={`${styles['full-screen-nav']} ${isAnimating ? styles['is-open'] : ''}`}
+        className={`${styles["full-screen-nav"]} ${
+          isAnimating ? styles["is-open"] : ""
+        }`}
         style={{
           visibility: isVisible ? "visible" : "hidden",
           pointerEvents: isVisible ? "auto" : "none",
         }}
       >
         <div className="container">
-          <div className={`${styles['nav-content-wrapper']}`}>
-          <div className="row">
-          <div className="col-12 col-md-6">
-          <div className={`${styles['header-content']}`}>
-            <h2>DN Designs</h2>
-            <p>C-40, Second Floor, Block C, Sector 58, Noida,<br/> Uttar Pradesh 201301
-             info@dndesigns.co.in <br/>
-             +91 941 601 1100<br/>
-             +91 720 660 5872</p>
-             </div>
-          </div>
-          <div className="col-12 col-md-6 ">
-          <div className={`${styles['all-main-links']}`}>
-            <ul className={`${styles['nav-main-links']}`}>
-              <li>
-                <Link href="/" onClick={handleLinkClick}>Home</Link>
-              </li>
-              <li>
-                <Link href="/about" onClick={handleLinkClick}>About Us</Link>
-              </li>
-              <li>
-                <Link href="/services" onClick={handleLinkClick}>Services</Link>
-              </li>
+          <div className={`${styles["nav-content-wrapper"]}`}>
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <div className={`${styles["header-content"]}`}>
+                  <h2>DN Designs</h2>
+                  <p>
+                    C-40, Second Floor, Block C, Sector 58, Noida,
+                    <br /> Uttar Pradesh 201301 info@dndesigns.co.in <br />
+                    +91 941 601 1100
+                    <br />
+                    +91 720 660 5872
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 ">
+                <div className={`${styles["all-main-links"]}`}>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link href="/" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        Services
+                      </Link>
+                    </li>
+
+                    <hr />
+
+                    <li className={`${styles["dropdown-link"]}`}>
+                      <Link href="/branding" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        Branding Identity
+                      </Link>
+                      <FontAwesomeIcon icon={faChevronDown} />
+                      <div className={`${styles["dropdown"]}`}>
+                        <li>
+                          <Link href="/branding" onClick={handleLinkClick} className={`${styles['sub-menu-link']}`}>
+                            Branding
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/logo-designing"
+                            onClick={handleLinkClick}
+                            className={`${styles['sub-menu-link']}`}
+                          >
+                            Logo Designing
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/catalogue-designing"
+                            onClick={handleLinkClick}
+                            className={`${styles['sub-menu-link']}`}
+                          >
+                            Catalogue Designing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/brand-name-suggestion"
+                            onClick={handleLinkClick}
+                            className={`${styles['sub-menu-link']}`}
+                          >
+                            Brand Name Suggestion
+                          </Link>
+                        </li>
+                      </div>
+                    </li>
+
+                    <li>
+                      <Link href="/packaging-design" onClick={handleLinkClick} className="text-dark text-decoration-none" >
+                        Packaging Design
+                      </Link>
+                    </li>
 
 
-<hr/>
 
-<li className={`${styles['dropdown-link']}`}>
-                <Link href="/branding" onClick={handleLinkClick}>Branding</Link><FontAwesomeIcon icon={faChevronDown}/>
-                 <div className={`${styles['dropdown']}`}>
-                     <li>
-                <Link href="/branding" onClick={handleLinkClick}>Branding</Link>
-              </li>
-               <li>
-                <Link href="/logo-designing" onClick={handleLinkClick}>
-                  Logo Designing
-                </Link>
-              </li>
-              <li>
-                <Link href="/packaging-design" onClick={handleLinkClick}>
-                  Packaging Design
-                </Link>
-              </li>
-              <li>
-                <Link href="/catalogue-designing" onClick={handleLinkClick}>
-                  Catalogue Designing
-                </Link>
-              </li>
-               </div>
-              </li>
+                        <li className={`${styles["dropdown-link"]}`}>
+                      
+                       Communication
+                      
+                      <FontAwesomeIcon icon={faChevronDown} />
+                      <div className={`${styles["dropdown"]}`}>
+                        <li>
+                      <Link href="/animation" onClick={handleLinkClick} className={`${styles['sub-menu-link']}`}>
+                        Animation
+                      </Link>
+                    </li>
+                        
+                        <li>
+                      <Link
+                        href="/digital-marketing-agency-in-noida"
+                        onClick={handleLinkClick}
+                        className={`${styles['sub-menu-link']}`}
+                      >
+                        Digital Marketing
+                      </Link>
+                    </li>
+                        <li>
+                      <Link
+                        href="/influencer-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles['sub-menu-link']}`}
+                      >
+                        Influencer Marketing
+                      </Link>
+                    </li>
 
+                    
+                    <li>
+                      <Link
+                        href="/social-media-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles['sub-menu-link']}`}
+                      >
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                      </div>
+                    </li>
 
-
-              <li>
-                <Link href="/contact-us" onClick={handleLinkClick}>Contact</Link>
-              </li>
-              
-              
-             
-              
-              
-
-
-
-
-
-              <li>
-                <Link href="/brand-name-suggestion" onClick={handleLinkClick}>
-                  Brand Name Suggestion
-                </Link>
-              </li>
-
-       
+                    <hr/>
 
 
 
+                    <li>
+                      <Link href="/contact-us" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        Contact
+                      </Link>
+                    </li>
+
+                    
+                   
+
+                   
 
 
+                    <li>
+                      <Link
+                        href="/seo-marketing-agency-in-noida"
+                        onClick={handleLinkClick}
+                        className="text-dark text-decoration-none"
+                      >
+                        SEO
+                      </Link>
+                    </li>
 
-
-              <li>
-                <Link href="/animation" onClick={handleLinkClick}>
-                  Animation
-                </Link>
-              </li>
-               <li>
-                <Link href="/digital-marketing-agency-in-noida" onClick={handleLinkClick}>
-                 Digital Marketing
-                </Link>
-              </li>
-
-               <li>
-                <Link href="/influencer-marketing" onClick={handleLinkClick}>
-                 Influencer Marketing
-                </Link>
-              </li>
-
-              <li>
-                <Link href="/social-media-marketing" onClick={handleLinkClick}>
-                 Social Media Marketing
-                </Link>
-              </li>
-
-              <li>
-                <Link href="/seo-marketing-agency-in-noida" onClick={handleLinkClick}>
-                 SEO
-                </Link>
-              </li>
-
-               <li>
-                <Link href="/ui-ux-design" onClick={handleLinkClick}>
-                 Ui/Ux Design
-                </Link>
-              </li>
-            </ul>
-            </div>
-            </div>
+                    <li>
+                      <Link href="/ui-ux-design" onClick={handleLinkClick} className="text-dark text-decoration-none">
+                        Ui/Ux Design
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
