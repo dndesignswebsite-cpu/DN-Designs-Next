@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link"; 
 import styles from "./Header.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const TRANSITION_DURATION = 1000;
 
@@ -81,6 +83,18 @@ export default function Header() {
       >
         <div className="container">
           <div className={`${styles['nav-content-wrapper']}`}>
+          <div className="row">
+          <div className="col-12 col-md-6">
+          <div className={`${styles['header-content']}`}>
+            <h2>DN Designs</h2>
+            <p>C-40, Second Floor, Block C, Sector 58, Noida,<br/> Uttar Pradesh 201301
+             info@dndesigns.co.in <br/>
+             +91 941 601 1100<br/>
+             +91 720 660 5872</p>
+             </div>
+          </div>
+          <div className="col-12 col-md-6 ">
+          <div className={`${styles['all-main-links']}`}>
             <ul className={`${styles['nav-main-links']}`}>
               <li>
                 <Link href="/" onClick={handleLinkClick}>Home</Link>
@@ -112,11 +126,39 @@ export default function Header() {
                   Catalogue Designing
                 </Link>
               </li>
-              <li>
+
+
+
+
+
+              {/* <li>
                 <Link href="/brand-name-suggestion" onClick={handleLinkClick}>
                   Brand Name Suggestion
                 </Link>
+              </li> */}
+
+              <li className={`${styles['dropdown-link']}`}>
+                  Brand Name Suggestion<FontAwesomeIcon icon={faChevronDown} />
+               <div className={`${styles['dropdown']}`}>
+                        <li>
+                <Link href="/animation" onClick={handleLinkClick}>
+                  Animation
+                </Link>
               </li>
+               <li>
+                <Link href="/digital-marketing-agency-in-noida" onClick={handleLinkClick}>
+                 Digital Marketing
+                </Link>
+              </li>
+               </div>
+              </li>
+
+
+
+
+
+
+
               <li>
                 <Link href="/animation" onClick={handleLinkClick}>
                   Animation
@@ -152,6 +194,9 @@ export default function Header() {
                 </Link>
               </li>
             </ul>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
       </nav>

@@ -6,8 +6,13 @@ import Points from '@/Components/Points/Points'
 import OurWorkServiceTabs from '@/Components/OurWorkServiceTabs/OurWorkServiceTabs'
 import OurConstant from '@/Components/OurConstant/OurConstant'
 import Form from '@/Components/Form/Form'
+import PagesHero from '@/Components/PagesHero/PagesHero'
 
 function page() {
+  const heading ="Where Brands Are Born"
+  const subHeading ="A Creative Branding Agency"
+  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
+               
   return (
     <div>
        {/*Breadcrumb*/}
@@ -16,33 +21,9 @@ function page() {
       </section>
 
       {/* branding hero */}
-      <section className="logo-designing-hero">
-        <div className="container">
-          <div className="row">
-            <h1>Where Brands Are Born</h1>
-            <h3>A Creative Branding Agency</h3>
-            <div className="col-12 col-md-4">{/* .. */}</div>
-            <div className="col-12 col-md-8">
-              <div className="talk-to-us-desktop">
-                <TalkToUs />
-              </div>
-              <p>
-                Successful brands are not made in a day. They are a result of
-                consistent hard work, perseverance and unwavering passion.
-                Long-term vision, strategy and creativity are pivotal too. Lots
-                of work and lots of dedication are required. This is why you
-                need the services of a branding & design agency like us. Let’s
-                walk you through our services and inform you of our capabilities
-                and approach. If there are questions in your mind, check out our
-                FAQs section. Alternatively, reach out to us and we will
-                promptly answer them.
-              </p>
-              <div className="talk-to-us-mobile">
-                <TalkToUs />
-              </div>
-            </div>
-          </div>
-        </div>
+     {/* ui/ux design */}
+      <section className="branding-hero">
+        <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
 
 
