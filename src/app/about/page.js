@@ -7,6 +7,7 @@ import OurWorkServiceTabs from '@/Components/OurWorkServiceTabs/OurWorkServiceTa
 import OurConstant from '@/Components/OurConstant/OurConstant'
 import Form from '@/Components/Form/Form'
 import PagesHero from '@/Components/PagesHero/PagesHero'
+import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 function page() {
   const heading ="Where Brands Are Born"
@@ -38,14 +39,14 @@ function page() {
           <div className='row'>
             <div className='col'>
               <div className='projects-completed-div'>
-                 <h3>300+</h3>
+                 <h3><AutoCounter target={300}/></h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
             <div className='col'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
-                 <h3>300+</h3>
+                 <h3><AutoCounter target={300}/></h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
@@ -55,14 +56,14 @@ function page() {
                     <div className='row'>
                      <div className='col'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
-                 <h3>300+</h3>
+                 <h3><AutoCounter target={300}/></h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
             <div className='col'>
               <div className='projects-completed-div'>
-                 <h3>300+</h3>
+                 <h3><AutoCounter target={300}/></h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>

@@ -1,169 +1,278 @@
-
-
-/*brand identity*/
-
-.brand-identity-row {
-  padding: 10px 0;
+/* what-drives-our-growth */
+.what-drives-our-growth{
+    padding: 50px 0;
+}
+.what-drives-our-growth-row{
+    background-color: #ca2734;
+    border-radius: 30px;
 }
 
-.brand-identity-div {
-  border: 1px solid #a8a8a8;
-  padding: 0;
-  border-radius: 12px;
-  height: 100%;
+.what-drives-our-growth-row h3{
+    font-family: "Corbert";
+    color: #fff;
+    font-size: 35px;
 }
 
-.brand-identity-div img {
-  margin: 0;
-  padding: 0;
-  border-radius: 12px 12px 0 0;
+.what-drives-our-growth-row p{
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 18px;
 }
 
-.brand-identity-div video {
-  margin: 0;
-  padding: 0;
-  border-radius: 12px 12px 0 0;
-  object-fit: cover;
+.what-drives-our-growth-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
 }
 
-.brand-identity {
-  padding: 90px 0;
+/* comprehensive-seo-stregety */
+
+
+.comprehensive-seo-stregety-content{
+    background-color: #F1F1F1;
+    border-radius: 32px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.brand-identity h2 {
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
-  font-size: 50px;
+.comprehensive-seo-stregety-content h2{
+    font-family: "Corbert";
+    font-size: 32px;
+    color: #000;
+    padding:10px 0 ;
+}
+
+.comprehensive-seo-stregety-content p{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000;
+}
+
+.transparent-reporting-content{
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.transparent-reporting-content h2{
+    font-family: "Corbert";
+    font-size: 32px;
+    color: #ca2734;
+    padding:10px 0 ;
+}
+
+.transparent-reporting-content p{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000;
+}
+
+
+/* Characteristics of Good Brand Name? */
+
+.characteristics-of-good {
+  padding: 80px 0;
+}
+
+.characteristics-of-good h2 {
+  font-size: 56px;
+  font-family: "Corbert";
   font-weight: 700;
-  line-height: 1.2em;
-  padding-bottom: 20px;
+}
+
+.characteristics-of-good p {
+  color: #000000;
+  font-family: "Roboto-Regular", Sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.characteristics-of-good-check-eye {
+  width: 50px;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+
+.characteristics-of-good-div {
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 400px;
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 30px 20px;
+}
+
+.characteristics-of-good-div .cap-img{
+  width: 100px;
+}
+
+.characteristics-of-good-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  padding: 20px 20px 10px 20px;
+}
+
+.characteristics-of-good-main-div {
+  transition: all 0.6s ease;
+  position: relative;
+}
+.characteristics-of-good .headg {
+  padding-bottom: 80px;
+}
+
+.characteristics-of-good-back-content {
+  opacity: 0;
+  color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.characteristics-of-good-back-content p {
+  color: #fff;
+}
+
+.characteristics-of-good-main-div:hover {
+  .cap-img {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-btm {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-div {
+    background-color: #ca2734;
+  }
+
+  .characteristics-of-good-back-content {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .characteristics-of-good h2 {
+    font-size: 40px;
+  }
+
+  .headg {
+    padding: 30px 0;
+  }
+  .characteristics-of-good {
+  padding: 50px 0;
+}
+}
+
+
+/* The Protagonists  */
+
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.appr-pro {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.appr-pro .appr-pro-main-head {
+  font-size: 56px;
+  font-family: "Corbert";
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.appr-pro-main-para {
+  margin-top: 10px;
+  color: #000000;
+  line-height: 32px;
+  font-size: 18px;
+  width: 100%;
+  font-family: "Roboto";
+  margin-bottom: 40px;
 }
 
 .every-pr {
   color: #ca2734;
 }
 
-.brand-identity-div-btns {
-  display: flex;
-  justify-content: space-between;
+.app-pro-div-white {
+  box-shadow: 0px 0px 2px 1px #d5d5d5;
 }
-
-.brand-identity-btn {
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
-  padding: 10px;
-  font-family: "Roboto-Regular";
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-radius: 6px 6px 6px 6px;
-  font-size: 16px;
-  color: #000;
+.app-pro-div-gray {
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 1.16px 0px
+    rgba(
+      240.99999999999997,
+      240.99999999999997,
+      240.99999999999997,
+      0.1803921568627451
+    );
 }
-
-.brand-identity-btn-up {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.brand-identity-btn-up button {
-  font-family: "Corbert";
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
-  font-size: 18px;
-}
-
-.brand-identity-content {
-  padding: 20px;
-}
-.brand-identity-div-headg h3 {
-  color: #ca2734;
-  font-family: "Corbert", Sans-serif;
-  font-size: 32px;
-}
-
-.brand-identity-content p {
-  color: #888888;
-  font-family: "Roboto-Regular", Sans-serif;
-  font-size: 16px;
-  line-height: 1.4em;
-  padding-top: 20px;
-  padding-bottom:0 ;
-}
-
-@media (max-width: 768px) {
-  .brand-identity {
-  padding: 35px 0;
-}
-  .brand-identity h2{
-    font-size: 40px;
-  }
-  .brand-identity-btn-up button {
-    font-size: 14px;
-  }
-
-  .brand-identity-div-headg h3 {
-    font-size: 24px;
-  }
-  .brand-identity-btn {
-    padding: 5px;
-  }
-  .brand-identity-content {
-    padding: 15px;
-  }
-  .brand-identity-div-btns {
-    flex-direction: column;
-  }
-
-  .brand-identity-div {
-    margin: 10px 0;
-  }
-
-  .brand-identity-row {
-  padding: 0px 0px;
-}
-
-.brand-identity-main-div{
-  margin-top: 10px;
-}
-}
-
-@media(max-width:1200px){
-.brand-identity-div-headg h3 {
-  font-size: 25px;
-}
-}
-
-@media(max-width:992px){
-.brand-identity-div-headg h3 {
-  font-size: 22px;
-}
- .brand-identity-div-btns{
+.app-pro-div {
   display: flex;
   flex-direction: column;
- }
+  justify-content: flex-end;
+  padding: 0px 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+.appr-pro-row-main {
+  display: flex;
+  flex-direction: row;
+}
 
- .brand-identity-btn{
-  width: 50%;
-  text-align: center;
- }
- .brand-identity-btn-up{
-  margin: 0;
-  padding: 0;
- }
+.app-pro-div h3 {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: "Corbert";
+  font-weight: 500;
+  color: #ca2734;
+}
 
- .brand-identity-content p{
-  padding-top: 10px;
- }
+.app-pro-div p {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-family: "Roboto-Regular";
+}
+
+.app-pro-div-up{
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .appr-pro {
+    padding-top: 40px;
+  }
+  .appr-pro h2 {
+    font-size: 40px;
+  }
+  .appr-pro p {
+    width: 100%;
+  }
+ .appr-pro .appr-pro-main-head {
+  font-size: 40px;
+}
 }
 
 
-
-/* Creative Catalogue Designing - Our Process desktop view */
+/* creating-your-brand desktop view*/
 .creating-your-brand{
   padding: 50px 0;
 }
@@ -305,7 +414,7 @@
 }
 }
 
-/*  Creative Catalogue Designing - Our Process mobile view */
+/* creating-your-brand mobile view*/
 
 .creating-your-brand-mobile{
   padding: 50px 0;
@@ -352,126 +461,146 @@
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
-} 
-
-
-
-/* Characteristics of Good Brand Name? */
-
-.characteristics-of-good {
-  padding: 80px 0;
 }
 
-.characteristics-of-good h2 {
-  font-size: 56px;
+/* Industries We Serve */
+
+.industries-we-serve{
+    padding: 80px 0;
+}
+
+.industries-we-serve h3{
+     font-size: 50px;
+     font-family: "Corbert";
+     color: #000;
+     text-align: center;
+     padding: 50px 0;
+}
+.industries-we-serve-col{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.industries-we-serve-col h4{
+    font-size: 24px;
+    font-family: "Corbert";
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.industries-we-serve-col p{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: #000;
+    text-align: center;
+}
+
+.industries-we-serve-col img{
+    width: 60px;
+}
+
+/* Get a Free Website Audit */
+
+.website-audit{
+    padding: 80px 0;
+}
+
+.website-audit-row h3{
+      text-align: center;
+      font-family: "Corbert";
+      font-size: 50px;
+      color: #000;
+}
+
+.website-audit-row p{
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 18px;
+      color: #000;
+      padding: 20px 0;
+}
+
+
+
+/* Projects Completed 300+ Successfully delivered across industries */
+.projects-completed img{
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
+.projects-completed-div-main-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.projects-completed-div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding:70px 30px;
+   margin: 0 20px;
+}
+
+.projects-completed-div h3{
+  font-size: 43px;
+  color: #ca2734;
   font-family: "Corbert";
   font-weight: 700;
+  text-align: center;
 }
 
-.characteristics-of-good p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
-  font-size: 16px;
-  line-height: 1.4em;
-}
-.characteristics-of-good-check-eye {
-  width: 50px;
-  position:absolute;
-  right:5px;
-  top:0;
+.projects-completed-div h4{
+  font-size: 18px;
+  color: #000;
+  font-family: "Corbert";
+  font-weight: 700;
+  text-align: center;
 }
 
-.characteristics-of-good-div {
-  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  position: relative;
-  height: 400px;
-  transition: all 0.6s ease;
+.projects-completed-div p{
+  font-size: 14px;
+  color: #888;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects-completed-div-box-sh{
+  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  cursor: pointer;
-  padding: 30px 20px;
+  border: 1px solid #E5E7EB;
 }
 
-.characteristics-of-good-div .cap-img{
-  width: 100px;
+.projects-completed-main-row{
+  align-items: stretch;
 }
 
-.characteristics-of-good-btm {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 0.6s ease;
-  padding: 20px 20px 10px 20px;
+@media(max-width:991px){
+  .projects-completed-div{
+   margin:20px 20px;
+}
 }
 
-.characteristics-of-good-main-div {
-  transition: all 0.6s ease;
-  position: relative;
+
+
+/* faqs */
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: Corbert;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
 }
-.characteristics-of-good .headg {
-  padding-bottom: 80px;
-}
-
-.characteristics-of-good-back-content {
-  opacity: 0;
-  color: #fff;
-  padding: 20px 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.characteristics-of-good-back-content p {
-  color: #fff;
-}
-
-.characteristics-of-good-main-div:hover {
-  .cap-img {
-    opacity: 0;
-  }
-
-  .characteristics-of-good-btm {
-    opacity: 0;
-  }
-
-  .characteristics-of-good-div {
-    background-color: #ca2734;
-  }
-
-  .characteristics-of-good-back-content {
-    opacity: 1;
-  }
-}
-
-@media (max-width: 767px) {
-  .characteristics-of-good h2 {
+@media(max-width:767px){
+  .faqs h2 {
     font-size: 40px;
+    padding: 0 10px;
   }
-
-  .headg {
-    padding: 30px 0;
-  }
-  .characteristics-of-good {
-  padding: 50px 0;
-}
-}
-
-
-/* our-technologies */
-
-.our-technologies-content{
-    padding: 20px;
-}
-.our-technologies-content h3{
-       font-size: 40px;
-       font-family: "Corbert";
-       color: #000;
-       text-align: center;
-       padding-bottom: 20px;
-}
-
-.our-technologies-content p{
-       font-size: 20px;
-       font-family: "Roboto";
-       color: #000;
-       padding-top:20px;
 }

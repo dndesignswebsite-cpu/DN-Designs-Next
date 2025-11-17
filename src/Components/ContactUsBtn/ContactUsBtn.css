@@ -1,0 +1,10 @@
+.contact-us-btn button{
+     background-color: #fff;
+     color: #ca2734;
+     border-radius:100px;
+     padding: 10px 25px;
+     font-family: "Corbert";
+     border:none;
+     font-weight: 500;
+     font-size: 18px;
+}

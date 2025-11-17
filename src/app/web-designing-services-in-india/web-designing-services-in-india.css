@@ -1,0 +1,477 @@
+
+
+/*brand identity*/
+
+.brand-identity-row {
+  padding: 10px 0;
+}
+
+.brand-identity-div {
+  border: 1px solid #a8a8a8;
+  padding: 0;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.brand-identity-div img {
+  margin: 0;
+  padding: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.brand-identity-div video {
+  margin: 0;
+  padding: 0;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.brand-identity {
+  padding: 90px 0;
+}
+
+.brand-identity h2 {
+  color: #000000;
+  font-family: "Corbert", Sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+.every-pr {
+  color: #ca2734;
+}
+
+.brand-identity-div-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-identity-btn {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ca2734;
+  border-radius: 6px 6px 6px 6px;
+  padding: 10px;
+  font-family: "Roboto-Regular";
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 6px 6px 6px 6px;
+  font-size: 16px;
+  color: #000;
+}
+
+.brand-identity-btn-up {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.brand-identity-btn-up button {
+  font-family: "Corbert";
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ca2734;
+  border-radius: 6px 6px 6px 6px;
+  font-size: 18px;
+}
+
+.brand-identity-content {
+  padding: 20px;
+}
+.brand-identity-div-headg h3 {
+  color: #ca2734;
+  font-family: "Corbert", Sans-serif;
+  font-size: 32px;
+}
+
+.brand-identity-content p {
+  color: #888888;
+  font-family: "Roboto-Regular", Sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  padding-top: 20px;
+  padding-bottom:0 ;
+}
+
+@media (max-width: 768px) {
+  .brand-identity {
+  padding: 35px 0;
+}
+  .brand-identity h2{
+    font-size: 40px;
+  }
+  .brand-identity-btn-up button {
+    font-size: 14px;
+  }
+
+  .brand-identity-div-headg h3 {
+    font-size: 24px;
+  }
+  .brand-identity-btn {
+    padding: 5px;
+  }
+  .brand-identity-content {
+    padding: 15px;
+  }
+  .brand-identity-div-btns {
+    flex-direction: column;
+  }
+
+  .brand-identity-div {
+    margin: 10px 0;
+  }
+
+  .brand-identity-row {
+  padding: 0px 0px;
+}
+
+.brand-identity-main-div{
+  margin-top: 10px;
+}
+}
+
+@media(max-width:1200px){
+.brand-identity-div-headg h3 {
+  font-size: 25px;
+}
+}
+
+@media(max-width:992px){
+.brand-identity-div-headg h3 {
+  font-size: 22px;
+}
+ .brand-identity-div-btns{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .brand-identity-btn{
+  width: 50%;
+  text-align: center;
+ }
+ .brand-identity-btn-up{
+  margin: 0;
+  padding: 0;
+ }
+
+ .brand-identity-content p{
+  padding-top: 10px;
+ }
+}
+
+
+
+/* Creative Catalogue Designing - Our Process desktop view */
+.creating-your-brand{
+  padding: 50px 0;
+}
+
+#card1-create {
+  --index: 1;
+  top: 170px;
+  margin-top: 20px;
+}
+#card2-create {
+  --index: 2;
+  top: 210px;
+  margin-top: 20px;
+}
+#card3-create {
+  --index: 3;
+  top: 260px;
+  margin-top: 20px;
+}
+#card4-create {
+  --index: 4;
+  top: 310px;
+  margin-top: 20px;
+}
+
+
+#card5-create {
+  --index: 5;
+  top: 360px;
+  margin-top: 20px;
+}
+
+.card-create {
+  position: sticky;
+  top: 50%;
+  border: none;
+  border-radius: 40px;
+  margin-top: 100px;
+  list-style: none;
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#cards-create {
+  margin-top: 50px;
+}
+
+.card-body-create {
+  box-sizing: border-box;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  padding: 0;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+}
+
+.our-brand-heading-a {
+  position: sticky;
+  top: 0;
+  padding: 30px 0;
+  text-align: center;
+  color: #000000;
+  font-family: "Corbert", Sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+.sticky-con{
+  position: sticky;
+  top: 0;
+}
+
+
+.card-body-create{
+  padding: 20px;
+}
+
+.create-number{
+  color: #CA2734;
+    font-family: "Corbert", Sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.card-body-create h2{
+      color: #000000;
+    font-family: "Corbert", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.card-body-create p{
+      color: #888888;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.creating-your-brand{
+  display: block;
+}
+
+@media(max-width:1200px){
+
+ .card-body-create {
+  height: 35vh; 
+}
+
+}
+
+@media(max-width:992px){
+
+ .card-body-create {
+  height: 40vh; 
+}
+
+.create-number{
+    font-size: 70px;
+}
+
+}
+
+.creating-your-brand-mobile{
+  display: none;
+}
+@media(max-width:767px){
+.creating-your-brand{
+  display: none;
+}
+.creating-your-brand-mobile{
+  display: block;
+}
+}
+
+/*  Creative Catalogue Designing - Our Process mobile view */
+
+.creating-your-brand-mobile{
+  padding: 50px 0;
+}
+
+.our-brand-heading-a-mobile{
+  color: #000000;
+  font-family: "Corbert", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 40px;
+}
+
+.creating-brand-mobile-row{
+  margin: 0;
+}
+
+.creating-your-brand-mobile-box{
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.create-number-mobile{
+  color: #CA2734;
+    font-family: "Corbert bold", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-body-create-mobile h2{
+      color: #000000;
+    font-family: "Corbert", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.card-body-create-mobile p{
+  color: #888888;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 5px 0px;
+} 
+
+
+
+/* Characteristics of Good Brand Name? */
+
+.characteristics-of-good {
+  padding: 80px 0;
+}
+
+.characteristics-of-good h2 {
+  font-size: 56px;
+  font-family: "Corbert";
+  font-weight: 700;
+}
+
+.characteristics-of-good p {
+  color: #000000;
+  font-family: "Roboto-Regular", Sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.characteristics-of-good-check-eye {
+  width: 50px;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+
+.characteristics-of-good-div {
+  box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 400px;
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 30px 20px;
+}
+
+.characteristics-of-good-div .cap-img{
+  width: 100px;
+}
+
+.characteristics-of-good-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  padding: 20px 20px 10px 20px;
+}
+
+.characteristics-of-good-main-div {
+  transition: all 0.6s ease;
+  position: relative;
+}
+.characteristics-of-good .headg {
+  padding-bottom: 80px;
+}
+
+.characteristics-of-good-back-content {
+  opacity: 0;
+  color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.characteristics-of-good-back-content p {
+  color: #fff;
+}
+
+.characteristics-of-good-main-div:hover {
+  .cap-img {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-btm {
+    opacity: 0;
+  }
+
+  .characteristics-of-good-div {
+    background-color: #ca2734;
+  }
+
+  .characteristics-of-good-back-content {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .characteristics-of-good h2 {
+    font-size: 40px;
+  }
+
+  .headg {
+    padding: 30px 0;
+  }
+  .characteristics-of-good {
+  padding: 50px 0;
+}
+}
+
+
+/* our-technologies */
+
+.our-technologies-content{
+    padding: 20px;
+}
+.our-technologies-content h3{
+       font-size: 40px;
+       font-family: "Corbert";
+       color: #000;
+       text-align: center;
+       padding-bottom: 20px;
+}
+
+.our-technologies-content p{
+       font-size: 20px;
+       font-family: "Roboto";
+       color: #000;
+       padding-top:20px;
+}
