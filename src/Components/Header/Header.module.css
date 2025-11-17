@@ -214,10 +214,16 @@
     right: 100%;
     top: 0;
     display: none;
+    padding: 20px;
+    box-shadow: 0 2px 11px -1px #0000001a;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid red;
+   
+
 }
 
 .dropdown-link{
-    font-size: 40px;
     position: relative;
     
 }

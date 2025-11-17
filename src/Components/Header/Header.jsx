@@ -103,15 +103,19 @@ export default function Header() {
                 <Link href="/about" onClick={handleLinkClick}>About Us</Link>
               </li>
               <li>
-                <Link href="/contact-us" onClick={handleLinkClick}>Contact</Link>
-              </li>
-              <li>
                 <Link href="/services" onClick={handleLinkClick}>Services</Link>
               </li>
-              <li>
+
+
+<hr/>
+
+<li className={`${styles['dropdown-link']}`}>
+                <Link href="/branding" onClick={handleLinkClick}>Branding</Link><FontAwesomeIcon icon={faChevronDown}/>
+                 <div className={`${styles['dropdown']}`}>
+                     <li>
                 <Link href="/branding" onClick={handleLinkClick}>Branding</Link>
               </li>
-              <li>
+               <li>
                 <Link href="/logo-designing" onClick={handleLinkClick}>
                   Logo Designing
                 </Link>
@@ -126,32 +130,31 @@ export default function Header() {
                   Catalogue Designing
                 </Link>
               </li>
+               </div>
+              </li>
+
+
+
+              <li>
+                <Link href="/contact-us" onClick={handleLinkClick}>Contact</Link>
+              </li>
+              
+              
+             
+              
+              
 
 
 
 
 
-              {/* <li>
+              <li>
                 <Link href="/brand-name-suggestion" onClick={handleLinkClick}>
                   Brand Name Suggestion
                 </Link>
-              </li> */}
+              </li>
 
-              <li className={`${styles['dropdown-link']}`}>
-                  Brand Name Suggestion<FontAwesomeIcon icon={faChevronDown} />
-               <div className={`${styles['dropdown']}`}>
-                        <li>
-                <Link href="/animation" onClick={handleLinkClick}>
-                  Animation
-                </Link>
-              </li>
-               <li>
-                <Link href="/digital-marketing-agency-in-noida" onClick={handleLinkClick}>
-                 Digital Marketing
-                </Link>
-              </li>
-               </div>
-              </li>
+       
 
 
 
