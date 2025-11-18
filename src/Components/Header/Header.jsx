@@ -105,6 +105,21 @@ export default function Header() {
 
 
               <div className="col-12 col-md-5 ">
+
+
+<div className={`${styles["open-nav-btn"]}`}>
+        <button
+          className={`${styles["nav-toggle-btn"]} ${
+            isAnimating ? styles["is-active"] : ""
+          }`}
+          onClick={toggleNav}
+          aria-label="Toggle Navigation"
+          aria-expanded={isAnimating}
+        >
+          <span className={`${styles["toggle-icon"]}`}></span>
+        </button>
+      </div>
+
                 <div className={`${styles["all-main-links"]}`}>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -197,7 +212,7 @@ export default function Header() {
 
                     <li className={`${styles["dropdown-link"]}`}>
                       Communication
-                      <FontAwesomeIcon icon={faChevronDown} />
+                      <FontAwesomeIcon icon={faChevronDown} className="drop-down-icon"/>
                       <div className={`${styles["dropdown"]}`}>
                         <li>
                           <Link
