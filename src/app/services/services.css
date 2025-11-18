@@ -1,53 +1,6 @@
-.service-hero {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.service-hero h1 {
-  font-size: 62px;
-  color: #000;
-  font-family: "Corbert";
-  font-weight: 700;
-}
-
-.service-hero p {
-  margin-top: 30px;
-  color: #000000;
-  line-height: 1.7em;
-  font-size: 18px;
-  font-family: "Roboto-Regular";
-}
-
-.talk-to-us-mobile{
-    display: none;
-}
-
-@media (max-width: 767px) {
-
-.talk-to-us-desktop{
-    display: none;
-}
- 
-.talk-to-us-mobile{
-    display: block;
-}
-
-.service-hero h1 {
-    font-size: 40px;
-  }
-
-.service-hero p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-}
-
-
 /* our services */
-
 .our-service {
-  padding-top: 50px;
-  padding-bottom: 20px;
+ padding: 80px 0;
 }
 
 .our-service h2 {
@@ -56,7 +9,7 @@
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .our {
@@ -88,7 +41,6 @@
 }
 
 .front img {
-  /* height: 360px; */
   width: 100%;
   border: 2px solid grey;
   border-radius: 20px;
@@ -191,6 +143,17 @@
   width: 100%;
 }
 
+@media(max-width:991px){
+  .our-service {
+ padding: 50px 0;
+}
+
+.our-service h2 {
+  padding-bottom: 30px;
+}
+
+}
+
 @media (max-width: 767px) {
   .our-service h2 {
     font-size: 35px;
@@ -200,14 +163,18 @@
     font-size: 45px;
   }
 
-  /* .front img {
-    height: 260px;
-  } */
-
   .service-card {
     height: 600px;
     margin: 20px 0;
   }
+
+  .our-service {
+ padding: 40px 0;
+}
+.our-service h2 {
+  padding-bottom: 20px;
+}
+
 }
 
 
@@ -220,8 +187,7 @@
 }
 
 .appr-pro {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 0;
 }
 
 .appr-pro .appr-pro-main-head {
@@ -269,6 +235,7 @@
 .appr-pro-row-main {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .app-pro-div h3 {
@@ -287,22 +254,34 @@
   font-family: "Roboto-Regular";
 }
 
-@media (max-width: 767px) {
-  .appr-pro {
-    padding-top: 40px;
-  }
+
+@media(max-width:991px){
   .appr-pro h2 {
     font-size: 40px;
   }
+}
+
+@media (max-width: 767px) {
+  .appr-pro {
+    padding: 40px 0;
+  }
+  
   .appr-pro p {
     width: 100%;
   }
+
+  .appr-pro h2 {
+    font-size: 30px;
+  }
 }
+
+
+
 
 /* top-cap */
 
 .top-cap {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .top-cap h2 {
@@ -393,11 +372,18 @@
   .headg {
     padding: 30px 0;
   }
+  .top-cap {
+  padding: 40px 0;
+}
 }
 
 
 
 /* faqs */
+
+.faqs{
+  padding: 60px 0;
+}
 
 .faqs h2 {
     font-size: 56px;
@@ -411,5 +397,8 @@
     font-size: 40px;
     padding: 0 10px;
   }
+  .faqs{
+  padding: 20px 0;
+}
 }
 

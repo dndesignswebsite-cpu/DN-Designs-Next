@@ -4,7 +4,7 @@ import TalkToUs from '../TalkToUs/TalkToUs'
 
 function PagesHero({ heading, subHeading, para }) {
   return (
-    <section className="branding-hero">
+    <section className="pages-hero">
       <div className="container">
         <div className="row">
           <h1>{heading}</h1>

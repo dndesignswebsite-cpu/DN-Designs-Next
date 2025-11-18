@@ -162,7 +162,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .header {
        padding-top: 20px;
        padding-bottom: 20px;
@@ -204,11 +204,7 @@
     color: #000;
 }
 
-@media(max-width:767px){
-    .header-content{
-        display: none;
-    }
-}
+
 
 
 /*  */
@@ -260,5 +256,22 @@
     margin-bottom: 50px;
     font-size: 32px;
     line-height: 1.4;
+}
+}
+
+
+@media(max-width:991px){
+    .header-content{
+        display: none;
+    }
+   .dropdown{
+    position: relative;
+    right: 0;
+    top: 0;
+    display: none;
+    box-shadow: 0 2px 11px -1px #0000001a;
+    margin-bottom: 20px;
+    width: 70%;
+    border: 2px solid red;
 }
 }
