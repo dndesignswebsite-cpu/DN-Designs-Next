@@ -51,12 +51,7 @@ export default function Home() {
           </h2>
           <ul className={`${styles["cards"]}`}>
             <li className={`${styles["card"]} ${styles["card-1"]}`}>
-              <div className={`${styles["card-body"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  alt="Image for Card 1"
-                  className="img-fluid"
-                />
+              <div className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
                     <h3>Grin Care</h3>
@@ -107,12 +102,7 @@ export default function Home() {
               </div>
             </li>
             <li className={`${styles["card"]} ${styles["card-3"]}`}>
-              <div className={`${styles["card-body"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Nectarpure.jpg"
-                  alt="Image for Card 3"
-                  className="img-fluid"
-                />
+              <div className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
                     <h3>Grin Care</h3>
@@ -134,12 +124,7 @@ export default function Home() {
               </div>
             </li>
             <li className={`${styles["card"]} ${styles["card-4"]}`}>
-              <div className={`${styles["card-body"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/13.jpg"
-                  alt="Image for Card 4"
-                  className="img-fluid"
-                />
+              <div className={`${styles["card-body"]} ${styles["card-body-grin"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
                     <h3>Grin Care</h3>
@@ -171,10 +156,11 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <h2 className="text-center">Our Brand Journals</h2>
-            <div className={`${styles["our-brand-mobile-all-div"]}`}>
+            <div className={`${styles["our-brand-mobile-all-div"]} row`}>
               <div
-                className={`${styles["our-brand-mobile-div"]} col-12 col-md-6`}
+                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
+                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                 <img
                   src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
                   className="img-fluid"
@@ -208,9 +194,11 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              </div>
               <div
-                className={`${styles["our-brand-mobile-div"]} col-12 col-md-6`}
+                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
+                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
                     src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
@@ -248,15 +236,17 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              </div>
               <div
-                className={`${styles["our-brand-mobile-div"]} col-12 col-md-6`}
+                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
+                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                 <img
                   src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
                   className="img-fluid"
                 />
                 <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                  <h3 className="{`${styles['mobile-view-our-brand-h3']}`}">
+                  <h3 className={`${styles['mobile-view-our-brand-h3']}`}>
                     Rithm’s Enlite
                   </h3>
                   <div className={`${styles["our-brand-mobile-btn-up"]}`}>
@@ -284,9 +274,11 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              </div>
               <div
-                className={`${styles["our-brand-mobile-div"]} col-12 col-md-6`}
+                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
+                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                 <img
                   src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
                   className="img-fluid"
@@ -319,6 +311,7 @@ export default function Home() {
                     the refreshing and calming properties of the product.
                   </p>
                 </div>
+              </div>
               </div>
             </div>
           </div>
