@@ -114,25 +114,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     clip-path: circle(0% at right var(--hamburger-right) top var(--hamburger-top));
     transition: clip-path var(--transition-speed) ease-in-out;
-
-
 }
 
 .full-screen-nav.is-open {
     clip-path: circle(150% at right var(--hamburger-right) top var(--hamburger-top));
 }
 
+
+
 .nav-content-wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     padding: 40px;
     color: var(--text-color);
-
     opacity: 1;
     transition: none;
+}
+
+
+.all-main-links{
+    margin-top: 50px;
 }
 
 .nav-main-links {

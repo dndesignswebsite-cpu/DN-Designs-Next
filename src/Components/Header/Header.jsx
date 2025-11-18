@@ -101,10 +101,10 @@ export default function Header() {
                 </div>
               </div>
 
-             <div className="col-12 col-md-3"></div>
+             <div className="col-12 col-md-2"></div>
 
 
-              <div className="col-12 col-md-4 ">
+              <div className="col-12 col-md-5 ">
                 <div className={`${styles["all-main-links"]}`}>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
