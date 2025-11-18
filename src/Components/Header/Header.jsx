@@ -307,6 +307,17 @@ export default function Header() {
                       </Link>
                     </li>
 
+
+                       <li>
+                      <Link
+                        href="/blog"
+                        onClick={handleLinkClick}
+                        className="text-dark text-decoration-none"
+                      >
+                        Blog
+                      </Link>
+                    </li>
+
                    
                   </ul>
                 </div>
