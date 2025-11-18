@@ -136,25 +136,23 @@
 }
 
 .nav-main-links {
-    font-family:Corbert;
-    color: var(--text-color);
+    font-family:"Corbert";
+    color: #000;
     list-style: none;
     padding: 0;
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1.4;
-    font-weight: 700;
+    cursor: pointer;
 }
 
-.nav-main-links li a:hover {
-    color: var(--primary-color);
-}
 
-.nav-main-links li{
+
+/* .nav-main-links li{
     margin-top: 3px;
     font-family: "Corbert";
     font-size: 30px;
-}
+} */
 
 
 
@@ -224,8 +222,6 @@
     margin-bottom: 20px;
     width: 100%;
     border: 2px solid red;
-   
-
 }
 
 .dropdown-link{

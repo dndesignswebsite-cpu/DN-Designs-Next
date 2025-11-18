@@ -88,7 +88,7 @@ export default function Header() {
         <div className="container">
           <div className={`${styles["nav-content-wrapper"]}`}>
             <div className="row">
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-5">
                 <div className={`${styles["header-content"]}`}>
                   <h2>DN Designs</h2>
                   <p>
@@ -100,7 +100,11 @@ export default function Header() {
                   </p>
                 </div>
               </div>
-              <div className="col-12 col-md-6 ">
+
+             <div className="col-12 col-md-3"></div>
+
+
+              <div className="col-12 col-md-4 ">
                 <div className={`${styles["all-main-links"]}`}>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
