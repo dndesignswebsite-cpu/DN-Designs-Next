@@ -1,8 +1,8 @@
 /* home hero section */
 
 .hero {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .hero-rows{
 display: flex !important;
@@ -245,6 +245,7 @@ align-items: center;
   font-family: Corbert, sans-serif;
   font-weight: 700;
   color: rgb(0, 0, 0);
+  padding-bottom: 20px;
 }
 
 .mobile-view-our-brand {
@@ -266,7 +267,7 @@ align-items: center;
 /* our brand mobile view */
 
 .mobile-view-our-brand{
-  padding: 80px 0;
+  padding: 80px 0px 30px 0px;
 }
 
 .mobile-view-our-brand h2{
@@ -282,7 +283,8 @@ align-items: center;
 }
 
 .our-brand-mobile-all-div{
-   padding: 20px;
+   padding: 10px;
+   margin: 0px;
 }
 
 .our-brand-mobile-div{
@@ -328,9 +330,6 @@ align-items: center;
 .our-brand-mobile-btn-bottom {
   width: 100%;
   padding: 10px;
-}
-
-.our-brand-mobile-btn-bottom{
   font-size: 15px;
     text-align: center;
     font-family: "Roboto";
@@ -345,7 +344,7 @@ align-items: center;
 
 @media(max-width:767px){
   .mobile-view-our-brand{
-  padding: 40px 0;
+  padding: 40px 0 10px 0px;
 }
 }
 

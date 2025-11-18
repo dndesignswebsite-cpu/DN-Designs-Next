@@ -183,7 +183,7 @@ function OurConstant() {
 {/* tab */}
 
 <div className={`${styles['tab-screen']} container text-center`}>
-         <h2 className={`${styles['our-brand-heading']}`}>Our Constant Companions</h2>
+         <h2 className={`${styles['our-brand-heading']}`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
           <div className={`${styles['comapnies-logo-row']}`}>
            
              <div className={`${styles['companies']}`}>
@@ -370,7 +370,7 @@ function OurConstant() {
 
 
 <div className={`${styles['our-constant-mobile-screen']} container text-center`}>
-         <h2>Our Constant Companions</h2>
+         <h2 className={`${styles["our-brand-heading"]} text-center`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
           <div className={`${styles['comapnies-logo-row']}`}>
            
              <div className={`${styles['companies']}`}>

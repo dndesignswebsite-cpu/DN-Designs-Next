@@ -155,7 +155,7 @@ export default function Home() {
       <section className={`${styles["mobile-view-our-brand"]}`}>
         <div className="container">
           <div className="row">
-            <h2 className="text-center">Our Brand Journals</h2>
+            <h2 className={`${styles["our-brand-heading"]} text-center`}>Our Brand Journals</h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
@@ -179,7 +179,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles[" our-brand-mobile-btn-bottom"]} text-center`}
+                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
                     >
                       Communication Design
                     </h4>
@@ -259,7 +259,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles[" our-brand-mobile-btn-bottom"]} text-center`}
+                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
                     >
                       Communication Design
                     </h4>
@@ -297,7 +297,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles[" our-brand-mobile-btn-bottom"]} text-center`}
+                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
                     >
                       Communication Design
                     </h4>
