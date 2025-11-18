@@ -10,20 +10,20 @@ import PagesHero from '@/Components/PagesHero/PagesHero'
 import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 function page() {
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
+  // hero section content
+  const heading ="A Branding & Design Studio"
+  const subHeading ="Let’s Design, Develop and Promote Your Brand"
   const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
                
   return (
     <div>
-       {/*Breadcrumb*/}
+    {/*Breadcrumb*/}
       <section>
         <Breadcrumb />
       </section>
 
-      {/* branding hero */}
-     {/* ui/ux design */}
-      <section className="branding-hero">
+     {/* about hero */}
+      <section>
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
 
@@ -39,14 +39,14 @@ function page() {
           <div className='row'>
             <div className='col'>
               <div className='projects-completed-div'>
-                 <h3><AutoCounter target={300}/></h3>
+                 <h3><AutoCounter target={300} speed={7}/>+</h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
             <div className='col'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
-                 <h3><AutoCounter target={300}/></h3>
+                 <h3><AutoCounter target={150} speed={15}/>+</h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
@@ -56,14 +56,14 @@ function page() {
                     <div className='row'>
                      <div className='col'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
-                 <h3><AutoCounter target={300}/></h3>
+                 <h3><AutoCounter target={8} speed={60}/>+</h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
             <div className='col'>
               <div className='projects-completed-div'>
-                 <h3><AutoCounter target={300}/></h3>
+                 <h3><AutoCounter target={98} speed={20}/>%</h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
@@ -76,7 +76,7 @@ function page() {
 </section>
 
 
-{/*The Protagonists */}
+{/*Our Core Passion */}
 
       <section className="appr-pro">
         <div className="container">
@@ -87,7 +87,7 @@ function page() {
              <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className="app-pro-div-first app-pro-div-white ">
                 <div>
-                  <h3>Discovery & Planning</h3>
+                  <h3>Our Core Passion</h3>
                   <div className='app-pro-div-first-btn'>
                   <TalkToUs/>
                   </div>

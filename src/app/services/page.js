@@ -7,8 +7,16 @@ import "./services.css";
 import OurWorkServiceTabs from "@/Components/OurWorkServiceTabs/OurWorkServiceTabs";
 import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
+import PagesHero from "@/Components/PagesHero/PagesHero";
 
 function page() {
+  // hero section content
+const heading ="Services"
+const para = "Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
+  
+
+
+// faqs content
   const leftFaqs = [
     {
       question: "How can I contact your team?",
@@ -45,38 +53,13 @@ function page() {
         <Breadcrumb />
       </section>
 
-      {/* Hero section */}
-
-      <section className="service-hero">
-        <div className="container">
-          <div className="row">
-            <h1>Services</h1>
-            <div className="col-12 col-md-4">{/* .. */}</div>
-            <div className="col-12 col-md-8">
-              <div className="talk-to-us-desktop">
-                <TalkToUs />
-              </div>
-              <p>
-                Successful brands are not made in a day. They are a result of
-                consistent hard work, perseverance and unwavering passion.
-                Long-term vision, strategy and creativity are pivotal too. Lots
-                of work and lots of dedication are required. This is why you
-                need the services of a branding & design agency like us. Let’s
-                walk you through our services and inform you of our capabilities
-                and approach. If there are questions in your mind, check out our
-                FAQs section. Alternatively, reach out to us and we will
-                promptly answer them.
-              </p>
-              <div className="talk-to-us-mobile">
-                <TalkToUs />
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* services hero */}
+      <section>
+        <PagesHero heading={heading}  para={para}/>
       </section>
+      
 
       {/* our services */}
-
       <section className="our-service">
         <div className="container">
           <div className="row">
@@ -89,6 +72,7 @@ function page() {
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
                     alt="Image"
+                    className="img-fluid"
                   />
                   <h3>01</h3>
                   <p>Brand Identity</p>
@@ -154,6 +138,7 @@ function page() {
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
                     alt="Image"
+                    className="img-fluid"
                   />
                   <h3>01</h3>
                   <p>Brand Identity</p>
@@ -220,15 +205,16 @@ function page() {
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
                     alt="Image"
+                    className="img-fluid"
                   />
                   <h3>01</h3>
-                  <p>Brand Identity</p>
+                  <p>Brand  Catalogue Designing</p>
                 </div>
 
                 <div className="back">
                   <div className="back-up">
                     <h3>01</h3>
-                    <p>Brand Identity</p>
+                    <p>Brand  Catalogue Designing</p>
                     <div className="hr"></div>
                   </div>
 
@@ -282,6 +268,7 @@ function page() {
           </div>
         </div>
       </section>
+      
 
       {/* Approach project */}
 

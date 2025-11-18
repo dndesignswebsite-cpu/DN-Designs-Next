@@ -1,4 +1,3 @@
-
 /* Projects Completed 300+ Successfully delivered across industries */
 .projects-completed img{
   height: 100%;
@@ -62,7 +61,7 @@
 }
 
 
-/* The Protagonists  */
+/* Our Core Passion */
 
 .cont {
   display: flex;
@@ -204,4 +203,18 @@
 
 .dedicated-team-hedg-span{
   color: #ca2734;
+}
+
+@media(max-width:991px){
+  .dedicated-team-hedg h2{
+        font-size: 40px;
+        width: 100%;
+  }
+}
+
+@media(max-width:767px){
+  .dedicated-team-hedg h2{
+        font-size: 30px;
+        width: 100%;
+  }
 }

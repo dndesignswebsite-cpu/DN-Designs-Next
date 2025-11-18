@@ -6,13 +6,17 @@ import OurConstant from "@/Components/OurConstant/OurConstant";
 import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
+import HorizontalScroll from "@/Components/HorizontalScroll/HorizontalScroll";
 
 function page() {
+  // hero section content
   const heading ="Where Brands Are Born"
   const subHeading ="A Creative Branding Agency"
-  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
+  const para ="Branding shapes the future of your business. It determines whether you will craft a legacy or simply fade into oblivion like many others. But what is branding and why is it so crucial? Want to know? Take this exciting branding journey with us – learn about branding, explore our portfolio, & go behind the scenes of our branding process. If you still have queries, check out our FAQs section."
   
-const leftFaqs = [
+
+  // faqs content
+   const leftFaqs = [
     {
       question: "How can I contact your team?",
       answer:
@@ -49,10 +53,13 @@ const leftFaqs = [
         <Breadcrumb />
       </section>
 
-{/* ui/ux design */}
-      <section className="branding-hero">
+      {/* branding hero section */}
+      <section>
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
+
+
+      <HorizontalScroll/>
       
 
       {/* work portfolio */}
