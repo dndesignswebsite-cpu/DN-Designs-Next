@@ -75,7 +75,7 @@
 }
 
 .port-content {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 .port-div-headg h3 {
   color: #ca2734;
@@ -84,11 +84,11 @@
 }
 
 .port-content p {
-  color: #888888;
+  color: #888888; 
   font-family: "Roboto-Regular", Sans-serif;
   font-size: 16px;
   line-height: 1.4em;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom:0 ;
 }
 
@@ -136,6 +136,7 @@
 @media(max-width:992px){
 .port-div-headg h3 {
   font-size: 32px;
+   padding-bottom: 10px;
 }
  .potfolio-div-btns{
   display: flex;

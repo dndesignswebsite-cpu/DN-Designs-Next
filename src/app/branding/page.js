@@ -372,7 +372,7 @@ function page() {
 
       {/* Creating Your Brand desktop view */}
       <section className="creating-your-brand">
-        <div class="container sticky-con">
+        <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
             Creating Your Brand Story,
             <span className="every-pr">
@@ -381,8 +381,8 @@ function page() {
             </span>
           </h2>
           <ul id="cards-create">
-            <li class="card-create" id="card1-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
                   <h2>Brand Understanding</h2>
@@ -398,8 +398,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card2-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
                   <h2>Competitor Analysis</h2>
@@ -418,8 +418,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card3-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
                   <h2>Planning Your Brand</h2>
@@ -435,8 +435,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card4-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
                   <h2>Implementing the Strategy</h2>
@@ -451,8 +451,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card5-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
                   <h2>Feedback & Launch</h2>

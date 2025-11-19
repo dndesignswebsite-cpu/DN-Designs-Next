@@ -90,7 +90,7 @@
   font-family: "Roboto-Regular", Sans-serif;
   font-size: 16px;
   line-height: 1.4em;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom:0 ;
 }
 
@@ -140,7 +140,8 @@
 
 @media(max-width:992px){
 .port-div-headg h3 {
-  font-size: 22px;
+  font-size: 32px;
+  padding-bottom: 10px;
 }
  .potfolio-div-btns{
   display: flex;
