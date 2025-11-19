@@ -11,7 +11,7 @@ import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 function page() {
   // hero section content
-  const heading ="A Branding & Design Studio"
+  const heading ="A Branding and Design Studio"
   const subHeading ="Let’s Design, Develop and Promote Your Brand"
   const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
                

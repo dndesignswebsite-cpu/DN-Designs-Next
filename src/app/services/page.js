@@ -354,7 +354,7 @@ const para = "Successful brands are not made in a day. They are a result of cons
               Top<span className="every-pr"> Capabilities</span>
             </h2>
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className=" top-cap-div m-3">
+              <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
@@ -388,7 +388,7 @@ const para = "Successful brands are not made in a day. They are a result of cons
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
+              <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
@@ -420,7 +420,7 @@ const para = "Successful brands are not made in a day. They are a result of cons
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
+              <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
