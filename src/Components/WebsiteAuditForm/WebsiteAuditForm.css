@@ -6,7 +6,6 @@
 .form-group {
   width: 50%;
   margin: 20px;
-  
 }
 
 .form-group label {
@@ -80,4 +79,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media(max-width:767px){
+  .row1{
+    flex-direction: column;
+  }
+
+  .form-group {
+  width: 100%;
+  margin: 10px 5px;
+}
 }

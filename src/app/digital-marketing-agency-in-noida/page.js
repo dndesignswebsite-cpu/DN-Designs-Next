@@ -11,8 +11,8 @@ import PagesHero from '@/Components/PagesHero/PagesHero'
 
 function page() {
 const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
+  const subHeading = "A Creative Branding Agency"
+  const para = "Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
   
 
    const leftFaqs = [
@@ -448,7 +448,7 @@ const heading ="Where Brands Are Born"
       </div>
 
       <div className='col-12 col-md-3 organic-sessions-col'>
-        <h3><AutoCounter target={150}/>%</h3>
+        <h3><AutoCounter target={150}/>%</h3> 
         <p>Organic Sessions (6 mo)</p>
       </div>
 
@@ -456,7 +456,7 @@ const heading ="Where Brands Are Born"
         <h3><AutoCounter target={150}/>%</h3>
         <p>Organic Sessions (6 mo)</p>
       </div>
-
+ 
       <div className='col-12 col-md-3 organic-sessions-col'>
         <h3><AutoCounter target={150}/>%</h3>
         <p>Organic Sessions (6 mo)</p>

@@ -62,12 +62,12 @@ function page() {
       <section className='what-drives-our-growth'>
         <div className='container'>
             <div className='row what-drives-our-growth-row'>
-                <div className='col what-drives-our-growth-content'>
+                <div className='col-12 col-md-12 col-lg-6 what-drives-our-growth-content'>
                     <h3>Data Driven Insights</h3>
                     <p>We depend on your website data more than opinions and assumptions. Through data analysis, we discover your top-performing keywords and content and the users’ intent in seeking them. We also examine user behaviour, bounce rate and CTR on your website. This data-driven analysis helps us, an SEO company in Noida, create smarter SEO strategies.</p>
                      <ContactUsBtn/>
                 </div>
-                <div className='col'>
+                <div className='col-12 col-md-12 col-lg-6 what-drives-our-growth-img-section'>
                     <img src='https://dndesigns.co.in/wp-content/uploads/2025/06/jkjk.png' className='img-fluid'></img>
                 </div>
             </div>
@@ -79,7 +79,7 @@ function page() {
       <section className='comprehensive-seo-stregety'>
         <div className='container'>
             <div className='row'>
-                <div className='col'>
+                <div className='col-12 col-md-6 comprehensive-seo-stregety-col'>
                 <div className='comprehensive-seo-stregety-content'>
                     <h2>Comprehensive SEO Strategy</h2>
                     <p>We make the most of our data analysis and design a tailored SEO strategy to build your business’s online presence and drive more organic traffic. At the core are on-page and off-page optimisation as well as technical SEO.</p>
@@ -87,7 +87,7 @@ function page() {
                 </div>
                 </div>
 
-                <div className='col'>
+                <div className='col-12 col-md-6 comprehensive-seo-stregety-col'>
                 <div className='transparent-reporting-content'>
                     <h2>Transparent Reporting</h2>
                     <p>All work and no known results can be frustrating. Therefore, reporting is essential to assess the performance of SEO activities. It also helps confirm whether the strategy is yielding positive results or requires modifications.</p>
@@ -640,14 +640,14 @@ function page() {
       <div className='row projects-completed-main-row'>
       <div className='col-12 col-md-12 col-lg-6 projects-completed-div-main-col'>
           <div className='row'>
-            <div className='col'>
+            <div className='col-12 col-md-6'>
               <div className='projects-completed-div'>
                  <h3><AutoCounter target={300}/></h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
-            <div className='col'>
+            <div className='col-12 col-md-6'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
                  <h3><AutoCounter target={300}/>+</h3>
                  <h4>Projects Completed</h4>
@@ -657,14 +657,14 @@ function page() {
           </div>
 
                     <div className='row'>
-                     <div className='col'>
+                     <div className='col-12 col-md-6'>
               <div className='projects-completed-div projects-completed-div-box-sh'>
                  <h3><AutoCounter target={300}/>+</h3>
                  <h4>Projects Completed</h4>
                  <p>Successfully delivered across industries</p>
               </div>
             </div>
-            <div className='col'>
+            <div className='col-12 col-md-6'>
               <div className='projects-completed-div'>
                  <h3><AutoCounter target={300}/>+</h3>
                  <h4>Projects Completed</h4>

@@ -26,6 +26,21 @@
     padding: 40px;
 }
 
+@media(min-width: 991.68px) and (max-width:1200px){
+  .what-drives-our-growth-img-section{
+    position: relative;
+  }
+  .what-drives-our-growth-img-section img{
+    position: relative;
+    bottom: -25.7%;
+  }
+}
+
+@media(max-width:767px){
+  .what-drives-our-growth{
+    padding: 30px 5px;
+}
+}
 /* comprehensive-seo-stregety */
 
 
@@ -74,6 +89,13 @@
     font-family: "Roboto";
     font-size: 18px;
     color: #000;
+}
+
+
+@media(max-width:767px){
+  .comprehensive-seo-stregety-col{
+    margin-top: 20px;
+  }
 }
 
 
@@ -522,6 +544,16 @@
       font-size: 18px;
       color: #000;
       padding: 20px 0;
+}
+
+@media(max-width:767px){
+  .website-audit{
+    padding: 30px 0;
+}
+
+.website-audit-row h3{
+      font-size: 35px;
+}
 }
 
 

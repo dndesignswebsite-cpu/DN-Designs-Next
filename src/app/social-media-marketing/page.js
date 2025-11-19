@@ -441,6 +441,7 @@ function page() {
             <img  src='https://dndesigns.co.in/wp-content/uploads/2025/07/ghfh.jpg' className='img-fluid'/>
         </div>
         <div className='col-12 col-md-12 col-lg-6 projects-completed-div-main-col'>
+        <h3 className='e-com-counter text-center'>E-commerce Brand Growth</h3>
           <div className='row'>
             <div className='col'>
               <div className='projects-completed-div'>
@@ -485,12 +486,12 @@ function page() {
 {/* sucess stories */}
 <section className='sucess-stories'>
  <div className="container success-stories py-5">
-            <h2 className="success-stories-title">Success Stories</h2>
-            <p className="success-stories-para">See how we've helped brands achieve remarkable growth through strategic social media marketing.</p>
+            <h2 className="success-stories-title text-center">Success Stories</h2>
+            <p className="success-stories-para text-center">See how we've helped brands achieve remarkable growth through strategic social media marketing.</p>
             <div className="row gx-4">
                 <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
                     <div className="success-story p-0">
-                        <img src="success.png" className="img-fluid" />
+                        <img src="https://dndesigns.co.in/wp-content/uploads/2019/02/WhatsApp-Image-2023-09-23-at-1.24.33-PM.jpeg" className="img-fluid" />
                         <div className="p-4 success-story-content">
                             <h3>E-commerce Brand Growth</h3>
                             <p>Increased social media engagement by 300% and drove $2M in revenue.</p>
@@ -504,7 +505,7 @@ function page() {
 
                 <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
                     <div className="success-story p-0">
-                        <img src="success.png" className="img-fluid" />
+                        <img src="https://dndesigns.co.in/wp-content/uploads/2019/02/WhatsApp-Image-2023-09-23-at-1.24.33-PM.jpeg" className="img-fluid" />
                         <div className="p-4 success-story-content">
                             <h3>E-commerce Brand Growth</h3>
                             <p>Increased social media engagement by 300% and drove $2M in revenue.</p>
@@ -518,7 +519,7 @@ function page() {
 
                 <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
                     <div className="success-story p-0">
-                        <img src="success.png" className="img-fluid" />
+                        <img src="https://dndesigns.co.in/wp-content/uploads/2019/02/WhatsApp-Image-2023-09-23-at-1.24.33-PM.jpeg" className="img-fluid" />
                         <div className="p-4 success-story-content">
                             <h3>E-commerce Brand Growth</h3>
                             <p>Increased social media engagement by 300% and drove $2M in revenue.</p>

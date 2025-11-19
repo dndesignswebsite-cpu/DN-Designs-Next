@@ -1,6 +1,5 @@
 import React from "react";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
-import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import "./influencer-marketing.css";
 import StandAlonePackaging from "@/Components/StandAlonePackaging/StandAlonePackaging";
 import Faqs from "@/Components/Faqs/Faqs";
@@ -59,7 +58,7 @@ function page() {
       <section className="grow-your-business">
         <div className="container">
           <div className="row">
-            <div className="col-3">
+            <div className="col-12 col-md-12 col-lg-3">
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-1">
                   <img
@@ -75,7 +74,7 @@ function page() {
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-12 col-md-12 col-lg-6">
               <div className="grow-your-bussiness-col-2">
                 <img
                   src="https://dndesigns.co.in/wp-content/uploads/2023/10/kerfin7_nea_3157.png"
@@ -84,7 +83,7 @@ function page() {
               </div>
             </div>
 
-            <div className="col-3">
+            <div className="col-12 col-md-12 col-lg-3">
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-3">
                   <img
