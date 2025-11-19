@@ -27,7 +27,7 @@
 }
 
 .brand-identity {
-  padding: 90px 0;
+  padding: 40px 0px 40px 0px;
 }
 
 .brand-identity h2 {
@@ -91,13 +91,13 @@
   font-family: "Roboto-Regular", Sans-serif;
   font-size: 16px;
   line-height: 1.4em;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom:0 ;
 }
 
 @media (max-width: 768px) {
   .brand-identity {
-  padding: 35px 0;
+  padding: 35px 10px;
 }
   .brand-identity h2{
     font-size: 40px;
@@ -140,7 +140,8 @@
 
 @media(max-width:992px){
 .brand-identity-div-headg h3 {
-  font-size: 22px;
+  font-size: 32px;
+  padding-bottom: 10px;
 }
  .brand-identity-div-btns{
   display: flex;
