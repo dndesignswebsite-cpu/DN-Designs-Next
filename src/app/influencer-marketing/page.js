@@ -1,20 +1,19 @@
-import React from 'react'
-import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
-import TalkToUs from '@/Components/TalkToUs/TalkToUs'
-import "./influencer-marketing.css"
-import StandAlonePackaging from '@/Components/StandAlonePackaging/StandAlonePackaging'
-import Faqs from '@/Components/Faqs/Faqs'
-import Form from '@/Components/Form/Form'
-import PagesHero from '@/Components/PagesHero/PagesHero'
+import React from "react";
+import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
+import TalkToUs from "@/Components/TalkToUs/TalkToUs";
+import "./influencer-marketing.css";
+import StandAlonePackaging from "@/Components/StandAlonePackaging/StandAlonePackaging";
+import Faqs from "@/Components/Faqs/Faqs";
+import Form from "@/Components/Form/Form";
+import PagesHero from "@/Components/PagesHero/PagesHero";
 
 function page() {
+  const heading = "Where Brands Are Born";
+  const subHeading = "A Creative Branding Agency";
+  const para =
+    "  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them.";
 
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
-  
-
-    const leftFaqs = [
+  const leftFaqs = [
     {
       question: "How can I contact your team?",
       answer:
@@ -45,53 +44,66 @@ function page() {
 
   return (
     <div>
-       {/*Breadcrumb*/}
+      {/*Breadcrumb*/}
       <section>
-        <Breadcrumb/>
+        <Breadcrumb />
       </section>
 
-      {/* ui/ux design */}
+      {/* influencer marketing  */}
       <section className="branding-hero">
-        <PagesHero heading={heading} subHeading={subHeading} para={para}/>
+        <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
+
       
-{/*grow-your-business  */}
-<section className='grow-your-business'>
-    <div className='container'>
-        <div className='row'>
-
-            <div className='col-3'>
-            <div className='grow-your-bussiness-col-main'>
-                <div className='grow-your-bussiness-col-1'>
-                   <img src='https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg' className='img-fluid'></img>
-                     <h3>Grow Your Business</h3>
-                     <p>Leverage established credibility and personal connections to build authentic brand trust and loyalty.</p>
+      {/*grow-your-business  */}
+      <section className="grow-your-business">
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="grow-your-bussiness-col-main">
+                <div className="grow-your-bussiness-col-1">
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    className="img-fluid"
+                  ></img>
+                  <h3>Grow Your Business</h3>
+                  <p>
+                    Leverage established credibility and personal connections to
+                    build authentic brand trust and loyalty.
+                  </p>
                 </div>
-                </div>
+              </div>
             </div>
 
-            <div className='col-6'>
-                <div className='grow-your-bussiness-col-2'>
-                    <img src='https://dndesigns.co.in/wp-content/uploads/2023/10/kerfin7_nea_3157.png' className='img-fluid'></img>
-                    </div>
+            <div className="col-6">
+              <div className="grow-your-bussiness-col-2">
+                <img
+                  src="https://dndesigns.co.in/wp-content/uploads/2023/10/kerfin7_nea_3157.png"
+                  className="img-fluid"
+                ></img>
+              </div>
             </div>
 
-              <div className='col-3'>
-            <div className='grow-your-bussiness-col-main'>
-                <div className='grow-your-bussiness-col-3'>
-                   <img src='https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg' className='img-fluid'></img>
-                     <h3>Grow Your Business</h3>
-                     <p>Leverage established credibility and personal connections to build authentic brand trust and loyalty.</p>
+            <div className="col-3">
+              <div className="grow-your-bussiness-col-main">
+                <div className="grow-your-bussiness-col-3">
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    className="img-fluid"
+                  ></img>
+                  <h3>Grow Your Business</h3>
+                  <p>
+                    Leverage established credibility and personal connections to
+                    build authentic brand trust and loyalty.
+                  </p>
                 </div>
-                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-
- {/* We Are The Leading Video */}
+      {/* We Are The Leading Video */}
       <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
@@ -122,12 +134,10 @@ function page() {
         </div>
       </section>
 
+      {/* standalone */}
+      <StandAlonePackaging />
 
-{/* standalone */}
-<StandAlonePackaging/>
-
-
-{/* top capibilities */}
+      {/* top capibilities */}
 
       <section className="top-cap">
         <div className="container">
@@ -336,9 +346,7 @@ function page() {
         </div>
       </section>
 
-
-
-       {/* faqs */}
+      {/* faqs */}
 
       <section className="faqs">
         <div className="container">
@@ -350,12 +358,10 @@ function page() {
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
-
       {/* Form */}
-      <Form/>
-
+      <Form />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

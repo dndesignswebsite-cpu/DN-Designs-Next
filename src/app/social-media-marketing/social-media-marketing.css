@@ -1,3 +1,162 @@
+/* social media   */
+.social-media{
+  padding: 120px 0;
+}
+
+.social-media-row{
+  /* border: 10px solid #ca2734; */
+  position: relative;
+  height: 100%;
+  background-color: #ca2734;
+  border-radius: 30px;
+}
+
+.social-media-main-div{
+  position: relative;
+  top: 30px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  background-color: #ca2734;
+  border-radius: 30px;
+}
+
+
+
+.wrapper-content{
+  width: 60%;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  top: 50px;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 10px;
+}
+
+.social-media-content{
+  position: relative;
+  top: 50px;
+}
+
+.social-media-image-div{
+  width: 40%;  
+  position: relative;
+  left: -20px;
+  top: 50px;
+}
+
+.social-media-image-div img{
+ position: relative;
+ left: -20px;
+ margin-top: 50px;
+ top: 0px;
+ padding-bottom: 0;
+ bottom: 0;
+ border-radius: 10px;
+}
+
+.social-media-content h2{
+  font-family: "Corbert";
+  font-size: 42px;
+  padding:20px 0 ;
+  line-height: 1.6em;
+  width: 70%;
+}
+
+.social-media-content p{
+  font-size: 18px;
+  width: 80%;
+  font-family: "Roboto";
+  line-height: 1.6em;
+  padding-top: 10px;
+}
+
+@media(max-width:1200px){
+  .social-media-content p{
+  font-size: 16px;
+  width: 90%;
+  font-family: "Roboto";
+  line-height: 1.4em;
+  padding-top: 5px;
+}
+
+.social-media-content h2{
+  font-family: "Corbert";
+  font-size: 38px;
+  padding:10px 0 ;
+  line-height: 1.6em;
+  width: 90%;
+}
+}
+
+
+@media(max-width:991.68px){
+  .social-media-content p{
+  font-size: 16px;
+  width: 95%;
+  font-family: "Roboto";
+  line-height: 1.2em;
+  padding-top: 0px;
+}
+
+.social-media-content h2{
+  font-family: "Corbert";
+  font-size: 30px;
+  padding:5px 0 ;
+  line-height: 1.2em;
+  width: 95%;
+}
+
+.social-media-content{
+  position: relative;
+  top: 0px;
+}
+
+.wrapper-content{
+  padding: 10px;
+}
+.btn-social-media{
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+}
+
+@media(max-width:767.68px){
+  .social-media-main-div{
+ flex-direction: column;
+ top: 0px;
+}
+
+
+.wrapper-content{
+  width: 100%;
+}
+
+.social-media-image-div{
+  width: 100%;  
+  position: relative;
+  left: 0;
+  top: 0px;
+  margin-top: 10px;
+}
+
+.social-media-image-div img{
+  width: 100%;  
+  position: relative;
+  left: 0;
+  top:0;
+  margin-bottom: 10px;
+}
+}
+
+
+.btn-social-media{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
 
 
 /*  But Why Your Logo Even Matters? */
@@ -373,4 +532,75 @@
     font-size: 40px;
     padding: 0 10px;
   }
+}
+
+
+
+
+
+/*  */
+
+
+
+
+.success-stories-title{
+    font-size: 52px;
+}
+
+.success-stories-para{
+    font-size: 16px;
+    width: 500px;
+    margin: 0 auto;
+    color: #888888;
+    margin-top: 20px;
+}
+
+.success-story{
+    border-radius: 16px;
+    box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E5E7EB;
+}
+
+.success-story-content{
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.success-story-content h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.success-story-content p{
+    font-size: 16px;
+    color: #888888;
+}
+
+.success-points{
+    display: flex;
+    gap: 15px;
+    color: #CA2734;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media (max-width:768px){
+    .success-stories-para{
+        width: 100%;
+    }
+    .counts{
+        font-size: 35px;
+    }
+    .counter-title{
+        font-size: 18px;
+    }
+    .counter-heading{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:1024px){
+    .success-points{
+        font-size: 14px;
+    }
 }

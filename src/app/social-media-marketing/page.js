@@ -53,6 +53,41 @@ function page() {
       <section className="branding-hero">
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
+
+
+      {/* What is Social Media Marketing? */}
+      <section className="social-media">
+      <div className="container">
+      
+        <div className="row social-media-row">
+
+        <div className="social-media-main-div">
+
+            <div className="wrapper-content">
+            <div className="social-media-content">
+              <h2>What is Social Media Marketing?</h2>
+              <p>Social media advertising agencies  are exceptional in a wide range of fields. They are extremely knowledgeable about multiple social media sites, including but not limited to Facebook, Instagram, Twitter, LinkedIn, and up-and-coming networks. They apply this information to craft distinctive methods that appeal to their intended
+               consumers.</p>
+               <p>Their area of competence is content generation. They create fascinating movies, attractive images, and intriguing messages that not only.</p>
+               <p>Their area of competence is content generation. They create fascinating movies, attractive images, and intriguing messages that not only.</p>
+               <div className='btn-social-media'>
+                <TalkToUs/>
+               </div>
+            </div>
+            </div>
+
+
+            <div className="social-media-image-div">
+              <img src="https://scandiweb.com/blog/wp-content/uploads/2024/07/instagramprofile_rhodeskin-1-623x1024.png" className="img-fluid"/>
+            </div>
+
+            </div>
+
+        </div>
+
+      </div>
+      </section>
+
       
 
 {/* But Why Your Logo Even Matters?*/}
@@ -445,6 +480,58 @@ function page() {
     </div>
 </section>
 
+
+
+{/* sucess stories */}
+<section className='sucess-stories'>
+ <div className="container success-stories py-5">
+            <h2 className="success-stories-title">Success Stories</h2>
+            <p className="success-stories-para">See how we've helped brands achieve remarkable growth through strategic social media marketing.</p>
+            <div className="row gx-4">
+                <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
+                    <div className="success-story p-0">
+                        <img src="success.png" className="img-fluid" />
+                        <div className="p-4 success-story-content">
+                            <h3>E-commerce Brand Growth</h3>
+                            <p>Increased social media engagement by 300% and drove $2M in revenue.</p>
+                            <div className="mt-4 success-points">
+                                <span>+300% Engagement</span>
+                                <span>$2M Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
+                    <div className="success-story p-0">
+                        <img src="success.png" className="img-fluid" />
+                        <div className="p-4 success-story-content">
+                            <h3>E-commerce Brand Growth</h3>
+                            <p>Increased social media engagement by 300% and drove $2M in revenue.</p>
+                            <div className="mt-4 success-points">
+                                <span>+300% Engagement</span>
+                                <span>$2M Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
+                    <div className="success-story p-0">
+                        <img src="success.png" className="img-fluid" />
+                        <div className="p-4 success-story-content">
+                            <h3>E-commerce Brand Growth</h3>
+                            <p>Increased social media engagement by 300% and drove $2M in revenue.</p>
+                            <div className="mt-4 success-points">
+                                <span>+300% Engagement</span>
+                                <span>$2M Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
 
 {/* faqs */}
