@@ -54,7 +54,9 @@ export default function HorizontalScroll() {
             pin: true,
             scrub: 1,
         
-            end: () => container.scrollWidth - document.documentElement.clientWidth
+            // end: () => container.scrollWidth - document.documentElement.clientWidth
+            end: () => "+=" + (container.scrollWidth - window.innerWidth)
+
           },
           defaults: { ease: "none", duration: 1 }
         });

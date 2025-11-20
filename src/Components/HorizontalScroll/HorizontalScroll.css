@@ -160,3 +160,13 @@
   opacity: 1;
   border-radius: 40px;
 } */
+
+
+.section-hori {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hrpanel {
+  flex: 0 0 100vw; /* Every slide = 100% width of screen */
+}
