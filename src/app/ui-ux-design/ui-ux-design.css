@@ -1,5 +1,3 @@
-
-
 /* Designs that speak your industryis language */
 .ui-img1,
 .ui-img2,
@@ -16,6 +14,11 @@
 .ui-img2, .row-2{z-index: 2;}
 .ui-img3, .row-3{z-index: 3;}
 .row-4{z-index: 4;}
+
+.designs-that-head{
+  font-family: "Corbert";
+  font-size: 50px;
+}
 
 /* UI/UX means nailing the basics */
 #ui-heading{
@@ -325,10 +328,19 @@
 
 
 /* creaft */
+
+.craft-desktop-view{
+    padding: 60px 0;
+}
+
 .craft-heading{
   font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: "Corbert";
+}
+
+.craft-desktop-head{
+  font-family: "Corbert";
+  font-size: 50px;
 }
 
 .craft-para{
@@ -362,6 +374,63 @@
     font-size: 40px !important;
   }
 }
+.craft-tab-view{
+  display: none;
+}
+
+/* craft-mobile and tab-view */
+
+
+@media(max-width:991px){
+  .craft-desktop-view{
+    display: none;
+  }
+
+  .craft-tab-view{
+  display: block;
+}
+}
+
+.craft-tab-view{
+  padding: 40px 0;
+}
+.craft-tab-view-row{
+margin: 0;
+}
+
+.craft-tab-view-row h2{
+ font-size: 40px;
+ font-family: "Corbert";
+}
+
+.craft-first-div-mobile{
+  padding: 20px;
+}
+
+.craft-first-div-mobile-content{
+  box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.craft-first-div-mobile-content h2{
+  font-family: "Corbert";
+  font-size: 35px;
+}
+
+.craft-first-div-mobile-content p{
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.craft-first-div-mobile-img{
+  box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 
 
  /* faqs */

@@ -8,6 +8,7 @@ import OurConstant from '@/Components/OurConstant/OurConstant'
 import Faqs from '@/Components/Faqs/Faqs'
 import Form from '@/Components/Form/Form'
 import PagesHero from '@/Components/PagesHero/PagesHero'
+import DigitalMarketingToggleBtn from '@/Components/DigitalMarketingToggleBtn/DigitalMarketingToggleBtn'
 
 function page() {
 const heading ="Where Brands Are Born"
@@ -93,6 +94,7 @@ const heading ="Where Brands Are Born"
       <div className='col-9 '>
       <div className='switch-on-middle-div-para'>
       <p>Switch on your potential with digital marketing</p>
+      <DigitalMarketingToggleBtn/>
       </div>
       </div>
       <div className='col-2'>
