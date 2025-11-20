@@ -168,5 +168,12 @@
 }
 
 .hrpanel {
-  flex: 0 0 100vw; /* Every slide = 100% width of screen */
+  flex: 0 0 100vw; 
+}
+
+
+@media(max-width:1200px){
+  .horizonatl-scroll-all-content{
+  margin: 30px;
+}
 }
