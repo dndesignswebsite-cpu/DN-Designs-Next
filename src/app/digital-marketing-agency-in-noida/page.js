@@ -65,20 +65,19 @@ const heading ="Where Brands Are Born"
   <div className='container'>
     <div className='row'>
 
-      <div className='col'>
+      <div className='col-12 col-md-12 col-lg-6'>
 
         <div className='row'>
-            <div className='col-6'>
+            <div className='col-12 col-md-6 switch-on-div-main'>
               <div className='switch-on-div'>
                 <div className='vertical-bar'></div>
                 <div className='switch-on-div-content'>
                  <h3>30+</h3>
                  <p>of the global population uses the Internet</p>
-                
                  </div>
               </div>
             </div>
-            <div className='col-6'>
+            <div className='col-12 col-md-6 switch-on-div-main'>
               <div className='switch-on-div'>
                 <div className='vertical-bar'></div>
                 <div className='switch-on-div-content'>
@@ -90,20 +89,19 @@ const heading ="Where Brands Are Born"
             </div>
           </div>
 
-          <div className='mt-3'>
+          <div className='row switch-row'>
       <div className='col-9 '>
       <div className='switch-on-middle-div-para'>
       <p>Switch on your potential with digital marketing</p>
-      <DigitalMarketingToggleBtn/>
       </div>
       </div>
-      <div className='col-2'>
-  
+      <div className='col-3 toggle-btn'>
+  <DigitalMarketingToggleBtn/>
       </div>
     </div>
 
 
-  <div className=''>
+  <div className='switch-on-middle-div-img-last'>
       <div className='col switch-on-middle-div-img'>
 
         <img src='https://dndesigns.co.in/wp-content/uploads/2025/06/1-01-01.png' className='img-fluid'></img>
@@ -111,7 +109,7 @@ const heading ="Where Brands Are Born"
     </div>
       </div>
 
-      <div className='col main-switch-img'>
+      <div className='col-12 col-md-12 col-lg-6 main-switch-img'>
             <img  src='https://dndesigns.co.in/wp-content/uploads/2025/07/ghfh.jpg' className='img-fluid'/>
         </div>
     </div>

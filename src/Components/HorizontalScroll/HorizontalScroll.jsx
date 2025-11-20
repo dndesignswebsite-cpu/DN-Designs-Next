@@ -7,56 +7,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-// horizontal scroll
+// horizontal scroll data
   const slidesData = [
     { title: "The Bobalist", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/14.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water "
+       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
+       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
      
      },
     { title: "Grin Care", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/11h.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water "
+       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
+       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
      
      },
     { title: "Nature's Balance", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/12.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water "
+       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
+       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
      
      },
     { title: "Nectarpure", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/13.jpg',
-      para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water "
+      para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
+      btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
      },
 ];
-
-
-
-
-
-
-const panelContent = [
-  {
-    heading: "Project One",
-    paragraph: "This is the description for the first project panel. Scroll to see more.",
-    cls: "firstAn"
-  },
-  {
-    heading: "Project Two",
-    paragraph: "Here is the summary of the second exciting project. This uses the same animation class.",
-    cls: "firstAn"
-  },
-  {
-    heading: "Project Three (Animated)",
-    paragraph: "The third panel features an extra scale-up animation because it has the 'secondAn' class.",
-    cls: "secondAn"
-  },
-  {
-    heading: "Project Four (No Animation)",
-    paragraph: "This is the final panel. It does not have the extra fade/scale animation, just the horizontal scroll.",
-    cls: "" 
-  },
-];
-
-
-
-
 
 
 export default function HorizontalScroll() {
@@ -154,21 +126,6 @@ export default function HorizontalScroll() {
       <div className="hrspacer"></div>
 
       <section className="section-hori hrportfolio" ref={containerRef}>
-        {/* <h2 className="portfolio_title text-stroke parallax">Portfolio</h2> */}
-
-        
-{/*         {panelContent.map((item, i) => (
-          <div className="hrpanel" key={i}>
-            <div className="hrpanel_item">
-                <div className={`text-content ${item.cls}`}>
-                    <h1 style={{ fontSize: '3rem', color: '#fff' }}>{item.heading}</h1>
-                    <p style={{ fontSize: '1.2rem', color: '#ccc', maxWidth: '80%' }}>{item.paragraph}</p>
-                </div>
-            </div>
-          </div>
-        ))} */}
-
-
   {slidesData.map((item, i) => (
           <div className="hrpanel" key={i}>
             <div className="hrpanel_item">
@@ -176,18 +133,18 @@ export default function HorizontalScroll() {
              <div className="hr-branding-that-div">
              <div className="horizonatl-scroll-all-content">
                 <img src={item.img} className="img-fluid"/>
-                 <div className="hr-brand-that-overlay">
-                        <div className="hr-our-brand-that-content">
-                            <h3>{slidesData.title}</h3>
-                            <div className="hr-brand-that-buttons">
-                                <button>Brand Identity</button>
-                                <button>UI/UX</button>
-                                <button>Website</button>
-                                <button>Website</button>
-                            </div>
-                            <p>{slidesData.para}</p>
-                        </div>
-                    </div>
+                <div className="overlay-data">
+
+                
+                <div className="overlay-content-pure">
+                   <h2>{item.title}</h2>
+                   <button>{item.btn1}</button>
+                   <button>{item.btn2}</button>
+                   <button>{item.btn3}</button>
+                   <p>{item.para}</p>
+                 </div>
+                  
+                 </div>
                     </div>
                 </div>
                 
@@ -202,3 +159,20 @@ export default function HorizontalScroll() {
     </>
   );
 } 
+
+
+
+
+
+{/* <div className="hr-brand-that-overlay">
+                        <div className="hr-our-brand-that-content">
+                            <h3>{slidesData.title}</h3>
+                            <div className="hr-brand-that-buttons">
+                                <button>Brand Identity</button>
+                                <button>UI/UX</button>
+                                <button>Website</button>
+                                <button>Website</button>
+                            </div>
+                            <p>{slidesData.para}</p>
+                        </div>
+                    </div> */}

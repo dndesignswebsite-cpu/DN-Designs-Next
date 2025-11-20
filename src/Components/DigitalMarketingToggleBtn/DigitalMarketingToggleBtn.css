@@ -33,9 +33,9 @@
   transition: 0.3s;
 }
 
-/* When ON */
+
 input:checked + .slider {
-  background-color: #4da3ff; /* same blue tone as screenshot */
+  background-color: #4da3ff; 
 }
 
 input:checked + .slider:before {

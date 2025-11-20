@@ -1,6 +1,7 @@
-
-
 /* Switch on your potential with digital marketing */
+.switch-on{
+  padding: 40px 0;
+}
 .switch-on-div{
    display: flex;
    align-items: center;
@@ -8,7 +9,10 @@
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   border: 1px solid #E5E7EB;
+  height: 100%;
 }
+
+
 
 .switch-on-div h3{
   font-size: 43px;
@@ -26,7 +30,10 @@
 }
 
 
-
+.switch-row{
+    margin-top: 20px;
+    
+  }
 
 
 .switch-on-main-row{
@@ -34,9 +41,24 @@
 }
 
 @media(max-width:991px){
+  
+
   .switch-on-div{
    margin:20px 20px;
 }
+
+.switch-row{
+    margin-top: 40px;
+    padding-left: 15px;
+  }
+
+  .switch-on-middle-div-img-last{
+    margin: 20px 0;
+  }
+
+  .switch-on-div-main{
+    margin-top: 20px;
+  }
 }
 
 .vertical-bar{
@@ -70,6 +92,12 @@ padding: 0;
 
 .main-switch-img img{
  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -209,6 +237,9 @@ padding: 0;
 
 
 /* organic-sessions  */
+.organic-sessions{
+  padding: 50px 0;
+}
 
 .organic-sessions-row{
     background-color: #ca2734;
@@ -232,4 +263,29 @@ padding: 0;
    font-family: "Roboto";
    color: #fff;
    padding-top:20px;
+}
+
+@media(max-width:991px){
+  .organic-sessions{
+  padding: 40px 10px;
+}
+}
+
+/* faqs */
+
+.faqs{
+  padding: 50px 0px 40px 0px;
+}
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: Corbert;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
 }
