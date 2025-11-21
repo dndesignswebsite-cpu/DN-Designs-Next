@@ -4,15 +4,16 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./AnimationSwipper.css";
+import "./WebdesignVideoSwipper.css";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 
 
 
-export default function AnimationSwipper() {
+export default function WebdesignVideoSwipper() {
+    const slideLabels = ['Startups', 'Enterprises', 'Ecommerce'];
   return (
-    <div>
+    <div className="WebdesignVideoSwipper-container">
       <div className="container">
         <Swiper
           slidesPerView={1}
@@ -23,7 +24,11 @@ export default function AnimationSwipper() {
             prevEl: ".swiper-button-prev",
           }}
           pagination={{
+             el: '.swiper-pagination',
             clickable: true,
+            renderBullet: function (index, className) {
+                return `<span class="${className}">${slideLabels[index]}</span>`;
+            },
           }}
           modules={[Pagination]}
           className="mySwiper_mm"
@@ -179,7 +184,7 @@ export default function AnimationSwipper() {
             
           </SwiperSlide>
 
-          
+          <div class="swiper-pagination"></div>
         </Swiper>
       </div>
     </div>

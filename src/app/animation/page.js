@@ -1,6 +1,5 @@
 import React from "react";
 import "./animation.css";
-import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
 import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
@@ -9,9 +8,9 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 
 function page() {
 
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
+  const heading ="Animation Company in India"
+  const subHeading ="Creating Impactful Video Solutions For Business Growth"
+  const para ="Animated videos have a charm and a power to engross the viewers. For brands, these videos are a smart choice to share stories, build brand awareness, simplify complex product/service information and evoke strong emotional responses from customers. Need more details? Stick around as we, an animation company in India, are just getting started. Find out about the animated video solutions we offer, explore our portfolio and learn why you should partner with us. If you have questions, take a closer look at our FAQs section. We might have answered them already. Cheers!"
   
 
      const leftFaqs = [
@@ -449,7 +448,7 @@ function page() {
       <section className="user-engagement">
         <div className="container">
           <div className="row">
-            <div className="col-5"> 
+            <div className="col-12 col-md-12 col-lg-5"> 
             <div className="user-engagement-div user-engagement-div-sh">
               <div className="user-eng-up-div">
                 <img
@@ -463,14 +462,14 @@ function page() {
             </div>
             </div>
 
-               <div className="col-2"> 
+               <div className="col-12 col-md-12 col-lg-2"> 
             <div className="user-engagement-div">
             <img src="http://dndesigns.co.in/wp-content/uploads/2025/07/172356855_ae84189b-ee2b-40e9-8ad6-4b3c9585df84.jpg" className="img-fluid"></img>
             </div>
             </div>
 
 
-                  <div className="col-5"> 
+                  <div className="col-12 col-md-12 col-lg-5"> 
             <div className="user-engagement-div user-engagement-div-sh">
               <div className="user-eng-up-div">
                 <img

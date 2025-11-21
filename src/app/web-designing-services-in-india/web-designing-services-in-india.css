@@ -476,3 +476,46 @@
        color: #000;
        padding-top:20px;
 }
+
+
+/* Make your brand click! */
+.make-your-brand h2{
+      font-size: 40px;
+      font-family: "Corbert";
+      padding: 30px 0;
+      text-align: center;
+}
+
+.make-your-brand-col{
+  padding-top: 30px;
+}
+
+
+.make-your-brand-col p{
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 1.5em;
+  padding-right: 30px;
+
+}
+
+.make-your-brand-bold{
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+}
+
+
+/* faqs */
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: Corbert;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
+}

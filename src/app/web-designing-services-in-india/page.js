@@ -3,12 +3,48 @@ import "./web-designing-services-in-india.css"
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
 import TalkToUs from '@/Components/TalkToUs/TalkToUs'
 import PagesHero from '@/Components/PagesHero/PagesHero'
+import WebdesignVideoSwipper from '@/Components/WebdesignVideoSwipper/WebdesignVideoSwipper'
+import Faqs from '@/Components/Faqs/Faqs'
+import Form from '@/Components/Form/Form'
 
 function page() {
   const heading ="Where Brands Are Born"
   const subHeading ="A Creative Branding Agency"
   const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
   
+
+
+  // faqs content
+   const leftFaqs = [
+    {
+      question: "How can I contact your team?",
+      answer:
+        "You can use the contact form or call us directly at +91-9999999999.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+  ];
+
+   const rightFaqs = [
+    {
+      question: "Where is your office located?",
+      answer: "We are based in Noida, India, but work with clients worldwide.",
+    },
+    {
+      question: "What is your response time?",
+      answer: "We usually reply within 24 hours of receiving your query.",
+    },
+  ];
+
+
   return (
     <div>
        {/*Breadcrumb*/}
@@ -633,6 +669,45 @@ function page() {
     </div>
 </section>
 
+
+{/* WebdesignVideoSwipper */}
+<WebdesignVideoSwipper/>
+
+{/* Make your brand click! */}
+<section className='make-your-brand'>
+  <div className='container'>
+    <div className='row'>
+    <h2>Make your brand click!</h2>
+    <img src='https://dndesigns.co.in/wp-content/uploads/2025/04/web-banner-2048x800.jpg' className='img-fluid'/>
+        
+      <div className='col-12 col-md-6 make-your-brand-col'>
+        <p><span className='make-your-brand-bold'>Standing Out of the crowd </span><br/>
+        services, or brands using digital channels including websites, email, mobile applications, social media, and search engines. With the aim of raising brand recognition, boosting website traffic, creating leads, and ultimately turning them into customers, it is the use of digital technology to connect with potential consumers and establish connections with them.</p>
+      </div>
+
+      <div className='col-12 col-md-6 make-your-brand-col'>
+        <p><span className='make-your-brand-bold'>Standing Out of the crowd </span><br/>
+        services, or brands using digital channels including websites, email, mobile applications, social media, and search engines. With the aim of raising brand recognition, boosting website traffic, creating leads, and ultimately turning them into customers, it is the use of digital technology to connect with potential consumers and establish connections with them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ {/* faqs */}
+
+      <section className="faqs">
+        <div className="container">
+          <div className="row text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+      </section>
+
+
+      {/* Form */}
+      <Form/>
     </div>
   )
 }
