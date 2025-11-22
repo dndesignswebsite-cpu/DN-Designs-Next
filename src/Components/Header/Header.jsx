@@ -160,6 +160,7 @@ export default function Header() {
                       </span>
                       <FontAwesomeIcon icon={faChevronDown} />
                       <div className={`${styles["dropdown"]}`}>
+                      <ul>
                         <li>
                           <Link
                             href="/branding"
@@ -197,6 +198,7 @@ export default function Header() {
                             Brand Name Suggestion
                           </Link>
                         </li>
+                        </ul>
                       </div>
                     </li>
 
@@ -214,6 +216,7 @@ export default function Header() {
                       Communication
                       <FontAwesomeIcon icon={faChevronDown} className="drop-down-icon"/>
                       <div className={`${styles["dropdown"]}`}>
+                      <ul>
                         <li>
                           <Link
                             href="/animation"
@@ -252,6 +255,7 @@ export default function Header() {
                             Social Media Marketing
                           </Link>
                         </li>
+                        </ul>
                       </div>
                     </li>
 
@@ -265,7 +269,7 @@ export default function Header() {
                       </span>
                       <FontAwesomeIcon icon={faChevronDown} />
                       <div className={`${styles["dropdown"]}`}>
-                       
+                       <ul>
                          <li>
                       <Link
                         href="/web-designing-services-in-india"
@@ -295,7 +299,7 @@ export default function Header() {
                         SEO
                       </Link>
                     </li>
-                       
+                       </ul>
                       </div>
                     </li>
 

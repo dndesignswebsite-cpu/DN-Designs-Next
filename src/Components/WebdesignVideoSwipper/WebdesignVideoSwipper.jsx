@@ -30,21 +30,21 @@ export default function WebdesignVideoSwipper() {
                 return `<span class="${className}">${slideLabels[index]}</span>`;
             },
           }}
-          modules={[Pagination]}
+          modules={[Pagination,Navigation]}
           className="mySwiper_mm"
         >
           <SwiperSlide>
-            <div className="">
+            <div>
               <div className="ratio ratio-16x9 shoot-video-youtube">
                 <iframe
                   width="1120"
                   height="630"
                   src="https://www.youtube.com/embed/s-PQhgPFPjE"
                   title="Nectarpure - 3D Product Cinematic Video"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
@@ -84,17 +84,17 @@ export default function WebdesignVideoSwipper() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="">
+            <div>
               <div className="ratio ratio-16x9 shoot-video-youtube">
                 <iframe
                   width="1120"
                   height="630"
                   src="https://www.youtube.com/embed/dt35fewQRho"
                   title="Cinematic 3D Brand Film for Green Horn Energy Drink | Crafted by DN Designs"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
@@ -141,10 +141,10 @@ export default function WebdesignVideoSwipper() {
                   height="630"
                   src="https://www.youtube.com/embed/FfouzC6rBJY"
                   title="Premium 3D Render for Nature&#39;s Balance - Juices &amp; Salads | A DN Designs Project"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
@@ -184,7 +184,7 @@ export default function WebdesignVideoSwipper() {
             
           </SwiperSlide>
 
-          <div class="swiper-pagination"></div>
+          <div className="swiper-pagination"></div>
         </Swiper>
       </div>
     </div>
