@@ -5,6 +5,7 @@ import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
 import AnimationSwipper from "@/Components/AnimationSwipper/AnimationSwipper";
 import PagesHero from "@/Components/PagesHero/PagesHero";
+import ExploreOurVideoAnimation from "@/Components/ExploreOurVideoAnimation/ExploreOurVideoAnimation";
 
 function page() {
 
@@ -55,8 +56,18 @@ function page() {
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
 
+    
 
-
+    {/* Explore Our Video Gallery */}
+      <section className="explore-our-video-gallery">
+      <div className="container">
+      <div className="row">
+        <h2>Explore Our Video Gallery</h2>
+      </div>
+             <ExploreOurVideoAnimation/>
+      </div> 
+      </section>
+      
       <AnimationSwipper/>
 
       {/* We Are The Leading Video */}

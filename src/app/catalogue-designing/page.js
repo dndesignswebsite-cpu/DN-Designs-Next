@@ -1,13 +1,12 @@
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
 import React from 'react'
 import "./catalogue-designing.css"
-import TalkToUs from '@/Components/TalkToUs/TalkToUs'
 import ECataloguesBtn from '@/Components/E-Catalogues-Btn/ECataloguesBtn'
 import CreativeBrochureDesign from '@/Components/CreativeBrochureDesign/CreativeBrochureDesign'
 import Form from '@/Components/Form/Form'
 import Faqs from '@/Components/Faqs/Faqs'
 import PagesHero from '@/Components/PagesHero/PagesHero'
-import CatalougePageFlip from '@/Components/CatalougePageFlip/CatalougePageFlip'
+import CatalougePageFlip from '@/Components/LightBox/LightBox'
 
 function page() {
 
@@ -56,11 +55,8 @@ function page() {
       <section className="branding-hero">
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
+
       
-
-
-   <CatalougePageFlip/>
-
       {/*The Protagonists */}
 
       <section className="appr-pro">

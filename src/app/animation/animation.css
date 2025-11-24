@@ -1,3 +1,15 @@
+/* Explore Our Video Gallery */
+.explore-our-video-gallery{
+  padding: 50px 0;
+}
+.explore-our-video-gallery h2{
+  font-size: 40px;
+  font-family: "Corbert";
+  color: #000;
+  text-align: center;
+  padding: 30px 0;
+
+}
 
 /* We Are The Leading Video */
 .we-are-the-leading{

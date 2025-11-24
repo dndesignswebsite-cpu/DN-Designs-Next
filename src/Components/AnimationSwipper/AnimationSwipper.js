@@ -3,12 +3,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import "./AnimationSwipper.css";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
-
+import "./AnimationSwipper.css";
 
 export default function AnimationSwipper() {
   return (
@@ -16,16 +14,14 @@ export default function AnimationSwipper() {
       <div className="container">
         <Swiper
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={10}
+          autoplay={{
+            delay: 500,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
+          navigation={true}
+          modules={[Navigation]}
           className="mySwiper_mm"
         >
           <SwiperSlide>
@@ -176,10 +172,7 @@ export default function AnimationSwipper() {
                 </div>
               </div>
             </div>
-            
           </SwiperSlide>
-
-          
         </Swiper>
       </div>
     </div>
