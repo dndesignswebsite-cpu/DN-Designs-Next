@@ -167,7 +167,7 @@
 }
 
 .custom-swiper {
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .testimonial-swiper .swiper-button-next,
@@ -218,6 +218,20 @@
     left: 40%;
     top: 80%;
   }
+
+  .testimonial {
+  margin-bottom: -70px;
+}
+}
+
+@media(max-width:767px){
+  .custom-swiper {
+  padding-bottom: 80px;
+}
+
+.testimonial {
+  margin-bottom: -100px;
+}
 }
 
 
@@ -231,6 +245,14 @@
     left: 35%;
     top: 80%;
   }
+
+  .custom-swiper {
+  padding-bottom: 90px;
+}
+
+.testimonial {
+  margin-bottom: -100px;
+}
 }
 
 .swiper-navigation-icon{
