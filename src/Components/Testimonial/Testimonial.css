@@ -196,7 +196,7 @@
 
 .testimonial-swiper .swiper-button-next:after,
 .testimonial-swiper .swiper-button-prev:after {
-  font-size: 16px !important;
+  font-size: 10px !important;
 }
 
 @media (max-width: 768px) {
@@ -218,4 +218,21 @@
     left: 40%;
     top: 80%;
   }
+}
+
+
+@media (max-width: 442px) {
+  .testimonial-swiper .swiper-button-next {
+    right: 35%;
+    top: 80%;
+  }
+
+  .testimonial-swiper .swiper-button-prev {
+    left: 35%;
+    top: 80%;
+  }
+}
+
+.swiper-navigation-icon{
+  height: 20px !important;
 }
