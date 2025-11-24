@@ -1,7 +1,7 @@
 /* testinomails */
 
 .testimonial {
-  padding: 40px 0;
+  padding-top: 70px;
 }
 
 .testi-slide {
@@ -11,7 +11,6 @@
 }
 
 .testi-left-content {
-  height: 100%;
   background-color: #ca2734;
   padding: 40px;
   border-radius: 10px 10px 0 0;
@@ -38,7 +37,7 @@
 .testi-left-content p {
   font-size: 14px;
   margin-bottom: 0;
-  font-family:"Roboto";
+  font-family: "Roboto";
 }
 
 .testi-left-content h3 {
@@ -79,7 +78,6 @@
   object-fit: cover;
   margin: 0;
   padding: 0;
-
 }
 .testi-right-content {
   height: 100%;
@@ -117,6 +115,12 @@
   margin: 0 1px;
 }
 
+@media (min-width: 1199px) {
+  .testi-left-content {
+    height: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .testi-slide {
     height: 500px;
@@ -128,7 +132,6 @@
   .testi-main-img {
     border-radius: 0;
   }
-
 
   .testi-right-content {
     border-radius: 0 10px 10px 0;
@@ -145,7 +148,7 @@
   padding-right: 0;
 }
 
-@media(max-width:767px){
+@media (max-width: 767px) {
   .testi-slide {
     max-height: 1000px;
   }
@@ -155,49 +158,64 @@
   }
 }
 
+.testi-right-content {
+  box-shadow: 0px 3px 18px -2px rgba(0, 0, 0, 0.2);
+}
 
-/*  */
-/* Make swiper wrapper relative so buttons stay inside */
 .testimonial-swiper {
   position: relative;
 }
 
-/* Style the navigation buttons */
+.custom-swiper {
+  padding-bottom: 100px;
+}
+
 .testimonial-swiper .swiper-button-next,
 .testimonial-swiper .swiper-button-prev {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
-  color: #ca2734;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2px;
 }
 
-/* Position properly */
 .testimonial-swiper .swiper-button-next {
-  right: 20px;
-  top: 90%;
+  right: 45%;
+  top: 80%;
 }
 
 .testimonial-swiper .swiper-button-prev {
-  left: 20px;
+  left: 45%;
+  top: 80%;
 }
 
-/* Make arrow icons normal size */
 .testimonial-swiper .swiper-button-next:after,
 .testimonial-swiper .swiper-button-prev:after {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
-/* Mobile adjustments */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .testimonial-swiper .swiper-button-next {
     right: 10px;
   }
   .testimonial-swiper .swiper-button-prev {
     left: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonial-swiper .swiper-button-next {
+    right: 40%;
+    top: 80%;
+  }
+
+  .testimonial-swiper .swiper-button-prev {
+    left: 40%;
+    top: 80%;
   }
 }

@@ -904,7 +904,8 @@ const heading ="Where Brands Are Born"
           </div>
         </div>
       </section>
-      {/* <LogoDesigningTab/> */}
+      
+      <LogoDesigningTab/>
 
  {/* faqs */}
 

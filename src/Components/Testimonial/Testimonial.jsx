@@ -14,7 +14,7 @@ function Testimonial() {
       {/*.....testimonial...... */}
 
       <section className="testimonial">
-        <div className="container   testimonial-swiper">
+        <div className="container testimonial-swiper">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -31,7 +31,7 @@ function Testimonial() {
               <div>
                 <div className="custom-swiper">
                   <div className="swiper-slide">
-                    <div className="row align-items-stretch testi-slide shadow-lg rounded-xl">
+                    <div className="row align-items-stretch testi-slide">
                       <div className="col-6 col-md-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
@@ -91,11 +91,12 @@ function Testimonial() {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div>
                 <div className="custom-swiper">
                   <div className="swiper-slide">
-                    <div className="row align-items-stretch testi-slide shadow-lg rounded-xl">
+                    <div className="row align-items-stretch testi-slide">
                       <div className="col-6 col-md-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
@@ -125,7 +126,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1662129811700.jpg"
+                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -155,11 +156,12 @@ function Testimonial() {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div>
                 <div className="custom-swiper">
                   <div className="swiper-slide">
-                    <div className="row align-items-stretch testi-slide shadow-lg rounded-xl">
+                    <div className="row align-items-stretch testi-slide">
                       <div className="col-6 col-md-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
@@ -189,7 +191,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1737743837430.jpg"
+                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
