@@ -8,11 +8,11 @@ function CareerPageTab() {
 
   return (
     <div>
-          {/* {
+          {
             tabsTittle.map((item)=>{
              return <h2>{item[3]}</h2>
             })
-          } */}
+          }
     </div>
   )
 }

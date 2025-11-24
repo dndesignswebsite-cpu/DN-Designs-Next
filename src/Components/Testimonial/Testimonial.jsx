@@ -1,21 +1,20 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import "./Testimonial.css"
-
+import "./Testimonial.css";
 
 function Testimonial() {
   return (
     <div>
-       {/*.....testimonial...... */}
+      {/*.....testimonial...... */}
 
       <section className="testimonial">
-        <div className="container">
+        <div className="container   testimonial-swiper">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -51,8 +50,12 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 fw-bold mb-0">Mr. Vineet Tiwari</h2>
-                          <p className="fs-6 opacity-75">Founder, The Bobalist</p>
+                          <h2 className="fs-4 fw-bold mb-0">
+                            Mr. Vineet Tiwari
+                          </h2>
+                          <p className="fs-6 opacity-75">
+                            Founder, The Bobalist
+                          </p>
                         </div>
                       </div>
 
@@ -111,8 +114,12 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 fw-bold mb-0">Mr. Vineet Tiwari</h2>
-                          <p className="fs-6 opacity-75">Founder, The Bobalist</p>
+                          <h2 className="fs-4 fw-bold mb-0">
+                            Mr. Vineet Tiwari
+                          </h2>
+                          <p className="fs-6 opacity-75">
+                            Founder, The Bobalist
+                          </p>
                         </div>
                       </div>
 
@@ -121,7 +128,7 @@ function Testimonial() {
                           src="https://dndesigns.co.in/wp-content/uploads/2025/09/1662129811700.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
-                          />
+                        />
                       </div>
 
                       <div className="col-12 col-md-4 testi-right-content">
@@ -159,7 +166,7 @@ function Testimonial() {
                             <img
                               src="https://images.vexels.com/media/users/3/223246/isolated/preview/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
                               alt="Icon"
-                              />
+                            />
                             <p>TESTIMONIALS</p>
                           </div>
                           <h3>
@@ -171,8 +178,12 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 fw-bold mb-0">Mr. Vineet Tiwari</h2>
-                          <p className="fs-6 opacity-75">Founder, The Bobalist</p>
+                          <h2 className="fs-4 fw-bold mb-0">
+                            Mr. Vineet Tiwari
+                          </h2>
+                          <p className="fs-6 opacity-75">
+                            Founder, The Bobalist
+                          </p>
                         </div>
                       </div>
 
@@ -181,7 +192,7 @@ function Testimonial() {
                           src="https://dndesigns.co.in/wp-content/uploads/2025/09/1737743837430.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
-                         />
+                        />
                       </div>
 
                       <div className="col-12 col-md-4 testi-right-content">
@@ -211,10 +222,8 @@ function Testimonial() {
           </Swiper>
         </div>
       </section>
-
-
     </div>
-  )
+  );
 }
 
-export default Testimonial
+export default Testimonial;

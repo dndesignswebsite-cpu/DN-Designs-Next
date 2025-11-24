@@ -154,3 +154,50 @@
     border-radius: 10px 0 0 10px;
   }
 }
+
+
+/*  */
+/* Make swiper wrapper relative so buttons stay inside */
+.testimonial-swiper {
+  position: relative;
+}
+
+/* Style the navigation buttons */
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+  color: #ca2734;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Position properly */
+.testimonial-swiper .swiper-button-next {
+  right: 20px;
+  top: 90%;
+}
+
+.testimonial-swiper .swiper-button-prev {
+  left: 20px;
+}
+
+/* Make arrow icons normal size */
+.testimonial-swiper .swiper-button-next:after,
+.testimonial-swiper .swiper-button-prev:after {
+  font-size: 18px !important;
+}
+
+/* Mobile adjustments */
+@media(max-width: 768px) {
+  .testimonial-swiper .swiper-button-next {
+    right: 10px;
+  }
+  .testimonial-swiper .swiper-button-prev {
+    left: 10px;
+  }
+}
