@@ -9,24 +9,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 // horizontal scroll data
   const slidesData = [
-    { title: "The Bobalist", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/14.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
-       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
+    { title: "RITHM'S ENLITE", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/14.jpg',
+       para:"For Rithm’s Enlite, a brand with sparkling mineral water and prebiotic drink range, we designed a thoughtful and eye-catching brand identity, including can design, logo design and character design. We created the character and the overall brand design around the brand name to promote the refreshing and calming properties of the product.",
+       btn1:"Brand Identity", btn2:"Packaging Design", btn3:"Communication Design"
      
      },
     { title: "Grin Care", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/11h.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
-       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
+       para:"Grincare aspired to establish itself in the highly competitive oral care market. As a brand marketing agency, we worked to build their identity and a strong digital presence. We crafted their identity, designed their UI/UX and developed their website to establish them as a business offering premium oral care solutions.",
+       btn1:"Brand Identity", btn2:"Packaging Design", btn3:"UI/UX Design"
      
      },
     { title: "Nature's Balance", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/12.jpg',
-       para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
-       btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
+       para:"An upscale health-focussed cafe, Nature’s Balance approached us with the purpose of building its brand presence. We worked to create their identity & label design. In addition, as a creative design agency, we also provided them with menu design, 3D Ad design, as well as environment design services.",
+       btn1:"Brand Identity", btn2:"Environment Design", btn3:"Label Design"
      
      },
     { title: "Nectarpure", img: 'https://dndesigns.co.in/wp-content/uploads/2025/06/13.jpg',
-      para:"For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water For Rithm’s Enlite, a brand with sparkling mineral water ",
-      btn1:"UI/UX Design", btn2:"Packaging Design", btn3:"Catalouge Design"
+      para:"NECTARPURE, providing Whey protein and wellness products, wanted to establish itself as a premium lifestyle brand in the protein market. As a brand marketing agency, we created their identity, label design and 3D Ad to give a premium feel. In addition, we also designed and developed their UI/UX and complete website.",
+      btn1:"Brand Identity", btn2:"Label Design", btn3:"UI/UX Design"
      },
 ];
 

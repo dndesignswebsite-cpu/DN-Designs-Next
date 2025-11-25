@@ -295,6 +295,16 @@
   margin-top: 20px;
 }
 
+#card6-create {
+  --index: 6;
+  top: 410px;
+  margin-top: 20px;
+}
+#card7-create {
+  --index: 7;
+  top: 460px;
+  margin-top: 20px;
+}
 .card-create {
   position: sticky;
   top: 50%;

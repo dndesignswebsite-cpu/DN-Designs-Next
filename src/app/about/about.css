@@ -218,3 +218,90 @@
         width: 100%;
   }
 }
+
+
+/*.....points-about...... */
+
+.point-cont{
+  width: 1300px;
+}
+
+.points-about {
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0px 0px 1.16px 0px rgba(1.700000000000012, 1.700000000000012, 1.700000000000012, 0.21);
+  border-radius: 32px;
+  
+  margin: 0px 0px 20px 0px;
+  position: relative;
+
+  box-shadow: 0px 0px 1.16px 0px rgba(1.700000000000012, 1.700000000000012, 1.700000000000012, 0.21);
+  padding: 30px 0px 10px 0px;
+}
+.points-about-Comm{
+  box-shadow: 0px 0px 2px 1px #D5D5D5;
+  background-color: #FFFFFF;
+
+}
+
+
+.points-about-right h2 {
+  font-family: Corbert, sans-serif;
+  font-size: 180px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0%;
+}
+.points-about-right h3 {
+  color: rgb(0, 0, 0);
+  font-family: Corbert, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+
+.points-about-para p {
+    color: #888888;
+    font-family: "Roboto-Regular";
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.points-about-left img {
+  width: 100%;
+  border-radius: 20px;
+}
+.points-about-left {
+  padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+
+  .points-about{
+padding: 10px 10px 20px 10px;
+
+  }
+  .points-about-left {
+    display: none;
+  }
+  .point-cont{
+  width: 100%;
+}
+
+.points-about-right h2 {
+  font-size: 130px;
+  position: relative;
+}
+.points-about h3{
+  padding-bottom: 20px;
+}
+
+.points-about h2, .points-about h3{
+  text-align: center;
+}
+}
+
+.form-section{
+  padding: 80px 0px 30px;
+}

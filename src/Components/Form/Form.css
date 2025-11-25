@@ -1,5 +1,5 @@
 .all-page-form{
-  padding-top:30px;
+  padding-top:50px;
   padding-bottom:50px;
   padding-left: 10px;
   padding-right: 10px;
@@ -90,14 +90,16 @@
   padding: 0;
   margin: 0;
 }
-
+.form-content-wrapper{
+  height: 100%;
+}
 
 
 .form-main-content{
   background-color: #ffffff;
   border-radius: 0px 16px 16px 0px ;
   padding: 25px;
-  height: 100%;
+  height: 100% !important;
   width: 100%;
 
 }

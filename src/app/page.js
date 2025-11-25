@@ -13,6 +13,10 @@ export default function Home() {
   //   }
   // };
 
+  // form section content
+  const FormHead ="Let’s Discuss Over a Cup of Coffee"    
+  const FormPara ="Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy."   
+
   return (
     <>
       {/*.....hero...... */}
@@ -54,11 +58,11 @@ export default function Home() {
               <div className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Grin Care</h3>
+                    <h3>Rithm’s Enlite</h3>
                     <div className={`${styles["brand-buttons"]}`}>
                       <button>Brand Identity</button>
-                      <button>UI/UX</button>
-                      <button>Website</button>
+                      <button>Packaging Design</button>
+                      <button>Communication Design</button>
                     </div>
                     <p>
                       For Rithm’s Enlite, a brand with sparkling mineral water
@@ -83,19 +87,18 @@ export default function Home() {
                 </video>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Grin Care</h3>
+                    <h3>Wlue's</h3>
                     <div className={`${styles["brand-buttons"]}`}>
                       <button>Brand Identity</button>
+                      <button>Packaging Design</button>
                       <button>UI/UX</button>
                       <button>Website</button>
                     </div>
                     <p>
-                      For Rithm’s Enlite, a brand with sparkling mineral water
-                      and prebiotic drink range, we designed a thoughtful and
-                      eye-catching brand identity, including can design, logo
-                      design and character design. We created the character and
-                      the overall brand design around the brand name to promote
-                      the refreshing and calming properties of the product.
+                      Makhana brand Wlue’s approached us to launch and promote its product in the market. 
+                      Their target audience was the youth worldwide. We created its logo and packaging design. 
+                      In its packaging, we adopted a retro approach with a superhero vibe, while through its logo
+                       (with a star integrated in it), we established that the product is meant for winners.
                     </p>
                   </div>
                 </div>
@@ -105,19 +108,17 @@ export default function Home() {
               <div className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Grin Care</h3>
+                    <h3>Nectarpure</h3>
                     <div className={`${styles["brand-buttons"]}`}>
                       <button>Brand Identity</button>
+                      <button>Label Design</button>
                       <button>UI/UX</button>
-                      <button>Website</button>
                     </div>
                     <p>
-                      For Rithm’s Enlite, a brand with sparkling mineral water
-                      and prebiotic drink range, we designed a thoughtful and
-                      eye-catching brand identity, including can design, logo
-                      design and character design. We created the character and
-                      the overall brand design around the brand name to promote
-                      the refreshing and calming properties of the product.
+                      Nutraceutical brand NECTARPURE partnered with us primarily to establish its FusionMax 
+                      Whey Protein product as a niche lifestyle protein brand in the market. We shaped their 
+                      brand identity and crafted their label design to give the product a premium feel. In addition, 
+                      we also focused on creating a compelling 3D ad for their product and designed their website.
                     </p>
                   </div>
                 </div>
@@ -132,15 +133,12 @@ export default function Home() {
                       <button>Brand Identity</button>
                       <button>UI/UX</button>
                       <button>Website</button>
-                      <button>Website</button>
                     </div>
                     <p>
-                      For Rithm’s Enlite, a brand with sparkling mineral water
-                      and prebiotic drink range, we designed a thoughtful and
-                      eye-catching brand identity, including can design, logo
-                      design and character design. We created the character and
-                      the overall brand design around the brand name to promote
-                      the refreshing and calming properties of the product.
+                      Oral care product brand GrinCare teamed up with us to create a 
+                      brand presence for itself in the dental healthcare market. We helped 
+                      design its brand identity, clarify its market positioning, and craft a
+                       visually appealing, user-friendly, and conversion-driven website.
                     </p>
                   </div>
                 </div>
@@ -161,157 +159,151 @@ export default function Home() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                  <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
-                    Rithm’s Enlite
-                  </h3>
-                  <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Brand Identity
-                    </h4>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Packaging
-                    </h4>
-                  </div>
-                  <div>
-                    <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
-                    >
-                      Communication Design
-                    </h4>
-                  </div>
-                  <p>
-                    For Rithm’s Enlite, a brand with sparkling mineral water and
-                    prebiotic drink range, we designed a thoughtful and
-                    eye-catching brand identity, including can design, logo
-                    design and character design. We created the character and
-                    the overall brand design around the brand name to promote
-                    the refreshing and calming properties of the product.
-                  </p>
-                </div>
-              </div>
-              </div>
-              <div
-                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
-              >
-                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                <video className="img-fluid" autoPlay muted loop playsInline>
-                  <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
-                    type="video/mp4"
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
                   />
-                  Your browser does not support the video tag.
-                </video>
-                <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                  <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
-                    Rithm’s Enlite
-                  </h3>
-                  <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Brand Identity
-                    </h4>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Packaging
-                    </h4>
+                  <div className={`${styles["our-brand-mobile-div-content"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                      Rithm’s Enlite
+                    </h3>
+                    <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Packaging Design
+                      </h4>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Packaging Design
+                      </h4>
+                    </div>
+                    <div>
+                      <h4
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                      >
+                        Communication Design
+                      </h4>
+                    </div>
+                    <p>
+                      For Rithm’s Enlite, a brand with sparkling mineral water
+                      and prebiotic drink range, we designed a thoughtful and
+                      eye-catching brand identity, including can design, logo
+                      design and character design. We created the character and
+                      the overall brand design around the brand name to promote
+                      the refreshing and calming properties of the product.
+                    </p>
                   </div>
-                  <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Brand Identity
-                    </h4>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Packaging
-                    </h4>
-                  </div>
-                  <p>
-                    For Rithm’s Enlite, a brand with sparkling mineral water and
-                    prebiotic drink range, we designed a thoughtful and
-                    eye-catching brand identity, including can design, logo
-                    design and character design. We created the character and
-                    the overall brand design around the brand name to promote
-                    the refreshing and calming properties of the product.
-                  </p>
                 </div>
-              </div>
               </div>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                  <h3 className={`${styles['mobile-view-our-brand-h3']}`}>
-                    Rithm’s Enlite
-                  </h3>
-                  <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Brand Identity
-                    </h4>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Packaging
-                    </h4>
+                  <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className={`${styles["our-brand-mobile-div-content"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                      Wlue's
+                    </h3>
+                    <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Brand Identity
+                      </h4>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Packaging Design
+                      </h4>
+                    </div>
+                    <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                       UI/UX
+                      </h4>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Website
+                      </h4>
+                    </div>
+                    <p>
+                      Makhana brand Wlue’s approached us to launch and promote its product in the market. 
+                      Their target audience was the youth worldwide. We created its logo and packaging design. 
+                      In its packaging, we adopted a retro approach with a superhero vibe, while through its logo
+                       (with a star integrated in it), we established that the product is meant for winners.
+                    </p>
                   </div>
-                  <div>
-                    <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
-                    >
-                      Communication Design
-                    </h4>
-                  </div>
-                  <p>
-                    For Rithm’s Enlite, a brand with sparkling mineral water and
-                    prebiotic drink range, we designed a thoughtful and
-                    eye-catching brand identity, including can design, logo
-                    design and character design. We created the character and
-                    the overall brand design around the brand name to promote
-                    the refreshing and calming properties of the product.
-                  </p>
                 </div>
-              </div>
               </div>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                  <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
-                    Rithm’s Enlite
-                  </h3>
-                  <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Brand Identity
-                    </h4>
-                    <h4 className={`${styles["our-brand-mobile-btn"]}`}>
-                      Packaging
-                    </h4>
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
+                  />
+                  <div className={`${styles["our-brand-mobile-div-content"]}`}>
+                    <h3 className={`${styles['mobile-view-our-brand-h3']}`}>
+                      Nectarpure
+                    </h3>
+                    <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Brand Identity
+                      </h4>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Label Design
+                      </h4>
+                    </div>
+                    <div>
+                      <h4
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                      >
+                       UI/UX
+                      </h4>
+                    </div>
+                    <p>
+                      Nutraceutical brand NECTARPURE partnered with us primarily to establish its FusionMax 
+                      Whey Protein product as a niche lifestyle protein brand in the market. We shaped their 
+                      brand identity and crafted their label design to give the product a premium feel. In addition, 
+                      we also focused on creating a compelling 3D ad for their product and designed their website.
+                    </p>
                   </div>
-                  <div>
-                    <h4
-                      className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
-                    >
-                      Communication Design
-                    </h4>
-                  </div>
-                  <p>
-                    For Rithm’s Enlite, a brand with sparkling mineral water and
-                    prebiotic drink range, we designed a thoughtful and
-                    eye-catching brand identity, including can design, logo
-                    design and character design. We created the character and
-                    the overall brand design around the brand name to promote
-                    the refreshing and calming properties of the product.
-                  </p>
                 </div>
               </div>
+              <div
+                className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+              >
+                <div className={`${styles["our-brand-mobile-div-clield"]}`}>
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
+                  />
+                  <div className={`${styles["our-brand-mobile-div-content"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                      Grin Care
+                    </h3>
+                    <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                        Brand Identity
+                      </h4>
+                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                       UI/UX
+                      </h4>
+                    </div>
+                    <div>
+                      <h4
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                      >
+                        Website
+                      </h4>
+                    </div>
+                    <p>
+                      Oral care product brand GrinCare teamed up with us to create a 
+                      brand presence for itself in the dental healthcare market. We helped 
+                      design its brand identity, clarify its market positioning, and craft a
+                       visually appealing, user-friendly, and conversion-driven website.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -325,9 +317,9 @@ export default function Home() {
       {/*.....points...... */}
       <Points />
       {/* testimonial  */}
-      <Testimonial/>
+      <Testimonial />
       {/* Form */}
-      <Form/>
+      <Form FormHead={FormHead} FormPara={FormPara}/>
     </>
   );
 }
