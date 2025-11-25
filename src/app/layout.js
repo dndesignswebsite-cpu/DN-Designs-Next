@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Footer from '@/Components/Footer/Footer';
 import Header from '@/Components/Header/Header';
+import BootstrapClient from '@/Components/BootstrapClient/BootstrapClient';
 
 export const metadata = {
   title: "DN Designs",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <BootstrapClient/>
       <Header/>
         {children}
         <Footer/>

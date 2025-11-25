@@ -3,9 +3,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faChevronDown,
   faArrowCircleRight,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
 const TRANSITION_DURATION = 1000;
@@ -339,6 +341,7 @@ export default function Header() {
         </div>
       </nav> */}
 
+     <div className={`${styles["desktop-nav"]}`}>
       <nav
         className={`${styles["full-screen-nav"]} ${
           isAnimating ? styles["is-open"] : ""
@@ -568,7 +571,7 @@ export default function Header() {
             </div>
 
             <div className={`${styles["links-cols"]} row`}>
-              <div className="col">
+              <div className="col-3">
                 <div className="d-flex align-items-center">
                   <FontAwesomeIcon
                     icon={faArrowCircleRight}
@@ -610,7 +613,7 @@ export default function Header() {
                 </ul>
               </div>
 
-              <div className="col">
+              <div className="col-3">
                 <div className="d-flex align-items-center">
                   <FontAwesomeIcon
                     icon={faArrowCircleRight}
@@ -662,7 +665,7 @@ export default function Header() {
                 </ul>
               </div>
 
-              <div className="col">
+              <div className="col-3">
                 <div className="d-flex align-items-center">
                   <FontAwesomeIcon
                     icon={faArrowCircleRight}
@@ -713,66 +716,287 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-
-              <div className="col">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Website Design
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/web-designing-services-in-india"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Web Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ui-ux-design"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Ui/Ux Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/seo-marketing-agency-in-noida"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      SEO
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/packaging-design"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Packaging Design
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
 
-            <div className="row">
-              
+            <div className={`${styles["contact-us-row"]} row`}>
+              <div className={`${styles["contact-us-heading-div"]}`}>
+                <FontAwesomeIcon
+                  icon={faArrowCircleRight}
+                  className="px-2 mb-1"
+                  style={{ fontSize: "1.6em" }}
+                />
+                <h3 className={`${styles["header-solo-heading"]}`}>
+                  Contact Us
+                </h3>
+              </div>
+
+              <div className={`${styles["contact-us-col"]} col-3`}>
+                <FontAwesomeIcon icon={faPhone} />
+                <div>
+                  <h4>Phone Number</h4>
+                  <p>+91 941 601 1100</p>
+                  <p>+91 941 601 1100</p>
+                </div>
+              </div>
+
+              <div className={`${styles["contact-us-col"]} col-3`}>
+                <FontAwesomeIcon icon={faPhone} />
+                <div>
+                  <h4>Email Address</h4>
+                  <p>info@dndesigns.co.in</p>
+                </div>
+              </div>
+
+              <div className={`${styles["contact-us-col"]} col-3`}>
+                <FontAwesomeIcon icon={faPhone} />
+                <div>
+                  <h4>Office Address</h4>
+                  <p>
+                    C-40, Second Floor, Block C, Sector 58, Noida, Uttar Pradesh
+                    201301
+                  </p>
+                </div>
+              </div>
+
+              <div className={`${styles["contact-us-col"]} col-3`}>
+                <FontAwesomeIcon icon={faPhone} className="contact-col-icon" />
+                <div>
+                  <h4>Phone Number</h4>
+                  <p>+91 941 601 1100</p>
+                  <p>+91 941 601 1100</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
+      </div>
+
+
+
+{/* mobile view */}
+
+       <div className={`${styles["mobile-nav"]}`}>
+      <nav
+        className={`${styles["full-screen-nav"]} ${
+          isAnimating ? styles["is-open"] : ""
+        }`}
+        style={{
+          visibility: isVisible ? "visible" : "hidden",
+          pointerEvents: isVisible ? "auto" : "none",
+        }}
+      >
+        <div className="container">
+          <div className={`${styles["nav-content-wrapper"]}`}>
+            <div className="row">
+              <div className={`${styles["open-nav-col"]} col-12`}>
+                <div className={`${styles["open-nav-btn"]}`}>
+                  <button
+                    className={`${styles["nav-toggle-btn"]} ${
+                      isAnimating ? styles["is-active"] : ""
+                    }`}
+                    onClick={toggleNav}
+                    aria-label="Toggle Navigation"
+                    aria-expanded={isAnimating}
+                  >
+                    <span className={`${styles["toggle-icon"]}`}></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+<div className={`${styles["navbar-for-mobile"]} accordion`} id="accordionExample">
+      <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button
+            className="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Main Links
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          className="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div className="accordion-body">
+            <ul className={`${styles["nav-main-links"]}`}>
+                  <li>
+                    <Link
+                      href="/branding"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Branding
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/logo-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Logo Designing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/catalogue-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Catalogue Designing
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/brand-name-suggestion"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Brand Name Suggestion
+                    </Link>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button
+            className="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Branding Identity
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          className="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div className="accordion-body">
+            <ul className={`${styles["nav-main-links"]}`}>
+                  <li>
+                    <Link
+                      href="/branding"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Branding
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/logo-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Logo Designing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/catalogue-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Catalogue Designing
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/brand-name-suggestion"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Brand Name Suggestion
+                    </Link>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button
+            className="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Communication Strategy
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          className="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div className="accordion-body">
+            <ul className={`${styles["nav-main-links"]}`}>
+                  <li>
+                    <Link
+                      href="/branding"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Branding
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/logo-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Logo Designing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/catalogue-designing"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Catalogue Designing
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/brand-name-suggestion"
+                      onClick={handleLinkClick}
+                      className={`${styles["header-solo-link"]}`}
+                    >
+                      Brand Name Suggestion
+                    </Link>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+
     </div>
   );
 }

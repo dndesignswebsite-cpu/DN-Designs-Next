@@ -4,10 +4,11 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LogoDesingningTab.css";
 
+
 function LogoDesigningTab() {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+  // useEffect(() => {
+  //   import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  // }, []);
 
   return (
     <div>
