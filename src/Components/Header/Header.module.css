@@ -208,6 +208,18 @@
 .navbar-for-mobile{
     margin-top: 50px;
 }
+
+ .logo img {
+        width: 60px;
+    }
+
+    .accordion-item-custom{
+        margin: 20px 0;
+        box-shadow: 0 2px 11px -1px #0000001a;
+        border: none;
+        border-radius: 20px;
+        font-family: "Corbert";
+    }
 }
 
 

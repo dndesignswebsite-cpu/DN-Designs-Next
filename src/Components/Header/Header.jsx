@@ -4,11 +4,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faChevronDown,
-  faArrowCircleRight,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const TRANSITION_DURATION = 1000;
 
@@ -79,56 +75,53 @@ export default function Header() {
           <span className={`${styles["toggle-icon"]}`}></span>
         </button>
       </header>
-
-      {/* <nav
-        // className={`full-screen-nav ${isAnimating ? "is-open" : ""}`}
-        className={`${styles["full-screen-nav"]} ${
-          isAnimating ? styles["is-open"] : ""
-        }`}
-        style={{
-          visibility: isVisible ? "visible" : "hidden",
-          pointerEvents: isVisible ? "auto" : "none",
-        }}
-      >
-        <div className="container">
-          <div className={`${styles["nav-content-wrapper"]}`}>
-            <div className="row">
-              <div className="col-12 col-lg-5">
-                <div className={`${styles["header-content"]}`}>
-                  <h2>DN Designs</h2>
-                  <p>
-                    C-40, Second Floor, Block C, Sector 58, Noida,
-                    <br /> Uttar Pradesh 201301 info@dndesigns.co.in <br />
-                    +91 941 601 1100
-                    <br />
-                    +91 720 660 5872
-                  </p>
+      <div className={`${styles["desktop-nav"]}`}>
+        <nav
+          className={`${styles["full-screen-nav"]} ${
+            isAnimating ? styles["is-open"] : ""
+          }`}
+          style={{
+            visibility: isVisible ? "visible" : "hidden",
+            pointerEvents: isVisible ? "auto" : "none",
+          }}
+        >
+          <div className="container">
+            <div className={`${styles["nav-content-wrapper"]}`}>
+              <div className="row">
+                <div className={`${styles["open-nav-col"]} col-12`}>
+                  <div className={`${styles["open-nav-btn"]}`}>
+                    <button
+                      className={`${styles["nav-toggle-btn"]} ${
+                        isAnimating ? styles["is-active"] : ""
+                      }`}
+                      onClick={toggleNav}
+                      aria-label="Toggle Navigation"
+                      aria-expanded={isAnimating}
+                    >
+                      <span className={`${styles["toggle-icon"]}`}></span>
+                    </button>
+                  </div>
                 </div>
               </div>
 
-              <div className="col-12 col-lg-2"></div>
-
-              <div className="col-12 col-lg-5 ">
-                <div className={`${styles["open-nav-btn"]}`}>
-                  <button
-                    className={`${styles["nav-toggle-btn"]} ${
-                      isAnimating ? styles["is-active"] : ""
-                    }`}
-                    onClick={toggleNav}
-                    aria-label="Toggle Navigation"
-                    aria-expanded={isAnimating}
-                  >
-                    <span className={`${styles["toggle-icon"]}`}></span>
-                  </button>
-                </div>
-
-                <div className={`${styles["all-main-links"]}`}>
+              <div className={`${styles["links-cols"]} row`}>
+                <div className="col">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Main Links
+                    </h3>
+                  </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
                       <Link
                         href="/"
                         onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
+                        className={`${styles["header-solo-link"]}`}
                       >
                         Home
                       </Link>
@@ -137,7 +130,7 @@ export default function Header() {
                       <Link
                         href="/about"
                         onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
+                        className={`${styles["header-solo-link"]}`}
                       >
                         About Us
                       </Link>
@@ -146,857 +139,832 @@ export default function Header() {
                       <Link
                         href="/services"
                         onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
+                        className={`${styles["header-solo-link"]}`}
                       >
                         Services
                       </Link>
                     </li>
+                  </ul>
+                </div>
 
-                    <hr />
+                <div className="col">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Brand Identity
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/branding"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Branding
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/logo-designing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Logo Designing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/catalogue-designing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Catalogue Designing
+                      </Link>
+                    </li>
 
-                    <li className={`${styles["dropdown-link"]}`}>
-                      <span className="text-dark text-decoration-none">
-                        Branding Identity
-                      </span>
-                      <FontAwesomeIcon icon={faChevronDown} />
-                      <div className={`${styles["dropdown"]}`}>
-                        <ul>
-                          <li>
-                            <Link
-                              href="/branding"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Branding
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/logo-designing"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Logo Designing
-                            </Link>
-                          </li>
+                    <li>
+                      <Link
+                        href="/brand-name-suggestion"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Brand Name Suggestion
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
 
-                          <li>
-                            <Link
-                              href="/catalogue-designing"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Catalogue Designing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/brand-name-suggestion"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Brand Name Suggestion
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
+                <div className="col">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Communication Strategy
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/animation"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Animation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/digital-marketing-agency-in-noida"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Digital Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/influencer-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Influencer Marketing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        href="/social-media-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Website Design
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/web-designing-services-in-india"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Web Designing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ui-ux-design"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Ui/Ux Design
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/seo-marketing-agency-in-noida"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        SEO
+                      </Link>
                     </li>
 
                     <li>
                       <Link
                         href="/packaging-design"
                         onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
+                        className={`${styles["header-solo-link"]}`}
                       >
                         Packaging Design
-                      </Link>
-                    </li>
-
-                    <li className={`${styles["dropdown-link"]}`}>
-                      Communication
-                      <FontAwesomeIcon
-                        icon={faChevronDown}
-                        className="drop-down-icon"
-                      />
-                      <div className={`${styles["dropdown"]}`}>
-                        <ul>
-                          <li>
-                            <Link
-                              href="/animation"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Animation
-                            </Link>
-                          </li>
-
-                          <li>
-                            <Link
-                              href="/digital-marketing-agency-in-noida"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Digital Marketing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/influencer-marketing"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Influencer Marketing
-                            </Link>
-                          </li>
-
-                          <li>
-                            <Link
-                              href="/social-media-marketing"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Social Media Marketing
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li className={`${styles["dropdown-link"]}`}>
-                      <span className="text-dark text-decoration-none">
-                        Web Designing
-                      </span>
-                      <FontAwesomeIcon icon={faChevronDown} />
-                      <div className={`${styles["dropdown"]}`}>
-                        <ul>
-                          <li>
-                            <Link
-                              href="/web-designing-services-in-india"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Web Designing
-                            </Link>
-                          </li>
-
-                          <li>
-                            <Link
-                              href="/ui-ux-design"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              Ui/Ux Design
-                            </Link>
-                          </li>
-
-                          <li>
-                            <Link
-                              href="/seo-marketing-agency-in-noida"
-                              onClick={handleLinkClick}
-                              className={`${styles["sub-menu-link"]}`}
-                            >
-                              SEO
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-
-                    <hr />
-
-                    <li>
-                      <Link
-                        href="/contact-us"
-                        onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
-                      >
-                        Contact
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        href="/photography"
-                        onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
-                      >
-                        Photography
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        href="/blog"
-                        onClick={handleLinkClick}
-                        className="text-dark text-decoration-none"
-                      >
-                        Blog
                       </Link>
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <div className={`${styles["links-cols"]} row`}>
+                <div className="col-3">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Main Links
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/about"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Services
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col-3">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Brand Identity
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/branding"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Branding
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/logo-designing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Logo Designing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/catalogue-designing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Catalogue Designing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        href="/brand-name-suggestion"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Brand Name Suggestion
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col-3">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "1.6em" }}
+                    />
+                    <h3 className={`${styles["header-solo-heading"]}`}>
+                      Communication Strategy
+                    </h3>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                    <li>
+                      <Link
+                        href="/animation"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Animation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/digital-marketing-agency-in-noida"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Digital Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/influencer-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Influencer Marketing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        href="/social-media-marketing"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={`${styles["contact-us-row"]} row`}>
+                <div className={`${styles["contact-us-heading-div"]}`}>
+                  <FontAwesomeIcon
+                    icon={faArrowCircleRight}
+                    className="px-2 mb-1"
+                    style={{ fontSize: "1.6em" }}
+                  />
+                  <h3 className={`${styles["header-solo-heading"]}`}>
+                    Contact Us
+                  </h3>
+                </div>
+
+                <div className={`${styles["contact-us-col"]} col-3`}>
+                  <FontAwesomeIcon icon={faPhone} />
+                  <div>
+                    <h4>Phone Number</h4>
+                    <p>+91 941 601 1100</p>
+                    <p>+91 941 601 1100</p>
+                  </div>
+                </div>
+
+                <div className={`${styles["contact-us-col"]} col-3`}>
+                  <FontAwesomeIcon icon={faPhone} />
+                  <div>
+                    <h4>Email Address</h4>
+                    <p>info@dndesigns.co.in</p>
+                  </div>
+                </div>
+
+                <div className={`${styles["contact-us-col"]} col-3`}>
+                  <FontAwesomeIcon icon={faPhone} />
+                  <div>
+                    <h4>Office Address</h4>
+                    <p>
+                      C-40, Second Floor, Block C, Sector 58, Noida, Uttar
+                      Pradesh 201301
+                    </p>
+                  </div>
+                </div>
+
+                <div className={`${styles["contact-us-col"]} col-3`}>
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="contact-col-icon"
+                  />
+                  <div>
+                    <h4>Phone Number</h4>
+                    <p>+91 941 601 1100</p>
+                    <p>+91 941 601 1100</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </nav> */}
+        </nav>
+      </div>
 
-     <div className={`${styles["desktop-nav"]}`}>
-      <nav
-        className={`${styles["full-screen-nav"]} ${
-          isAnimating ? styles["is-open"] : ""
-        }`}
-        style={{
-          visibility: isVisible ? "visible" : "hidden",
-          pointerEvents: isVisible ? "auto" : "none",
-        }}
-      >
-        <div className="container">
-          <div className={`${styles["nav-content-wrapper"]}`}>
-            <div className="row">
-              <div className={`${styles["open-nav-col"]} col-12`}>
-                <div className={`${styles["open-nav-btn"]}`}>
-                  <button
-                    className={`${styles["nav-toggle-btn"]} ${
-                      isAnimating ? styles["is-active"] : ""
-                    }`}
-                    onClick={toggleNav}
-                    aria-label="Toggle Navigation"
-                    aria-expanded={isAnimating}
+      {/* mobile view */}
+
+      <div className={`${styles["mobile-nav"]}`}>
+        <nav
+          className={`${styles["full-screen-nav"]} ${
+            isAnimating ? styles["is-open"] : ""
+          }`}
+          style={{
+            visibility: isVisible ? "visible" : "hidden",
+            pointerEvents: isVisible ? "auto" : "none",
+          }}
+        >
+          <div className="container">
+            <div className={`${styles["nav-content-wrapper"]}`}>
+              <div className="row">
+                <div className={`${styles["open-nav-col"]} col-12`}>
+                  <div className={`${styles["open-nav-btn"]}`}>
+                    <button
+                      className={`${styles["nav-toggle-btn"]} ${
+                        isAnimating ? styles["is-active"] : ""
+                      }`}
+                      onClick={toggleNav}
+                      aria-label="Toggle Navigation"
+                      aria-expanded={isAnimating}
+                    >
+                      <span className={`${styles["toggle-icon"]}`}></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className={`${styles["navbar-for-mobile"]} accordion`}
+                id="accordionExample"
+              >
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Main Links
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    className="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
                   >
-                    <span className={`${styles["toggle-icon"]}`}></span>
-                  </button>
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Home
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/about"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            About Us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Services
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className={`${styles["links-cols"]} row`}>
-              <div className="col">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Main Links
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
                     >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Services
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Brand Identity
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/branding"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Branding
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/logo-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Logo Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/catalogue-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Catalogue Designing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/brand-name-suggestion"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Brand Name Suggestion
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Communication Strategy
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/animation"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Animation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/digital-marketing-agency-in-noida"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Digital Marketing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/influencer-marketing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Influencer Marketing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/social-media-marketing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Social Media Marketing
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Website Design
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/web-designing-services-in-india"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Web Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/ui-ux-design"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Ui/Ux Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/seo-marketing-agency-in-noida"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      SEO
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/packaging-design"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Packaging Design
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className={`${styles["links-cols"]} row`}>
-              <div className="col-3">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Main Links
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Services
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-3">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Brand Identity
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/branding"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Branding
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/logo-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Logo Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/catalogue-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Catalogue Designing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/brand-name-suggestion"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Brand Name Suggestion
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-3">
-                <div className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={faArrowCircleRight}
-                    className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
-                  />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
-                    Communication Strategy
-                  </h3>
-                </div>
-                <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/animation"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Animation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/digital-marketing-agency-in-noida"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Digital Marketing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/influencer-marketing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Influencer Marketing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/social-media-marketing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Social Media Marketing
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className={`${styles["contact-us-row"]} row`}>
-              <div className={`${styles["contact-us-heading-div"]}`}>
-                <FontAwesomeIcon
-                  icon={faArrowCircleRight}
-                  className="px-2 mb-1"
-                  style={{ fontSize: "1.6em" }}
-                />
-                <h3 className={`${styles["header-solo-heading"]}`}>
-                  Contact Us
-                </h3>
-              </div>
-
-              <div className={`${styles["contact-us-col"]} col-3`}>
-                <FontAwesomeIcon icon={faPhone} />
-                <div>
-                  <h4>Phone Number</h4>
-                  <p>+91 941 601 1100</p>
-                  <p>+91 941 601 1100</p>
-                </div>
-              </div>
-
-              <div className={`${styles["contact-us-col"]} col-3`}>
-                <FontAwesomeIcon icon={faPhone} />
-                <div>
-                  <h4>Email Address</h4>
-                  <p>info@dndesigns.co.in</p>
-                </div>
-              </div>
-
-              <div className={`${styles["contact-us-col"]} col-3`}>
-                <FontAwesomeIcon icon={faPhone} />
-                <div>
-                  <h4>Office Address</h4>
-                  <p>
-                    C-40, Second Floor, Block C, Sector 58, Noida, Uttar Pradesh
-                    201301
-                  </p>
-                </div>
-              </div>
-
-              <div className={`${styles["contact-us-col"]} col-3`}>
-                <FontAwesomeIcon icon={faPhone} className="contact-col-icon" />
-                <div>
-                  <h4>Phone Number</h4>
-                  <p>+91 941 601 1100</p>
-                  <p>+91 941 601 1100</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      </div>
-
-
-
-{/* mobile view */}
-
-       <div className={`${styles["mobile-nav"]}`}>
-      <nav
-        className={`${styles["full-screen-nav"]} ${
-          isAnimating ? styles["is-open"] : ""
-        }`}
-        style={{
-          visibility: isVisible ? "visible" : "hidden",
-          pointerEvents: isVisible ? "auto" : "none",
-        }}
-      >
-        <div className="container">
-          <div className={`${styles["nav-content-wrapper"]}`}>
-            <div className="row">
-              <div className={`${styles["open-nav-col"]} col-12`}>
-                <div className={`${styles["open-nav-btn"]}`}>
-                  <button
-                    className={`${styles["nav-toggle-btn"]} ${
-                      isAnimating ? styles["is-active"] : ""
-                    }`}
-                    onClick={toggleNav}
-                    aria-label="Toggle Navigation"
-                    aria-expanded={isAnimating}
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Brand Identity
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
                   >
-                    <span className={`${styles["toggle-icon"]}`}></span>
-                  </button>
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/branding"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Branding
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/logo-designing"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Logo Designing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/catalogue-designing"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Catalogue Designing
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/brand-name-suggestion"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Brand Name Suggestion
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Communication Strategy
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/animation"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Animation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/digital-marketing-agency-in-noida"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Digital Marketing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/influencer-marketing"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Influencer Marketing
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/social-media-marketing"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Social Media Marketing
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Web Design
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/ui-ux-design"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            UI/UX Design
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/web-designing-services-in-india"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Web Designing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/seo-marketing-agency-in-noida"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            SEO
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/packaging-design"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                           Packaging Design
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Additional Pages
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/contact-us"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Contact Us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/blog"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Blog
+                          </Link>
+                        </li> 
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <h2 className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <h3 className={`${styles["header-solo-heading"]}`}>
+                          Case Studies
+                        </h3>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                        <li>
+                          <Link
+                            href="/wlues-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Wlues Case Study
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/grincare-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                           Grincare Case Study
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/enlite-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Enlite Case Study
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/nectarpure-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Nectarpure Case Study
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
-
-<div className={`${styles["navbar-for-mobile"]} accordion`} id="accordionExample">
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button
-            className="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            Main Links
-          </button>
-        </h2>
-        <div
-          id="collapseOne"
-          className="accordion-collapse collapse show"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/branding"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Branding
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/logo-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Logo Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/catalogue-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Catalogue Designing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/brand-name-suggestion"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Brand Name Suggestion
-                    </Link>
-                  </li>
-                </ul>
           </div>
-        </div>
+        </nav>
       </div>
-
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Branding Identity
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          className="accordion-collapse collapse"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/branding"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Branding
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/logo-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Logo Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/catalogue-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Catalogue Designing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/brand-name-suggestion"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Brand Name Suggestion
-                    </Link>
-                  </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Communication Strategy
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          className="accordion-collapse collapse"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <ul className={`${styles["nav-main-links"]}`}>
-                  <li>
-                    <Link
-                      href="/branding"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Branding
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/logo-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Logo Designing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/catalogue-designing"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Catalogue Designing
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/brand-name-suggestion"
-                      onClick={handleLinkClick}
-                      className={`${styles["header-solo-link"]}`}
-                    >
-                      Brand Name Suggestion
-                    </Link>
-                  </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-          </div>
-        </div>
-      </nav>
-      </div>
-
     </div>
   );
 }
