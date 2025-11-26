@@ -57,7 +57,7 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                   right: "0px",
                   background: "white",
                   border: "none",
-                  padding: "8px 14px",
+                  // padding: "8px 14px",
                   borderRadius: "5px",
                   cursor: "pointer",
                   fontSize: "16px",
