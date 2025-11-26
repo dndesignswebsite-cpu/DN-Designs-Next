@@ -78,7 +78,7 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                   minHeight={400}
                   maxHeight={1536}
                   maxShadowOpacity={0.5}
-                //   showCover={flase}
+                //    showCover={true}
                   mobileScrollSupport={true}
                   style={{
                     margin: "0 auto",
@@ -94,7 +94,8 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                         style={{
                           width: "100%",
                           height: "100%",
-                          
+                          objectFit:"contain",
+                          backgroundColor:"#fff" 
                         }}
                       />
                     </div>
