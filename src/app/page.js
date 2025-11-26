@@ -6,6 +6,38 @@ import Points from "@/Components/Points/Points";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 
+
+
+// meta tags
+export const metadata = {
+  title: "Home | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Home | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
+
+
 export default function Home() {
   //   const ourWork = () => {
   //   if (ourWorkRef.current) {
@@ -18,7 +50,7 @@ export default function Home() {
   const FormPara ="Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy."   
 
   return (
-    <>
+<>
       {/*.....hero...... */}
       <section className={`${styles.hero}`}>
         <div className="container">

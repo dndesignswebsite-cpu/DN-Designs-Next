@@ -8,6 +8,37 @@ import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import HorizontalScroll from "@/Components/HorizontalScroll/HorizontalScroll";
 
+
+
+// meta tags
+export const metadata = {
+  title: "Branding | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Branding | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Branding | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
+
 function page() {
   // hero section content
   const heading ="Where Brands Are Born"

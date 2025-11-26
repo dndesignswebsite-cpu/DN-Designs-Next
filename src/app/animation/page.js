@@ -7,6 +7,40 @@ import AnimationSwipper from "@/Components/AnimationSwipper/AnimationSwipper";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import ExploreOurVideoAnimation from "@/Components/ExploreOurVideoAnimation/ExploreOurVideoAnimation";
 
+
+
+
+
+
+// meta tags
+export const metadata = {
+  title: "Animation | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Animation | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Animation | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
+
 function page() {
 
   const heading ="Animation Company in India"

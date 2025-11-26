@@ -7,6 +7,36 @@ import Faqs from '@/Components/Faqs/Faqs'
 import Form from '@/Components/Form/Form'
 import PagesHero from '@/Components/PagesHero/PagesHero'
 
+
+// meta tags
+export const metadata = {
+  title: "Packaging Design | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Packaging Design | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Packaging Design | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
+
 function page() {
   const heading ="Where Brands Are Born"
   const subHeading ="A Creative Branding Agency"

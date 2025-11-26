@@ -1,6 +1,35 @@
 import React from "react"
 import "./grincare-case-study.css"
 
+// meta tags
+export const metadata = {
+  title: "Grincare Case Study | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Grincare Case Study | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Grincare Case Study | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
+
 function page(){
     return (
         <div>

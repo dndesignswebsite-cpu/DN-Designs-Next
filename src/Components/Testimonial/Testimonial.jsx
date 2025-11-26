@@ -70,7 +70,12 @@ function Testimonial() {
                       <div className="col-12 col-md-4 testi-right-content">
                         <p>
                           <i>
-                            "After researching several branding and design agencies, I connected with Mr. Paras Kalra. I really appreciate the hard work he and his team put in to position Nature’s Balance as a premium brand in the market. My project was completed successfully and on time."
+                            "After researching several branding and design
+                            agencies, I connected with Mr. Paras Kalra. I really
+                            appreciate the hard work he and his team put in to
+                            position Nature’s Balance as a premium brand in the
+                            market. My project was completed successfully and on
+                            time."
                           </i>
                         </p>
 
@@ -131,7 +136,11 @@ function Testimonial() {
                       <div className="col-12 col-md-4 testi-right-content">
                         <p>
                           <i>
-                            "Our association with DN Designs was very fruitful. They handled the entire branding for us, right from consultation to the final launch of the products in the retail market. Customer feedback is simply amazing. Great Work Team! Way to Go!"
+                            "Our association with DN Designs was very fruitful.
+                            They handled the entire branding for us, right from
+                            consultation to the final launch of the products in
+                            the retail market. Customer feedback is simply
+                            amazing. Great Work Team! Way to Go!"
                           </i>
                         </p>
 
@@ -172,12 +181,8 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 fw-bold mb-0">
-                            Mr. Pramod 
-                          </h2>
-                          <p className="fs-6 opacity-75">
-                            Founder, NectarPure
-                          </p>
+                          <h2 className="fs-4 fw-bold mb-0">Mr. Pramod</h2>
+                          <p className="fs-6 opacity-75">Founder, NectarPure</p>
                         </div>
                       </div>
 
@@ -192,7 +197,11 @@ function Testimonial() {
                       <div className="col-12 col-md-4 testi-right-content">
                         <p>
                           <i>
-                            "We wanted to position NectarPure as a premium lifestyle nutrition brand. The team perfectly understood what we were trying to do and created a subtle and minimal brand design for us. The 3D AD they created is just fantastic!"
+                            "We wanted to position NectarPure as a premium
+                            lifestyle nutrition brand. The team perfectly
+                            understood what we were trying to do and created a
+                            subtle and minimal brand design for us. The 3D AD
+                            they created is just fantastic!"
                           </i>
                         </p>
 
