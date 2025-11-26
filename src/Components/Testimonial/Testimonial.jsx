@@ -32,7 +32,7 @@ function Testimonial() {
                 <div className="custom-swiper">
                   <div className="swiper-slide">
                     <div className="row align-items-stretch testi-slide">
-                      <div className="col-6 col-md-4 testi-left-content">
+                      <div className="col-6 col-md-4 col-lg-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
                             <img
@@ -59,7 +59,7 @@ function Testimonial() {
                         </div>
                       </div>
 
-                      <div className="col-6 col-md-4 testi-main-img">
+                      <div className="col-6 col-md-4 col-lg-4 testi-main-img">
                         <img
                           src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
                           alt="Testimonial Person"
@@ -122,7 +122,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
+                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1662129811700.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -183,7 +183,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
+                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1737743837430.jpg"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
