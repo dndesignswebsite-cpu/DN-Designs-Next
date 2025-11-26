@@ -7,6 +7,7 @@ import Form from '@/Components/Form/Form'
 import Faqs from '@/Components/Faqs/Faqs'
 import PagesHero from '@/Components/PagesHero/PagesHero'
 import CatalougePageFlip from '@/Components/LightBox/LightBox'
+import CatalougeBook from '@/Components/CatalougeBook/CatalougeBook'
 
 function page() {
 
@@ -56,6 +57,8 @@ function page() {
         <PagesHero heading={heading} subHeading={subHeading} para={para}/>
       </section>
 
+      {/* catalouge book */}
+      <CatalougeBook/>
       
       {/*The Protagonists */}
 
