@@ -78,7 +78,7 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                   minHeight={400}
                   maxHeight={1536}
                   maxShadowOpacity={0.5}
-                  showCover={true}
+                //   showCover={flase}
                   mobileScrollSupport={true}
                   style={{
                     margin: "0 auto",
@@ -89,11 +89,12 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                   {pages.map((page, index) => (
                     <div key={index} className="page">
                       <img
+                        className="img-fluid"
                         src={page}
                         style={{
                           width: "100%",
                           height: "100%",
-                          objectFit: "cover",
+                          
                         }}
                       />
                     </div>

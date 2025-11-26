@@ -10,7 +10,7 @@ function CatalougeBook() {
           <div className="row">
             <div className="col">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/01/1.jpg"
+                src="https://dndesigns.co.in/wp-content/uploads/2025/01/Green-Horn-Catalogue.jpg"
                 className="img-fluid"
               />
             </div>
@@ -18,13 +18,13 @@ function CatalougeBook() {
               <LightBoxBookCatalouge
                 type="flipbook"
                 pages={[
-                  "https://dndesigns.co.in/wp-content/uploads/2025/01/1.jpg",
-                  "https://dndesigns.co.in/wp-content/uploads/2025/01/1.jpg",
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
+                  "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
+                  
                 ]}
               >
                 <div>
