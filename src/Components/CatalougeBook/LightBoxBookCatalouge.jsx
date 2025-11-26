@@ -55,14 +55,15 @@ export default function LightBoxBookCatalouge({ children, src, type, pages = [] 
                   position: "absolute",
                   top: "-40px",
                   right: "0px",
-                  background: "white",
+                  background: "transparent",
                   border: "none",
-                  // padding: "8px 14px",
+                  
                   borderRadius: "5px",
                   cursor: "pointer",
-                  fontSize: "16px",
+                  fontSize: "25px",
                   fontWeight: "bold",
-                  marginTop:"20px"
+                  marginTop:"20px",
+                  color:"#fff"
                 }}
               >
                 ✕
