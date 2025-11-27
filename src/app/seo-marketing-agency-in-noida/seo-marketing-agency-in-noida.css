@@ -7,6 +7,17 @@
     border-radius: 30px;
 }
 
+.what-drives-our-growth-heading{
+  font-family: "Corbert";
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+.rrrr{
+  color: #ca2734;
+}
+
 .what-drives-our-growth-row h3{
     font-family: "Corbert";
     color: #fff;
@@ -570,6 +581,13 @@
   justify-content: space-between;
 }
 
+.projects-completed-heading{
+  font-size: 40px;
+  font-family: "Corbert";
+  color: #000;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 .projects-completed-div{
    display: flex;

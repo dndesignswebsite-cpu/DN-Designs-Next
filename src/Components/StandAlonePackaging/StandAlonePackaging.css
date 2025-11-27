@@ -40,3 +40,9 @@
     text-align: center;
   }
 }
+
+.packaging-heading{
+  font-family: "Corbert";
+  font-size: 40px;
+  color: #000;
+}
