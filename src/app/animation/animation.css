@@ -226,6 +226,13 @@
   font-family: "Roboto-Regular";
 }
 
+.appr-pro-main-para{
+  font-size: 18px;
+  font-family: "Roboto";
+  width: 90%;
+  color: #000;
+}
+
 .app-pro-div-up{
   margin-left: 20px;
 }
