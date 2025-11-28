@@ -83,7 +83,7 @@ export default function Home() {
       <section className={`${styles["our-brand"]}`}>
         <div className="container">
           <h2 className={`${styles["our-brand-heading"]} text-center `}>
-            Our Brand Journals
+            Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
             <li className={`${styles["card"]} ${styles["card-1"]}`}>

@@ -1,3 +1,8 @@
+
+.every-pr {
+  color: var(--heading-highlite-color);
+}
+
 /* home hero section */
 
 .hero {
@@ -143,7 +148,9 @@ align-items: center;
   margin-top: 50px;
   list-style: none;
 }
-
+.our-brand .cards{
+  padding-left: 0px;
+}
 .card-body {
   box-sizing: border-box;
   height: 95vh;

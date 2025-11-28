@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Brand Video Shoots | DN Designs",
     description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
+    url: "https://dndesigns.co.in/Brand-Video-Shoots",
     siteName: "DN Designs",
     images: [
       {
@@ -35,9 +35,9 @@ export const metadata = {
 
 function page() {
      // hero section content
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="Branding shapes the future of your business. It determines whether you will craft a legacy or simply fade into oblivion like many others. But what is branding and why is it so crucial? Want to know? Take this exciting branding journey with us – learn about branding, explore our portfolio, & go behind the scenes of our branding process. If you still have queries, check out our FAQs section."
+  const heading ="Brand Video Shoots"
+  const subHeading ="Video is a powerful way to communicate your brand's story, values, and personality."
+  const para ="Brand video shots are obviously video productions made to highlight a company’s name, goods, or services. An emotional connection can be made with the audience and the brand’s values and personality can be conveyed through a video"
   
 
   return (

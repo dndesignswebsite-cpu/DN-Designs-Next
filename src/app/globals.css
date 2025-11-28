@@ -2,38 +2,45 @@ body{
   overflow-x: hidden;
 }
 
-@font-face {
+:root {
+  --heading-main-color:#000000;
+  --heading-highlite-color: #ca2734;
+
+}
+
+
+/* @font-face {
   font-family: 'Corbert-Medium';
-   src: url('../../public/fonts/Corbert-Medium.otf') format('opentype');
+  src: url('../../public/fonts/Corbert-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Corbert';
-  src: url('../../public/fonts/Corbert-Bold.otf') format('opentype');
+  src: url('../../public/fonts/Corbert-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Corbert-Bold';
-  src: url('../../public/fonts/Corbert-Bold.otf') format('opentype');
+  src: url('../../public/fonts/Corbert-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
+ */
 
-
-@font-face {
+/* @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('../../public/fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
- src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+ src: url('../../public/fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
-}
+} */

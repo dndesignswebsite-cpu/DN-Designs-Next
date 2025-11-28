@@ -1,8 +1,53 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
+import localFont from 'next/font/local';
 import Footer from '@/Components/Footer/Footer';
 import Header from '@/Components/Header/Header';
 import BootstrapClient from '@/Components/BootstrapClient/BootstrapClient';
+
+const mainFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Corbert-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Corbert-Medium.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Corbert-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-mainFont',   // Optional: CSS variable
+  display: 'swap',
+});
+
+const secondryFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Roboto-Regular.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Roboto-Regular.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Roboto-Regular.woff2',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: '--Font-secondryFont',   // Optional: CSS variable
+  display: 'swap',
+});
 
 export const metadata = {
   title: "DN Designs",
@@ -11,7 +56,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${mainFont.variable} ${secondryFont.variable}`}>
       <body>
       <BootstrapClient/>
       <Header/>
