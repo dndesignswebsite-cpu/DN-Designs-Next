@@ -145,6 +145,21 @@ function page() {
     },
   ];
 
+    const mobileCrads = [
+                              {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1-1.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/7-2.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/nature-balance-mangoe-2.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1.jpg",
+    },
+  ]
+
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "Influencers can bring in new visitors and customers for your brand. Therefore, influencer marketing becomes an important marketing strategy for your business. However, if you are not sure as to how to proceed, there is absolutely no need to worry. DN Designs, an influencer marketing company in India, is here to help you out. So, let’s meet and discuss your campaign requirements."
@@ -228,7 +243,7 @@ function page() {
       </section>
 
       {/* standalone */}
-      <StandAlonePackaging cards={cards} />
+     <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
 
       {/* top capibilities */}
 
