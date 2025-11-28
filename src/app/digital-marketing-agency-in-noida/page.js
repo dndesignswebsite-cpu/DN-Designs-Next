@@ -525,7 +525,7 @@ function page() {
           <div className="row organic-sessions-row">
             <div className="col-12 col-md-3 organic-sessions-col">
               <h3>
-                <AutoCounter target={120}/>%
+                <AutoCounter target={12}/>%
               </h3>
               <p>Organic Sessions (6 mo)</p>
             </div>
