@@ -154,6 +154,21 @@ function page() {
     },
   ];
 
+    const mobileCrads = [
+                              {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1-1.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/7-2.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/nature-balance-mangoe-2.jpg",
+    },
+    {
+      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1.jpg",
+    },
+  ]
+
 
   return (
     <div>
@@ -502,7 +517,7 @@ function page() {
         </div>
       </section>
 
-      <StandAlonePackaging  cards={cards}/>
+      <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
 
       {/* Organic Sessions */}
       <section className="organic-sessions">

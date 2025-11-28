@@ -290,6 +290,24 @@
   margin-top: 20px;
 }
 
+#card6-create {
+  --index: 6;
+  top: 400px;
+  margin-top: 20px;
+}
+
+#card7-create {
+  --index: 7;
+  top: 450px;
+  margin-top: 20px;
+}
+
+#card8-create {
+  --index: 8;
+  top: 360px;
+  margin-top: 20px;
+}
+
 .card-create {
   position: sticky;
   top: 50%;
@@ -375,6 +393,10 @@
 
 }
 
+.creating-your-brand-mobile{
+  display: none;
+}
+
 @media(max-width:992px){
 
  .card-body-create {
@@ -385,19 +407,19 @@
     font-size: 70px;
 }
 
-}
-
-.creating-your-brand-mobile{
-  display: none;
-}
-@media(max-width:767px){
 .creating-your-brand{
   display: none;
 }
 .creating-your-brand-mobile{
   display: block;
 }
+
 }
+
+
+/* @media(max-width:767px){
+
+} */
 
 /* creating-your-brand mobile view*/
 

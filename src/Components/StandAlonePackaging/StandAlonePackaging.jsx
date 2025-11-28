@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import "./StandAlonePackaging.css";
 
-function StandAlonePackaging({ cards }) {
+function StandAlonePackaging({ cards, mobileCrads }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  console.log(cards);
+  // console.log(cards);
 
   return (
     <div>
@@ -64,7 +64,7 @@ function StandAlonePackaging({ cards }) {
           <div className="row  standalone-packaging-mobile  ">
             <div className="col-md-6 col-12">
               <img
-                src={cards[0].image}
+                src={mobileCrads[0].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
               />
@@ -81,7 +81,7 @@ function StandAlonePackaging({ cards }) {
 
             <div className="col-md-6 col-12">
               <img
-                src={cards[1].image}
+                src={mobileCrads[1].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
               />
@@ -100,7 +100,7 @@ function StandAlonePackaging({ cards }) {
           <div className="row  mt-2">
             <div className="col-md-6 col-12">
               <img
-                src={cards[2].image}
+                src={mobileCrads[2].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
               />
@@ -117,7 +117,7 @@ function StandAlonePackaging({ cards }) {
 
             <div className="col-md-6 col-12">
               <img
-                src={cards[3].image}
+                src={mobileCrads[3].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
               />
