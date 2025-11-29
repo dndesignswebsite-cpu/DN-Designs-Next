@@ -1,5 +1,5 @@
 .casestudy-video{
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--heading-main-color);
 }
 
 .case-study-wrapper {

@@ -16,14 +16,14 @@
 
 .switch-on-div h3{
   font-size: 43px;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .switch-on-div p{
   font-size: 18px;
-  color: #000;
+  color: var(--heading-main-color);
   font-family: var(--font-roboto);
   font-weight: 700;
   line-height: 1em;
@@ -64,7 +64,7 @@
 .vertical-bar{
     height: 130px;
     width: 4px;
-    background-color: #000;
+    background-color: var(--heading-main-color);
     margin: 20px;
 }
 
@@ -109,7 +109,7 @@ padding: 0;
 .we-are-the-leading h3{
     font-size: 50px;
    font-family: var(--font-corbert);
-    color: #000;
+    color: var(--heading-main-color);
     width: 70%;
 }
 
@@ -152,7 +152,7 @@ padding: 0;
 }
 
 .top-cap p {
-  color: #000000;
+  color: var(--heading-main-color);
  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -217,7 +217,7 @@ padding: 0;
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .top-cap-back-content {
@@ -242,7 +242,7 @@ padding: 0;
 }
 
 .organic-sessions-row{
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -281,7 +281,7 @@ padding: 0;
     font-size: 56px;
     font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

@@ -1,32 +1,32 @@
 
 .custom-tabs {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--heading-main-color);
 }
 
 .custom-tabs .nav-link {
   border: none;
-  color: #000;
+  color: var(--heading-main-color);
   font-weight: 700;
   padding: 14px 60px 15px 10px;
   background-color: #fff;
   font-size: 16px;
   font-family: var(--font-corbert);
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--heading-main-color);
 }
 
 .custom-tabs .nav-link.active {
-  color: #CA2734;
-  border: 1px solid #000;
+  color: var(--heading-highlite-color);
+  border: 1px solid var(--heading-main-color);
   border-bottom: 1px solid #fff;
 }
 
 .custom-tabs .nav-link:hover {
-  color: #CA2734;
+  color: var(--heading-highlite-color);
   background-color: #fafafa;
 }
 
 .custom-tab-content {
-  border: 1px solid #000;
+  border: 1px solid var(--heading-main-color);
   border-top: none;
   padding: 20px;
   background-color: #fff;
@@ -34,7 +34,7 @@
 
 .custom-tab-content p {
   margin: 0;
-  color: #000;
+  color: var(--heading-main-color);
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.7em;
@@ -47,7 +47,7 @@
 }
 
 .mobile-tab-heading {
-  color: #000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 30px;
 }
@@ -57,7 +57,7 @@
   font-size: 16px;
   line-height: 1.4em;
   padding: 5px;
-  color: #000;
+  color: var(--heading-main-color);
 }
 
 @media (max-width: 768px) {

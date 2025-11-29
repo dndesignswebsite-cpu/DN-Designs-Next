@@ -6,13 +6,13 @@
 .animation-video-swipper-up h3{
     font-size: 40px;
    font-family: var(--font-corbert);
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .animation-video-swipper-up button{
     font-size: 16px;
     font-family: var(--font-roboto);
-    background-color: #000;
+    background-color: var(--heading-main-color);
     color: #fff;
     border-radius: 30px;
     width: 10%;
@@ -44,7 +44,7 @@ font-weight: 600;
 .hr-animation{
     height: 2px;
     width: 100%;
-    background-color: #000;
+    background-color: var(--heading-main-color);
     margin: 10px 0;
 }
 
@@ -94,7 +94,7 @@ font-weight: 600;
 
 
 .swiper-pagination-bullet-active {
-  background: #ca2734; 
+  background: var(--heading-highlite-color); 
   transform: scale(1.3); 
 }
 
@@ -106,7 +106,7 @@ font-weight: 600;
 
     .swiper-pagination-bullet {
         font-size: 20px;
-        color: #000 !important;
+        color: var(--heading-main-color)!important;
         margin: 0px 180px !important;
         cursor: pointer;
          background: none !important; 
@@ -114,7 +114,7 @@ font-weight: 600;
     }
 
     .swiper-pagination-bullet-active {
-        color: #ca2734 !important;
+        color: var(--heading-highlite-color) !important;
          transform: scale(1);
     }
 

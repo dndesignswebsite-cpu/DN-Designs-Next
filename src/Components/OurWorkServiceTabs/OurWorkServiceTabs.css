@@ -33,11 +33,11 @@
 }
 
 .tab button:hover {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .tab button.active {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .tabcontent {
@@ -54,7 +54,7 @@
 
 .explore-more button {
     margin-top: 30px;
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   font-family: var(--font-roboto);
   border-radius: 100px 100px 100px 100px;
   padding: 15px 50px 15px 50px;

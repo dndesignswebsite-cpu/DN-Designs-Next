@@ -10,7 +10,7 @@
   padding-bottom: 20px;
 }
 .our-constant-comapny-heqadg-red{
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 .companies img {
   width: 150px;

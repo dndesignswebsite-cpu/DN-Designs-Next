@@ -102,7 +102,7 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -121,14 +121,14 @@
 }
 
 .create-number{
-  color: #CA2734;
+  color: var(--heading-highlite-color);
    font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
+      color: var(--heading-main-color);
     font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
@@ -184,7 +184,7 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
@@ -204,14 +204,14 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
+  color: var(--heading-highlite-color);
     font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
+      color: var(--heading-main-color);
     font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
@@ -240,7 +240,7 @@
 }
 
 .characteristics-of-good p {
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -305,7 +305,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -439,7 +439,7 @@ font-family: var(--font-corbert);
     font-size: 56px;
     font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

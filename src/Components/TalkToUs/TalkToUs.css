@@ -5,7 +5,7 @@
 }
 
 .talk-to-us {
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   font-family: var(--font-roboto);
   border-radius: 100px 100px 100px 100px;
   padding: 10px 25px 10px 25px;

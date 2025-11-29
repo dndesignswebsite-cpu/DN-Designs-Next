@@ -14,7 +14,7 @@
 .creative-brochure-div h2{
   font-size: 50px;
   font-family: var(--font-corbert);
-  color: #000;
+  color: var(--heading-main-color);
   padding: 0 20px;
 }
 

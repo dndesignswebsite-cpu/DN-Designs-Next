@@ -1,5 +1,5 @@
 .main-footer-div{
-    background-color: #CA2734;
+    background-color: var(--heading-highlite-color);
 }
 
 .ff{

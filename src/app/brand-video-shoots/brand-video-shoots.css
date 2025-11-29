@@ -13,7 +13,7 @@
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
-     color: #000;
+    color: var(--heading-main-color);
 }
 
 .video-shoot-bold{
@@ -40,7 +40,7 @@
 .we-are-leading-left-col h3{
     font-family: var(--font-corbert);
     font-size: 50px;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 
@@ -53,7 +53,7 @@
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
-     color: #000;
+     color: var(--heading-main-color);
 }
 
 @media(max-width:767px){
@@ -70,7 +70,7 @@
 .why-choose-us-row h3{
    font-family: var(--font-corbert);
     font-size: 50px;
-    color: #000;
+    color: var(--heading-main-color);
     padding: 20px 0;
 }
 
@@ -79,7 +79,7 @@
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
-    color: #000;
+   color: var(--heading-main-color);
 }
 
 @media(max-width:767px){
@@ -96,7 +96,7 @@
 .video-our-portfolio h3{
    font-family: var(--font-corbert);
     font-size: 50px;
-    color: #000;
+    color: var(--heading-main-color);
     padding: 10px 0;
 }
 

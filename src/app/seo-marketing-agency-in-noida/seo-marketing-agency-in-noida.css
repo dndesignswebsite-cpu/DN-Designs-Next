@@ -3,19 +3,19 @@
     padding: 50px 0;
 }
 .what-drives-our-growth-row{
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
     border-radius: 30px;
 }
 
 .what-drives-our-growth-heading{
  font-family: var(--font-corbert);
   font-size: 50px;
-  color: #000;
+  color: var(--heading-main-color);
   text-align: center;
   padding: 20px 0;
 }
 .rrrr{
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .what-drives-our-growth-row h3{
@@ -68,14 +68,14 @@
 .comprehensive-seo-stregety-content h2{
    font-family: var(--font-corbert);
     font-size: 32px;
-    color: #000;
+    color: var(--heading-main-color);
     padding:10px 0 ;
 }
 
 .comprehensive-seo-stregety-content p{
     font-family: var(--font-roboto);
     font-size: 18px;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .transparent-reporting-content{
@@ -92,14 +92,14 @@
 .transparent-reporting-content h2{
     font-family: var(--font-corbert);
     font-size: 32px;
-    color: #ca2734;
+    color: var(--heading-highlite-color);
     padding:10px 0 ;
 }
 
 .transparent-reporting-content p{
     font-family: var(--font-roboto);
     font-size: 18px;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 
@@ -123,7 +123,7 @@
 }
 
 .characteristics-of-good p {
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -188,7 +188,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -231,7 +231,7 @@
 
 .appr-pro-main-para {
   margin-top: 10px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 32px;
   font-size: 18px;
   width: 100%;
@@ -240,7 +240,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-white {
@@ -275,7 +275,7 @@
   font-size: 24px;
   font-family: var(--font-corbert);
   font-weight: 500;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
@@ -372,7 +372,7 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -398,7 +398,7 @@
 }
 
 .card-body-create h2{
-      color: #000000;
+      color: var(--heading-main-color);
    font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
@@ -454,7 +454,7 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
@@ -474,14 +474,14 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
+  color: var(--heading-highlite-color);
     font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
+      color: var(--heading-main-color);
     font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
@@ -505,7 +505,7 @@
 .industries-we-serve h3{
      font-size: 50px;
      font-family: var(--font-corbert);
-     color: #000;
+     color: var(--heading-main-color);
      text-align: center;
      padding: 50px 0;
 }
@@ -520,7 +520,7 @@
 .industries-we-serve-col h4{
     font-size: 24px;
     font-family: var(--font-corbert);
-    color: #000;
+    color: var(--heading-main-color);
     padding: 20px 0;
     text-align: center;
 }
@@ -528,7 +528,7 @@
 .industries-we-serve-col p{
     font-size: 18px;
     font-family: var(--font-roboto);
-    color: #000;
+    color: var(--heading-main-color);
     text-align: center;
 }
 
@@ -546,14 +546,14 @@
       text-align: center;
      font-family: var(--font-corbert);
       font-size: 50px;
-      color: #000;
+      color: var(--heading-main-color);
 }
 
 .website-audit-row p{
       text-align: center;
       font-family: var(--font-roboto);
       font-size: 18px;
-      color: #000;
+      color: var(--heading-main-color);
       padding: 20px 0;
 }
 
@@ -584,7 +584,7 @@
 .projects-completed-heading{
   font-size: 40px;
  font-family: var(--font-corbert);
-  color: #000;
+  color: var(--heading-main-color);
   text-align: center;
   padding-bottom: 20px;
 }
@@ -600,7 +600,7 @@
 
 .projects-completed-div h3{
   font-size: 43px;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
   font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
@@ -608,7 +608,7 @@
 
 .projects-completed-div h4{
   font-size: 18px;
-  color: #000;
+  color: var(--heading-main-color);
 font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
@@ -646,7 +646,7 @@ font-family: var(--font-corbert);
     font-size: 56px;
   font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

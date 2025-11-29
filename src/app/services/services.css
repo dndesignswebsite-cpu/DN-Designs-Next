@@ -4,7 +4,7 @@
 }
 
 .our-service h2 {
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -13,7 +13,7 @@
 }
 
 .our {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
   font-size: 62px;
   font-family: var(--font-corbert);
   font-weight: 700;
@@ -47,7 +47,7 @@
 }
 
 .front h3 {
-  color: black;
+  color: var(--heading-main-color);
   padding: 20px 0px 8px 10px;
   font-size: 25px;
   font-family: var(--font-corbert);
@@ -56,7 +56,7 @@
 }
 
 .front p {
-  color: black;
+  color: var(--heading-main-color);
   padding: 0px 0px 10px 10px;
   font-size: 26px;
   font-family: var(--font-corbert);
@@ -71,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ca2734;
+  background: var(--heading-highlite-color);
   color: white;
   transition: bottom 0.6s ease;
 }
@@ -199,7 +199,7 @@
 
 .appr-pro-main-para {
   margin-top: 10px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 32px;
   font-size: 18px;
   width: 100%;
@@ -208,7 +208,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-white {
@@ -244,7 +244,7 @@
   font-size: 24px;
  font-family: var(--font-corbert);
   font-weight: 500;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
@@ -291,7 +291,7 @@
 }
 
 .top-cap p {
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -356,7 +356,7 @@
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .top-cap-back-content {
@@ -389,7 +389,7 @@
     font-size: 56px;
     font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 
 @media(max-width:767px){

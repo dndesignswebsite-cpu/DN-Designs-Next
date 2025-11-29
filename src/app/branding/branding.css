@@ -28,7 +28,7 @@
 }
 
 .portfolio h2 {
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .potfolio-div-btns {
@@ -48,7 +48,7 @@
 .our-port-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 10px;
   font-family: var(--font-roboto);
@@ -56,7 +56,7 @@
   border-width: 1px 1px 1px 1px;
   border-radius: 6px 6px 6px 6px;
   font-size: 16px;
-  color: #000;
+  color: var(--heading-main-color);
 }
 
 .our-port-btn-up {
@@ -69,7 +69,7 @@
   font-family: var(--font-corbert);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   font-size: 18px;
 }
@@ -78,7 +78,7 @@
   padding: 20px 20px 20px 20px;
 }
 .port-div-headg h3 {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
   font-family: var(--font-corbert);
   font-size: 32px;
 }
@@ -196,7 +196,7 @@
 }
 
 .mobile-view-our-brand-h3 {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
   font-family: var(--font-corbert);
   font-size: 32px;
 }
@@ -230,7 +230,7 @@
 .our-brand-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 5px;
 }
@@ -279,7 +279,7 @@
 }
 
 .mobile-view-branding-that-h3 {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
   font-family: var(--font-corbert);
   font-size: 32px;
 }
@@ -310,7 +310,7 @@
 .branding-that-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 5px;
 }
@@ -361,7 +361,7 @@
   padding: 50px 0px 40px 0px;
 }
 .branding-identity h2{
-   color: #000000;
+   color: var(--heading-main-color);
  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -385,7 +385,7 @@
 }
 
 .identity-div-content h3{
-      color: #000000;
+      color: var(--heading-main-color);
     font-family: var(--font-corbert);
     font-size: 24px;
     font-weight: 700;
@@ -512,7 +512,7 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
+  color: var(--heading-main-color);
   font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
@@ -531,14 +531,14 @@
 }
 
 .create-number{
-  color: #CA2734;
+  color: var(--heading-highlite-color);
    font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
+      color: var(--heading-main-color);
    font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
@@ -594,7 +594,7 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
+  color: var(--heading-main-color);
  font-family: var(--font-corbert);
   font-size: 40px;
   font-weight: 700;
@@ -614,14 +614,14 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
+  color: var(--heading-highlite-color);
    font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
+      color: var(--heading-main-color);
    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
@@ -646,7 +646,7 @@
     font-size: 56px;
     font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

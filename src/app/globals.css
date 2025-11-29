@@ -4,10 +4,11 @@ body {
   overflow-x: hidden;
 }
 
-:root {
-  --heading-main-color:#000000;
-  --heading-highlite-color: #ca2734;
 
+/* global colors */
+:root {
+  --heading-main-color:#000;
+  --heading-highlite-color: #ca2734;
 }
 
 

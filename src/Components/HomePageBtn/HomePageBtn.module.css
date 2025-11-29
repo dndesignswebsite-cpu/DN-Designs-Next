@@ -23,12 +23,12 @@
 
 
 .hero button:first-child {
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   color: white;
 }
 
 .hero button:last-child {
-  background-color: #000;
+  background-color: var(--heading-main-color);
   color: white;
 }
 

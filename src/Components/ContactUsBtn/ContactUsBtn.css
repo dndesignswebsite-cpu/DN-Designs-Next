@@ -1,6 +1,6 @@
 .contact-us-btn button{
      background-color: #fff;
-     color: #ca2734;
+     color: var(--heading-highlite-color);
      border-radius:100px;
      padding: 10px 25px;
      font-family: var(--font-corbert);

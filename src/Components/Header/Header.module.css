@@ -31,8 +31,8 @@
     right: 10px;
     z-index: 10001;
     background-color: transparent;
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid var(--heading-main-color);
+    color: var(--heading-main-color);
     padding: 15px 20px 15px 0px;
     cursor: pointer;
     font-size: 14px;
@@ -44,14 +44,14 @@
 }
 
 .nav-toggle-btn.is-active {
-    border-color: #000000;
+    border-color: var(--heading-main-color);
     color: #ffffff;
 }
 
 .nav-toggle-btn.is-active .toggle-icon,
 .nav-toggle-btn.is-active .toggle-icon::before,
 .nav-toggle-btn.is-active .toggle-icon::after {
-    background-color: #000000;
+    background-color: var(--heading-main-color);
 }
 
 .toggle-icon {
@@ -59,7 +59,7 @@
     margin-left: 10px;
     width: 18px;
     height: 2px;
-    background-color: #000000;
+    background-color: var(--heading-main-color);
     position: relative;
     transition: all 0.3s ease;
 }
@@ -74,7 +74,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: var(--heading-main-color);
     transition: all 0.3s ease;
 }
 
@@ -152,12 +152,12 @@
 }
 
 .header-solo-link:hover{
-    color: #ca2734;
+    color: var(--heading-highlite-color);
 }
 
 .header-solo-heading{
     font-size: 20px;
-    color: #000;
+    color: var(--heading-main-color);
     font-family: var(--font-corbert);
 }
 
@@ -173,7 +173,7 @@
 .contact-us-col h4{
     font-family: var(--font-corbert);
     font-size: 18px;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .contact-us-col p{

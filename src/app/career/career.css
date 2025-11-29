@@ -14,18 +14,18 @@
     font-size: 50px;
     font-family: var(--font-corbert);
     width: 80%;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .wow{
-    color: #ca2734;
+    color: var(--heading-highlite-color);
 }
 
 .career-hero-col-l p{
     font-size: 18px;
    font-family: var(--font-roboto);
     width: 80%;
-    color: #000;
+    color: var(--heading-main-color);
     line-height: 1.6em;
     padding-top: 10px;
 }
