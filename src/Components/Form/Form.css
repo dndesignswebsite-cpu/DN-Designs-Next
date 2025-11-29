@@ -15,7 +15,7 @@
 
 
 .inpt label{
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
         cursor: pointer;
         color: #000;
         font-size: 16px;
@@ -31,7 +31,7 @@
   box-sizing: border-box;
   border: 1px solid #ADADAD;
   border-radius: 12px;
-  font-family: "Roboto", Sans-serif;
+ font-family: var(--font-roboto);
   padding: 10px;
   font-size: 14px;
   margin:10px 0px;
@@ -41,7 +41,7 @@
   box-sizing: border-box;
   border: 1px solid #ADADAD;
   border-radius: 12px;
-  font-family: "Roboto", Sans-serif;
+ font-family: var(--font-roboto);
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
@@ -52,7 +52,7 @@
 .inpt textarea::placeholder {
   color: #ADADAD;
   opacity: 1;
-  font-family: "Roboto", Sans-serif;
+  font-family: var(--font-roboto);
 }
 
 .sbmt-btn {
@@ -65,7 +65,7 @@
   border-radius: 15px;
   font-weight: 600;
   cursor: pointer;
-  font-family: "Roboto";
+ font-family: var(--font-roboto);
 } 
 
 .form-box{
@@ -108,7 +108,7 @@
 
 .form-main-content h3{
     color: #000000;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -116,7 +116,7 @@
 }
 
 .form-main-content p{
-        font-family: "Roboto";
+       font-family: var(--font-roboto);
         color: #000000;
         line-height: 32px;
         font-weight: 300;

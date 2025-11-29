@@ -1,5 +1,5 @@
 .showmore-btn {
-  font-family: Roboto;
+  font-family: var(--font-roboto);
   cursor: pointer;
   background-color: #ca2734;
   border: 2px solid #ca2734;

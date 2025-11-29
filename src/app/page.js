@@ -56,8 +56,8 @@ export default function Home() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>We Build Brands That Inspire Confidence and Drive Profit</h1>
-              <p>Let’s collaborate and craft a truly standout brand for you.</p>
+              <h1 className="heading-corbert">We Build Brands That Inspire Confidence and Drive Profit</h1>
+              <p className="para-roboto">Let’s collaborate and craft a truly standout brand for you.</p>
               <div>
                 {/* <button>Talk To Us</button>
                 <button onClick={ourWork}>Explore Our Work</button> */}
@@ -82,7 +82,7 @@ export default function Home() {
 
       <section className={`${styles["our-brand"]}`}>
         <div className="container">
-          <h2 className={`${styles["our-brand-heading"]} text-center `}>
+          <h2 className={`${styles["our-brand-heading"]} text-center heading-corbert`}>
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
@@ -90,13 +90,13 @@ export default function Home() {
               <div className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Rithm’s Enlite</h3>
+                    <h3 className="heading-corbert">Rithm’s Enlite</h3>
                     <div className={`${styles["brand-buttons"]}`}>
-                      <button>Brand Identity</button>
-                      <button>Packaging Design</button>
-                      <button>Communication Design</button>
+                      <button className="para-roboto">Brand Identity</button>
+                      <button className="para-roboto">Packaging Design</button>
+                      <button className="para-roboto">Communication Design</button>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       For Rithm’s Enlite, a brand with sparkling mineral water
                       and prebiotic drink range, we designed a thoughtful and
                       eye-catching brand identity, including can design, logo
@@ -119,14 +119,14 @@ export default function Home() {
                 </video>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Wlue's</h3>
+                    <h3 className="heading-corbert">Wlue's</h3>
                     <div className={`${styles["brand-buttons"]}`}>
-                      <button>Brand Identity</button>
-                      <button>Packaging Design</button>
-                      <button>UI/UX</button>
-                      <button>Website</button>
+                      <button className="para-roboto">Brand Identity</button>
+                      <button className="para-roboto">Packaging Design</button>
+                      <button className="para-roboto">UI/UX</button>
+                      <button className="para-roboto">Website</button>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Makhana brand Wlue’s approached us to launch and promote its product in the market. 
                       Their target audience was the youth worldwide. We created its logo and packaging design. 
                       In its packaging, we adopted a retro approach with a superhero vibe, while through its logo
@@ -140,13 +140,13 @@ export default function Home() {
               <div className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Nectarpure</h3>
+                    <h3 className="heading-corbert">Nectarpure</h3>
                     <div className={`${styles["brand-buttons"]}`}>
-                      <button>Brand Identity</button>
-                      <button>Label Design</button>
-                      <button>UI/UX</button>
+                      <button className="para-roboto">Brand Identity</button>
+                      <button className="para-roboto">Label Design</button>
+                      <button className="para-roboto">UI/UX</button>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Nutraceutical brand NECTARPURE partnered with us primarily to establish its FusionMax 
                       Whey Protein product as a niche lifestyle protein brand in the market. We shaped their 
                       brand identity and crafted their label design to give the product a premium feel. In addition, 
@@ -160,13 +160,13 @@ export default function Home() {
               <div className={`${styles["card-body"]} ${styles["card-body-grin"]}`}>
                 <div className={`${styles["brand-overlay"]}`}>
                   <div className={`${styles["our-brand-content"]}`}>
-                    <h3>Grin Care</h3>
+                    <h3 className="heading-corbert">Grin Care</h3>
                     <div className={`${styles["brand-buttons"]}`}>
-                      <button>Brand Identity</button>
-                      <button>UI/UX</button>
-                      <button>Website</button>
+                      <button className="para-roboto">Brand Identity</button>
+                      <button className="para-roboto">UI/UX</button>
+                      <button className="para-roboto">Website</button>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Oral care product brand GrinCare teamed up with us to create a 
                       brand presence for itself in the dental healthcare market. We helped 
                       design its brand identity, clarify its market positioning, and craft a
@@ -185,7 +185,7 @@ export default function Home() {
       <section className={`${styles["mobile-view-our-brand"]}`}>
         <div className="container">
           <div className="row">
-            <h2 className={`${styles["our-brand-heading"]} text-center`}>Our Brand Journals</h2>
+            <h2 className={`${styles["our-brand-heading"]} text-center heading-corbert`}>Our Brand Journals</h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
@@ -196,25 +196,25 @@ export default function Home() {
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}>
                       Rithm’s Enlite
                     </h3>
                     <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Packaging Design
                       </h4>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Packaging Design
                       </h4>
                     </div>
                     <div>
                       <h4
-                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
                       >
                         Communication Design
                       </h4>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       For Rithm’s Enlite, a brand with sparkling mineral water
                       and prebiotic drink range, we designed a thoughtful and
                       eye-catching brand identity, including can design, logo
@@ -237,26 +237,26 @@ export default function Home() {
                     Your browser does not support the video tag.
                   </video>
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}>
                       Wlue's
                     </h3>
                     <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Brand Identity
                       </h4>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Packaging Design
                       </h4>
                     </div>
                     <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                        UI/UX
                       </h4>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Website
                       </h4>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Makhana brand Wlue’s approached us to launch and promote its product in the market. 
                       Their target audience was the youth worldwide. We created its logo and packaging design. 
                       In its packaging, we adopted a retro approach with a superhero vibe, while through its logo
@@ -274,25 +274,25 @@ export default function Home() {
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                    <h3 className={`${styles['mobile-view-our-brand-h3']}`}>
+                    <h3 className={`${styles['mobile-view-our-brand-h3']} heading-corbert`}>
                       Nectarpure
                     </h3>
                     <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Brand Identity
                       </h4>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto `}>
                         Label Design
                       </h4>
                     </div>
                     <div>
                       <h4
-                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
                       >
                        UI/UX
                       </h4>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Nutraceutical brand NECTARPURE partnered with us primarily to establish its FusionMax 
                       Whey Protein product as a niche lifestyle protein brand in the market. We shaped their 
                       brand identity and crafted their label design to give the product a premium feel. In addition, 
@@ -310,25 +310,25 @@ export default function Home() {
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
-                    <h3 className={`${styles["mobile-view-our-brand-h3"]}`}>
+                    <h3 className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}>
                       Grin Care
                     </h3>
                     <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                         Brand Identity
                       </h4>
-                      <h4 className={`${styles["our-brand-mobile-btn"]}`}>
+                      <h4 className={`${styles["our-brand-mobile-btn"]} para-roboto`}>
                        UI/UX
                       </h4>
                     </div>
                     <div>
                       <h4
-                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center`}
+                        className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
                       >
                         Website
                       </h4>
                     </div>
-                    <p>
+                    <p className="para-roboto">
                       Oral care product brand GrinCare teamed up with us to create a 
                       brand presence for itself in the dental healthcare market. We helped 
                       design its brand identity, clarify its market positioning, and craft a

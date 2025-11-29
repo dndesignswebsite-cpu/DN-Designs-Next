@@ -41,7 +41,7 @@
 .testi-left-content p {
   font-size: 14px;
   margin-bottom: 0;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 .testi-left-content h3 {
@@ -50,7 +50,7 @@
   line-height: 1.2;
   margin-bottom: 20px;
   margin-left: 30px;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 .colon-img {
@@ -73,7 +73,7 @@
 
 .founder-name {
   margin-left: 30px;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 .testi-main-img img {
@@ -96,7 +96,7 @@
   border-radius: 0 0 10px 10px;
   background-color: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 .testi-right-content p {

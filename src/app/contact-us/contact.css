@@ -23,7 +23,7 @@
 
 .contact-h1 h1{
  color: #000000;
-    font-family: "corbert bold", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 50px;
     font-weight: 700;
 }
@@ -38,7 +38,7 @@
 
 .contact-h1 h1{
  color: #000000;
-    font-family: "corbert bold", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
 }

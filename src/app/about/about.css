@@ -23,7 +23,7 @@
 .projects-completed-div h3{
   font-size: 43px;
   color: #ca2734;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -31,7 +31,7 @@
 .projects-completed-div h4{
   font-size: 18px;
   color: #000;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -39,7 +39,7 @@
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-weight: 700;
   text-align: center;
 }
@@ -75,7 +75,7 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -86,7 +86,7 @@
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
@@ -124,7 +124,7 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-weight: 500;
   color: #ca2734;
 }
@@ -133,7 +133,7 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+ font-family: var(--font-roboto);
 }
 
 .app-pro-div-up{
@@ -164,7 +164,7 @@
 .app-pro-div-first h3{
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 500;
   color: #ca2734;
 }
@@ -194,7 +194,7 @@
 
 .dedicated-team-hedg h2{
   font-size: 50px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   color: #000;
   width: 70%;
   text-align: center;
@@ -245,7 +245,7 @@
 
 
 .points-about-right h2 {
-  font-family: Corbert, sans-serif;
+  font-family: var(--font-corbert);
   font-size: 180px;
   font-weight: 700;
   color: rgb(0, 0, 0);
@@ -254,7 +254,7 @@
 }
 .points-about-right h3 {
   color: rgb(0, 0, 0);
-  font-family: Corbert, sans-serif;
+ font-family: var(--font-corbert);
   font-size: 25px;
   font-weight: 700;
   
@@ -262,7 +262,7 @@
 
 .points-about-para p {
     color: #888888;
-    font-family: "Roboto-Regular";
+    font-family: var(--font-roboto);
     font-weight:400;
     font-size: 16px;
     line-height: 1.4em;

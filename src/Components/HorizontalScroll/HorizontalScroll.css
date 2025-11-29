@@ -76,19 +76,19 @@
 }
 
 .overlay-content-pure h2{
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-size: 50px;
   margin-left: 20px;
 }
 
 .overlay-content-pure p{
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-size: 18px;
   margin-left:10px 20px;
 }
 
 .overlay-content-pure button{
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-size: 16px;
   border-radius: 100px;
   margin: 10px 20px;
@@ -134,7 +134,7 @@
   top: 30%;
 }
 .overlay-content-pure h2{
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-size: 40px;
   margin-left: 20px;
 }

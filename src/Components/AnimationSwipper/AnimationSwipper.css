@@ -5,13 +5,13 @@
 
 .animation-video-swipper-up h3{
     font-size: 40px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #000;
 }
 
 .animation-video-swipper-up button{
     font-size: 16px;
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     background-color: #000;
     color: #fff;
     border-radius: 30px;
@@ -27,7 +27,7 @@ font-weight: 600;
 }
 
 .animation-video-swipper-bottom p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.6em;
     padding-top: 30px;

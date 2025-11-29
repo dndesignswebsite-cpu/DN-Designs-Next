@@ -17,14 +17,14 @@
 .switch-on-div h3{
   font-size: 43px;
   color: #ca2734;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .switch-on-div p{
   font-size: 18px;
   color: #000;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-weight: 700;
   line-height: 1em;
 }
@@ -78,7 +78,7 @@ padding: 0;
 
 .switch-on-middle-div-para p{
      font-size: 18px;
-     font-family: "Corbert";
+    font-family: var(--font-corbert);
     padding: 18px;
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
     border-radius:18px;
@@ -108,7 +108,7 @@ padding: 0;
 
 .we-are-the-leading h3{
     font-size: 50px;
-    font-family: "Corbert";
+   font-family: var(--font-corbert);
     color: #000;
     width: 70%;
 }
@@ -119,7 +119,7 @@ padding: 0;
 
 .we-are-the-leading-para p{
   font-size: 18px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
   line-height: 1.6em;
 }
 
@@ -147,13 +147,13 @@ padding: 0;
 
 .top-cap h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .top-cap p {
   color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+ font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -253,14 +253,14 @@ padding: 0;
 .organic-sessions-col h3{
    text-align: center;
    font-size: 38px;
-   font-family: "Corbert";
+  font-family: var(--font-corbert);
    color: #fff;
 }
 
 .organic-sessions-col p{
    text-align: center;
    font-size: 18px;
-   font-family: "Roboto";
+  font-family: var(--font-roboto);
    color: #fff;
    padding-top:20px;
 }
@@ -279,7 +279,7 @@ padding: 0;
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+    font-family: var(--font-corbert);
     font-weight: 700;
     color: rgb(0, 0, 0);
 }

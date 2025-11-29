@@ -12,7 +12,7 @@
 
 .career-hero-col-l h2{
     font-size: 50px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     width: 80%;
     color: #000;
 }
@@ -23,7 +23,7 @@
 
 .career-hero-col-l p{
     font-size: 18px;
-    font-family: "Roboto";
+   font-family: var(--font-roboto);
     width: 80%;
     color: #000;
     line-height: 1.6em;

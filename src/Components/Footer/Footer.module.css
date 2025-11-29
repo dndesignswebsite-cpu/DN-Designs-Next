@@ -3,10 +3,10 @@
 }
 
 .ff{
-    font-family: 'Corbert', sans-serif;
+    font-family: var(--font-corbert);
 }
 .ff p{
-    font-family: 'Roboto-Regular';
+    font-family: var(--font-roboto);
 }
 
 .footer-li ul li a{

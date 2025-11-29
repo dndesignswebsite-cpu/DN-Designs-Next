@@ -7,16 +7,16 @@ function PagesHero({ heading, subHeading, para }) {
     <section className="pages-hero">
       <div className="container">
         <div className="row">
-          <h1>{heading}</h1>
-          <h3>{subHeading}</h3>
+          <h1 className='heading-corbert'>{heading}</h1>
+          <h3 className='heading-corbert'>{subHeading}</h3>
           <div className="col-12 col-md-4"></div>
           <div className="col-12 col-md-8">
             <div className="talk-to-us-desktop">
               <TalkToUs />
             </div>
-            <p>{para}</p>
+            <p className='para-roboto'>{para}</p>
             <div className="talk-to-us-mobile">
-              <TalkToUs />
+              <TalkToUs/>
             </div>
           </div>
         </div>

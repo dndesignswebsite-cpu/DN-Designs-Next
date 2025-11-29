@@ -4,7 +4,7 @@
 }
 .explore-our-video-gallery h2{
   font-size: 40px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   color: #000;
   text-align: center;
   padding: 30px 0;
@@ -18,7 +18,7 @@
 
 .we-are-the-leading h3{
     font-size: 50px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #000;
     width: 70%;
 }
@@ -29,7 +29,7 @@
 
 .we-are-the-leading-para p{
   font-size: 18px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
   line-height: 1.6em;
 }
 
@@ -60,13 +60,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
   color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -165,7 +165,7 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -176,7 +176,7 @@
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
@@ -214,7 +214,7 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 500;
   color: #ca2734;
 }
@@ -223,12 +223,12 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+ font-family: var(--font-roboto);
 }
 
 .appr-pro-main-para{
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   width: 90%;
   color: #000;
 }
@@ -260,7 +260,7 @@
 
 .power-of-animation-row h3{
 font-size: 50px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-weight: 700;
     color: #000;
 }
@@ -268,7 +268,7 @@ font-size: 50px;
 .power-of-animation-row p{
     font-size: 18px;
     color:#000;
-    font-family: "Roboto";
+   font-family: var(--font-roboto);
     padding: 20px 0;
 } 
 .horror-image-col{
@@ -326,7 +326,7 @@ padding: 20px;
 }
 
 .user-eng-up-div h4{
-     font-family: "Corbert";
+     font-family: var(--font-corbert);
      color: #000;
      font-size: 18px;
 }
@@ -336,21 +336,21 @@ padding: 20px;
 }
 
 .user-engagement-div h3{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 24px;
     padding-top: 30px;
     color: #000;
 }
 
 .user-engagement-div p{
-    font-family: "Roboto";
+   font-family: var(--font-roboto);
     font-size: 14px;
     color: #000;
     font-weight: 500;
 }
 
 .user-engagement-number{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size:40px;
     color: #000;
 }
@@ -360,7 +360,7 @@ padding: 20px;
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+    font-family: var(--font-corbert);
     font-weight: 700;
     color: rgb(0, 0, 0);
 }

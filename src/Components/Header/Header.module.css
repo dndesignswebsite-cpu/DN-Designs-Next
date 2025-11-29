@@ -143,7 +143,7 @@
 }
 
 .header-solo-link{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 18px;
     cursor: pointer;
     text-decoration: none;
@@ -158,7 +158,7 @@
 .header-solo-heading{
     font-size: 20px;
     color: #000;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
 }
 
 .contact-us-heading-div{
@@ -171,13 +171,13 @@
 }
 
 .contact-us-col h4{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 18px;
     color: #000;
 }
 
 .contact-us-col p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 16px;
     color: #888;
     line-height: 1.3em;
@@ -218,7 +218,7 @@
         box-shadow: 0 2px 11px -1px #0000001a;
         border: none;
         border-radius: 20px;
-        font-family: "Corbert";
+       font-family: var(--font-corbert);
     }
 
 }

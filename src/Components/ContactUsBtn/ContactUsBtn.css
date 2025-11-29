@@ -3,7 +3,7 @@
      color: #ca2734;
      border-radius:100px;
      padding: 10px 25px;
-     font-family: "Corbert";
+     font-family: var(--font-corbert);
      border:none;
      font-weight: 500;
      font-size: 18px;

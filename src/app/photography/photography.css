@@ -16,7 +16,7 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -27,7 +27,7 @@
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
@@ -65,7 +65,7 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-weight: 500;
   color: #ca2734;
 }
@@ -74,7 +74,7 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
 }
 
 .app-pro-div-up{
@@ -110,14 +110,14 @@
 .organic-sessions-col h3{
    text-align: center;
    font-size: 38px;
-   font-family: "Corbert";
+   font-family: var(--font-corbert);
    color: #fff;
 }
 
 .organic-sessions-col p{
    text-align: center;
    font-size: 18px;
-   font-family: "Roboto";
+   font-family: var(--font-roboto);
    color: #fff;
    padding-top:20px;
 }
@@ -132,14 +132,14 @@
 }
 
 .visual-stories-that-content h3{
-    font-family: "Corbert";
+   font-family: var(--font-corbert);
     font-size: 40px;
     color: #ca2734;
     line-height: 1.6em;
 }
 
 .visual-stories-that-content p{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 18px;
     color: #6F6F6F;
     line-height: 1.6em;

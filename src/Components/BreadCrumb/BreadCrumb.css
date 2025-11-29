@@ -1,18 +1,18 @@
 .Bread{
     font-size: 16px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #000;
     text-decoration: none;
 }
 .Bread-sub{
     font-size: 16px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #434347;
     text-decoration: none;
 }
 
 .breadCrump-prev{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
         color: #A5A4B0;
         font-size: 16px;
         padding: 0 5px;
@@ -20,6 +20,6 @@
 }
 
 .breadCrump{
-    font-family: "Corbert";
+   font-family: var(--font-corbert);
 }
 

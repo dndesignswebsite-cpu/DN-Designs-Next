@@ -8,7 +8,7 @@
 }
 
 .what-drives-our-growth-heading{
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-size: 50px;
   color: #000;
   text-align: center;
@@ -19,13 +19,13 @@
 }
 
 .what-drives-our-growth-row h3{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #fff;
     font-size: 35px;
 }
 
 .what-drives-our-growth-row p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     color: #fff;
     font-size: 18px;
 }
@@ -66,14 +66,14 @@
 }
 
 .comprehensive-seo-stregety-content h2{
-    font-family: "Corbert";
+   font-family: var(--font-corbert);
     font-size: 32px;
     color: #000;
     padding:10px 0 ;
 }
 
 .comprehensive-seo-stregety-content p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 18px;
     color: #000;
 }
@@ -90,14 +90,14 @@
 }
 
 .transparent-reporting-content h2{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 32px;
     color: #ca2734;
     padding:10px 0 ;
 }
 
 .transparent-reporting-content p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 18px;
     color: #000;
 }
@@ -118,13 +118,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
   color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -224,7 +224,7 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -235,7 +235,7 @@
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
@@ -273,7 +273,7 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 500;
   color: #ca2734;
 }
@@ -282,7 +282,7 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
 }
 
 .app-pro-div-up{
@@ -373,7 +373,7 @@
   padding: 30px 0;
   text-align: center;
   color: #000000;
-  font-family: "Corbert", Sans-serif;
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -392,21 +392,21 @@
 
 .create-number{
   color: #CA2734;
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
       color: #000000;
-    font-family: "Corbert", Sans-serif;
+   font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
 }
 
 .card-body-create p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -455,7 +455,7 @@
 
 .our-brand-heading-a-mobile{
   color: #000000;
-  font-family: "Corbert", Sans-serif;
+  font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
@@ -475,14 +475,14 @@
 
 .create-number-mobile{
   color: #CA2734;
-    font-family: "Corbert bold", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
       color: #000000;
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -490,7 +490,7 @@
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -504,7 +504,7 @@
 
 .industries-we-serve h3{
      font-size: 50px;
-     font-family: "Corbert";
+     font-family: var(--font-corbert);
      color: #000;
      text-align: center;
      padding: 50px 0;
@@ -519,7 +519,7 @@
 
 .industries-we-serve-col h4{
     font-size: 24px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #000;
     padding: 20px 0;
     text-align: center;
@@ -527,7 +527,7 @@
 
 .industries-we-serve-col p{
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     color: #000;
     text-align: center;
 }
@@ -544,14 +544,14 @@
 
 .website-audit-row h3{
       text-align: center;
-      font-family: "Corbert";
+     font-family: var(--font-corbert);
       font-size: 50px;
       color: #000;
 }
 
 .website-audit-row p{
       text-align: center;
-      font-family: "Roboto";
+      font-family: var(--font-roboto);
       font-size: 18px;
       color: #000;
       padding: 20px 0;
@@ -583,7 +583,7 @@
 
 .projects-completed-heading{
   font-size: 40px;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   color: #000;
   text-align: center;
   padding-bottom: 20px;
@@ -601,7 +601,7 @@
 .projects-completed-div h3{
   font-size: 43px;
   color: #ca2734;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -609,7 +609,7 @@
 .projects-completed-div h4{
   font-size: 18px;
   color: #000;
-  font-family: "Corbert";
+font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -617,7 +617,7 @@
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-weight: 700;
   text-align: center;
 }
@@ -644,7 +644,7 @@
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+  font-family: var(--font-corbert);
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
