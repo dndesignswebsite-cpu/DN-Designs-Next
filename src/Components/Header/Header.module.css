@@ -51,7 +51,7 @@
 .nav-toggle-btn.is-active .toggle-icon,
 .nav-toggle-btn.is-active .toggle-icon::before,
 .nav-toggle-btn.is-active .toggle-icon::after {
-    background-color: var(--heading-main-color);
+    background-color: #000;
 }
 
 .toggle-icon {
