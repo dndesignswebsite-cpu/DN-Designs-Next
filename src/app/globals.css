@@ -12,7 +12,7 @@ body {
 }
 
 
-/* fonts */
+/* fonts global */
 .heading-corbert {
   font-family: var(--font-corbert);
   font-weight: 600;
