@@ -9,34 +9,42 @@ import PagesHero from '@/Components/PagesHero/PagesHero'
 import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 
-// meta tags
+// meta data 
 export const metadata = {
-  title: "About | DN Designs",
-  description: "We build brands that inspire confidence and drive profit",
+  title: "About DN Designs – Best Digital Marketing Agency",
+  description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+  
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about" }],
+  
+  alternates: { canonical: "https://dn-designs-next.vercel.app/about" },
+  
+  robots: { index: true, follow: true, nocache: true },
+  
   openGraph: {
-    title: "About | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
+    title: "About DN Designs",
+    description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+    url: "https://dn-designs-next.vercel.app/about",
     siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs Portfolio",
-      },
-    ],
-    type: "website",
+    images: [{ 
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg", 
+      width: 1200, 
+      height: 630, 
+      alt: "About DN Designs" 
+    }],
+    type: "website"
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "About | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    images: [
-      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
-    ],
-  },
+    title: "About DN Designs",
+    description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg"]
+  }
 };
+//meta end here
+
+
+
 
 function page() {
   // hero section content

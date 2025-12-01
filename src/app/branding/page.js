@@ -10,34 +10,41 @@ import HorizontalScroll from "@/Components/HorizontalScroll/HorizontalScroll";
 
 
 
-// meta tags
+// meta data 
 export const metadata = {
-  title: "Branding | DN Designs",
-  description: "We build brands that inspire confidence and drive profit",
+  title: "Branding – DN Designs",
+  description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+  
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/branding" }],
+  
+  alternates: { canonical: "https://dn-designs-next.vercel.app/branding" },
+  
+  robots: { index: true, follow: true, nocache: true },
+  
   openGraph: {
-    title: "Branding | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
+    title: "Branding – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    url: "https://dn-designs-next.vercel.app/branding",
     siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs Portfolio",
-      },
-    ],
-    type: "website",
+    images: [{ 
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
+      width: 1200, 
+      height: 630, 
+      alt: "DN Designs Animation Services" 
+    }],
+    type: "website"
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Branding | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    images: [
-      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
-    ],
-  },
+    title: "Animation Services – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
+  }
 };
+//meta end here
+
+
 
 function page() {
   // hero section content

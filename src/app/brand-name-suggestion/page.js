@@ -6,32 +6,47 @@ import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 
-// meta tags
+
+
+
+// meta data 
 export const metadata = {
-  title: "Brand Name Suggestion | DN Designs",
-  description: "We build brands that inspire confidence and drive profit",
+  title: "Brand Name Suggestion – DN Designs",
+  description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+  
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/brand-name-suggestion" }],
+  
+  alternates: { canonical: "https://dn-designs-next.vercel.app/brand-name-suggestion" },
+  
+  robots: { index: true, follow: true, nocache: true },
+  
   openGraph: {
-    title: "Brand Name Suggestion | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
+    title: "Brand Name Suggestion – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    url: "https://dn-designs-next.vercel.app/brand-name-suggestion",
     siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs Portfolio",
-      },
-    ],
-    type: "website",
+    images: [{ 
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
+      width: 1200, 
+      height: 630, 
+      alt: "DN Designs Animation Services" 
+    }],
+    type: "website"
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Brand Name Suggestion | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    images: ["https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"],
-  },
+    title: "Animation Services – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
+  }
 };
+//meta end here
+
+
+
+
+
 
 function page() {
   const heading = "Brand Name Suggestion";

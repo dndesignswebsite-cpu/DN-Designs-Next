@@ -7,35 +7,43 @@ import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 
 
-
-// meta tags
+// meta data 
 export const metadata = {
-  title: "Home | DN Designs",
-  description: "We build brands that inspire confidence and drive profit",
+  title: "DN Designs – Best Digital Marketing Agency",
+  description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+  
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" }],
+  
+  alternates: { canonical: "https://dn-designs-next.vercel.app/" },
+  
+  robots: { index: true, follow: true, nocache: true },
+  
   openGraph: {
-    title: "Home | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
+    title: "DN Designs – Best Digital Marketing Agency",
+    description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+    url: "https://dn-designs-next.vercel.app/",
     siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs Portfolio",
-      },
-    ],
-    type: "website",
+    images: [{ 
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
+      width: 1200, 
+      height: 630, 
+      alt: "DN Designs SEO and Digital Marketing" 
+    }],
+    type: "website"
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Home | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    images: [
-      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
-    ],
-  },
+    title: "DN Designs – Best Digital Marketing Agency",
+    description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
+  }
 };
+//meta end here
+
+
+
+
 
 
 export default function Home() {
