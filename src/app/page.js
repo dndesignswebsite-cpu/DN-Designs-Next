@@ -16,7 +16,7 @@ export const metadata = {
   
   alternates: { canonical: "https://dn-designs-next.vercel.app/" },
   
-  robots: { index: true, follow: true, nocache: true },
+  robots: { index: true, follow: true },
   
   openGraph: {
     title: "DN Designs – Best Digital Marketing Agency",
