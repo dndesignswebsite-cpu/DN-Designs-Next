@@ -1,6 +1,7 @@
 import React from 'react'
 import "./career.css"
 import CareerPageTab from '@/Components/CareerPageTabs/CareerPageTab'
+import CareerPageForm from '@/Components/CareerPageForm/CareerPageForm';
 
 // meta data 
 export const metadata = {
@@ -59,6 +60,9 @@ function page() {
 
       {/* career tabs */}
       <CareerPageTab/>
+
+      {/* career page form */}
+      <CareerPageForm/>
     </div>
   )
 }

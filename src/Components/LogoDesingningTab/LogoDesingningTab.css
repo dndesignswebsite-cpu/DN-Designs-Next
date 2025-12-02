@@ -15,13 +15,13 @@
 }
 
 .custom-tabs .nav-link.active {
-  color: var(--heading-highlite-color);
+  color: #ca2734;
   border: 1px solid var(--heading-main-color);
   border-bottom: 1px solid #fff;
 }
 
 .custom-tabs .nav-link:hover {
-  color: var(--heading-highlite-color);
+  color: #ca2734;
   background-color: #fafafa;
 }
 
