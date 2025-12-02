@@ -46,6 +46,11 @@ app.get("/api/health", (req, res) => {
 });
 
 // API Routes
+app.use("/",(req,resp)=>{
+  console.log("hdfhbjd");
+  resp.send("server started")
+})
+
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/contact", contactRoutes);
