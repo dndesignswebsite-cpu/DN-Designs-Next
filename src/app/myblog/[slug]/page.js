@@ -27,7 +27,9 @@ function SingleBlog() {
         style={{ width: "100%", borderRadius: "10px", marginBottom: "20px" }}
       />
       <h1 style={{ marginBottom: "20px" }}>{blog.title}</h1>
-      <p style={{ lineHeight: "1.8" }}>{blog.content}</p>
+      {/*text compile in html*/}
+      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      {/* <p style={{ lineHeight: "1.8" }}>{blog.content}</p> */}
     </div>
   );
 }
