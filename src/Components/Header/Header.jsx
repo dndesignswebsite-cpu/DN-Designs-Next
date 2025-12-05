@@ -313,35 +313,45 @@ export default function Header() {
                       style={{ fontSize: "1.6em" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
-                      Main Links
+                      Case Studies
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
                       <Link
-                        href="/"
+                        href="/enlite-case-study"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Home
+                        Enlite
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/about"
+                        href="/grincare-case-study"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        About Us
+                        Grincare
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/services"
+                        href="/nectarpure-case-study"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Services
+                        Nectarpure
+                      </Link>
+                    </li>
+
+                      <li>
+                      <Link
+                        href="/wlues-case-study"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                        Wlues
                       </Link>
                     </li>
                   </ul>
@@ -355,47 +365,41 @@ export default function Header() {
                       style={{ fontSize: "1.6em" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
-                      Brand Identity
+                     Additional Links
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
                       <Link
-                        href="/branding"
+                        href="/career"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Branding
+                       Career
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/logo-designing"
+                        href="/brand-video-shoots"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Logo Designing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/catalogue-designing"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
-                      >
-                        Catalogue Designing
+                        Brand Video Shoots
                       </Link>
                     </li>
 
-                    <li>
+                     <li>
                       <Link
-                        href="/brand-name-suggestion"
+                        href="/photography"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Brand Name Suggestion
+                       Photography
                       </Link>
                     </li>
+                    
+
+                   
                   </ul>
                 </div>
 
@@ -407,47 +411,31 @@ export default function Header() {
                       style={{ fontSize: "1.6em" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
-                      Communication Strategy
+                      Blog System
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
                       <Link
-                        href="/animation"
+                        href="/dashboard"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Animation
+                       Dashboard
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/digital-marketing-agency-in-noida"
+                        href="/myblog"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                        Digital Marketing
+                        MyBlogs
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="/influencer-marketing"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
-                      >
-                        Influencer Marketing
-                      </Link>
-                    </li>
+                  
 
-                    <li>
-                      <Link
-                        href="/social-media-marketing"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
-                      >
-                        Social Media Marketing
-                      </Link>
-                    </li>
+                  
                   </ul>
                 </div>
               </div>
