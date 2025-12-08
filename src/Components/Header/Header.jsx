@@ -22,7 +22,7 @@ export default function Header() {
       }, TRANSITION_DURATION);
     } else {
       setIsVisible(true);
-      document.body.style.overflowY = "hidden";
+      // document.body.style.overflowY = "hidden";
       setTimeout(() => {
         setIsAnimating(true);
       }, 50);

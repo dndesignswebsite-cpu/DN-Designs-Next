@@ -157,7 +157,7 @@ export default function RootLayout({ children }) {
         />
 
         <BootstrapClient />
-        <Header />
+        <Header /> 
           {children}
         <Footer />
       </body>

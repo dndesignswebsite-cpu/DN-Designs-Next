@@ -46,6 +46,8 @@
 .nav-toggle-btn.is-active {
     border-color: #000;
     color: #ffffff;
+     top: 5px;
+    right: 7px;
 }
 
 .nav-toggle-btn.is-active .toggle-icon,
