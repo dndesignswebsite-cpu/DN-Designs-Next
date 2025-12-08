@@ -1,0 +1,45 @@
+/**
+ * Login API Route
+ * POST /api/auth/login
+ */
+
+import { NextResponse } from 'next/server';
+import connectDB from '@/lib/config/database.js';
+import * as authService from '@/lib/services/authService.js';
+import { handleError } from '@/lib/middleware/errorHandler.js';
+
+export async function POST(request) {
+  try {
+    await connectDB();
+    
+    const body = await request.json();
+    const { email, password } = body;
+
+    // Validation
+    if (!email || !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      return NextResponse.json(
+        { success: false, message: 'Please provide a valid email address' },
+        { status: 400 }
+      );
+    }
+
+    if (!password) {
+      return NextResponse.json(
+        { success: false, message: 'Password is required' },
+        { status: 400 }
+      );
+    }
+
+    const result = await authService.login(email, password);
+
+    return NextResponse.json({
+      success: true,
+      token: result.token,
+      user: result.user,
+    });
+  } catch (error) {
+    const { statusCode, body } = handleError(error);
+    return NextResponse.json(body, { status: statusCode });
+  }
+}
+
