@@ -2,7 +2,6 @@
  * Database Configuration
  * Handles MongoDB connection using Mongoose
  */
-
 import mongoose from "mongoose";
 import { logError } from "@/lib/middleware/errorHandler.js";
 

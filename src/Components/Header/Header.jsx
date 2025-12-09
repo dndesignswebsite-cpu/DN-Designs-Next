@@ -415,22 +415,14 @@ export default function Header() {
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
+                    
                     <li>
                       <Link
-                        href="/dashboard"
+                        href="/blog"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
-                       Dashboard
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/myblog"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
-                      >
-                        MyBlogs
+                        Blog
                       </Link>
                     </li>
                   

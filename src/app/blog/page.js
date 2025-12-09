@@ -1,11 +1,10 @@
-
-import UploadBlog from '@/Components/UploadBlog/UploadBlog'
+import TestCompApi from '@/Components/TestCompApi/TestCompApi'
 import React from 'react'
 
 function page() {
   return (
     <div>
-   blog
+     <TestCompApi/>
     </div>
   )
 }
