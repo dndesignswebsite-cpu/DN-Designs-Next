@@ -31,8 +31,8 @@
 }
 
 .brand-identity h2 {
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -40,7 +40,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .brand-identity-div-btns {
@@ -51,15 +51,15 @@
 .brand-identity-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 10px;
-  font-family: "Roboto-Regular";
+ font-family: var(--font-roboto);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-radius: 6px 6px 6px 6px;
   font-size: 16px;
-  color: #000;
+  color: var(--heading-main-color);
 }
 
 .brand-identity-btn-up {
@@ -69,10 +69,10 @@
 }
 
 .brand-identity-btn-up button {
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   font-size: 18px;
 }
@@ -81,17 +81,17 @@
   padding: 20px;
 }
 .brand-identity-div-headg h3 {
-  color: #ca2734;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
   font-size: 32px;
 }
 
 .brand-identity-content p {
   color: #888888;
-  font-family: "Roboto-Regular", Sans-serif;
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom:0 ;
 }
 
@@ -140,7 +140,8 @@
 
 @media(max-width:992px){
 .brand-identity-div-headg h3 {
-  font-size: 22px;
+  font-size: 32px;
+  padding-bottom: 10px;
 }
  .brand-identity-div-btns{
   display: flex;
@@ -230,8 +231,8 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -249,22 +250,22 @@
 }
 
 .create-number{
-  color: #CA2734;
-    font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+    font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
 }
 
 .card-body-create p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+   font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -312,8 +313,8 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+ font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
@@ -332,15 +333,15 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
-    font-family: "Corbert bold", Sans-serif;
+  color: var(--heading-highlite-color);
+    font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -348,7 +349,7 @@
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -364,13 +365,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -434,7 +435,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -463,15 +464,58 @@
 }
 .our-technologies-content h3{
        font-size: 40px;
-       font-family: "Corbert";
-       color: #000;
+       font-family: var(--font-corbert);
+       color: var(--heading-main-color);
        text-align: center;
        padding-bottom: 20px;
 }
 
 .our-technologies-content p{
        font-size: 20px;
-       font-family: "Roboto";
-       color: #000;
+      font-family: var(--font-roboto);
+       color: var(--heading-main-color);
        padding-top:20px;
+}
+
+
+/* Make your brand click! */
+.make-your-brand h2{
+      font-size: 40px;
+      font-family: var(--font-corbert);
+      padding: 30px 0;
+      text-align: center;
+}
+
+.make-your-brand-col{
+  padding-top: 30px;
+}
+
+
+.make-your-brand-col p{
+  font-size: 18px;
+  font-family: var(--font-roboto);
+  line-height: 1.5em;
+  padding-right: 30px;
+
+}
+
+.make-your-brand-bold{
+  font-family: var(--font-roboto);
+  font-weight: 700;
+}
+
+
+/* faqs */
+
+.faqs h2 {
+    font-size: 56px;
+   font-family: var(--font-corbert);
+    font-weight: 700;
+    color: var(--heading-main-color);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
 }

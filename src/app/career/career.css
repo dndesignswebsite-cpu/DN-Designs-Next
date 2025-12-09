@@ -1,0 +1,39 @@
+/* career-hero */
+.career-hero{
+    padding-top:10px;
+}
+
+.career-hero-col-l{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.career-hero-col-l h2{
+    font-size: 50px;
+    font-family: var(--font-corbert);
+    width: 80%;
+    color: var(--heading-main-color);
+}
+
+.wow{
+    color: var(--heading-highlite-color);
+}
+
+.career-hero-col-l p{
+    font-size: 18px;
+   font-family: var(--font-roboto);
+    width: 80%;
+    color: var(--heading-main-color);
+    line-height: 1.6em;
+    padding-top: 10px;
+}
+
+.career-hero-col-r{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

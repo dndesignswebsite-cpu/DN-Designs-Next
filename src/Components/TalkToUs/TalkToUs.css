@@ -6,7 +6,7 @@
 
 .talk-to-us {
   background-color: #ca2734;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   border-radius: 100px 100px 100px 100px;
   padding: 10px 25px 10px 25px;
   color: #fff;

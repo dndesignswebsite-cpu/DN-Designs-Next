@@ -1,5 +1,3 @@
-
-
 /* Designs that speak your industryis language */
 .ui-img1,
 .ui-img2,
@@ -17,17 +15,22 @@
 .ui-img3, .row-3{z-index: 3;}
 .row-4{z-index: 4;}
 
+.designs-that-head{
+  font-family: var(--font-corbert);
+  font-size: 50px;
+}
+
 /* UI/UX means nailing the basics */
 #ui-heading{
   font-size: 62px;
   font-weight: 700;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
 }
 
 .ui-description{
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   line-height: 1.6em;
 }
 
@@ -99,8 +102,8 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -118,22 +121,22 @@
 }
 
 .create-number{
-  color: #CA2734;
-    font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+   font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
 }
 
 .card-body-create p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -181,8 +184,8 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
@@ -201,15 +204,15 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
-    font-family: "Corbert bold", Sans-serif;
+  color: var(--heading-highlite-color);
+    font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -217,7 +220,7 @@
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+   font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -232,13 +235,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -302,7 +305,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -325,16 +328,25 @@
 
 
 /* creaft */
+
+.craft-desktop-view{
+    padding: 60px 0;
+}
+
 .craft-heading{
   font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: var(--font-corbert);
+}
+
+.craft-desktop-head{
+  font-family: var(--font-corbert);
+  font-size: 50px;
 }
 
 .craft-para{
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
 }
 .landing-row{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -362,15 +374,72 @@
     font-size: 40px !important;
   }
 }
+.craft-tab-view{
+  display: none;
+}
+
+/* craft-mobile and tab-view */
+
+
+@media(max-width:991px){
+  .craft-desktop-view{
+    display: none;
+  }
+
+  .craft-tab-view{
+  display: block;
+}
+}
+
+.craft-tab-view{
+  padding: 40px 0;
+}
+.craft-tab-view-row{
+margin: 0;
+}
+
+.craft-tab-view-row h2{
+ font-size: 40px;
+font-family: var(--font-corbert);
+}
+
+.craft-first-div-mobile{
+  padding: 20px;
+}
+
+.craft-first-div-mobile-content{
+  box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.craft-first-div-mobile-content h2{
+  font-family: var(--font-corbert);
+  font-size: 35px;
+}
+
+.craft-first-div-mobile-content p{
+  font-family: var(--font-roboto);
+  font-size: 18px;
+}
+
+.craft-first-div-mobile-img{
+  box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 
 
  /* faqs */
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+    font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

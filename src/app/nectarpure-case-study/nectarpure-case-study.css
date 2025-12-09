@@ -1,0 +1,186 @@
+.nectarpure{
+    padding: 100px 0 20px 0;
+}
+
+.nectarpure-h1{
+    text-align: right;
+    font-size: 32px;
+    margin-bottom: 55px; 
+}
+
+.nectarpurecase-study-wrapper{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding-bottom: 20px;
+    align-items: end;
+}
+
+.nectarpurecase-study-wrapper1 {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: end;
+}
+
+.nectarpurecase-study-points{
+    display: inline-block;  
+    background-color: #fff;
+    color: var(--heading-main-color);
+    width: max-content;
+    padding: 3px 12px;
+    border: 2px solid var(--heading-main-color);
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.nectarpurecasestudy-video{
+    padding: 50px 0;
+}
+
+.nectarpure-h2{
+    text-align: left;
+    font-size: 56px;
+    margin-bottom: 20px; 
+}
+
+.nectarpure-p{
+    font-size: 22px;
+    color: var(--heading-main-color);
+}
+
+.nectarpure-link{
+    color: var(--heading-main-color);
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.nectarpurecase-study{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.nectarpure-second{
+    padding: 0px 0 160px 0;
+}
+
+.nectarpure-buttons{
+    padding: 40px 0;
+}
+
+.nectarpure-sticky{
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    padding-right: 40px;
+}
+
+.nectarpure-button1{
+    background-color: #fff;
+    border: 0;
+    color: var(--heading-main-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0;
+    transition: all 0.8s ease;
+}
+
+.nectarpure-button1:hover{
+    transform: scale(1.2);
+}
+
+.problem-statement, .packaging-design, .new-identity{
+    padding: 60px 0px;
+}
+
+.problem-statement-h3{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.problem-para{
+    color: var(--heading-main-color);
+    font-size: 22px;
+    margin-top: 30px;
+}
+.nectarpure-problem-img{
+    padding: 10px;
+}
+.nectarpureproblem-img1{
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.nectarpureproblem-img2{
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+}
+
+.packaging-design-img{
+    border-radius: 10px;
+}
+
+@media (max-width: 767.5px){
+    .nectarpure{
+        padding: 50px 0 0 0 !important;
+    }
+    .nectarpure-h1{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .nectarpure-second{
+        padding: 0px 20px 140px 20px;
+    }
+    .nectarpure-h2{
+        font-size: 40px;
+    }
+    .nectarpure-p{
+        font-size: 20px;
+    }
+    .nectarpurecase-study-points{
+        font-size: 15px;
+        padding: 6px 10px 5px 10px;
+    }
+
+    .nectarpurecase-study{
+        margin-top: 30px;
+    }
+    .nectarpure-sticky{
+        padding: 0 30px;
+    }
+    .problem-statement, .packaging-design, .new-identity{
+        padding: 20px 10px;
+    }
+    .nectarpure-sticky{
+        position: static;
+        padding-right: 0; 
+    }
+    .nectarpureproblem-img2{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nectarpure-second .col-lg-7,
+    .nectarpure-second .col-lg-5 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .nectarpurecase-study {
+        margin-top: 20px;
+    }
+
+    .problem-statement-h3{
+        font-size: 40px;
+    }
+    .problem-para{
+        font-size: 20px;
+    }
+}

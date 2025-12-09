@@ -5,9 +5,9 @@
 }
 
 .e-catalogues-left button{
-      color: #000;
+      color: var(--heading-main-color);
       background-color: #fff;
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 50px;

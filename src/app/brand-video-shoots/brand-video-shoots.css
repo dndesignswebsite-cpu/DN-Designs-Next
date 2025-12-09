@@ -1,0 +1,115 @@
+/* brand-video-shoots */
+.brand-video-shoots{
+    padding: 60px 0;
+}
+
+.brand-video-shoots-col-right h2{
+    font-family: var(--font-corbert);
+    font-size: 56px;
+}
+
+.brand-video-shoots-col-right p{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 1.9em;
+    padding: 10px 0;
+    color: var(--heading-main-color);
+}
+
+.video-shoot-bold{
+    font-weight: 800;
+    font-family: var(--font-roboto);
+}
+
+@media(max-width:767px){
+    .brand-video-shoots-col-right h2{
+    font-size: 40px;
+}
+}
+
+/* We are Leading Video Production Company for Businesses and Brands. */
+
+.we-are-leading{
+    padding: 60px 0;
+}
+
+.we-are-leading-left-img-div img{
+    width: 20%;
+    padding: 10px;
+}
+.we-are-leading-left-col h3{
+    font-family: var(--font-corbert);
+    font-size: 50px;
+    color: var(--heading-main-color);
+}
+
+
+.we-are-leading-right-col{
+    padding-top: 25px;
+}
+
+.we-are-leading-right-col p{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 1.9em;
+    padding: 10px 0;
+     color: var(--heading-main-color);
+}
+
+@media(max-width:767px){
+    .we-are-leading-left-col h3{
+    font-size: 40px;
+}
+}
+
+/* Why Choose us? */
+.why-choose-us{
+    padding: 50px 0;
+}
+
+.why-choose-us-row h3{
+   font-family: var(--font-corbert);
+    font-size: 50px;
+    color: var(--heading-main-color);
+    padding: 20px 0;
+}
+
+.why-choose-us-row p{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 1.9em;
+    padding: 10px 0;
+   color: var(--heading-main-color);
+}
+
+@media(max-width:767px){
+    .why-choose-us-row h3{
+    font-size: 40px;
+}
+}
+
+/* video-our-portfolio */
+
+.video-our-portfolio{
+    padding: 60px 0;
+}
+.video-our-portfolio h3{
+   font-family: var(--font-corbert);
+    font-size: 50px;
+    color: var(--heading-main-color);
+    padding: 10px 0;
+}
+
+@media(max-width:767px){
+    .video-our-portfolio h3{
+    font-size: 40px;
+}
+
+
+}
+
+@media(max-width:1200px){
+.shoot-video-youtube{
+    margin: 10px 0;
+}
+}

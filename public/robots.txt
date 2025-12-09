@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dn-designs-next.vercel.app
+
+# Sitemaps
+Sitemap: https://dn-designs-next.vercel.app/sitemap.xml

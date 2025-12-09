@@ -3,12 +3,78 @@ import "./web-designing-services-in-india.css"
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
 import TalkToUs from '@/Components/TalkToUs/TalkToUs'
 import PagesHero from '@/Components/PagesHero/PagesHero'
+import WebdesignVideoSwipper from '@/Components/WebdesignVideoSwipper/WebdesignVideoSwipper'
+import Faqs from '@/Components/Faqs/Faqs'
+import Form from '@/Components/Form/Form'
+
+
+// meta tags
+export const metadata = {
+  title: "Web Designing Services In India | DN Designs",
+  description: "We build brands that inspire confidence and drive profit",
+  openGraph: {
+    title: "Web Designing Services In India | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    url: "https://dndesigns.co.in/",
+    siteName: "DN Designs",
+    images: [
+      {
+        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
+        width: 1200,
+        height: 630,
+        alt: "DN Designs Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Designing Services In India | DN Designs",
+    description: "Showcasing our premium brand identity & packaging designs",
+    images: [
+      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
+    ],
+  },
+};
 
 function page() {
   const heading ="Where Brands Are Born"
   const subHeading ="A Creative Branding Agency"
   const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
   
+
+
+  // faqs content
+   const leftFaqs = [
+    {
+      question: "How can I contact your team?",
+      answer:
+        "You can use the contact form or call us directly at +91-9999999999.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+    {
+      question: "Do you offer remote consultation?",
+      answer:
+        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+    },
+  ];
+
+   const rightFaqs = [
+    {
+      question: "Where is your office located?",
+      answer: "We are based in Noida, India, but work with clients worldwide.",
+    },
+    {
+      question: "What is your response time?",
+      answer: "We usually reply within 24 hours of receiving your query.",
+    },
+  ];
+
+
   return (
     <div>
        {/*Breadcrumb*/}
@@ -201,7 +267,7 @@ function page() {
       {/* Creative Catalogue Designing - Our Process desktop view */}
 
       <section className="creating-your-brand">
-        <div class="container sticky-con">
+        <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
             Creating Your Brand Story,
             <span className="every-pr">
@@ -210,8 +276,8 @@ function page() {
             </span>
           </h2>
           <ul id="cards-create">
-            <li class="card-create" id="card1-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
                   <h2>Brand Understanding</h2>
@@ -227,8 +293,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card2-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
                   <h2>Competitor Analysis</h2>
@@ -247,8 +313,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card3-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
                   <h2>Planning Your Brand</h2>
@@ -264,8 +330,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card4-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
                   <h2>Implementing the Strategy</h2>
@@ -280,8 +346,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card5-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
                   <h2>Feedback & Launch</h2>
@@ -633,6 +699,45 @@ function page() {
     </div>
 </section>
 
+
+{/* WebdesignVideoSwipper */}
+<WebdesignVideoSwipper/>
+
+{/* Make your brand click! */}
+<section className='make-your-brand'>
+  <div className='container'>
+    <div className='row'>
+    <h2>Make your brand click!</h2>
+    <img src='https://dndesigns.co.in/wp-content/uploads/2025/04/web-banner-2048x800.jpg' className='img-fluid'/>
+        
+      <div className='col-12 col-md-6 make-your-brand-col'>
+        <p><span className='make-your-brand-bold'>Standing Out of the crowd </span><br/>
+        services, or brands using digital channels including websites, email, mobile applications, social media, and search engines. With the aim of raising brand recognition, boosting website traffic, creating leads, and ultimately turning them into customers, it is the use of digital technology to connect with potential consumers and establish connections with them.</p>
+      </div>
+
+      <div className='col-12 col-md-6 make-your-brand-col'>
+        <p><span className='make-your-brand-bold'>Standing Out of the crowd </span><br/>
+        services, or brands using digital channels including websites, email, mobile applications, social media, and search engines. With the aim of raising brand recognition, boosting website traffic, creating leads, and ultimately turning them into customers, it is the use of digital technology to connect with potential consumers and establish connections with them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ {/* faqs */}
+
+      <section className="faqs">
+        <div className="container">
+          <div className="row text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+      </section>
+
+
+      {/* Form */}
+      <Form/>
     </div>
   )
 }

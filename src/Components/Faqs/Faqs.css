@@ -1,5 +1,6 @@
+
 .faq-section {
-  padding: 40px 0;
+  padding: 40px 0px 10px 0px;
 }
 
 .accordio-item {
@@ -16,7 +17,7 @@
 
 .accordio-link {
   width: 100%;
-  color: #000;
+  color: var(--heading-main-color);
   font-size: 1.1rem;
   padding: 1rem 1.2rem;
   border: none;
@@ -32,13 +33,13 @@
 .dd::after{
   content: " \002D";
    font-size: 30px;
-   color: #ca2734;
+   color: var(--heading-highlite-color);
 }
 
 .aa::after{
   content: "\002B ";
   font-size: 30px;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 
@@ -68,17 +69,17 @@
 
 .answer p {
   font-size: 16px;
-  color: #000;
+  color: var(--heading-main-color);
   padding: 1rem 1.5rem;
   margin: 0;
   line-height: 1.6em;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
 }
 
 
 .quesion h3{
-  font-family: "Corbert";
-  color:#000;
+  font-family: var(--font-corbert);
+  color:var(--heading-main-color);
   font-size: 18px;
   text-align: left;
 }

@@ -22,16 +22,16 @@
 
 .projects-completed-div h3{
   font-size: 43px;
-  color: #ca2734;
-  font-family: "Corbert";
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
 
 .projects-completed-div h4{
   font-size: 18px;
-  color: #000;
-  font-family: "Corbert";
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -39,7 +39,7 @@
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-weight: 700;
   text-align: center;
 }
@@ -70,28 +70,28 @@
 
 .appr-pro {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
 
 .appr-pro-main-para {
   margin-top: 10px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-white {
@@ -124,16 +124,16 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+ font-family: var(--font-corbert);
   font-weight: 500;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+ font-family: var(--font-roboto);
 }
 
 .app-pro-div-up{
@@ -164,9 +164,9 @@
 .app-pro-div-first h3{
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 500;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-first-btn{
@@ -180,7 +180,7 @@
 /* We have got a dedicated team to support you and your vision */
 
 .dedicated-team{
-  padding: 80px 0;
+  padding:50px 0px;
 }
 
 
@@ -194,15 +194,15 @@
 
 .dedicated-team-hedg h2{
   font-size: 50px;
-  font-family: "Corbert";
-  color: #000;
+  font-family: var(--font-corbert);
+  color: var(--heading-main-color);
   width: 70%;
   text-align: center;
   padding: 30px 0;
 }
 
 .dedicated-team-hedg-span{
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 @media(max-width:991px){
@@ -217,4 +217,91 @@
         font-size: 30px;
         width: 100%;
   }
+}
+
+
+/*.....points-about...... */
+
+.point-cont{
+  width: 1300px;
+}
+
+.points-about {
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0px 0px 1.16px 0px rgba(1.700000000000012, 1.700000000000012, 1.700000000000012, 0.21);
+  border-radius: 32px;
+  
+  margin: 0px 0px 20px 0px;
+  position: relative;
+
+  box-shadow: 0px 0px 1.16px 0px rgba(1.700000000000012, 1.700000000000012, 1.700000000000012, 0.21);
+  padding: 30px 0px 10px 0px;
+}
+.points-about-Comm{
+  box-shadow: 0px 0px 2px 1px #D5D5D5;
+  background-color: #FFFFFF;
+
+}
+
+
+.points-about-right h2 {
+  font-family: var(--font-corbert);
+  font-size: 180px;
+  font-weight: 700;
+  color: var(--heading-main-color);
+  position: absolute;
+  bottom: 0%;
+}
+.points-about-right h3 {
+  color: var(--heading-main-color);
+ font-family: var(--font-corbert);
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+
+.points-about-para p {
+    color: #888888;
+    font-family: var(--font-roboto);
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.points-about-left img {
+  width: 100%;
+  border-radius: 20px;
+}
+.points-about-left {
+  padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+
+  .points-about{
+padding: 10px 10px 20px 10px;
+
+  }
+  .points-about-left {
+    display: none;
+  }
+  .point-cont{
+  width: 100%;
+}
+
+.points-about-right h2 {
+  font-size: 130px;
+  position: relative;
+}
+.points-about h3{
+  padding-bottom: 20px;
+}
+
+.points-about h2, .points-about h3{
+  text-align: center;
+}
+}
+
+.form-section{
+  padding: 80px 0px 30px;
 }

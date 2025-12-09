@@ -13,8 +13,8 @@
 
 .creative-brochure-div h2{
   font-size: 50px;
-  font-family: "Corbert";
-  color: #000;
+  font-family: var(--font-corbert);
+  color: var(--heading-main-color);
   padding: 0 20px;
 }
 

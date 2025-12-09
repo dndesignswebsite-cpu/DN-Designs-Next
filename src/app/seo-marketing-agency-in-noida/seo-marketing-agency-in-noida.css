@@ -3,18 +3,29 @@
     padding: 50px 0;
 }
 .what-drives-our-growth-row{
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
     border-radius: 30px;
 }
 
+.what-drives-our-growth-heading{
+ font-family: var(--font-corbert);
+  font-size: 50px;
+  color: var(--heading-main-color);
+  text-align: center;
+  padding: 20px 0;
+}
+.rrrr{
+  color: var(--heading-highlite-color);
+}
+
 .what-drives-our-growth-row h3{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     color: #fff;
     font-size: 35px;
 }
 
 .what-drives-our-growth-row p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     color: #fff;
     font-size: 18px;
 }
@@ -26,6 +37,21 @@
     padding: 40px;
 }
 
+@media(min-width: 991.68px) and (max-width:1200px){
+  .what-drives-our-growth-img-section{
+    position: relative;
+  }
+  .what-drives-our-growth-img-section img{
+    position: relative;
+    bottom: -25.7%;
+  }
+}
+
+@media(max-width:767px){
+  .what-drives-our-growth{
+    padding: 30px 5px;
+}
+}
 /* comprehensive-seo-stregety */
 
 
@@ -40,16 +66,16 @@
 }
 
 .comprehensive-seo-stregety-content h2{
-    font-family: "Corbert";
+   font-family: var(--font-corbert);
     font-size: 32px;
-    color: #000;
+    color: var(--heading-main-color);
     padding:10px 0 ;
 }
 
 .comprehensive-seo-stregety-content p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 18px;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .transparent-reporting-content{
@@ -64,16 +90,23 @@
 }
 
 .transparent-reporting-content h2{
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-size: 32px;
-    color: #ca2734;
+    color: var(--heading-highlite-color);
     padding:10px 0 ;
 }
 
 .transparent-reporting-content p{
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
     font-size: 18px;
-    color: #000;
+    color: var(--heading-main-color);
+}
+
+
+@media(max-width:767px){
+  .comprehensive-seo-stregety-col{
+    margin-top: 20px;
+  }
 }
 
 
@@ -85,13 +118,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -155,7 +188,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -191,23 +224,23 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 15px;
 }
 
 .appr-pro-main-para {
   margin-top: 10px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 32px;
   font-size: 18px;
   width: 100%;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   margin-bottom: 40px;
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-white {
@@ -240,16 +273,16 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 500;
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 300;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
 }
 
 .app-pro-div-up{
@@ -339,8 +372,8 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -359,21 +392,21 @@
 
 .create-number{
   color: #CA2734;
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+   font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
 }
 
 .card-body-create p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -421,8 +454,8 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2em;
@@ -441,15 +474,15 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
-    font-family: "Corbert bold", Sans-serif;
+  color: var(--heading-highlite-color);
+    font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -457,7 +490,7 @@
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -471,8 +504,8 @@
 
 .industries-we-serve h3{
      font-size: 50px;
-     font-family: "Corbert";
-     color: #000;
+     font-family: var(--font-corbert);
+     color: var(--heading-main-color);
      text-align: center;
      padding: 50px 0;
 }
@@ -486,16 +519,16 @@
 
 .industries-we-serve-col h4{
     font-size: 24px;
-    font-family: "Corbert";
-    color: #000;
+    font-family: var(--font-corbert);
+    color: var(--heading-main-color);
     padding: 20px 0;
     text-align: center;
 }
 
 .industries-we-serve-col p{
     font-size: 18px;
-    font-family: "Roboto";
-    color: #000;
+    font-family: var(--font-roboto);
+    color: var(--heading-main-color);
     text-align: center;
 }
 
@@ -511,17 +544,27 @@
 
 .website-audit-row h3{
       text-align: center;
-      font-family: "Corbert";
+     font-family: var(--font-corbert);
       font-size: 50px;
-      color: #000;
+      color: var(--heading-main-color);
 }
 
 .website-audit-row p{
       text-align: center;
-      font-family: "Roboto";
+      font-family: var(--font-roboto);
       font-size: 18px;
-      color: #000;
+      color: var(--heading-main-color);
       padding: 20px 0;
+}
+
+@media(max-width:767px){
+  .website-audit{
+    padding: 30px 0;
+}
+
+.website-audit-row h3{
+      font-size: 35px;
+}
 }
 
 
@@ -538,6 +581,13 @@
   justify-content: space-between;
 }
 
+.projects-completed-heading{
+  font-size: 40px;
+ font-family: var(--font-corbert);
+  color: var(--heading-main-color);
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 .projects-completed-div{
    display: flex;
@@ -550,16 +600,16 @@
 
 .projects-completed-div h3{
   font-size: 43px;
-  color: #ca2734;
-  font-family: "Corbert";
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
 
 .projects-completed-div h4{
   font-size: 18px;
-  color: #000;
-  font-family: "Corbert";
+  color: var(--heading-main-color);
+font-family: var(--font-corbert);
   font-weight: 700;
   text-align: center;
 }
@@ -567,7 +617,7 @@
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   font-weight: 700;
   text-align: center;
 }
@@ -594,9 +644,9 @@
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+  font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

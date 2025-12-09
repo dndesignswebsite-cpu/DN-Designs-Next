@@ -1,0 +1,209 @@
+.grincare{
+    padding: 100px 0 30px 0;
+    background-color: #00666E;
+}
+
+.grincare-h1{
+    text-align: right;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 55px; 
+}
+
+.grincare-banner{
+    padding: 30px 0;
+}
+
+.grincarecase-study-wrapper{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding-bottom: 20px;
+    align-items: end;
+}
+
+.grincarecase-study-wrapper1 {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: end;
+}
+
+.grincarecase-study-points{
+    display: inline-block;  
+    background-color: #00666E;
+    color: #fff;
+    width: max-content;
+    padding: 3px 12px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.grincarecase-study-points1{
+    display: inline-block;  
+    background-color: #fff;
+    color: var(--heading-main-color);
+    width: max-content;
+    padding: 3px 12px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+
+.grincare-h2{
+    text-align: left;
+    font-size: 56px;
+    margin-bottom: 20px; 
+}
+
+.grincare-p{
+    font-size: 22px;
+    color: var(--heading-main-color);
+}
+
+.grincare-link{
+    color: var(--heading-main-color);
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.grincarecase-study{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grincare-second{
+    padding: 0px 0 70px 0;
+}
+
+.grincare-buttons{
+    padding: 40px 0;
+}
+
+.grincare-sticky{
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    padding-right: 40px;
+}
+
+.grincare-button1{
+    background-color: #00666E;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0;
+    transition: all 0.8s ease;
+}
+
+.grincare-button1:hover{
+    transform: scale(1.2);
+}
+
+.grincare-problem-statement, .grincare-wireframe, .grincare-new-identity, .grincare-website-design{
+    padding: 60px 0px;
+}
+
+.grincare-problem-statement-h3{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.grincare-problem-para{
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.grincare-problem-img{
+    padding: 10px;
+}
+.grincare-problem-img1, .grincare-problem-img2{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.grincare-packaging-design-img{
+    border-radius: 10px;
+}
+
+@media (max-width: 767.5px){
+    .grincare{
+        padding: 50px 0 0 0 !important;
+    }
+    .grincare-h1{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .grincare-second{
+        padding: 0px 20px 140px 20px;
+    }
+    .grincare-h2{
+        font-size: 40px;
+    }
+    .grincare-p{
+        font-size: 20px;
+    }
+    .grincarecase-study-points{
+        font-size: 15px;
+        padding: 6px 10px 5px 10px;
+    }
+
+    .grincarecase-study{
+        margin-top: 30px;
+    }
+    .grincare-sticky{
+        padding: 0 30px;
+        position: static;
+        padding-right: 40px; 
+    }
+    .grincare-problem-statement, .grincare-wireframe, .grincare-new-identity, .grincare-website-design{
+        padding: 20px 10px;
+    }
+
+    .grincare-problem-img2{
+        margin-top: 20px;
+    }
+
+    .grincarecase-study-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .grincarecase-study-wrapper .grincarecase-study-points1 {
+        width: max-content; 
+    }
+
+    .grincarecase-study-wrapper .grincarecase-study-points1:nth-child(3) {
+        width: max-content; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .grincare-second .col-lg-7,
+    .grincare-second .col-lg-5 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .grincarecase-study {
+        margin-top: 20px;
+    }
+
+    .grincare-problem-statement-h3{
+        font-size: 40px;
+    }
+    .grincare-problem-para{
+        font-size: 20px;
+    }
+}

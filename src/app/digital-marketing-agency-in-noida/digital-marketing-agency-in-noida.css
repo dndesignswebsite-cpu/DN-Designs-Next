@@ -1,6 +1,7 @@
-
-
 /* Switch on your potential with digital marketing */
+.switch-on{
+  padding: 40px 0;
+}
 .switch-on-div{
    display: flex;
    align-items: center;
@@ -8,25 +9,31 @@
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   border: 1px solid #E5E7EB;
+  height: 100%;
 }
+
+
 
 .switch-on-div h3{
   font-size: 43px;
-  color: #ca2734;
-  font-family: "Corbert";
+  color: var(--heading-highlite-color);
+ font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .switch-on-div p{
   font-size: 18px;
-  color: #000;
-  font-family: "Roboto";
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-weight: 700;
   line-height: 1em;
 }
 
 
-
+.switch-row{
+    margin-top: 20px;
+    
+  }
 
 
 .switch-on-main-row{
@@ -34,15 +41,30 @@
 }
 
 @media(max-width:991px){
+  
+
   .switch-on-div{
    margin:20px 20px;
 }
+
+.switch-row{
+    margin-top: 40px;
+    padding-left: 15px;
+  }
+
+  .switch-on-middle-div-img-last{
+    margin: 20px 0;
+  }
+
+  .switch-on-div-main{
+    margin-top: 20px;
+  }
 }
 
 .vertical-bar{
     height: 130px;
     width: 4px;
-    background-color: #000;
+    background-color: var(--heading-main-color);
     margin: 20px;
 }
 
@@ -56,7 +78,7 @@ padding: 0;
 
 .switch-on-middle-div-para p{
      font-size: 18px;
-     font-family: "Corbert";
+    font-family: var(--font-corbert);
     padding: 18px;
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
     border-radius:18px;
@@ -72,6 +94,12 @@ padding: 0;
  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
 }
 
+.toggle-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* We Are The Leading Video */
 .we-are-the-leading{
@@ -80,8 +108,8 @@ padding: 0;
 
 .we-are-the-leading h3{
     font-size: 50px;
-    font-family: "Corbert";
-    color: #000;
+   font-family: var(--font-corbert);
+    color: var(--heading-main-color);
     width: 70%;
 }
 
@@ -91,7 +119,7 @@ padding: 0;
 
 .we-are-the-leading-para p{
   font-size: 18px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
   line-height: 1.6em;
 }
 
@@ -119,13 +147,13 @@ padding: 0;
 
 .top-cap h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .top-cap p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+ font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -189,7 +217,7 @@ padding: 0;
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .top-cap-back-content {
@@ -209,9 +237,12 @@ padding: 0;
 
 
 /* organic-sessions  */
+.organic-sessions{
+  padding: 50px 0;
+}
 
 .organic-sessions-row{
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -222,14 +253,39 @@ padding: 0;
 .organic-sessions-col h3{
    text-align: center;
    font-size: 38px;
-   font-family: "Corbert";
+  font-family: var(--font-corbert);
    color: #fff;
 }
 
 .organic-sessions-col p{
    text-align: center;
    font-size: 18px;
-   font-family: "Roboto";
+  font-family: var(--font-roboto);
    color: #fff;
    padding-top:20px;
+}
+
+@media(max-width:991px){
+  .organic-sessions{
+  padding: 40px 10px;
+}
+}
+
+/* faqs */
+
+.faqs{
+  padding: 50px 0px 40px 0px;
+}
+
+.faqs h2 {
+    font-size: 56px;
+    font-family: var(--font-corbert);
+    font-weight: 700;
+    color: var(--heading-main-color);
+}
+@media(max-width:767px){
+  .faqs h2 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
 }

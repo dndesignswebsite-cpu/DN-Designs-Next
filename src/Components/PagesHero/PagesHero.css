@@ -5,25 +5,20 @@
 
 .pages-hero h1 {
   font-size: 62px;
-  color: #000;
-  font-family: "Corbert";
-  font-weight: 700;
+  color: var(--heading-main-color);
   padding-bottom:10px ;
 }
 
 .pages-hero h3 {
   font-size: 35px;
-  color: #000;
-  font-family: Corbert;
-  font-weight: 500;
+  color: var(--heading-main-color);
 }
 
 .pages-hero p {
   margin-top: 30px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 1.7em;
   font-size: 18px;
-  font-family: "Roboto-Regular";
 }
 
 .talk-to-us-mobile{
@@ -46,9 +41,7 @@
 
   .pages-hero h3 {
   font-size: 25px;
-  color: #000;
-  font-family: Corbert;
-  font-weight: 500;
+  color: var(--heading-main-color);
 }
 
 .pages-hero p {

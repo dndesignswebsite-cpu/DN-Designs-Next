@@ -1,60 +1,108 @@
-import React from 'react'
-import "./brand-name-suggestion.css"
-import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
-import TalkToUs from '@/Components/TalkToUs/TalkToUs'
-import Faqs from '@/Components/Faqs/Faqs'
-import Form from '@/Components/Form/Form'
-import PagesHero from '@/Components/PagesHero/PagesHero'
+import React from "react";
+import "./brand-name-suggestion.css";
+import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
+import TalkToUs from "@/Components/TalkToUs/TalkToUs";
+import Faqs from "@/Components/Faqs/Faqs";
+import Form from "@/Components/Form/Form";
+import PagesHero from "@/Components/PagesHero/PagesHero";
+
+
+
+
+// meta data 
+export const metadata = {
+  title: "Brand Name Suggestion – DN Designs",
+  description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+  
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/brand-name-suggestion" }],
+  
+  alternates: { canonical: "https://dn-designs-next.vercel.app/brand-name-suggestion" },
+  
+  robots: { index: true, follow: true, nocache: true },
+  
+  openGraph: {
+    title: "Brand Name Suggestion – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    url: "https://dn-designs-next.vercel.app/brand-name-suggestion",
+    siteName: "DN Designs",
+    images: [{ 
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
+      width: 1200, 
+      height: 630, 
+      alt: "DN Designs Animation Services" 
+    }],
+    type: "website"
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Animation Services – DN Designs",
+    description: "High-quality animation services for your brand, including 2D, 3D, and motion graphics.",
+    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
+  }
+};
+//meta end here
+
+
+
+
+
 
 function page() {
+  const heading = "Brand Name Suggestion";
+  const subHeading = "Crafting Memorable Names For Your Business";
+  const para =
+    "Brand names are an integral part of brand identity, which, in turn, is crucial for the brand’s success. Brand naming, therefore, has tremendous significance in the entire branding process. Names should be distinctive, memorable, enduring and legally available. Want to know more about what other criteria make a good brand name and what kind of naming suggestions we can make for your business? Continue reading, as we have got everything covered for you here. Do check out FAQs, as we have answered questions that you may have.";
 
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them."
-  
- const leftFaqs = [
+  const leftFaqs = [
     {
-      question: "How can I contact your team?",
+      question: "What can I expect from you if I go for your brand name suggestion service?",
       answer:
-        "You can use the contact form or call us directly at +91-9999999999.",
+        "To begin with, we will sit down with you to understand your brand, vision and goal. Based on our understanding, we will conduct research and come up with brand name suggestions that can work well with your target audience. For every option, we will provide a detailed explanation as to why we chose it, what its meaning is and why, according to us, it will work. Once you shortlist names, we will run a final check, complete formalities and finalise your business or product name.",
     },
     {
-      question: "Do you offer remote consultation?",
+      question: "How much time do you take to provide brand-name ideas?",
       answer:
-        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+        "Post the initial round of discussion, it takes us around 15 - 20 days to conduct research and finally send you the product or business name ideas.",
     },
     {
-      question: "Do you offer remote consultation?",
+      question: "Do you provide more options in case I do not like the ones you have provided in the first round?",
       answer:
-        "Yes! We do virtual meetings over Zoom, Google Meet, or Microsoft Teams.",
+        "Since we suggest all the brand name ideas after proper research, it is highly unlikely that you will need more options after the first round. However, if you do require them, we will certainly provide you with more suggestions.",
     },
   ];
 
   const rightFaqs = [
     {
-      question: "Where is your office located?",
-      answer: "We are based in Noida, India, but work with clients worldwide.",
+      question: "What about the domain name associated with my brand name? As a naming agency, can you help check if it is available?",
+      answer: "Yes, we can check whether the domain name associated with your business is available. We can also suggest suitable domain names for your brand.",
     },
     {
-      question: "What is your response time?",
-      answer: "We usually reply within 24 hours of receiving your query.",
+      question: "What about legalities? How can you help me with it?",
+      answer: "In the initial stages, we conduct basic research to confirm that the brand name is not used by any other business. However, post the shortlisting phase, we conduct a proper trademark search to avoid confusion and legal issues that may arise in future. Once your brand name is decided, we go a step ahead and help you trademark it. With this, we prevent any usage of your business or product name by competitors.",
+    },
+     {
+      question: "I want to rename my current brand. Can DN Designs help?",
+      answer: "Yes, we can certainly help rename your current brand.",
     },
   ];
 
+   const FormHead ="Let’s Discuss Over a Cup of Coffee"    
+  const FormPara ="Since you now understand the importance of brand names, you want the best one for your business, right? But it is not an easy job. It requires an understanding of the product, the market, as well as the legalities involved. You don’t need to worry, though, since we are right here. As a brand identity design agency, we make brand name suggestions that perfectly suit your brand. So, let’s meet and discuss your brand."   
+ 
 
   return (
     <div>
-       {/*Breadcrumb*/}
+      {/*Breadcrumb*/}
       <section>
-        <Breadcrumb/>
+        <Breadcrumb />
       </section>
 
       {/* branding hero */}
       {/* ui/ux design */}
       <section className="branding-hero">
-        <PagesHero heading={heading} subHeading={subHeading} para={para}/>
+        <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
-
 
       {/* Characteristics of Good Brand Name? */}
 
@@ -63,9 +111,10 @@ function page() {
           {/* 1st row */}
           <div className="row">
             <h2 className="text-center headg">
-              Characteristics of <span className="every-pr"> Good Brand Name?</span>
+              Characteristics of{" "}
+              <span className="every-pr"> Good Brand Name?</span>
             </h2>
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -74,22 +123,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Reflects Brand Identity</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Brand identity is important for success, and identity begins with the brand’s name. A playful name doesn’t really suit a company that provides
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Reflects Brand Identity</h3>
                   <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
+                   Brand identity is important for success, and identity begins with the brand’s name. A playful name doesn’t really suit a company that provides medical equipment. Similarly, a toy brand with a serious-sounding name will not connect with the kids. A good brand name should, therefore, reflect the brand identity.
                   </p>
                 </div>
               </div>
@@ -99,7 +141,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -108,22 +150,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Uniqueness</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Along with the product, the brand name, too, should be unique. The primary reason for this is the intense market competition. With so many products in one category vying for consumers
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Uniqueness</h3>
                   <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
+                   Along with the product, the brand name, too, should be unique. The primary reason for this is the intense market competition. With so many products in one category vying for consumers’ attention, it is important to have a brand name that stands out. Similar-sounding names create confusion in buyers’ minds.
                   </p>
                 </div>
               </div>
@@ -133,7 +168,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -142,20 +177,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Easy To Spell & Pronounce</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    You have definitely come across business names that are difficult to say aloud. While several of these are successful, ideally, a brand name should be short 
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Easy To Spell & Pronounce</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
+                    You have definitely come across business names that are difficult to say aloud. While several of these are successful, ideally, a brand name should be short and simple to pronounce. It should also sound pleasing. A brand name that sounds good and has simple spellings sticks with the customers.
                   </p>
                 </div>
               </div>
@@ -165,7 +195,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -174,20 +204,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Easy To Remember</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Write down all the business names you can think of. These are brand names that can be termed good (mostly). Why? Because you could easily remember them
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Easy To Remember</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
+                    Write down all the business names you can think of. These are brand names that can be termed good (mostly). Why? Because you could easily remember them. Business or product names with easy recall value emerge victorious amidst tough competition. When customers remember your brand, they are more likely to purchase from you.
                   </p>
                 </div>
               </div>
@@ -200,7 +225,7 @@ function page() {
 
           {/* 2nd row */}
           <div className="row">
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -209,22 +234,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Good Appearance</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Other than sounding good, a brand name should also look good. It is important to remember that a brand name appears in every place - on packaging, website
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Good Appearance</h3>
                   <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
+                   Other than sounding good, a brand name should also look good. It is important to remember that a brand name appears in every place - on packaging, website, social media, marketing collaterals and also along with the logo. If it doesn’t appear good, customers may turn away.
                   </p>
                 </div>
               </div>
@@ -234,7 +252,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -243,22 +261,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Evokes Positive Responses</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    A creative brand name evokes positive responses from customers around the world. It helps customers connect with the brand on an emotional
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Evokes Positive Responses</h3>
                   <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
+                    A creative brand name evokes positive responses from customers around the world. It helps customers connect with the brand on an emotional level and trust it. Also, a good brand name is culturally sensitive - it doesn’t hurt the sentiments of any group of people.
                   </p>
                 </div>
               </div>
@@ -268,7 +279,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -277,20 +288,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Flexibility & Scalability</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                   Every business aims to grow and become huge. New products and services, inevitably, become part of it. A brand name should, thus, be adaptable so that it can
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Flexibility & Scalability</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
+                    Every business aims to grow and become huge. New products and services, inevitably, become part of it. A brand name should, thus, be adaptable so that it can accommodate the company's growing needs. This flexibility also enables it to adjust to a changing market environment and stay relevant.
                   </p>
                 </div>
               </div>
@@ -300,7 +306,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
+            <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
@@ -309,20 +315,15 @@ function page() {
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
-                  <h3>Design</h3>
+                  <h3>Legally Available & Protectable</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Legal availability of the brand name is important. If it is already owned by someone else, you might not get it at all. Also, the name should be trademarkable
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
-                  <h3>Design</h3>
+                  <h3>Legally Available & Protectable</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design – we have
-                    expertise and experience in all. We understand your vision
-                    and create a design that boosts your brand value and
-                    increases ROI.
+                   Legal availability of the brand name is important. If it is already owned by someone else, you might not get it at all. Also, the name should be trademarkable. It is a vital step to ensure any wrongful use by competitors. Domain name availability for the brand’s name is crucial to building an online presence.
                   </p>
                 </div>
               </div>
@@ -335,49 +336,67 @@ function page() {
         </div>
       </section>
 
-
- {/* Winning Brand Names - Crafted By Us */}
+      {/* Winning Brand Names - Crafted By Us */}
       <section className="winning-brand-names">
-      <div className="container">
-        <div className="row">
-        <div className="winning-brand-names-heading-div">
-          <h2>Winning Brand Names -<span className="every-pr"> Crafted By Us</span></h2>
-                
+        <div className="container">
+          <div className="row">
+            <div className="winning-brand-names-heading-div">
+              <h2>
+                Winning Brand Names -
+                <span className="every-pr"> Crafted By Us</span>
+              </h2>
 
-                <TalkToUs/>
-        </div>
-        <p>Brand names evoke a feeling. If this feeling is positive, rest assured, your business is already on its winning path. At DN Designs, we come up with creative product or business name ideas that leave a positive first impression and set you on a path to success.</p>
+              <TalkToUs />
+            </div>
+            <p>
+              Brand names evoke a feeling. If this feeling is positive, rest
+              assured, your business is already on its winning path. At DN
+              Designs, we come up with creative product or business name ideas
+              that leave a positive first impression and set you on a path to
+              success.
+            </p>
 
-          <div className="winning-brand-companies-col">
-               <div className="row">
-               <div className="col-12 col-md-6 col-lg-3">
-               <div className="winning-brand-companies">
-               <img src="https://dndesigns.co.in/wp-content/uploads/2025/07/fluke.png" className="img-fluid"/>
-               </div>
-               </div>
-               <div className="col-12 col-md-6 col-lg-3">
-               <div className="winning-brand-companies">
-               <img src="https://dndesigns.co.in/wp-content/uploads/2025/07/site-icon-1.png" className="img-fluid"/>
-               </div>
-               </div>
-               <div className="col-12 col-md-6 col-lg-3">
-               <div className="winning-brand-companies">
-               <img src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy.png" className="img-fluid"/>
-               </div>
-               </div>
-               <div className="col-12 col-md-6 col-lg-3">
-               <div className="winning-brand-companies">
-               <img src="https://dndesigns.co.in/wp-content/uploads/2025/06/bobalist.png" className="img-fluid"/>
-               </div>
-               </div>
-               </div>
+            <div className="winning-brand-companies-col">
+              <div className="row">
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="winning-brand-companies">
+                    <img
+                      src="https://dndesigns.co.in/wp-content/uploads/2025/07/fluke.png"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="winning-brand-companies">
+                    <img
+                      src="https://dndesigns.co.in/wp-content/uploads/2025/07/site-icon-1.png"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="winning-brand-companies">
+                    <img
+                      src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy.png"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="winning-brand-companies">
+                    <img
+                      src="https://dndesigns.co.in/wp-content/uploads/2025/06/bobalist.png"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
-
-{/* faqs */}
+      {/* faqs */}
 
       <section className="faqs">
         <div className="container">
@@ -387,16 +406,11 @@ function page() {
         </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
-    
 
       {/* Form */}
-      <Form/>
-    
-
-
-
+      <Form FormHead={FormHead} FormPara={FormPara}/>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

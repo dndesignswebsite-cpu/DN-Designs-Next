@@ -1,8 +1,8 @@
 .hero button {
-  font-family: "Roboto";
+  font-family: var(--font-roboto);
   padding: 14px 60px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -23,12 +23,12 @@
 
 
 .hero button:first-child {
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   color: white;
 }
 
 .hero button:last-child {
-  background-color: #000;
+  background-color: var(--heading-main-color);
   color: white;
 }
 

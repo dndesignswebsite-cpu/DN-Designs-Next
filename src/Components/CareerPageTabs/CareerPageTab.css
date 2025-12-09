@@ -1,0 +1,142 @@
+.uni-career-com{
+    background-color: #ca2734;
+    margin: 80px 0;
+}
+
+.career-tabs-links{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 2px solid #fff;
+    border-bottom: none;
+}
+
+.career-tabs-links li active{
+    background-color: #ca2734 !important;
+}
+
+.career-tabs-links li a{
+    font-size: 18px;
+    font-family: "Corbert";
+    color: #fff;
+}
+
+
+.career-tabs-links .nav-link.active {
+    background-color: #ca2734 !important;
+    color: #fff;
+    border-radius: 0;
+    border-width: 2px;
+}
+
+
+.content-col-career{
+    margin: 0;
+}
+
+.links-col-career{
+    margin: 0; 
+}
+
+.career-tabs-links .nav-link.active::after {
+    border-right: none;
+    content: none;
+}
+
+
+
+.career-tabs-links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: none; 
+}
+
+.career-tabs-links .nav-link {
+    border-right: 2px solid #fff;
+    border-radius: 0;
+    padding: 30px 10px;
+}
+
+.career-tabs-links .nav-link.active {
+    border-right: none;
+    background-color: #ca2734 !important;
+    color: #fff;
+    border-radius: 0;
+}
+
+.content-col-career{
+    border: 2px solid #fff;
+    border-left: none;
+}
+
+.career-tabs-links .nav-link:hover{
+    color: #fff;
+}
+
+.career-tab-row{
+    padding: 50px;
+}
+
+.content-career-unit{
+    padding: 10px 20px;
+    color:#fff;
+}
+
+.content-career-unit h2{
+    font-size: 31px;
+    font-family: "Roboto";
+}
+
+.content-career-unit h3{
+    font-size: 18px;
+    font-family: "Roboto";
+    padding: 10px 0;
+}
+
+.content-career-unit p{
+    font-size: 16px;
+    font-family: "Roboto";
+}
+.mobile-view{
+        display:none;
+    }
+
+
+@media(max-width:991px){
+    .desktop-view{
+        display: none;
+    }
+
+    .mobile-view{
+        display:block;
+        background-color: #ca2734;
+        margin: 50px 0;
+    }
+}
+
+
+.mobile-content-career{
+color: #fff;
+padding: 20px;
+border: 2px solid #fff;
+margin: 20px 0;
+}
+
+.mobile-content-career h2{
+    font-size: 30px;
+    font-family: "Corbert";
+}
+
+.mobile-content-career h3{
+    font-size: 18px;
+    font-family: "Corbert";
+    padding: 10px 0;
+}
+
+.mobile-content-career p{
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+

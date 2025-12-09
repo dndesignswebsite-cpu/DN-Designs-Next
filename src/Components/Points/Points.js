@@ -18,7 +18,7 @@ function Points() {
       <h2>1</h2>
       </div>
       <div className="col-12 col-md-12 col-lg-3">
-      <h3>Branding pages</h3>
+      <h3>Branding</h3>
       </div>
       <div className='points-para col-12 col-md-12 col-lg-4'>
         <p>It is a significant challenge to create a space for your product in the market. It requires strategic thinking, creative skills, and a relentless pursuit of goals.</p>
@@ -26,9 +26,9 @@ function Points() {
       </div>
        <div className='points-para col-12 col-md-12 col-lg-3'>
         <p>We provide end-to-end branding services.</p>
-        <p>  Brand Identity Design
-  Packaging Design
-  Catalogue Design</p>
+        <p>Brand Identity Design<br></br>
+          Packaging Design<br></br>
+           Catalogue Design</p>
       </div>
     </div>
 
@@ -44,8 +44,10 @@ function Points() {
         <p>What are you waiting for then? Connect with us today.</p>
       </div>
        <div className='points-para col-12 col-md-12 col-lg-3'>
-        <p>It is a significant challenge to create a space for your product in the market. It requires strategic thinking, creative skills, and a relentless pursuit of goals.</p>
-        <p>Worried? Don’t be, for we are here.</p>
+        <p>Let our experts devise a communication strategy for you.</p>
+        <p>Digital Marketing <br></br>
+        Influencer Marketing<br></br>
+        Animation</p>
       </div>
     </div>
 
@@ -57,12 +59,14 @@ function Points() {
       <h3>Web Design</h3>
       </div>
       <div className='points-para col-12 col-md-12 col-lg-4'>
-        <p>It is a significant challenge to create a space for your product in the market. It requires strategic thinking, creative skills, and a relentless pursuit of goals.</p>
-        <p>Worried? Don’t be, for we are here.</p>
+        <p>To establish your online presence, a visually appealing, SEO-optimised and user-friendly website is essential. It boosts your brand image and generates business.</p>
+        <p>We excel in designing, developing and promoting your website.</p>
       </div>
        <div className='points-para col-12 col-md-12 col-lg-3'>
-        <p>It is a significant challenge to create a space for your product in the market. It requires strategic thinking, creative skills, and a relentless pursuit of goals.</p>
-        <p>Worried? Don’t be, for we are here.</p>
+        <p>Explore our range of web design services.</p>
+        <p>UI/UX<br></br>
+        Website Design<br></br>
+        SEO</p>
       </div>
     </div>
     </div>

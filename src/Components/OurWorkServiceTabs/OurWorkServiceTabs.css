@@ -1,7 +1,7 @@
 /* Our Work */
 
 .our-work-tab{
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 .headg {
@@ -10,7 +10,7 @@
 
 .our-work-tab h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
@@ -29,15 +29,15 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 22px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
 }
 
 .tab button:hover {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .tab button.active {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .tabcontent {
@@ -54,8 +54,8 @@
 
 .explore-more button {
     margin-top: 30px;
-  background-color: #ca2734;
-  font-family: "Roboto-Regular", Sans-serif;
+  background-color: var(--heading-highlite-color);
+  font-family: var(--font-roboto);
   border-radius: 100px 100px 100px 100px;
   padding: 15px 50px 15px 50px;
   color: #fff;

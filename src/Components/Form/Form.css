@@ -6,7 +6,7 @@
 }
 
 .form-row{
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px 16px 16px 0px ;
@@ -15,15 +15,15 @@
 
 
 .inpt label{
-    font-family: "Corbert", Sans-serif;
+    font-family: var(--font-corbert);
         cursor: pointer;
-        color: #000;
+        color: var(--heading-main-color);
         font-size: 16px;
         font-weight:400;
 }
 
 .inpt label span{
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .inpt input {
@@ -31,7 +31,7 @@
   box-sizing: border-box;
   border: 1px solid #ADADAD;
   border-radius: 12px;
-  font-family: "Roboto", Sans-serif;
+ font-family: var(--font-roboto);
   padding: 10px;
   font-size: 14px;
   margin:10px 0px;
@@ -41,7 +41,7 @@
   box-sizing: border-box;
   border: 1px solid #ADADAD;
   border-radius: 12px;
-  font-family: "Roboto", Sans-serif;
+ font-family: var(--font-roboto);
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
@@ -52,25 +52,25 @@
 .inpt textarea::placeholder {
   color: #ADADAD;
   opacity: 1;
-  font-family: "Roboto", Sans-serif;
+  font-family: var(--font-roboto);
 }
 
 .sbmt-btn {
   width: 100%;
   padding: 16px;
-  background: black;
+  background: var(--heading-main-color);
   color: white;
   font-size: 18px;
   border: none;
   border-radius: 15px;
   font-weight: 600;
   cursor: pointer;
-  font-family: "Roboto";
+ font-family: var(--font-roboto);
 } 
 
 .form-box{
   padding: 10px;
-  background-color: #ca2734;
+  background-color: var(--heading-highlite-color);
   margin: 0;
   height: 100%;
 }
@@ -84,20 +84,22 @@
 
 
 .form-left-content{
-  border-right: 10px solid #ca2734;
-  border-top: 10px solid #ca2734;
-  border-bottom: 10px solid #ca2734;
+  border-right: 10px solid var(--heading-highlite-color);
+  border-top: 10px solid var(--heading-highlite-color);
+  border-bottom: 10px solid var(--heading-highlite-color);
   padding: 0;
   margin: 0;
 }
-
+.form-content-wrapper{
+  height: 100%;
+}
 
 
 .form-main-content{
   background-color: #ffffff;
   border-radius: 0px 16px 16px 0px ;
   padding: 25px;
-  height: 100%;
+  height: 100% !important;
   width: 100%;
 
 }
@@ -105,8 +107,8 @@
 
 
 .form-main-content h3{
-    color: #000000;
-    font-family: "Corbert";
+    color: var(--heading-main-color);
+    font-family: var(--font-corbert);
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -114,8 +116,8 @@
 }
 
 .form-main-content p{
-        font-family: "Roboto";
-        color: #000000;
+       font-family: var(--font-roboto);
+        color: var(--heading-main-color);
         line-height: 32px;
         font-weight: 300;
         font-size: 18px;

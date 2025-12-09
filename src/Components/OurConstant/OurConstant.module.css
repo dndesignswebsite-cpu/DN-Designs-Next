@@ -5,12 +5,12 @@
 
 .our-constant-companions .our-brand-heading {
   font-size: 50px;
-  font-family: Corbert, sans-serif;
+  font-family: var(--font-corbert);
   font-weight: 700;
   padding-bottom: 20px;
 }
 .our-constant-comapny-heqadg-red{
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 .companies img {
   width: 150px;
@@ -84,6 +84,6 @@
 
   .our-constant-mobile-screen .our-brand-heading{
        font-size: 40px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   }
 }

@@ -7,13 +7,13 @@
 
 .characteristics-of-good h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .characteristics-of-good p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -77,7 +77,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .characteristics-of-good-back-content {
@@ -112,9 +112,9 @@
 
 .winning-brand-names-heading-div h2{
     font-size: 56px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert);
     font-weight: 700;
-    color: #000;
+    color: var(--heading-main-color);
 }
 
 .winning-brand-names-btn-div{
@@ -125,10 +125,10 @@
 
 .winning-brand-names p {
   margin-top: 20px;
-  color: #000000;
+  color: var(--heading-main-color);
   line-height: 1.7em;
   font-size: 18px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
 }
 
 
@@ -177,9 +177,9 @@
 
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+    font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

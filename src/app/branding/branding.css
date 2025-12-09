@@ -24,20 +24,20 @@
 }
 
 .portfolio {
-  padding: 90px 0;
+  padding: 50px 10px 30px 10px;
 }
 
 .portfolio h2 {
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .every-pr {
-  color: #ca2734;
+  color: var(--heading-highlite-color);
 }
 
 .potfolio-div-btns {
@@ -48,15 +48,15 @@
 .our-port-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 10px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-radius: 6px 6px 6px 6px;
   font-size: 16px;
-  color: #000;
+  color: var(--heading-main-color);
 }
 
 .our-port-btn-up {
@@ -66,33 +66,37 @@
 }
 
 .our-port-btn-up button {
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   font-size: 18px;
 }
 
 .port-content {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 .port-div-headg h3 {
-  color: #ca2734;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
   font-size: 32px;
 }
 
 .port-content p {
-  color: #888888;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: #888888; 
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom:0 ;
 }
 
 @media (max-width: 768px) {
+
+  .portfolio h2 {
+  font-size: 40px;
+}
   .our-port-btn-up button {
     font-size: 14px;
   }
@@ -131,7 +135,8 @@
 
 @media(max-width:992px){
 .port-div-headg h3 {
-  font-size: 22px;
+  font-size: 32px;
+   padding-bottom: 10px;
 }
  .potfolio-div-btns{
   display: flex;
@@ -152,6 +157,115 @@
  }
 }
 
+/* Branding That Breaks Through desktop*/
+.branding-that-breaks{
+  padding: 60px 0;
+}
+
+.branding-that-breaks h2{
+  font-size: 50px;
+ font-family: var(--font-corbert);
+}
+
+.mobile-view-our-brand{
+    display: none;
+  }
+
+@media(max-width:991.68px){
+  .branding-that-breaks{
+    display: none;
+  }
+
+  .mobile-view-our-brand{
+    display: block;
+  }
+}
+
+
+/* our brand mobile view */
+/* our brand mobile view */
+
+.mobile-view-our-brand{
+  padding: 80px 0px 30px 0px;
+}
+
+.mobile-view-our-brand h2{
+  font-size: 40px;
+  font-family: var(--font-corbert);
+  color: #000;
+}
+
+.mobile-view-our-brand-h3 {
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
+  font-size: 32px;
+}
+
+.our-brand-mobile-all-div{
+   padding: 10px;
+   margin: 0px;
+}
+
+.our-brand-mobile-div{
+  margin-bottom: 20px; 
+}
+.our-brand-mobile-div-clield{
+  border: 1px solid #A8A8A8;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.our-brand-mobile-div img{
+  border-radius:12px 12px 0 0 ;
+}
+.our-brand-mobile-div video{
+  border-radius:12px 12px 0 0 ;
+}
+
+.our-brand-mobile-div-content{
+  padding: 10px;
+}
+
+
+.our-brand-mobile-btn {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--heading-highlite-color);
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px;
+}
+
+.our-brand-mobile-btn-up{
+  display: flex;
+  gap: 10px;
+}
+
+.our-brand-mobile-btn-up h4 {
+  width: 50%;
+    font-size: 15px;
+    text-align: center;
+   font-family: var(--font-roboto);
+}
+.our-brand-mobile-btn-bottom {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+    text-align: center;
+    font-family: var(--font-roboto);
+}
+
+.our-brand-mobile-div-content p{
+      color: #888888;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+@media(max-width:767px){
+  .mobile-view-our-brand{
+  padding: 40px 0 10px 0px;
+}
+}
 
 /* branding-that mobile view */
 .mobile-view-branding-that{
@@ -160,13 +274,13 @@
 
 .mobile-view-branding-that h2{
   font-size: 40px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   color: #000;
 }
 
 .mobile-view-branding-that-h3 {
-  color: #ca2734;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert);
   font-size: 32px;
 }
 
@@ -196,7 +310,7 @@
 .branding-that-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
   padding: 5px;
 }
@@ -210,7 +324,7 @@
   width: 50%;
     font-size: 15px;
     text-align: center;
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
 }
 .branding-that-mobile-btn-bottom {
   width: 100%;
@@ -220,12 +334,12 @@
 .branding-that-mobile-btn-bottom{
   font-size: 15px;
     text-align: center;
-    font-family: "Roboto";
+    font-family: var(--font-roboto);
 }
 
 .branding-that-mobile-div-content p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -244,15 +358,15 @@
 }
 
 .branding-identity{
-  padding: 80px 0;
+  padding: 50px 0px 40px 0px;
 }
 .branding-identity h2{
-   color: #000000;
-  font-family: "Corbert", Sans-serif;
+   color: var(--heading-main-color);
+ font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .identity-div{
@@ -271,16 +385,16 @@
 }
 
 .identity-div-content h3{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
-    font-size: 20px;
+      color: var(--heading-main-color);
+    font-family: var(--font-corbert);
+    font-size: 24px;
     font-weight: 700;
     padding: 5px 10px;
 }
 
 .identity-div-content p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 10px;
@@ -292,6 +406,14 @@
 }
 .brand-identity-div-row{
   margin: 0px 0;
+}
+
+.branding-identity h2{
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.identity-div-content h3{
+    font-size: 24px;
 }
 }
 
@@ -305,7 +427,7 @@
 
 .noun-mar{
           vertical-align: middle;
-        font-family: Corbert;
+       font-family: var(--font-corbert);
         font-weight: 700;
         font-size: 150px;
         padding: 40px 0px 40px 0px;
@@ -330,29 +452,29 @@
 
 #card1-create {
   --index: 1;
-  top: 170px;
+  top: 210px;
   margin-top: 20px;
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 250px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 290px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 330px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 370px;
   margin-top: 20px;
 }
 
@@ -390,8 +512,8 @@
   top: 0;
   padding: 30px 0;
   text-align: center;
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -409,22 +531,22 @@
 }
 
 .create-number{
-  color: #CA2734;
-    font-family: "Corbert", Sans-serif;
+  color: var(--heading-highlite-color);
+   font-family: var(--font-corbert);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+   font-family: var(--font-corbert);
     font-size: 38px;
     font-weight: 700;
 }
 
 .card-body-create p{
       color: #888888;
-    font-family: "Roboto", Sans-serif;
+   font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -472,9 +594,9 @@
 }
 
 .our-brand-heading-a-mobile{
-  color: #000000;
-  font-family: "Corbert", Sans-serif;
-  font-size: 35px;
+  color: var(--heading-main-color);
+ font-family: var(--font-corbert);
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2em;
   padding-bottom: 40px;
@@ -492,15 +614,15 @@
 }
 
 .create-number-mobile{
-  color: #CA2734;
-    font-family: "Corbert bold", Sans-serif;
+  color: var(--heading-highlite-color);
+   font-family: var(--font-corbert);
     font-size: 40px;
     font-weight: 600;
 }
 
 .card-body-create-mobile h2{
-      color: #000000;
-    font-family: "Corbert", Sans-serif;
+      color: var(--heading-main-color);
+   font-family: var(--font-corbert);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -508,7 +630,7 @@
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: "Roboto", Sans-serif;
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -516,11 +638,15 @@
 
 /* faqs */
 
+.faqs{
+  padding: 40px 0px 40px 0px;
+}
+
 .faqs h2 {
     font-size: 56px;
-    font-family: Corbert;
+    font-family: var(--font-corbert);
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: var(--heading-main-color);
 }
 @media(max-width:767px){
   .faqs h2 {

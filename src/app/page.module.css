@@ -1,3 +1,8 @@
+
+.every-pr {
+  color: var(--heading-highlite-color);
+}
+
 /* home hero section */
 
 .hero {
@@ -19,8 +24,6 @@ align-items: center;
 
 .hero h1 {
   font-size: 56px;
-  font-weight: bold;
-  font-family: Corbert;
   color: #000;
   margin-bottom: 30px;
 }
@@ -30,7 +33,6 @@ align-items: center;
   color: #666;
   font-size: 18px;
   margin-bottom: 50px;
-  font-family: "Roboto";
   line-height: 1.4em;
 }
 
@@ -143,7 +145,9 @@ align-items: center;
   margin-top: 50px;
   list-style: none;
 }
-
+.our-brand .cards{
+  padding-left: 0px;
+}
 .card-body {
   box-sizing: border-box;
   height: 95vh;
@@ -209,9 +213,7 @@ align-items: center;
 
 .our-brand-content h3 {
   color: rgb(255, 255, 255);
-  font-family: Corbert, sans-serif;
   font-size: 70px;
-  font-weight: 700;
 }
 
 .brand-buttons {
@@ -225,7 +227,6 @@ align-items: center;
   border-color: rgb(255, 255, 255);
   border-radius: 100px;
   color: rgb(255, 255, 255);
-  font-family: Roboto, sans-serif;
   background: transparent;
   flex: 1 1 0;
   max-width: 200px;
@@ -234,7 +235,6 @@ align-items: center;
 
 .our-brand-content p {
   color: rgb(255, 255, 255);
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.4em;
   margin-top: 10px;
@@ -242,8 +242,6 @@ align-items: center;
 
 .our-brand-heading {
   font-size: 50px;
-  font-family: Corbert, sans-serif;
-  font-weight: 700;
   color: rgb(0, 0, 0);
   padding-bottom: 20px;
 }
@@ -272,13 +270,11 @@ align-items: center;
 
 .mobile-view-our-brand h2{
   font-size: 40px;
-  font-family: "Corbert";
   color: #000;
 }
 
 .mobile-view-our-brand-h3 {
   color: #ca2734;
-  font-family: "Corbert", Sans-serif;
   font-size: 32px;
 }
 
@@ -325,19 +321,16 @@ align-items: center;
   width: 50%;
     font-size: 15px;
     text-align: center;
-    font-family: "Roboto";
 }
 .our-brand-mobile-btn-bottom {
   width: 100%;
   padding: 10px;
   font-size: 15px;
     text-align: center;
-    font-family: "Roboto";
 }
 
 .our-brand-mobile-div-content p{
-      color: #888888;
-    font-family: "Roboto", Sans-serif;
+    color: #888888;
     font-size: 16px;
     line-height: 1.4em;
 }

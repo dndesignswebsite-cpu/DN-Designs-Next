@@ -1,7 +1,7 @@
 /*.....points...... */
 
 .point-cont{
-  width: 1200px;
+  width: 1120px;
 }
 
 .points {
@@ -23,16 +23,16 @@
 
 
 .points-right h2 {
-  font-family: Corbert, sans-serif;
+  font-family: var(--font-corbert);
   font-size: 180px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: var(--heading-main-color);
   position: absolute;
   bottom: 0%;
 }
 .points-right h3 {
-  color: rgb(0, 0, 0);
-  font-family: Corbert, sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-corbert);
   font-size: 25px;
   font-weight: 700;
   
@@ -40,7 +40,7 @@
 
 .points-para p {
     color: #888888;
-    font-family: "Roboto-Regular";
+    font-family: var(--font-roboto);
     font-weight:400;
     font-size: 16px;
     line-height: 1.4em;

@@ -24,14 +24,15 @@
 
 .grow-your-bussiness-col-1 h3, .grow-your-bussiness-col-3 h3{
     font-size: 22px;
-    font-family: "Corbert";
-    color: #000;
+    font-family: var(--font-corbert);
+    color: var(--heading-main-color);
     padding-top:25px;
+    text-align: center;
 }
 
 .grow-your-bussiness-col-1 p, .grow-your-bussiness-col-3 p{
    text-align: center;
-   font-family: "Roboto";
+   font-family: var(--font-roboto);
    font-size: 18px;
    color: #888;
    padding-top: 10px;
@@ -61,8 +62,8 @@
 
 .we-are-the-leading h3{
     font-size: 50px;
-    font-family: "Corbert";
-    color: #000;
+    font-family: var(--font-corbert);
+    color: var(--heading-main-color);
     width: 70%;
 }
 
@@ -72,7 +73,7 @@
 
 .we-are-the-leading-para p{
   font-size: 18px;
-  font-family: "Roboto-Regular";
+  font-family: var(--font-roboto);
   line-height: 1.6em;
 }
 
@@ -102,13 +103,13 @@
 
 .top-cap h2 {
   font-size: 56px;
-  font-family: "Corbert";
+  font-family: var(--font-corbert);
   font-weight: 700;
 }
 
 .top-cap p {
-  color: #000000;
-  font-family: "Roboto-Regular", Sans-serif;
+  color: var(--heading-main-color);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -172,7 +173,7 @@
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: var(--heading-highlite-color);
   }
 
   .top-cap-back-content {
@@ -189,3 +190,13 @@
     padding: 30px 0;
   }
 }
+
+
+
+
+
+
+
+
+
+

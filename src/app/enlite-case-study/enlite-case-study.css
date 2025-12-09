@@ -1,0 +1,354 @@
+.enlitecasestudy-video{
+    border-bottom: 2px solid #000;
+}
+
+.enlitecase-study-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.enlitecase-study-wrapper1 {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+.enlite-sign-off{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.enlite-winner{
+    padding-top: 50px;
+}
+
+.enlitecase-study-points{
+    display: inline-block;  
+    background-color: #0B52A0;
+    color: white;
+    width: max-content;
+    padding: 8px 15px;
+    border: 1px solid #0B52A0;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.enlitecase-study-points1{
+    display: inline-block;  
+    background-color: #F3C309;
+    color: white;
+    width: max-content;
+    padding: 8px 15px;
+    border: 1px solid #F3C309;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#enlitecasestudy-heading{
+    font-size: 75px;
+    font-weight: 700;
+}
+
+#enlitecasestudy-span{
+    color: #0B52A0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.enlitecasestudy-images{
+    margin-top: 50px;
+}
+
+.enlitecase-study-img1{
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.enlitecasestudy-video1{
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.enlitecase-study-img{
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.enlitecase-study-img5{
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.enliteoverview-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.enliteoverview-points1{
+    background: white;
+    border: 1px solid #0B52A0;
+    width: max-content;
+    padding: 5px 18px;
+    border-radius: 50px;
+    color: #0B52A0;
+    font-size: 16px;
+}
+
+.enliteoverview-points{
+    background: white;
+    border: 1px solid #F3C309;
+    width: max-content;
+    padding: 5px 18px;
+    border-radius: 50px;
+    color: #F3C309;
+    font-size: 16px;
+}
+
+#enliteoverview-heading1{
+    font-size: 30px;
+    color: #0B52A0;
+    font-weight: 700;
+}
+
+#enliteoverview-heading2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#enliteapproach-heading1{
+    font-size: 30px;
+    color: #0B52A0;
+    font-weight: 700;
+}
+
+#enliteapproach-heading2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#enliteoverview-p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#enliteoverview-h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#enliteoverview-para{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.enlitecase-study-img2{
+    border-radius: 30px 0 0 30px;
+    padding: 0;
+}
+
+.enlitecase-study-img3{
+    border-radius: 0px 30px 30px 0;
+    padding: 0;
+}
+
+.enlitecase-study-img6{
+        border-radius: 30px;
+        margin-top: 0px;
+}
+
+.enlitecase-study-img7{
+        border-radius: 30px;
+        margin-top: 0px;
+}
+
+.enlitecase-study-img8{
+        border-radius: 30px;
+        margin-top: 30px;
+}
+
+.enlitecase-study-img9{
+        border-radius: 30px;
+        margin-top: 0px;
+}
+
+
+@media (max-width: 767.58px){
+    .enlite-winner{
+        padding-top: 20px;
+    }
+    
+    .enlitecase-study-wrapper {
+        display: flex;
+        gap: 10px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .enlitecase-study-wrapper1 {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    #enliteoverview-heading1, #enliteapproach-heading1, #enlitecasestudy-span{
+        font-size: 24px;
+    }
+
+    #enliteoverview-heading2, #enliteoverview-h2, #enliteapproach-heading2{
+        font-size: 36px;
+    }
+
+    #enliteoverview-p{
+        padding-top: 50px;
+        font-size: 18px;
+    }
+
+    .enlitecase-study-img2{
+        border-radius: 20px 20px 0px 0px;
+        margin-top: 30px;
+    }
+
+    .enlitecase-study-img3{
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .enlitecase-study-img5{
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .enlitecase-study-img6, .enlitecase-study-img7{
+        margin-top: 30px;
+    }
+
+    #enliteapproach-heading1{
+        padding-top: 50px;
+    }
+
+    .enlitecasestudy-images{
+        margin-top: 0px;
+    }
+
+    .enlite-sign-off{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 40px;
+    }
+
+    #enlitecaststudy-heading{
+        font-size: 52px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .enlitecase-study-img9{
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .enlitecase-study-img2, .enlitecase-study-img3, .enlitecase-study-img6, .enlitecase-study-img7, .enlitecase-study-img8{
+        margin-top: 30px;
+    }
+
+    #enliteapproach-heading1{
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    #enliteapproach-heading2{
+        font-size: 45px;
+    }
+
+    #enlitecaststudy-heading{
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    #enlitecasestudy-span{
+        font-size: 24px;
+    }
+
+    #enliteoverview-heading2{
+        font-size: 40px;
+    }
+}
+
+
+#enlitecasestudy-span{
+    color: #17AAA6;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.enlitecase-study-points{
+    display: inline-block;  
+    background-color: #17AAA6;
+    color: white;
+    width: max-content;
+    padding: 8px 15px;
+    border: 1px solid #17AAA6;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.enlitecase-study-points1{
+    display: inline-block;  
+    background-color: #B9C734;
+    color: white;
+    width: max-content;
+    padding: 8px 15px;
+    border: 1px solid #B9C734;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#enliteoverview-heading1{
+    font-size: 30px;
+    color: #17AAA6;
+    font-weight: 700;
+}
+
+.enliteoverview-points1{
+    background: white;
+    border: 1px solid #17AAA6;
+    width: max-content;
+    padding: 5px 18px;
+    border-radius: 50px;
+    color: #0B52A0;
+    font-size: 16px;
+}
+
+.enliteoverview-points{
+    background: white;
+    border: 1px solid #B9C734;
+    width: max-content;
+    padding: 5px 18px;
+    border-radius: 50px;
+    color: #B9C734;
+    font-size: 16px;
+}
+
+#enliteapproach-heading1{
+    font-size: 30px;
+    color: #17AAA6;
+    font-weight: 700;
+}
