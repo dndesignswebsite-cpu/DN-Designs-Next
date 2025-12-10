@@ -56,6 +56,7 @@ function page() {
 // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "A leading branding agency in India, we have the expertise and experience to turn your product into a successful brand. We take up every project as a new challenge and commit ourselves to creating something unique and valuable. Our goal is to actualise your vision and mission and in the process make ourselves happy too. So, shall we meet and discuss your project over a steaming hot cup of coffee?"
+  const pageName = "branding";
 
   // faqs content
    const leftFaqs = [
@@ -732,7 +733,7 @@ function page() {
 
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
     </div>
   );
 }

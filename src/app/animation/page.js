@@ -134,7 +134,7 @@ function page() {
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "Usually, customers prefer to watch an animated video over reading long blogs, manuals or documentation. How do we know this? Well, statistics say this, and we, as consumers, do the same. As an animation company in Noida, we create videos that capture attention, provide the required information, strike an emotional chord with customers and build trust. Want a similar experience for your customers? Let’s discuss your project over a cup of coffee."
-
+  const pageName = "animation"
 
   return (
     <div>
@@ -557,7 +557,7 @@ function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
     </div>
   );
 }

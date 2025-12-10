@@ -58,6 +58,7 @@ function page() {
     // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "Go beyond traditional marketing methods to build your brand and increase sales. Digital marketing services help you connect and engage with a wider audience base, just when they need you the most. Multiple platforms, several techniques, higher adaptability, measurable results and a unique brand identity – the advantages of digital marketing are simply amazing. Want your brand to soar beyond limits with digital marketing? Let’s explore the strategies over a cup of coffee."
+  const pageName = "digital-marketing-agency-in-noida"
 
   const leftFaqs = [
     {
@@ -579,7 +580,7 @@ function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
     </div>
   );
 }

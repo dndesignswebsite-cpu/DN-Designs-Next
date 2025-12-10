@@ -106,7 +106,8 @@ function page() {
 
   const FormHead ="Let’s Discuss Over a Cup of Coffee"    
   const FormPara ="Do you want to showcase your brand as well as your products and services in a compelling and visually appealing manner? A creatively and professionally designed catalogue and brochure is what you need, and at DN Designs, we craft just that for you. Our brochures and catalogues are designed to attract attention, engage the audience and convert them into customers. Want to work with us? Let’s begin by discussing your objectives."   
- 
+  const pageName = "catalogue-designing"
+
   return (
     <div>
       {/*Breadcrumb*/}
@@ -431,7 +432,7 @@ function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
     </div>
   );
 }

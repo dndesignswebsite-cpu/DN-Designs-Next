@@ -89,7 +89,7 @@ function page() {
 
    const FormHead ="Let’s Discuss Over a Cup of Coffee"    
   const FormPara ="Since you now understand the importance of brand names, you want the best one for your business, right? But it is not an easy job. It requires an understanding of the product, the market, as well as the legalities involved. You don’t need to worry, though, since we are right here. As a brand identity design agency, we make brand name suggestions that perfectly suit your brand. So, let’s meet and discuss your brand."   
- 
+  const pageName = "brand-name-suggestion"
 
   return (
     <div>
@@ -408,7 +408,7 @@ function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
     </div>
   );
 }

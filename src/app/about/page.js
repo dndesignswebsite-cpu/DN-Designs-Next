@@ -55,6 +55,7 @@ function page() {
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "It’s difficult to be seen and heard in a crowd, isn’t it? There is just so much noise. It is the same with product market – too many brands, lots of promise and intense competition. Rising above this chaos is what helps you establish your identity and secure your position in this competitive landscape. This is what we, as a branding and design agency, do for you. Curious to know more about us? Let’s sit down, enjoy a cup of coffee and discuss your project."
+  const pageName = "about-us"
 
   return (
     <div>
@@ -281,7 +282,7 @@ function page() {
       {/* Form */}
 
       <div className="form-section">
-        <Form FormHead={FormHead} FormPara={FormPara} />
+        <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
       </div>
     </div>
   )

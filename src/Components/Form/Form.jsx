@@ -6,15 +6,19 @@ import "aos/dist/aos.css";
 import "./Form.css"
 import { set } from "mongoose";
 
-function Form({ FormHead, FormPara }) {
+function Form({ FormHead, FormPara, pageName }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // alert(name + " " + email + " " + mobile + " " + message);
+    let data = {name, email, mobile, message, pageName};
+    console.log(data);
 
 
 
