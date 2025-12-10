@@ -8,12 +8,29 @@ import "./Form.css"
 function Form({ FormHead, FormPara }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [mobilenumber, setMobilenumber] = useState("");
+  const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(name + " " + email + " " + mobilenumber + " " + message);
+    alert(name + " " + email + " " + mobile + " " + message);
+
+
+
+      fetch("api/contact",{
+                  method:"POST",
+                  headers:{
+                      "Content-Type":"application/json"
+                  },
+                  body:JSON.stringify({name, email, mobile, message})
+              })
+              .then((res)=>{
+                  return res.json();
+              })
+              .then((data)=>{
+                  console.log(data);
+              })
+              
   };
 
   
@@ -95,8 +112,8 @@ return (
                         id="mobile"
                         type="tel"
                         placeholder="Mobile No."
-                        value={mobilenumber}
-                        onChange={(e) => setMobilenumber(e.target.value)}
+                        value={mobile}
+                        onChange={(e) => setMobile(e.target.value)}
                         required
                       />
                     </div>
