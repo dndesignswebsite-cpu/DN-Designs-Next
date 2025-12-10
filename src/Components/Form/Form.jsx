@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Form.css"
+import { set } from "mongoose";
 
 function Form({ FormHead, FormPara }) {
   const [name, setName] = useState("");
@@ -13,7 +14,7 @@ function Form({ FormHead, FormPara }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(name + " " + email + " " + mobile + " " + message);
+    // alert(name + " " + email + " " + mobile + " " + message);
 
 
 
@@ -28,9 +29,15 @@ function Form({ FormHead, FormPara }) {
                   return res.json();
               })
               .then((data)=>{
-                  console.log(data);
+                  if(data.success===true){
+                      alert("Message Sent Successfully");
+                      setName("");
+                      setEmail("");
+                      setMobile("");
+                      setMessage("");
+                  }
               })
-              
+
   };
 
   
