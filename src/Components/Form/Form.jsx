@@ -13,7 +13,6 @@ function Form({ FormHead, FormPara, pageName }) {
   const [message, setMessage] = useState("");
   
   
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // alert(name + " " + email + " " + mobile + " " + message);
@@ -42,7 +41,7 @@ function Form({ FormHead, FormPara, pageName }) {
                   }
               })
 
-  };
+  }; 
 
   
 //      useEffect(() => {
