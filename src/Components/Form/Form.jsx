@@ -1,66 +1,90 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { use, useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Form.css"
-import { set } from "mongoose";
+
 
 function Form({ FormHead, FormPara, pageName }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  let [btn, setBtn] = useState("Send Message");
+  let[successMessage, setsuccessMessage] =useState("");
   
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // alert(name + " " + email + " " + mobile + " " + message);
-    let data = {name, email, mobile, message, pageName};
+
+    // VALIDATION 
+    if (!name.trim()) {
+        setsuccessMessage("Name is required");
+        return;
+    }
+
+    if (!email.trim()) {
+        setsuccessMessage("Email is required");
+        return;
+    }
+
+    // MOBILE VALIDATION
+    if (!mobile.trim()) {
+        setsuccessMessage("Mobile number is required");
+        return;
+    }
+
+    if (!/^[0-9]+$/.test(mobile)) {
+        setsuccessMessage("Mobile number must contain digits only");
+        return;
+    }
+
+    if (mobile.length !== 10) {
+        setsuccessMessage("Mobile number must be exactly 10 digits");
+        return;
+    }
+
+    // MESSAGE Validation
+    if (!message.trim()) {
+        setsuccessMessage("Message is required");
+        return;
+    }
+
+    if (message.trim().length < 10) {
+        setsuccessMessage("Message must be at least 10 characters long");
+        return;
+    }
+
+    //validations passed 
+    let data = { name, email, mobile, message, pageName };
     console.log(data);
+    setBtn("Sending...");
 
-
-
-      fetch("api/contact",{
-                  method:"POST",
-                  headers:{
-                      "Content-Type":"application/json"
-                  },
-                  body:JSON.stringify({name, email, mobile, message})
-              })
-              .then((res)=>{
-                  return res.json();
-              })
-              .then((data)=>{
-                  if(data.success===true){
-                      alert("Message Sent Successfully");
-                      setName("");
-                      setEmail("");
-                      setMobile("");
-                      setMessage("");
-                  }
-              })
-
-  }; 
+    fetch("api/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, email, mobile, message })
+    })
+    .then((res) => res.json())
+    .then((data) => {
+        if (data.success === true) {
+            setName("");
+            setEmail("");
+            setMobile("");
+            setMessage("");
+            setBtn("Send Message");
+            setsuccessMessage("Message Sent Successfully");
+        } else {
+            setBtn("Send Message");
+            setsuccessMessage("Message not sent, please try again");
+        }
+    });
+};
 
   
-//      useEffect(() => {
-//   const handleLoad = () => {
-//     AOS.init({
-//       duration: 1000,
-//       once: true,
-//       mirror: false,
-//     });
-//     AOS.refresh();
-//   };
-//   window.addEventListener("load", handleLoad);
-//   return () => {
-//     window.removeEventListener("load", handleLoad);
-//   };
-// }, []);
-
-
-
 useEffect(() => {
   AOS.init({
     duration: 1000,
@@ -68,7 +92,7 @@ useEffect(() => {
     mirror: false,
   });
 
-  // Wait for React rendering to finish before refreshing AOS
+  
   setTimeout(() => {
     AOS.refresh();
   }, 500);
@@ -121,6 +145,7 @@ return (
                       <input
                         id="mobile"
                         type="tel"
+                        pattern="[0-9]{10}"
                         placeholder="Mobile No."
                         value={mobile}
                         onChange={(e) => setMobile(e.target.value)}
@@ -158,8 +183,9 @@ return (
                   </div>
 
                   <button type="submit" className="sbmt-btn">
-                    Send Message
+                    {btn}
                   </button>
+                  <p className="succes-class-form">{successMessage}</p>
                 </form>
               </div>
             </div>
