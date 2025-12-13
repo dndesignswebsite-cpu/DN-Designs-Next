@@ -17,17 +17,54 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./AdminSidebar.css";
 
-const menuItems = [
-  { path: "/admin", icon: faHome, label: "Dashboard", exact: true },
-  { path: "/admin/blogs", icon: faNewspaper, label: "Blogs" },
-  { path: "/admin/pages", icon: faFile, label: "Pages" },
-  { path: "/admin/form-submissions", icon: faAddressBook, label: "Form Submissions" },
-  { path: "/admin/emails", icon: faEnvelope, label: "Emails" },
-  { path: "/admin/settings", icon: faCog, label: "Settings" },
-];
-
 export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
   const pathname = usePathname();
+
+  const menuItems = [
+    {
+      path: "/admin",
+      icon: faHome,
+      label: "Dashboard",
+      exact: true,
+      show: true,
+    },
+    {
+      path: "/admin/blogs",
+      icon: faNewspaper,
+      label: "Blogs",
+      show: true,
+    },
+    {
+      path: "/admin/pages",
+      icon: faFile,
+      label: "Pages",
+      show: true,
+    },
+    {
+      path: "/admin/form-submissions",
+      icon: faAddressBook,
+      label: "Form Submissions",
+      show: true,
+    },
+    {
+      path: "/admin/emails",
+      icon: faEnvelope,
+      label: "Emails",
+      show: true,
+    },
+    {
+      path: "/admin/users",
+      icon: faAddressBook,
+      label: "Users",
+      show: user?.role === "admin",
+    },
+    {
+      path: "/admin/settings",
+      icon: faCog,
+      label: "Settings",
+      show: true,
+    },
+  ];
 
   const isActive = (item) => {
     if (item.exact) {
@@ -51,17 +88,22 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
 
       {/* Navigation */}
       <nav className="admin-sidebar-nav">
-        {menuItems.map((item) => (
-          <Link
-            key={item.path}
-            href={item.path}
-            className={`admin-sidebar-link ${isActive(item) ? "active" : ""}`}
-            title={collapsed ? item.label : ""}
-          >
-            <FontAwesomeIcon icon={item.icon} className="admin-sidebar-icon" />
-            {!collapsed && <span>{item.label}</span>}
-          </Link>
-        ))}
+        {menuItems
+          .filter((item) => item.show)
+          .map((item) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={`admin-sidebar-link ${isActive(item) ? "active" : ""}`}
+              title={collapsed ? item.label : ""}
+            >
+              <FontAwesomeIcon
+                icon={item.icon}
+                className="admin-sidebar-icon"
+              />
+              {!collapsed && <span>{item.label}</span>}
+            </Link>
+          ))}
       </nav>
 
       {/* User Section */}

@@ -15,7 +15,8 @@ export async function GET(request, { params }) {
   try {
     await connectDB();
     
-    const authResult = await withAuth(request, 'admin');
+    // Allow user, editor, and admin to view contact details
+    const authResult = await withAuth(request, 'admin', 'editor', 'user');
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
     }
@@ -37,7 +38,8 @@ export async function PUT(request, { params }) {
   try {
     await connectDB();
     
-    const authResult = await withAuth(request, 'admin');
+    // Allow editor and admin to update (reply)
+    const authResult = await withAuth(request, 'admin', 'editor');
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
     }
@@ -61,6 +63,7 @@ export async function DELETE(request, { params }) {
   try {
     await connectDB();
     
+    // Admin only
     const authResult = await withAuth(request, 'admin');
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
@@ -78,4 +81,3 @@ export async function DELETE(request, { params }) {
     return NextResponse.json(body, { status: statusCode });
   }
 }
-

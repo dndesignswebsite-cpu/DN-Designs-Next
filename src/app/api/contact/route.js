@@ -14,7 +14,7 @@ export async function GET(request) {
   try {
     await connectDB();
 
-    const authResult = await withAuth(request, "admin");
+    const authResult = await withAuth(request, "admin", "editor", "user");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,

@@ -13,7 +13,8 @@ export async function DELETE(request, { params }) {
   try {
     await connectDB();
     
-    const authResult = await withAuth(request, 'admin');
+    // Allow editor and admin to delete images (editing blog content)
+    const authResult = await withAuth(request, 'admin', 'editor');
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
     }
@@ -31,4 +32,3 @@ export async function DELETE(request, { params }) {
     return NextResponse.json(body, { status: statusCode });
   }
 }
-

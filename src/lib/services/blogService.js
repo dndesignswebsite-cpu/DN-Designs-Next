@@ -19,7 +19,8 @@ export const getAllBlogs = async (
 ) => {
   const filter = {};
 
-  if (currentUser?.role !== "admin") {
+  const allowedRoles = ["admin", "editor", "user"];
+  if (!currentUser || !allowedRoles.includes(currentUser.role)) {
     filter.isPublished = true;
     filter.publishedAt = { $lte: new Date() };
   } else if (filter.isPublished && filters.isPublished !== undefined) {
@@ -79,7 +80,11 @@ export const getBlogById = async (identifier, currentUser = null) => {
     throwError("Blog not found", 404, { function: "getBlogById", identifier });
   }
 
-  if (!blog.isPublished && currentUser?.role !== "admin") {
+  const allowedRoles = ["admin", "editor", "user"];
+  if (
+    !blog.isPublished &&
+    (!currentUser || !allowedRoles.includes(currentUser.role))
+  ) {
     throwError("Blog post not found", 404, {
       function: "getBlogById",
       identifier,
@@ -122,10 +127,14 @@ export const createBlog = async (
   if (socialImages.ogImageBuffer) {
     try {
       const result = await uploadImageBuffer(socialImages.ogImageBuffer);
-      blogData.ogImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!blogData.openGraph) blogData.openGraph = {};
+      blogData.openGraph.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt: blogData.openGraph.title || "Blog OG Image",
+        },
+      ];
     } catch (error) {
       logError(error, { function: "createBlog", operation: "uploadOgImage" });
     }
@@ -135,10 +144,14 @@ export const createBlog = async (
   if (socialImages.twitterImageBuffer) {
     try {
       const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
-      blogData.twitterImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!blogData.twitter) blogData.twitter = {};
+      blogData.twitter.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt: blogData.twitter.title || "Blog Twitter Image",
+        },
+      ];
     } catch (error) {
       logError(error, {
         function: "createBlog",
@@ -203,14 +216,25 @@ export const updateBlog = async (
     try {
       const result = await uploadImageBuffer(socialImages.ogImageBuffer);
 
-      if (existingBlog.ogImage?.publicId) {
-        await deleteImage(existingBlog.ogImage.publicId);
+      // Delete old image
+      const oldImage = existingBlog.openGraph?.images?.[0];
+      if (oldImage?.publicId) {
+        await deleteImage(oldImage.publicId);
       }
 
-      updateData.ogImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!updateData.openGraph)
+        updateData.openGraph = existingBlog.openGraph || {};
+
+      updateData.openGraph.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt:
+            updateData.openGraph.title ||
+            existingBlog.openGraph?.title ||
+            "Blog OG Image",
+        },
+      ];
     } catch (error) {
       logError(error, { function: "updateBlog", operation: "uploadOgImage" });
     }
@@ -221,14 +245,24 @@ export const updateBlog = async (
     try {
       const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
 
-      if (existingBlog.twitterImage?.publicId) {
-        await deleteImage(existingBlog.twitterImage.publicId);
+      // Delete old image
+      const oldImage = existingBlog.twitter?.images?.[0];
+      if (oldImage?.publicId) {
+        await deleteImage(oldImage.publicId);
       }
 
-      updateData.twitterImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!updateData.twitter) updateData.twitter = existingBlog.twitter || {};
+
+      updateData.twitter.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt:
+            updateData.twitter.title ||
+            existingBlog.twitter?.title ||
+            "Blog Twitter Image",
+        },
+      ];
     } catch (error) {
       logError(error, {
         function: "updateBlog",
@@ -288,18 +322,22 @@ export const deleteBlog = async (blogId) => {
   }
 
   // Delete OG image
-  if (blog.ogImage?.publicId) {
+  if (blog.openGraph?.images?.length > 0) {
     try {
-      await deleteImage(blog.ogImage.publicId);
+      for (const img of blog.openGraph.images) {
+        if (img.publicId) await deleteImage(img.publicId);
+      }
     } catch (error) {
       logError(error, { function: "deleteBlog", operation: "deleteOgImage" });
     }
   }
 
   // Delete Twitter image
-  if (blog.twitterImage?.publicId) {
+  if (blog.twitter?.images?.length > 0) {
     try {
-      await deleteImage(blog.twitterImage.publicId);
+      for (const img of blog.twitter.images) {
+        if (img.publicId) await deleteImage(img.publicId);
+      }
     } catch (error) {
       logError(error, {
         function: "deleteBlog",

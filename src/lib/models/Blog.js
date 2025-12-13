@@ -136,10 +136,12 @@ const blogSchema = new mongoose.Schema(
     ],
 
     // Canonical URL for SEO
-    canonicalUrl: {
-      type: String,
-      trim: true,
-      default: null,
+    alternates: {
+      canonical: {
+        type: String,
+        trim: true,
+        default: null,
+      },
     },
 
     // Robots meta tag (index, noindex, follow, nofollow)
@@ -156,55 +158,92 @@ const blogSchema = new mongoose.Schema(
       default: null,
     },
 
-    // Open Graph metadata
-    ogTitle: {
-      type: String,
-      trim: true,
-      maxlength: [95, "OG title cannot be more than 95 characters"],
-    },
-
-    ogDescription: {
-      type: String,
-      trim: true,
-      maxlength: [200, "OG description cannot be more than 200 characters"],
-    },
-
-    ogImage: {
+    openGraph: {
+      title: {
+        type: String,
+        trim: true,
+        maxlength: [95, "OG title cannot be more than 95 characters"],
+      },
+      description: {
+        type: String,
+        trim: true,
+        maxlength: [200, "OG description cannot be more than 200 characters"],
+      },
       url: {
         type: String,
+        trim: true,
         default: null,
       },
-      publicId: {
+      siteName: {
         type: String,
+        trim: true,
         default: null,
+      },
+      images: [
+        {
+          url: {
+            type: String,
+            default: null,
+          },
+          width: {
+            type: Number,
+            default: null,
+          },
+          height: {
+            type: Number,
+            default: null,
+          },
+          alt: {
+            type: String,
+            default: null,
+          },
+          publicId: {
+            type: String,
+            default: null,
+          },
+        },
+      ],
+      type: {
+        type: String,
+        default: "website",
       },
     },
 
     // Twitter Card metadata
-    twitterTitle: {
-      type: String,
-      trim: true,
-      maxlength: [70, "Twitter title cannot be more than 70 characters"],
-    },
-
-    twitterDescription: {
-      type: String,
-      trim: true,
-      maxlength: [
-        200,
-        "Twitter description cannot be more than 200 characters",
+    twitter: {
+      card: {
+        type: String,
+      },
+      title: {
+        type: String,
+        trim: true,
+        maxlength: [70, "Twitter title cannot be more than 70 characters"],
+      },
+      description: {
+        type: String,
+        trim: true,
+        maxlength: [
+          200,
+          "Twitter description cannot be more than 200 characters",
+        ],
+      },
+      images: [
+        {
+          url: {
+            type: String,
+            default: null,
+          },
+          publicId: {
+            type: String,
+            default: null,
+          },
+        },
       ],
     },
 
-    twitterImage: {
-      url: {
-        type: String,
-        default: null,
-      },
-      publicId: {
-        type: String,
-        default: null,
-      },
+    // Layout of the blog post to display
+    layout: {
+      type: String,
     },
 
     // Published status
@@ -240,14 +279,13 @@ const blogSchema = new mongoose.Schema(
  * Generate slug from title before saving
  * Creates URL-friendly version of the title
  */
-blogSchema.pre("save", function (next) {
+blogSchema.pre("save", async function () {
   if (this.isModified("title") && !this.slug) {
     this.slug = this.title
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric with hyphens
       .replace(/(^-|-$)/g, ""); // Remove leading/trailing hyphens
   }
-  next();
 });
 
 /**

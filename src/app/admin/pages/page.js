@@ -15,6 +15,7 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 const fetchWithAuth = async (url) => {
   const token = Cookies.get("admin_token");
@@ -26,6 +27,7 @@ const fetchWithAuth = async (url) => {
 };
 
 export default function PagesList() {
+  const { user } = useAdminAuth();
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
@@ -71,6 +73,11 @@ export default function PagesList() {
     }
   };
 
+  // Permission Checks
+  const canCreate = user?.role === "admin" || user?.role === "editor";
+  const canEdit = user?.role === "admin" || user?.role === "editor";
+  const canDelete = user?.role === "admin";
+
   return (
     <div>
       <div
@@ -93,10 +100,12 @@ export default function PagesList() {
           </h1>
           <p className="admin-page-subtitle">Manage your website pages</p>
         </div>
-        <Link href="/admin/pages/new" className="admin-btn admin-btn-primary">
-          <FontAwesomeIcon icon={faPlus} />
-          New Page
-        </Link>
+        {canCreate && (
+          <Link href="/admin/pages/new" className="admin-btn admin-btn-primary">
+            <FontAwesomeIcon icon={faPlus} />
+            New Page
+          </Link>
+        )}
       </div>
 
       <div className="admin-card">
@@ -181,20 +190,24 @@ export default function PagesList() {
                           >
                             <FontAwesomeIcon icon={faEye} />
                           </Link>
-                          <Link
-                            href={`/admin/pages/${pageItem._id}`}
-                            className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                            title="Edit"
-                          >
-                            <FontAwesomeIcon icon={faEdit} />
-                          </Link>
-                          <button
-                            onClick={() => openDeleteModal(pageItem)}
-                            className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                            title="Delete"
-                          >
-                            <FontAwesomeIcon icon={faTrash} />
-                          </button>
+                          {canEdit && (
+                            <Link
+                              href={`/admin/pages/${pageItem._id}`}
+                              className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                              title="Edit"
+                            >
+                              <FontAwesomeIcon icon={faEdit} />
+                            </Link>
+                          )}
+                          {canDelete && (
+                            <button
+                              onClick={() => openDeleteModal(pageItem)}
+                              className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                              title="Delete"
+                            >
+                              <FontAwesomeIcon icon={faTrash} />
+                            </button>
+                          )}
                         </div>
                       </td>
                     </tr>
@@ -229,13 +242,15 @@ export default function PagesList() {
             <FontAwesomeIcon icon={faFile} className="admin-empty-icon" />
             <h3>No pages found</h3>
             <p>Create your first page to get started.</p>
-            <Link
-              href="/admin/pages/new"
-              className="admin-btn admin-btn-primary"
-            >
-              <FontAwesomeIcon icon={faPlus} />
-              Create Page
-            </Link>
+            {canCreate && (
+              <Link
+                href="/admin/pages/new"
+                className="admin-btn admin-btn-primary"
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                Create Page
+              </Link>
+            )}
           </div>
         )}
       </div>

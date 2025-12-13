@@ -7,12 +7,15 @@ import {
   faEnvelope,
   faLock,
   faSpinner,
+  faEye,
+  faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import "./login.css";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -36,8 +39,9 @@ export default function AdminLogin() {
         throw new Error(data.message || "Login failed");
       }
 
-      if (data.user.role !== "admin") {
-        throw new Error("Access denied. Admin privileges required.");
+      const allowedRoles = ["admin", "editor", "user"];
+      if (!allowedRoles.includes(data.user.role)) {
+        throw new Error("Access denied. Invalid role for dashboard access.");
       }
 
       // Save token
@@ -122,7 +126,7 @@ export default function AdminLogin() {
                 className="admin-login-input-icon"
               />
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -130,6 +134,14 @@ export default function AdminLogin() {
                 required
                 disabled={loading}
               />
+              <button
+                type="button"
+                className="admin-login-password-toggle"
+                onClick={() => setShowPassword(!showPassword)}
+                tabIndex="-1"
+              >
+                <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+              </button>
             </div>
           </div>
 

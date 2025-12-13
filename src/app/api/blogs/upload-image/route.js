@@ -13,7 +13,8 @@ export async function POST(request) {
   try {
     await connectDB();
     
-    const authResult = await withAuth(request, 'admin');
+    // Allow editor and admin to upload images
+    const authResult = await withAuth(request, 'admin', 'editor');
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
     }
@@ -49,4 +50,3 @@ export async function POST(request) {
     return NextResponse.json(body, { status: statusCode });
   }
 }
-

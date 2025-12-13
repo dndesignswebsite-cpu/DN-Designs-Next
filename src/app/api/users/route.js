@@ -1,40 +1,35 @@
-/**
- * Emails API Route
- * GET /api/emails - Get all email groups (Admin only)
- * POST /api/emails - Create new email group (Admin only)
- */
-
 import { NextResponse } from "next/server";
 import connectDB from "@/lib/config/database.js";
-import * as emailService from "@/lib/services/emailService.js";
+import * as userService from "@/lib/services/userService.js";
 import { withAuth } from "@/lib/middleware/auth.js";
 import { handleError } from "@/lib/middleware/errorHandler.js";
 
+// GET /api/users - List all users (Admin only)
 export async function GET(request) {
   try {
     await connectDB();
 
-    // Allow user, editor, and admin to view email groups
-    const authResult = await withAuth(request, "admin", "editor", "user");
+    const authResult = await withAuth(request, "admin");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,
       });
     }
 
+    // Parse filters
     const { searchParams } = new URL(request.url);
+    const role = searchParams.get("role");
+    const search = searchParams.get("search");
 
     const filters = {};
-    if (searchParams.get("type")) filters.type = searchParams.get("type");
-    if (searchParams.get("isActive"))
-      filters.isActive = searchParams.get("isActive");
+    if (role) filters.role = role;
+    if (search) filters.search = search;
 
-    const emailGroups = await emailService.getAllEmailGroups(filters);
+    const users = await userService.getAllUsers(filters);
 
     return NextResponse.json({
       success: true,
-      count: emailGroups.length,
-      data: emailGroups,
+      data: users,
     });
   } catch (error) {
     const { statusCode, body } = handleError(error);
@@ -42,29 +37,38 @@ export async function GET(request) {
   }
 }
 
+// POST /api/users - Create new user (Admin only)
 export async function POST(request) {
   try {
     await connectDB();
 
-    // Allow editor and admin to create email groups
-    const authResult = await withAuth(request, "admin", "editor");
+    const authResult = await withAuth(request, "admin");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,
       });
     }
 
-    const body = await request.json();
-    const emailGroup = await emailService.createEmailGroup(body);
+    const { name, email, role } = await request.json();
 
-    return NextResponse.json(
-      {
-        success: true,
-        message: "Email group created successfully",
-        data: emailGroup,
-      },
-      { status: 201 }
-    );
+    if (!name || !email) {
+      return NextResponse.json(
+        { success: false, message: "Name and email are required" },
+        { status: 400 }
+      );
+    }
+
+    const newUser = await userService.createUser({
+      name,
+      email,
+      role: role || "user",
+    });
+
+    return NextResponse.json({
+      success: true,
+      data: newUser,
+      message: "User created and credentials emailed successfully",
+    });
   } catch (error) {
     const { statusCode, body } = handleError(error);
     return NextResponse.json(body, { status: statusCode });

@@ -13,6 +13,7 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 const fetchWithAuth = async (url) => {
   const token = Cookies.get("admin_token");
@@ -24,6 +25,9 @@ const fetchWithAuth = async (url) => {
 };
 
 export default function AdminDashboard() {
+  const { user } = useAdminAuth();
+  const canCreate = user?.role === "admin" || user?.role === "editor";
+  const canSend = user?.role === "admin" || user?.role === "editor";
   // Fetch stats
   const { data: contactStats } = useQuery({
     queryKey: ["contactStats"],
@@ -102,22 +106,28 @@ export default function AdminDashboard() {
             <h2 className="admin-card-title">Quick Actions</h2>
           </div>
           <div className="admin-quick-actions">
-            <Link href="/admin/blogs/new" className="admin-quick-action">
-              <FontAwesomeIcon icon={faPlus} />
-              <span>New Blog Post</span>
-            </Link>
-            <Link href="/admin/pages/new" className="admin-quick-action">
-              <FontAwesomeIcon icon={faPlus} />
-              <span>New Page</span>
-            </Link>
-            <Link href="/admin/contacts" className="admin-quick-action">
+            {canCreate && (
+              <Link href="/admin/blogs/new" className="admin-quick-action">
+                <FontAwesomeIcon icon={faPlus} />
+                <span>New Blog Post</span>
+              </Link>
+            )}
+            {canCreate && (
+              <Link href="/admin/pages/new" className="admin-quick-action">
+                <FontAwesomeIcon icon={faPlus} />
+                <span>New Page</span>
+              </Link>
+            )}
+            <Link href="/admin/form-submissions" className="admin-quick-action">
               <FontAwesomeIcon icon={faEye} />
               <span>Form Submissions</span>
             </Link>
-            <Link href="/admin/emails" className="admin-quick-action">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <span>Send Email</span>
-            </Link>
+            {canSend && (
+              <Link href="/admin/emails" className="admin-quick-action">
+                <FontAwesomeIcon icon={faEnvelope} />
+                <span>Send Email</span>
+              </Link>
+            )}
           </div>
         </div>
 
@@ -137,7 +147,7 @@ export default function AdminDashboard() {
       <div className="admin-card">
         <div className="admin-card-header">
           <h2 className="admin-card-title">Recent Form Submissions</h2>
-          <Link href="/admin/contacts" className="admin-btn admin-btn-outline admin-btn-sm">
+          <Link href="/admin/form-submissions" className="admin-btn admin-btn-outline admin-btn-sm">
             View All
           </Link>
         </div>

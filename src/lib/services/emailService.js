@@ -5,7 +5,7 @@
 
 import * as emailRepository from "@/lib/repositories/emailRepository.js";
 import { throwError, logError } from "@/lib/middleware/errorHandler.js";
-import { sendPromotionalEmail } from "@/lib/config/email.js";
+import { sendPromotionalEmail, sendEmail } from "@/lib/config/email.js";
 
 export const getAllEmailGroups = async (filters = {}) => {
   const filter = {};
@@ -207,4 +207,53 @@ export const sendPromotionalEmailToGroup = async (
     });
     throw error;
   }
+};
+export const sendUserCredentialsEmail = async (email, name, password) => {
+  const subject = "Your DN Designs Account Credentials";
+  const html = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+          .header { background-color: #000; color: white; padding: 20px; text-align: center; }
+          .content { padding: 20px; }
+          .credentials { background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 20px 0; }
+          .label { font-weight: bold; color: #555; }
+          .footer { text-align: center; padding: 20px; font-size: 12px; color: #777; border-top: 1px solid #eee; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h2>Welcome to DN Designs</h2>
+          </div>
+          <div class="content">
+            <p>Hello ${name},</p>
+            <p>An account has been created for you on the DN Designs Admin Dashboard.</p>
+            
+            <div class="credentials">
+              <p><span class="label">Email:</span> ${email}</p>
+              <p><span class="label">Password:</span> <strong>${password}</strong></p>
+            </div>
+            
+            <p>Please login and change your password immediately.</p>
+            <p><a href="${
+              process.env.NEXT_PUBLIC_APP_URL
+            }/login">Click here to Login</a></p>
+          </div>
+          <div class="footer">
+            <p>&copy; ${new Date().getFullYear()} DN Designs. All rights reserved.</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `;
+
+  return await sendEmail({
+    to: email,
+    subject,
+    html,
+  });
 };

@@ -57,9 +57,12 @@ export default function PageForm({ initialData, isEditing }) {
     canonicalUrl: "",
     robotsTag: "index, follow",
     headCode: "",
+    headCode: "",
+    authors: [],
     // Social
     ogTitle: "",
     ogDescription: "",
+    ogUrl: "",
     twitterTitle: "",
     twitterDescription: "",
   });
@@ -78,23 +81,26 @@ export default function PageForm({ initialData, isEditing }) {
         pageType: initialData.pageType || "default",
         order: initialData.order || 0,
         content: initialData.content || {},
-        contentRaw: typeof initialData.content === "object" 
-          ? JSON.stringify(initialData.content, null, 2) 
-          : initialData.content || "",
+        contentRaw:
+          typeof initialData.content === "object"
+            ? JSON.stringify(initialData.content, null, 2)
+            : initialData.content || "",
         isPublished: initialData.isPublished || false,
-        publishedAt: initialData.publishedAt 
-          ? new Date(initialData.publishedAt).toISOString().slice(0, 16) 
+        publishedAt: initialData.publishedAt
+          ? new Date(initialData.publishedAt).toISOString().slice(0, 16)
           : "",
         metaTitle: initialData.metaTitle || "",
         metaDescription: initialData.metaDescription || "",
         focusKeywords: initialData.focusKeywords?.join(", ") || "",
-        canonicalUrl: initialData.canonicalUrl || "",
+        canonicalUrl: initialData.alternates?.canonical || "",
         robotsTag: initialData.robotsTag || "index, follow",
         headCode: initialData.headCode || "",
-        ogTitle: initialData.ogTitle || "",
-        ogDescription: initialData.ogDescription || "",
-        twitterTitle: initialData.twitterTitle || "",
-        twitterDescription: initialData.twitterDescription || "",
+        authors: initialData.authors || [],
+        ogTitle: initialData.openGraph?.title || "",
+        ogDescription: initialData.openGraph?.description || "",
+        ogUrl: initialData.openGraph?.url || "",
+        twitterTitle: initialData.twitter?.title || "",
+        twitterDescription: initialData.twitter?.description || "",
       });
       if (initialData.featuredImage?.url) {
         setFeaturedImagePreview(initialData.featuredImage.url);
@@ -105,7 +111,10 @@ export default function PageForm({ initialData, isEditing }) {
   // Auto-generate slug from title (only if not manually edited)
   const handleTitleChange = (e) => {
     const title = e.target.value;
-    const newSlug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const newSlug = title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
     setFormData((prev) => ({
       ...prev,
       title,
@@ -154,7 +163,7 @@ export default function PageForm({ initialData, isEditing }) {
     setError("");
 
     const data = new FormData();
-    
+
     // Handle content - try to parse as JSON
     let contentValue = formData.contentRaw;
     try {
@@ -166,7 +175,7 @@ export default function PageForm({ initialData, isEditing }) {
       // If not valid JSON, send as raw string
       contentValue = JSON.stringify({ raw: formData.contentRaw });
     }
-    
+
     data.append("title", formData.title);
     data.append("slug", formData.slug);
     data.append("description", formData.description);
@@ -175,16 +184,26 @@ export default function PageForm({ initialData, isEditing }) {
     data.append("content", contentValue);
     data.append("isPublished", formData.isPublished);
     if (formData.publishedAt) data.append("publishedAt", formData.publishedAt);
-    if (formData.focusKeywords) data.append("focusKeywords", formData.focusKeywords);
+    if (formData.focusKeywords)
+      data.append("focusKeywords", formData.focusKeywords);
     if (formData.metaTitle) data.append("metaTitle", formData.metaTitle);
-    if (formData.metaDescription) data.append("metaDescription", formData.metaDescription);
-    if (formData.canonicalUrl) data.append("canonicalUrl", formData.canonicalUrl);
+    if (formData.metaDescription)
+      data.append("metaDescription", formData.metaDescription);
+    if (formData.canonicalUrl)
+      data.append("canonicalUrl", formData.canonicalUrl);
     if (formData.robotsTag) data.append("robotsTag", formData.robotsTag);
     if (formData.headCode) data.append("headCode", formData.headCode);
+    if (formData.authors && formData.authors.length > 0) {
+      data.append("authors", JSON.stringify(formData.authors));
+    }
     if (formData.ogTitle) data.append("ogTitle", formData.ogTitle);
-    if (formData.ogDescription) data.append("ogDescription", formData.ogDescription);
-    if (formData.twitterTitle) data.append("twitterTitle", formData.twitterTitle);
-    if (formData.twitterDescription) data.append("twitterDescription", formData.twitterDescription);
+    if (formData.ogDescription)
+      data.append("ogDescription", formData.ogDescription);
+    if (formData.ogUrl) data.append("ogUrl", formData.ogUrl);
+    if (formData.twitterTitle)
+      data.append("twitterTitle", formData.twitterTitle);
+    if (formData.twitterDescription)
+      data.append("twitterDescription", formData.twitterDescription);
 
     if (featuredImage) data.append("featuredImage", featuredImage);
     if (ogImage) data.append("ogImage", ogImage);
@@ -213,6 +232,28 @@ export default function PageForm({ initialData, isEditing }) {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
+  };
+
+  const addAuthor = () => {
+    setFormData((prev) => ({
+      ...prev,
+      authors: [...prev.authors, { name: "", url: "" }],
+    }));
+  };
+
+  const removeAuthor = (index) => {
+    setFormData((prev) => ({
+      ...prev,
+      authors: prev.authors.filter((_, i) => i !== index),
+    }));
+  };
+
+  const handleAuthorChange = (index, field, value) => {
+    setFormData((prev) => {
+      const newAuthors = [...prev.authors];
+      newAuthors[index] = { ...newAuthors[index], [field]: value };
+      return { ...prev, authors: newAuthors };
+    });
   };
 
   return (
@@ -263,7 +304,14 @@ export default function PageForm({ initialData, isEditing }) {
             </div>
 
             <div className="admin-form-group">
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "8px",
+                }}
+              >
                 <label className="admin-form-label" style={{ margin: 0 }}>
                   Content (JSON)
                 </label>
@@ -276,14 +324,18 @@ export default function PageForm({ initialData, isEditing }) {
                   {showJsonEditor ? "Visual Helper" : "JSON Editor"}
                 </button>
               </div>
-              
+
               {showJsonEditor ? (
                 <textarea
                   name="contentRaw"
                   value={formData.contentRaw}
                   onChange={handleChange}
                   className="admin-form-textarea"
-                  style={{ minHeight: "400px", fontFamily: "monospace", fontSize: "0.9rem" }}
+                  style={{
+                    minHeight: "400px",
+                    fontFamily: "monospace",
+                    fontSize: "0.9rem",
+                  }}
                   placeholder='{"hero": {"heading": "Welcome", "subheading": "..."}}'
                 />
               ) : (
@@ -293,11 +345,16 @@ export default function PageForm({ initialData, isEditing }) {
                     value={formData.contentRaw}
                     onChange={handleChange}
                     className="admin-form-textarea"
-                    style={{ minHeight: "300px", fontFamily: "monospace", fontSize: "0.9rem" }}
-                    placeholder='Enter JSON content structure for your page...'
+                    style={{
+                      minHeight: "300px",
+                      fontFamily: "monospace",
+                      fontSize: "0.9rem",
+                    }}
+                    placeholder="Enter JSON content structure for your page..."
                   />
                   <p className="admin-form-hint">
-                    Enter page content as JSON. Example: {`{"hero": {"title": "Welcome"}, "sections": [...]}`}
+                    Enter page content as JSON. Example:{" "}
+                    {`{"hero": {"title": "Welcome"}, "sections": [...]}`}
                   </p>
                 </div>
               )}
@@ -307,7 +364,7 @@ export default function PageForm({ initialData, isEditing }) {
           {/* SEO Section */}
           <div className="admin-card">
             <h3 className="admin-card-title">SEO Settings</h3>
-            
+
             <div className="admin-form-row">
               <div className="admin-form-group">
                 <label className="admin-form-label">Meta Title</label>
@@ -387,13 +444,85 @@ export default function PageForm({ initialData, isEditing }) {
                 style={{ fontFamily: "monospace" }}
               />
             </div>
+
+            <div className="admin-form-group">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "8px",
+                }}
+              >
+                <label className="admin-form-label" style={{ margin: 0 }}>
+                  Authors
+                </label>
+                <button
+                  type="button"
+                  onClick={addAuthor}
+                  className="admin-btn admin-btn-outline admin-btn-sm"
+                >
+                  + Add Author
+                </button>
+              </div>
+              {formData.authors.map((author, index) => (
+                <div
+                  key={index}
+                  style={{
+                    display: "flex",
+                    gap: "10px",
+                    marginBottom: "10px",
+                    alignItems: "start",
+                  }}
+                >
+                  <div style={{ flex: 1 }}>
+                    <input
+                      type="text"
+                      placeholder="Author Name"
+                      value={author.name}
+                      onChange={(e) =>
+                        handleAuthorChange(index, "name", e.target.value)
+                      }
+                      className="admin-form-input"
+                    />
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <input
+                      type="text"
+                      placeholder="Author URL"
+                      value={author.url}
+                      onChange={(e) =>
+                        handleAuthorChange(index, "url", e.target.value)
+                      }
+                      className="admin-form-input"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => removeAuthor(index)}
+                    className="admin-btn admin-btn-danger admin-btn-sm"
+                    style={{ marginTop: "2px" }}
+                  >
+                    <FontAwesomeIcon icon={faTimes} />
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Social Media */}
-          <div className="admin-card">
-            <h3 className="admin-card-title">Social Media</h3>
-            
-            <div className="admin-form-row">
+          {/* Social Media Grid */}
+          <div
+            className="admin-grid-row"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {/* Open Graph Card */}
+            <div className="admin-card">
+              <h3 className="admin-card-title">Open Graph</h3>
+
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Title</label>
                 <input
@@ -404,19 +533,19 @@ export default function PageForm({ initialData, isEditing }) {
                   className="admin-form-input"
                 />
               </div>
+
               <div className="admin-form-group">
-                <label className="admin-form-label">Twitter Title</label>
+                <label className="admin-form-label">OG URL</label>
                 <input
                   type="text"
-                  name="twitterTitle"
-                  value={formData.twitterTitle}
+                  name="ogUrl"
+                  value={formData.ogUrl}
                   onChange={handleChange}
                   className="admin-form-input"
+                  placeholder="https://..."
                 />
               </div>
-            </div>
 
-            <div className="admin-form-row">
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Description</label>
                 <textarea
@@ -427,6 +556,33 @@ export default function PageForm({ initialData, isEditing }) {
                   rows="2"
                 />
               </div>
+
+              <div className="admin-form-group">
+                <label className="admin-form-label">OG Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(e, "og")}
+                  className="admin-form-input"
+                />
+              </div>
+            </div>
+
+            {/* Twitter Card */}
+            <div className="admin-card">
+              <h3 className="admin-card-title">Twitter Card</h3>
+
+              <div className="admin-form-group">
+                <label className="admin-form-label">Twitter Title</label>
+                <input
+                  type="text"
+                  name="twitterTitle"
+                  value={formData.twitterTitle}
+                  onChange={handleChange}
+                  className="admin-form-input"
+                />
+              </div>
+
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Description</label>
                 <textarea
@@ -437,18 +593,7 @@ export default function PageForm({ initialData, isEditing }) {
                   rows="2"
                 />
               </div>
-            </div>
 
-            <div className="admin-form-row">
-              <div className="admin-form-group">
-                <label className="admin-form-label">OG Image</label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => handleImageChange(e, "og")}
-                  className="admin-form-input"
-                />
-              </div>
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Image</label>
                 <input
@@ -466,7 +611,7 @@ export default function PageForm({ initialData, isEditing }) {
         <div className="admin-form-sidebar">
           <div className="admin-card">
             <h3 className="admin-card-title">Publish</h3>
-            
+
             <div className="admin-form-group">
               <label className="admin-checkbox">
                 <input
@@ -501,14 +646,18 @@ export default function PageForm({ initialData, isEditing }) {
                 disabled={mutation.isPending}
               >
                 <FontAwesomeIcon icon={faSave} />
-                {mutation.isPending ? "Saving..." : isEditing ? "Update" : "Create"}
+                {mutation.isPending
+                  ? "Saving..."
+                  : isEditing
+                  ? "Update"
+                  : "Create"}
               </button>
             </div>
           </div>
 
           <div className="admin-card">
             <h3 className="admin-card-title">Featured Image</h3>
-            
+
             {featuredImagePreview ? (
               <div className="admin-featured-preview">
                 <img src={featuredImagePreview} alt="Featured" />
@@ -530,7 +679,10 @@ export default function PageForm({ initialData, isEditing }) {
                   accept="image/*"
                   onChange={(e) => handleImageChange(e, "featured")}
                 />
-                <FontAwesomeIcon icon={faImage} className="admin-file-upload-icon" />
+                <FontAwesomeIcon
+                  icon={faImage}
+                  className="admin-file-upload-icon"
+                />
                 <p>Click to upload</p>
               </label>
             )}
@@ -538,7 +690,7 @@ export default function PageForm({ initialData, isEditing }) {
 
           <div className="admin-card">
             <h3 className="admin-card-title">Page Settings</h3>
-            
+
             <div className="admin-form-group">
               <label className="admin-form-label">Page Type</label>
               <input
@@ -549,7 +701,9 @@ export default function PageForm({ initialData, isEditing }) {
                 className="admin-form-input"
                 placeholder="e.g., home, about, services"
               />
-              <p className="admin-form-hint">Used for fetching specific pages</p>
+              <p className="admin-form-hint">
+                Used for fetching specific pages
+              </p>
             </div>
 
             <div className="admin-form-group">
@@ -569,4 +723,3 @@ export default function PageForm({ initialData, isEditing }) {
     </form>
   );
 }
-

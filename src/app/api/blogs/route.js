@@ -61,7 +61,7 @@ export async function POST(request) {
   try {
     await connectDB();
 
-    const authResult = await withAuth(request, "admin");
+    const authResult = await withAuth(request, "admin", "editor");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,
@@ -77,6 +77,8 @@ export async function POST(request) {
       content: formData.get("content"),
       excerpt: formData.get("excerpt"),
       category: formData.get("category"),
+      category: formData.get("category"),
+      layout: formData.get("layout") || "default",
       isPublished: formData.get("isPublished") === "true",
       publishedAt: publishedAt ? new Date(publishedAt) : undefined,
     };
@@ -98,22 +100,34 @@ export async function POST(request) {
       blogData.metaTitle = formData.get("metaTitle");
     if (formData.has("metaDescription"))
       blogData.metaDescription = formData.get("metaDescription");
-    if (formData.has("canonicalUrl"))
-      blogData.canonicalUrl = formData.get("canonicalUrl");
+    if (formData.has("canonicalUrl")) {
+      blogData.alternates = { canonical: formData.get("canonicalUrl") };
+    }
     if (formData.has("robotsTag"))
       blogData.robotsTag = formData.get("robotsTag");
     if (formData.has("headCode")) blogData.headCode = formData.get("headCode");
 
     // Open Graph fields
-    if (formData.has("ogTitle")) blogData.ogTitle = formData.get("ogTitle");
-    if (formData.has("ogDescription"))
-      blogData.ogDescription = formData.get("ogDescription");
+    const ogTitle = formData.get("ogTitle");
+    const ogDescription = formData.get("ogDescription");
+    const ogUrl = formData.get("ogUrl");
+    if (ogTitle || ogDescription || ogUrl) {
+      blogData.openGraph = {
+        title: ogTitle,
+        description: ogDescription,
+        url: ogUrl,
+      };
+    }
 
     // Twitter Card fields
-    if (formData.has("twitterTitle"))
-      blogData.twitterTitle = formData.get("twitterTitle");
-    if (formData.has("twitterDescription"))
-      blogData.twitterDescription = formData.get("twitterDescription");
+    const twitterTitle = formData.get("twitterTitle");
+    const twitterDescription = formData.get("twitterDescription");
+    if (twitterTitle || twitterDescription) {
+      blogData.twitter = {
+        title: twitterTitle,
+        description: twitterDescription,
+      };
+    }
 
     // Validation
     if (

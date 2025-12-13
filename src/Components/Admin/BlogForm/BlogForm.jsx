@@ -39,6 +39,7 @@ export default function BlogForm({ initialData, isEditing }) {
   const queryClient = useQueryClient();
   const [showHtmlEditor, setShowHtmlEditor] = useState(false);
   const [error, setError] = useState("");
+  const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -47,6 +48,7 @@ export default function BlogForm({ initialData, isEditing }) {
     content: "",
     excerpt: "",
     category: "",
+    layout: "default",
     tags: "",
     isPublished: false,
     publishedAt: "",
@@ -60,6 +62,7 @@ export default function BlogForm({ initialData, isEditing }) {
     // Social
     ogTitle: "",
     ogDescription: "",
+    ogUrl: "",
     twitterTitle: "",
     twitterDescription: "",
   });
@@ -78,6 +81,7 @@ export default function BlogForm({ initialData, isEditing }) {
         content: initialData.content || "",
         excerpt: initialData.excerpt || "",
         category: initialData.category || "",
+        layout: initialData.layout || "default",
         tags: initialData.tags?.join(", ") || "",
         isPublished: initialData.isPublished || false,
         publishedAt: initialData.publishedAt
@@ -86,13 +90,14 @@ export default function BlogForm({ initialData, isEditing }) {
         metaTitle: initialData.metaTitle || "",
         metaDescription: initialData.metaDescription || "",
         metaKeywords: initialData.metaKeywords?.join(", ") || "",
-        canonicalUrl: initialData.canonicalUrl || "",
+        canonicalUrl: initialData.alternates?.canonical || "",
         robotsTag: initialData.robotsTag || "index, follow",
         headCode: initialData.headCode || "",
-        ogTitle: initialData.ogTitle || "",
-        ogDescription: initialData.ogDescription || "",
-        twitterTitle: initialData.twitterTitle || "",
-        twitterDescription: initialData.twitterDescription || "",
+        ogTitle: initialData.openGraph?.title || "",
+        ogDescription: initialData.openGraph?.description || "",
+        ogUrl: initialData.openGraph?.url || "",
+        twitterTitle: initialData.twitter?.title || "",
+        twitterDescription: initialData.twitter?.description || "",
       });
       if (initialData.featuredImage?.url) {
         setFeaturedImagePreview(initialData.featuredImage.url);
@@ -147,6 +152,9 @@ export default function BlogForm({ initialData, isEditing }) {
     if (twitterImage) {
       data.append("twitterImage", twitterImage);
     }
+    if (formData.layout) {
+      data.append("layout", formData.layout);
+    }
 
     mutation.mutate(data);
   };
@@ -173,6 +181,29 @@ export default function BlogForm({ initialData, isEditing }) {
     }));
   };
 
+  // Auto-generate slug from title (only if not manually edited)
+  const handleTitleChange = (e) => {
+    const title = e.target.value;
+    const newSlug = title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+    setFormData((prev) => ({
+      ...prev,
+      title,
+      slug: slugManuallyEdited ? prev.slug : newSlug,
+    }));
+  };
+
+  // Track manual slug edits
+  const handleSlugChange = (e) => {
+    setSlugManuallyEdited(true);
+    setFormData((prev) => ({
+      ...prev,
+      slug: e.target.value,
+    }));
+  };
+
   return (
     <form onSubmit={handleSubmit} className="admin-blog-form">
       {error && <div className="admin-alert admin-alert-error">{error}</div>}
@@ -188,7 +219,7 @@ export default function BlogForm({ initialData, isEditing }) {
                   type="text"
                   name="title"
                   value={formData.title}
-                  onChange={handleChange}
+                  onChange={handleTitleChange}
                   className="admin-form-input"
                   placeholder="Page title"
                   required
@@ -200,7 +231,7 @@ export default function BlogForm({ initialData, isEditing }) {
                   type="text"
                   name="slug"
                   value={formData.slug}
-                  onChange={handleChange}
+                  onChange={handleSlugChange}
                   className="admin-form-input"
                   placeholder="page-url-slug"
                   required
@@ -354,11 +385,19 @@ export default function BlogForm({ initialData, isEditing }) {
             </div>
           </div>
 
-          {/* Social Media Section */}
-          <div className="admin-card">
-            <h3 className="admin-card-title">Social Media</h3>
+          {/* Social Media Grid */}
+          <div
+            className="admin-grid-row"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {/* Open Graph Card */}
+            <div className="admin-card">
+              <h3 className="admin-card-title">Open Graph</h3>
 
-            <div className="admin-form-row">
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Title</label>
                 <input
@@ -370,20 +409,19 @@ export default function BlogForm({ initialData, isEditing }) {
                   placeholder="Open Graph title"
                 />
               </div>
+
               <div className="admin-form-group">
-                <label className="admin-form-label">Twitter Title</label>
+                <label className="admin-form-label">OG URL</label>
                 <input
                   type="text"
-                  name="twitterTitle"
-                  value={formData.twitterTitle}
+                  name="ogUrl"
+                  value={formData.ogUrl}
                   onChange={handleChange}
                   className="admin-form-input"
-                  placeholder="Twitter card title"
+                  placeholder="https://..."
                 />
               </div>
-            </div>
 
-            <div className="admin-form-row">
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Description</label>
                 <textarea
@@ -395,6 +433,34 @@ export default function BlogForm({ initialData, isEditing }) {
                   placeholder="Open Graph description"
                 />
               </div>
+
+              <div className="admin-form-group">
+                <label className="admin-form-label">OG Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(e, "og")}
+                  className="admin-form-input"
+                />
+              </div>
+            </div>
+
+            {/* Twitter Card */}
+            <div className="admin-card">
+              <h3 className="admin-card-title">Twitter Card</h3>
+
+              <div className="admin-form-group">
+                <label className="admin-form-label">Twitter Title</label>
+                <input
+                  type="text"
+                  name="twitterTitle"
+                  value={formData.twitterTitle}
+                  onChange={handleChange}
+                  className="admin-form-input"
+                  placeholder="Twitter card title"
+                />
+              </div>
+
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Description</label>
                 <textarea
@@ -406,18 +472,7 @@ export default function BlogForm({ initialData, isEditing }) {
                   placeholder="Twitter card description"
                 />
               </div>
-            </div>
 
-            <div className="admin-form-row">
-              <div className="admin-form-group">
-                <label className="admin-form-label">OG Image</label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => handleImageChange(e, "og")}
-                  className="admin-form-input"
-                />
-              </div>
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Image</label>
                 <input
@@ -512,6 +567,23 @@ export default function BlogForm({ initialData, isEditing }) {
                 <p>Click to upload</p>
               </label>
             )}
+          </div>
+
+          {/* Layout Settings */}
+          <div className="admin-card">
+            <h3 className="admin-card-title">Layout Settings</h3>
+            <div className="admin-form-group">
+              <label className="admin-form-label">Blog Layout</label>
+              <select
+                name="layout"
+                value={formData.layout}
+                onChange={handleChange}
+                className="admin-form-select"
+              >
+                <option value="layout-001">Layout 001</option>
+                <option value="layout-002">Layout 002</option>
+              </select>
+            </div>
           </div>
 
           {/* Category & Tags */}

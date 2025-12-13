@@ -37,7 +37,7 @@ export async function PUT(request, { params }) {
   try {
     await connectDB();
 
-    const authResult = await withAuth(request, "admin");
+    const authResult = await withAuth(request, "admin", "editor");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,
@@ -53,6 +53,7 @@ export async function PUT(request, { params }) {
     if (formData.has("excerpt")) updateData.excerpt = formData.get("excerpt");
     if (formData.has("category"))
       updateData.category = formData.get("category");
+    if (formData.has("layout")) updateData.layout = formData.get("layout");
     if (formData.has("isPublished"))
       updateData.isPublished = formData.get("isPublished") === "true";
 
@@ -79,23 +80,37 @@ export async function PUT(request, { params }) {
       updateData.metaTitle = formData.get("metaTitle");
     if (formData.has("metaDescription"))
       updateData.metaDescription = formData.get("metaDescription");
-    if (formData.has("canonicalUrl"))
-      updateData.canonicalUrl = formData.get("canonicalUrl");
+    if (formData.has("canonicalUrl")) {
+      if (!updateData.alternates) updateData.alternates = {};
+      updateData.alternates.canonical = formData.get("canonicalUrl");
+    }
     if (formData.has("robotsTag"))
       updateData.robotsTag = formData.get("robotsTag");
     if (formData.has("headCode"))
       updateData.headCode = formData.get("headCode");
 
     // Open Graph fields
-    if (formData.has("ogTitle")) updateData.ogTitle = formData.get("ogTitle");
-    if (formData.has("ogDescription"))
-      updateData.ogDescription = formData.get("ogDescription");
+    const ogTitle = formData.get("ogTitle");
+    const ogDescription = formData.get("ogDescription");
+    const ogUrl = formData.get("ogUrl");
+
+    if (ogTitle || ogDescription || ogUrl) {
+      if (!updateData.openGraph) updateData.openGraph = {};
+      if (ogTitle) updateData.openGraph.title = ogTitle;
+      if (ogDescription) updateData.openGraph.description = ogDescription;
+      if (ogUrl) updateData.openGraph.url = ogUrl;
+    }
 
     // Twitter Card fields
-    if (formData.has("twitterTitle"))
-      updateData.twitterTitle = formData.get("twitterTitle");
-    if (formData.has("twitterDescription"))
-      updateData.twitterDescription = formData.get("twitterDescription");
+    const twitterTitle = formData.get("twitterTitle");
+    const twitterDescription = formData.get("twitterDescription");
+
+    if (twitterTitle || twitterDescription) {
+      if (!updateData.twitter) updateData.twitter = {};
+      if (twitterTitle) updateData.twitter.title = twitterTitle;
+      if (twitterDescription)
+        updateData.twitter.description = twitterDescription;
+    }
 
     // Validation
     if (

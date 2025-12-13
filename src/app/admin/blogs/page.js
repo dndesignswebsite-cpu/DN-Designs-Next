@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 import LoadingSpinner from "@/Components/Loading Spinner/LoadingSpinner";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 const fetchWithAuth = async (url) => {
   const token = Cookies.get("admin_token");
@@ -26,6 +27,7 @@ const fetchWithAuth = async (url) => {
 };
 
 export default function BlogsList() {
+  const { user } = useAdminAuth();
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
@@ -68,6 +70,11 @@ export default function BlogsList() {
     }
   };
 
+  // Permission Checks
+  const canCreate = user?.role === "admin" || user?.role === "editor";
+  const canEdit = user?.role === "admin" || user?.role === "editor";
+  const canDelete = user?.role === "admin";
+
   return (
     <div>
       <div
@@ -90,10 +97,12 @@ export default function BlogsList() {
           </h1>
           <p className="admin-page-subtitle">Manage your blog posts</p>
         </div>
-        <Link href="/admin/blogs/new" className="admin-btn admin-btn-primary">
-          <FontAwesomeIcon icon={faPlus} />
-          New Blog
-        </Link>
+        {canCreate && (
+          <Link href="/admin/blogs/new" className="admin-btn admin-btn-primary">
+            <FontAwesomeIcon icon={faPlus} />
+            New Blog
+          </Link>
+        )}
       </div>
 
       <div className="admin-card">
@@ -170,20 +179,24 @@ export default function BlogsList() {
                             >
                               <FontAwesomeIcon icon={faEye} />
                             </Link>
-                            <Link
-                              href={`/admin/blogs/${blog._id}`}
-                              className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                              title="Edit"
-                            >
-                              <FontAwesomeIcon icon={faEdit} />
-                            </Link>
-                            <button
-                              onClick={() => openDeleteModal(blog)}
-                              className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                              title="Delete"
-                            >
-                              <FontAwesomeIcon icon={faTrash} />
-                            </button>
+                            {canEdit && (
+                              <Link
+                                href={`/admin/blogs/${blog._id}`}
+                                className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                title="Edit"
+                              >
+                                <FontAwesomeIcon icon={faEdit} />
+                              </Link>
+                            )}
+                            {canDelete && (
+                              <button
+                                onClick={() => openDeleteModal(blog)}
+                                className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                                title="Delete"
+                              >
+                                <FontAwesomeIcon icon={faTrash} />
+                              </button>
+                            )}
                           </div>
                         </td>
                       </tr>
@@ -218,13 +231,15 @@ export default function BlogsList() {
               <FontAwesomeIcon icon={faSearch} className="admin-empty-icon" />
               <h3>No blogs found</h3>
               <p>Create your first blog post to get started.</p>
-              <Link
-                href="/admin/blogs/new"
-                className="admin-btn admin-btn-primary"
-              >
-                <FontAwesomeIcon icon={faPlus} />
-                Create Blog
-              </Link>
+              {canCreate && (
+                <Link
+                  href="/admin/blogs/new"
+                  className="admin-btn admin-btn-primary"
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                  Create Blog
+                </Link>
+              )}
             </div>
           )}
         </LoadingSpinner>

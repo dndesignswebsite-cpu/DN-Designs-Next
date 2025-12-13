@@ -787,7 +787,7 @@
 
 .admin-dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.3fr 2fr;
   gap: 24px;
   margin-bottom: 24px;
 }

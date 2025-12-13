@@ -22,7 +22,9 @@ export const getAllPages = async (
   const filter = {};
 
   // Non-admin users can only see published pages
-  if (currentUser?.role !== "admin") {
+  // Non-admin/editor/user users (public) can only see published pages
+  const allowedRoles = ["admin", "editor", "user"];
+  if (!currentUser || !allowedRoles.includes(currentUser.role)) {
     filter.isPublished = true;
     filter.publishedAt = { $lte: new Date() };
   } else if (filters.isPublished !== undefined) {
@@ -81,8 +83,12 @@ export const getPageById = async (
     throwError("Page not found", 404, { function: "getPageById", identifier });
   }
 
-  // Non-admin users can only see published pages
-  if (!page.isPublished && currentUser?.role !== "admin") {
+  // Non-admin/editor/user users (public) can only see published pages
+  const allowedRoles = ["admin", "editor", "user"];
+  if (
+    !page.isPublished &&
+    (!currentUser || !allowedRoles.includes(currentUser.role))
+  ) {
     throwError("Page not found", 404, { function: "getPageById", identifier });
   }
 
@@ -144,10 +150,14 @@ export const createPage = async (
   if (socialImages.ogImageBuffer) {
     try {
       const result = await uploadImageBuffer(socialImages.ogImageBuffer);
-      pageData.ogImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!pageData.openGraph) pageData.openGraph = {};
+      pageData.openGraph.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt: pageData.openGraph.title || "Page OG Image",
+        },
+      ];
     } catch (error) {
       logError(error, { function: "createPage", operation: "uploadOgImage" });
     }
@@ -157,10 +167,14 @@ export const createPage = async (
   if (socialImages.twitterImageBuffer) {
     try {
       const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
-      pageData.twitterImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!pageData.twitter) pageData.twitter = {};
+      pageData.twitter.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt: pageData.twitter.title || "Page Twitter Image",
+        },
+      ];
     } catch (error) {
       logError(error, {
         function: "createPage",
@@ -225,14 +239,23 @@ export const updatePage = async (
     try {
       const result = await uploadImageBuffer(socialImages.ogImageBuffer);
 
-      if (existingPage.ogImage?.publicId) {
-        await deleteImage(existingPage.ogImage.publicId);
+      if (existingPage.openGraph?.images?.[0]?.publicId) {
+        await deleteImage(existingPage.openGraph.images[0].publicId);
       }
 
-      updateData.ogImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!updateData.openGraph)
+        updateData.openGraph = existingPage.openGraph || {};
+
+      updateData.openGraph.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt:
+            updateData.openGraph.title ||
+            existingPage.openGraph?.title ||
+            "Page OG Image",
+        },
+      ];
     } catch (error) {
       logError(error, { function: "updatePage", operation: "uploadOgImage" });
     }
@@ -243,14 +266,22 @@ export const updatePage = async (
     try {
       const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
 
-      if (existingPage.twitterImage?.publicId) {
-        await deleteImage(existingPage.twitterImage.publicId);
+      if (existingPage.twitter?.images?.[0]?.publicId) {
+        await deleteImage(existingPage.twitter.images[0].publicId);
       }
 
-      updateData.twitterImage = {
-        url: result.secure_url,
-        publicId: result.public_id,
-      };
+      if (!updateData.twitter) updateData.twitter = existingPage.twitter || {};
+
+      updateData.twitter.images = [
+        {
+          url: result.secure_url,
+          publicId: result.public_id,
+          alt:
+            updateData.twitter.title ||
+            existingPage.twitter?.title ||
+            "Page Twitter Image",
+        },
+      ];
     } catch (error) {
       logError(error, {
         function: "updatePage",
@@ -306,18 +337,22 @@ export const deletePage = async (pageId) => {
   }
 
   // Delete OG image
-  if (page.ogImage?.publicId) {
+  if (page.openGraph?.images?.length > 0) {
     try {
-      await deleteImage(page.ogImage.publicId);
+      for (const img of page.openGraph.images) {
+        if (img.publicId) await deleteImage(img.publicId);
+      }
     } catch (error) {
       logError(error, { function: "deletePage", operation: "deleteOgImage" });
     }
   }
 
   // Delete Twitter image
-  if (page.twitterImage?.publicId) {
+  if (page.twitter?.images?.length > 0) {
     try {
-      await deleteImage(page.twitterImage.publicId);
+      for (const img of page.twitter.images) {
+        if (img.publicId) await deleteImage(img.publicId);
+      }
     } catch (error) {
       logError(error, {
         function: "deletePage",

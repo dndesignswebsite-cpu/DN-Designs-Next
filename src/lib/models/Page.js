@@ -37,6 +37,21 @@ const pageSchema = new mongoose.Schema(
       maxlength: [500, "Description cannot be more than 500 characters"],
     },
 
+    authors: [
+      {
+        name: {
+          type: String,
+          trim: true,
+          maxlength: [100, "Name cannot be more than 100 characters"],
+        },
+        url: {
+          type: String,
+          trim: true,
+          maxlength: [100, "URL cannot be more than 100 characters"],
+        },
+      },
+    ],
+
     // Page type/template identifier (e.g., 'home', 'about', 'services', 'contact')
     pageType: {
       type: String,
@@ -114,10 +129,12 @@ const pageSchema = new mongoose.Schema(
     ],
 
     // Canonical URL for SEO
-    canonicalUrl: {
-      type: String,
-      trim: true,
-      default: null,
+    alternates: {
+      canonical: {
+        type: String,
+        trim: true,
+        default: null,
+      },
     },
 
     // Robots meta tag (index, noindex, follow, nofollow)
@@ -136,27 +153,50 @@ const pageSchema = new mongoose.Schema(
     // =====================
     // OPEN GRAPH FIELDS
     // =====================
-
-    ogTitle: {
-      type: String,
-      trim: true,
-      maxlength: [95, "OG title cannot be more than 95 characters"],
-    },
-
-    ogDescription: {
-      type: String,
-      trim: true,
-      maxlength: [200, "OG description cannot be more than 200 characters"],
-    },
-
-    ogImage: {
+    openGraph: {
+      title: {
+        type: String,
+        trim: true,
+        maxlength: [95, "OG title cannot be more than 95 characters"],
+      },
+      description: {
+        type: String,
+        trim: true,
+        maxlength: [200, "OG description cannot be more than 200 characters"],
+      },
       url: {
         type: String,
+        trim: true,
         default: null,
       },
-      publicId: {
+      images: [
+        {
+          url: {
+            type: String,
+            default: null,
+          },
+          publicId: {
+            type: String,
+            default: null,
+          },
+          height: {
+            type: Number,
+            default: null,
+          },
+          width: {
+            type: Number,
+            default: null,
+          },
+          alt: {
+            type: String,
+            default: "",
+          },
+        },
+      ],
+      type: {
         type: String,
-        default: null,
+        trim: true,
+        default: "website",
       },
     },
 
@@ -164,32 +204,36 @@ const pageSchema = new mongoose.Schema(
     // TWITTER CARD FIELDS
     // =====================
 
-    twitterTitle: {
-      type: String,
-      trim: true,
-      maxlength: [70, "Twitter title cannot be more than 70 characters"],
-    },
-
-    twitterDescription: {
-      type: String,
-      trim: true,
-      maxlength: [
-        200,
-        "Twitter description cannot be more than 200 characters",
+    twitter: {
+      card: {
+        type: String,
+      },
+      title: {
+        type: String,
+        trim: true,
+        maxlength: [70, "Twitter title cannot be more than 70 characters"],
+      },
+      description: {
+        type: String,
+        trim: true,
+        maxlength: [
+          200,
+          "Twitter description cannot be more than 200 characters",
+        ],
+      },
+      images: [
+        {
+          url: {
+            type: String,
+            default: null,
+          },
+          publicId: {
+            type: String,
+            default: null,
+          },
+        },
       ],
     },
-
-    twitterImage: {
-      url: {
-        type: String,
-        default: null,
-      },
-      publicId: {
-        type: String,
-        default: null,
-      },
-    },
-
     // =====================
     // PUBLISHING FIELDS
     // =====================
@@ -226,14 +270,13 @@ const pageSchema = new mongoose.Schema(
 /**
  * Generate slug from title before saving (if not provided)
  */
-pageSchema.pre("save", function (next) {
+pageSchema.pre("save", async function () {
   if (this.isModified("title") && !this.slug) {
     this.slug = this.title
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)/g, "");
   }
-  next();
 });
 
 /**

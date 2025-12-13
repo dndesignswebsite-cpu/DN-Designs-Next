@@ -15,6 +15,7 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 const fetchWithAuth = async (url) => {
   const token = Cookies.get("admin_token");
@@ -26,6 +27,7 @@ const fetchWithAuth = async (url) => {
 };
 
 export default function ContactsList() {
+  const { user } = useAdminAuth();
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
@@ -35,6 +37,10 @@ export default function ContactsList() {
     contact: null,
   });
   const queryClient = useQueryClient();
+
+  // Permission Checks
+  const canDelete = user?.role === "admin";
+  const canEdit = user?.role === "admin" || user?.role === "editor";
 
   const { data, isLoading, refetch, isRefetching } = useQuery({
     queryKey: ["contacts", page, search, status],
@@ -94,8 +100,8 @@ export default function ContactsList() {
 
   const handleView = async (contact) => {
     setSelectedContact(contact);
-    // Mark as read if new
-    if (contact.status === "new") {
+    // Mark as read if new AND user has edit permission
+    if (contact.status === "new" && canEdit) {
       updateStatusMutation.mutate({ id: contact._id, newStatus: "read" });
     }
   };
@@ -204,13 +210,15 @@ export default function ContactsList() {
                           >
                             <FontAwesomeIcon icon={faEye} />
                           </button>
-                          <button
-                            onClick={() => openDeleteModal(contact)}
-                            className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                            title="Delete"
-                          >
-                            <FontAwesomeIcon icon={faTrash} />
-                          </button>
+                          {canDelete && (
+                            <button
+                              onClick={() => openDeleteModal(contact)}
+                              className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                              title="Delete"
+                            >
+                              <FontAwesomeIcon icon={faTrash} />
+                            </button>
+                          )}
                         </div>
                       </td>
                     </tr>
@@ -307,27 +315,29 @@ export default function ContactsList() {
                   <p>{selectedContact.message}</p>
                 </div>
 
-                <div className="contact-detail-actions">
-                  <select
-                    value={selectedContact.status}
-                    onChange={(e) => {
-                      updateStatusMutation.mutate({
-                        id: selectedContact._id,
-                        newStatus: e.target.value,
-                      });
-                      setSelectedContact({
-                        ...selectedContact,
-                        status: e.target.value,
-                      });
-                    }}
-                    className="admin-form-select"
-                  >
-                    <option value="new">New</option>
-                    <option value="read">Read</option>
-                    <option value="replied">Replied</option>
-                    <option value="resolved">Resolved</option>
-                  </select>
-                </div>
+                {canEdit && (
+                  <div className="contact-detail-actions">
+                    <select
+                      value={selectedContact.status}
+                      onChange={(e) => {
+                        updateStatusMutation.mutate({
+                          id: selectedContact._id,
+                          newStatus: e.target.value,
+                        });
+                        setSelectedContact({
+                          ...selectedContact,
+                          status: e.target.value,
+                        });
+                      }}
+                      className="admin-form-select"
+                    >
+                      <option value="new">New</option>
+                      <option value="read">Read</option>
+                      <option value="replied">Replied</option>
+                      <option value="resolved">Resolved</option>
+                    </select>
+                  </div>
+                )}
               </div>
             </div>
           </div>

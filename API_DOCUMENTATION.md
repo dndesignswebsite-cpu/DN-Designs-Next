@@ -10,6 +10,11 @@ All protected routes require a JWT token in the Authorization header:
 Authorization: Bearer <your-jwt-token>
 ```
 
+**Roles:**
+- **admin**: Full access to all resources.
+- **editor**: Can Create, Read, Update resources. No Delete access.
+- **user**: Read-only access to most business resources (Blogs, Contacts, Emails). No access to User Management.
+
 ---
 
 ## 🔐 Authentication Endpoints
@@ -25,7 +30,7 @@ Authorization: Bearer <your-jwt-token>
   "name": "John Doe",
   "email": "john@example.com",
   "password": "password123",
-  "role": "user" // Optional: "user" or "admin"
+  "role": "user" // Optional: "user" or "admin" (default: "user")
 }
 ```
 
@@ -264,7 +269,7 @@ Authorization: Bearer <your-jwt-token>
 ### Create Blog
 
 **POST** `/blogs`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body (multipart/form-data):**
 
@@ -294,7 +299,7 @@ Authorization: Bearer <your-jwt-token>
 ### Update Blog
 
 **PUT** `/blogs/:id`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body (multipart/form-data):**
 
@@ -321,7 +326,7 @@ Authorization: Bearer <your-jwt-token>
 ### Add Images to Blog
 
 **POST** `/blogs/:id/images`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body (multipart/form-data):**
 
@@ -333,7 +338,7 @@ Authorization: Bearer <your-jwt-token>
 ### Delete Image from Blog
 
 **DELETE** `/blogs/:id/images/:imageId`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 ---
 
@@ -380,7 +385,7 @@ Authorization: Bearer <your-jwt-token>
 ### Get All Contacts
 
 **GET** `/contact`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor, User)
 
 **Query Parameters:**
 
@@ -395,7 +400,7 @@ Authorization: Bearer <your-jwt-token>
 ### Get Contact by ID
 
 **GET** `/contact/:id`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor, User)
 
 **Note:** Automatically marks contact as "read" if status is "new".
 
@@ -404,7 +409,7 @@ Authorization: Bearer <your-jwt-token>
 ### Update Contact
 
 **PUT** `/contact/:id`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -449,12 +454,10 @@ Authorization: Bearer <your-jwt-token>
 
 ## 📧 Email Management Endpoints
 
-All email management endpoints require admin authentication.
-
 ### Get All Email Groups
 
 **GET** `/emails`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor, User)
 
 **Query Parameters:**
 
@@ -486,7 +489,7 @@ All email management endpoints require admin authentication.
 ### Get All Active Emails
 
 **GET** `/emails/all`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor, User)
 
 **Response:**
 
@@ -511,7 +514,7 @@ All email management endpoints require admin authentication.
 ### Get Email Group by ID or Type
 
 **GET** `/emails/:id`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor, User)
 
 **Parameters:**
 
@@ -537,7 +540,7 @@ All email management endpoints require admin authentication.
 ### Create Email Group
 
 **POST** `/emails`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -572,7 +575,7 @@ All email management endpoints require admin authentication.
 ### Update Email Group
 
 **PUT** `/emails/:id`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -611,7 +614,7 @@ All email management endpoints require admin authentication.
 ### Add Email to Group
 
 **POST** `/emails/:type/add`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -646,7 +649,7 @@ All email management endpoints require admin authentication.
 ### Remove Email from Group
 
 **DELETE** `/emails/:type/remove`  
-**Protected:** Yes (Admin only)
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -675,9 +678,7 @@ All email management endpoints require admin authentication.
 ### Send Promotional Email to Group
 
 **POST** `/emails/:type/send`  
-**Protected:** Yes (Admin only)
-
-Send promotional/advertisement emails to all emails in a specific group.
+**Protected:** Yes (Admin, Editor)
 
 **Body:**
 
@@ -768,11 +769,3 @@ All errors follow this format:
 - `500` - Internal Server Error
 
 ---
-
-## Notes
-
-1. **File Uploads**: Use `multipart/form-data` for endpoints that accept files
-2. **Pagination**: All list endpoints support pagination with `page` and `limit` query parameters
-3. **Search**: Most list endpoints support a `search` query parameter
-4. **Filtering**: Use query parameters to filter results
-5. **Sorting**: Blog endpoints support sorting (Admin only)

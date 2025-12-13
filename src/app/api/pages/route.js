@@ -39,7 +39,11 @@ export async function GET(request) {
     const userContext = currentUser
       ? { id: currentUser.id, role: currentUser.role }
       : null;
-    const result = await pageService.getAllPages(filters, pagination, userContext);
+    const result = await pageService.getAllPages(
+      filters,
+      pagination,
+      userContext
+    );
 
     return NextResponse.json({
       success: true,
@@ -59,7 +63,7 @@ export async function POST(request) {
   try {
     await connectDB();
 
-    const authResult = await withAuth(request, "admin");
+    const authResult = await withAuth(request, "admin", "editor");
     if (authResult.error) {
       return NextResponse.json(authResult.error.body, {
         status: authResult.error.statusCode,
@@ -98,23 +102,56 @@ export async function POST(request) {
       pageData.focusKeywords = focusKeywords.split(",").map((k) => k.trim());
     }
 
+    // Handle authors
+    const authors = formData.get("authors");
+    if (authors) {
+      try {
+        pageData.authors = JSON.parse(authors);
+      } catch (e) {
+        console.error("Error parsing authors:", e);
+      }
+    }
+
     // SEO fields
-    if (formData.has("metaTitle")) pageData.metaTitle = formData.get("metaTitle");
-    if (formData.has("metaDescription")) pageData.metaDescription = formData.get("metaDescription");
-    if (formData.has("canonicalUrl")) pageData.canonicalUrl = formData.get("canonicalUrl");
-    if (formData.has("robotsTag")) pageData.robotsTag = formData.get("robotsTag");
+    if (formData.has("metaTitle"))
+      pageData.metaTitle = formData.get("metaTitle");
+    if (formData.has("metaDescription"))
+      pageData.metaDescription = formData.get("metaDescription");
+    if (formData.has("canonicalUrl")) {
+      pageData.alternates = { canonical: formData.get("canonicalUrl") };
+    }
+    if (formData.has("robotsTag"))
+      pageData.robotsTag = formData.get("robotsTag");
     if (formData.has("headCode")) pageData.headCode = formData.get("headCode");
 
     // Open Graph fields
-    if (formData.has("ogTitle")) pageData.ogTitle = formData.get("ogTitle");
-    if (formData.has("ogDescription")) pageData.ogDescription = formData.get("ogDescription");
+    const ogTitle = formData.get("ogTitle");
+    const ogDescription = formData.get("ogDescription");
+    const ogUrl = formData.get("ogUrl");
+    if (ogTitle || ogDescription || ogUrl) {
+      pageData.openGraph = {
+        title: ogTitle,
+        description: ogDescription,
+        url: ogUrl,
+      };
+    }
 
     // Twitter Card fields
-    if (formData.has("twitterTitle")) pageData.twitterTitle = formData.get("twitterTitle");
-    if (formData.has("twitterDescription")) pageData.twitterDescription = formData.get("twitterDescription");
+    const twitterTitle = formData.get("twitterTitle");
+    const twitterDescription = formData.get("twitterDescription");
+    if (twitterTitle || twitterDescription) {
+      pageData.twitter = {
+        title: twitterTitle,
+        description: twitterDescription,
+      };
+    }
 
     // Validation
-    if (!pageData.title || pageData.title.length < 2 || pageData.title.length > 200) {
+    if (
+      !pageData.title ||
+      pageData.title.length < 2 ||
+      pageData.title.length > 200
+    ) {
       return NextResponse.json(
         {
           success: false,
@@ -172,4 +209,3 @@ export async function POST(request) {
     return NextResponse.json(body, { status: statusCode });
   }
 }
-

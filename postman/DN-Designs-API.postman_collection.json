@@ -201,7 +201,12 @@
             "description": "Update current user profile"
           },
           "response": []
-        },
+        }
+      ]
+    },
+    {
+      "name": "User Management",
+      "item": [
         {
           "name": "Get All Users",
           "request": {
@@ -214,18 +219,10 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/api/auth/users?page=1&limit=10",
+              "raw": "{{base_url}}/api/users?role=&search=",
               "host": ["{{base_url}}"],
-              "path": ["api", "auth", "users"],
+              "path": ["api", "users"],
               "query": [
-                {
-                  "key": "page",
-                  "value": "1"
-                },
-                {
-                  "key": "limit",
-                  "value": "10"
-                },
                 {
                   "key": "role",
                   "value": "user",
@@ -233,12 +230,55 @@
                 },
                 {
                   "key": "search",
-                  "value": "john",
+                  "value": "John",
                   "disabled": true
                 }
               ]
             },
-            "description": "Get all users (Admin only)"
+            "description": "Get all users with optional role/search filters (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Create User",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if(pm.response.code===201){",
+                  "    var data=pm.response.json();",
+                  "    if(data.data && data.data._id) {",
+                  "        pm.environment.set('created_user_id', data.data._id);",
+                  "    }",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"New User\",\n    \"email\": \"newuser@example.com\",\n    \"role\": \"user\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Create a new user. Password is auto-generated and emailed. (Admin only)"
           },
           "response": []
         },
@@ -249,16 +289,15 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{admin_token}}",
-                "type": "text"
+                "value": "Bearer {{admin_token}}"
               }
             ],
             "url": {
-              "raw": "{{base_url}}/api/auth/users/{{user_id}}",
+              "raw": "{{base_url}}/api/users/{{created_user_id}}",
               "host": ["{{base_url}}"],
-              "path": ["api", "auth", "users", "{{user_id}}"]
+              "path": ["api", "users", "{{created_user_id}}"]
             },
-            "description": "Get user by ID (Admin only)"
+            "description": "Get user details by ID (Admin only)"
           },
           "response": []
         },
@@ -270,34 +309,22 @@
               {
                 "key": "Authorization",
                 "value": "Bearer {{admin_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
               }
             ],
             "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "name",
-                  "value": "Updated Name",
-                  "type": "text"
-                },
-                {
-                  "key": "role",
-                  "value": "admin",
-                  "type": "text"
-                },
-                {
-                  "key": "isActive",
-                  "value": "true",
-                  "type": "text"
-                }
-              ]
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Updated Name\",\n    \"role\": \"editor\",\n    \"isActive\": true\n}"
             },
             "url": {
-              "raw": "{{base_url}}/api/auth/users/{{user_id}}",
+              "raw": "{{base_url}}/api/users/{{created_user_id}}",
               "host": ["{{base_url}}"],
-              "path": ["api", "auth", "users", "{{user_id}}"]
+              "path": ["api", "users", "{{created_user_id}}"]
             },
-            "description": "Update user (Admin only)"
+            "description": "Update user details (Admin only)"
           },
           "response": []
         },
@@ -308,16 +335,15 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{admin_token}}",
-                "type": "text"
+                "value": "Bearer {{admin_token}}"
               }
             ],
             "url": {
-              "raw": "{{base_url}}/api/auth/users/{{user_id}}",
+              "raw": "{{base_url}}/api/users/{{created_user_id}}",
               "host": ["{{base_url}}"],
-              "path": ["api", "auth", "users", "{{user_id}}"]
+              "path": ["api", "users", "{{created_user_id}}"]
             },
-            "description": "Delete user (Admin only)"
+            "description": "Delete user by ID (Admin only)"
           },
           "response": []
         }

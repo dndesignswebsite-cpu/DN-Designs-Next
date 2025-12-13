@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 import "react-quill-new/dist/quill.snow.css";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
@@ -28,6 +29,7 @@ const fetchWithAuth = async (url) => {
 };
 
 export default function EmailsPage() {
+  const { user } = useAdminAuth();
   const [showGroupModal, setShowGroupModal] = useState(false);
   const [showSendModal, setShowSendModal] = useState(false);
   const [editingGroup, setEditingGroup] = useState(null);
@@ -42,6 +44,12 @@ export default function EmailsPage() {
   const [success, setSuccess] = useState("");
   const [deleteModal, setDeleteModal] = useState({ open: false, group: null });
   const queryClient = useQueryClient();
+
+  // Permission Checks
+  const canDelete = user?.role === "admin";
+  const canCreate = user?.role === "admin" || user?.role === "editor";
+  const canEdit = user?.role === "admin" || user?.role === "editor";
+  const canSend = user?.role === "admin" || user?.role === "editor";
 
   const {
     data: groups,
@@ -231,13 +239,15 @@ export default function EmailsPage() {
             Manage email groups and send promotional emails
           </p>
         </div>
-        <button
-          onClick={handleCreateGroup}
-          className="admin-btn admin-btn-primary"
-        >
-          <FontAwesomeIcon icon={faPlus} />
-          New Group
-        </button>
+        {canCreate && (
+          <button
+            onClick={handleCreateGroup}
+            className="admin-btn admin-btn-primary"
+          >
+            <FontAwesomeIcon icon={faPlus} />
+            New Group
+          </button>
+        )}
       </div>
 
       {success && (
@@ -299,30 +309,36 @@ export default function EmailsPage() {
                     </td>
                     <td>
                       <div className="admin-table-actions">
-                        <button
-                          onClick={() => {
-                            setSelectedGroup(group);
-                            setShowSendModal(true);
-                          }}
-                          className="admin-btn admin-btn-primary admin-btn-sm admin-btn-icon"
-                          title="Send Email"
-                        >
-                          <FontAwesomeIcon icon={faPaperPlane} />
-                        </button>
-                        <button
-                          onClick={() => handleEditGroup(group)}
-                          className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                          title="Edit"
-                        >
-                          <FontAwesomeIcon icon={faEdit} />
-                        </button>
-                        <button
-                          onClick={() => openDeleteModal(group)}
-                          className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                          title="Delete"
-                        >
-                          <FontAwesomeIcon icon={faTrash} />
-                        </button>
+                        {canSend && (
+                          <button
+                            onClick={() => {
+                              setSelectedGroup(group);
+                              setShowSendModal(true);
+                            }}
+                            className="admin-btn admin-btn-primary admin-btn-sm admin-btn-icon"
+                            title="Send Email"
+                          >
+                            <FontAwesomeIcon icon={faPaperPlane} />
+                          </button>
+                        )}
+                        {canEdit && (
+                          <button
+                            onClick={() => handleEditGroup(group)}
+                            className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                            title="Edit"
+                          >
+                            <FontAwesomeIcon icon={faEdit} />
+                          </button>
+                        )}
+                        {canDelete && (
+                          <button
+                            onClick={() => openDeleteModal(group)}
+                            className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                            title="Delete"
+                          >
+                            <FontAwesomeIcon icon={faTrash} />
+                          </button>
+                        )}
                       </div>
                     </td>
                   </tr>
@@ -335,13 +351,15 @@ export default function EmailsPage() {
             <FontAwesomeIcon icon={faEnvelope} className="admin-empty-icon" />
             <h3>No email groups</h3>
             <p>Create your first email group to start sending emails.</p>
-            <button
-              onClick={handleCreateGroup}
-              className="admin-btn admin-btn-primary"
-            >
-              <FontAwesomeIcon icon={faPlus} />
-              Create Group
-            </button>
+            {canCreate && (
+              <button
+                onClick={handleCreateGroup}
+                className="admin-btn admin-btn-primary"
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                Create Group
+              </button>
+            )}
           </div>
         )}
       </div>

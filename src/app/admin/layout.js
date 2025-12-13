@@ -3,7 +3,10 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Cookies from "js-cookie";
+import {
+  AdminAuthProvider,
+  useAdminAuth,
+} from "@/Components/Admin/AdminAuthContext";
 import AdminSidebar from "@/Components/Admin/Sidebar/AdminSidebar";
 import "./admin.css";
 
@@ -16,9 +19,8 @@ const queryClient = new QueryClient({
   },
 });
 
-export default function AdminLayout({ children }) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState(null);
+function AdminLayoutContent({ children }) {
+  const { user, isLoading, logout } = useAdminAuth();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const pathname = usePathname();
 
@@ -63,122 +65,60 @@ export default function AdminLayout({ children }) {
     }
   }, []);
 
-  useEffect(() => {
-    let isMounted = true;
-
-    const checkAuth = async () => {
-      const token = Cookies.get("admin_token");
-
-      if (!token) {
-        if (isMounted) {
-          setUser(null);
-          setIsLoading(false);
-        }
-        return;
-      }
-
-      try {
-        const res = await fetch("/api/auth/me", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-
-        if (!isMounted) return;
-
-        if (res.ok) {
-          const data = await res.json();
-          // API returns { success: true, data: user }
-          const userData = data.data;
-          if (userData?.role === "admin") {
-            setUser(userData);
-          } else {
-            Cookies.remove("admin_token");
-            setUser(null);
-          }
-        } else {
-          Cookies.remove("admin_token");
-          setUser(null);
-        }
-      } catch (error) {
-        console.error("Auth check failed:", error);
-        if (isMounted) {
-          Cookies.remove("admin_token");
-          setUser(null);
-        }
-      }
-
-      if (isMounted) {
-        setIsLoading(false);
-      }
-    };
-
-    checkAuth();
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
-  const handleLogout = () => {
-    Cookies.remove("admin_token");
-    setUser(null);
-    window.location.href = "/admin/login";
-  };
-
   // Loading state
   if (isLoading) {
     return (
-      <QueryClientProvider client={queryClient}>
-        <div className="admin-loading-layout">
-          <div className="admin-loading-spinner"></div>
-          <p>Loading...</p>
-        </div>
-      </QueryClientProvider>
+      <div className="admin-loading-layout">
+        <div className="admin-loading-spinner"></div>
+        <p>Loading...</p>
+      </div>
     );
   }
 
   // Login page - always render children
   if (isLoginPage) {
-    return (
-      <QueryClientProvider client={queryClient}>
-        <div className="admin-login-wrapper">{children}</div>
-      </QueryClientProvider>
-    );
+    return <div className="admin-login-wrapper">{children}</div>;
   }
 
-  // Not logged in - redirect to login
+  // Not logged in - redirect logic handled in Context or here visually
   if (!user) {
-    // Use window.location for reliable redirect
     if (typeof window !== "undefined") {
       window.location.href = "/admin/login";
     }
     return (
-      <QueryClientProvider client={queryClient}>
-        <div className="admin-loading">
-          <div className="admin-loading-spinner"></div>
-          <p>Redirecting to login...</p>
-        </div>
-      </QueryClientProvider>
+      <div className="admin-loading-layout">
+        <div className="admin-loading-spinner"></div>
+        <p>Redirecting to login...</p>
+      </div>
     );
   }
 
   // Authenticated - render dashboard
   return (
+    <div
+      className={`admin-wrapper ${
+        sidebarCollapsed ? "sidebar-collapsed" : ""
+      }`}
+    >
+      <AdminSidebar
+        user={user}
+        onLogout={logout}
+        collapsed={sidebarCollapsed}
+        onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
+      />
+      <main className="admin-main">
+        <div className="admin-content">{children}</div>
+      </main>
+    </div>
+  );
+}
+
+export default function AdminLayout({ children }) {
+  return (
     <QueryClientProvider client={queryClient}>
-      <div
-        className={`admin-wrapper ${
-          sidebarCollapsed ? "sidebar-collapsed" : ""
-        }`}
-      >
-        <AdminSidebar
-          user={user}
-          onLogout={handleLogout}
-          collapsed={sidebarCollapsed}
-          onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
-        />
-        <main className="admin-main">
-          <div className="admin-content">{children}</div>
-        </main>
-      </div>
+      <AdminAuthProvider>
+        <AdminLayoutContent>{children}</AdminLayoutContent>
+      </AdminAuthProvider>
     </QueryClientProvider>
   );
 }
