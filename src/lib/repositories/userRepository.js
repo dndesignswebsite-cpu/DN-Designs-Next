@@ -3,8 +3,9 @@
  * Handles all database operations for User model
  */
 
-import User from '@/lib/models/User.js';
-import { AppError, throwError } from '@/lib/middleware/errorHandler.js';
+import User from "@/lib/models/User.js";
+import bcrypt from "bcryptjs";
+import { AppError, throwError } from "@/lib/middleware/errorHandler.js";
 
 export const findById = async (userId, options = {}) => {
   try {
@@ -13,7 +14,7 @@ export const findById = async (userId, options = {}) => {
     if (options.populate) query = query.populate(options.populate);
     return await query;
   } catch (error) {
-    throwError(error, 500, { function: 'findById', userId });
+    throwError(error, 500, { function: "findById", userId });
   }
 };
 
@@ -23,7 +24,7 @@ export const findByEmail = async (email, options = {}) => {
     if (options.select) query = query.select(options.select);
     return await query;
   } catch (error) {
-    throwError(error, 500, { function: 'findByEmail', email });
+    throwError(error, 500, { function: "findByEmail", email });
   }
 };
 
@@ -52,7 +53,7 @@ export const findAll = async (filter = {}, options = {}) => {
       pagination: { page, limit, total, pages: Math.ceil(total / limit) },
     };
   } catch (error) {
-    throwError(error, 500, { function: 'findAll', filter, options });
+    throwError(error, 500, { function: "findAll", filter, options });
   }
 };
 
@@ -62,31 +63,44 @@ export const create = async (userData) => {
   } catch (error) {
     if (error.code === 11000) {
       const field = Object.keys(error.keyPattern)[0];
-      throwError(`${field} already exists`, 400, { function: 'create', field });
+      throwError(`${field} already exists`, 400, { function: "create", field });
     }
-    throwError(error, 500, { function: 'create', userData });
+    throwError(error, 500, { function: "create", userData });
   }
 };
 
 export const updateById = async (userId, updateData) => {
   try {
+    // If password is being updated, hash it first
+    // (findByIdAndUpdate bypasses the pre-save middleware)
+    if (updateData.password) {
+      const salt = await bcrypt.genSalt(12);
+      updateData.password = await bcrypt.hash(updateData.password, salt);
+    }
+
     const user = await User.findByIdAndUpdate(
       userId,
       { $set: updateData },
       { new: true, runValidators: true }
-    ).select('-password');
+    ).select("-password");
 
     if (!user) {
-      throwError(`User not found with id of ${userId}`, 404, { function: 'updateById', userId });
+      throwError(`User not found with id of ${userId}`, 404, {
+        function: "updateById",
+        userId,
+      });
     }
     return user;
   } catch (error) {
     if (error instanceof AppError) throw error;
     if (error.code === 11000) {
       const field = Object.keys(error.keyPattern)[0];
-      throwError(`${field} already exists`, 400, { function: 'updateById', field });
+      throwError(`${field} already exists`, 400, {
+        function: "updateById",
+        field,
+      });
     }
-    throwError(error, 500, { function: 'updateById', userId, updateData });
+    throwError(error, 500, { function: "updateById", userId, updateData });
   }
 };
 
@@ -94,12 +108,15 @@ export const deleteById = async (userId) => {
   try {
     const user = await User.findByIdAndDelete(userId);
     if (!user) {
-      throwError(`User not found with id of ${userId}`, 404, { function: 'deleteById', userId });
+      throwError(`User not found with id of ${userId}`, 404, {
+        function: "deleteById",
+        userId,
+      });
     }
     return true;
   } catch (error) {
     if (error instanceof AppError) throw error;
-    throwError(error, 500, { function: 'deleteById', userId });
+    throwError(error, 500, { function: "deleteById", userId });
   }
 };
 
@@ -108,7 +125,7 @@ export const existsByEmail = async (email) => {
     const count = await User.countDocuments({ email: email.toLowerCase() });
     return count > 0;
   } catch (error) {
-    throwError(error, 500, { function: 'existsByEmail', email });
+    throwError(error, 500, { function: "existsByEmail", email });
   }
 };
 
@@ -116,7 +133,6 @@ export const count = async (filter = {}) => {
   try {
     return await User.countDocuments(filter);
   } catch (error) {
-    throwError(error, 500, { function: 'count', filter });
+    throwError(error, 500, { function: "count", filter });
   }
 };
-

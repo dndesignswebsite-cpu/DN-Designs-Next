@@ -63,6 +63,28 @@ const blogSchema = new mongoose.Schema(
       },
     ],
 
+    // Videos array (for video content)
+    videos: [
+      {
+        url: {
+          type: String,
+        },
+        publicId: {
+          type: String,
+        },
+        caption: {
+          type: String,
+          default: "",
+        },
+        // Video can be from different sources
+        source: {
+          type: String,
+          enum: ["cloudinary", "youtube", "vimeo", "external"],
+          default: "cloudinary",
+        },
+      },
+    ],
+
     // Author reference (User who created the blog post)
     author: {
       type: mongoose.Schema.Types.ObjectId,
@@ -92,6 +114,13 @@ const blogSchema = new mongoose.Schema(
       default: "General",
     },
 
+    // SEO meta title
+    metaTitle: {
+      type: String,
+      trim: true,
+      maxlength: [70, "Meta title cannot be more than 70 characters"],
+    },
+
     // SEO meta description
     metaDescription: {
       type: String,
@@ -105,6 +134,78 @@ const blogSchema = new mongoose.Schema(
         trim: true,
       },
     ],
+
+    // Canonical URL for SEO
+    canonicalUrl: {
+      type: String,
+      trim: true,
+      default: null,
+    },
+
+    // Robots meta tag (index, noindex, follow, nofollow)
+    robotsTag: {
+      type: String,
+      trim: true,
+      default: "index, follow",
+    },
+
+    // Custom head code (for scripts, styles, etc.)
+    // Stored as plain string - can contain <script> tags
+    headCode: {
+      type: String,
+      default: null,
+    },
+
+    // Open Graph metadata
+    ogTitle: {
+      type: String,
+      trim: true,
+      maxlength: [95, "OG title cannot be more than 95 characters"],
+    },
+
+    ogDescription: {
+      type: String,
+      trim: true,
+      maxlength: [200, "OG description cannot be more than 200 characters"],
+    },
+
+    ogImage: {
+      url: {
+        type: String,
+        default: null,
+      },
+      publicId: {
+        type: String,
+        default: null,
+      },
+    },
+
+    // Twitter Card metadata
+    twitterTitle: {
+      type: String,
+      trim: true,
+      maxlength: [70, "Twitter title cannot be more than 70 characters"],
+    },
+
+    twitterDescription: {
+      type: String,
+      trim: true,
+      maxlength: [
+        200,
+        "Twitter description cannot be more than 200 characters",
+      ],
+    },
+
+    twitterImage: {
+      url: {
+        type: String,
+        default: null,
+      },
+      publicId: {
+        type: String,
+        default: null,
+      },
+    },
 
     // Published status
     isPublished: {
@@ -176,4 +277,3 @@ blogSchema.index({ category: 1 });
 const Blog = mongoose.models.Blog || mongoose.model("Blog", blogSchema);
 
 export default Blog;
-

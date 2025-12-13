@@ -5,23 +5,34 @@
 
 import * as blogRepository from "@/lib/repositories/blogRepository.js";
 import * as userRepository from "@/lib/repositories/userRepository.js";
-import { AppError, throwError, logError } from "@/lib/middleware/errorHandler.js";
-import { uploadImageBuffer, deleteImage } from "@/lib/config/cloudinary.js";
+import {
+  AppError,
+  throwError,
+  logError,
+} from "@/lib/middleware/errorHandler.js";
+import { uploadImageBuffer, deleteImage } from "@/lib/config/fileStorage.js";
 
-export const getAllBlogs = async (filters = {}, pagination = {}, currentUser = null) => {
+export const getAllBlogs = async (
+  filters = {},
+  pagination = {},
+  currentUser = null
+) => {
   const filter = {};
 
   if (currentUser?.role !== "admin") {
     filter.isPublished = true;
     filter.publishedAt = { $lte: new Date() };
-  } else if (filters.isPublished !== undefined) {
-    filter.isPublished = filters.isPublished === "true" || filters.isPublished === true;
+  } else if (filter.isPublished && filters.isPublished !== undefined) {
+    filter.isPublished =
+      filters.isPublished === "true" || filters.isPublished === true;
   }
 
   if (filters.category) filter.category = filters.category;
   if (filters.author) filter.author = filters.author;
   if (filters.tags) {
-    const tags = Array.isArray(filters.tags) ? filters.tags : filters.tags.split(",");
+    const tags = Array.isArray(filters.tags)
+      ? filters.tags
+      : filters.tags.split(",");
     filter.tags = { $in: tags };
   }
   if (filters.search) {
@@ -69,7 +80,10 @@ export const getBlogById = async (identifier, currentUser = null) => {
   }
 
   if (!blog.isPublished && currentUser?.role !== "admin") {
-    throwError("Blog post not found", 404, { function: "getBlogById", identifier });
+    throwError("Blog post not found", 404, {
+      function: "getBlogById",
+      identifier,
+    });
   }
 
   await blogRepository.incrementViews(blog._id);
@@ -77,12 +91,18 @@ export const getBlogById = async (identifier, currentUser = null) => {
   return blog;
 };
 
-export const createBlog = async (blogData, authorId, imageBuffer = null) => {
+export const createBlog = async (
+  blogData,
+  authorId,
+  imageBuffer = null,
+  socialImages = {}
+) => {
   const author = await userRepository.findById(authorId);
   if (!author) {
     throwError("Author not found", 404, { function: "createBlog", authorId });
   }
 
+  // Upload featured image
   if (imageBuffer) {
     try {
       const result = await uploadImageBuffer(imageBuffer);
@@ -91,7 +111,39 @@ export const createBlog = async (blogData, authorId, imageBuffer = null) => {
         publicId: result.public_id,
       };
     } catch (error) {
-      throwError(error, 500, { function: "createBlog", operation: "uploadFeaturedImage" });
+      throwError(error, 500, {
+        function: "createBlog",
+        operation: "uploadFeaturedImage",
+      });
+    }
+  }
+
+  // Upload OG image
+  if (socialImages.ogImageBuffer) {
+    try {
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+      blogData.ogImage = {
+        url: result.secure_url,
+        publicId: result.public_id,
+      };
+    } catch (error) {
+      logError(error, { function: "createBlog", operation: "uploadOgImage" });
+    }
+  }
+
+  // Upload Twitter image
+  if (socialImages.twitterImageBuffer) {
+    try {
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+      blogData.twitterImage = {
+        url: result.secure_url,
+        publicId: result.public_id,
+      };
+    } catch (error) {
+      logError(error, {
+        function: "createBlog",
+        operation: "uploadTwitterImage",
+      });
     }
   }
 
@@ -111,12 +163,21 @@ export const createBlog = async (blogData, authorId, imageBuffer = null) => {
   return await blogRepository.create(blogData);
 };
 
-export const updateBlog = async (blogId, updateData, imageBuffer = null) => {
+export const updateBlog = async (
+  blogId,
+  updateData,
+  imageBuffer = null,
+  socialImages = {}
+) => {
   const existingBlog = await blogRepository.findById(blogId);
   if (!existingBlog) {
-    throwError(`Blog not found with id of ${blogId}`, 404, { function: "updateBlog", blogId });
+    throwError(`Blog not found with id of ${blogId}`, 404, {
+      function: "updateBlog",
+      blogId,
+    });
   }
 
+  // Upload featured image
   if (imageBuffer) {
     try {
       const result = await uploadImageBuffer(imageBuffer);
@@ -130,17 +191,62 @@ export const updateBlog = async (blogId, updateData, imageBuffer = null) => {
         publicId: result.public_id,
       };
     } catch (error) {
-      throwError(error, 500, { function: "updateBlog", operation: "uploadFeaturedImage" });
+      throwError(error, 500, {
+        function: "updateBlog",
+        operation: "uploadFeaturedImage",
+      });
+    }
+  }
+
+  // Upload OG image
+  if (socialImages.ogImageBuffer) {
+    try {
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+
+      if (existingBlog.ogImage?.publicId) {
+        await deleteImage(existingBlog.ogImage.publicId);
+      }
+
+      updateData.ogImage = {
+        url: result.secure_url,
+        publicId: result.public_id,
+      };
+    } catch (error) {
+      logError(error, { function: "updateBlog", operation: "uploadOgImage" });
+    }
+  }
+
+  // Upload Twitter image
+  if (socialImages.twitterImageBuffer) {
+    try {
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+
+      if (existingBlog.twitterImage?.publicId) {
+        await deleteImage(existingBlog.twitterImage.publicId);
+      }
+
+      updateData.twitterImage = {
+        url: result.secure_url,
+        publicId: result.public_id,
+      };
+    } catch (error) {
+      logError(error, {
+        function: "updateBlog",
+        operation: "uploadTwitterImage",
+      });
     }
   }
 
   if (updateData.tags) {
-    updateData.tags = Array.isArray(updateData.tags) ? updateData.tags : [updateData.tags];
+    updateData.tags = Array.isArray(updateData.tags)
+      ? updateData.tags
+      : [updateData.tags];
   }
 
   if (updateData.metaKeywords) {
-    updateData.metaKeywords = Array.isArray(updateData.metaKeywords) 
-      ? updateData.metaKeywords : [updateData.metaKeywords];
+    updateData.metaKeywords = Array.isArray(updateData.metaKeywords)
+      ? updateData.metaKeywords
+      : [updateData.metaKeywords];
   }
 
   if (updateData.content) {
@@ -149,7 +255,11 @@ export const updateBlog = async (blogId, updateData, imageBuffer = null) => {
     updateData.readingTime = Math.ceil(wordCount / wordsPerMinute) || 1;
   }
 
-  if (updateData.isPublished === true && !existingBlog.publishedAt) {
+  if (
+    updateData.isPublished === true &&
+    !existingBlog.publishedAt &&
+    !updateData.publishedAt
+  ) {
     updateData.publishedAt = new Date();
   }
 
@@ -159,17 +269,46 @@ export const updateBlog = async (blogId, updateData, imageBuffer = null) => {
 export const deleteBlog = async (blogId) => {
   const blog = await blogRepository.findById(blogId);
   if (!blog) {
-    throwError(`Blog not found with id of ${blogId}`, 404, { function: "deleteBlog", blogId });
+    throwError(`Blog not found with id of ${blogId}`, 404, {
+      function: "deleteBlog",
+      blogId,
+    });
   }
 
+  // Delete featured image
   if (blog.featuredImage?.publicId) {
     try {
       await deleteImage(blog.featuredImage.publicId);
     } catch (error) {
-      logError(error, { function: "deleteBlog", operation: "deleteFeaturedImage" });
+      logError(error, {
+        function: "deleteBlog",
+        operation: "deleteFeaturedImage",
+      });
     }
   }
 
+  // Delete OG image
+  if (blog.ogImage?.publicId) {
+    try {
+      await deleteImage(blog.ogImage.publicId);
+    } catch (error) {
+      logError(error, { function: "deleteBlog", operation: "deleteOgImage" });
+    }
+  }
+
+  // Delete Twitter image
+  if (blog.twitterImage?.publicId) {
+    try {
+      await deleteImage(blog.twitterImage.publicId);
+    } catch (error) {
+      logError(error, {
+        function: "deleteBlog",
+        operation: "deleteTwitterImage",
+      });
+    }
+  }
+
+  // Delete gallery images
   if (blog.images && blog.images.length > 0) {
     for (const image of blog.images) {
       if (image.publicId) {
@@ -182,6 +321,19 @@ export const deleteBlog = async (blogId) => {
     }
   }
 
+  // Delete videos from Cloudinary (if applicable)
+  if (blog.videos && blog.videos.length > 0) {
+    for (const video of blog.videos) {
+      if (video.publicId && video.source === "cloudinary") {
+        try {
+          await deleteImage(video.publicId);
+        } catch (error) {
+          logError(error, { function: "deleteBlog", operation: "deleteVideo" });
+        }
+      }
+    }
+  }
+
   await blogRepository.deleteById(blogId);
   return true;
 };
@@ -189,11 +341,17 @@ export const deleteBlog = async (blogId) => {
 export const addBlogImages = async (blogId, imageBuffers, captions = []) => {
   const blog = await blogRepository.findById(blogId);
   if (!blog) {
-    throwError(`Blog not found with id of ${blogId}`, 404, { function: "addBlogImages", blogId });
+    throwError(`Blog not found with id of ${blogId}`, 404, {
+      function: "addBlogImages",
+      blogId,
+    });
   }
 
   if (!imageBuffers || imageBuffers.length === 0) {
-    throwError("Please upload at least one image", 400, { function: "addBlogImages", blogId });
+    throwError("Please upload at least one image", 400, {
+      function: "addBlogImages",
+      blogId,
+    });
   }
 
   const uploadedImages = [];
@@ -220,12 +378,21 @@ export const addBlogImages = async (blogId, imageBuffers, captions = []) => {
 export const deleteBlogImage = async (blogId, imageId) => {
   const blog = await blogRepository.findById(blogId);
   if (!blog) {
-    throwError(`Blog not found with id of ${blogId}`, 404, { function: "deleteBlogImage", blogId });
+    throwError(`Blog not found with id of ${blogId}`, 404, {
+      function: "deleteBlogImage",
+      blogId,
+    });
   }
 
-  const imageIndex = blog.images.findIndex((img) => img._id.toString() === imageId);
+  const imageIndex = blog.images.findIndex(
+    (img) => img._id.toString() === imageId
+  );
   if (imageIndex === -1) {
-    throwError("Image not found", 404, { function: "deleteBlogImage", blogId, imageId });
+    throwError("Image not found", 404, {
+      function: "deleteBlogImage",
+      blogId,
+      imageId,
+    });
   }
 
   const image = blog.images[imageIndex];
@@ -234,11 +401,16 @@ export const deleteBlogImage = async (blogId, imageId) => {
     try {
       await deleteImage(image.publicId);
     } catch (error) {
-      logError(error, { function: "deleteBlogImage", operation: "deleteFromCloudinary" });
+      logError(error, {
+        function: "deleteBlogImage",
+        operation: "deleteFromCloudinary",
+      });
     }
   }
 
-  const updatedImages = blog.images.filter((img) => img._id.toString() !== imageId);
+  const updatedImages = blog.images.filter(
+    (img) => img._id.toString() !== imageId
+  );
   return await blogRepository.updateById(blogId, { images: updatedImages });
 };
 
@@ -253,7 +425,10 @@ export const uploadContentImage = async (imageBuffer, blogId = null) => {
     if (blogId) {
       const blog = await blogRepository.findById(blogId);
       if (!blog) {
-        throwError(`Blog not found with id of ${blogId}`, 404, { function: "uploadContentImage", blogId });
+        throwError(`Blog not found with id of ${blogId}`, 404, {
+          function: "uploadContentImage",
+          blogId,
+        });
       }
 
       const existingImages = blog.images || [];
@@ -268,7 +443,9 @@ export const uploadContentImage = async (imageBuffer, blogId = null) => {
     return { url: imageUrl, publicId, htmlTag };
   } catch (error) {
     if (error instanceof AppError) throw error;
-    throwError(error, 500, { function: "uploadContentImage", blogId: blogId || "none" });
+    throwError(error, 500, {
+      function: "uploadContentImage",
+      blogId: blogId || "none",
+    });
   }
 };
-

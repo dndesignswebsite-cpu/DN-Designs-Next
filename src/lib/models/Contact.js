@@ -68,6 +68,14 @@ const contactSchema = new mongoose.Schema(
       type: String,
       default: null,
     },
+
+    // Page name from which the form was submitted
+    pageName: {
+      type: String,
+      default: null,
+      trim: true,
+      maxlength: [100, 'Page name cannot be more than 100 characters'],
+    },
   },
   {
     timestamps: true, // Automatically adds createdAt and updatedAt fields

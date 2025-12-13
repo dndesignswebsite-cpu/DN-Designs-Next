@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "dn-designs-api-collection",
     "name": "DN Designs API",
-    "description": "Complete API collection for DN Designs backend - Authentication, Blog, Contact, and Email Management endpoints",
+    "description": "Complete API collection for DN Designs backend - Authentication, Blog, Pages, Contact, and Email Management endpoints",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "dn-designs"
   },
@@ -324,6 +324,467 @@
       ]
     },
     {
+      "name": "Pages",
+      "item": [
+        {
+          "name": "Get All Pages",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/pages?page=1&limit=50",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                },
+                {
+                  "key": "pageType",
+                  "value": "home",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "about",
+                  "disabled": true
+                },
+                {
+                  "key": "isPublished",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "sortBy",
+                  "value": "order",
+                  "disabled": true
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get all published pages (public). Admin can see all pages including drafts."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Page by ID or Slug",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/pages/{{page_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "{{page_id}}"]
+            },
+            "description": "Get page by ID or slug. Can also use slug like: /api/pages/home"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Page by Type",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/pages/type/home",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "type", "home"]
+            },
+            "description": "Get page by pageType (e.g., home, about, services, contact). Useful for fetching specific pages in the frontend."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Page Statistics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/pages/stats",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "stats"]
+            },
+            "description": "Get page statistics - total, published, drafts (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Page",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.environment.set(\"page_id\", response.data._id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Home Page",
+                  "type": "text"
+                },
+                {
+                  "key": "slug",
+                  "value": "home",
+                  "type": "text"
+                },
+                {
+                  "key": "pageType",
+                  "value": "home",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Welcome to DN Designs - A creative design agency",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "{\"hero\":{\"heading\":\"Welcome to DN Designs\",\"subheading\":\"Creative solutions for your brand\",\"ctaText\":\"Get Started\"},\"services\":[{\"title\":\"Branding\",\"description\":\"Build your brand identity\"},{\"title\":\"Web Design\",\"description\":\"Modern web experiences\"}]}",
+                  "type": "text"
+                },
+                {
+                  "key": "order",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "isPublished",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "metaTitle",
+                  "value": "DN Designs - Creative Design Agency",
+                  "type": "text"
+                },
+                {
+                  "key": "metaDescription",
+                  "value": "DN Designs is a creative agency specializing in branding and web design",
+                  "type": "text"
+                },
+                {
+                  "key": "focusKeywords",
+                  "value": "design agency,branding,web design,creative",
+                  "type": "text"
+                },
+                {
+                  "key": "canonicalUrl",
+                  "value": "https://dndesigns.co.in",
+                  "type": "text"
+                },
+                {
+                  "key": "robotsTag",
+                  "value": "index, follow",
+                  "type": "text"
+                },
+                {
+                  "key": "headCode",
+                  "value": "<script>console.log('Home page loaded');</script>",
+                  "type": "text"
+                },
+                {
+                  "key": "ogTitle",
+                  "value": "DN Designs - Creative Design Agency",
+                  "type": "text"
+                },
+                {
+                  "key": "ogDescription",
+                  "value": "Transform your brand with DN Designs",
+                  "type": "text"
+                },
+                {
+                  "key": "twitterTitle",
+                  "value": "DN Designs - Creative Agency",
+                  "type": "text"
+                },
+                {
+                  "key": "twitterDescription",
+                  "value": "Transform your brand with DN Designs",
+                  "type": "text"
+                },
+                {
+                  "key": "featuredImage",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "featuredImageAlt",
+                  "value": "DN Designs Hero Image",
+                  "type": "text"
+                },
+                {
+                  "key": "ogImage",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "twitterImage",
+                  "type": "file",
+                  "src": []
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/pages",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages"]
+            },
+            "description": "Create a new page with full SEO and social media support (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Create About Page",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    const response = pm.response.json();",
+                  "    pm.environment.set(\"about_page_id\", response.data._id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "About Us",
+                  "type": "text"
+                },
+                {
+                  "key": "slug",
+                  "value": "about",
+                  "type": "text"
+                },
+                {
+                  "key": "pageType",
+                  "value": "about",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Learn more about DN Designs and our team",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "{\"intro\":{\"heading\":\"About DN Designs\",\"text\":\"We are a creative agency....\"},\"team\":[{\"name\":\"John Doe\",\"role\":\"Creative Director\"},{\"name\":\"Jane Smith\",\"role\":\"Lead Designer\"}],\"values\":[\"Innovation\",\"Quality\",\"Collaboration\"]}",
+                  "type": "text"
+                },
+                {
+                  "key": "order",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "isPublished",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "metaTitle",
+                  "value": "About Us - DN Designs",
+                  "type": "text"
+                },
+                {
+                  "key": "metaDescription",
+                  "value": "Learn about DN Designs, our team, and our creative process",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/pages",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages"]
+            },
+            "description": "Create About page example (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Page",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Home Page Updated",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "{\"hero\":{\"heading\":\"Welcome to DN Designs - Updated\",\"subheading\":\"New creative solutions\"}}",
+                  "type": "text"
+                },
+                {
+                  "key": "metaTitle",
+                  "value": "DN Designs - Updated",
+                  "type": "text"
+                },
+                {
+                  "key": "isPublished",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "publishedAt",
+                  "value": "2025-12-15T10:00:00.000Z",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/pages/{{page_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "{{page_id}}"]
+            },
+            "description": "Update page (Admin only). publishedAt is editable."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Page",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/pages/{{page_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "{{page_id}}"]
+            },
+            "description": "Delete page (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Add Images to Page",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "alts",
+                  "value": "[\"Image 1 alt text\", \"Image 2 alt text\"]",
+                  "type": "text"
+                },
+                {
+                  "key": "captions",
+                  "value": "[\"Caption for image 1\", \"Caption for image 2\"]",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/pages/{{page_id}}/images",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "{{page_id}}", "images"]
+            },
+            "description": "Add multiple images to a page (max 10 per upload). Admin only."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Image from Page",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/pages/{{page_id}}/images/{{image_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "pages", "{{page_id}}", "images", "{{image_id}}"]
+            },
+            "description": "Delete specific image from page (Admin only)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
       "name": "Blog",
       "item": [
         {
@@ -358,6 +819,21 @@
                   "key": "search",
                   "value": "logo",
                   "disabled": true
+                },
+                {
+                  "key": "isPublished",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "sortBy",
+                  "value": "publishedAt",
+                  "disabled": true
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "desc",
+                  "disabled": true
                 }
               ]
             },
@@ -366,7 +842,7 @@
           "response": []
         },
         {
-          "name": "Get Blog by ID",
+          "name": "Get Blog by ID or Slug",
           "request": {
             "method": "GET",
             "header": [],
@@ -418,12 +894,12 @@
                 },
                 {
                   "key": "excerpt",
-                  "value": "Learn how to build a strong brand identity that resonates with your audience and sets you apart from competitors.",
+                  "value": "Learn how to build a strong brand identity that resonates with your audience.",
                   "type": "text"
                 },
                 {
                   "key": "tags",
-                  "value": "[\"branding\", \"design\", \"marketing\"]",
+                  "value": "branding,design,marketing",
                   "type": "text"
                 },
                 {
@@ -432,17 +908,78 @@
                   "type": "text"
                 },
                 {
-                  "key": "metaDescription",
-                  "value": "Comprehensive guide on building a strong brand identity for your business",
-                  "type": "text"
-                },
-                {
                   "key": "isPublished",
                   "value": "true",
                   "type": "text"
                 },
                 {
+                  "key": "publishedAt",
+                  "value": "2025-12-11T10:00:00.000Z",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "metaTitle",
+                  "value": "How to Build a Strong Brand Identity - DN Designs",
+                  "type": "text"
+                },
+                {
+                  "key": "metaDescription",
+                  "value": "Comprehensive guide on building a strong brand identity for your business",
+                  "type": "text"
+                },
+                {
+                  "key": "metaKeywords",
+                  "value": "brand identity,branding guide,logo design",
+                  "type": "text"
+                },
+                {
+                  "key": "canonicalUrl",
+                  "value": "https://dndesigns.co.in/blog/brand-identity",
+                  "type": "text"
+                },
+                {
+                  "key": "robotsTag",
+                  "value": "index, follow",
+                  "type": "text"
+                },
+                {
+                  "key": "headCode",
+                  "value": "<script>console.log('Blog tracking');</script>",
+                  "type": "text"
+                },
+                {
+                  "key": "ogTitle",
+                  "value": "How to Build a Strong Brand Identity",
+                  "type": "text"
+                },
+                {
+                  "key": "ogDescription",
+                  "value": "Learn the secrets of building a memorable brand identity",
+                  "type": "text"
+                },
+                {
+                  "key": "twitterTitle",
+                  "value": "Build a Strong Brand Identity",
+                  "type": "text"
+                },
+                {
+                  "key": "twitterDescription",
+                  "value": "Learn the secrets of building a memorable brand",
+                  "type": "text"
+                },
+                {
                   "key": "featuredImage",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "ogImage",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "twitterImage",
                   "type": "file",
                   "src": []
                 }
@@ -453,7 +990,7 @@
               "host": ["{{base_url}}"],
               "path": ["api", "blogs"]
             },
-            "description": "Create a new blog post (Admin only)"
+            "description": "Create a new blog post with full SEO support (Admin only)"
           },
           "response": []
         },
@@ -477,12 +1014,27 @@
                 },
                 {
                   "key": "content",
-                  "value": "Updated blog content...",
+                  "value": "Updated blog content with more details...",
                   "type": "text"
                 },
                 {
                   "key": "isPublished",
                   "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "publishedAt",
+                  "value": "2025-12-15T10:00:00.000Z",
+                  "type": "text"
+                },
+                {
+                  "key": "metaTitle",
+                  "value": "Updated Meta Title",
+                  "type": "text"
+                },
+                {
+                  "key": "headCode",
+                  "value": "<script>console.log('Updated tracking');</script>",
                   "type": "text"
                 }
               ]
@@ -492,7 +1044,7 @@
               "host": ["{{base_url}}"],
               "path": ["api", "blogs", "{{blog_id}}"]
             },
-            "description": "Update blog post (Admin only)"
+            "description": "Update blog post. publishedAt is editable. (Admin only)"
           },
           "response": []
         },
@@ -538,6 +1090,11 @@
                   "key": "images",
                   "type": "file",
                   "src": []
+                },
+                {
+                  "key": "captions",
+                  "value": "[\"Caption 1\", \"Caption 2\"]",
+                  "type": "text"
                 }
               ]
             },
@@ -547,6 +1104,41 @@
               "path": ["api", "blogs", "{{blog_id}}", "images"]
             },
             "description": "Add multiple images to blog post (Admin only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Upload Content Image",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "blogId",
+                  "value": "{{blog_id}}",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/blogs/upload-image",
+              "host": ["{{base_url}}"],
+              "path": ["api", "blogs", "upload-image"]
+            },
+            "description": "Upload image for blog content. Returns URL and HTML tag. Optionally link to blog. (Admin only)"
           },
           "response": []
         },
@@ -601,14 +1193,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"name\": \"Jane Doe\",\n    \"email\": \"jane@example.com\",\n    \"mobile\": \"+1234567890\",\n    \"message\": \"I'm interested in your branding services. Please contact me.\"\n}"
+              "raw": "{\n    \"name\": \"Jane Doe\",\n    \"email\": \"jane@example.com\",\n    \"mobile\": \"+1234567890\",\n    \"message\": \"I'm interested in your branding services. Please contact me.\",\n    \"pageName\": \"Home Page\"\n}"
             },
             "url": {
               "raw": "{{base_url}}/api/contact",
               "host": ["{{base_url}}"],
               "path": ["api", "contact"]
             },
-            "description": "Submit contact form (Public endpoint)"
+            "description": "Submit contact form (Public endpoint). pageName field tracks which page the form was submitted from."
           },
           "response": []
         },
@@ -696,7 +1288,7 @@
               "host": ["{{base_url}}"],
               "path": ["api", "contact", "{{contact_id}}"]
             },
-            "description": "Update contact submission status (Admin only)"
+            "description": "Update contact submission status (Admin only). Status: new, read, replied, resolved"
           },
           "response": []
         },
@@ -1046,7 +1638,17 @@
       "type": "string"
     },
     {
+      "key": "admin_id",
+      "value": "",
+      "type": "string"
+    },
+    {
       "key": "blog_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "page_id",
       "value": "",
       "type": "string"
     },
@@ -1057,6 +1659,11 @@
     },
     {
       "key": "email_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "image_id",
       "value": "",
       "type": "string"
     }

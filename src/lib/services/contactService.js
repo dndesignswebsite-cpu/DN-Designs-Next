@@ -3,13 +3,13 @@
  * Business logic for contact form management
  */
 
-import * as contactRepository from '@/lib/repositories/contactRepository.js';
-import * as emailRepository from '@/lib/repositories/emailRepository.js';
-import { throwError, logError } from '@/lib/middleware/errorHandler.js';
-import { sendContactNotification } from '@/lib/config/email.js';
+import * as contactRepository from "@/lib/repositories/contactRepository.js";
+import * as emailRepository from "@/lib/repositories/emailRepository.js";
+import { throwError, logError } from "@/lib/middleware/errorHandler.js";
+import { sendContactNotification } from "@/lib/config/email.js";
 
 export const createContact = async (contactData, ipAddress = null) => {
-  const { name, email, mobile, message } = contactData;
+  const { name, email, mobile, message, pageName } = contactData;
 
   const contact = await contactRepository.create({
     name,
@@ -17,6 +17,7 @@ export const createContact = async (contactData, ipAddress = null) => {
     mobile,
     message,
     ipAddress,
+    pageName,
   });
 
   try {
@@ -50,13 +51,13 @@ export const getAllContacts = async (filters = {}, pagination = {}) => {
 
   if (filters.status) filter.status = filters.status;
   if (filters.email) {
-    filter.email = { $regex: filters.email, $options: 'i' };
+    filter.email = { $regex: filters.email, $options: "i" };
   }
   if (filters.search) {
     filter.$or = [
-      { name: { $regex: filters.search, $options: 'i' } },
-      { email: { $regex: filters.search, $options: 'i' } },
-      { message: { $regex: filters.search, $options: 'i' } },
+      { name: { $regex: filters.search, $options: "i" } },
+      { email: { $regex: filters.search, $options: "i" } },
+      { message: { $regex: filters.search, $options: "i" } },
     ];
   }
 
@@ -78,12 +79,15 @@ export const getContactById = async (contactId) => {
   const contact = await contactRepository.findById(contactId);
 
   if (!contact) {
-    throwError(`Contact not found with id of ${contactId}`, 404, { function: 'getContactById', contactId });
+    throwError(`Contact not found with id of ${contactId}`, 404, {
+      function: "getContactById",
+      contactId,
+    });
   }
 
-  if (contact.status === 'new') {
-    await contactRepository.updateById(contactId, { status: 'read' });
-    contact.status = 'read';
+  if (contact.status === "new") {
+    await contactRepository.updateById(contactId, { status: "read" });
+    contact.status = "read";
   }
 
   return contact;
@@ -92,7 +96,10 @@ export const getContactById = async (contactId) => {
 export const updateContact = async (contactId, updateData) => {
   const contact = await contactRepository.findById(contactId);
   if (!contact) {
-    throwError(`Contact not found with id of ${contactId}`, 404, { function: 'updateContact', contactId });
+    throwError(`Contact not found with id of ${contactId}`, 404, {
+      function: "updateContact",
+      contactId,
+    });
   }
 
   return await contactRepository.updateById(contactId, updateData);
@@ -101,7 +108,10 @@ export const updateContact = async (contactId, updateData) => {
 export const deleteContact = async (contactId) => {
   const contact = await contactRepository.findById(contactId);
   if (!contact) {
-    throwError(`Contact not found with id of ${contactId}`, 404, { function: 'deleteContact', contactId });
+    throwError(`Contact not found with id of ${contactId}`, 404, {
+      function: "deleteContact",
+      contactId,
+    });
   }
 
   await contactRepository.deleteById(contactId);
@@ -109,13 +119,14 @@ export const deleteContact = async (contactId) => {
 };
 
 export const getContactStats = async () => {
-  const [total, newContacts, readContacts, repliedContacts, resolvedContacts] = await Promise.all([
-    contactRepository.count(),
-    contactRepository.countByStatus('new'),
-    contactRepository.countByStatus('read'),
-    contactRepository.countByStatus('replied'),
-    contactRepository.countByStatus('resolved'),
-  ]);
+  const [total, newContacts, readContacts, repliedContacts, resolvedContacts] =
+    await Promise.all([
+      contactRepository.count(),
+      contactRepository.countByStatus("new"),
+      contactRepository.countByStatus("read"),
+      contactRepository.countByStatus("replied"),
+      contactRepository.countByStatus("resolved"),
+    ]);
 
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
@@ -130,4 +141,3 @@ export const getContactStats = async () => {
     recent: recentContacts,
   };
 };
-

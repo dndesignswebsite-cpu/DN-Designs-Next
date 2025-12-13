@@ -11,7 +11,8 @@ export const getAllEmailGroups = async (filters = {}) => {
   const filter = {};
 
   if (filters.type) filter.type = filters.type.toLowerCase();
-  if (filters.isActive !== undefined) {
+  // Only filter by isActive if explicitly provided (not null/undefined)
+  if (filters.isActive !== undefined && filters.isActive !== null) {
     filter.isActive = filters.isActive === "true" || filters.isActive === true;
   }
 
@@ -56,7 +57,9 @@ export const createEmailGroup = async (emailData) => {
   }
 
   if (!emails || !Array.isArray(emails) || emails.length === 0) {
-    throwError("At least one email address is required", 400, { function: "createEmailGroup" });
+    throwError("At least one email address is required", 400, {
+      function: "createEmailGroup",
+    });
   }
 
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -86,7 +89,9 @@ export const updateEmailGroup = async (emailId, updateData) => {
     }
 
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    const invalidEmails = updateData.emails.filter((email) => !emailRegex.test(email));
+    const invalidEmails = updateData.emails.filter(
+      (email) => !emailRegex.test(email)
+    );
     if (invalidEmails.length > 0) {
       throwError(`Invalid email addresses: ${invalidEmails.join(", ")}`, 400, {
         function: "updateEmailGroup",
@@ -95,7 +100,9 @@ export const updateEmailGroup = async (emailId, updateData) => {
       });
     }
 
-    updateData.emails = updateData.emails.map((email) => email.toLowerCase().trim());
+    updateData.emails = updateData.emails.map((email) =>
+      email.toLowerCase().trim()
+    );
   }
 
   return await emailRepository.updateById(emailId, updateData);
@@ -116,24 +123,41 @@ export const addEmailToGroup = async (type, emailAddress) => {
     });
   }
 
-  return await emailRepository.addEmailToGroup(type, emailAddress.toLowerCase().trim());
+  return await emailRepository.addEmailToGroup(
+    type,
+    emailAddress.toLowerCase().trim()
+  );
 };
 
 export const removeEmailFromGroup = async (type, emailAddress) => {
-  return await emailRepository.removeEmailFromGroup(type, emailAddress.toLowerCase().trim());
+  return await emailRepository.removeEmailFromGroup(
+    type,
+    emailAddress.toLowerCase().trim()
+  );
 };
 
-export const sendPromotionalEmailToGroup = async (groupType, subject, content, isHtml = null) => {
+export const sendPromotionalEmailToGroup = async (
+  groupType,
+  subject,
+  content,
+  isHtml = null
+) => {
   if (!groupType) {
-    throwError("Email group type is required", 400, { function: "sendPromotionalEmailToGroup" });
+    throwError("Email group type is required", 400, {
+      function: "sendPromotionalEmailToGroup",
+    });
   }
 
   if (!subject) {
-    throwError("Email subject is required", 400, { function: "sendPromotionalEmailToGroup" });
+    throwError("Email subject is required", 400, {
+      function: "sendPromotionalEmailToGroup",
+    });
   }
 
   if (!content) {
-    throwError("Email content is required", 400, { function: "sendPromotionalEmailToGroup" });
+    throwError("Email content is required", 400, {
+      function: "sendPromotionalEmailToGroup",
+    });
   }
 
   const emailGroup = await emailRepository.findByType(groupType);
@@ -160,7 +184,12 @@ export const sendPromotionalEmailToGroup = async (groupType, subject, content, i
   }
 
   try {
-    const result = await sendPromotionalEmail(emailGroup.emails, subject, content, isHtml);
+    const result = await sendPromotionalEmail(
+      emailGroup.emails,
+      subject,
+      content,
+      isHtml
+    );
 
     return {
       success: true,
@@ -179,4 +208,3 @@ export const sendPromotionalEmailToGroup = async (groupType, subject, content, i
     throw error;
   }
 };
-

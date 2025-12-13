@@ -4,27 +4,29 @@
  * POST /api/emails - Create new email group (Admin only)
  */
 
-import { NextResponse } from 'next/server';
-import connectDB from '@/lib/config/database.js';
-import * as emailService from '@/lib/services/emailService.js';
-import { withAuth } from '@/lib/middleware/auth.js';
-import { handleError } from '@/lib/middleware/errorHandler.js';
+import { NextResponse } from "next/server";
+import connectDB from "@/lib/config/database.js";
+import * as emailService from "@/lib/services/emailService.js";
+import { withAuth } from "@/lib/middleware/auth.js";
+import { handleError } from "@/lib/middleware/errorHandler.js";
 
 export async function GET(request) {
   try {
     await connectDB();
-    
-    const authResult = await withAuth(request, 'admin');
+
+    const authResult = await withAuth(request, "admin");
     if (authResult.error) {
-      return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
+      return NextResponse.json(authResult.error.body, {
+        status: authResult.error.statusCode,
+      });
     }
 
     const { searchParams } = new URL(request.url);
-    
-    const filters = {
-      type: searchParams.get('type'),
-      isActive: searchParams.get('isActive'),
-    };
+
+    const filters = {};
+    if (searchParams.get("type")) filters.type = searchParams.get("type");
+    if (searchParams.get("isActive"))
+      filters.isActive = searchParams.get("isActive");
 
     const emailGroups = await emailService.getAllEmailGroups(filters);
 
@@ -42,10 +44,12 @@ export async function GET(request) {
 export async function POST(request) {
   try {
     await connectDB();
-    
-    const authResult = await withAuth(request, 'admin');
+
+    const authResult = await withAuth(request, "admin");
     if (authResult.error) {
-      return NextResponse.json(authResult.error.body, { status: authResult.error.statusCode });
+      return NextResponse.json(authResult.error.body, {
+        status: authResult.error.statusCode,
+      });
     }
 
     const body = await request.json();
@@ -54,7 +58,7 @@ export async function POST(request) {
     return NextResponse.json(
       {
         success: true,
-        message: 'Email group created successfully',
+        message: "Email group created successfully",
         data: emailGroup,
       },
       { status: 201 }
@@ -64,4 +68,3 @@ export async function POST(request) {
     return NextResponse.json(body, { status: statusCode });
   }
 }
-
