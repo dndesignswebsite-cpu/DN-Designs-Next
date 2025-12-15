@@ -5,9 +5,9 @@
  * Supports: Images (JPG, PNG, GIF, WebP) and Videos (MP4, MOV, AVI, MKV, WebM)
  */
 
-import fs from "fs";
-import path from "path";
-import crypto from "crypto";
+import fs from "node:fs";
+import path from "node:path";
+import crypto from "node:crypto";
 import { logError } from "@/lib/middleware/errorHandler.js";
 
 // Base upload directory (inside public folder for static serving)
@@ -36,17 +36,21 @@ const ALLOWED_VIDEO_TYPES = [".mp4", ".mov", ".avi", ".mkv", ".webm", ".m4v"];
 
 /**
  * Ensure upload directories exist
+ * Lazy initialization: Only called when trying to upload.
  */
 const ensureDirectories = () => {
-  Object.values(UPLOAD_DIRS).forEach((dir) => {
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-  });
+  try {
+    Object.values(UPLOAD_DIRS).forEach((dir) => {
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+    });
+  } catch (error) {
+    // Log but don't crash. If we are in restricted env, this will fail.
+    // The subsequent write attempt will likely fail too and be caught there.
+    console.error("Warning: Failed to ensure directories:", error.message);
+  }
 };
-
-// Initialize directories on module load
-ensureDirectories();
 
 /**
  * Generate unique filename
@@ -179,9 +183,9 @@ const getPublicUrl = (relativePath) => {
  * @returns {Promise<Object>} Upload result with secure_url and public_id
  */
 export const uploadFileBuffer = async (buffer, options = {}) => {
-  try {
-    ensureDirectories();
+  ensureDirectories();
 
+  try {
     // Detect file type
     const { extension, type } = getFileTypeFromBuffer(buffer);
 
