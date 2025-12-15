@@ -2,8 +2,7 @@
  * Login API Route
  * POST /api/auth/login
  */
-export const runtime = "nodejs";
-// 
+
 import { NextResponse } from 'next/server';
 import connectDB from '@/lib/config/database.js';
 import * as authService from '@/lib/services/authService.js';
