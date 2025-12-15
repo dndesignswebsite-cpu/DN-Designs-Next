@@ -1,0 +1,31 @@
+.BlogFormTempOne{
+        padding: 10px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea{
+        background-color: #ffffff;
+    border-color: #444444;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.input-grp{
+    display: flex;
+}
+
+.sbmt-button-blog-frm{
+    background-color: #ca2734;
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    letter-spacing: 0.1px;
+    font-family: "Roboto";
+}
