@@ -147,5 +147,57 @@ font-weight: 600;
     }
     }
 
+    .website-design-video-swipper{
+        padding: 80px 10px;
+
+    }
+    .website-design-video-swipper h2{
+        font-size: 40px;
+        font-family: "Corbert";
+        color: #000;
+        text-align: center;
+    }
+
+
+    .custom-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 50px 50px;
+    }
+
+    .custom-buttons button{
+        border: none;
+        background-color: #fff;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+        color: var(--heading-main-color);
+    }
+
+
+    @media(max-width:767px){
+        .custom-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 10px;
+    }
+
+      .custom-buttons button{
+        border: none;
+        background-color: #fff;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+        color: var(--heading-main-color);
+    }
+    }
+
+    .custom-buttons button.active {
+  color: #ca2734;
+}
 
 
