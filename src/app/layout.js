@@ -12,6 +12,11 @@ const corbert = localFont({
   variable: "--font-corbert",
 });
 
+const corbertBold = localFont({
+  src: "../../public/fonts/Corbert-Bold.woff2",
+  variable: "--font-corbert-bold",
+});
+
 const roboto = localFont({
   src: "../../public/fonts/Roboto-Regular.woff2",
   variable: "--font-roboto",
@@ -59,7 +64,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${corbert.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}>
       <body>
         {/* JSON-LD Organization Schema*/}
         <Script

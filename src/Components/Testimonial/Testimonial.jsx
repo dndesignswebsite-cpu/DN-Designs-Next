@@ -50,7 +50,7 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 fw-bold mb-0">
+                          <h2 className="fs-4 mb-0">
                             Mr. Bhagwat Aggarwal
                           </h2>
                           <p className="fs-6 opacity-75">

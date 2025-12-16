@@ -1,14 +1,19 @@
+
+.every-pr {
+  color: var(--heading-highlite-color);
+}
 .our-work{
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .our-work h2{
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .imag-cont {

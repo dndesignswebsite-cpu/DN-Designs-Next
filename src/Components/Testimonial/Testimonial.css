@@ -7,13 +7,19 @@
 }
 
 .testimonial-swiper{
-  max-width: 1100px;
+  max-width: 1200px;
+}
+.swiper-slide{
+ padding: 10px 10px;
 }
 
 .testi-slide {
   /* min-height: 200px; */
   /* max-width: 1300px; */
   margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.2) !important;
+
 }
 
 .testi-left-content {
@@ -48,7 +54,7 @@
 
 .testi-left-content h3 {
   font-size: 26px;
-  font-weight: bold;
+  font-weight:300;
   line-height: 1.2;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -75,8 +81,21 @@
 
 .founder-name {
   margin-left: 30px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
 }
+.founder-name h2{
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  font-size: 30px !important;
+  padding-bottom: 10px;
+}
+.founder-name p{
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+
 
 .testi-main-img img {
   width: 100%;
@@ -94,7 +113,7 @@
   text-align: center;
   font-size: 20px;
   line-height: 1.6em;
-  padding: 50px;
+  padding: 10px;
   border-radius: 0 0 10px 10px;
   background-color: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -155,6 +174,8 @@
 }
 
 @media (max-width: 767px) {
+
+  
   .testi-slide {
     max-height: 1000px;
   }
@@ -209,23 +230,28 @@
 }
 
 @media (max-width: 768px) {
+  .swiper-slide{
+ padding: 5px 5px;
+}
   .testimonial-swiper .swiper-button-next {
     right: 10px;
+    top: 85%;
   }
   .testimonial-swiper .swiper-button-prev {
     left: 10px;
+    top: 85%;
   }
 }
 
 @media (max-width: 991px) {
   .testimonial-swiper .swiper-button-next {
     right: 40%;
-    top: 80%;
+    top: 85%;
   }
 
   .testimonial-swiper .swiper-button-prev {
     left: 40%;
-    top: 80%;
+    top: 85%;
   }
 
   .testimonial {
@@ -234,6 +260,13 @@
 }
 
 @media(max-width:767px){
+  .testi-left-content h3 {
+  font-size: 20px;
+}
+.testi-left-content{
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
   .custom-swiper {
   padding-bottom: 80px;
 }
@@ -245,15 +278,29 @@
 
 
 @media (max-width: 442px) {
+
+  .founder-name h2{
+    position: absolute;
+    top:210px;
+    
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  font-size: 20px !important;
+  padding-bottom: 10px;
+}
+.founder-name p{
+    position: absolute;
+    top:240px
+}
   .testimonial-swiper .swiper-button-next {
     right: 35%;
-    top: 80%;
+    top: 85%;
     
   }
 
   .testimonial-swiper .swiper-button-prev {
     left: 35%;
-    top: 80%;
+    top: 85%;
   }
 
   .custom-swiper {

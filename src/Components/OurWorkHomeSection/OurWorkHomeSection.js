@@ -5,7 +5,7 @@ export default function  OurWorkHomeSection() {
   return (
     <section className="our-work">
       <div className="container-fluid">
-        <h2 className="text-center mb-4">Our Work</h2>
+        <h2 className="text-center mb-4">Our <span className="every-pr">Work</span></h2>
 
         
         <div id="always-visible">

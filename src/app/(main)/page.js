@@ -64,7 +64,7 @@ export default function Home() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1 className="heading-corbert">We Build Brands That Inspire Confidence and Drive Profit</h1>
+              <h1>We Build Brands That Inspire Confidence and Drive Profit</h1>
               <p className="para-roboto">Let’s collaborate and craft a truly standout brand for you.</p>
               <div>
                 {/* <button>Talk To Us</button>
@@ -193,7 +193,7 @@ export default function Home() {
       <section className={`${styles["mobile-view-our-brand"]}`}>
         <div className="container">
           <div className="row">
-            <h2 className={`${styles["our-brand-heading"]} text-center heading-corbert`}>Our Brand Journals</h2>
+            <h2 className={`${styles["our-brand-heading"]} text-center heading-corbert`}>Our <span className={`${styles["every-pr"]}`}>Brand Journals</span></h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
