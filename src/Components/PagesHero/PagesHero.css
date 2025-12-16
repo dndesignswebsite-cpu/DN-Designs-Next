@@ -1,20 +1,26 @@
 .pages-hero {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 
 .pages-hero h1 {
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 62px;
   color: var(--heading-main-color);
   padding-bottom:10px ;
 }
 
 .pages-hero h3 {
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 35px;
   color: var(--heading-main-color);
 }
 
 .pages-hero p {
+  font-family: var(--font-roboto);
+  font-weight: 500;
   margin-top: 30px;
   color: var(--heading-main-color);
   line-height: 1.7em;

@@ -128,7 +128,7 @@ export default function Header() {
                     </li>
                     <li>
                       <Link
-                        href="/about"
+                        href="/about-us"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]}`}
                       >
@@ -566,7 +566,7 @@ export default function Header() {
                         </li>
                         <li>
                           <Link
-                            href="/about"
+                            href="/about-us"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >

@@ -1,4 +1,8 @@
 /* Projects Completed 300+ Successfully delivered across industries */
+
+.projects-completed{
+  padding: 40px 0px;
+}
 .projects-completed img{
   height: 100%;
   width: 100%;
@@ -24,23 +28,25 @@
   font-size: 43px;
   color: var(--heading-highlite-color);
   font-family: var(--font-corbert);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
+  padding-bottom: 7px;
 }
 
 .projects-completed-div h4{
-  font-size: 18px;
+  font-size: 20px;
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
-  font-weight: 700;
+  font-family: var(--font-corbert-bold);
+  font-weight: 600;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
   font-family: var(--font-roboto);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -73,23 +79,6 @@
   padding-bottom: 20px;
 }
 
-.appr-pro .appr-pro-main-head {
-  font-size: 56px;
-  font-family: var(--font-corbert);
-  font-weight: 700;
-  padding-bottom: 15px;
-}
-
-.appr-pro-main-para {
-  margin-top: 10px;
-  color: var(--heading-main-color);
-  line-height: 32px;
-  font-size: 18px;
-  width: 100%;
-  font-family: var(--font-roboto);
-  margin-bottom: 40px;
-}
-
 .every-pr {
   color: var(--heading-highlite-color);
 }
@@ -111,7 +100,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 20px;
   border-radius: 10px;
   height: 100%;
 }
@@ -124,15 +113,15 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
- font-family: var(--font-corbert);
-  font-weight: 500;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
   font-size: 16px;
   line-height: 1.2em;
-  font-weight: 300;
+  font-weight: 400;
  font-family: var(--font-roboto);
 }
 
@@ -164,8 +153,8 @@
 .app-pro-div-first h3{
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert);
-  font-weight: 500;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   color: var(--heading-highlite-color);
 }
 
