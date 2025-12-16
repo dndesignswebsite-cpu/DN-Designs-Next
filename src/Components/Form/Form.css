@@ -118,7 +118,7 @@
 .form-main-content p{
        font-family: var(--font-roboto);
         color: var(--heading-main-color);
-        line-height: 32px;
+        line-height:1.6em;
         font-weight: 400;
         font-size: 18px;
 }

@@ -2,15 +2,15 @@
 
 .our-work-tab{
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 .headg {
   padding-bottom: 50px;
 }
 
 .our-work-tab h2 {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
 }
 
@@ -28,8 +28,10 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 22px;
-  font-family: var(--font-corbert);
+  font-size: 20px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: #54595F;
 }
 
 .tab button:hover {
@@ -52,7 +54,7 @@
   border-radius: 8px 8px 8px 8px;
 }
 
-.explore-more button {
+/* .explore-more button {
     margin-top: 30px;
   background-color: var(--heading-highlite-color);
   font-family: var(--font-roboto);
@@ -62,7 +64,7 @@
   border: none;
   font-size: 18px;
   font-weight: 400;
-}
+} */
 
 @media (max-width: 767px) {
   .our-work-tab h2 {
@@ -73,8 +75,8 @@
     font-size: 18px;
   }
 
-  .explore-more button {
+  /* .explore-more button {
     font-size: 16px;
     padding: 12px 40px 12px 40px;
-  }
+  } */
 }

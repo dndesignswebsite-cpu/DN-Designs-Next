@@ -169,7 +169,7 @@
 /* We have got a dedicated team to support you and your vision */
 
 .dedicated-team{
-  padding:50px 0px;
+  padding:50px 20px;
 }
 
 
@@ -183,7 +183,7 @@
 
 .dedicated-team-hedg h2{
   font-size: 50px;
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   color: var(--heading-main-color);
   width: 70%;
   text-align: center;
@@ -202,6 +202,10 @@
 }
 
 @media(max-width:767px){
+
+  .dedicated-team{
+  padding:30px 20px;
+}
   .dedicated-team-hedg h2{
         font-size: 30px;
         width: 100%;
@@ -211,6 +215,10 @@
 
 /*.....points-about...... */
 
+
+.point{
+  padding: 30px 0px;
+}
 .point-cont{
   width: 1300px;
 }
@@ -234,7 +242,7 @@
 
 
 .points-about-right h2 {
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 180px;
   font-weight: 700;
   color: var(--heading-main-color);
@@ -243,7 +251,7 @@
 }
 .points-about-right h3 {
   color: var(--heading-main-color);
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-size: 25px;
   font-weight: 700;
   
