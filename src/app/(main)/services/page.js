@@ -506,7 +506,7 @@ const para = "Successful brands are not made in a day. They are a result of cons
       <section className="faqs">
         <div className="container">
           <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
+            <h2>Frequently <span className="every-pr">Asked Questions</span></h2>
           </div>
         </div>
 
