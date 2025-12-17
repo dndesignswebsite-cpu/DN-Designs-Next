@@ -472,24 +472,24 @@
 }
 #card2-create {
   --index: 2;
-  top: 250px;
+  top: 240px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 290px;
+  top: 270px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 330px;
+  top: 300px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 370px;
+  top: 330px;
   margin-top: 20px;
 }
 
@@ -612,7 +612,7 @@
 
 .our-brand-heading-a-mobile{
   color: var(--heading-main-color);
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2em;

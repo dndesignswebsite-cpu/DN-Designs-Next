@@ -515,7 +515,7 @@ function page() {
 
       {/* From Research to Design How We Create Your Logo desktop view */}
       <section className="creating-your-brand">
-        <div class="container sticky-con">
+        <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
             From Research to Design
             <span className="every-pr">
@@ -524,8 +524,8 @@ function page() {
             </span>
           </h2>
           <ul id="cards-create">
-            <li class="card-create" id="card1-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
                   <h2>Evaluate and Understand the Brand</h2>
@@ -544,8 +544,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card2-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
                   <h2>Research The Industry</h2>
@@ -564,8 +564,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card3-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
                   <h2>Determine Logo Placement Needs</h2>
@@ -582,8 +582,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card4-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
                   <h2>Brainstorm & Sketch Creative Concepts</h2>
@@ -601,8 +601,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card5-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
                   <h2>Digitise the Shortlisted Concepts</h2>
@@ -619,8 +619,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card6-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card6-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
                   <h2>Ask For Feedback & Review</h2>
@@ -636,8 +636,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card7-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card7-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
                   <h2>Deliver The Final Logo</h2>
@@ -795,16 +795,16 @@ function page() {
 
       {/* Types of Brand  */}
       <section>
-        <div class="container logo-brand-parent">
-          <h2 class="text-center brand-logo-heading">
+        <div className="container logo-brand-parent">
+          <h2 className="text-center brand-logo-heading">
             Types of Brand Identity{" "}
             <span className="red-headg">Logos We Design</span>
           </h2>
-          <div class="row logo-brand1">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="logo-brand-title">Monogram</h2>
-              <h6 class="logo-type">Lettermark</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand1">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Monogram</h2>
+              <h6 className="logo-type">Lettermark</h6>
+              <p className="logo-brand-paragraph">
                 This combines the initial letters of the brand name to create an
                 abbreviated version. Think of ESPN (Entertainment and Sports
                 Programming Network) and P&G (Procter & Gamble). Companies with
@@ -812,76 +812,76 @@ function page() {
                 compact and memorable.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-12 com-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-12 com-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/16.png"
                     alt="HBO logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/13.png"
                     alt="IBM logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/8.png"
                     alt="NASA logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand2">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">Wordmarks</h2>
-              <h6 class="logo-type">Logotype</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand2">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Wordmarks</h2>
+              <h6 className="logo-type">Logotype</h6>
+              <p className="logo-brand-paragraph">
                 This comprises solely the brand name. Examples include Google,
                 L’oreal and ebay. Brands with concise names and a strong persona
                 pick this type of logo. Custom typography and styling that
                 reflect brand identity make these logos memorable.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/22.png"
                     alt="Visa logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/18.png"
                     alt="Coca-Cola logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/4.png"
                     alt="Google logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand3">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">Pictorial</h2>
-              <h6 class="logo-type">Brandmark/Symbol</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand3">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Pictorial</h2>
+              <h6 className="logo-type">Brandmark/Symbol</h6>
+              <p className="logo-brand-paragraph">
                 As per its name, this type of logo draws on graphics, images,
                 icons and symbols from the real world. The best example of this
                 is Apple. This type of logo is best when brands can find
@@ -890,38 +890,38 @@ function page() {
                 recognise.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/2-1.png"
                     alt="Apple logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/9.png"
                     alt="X logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/14.png"
                     alt="Pinterest logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand4">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">Abstract</h2>
-              <h6 class="logo-type">Represent Your Brand</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand4">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Abstract</h2>
+              <h6 className="logo-type">Represent Your Brand</h6>
+              <p className="logo-brand-paragraph">
                 In contrast to pictorial logos that use images from the real
                 world, abstract logos use geometric shapes and colours to convey
                 the right message and emotion. Few brands that use this type of
@@ -930,38 +930,38 @@ function page() {
                 thus has a global appeal) opt for an abstract logo.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/15.png"
                     alt="adidas logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/11.png"
                     alt="BP logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/7.png"
                     alt="Pepsi logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand5">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">Mascots</h2>
-              <h6 class="logo-type">Characters</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand5">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Mascots</h2>
+              <h6 className="logo-type">Characters</h6>
+              <p className="logo-brand-paragraph">
                 Brands that want to evoke a more fun and friendly emotion opt
                 for this type of logo. Remember the logos of KFC and Amul? This
                 type of logo has an illustrated character that represents the
@@ -969,38 +969,38 @@ function page() {
                 customers.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/5.png"
                     alt="KFC logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/19.png"
                     alt="Pringles logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/1-1.png"
                     alt="Amul logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand6">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">Combination</h2>
-              <h6 class="logo-type">Text and Pictures</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand6">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">Combination</h2>
+              <h6 className="logo-type">Text and Pictures</h6>
+              <p className="logo-brand-paragraph">
                 This logo combines text with symbol, image, mascot and shape to
                 create a unique identity for the brand. It is adaptable, giving
                 brands a scope to split the main logo and carve out variations
@@ -1008,38 +1008,38 @@ function page() {
                 and Burger King.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/3.png"
                     alt="Doritos logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/12.png"
                     alt="Burger King logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/17.png"
                     alt="Lacoste logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row logo-brand7">
-            <div class="col-12 col-lg-5 col-md-12">
-              <h2 class="fw-bold logo-brand-title">The Emblem</h2>
-              <h6 class="logo-type">Badge</h6>
-              <p class="logo-brand-paragraph">
+          <div className="row logo-brand7">
+            <div className="col-12 col-lg-5 col-md-12">
+              <h2 className="logo-brand-title">The Emblem</h2>
+              <h6 className="logo-type">Badge</h6>
+              <p className="logo-brand-paragraph">
                 Businesses that wish to convey an air of legacy, prestige and
                 tradition usually go for an emblem logo. These logos include a
                 shape that encompasses text, image or symbol. Some of the best
@@ -1047,27 +1047,27 @@ function page() {
                 Harvard University and Oxford University.
               </p>
             </div>
-            <div class="col-12 col-lg-7 col-md-12 logo-list">
-              <div class="row logo-brand-row">
-                <div class="col-4 col-lg-4 col-md-4">
+            <div className="col-12 col-lg-7 col-md-12 logo-list">
+              <div className="row logo-brand-row">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/logo.png"
                     alt="Harley-Davidson logo"
-                    class="img-fluid logo"
+                    className="img-fluid logo"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/6.png"
                     alt="Harvard logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-4 col-lg-4 col-md-4">
+                <div className="col-4 col-lg-4 col-md-4">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2024/09/21.png"
                     alt="Starbucks logo"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
@@ -1078,9 +1078,9 @@ function page() {
 
       {/* The Wow-Making */}
       <section>
-        <div class="container logo-design-parent ">
+        <div className="container logo-design-parent ">
           <div className="row text-center">
-            <h2 class="text-center  logo-design-heading">
+            <h2 className="text-center  logo-design-heading">
               The Wow-Making Elements Of
               <span className="red-headg">
                 <br /> Professional Logo Design
@@ -1088,37 +1088,37 @@ function page() {
             </h2>
           </div>
 
-          <div class="row logo-design-section">
-            <div class="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
+          <div className="row logo-design-section">
+            <div className="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
               <img
                 src="https://dndesigns.co.in/wp-content/uploads/2025/04/1-3.jpg"
                 alt="Nectarpure"
-                class="img-fluid logo-design-img"
+                className="img-fluid logo-design-img"
               />
 
               <img
                 src="https://dndesigns.co.in/wp-content/uploads/2019/02/nec.jpg"
                 alt="Slide Overlay"
-                class="img-fluid logo-overlay-img"
+                className="img-fluid logo-overlay-img"
               />
             </div>
 
-            <div class="col-lg-4 col-md-5 mb-sm-4 image-stack">
-              <div class="row">
-                <div class="col-lg-12">
+            <div className="col-lg-4 col-md-5 mb-sm-4 image-stack">
+              <div className="row">
+                <div className="col-lg-12">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2025/06/wordmark-2048x1078.png"
                     alt=""
-                    class="img-fluid logo-design-img2"
+                    className="img-fluid logo-design-img2"
                   />
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
+              <div className="row">
+                <div className="col-lg-12">
                   <img
                     src="https://dndesigns.co.in/wp-content/uploads/2025/06/nectarpure-1-2048x1078.jpg"
                     alt=""
-                    class="img-fluid logo-design-img2"
+                    className="img-fluid logo-design-img2"
                   />
                 </div>
               </div>
