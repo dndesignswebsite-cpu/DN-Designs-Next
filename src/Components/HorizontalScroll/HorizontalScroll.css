@@ -84,7 +84,8 @@
 .overlay-content-pure p{
   font-family: var(--font-roboto);
   font-size: 18px;
-  margin-left:10px 20px;
+  margin-left:20px;
+  margin-top: 10px;
 }
 
 .overlay-content-pure button{

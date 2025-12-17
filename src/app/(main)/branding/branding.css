@@ -24,16 +24,16 @@
 }
 
 .portfolio {
-  padding: 50px 10px 30px 10px;
+  padding: 80px 10px 30px 10px;
 }
 
 .portfolio h2 {
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .every-pr {
@@ -50,7 +50,7 @@
   border-width: 1px 1px 1px 1px;
   border-color: var(--heading-highlite-color);
   border-radius: 6px 6px 6px 6px;
-  padding: 10px;
+  padding: 7px 20px;
   font-family: var(--font-roboto);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -79,13 +79,15 @@
 }
 .port-div-headg h3 {
   color: var(--heading-highlite-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 32px;
 }
 
 .port-content p {
   color: #888888; 
   font-family: var(--font-roboto);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.4em;
   padding-top: 5px;
@@ -93,9 +95,14 @@
 }
 
 @media (max-width: 768px) {
+  
+  .portfolio {
+  padding: 50px 10px 30px 10px;
+}
 
   .portfolio h2 {
   font-size: 40px;
+  padding-bottom: 30px;
 }
   .our-port-btn-up button {
     font-size: 14px;
@@ -164,7 +171,8 @@
 
 .branding-that-breaks h2{
   font-size: 50px;
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
+ font-weight: 700;
 }
 
 .mobile-view-our-brand{
@@ -190,15 +198,19 @@
 }
 
 .mobile-view-our-brand h2{
-  font-size: 40px;
-  font-family: var(--font-corbert);
+  font-size: 35px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   color: #000;
+  padding-bottom: 20px;
 }
 
 .mobile-view-our-brand-h3 {
   color: var(--heading-highlite-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 32px;
+  padding-bottom: 8px;
 }
 
 .our-brand-mobile-all-div{
@@ -257,8 +269,10 @@
 .our-brand-mobile-div-content p{
       color: #888888;
     font-family: var(--font-roboto);
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.4em;
+    padding-top: 10px;
 }
 
 @media(max-width:767px){
@@ -358,11 +372,11 @@
 }
 
 .branding-identity{
-  padding: 50px 0px 40px 0px;
+  padding: 20px 0px 40px 0px;
 }
 .branding-identity h2{
    color: var(--heading-main-color);
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -388,13 +402,14 @@
       color: var(--heading-main-color);
     font-family: var(--font-corbert);
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 5px 10px;
 }
 
 .identity-div-content p{
   color: #888888;
     font-family: var(--font-roboto);
+      font-weight: 500;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 10px;
@@ -421,13 +436,13 @@
 /* marque */
 
 .marque-sec{
-  padding-top:30px;
-  padding-bottom: 30px;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 
 .noun-mar{
           vertical-align: middle;
-       font-family: var(--font-corbert);
+       font-family: var(--font-corbert-bold);
         font-weight: 700;
         font-size: 150px;
         padding: 40px 0px 40px 0px;
@@ -447,7 +462,7 @@
 
 /* creating-your-brand desktop view*/
 .creating-your-brand{
-  padding: 50px 0;
+  padding: 30px 0px 50px 0px;
 }
 
 #card1-create {
@@ -482,7 +497,7 @@
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 40px;
+  border-radius: 20px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -500,7 +515,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  padding: 0;
+  padding: 0px 0px 0px 0px;
   position: relative; 
   display: flex;
   align-items: center;
@@ -513,7 +528,7 @@
   padding: 30px 0;
   text-align: center;
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
@@ -532,21 +547,23 @@
 
 .create-number{
   color: var(--heading-highlite-color);
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 85px;
     font-weight: 700;
 }
 
 .card-body-create h2{
-      color: var(--heading-main-color);
-   font-family: var(--font-corbert);
-    font-size: 38px;
+  color: var(--heading-main-color);
+   font-family: var(--font-corbert-bold);
+    font-size: 36px;
     font-weight: 700;
+    padding-bottom: 10px;
 }
 
 .card-body-create p{
       color: #888888;
    font-family: var(--font-roboto);
+   font-weight: 500;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -615,14 +632,14 @@
 
 .create-number-mobile{
   color: var(--heading-highlite-color);
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .card-body-create-mobile h2{
       color: var(--heading-main-color);
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 35px;
     font-weight: 700;
     padding: 5px 0;
@@ -631,6 +648,7 @@
 .card-body-create-mobile p{
   color: #888888;
     font-family: var(--font-roboto);
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
