@@ -1,11 +1,17 @@
-.contact-form{
+.contact-form-career{
     box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     padding: 20px;
     margin: 50px 0;
+    background-color: #E4E4E4;
 }
 .form-group {
   width: 50%;
+  margin: 20px;
+}
+
+.form-group-cover-letter{
+  width: 100%;
   margin: 20px;
 }
 
@@ -18,7 +24,7 @@
 }
 
 .required-star {
-  color:#fff;
+  color:#ca2734;
 }
 
 
@@ -26,12 +32,13 @@
 .form-group textarea {
   width: 100%;
   background-color: #F1F1F1;
-  border: none;
+  
   color: var(--heading-main-color);
   font-size:20px;
   padding: 10px 0;
  border-radius: 10px;
   padding: 5px;
+  border: 1px solid #69727d;
 }
 
 .form-group input:focus,
@@ -90,5 +97,13 @@
   .form-group {
   width: 100%;
   margin: 10px 5px;
+  
 }
+}
+
+input::placeholder, textarea::placeholder{
+  color:#69727d;
+  font-family: "Roboto";
+  font-weight: 500;
+  padding: 10px;
 }

@@ -17,7 +17,7 @@
 
 .career-tabs-links li a{
     font-size: 18px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert-bold);
     color: #fff;
 }
 
@@ -85,18 +85,21 @@
 
 .content-career-unit h2{
     font-size: 31px;
-    font-family: "Roboto";
+   font-family: var(--font-corbert-bold);
 }
 
 .content-career-unit h3{
     font-size: 18px;
     font-family: "Roboto";
-    padding: 10px 0;
+    padding-top: 20px;
+    font-weight: 500;
 }
 
 .content-career-unit p{
     font-size: 16px;
     font-family: "Roboto";
+    line-height: 1.8em;
+    padding: 20px 0;
 }
 .mobile-view{
         display:none;
@@ -113,6 +116,10 @@
         background-color: #ca2734;
         margin: 50px 0;
     }
+
+    .mobile-container-career{
+        padding: 20px;
+    }
 }
 
 
@@ -125,14 +132,16 @@ margin: 20px 0;
 
 .mobile-content-career h2{
     font-size: 30px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert-bold);
 }
 
 .mobile-content-career h3{
     font-size: 18px;
-    font-family: "Corbert";
+    font-family: var(--font-corbert-bold);
     padding: 10px 0;
 }
+
+
 
 .mobile-content-career p{
     font-size: 16px;
