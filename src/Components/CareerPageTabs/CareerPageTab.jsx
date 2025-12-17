@@ -23,8 +23,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-0"
                   aria-selected="true"
                 >
-                  1 Graphic Designer <br/>
-                  Experience 2+ years
+                  Graphic Designer
+<br/>
+                  Experience : 2+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -37,8 +38,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-1"
                   aria-selected="false"
                 >
-                  2 Web Designer <br/>
-                  Experience 2+ years
+                 Web Developer
+<br/>
+                  Experience : 1+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -51,8 +53,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-2"
                   aria-selected="false"
                 >
-                  3 UI/UX Designer <br/>
-                  Experience 2+ years
+                  UI/UX Designer
+ <br/>
+                  Experience: 2+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -65,8 +68,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-3"
                   aria-selected="false"
                 >
-                  4 UI/UX Designer <br/>
-                  Experience 2+ years
+                  Illustration Artist
+ <br/>
+                  Experience : 2+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -79,8 +83,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-4"
                   aria-selected="false"
                 >
-                  5 UI/UX Designer <br/>
-                  Experience 2+ years
+                  Motion Graphic Designer
+ <br/>
+                 Experience : 2+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -93,8 +98,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-5"
                   aria-selected="false"
                 >
-                  6 UI/UX Designer <br/>
-                  Experience 2+ years
+                  3D Artist
+ <br/>
+                  Experience : 3+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -107,8 +113,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-6"
                   aria-selected="false"
                 >
-                  7 UI/UX Designer <br/>
-                  Experience 2+ years
+                  Content Writer
+ <br/>
+                Experience : 1+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -121,8 +128,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-7"
                   aria-selected="false"
                 >
-                  8 UI/UX Designer <br/>
-                  Experience 2+ years
+                 Social Media Manager
+ <br/>
+                  Experience : 1+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -135,8 +143,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-8"
                   aria-selected="false"
                 >
-                  9 UI/UX Designer <br/>
-                  Experience 2+ years
+                  SEO Executive
+<br/>
+                  Experience : 2+ years
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -149,8 +158,10 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-9"
                   aria-selected="false"
                 >
-                  10 UI/UX Designer <br/>
-                  Experience 2+ years
+             HR Executive
+
+<br/>
+                 Experience : 2+ years
                 </a>
               </li>
             </ul>
@@ -166,7 +177,7 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-0"
               >
-                <h2>1 Graphic Designer</h2>
+                <h2>Graphic Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
                   We are seeking a talented and passionate Graphic Designer to join our creative team.
@@ -177,44 +188,41 @@ function CareerPageTab() {
                   appealing, strategic, and align with brand objectives.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create logos, packaging, and brand identity designs.<br/>
-                  Design visuals for social media, websites, and marketing campaigns.<br/>
-                  Collaborate with marketing and development teams for cohesive projects.<br/>
-                  Adapt designs for print, digital, and motion graphics.<br/>
-                  Contribute to brainstorming sessions and meet quality standards.
-                </p>
-
-
-                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create logos, packaging, and brand identity designs.<br/>
-                  Design visuals for social media, websites, and marketing campaigns.<br/>
-                  Collaborate with marketing and development teams for cohesive projects.<br/>
-                  Adapt designs for print, digital, and motion graphics.<br/>
-                  Contribute to brainstorming sessions and meet quality standards.
-                </p>
-
-
-                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create logos, packaging, and brand identity designs.<br/>
-                  Design visuals for social media, websites, and marketing campaigns.<br/>
-                  Collaborate with marketing and development teams for cohesive projects.<br/>
-                  Adapt designs for print, digital, and motion graphics.<br/>
-                  Contribute to brainstorming sessions and meet quality standards.
-                </p>
-
-
                 
-                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create logos, packaging, and brand identity designs.<br/>
-                  Design visuals for social media, websites, and marketing campaigns.<br/>
-                  Collaborate with marketing and development teams for cohesive projects.<br/>
-                  Adapt designs for print, digital, and motion graphics.<br/>
-                  Contribute to brainstorming sessions and meet quality standards.
-                </p>
+                  <ul>
+                        <li>Create logos, packaging, and brand identity designs.</li>
+
+                        <li>Design visuals for social media, websites, and marketing campaigns.</li>
+
+                        <li>Collaborate with marketing and development teams for cohesive projects.</li>
+
+                        <li>Adapt designs for print, digital, and motion graphics.</li>
+
+                        <li>Contribute to brainstorming sessions and meet quality standards.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience with a portfolio showcasing logo, packaging, and social media designs.
+                          </li>
+
+                        <li>Strong understanding of branding, typography, and design principles.</li>
+
+                        <li>Creative thinker with multitasking abilities and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe Photoshop, Illustrator, InDesign, and CorelDRAW.
+                          </li>
+
+                        <li>Knowledge of current design trends and practices.</li>
+
+                        <li>Strong organizational and communication skills.</li>
+                  </ul>
               </div>
 
               
@@ -226,21 +234,49 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-1"
               >
-                <h2>2 Web Designer</h2>
+                <h2>Web Developer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are seeking a talented and passionate Web Designer to join our creative team.
-                  You will work on a variety of web and digital design projects, collaborating closely with
-                  clients and internal teams to deliver engaging and functional websites.
+                 We are looking for a creative and skilled Web Developer to join our team. The ideal candidate will design and develop dynamic, visually appealing, and user-friendly websites that align with the latest trends and client requirements. You will work closely with designers and content creators to ensure the seamless integration of aesthetics and functionality.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create website layouts and designs.<br/>
-                  Optimize user experience and interface designs.<br/>
-                  Collaborate with developers and marketing teams.<br/>
-                  Ensure responsiveness and visual consistency.<br/>
-                  Participate in creative brainstorming sessions.
-                </p>
+                
+                  <ul>
+                        <li>Develop, design, and maintain websites using platforms like WordPress, Shopify, and WooCommerce.</li>
+
+                        <li>Implement creative layouts with a focus on functionality and user experience.</li>
+
+                        <li>Collaborate with teams to bring innovative ideas to life.</li>
+
+                        <li>Ensure websites are responsive, fast, and optimized for SEO.</li>
+
+                        <li>Stay updated with the latest web development trends and technologies.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience in web development with a strong portfolio of creative projects.
+                          </li>
+
+                        <li>Basic understanding of UI/UX principles, color schemes, and typography.</li>
+
+                        <li>Ability to balance aesthetics with functionality to meet client goals.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in WordPress, Shopify and WooCommerce.
+                          </li>
+
+                        <li>Familiarity with front-end languages like HTML, CSS, and JavaScript.</li>
+
+                        <li>Strong problem-solving and communication skills.</li>
+                           <li>Up-to-date knowledge of web trends and development tools.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 3 */}
@@ -250,21 +286,48 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-2"
               >
-                <h2>3 UI/UX Designer</h2>
+               <h2>UI/UX Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are seeking a talented UI/UX Designer to create user-friendly and visually appealing
-                  interfaces. You will work closely with developers and product teams to design digital products
-                  that meet user needs.
+                  We are seeking a talented UI/UX Designer to join our team. The ideal candidate will be responsible for designing creative and dynamic layouts, wireframes, and prototypes for websites and applications. You will work to create intuitive, visually appealing designs that offer a seamless user experience while introducing innovative and unique ideas that stand out. Collaboration with clients and internal teams will be essential to deliver designs that align with project goals and user needs.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Conduct user research and usability testing.<br/>
-                  Create wireframes, mockups, and prototypes.<br/>
-                  Collaborate with developers to implement designs.<br/>
-                  Ensure consistency in design across platforms.<br/>
-                  Keep up with latest UI/UX trends and best practices.
-                </p>
+                
+                  <ul>
+                        <li>Create layouts, wireframes, and prototypes for websites and digital platforms.</li>
+
+                        <li>Develop user-centered designs with a focus on aesthetics and functionality.</li>
+
+                        <li>Work closely with developers and designers to ensure cohesive execution.</li>
+
+                        <li>Continuously iterate and improve designs based on feedback and testing.</li>
+
+                        <li>Stay updated with the latest UI/UX design trends and technologies.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience in UI/UX design with a strong portfolio of projects.
+                          </li>
+
+                        <li>Strong understanding of color theory, typography, and design principles.</li>
+
+                        <li>Creative thinker with the ability to solve design challenges.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Figma and Adobe XD.
+                          </li>
+
+                        <li>Strong problem-solving skills and attention to detail.</li>
+
+                        <li>Up-to-date knowledge of UI/UX trends and tools.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 4 */}
@@ -274,21 +337,50 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-3"
               >
-                <h2>4 UI/UX Designer</h2>
+               <h2>Illustration Artist</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are seeking a skilled UI/UX Designer to enhance user experience for our digital products.
-                  You will collaborate with cross-functional teams to create intuitive and visually appealing
-                  interfaces.
+                  We are looking for a talented Illustration Artist to join our creative team. As an Illustration Artist, you will be responsible for designing unique and engaging illustrations, character designs, and packaging designs that bring ideas to life. You will work across various projects, creating visuals for both print and digital platforms, ensuring they meet client expectations and stand out creatively.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Design user interfaces and experiences.<br/>
-                  Create interactive prototypes.<br/>
-                  Conduct A/B testing and user research.<br/>
-                  Collaborate with developers and product managers.<br/>
-                  Maintain design systems and guidelines.
-                </p>
+                
+                  <ul>
+                        <li>Create high-quality illustrations for branding, character design, and packaging.</li>
+
+                        <li>Work on both digital and print designs with a strong understanding of visual storytelling.</li>
+
+                        <li>Collaborate with the design team to align illustrations with project goals.</li>
+
+                        <li>Experiment with colors, typography, and textures to produce original and compelling visuals.</li>
+
+                        <li>Stay updated with illustration trends and apply them to your work.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience in illustration design with a strong portfolio of creative work.
+                          </li>
+
+                        <li>Proficiency in sketching and digital illustration.</li>
+
+                        <li>Strong sense of color theory, typography, and composition.</li>
+
+                         <li>Knowledge of designing for both print and digital platforms.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Expertise in Adobe Illustrator, Photoshop, and Procreate.
+                          </li>
+
+                        <li>Basic knowledge of 3D tools like 3ds Max, Maya, Blender, and Adobe After Effects.</li>
+
+                        <li>Creativity and attention to detail.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 5 */}
@@ -298,20 +390,48 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-4"
               >
-                <h2>5 UI/UX Designer</h2>
+              <h2>Motion Graphic Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are looking for a creative UI/UX Designer to deliver exceptional digital experiences.
-                  You will focus on designing interfaces that are both functional and visually appealing.
+                 We are seeking a creative and skilled Motion Graphic Designer to join our team. In this role, you will design and create motion graphic videos, including 3D motion graphics, that bring ideas to life. You will also edit videos, ensuring high-quality visuals with smooth transitions and engaging effects. Collaboration with the team will be essential to deliver projects that are visually appealing and aligned with brand guidelines.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Develop wireframes, mockups, and prototypes.<br/>
-                  Collaborate with teams to improve UX.<br/>
-                  Ensure accessibility and usability standards.<br/>
-                  Provide design solutions aligned with business goals.<br/>
-                  Contribute to design reviews and brainstorming sessions.
-                </p>
+                
+                  <ul>
+                        <li>Design and produce motion graphic videos for various platforms.</li>
+
+                        <li>Edit and enhance video footage with a focus on frames, lighting, and transitions.</li>
+
+                        <li>Create 3D motion graphics that add depth and creativity to projects.</li>
+
+                        <li>Collaborate with the team to align visuals with client objectives.</li>
+
+                        <li>Stay updated with the latest trends in motion graphics and video editing.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience in motion graphics and video editing with a strong portfolio.
+                          </li>
+
+                        <li>Understanding of frames, lighting, colors, typography, and camera angles.</li>
+
+                        <li>Creative problem-solving skills and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe After Effects and Premiere Pro.
+                          </li>
+
+                        <li>Knowledge of 3D motion graphics tools is a plus.</li>
+
+                        <li>Strong sense of timing and visual storytelling.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 6 */}
@@ -321,20 +441,48 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-5"
               >
-                <h2>6 UI/UX Designer</h2>
+               <h2>3D Artist</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  Seeking a UI/UX Designer to craft engaging user experiences across web and mobile platforms.
-                  You will translate user needs into functional and attractive digital designs.
+                 We are looking for a highly skilled and creative 3D Artist to join our team. In this role, you will create 3D videos, character designs, and product visualizations, bringing concepts to life with compelling visuals and animations. You will play a key role in developing storyboards, designing characters, and producing high-quality 3D content for various projects.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create interactive UI designs.<br/>
-                  Conduct usability testing.<br/>
-                  Collaborate with development teams.<br/>
-                  Maintain consistency in visual elements.<br/>
-                  Keep design documentation updated.
-                </p>
+                
+                  <ul>
+                        <li>Design and produce 3D videos, including character animations and product designs.</li>
+
+                        <li>Develop storyboards and conceptualize engaging visual narratives.</li>
+
+                        <li>Work with lighting, textures, and camera angles to create realistic and visually stunning designs.</li>
+
+                        <li>Collaborate with the team to ensure designs align with client goals.</li>
+
+                        <li>Stay updated on the latest 3D design tools and trends.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience as a 3D Artist with a strong portfolio of character and product designs.
+                          </li>
+
+                        <li>Knowledge of editing, lighting, colors, typography, and camera angles.</li>
+
+                        <li>Basic understanding of character and product design principles.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in 3D Max, Maya, Blender, and Adobe Photoshop.
+                          </li>
+
+                        <li>Strong creativity, problem-solving skills, and attention to detail.</li>
+
+                        <li>Ability to manage multiple projects and meet deadlines.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 7 */}
@@ -344,20 +492,48 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-6"
               >
-                <h2>7 UI/UX Designer</h2>
+               <h2>Content Writer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are hiring a UI/UX Designer to improve product usability and aesthetics.
-                  You will work on designing user-centric interfaces that enhance overall user satisfaction.
+                  We are looking for a talented and creative Content Writer to join our team. In this role, you will craft engaging and impactful content for various platforms, including graphics, websites, blogs, and articles. Your work will help enhance our brand presence and ensure alignment with our marketing strategies. The ideal candidate will have a flair for creative writing and a basic understanding of SEO to produce high-quality, optimized content that captures attention and drives results.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Conduct user research.<br/>
-                  Design prototypes and user flows.<br/>
-                  Collaborate with developers for implementation.<br/>
-                  Ensure cross-platform consistency.<br/>
-                  Participate in design critique sessions.
-                </p>
+                
+                  <ul>
+                        <li>Develop compelling content for graphics, web pages, and marketing materials.</li>
+
+                        <li>Write SEO-friendly blogs and articles that drive organic traffic.</li>
+
+                        <li>Collaborate with designers and marketers to create cohesive campaigns.</li>
+
+                        <li>Conduct research to stay updated on trends and generate fresh ideas.</li>
+
+                        <li>Contribute to brainstorming sessions and meet quality standards.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience with a portfolio showcasing logo, packaging, and social media designs.
+                          </li>
+
+                        <li>Strong understanding of branding, typography, and design principles.</li>
+
+                        <li>Creative thinker with multitasking abilities and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe Photoshop, Illustrator, InDesign, and CorelDRAW.
+                          </li>
+
+                        <li>Knowledge of current design trends and practices.</li>
+
+                        <li>Strong organizational and communication skills.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 8 */}
@@ -367,20 +543,53 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-7"
               >
-                <h2>8 UI/UX Designer</h2>
+             <h2>Graphic Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  Looking for a UI/UX Designer to design intuitive and engaging digital interfaces.
-                  You will focus on delivering seamless experiences across web and mobile platforms.
+                  We are seeking a talented and passionate Graphic Designer to join our creative team.
+                  As a key member of our design agency, you will play a crucial role in creating innovative
+                  designs that bring client visions to life. You will work on a variety of projects,
+                  including logo design, packaging, social media content, and web design.
+                  Collaborating closely with clients and internal teams, you’ll ensure designs are visually
+                  appealing, strategic, and align with brand objectives.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Design UI components and layouts.<br/>
-                  Conduct usability testing and analysis.<br/>
-                  Work with product teams to define requirements.<br/>
-                  Ensure accessibility and responsiveness.<br/>
-                  Maintain and update design systems.
-                </p>
+                
+                  <ul>
+                        <li>Create logos, packaging, and brand identity designs.</li>
+
+                        <li>Design visuals for social media, websites, and marketing campaigns.</li>
+
+                        <li>Collaborate with marketing and development teams for cohesive projects.</li>
+
+                        <li>Adapt designs for print, digital, and motion graphics.</li>
+
+                        <li>Contribute to brainstorming sessions and meet quality standards.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience with a portfolio showcasing logo, packaging, and social media designs.
+                          </li>
+
+                        <li>Strong understanding of branding, typography, and design principles.</li>
+
+                        <li>Creative thinker with multitasking abilities and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe Photoshop, Illustrator, InDesign, and CorelDRAW.
+                          </li>
+
+                        <li>Knowledge of current design trends and practices.</li>
+
+                        <li>Strong organizational and communication skills.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 9 */}
@@ -390,20 +599,53 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-8"
               >
-                <h2>9 UI/UX Designer</h2>
+              <h2>Graphic Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  We are seeking a passionate UI/UX Designer to create impactful digital experiences.
-                  You will focus on both visual design and user experience for multiple projects.
+                  We are seeking a talented and passionate Graphic Designer to join our creative team.
+                  As a key member of our design agency, you will play a crucial role in creating innovative
+                  designs that bring client visions to life. You will work on a variety of projects,
+                  including logo design, packaging, social media content, and web design.
+                  Collaborating closely with clients and internal teams, you’ll ensure designs are visually
+                  appealing, strategic, and align with brand objectives.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Create wireframes and prototypes.<br/>
-                  Collaborate with developers and stakeholders.<br/>
-                  Conduct user testing and research.<br/>
-                  Improve usability and interface aesthetics.<br/>
-                  Follow latest design trends and best practices.
-                </p>
+                
+                  <ul>
+                        <li>Create logos, packaging, and brand identity designs.</li>
+
+                        <li>Design visuals for social media, websites, and marketing campaigns.</li>
+
+                        <li>Collaborate with marketing and development teams for cohesive projects.</li>
+
+                        <li>Adapt designs for print, digital, and motion graphics.</li>
+
+                        <li>Contribute to brainstorming sessions and meet quality standards.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience with a portfolio showcasing logo, packaging, and social media designs.
+                          </li>
+
+                        <li>Strong understanding of branding, typography, and design principles.</li>
+
+                        <li>Creative thinker with multitasking abilities and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe Photoshop, Illustrator, InDesign, and CorelDRAW.
+                          </li>
+
+                        <li>Knowledge of current design trends and practices.</li>
+
+                        <li>Strong organizational and communication skills.</li>
+                  </ul>
+              
               </div>
 
               {/* Tab 10 */}
@@ -413,20 +655,53 @@ function CareerPageTab() {
                 role="tabpanel"
                 aria-labelledby="simple-tab-9"
               >
-                <h2>10 UI/UX Designer</h2>
+               <h2>Graphic Designer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                  Hiring a UI/UX Designer to craft outstanding experiences across web and mobile platforms.
-                  You will design user interfaces that are visually appealing and intuitive.
+                  We are seeking a talented and passionate Graphic Designer to join our creative team.
+                  As a key member of our design agency, you will play a crucial role in creating innovative
+                  designs that bring client visions to life. You will work on a variety of projects,
+                  including logo design, packaging, social media content, and web design.
+                  Collaborating closely with clients and internal teams, you’ll ensure designs are visually
+                  appealing, strategic, and align with brand objectives.
                 </p>
                 <h3>What You’ll Do:</h3>
-                <p>
-                  Develop wireframes, prototypes, and final UI designs.<br/>
-                  Conduct usability testing and user research.<br/>
-                  Collaborate with developers and product teams.<br/>
-                  Ensure design consistency across platforms.<br/>
-                  Participate in brainstorming sessions and design reviews.
-                </p>
+                
+                  <ul>
+                        <li>Create logos, packaging, and brand identity designs.</li>
+
+                        <li>Design visuals for social media, websites, and marketing campaigns.</li>
+
+                        <li>Collaborate with marketing and development teams for cohesive projects.</li>
+
+                        <li>Adapt designs for print, digital, and motion graphics.</li>
+
+                        <li>Contribute to brainstorming sessions and meet quality standards.</li>
+                  </ul>
+                
+
+
+                 <h3>Requirements:</h3>
+                   <ul>
+                        <li>Proven experience with a portfolio showcasing logo, packaging, and social media designs.
+                          </li>
+
+                        <li>Strong understanding of branding, typography, and design principles.</li>
+
+                        <li>Creative thinker with multitasking abilities and attention to detail.</li>
+                  </ul>
+
+
+                 <h3>Skills:</h3>
+                 <ul>
+                        <li>Proficiency in Adobe Photoshop, Illustrator, InDesign, and CorelDRAW.
+                          </li>
+
+                        <li>Knowledge of current design trends and practices.</li>
+
+                        <li>Strong organizational and communication skills.</li>
+                  </ul>
+              
               </div>
 
             </div>
