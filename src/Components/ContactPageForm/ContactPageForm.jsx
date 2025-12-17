@@ -4,14 +4,84 @@ import React,{useState} from 'react'
 import "./ContactPageForm.css"
 
 function ContactPageForm() {
-      const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobilenumber, setMobilenumber] = useState('');
-  const [message, setMessage] = useState('');
-  const handleSubmit = (e)=>{
+     const [name, setName] = useState("");
+       const [email, setEmail] = useState("");
+       const [mobile, setMobile] = useState("");
+       const [message, setMessage] = useState("");
+       let [btn, setBtn] = useState("Send Message");
+       let [successMessage, setsuccessMessage] = useState("");
+       let pageName = "Contact Us"
+
+
+
+   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(name + "" + email + mobilenumber + message);
-  }
+
+    // VALIDATION
+    if (!name.trim()) {
+      setsuccessMessage("Name is required");
+      return;
+    }
+
+    if (!email.trim()) {
+      setsuccessMessage("Email is required");
+      return;
+    }
+
+    // MOBILE VALIDATION
+    if (!mobile.trim()) {
+      setsuccessMessage("Mobile number is required");
+      return;
+    }
+
+    if (!/^[0-9]+$/.test(mobile)) {
+      setsuccessMessage("Mobile number must contain digits only");
+      return;
+    }
+
+    if (mobile.length !== 10) {
+      setsuccessMessage("Mobile number must be exactly 10 digits");
+      return;
+    }
+
+    // MESSAGE Validation
+    if (!message.trim()) {
+      setsuccessMessage("Message is required");
+      return;
+    }
+
+    if (message.trim().length < 10) {
+      setsuccessMessage("Message must be at least 10 characters long");
+      return;
+    }
+
+    //validations passed
+    let data = { name, email, mobile, message, pageName };
+    console.log(data);
+    setBtn("Sending...");
+
+    fetch("api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, mobile, message, pageName }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success === true) {
+          setName("");
+          setEmail("");
+          setMobile("");
+          setMessage("");
+          setBtn("Send Message");
+          setsuccessMessage("Message Sent Successfully");
+        } else {
+          setBtn("Send Message");
+          setsuccessMessage("Message not sent, please try again");
+        }
+      });
+  };
   return (
     <div>
     {/* form section */}
@@ -60,8 +130,8 @@ function ContactPageForm() {
                   id="mobile-input"
                   type="tel" 
                   placeholder="Mobile No."
-                  value={mobilenumber}
-                  onChange={(e) => setMobilenumber(e.target.value)}
+                  value={mobile}
+                  onChange={(e) => setMobile(e.target.value)}
                   required
                 />
               </div>
@@ -80,9 +150,9 @@ function ContactPageForm() {
               {/* Button */}
             
               <button className="sbmt-button" type="submit">
-                READY TO START
+                {btn}
               </button>
-          
+          <p className="succes-class-form">{successMessage}</p>
             </form>
           </div>
         </div>

@@ -397,6 +397,17 @@ export default function Header() {
                        Photography
                       </Link>
                     </li>
+
+
+                     <li>
+                      <Link
+                        href="/contact-us"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]}`}
+                      >
+                       Contact Us
+                      </Link>
+                    </li>
                     
 
                    

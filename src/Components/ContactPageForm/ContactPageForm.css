@@ -107,3 +107,9 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.succes-class-form{
+  color: green;
+  font-weight: "Roboto";
+  font-size: 18px;
+  margin-top: 10px;
+}
