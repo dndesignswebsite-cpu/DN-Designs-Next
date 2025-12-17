@@ -269,9 +269,9 @@ export default function OurWorkServiceTabs() {
                 </div>
               )}
             </div>
-            <div className="explore-more text-center">
+            {/* <div className="explore-more text-center">
               <button>Explore More</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

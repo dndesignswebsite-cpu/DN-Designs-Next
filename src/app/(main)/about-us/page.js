@@ -13,27 +13,27 @@ import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 export const metadata = {
   title: "About DN Designs – Best Digital Marketing Agency",
   description: "Learn about DN Designs, our expert team, and our digital marketing services.",
-  
-  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about" }],
-  
-  alternates: { canonical: "https://dn-designs-next.vercel.app/about" },
-  
+
+  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about-us" }],
+
+  alternates: { canonical: "https://dn-designs-next.vercel.app/about-us" },
+
   robots: { index: true, follow: true, nocache: true },
-  
+
   openGraph: {
     title: "About DN Designs",
     description: "Learn about DN Designs, our expert team, and our digital marketing services.",
     url: "https://dn-designs-next.vercel.app/about",
     siteName: "DN Designs",
-    images: [{ 
-      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg", 
-      width: 1200, 
-      height: 630, 
-      alt: "About DN Designs" 
+    images: [{
+      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "About DN Designs"
     }],
     type: "website"
   },
-  
+
   twitter: {
     card: "summary_large_image",
     title: "About DN Designs",
@@ -123,45 +123,45 @@ function page() {
       <section className="appr-pro">
         <div className="container">
 
-          <div className="">
-            <div className="row appr-pro-row-main">
 
-              <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className="app-pro-div-first app-pro-div-white ">
-                  <div>
-                    <h3>Our Core Passion</h3>
-                    <div className='app-pro-div-first-btn'>
-                      <TalkToUs />
-                    </div>
+          <div className="row appr-pro-row-main">
+
+            <div className="col-12 col-md-6 col-lg-3 mt-3">
+              <div className="app-pro-div-first app-pro-div-white ">
+                <div>
+                  <h3>Our Core Passion</h3>
+                  <div className='app-pro-div-first-btn'>
+                    <TalkToUs />
                   </div>
                 </div>
               </div>
-
-              <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className=" app-pro-div app-pro-div-white">
-                  <div>
-                    <h3>Challenging Work</h3>
-                    <p>
-                      We absolutely love it when something challenging comes our way. It’s our chance to get ready for an exciting and fun-filled branding journey ahead.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className=" app-pro-div app-pro-div-white">
-                  <div>
-                    <h3>Innovation</h3>
-                    <p>
-                      ‘Let’s do something new, something out of the box’ - that’s how we approach each project. Implementing innovative designs and strategies is how we thrive and stay ahead.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+            <div className="col-12 col-md-6 col-lg-3 mt-3">
+              <div className="app-pro-div app-pro-div-gray">
+                <div>
+                  <h3>Challenging Work</h3>
+                  <p>
+                    We absolutely love it when something challenging comes our way. It’s our chance to get ready for an exciting and fun-filled branding journey ahead.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-12 col-md-6 col-lg-3 mt-3">
+              <div className=" app-pro-div app-pro-div-white">
+                <div>
+                  <h3>Innovation</h3>
+                  <p>
+                    ‘Let’s do something new, something out of the box’ - that’s how we approach each project. Implementing innovative designs and strategies is how we thrive and stay ahead.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
+
 
           <div className="row appr-pro-row-main">
             <div className="col-12 col-md-6 col-lg-3 mt-3">
@@ -282,7 +282,7 @@ function page() {
       {/* Form */}
 
       <div className="form-section">
-        <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
+        <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />
       </div>
     </div>
   )

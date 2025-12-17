@@ -163,7 +163,7 @@ function Form({ FormHead, FormPara, pageName }) {
                         placeholder="Project Details"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        rows="8"
+                        rows="6"
                       ></textarea>
                     </div>
                   </div>

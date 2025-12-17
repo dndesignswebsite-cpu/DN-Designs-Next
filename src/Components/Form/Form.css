@@ -108,7 +108,7 @@
 
 .form-main-content h3{
     color: var(--heading-main-color);
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -118,8 +118,8 @@
 .form-main-content p{
        font-family: var(--font-roboto);
         color: var(--heading-main-color);
-        line-height: 32px;
-        font-weight: 300;
+        line-height:1.6em;
+        font-weight: 500;
         font-size: 18px;
 }
 /* .form-main-content.animate{
