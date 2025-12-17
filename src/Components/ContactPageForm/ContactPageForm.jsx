@@ -11,6 +11,9 @@ function ContactPageForm() {
   const handleSubmit = (e)=>{
     e.preventDefault();
     alert(name + "" + email + mobilenumber + message);
+
+
+    
   }
   return (
     <div>

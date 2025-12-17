@@ -32,7 +32,6 @@
 .form-group textarea {
   width: 100%;
   background-color: #F1F1F1;
-  
   color: var(--heading-main-color);
   font-size:20px;
   padding: 10px 0;
