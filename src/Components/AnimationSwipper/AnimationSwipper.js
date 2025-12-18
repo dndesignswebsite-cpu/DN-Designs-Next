@@ -32,17 +32,17 @@ export default function AnimationSwipper() {
                   height="630"
                   src="https://www.youtube.com/embed/s-PQhgPFPjE"
                   title="Nectarpure - 3D Product Cinematic Video"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
                 <div className="animation-video-swipper-up">
                   <h3>NECTACPURE</h3>
-                  <button>Know More</button>
                 </div>
+                <hr className="hori-line" />
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -83,17 +83,17 @@ export default function AnimationSwipper() {
                   height="630"
                   src="https://www.youtube.com/embed/dt35fewQRho"
                   title="Cinematic 3D Brand Film for Green Horn Energy Drink | Crafted by DN Designs"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
                 <div className="animation-video-swipper-up">
                   <h3>Green Horn</h3>
-                  <button>Know More</button>
-                </div>
+                  </div>
+                  <hr className="hori-line" />
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -130,17 +130,17 @@ export default function AnimationSwipper() {
                   height="630"
                   src="https://www.youtube.com/embed/FfouzC6rBJY"
                   title="Premium 3D Render for Nature&#39;s Balance - Juices &amp; Salads | A DN Designs Project"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
                 <div className="animation-video-swipper-up">
                   <h3>Nature’s Balance</h3>
-                  <button>Know More</button>
-                </div>
+                  </div>
+                  <hr className="hori-line" />
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -180,17 +180,17 @@ export default function AnimationSwipper() {
                   height="630"
                   src="https://www.youtube.com/embed/vJMby5XhQ9Y"
                   title="3D Product Video For Water Heater EAU CHAUFFAGE"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="swipper-content-animation">
                 <div className="animation-video-swipper-up">
                   <h3>Eau-Chauffage</h3>
-                  <button>Know More</button>
-                </div>
+                  </div>
+                  <hr className="hori-line" />
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">

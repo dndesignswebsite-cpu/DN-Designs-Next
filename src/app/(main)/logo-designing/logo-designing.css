@@ -226,6 +226,7 @@
   font-family: var(--font-corbert-bold);
   font-weight: 700;
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .but-why-back-content {
@@ -241,6 +242,7 @@
   font-family: var(--font-corbert-bold);
   font-weight: 700;
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .but-why-back-content p {

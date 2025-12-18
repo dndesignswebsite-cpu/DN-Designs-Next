@@ -7,8 +7,6 @@ import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 
 
-
-
 // meta data 
 export const metadata = {
   title: "Brand Name Suggestion – DN Designs",
@@ -110,7 +108,7 @@ function page() {
         <div className="container">
           {/* 1st row */}
           <div className="row">
-            <h2 className="text-center headg">
+            <h2 className="text-center">
               Characteristics of{" "}
               <span className="every-pr"> Good Brand Name?</span>
             </h2>
@@ -224,7 +222,7 @@ function page() {
           </div>
 
           {/* 2nd row */}
-          <div className="row">
+          <div className="row  characteristics-of-good-row-2">
             <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
@@ -399,11 +397,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 

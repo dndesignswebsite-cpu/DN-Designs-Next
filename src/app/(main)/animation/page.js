@@ -8,8 +8,6 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import ExploreOurVideoAnimation from "@/Components/ExploreOurVideoAnimation/ExploreOurVideoAnimation";
 
 
-
-
 // meta data 
 export const metadata = {
   title: "Animation Services – DN Designs",
@@ -193,7 +191,7 @@ function page() {
           {/* 1st row */}
           <div className="row">
             <h2 className="text-center headg">
-              Creative & Effective<br/>
+              Creative and Effective<br/>
               <span className="every-pr"> Animated Video Solutions</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-4 px-2 characteristics-of-good-main-div">
@@ -279,7 +277,7 @@ function page() {
           </div>
 
           {/* 2nd row */}
-          <div className="row">
+          <div className="row characteristics-of-good-second-row">
             <div className="col-12 col-md-6 col-lg-4 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
@@ -451,7 +449,7 @@ function page() {
 
       {/* The Power of Animation */}
       <section className="power-of-animation">
-        <diV className="container">
+        <div className="container">
           <div className="row text-center power-of-animation-row">
             <h3>The Power of Animation</h3>
             <p>Spark Interest & Build Engagement</p>
@@ -481,7 +479,7 @@ function page() {
               </div>
             </div>
           </div>
-        </diV>
+        </div>
       </section>
 
       {/* User Engagement  User Conversion */}

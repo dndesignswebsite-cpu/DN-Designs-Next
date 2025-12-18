@@ -1,6 +1,5 @@
 import React from "react";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
-import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import "./logo-designing.css";
 import LogoDesigningTab from "@/Components/LogoDesingningTab/LogoDesigningTab";
 import Faqs from "@/Components/Faqs/Faqs";

@@ -6,9 +6,10 @@
 }
 
 .characteristics-of-good h2 {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
+  padding-bottom: 60px;
 }
 
 .characteristics-of-good p {
@@ -45,6 +46,13 @@
   transition: all 0.6s ease;
   padding: 20px 20px 10px 20px;
 }
+.characteristics-of-good-btm h3{
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  margin-bottom: 15px;
+}
 
 .characteristics-of-good-main-div {
   transition: all 0.6s ease;
@@ -61,6 +69,13 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.characteristics-of-good-back-content h3 {
+ font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
 }
 
 .characteristics-of-good-back-content p {
@@ -101,7 +116,10 @@
 
 /* Winning Brand Names - Crafted By Us */
 .winning-brand-names{
-    padding: 80px 0;
+    padding: 40px 0px 30px 0px;
+}
+.characteristics-of-good-row-2{
+  margin-top: 30px;
 }
 
 .winning-brand-names-heading-div{
@@ -111,8 +129,8 @@
 }
 
 .winning-brand-names-heading-div h2{
-    font-size: 56px;
-    font-family: var(--font-corbert);
+    font-size: 50px;
+    font-family: var(--font-corbert-bold);
     font-weight: 700;
     color: var(--heading-main-color);
 }
@@ -124,7 +142,7 @@
 }
 
 .winning-brand-names p {
-  margin-top: 20px;
+  margin-bottom: 40px;
   color: var(--heading-main-color);
   line-height: 1.7em;
   font-size: 18px;
@@ -165,12 +183,19 @@
 
 @media(max-width:767px){
   .winning-brand-names{
-    padding: 50px 0;
+    padding: 50px 0px 20px 0px;
   }
   .winning-brand-names-heading-div h2{
     font-size: 40px;
     padding-bottom: 20px;
   }
+  .winning-brand-names p {
+    margin-top: 20px;
+  margin-bottom: 40px;
+  }
+  .characteristics-of-good-row-2{
+  margin-top: 0px;
+}
 }
 
  /* faqs */
