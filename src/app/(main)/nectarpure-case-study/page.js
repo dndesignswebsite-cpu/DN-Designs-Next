@@ -49,13 +49,7 @@ function page(){
             </div>
 
             <div className="container-fluid p-0">
-                <video
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/09/1920-1.mp4"
-                    width="100%"
-                    autoPlay
-                    muted
-                    playsInline className="nectarpurecasestudy-video"
-                />
+                <iframe width="1522" height="855" src="https://www.youtube.com/embed/s-PQhgPFPjE" title="Nectarpure - 3D Product Cinematic Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
 
             <div className="container nectarpure-second">
