@@ -13,9 +13,9 @@ function CreativeBrochureDesign() {
 
        {/* Creative Brochure Design But With A Twist */}
       <section className="creative-brochure">
-      <div className="container creative-brochure-div">
+      <div className="container creative-brochure-div text-center">
        <h2>
-            Creative Brochure Design But With A Twist
+            Creative Brochure Design <span className="every-pr"> But With A Twist</span>
           </h2>
       
         <Swiper

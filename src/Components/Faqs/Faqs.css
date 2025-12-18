@@ -1,6 +1,20 @@
 
 .faq-section {
-  padding: 40px 0px 10px 0px;
+  padding: 50px 0px 40px 0px;
+}
+
+.faq-section h2 {
+    font-size: 56px;
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+    color: var(--heading-main-color);
+    padding-bottom:50px;
+}
+@media(max-width:767px){
+  .faq-section h2 {
+    font-size: 40px;
+    padding-bottom:30px;
+  }
 }
 
 .accordio-item {

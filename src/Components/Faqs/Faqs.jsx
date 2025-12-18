@@ -18,9 +18,8 @@ function AccordionItem({ question, answer, isOpen, onClick }) {
           <h3>{question}</h3>
         </div>
         <i
-          className={`icon ${
-            isOpen ? "dd" : "aa"
-          }`}
+          className={`icon ${isOpen ? "dd" : "aa"
+            }`}
         ></i>
       </button>
 
@@ -39,7 +38,7 @@ export default function Faqs({ leftFaqs, rightFaqs, title = "FAQs" }) {
     <section className="faq-section">
       <div className="container">
         <div className="row">
-
+          <h2 className="text-center">Frequently<span className="every-pr"> Asked Questions</span> </h2>
           {/* Left Column */}
           <div className="col-12 col-md-6">
             {leftFaqs.map((item, index) => (

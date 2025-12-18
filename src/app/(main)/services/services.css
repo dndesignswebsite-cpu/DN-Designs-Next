@@ -386,29 +386,3 @@
 }
 }
 
-
-
-/* faqs */
-
-.faqs{
-  padding: 60px 0px 40px 0px;
-}
-
-.faqs h2 {
-    font-size: 50px;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
-    color: var(--heading-main-color);
-    padding-bottom: 10px;
-}
-
-@media(max-width:767px){
-  .faqs h2 {
-    font-size: 40px;
-    padding: 0 10px;
-  }
-  .faqs{
-  padding: 20px 0;
-}
-}
-
