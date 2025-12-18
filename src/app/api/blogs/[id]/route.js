@@ -51,8 +51,8 @@ export async function PUT(request, { params }) {
     if (formData.has("title")) updateData.title = formData.get("title");
     if (formData.has("content")) updateData.content = formData.get("content");
     if (formData.has("excerpt")) updateData.excerpt = formData.get("excerpt");
-    if (formData.has("category"))
-      updateData.category = formData.get("category");
+    if (formData.has("primaryCategory"))
+      updateData.primaryCategory = formData.get("primaryCategory");
     if (formData.has("layout")) updateData.layout = formData.get("layout");
     if (formData.has("isPublished"))
       updateData.isPublished = formData.get("isPublished") === "true";
@@ -67,6 +67,12 @@ export async function PUT(request, { params }) {
     const tags = formData.get("tags");
     if (tags) {
       updateData.tags = tags.split(",").map((t) => t.trim());
+    }
+
+    // Handle categories
+    const categories = formData.get("categories");
+    if (categories) {
+      updateData.categories = categories.split(",").map((c) => c.trim());
     }
 
     // Handle meta keywords

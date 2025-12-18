@@ -80,7 +80,7 @@ const blogSchema = new mongoose.Schema(
         source: {
           type: String,
           enum: ["cloudinary", "youtube", "vimeo", "external"],
-          default: "cloudinary",
+          default: "youtube",
         },
       },
     ],
@@ -98,17 +98,24 @@ const blogSchema = new mongoose.Schema(
       required: true,
     },
 
-    // Tags for categorization
+    // Tags for categorization (stored as slugs)
     tags: [
       {
         type: String,
         trim: true,
-        lowercase: true,
       },
     ],
 
-    // Category of the blog post
-    category: {
+    // Categories of the blog post
+    categories: [
+      {
+        type: String,
+        trim: true,
+      },
+    ],
+
+    // Primary category for list page
+    primaryCategory: {
       type: String,
       trim: true,
       default: "General",
@@ -310,7 +317,8 @@ blogSchema.methods.incrementViews = function () {
 blogSchema.index({ author: 1 });
 blogSchema.index({ isPublished: 1, publishedAt: -1 });
 blogSchema.index({ tags: 1 });
-blogSchema.index({ category: 1 });
+blogSchema.index({ categories: 1 });
+blogSchema.index({ primaryCategory: 1 });
 
 const Blog = mongoose.models.Blog || mongoose.model("Blog", blogSchema);
 

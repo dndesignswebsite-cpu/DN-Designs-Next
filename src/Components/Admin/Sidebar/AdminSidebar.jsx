@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -12,13 +13,29 @@ import {
   faSignOutAlt,
   faBars,
   faChevronLeft,
+  faChevronRight,
   faUser,
   faCog,
+  faList,
+  faTags,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import "./AdminSidebar.css";
 
 export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
   const pathname = usePathname();
+  const [blogsOpen, setBlogsOpen] = useState(false);
+
+  // Keep blogs menu open if we are on a blog-related page
+  useEffect(() => {
+    if (
+      pathname.startsWith("/admin/blogs") ||
+      pathname.startsWith("/admin/categories") ||
+      pathname.startsWith("/admin/tags")
+    ) {
+      setBlogsOpen(true);
+    }
+  }, [pathname]);
 
   const menuItems = [
     {
@@ -29,10 +46,35 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
       show: true,
     },
     {
-      path: "/admin/blogs",
-      icon: faNewspaper,
       label: "Blogs",
+      icon: faNewspaper,
       show: true,
+      isParent: true,
+      isOpen: blogsOpen,
+      onToggle: () => setBlogsOpen(!blogsOpen),
+      subItems: [
+        {
+          path: "/admin/blogs",
+          label: "All Blogs",
+          icon: faList,
+          exact: true,
+        },
+        {
+          path: "/admin/blogs/new",
+          label: "Create New",
+          icon: faPlus,
+        },
+        {
+          path: "/admin/categories",
+          label: "Categories",
+          icon: faTags,
+        },
+        {
+          path: "/admin/tags",
+          label: "Tags",
+          icon: faTags,
+        },
+      ],
     },
     {
       path: "/admin/pages",
@@ -66,11 +108,11 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
     },
   ];
 
-  const isActive = (item) => {
-    if (item.exact) {
-      return pathname === item.path;
+  const isActive = (path, exact) => {
+    if (exact) {
+      return pathname === path;
     }
-    return pathname.startsWith(item.path);
+    return pathname.startsWith(path);
   };
 
   return (
@@ -90,20 +132,77 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
       <nav className="admin-sidebar-nav">
         {menuItems
           .filter((item) => item.show)
-          .map((item) => (
-            <Link
-              key={item.path}
-              href={item.path}
-              className={`admin-sidebar-link ${isActive(item) ? "active" : ""}`}
-              title={collapsed ? item.label : ""}
-            >
-              <FontAwesomeIcon
-                icon={item.icon}
-                className="admin-sidebar-icon"
-              />
-              {!collapsed && <span>{item.label}</span>}
-            </Link>
-          ))}
+          .map((item, index) => {
+            if (item.isParent) {
+              const anySubActive = item.subItems.some((sub) =>
+                isActive(sub.path, sub.exact)
+              );
+              return (
+                <div key={index} className="admin-sidebar-parent-group">
+                  <button
+                    className={`admin-sidebar-link has-submenu ${
+                      blogsOpen ? "open" : ""
+                    } ${anySubActive ? "active" : ""}`}
+                    onClick={item.onToggle}
+                    aria-expanded={blogsOpen}
+                  >
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      className="admin-sidebar-icon"
+                    />
+                    {!collapsed && (
+                      <>
+                        <span>{item.label}</span>
+                        <FontAwesomeIcon
+                          icon={faChevronRight}
+                          className="admin-sidebar-link-chevron"
+                        />
+                      </>
+                    )}
+                  </button>
+                  {blogsOpen && !collapsed && (
+                    <div className="admin-sidebar-submenu">
+                      {item.subItems.map((subItem) => (
+                        <Link
+                          key={subItem.path}
+                          href={subItem.path}
+                          className={`admin-sidebar-sublink ${
+                            isActive(subItem.path, subItem.exact)
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          <FontAwesomeIcon
+                            icon={subItem.icon}
+                            className="admin-sidebar-icon"
+                            style={{ fontSize: "0.8rem" }}
+                          />
+                          <span>{subItem.label}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`admin-sidebar-link ${
+                  isActive(item.path, item.exact) ? "active" : ""
+                }`}
+                title={collapsed ? item.label : ""}
+              >
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="admin-sidebar-icon"
+                />
+                {!collapsed && <span>{item.label}</span>}
+              </Link>
+            );
+          })}
       </nav>
 
       {/* User Section */}

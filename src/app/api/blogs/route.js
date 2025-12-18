@@ -76,8 +76,7 @@ export async function POST(request) {
       title: formData.get("title"),
       content: formData.get("content"),
       excerpt: formData.get("excerpt"),
-      category: formData.get("category"),
-      category: formData.get("category"),
+      primaryCategory: formData.get("primaryCategory") || "General",
       layout: formData.get("layout") || "default",
       isPublished: formData.get("isPublished") === "true",
       publishedAt: publishedAt ? new Date(publishedAt) : undefined,
@@ -87,6 +86,12 @@ export async function POST(request) {
     const tags = formData.get("tags");
     if (tags) {
       blogData.tags = tags.split(",").map((t) => t.trim());
+    }
+
+    // Handle categories
+    const categories = formData.get("categories");
+    if (categories) {
+      blogData.categories = categories.split(",").map((c) => c.trim());
     }
 
     // Handle meta keywords

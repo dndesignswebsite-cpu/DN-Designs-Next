@@ -60,7 +60,9 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Main Layout */
@@ -88,11 +90,29 @@
 /* Login Wrapper */
 .admin-login-wrapper {
   min-height: 100vh;
-  background: 
-    radial-gradient(ellipse at 20% 50%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 60% 80%, rgba(8, 145, 178, 0.1) 0%, transparent 50%),
-    linear-gradient(135deg, #0c4a6e 0%, #164e63 25%, #155e75 50%, #0e7490 75%, #0891b2 100%);
+  background: radial-gradient(
+      ellipse at 20% 50%,
+      rgba(6, 182, 212, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(14, 165, 233, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 60% 80%,
+      rgba(8, 145, 178, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #0c4a6e 0%,
+      #164e63 25%,
+      #155e75 50%,
+      #0e7490 75%,
+      #0891b2 100%
+    );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +140,7 @@
 }
 
 .admin-card-title {
-  font-family: 'Corbert-Bold', sans-serif;
+  font-family: "Corbert-Bold", sans-serif;
   font-size: 1.25rem;
   color: var(--admin-text);
   margin: 0;
@@ -135,7 +155,7 @@
 }
 
 .admin-page-title {
-  font-family: 'Corbert-Bold', sans-serif;
+  font-family: "Corbert-Bold", sans-serif;
   font-size: 1.75rem;
   color: var(--admin-text);
   margin: 0 0 8px 0;
@@ -155,7 +175,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   border: none;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -166,12 +186,20 @@
 }
 
 .admin-btn-primary {
-  background: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--admin-primary) 0%,
+    var(--admin-primary-light) 100%
+  );
   color: white;
 }
 
 .admin-btn-primary:hover {
-  background: linear-gradient(135deg, var(--admin-primary-dark) 0%, var(--admin-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--admin-primary-dark) 0%,
+    var(--admin-primary) 100%
+  );
   color: white;
 }
 
@@ -358,10 +386,18 @@
   color: white;
 }
 
-.admin-stat-icon.blue { background: var(--admin-secondary); }
-.admin-stat-icon.green { background: var(--admin-success); }
-.admin-stat-icon.orange { background: var(--admin-warning); }
-.admin-stat-icon.red { background: var(--admin-danger); }
+.admin-stat-icon.blue {
+  background: var(--admin-secondary);
+}
+.admin-stat-icon.green {
+  background: var(--admin-success);
+}
+.admin-stat-icon.orange {
+  background: var(--admin-warning);
+}
+.admin-stat-icon.red {
+  background: var(--admin-danger);
+}
 
 .admin-stat-content h3 {
   font-size: 1.5rem;
@@ -648,7 +684,7 @@
   .admin-main {
     margin-left: 0;
   }
-  
+
   .admin-wrapper.sidebar-collapsed .admin-main {
     margin-left: 0;
   }
@@ -658,7 +694,7 @@
   .admin-content {
     padding: 16px;
   }
-  
+
   .admin-stats-grid {
     grid-template-columns: 1fr;
   }
@@ -695,7 +731,7 @@
 }
 
 .admin-tab.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;

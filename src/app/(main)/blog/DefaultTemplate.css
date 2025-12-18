@@ -1,0 +1,117 @@
+.post-details {
+  padding-top: 20px;
+}
+
+.blog-feature-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sstatic {
+  font-size: 14px;
+  color: #43464b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.dyna {
+  font-size: 14px;
+  color: #ca2734;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.single-blog-list-post-head {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  transition: 0.5s;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+.single-blog-list-post-para {
+  color: #43464b;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0px;
+  line-height: 2em;
+  letter-spacing: 0.1px;
+  font-family: "Roboto", sans-serif;
+}
+
+.blog-read-more-btn {
+  background-color: #ca2734;
+  color: #ffffff;
+  padding: 15px 42px 16px 42px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 0.25em;
+  border: none;
+  transition: 0.5s;
+  letter-spacing: 0.1px;
+  font-family: "Roboto", sans-serif;
+}
+
+.blog-right-side {
+  position: relative;
+  overflow: visible;
+}
+
+.sticky-blog-form {
+  position: sticky;
+  top: 20px;
+}
+
+.blog-meta-icon {
+  color: #ca2734;
+  font-size: 16px;
+}
+
+.blog-meta-text {
+  color: #43464b;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Recent Posts Sidebar Card */
+.recent-posts-box {
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.recent-posts-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-post-sidebar-thumb {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.recent-post-sidebar-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000;
+  margin: 0;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-post-sidebar-link:hover .recent-post-sidebar-name {
+  color: #ca2734;
+}

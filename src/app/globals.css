@@ -4,17 +4,36 @@ body {
   overflow-x: hidden;
 }
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-
 /* global colors */
 :root {
-  --heading-main-color:#000;
+  --heading-main-color: #000;
   --heading-highlite-color: #ca2734;
 }
-
 
 /* fonts global */
 .heading-corbert {

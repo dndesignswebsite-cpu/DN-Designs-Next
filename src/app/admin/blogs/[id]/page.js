@@ -19,6 +19,8 @@ export default function EditBlog() {
       if (!res.ok) throw new Error("Failed to fetch blog");
       return res.json();
     },
+    staleTime: 0, // Always fetch fresh data
+    gcTime: 0, // Don't cache (gcTime replaces cacheTime in newer versions)
   });
 
   if (isLoading) {
@@ -48,4 +50,3 @@ export default function EditBlog() {
     </div>
   );
 }
-

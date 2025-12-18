@@ -1,0 +1,520 @@
+[
+  {
+    "title": "Designing Scalable Database Schemas in MongoDB",
+    "slug": "designing-scalable-database-schemas-in-mongodb",
+    "content": "<h2>The Foundation of MongoDB Schema Design</h2><p>Designing scalable schemas is one of the most important aspects of working with MongoDB. Unlike traditional SQL databases that enforce rigid structures, MongoDB provides the flexibility to model data based on how your application actually uses it. To build a truly scalable system, developers must move beyond normalized tables and embrace document-oriented thinking.</p><h3>Embedding vs. Referencing</h3><p>The core decision in any MongoDB schema is whether to embed sub-documents or use references (manual or DBRefs). Embedding is ideal for 'one-to-few' relationships where the child data is logically part of the parent and doesn't grow indefinitely. This reduces the number of queries and ensures high performance. On the other hand, referencing is better for 'one-to-many' or 'many-to-many' relationships where data size could exceed the 16MB document limit or where data needs to be shared across multiple entities.</p><h3>Optimization Patterns</h3><p>Consider the 'Computed' pattern to handle high-read scenarios by pre-calculating values on write. The 'Outlier' pattern helps manage documents that don't fit the standard distribution, preventing performance degradation for the majority of users. By understanding these patterns, you can ensure your MongoDB clusters remain responsive even as your data grows into the terabytes.</p>",
+    "excerpt": "Learn how to design scalable and efficient MongoDB schemas by mastering embedding, referencing, and advanced design patterns.",
+    "featuredImage": {
+      "url": "/uploads/images/001.jpg",
+      "publicId": "/uploads/images/001.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["mongodb", "database", "backend"],
+    "categories": ["Backend", "Database", "MongoDB", "NoSQL"],
+    "primaryCategory": "Backend",
+    "metaTitle": "MongoDB Schema Design: A Comprehensive Scalability Guide",
+    "metaDescription": "Master the art of MongoDB schema design. Learn when to embed, when to reference, and how to apply scalable patterns for high-performance apps.",
+    "metaKeywords": [
+      "mongodb",
+      "schema design",
+      "nosql",
+      "scalability",
+      "database architecture"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-12T10:00:00.000Z" },
+    "views": 88,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-03-10T09:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-12T10:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/designing-scalable-database-schemas-in-mongodb"
+    },
+    "headCode": "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BlogPosting\", \"headline\": \"Designing Scalable Database Schemas in MongoDB\"}</script>"
+  },
+  {
+    "title": "Building Pagination and Filtering in REST APIs",
+    "slug": "building-pagination-and-filtering-in-rest-apis",
+    "content": "<h2>Why Pagination is Critical for Modern APIs</h2><p>Pagination and filtering are essential features for any production-ready REST API. When dealing with large datasets, fetching thousands of records at once leads to slow response times, excessive memory usage, and a poor user experience. Implementing these features correctly ensures your API remains fast and reliable.</p><h3>Offset vs. Cursor Pagination</h3><p>Offset-based pagination (using <code>skip</code> and <code>limit</code>) is the simplest to implement but can become slow as the offset increases, as the database still has to scan through skipped records. Cursor-based pagination, using a unique identifier from the last fetched record, offers much better performance for deep-page access and real-time feeds where data additions might shift offsets.</p><h3>Robust Filtering and Sorting</h3><p>Providing users with the ability to filter by categories, dates, or status, and to sort by relevance or chronology, adds significant value to your API. We'll explore how to build dynamic query builders in Node.js that securely translate query parameters into MongoDB filter objects, ensuring your backend architecture remains clean and maintainable while providing maximum flexibility to frontend developers.</p>",
+    "excerpt": "Implement efficient pagination and filtering in REST APIs using Express and MongoDB for high-performance data retrieval.",
+    "featuredImage": {
+      "url": "/uploads/images/002.jpg",
+      "publicId": "/uploads/images/002.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "69371b84976d7650e576909a" },
+    "authorName": "Jane Smith",
+    "tags": ["api", "rest", "pagination", "nodejs"],
+    "categories": ["API", "Backend", "REST", "Node.js"],
+    "primaryCategory": "API",
+    "metaTitle": "Mastering REST API Pagination and Filtering | DN Designs",
+    "metaDescription": "Step-by-step guide to implementing robust pagination, cursor-based navigation, and dynamic filtering in your Node.js REST APIs.",
+    "metaKeywords": [
+      "pagination",
+      "rest api",
+      "api filtering",
+      "cursor pagination",
+      "node.js express"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-15T11:30:00.000Z" },
+    "views": 76,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-03-13T08:45:00.000Z" },
+    "updatedAt": { "$date": "2024-03-15T11:30:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/building-pagination-and-filtering-in-rest-apis"
+    },
+    "headCode": "<meta property=\"og:type\" content=\"article\" />"
+  },
+  {
+    "title": "Async and Await Deep Dive in JavaScript",
+    "slug": "async-and-await-deep-dive-in-javascript",
+    "content": "<h2>Beyond the Basics of Async/Await</h2><p>Async and await have revolutionized asynchronous programming in JavaScript, making code look synchronous and easier to read. However, simply using the keywords isn't enough; understanding the mechanics of the event loop and microtask queue is vital for writing high-performance applications. This guide goes deep into the internals of async/await.</p><h3>Concurrency and Parallelism</h3><p>A common mistake is awaiting every promise sequentially, which leads to 'waterfall' bottlenecks. By using <code>Promise.all()</code> or <code>Promise.allSettled()</code>, you can fire off multiple requests in parallel and await their combined result, significantly reducing the total execution time of complex operations.</p><h3>Advanced Error Handling</h3><p>While <code>try/catch</code> blocks are the standard way to handle errors in async functions, they can sometimes lead to verbose code. We'll compare traditional error handling with more functional approaches, such as wrapper functions that return tuples (e.g., <code>[err, data]</code>), and discuss how to prevent unhandled promise rejections that can crash your Node.js server.</p>",
+    "excerpt": "Take your JavaScript skills to the next level with this deep dive into async/await, concurrency, and advanced error handling.",
+    "featuredImage": {
+      "url": "/uploads/images/003.jpg",
+      "publicId": "/uploads/images/003.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "6940fa63aaf58c6969d46f48" },
+    "authorName": "Alex Johnson",
+    "tags": ["javascript", "async", "promises"],
+    "categories": ["Frontend", "JavaScript", "Async", "Web Dev"],
+    "primaryCategory": "Frontend",
+    "metaTitle": "JavaScript Async/Await: Deep Dive and Performance Tuning",
+    "metaDescription": "Learn how async/await works internally, how to optimize with Promise.all, and best practices for asynchronous error handling in JS.",
+    "metaKeywords": [
+      "javascript",
+      "async await",
+      "promises",
+      "concurrency",
+      "error handling"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-18T09:00:00.000Z" },
+    "views": 134,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-03-16T15:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-18T09:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/async-and-await-deep-dive-in-javascript"
+    },
+    "headCode": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">"
+  },
+  {
+    "title": "Role-Based Access Control in Node.js",
+    "slug": "role-based-access-control-in-nodejs",
+    "content": "<h2>Defining Security with RBAC</h2><p>Role-Based Access Control (RBAC) is the gold standard for managing user permissions in modern applications. Instead of assigning individual permissions to users, we assign them to 'Roles' and then assign users to those roles. This simplifies management and scales perfectly from small startups to enterprise-level platforms.</p><h3>Implementing Middleware Permission Guards</h3><p>In a Node.js Express application, the most efficient way to enforce RBAC is through middleware. We can create reusable functions that check the authenticated user's role against a required list before allowing access to a route. This ensures that only admins can delete records, while editors can only update them and users can only view them.</p><h3>Database Modeling for Roles</h3><p>We'll look at how to store roles and permissions in MongoDB, whether using simple strings or complex permission objects that allow for specific actions like 'read:own' vs 'read:any'. A well-designed database schema for RBAC makes it easy to audit user actions and update security policies without rewriting large portions of your codebase.</p>",
+    "excerpt": "Secure your Node.js apps by implementing robust Role-Based Access Control (RBAC) using middleware and secure JWT authentication.",
+    "featuredImage": {
+      "url": "/uploads/images/004.jpg",
+      "publicId": "/uploads/images/004.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["security", "authorization", "jwt", "nodejs"],
+    "categories": ["Security", "Backend", "Authorization", "Node.js"],
+    "primaryCategory": "Security",
+    "metaTitle": "Node.js RBAC: Secure Authorization Implementation Guide",
+    "metaDescription": "Learn how to build a scalable Role-Based Access Control system in Node.js. Includes middleware examples and database schema design.",
+    "metaKeywords": [
+      "rbac",
+      "nodejs authentication",
+      "authorization",
+      "security middleware",
+      "permissions"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-20T10:30:00.000Z" },
+    "views": 92,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-03-18T13:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-20T10:30:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/role-based-access-control-in-nodejs"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Improving Node.js Performance with Caching",
+    "slug": "improving-nodejs-performance-with-caching",
+    "content": "<h2>The Speed of Light: Caching in Node.js</h2><p>Caching is one of the most effective ways to improve application performance. By storing frequently accessed data in a fast-access layer, you can bypass expensive database queries or API calls, resulting in near-instant response times. In the world of Node.js, caching is not just an optimization; it's a requirement for high-traffic apps.</p><h3>In-Memory vs. Distributed Caching</h3><p>Simple applications can benefit from in-memory caching using libraries like <code>node-cache</code>. However, for applications running in clusters or multiple containers, a distributed cache like Redis is essential. Redis allows multiple instances of your app to share the same cache, ensuring consistency and persistence across server restarts.</p><h3>Strategies for Invalidation</h3><p>The hardest thing about caching is 'Cache Invalidation'—knowing when to clear the old data and fetch new ones. We'll discuss TTL (Time To Live), the 'Cache Aside' pattern, and using database hooks to trigger cache clears automatically when records are updated, ensuring your users always see the latest information without sacrificing speed.</p>",
+    "excerpt": "Boost your Node.js application performance significantly by implementing intelligent caching strategies using Redis and in-memory tools.",
+    "featuredImage": {
+      "url": "/uploads/images/005.jpg",
+      "publicId": "/uploads/images/005.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "69371b84976d7650e576909a" },
+    "authorName": "Jane Smith",
+    "tags": ["nodejs", "performance", "caching", "redis"],
+    "categories": ["Backend", "Performance", "Redis", "Node.js"],
+    "primaryCategory": "Backend",
+    "metaTitle": "Node.js Caching: Redis and In-Memory Performance Guide",
+    "metaDescription": "Learn the best caching techniques for Node.js. Discover how Redis can dramatically speed up your responses and improve server efficiency.",
+    "metaKeywords": [
+      "nodejs caching",
+      "redis performance",
+      "backend optimization",
+      "caching strategies",
+      "node-cache"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-22T09:45:00.000Z" },
+    "views": 101,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-03-20T16:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-22T09:45:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/improving-nodejs-performance-with-caching"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "API Versioning Strategies Explained",
+    "slug": "api-versioning-strategies-explained",
+    "content": "<h2>Planning for Change: Why API Versioning Matters</h2><p>As APIs evolve, versioning becomes necessary to avoid breaking existing clients. A change that seems minor to a backend developer might completely crash a legacy mobile app. Effective versioning strategies protect your users while allowing you to innovate and improve your platform.</p><h3>The Most Popular Approaches</h3><p>We'll dive into the pros and cons of three main strategies: URL versioning (e.g., <code>/v1/users</code>), Header versioning (using custom headers to specify the version), and Content Negotiation (using the <code>Accept</code> header). While URL versioning is the most visible and widely used, Header-based approaches offer a cleaner resource URI structure.</p><h3>Managing Deprecation Gracefully</h3><p>Versioning isn't just about adding new stuff; it's about gracefully retiring the old stuff. Learn how to implement deprecation warnings in your API responses, set up Sunset dates for old versions, and communicate changes effectively with your developer community to ensure a smooth transition to the latest and greatest version of your API.</p>",
+    "excerpt": "Avoid breaking client applications by choosing the right API versioning strategy and implementing a graceful deprecation policy.",
+    "featuredImage": {
+      "url": "/uploads/images/006.jpg",
+      "publicId": "/uploads/images/006.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "6940fa63aaf58c6969d46f48" },
+    "authorName": "Alex Johnson",
+    "tags": ["api", "versioning", "documentation"],
+    "categories": ["API", "REST", "Documentation", "Backend"],
+    "primaryCategory": "API",
+    "metaTitle": "API Versioning Guide: Strategies, Best Practices, and Examples",
+    "metaDescription": "Discover how to version your APIs effectively. Learn the differences between URL, Header, and Semantic versioning with real-world examples.",
+    "metaKeywords": [
+      "api versioning",
+      "rest api design",
+      "backward compatibility",
+      "api deprecation",
+      "semver"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-25T11:00:00.000Z" },
+    "views": 67,
+    "readingTime": 2,
+    "createdAt": { "$date": "2024-03-23T14:30:00.000Z" },
+    "updatedAt": { "$date": "2024-03-25T11:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/api-versioning-strategies-explained"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Preventing Common Web Security Vulnerabilities",
+    "slug": "preventing-common-web-security-vulnerabilities",
+    "content": "<h2>Hardening Your Web Apps Against Attack</h2><p>Web applications are frequently targeted by attackers exploiting well-known vulnerabilities. A single security breach can destroy user trust and cause significant financial damage. Understanding and preventing the OWASP Top 10 is the first step toward building resilient and secure web experiences.</p><h3>Defeating Injection and XSS</h3><p>Cross-Site Scripting (XSS) and SQL/NoSQL injections remain some of the most dangerous threats. We'll explore how to sanitize user input using libraries like <code>DOMPurify</code>, use parameterized queries to prevent injections, and implement Content Security Policies (CSP) to block unauthorized script execution on your site.</p><h3>CSRF and Secure Session Management</h3><p>Cross-Site Request Forgery (CSRF) can trick authenticated users into performing unintended actions. Learn how to use CSRF tokens, secure cookies with <code>HttpOnly</code> and <code>SameSite</code> attributes, and implement multi-factor authentication (MFA) to ensure that only legitimate users can access and modify sensitive account information.</p>",
+    "excerpt": "Protect your web applications from cross-site scripting, injection attacks, and request forgery with modern security best practices.",
+    "featuredImage": {
+      "url": "/uploads/images/007.jpg",
+      "publicId": "/uploads/images/007.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["security", "web", "vulnerabilities", "owasp"],
+    "categories": ["Security", "Web Dev", "Cybersecurity", "OWASP"],
+    "primaryCategory": "Security",
+    "metaTitle": "Web Security Guide: Prevent XSS, CSRF, and Injection Attacks",
+    "metaDescription": "Learn how to secure your web applications from common attacks. Master input sanitization, CSRF protection, and secure coding practices.",
+    "metaKeywords": [
+      "web security",
+      "xss protection",
+      "csrf tokens",
+      "injection attacks",
+      "owasp top 10"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-28T09:15:00.000Z" },
+    "views": 118,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-03-26T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-28T09:15:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/preventing-common-web-security-vulnerabilities"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Getting Started with MongoDB and Mongoose",
+    "slug": "getting-started-with-mongodb-and-mongoose",
+    "content": "<h2>The Perfect Pair for Node.js</h2><p>MongoDB is a document-oriented NoSQL database designed for flexibility and scalability. Unlike relational databases, it stores data in JSON-like documents, making it a natural fit for JavaScript developers. Mongoose is an ODM (Object Data Modeling) library that provides schema validation, middleware hooks, and a clean, high-level API for interacting with MongoDB.</p><h3>Schema Validation and Middlewares</h3><p>One of the biggest advantages of Mongoose is that it allows you to define a schema even though MongoDB is schema-less. This ensures that your data remains consistent and clean. We'll explore how to use Mongoose's built-in validators, custom validation functions, and pre/post save hooks to automate tasks like password hashing and slug generation.</p><h3>Connecting and Querying</h3><p>Setting up a robust connection with retry logic is critical for production apps. We'll walkthrough connecting to MongoDB Atlas, defining models, and performing CRUD operations using modern async/await syntax. You'll also learn tips for optimizing queries using indexes to ensure your app stays lightning-fast as your database grows.</p>",
+    "excerpt": "A practical beginner guide to MongoDB and Mongoose with Node.js, covering schema design, validation, and CRUD operations.",
+    "featuredImage": {
+      "url": "/uploads/images/001.jpg",
+      "publicId": "/uploads/images/001.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["mongodb", "mongoose", "nodejs", "backend"],
+    "categories": ["Backend", "MongoDB", "Mongoose", "Database"],
+    "primaryCategory": "Backend",
+    "metaTitle": "Getting Started with MongoDB and Mongoose in Node.js",
+    "metaDescription": "Compete guide to using Mongoose with Node.js. Learn how to define schemas, connect to MongoDB, and build high-performance backend systems.",
+    "metaKeywords": [
+      "mongodb",
+      "mongoose",
+      "nodejs",
+      "backend development",
+      "nosql database"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-01-10T10:00:00.000Z" },
+    "views": 145,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-01-08T09:15:00.000Z" },
+    "updatedAt": { "$date": "2024-01-10T10:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/getting-started-with-mongodb-and-mongoose"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Understanding REST APIs in Node.js",
+    "slug": "understanding-rest-apis-in-nodejs",
+    "content": "<h2>Connecting the Modern Web</h2><p>REST APIs are the backbone of modern web communication. Following the REpresentational State Transfer architecture, these APIs allow frontend applications, mobile apps, and third-party services to interact with your server in a predictable, stateless manner. Understanding REST is essential for any full-stack developer.</p><h3>The Six Core Constraints</h3><p>Learn about the principles that make an API truly RESTful: Uniform Interface, Client-Server Separation, Statelessness, Cacheability, Layered System, and optional Code on Demand. We'll explain how these constraints help you build systems that are easy to scale, maintain, and integrate across different platforms.</p><h3>Best Practices in Implementation</h3><p>Building a REST API isn't just about making routes; it's about semantic URL structures, proper use of HTTP status codes (like 200, 201, 404, and 500), and efficient JSON response formatting. We'll look at how to structure your controllers and services in Node.js to keep your API code clean, testable, and highly performant.</p>",
+    "excerpt": "Master the fundamentals of RESTful API design and learn how to implement standard web services using Node.js and Express.",
+    "featuredImage": {
+      "url": "/uploads/images/002.jpg",
+      "publicId": "/uploads/images/002.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "69371b84976d7650e576909a" },
+    "authorName": "Jane Smith",
+    "tags": ["api", "rest", "nodejs", "express"],
+    "categories": ["API", "REST", "Node.js", "Web Services"],
+    "primaryCategory": "API",
+    "metaTitle": "REST API Fundamentals: Build Scalable Services with Node.js",
+    "metaDescription": "Learn REST principles and how to build production-grade APIs using Node.js. Covers HTTP methods, status codes, and architecture.",
+    "metaKeywords": [
+      "rest api",
+      "nodejs express",
+      "api design",
+      "backend architecture",
+      "web services"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-01-18T12:00:00.000Z" },
+    "views": 120,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-01-16T08:30:00.000Z" },
+    "updatedAt": { "$date": "2024-01-18T12:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/understanding-rest-apis-in-nodejs"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "JavaScript ES2024 Features You Should Know",
+    "slug": "javascript-es2024-features-you-should-know",
+    "content": "<h2>What's New in the World of JavaScript?</h2><p>JavaScript continues to evolve at a rapid pace, with the TC39 committee introducing new features every year. The ES2024 update brings several exciting improvements that make coding in JavaScript more efficient, expressive, and less prone to errors. Whether you're a frontend or backend developer, these updates change the way you write code.</p><h3>Data Management and Record/Tuple</h3><p>One of the most anticipated features is the introduction of immutable Record and Tuple types. This allows for deep comparison and predictable data structures that can't be modified by accident. We'll also dive into the new <code>Object.groupBy()</code> and <code>Map.groupBy()</code> methods, which simplify data transformation logic significantly.</p><h3>Temporal API and Better Date Handling</h3><p>The long-awaited Temporal API finally addresses the many pain points of the legacy <code>Date</code> object. Learn how to manage time zones, durations, and calendar calculations with a clean, modern API. Together with improvements in Regex and asynchronous iterations, ES2024 is sets the foundation for the next decade of JavaScript development.</p>",
+    "excerpt": "A practical overview of the most important JavaScript ES2024 features, including new data types and improved APIs for developers.",
+    "featuredImage": {
+      "url": "/uploads/images/003.jpg",
+      "publicId": "/uploads/images/003.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "6940fa63aaf58c6969d46f48" },
+    "authorName": "Alex Johnson",
+    "tags": ["javascript", "es2024", "frontend"],
+    "categories": ["Frontend", "JavaScript", "Updates", "Web Dev"],
+    "primaryCategory": "Frontend",
+    "metaTitle": "ES2024 JavaScript Guide: Newest Features and Updates",
+    "metaDescription": "Keep up with the latest JavaScript updates. Learn about Records, Tuples, Temporal API, and other ES2024 features used by pro developers.",
+    "metaKeywords": [
+      "javascript features",
+      "es2024",
+      "modern javascript",
+      "temporal api",
+      "coding updates"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-02-01T09:00:00.000Z" },
+    "views": 230,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-01-29T14:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-01T09:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/javascript-es2024-features-you-should-know"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "How Authentication Works with JWT",
+    "slug": "how-authentication-works-with-jwt",
+    "content": "<h2>Stateless Security with JSON Web Tokens</h2><p>JSON Web Tokens (JWT) have become the default choice for modern web authentication. Unlike traditional session-based systems that store state on the server, JWTs store all the necessary information in the client-side token itself. This makes your application easier to scale across multiple servers and different platforms (web, mobile, service-to-service).</p><h3>The Anatomy of a JWT</h3><p>A JWT consists of three base64-encoded parts: the Header (signing algorithm), the Payload (user claims), and the Signature (verification key). We'll discuss how to secure the payload, why you should never store sensitive info like passwords in it, and how the signature ensures that the token hasn't been tampered with by an attacker.</p><h3>Tokens and Refresh Strategies</h3><p>Implementing JWT is only half the battle; managing token expiration and rotations is where the real security happens. Learn how to use short-lived Access Tokens and long-lived Refresh Tokens to keep your users logged in securely without exposing them to permanent account hijacks if a single token is intercepted.</p>",
+    "excerpt": "Understand JSON Web Tokens (JWT) and learn how to implement secure, stateless authentication in your modern web applications.",
+    "featuredImage": {
+      "url": "/uploads/images/004.jpg",
+      "publicId": "/uploads/images/004.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["jwt", "authentication", "security", "nodejs"],
+    "categories": ["Security", "Authentication", "JWT", "Node.js"],
+    "primaryCategory": "Security",
+    "metaTitle": "JWT Authentication Guide: Implementation and Best Practices",
+    "metaDescription": "Learn the theory and implementation of JWT authentication. Discover best practices for token management, security, and scalability.",
+    "metaKeywords": [
+      "jwt",
+      "authentication",
+      "security best practices",
+      "json web token",
+      "token based auth"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-02-10T11:30:00.000Z" },
+    "views": 190,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-02-07T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-10T11:30:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/how-authentication-works-with-jwt"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Scaling Node.js Applications",
+    "slug": "scaling-nodejs-applications",
+    "content": "<h2>From Single Script to Enterprise System</h2><p>Scaling Node.js applications requires a deep understanding of its single-threaded nature and performance bottlenecks. While Node.js is incredibly fast at handling I/O, a poorly designed architecture will still struggle under heavy traffic. To truly scale, we must look beyond the code and into the infrastructure.</p><h3>Horizontal vs. Vertical Scaling</h3><p>Vertical scaling (more RAM/CPU) only takes you so far. Horizontal scaling involves spinning up multiple instances of your application across different nodes. We'll explore use of the <code>Cluster</code> module to utilize all CPU cores on a single machine, and how to use PM2 or Kubernetes to manage clusters across an entire server farm.</p><h3>The Role of Middleware and Load Balancers</h3><p>No scaling strategy is complete without a robust load balancer like Nginx or AWS ELB. We'll also discuss how to offload heavy tasks to background workers using message queues like RabbitMQ or BullMQ, ensuring that your main application remains responsive to user requests even during intensive data processing tasks.</p>",
+    "excerpt": "Proven techniques and architectural patterns to scale your Node.js applications to handle millions of requests effectively.",
+    "featuredImage": {
+      "url": "/uploads/images/005.jpg",
+      "publicId": "/uploads/images/005.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "69371b84976d7650e576909a" },
+    "authorName": "Jane Smith",
+    "tags": ["nodejs", "scaling", "performance", "infrastructure"],
+    "categories": ["Backend", "Scaling", "Performance", "Infrastructure"],
+    "primaryCategory": "Backend",
+    "metaTitle": "Scaling Node.js: Architectural Patterns for High Traffic",
+    "metaDescription": "Master the art of scaling Node.js apps. Learn about clustering, horizontal scaling, load balancing, and background processing.",
+    "metaKeywords": [
+      "nodejs scaling",
+      "high availability",
+      "load balancing",
+      "pm2",
+      "backend performance"
+    ],
+    "isPublished": false,
+    "publishedAt": null,
+    "views": 0,
+    "readingTime": 4,
+    "createdAt": { "$date": "2024-02-20T09:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-20T09:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/scaling-nodejs-applications"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Express.js Best Practices for Clean APIs",
+    "slug": "expressjs-best-practices-for-clean-apis",
+    "content": "<h2>Writing Code That Doesn't Rot</h2><p>Express.js is a minimalist framework, which is both a blessing and a curse. Without strict guidelines, Express projects can quickly turn into 'spaghetti code'. Writing clean APIs involves more than just getting the logic to work; it's about organizing your project so it remains maintainable and scalable as your team grows.</p><h3>The Service-Controller Pattern</h3><p>We'll move away from putting all logic in route handlers and instead embrace a clear separation of concerns. Controllers handle HTTP-specific logic, Services handle core business logic, and Models handle database interactions. This pattern makes your code significantly easier to test and reuse across different parts of your application.</p><h3>Automated Validation and Centralized Error Handling</h3><p>A resilient API must validate every input before it touches the database. Learn how to use <code>Joi</code> or <code>Zod</code> for schema validation, and how to create a centralized error-handling middleware that catches every async error and returns standardized JSON responses, significantly improving the stability and developer experience of your API.</p>",
+    "excerpt": "Industry-standard best practices for building maintainable, testable, and clean REST APIs using the Express.js framework.",
+    "featuredImage": {
+      "url": "/uploads/images/006.jpg",
+      "publicId": "/uploads/images/006.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "6940fa63aaf58c6969d46f48" },
+    "authorName": "Alex Johnson",
+    "tags": ["express", "api", "nodejs", "clean-code"],
+    "categories": ["API", "Express.js", "Best Practices", "Backend"],
+    "primaryCategory": "API",
+    "metaTitle": "Express.js Best Practices: Clean Architecture for Node APIs",
+    "metaDescription": "Learn how to structure your Express.js apps for long-term maintenance. Covers controllers, services, validation, and error handling.",
+    "metaKeywords": [
+      "expressjs best practices",
+      "clean architecture",
+      "nodejs api",
+      "api maintenance",
+      "backend design patterns"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-01T10:00:00.000Z" },
+    "views": 105,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-02-27T16:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-01T10:00:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/expressjs-best-practices-for-clean-apis"
+    },
+    "headCode": ""
+  },
+  {
+    "title": "Web Application Security Basics",
+    "slug": "web-application-security-basics",
+    "content": "<h2>Protecting What Matters: User Data</h2><p>Web application security is no longer an optional feature; it's a fundamental requirement for protecting sensitive user data and maintaining business integrity. With cyberattacks becoming more sophisticated, developers must understand the core concepts of security from day one of their development process.</p><h3>Thinking Like an Attacker</h3><p>The first step in securing an application is understanding how an attacker might attempt to exploit it. We'll walk through the mechanics of common vulnerabilities like SQL Injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF), and explain the practical impact these can have on both your users and your infrastructure.</p><h3>A Layered Defense Strategy</h3><p>Security is best implemented in layers. We'll discuss how to combine input sanitization, secure headers (like <code>Helmet.js</code>), robust authentication, and regular dependency scanning to build a 'defense in depth'. By following these basic principles, you can significantly reduce your application's attack surface and build a platform that users can truly trust.</p>",
+    "excerpt": "A foundational guide to web application security, explaining core concepts and practical defense strategies for every developer.",
+    "featuredImage": {
+      "url": "/uploads/images/007.jpg",
+      "publicId": "/uploads/images/007.jpg"
+    },
+    "images": [],
+    "videos": [],
+    "author": { "$oid": "693712d0976d7650e5769092" },
+    "authorName": "John Doe",
+    "tags": ["security", "web", "fundamentals"],
+    "categories": ["Security", "Web Dev", "Fundamentals", "Data Protection"],
+    "primaryCategory": "Security",
+    "metaTitle": "The Beginner's Guide to Web Application Security",
+    "metaDescription": "Master the essentials of web security. Learn how to protect your apps from the most common cyber threats and data breaches.",
+    "metaKeywords": [
+      "web security basics",
+      "data protection",
+      "cybersecurity for developers",
+      "secure coding",
+      "web safety"
+    ],
+    "isPublished": true,
+    "publishedAt": { "$date": "2024-03-05T09:30:00.000Z" },
+    "views": 135,
+    "readingTime": 3,
+    "createdAt": { "$date": "2024-03-02T11:00:00.000Z" },
+    "updatedAt": { "$date": "2024-03-05T09:30:00.000Z" },
+    "layout": "default",
+    "alternates": {
+      "canonical": "https://dndesigns.co.in/blog/web-application-security-basics"
+    },
+    "headCode": ""
+  }
+]

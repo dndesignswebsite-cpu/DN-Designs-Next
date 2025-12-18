@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import dynamic from "next/dynamic";
 import Cookies from "js-cookie";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,17 +41,48 @@ export default function BlogForm({ initialData, isEditing }) {
   const [error, setError] = useState("");
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
 
+  // Fetch categories and tags
+  const { data: categoriesData, isLoading: categoriesLoading } = useQuery({
+    queryKey: ["admin-categories-minimal"],
+    queryFn: async () => {
+      const res = await fetch("/api/categories?limit=100");
+      if (!res.ok) throw new Error("Failed to fetch categories");
+      return res.json();
+    },
+  });
+
+  const { data: tagsData, isLoading: tagsLoading } = useQuery({
+    queryKey: ["admin-tags-minimal"],
+    queryFn: async () => {
+      const res = await fetch("/api/tags?limit=100");
+      if (!res.ok) throw new Error("Failed to fetch tags");
+      return res.json();
+    },
+  });
+
+  const getISTString = () => {
+    const now = new Date();
+    // Offset for IST is +5.5 hours (330 minutes)
+    // We adjust the time by adding the offset to the current time
+    // and then use toISOString() which gives UTC
+    // Since we shifted the time, the "UTC" string will now show IST numbers
+    const istOffset = 330 * 60 * 1000;
+    const istDate = new Date(now.getTime() + istOffset);
+    return istDate.toISOString().slice(0, 16);
+  };
+
   // Form state
   const [formData, setFormData] = useState({
     title: "",
     slug: "",
     content: "",
     excerpt: "",
-    category: "",
+    categories: [],
+    primaryCategory: "",
     layout: "default",
     tags: "",
     isPublished: false,
-    publishedAt: "",
+    publishedAt: getISTString(),
     // SEO
     metaTitle: "",
     metaDescription: "",
@@ -80,13 +111,22 @@ export default function BlogForm({ initialData, isEditing }) {
         slug: initialData.slug || "",
         content: initialData.content || "",
         excerpt: initialData.excerpt || "",
-        category: initialData.category || "",
+        categories:
+          initialData.categories ||
+          (initialData.category ? [initialData.category] : []),
+        primaryCategory:
+          initialData.primaryCategory || initialData.category || "",
         layout: initialData.layout || "default",
         tags: initialData.tags?.join(", ") || "",
         isPublished: initialData.isPublished || false,
         publishedAt: initialData.publishedAt
           ? new Date(initialData.publishedAt).toISOString().slice(0, 16)
-          : "",
+          : (() => {
+              const now = new Date();
+              const istOffset = 330 * 60 * 1000;
+              const istDate = new Date(now.getTime() + istOffset);
+              return istDate.toISOString().slice(0, 16);
+            })(),
         metaTitle: initialData.metaTitle || "",
         metaDescription: initialData.metaDescription || "",
         metaKeywords: initialData.metaKeywords?.join(", ") || "",
@@ -139,7 +179,11 @@ export default function BlogForm({ initialData, isEditing }) {
     const data = new FormData();
     Object.keys(formData).forEach((key) => {
       if (formData[key] !== "" && formData[key] !== null) {
-        data.append(key, formData[key]);
+        if (key === "categories") {
+          data.append(key, formData[key].join(","));
+        } else {
+          data.append(key, formData[key]);
+        }
       }
     });
 
@@ -580,8 +624,8 @@ export default function BlogForm({ initialData, isEditing }) {
                 onChange={handleChange}
                 className="admin-form-select"
               >
-                <option value="layout-001">Layout 001</option>
-                <option value="layout-002">Layout 002</option>
+                <option value="default">Default</option>
+                <option value="case-study">Case Study</option>
               </select>
             </div>
           </div>
@@ -591,28 +635,125 @@ export default function BlogForm({ initialData, isEditing }) {
             <h3 className="admin-card-title">Organization</h3>
 
             <div className="admin-form-group">
-              <label className="admin-form-label">Category</label>
-              <input
-                type="text"
-                name="category"
-                value={formData.category}
-                onChange={handleChange}
-                className="admin-form-input"
-                placeholder="e.g., Design, Marketing"
-              />
+              <label className="admin-form-label">
+                Categories (Primary Selection)
+              </label>
+              <div className="admin-category-box">
+                <div className="admin-category-list-modern">
+                  {categoriesLoading ? (
+                    <div className="admin-category-loading">Loading...</div>
+                  ) : categoriesData?.data?.length > 0 ? (
+                    categoriesData.data.map((cat) => (
+                      <div key={cat._id} className="admin-category-item-modern">
+                        <label className="admin-checkbox-label">
+                          <input
+                            type="checkbox"
+                            checked={formData.categories.includes(cat.name)}
+                            onChange={(e) => {
+                              const isChecked = e.target.checked;
+                              setFormData((prev) => {
+                                let newCats;
+                                let newPrimary = prev.primaryCategory;
+
+                                if (isChecked) {
+                                  newCats = [...prev.categories, cat.name];
+                                  if (!newPrimary) newPrimary = cat.name;
+                                } else {
+                                  newCats = prev.categories.filter(
+                                    (c) => c !== cat.name
+                                  );
+                                  if (newPrimary === cat.name) {
+                                    newPrimary =
+                                      newCats.length > 0 ? newCats[0] : "";
+                                  }
+                                }
+
+                                return {
+                                  ...prev,
+                                  categories: newCats,
+                                  primaryCategory: newPrimary,
+                                };
+                              });
+                            }}
+                          />
+                          <span className="admin-category-name-text">
+                            {cat.name}
+                          </span>
+                        </label>
+
+                        <label className="admin-radio-label">
+                          <input
+                            type="radio"
+                            name="primaryCategory"
+                            value={cat.name}
+                            checked={formData.primaryCategory === cat.name}
+                            disabled={!formData.categories.includes(cat.name)}
+                            onChange={() => {
+                              setFormData((prev) => ({
+                                ...prev,
+                                primaryCategory: cat.name,
+                              }));
+                            }}
+                          />
+                          <span className="admin-radio-custom"></span>
+                        </label>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="admin-category-empty">
+                      No categories found
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
 
             <div className="admin-form-group">
               <label className="admin-form-label">Tags</label>
-              <input
-                type="text"
-                name="tags"
-                value={formData.tags}
-                onChange={handleChange}
-                className="admin-form-input"
-                placeholder="tag1, tag2, tag3"
-              />
-              <p className="admin-form-hint">Separate with commas</p>
+              <div className="admin-category-box">
+                <div className="admin-category-list">
+                  {tagsLoading ? (
+                    <div className="admin-category-loading">Loading...</div>
+                  ) : tagsData?.data?.length > 0 ? (
+                    tagsData.data.map((tag) => (
+                      <label key={tag._id} className="admin-category-item">
+                        <input
+                          type="checkbox"
+                          value={tag.slug}
+                          checked={
+                            formData.tags
+                              ? formData.tags
+                                  .split(", ")
+                                  .filter((t) => t)
+                                  .includes(tag.slug)
+                              : false
+                          }
+                          onChange={(e) => {
+                            const currentTags = formData.tags
+                              ? formData.tags.split(", ").filter((t) => t)
+                              : [];
+                            let newTags;
+                            if (e.target.checked) {
+                              newTags = [...currentTags, tag.slug];
+                            } else {
+                              newTags = currentTags.filter(
+                                (t) => t !== tag.slug
+                              );
+                            }
+                            setFormData((prev) => ({
+                              ...prev,
+                              tags: newTags.join(", "),
+                            }));
+                          }}
+                        />
+                        <span className="admin-category-name">{tag.name}</span>
+                      </label>
+                    ))
+                  ) : (
+                    <div className="admin-category-empty">No tags found</div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>

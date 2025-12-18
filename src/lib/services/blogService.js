@@ -23,12 +23,19 @@ export const getAllBlogs = async (
   if (!currentUser || !allowedRoles.includes(currentUser.role)) {
     filter.isPublished = true;
     filter.publishedAt = { $lte: new Date() };
-  } else if (filter.isPublished && filters.isPublished !== undefined) {
-    filter.isPublished =
-      filters.isPublished === "true" || filters.isPublished === true;
+  } else if (
+    filters.isPublished === "true" ||
+    filters.isPublished === "false"
+  ) {
+    filter.isPublished = filters.isPublished === "true";
   }
 
-  if (filters.category) filter.category = filters.category;
+  if (filters.category) {
+    filter.$or = [
+      { primaryCategory: filters.category },
+      { categories: filters.category },
+    ];
+  }
   if (filters.author) filter.author = filters.author;
   if (filters.tags) {
     const tags = Array.isArray(filters.tags)
@@ -275,6 +282,12 @@ export const updateBlog = async (
     updateData.tags = Array.isArray(updateData.tags)
       ? updateData.tags
       : [updateData.tags];
+  }
+
+  if (updateData.categories) {
+    updateData.categories = Array.isArray(updateData.categories)
+      ? updateData.categories
+      : [updateData.categories];
   }
 
   if (updateData.metaKeywords) {

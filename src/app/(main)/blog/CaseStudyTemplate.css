@@ -1,0 +1,75 @@
+.temp-two {
+  padding: 50px 0;
+}
+
+.blog-feature-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.temp-two h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.blog-meta-icon {
+  color: #ca2734;
+  font-size: 16px;
+}
+
+.blog-meta-text {
+  color: #43464b;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Recent Posts Sidebar Styles */
+.recent-posts-box {
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none !important;
+}
+
+.recent-posts-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-post-sidebar-thumb {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.recent-post-sidebar-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000;
+  margin: 0;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-post-sidebar-link:hover .recent-post-sidebar-name {
+  color: #ca2734;
+}
+
+.blog-content {
+  font-family: "Roboto", sans-serif;
+  color: #43464b;
+  line-height: 1.8;
+}

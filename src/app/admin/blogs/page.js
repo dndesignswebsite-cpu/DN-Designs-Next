@@ -31,15 +31,23 @@ export default function BlogsList() {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
+  const [category, setCategory] = useState("");
   const [deleteModal, setDeleteModal] = useState({ open: false, blog: null });
   const queryClient = useQueryClient();
 
+  // Fetch categories for filter
+  const { data: categoriesData } = useQuery({
+    queryKey: ["admin-categories-minimal"],
+    queryFn: () => fetchWithAuth("/api/categories?limit=100"),
+  });
+
   const { data, isLoading, refetch, isRefetching, error } = useQuery({
-    queryKey: ["blogs", page, search, status],
+    queryKey: ["blogs", page, search, status, category],
     queryFn: () => {
-      let url = `/api/blogs?page=${page}&limit=10`;
+      let url = `/api/blogs?page=${page}&limit=7`;
       if (search) url += `&search=${search}`;
       if (status) url += `&isPublished=${status}`;
+      if (category) url += `&category=${category}`;
       return fetchWithAuth(url);
     },
   });
@@ -120,6 +128,18 @@ export default function BlogsList() {
           <div className="admin-filters">
             <select
               className="admin-filter-select"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option value="">All Categories</option>
+              {categoriesData?.data?.map((cat) => (
+                <option key={cat._id} value={cat.name}>
+                  {cat.name}
+                </option>
+              ))}
+            </select>
+            <select
+              className="admin-filter-select"
               value={status}
               onChange={(e) => setStatus(e.target.value)}
             >
@@ -127,6 +147,19 @@ export default function BlogsList() {
               <option value="true">Published</option>
               <option value="false">Draft</option>
             </select>
+            {(search || status || category) && (
+              <button
+                className="admin-btn admin-btn-outline admin-btn-sm"
+                onClick={() => {
+                  setSearch("");
+                  setStatus("");
+                  setCategory("");
+                  setPage(1);
+                }}
+              >
+                Reset
+              </button>
+            )}
           </div>
         </div>
 
@@ -155,7 +188,7 @@ export default function BlogsList() {
                             /{blog.slug}
                           </small>
                         </td>
-                        <td>{blog.category || "-"}</td>
+                        <td>{blog.primaryCategory || blog.category || "-"}</td>
                         <td>{blog.authorName}</td>
                         <td>
                           <span

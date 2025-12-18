@@ -1,48 +1,62 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import "./blog.css";
+import "../../blog.css";
 import Link from "next/link";
 import { slugify } from "@/lib/utils/slugify";
 import LoadingSpinner from "@/Components/Loading Spinner/LoadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-function BlogPage() {
+function CategoryPage({ params }) {
+  const { slug } = React.use(params);
   const [blogs, setBlogs] = useState([]);
+  const [category, setCategory] = useState(null);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(true);
+  const [error, setError] = useState(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
+      if (window.scrollY > 500) setShowScrollTop(true);
+      else setShowScrollTop(false);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const fetchBlogs = async (pageNum, isLoadMore = false) => {
+  const fetchData = async (pageNum, isLoadMore = false) => {
     try {
       if (isLoadMore) setLoadingMore(true);
       else setLoading(true);
 
+      // 1. Fetch category name from slug
+      let categoryName = "";
+      if (pageNum === 1 && !category) {
+        const catRes = await fetch(`/api/categories/${slug}`);
+        const catResult = await catRes.json();
+        if (catResult.success) {
+          setCategory(catResult.data);
+          categoryName = catResult.data.name;
+        } else {
+          throw new Error("Category not found");
+        }
+      } else {
+        categoryName = category.name;
+      }
+
+      // 2. Fetch blogs by category name
       const res = await fetch(
-        `/api/blogs?page=${pageNum}&limit=5&isPublished=true`
+        `/api/blogs?page=${pageNum}&limit=5&isPublished=true&category=${encodeURIComponent(
+          categoryName
+        )}`
       );
       const result = await res.json();
 
@@ -60,8 +74,9 @@ function BlogPage() {
                 : result.data.length)
         );
       }
-    } catch (error) {
-      console.error("Failed to fetch blogs:", error);
+    } catch (err) {
+      console.error("Failed to fetch data:", err);
+      setError(err.message);
     } finally {
       setLoading(false);
       setLoadingMore(false);
@@ -69,19 +84,49 @@ function BlogPage() {
   };
 
   useEffect(() => {
-    fetchBlogs(1);
-  }, []);
+    fetchData(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]);
 
   const handleLoadMore = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetchBlogs(nextPage, true);
+    fetchData(nextPage, true);
   };
+
+  if (!loading && error) {
+    return (
+      <div className="container py-5 text-center">
+        <h2>{error}</h2>
+        <Link href="/blog" className="blog-read-more-btn mt-3 d-inline-block">
+          Back to Blog
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div>
       <section className="blog-list">
         <div className="container">
+          <div className="mb-4">
+            <Link href="/blog" className="text-decoration-none text-muted">
+              <FontAwesomeIcon icon={faChevronLeft} className="me-2" />
+              Back to all blogs
+            </Link>
+          </div>
+
+          <div className="row mb-5 mt-2">
+            <div className="col-12">
+              <h1 className="single-blog-list-post-head">
+                Category: {category ? category.name : slug}
+              </h1>
+              {category?.description && (
+                <p className="text-muted mt-2">{category.description}</p>
+              )}
+            </div>
+          </div>
+
           <div className="row">
             <div className="col-8">
               {loading && blogs.length === 0 ? (
@@ -110,14 +155,9 @@ function BlogPage() {
 
                         <div className="category col d-flex">
                           <p className="sstatic">Categories:</p>
-                          <Link
-                            href={`/blog/category/${slugify(
-                              blog.primaryCategory || "General"
-                            )}`}
-                            className="dyna"
-                          >
+                          <span className="dyna">
                             {blog.primaryCategory || "General"}
-                          </Link>
+                          </span>
                         </div>
 
                         <div className="posted col d-flex">
@@ -165,7 +205,7 @@ function BlogPage() {
                 </>
               ) : (
                 <div className="text-center py-5">
-                  <h3>No blogs found</h3>
+                  <h3>No blogs found in this category</h3>
                 </div>
               )}
             </div>
@@ -202,7 +242,6 @@ function BlogPage() {
         </div>
       </section>
 
-      {/* Scroll to Top Button */}
       <button
         className={`scroll-to-top-btn ${showScrollTop ? "visible" : ""}`}
         onClick={scrollToTop}
@@ -214,4 +253,4 @@ function BlogPage() {
   );
 }
 
-export default BlogPage;
+export default CategoryPage;
