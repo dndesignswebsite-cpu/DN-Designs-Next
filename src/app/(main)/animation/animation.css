@@ -61,7 +61,7 @@
 
 /* Characteristics of Good Brand Name? */
 .every-pr {
-  color: #ca2734 !important;
+  color: #ca2734;
 }
 
 .characteristics-of-good {
@@ -176,7 +176,7 @@
     padding: 30px 0;
   }
   .characteristics-of-good {
-  padding: 50px 0px 50px 0px;
+  padding: 30px 10px 50px 10px;
 }
 .characteristics-of-good-second-row{
   margin-top: 0px;
@@ -190,30 +190,26 @@
   flex-direction: column;
 }
 
-.appr-pro {
-  padding-top: 80px;
+.appr-pro-anime {
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 
-.appr-pro .appr-pro-main-head {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+.appr-pro-anime .appr-pro-anime-main-head {
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
   padding-bottom: 15px;
 }
 
-.appr-pro-main-para {
+.appr-pro-anime-main-para {
   margin-top: 10px;
-  color: var(--heading-main-color);
-  line-height: 32px;
+  color: black;
+  line-height: 1.6em;
   font-size: 18px;
   width: 100%;
   font-family: var(--font-roboto);
   margin-bottom: 40px;
-}
-
-.every-pr {
-  color: var(--heading-highlite-color);
 }
 
 .app-pro-div-white {
@@ -237,7 +233,7 @@
   border-radius: 10px;
   height: 100%;
 }
-.appr-pro-row-main {
+.appr-pro-anime-row-main {
   display: flex;
   flex-direction: row;
 }
@@ -246,19 +242,19 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert);
-  font-weight: 500;
-  color: var(--heading-highlite-color);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: #ca2734;
 }
 
 .app-pro-div p {
   font-size: 16px;
   line-height: 1.2em;
-  font-weight: 300;
+  font-weight: 400;
  font-family: var(--font-roboto);
 }
 
-.appr-pro-main-para{
+.appr-pro-anime-main-para{
   font-size: 18px;
   font-family: var(--font-roboto);
   width: 90%;
@@ -270,29 +266,30 @@
 }
 
 @media (max-width: 767px) {
-  .appr-pro {
+  .appr-pro-anime {
     padding-top: 40px;
   }
-  .appr-pro h2 {
+  .appr-pro-anime h2 {
     font-size: 40px;
   }
-  .appr-pro p {
+  .appr-pro-anime p {
     width: 100%;
   }
- .appr-pro .appr-pro-main-head {
+ .appr-pro-anime .appr-pro-anime-main-head {
   font-size: 40px;
 }
 }
 
 /* power of animation */
 .power-of-animation{
-  padding: 80px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
 .power-of-animation-row h3{
 font-size: 50px;
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     font-weight: 700;
     color: var(--heading-main-color);
 }
@@ -301,7 +298,7 @@ font-size: 50px;
     font-size: 18px;
     color:var(--heading-main-color);
    font-family: var(--font-roboto);
-    padding: 20px 0;
+    padding: 20px 0px 40px 0px;
 } 
 .horror-image-col{
     position: relative;
@@ -329,13 +326,16 @@ font-size: 50px;
     .horror-image-col{
         margin: 10px 0;
     }
+    .power-of-animation-row h3{
+font-size: 40px;
+}
 }
 
 
 
  /* User Engagement  User Conversion */
 .user-engagement{
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .user-engagement-div{
@@ -358,19 +358,26 @@ padding: 20px;
 }
 
 .user-eng-up-div h4{
-     font-family: var(--font-corbert);
+     font-family: var(--font-corbert-bold);
      color: var(--heading-main-color);
      font-size: 18px;
+     font-weight: 700;
 }
 
-.user-eng-up-div img{
+.user-eng-up-div .user-eng-svg-img{
      width: 60px;
+}
+.user-engagement-div .user-engagement-div-mid-img{
+  padding: 10px;
+  width: 100%;
 }
 
 .user-engagement-div h3{
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
     font-size: 24px;
     padding-top: 30px;
+    padding-bottom: 10px;
     color: var(--heading-main-color);
 }
 

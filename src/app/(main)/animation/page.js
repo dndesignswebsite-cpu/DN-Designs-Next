@@ -163,7 +163,7 @@ function page() {
       <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
-            <h3>We Are The Leading Video Production Company For Brands</h3>
+            <h3>We Are The Leading Video <span className="every-pr"> Production Company For Brands</span></h3>
             <div className="col-12 col-md-6 we-are-the-leading-para">
               <p>
                 A video shouldn’t just play; it should pull its viewer in (well,
@@ -364,19 +364,19 @@ function page() {
 
       {/*The Protagonists */}
 
-      <section className="appr-pro">
+      <section className="appr-pro-anime">
         <div className="container">
-          <div className="">
-            <div className="row appr-pro-row-main">
+          <div>
+            <div className="row appr-pro-anime-row-main">
               <div className="col-12 col-md-12 col-lg-6 mt-3">
-                <h2 className="appr-pro-main-head">
+                <h2 className="appr-pro-anime-main-head">
                   Why Choose Us
                 </h2>
-                <p className="appr-pro-main-para">Great results are not achieved randomly. They need planning, hard work, perseverance, and, when it comes to animated videos, plenty of strategic vision and creativity as well. That’s exactly what we do and what sets us apart.</p>
+                <p className="appr-pro-anime-main-para">Great results are not achieved randomly. They need planning, hard work, perseverance, and, when it comes to animated videos, plenty of strategic vision and creativity as well. That’s exactly what we do and what sets us apart.</p>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className=" app-pro-div app-pro-div-white">
+                <div className="app-pro-div app-pro-div-white">
                   <div>
                     <h3>Goal & Message</h3>
                     <p>
@@ -399,7 +399,7 @@ function page() {
             </div>
           </div>
 
-          <div className="row appr-pro-row-main">
+          <div className="row appr-pro-anime-row-main">
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
@@ -451,7 +451,7 @@ function page() {
       <section className="power-of-animation">
         <div className="container">
           <div className="row text-center power-of-animation-row">
-            <h3>The Power of Animation</h3>
+            <h3>The Power of <span className="every-pr"> Animation</span></h3>
             <p>Spark Interest & Build Engagement</p>
             <div className="col-12 col-md-6 ">
               <div className="horror-image-col">
@@ -514,7 +514,7 @@ function page() {
               <div className="user-engagement-div">
                 <img
                   src="http://dndesigns.co.in/wp-content/uploads/2025/07/172356855_ae84189b-ee2b-40e9-8ad6-4b3c9585df84.jpg"
-                  className="img-fluid"
+                  className="user-engagement-div-mid-img"
                 ></img>
               </div>
             </div>
@@ -546,11 +546,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
