@@ -1,3 +1,28 @@
+.every-pr {
+  color: var(--heading-highlite-color);
+}
+
+
+/* flipbook */
+
+.catalouge-page-flip {
+  padding: 50px 0px 0px 0px;
+}
+.catalouge-page-flip h2 {
+  font-family: var(--font-corbert-bold);
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:767px) {
+  .catalouge-page-flip h2 {
+  font-size: 40px;
+  padding-bottom: 0px;
+}
+}
+
 
 /* The Protagonists  */
 
@@ -7,18 +32,18 @@
 }
 
 .appr-pro {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 
 .appr-pro .appr-pro-main-head {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
   padding-bottom: 15px;
 }
 
-.appr-pro-main-para {
+/* .appr-pro-main-para {
   margin-top: 10px;
   color: var(--heading-main-color);
   line-height: 32px;
@@ -26,11 +51,8 @@
   width: 100%;
   font-family: var(--font-roboto);
   margin-bottom: 40px;
-}
+} */
 
-.every-pr {
-  color: var(--heading-highlite-color);
-}
 
 .app-pro-div-white {
   box-shadow: 0px 0px 2px 1px #d5d5d5;
@@ -62,15 +84,15 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert);
-  font-weight: 500;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   color: var(--heading-highlite-color);
 }
 
 .app-pro-div p {
   font-size: 16px;
   line-height: 1.2em;
-  font-weight: 300;
+  font-weight: 400;
   font-family: var(--font-roboto);
 }
 
@@ -84,6 +106,7 @@
   }
   .appr-pro h2 {
     font-size: 40px;
+    padding-bottom: 40px!important;
   }
   .appr-pro p {
     width: 100%;
@@ -108,21 +131,21 @@
 }
 
 .e-catalogues-left h4{
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .e-catalogues-left h3{
       color: #FFFFFF;
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 40px;
     font-weight: 700;
     padding-top: 20px;
 }
 
 .e-catalogues-left p{
-          color: #FFFFFF;
+    color: #FFFFFF;
     font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.4em;
@@ -180,24 +203,24 @@
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 200px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 230px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 260px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 290px;
   margin-top: 20px;
 }
 

@@ -122,6 +122,20 @@ function page() {
       </section>
 
       {/* catalouge book */}
+<section className="catalouge-page-flip">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h2 className="text-center">
+            Our 
+            <span className="every-pr"> Work Portfolio
+            </span>
+          </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <CatalougeBook />
 
       {/*The Protagonists */}
@@ -138,7 +152,7 @@ function page() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className=" app-pro-div app-pro-div-white">
+                <div className=" app-pro-div app-pro-div-gray">
                   <div>
                     <h3>Captivating Cover</h3>
                     <p>
@@ -276,9 +290,7 @@ function page() {
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
-            Creative Catalogue Designing -
-            <span className="every-pr">
-               Our Process
+            Creative Catalogue Designing - <span className="every-pr">  Our Process
             </span>
           </h2>
           <ul id="cards-create">
@@ -423,11 +435,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 

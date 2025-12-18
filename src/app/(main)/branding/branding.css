@@ -654,22 +654,3 @@
     padding: 5px 0px;
 }
 
-/* faqs */
-
-.faqs{
-  padding: 40px 0px 40px 0px;
-}
-
-.faqs h2 {
-    font-size: 56px;
-    font-family: var(--font-corbert);
-    font-weight: 700;
-    color: var(--heading-main-color);
-}
-@media(max-width:767px){
-  .faqs h2 {
-    font-size: 40px;
-    padding: 0 10px;
-  }
-}
-
