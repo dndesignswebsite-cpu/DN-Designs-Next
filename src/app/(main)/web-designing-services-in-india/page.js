@@ -1,7 +1,6 @@
 import React from 'react'
 import "./web-designing-services-in-india.css"
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
-import TalkToUs from '@/Components/TalkToUs/TalkToUs'
 import PagesHero from '@/Components/PagesHero/PagesHero'
 import WebdesignVideoSwipper from '@/Components/WebdesignVideoSwipper/WebdesignVideoSwipper'
 import Faqs from '@/Components/Faqs/Faqs'
@@ -316,9 +315,8 @@ function page() {
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
-           Our Website Design 
-            <span className="every-pr">
-            Process
+           Our Website Design <span className="every-pr">
+             Process
             </span>
           </h2>
           <ul id="cards-create">
@@ -390,8 +388,7 @@ function page() {
       <section className="creating-your-brand-mobile">
         <div className="conatiner">
           <h2 className="text-center our-brand-heading-a-mobile">
-            Our Website Design 
-            <span className="every-pr"> Process</span>
+            Our Website Design <span className="every-pr"> Process</span>
           </h2>
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
@@ -644,7 +641,7 @@ function page() {
         <div className='row'>
             <div className='col-12 col-md-12 col-lg-6'>
             <div className='our-technologies-content'>
-                <h3>Our Technologies</h3>
+                <h3>Our <span className='every-pr'>Technologies</span></h3>
                 <p>How do we create exceptional websites? It’s simple, through our technology toolkit. The toolkit includes modern frameworks, powerful programming languages and dynamic CMS platforms. It helps us create websites that are robust, secure, user-friendly, adaptable and visually appealing, all at the same time.</p>
                 <p>To elaborate a little on our tools, we utilise frameworks like React Native, languages like JavaScript, PHP and HTML/CSS and CMS platforms like WordPress and Shopify.</p>
             </div>

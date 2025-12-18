@@ -37,6 +37,7 @@
     border: 1px solid #0B52A0;
     border-radius: 50px;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .case-study-points1{
@@ -48,17 +49,21 @@
     border: 1px solid #F3C309;
     border-radius: 50px;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 #caststudy-heading{
     font-size: 75px;
     font-weight: 700;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #casestudy-span{
     color: #0B52A0;
     font-size: 32px;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }
 
 .casestudy-images{
@@ -100,6 +105,7 @@
     border-radius: 50px;
     color: #0B52A0;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .overview-points{
@@ -110,47 +116,60 @@
     border-radius: 50px;
     color: #F3C309;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 #overview-heading1{
     font-size: 30px;
     color: #0B52A0;
-    font-weight: 700;
+    font-weight: 600;
+     font-family: var(--font-corbert);
 }
 
 #overview-heading2{
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 30px;
+     font-family: var(--font-corbert);
+     color: #000;
 }
 
 #approach-heading1{
     font-size: 30px;
     color: #0B52A0;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }
 
 #approach-heading2{
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 20px;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #overview-p{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: var(--font-roboto);
+    color: #000;
 }
 
 #overview-h2{
     font-size: 32px;
     font-weight: 700;
     margin-top: 30px;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #overview-para{
     font-size: 17px;
     font-weight: 400;
     margin-top: 30px;
+    font-family: var(--font-roboto);
+    color: #000;
 }
 
 .case-study-img2{
@@ -175,12 +194,12 @@
 
 .case-study-img8{
         border-radius: 30px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
 }
 
 .case-study-img9{
         border-radius: 30px;
-        margin-top: 0px;
+        /* margin-top: 0px; */
 }
 
 

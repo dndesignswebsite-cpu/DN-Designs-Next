@@ -32,11 +32,11 @@
 
 .brand-identity h2 {
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .every-pr {
@@ -69,7 +69,7 @@
 }
 
 .brand-identity-btn-up button {
-  font-family: var(--font-corbert);
+   font-family: var(--font-corbert);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: var(--heading-highlite-color);
@@ -81,8 +81,9 @@
   padding: 20px;
 }
 .brand-identity-div-headg h3 {
-  color: var(--heading-highlite-color);
-  font-family: var(--font-corbert);
+ color: var(--heading-highlite-color);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 32px;
 }
 
@@ -166,7 +167,7 @@
 
 /* Creative Catalogue Designing - Our Process desktop view */
 .creating-your-brand{
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 #card1-create {
@@ -458,16 +459,20 @@
 
 
 /* our-technologies */
+.our-technologies{
+  padding: 50px 0;
+}
 
 .our-technologies-content{
     padding: 20px;
 }
 .our-technologies-content h3{
        font-size: 40px;
-       font-family: var(--font-corbert);
+       font-family: var(--font-corbert-bold);
        color: var(--heading-main-color);
        text-align: center;
        padding-bottom: 20px;
+       
 }
 
 .our-technologies-content p{
@@ -479,11 +484,16 @@
 
 
 /* Make your brand click! */
+
+.make-your-brand{
+  padding: 20px 0;
+}
 .make-your-brand h2{
       font-size: 40px;
-      font-family: var(--font-corbert);
-      padding: 30px 0;
+      font-family: var(--font-corbert-bold);
+      padding: 20px 0;
       text-align: center;
+      color: #000;
 }
 
 .make-your-brand-col{
@@ -506,6 +516,10 @@
 
 
 /* faqs */
+
+.faqs{
+  padding-top: 50px;
+}
 
 .faqs h2 {
     font-size: 56px;
