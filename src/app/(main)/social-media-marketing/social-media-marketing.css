@@ -58,7 +58,7 @@
 }
 
 .social-media-content h2{
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 42px;
   padding:20px 0 ;
   line-height: 1.6em;
@@ -83,7 +83,6 @@
 }
 
 .social-media-content h2{
-  font-family: var(--font-corbert);
   font-size: 38px;
   padding:10px 0 ;
   line-height: 1.6em;
@@ -102,7 +101,6 @@
 }
 
 .social-media-content h2{
- font-family: var(--font-corbert);
   font-size: 30px;
   padding:5px 0 ;
   line-height: 1.2em;
@@ -165,7 +163,7 @@
 /*  But Why Your Logo Even Matters? */
 
 .but-why {
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .but-why h2 {
@@ -265,7 +263,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .but-why h2 {
     font-size: 40px;
     padding: 0 10px;
@@ -274,6 +272,9 @@
   padding-bottom: 20px;
 }
 
+.but-why {
+  padding: 50px 0;
+}
 }
 
 
@@ -493,6 +494,9 @@
 
 
 /* Projects Completed 300+ Successfully delivered across industries */
+.projects-completed{
+  padding: 70px 0;
+}
 .projects-completed img{
   height: 100%;
   width: 100%;
@@ -504,13 +508,18 @@
   justify-content: space-between;
 }
 
+.projects-completed-div-main-col h3{
+  font-family: var(--font-corbert-bold);
+  padding: 20px 0;
+  font-size: 30px;
+}
 
 .projects-completed-div{
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   padding:70px 30px;
+   padding:15px 10px;
    margin: 0 20px;
 }
 
@@ -573,7 +582,7 @@
 
 .success-stories-title{
     font-size: 52px;
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     color: var(--heading-main-color);
 }
 
@@ -636,6 +645,9 @@
     .counter-heading{
         margin-top: 50px;
     }
+    .sucess-stories{
+  padding: 0px 0;
+     }
 }
 
 @media (max-width:1024px){

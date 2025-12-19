@@ -44,7 +44,8 @@ function page() {
 
   const leftFaqs = [
     {
-      question: "How do I know whether I need social media marketing for my business?",
+      question:
+        "How do I know whether I need social media marketing for my business?",
       answer:
         "You need social media marketing if you want to gain more online recognition for your brand or sell your product online. Also, if your intended audience is on social media, you cannot miss out on social media marketing from your overall marketing plan. The same goes for competitors. If they are there, you too, need to leverage the benefits of social media for your business.",
     },
@@ -54,19 +55,22 @@ function page() {
         "Social media marketing can boost your company’s visibility in the market, send back traffic to your website and help generate business leads. It is a great way to build a strong brand-user interaction and can therefore make customer relations and support more effective. Moreover, these interactions also provide significant insights into customer behaviour and preferences - extremely crucial data for businesses to succeed.",
     },
     {
-      question: "What type of services does a social media marketing agency in India provide?",
+      question:
+        "What type of services does a social media marketing agency in India provide?",
       answer:
         "A social media marketing agency in India offers a comprehensive range of services, right from developing a data-driven strategy to creating and publishing relevant content, interacting with and managing the community and monitoring performance. Apart from these, agencies may also offer services like paid advertising, influencer marketing, social listening & brand monitoring, reputation management, as well as social media training and consulting.",
     },
 
     {
-      question: "How do I identify the best social media marketing agency for my brand?",
+      question:
+        "How do I identify the best social media marketing agency for my brand?",
       answer:
         "To begin with, you should outline your business objectives and identify your target audience. You should also understand your resources, budget and time.  Thereafter, research and shortlist agencies whose work experience, services, communication style, and pricing match yours. Further, check what other clients in the industry have to say about them. Also, confirm if they are transparent in communication and reporting. The agency, which fulfils all the criteria, is the one best suited for your business.",
     },
 
     {
-      question: "How are you different from other agencies offering social media marketing services in India?",
+      question:
+        "How are you different from other agencies offering social media marketing services in India?",
       answer:
         "At DN Designs, we have spent over 8 years building brands. We know that every project is unique; therefore, we try to understand your brand, business goals, industry and audience first. Our experts use this insight to create a customised social media marketing plan for your business. We also actively participate in community interactions and promptly respond to customers’ queries. In addition, we regularly share the progress of the project with our clients.",
     },
@@ -77,15 +81,16 @@ function page() {
         "Our social media strategy includes identification of business goals, research of the target audience, setting of KPIs, selection of suitable social media channels, content creation & publishing, community engagement, paid advertisement (if needed) and tracking and sharing of results.",
     },
 
-
     {
-      question: "What kinds of social media marketing services do you offer - organic or paid, or both?",
+      question:
+        "What kinds of social media marketing services do you offer - organic or paid, or both?",
       answer:
         "As the best social media marketing agency in India, we offer comprehensive social media marketing services, be it organic or paid.",
     },
 
     {
-      question: "What type of industries and business verticals do you work for",
+      question:
+        "What type of industries and business verticals do you work for",
       answer:
         "We work across industries, be it food & beverages, real estate, pharmaceuticals, or nutraceuticals. We also work with startups as well as well-established companies, local businesses and personal brands. ",
     },
@@ -93,12 +98,16 @@ function page() {
 
   const rightFaqs = [
     {
-      question: "Which social media platforms do you work with? How do you decide which platform is best for my business?",
-      answer: "We work with multiple social media platforms. To decide which of these platforms is best for your business, we understand your business goals and determine where your target audience is spending their time. For example, if your target audience is a fashion brand and you want to generate awareness about your business, we may choose to go for Instagram.",
+      question:
+        "Which social media platforms do you work with? How do you decide which platform is best for my business?",
+      answer:
+        "We work with multiple social media platforms. To decide which of these platforms is best for your business, we understand your business goals and determine where your target audience is spending their time. For example, if your target audience is a fashion brand and you want to generate awareness about your business, we may choose to go for Instagram.",
     },
     {
-      question: "Do you provide the content for various social media platforms? Can I review them before they are posted/published?",
-      answer: "Yes, we can provide content for various social media platforms. It could be in the form of creative text, videos and images. And yes, we do share the content with you in advance and seek your approval on it.",
+      question:
+        "Do you provide the content for various social media platforms? Can I review them before they are posted/published?",
+      answer:
+        "Yes, we can provide content for various social media platforms. It could be in the form of creative text, videos and images. And yes, we do share the content with you in advance and seek your approval on it.",
     },
 
     {
@@ -108,7 +117,8 @@ function page() {
     },
 
     {
-      question: "How long does it take for results to show and how do you measure them?",
+      question:
+        "How long does it take for results to show and how do you measure them?",
       answer:
         "The time required for results to reflect depends on whether you decide to promote your business through organic means or paid advertising. The latter will, no doubt, yield results in a much shorter time than the former. Organic methods may take up to 3-6 months to show results. ",
     },
@@ -120,12 +130,13 @@ function page() {
     },
 
     {
-      question: "What about one-time campaigns? Do you provide social media marketing services for it?",
+      question:
+        "What about one-time campaigns? Do you provide social media marketing services for it?",
       answer:
         "New product launches (or relaunch of existing product) and special events require a one-time campaign. And as the best social media marketing agency in India, we certainly work on one-time campaigns.",
     },
 
-      {
+    {
       question: "Is the contract term flexible?",
       answer:
         "To begin with, you can opt for monthly contracts. If you are satisfied with our services and wish to continue our association for a longer time, we can convert this into a six-month contract. In case you wish to continue with the earlier monthly option, we will be glad to do so, too.",
@@ -133,9 +144,9 @@ function page() {
   ];
 
   // form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee"
-  const FormPara = "Social media is a rich and powerful arena. And we, as a social media marketing company in Noida, make the most of it to ensure your business success. We craft custom strategies, reach out to your target audience, engage with them creatively, build brand awareness and maximise your revenue. Plenty of advantages, right? So, are you ready to take your brand into the social spotlight? Shall we get in touch and discuss how to scale your business with social media marketing? "
-
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "Social media is a rich and powerful arena. And we, as a social media marketing company in Noida, make the most of it to ensure your business success. We craft custom strategies, reach out to your target audience, engage with them creatively, build brand awareness and maximise your revenue. Plenty of advantages, right? So, are you ready to take your brand into the social spotlight? Shall we get in touch and discuss how to scale your business with social media marketing? ";
 
   return (
     <div>
@@ -144,7 +155,7 @@ function page() {
         <Breadcrumb />
       </section>
 
-      {/* ui/ux design */}
+      {/* social media marketing */}
       <section className="branding-hero">
         <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
@@ -447,7 +458,11 @@ function page() {
                 <div className="col-10">
                   <h2>Analysing Performance</h2>
                   <p>
-                    Performance analysis is important to know whether we are moving in the right direction or not. This includes monitoring the content performance, engagement rate and conversions. We also verify if the goals set in the first step have been achieved or not. 
+                    Performance analysis is important to know whether we are
+                    moving in the right direction or not. This includes
+                    monitoring the content performance, engagement rate and
+                    conversions. We also verify if the goals set in the first
+                    step have been achieved or not.
                   </p>
                 </div>
               </div>
@@ -459,7 +474,11 @@ function page() {
                 <div className="col-10">
                   <h2>Reporting & Revision</h2>
                   <p>
-                    We share with you the headway we have made in this final stage. We highlight our work, key achievements and future course of action in our monthly or quarterly reports. We incorporate necessary changes in our social media marketing plan and continue with our efforts.
+                    We share with you the headway we have made in this final
+                    stage. We highlight our work, key achievements and future
+                    course of action in our monthly or quarterly reports. We
+                    incorporate necessary changes in our social media marketing
+                    plan and continue with our efforts.
                   </p>
                 </div>
               </div>
@@ -473,7 +492,7 @@ function page() {
       <section className="creating-your-brand-mobile">
         <div className="conatiner">
           <h2 className="text-center our-brand-heading-a-mobile">
-            Social Media Marketing - 
+            Social Media Marketing -
             <span className="every-pr"> Our Process</span>
           </h2>
           <div className="row creating-brand-mobile-row">
@@ -483,7 +502,12 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Identifying & Setting Goals </h2>
                   <p>
-                   The first step in our process is to understand what you want to achieve as a business from your social media marketing efforts. Therefore, we, a social media marketing agency in Noida, in collaboration with you, set SMART goals (specific, measurable, achievable, relevant, time-bound) for your business. 
+                    The first step in our process is to understand what you want
+                    to achieve as a business from your social media marketing
+                    efforts. Therefore, we, a social media marketing agency in
+                    Noida, in collaboration with you, set SMART goals (specific,
+                    measurable, achievable, relevant, time-bound) for your
+                    business.
                   </p>
                 </div>
               </div>
@@ -495,7 +519,12 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Identifying Target Audience</h2>
                   <p>
-                    The next step in our process is to understand who your target customers are. We conduct comprehensive research to find out who your target audience is and which social media channels they are most active on. This step is vital for us to move further, as we are now aware of where our target audience is and what kind of content they will engage with.
+                    The next step in our process is to understand who your
+                    target customers are. We conduct comprehensive research to
+                    find out who your target audience is and which social media
+                    channels they are most active on. This step is vital for us
+                    to move further, as we are now aware of where our target
+                    audience is and what kind of content they will engage with.
                   </p>
                 </div>
               </div>
@@ -507,7 +536,12 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Selecting the Correct Platforms</h2>
                   <p>
-                  With goal identification and extensive audience research done, we now select the social media platform that will yield the best results from our marketing efforts. We keep this selection to the ‘most relevant ones’ to ensure that our endeavours are focused on the few right platforms instead of being spread everywhere. 
+                    With goal identification and extensive audience research
+                    done, we now select the social media platform that will
+                    yield the best results from our marketing efforts. We keep
+                    this selection to the ‘most relevant ones’ to ensure that
+                    our endeavours are focused on the few right platforms
+                    instead of being spread everywhere.
                   </p>
                 </div>
               </div>
@@ -519,7 +553,11 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Planning Content Strategy & Calendar </h2>
                   <p>
-                    It is now time to establish our content themes (educational, promotional), formats (blogs, videos, reels), brand voice (fun, professional, sophisticated) and visual guidelines (colour themes). We also create a content calendar to organise our content creation and posting process. 
+                    It is now time to establish our content themes (educational,
+                    promotional), formats (blogs, videos, reels), brand voice
+                    (fun, professional, sophisticated) and visual guidelines
+                    (colour themes). We also create a content calendar to
+                    organise our content creation and posting process.
                   </p>
                 </div>
               </div>
@@ -531,55 +569,65 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Planning For Community Engagement</h2>
                   <p>
-                   For business, it is important to interact and engage with their customers. Therefore, in this step, we define the ways to respond to customers - be it a simple comment, a direct message or even a negative review. We also work out ways to increase engagement. It could include short & interesting polls, interactive Q&A sessions or UGC campaigns.
+                    For business, it is important to interact and engage with
+                    their customers. Therefore, in this step, we define the ways
+                    to respond to customers - be it a simple comment, a direct
+                    message or even a negative review. We also work out ways to
+                    increase engagement. It could include short & interesting
+                    polls, interactive Q&A sessions or UGC campaigns.
                   </p>
                 </div>
               </div>
             </div>
 
-
-            
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">06</h3>
                 <div className="card-body-create-mobile">
                   <h2>Plan Approval & Implementation</h2>
                   <p>
-                   Our social media marketing plan is now ready, and we submit it to you for approval. We incorporate the changes you suggest and resubmit the plan for review. After we receive your approval, we put the plan into action. We continue with the various planned activities for a few months and then move to the next stage - analysis. 
+                    Our social media marketing plan is now ready, and we submit
+                    it to you for approval. We incorporate the changes you
+                    suggest and resubmit the plan for review. After we receive
+                    your approval, we put the plan into action. We continue with
+                    the various planned activities for a few months and then
+                    move to the next stage - analysis.
                   </p>
                 </div>
               </div>
             </div>
 
-
-
-            
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">07</h3>
                 <div className="card-body-create-mobile">
                   <h2>Analysing Performance </h2>
                   <p>
-                  Performance analysis is important to know whether we are moving in the right direction or not. This includes monitoring the content performance, engagement rate and conversions. We also verify if the goals set in the first step have been achieved or not. 
+                    Performance analysis is important to know whether we are
+                    moving in the right direction or not. This includes
+                    monitoring the content performance, engagement rate and
+                    conversions. We also verify if the goals set in the first
+                    step have been achieved or not.
                   </p>
                 </div>
               </div>
             </div>
 
-
-            
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">08</h3>
                 <div className="card-body-create-mobile">
                   <h2>Reporting & Revision</h2>
                   <p>
-                  We share with you the headway we have made in this final stage. We highlight our work, key achievements and future course of action in our monthly or quarterly reports. We incorporate necessary changes in our social media marketing plan and continue with our efforts.
+                    We share with you the headway we have made in this final
+                    stage. We highlight our work, key achievements and future
+                    course of action in our monthly or quarterly reports. We
+                    incorporate necessary changes in our social media marketing
+                    plan and continue with our efforts.
                   </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -595,7 +643,7 @@ function page() {
               />
             </div>
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">
-              <h3 className="e-com-counter text-center">
+              <h3 className="text-center">
                 E-commerce Brand Growth
               </h3>
               <div className="row">
@@ -719,16 +767,10 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
-      </section>
-
-      {/* Form */}
-       <Form FormHead={FormHead} FormPara={FormPara}/>
+      </section> 
+      {/* Form */} 
+      <Form FormHead={FormHead} FormPara={FormPara} />
     </div>
   );
 }
