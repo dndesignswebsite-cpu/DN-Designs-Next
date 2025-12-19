@@ -8,18 +8,18 @@
 }
 
 .what-drives-our-growth-heading{
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-size: 50px;
   color: var(--heading-main-color);
   text-align: center;
-  padding: 20px 0;
+  padding-bottom: 40px;
 }
 .rrrr{
   color: var(--heading-highlite-color);
 }
 
 .what-drives-our-growth-row h3{
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     color: #fff;
     font-size: 35px;
 }
@@ -51,8 +51,17 @@
   .what-drives-our-growth{
     padding: 30px 5px;
 }
+.what-drives-our-growth-heading{
+ font-family: var(--font-corbert-bold);
+  font-size: 40px;
+  padding-bottom: 30px;
+}
 }
 /* comprehensive-seo-stregety */
+
+.comprehensive-seo-stregety{
+  padding-bottom:20px;
+}
 
 
 .comprehensive-seo-stregety-content{
@@ -66,10 +75,12 @@
 }
 
 .comprehensive-seo-stregety-content h2{
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
+   font-weight: 700;
     font-size: 32px;
     color: var(--heading-main-color);
-    padding:10px 0 ;
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
 .comprehensive-seo-stregety-content p{
@@ -90,10 +101,12 @@
 }
 
 .transparent-reporting-content h2{
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
     font-size: 32px;
     color: var(--heading-highlite-color);
-    padding:10px 0 ;
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
 .transparent-reporting-content p{
@@ -113,13 +126,8 @@
 /* Characteristics of Good Brand Name? */
 
 .characteristics-of-good {
-  padding: 80px 0;
-}
-
-.characteristics-of-good h2 {
-  font-size: 56px;
-  font-family: var(--font-corbert);
-  font-weight: 700;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .characteristics-of-good p {
@@ -157,12 +165,23 @@
   padding: 20px 20px 10px 20px;
 }
 
+.characteristics-of-good-btm h3{
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;
+}
+
 .characteristics-of-good-main-div {
   transition: all 0.6s ease;
   position: relative;
 }
 .characteristics-of-good .headg {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
 }
 
 .characteristics-of-good-back-content {
@@ -172,6 +191,15 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+
+.characteristics-of-good-back-content h3{
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: white;
+  padding-bottom: 10px;
 }
 
 .characteristics-of-good-back-content p {
@@ -197,13 +225,11 @@
 }
 
 @media (max-width: 767px) {
-  .characteristics-of-good h2 {
+  .characteristics-of-good .headg {
     font-size: 40px;
+    padding-bottom: 40px;
   }
 
-  .headg {
-    padding: 30px 0;
-  }
   .characteristics-of-good {
   padding: 50px 0;
 }
@@ -223,8 +249,9 @@
 }
 
 .appr-pro .appr-pro-main-head {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
+  color: var(--heading-main-color);
   font-weight: 700;
   padding-bottom: 15px;
 }
@@ -273,8 +300,8 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert);
-  font-weight: 500;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   color: var(--heading-highlite-color);
 }
 
@@ -292,6 +319,7 @@
 @media (max-width: 767px) {
   .appr-pro {
     padding-top: 40px;
+    padding-bottom: 20px;
   }
   .appr-pro h2 {
     font-size: 40px;
@@ -307,7 +335,8 @@
 
 /* creating-your-brand desktop view*/
 .creating-your-brand{
-  padding: 50px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 #card1-create {
@@ -317,24 +346,24 @@
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 200px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 230px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 260px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 290px;
   margin-top: 20px;
 }
 
@@ -483,7 +512,7 @@
 }
 
 .card-body-create-mobile h2{
-      color: var(--heading-main-color);
+    color: var(--heading-main-color);
    font-family: var(--font-corbert-bold);
     font-size: 35px;
     font-weight: 700;
@@ -503,15 +532,21 @@
 /* Industries We Serve */
 
 .industries-we-serve{
-    padding: 80px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.industries-we-serve-row-2{
+    margin-top: 40px;
 }
 
 .industries-we-serve h3{
      font-size: 50px;
-     font-family: var(--font-corbert);
+     font-family: var(--font-corbert-bold);
+     font-weight: 700;
      color: var(--heading-main-color);
      text-align: center;
-     padding: 50px 0;
+     padding-bottom: 50px;
 }
 .industries-we-serve-col{
     padding: 20px;
@@ -523,7 +558,7 @@
 
 .industries-we-serve-col h4{
     font-size: 24px;
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     color: var(--heading-main-color);
     padding: 20px 0;
     text-align: center;
@@ -540,15 +575,29 @@
     width: 60px;
 }
 
+@media screen and (max-width:767px){
+  .industries-we-serve-row-2{
+    margin-top: 00px;
+}
+
+.industries-we-serve h3{
+     font-size: 40px;
+     font-family: var(--font-corbert-bold);
+     font-weight: 700;
+     padding-bottom: 50px;
+}
+}
+
 /* Get a Free Website Audit */
 
 .website-audit{
-    padding: 80px 0;
+    padding-top: 60px;
+    padding-bottom: 150px;
 }
 
 .website-audit-row h3{
       text-align: center;
-     font-family: var(--font-corbert);
+     font-family: var(--font-corbert-bold);
       font-size: 50px;
       color: var(--heading-main-color);
 }
@@ -574,6 +623,12 @@
 
 
 /* Projects Completed 300+ Successfully delivered across industries */
+
+.projects-completed{
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
 .projects-completed img{
   height: 100%;
   width: 100%;
@@ -587,10 +642,11 @@
 
 .projects-completed-heading{
   font-size: 40px;
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
+ font-weight: 700;
   color: var(--heading-main-color);
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .projects-completed-div{
@@ -605,24 +661,26 @@
 .projects-completed-div h3{
   font-size: 43px;
   color: var(--heading-highlite-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .projects-completed-div h4{
   font-size: 18px;
   color: var(--heading-main-color);
-font-family: var(--font-corbert);
+font-family: var(--font-corbert-bold);
   font-weight: 700;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .projects-completed-div p{
   font-size: 14px;
   color: #888;
   font-family: var(--font-roboto);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -639,6 +697,13 @@ font-family: var(--font-corbert);
 @media(max-width:991px){
   .projects-completed-div{
    margin:20px 20px;
+}
+}
+
+@media screen and (max-width:767px){
+  .projects-completed{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 }
 

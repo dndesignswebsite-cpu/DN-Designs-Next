@@ -324,17 +324,17 @@ function page() {
 
       <section className="appr-pro">
         <div className="container">
-          <div className="">
+          <div className="cont">
             <div className="row appr-pro-row-main">
               <div className="col-12 col-md-12 col-lg-6 mt-3">
                 <h2 className="appr-pro-main-head">
-                  Our Comprehensive
+                  Our Comprehensive <br></br>
                   <span className="every-pr"> SEO Services</span>
                 </h2>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
-                <div className=" app-pro-div app-pro-div-white">
+                <div className=" app-pro-div app-pro-div-gray">
                   <div>
                     <h3>Start-up SEO</h3>
                     <p>
@@ -454,14 +454,14 @@ function page() {
 
       {/* From Research to Design How We Create Your Logo desktop view */}
       <section className="creating-your-brand">
-        <div class="container sticky-con">
+        <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
            Our <span className="rrrr">Process</span>
             
           </h2>
           <ul id="cards-create">
-            <li class="card-create" id="card1-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
                   <h2>Website Analysis</h2>
@@ -472,8 +472,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card2-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
                   <h2>Keyword Research</h2>
@@ -484,8 +484,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card3-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
                   <h2>On-Page SEO</h2>
@@ -496,8 +496,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card4-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
                   <h2>Off-Page SEO</h2>
@@ -508,8 +508,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card5-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
                   <h2>Technical SEO</h2>
@@ -655,7 +655,7 @@ function page() {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row industries-we-serve-row-2">
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
@@ -788,11 +788,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
