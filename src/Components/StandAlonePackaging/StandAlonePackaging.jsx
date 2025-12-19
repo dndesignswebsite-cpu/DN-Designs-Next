@@ -10,10 +10,11 @@ function StandAlonePackaging({ cards, mobileCrads }) {
   return (
     <div>
       {/* Standalone Packaging Design Services desktop view */}
+      <section className="standalone">
       <div className="container my-5 d-xl-block d-none">
-        <h2 className="text-center  packaging-heading mb-3">
+        {/* <h2 className="text-center packaging-heading">
           {cards[0].mainTitle}
-        </h2>
+        </h2> */}
 
         <div className="row align-items-start g-5">
           <div className="col-lg-6 mb-4 mb-lg-0 text-center">
@@ -52,16 +53,17 @@ function StandAlonePackaging({ cards, mobileCrads }) {
           </div>
         </div>
       </div>
+      </section>
 
       {/* Standalone Packaging Design Services mobile view */}
 
       <section>
         <div className="container my-5 d-xl-none d-block">
-          <h2 className="text-center fw-bold packaging-heading mb-4">
+          {/* <h2 className="text-center fw-bold packaging-heading mb-4">
            {cards[0].mainTitle}
-          </h2>
+          </h2> */}
 
-          <div className="row  standalone-packaging-mobile  ">
+          <div className="row  standalone-packaging-mobile">
             <div className="col-md-6 col-12">
               <img
                 src={mobileCrads[0].mobileImage}

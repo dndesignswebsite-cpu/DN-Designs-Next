@@ -128,7 +128,7 @@ function page() {
 
   // standalone
   const cards = [
-    { mainTitle:"Digital Marketing Success Story Mr. Bomzy",
+    {
       id: 1,
       point: "01",
       title: "Website Design and Development and SEO ",
@@ -256,7 +256,7 @@ function page() {
       <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
-            <h3>Digital Marketing - A World of Endless Opportunities Possibilities</h3>
+            <h3>Digital Marketing - A World of Endless<span className="every-pr"> Opportunities Possibilities</span> </h3>
             <div className="col-12 col-md-6 we-are-the-leading-para">
               <p>
                First, it was word of mouth, public announcements and pamphlets. Then came the newspapers, television and radio. And now there is digital media. Marketers have, since the beginning, found creative ways to promote their business and earn profit. With the latest one, though, they have managed to reach customers globally and that too, at the right place and time.
@@ -361,7 +361,7 @@ function page() {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row top-cap-row-2">
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
@@ -444,7 +444,7 @@ function page() {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row top-cap-row-3">
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
@@ -529,7 +529,17 @@ function page() {
         </div>
       </section>
 
-      <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      <section className="standalone-sec">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center headg">Digital Marketing <span className="every-pr"> Success Story
+Mr. Bomzy</span> </h2>
+          </div>
+        </div>
+        <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      </section>
+
+      
 
       {/* Organic Sessions */}
       <section className="organic-sessions">
@@ -571,11 +581,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 

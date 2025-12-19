@@ -5,9 +5,9 @@ import "./DigitalMarketingToggleBtn.css"
 function DigitalMarketingToggleBtn() {
   return (
     <div>
-      <label class="switch">
+      <label className="switch">
   <input type="checkbox" id="toggleBtn"/>
-  <span class="slider"></span>
+  <span className="slider"></span>
 </label>
     </div>
   )

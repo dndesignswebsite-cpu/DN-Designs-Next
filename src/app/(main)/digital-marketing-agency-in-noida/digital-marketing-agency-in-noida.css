@@ -1,6 +1,7 @@
 /* Switch on your potential with digital marketing */
 .switch-on{
-  padding: 40px 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .switch-on-div{
    display: flex;
@@ -17,15 +18,16 @@
 .switch-on-div h3{
   font-size: 43px;
   color: var(--heading-highlite-color);
- font-family: var(--font-corbert);
+ font-family: var(--font-corbert-bold);
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 .switch-on-div p{
   font-size: 18px;
   color: var(--heading-main-color);
   font-family: var(--font-roboto);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1em;
 }
 
@@ -38,6 +40,14 @@
 
 .switch-on-main-row{
   align-items: stretch;
+}
+
+@media screen and (max-width:767px) {
+  .switch-on{
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+  
 }
 
 @media(max-width:991px){
@@ -77,8 +87,9 @@ padding: 0;
 } */
 
 .switch-on-middle-div-para p{
-     font-size: 18px;
-    font-family: var(--font-corbert);
+    font-size: 18px;
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
     padding: 18px;
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
     border-radius:18px;
@@ -91,7 +102,8 @@ padding: 0;
 }
 
 .main-switch-img img{
- box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
 }
 
 .toggle-btn{
@@ -102,13 +114,21 @@ padding: 0;
 
 
 /* We Are The Leading Video */
+
+
+.every-pr {
+  color: var(--heading-highlite-color);
+}
+
 .we-are-the-leading{
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .we-are-the-leading h3{
     font-size: 50px;
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
+   font-weight: 700;
     color: var(--heading-main-color);
     width: 70%;
 }
@@ -120,6 +140,7 @@ padding: 0;
 .we-are-the-leading-para p{
   font-size: 18px;
   font-family: var(--font-roboto);
+  font-weight: 500;
   line-height: 1.6em;
 }
 
@@ -138,22 +159,31 @@ padding: 0;
   .we-are-the-leading-para{
   padding-top: 20px;
 }
+
+.we-are-the-leading{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
 }
 
 
+/* top capibilities */
+
 .top-cap {
-  padding: 40px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .top-cap h2 {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
 }
 
 .top-cap p {
   color: var(--heading-main-color);
  font-family: var(--font-roboto);
+ font-weight: 500;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -162,6 +192,10 @@ padding: 0;
   position:absolute;
   right:5px;
   top:0;
+}
+
+.top-cap-row-2, .top-cap-row-3 {
+  margin-top: 30px;
 }
 
 .top-cap-div {
@@ -185,13 +219,19 @@ padding: 0;
   transition: all 0.6s ease;
   padding: 20px 20px 10px 20px;
 }
+.top-cap-btm h3{
+  font-size: 24px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;}
 
 .top-cap-main-div {
   transition: all 0.6s ease;
   position: relative;
 }
 .top-cap .headg {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .top-cap-back-content {
@@ -201,6 +241,13 @@ padding: 0;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.top-cap-back-content h3 {
+  font-size: 24px;
+  font-family: var(--font-corbert-bold);
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 
 .top-cap-back-content p {
@@ -231,14 +278,47 @@ padding: 0;
   }
 
   .headg {
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
+
+  .top-cap-row-2, .top-cap-row-3 {
+  margin-top: 0px;
 }
+}
+
+
+/* standalone  */
+.standalone-sec{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.standalone-sec .headg{
+  font-size: 50px;
+    color: var(--heading-main-color);
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+@media screen and (max-width:767px) {
+  .standalone-sec .headg{
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .standalone-sec{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+}
+
 
 
 /* organic-sessions  */
 .organic-sessions{
-  padding: 50px 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .organic-sessions-row{
@@ -253,7 +333,8 @@ padding: 0;
 .organic-sessions-col h3{
    text-align: center;
    font-size: 38px;
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
    color: #fff;
 }
 
