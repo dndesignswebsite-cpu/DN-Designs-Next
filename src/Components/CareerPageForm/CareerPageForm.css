@@ -10,6 +10,13 @@
   margin: 20px;
 }
 
+.contact-form-career h2{
+  font-size: 40px;
+  font-family: var(--font-corbert-bold);
+  color: #000;
+  padding: 20px 0;
+}
+
 .form-group-cover-letter{
   width: 100%;
   margin: 20px;
@@ -28,16 +35,17 @@
 }
 
 
-.form-group input,
+ .form-group input,
 .form-group textarea {
   width: 100%;
-  background-color: #F1F1F1;
+  background-color: #F1F1F1; 
   color: var(--heading-main-color);
   font-size:20px;
   padding: 10px 0;
  border-radius: 10px;
   padding: 5px;
   border: 1px solid #69727d;
+  
 }
 
 .form-group input:focus,

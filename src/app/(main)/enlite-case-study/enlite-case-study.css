@@ -37,6 +37,7 @@
     border: 1px solid #0B52A0;
     border-radius: 50px;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .enlitecase-study-points1{
@@ -48,17 +49,21 @@
     border: 1px solid #F3C309;
     border-radius: 50px;
     font-size: 16px;
+     font-family: var(--font-roboto);
 }
 
-#enlitecasestudy-heading{
+.enlitecasestudy-heading{
     font-size: 75px;
-    font-weight: 700;
+    font-weight: 800;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #enlitecasestudy-span{
     color: #0B52A0;
     font-size: 32px;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }
 
 .enlitecasestudy-images{
@@ -100,6 +105,7 @@
     border-radius: 50px;
     color: #0B52A0;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .enliteoverview-points{
@@ -110,47 +116,61 @@
     border-radius: 50px;
     color: #F3C309;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 #enliteoverview-heading1{
     font-size: 30px;
     color: #0B52A0;
     font-weight: 700;
+    font-family: var(--font-corbert-bold);
 }
 
 #enliteoverview-heading2{
     font-size: 50px;
     font-weight: 700;
     margin-top: 30px;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #enliteapproach-heading1{
     font-size: 30px;
     color: #0B52A0;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }
 
 #enliteapproach-heading2{
     font-size: 50px;
     font-weight: 700;
     margin-top: 20px;
+    font-family: var(--font-corbert-bold);
+    color: #000;
 }
 
 #enliteoverview-p{
     font-size: 18px;
-    font-weight: 700;
+    font-family: var(--font-roboto);
+    color: #000;
+    font-weight: 600;
+    font-family: var(--font-roboto);
 }
 
 #enliteoverview-h2{
     font-size: 32px;
     font-weight: 700;
     margin-top: 30px;
+    font-family: var(--font-corbert);
+    color: #000;
 }
 
 #enliteoverview-para{
     font-size: 17px;
     font-weight: 400;
     margin-top: 30px;
+    font-family: var(--font-roboto);
+    color: #000;
 }
 
 .enlitecase-study-img2{
@@ -175,7 +195,6 @@
 
 .enlitecase-study-img8{
         border-radius: 30px;
-        margin-top: 30px;
 }
 
 .enlitecase-study-img9{
@@ -253,9 +272,10 @@
         margin-top: 40px;
     }
 
-    #enlitecaststudy-heading{
-        font-size: 52px;
-        font-weight: 700;
+   
+
+    .enlitecasestudy-heading{
+        font-size: 50px;
     }
 }
 
@@ -297,6 +317,7 @@
     color: #17AAA6;
     font-size: 32px;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }
 
 .enlitecase-study-points{
@@ -308,6 +329,7 @@
     border: 1px solid #17AAA6;
     border-radius: 50px;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .enlitecase-study-points1{
@@ -319,12 +341,14 @@
     border: 1px solid #B9C734;
     border-radius: 50px;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 #enliteoverview-heading1{
     font-size: 30px;
     color: #17AAA6;
     font-weight: 700;
+    font-family: var(--font-corbert-bold);
 }
 
 .enliteoverview-points1{
@@ -335,6 +359,7 @@
     border-radius: 50px;
     color: #0B52A0;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 .enliteoverview-points{
@@ -345,10 +370,12 @@
     border-radius: 50px;
     color: #B9C734;
     font-size: 16px;
+    font-family: var(--font-roboto);
 }
 
 #enliteapproach-heading1{
     font-size: 30px;
     color: #17AAA6;
     font-weight: 700;
+    font-family: var(--font-corbert);
 }

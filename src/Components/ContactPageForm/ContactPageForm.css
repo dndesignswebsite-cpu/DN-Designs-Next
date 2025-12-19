@@ -62,7 +62,8 @@
   font-size:20px;
   padding: 10px 0;
   transition: border-bottom-color 0.3s ease;
-  font-weight: 800;
+  /* font-weight: 800; */
+  font-family: var(--font-corbert);
 }
 
 .form-group input:focus,

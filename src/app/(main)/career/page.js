@@ -48,7 +48,7 @@ function page() {
         <div className='container'>
             <div className='row'>
                 <div className='col-12 col-md-6 career-hero-col-l'>
-                    <h2>Together, Let's Create Something <span className='wow'>WOW….</span></h2>
+                    <h1>Together, Let's Create Something <span className='wow'>WOW….</span></h1>
                     <p>If you’re passionate about design, branding, and marketing, love challenges, and want to make a real and lasting impact, this is your place. Join us, and let’s build something wow as a team!</p>
                 </div>
                 <div className='col-12 col-md-6 career-hero-col-r'>

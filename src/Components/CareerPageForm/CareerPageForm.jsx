@@ -31,7 +31,9 @@ function CareerPageForm() {
   return (
     <div>
       <section className="container">
+      
         <form className="contact-form-career" onSubmit={handleSubmit}>
+        <h2 className="text-center">What are you looking?</h2>
           {/* firstName */}
           <div className="row1">
             <div className="form-group">

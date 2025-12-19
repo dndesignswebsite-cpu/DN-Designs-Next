@@ -4,8 +4,9 @@
 }
 
 .brand-video-shoots-col-right h2{
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     font-size: 56px;
+    color: #000;
 }
 
 .brand-video-shoots-col-right p{
@@ -38,7 +39,7 @@
     padding: 10px;
 }
 .we-are-leading-left-col h3{
-    font-family: var(--font-corbert);
+    font-family: var(--font-corbert-bold);
     font-size: 50px;
     color: var(--heading-main-color);
 }
@@ -68,7 +69,7 @@
 }
 
 .why-choose-us-row h3{
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 50px;
     color: var(--heading-main-color);
     padding: 20px 0;
@@ -94,10 +95,10 @@
     padding: 60px 0;
 }
 .video-our-portfolio h3{
-   font-family: var(--font-corbert);
+   font-family: var(--font-corbert-bold);
     font-size: 50px;
     color: var(--heading-main-color);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 @media(max-width:767px){

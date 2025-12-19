@@ -105,6 +105,13 @@
         display:none;
     }
 
+     .content-career-unit ul{
+        list-style: square;
+     }
+    .content-career-unit ul li {
+        padding: 5px 0;
+    }
+
 
 @media(max-width:991px){
     .desktop-view{
@@ -139,6 +146,14 @@ margin: 20px 0;
     font-size: 18px;
     font-family: var(--font-corbert-bold);
     padding: 10px 0;
+}
+
+.mobile-content-career ul{
+     list-style: square;
+}
+
+.mobile-content-career ul li{
+     padding: 5px 0;
 }
 
 
