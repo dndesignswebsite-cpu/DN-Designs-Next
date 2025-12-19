@@ -1,3 +1,7 @@
+
+.every-pr {
+  color: var(--heading-highlite-color);
+}
 /* social media   */
 .social-media{
   padding: 120px 0;
@@ -206,6 +210,14 @@
   padding: 20px 20px 10px 20px;
 }
 
+.but-why-btm h3 {
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;
+}
+
 .but-why-main-div {
   transition: all 0.6s ease;
   position: relative;
@@ -222,6 +234,14 @@
   bottom: 0;
   left: 0;
 }
+
+.but-why-back-content h3 {
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  color: #fff;
+  padding-bottom: 10px;
+}
+
 
 .but-why-back-content p {
   color: #fff;
@@ -264,47 +284,47 @@
 
 #card1-create {
   --index: 1;
-  top: 170px;
+  top: 210px;
   margin-top: 20px;
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 240px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 270px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 300px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 330px;
   margin-top: 20px;
 }
 
 #card6-create {
   --index: 6;
-  top: 400px;
+  top: 360px;
   margin-top: 20px;
 }
 
 #card7-create {
   --index: 7;
-  top: 450px;
+  top: 390px;
   margin-top: 20px;
 }
 
 #card8-create {
   --index: 8;
-  top: 360px;
+  top: 420px;
   margin-top: 20px;
 }
 
