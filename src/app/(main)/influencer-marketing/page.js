@@ -103,7 +103,7 @@ function page() {
 
   // standalone
   const cards = [
-    { mainTitle:"Advantages of Investing in Influencer Marketing",
+    { 
       id: 1,
       point: "01",
       title: "Brand Awareness & Trust",
@@ -243,7 +243,14 @@ function page() {
       </section>
 
       {/* standalone */}
-     <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+     <section className="standalone-sec-inf">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center headg">Advantages of Investing in<span className="every-pr"> Influencer Marketing</span> </h2>
+          </div>
+        </div>
+        <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      </section>
 
       {/* top capibilities */}
 
@@ -335,7 +342,7 @@ function page() {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row top-cap-row-2">
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
@@ -423,12 +430,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
-
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
