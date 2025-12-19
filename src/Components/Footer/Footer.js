@@ -8,7 +8,7 @@ export default function Footer() {
     >
       <div className="container mb-5">
         <div className="container mb-4">
-          <h5 className="fw-semibold">
+          <h5 className={`${styles["footer-join"]}`}>
             Join DN Today. Getting More Done Together.
           </h5>
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
 
             <div className="col-12 col-md-4 ms-auto text-start text-md-end footer-right-sec">
               <div className="mb-4">
-                <h6 className={`${styles["footer-add-conn"]} fw-bold  mb-4`}>
+                <h6 className={`${styles["footer-add-conn"]}  mb-4`}>
                   Address
                 </h6>
                 <p className="mb-0">

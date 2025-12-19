@@ -8,16 +8,25 @@
 .ff p{
     font-family: var(--font-roboto);
 }
+.footer-join {
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+}
 
 .footer-li ul li a{
+    font-family: var(--font-corbert-bold);
     font-size:48px;
     line-height: 0;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.footer-add-conn{
-    font-size:20px;
+.footer-add-conn {
+    font-size:22px;
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
 }
+
+
 
 .footer-add-conn p a{
     font-size:20px;
