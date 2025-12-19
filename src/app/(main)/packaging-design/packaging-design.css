@@ -1,9 +1,17 @@
-
+.every-pr {
+  color: var(--heading-highlite-color);
+}
  /* Our Work Portfolio */
- 
-.port-row {
+
+.portfolio{
+ padding-top: 80px;
+ padding-bottom: 30px;
+}
+
+.port-row{
   padding: 10px 0;
 }
+
 
 .port-div {
   border: 1px solid #a8a8a8;
@@ -25,21 +33,13 @@
   object-fit: cover;
 }
 
-.portfolio {
-  padding: 90px 0;
-}
-
 .portfolio h2 {
   color: var(--heading-main-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2em;
-  padding-bottom: 20px;
-}
-
-.every-pr {
-  color: var(--heading-highlite-color);
+  padding-bottom: 40px;
 }
 
 .potfolio-div-btns {
@@ -81,8 +81,9 @@
 }
 .port-div-headg h3 {
   color: var(--heading-highlite-color);
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
   font-size: 32px;
+  font-weight: 700;
 }
 
 .port-content p {
@@ -91,7 +92,7 @@
   font-size: 16px;
   line-height: 1.4em;
   padding-top: 5px;
-  padding-bottom:0 ;
+  padding-bottom:0px;
 }
 
 @media (max-width: 768px) {
@@ -125,7 +126,8 @@
 }
 
 .portfolio h2{
-  font-size:40px ;
+  font-size:40px;
+  padding-bottom: 20px;
 }
 .portfolio {
   padding: 50px 0;
@@ -166,34 +168,35 @@
 
 /* creating-your-brand desktop view*/
 .creating-your-brand{
-  padding: 50px 0;
+  padding-top: 50px;
+ padding-bottom: 60px;
 }
 
 #card1-create {
   --index: 1;
-  top: 170px;
+  top: 210px;
   margin-top: 20px;
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 240px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 270px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 300px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 330px;
   margin-top: 20px;
 }
 
@@ -312,7 +315,8 @@
 /* creating-your-brand mobile view*/
 
 .creating-your-brand-mobile{
-  padding: 50px 0;
+  padding-top: 50px;
+ padding-bottom: 30px;
 }
 
 .our-brand-heading-a-mobile{
@@ -362,12 +366,13 @@
 /* top-cap */
 
 .top-cap {
-  padding: 40px 0;
+  padding-top: 40px;
+ padding-bottom: 60px;
 }
 
 .top-cap h2 {
-  font-size: 56px;
-  font-family: var(--font-corbert);
+  font-size: 50px;
+  font-family: var(--font-corbert-bold);
   font-weight: 700;
 }
 
@@ -406,6 +411,14 @@
   padding: 20px 20px 10px 20px;
 }
 
+.top-cap-btm h3 {
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;
+}
+
 .top-cap-main-div {
   transition: all 0.6s ease;
   position: relative;
@@ -422,6 +435,15 @@
   bottom: 0;
   left: 0;
 }
+
+
+.top-cap-back-content h3 {
+  font-size: 22px;
+  font-family: var(--font-corbert-bold);
+  color: #fff;
+  padding-bottom: 10px;
+}
+
 
 .top-cap-back-content p {
   color: #fff;
@@ -455,4 +477,29 @@
   }
 }
 
+/* standalone  */
+.standalone-sec-pac{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.standalone-sec-pac .headg{
+  font-size: 50px;
+    color: var(--heading-main-color);
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+@media screen and (max-width:767px) {
+  .standalone-sec-pac .headg{
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .standalone-sec-pac{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+}
 

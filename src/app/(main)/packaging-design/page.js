@@ -44,7 +44,7 @@ function page() {
 
     // standalone
   const cards = [
-    { mainTitle:"Standalone Packaging Design Services",
+    { 
       id: 1,
       point: "01",
       title: "Consultation and Research",
@@ -620,17 +620,18 @@ function page() {
       </section>
 
       {/* stand alone packaging design */}
-      <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      <section className="standalone-sec-pac">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center headg">Standalone Packaging  <span className="every-pr"> Design Services</span> </h2>
+          </div>
+        </div>
+        <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      </section>
 
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
-
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
