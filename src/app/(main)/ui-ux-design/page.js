@@ -136,14 +136,10 @@ function page() {
 
       <section className="designs-that-speak">
         <div className="container py-5">
-          <h2 className="text-center fw-bold designs-that-head  mb-4 d-none d-lg-block d-md-block">
+          <h2 className="text-center designs-that-head">
             Designs That Speak Your
             <br />
-            <span style={{ color: "#CA2734" }}>Industry's Language</span>
-          </h2>
-          <h2 className="text-center fw-bold packaging-heading mb-4 d-block d-lg-none d-md-none">
-            Designs That Speak Your
-            <span style={{ color: "#CA2734" }}> Industry's Language</span>
+            <span className="every-pr">Industry's Language</span>
           </h2>
 
           <img
@@ -166,12 +162,12 @@ function page() {
 
       {/* UI/UX means nailing the basics */}
       <section className="nailing-the-basics">
-        <div className="container py-5">
+        <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6 col-md-6 text-start">
               <h2 id="ui-heading">UI/UX Meaning - Nailing the Basics</h2>
               <div className="ui-description">
-                <p className="ui-description mt-5">
+                <p className="ui-description">
                   Let’s understand this with an example. You visit a website.
                   Now, analyse your entire experience browsing through it. Did
                   you face any issues? Did you get the information you wanted,
@@ -205,17 +201,17 @@ function page() {
       {/* Creative Catalogue Designing - Our Process desktop view */}
 
       <section className="creating-your-brand">
-        <div class="container sticky-con">
+        <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
-            UI/UX Design Process -
+            UI/UX Design Process - From
             <span className="every-pr">
               <br />
-              From Start To End
+               Start To End
             </span>
           </h2>
           <ul id="cards-create">
-            <li class="card-create" id="card1-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
                   <h2>User Research & Analysis</h2>
@@ -230,8 +226,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card2-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
                   <h2>Designing Information Architecture</h2>
@@ -248,8 +244,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card3-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
                   <h2>Crafting Visual Design</h2>
@@ -265,8 +261,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card4-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
                   <h2>Moving to Interaction Design</h2>
@@ -284,8 +280,8 @@ function page() {
               </div>
             </li>
 
-            <li class="card-create" id="card5-create">
-              <div class="card-body-create row">
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
                   <h2>Usability Testing</h2>
@@ -410,7 +406,7 @@ function page() {
           {/* 1st row */}
           <div className="row">
             <h2 className="text-center headg">
-              Our Core Strengths
+              Our Core Strengths<br></br>
               <span className="every-pr">
                 {" "}
                 How We Make Your UI/UX Design Look Effortless
@@ -519,7 +515,7 @@ function page() {
           </div>
 
           {/* 2nd row */}
-          <div className="row">
+          <div className="row characteristics-of-good-2nd-row">
             <div className="col-12 col-md-6 col-lg-4 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
@@ -606,16 +602,16 @@ function page() {
       {/* craft desktop view*/}
       <section className="craft-desktop-view">
         <div className="container">
-          <h2 className="text-center fw-bold craft-desktop-head  mb-4">
+          <h2 className="text-center craft-desktop-head">
             Web Solutions
-            <span style={{ color: "#CA2734" }}> We Craft</span>
+            <span className="every-pr"> We Craft</span>
           </h2>
 
           <div className="row g-4 row-1">
             <div className="col-12 col-lg-5 col-md-12 d-flex">
               <div className="landing-row p-5 rounded-4 text-start">
                 <h2 className="craft-heading">
-                  Landing <br />
+                  LANDING <br />
                   PAGE
                 </h2>
                 <p className="craft-para mt-5">
@@ -819,11 +815,6 @@ function page() {
       {/* faqs */}
 
       <section className="faqs">
-        <div className="container">
-          <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 

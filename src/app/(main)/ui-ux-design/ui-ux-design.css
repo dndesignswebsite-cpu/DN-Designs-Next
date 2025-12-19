@@ -1,11 +1,30 @@
+.every-pr {
+  color: var(--heading-highlite-color);
+}
+
 /* Designs that speak your industryis language */
+.designs-that-speak{
+  padding-top: 50px;
+ padding-bottom: 30px;
+}
+
+.designs-that-speak .designs-that-head{
+    font-family: var(--font-corbert-bold);
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
 .ui-img1,
 .ui-img2,
-.ui-img3,
-.row-1,
-.row-2,
-.row-3,
-.row-4{
+.ui-img3{
+  padding-top: 10px;
+}
+
+
+
+.ui-img1,
+.ui-img2,
+.ui-img3{
   position: sticky;
   top: 40px;
 }
@@ -15,16 +34,38 @@
 .ui-img3, .row-3{z-index: 3;}
 .row-4{z-index: 4;}
 
-.designs-that-head{
-  font-family: var(--font-corbert);
-  font-size: 50px;
+
+@media screen and (max-width:767px) {
+  .designs-that-speak{
+  padding-top: 3cap;
+ padding-bottom: 30px;
+}
+
+.designs-that-speak .designs-that-head{
+    font-family: var(--font-corbert-bold);
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+.designs-that-speak{
+  padding-top: 30px;
+ padding-bottom: 10px;
+}
+
 }
 
 /* UI/UX means nailing the basics */
+.nailing-the-basics{
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
 #ui-heading{
-  font-size: 62px;
+  font-size: 56px;
   font-weight: 700;
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  padding-bottom: 30px;
+  color: var(--heading-main-color);
 }
 
 .ui-description{
@@ -32,39 +73,41 @@
   font-weight: 400;
   font-family: var(--font-roboto);
   line-height: 1.6em;
+   color: var(--heading-main-color);
 }
 
 
 /* Creative Catalogue Designing - Our Process desktop view */
 .creating-your-brand{
-  padding: 50px 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 #card1-create {
   --index: 1;
-  top: 170px;
+  top: 210px;
   margin-top: 20px;
 }
 #card2-create {
   --index: 2;
-  top: 210px;
+  top: 240px;
   margin-top: 20px;
 }
 #card3-create {
   --index: 3;
-  top: 260px;
+  top: 270px;
   margin-top: 20px;
 }
 #card4-create {
   --index: 4;
-  top: 310px;
+  top: 300px;
   margin-top: 20px;
 }
 
 
 #card5-create {
   --index: 5;
-  top: 360px;
+  top: 330px;
   margin-top: 20px;
 }
 
@@ -100,7 +143,7 @@
 .our-brand-heading-a {
   position: sticky;
   top: 0;
-  padding: 30px 0;
+  padding: 30px 0px 0px 0px;
   text-align: center;
   color: var(--heading-main-color);
   font-family: var(--font-corbert-bold);
@@ -233,12 +276,16 @@
 /* Characteristics of Good Brand Name? */
 
 .characteristics-of-good {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.characteristics-of-good-2nd-row{
+  margin-top: 40px;
 }
 
 .characteristics-of-good h2 {
-  font-size: 56px;
- font-family: var(--font-corbert);
+  font-size: 50px;
+ font-family: var(--font-corbert-bold);
   font-weight: 700;
 }
 
@@ -277,6 +324,14 @@
   padding: 20px 20px 10px 20px;
 }
 
+.characteristics-of-good-btm h3{
+  font-size: 24px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  color: var(--heading-main-color);
+  padding-bottom: 10px;
+}
+
 .characteristics-of-good-main-div {
   transition: all 0.6s ease;
   position: relative;
@@ -294,8 +349,17 @@
   left: 0;
 }
 
+.characteristics-of-good-back-content h3{
+  font-size: 28px;
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
 .characteristics-of-good-back-content p {
   color: #fff;
+  font-family: var(--font-roboto);
+  font-weight: 500;
 }
 
 .characteristics-of-good-main-div:hover {
@@ -320,6 +384,10 @@
   .characteristics-of-good h2 {
     font-size: 40px;
   }
+  .characteristics-of-good-2nd-row{
+  margin-top: 0px;
+}
+
 
   .headg {
     padding: 30px 0;
@@ -338,12 +406,30 @@
 
 .craft-heading{
   font-size: 50px;
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  color: var(--heading-main-color);
 }
 
 .craft-desktop-head{
-  font-family: var(--font-corbert);
+  position: sticky;
+  top: 20;
+  padding-bottom: 50px;
+  font-family: var(--font-corbert-bold);
   font-size: 50px;
+  font-weight: 700;
+   color: var(--heading-main-color);
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4{
+  position: sticky;
+  top: 100px;
+}
+
+.row-4{
+  background-color: white;
 }
 
 .craft-para{
@@ -403,7 +489,8 @@ margin: 0;
 
 .craft-tab-view-row h2{
  font-size: 40px;
-font-family: var(--font-corbert);
+font-family: var(--font-corbert-bold);
+font-weight: 700;
 }
 
 .craft-first-div-mobile{
@@ -418,8 +505,10 @@ font-family: var(--font-corbert);
 }
 
 .craft-first-div-mobile-content h2{
-  font-family: var(--font-corbert);
+  font-family: var(--font-corbert-bold);
+  font-weight: 700;
   font-size: 35px;
+  padding-bottom: 20px;
 }
 
 .craft-first-div-mobile-content p{
@@ -434,19 +523,3 @@ font-family: var(--font-corbert);
   margin-top: 20px;
 }
 
-
-
- /* faqs */
-
-.faqs h2 {
-    font-size: 56px;
-    font-family: var(--font-corbert);
-    font-weight: 700;
-    color: var(--heading-main-color);
-}
-@media(max-width:767px){
-  .faqs h2 {
-    font-size: 40px;
-    padding: 0 10px;
-  }
-}
