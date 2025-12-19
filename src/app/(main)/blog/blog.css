@@ -175,7 +175,7 @@
 }
 
 /* Scroll to Top Button */
-.scroll-to-top-btn {
+/* .scroll-to-top-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -205,7 +205,7 @@
 .scroll-to-top-btn:hover {
   background-color: #a51e29;
   transform: translateY(-5px);
-}
+} */
 
 /* Category Chips */
 .blog-categories-list {
