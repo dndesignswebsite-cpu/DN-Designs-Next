@@ -84,7 +84,7 @@ export default function Header() {
           <span className={`${styles["toggle-icon"]}`}></span>
         </button>
       </header>
-      <div className={`${styles["desktop-nav"]}`}>
+      <div className={`${styles["desktop-nav"]}`} onWheel={(e) => e.stopPropagation()}>
         <nav
           className={`${styles["full-screen-nav"]} ${isAnimating ? styles["is-open"] : ""
             }`}
