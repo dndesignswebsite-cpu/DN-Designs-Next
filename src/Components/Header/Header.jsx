@@ -5,8 +5,14 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faXTwitter,
+  faFacebook,
+  faPinterest,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const TRANSITION_DURATION = 1000;
 
@@ -505,9 +511,81 @@ export default function Header() {
                   </div>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-3`}>
-                  
-                  
+                <div className="col-3">
+                  <div className={`${styles["contact-us-col"]}`}>
+                    <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
+                      <FontAwesomeIcon
+                        icon={faMobileScreen}
+                        className="px-2 mb-1"
+                        style={{ fontSize: "24px" }}
+                      />
+                      <h3 className={`${styles["header-solo-heading"]}`}>
+                        Follow Us
+                      </h3>
+                    </div>
+
+                  </div>
+                  <div className={`${styles["footer-social-icons"]}`}>
+                    <a
+                      href="https://www.instagram.com/dn_designs_india/?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        className={styles["footer-social-icons-unit"]}
+                      />
+                    </a>
+
+                    <a
+                      href="https://www.facebook.com/digitizersnation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <FontAwesomeIcon
+                        icon={faFacebook}
+                        className={`${styles["footer-social-icons-unit"]}`}
+                      />
+                    </a>
+
+                    <a
+                      href="https://x.com/digitizersn?lang=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X"
+                    >
+                      <FontAwesomeIcon
+                        icon={faXTwitter}
+                        className={`${styles["footer-social-icons-unit"]}`}
+                      />
+                    </a>
+
+                    <a
+                      href="https://in.pinterest.com/dndesigns1100/_created/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Pinterest"
+                    >
+                      <FontAwesomeIcon
+                        icon={faPinterest}
+                        className={`${styles["footer-social-icons-unit"]}`}
+                      />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/dn-designs-india"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin"
+                    >
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className={`${styles["footer-social-icons-unit"]}`}
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
