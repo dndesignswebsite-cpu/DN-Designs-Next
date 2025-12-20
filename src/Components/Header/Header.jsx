@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
-import { faArrowCircleRight, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const TRANSITION_DURATION = 1000;
 
@@ -52,6 +54,8 @@ export default function Header() {
     };
   }, []);
 
+  const pathname = usePathname();
+
   return (
     <div>
       <header className={`${styles["header"]} container`}>
@@ -65,9 +69,8 @@ export default function Header() {
         </div>
 
         <button
-          className={`${styles["nav-toggle-btn"]} ${
-            isAnimating ? styles["is-active"] : ""
-          }`}
+          className={`${styles["nav-toggle-btn"]} ${isAnimating ? styles["is-active"] : ""
+            }`}
           onClick={toggleNav}
           aria-label="Toggle Navigation"
           aria-expanded={isAnimating}
@@ -77,9 +80,8 @@ export default function Header() {
       </header>
       <div className={`${styles["desktop-nav"]}`}>
         <nav
-          className={`${styles["full-screen-nav"]} ${
-            isAnimating ? styles["is-open"] : ""
-          }`}
+          className={`${styles["full-screen-nav"]} ${isAnimating ? styles["is-open"] : ""
+            }`}
           style={{
             visibility: isVisible ? "visible" : "hidden",
             pointerEvents: isVisible ? "auto" : "none",
@@ -91,9 +93,8 @@ export default function Header() {
                 <div className={`${styles["open-nav-col"]} col-12`}>
                   <div className={`${styles["open-nav-btn"]}`}>
                     <button
-                      className={`${styles["nav-toggle-btn"]} ${
-                        isAnimating ? styles["is-active"] : ""
-                      }`}
+                      className={`${styles["nav-toggle-btn"]} ${isAnimating ? styles["is-active"] : ""
+                        }`}
                       onClick={toggleNav}
                       aria-label="Toggle Navigation"
                       aria-expanded={isAnimating}
@@ -106,11 +107,11 @@ export default function Header() {
 
               <div className={`${styles["links-cols"]} row`}>
                 <div className="col">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Main Links
@@ -121,7 +122,8 @@ export default function Header() {
                       <Link
                         href="/"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/" ? styles["active"] : ""
+                          }`}
                       >
                         Home
                       </Link>
@@ -130,7 +132,8 @@ export default function Header() {
                       <Link
                         href="/about-us"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/about-us" ? styles["active"] : ""
+                          }`}
                       >
                         About Us
                       </Link>
@@ -139,7 +142,8 @@ export default function Header() {
                       <Link
                         href="/services"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/services" ? styles["active"] : ""
+                          }`}
                       >
                         Services
                       </Link>
@@ -148,11 +152,11 @@ export default function Header() {
                 </div>
 
                 <div className="col">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Brand Identity
@@ -163,7 +167,8 @@ export default function Header() {
                       <Link
                         href="/branding"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/branding" ? styles["active"] : ""
+                          }`}
                       >
                         Branding
                       </Link>
@@ -172,7 +177,8 @@ export default function Header() {
                       <Link
                         href="/logo-designing"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/logo-designing" ? styles["active"] : ""
+                          }`}
                       >
                         Logo Designing
                       </Link>
@@ -181,9 +187,20 @@ export default function Header() {
                       <Link
                         href="/catalogue-designing"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/catalogue-designing" ? styles["active"] : ""
+                          }`}
                       >
                         Catalogue Designing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/packaging-design"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${pathname === "/packaging-design" ? styles["active"] : ""
+                          }`}
+                      >
+                        Packaging Design
                       </Link>
                     </li>
 
@@ -191,7 +208,8 @@ export default function Header() {
                       <Link
                         href="/brand-name-suggestion"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/brand-name-suggestion" ? styles["active"] : ""
+                          }`}
                       >
                         Brand Name Suggestion
                       </Link>
@@ -200,11 +218,11 @@ export default function Header() {
                 </div>
 
                 <div className="col">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Communication Strategy
@@ -215,7 +233,8 @@ export default function Header() {
                       <Link
                         href="/animation"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/animation" ? styles["active"] : ""
+                          }`}
                       >
                         Animation
                       </Link>
@@ -224,7 +243,8 @@ export default function Header() {
                       <Link
                         href="/digital-marketing-agency-in-noida"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/digital-marketing-agency-in-noida" ? styles["active"] : ""
+                          }`}
                       >
                         Digital Marketing
                       </Link>
@@ -233,7 +253,8 @@ export default function Header() {
                       <Link
                         href="/influencer-marketing"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/influencer-marketing" ? styles["active"] : ""
+                          }`}
                       >
                         Influencer Marketing
                       </Link>
@@ -243,7 +264,8 @@ export default function Header() {
                       <Link
                         href="/social-media-marketing"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/social-media-marketing" ? styles["active"] : ""
+                          }`}
                       >
                         Social Media Marketing
                       </Link>
@@ -252,11 +274,11 @@ export default function Header() {
                 </div>
 
                 <div className="col">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Website Design
@@ -267,7 +289,8 @@ export default function Header() {
                       <Link
                         href="/web-designing-services-in-india"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/web-designing-services-in-india" ? styles["active"] : ""
+                          }`}
                       >
                         Web Designing
                       </Link>
@@ -276,7 +299,8 @@ export default function Header() {
                       <Link
                         href="/ui-ux-design"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/ui-ux-design" ? styles["active"] : ""
+                          }`}
                       >
                         Ui/Ux Design
                       </Link>
@@ -285,32 +309,24 @@ export default function Header() {
                       <Link
                         href="/seo-marketing-agency-in-noida"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/seo-marketing-agency-in-noida" ? styles["active"] : ""
+                          }`}
                       >
                         SEO
                       </Link>
                     </li>
 
-                    <li>
-                      <Link
-                        href="/packaging-design"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
-                      >
-                        Packaging Design
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className={`${styles["links-cols"]} row`}>
                 <div className="col-3">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Case Studies
@@ -321,7 +337,8 @@ export default function Header() {
                       <Link
                         href="/enlite-case-study"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/enlite-case-study" ? styles["active"] : ""
+                          }`}
                       >
                         Enlite
                       </Link>
@@ -330,7 +347,8 @@ export default function Header() {
                       <Link
                         href="/grincare-case-study"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/grincare-case-study" ? styles["active"] : ""
+                          }`}
                       >
                         Grincare
                       </Link>
@@ -339,17 +357,19 @@ export default function Header() {
                       <Link
                         href="/nectarpure-case-study"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/nectarpure-case-study" ? styles["active"] : ""
+                          }`}
                       >
                         Nectarpure
                       </Link>
                     </li>
 
-                      <li>
+                    <li>
                       <Link
                         href="/wlues-case-study"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/wlues-case-study" ? styles["active"] : ""
+                          }`}
                       >
                         Wlues
                       </Link>
@@ -358,14 +378,14 @@ export default function Header() {
                 </div>
 
                 <div className="col-3">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
-                     Additional Links
+                      Additional Links
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
@@ -373,72 +393,74 @@ export default function Header() {
                       <Link
                         href="/career"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/career" ? styles["active"] : ""
+                          }`}
                       >
-                       Career
+                        Career
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/brand-video-shoots"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/brand-video-shoots" ? styles["active"] : ""
+                          }`}
                       >
                         Brand Video Shoots
                       </Link>
                     </li>
 
-                     <li>
+                    <li>
                       <Link
                         href="/photography"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/photography" ? styles["active"] : ""
+                          }`}
                       >
-                       Photography
+                        Photography
                       </Link>
                     </li>
 
 
-                     <li>
+                    <li>
                       <Link
                         href="/contact-us"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/contact-us" ? styles["active"] : ""
+                          }`}
                       >
-                       Contact Us
+                        Contact Us
                       </Link>
                     </li>
-                    
 
-                   
+
+
                   </ul>
                 </div>
 
                 <div className="col-3">
-                  <div className="d-flex align-items-center">
+                  <div className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
                       className="px-2 mb-1"
-                      style={{ fontSize: "1.6em" }}
+                      style={{ fontSize: "26px" }}
                     />
                     <h3 className={`${styles["header-solo-heading"]}`}>
                       Blog System
                     </h3>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
-                    
+
                     <li>
                       <Link
                         href="/blog"
                         onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]}`}
+                        className={`${styles["header-solo-link"]} ${pathname === "/blog" ? styles["active"] : ""
+                          }`}
                       >
                         Blog
                       </Link>
                     </li>
-                  
-
-                  
                   </ul>
                 </div>
               </div>
@@ -448,7 +470,7 @@ export default function Header() {
                   <FontAwesomeIcon
                     icon={faArrowCircleRight}
                     className="px-2 mb-1"
-                    style={{ fontSize: "1.6em" }}
+                    style={{ fontSize: "26px" }}
                   />
                   <h3 className={`${styles["header-solo-heading"]}`}>
                     Contact Us
@@ -456,7 +478,7 @@ export default function Header() {
                 </div>
 
                 <div className={`${styles["contact-us-col"]} col-3`}>
-                  <FontAwesomeIcon icon={faPhone} />
+                  <Image src="/phone.svg" alt="Phone" width={40} height={40} className={`${styles["me-2"]}`} />
                   <div>
                     <h4>Phone Number</h4>
                     <p>+91 941 601 1100</p>
@@ -465,7 +487,7 @@ export default function Header() {
                 </div>
 
                 <div className={`${styles["contact-us-col"]} col-3`}>
-                  <FontAwesomeIcon icon={faPhone} />
+                  <Image src="/Email.svg" alt="Phone" width={40} height={40} className={`${styles["me-2"]}`} />
                   <div>
                     <h4>Email Address</h4>
                     <p>info@dndesigns.co.in</p>
@@ -473,7 +495,7 @@ export default function Header() {
                 </div>
 
                 <div className={`${styles["contact-us-col"]} col-3`}>
-                  <FontAwesomeIcon icon={faPhone} />
+                  <Image src="/Address.svg" alt="Phone" width={40} height={40} className={`${styles["me-2"]}`} />
                   <div>
                     <h4>Office Address</h4>
                     <p>
@@ -484,15 +506,8 @@ export default function Header() {
                 </div>
 
                 <div className={`${styles["contact-us-col"]} col-3`}>
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    className="contact-col-icon"
-                  />
-                  <div>
-                    <h4>Phone Number</h4>
-                    <p>+91 941 601 1100</p>
-                    <p>+91 941 601 1100</p>
-                  </div>
+                  
+                  
                 </div>
               </div>
             </div>
@@ -504,9 +519,8 @@ export default function Header() {
 
       <div className={`${styles["mobile-nav"]}`}>
         <nav
-          className={`${styles["full-screen-nav"]} ${
-            isAnimating ? styles["is-open"] : ""
-          }`}
+          className={`${styles["full-screen-nav"]} ${isAnimating ? styles["is-open"] : ""
+            }`}
           style={{
             visibility: isVisible ? "visible" : "hidden",
             pointerEvents: isVisible ? "auto" : "none",
@@ -518,9 +532,8 @@ export default function Header() {
                 <div className={`${styles["open-nav-col"]} col-12`}>
                   <div className={`${styles["open-nav-btn"]}`}>
                     <button
-                      className={`${styles["nav-toggle-btn"]} ${
-                        isAnimating ? styles["is-active"] : ""
-                      }`}
+                      className={`${styles["nav-toggle-btn"]} ${isAnimating ? styles["is-active"] : ""
+                        }`}
                       onClick={toggleNav}
                       aria-label="Toggle Navigation"
                       aria-expanded={isAnimating}
@@ -745,7 +758,7 @@ export default function Header() {
                 </div>
 
 
-                
+
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
@@ -811,7 +824,7 @@ export default function Header() {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                           Packaging Design
+                            Packaging Design
                           </Link>
                         </li>
                       </ul>
@@ -869,7 +882,7 @@ export default function Header() {
                           >
                             Blog
                           </Link>
-                        </li> 
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -923,7 +936,7 @@ export default function Header() {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                           Grincare Case Study
+                            Grincare Case Study
                           </Link>
                         </li>
                         <li>
