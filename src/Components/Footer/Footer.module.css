@@ -41,7 +41,33 @@
 
 .footer-hr{
     border-top:1.5px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
 }
+
+.footer-social-icons{
+     display: flex;
+     gap: 15px;
+}
+
+.footer-social-icons-unit{
+     font-size: 1.3em;   
+    color: #fff;    
+    display: flex;          
+    align-items: center;    
+    text-decoration: none; 
+}
+
+@media(max-width:767px){
+     .footer-hr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        gap: 20px; 
+}
+}
+
+
 @media screen and (max-width:991px){
     .footer-li ul li a{
     font-size:38px;

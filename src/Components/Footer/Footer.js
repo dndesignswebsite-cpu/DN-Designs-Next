@@ -1,7 +1,16 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faXTwitter,
+  faFacebook,
+  faPinterest,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer
       className={`${styles["main-footer-div"]} ${styles["ff"]}  text-white pt-5 pb-3`}
@@ -91,8 +100,76 @@ export default function Footer() {
         </div>
 
         <div className={`${styles["footer-hr"]} container mt-4 pt-3`}>
+          <div className={`${styles["footer-social-icons"]}`}>
+
+            <a
+              href="https://www.instagram.com/dn_designs_india/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className={styles["footer-social-icons-unit"]}
+              />
+            </a>
+
+
+            <a
+              href="https://www.facebook.com/digitizersnation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className={`${styles["footer-social-icons-unit"]}`}
+            />
+            </a>
+
+
+
+            <a
+              href="https://x.com/digitizersn?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+            <FontAwesomeIcon
+              icon={faXTwitter}
+              className={`${styles["footer-social-icons-unit"]}`}
+            />
+            </a>
+
+
+            <a
+              href="https://in.pinterest.com/dndesigns1100/_created/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pinterest" 
+            >
+            <FontAwesomeIcon
+              icon={faPinterest}
+              className={`${styles["footer-social-icons-unit"]}`}
+            />
+            </a>
+
+
+            <a
+              href="https://www.linkedin.com/company/dn-designs-india"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className={`${styles["footer-social-icons-unit"]}`}
+            />
+            </a>
+
+          </div>
           <p className="mb-0">
-            Copyright © 2025 DN Designs. All rights reserved
+            Copyright © {currentYear} DN Designs. All rights reserved
           </p>
         </div>
       </div>
