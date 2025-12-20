@@ -76,11 +76,18 @@ export default function Footer() {
                 <h6 className={`${styles["footer-add-conn"]}  mb-4`}>
                   Address
                 </h6>
+                <a
+                  href="https://www.google.com/maps/place/DN+Designs/@28.6026697,77.3518461,17z/data=!3m1!4b1!4m6!3m5!1s0x390e656d7b05555d:0xf4c59d6befa39e13!8m2!3d28.602665!4d77.354421!16s%2Fg%2F11sm_vf71p?shorturl=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles["footer-add-map"]}`}
+                >
                 <p className="mb-0">
                   C-40, Second Floor, Block C, Sector 58, Noida,
                   <br />
                   Uttar Pradesh 201301
                 </p>
+                </a>
               </div>
 
               <div className="mt-5">
@@ -101,7 +108,6 @@ export default function Footer() {
 
         <div className={`${styles["footer-hr"]} container mt-4 pt-3`}>
           <div className={`${styles["footer-social-icons"]}`}>
-
             <a
               href="https://www.instagram.com/dn_designs_india/?hl=en"
               target="_blank"
@@ -114,20 +120,17 @@ export default function Footer() {
               />
             </a>
 
-
             <a
               href="https://www.facebook.com/digitizersnation"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className={`${styles["footer-social-icons-unit"]}`}
-            />
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className={`${styles["footer-social-icons-unit"]}`}
+              />
             </a>
-
-
 
             <a
               href="https://x.com/digitizersn?lang=en"
@@ -135,25 +138,23 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="X"
             >
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              className={`${styles["footer-social-icons-unit"]}`}
-            />
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className={`${styles["footer-social-icons-unit"]}`}
+              />
             </a>
-
 
             <a
               href="https://in.pinterest.com/dndesigns1100/_created/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Pinterest" 
+              aria-label="Pinterest"
             >
-            <FontAwesomeIcon
-              icon={faPinterest}
-              className={`${styles["footer-social-icons-unit"]}`}
-            />
+              <FontAwesomeIcon
+                icon={faPinterest}
+                className={`${styles["footer-social-icons-unit"]}`}
+              />
             </a>
-
 
             <a
               href="https://www.linkedin.com/company/dn-designs-india"
@@ -161,12 +162,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Linkedin"
             >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className={`${styles["footer-social-icons-unit"]}`}
-            />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className={`${styles["footer-social-icons-unit"]}`}
+              />
             </a>
-
           </div>
           <p className="mb-0">
             Copyright © {currentYear} DN Designs. All rights reserved

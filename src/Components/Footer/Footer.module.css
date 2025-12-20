@@ -37,12 +37,15 @@
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    
 }
 
 .footer-hr{
     border-top:1.5px solid #FFFFFF;
     display: flex;
     justify-content: space-between;
+    font-family: var(--font-roboto);
+    font-weight:600 ;
 }
 
 .footer-social-icons{
@@ -56,6 +59,11 @@
     display: flex;          
     align-items: center;    
     text-decoration: none; 
+}
+
+.footer-add-map{
+    color: #fff;
+    text-decoration: none;
 }
 
 @media(max-width:767px){
