@@ -232,6 +232,12 @@ export const uploadFileBuffer = async (buffer, options = {}) => {
       created_at: new Date().toISOString(),
     };
   } catch (error) {
+    if (error.code === "EROFS") {
+      const msg = `Read-only file system at ${filePath}. If you are on Vercel or a serverless platform, local storage is not supported. Use a VPS or cloud storage instead.`;
+      console.error(msg);
+      logError(new Error(msg), { function: "uploadFileBuffer", options });
+      throw new Error(msg);
+    }
     logError(error, { function: "uploadFileBuffer", options });
     throw error;
   }

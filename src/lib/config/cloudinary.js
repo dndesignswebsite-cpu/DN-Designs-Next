@@ -25,13 +25,13 @@ const configureCloudinary = () => {
 export const deleteImage = async (publicId) => {
   try {
     configureCloudinary();
-    
+
     // Ensure publicId has folder prefix
     let fullPublicId = publicId;
     if (!publicId.includes("dn-designs/")) {
       fullPublicId = `dn-designs/${publicId}`;
     }
-    
+
     const result = await cloudinary.uploader.destroy(fullPublicId);
     return result;
   } catch (error) {
@@ -48,7 +48,7 @@ export const deleteImage = async (publicId) => {
  */
 export const uploadImageBuffer = async (buffer, options = {}) => {
   configureCloudinary();
-  
+
   return new Promise((resolve, reject) => {
     const uploadStream = cloudinary.uploader.upload_stream(
       {
@@ -66,7 +66,7 @@ export const uploadImageBuffer = async (buffer, options = {}) => {
     );
 
     // Write buffer to stream
-    const Readable = require('stream').Readable;
+    const Readable = require("stream").Readable;
     const readableStream = new Readable();
     readableStream.push(buffer);
     readableStream.push(null);
@@ -82,7 +82,7 @@ export const uploadImageBuffer = async (buffer, options = {}) => {
  */
 export const uploadImageBase64 = async (base64String, options = {}) => {
   configureCloudinary();
-  
+
   try {
     const result = await cloudinary.uploader.upload(base64String, {
       folder: "dn-designs",
@@ -103,7 +103,7 @@ export const uploadImageBase64 = async (base64String, options = {}) => {
  */
 export const uploadImage = async (filePath, options = {}) => {
   configureCloudinary();
-  
+
   try {
     const result = await cloudinary.uploader.upload(filePath, {
       folder: "dn-designs",
@@ -117,4 +117,3 @@ export const uploadImage = async (filePath, options = {}) => {
 };
 
 export { cloudinary };
-
