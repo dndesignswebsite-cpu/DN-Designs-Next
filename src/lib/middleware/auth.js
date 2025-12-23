@@ -3,36 +3,25 @@
  * Verifies JWT tokens and protects routes
  */
 
-import jwt from 'jsonwebtoken';
-import User from '@/lib/models/User.js';
-import connectDB from '@/lib/config/database.js';
+import jwt from "jsonwebtoken";
+import User from "@/lib/models/User.js";
+import connectDB from "@/lib/config/database.js";
 
 /**
- * Verify JWT token and get user
- * @param {Request} request - Next.js request object
+ * Verify JWT token and get user from token string
+ * @param {string} token - JWT token string
  * @returns {Promise<Object|null>} User object or null
  */
-export const getAuthUser = async (request) => {
+export const getAuthUserFromToken = async (token) => {
   try {
-    // Get token from Authorization header
-    const authHeader = request.headers.get('authorization');
-    
-    if (!authHeader || !authHeader.startsWith('Bearer')) {
-      return null;
-    }
-
-    const token = authHeader.split(' ')[1];
-    
-    if (!token) {
-      return null;
-    }
+    if (!token) return null;
 
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
     // Connect to database and get user
     await connectDB();
-    const user = await User.findById(decoded.id).select('-password');
+    const user = await User.findById(decoded.id).select("-password");
 
     if (!user || !user.isActive) {
       return null;
@@ -42,6 +31,23 @@ export const getAuthUser = async (request) => {
   } catch (error) {
     return null;
   }
+};
+
+/**
+ * Verify JWT token and get user from request
+ * @param {Request} request - Next.js request object
+ * @returns {Promise<Object|null>} User object or null
+ */
+export const getAuthUser = async (request) => {
+  // Get token from Authorization header
+  const authHeader = request.headers.get("authorization");
+
+  if (!authHeader || !authHeader.startsWith("Bearer")) {
+    return null;
+  }
+
+  const token = authHeader.split(" ")[1];
+  return getAuthUserFromToken(token);
 };
 
 /**
@@ -58,7 +64,8 @@ export const protect = async (request) => {
         statusCode: 401,
         body: {
           success: false,
-          message: 'Not authorized to access this route. Please provide a valid token.',
+          message:
+            "Not authorized to access this route. Please provide a valid token.",
         },
       },
     };
@@ -79,7 +86,7 @@ export const authorize = (user, ...roles) => {
       statusCode: 401,
       body: {
         success: false,
-        message: 'Not authorized to access this route.',
+        message: "Not authorized to access this route.",
       },
     };
   }
@@ -119,4 +126,3 @@ export const withAuth = async (request, ...roles) => {
 
   return result;
 };
-

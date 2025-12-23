@@ -42,6 +42,12 @@ const emailSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+
+    // Whether this group receives contact form notifications
+    receivesContactEmails: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true, // Automatically adds createdAt and updatedAt fields
@@ -54,4 +60,3 @@ emailSchema.index({ isActive: 1 });
 const Email = mongoose.models.Email || mongoose.model("Email", emailSchema);
 
 export default Email;
-

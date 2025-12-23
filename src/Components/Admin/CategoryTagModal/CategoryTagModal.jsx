@@ -11,6 +11,7 @@ export default function CategoryTagModal({
   initialData = null,
   type = "category", // "category" or "tag"
   isLoading = false,
+  readOnly = false,
 }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -78,7 +79,7 @@ export default function CategoryTagModal({
       <div className="admin-modal" style={{ maxWidth: "500px" }}>
         <div className="admin-modal-header">
           <h2 className="admin-modal-title">
-            {initialData ? "Edit" : "Add New"}{" "}
+            {readOnly ? "View" : initialData ? "Edit" : "Add New"}{" "}
             {type === "category" ? "Category" : "Tag"}
           </h2>
           <button className="admin-modal-close" onClick={onClose}>
@@ -100,6 +101,7 @@ export default function CategoryTagModal({
                   type === "category" ? "Marketing" : "SEO"
                 }`}
                 required
+                disabled={readOnly}
               />
             </div>
 
@@ -112,10 +114,13 @@ export default function CategoryTagModal({
                 onChange={handleChange}
                 className="admin-form-input"
                 placeholder="url-friendly-slug"
+                disabled={readOnly}
               />
-              <small className="admin-form-hint">
-                Leave blank to auto-generate from name
-              </small>
+              {!readOnly && (
+                <small className="admin-form-hint">
+                  Leave blank to auto-generate from name
+                </small>
+              )}
             </div>
 
             <div className="admin-form-group">
@@ -127,6 +132,7 @@ export default function CategoryTagModal({
                 className="admin-form-input"
                 rows="3"
                 placeholder={`Brief description of the ${type}...`}
+                disabled={readOnly}
               />
             </div>
 
@@ -140,10 +146,13 @@ export default function CategoryTagModal({
                   onChange={handleChange}
                   className="admin-form-input"
                   placeholder="Keyword 1, Keyword 2, ..."
+                  disabled={readOnly}
                 />
-                <small className="admin-form-hint">
-                  Comma separated keywords for SEO
-                </small>
+                {!readOnly && (
+                  <small className="admin-form-hint">
+                    Comma separated keywords for SEO
+                  </small>
+                )}
               </div>
             )}
           </div>
@@ -155,16 +164,18 @@ export default function CategoryTagModal({
               onClick={onClose}
               disabled={isLoading}
             >
-              Cancel
+              {readOnly ? "Close" : "Cancel"}
             </button>
-            <button
-              type="submit"
-              className="admin-btn admin-btn-primary"
-              disabled={isLoading}
-            >
-              <FontAwesomeIcon icon={faSave} />
-              {isLoading ? "Saving..." : "Save Changes"}
-            </button>
+            {!readOnly && (
+              <button
+                type="submit"
+                className="admin-btn admin-btn-primary"
+                disabled={isLoading}
+              >
+                <FontAwesomeIcon icon={faSave} />
+                {isLoading ? "Saving..." : "Save Changes"}
+              </button>
+            )}
           </div>
         </form>
       </div>

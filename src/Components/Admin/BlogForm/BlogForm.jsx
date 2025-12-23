@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import dynamic from "next/dynamic";
@@ -17,59 +17,36 @@ import Link from "next/link";
 import "./BlogForm.css";
 
 // Dynamic import for React Quill (SSR issues)
-const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
+const ReactQuill = dynamic(
+  async () => {
+    const { default: RQ, Quill } = await import("react-quill-new");
+    if (typeof window !== "undefined") {
+      window.Quill = Quill;
+    }
+    const { default: ImageResize } = await import(
+      "quill-image-resize-module-react"
+    );
+    if (Quill) {
+      Quill.register("modules/imageResize", ImageResize);
+    }
+    return RQ;
+  },
+  { ssr: false }
+);
+
 import "react-quill-new/dist/quill.snow.css";
 
-const quillModules = {
-  toolbar: [
-    [{ header: [1, 2, 3, 4, 5, 6, false] }],
-    ["bold", "italic", "underline", "strike"],
-    [{ list: "ordered" }, { list: "bullet" }],
-    [{ indent: "-1" }, { indent: "+1" }],
-    ["link", "image", "video"],
-    [{ color: [] }, { background: [] }],
-    [{ align: [] }],
-    ["blockquote", "code-block"],
-    ["clean"],
-  ],
+const getISTString = () => {
+  const now = new Date();
+  const istOffset = 330 * 60 * 1000;
+  const istDate = new Date(now.getTime() + istOffset);
+  return istDate.toISOString().slice(0, 16);
 };
 
 export default function BlogForm({ initialData, isEditing }) {
   const router = useRouter();
   const queryClient = useQueryClient();
-  const [showHtmlEditor, setShowHtmlEditor] = useState(false);
-  const [error, setError] = useState("");
-  const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
-
-  // Fetch categories and tags
-  const { data: categoriesData, isLoading: categoriesLoading } = useQuery({
-    queryKey: ["admin-categories-minimal"],
-    queryFn: async () => {
-      const res = await fetch("/api/categories?limit=100");
-      if (!res.ok) throw new Error("Failed to fetch categories");
-      return res.json();
-    },
-  });
-
-  const { data: tagsData, isLoading: tagsLoading } = useQuery({
-    queryKey: ["admin-tags-minimal"],
-    queryFn: async () => {
-      const res = await fetch("/api/tags?limit=100");
-      if (!res.ok) throw new Error("Failed to fetch tags");
-      return res.json();
-    },
-  });
-
-  const getISTString = () => {
-    const now = new Date();
-    // Offset for IST is +5.5 hours (330 minutes)
-    // We adjust the time by adding the offset to the current time
-    // and then use toISOString() which gives UTC
-    // Since we shifted the time, the "UTC" string will now show IST numbers
-    const istOffset = 330 * 60 * 1000;
-    const istDate = new Date(now.getTime() + istOffset);
-    return istDate.toISOString().slice(0, 16);
-  };
+  const quillRef = useRef(null);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -103,6 +80,143 @@ export default function BlogForm({ initialData, isEditing }) {
   const [ogImage, setOgImage] = useState(null);
   const [twitterImage, setTwitterImage] = useState(null);
 
+  const [showHtmlEditor, setShowHtmlEditor] = useState(false);
+  const [error, setError] = useState("");
+  const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
+
+  // Common Upload Logic
+  const uploadImage = async (file) => {
+    const formDataObj = new FormData();
+    formDataObj.append("image", file);
+    if (initialData?._id) {
+      formDataObj.append("blogId", initialData._id);
+    }
+
+    try {
+      const token = Cookies.get("admin_token");
+      const res = await fetch("/api/blogs/upload-image", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+        body: formDataObj,
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        return result.data.url;
+      } else {
+        setError(result.message || "Failed to upload image");
+        return null;
+      }
+    } catch (err) {
+      setError("Error uploading image");
+      return null;
+    }
+  };
+
+  // Custom Image Handler for Quill (Toolbar)
+  const imageHandler = () => {
+    const input = document.createElement("input");
+    input.setAttribute("type", "file");
+    input.setAttribute("accept", "image/*,.webp");
+    input.click();
+
+    input.onchange = async () => {
+      const file = input.files[0];
+      if (!file) return;
+
+      const url = await uploadImage(file);
+      if (url) {
+        const quill = quillRef.current.getEditor();
+        const range = quill.getSelection();
+        quill.insertEmbed(range.index, "image", url);
+      }
+    };
+  };
+
+  // Prevent Base64: Intercept Paste & Drop
+  useEffect(() => {
+    if (!quillRef.current) return;
+    const quill = quillRef.current.getEditor();
+    const root = quill.root;
+
+    const handleFileUploadRequest = async (files) => {
+      const filesArray = Array.from(files);
+      const imageFiles = filesArray.filter((file) =>
+        file.type.startsWith("image/")
+      );
+
+      if (imageFiles.length === 0) return;
+
+      // For multiple images, we keep track of selection
+      let range = quill.getSelection(true);
+      let index = range ? range.index : quill.getLength();
+
+      for (const file of imageFiles) {
+        const url = await uploadImage(file);
+        if (url) {
+          quill.insertEmbed(index, "image", url);
+          index += 1; // Move index forward for next image
+        }
+      }
+    };
+
+    const pasteHandler = async (e) => {
+      const clipboardData = e.clipboardData || window.clipboardData;
+      if (
+        clipboardData &&
+        clipboardData.files &&
+        clipboardData.files.length > 0
+      ) {
+        e.preventDefault();
+        await handleFileUploadRequest(clipboardData.files);
+      }
+    };
+
+    const dropHandler = async (e) => {
+      if (
+        e.dataTransfer &&
+        e.dataTransfer.files &&
+        e.dataTransfer.files.length > 0
+      ) {
+        e.preventDefault();
+        await handleFileUploadRequest(e.dataTransfer.files);
+      }
+    };
+
+    root.addEventListener("paste", pasteHandler);
+    root.addEventListener("drop", dropHandler);
+
+    return () => {
+      root.removeEventListener("paste", pasteHandler);
+      root.removeEventListener("drop", dropHandler);
+    };
+  }, [quillRef.current, initialData?._id]);
+
+  const quillModules = useMemo(
+    () => ({
+      toolbar: {
+        container: [
+          [{ header: [1, 2, 3, 4, 5, 6, false] }],
+          ["bold", "italic", "underline", "strike"],
+          [{ list: "ordered" }, { list: "bullet" }],
+          [{ indent: "-1" }, { indent: "+1" }],
+          ["link", "image", "video"],
+          [{ color: [] }, { background: [] }],
+          [{ align: [] }],
+          ["blockquote", "code-block"],
+          ["clean"],
+        ],
+        handlers: {
+          image: imageHandler,
+        },
+      },
+      imageResize: {
+        modules: ["Resize", "DisplaySize"],
+      },
+    }),
+    [initialData?._id]
+  );
+
   // Load initial data
   useEffect(() => {
     if (initialData) {
@@ -121,12 +235,7 @@ export default function BlogForm({ initialData, isEditing }) {
         isPublished: initialData.isPublished || false,
         publishedAt: initialData.publishedAt
           ? new Date(initialData.publishedAt).toISOString().slice(0, 16)
-          : (() => {
-              const now = new Date();
-              const istOffset = 330 * 60 * 1000;
-              const istDate = new Date(now.getTime() + istOffset);
-              return istDate.toISOString().slice(0, 16);
-            })(),
+          : getISTString(),
         metaTitle: initialData.metaTitle || "",
         metaDescription: initialData.metaDescription || "",
         metaKeywords: initialData.metaKeywords?.join(", ") || "",
@@ -153,13 +262,16 @@ export default function BlogForm({ initialData, isEditing }) {
 
       const res = await fetch(url, {
         method,
-        headers: { Authorization: `Bearer ${token}` },
-        body: data,
+        headers: {
+          Authorization: `Bearer ${token}`,
+          // Note: Browser will automatically set boundary for FormData
+        },
+        body: data, // data is a FormData object from handleSubmit
       });
 
       if (!res.ok) {
         const err = await res.json();
-        throw new Error(err.message || "Failed to save blog");
+        throw new Error(err.message || "Failed to save blog post");
       }
       return res.json();
     },
@@ -169,6 +281,25 @@ export default function BlogForm({ initialData, isEditing }) {
     },
     onError: (err) => {
       setError(err.message);
+    },
+  });
+
+  // Fetch categories and tags
+  const { data: categoriesData, isLoading: categoriesLoading } = useQuery({
+    queryKey: ["admin-categories-minimal"],
+    queryFn: async () => {
+      const res = await fetch("/api/categories?limit=100");
+      if (!res.ok) throw new Error("Failed to fetch categories");
+      return res.json();
+    },
+  });
+
+  const { data: tagsData, isLoading: tagsLoading } = useQuery({
+    queryKey: ["admin-tags-minimal"],
+    queryFn: async () => {
+      const res = await fetch("/api/tags?limit=100");
+      if (!res.ok) throw new Error("Failed to fetch tags");
+      return res.json();
     },
   });
 
@@ -316,6 +447,7 @@ export default function BlogForm({ initialData, isEditing }) {
               ) : (
                 <div className="admin-editor-wrapper">
                   <ReactQuill
+                    ref={quillRef}
                     theme="snow"
                     value={formData.content}
                     onChange={(value) =>
@@ -482,7 +614,7 @@ export default function BlogForm({ initialData, isEditing }) {
                 <label className="admin-form-label">OG Image</label>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "og")}
                   className="admin-form-input"
                 />
@@ -521,7 +653,7 @@ export default function BlogForm({ initialData, isEditing }) {
                 <label className="admin-form-label">Twitter Image</label>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "twitter")}
                   className="admin-form-input"
                 />
@@ -601,7 +733,7 @@ export default function BlogForm({ initialData, isEditing }) {
               <label className="admin-file-upload">
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "featured")}
                 />
                 <FontAwesomeIcon

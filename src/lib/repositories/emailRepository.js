@@ -48,6 +48,26 @@ export const getAllActiveEmails = async () => {
   }
 };
 
+export const getContactNotificationEmails = async () => {
+  try {
+    const emailGroups = await Email.find({
+      isActive: true,
+      receivesContactEmails: true,
+    });
+    const allEmails = new Set();
+
+    emailGroups.forEach((group) => {
+      group.emails.forEach((email) => {
+        allEmails.add(email);
+      });
+    });
+
+    return Array.from(allEmails);
+  } catch (error) {
+    throwError(error, 500, { function: "getContactNotificationEmails" });
+  }
+};
+
 export const create = async (emailData) => {
   try {
     emailData.type = emailData.type.toLowerCase();
@@ -84,7 +104,10 @@ export const updateById = async (emailId, updateData) => {
     if (error.statusCode === 404) throw error;
     if (error.code === 11000) {
       const field = Object.keys(error.keyPattern)[0];
-      throwError(`${field} already exists`, 400, { function: "updateById", field });
+      throwError(`${field} already exists`, 400, {
+        function: "updateById",
+        field,
+      });
     }
     throwError(error, 500, { function: "updateById", emailId, updateData });
   }
@@ -144,7 +167,10 @@ export const removeEmailFromGroup = async (type, emailAddress) => {
     return email;
   } catch (error) {
     if (error.statusCode === 404) throw error;
-    throwError(error, 500, { function: "removeEmailFromGroup", type, emailAddress });
+    throwError(error, 500, {
+      function: "removeEmailFromGroup",
+      type,
+      emailAddress,
+    });
   }
 };
-

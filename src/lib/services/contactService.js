@@ -21,7 +21,7 @@ export const createContact = async (contactData, ipAddress = null) => {
   });
 
   try {
-    const allEmails = await emailRepository.getAllActiveEmails();
+    const allEmails = await emailRepository.getContactNotificationEmails();
 
     await sendContactNotification(
       {

@@ -10,6 +10,7 @@ import {
   faTrash,
   faSearch,
   faArrowsRotate,
+  faEye,
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 import LoadingSpinner from "@/Components/Loading Spinner/LoadingSpinner";
@@ -29,7 +30,11 @@ const fetchWithAuth = async (url) => {
 export default function CategoriesPage() {
   const { user } = useAdminAuth();
   const [search, setSearch] = useState("");
-  const [modal, setModal] = useState({ open: false, data: null });
+  const [modal, setModal] = useState({
+    open: false,
+    data: null,
+    readOnly: false,
+  });
   const [deleteModal, setDeleteModal] = useState({
     open: false,
     id: null,
@@ -188,15 +193,34 @@ export default function CategoriesPage() {
                       <td>
                         <div className="admin-table-actions">
                           {canManage && (
-                            <button
-                              onClick={() =>
-                                setModal({ open: true, data: cat })
-                              }
-                              className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                              title="Edit"
-                            >
-                              <FontAwesomeIcon icon={faEdit} />
-                            </button>
+                            <>
+                              <button
+                                onClick={() =>
+                                  setModal({
+                                    open: true,
+                                    data: cat,
+                                    readOnly: true,
+                                  })
+                                }
+                                className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                title="View"
+                              >
+                                <FontAwesomeIcon icon={faEye} />
+                              </button>
+                              <button
+                                onClick={() =>
+                                  setModal({
+                                    open: true,
+                                    data: cat,
+                                    readOnly: false,
+                                  })
+                                }
+                                className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                title="Edit"
+                              >
+                                <FontAwesomeIcon icon={faEdit} />
+                              </button>
+                            </>
                           )}
                           {canDelete && (
                             <button
@@ -241,9 +265,10 @@ export default function CategoriesPage() {
       {/* Add/Edit Modal */}
       <CategoryTagModal
         isOpen={modal.open}
-        onClose={() => setModal({ open: false, data: null })}
+        onClose={() => setModal({ open: false, data: null, readOnly: false })}
         onSave={(formData) => saveMutation.mutate(formData)}
         initialData={modal.data}
+        readOnly={modal.readOnly}
         type="category"
         isLoading={saveMutation.isPending}
       />

@@ -561,7 +561,7 @@ export default function PageForm({ initialData, isEditing }) {
                 <label className="admin-form-label">OG Image</label>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "og")}
                   className="admin-form-input"
                 />
@@ -598,7 +598,7 @@ export default function PageForm({ initialData, isEditing }) {
                 <label className="admin-form-label">Twitter Image</label>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "twitter")}
                   className="admin-form-input"
                 />
@@ -676,7 +676,7 @@ export default function PageForm({ initialData, isEditing }) {
               <label className="admin-file-upload">
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "featured")}
                 />
                 <FontAwesomeIcon

@@ -11,11 +11,110 @@ import {
   faEnvelope,
   faPhone,
   faTimes,
-  faCheck,
   faArrowsRotate,
+  faCog,
 } from "@fortawesome/free-solid-svg-icons";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
+
+const NotificationModal = ({ isOpen, onClose }) => {
+  const queryClient = useQueryClient();
+  const token = Cookies.get("admin_token");
+
+  const { data: emailGroups, isLoading } = useQuery({
+    queryKey: ["email-groups-notifications"],
+    queryFn: async () => {
+      const res = await fetch("/api/emails", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) throw new Error("Failed to fetch email groups");
+      return res.json();
+    },
+    enabled: isOpen,
+  });
+
+  const toggleMutation = useMutation({
+    mutationFn: async ({ id, receivesContactEmails }) => {
+      const res = await fetch(`/api/emails/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ receivesContactEmails }),
+      });
+      if (!res.ok) throw new Error("Failed to update settings");
+      return res.json();
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["email-groups-notifications"],
+      });
+    },
+  });
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="admin-modal-overlay">
+      <div className="admin-modal admin-modal-notification">
+        <div className="admin-modal-header">
+          <h3 className="admin-modal-title">Notification Settings</h3>
+          <button className="admin-modal-close" onClick={onClose}>
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+        </div>
+        <div className="admin-modal-body">
+          <div className="admin-notification-description">
+            <p>
+              Select which email groups should receive new contact form
+              notifications.
+            </p>
+            <small>Note: Admin email receives notifications by default.</small>
+          </div>
+
+          {isLoading ? (
+            <div className="admin-loading-spinner admin-loading-centered"></div>
+          ) : (
+            <div className="admin-email-groups-list">
+              {emailGroups?.data?.map((group) => (
+                <div key={group._id} className="admin-email-group-item">
+                  <label className="admin-switch">
+                    <input
+                      type="checkbox"
+                      checked={group.receivesContactEmails || false}
+                      onChange={(e) =>
+                        toggleMutation.mutate({
+                          id: group._id,
+                          receivesContactEmails: e.target.checked,
+                        })
+                      }
+                      disabled={!group.isActive}
+                    />
+                    <span className="admin-slider"></span>
+                  </label>
+                  <div className="admin-email-group-info">
+                    <strong>{group.type}</strong>
+                    <small>({group.description || "No description"})</small>
+                  </div>
+                </div>
+              ))}
+              {emailGroups?.data?.length === 0 && (
+                <p>No email groups found. Create one in Settings → Emails.</p>
+              )}
+            </div>
+          )}
+        </div>
+
+        <div className="admin-modal-footer">
+          <button className="admin-btn admin-btn-primary" onClick={onClose}>
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const fetchWithAuth = async (url) => {
   const token = Cookies.get("admin_token");
@@ -36,6 +135,7 @@ export default function ContactsList() {
     open: false,
     contact: null,
   });
+  const [notificationModal, setNotificationModal] = useState(false);
   const queryClient = useQueryClient();
 
   // Permission Checks
@@ -119,12 +219,16 @@ export default function ContactsList() {
   return (
     <div>
       <div className="admin-page-header">
-        <h1 className="admin-page-title">Contacts  <FontAwesomeIcon
-                      onClick={refetch}
-                      icon={faArrowsRotate}
-                      className={(isLoading || isRefetching) ? "spin" : ""}
-                      style={{cursor: "pointer"}}
-                    /></h1>
+        <h1 className="admin-page-title">
+          Contacts{" "}
+          <FontAwesomeIcon
+            onClick={refetch}
+            icon={faArrowsRotate}
+            className={`admin-cursor-pointer ${
+              isLoading || isRefetching ? "spin" : ""
+            }`}
+          />
+        </h1>
         <p className="admin-page-subtitle">
           View and manage contact form submissions
         </p>
@@ -154,12 +258,21 @@ export default function ContactsList() {
               <option value="replied">Replied</option>
               <option value="resolved">Resolved</option>
             </select>
+            {canEdit && (
+              <button
+                className="admin-btn admin-btn-outline admin-ml-10"
+                onClick={() => setNotificationModal(true)}
+                title="Notification Settings"
+              >
+                <FontAwesomeIcon icon={faCog} />
+              </button>
+            )}
           </div>
         </div>
 
         {/* Table */}
         {isLoading ? (
-          <div className="admin-loading" style={{ padding: "40px" }}>
+          <div className="admin-loading admin-p-40">
             <div className="admin-loading-spinner"></div>
           </div>
         ) : data?.data?.length > 0 ? (
@@ -181,9 +294,9 @@ export default function ContactsList() {
                   {data.data.map((contact) => (
                     <tr
                       key={contact._id}
-                      style={{
-                        fontWeight: contact.status === "new" ? "600" : "normal",
-                      }}
+                      className={
+                        contact.status === "new" ? "status-unread" : ""
+                      }
                     >
                       <td>{contact.name}</td>
                       <td>{contact.email}</td>
@@ -274,8 +387,8 @@ export default function ContactsList() {
               </button>
             </div>
             <div className="admin-modal-body">
-              <div className="contact-detail">
-                <div className="contact-detail-header">
+              <div className="admin-contact-detail">
+                <div className="admin-contact-detail-header">
                   <h4>{selectedContact.name}</h4>
                   <span
                     className={`admin-badge ${getStatusBadge(
@@ -286,7 +399,7 @@ export default function ContactsList() {
                   </span>
                 </div>
 
-                <div className="contact-detail-info">
+                <div className="admin-contact-detail-info">
                   <p>
                     <FontAwesomeIcon icon={faEnvelope} />
                     <a href={`mailto:${selectedContact.email}`}>
@@ -310,13 +423,13 @@ export default function ContactsList() {
                   </p>
                 </div>
 
-                <div className="contact-detail-message">
+                <div className="admin-contact-detail-message">
                   <strong>Message:</strong>
                   <p>{selectedContact.message}</p>
                 </div>
 
                 {canEdit && (
-                  <div className="contact-detail-actions">
+                  <div className="admin-contact-detail-actions">
                     <select
                       value={selectedContact.status}
                       onChange={(e) => {
@@ -344,50 +457,8 @@ export default function ContactsList() {
         </div>
       )}
 
-      <style jsx>{`
-        .contact-detail-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 20px;
-        }
-        .contact-detail-header h4 {
-          margin: 0;
-          font-size: 1.25rem;
-        }
-        .contact-detail-info {
-          margin-bottom: 20px;
-        }
-        .contact-detail-info p {
-          margin: 8px 0;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-        .contact-detail-info a {
-          color: #3498db;
-        }
-        .contact-detail-message {
-          background: #f8f9fa;
-          padding: 16px;
-          border-radius: 8px;
-          margin-bottom: 20px;
-        }
-        .contact-detail-message strong {
-          display: block;
-          margin-bottom: 8px;
-        }
-        .contact-detail-message p {
-          margin: 0;
-          white-space: pre-wrap;
-        }
-        .contact-detail-actions {
-          display: flex;
-          gap: 12px;
-        }
-      `}</style>
-
       {/* Delete Confirmation Modal */}
+
       <ConfirmModal
         isOpen={deleteModal.open}
         onClose={() => setDeleteModal({ open: false, contact: null })}
@@ -398,6 +469,11 @@ export default function ContactsList() {
         cancelText="Cancel"
         type="danger"
         isLoading={deleteMutation.isPending}
+      />
+      {/* Notification Settings Modal */}
+      <NotificationModal
+        isOpen={notificationModal}
+        onClose={() => setNotificationModal(false)}
       />
     </div>
   );
