@@ -140,7 +140,9 @@ function BlogPage() {
                       </h2>
 
                       <p className="single-blog-list-post-para">
-                        {blog.excerpt || blog.content.substring(0, 200) + "..."}
+                        {blog.excerpt ||
+                          blog.content?.substring(0, 200) + "..." ||
+                          ""}
                       </p>
 
                       <Link href={`/blog/${blog.slug}`}>

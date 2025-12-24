@@ -9,12 +9,25 @@ import { throwError } from "@/lib/middleware/errorHandler.js";
 import Blog from "@/lib/models/Blog.js";
 
 export const getAllTags = async (filters = {}, pagination = {}) => {
-  const result = await tagRepository.findAll(filters, pagination);
+  // Convert search to MongoDB query
+  const queryFilter = {};
+  if (filters.search) {
+    queryFilter.$or = [
+      { name: { $regex: filters.search, $options: "i" } },
+      { slug: { $regex: filters.search, $options: "i" } },
+    ];
+  }
+
+  const result = await tagRepository.findAll(queryFilter, pagination);
 
   // Add blog count for each tag
   const tagsWithCount = await Promise.all(
     result.tags.map(async (tag) => {
-      const blogCount = await Blog.countDocuments({ tags: tag.name });
+      const blogCount = await Blog.countDocuments({
+        tags: tag.slug,
+        isPublished: true,
+        publishedAt: { $lte: new Date() },
+      });
       return { ...tag.toObject(), blogCount };
     })
   );
@@ -31,7 +44,25 @@ export const getTagById = async (id) => {
     throwError("Tag not found", 404, { function: "getTagById", id });
   }
 
-  const blogCount = await Blog.countDocuments({ tags: tag.name });
+  const blogCount = await Blog.countDocuments({
+    tags: tag.name,
+    isPublished: true,
+    publishedAt: { $lte: new Date() },
+  });
+  return { ...tag.toObject(), blogCount };
+};
+
+export const getTagBySlug = async (slug) => {
+  const tag = await tagRepository.findBySlug(slug);
+  if (!tag) {
+    throwError("Tag not found", 404, { function: "getTagBySlug", slug });
+  }
+
+  const blogCount = await Blog.countDocuments({
+    tags: tag.name,
+    isPublished: true,
+    publishedAt: { $lte: new Date() },
+  });
   return { ...tag.toObject(), blogCount };
 };
 

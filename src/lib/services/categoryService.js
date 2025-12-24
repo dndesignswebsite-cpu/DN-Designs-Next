@@ -9,7 +9,16 @@ import { throwError } from "@/lib/middleware/errorHandler.js";
 import Blog from "@/lib/models/Blog.js";
 
 export const getAllCategories = async (filters = {}, pagination = {}) => {
-  const result = await categoryRepository.findAll(filters, pagination);
+  // Convert search to MongoDB query
+  const queryFilter = {};
+  if (filters.search) {
+    queryFilter.$or = [
+      { name: { $regex: filters.search, $options: "i" } },
+      { slug: { $regex: filters.search, $options: "i" } },
+    ];
+  }
+
+  const result = await categoryRepository.findAll(queryFilter, pagination);
 
   // Add blog count for each category
   const categoriesWithCount = await Promise.all(

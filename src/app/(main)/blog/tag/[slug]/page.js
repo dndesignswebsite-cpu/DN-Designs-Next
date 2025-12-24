@@ -3,15 +3,14 @@
 import React, { useState, useEffect } from "react";
 import "../../blog.css";
 import Link from "next/link";
-import { slugify } from "@/lib/utils/slugify";
 import LoadingSpinner from "@/Components/Loading Spinner/LoadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-function CategoryPage({ params }) {
+function TagPage({ params }) {
   const { slug } = React.use(params);
   const [blogs, setBlogs] = useState([]);
-  const [category, setCategory] = useState(null);
+  const [tag, setTag] = useState(null);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -37,25 +36,25 @@ function CategoryPage({ params }) {
       if (isLoadMore) setLoadingMore(true);
       else setLoading(true);
 
-      // 1. Fetch category name from slug
-      let categoryName = "";
-      if (pageNum === 1 && !category) {
-        const catRes = await fetch(`/api/categories/${slug}`);
-        const catResult = await catRes.json();
-        if (catResult.success) {
-          setCategory(catResult.data);
-          categoryName = catResult.data.name;
+      // 1. Fetch tag name from slug
+      let tagSlug = "";
+      if (pageNum === 1 && !tag) {
+        const tagRes = await fetch(`/api/tags/${slug}`);
+        const tagResult = await tagRes.json();
+        if (tagResult.success) {
+          setTag(tagResult.data);
+          tagSlug = tagResult.data.slug;
         } else {
-          throw new Error("Category not found");
+          throw new Error("Tag not found");
         }
       } else {
-        categoryName = category.name;
+        tagSlug = tag.slug;
       }
 
-      // 2. Fetch blogs by category name
+      // 2. Fetch blogs by tag name
       const res = await fetch(
-        `/api/blogs?page=${pageNum}&limit=5&isPublished=true&category=${encodeURIComponent(
-          categoryName
+        `/api/blogs?page=${pageNum}&limit=5&isPublished=true&tag=${encodeURIComponent(
+          tagSlug
         )}`
       );
       const result = await res.json();
@@ -119,10 +118,10 @@ function CategoryPage({ params }) {
           <div className="row mb-5 mt-2">
             <div className="col-12">
               <h1 className="single-blog-list-post-head">
-                Category: {category ? category.name : slug}
+                Tag: {tag ? tag.name : slug}
               </h1>
-              {category?.description && (
-                <p className="text-muted mt-2">{category.description}</p>
+              {tag?.description && (
+                <p className="text-muted mt-2">{tag.description}</p>
               )}
             </div>
           </div>
@@ -207,7 +206,7 @@ function CategoryPage({ params }) {
                 </>
               ) : (
                 <div className="text-center py-5">
-                  <h3>No blogs found in this category</h3>
+                  <h3>No blogs found with this tag</h3>
                 </div>
               )}
             </div>
@@ -255,4 +254,4 @@ function CategoryPage({ params }) {
   );
 }
 
-export default CategoryPage;
+export default TagPage;

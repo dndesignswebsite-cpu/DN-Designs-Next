@@ -14,10 +14,14 @@ export async function GET(request) {
   try {
     await connectDB();
     const { searchParams } = new URL(request.url);
+    const search = searchParams.get("search");
     const filters = {};
+    if (search) {
+      filters.search = search;
+    }
     const pagination = {
       page: parseInt(searchParams.get("page")) || 1,
-      limit: parseInt(searchParams.get("limit")) || 100,
+      limit: parseInt(searchParams.get("limit")) || 10,
     };
 
     const result = await categoryService.getAllCategories(filters, pagination);
@@ -26,6 +30,8 @@ export async function GET(request) {
       success: true,
       count: result.categories.length,
       total: result.pagination.total,
+      pages: result.pagination.pages,
+      page: result.pagination.page,
       data: result.categories,
     });
   } catch (error) {

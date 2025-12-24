@@ -22,7 +22,7 @@ export async function GET(request) {
     const filters = {
       category: searchParams.get("category"),
       author: searchParams.get("author"),
-      tags: searchParams.get("tags"),
+      tags: searchParams.get("tags") || searchParams.get("tag"),
       search: searchParams.get("search"),
       isPublished: searchParams.get("isPublished"),
       sortBy: searchParams.get("sortBy"),

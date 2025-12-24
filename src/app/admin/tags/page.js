@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import Link from "next/link";
 import Cookies from "js-cookie";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,6 +31,7 @@ const fetchWithAuth = async (url) => {
 export default function TagsPage() {
   const { user } = useAdminAuth();
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
   const [modal, setModal] = useState({
     open: false,
     data: null,
@@ -44,8 +46,11 @@ export default function TagsPage() {
 
   // Queries
   const { data, isLoading, refetch, isRefetching, error } = useQuery({
-    queryKey: ["admin-tags", search],
-    queryFn: () => fetchWithAuth(`/api/tags?limit=100`),
+    queryKey: ["admin-tags", page, search],
+    queryFn: () =>
+      fetchWithAuth(
+        `/api/tags?page=${page}&limit=9${search ? `&search=${search}` : ""}`
+      ),
   });
 
   // Mutations
@@ -100,12 +105,7 @@ export default function TagsPage() {
     },
   });
 
-  const filteredData =
-    data?.data?.filter(
-      (tag) =>
-        tag.name.toLowerCase().includes(search.toLowerCase()) ||
-        tag.slug.toLowerCase().includes(search.toLowerCase())
-    ) || [];
+  const filteredData = data?.data || [];
 
   const canManage = user?.role === "admin" || user?.role === "editor";
   const canDelete = user?.role === "admin";
@@ -158,88 +158,106 @@ export default function TagsPage() {
 
         <LoadingSpinner isLoading={isLoading} error={error}>
           {filteredData.length > 0 ? (
-            <div className="admin-table-wrapper">
-              <table className="admin-table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Slug</th>
-                    <th>Description</th>
-                    <th>Blogs Count</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredData.map((tag) => (
-                    <tr key={tag._id}>
-                      <td>
-                        <strong>{tag.name}</strong>
-                      </td>
-                      <td>
-                        <code>{tag.slug}</code>
-                      </td>
-                      <td style={{ maxWidth: "300px" }}>
-                        <small>{tag.description || "-"}</small>
-                      </td>
-                      <td>
-                        <span className="admin-badge admin-badge-info">
-                          {tag.blogCount || 0}
-                        </span>
-                      </td>
-                      <td>
-                        <div className="admin-table-actions">
-                          {canManage && (
-                            <>
-                              <button
-                                onClick={() =>
-                                  setModal({
-                                    open: true,
-                                    data: tag,
-                                    readOnly: true,
-                                  })
-                                }
-                                className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                                title="View"
-                              >
-                                <FontAwesomeIcon icon={faEye} />
-                              </button>
-                              <button
-                                onClick={() =>
-                                  setModal({
-                                    open: true,
-                                    data: tag,
-                                    readOnly: false,
-                                  })
-                                }
-                                className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                                title="Edit"
-                              >
-                                <FontAwesomeIcon icon={faEdit} />
-                              </button>
-                            </>
-                          )}
-                          {canDelete && (
-                            <button
-                              onClick={() =>
-                                setDeleteModal({
-                                  open: true,
-                                  id: tag._id,
-                                  name: tag.name,
-                                })
-                              }
-                              className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                              title="Delete"
-                            >
-                              <FontAwesomeIcon icon={faTrash} />
-                            </button>
-                          )}
-                        </div>
-                      </td>
+            <>
+              <div className="admin-table-wrapper">
+                <table className="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Slug</th>
+                      <th>Description</th>
+                      <th>Blogs Count</th>
+                      <th>Actions</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {filteredData.map((tag) => (
+                      <tr key={tag._id}>
+                        <td>
+                          <strong>{tag.name}</strong>
+                        </td>
+                        <td>
+                          <code>{tag.slug}</code>
+                        </td>
+                        <td style={{ maxWidth: "300px" }}>
+                          <small>{tag.description || "-"}</small>
+                        </td>
+                        <td>
+                          <span className="admin-badge admin-badge-info">
+                            {tag.blogCount || 0}
+                          </span>
+                        </td>
+                        <td>
+                          <div className="admin-table-actions">
+                            {canManage && (
+                              <>
+                                <Link
+                                  href={`/blog/tag/${tag.slug}`}
+                                  target="_blank"
+                                  className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                  title="View Blogs"
+                                >
+                                  <FontAwesomeIcon icon={faEye} />
+                                </Link>
+                                <button
+                                  onClick={() =>
+                                    setModal({
+                                      open: true,
+                                      data: tag,
+                                      readOnly: false,
+                                    })
+                                  }
+                                  className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                  title="Edit"
+                                >
+                                  <FontAwesomeIcon icon={faEdit} />
+                                </button>
+                              </>
+                            )}
+                            {canDelete && (
+                              <button
+                                onClick={() =>
+                                  setDeleteModal({
+                                    open: true,
+                                    id: tag._id,
+                                    name: tag.name,
+                                  })
+                                }
+                                className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                                title="Delete"
+                              >
+                                <FontAwesomeIcon icon={faTrash} />
+                              </button>
+                            )}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Pagination */}
+              {data?.pages > 1 && (
+                <div className="admin-pagination">
+                  <button
+                    onClick={() => setPage((p) => Math.max(1, p - 1))}
+                    disabled={page === 1}
+                  >
+                    Previous
+                  </button>
+                  <span>
+                    Page {page} of {data.pages}
+                  </span>
+                  <button
+                    onClick={() => setPage((p) => Math.min(data.pages, p + 1))}
+                    disabled={page === data.pages}
+                  >
+                    Next
+                  </button>
+                </div>
+              )}
+            </>
           ) : (
             <div className="admin-empty">
               <FontAwesomeIcon icon={faSearch} className="admin-empty-icon" />

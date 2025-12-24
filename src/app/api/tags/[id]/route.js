@@ -1,11 +1,12 @@
 /**
  * Tag Individual API Route
- * GET /api/tags/[id] - Get single tag
+ * GET /api/tags/[id] - Get single tag (supports both ID and slug)
  * PUT /api/tags/[id] - Update tag (Admin only)
  * DELETE /api/tags/[id] - Delete tag (Admin only)
  */
 
 import { NextResponse } from "next/server";
+import mongoose from "mongoose";
 import connectDB from "@/lib/config/database.js";
 import * as tagService from "@/lib/services/tagService.js";
 import { withAuth } from "@/lib/middleware/auth.js";
@@ -15,7 +16,14 @@ export async function GET(request, { params }) {
   try {
     const { id } = await params;
     await connectDB();
-    const tag = await tagService.getTagById(id);
+
+    let tag;
+    if (mongoose.Types.ObjectId.isValid(id)) {
+      tag = await tagService.getTagById(id);
+    } else {
+      tag = await tagService.getTagBySlug(id);
+    }
+
     return NextResponse.json({ success: true, data: tag });
   } catch (error) {
     const { statusCode, body } = handleError(error);

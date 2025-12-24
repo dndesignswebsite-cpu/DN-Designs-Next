@@ -11,6 +11,8 @@ import {
   faEye,
   faPlus,
   faChartLine,
+  faFolder,
+  faTags,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
@@ -53,7 +55,9 @@ export default function AdminDashboard() {
     <div className="admin-dashboard">
       <div className="admin-page-header">
         <h1 className="admin-page-title">Dashboard</h1>
-        <p className="admin-page-subtitle">Welcome back! Here&apos;s an overview of your website.</p>
+        <p className="admin-page-subtitle">
+          Welcome back! Here&apos;s an overview of your website.
+        </p>
       </div>
 
       {/* Stats Cards */}
@@ -128,6 +132,18 @@ export default function AdminDashboard() {
                 <span>Send Email</span>
               </Link>
             )}
+            {canCreate && (
+              <Link href="/admin/categories" className="admin-quick-action">
+                <FontAwesomeIcon icon={faFolder} />
+                <span>Categories</span>
+              </Link>
+            )}
+            {canCreate && (
+              <Link href="/admin/tags" className="admin-quick-action">
+                <FontAwesomeIcon icon={faTags} />
+                <span>Tags</span>
+              </Link>
+            )}
           </div>
         </div>
 
@@ -147,11 +163,14 @@ export default function AdminDashboard() {
       <div className="admin-card">
         <div className="admin-card-header">
           <h2 className="admin-card-title">Recent Form Submissions</h2>
-          <Link href="/admin/form-submissions" className="admin-btn admin-btn-outline admin-btn-sm">
+          <Link
+            href="/admin/form-submissions"
+            className="admin-btn admin-btn-outline admin-btn-sm"
+          >
             View All
           </Link>
         </div>
-        
+
         {recentContacts?.data?.length > 0 ? (
           <div className="admin-table-wrapper">
             <table className="admin-table">
@@ -172,7 +191,11 @@ export default function AdminDashboard() {
                     <td>{contact.pageName || "-"}</td>
                     <td>{new Date(contact.createdAt).toLocaleDateString()}</td>
                     <td>
-                      <span className={`admin-badge admin-badge-${contact.status === 'new' ? 'warning' : 'success'}`}>
+                      <span
+                        className={`admin-badge admin-badge-${
+                          contact.status === "new" ? "warning" : "success"
+                        }`}
+                      >
                         {contact.status}
                       </span>
                     </td>
@@ -190,4 +213,3 @@ export default function AdminDashboard() {
     </div>
   );
 }
-

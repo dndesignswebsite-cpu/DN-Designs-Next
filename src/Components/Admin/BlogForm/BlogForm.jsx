@@ -12,6 +12,7 @@ import {
   faImage,
   faTimes,
   faCode,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import "./BlogForm.css";
@@ -83,6 +84,14 @@ export default function BlogForm({ initialData, isEditing }) {
   const [showHtmlEditor, setShowHtmlEditor] = useState(false);
   const [error, setError] = useState("");
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
+
+  // New State for Inline Features
+  const [showCategoryInput, setShowCategoryInput] = useState(false);
+  const [newCategoryName, setNewCategoryName] = useState("");
+
+  const [tagInput, setTagInput] = useState("");
+  const [showTagSuggestions, setShowTagSuggestions] = useState(false);
+  const [selectedTags, setSelectedTags] = useState([]); // Array of { name, slug, isNew }
 
   // Common Upload Logic
   const uploadImage = async (file) => {
@@ -284,6 +293,52 @@ export default function BlogForm({ initialData, isEditing }) {
     },
   });
 
+  const createCategoryMutation = useMutation({
+    mutationFn: async (name) => {
+      const token = Cookies.get("admin_token");
+      const res = await fetch("/api/categories", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ name }),
+      });
+      if (!res.ok) throw new Error("Failed to create category");
+      return res.json();
+    },
+    onSuccess: (data) => {
+      queryClient.invalidateQueries({ queryKey: ["admin-categories-minimal"] });
+      setNewCategoryName("");
+      setShowCategoryInput(false);
+      // Auto-select the new category
+      setFormData((prev) => ({
+        ...prev,
+        categories: [...prev.categories, data.data.name],
+        primaryCategory: prev.primaryCategory || data.data.name,
+      }));
+    },
+    onError: (err) => {
+      setError(err.message);
+    },
+  });
+
+  const createTagMutation = useMutation({
+    mutationFn: async (name) => {
+      const token = Cookies.get("admin_token");
+      const res = await fetch("/api/tags", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ name }),
+      });
+      if (!res.ok) throw new Error("Failed to create tag");
+      return res.json();
+    },
+  });
+
   // Fetch categories and tags
   const { data: categoriesData, isLoading: categoriesLoading } = useQuery({
     queryKey: ["admin-categories-minimal"],
@@ -303,9 +358,103 @@ export default function BlogForm({ initialData, isEditing }) {
     },
   });
 
-  const handleSubmit = (e) => {
+  // Initialize selectedTags from formData.tags and tagsData
+  useEffect(() => {
+    if (formData.tags && tagsData?.data) {
+      const slugs = formData.tags.split(", ").filter(Boolean);
+      const initialTags = slugs.map((slug) => {
+        const found = tagsData.data.find((t) => t.slug === slug);
+        return found
+          ? { name: found.name, slug: found.slug }
+          : { name: slug, slug: slug, isNew: true }; // Fallback name info
+      });
+      // Only update if length differs to avoid loops (simple check)
+      if (
+        initialTags.length !== selectedTags.length &&
+        selectedTags.length === 0
+      ) {
+        setSelectedTags(initialTags);
+      }
+    }
+  }, [formData.tags, tagsData]); // Dependence on formData.tags might cycle if not careful
+
+  // Tag Handlers
+  const handleAddTag = (tag) => {
+    if (selectedTags.some((t) => t.slug === tag.slug)) return;
+
+    const newTags = [...selectedTags, tag];
+    setSelectedTags(newTags);
+    setFormData((prev) => ({
+      ...prev,
+      tags: newTags.map((t) => t.slug).join(", "),
+    }));
+    setTagInput("");
+    setShowTagSuggestions(false);
+  };
+
+  const handleRemoveTag = (slug) => {
+    const newTags = selectedTags.filter((t) => t.slug !== slug);
+    setSelectedTags(newTags);
+    setFormData((prev) => ({
+      ...prev,
+      tags: newTags.map((t) => t.slug).join(", "),
+    }));
+  };
+
+  const handleTagInputKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (!tagInput.trim()) return;
+
+      // Check if tag exists in suggestions
+      const existingTag = tagsData?.data?.find(
+        (t) => t.name.toLowerCase() === tagInput.trim().toLowerCase()
+      );
+
+      if (existingTag) {
+        handleAddTag({ name: existingTag.name, slug: existingTag.slug });
+      } else {
+        // Create new tag object (to be created on save)
+        const name = tagInput.trim();
+        const slug = name
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "");
+
+        handleAddTag({ name, slug, isNew: true });
+      }
+    } else if (e.key === "Backspace" && !tagInput && selectedTags.length > 0) {
+      handleRemoveTag(selectedTags[selectedTags.length - 1].slug);
+    }
+  };
+
+  const filteredTagSuggestions = useMemo(() => {
+    if (!tagInput || !tagsData?.data) return [];
+    return tagsData.data
+      .filter(
+        (t) =>
+          t.name.toLowerCase().includes(tagInput.toLowerCase()) &&
+          !selectedTags.some((st) => st.slug === t.slug)
+      )
+      .slice(0, 5);
+  }, [tagInput, tagsData, selectedTags]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+
+    // Create new tags first
+    const newTags = selectedTags.filter((t) => t.isNew);
+    if (newTags.length > 0) {
+      try {
+        await Promise.all(
+          newTags.map((t) => createTagMutation.mutateAsync(t.name))
+        );
+      } catch (err) {
+        setError("Failed to create new tags");
+        return;
+      }
+    }
 
     const data = new FormData();
     Object.keys(formData).forEach((key) => {
@@ -837,55 +986,143 @@ export default function BlogForm({ initialData, isEditing }) {
                     </div>
                   )}
                 </div>
+
+                {/* Inline Add Category */}
+                <div style={{ padding: "0 12px 12px" }}>
+                  {!showCategoryInput ? (
+                    <button
+                      type="button"
+                      className="admin-inline-add-btn"
+                      onClick={() => setShowCategoryInput(true)}
+                    >
+                      <FontAwesomeIcon icon={faPlus} /> Add Category
+                    </button>
+                  ) : (
+                    <div className="admin-inline-form">
+                      <div className="admin-inline-input-group">
+                        <input
+                          type="text"
+                          className="admin-inline-input"
+                          placeholder="Category name"
+                          value={newCategoryName}
+                          onChange={(e) => setNewCategoryName(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                              e.preventDefault();
+                              if (newCategoryName.trim()) {
+                                createCategoryMutation.mutate(newCategoryName);
+                              }
+                            }
+                          }}
+                        />
+                        <button
+                          type="button"
+                          className="admin-btn admin-btn-primary admin-btn-xs"
+                          onClick={() => {
+                            if (newCategoryName.trim()) {
+                              createCategoryMutation.mutate(newCategoryName);
+                            }
+                          }}
+                          disabled={createCategoryMutation.isPending}
+                        >
+                          {createCategoryMutation.isPending ? "..." : "Add"}
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
             <div className="admin-form-group">
               <label className="admin-form-label">Tags</label>
-              <div className="admin-category-box">
-                <div className="admin-category-list">
-                  {tagsLoading ? (
-                    <div className="admin-category-loading">Loading...</div>
-                  ) : tagsData?.data?.length > 0 ? (
-                    tagsData.data.map((tag) => (
-                      <label key={tag._id} className="admin-category-item">
-                        <input
-                          type="checkbox"
-                          value={tag.slug}
-                          checked={
-                            formData.tags
-                              ? formData.tags
-                                  .split(", ")
-                                  .filter((t) => t)
-                                  .includes(tag.slug)
-                              : false
-                          }
-                          onChange={(e) => {
-                            const currentTags = formData.tags
-                              ? formData.tags.split(", ").filter((t) => t)
-                              : [];
-                            let newTags;
-                            if (e.target.checked) {
-                              newTags = [...currentTags, tag.slug];
-                            } else {
-                              newTags = currentTags.filter(
-                                (t) => t !== tag.slug
-                              );
-                            }
-                            setFormData((prev) => ({
-                              ...prev,
-                              tags: newTags.join(", "),
-                            }));
+              <div className="admin-tag-input-wrapper">
+                {selectedTags.map((tag) => (
+                  <div
+                    key={tag.slug}
+                    className={`admin-tag-chip ${tag.isNew ? "is-new" : ""}`}
+                  >
+                    {tag.name}
+                    <button
+                      type="button"
+                      className="admin-tag-remove"
+                      onClick={() => handleRemoveTag(tag.slug)}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </div>
+                ))}
+
+                <div
+                  className="admin-tag-suggestions-container"
+                  style={{ flex: 1 }}
+                >
+                  <input
+                    type="text"
+                    className="admin-tag-input"
+                    placeholder="Add tags..."
+                    value={tagInput}
+                    onChange={(e) => {
+                      setTagInput(e.target.value);
+                      setShowTagSuggestions(true);
+                    }}
+                    onFocus={() => setShowTagSuggestions(true)}
+                    onBlur={() =>
+                      setTimeout(() => setShowTagSuggestions(false), 200)
+                    }
+                    onKeyDown={handleTagInputKeyDown}
+                  />
+
+                  {showTagSuggestions && filteredTagSuggestions.length > 0 && (
+                    <div className="admin-tag-suggestions">
+                      {filteredTagSuggestions.map((tag) => (
+                        <div
+                          key={tag._id}
+                          className="admin-tag-suggestion-item"
+                          onMouseDown={(e) => {
+                            e.preventDefault(); // Prevent blur
+                            handleAddTag({ name: tag.name, slug: tag.slug });
                           }}
-                        />
-                        <span className="admin-category-name">{tag.name}</span>
-                      </label>
-                    ))
-                  ) : (
-                    <div className="admin-category-empty">No tags found</div>
+                        >
+                          {tag.name}
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
+
+                <button
+                  type="button"
+                  className="admin-btn admin-btn-outline admin-btn-xs"
+                  onClick={() => {
+                    if (tagInput.trim()) {
+                      // Trigger same logic as Enter key
+                      const existingTag = tagsData?.data?.find(
+                        (t) =>
+                          t.name.toLowerCase() === tagInput.trim().toLowerCase()
+                      );
+                      if (existingTag) {
+                        handleAddTag({
+                          name: existingTag.name,
+                          slug: existingTag.slug,
+                        });
+                      } else {
+                        const name = tagInput.trim();
+                        const slug = name
+                          .toLowerCase()
+                          .replace(/[^a-z0-9]+/g, "-")
+                          .replace(/(^-|-$)/g, "");
+                        handleAddTag({ name, slug, isNew: true });
+                      }
+                    }
+                  }}
+                >
+                  Add
+                </button>
               </div>
+              <p className="admin-form-hint">
+                Separate tags with Enter. New tags will be created on save.
+              </p>
             </div>
           </div>
         </div>
