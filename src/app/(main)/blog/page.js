@@ -84,7 +84,7 @@ function BlogPage() {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              {loading && blogs.length === 0 ? (
+              {loading ? (
                 <div className="text-center py-5">
                   <LoadingSpinner isLoading={true} />
                 </div>
@@ -173,32 +173,34 @@ function BlogPage() {
             </div>
 
             <div className="col-4">
-              <div className="blog-sidebar">
-                <h4 className="sidebar-title">Recent Posts</h4>
-                <div className="recent-posts-list">
-                  {blogs.slice(0, 5).map((post) => (
-                    <Link
-                      key={post._id}
-                      href={`/blog/${post.slug}`}
-                      className="recent-post-card"
-                    >
-                      {post.featuredImage?.url && (
-                        <img
-                          src={post.featuredImage.url}
-                          alt={post.title}
-                          className="recent-post-thumbnail"
-                        />
-                      )}
-                      <h5 className="recent-post-title">{post.title}</h5>
-                      <small className="recent-post-date">
-                        {new Date(
-                          post.publishedAt || post.createdAt
-                        ).toLocaleDateString()}
-                      </small>
-                    </Link>
-                  ))}
+              {blogs.length > 0 && (
+                <div className="blog-sidebar">
+                  <h4 className="sidebar-title">Recent Posts</h4>
+                  <div className="recent-posts-list">
+                    {blogs.slice(0, 5).map((post) => (
+                      <Link
+                        key={post._id}
+                        href={`/blog/${post.slug}`}
+                        className="recent-post-card"
+                      >
+                        {post.featuredImage?.url && (
+                          <img
+                            src={post.featuredImage.url}
+                            alt={post.title}
+                            className="recent-post-thumbnail"
+                          />
+                        )}
+                        <h5 className="recent-post-title">{post.title}</h5>
+                        <small className="recent-post-date">
+                          {new Date(
+                            post.publishedAt || post.createdAt
+                          ).toLocaleDateString()}
+                        </small>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

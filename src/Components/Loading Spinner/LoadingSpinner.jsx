@@ -1,14 +1,15 @@
 import React from "react";
+import "./LoadingSpinner.css";
 
 const LoadingSpinner = ({ isLoading, children, error }) => {
   return (
     <>
       {isLoading ? (
-        <div className="admin-loading" style={{ padding: "40px" }}>
-          <div className="admin-loading-spinner"></div>
+        <div className="loader-container" style={{ padding: "40px" }}>
+          <div className="loader-spinner"></div>
         </div>
       ) : error ? (
-        <div className="admin-alert admin-alert-error">{error}</div>
+        <div className="loader-alert loader-alert-error">{error}</div>
       ) : (
         children
       )}

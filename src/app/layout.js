@@ -32,7 +32,11 @@ export const viewport = {
 export const metadata = {
   title: "DN Designs – Best Digital Marketing Agency",
   description: "We provide top-quality digital marketing solutions.",
-  icons: { icon: "/window.svg" },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   authors: [
     { name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" },
   ],
@@ -64,7 +68,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}>
+    <html
+      lang="en"
+      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}
+    >
       <body>
         {/* JSON-LD Organization Schema*/}
         <Script
@@ -99,7 +106,6 @@ export default function RootLayout({ children }) {
         {/* <Header />  */}
         {children}
         {/* <Footer /> */}
-        
       </body>
     </html>
   );

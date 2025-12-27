@@ -2,25 +2,35 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
-  
+
   // Server-side environment variables
-  serverExternalPackages: ['mongoose', 'bcryptjs', 'nodemailer'],
-  
+  serverExternalPackages: ["mongoose", "bcryptjs", "nodemailer"],
+
   // Image domains for Cloudinary
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.dndesigns.co.in",
+        pathname: "/**",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        pathname: "/**",
       },
     ],
   },
-  
+
   // Disable body parser for file uploads (handled by formData)
   experimental: {
     serverActions: {
-      bodySizeLimit: '10mb',
+      bodySizeLimit: "10mb",
     },
   },
 };

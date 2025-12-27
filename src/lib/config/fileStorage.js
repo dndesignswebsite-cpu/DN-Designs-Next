@@ -166,11 +166,20 @@ const isAllowedFileType = (extension, type) => {
  * @returns {string} Public URL
  */
 const getPublicUrl = (relativePath) => {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || process.env.BASE_URL || "";
+  const mediaUrl =
+    process.env.NEXT_PUBLIC_MEDIA_URL ||
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    process.env.BASE_URL ||
+    "";
+
   // Remove 'public/' prefix if present and ensure path starts with /
   const cleanPath = relativePath.replace(/^public\//, "").replace(/\\/g, "/");
-  return `${baseUrl}/${cleanPath}`.replace(/([^:]\/)\/+/g, "$1");
+
+  // Ensure we don't end up with double slashes if mediaUrl has trailing slash
+  const baseUrl = mediaUrl.replace(/\/$/, "");
+  const path = cleanPath.replace(/^\//, "");
+
+  return `${baseUrl}/${path}`;
 };
 
 /**

@@ -29,6 +29,7 @@ export const createContact = async (contactData, ipAddress = null) => {
         email: contact.email,
         mobile: contact.mobile,
         message: contact.message,
+        pageName: contact.pageName,
       },
       allEmails
     );
