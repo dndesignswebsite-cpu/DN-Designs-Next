@@ -20,6 +20,16 @@ const nextConfig = {
         pathname: "/**",
       },
       {
+        protocol: "https",
+        hostname: "powerfilldrinks.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.powerfilldrinks.com",
+        pathname: "/**",
+      },
+      {
         protocol: "http",
         hostname: "localhost",
         pathname: "/**",
