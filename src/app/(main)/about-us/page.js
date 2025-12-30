@@ -10,37 +10,37 @@ import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 
 // meta data 
-export const metadata = {
-  title: "About DN Designs – Best Digital Marketing Agency",
-  description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+// export const metadata = {
+//   title: "About DN Designs – Best Digital Marketing Agency",
+//   description: "Learn about DN Designs, our expert team, and our digital marketing services.",
 
-  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about-us" }],
+//   authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about-us" }],
 
-  alternates: { canonical: "https://dn-designs-next.vercel.app/about-us" },
+//   alternates: { canonical: "https://dn-designs-next.vercel.app/about-us" },
 
-  robots: { index: true, follow: true, nocache: true },
+//   robots: { index: true, follow: true, nocache: true },
 
-  openGraph: {
-    title: "About DN Designs",
-    description: "Learn about DN Designs, our expert team, and our digital marketing services.",
-    url: "https://dn-designs-next.vercel.app/about",
-    siteName: "DN Designs",
-    images: [{
-      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg",
-      width: 1200,
-      height: 630,
-      alt: "About DN Designs"
-    }],
-    type: "website"
-  },
+//   openGraph: {
+//     title: "About DN Designs",
+//     description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+//     url: "https://dn-designs-next.vercel.app/about",
+//     siteName: "DN Designs",
+//     images: [{
+//       url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg",
+//       width: 1200,
+//       height: 630,
+//       alt: "About DN Designs"
+//     }],
+//     type: "website"
+//   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "About DN Designs",
-    description: "Learn about DN Designs, our expert team, and our digital marketing services.",
-    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg"]
-  }
-};
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "About DN Designs",
+//     description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+//     images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg"]
+//   }
+// };
 //meta end here
 
 
