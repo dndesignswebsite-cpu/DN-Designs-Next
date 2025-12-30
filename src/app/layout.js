@@ -29,42 +29,42 @@ export const viewport = {
 };
 
 // Meta data (Home page default)
-export const metadata = {
-  title: "DN Designs – Best Digital Marketing Agency",
-  description: "We provide top-quality digital marketing solutions.",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
-  authors: [
-    { name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" },
-  ],
-  alternates: { canonical: "https://dn-designs-next.vercel.app/" },
-  robots: { index: true, follow: true, nocache: true },
-  openGraph: {
-    title: "DN Designs – Best Digital Marketing Agency",
-    description:
-      "We provide top-quality digital marketing solutions for brands.",
-    url: "https://dn-designs-next.vercel.app/",
-    siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs SEO OG Image",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "DN Designs – Best Digital Marketing Agency",
-    description: "Grow your business with our digital marketing services.",
-    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"],
-  },
-};
+// export const metadata = {
+//   title: "DN Designs – Best Digital Marketing Agency",
+//   description: "We provide top-quality digital marketing solutions.",
+//   icons: {
+//     icon: "/favicon.ico",
+//     shortcut: "/favicon.ico",
+//     apple: "/favicon.ico",
+//   },
+//   authors: [
+//     { name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" },
+//   ],
+//   alternates: { canonical: "https://dn-designs-next.vercel.app/" },
+//   robots: { index: true, follow: true, nocache: true },
+//   openGraph: {
+//     title: "DN Designs – Best Digital Marketing Agency",
+//     description:
+//       "We provide top-quality digital marketing solutions for brands.",
+//     url: "https://dn-designs-next.vercel.app/",
+//     siteName: "DN Designs",
+//     images: [
+//       {
+//         url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg",
+//         width: 1200,
+//         height: 630,
+//         alt: "DN Designs SEO OG Image",
+//       },
+//     ],
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "DN Designs – Best Digital Marketing Agency",
+//     description: "Grow your business with our digital marketing services.",
+//     images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"],
+//   },
+// };
 
 export default function RootLayout({ children }) {
   return (
