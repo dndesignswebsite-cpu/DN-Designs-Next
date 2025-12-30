@@ -8,37 +8,37 @@ import Form from "@/Components/Form/Form";
 
 
 // meta data 
-export const metadata = {
-  title: "DN Designs – Best Digital Marketing Agency",
-  description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+// export const metadata = {
+//   title: "DN Designs – Best Digital Marketing Agency",
+//   description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
   
-  authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" }],
+//   authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" }],
   
-  alternates: { canonical: "https://dn-designs-next.vercel.app/" },
+//   alternates: { canonical: "https://dn-designs-next.vercel.app/" },
   
-  robots: { index: true, follow: true },
+//   robots: { index: true, follow: true },
   
-  openGraph: {
-    title: "DN Designs – Best Digital Marketing Agency",
-    description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
-    url: "https://dn-designs-next.vercel.app/",
-    siteName: "DN Designs",
-    images: [{ 
-      url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
-      width: 1200, 
-      height: 630, 
-      alt: "DN Designs SEO and Digital Marketing" 
-    }],
-    type: "website"
-  },
+//   openGraph: {
+//     title: "DN Designs – Best Digital Marketing Agency",
+//     description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+//     url: "https://dn-designs-next.vercel.app/",
+//     siteName: "DN Designs",
+//     images: [{ 
+//       url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
+//       width: 1200, 
+//       height: 630, 
+//       alt: "DN Designs SEO and Digital Marketing" 
+//     }],
+//     type: "website"
+//   },
   
-  twitter: {
-    card: "summary_large_image",
-    title: "DN Designs – Best Digital Marketing Agency",
-    description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
-    images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
-  }
-};
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "DN Designs – Best Digital Marketing Agency",
+//     description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
+//     images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
+//   }
+// };
 //meta end here
 
 
