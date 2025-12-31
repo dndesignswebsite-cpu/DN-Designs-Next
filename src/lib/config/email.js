@@ -12,13 +12,13 @@ import { logError } from "@/lib/middleware/errorHandler.js";
 const createTransporter = () => {
   return nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 465,
+    port: 587,
     secure: false,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
-    family: 4,
+    // family: 4,
   });
 };
 
