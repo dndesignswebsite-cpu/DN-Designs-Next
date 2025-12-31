@@ -1,26 +1,12 @@
 /**
  * Email Configuration
- * Handles email sending using Nodemailer
+ * Handles email sending using Resend
  */
 
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { logError } from "@/lib/middleware/errorHandler.js";
 
-/**
- * Create and configure Nodemailer transporter
- */
-const createTransporter = () => {
-  return nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-    family: 4,
-  });
-};
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 /**
  * Send email notification
@@ -33,23 +19,26 @@ const createTransporter = () => {
  */
 export const sendEmail = async ({ to, subject, html, text }) => {
   try {
-    const transporter = createTransporter();
-
     const recipients = Array.isArray(to) ? to : [to];
 
-    const mailOptions = {
-      from: `"DN Designs" <${process.env.EMAIL_USER}>`,
-      to: recipients.join(", "),
+    const { data, error } = await resend.emails.send({
+      from: "DN Designs <dndesignswebsite@gmail.com>",
+      to: recipients,
       subject: subject,
       html: html,
-      text: text || html.replace(/<[^>]*>/g, ""),
-    };
+      text: text,
+      reply_to: process.env.ADMIN_EMAIL,
+    });
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log("✅ Email sent successfully:", info.messageId);
+    if (error) {
+      console.error("Resend Error:", error);
+      throw new Error(error.message);
+    }
+
+    console.log("✅ Email sent successfully:", data.id);
     return {
       success: true,
-      messageId: info.messageId,
+      messageId: data.id,
       recipients: recipients.length,
     };
   } catch (error) {
