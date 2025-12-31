@@ -11,15 +11,14 @@ import { logError } from "@/lib/middleware/errorHandler.js";
  */
 const createTransporter = () => {
   return nodemailer.createTransport({
-    service: "gmail",
-    secure: false,
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
-    family: 4, // Force IPv4 to avoid Gmail IPv6 issues on VPS
-    logger: true, // Log SMTP exchanges
-    debug: true, // Show debug output
+    family: 4,
   });
 };
 
