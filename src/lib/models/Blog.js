@@ -276,6 +276,13 @@ const blogSchema = new mongoose.Schema(
       type: Number,
       default: 1,
     },
+
+    // Editor preference (visual or code)
+    editorMode: {
+      type: String,
+      enum: ["visual", "code"],
+      default: "visual",
+    },
   },
   {
     timestamps: true, // Automatically adds createdAt and updatedAt fields

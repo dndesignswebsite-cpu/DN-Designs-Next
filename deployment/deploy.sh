@@ -1,37 +1,60 @@
 #!/bin/bash
 
 # deployment/deploy.sh
-# Automates the deployment process on the VPS with zero-downtime.
+# Automates deployment on the VPS with zero-downtime.
 
-set -e
+set -e  # Exit on any error
 
 APP_DIR="/var/www/DN-Designs-Next"
 APP_NAME="dn-designs"
 
 echo "🚀 Starting Deployment for $APP_NAME..."
 
-cd $APP_DIR
+# --- 1. Load NVM for root user ---
+export NVM_DIR="/root/.nvm"
 
-# 1. Pull the latest code
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+    # Load NVM into current shell
+    . "$NVM_DIR/nvm.sh"
+    echo "🔹 NVM loaded from $NVM_DIR"
+else
+    echo "❌ NVM not found at $NVM_DIR"
+    exit 1
+fi
+
+# Check if npm is available
+if ! command -v npm &> /dev/null; then
+    echo "❌ npm not found even after loading NVM!"
+    echo "Current PATH: $PATH"
+    exit 1
+fi
+
+# --- 2. Change to app directory ---
+cd "$APP_DIR" || { echo "❌ Failed to cd into $APP_DIR"; exit 1; }
+
+# --- 3. Pull latest code ---
 echo "🔹 Pulling latest changes from git..."
-git pull origin main
+git fetch origin main
+git reset --hard origin/main
 
-# 2. Install dependencies (only if package.json changed)
-# Using 'npm ci' or 'npm install' - 'install' is safer if lockfile isn't perfect
+# --- 4. Install dependencies ---
 echo "🔹 Installing dependencies..."
 npm install
 
-# 3. Build the application
-# This doesn't affect the running process yet
+# --- 5. Build Next.js app ---
 echo "🔹 Building Next.js application (this may take a minute)..."
 npm run build
 
-# 4. Zero-downtime reload with PM2
-# PM2 cluster mode will keep the old app running while the new one starts
+# --- 6. Reload app with PM2 (zero-downtime) ---
 echo "🔹 Reloading application in PM2..."
-pm2 reload $APP_NAME --env production
+if pm2 list | grep -q "$APP_NAME"; then
+    pm2 reload "$APP_NAME" --env production
+else
+    echo "⚠️ App not running in PM2. Starting it..."
+    pm2 start npm --name "$APP_NAME" -- start
+fi
 
-# 5. Save PM2 state
+# --- 7. Save PM2 process list ---
 pm2 save
 
-echo "✅ Deployment Successful! Your app is now updated and running."
+echo "✅ Deployment Successful! $APP_NAME is now updated and running."

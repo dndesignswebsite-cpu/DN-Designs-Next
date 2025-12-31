@@ -56,6 +56,8 @@ export async function PUT(request, { params }) {
     if (formData.has("layout")) updateData.layout = formData.get("layout");
     if (formData.has("isPublished"))
       updateData.isPublished = formData.get("isPublished") === "true";
+    if (formData.has("editorMode"))
+      updateData.editorMode = formData.get("editorMode");
 
     // Handle publishedAt if provided (editable published date)
     const publishedAt = formData.get("publishedAt");
@@ -87,8 +89,7 @@ export async function PUT(request, { params }) {
     if (formData.has("metaDescription"))
       updateData.metaDescription = formData.get("metaDescription");
     if (formData.has("canonicalUrl")) {
-      if (!updateData.alternates) updateData.alternates = {};
-      updateData.alternates.canonical = formData.get("canonicalUrl");
+      updateData["alternates.canonical"] = formData.get("canonicalUrl");
     }
     if (formData.has("robotsTag"))
       updateData.robotsTag = formData.get("robotsTag");
@@ -100,23 +101,17 @@ export async function PUT(request, { params }) {
     const ogDescription = formData.get("ogDescription");
     const ogUrl = formData.get("ogUrl");
 
-    if (ogTitle || ogDescription || ogUrl) {
-      if (!updateData.openGraph) updateData.openGraph = {};
-      if (ogTitle) updateData.openGraph.title = ogTitle;
-      if (ogDescription) updateData.openGraph.description = ogDescription;
-      if (ogUrl) updateData.openGraph.url = ogUrl;
-    }
+    if (ogTitle) updateData["openGraph.title"] = ogTitle;
+    if (ogDescription) updateData["openGraph.description"] = ogDescription;
+    if (ogUrl) updateData["openGraph.url"] = ogUrl;
 
     // Twitter Card fields
     const twitterTitle = formData.get("twitterTitle");
     const twitterDescription = formData.get("twitterDescription");
 
-    if (twitterTitle || twitterDescription) {
-      if (!updateData.twitter) updateData.twitter = {};
-      if (twitterTitle) updateData.twitter.title = twitterTitle;
-      if (twitterDescription)
-        updateData.twitter.description = twitterDescription;
-    }
+    if (twitterTitle) updateData["twitter.title"] = twitterTitle;
+    if (twitterDescription)
+      updateData["twitter.description"] = twitterDescription;
 
     // Validation
     if (

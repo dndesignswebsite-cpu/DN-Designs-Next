@@ -229,15 +229,12 @@ export const updateBlog = async (
         await deleteImage(oldImage.publicId);
       }
 
-      if (!updateData.openGraph)
-        updateData.openGraph = existingBlog.openGraph || {};
-
-      updateData.openGraph.images = [
+      updateData["openGraph.images"] = [
         {
           url: result.secure_url,
           publicId: result.public_id,
           alt:
-            updateData.openGraph.title ||
+            updateData["openGraph.title"] ||
             existingBlog.openGraph?.title ||
             "Blog OG Image",
         },
@@ -258,14 +255,12 @@ export const updateBlog = async (
         await deleteImage(oldImage.publicId);
       }
 
-      if (!updateData.twitter) updateData.twitter = existingBlog.twitter || {};
-
-      updateData.twitter.images = [
+      updateData["twitter.images"] = [
         {
           url: result.secure_url,
           publicId: result.public_id,
           alt:
-            updateData.twitter.title ||
+            updateData["twitter.title"] ||
             existingBlog.twitter?.title ||
             "Blog Twitter Image",
         },

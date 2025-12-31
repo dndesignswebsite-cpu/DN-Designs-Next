@@ -15,6 +15,8 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
+import ConfirmModal from "../ConfirmModal/ConfirmModal";
 import "./BlogForm.css";
 
 // Dynamic import for React Quill (SSR issues)
@@ -36,6 +38,7 @@ const ReactQuill = dynamic(
 );
 
 import "react-quill-new/dist/quill.snow.css";
+import { Editor } from "@monaco-editor/react";
 
 const getISTString = () => {
   const now = new Date();
@@ -74,12 +77,15 @@ export default function BlogForm({ initialData, isEditing }) {
     ogUrl: "",
     twitterTitle: "",
     twitterDescription: "",
+    editorMode: "visual",
   });
 
   const [featuredImage, setFeaturedImage] = useState(null);
   const [featuredImagePreview, setFeaturedImagePreview] = useState("");
   const [ogImage, setOgImage] = useState(null);
+  const [ogImagePreview, setOgImagePreview] = useState("");
   const [twitterImage, setTwitterImage] = useState(null);
+  const [twitterImagePreview, setTwitterImagePreview] = useState("");
 
   const [showHtmlEditor, setShowHtmlEditor] = useState(false);
   const [error, setError] = useState("");
@@ -92,6 +98,8 @@ export default function BlogForm({ initialData, isEditing }) {
   const [tagInput, setTagInput] = useState("");
   const [showTagSuggestions, setShowTagSuggestions] = useState(false);
   const [selectedTags, setSelectedTags] = useState([]); // Array of { name, slug, isNew }
+
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
 
   // Common Upload Logic
   const uploadImage = async (file) => {
@@ -256,9 +264,62 @@ export default function BlogForm({ initialData, isEditing }) {
         ogUrl: initialData.openGraph?.url || "",
         twitterTitle: initialData.twitter?.title || "",
         twitterDescription: initialData.twitter?.description || "",
+        editorMode: initialData.editorMode || "visual",
       });
+      setShowHtmlEditor(initialData.editorMode === "code");
       if (initialData.featuredImage?.url) {
         setFeaturedImagePreview(initialData.featuredImage.url);
+      }
+      if (initialData.openGraph?.images?.[0]?.url) {
+        setOgImagePreview(initialData.openGraph.images[0].url);
+      }
+      if (initialData.twitter?.images?.[0]?.url) {
+        setTwitterImagePreview(initialData.twitter.images[0].url);
+      }
+    }
+  }, [initialData]);
+
+  // Autosave draft
+  useEffect(() => {
+    // Only save if we have some data and it's not just the initial state
+    if (formData.title || formData.content) {
+      const draftKey = `blog_draft_${initialData?._id || "new"}`;
+      const draftData = {
+        ...formData,
+        timestamp: new Date().getTime(),
+      };
+      localStorage.setItem(draftKey, JSON.stringify(draftData));
+    }
+  }, [formData, initialData?._id]);
+
+  // Restore draft
+  useEffect(() => {
+    const draftKey = `blog_draft_${initialData?._id || "new"}`;
+    const savedDraft = localStorage.getItem(draftKey);
+
+    if (savedDraft) {
+      try {
+        const parsedDraft = JSON.parse(savedDraft);
+        const serverTime = initialData?.updatedAt
+          ? new Date(initialData.updatedAt).getTime()
+          : 0;
+        const draftTime = parsedDraft.timestamp || 0;
+
+        // If draft is newer than server data (or if creating new), restore it
+        if (draftTime > serverTime) {
+          // Remove timestamp from data
+          const { timestamp, ...dataToRestore } = parsedDraft;
+          setFormData((prev) => ({ ...prev, ...dataToRestore }));
+          if (dataToRestore.editorMode === "code") {
+            setShowHtmlEditor(true);
+          }
+          toast.success("Restored unsaved draft", {
+            position: "bottom-right",
+            duration: 4000,
+          });
+        }
+      } catch (e) {
+        console.error("Failed to parse draft", e);
       }
     }
   }, [initialData]);
@@ -284,12 +345,17 @@ export default function BlogForm({ initialData, isEditing }) {
       }
       return res.json();
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
+      const draftKey = `blog_draft_${initialData?._id || "new"}`;
+      localStorage.removeItem(draftKey);
+      toast.success(
+        isEditing ? "Blog updated successfully!" : "Blog created successfully!"
+      );
       queryClient.invalidateQueries({ queryKey: ["blogs"] });
       router.push("/admin/blogs");
     },
-    onError: (err) => {
-      setError(err.message);
+    onError: (error) => {
+      setError(error.message);
     },
   });
 
@@ -479,6 +545,7 @@ export default function BlogForm({ initialData, isEditing }) {
     if (formData.layout) {
       data.append("layout", formData.layout);
     }
+    data.append("editorMode", formData.editorMode);
 
     mutation.mutate(data);
   };
@@ -491,8 +558,10 @@ export default function BlogForm({ initialData, isEditing }) {
         setFeaturedImagePreview(URL.createObjectURL(file));
       } else if (type === "og") {
         setOgImage(file);
+        setOgImagePreview(URL.createObjectURL(file));
       } else if (type === "twitter") {
         setTwitterImage(file);
+        setTwitterImagePreview(URL.createObjectURL(file));
       }
     }
   };
@@ -526,6 +595,33 @@ export default function BlogForm({ initialData, isEditing }) {
       ...prev,
       slug: e.target.value,
     }));
+  };
+
+  const handleEditorToggle = () => {
+    if (
+      formData.content.trim() !== "" &&
+      formData.content.trim() !== "<p><br></p>"
+    ) {
+      setShowConfirmModal(true);
+    } else {
+      const nextMode = !showHtmlEditor;
+      setShowHtmlEditor(nextMode);
+      setFormData((prev) => ({
+        ...prev,
+        editorMode: nextMode ? "code" : "visual",
+      }));
+    }
+  };
+
+  const confirmEditorSwitch = () => {
+    const nextMode = !showHtmlEditor;
+    setFormData((prev) => ({
+      ...prev,
+      content: "",
+      editorMode: nextMode ? "code" : "visual",
+    }));
+    setShowHtmlEditor(nextMode);
+    setShowConfirmModal(false);
   };
 
   return (
@@ -578,21 +674,41 @@ export default function BlogForm({ initialData, isEditing }) {
                 <button
                   type="button"
                   className="admin-btn admin-btn-outline admin-btn-sm"
-                  onClick={() => setShowHtmlEditor(!showHtmlEditor)}
+                  onClick={handleEditorToggle}
                 >
                   <FontAwesomeIcon icon={faCode} />
-                  {showHtmlEditor ? "Visual Editor" : "HTML Editor"}
+                  {showHtmlEditor ? "Visual Editor" : "Code Editor"}
                 </button>
               </div>
               {showHtmlEditor ? (
-                <textarea
-                  name="content"
-                  value={formData.content}
-                  onChange={handleChange}
-                  className="admin-form-textarea"
-                  style={{ minHeight: "400px", fontFamily: "monospace" }}
-                  placeholder="<p>Enter HTML content here...</p>"
-                />
+                <div className="admin-editor-wrapper code-editor-wrapper">
+                  <Editor
+                    height="calc(100vh - 400px)"
+                    language="html"
+                    path="content.html"
+                    value={formData.content}
+                    onChange={(value) =>
+                      setFormData((prev) => ({ ...prev, content: value || "" }))
+                    }
+                    options={{
+                      minimap: { enabled: false },
+                      fontSize: 14,
+                      wordWrap: "on",
+                      automaticLayout: true,
+                      scrollBeyondLastLine: false,
+                      renderLineHighlight: "none",
+                      hideCursorInOverviewRuler: true,
+                      suggestOnTriggerCharacters: true,
+                      quickSuggestions: true,
+                      bracketPairColorization: { enabled: true },
+                      formatOnPaste: true,
+                      formatOnType: true,
+                      autoClosingTags: true,
+                      autoClosingBrackets: "always",
+                      autoClosingQuotes: "always",
+                    }}
+                  />
+                </div>
               ) : (
                 <div className="admin-editor-wrapper">
                   <ReactQuill
@@ -761,12 +877,28 @@ export default function BlogForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Image</label>
-                <input
-                  type="file"
-                  accept="image/*,.webp"
-                  onChange={(e) => handleImageChange(e, "og")}
-                  className="admin-form-input"
-                />
+                {ogImagePreview ? (
+                  <div className="admin-featured-preview">
+                    <img src={ogImagePreview} alt="OG Preview" />
+                    <button
+                      type="button"
+                      className="admin-featured-remove"
+                      onClick={() => {
+                        setOgImage(null);
+                        setOgImagePreview("");
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </div>
+                ) : (
+                  <input
+                    type="file"
+                    accept="image/*,.webp"
+                    onChange={(e) => handleImageChange(e, "og")}
+                    className="admin-form-input"
+                  />
+                )}
               </div>
             </div>
 
@@ -800,12 +932,28 @@ export default function BlogForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Image</label>
-                <input
-                  type="file"
-                  accept="image/*,.webp"
-                  onChange={(e) => handleImageChange(e, "twitter")}
-                  className="admin-form-input"
-                />
+                {twitterImagePreview ? (
+                  <div className="admin-featured-preview">
+                    <img src={twitterImagePreview} alt="Twitter Preview" />
+                    <button
+                      type="button"
+                      className="admin-featured-remove"
+                      onClick={() => {
+                        setTwitterImage(null);
+                        setTwitterImagePreview("");
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </div>
+                ) : (
+                  <input
+                    type="file"
+                    accept="image/*,.webp"
+                    onChange={(e) => handleImageChange(e, "twitter")}
+                    className="admin-form-input"
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -1127,6 +1275,18 @@ export default function BlogForm({ initialData, isEditing }) {
           </div>
         </div>
       </div>
+      <ConfirmModal
+        isOpen={showConfirmModal}
+        onClose={() => setShowConfirmModal(false)}
+        onConfirm={confirmEditorSwitch}
+        title="Switch Editor Mode?"
+        message={`Warning: Switching to ${
+          showHtmlEditor ? "Visual Editor" : "Code Editor"
+        } will result in the loss of your current content. Do you want to proceed?`}
+        confirmText="Yes, Switch"
+        cancelText="Cancel"
+        type="warning"
+      />
     </form>
   );
 }

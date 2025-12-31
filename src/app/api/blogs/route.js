@@ -80,6 +80,7 @@ export async function POST(request) {
       layout: formData.get("layout") || "default",
       isPublished: formData.get("isPublished") === "true",
       publishedAt: publishedAt ? new Date(publishedAt) : undefined,
+      editorMode: formData.get("editorMode") || "visual",
     };
 
     // Handle tags
