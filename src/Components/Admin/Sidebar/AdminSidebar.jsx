@@ -19,6 +19,7 @@ import {
   faList,
   faTags,
   faPlus,
+  faImage,
 } from "@fortawesome/free-solid-svg-icons";
 import "./AdminSidebar.css";
 
@@ -75,6 +76,12 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
           icon: faTags,
         },
       ],
+    },
+    {
+      path: "/admin/gallery",
+      icon: faImage,
+      label: "Gallery",
+      show: true,
     },
     {
       path: "/admin/pages",

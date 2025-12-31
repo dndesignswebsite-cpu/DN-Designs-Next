@@ -152,7 +152,9 @@ export const updateUser = async (
 
   if (avatarBuffer) {
     try {
-      const result = await uploadImageBuffer(avatarBuffer);
+      const result = await uploadImageBuffer(avatarBuffer, {
+        folder: "avatars",
+      });
 
       if (existingUser.avatar && existingUser.avatar.includes("cloudinary")) {
         try {
@@ -238,7 +240,9 @@ export const updateProfile = async (
 
   if (avatarBuffer) {
     try {
-      const result = await uploadImageBuffer(avatarBuffer);
+      const result = await uploadImageBuffer(avatarBuffer, {
+        folder: "avatars",
+      });
 
       if (user.avatar && user.avatar.includes("cloudinary")) {
         try {

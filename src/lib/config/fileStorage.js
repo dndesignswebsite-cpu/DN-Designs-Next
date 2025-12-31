@@ -462,9 +462,14 @@ export const listFiles = async (folder = "images") => {
     }
 
     const files = await fs.promises.readdir(uploadDir);
-    return files.map((file) =>
-      path.join("uploads", folder, file).replace(/\\/g, "/")
-    );
+    const allowedExtensions = [...ALLOWED_IMAGE_TYPES, ...ALLOWED_VIDEO_TYPES];
+
+    return files
+      .filter((file) => {
+        const ext = path.extname(file).toLowerCase();
+        return allowedExtensions.includes(ext);
+      })
+      .map((file) => path.join("uploads", folder, file).replace(/\\/g, "/"));
   } catch (error) {
     logError(error, { function: "listFiles", folder });
     return [];
