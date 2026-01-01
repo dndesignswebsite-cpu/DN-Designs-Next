@@ -1,5 +1,10 @@
-const path = require("node:path");
-require("dotenv").config({ path: path.join(__dirname, ".env.prod") });
+const path = require("path");
+
+require(path.join(
+  "/var/www/DN-Designs-Next/current/node_modules/dotenv"
+)).config({
+  path: path.join("/var/www/DN-Designs-Next/current/.env.prod"),
+});
 
 module.exports = {
   apps: [
