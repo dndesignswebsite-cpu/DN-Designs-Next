@@ -19,7 +19,7 @@ import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 
 export default function GalleryPage() {
   const queryClient = useQueryClient();
-  const [activeTab, setActiveTab] = useState("images");
+  const [activeTab, setActiveTab] = useState("avatars");
   const [selectedImage, setSelectedImage] = useState(null); // For modal
   const [deleteTarget, setDeleteTarget] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -279,7 +279,7 @@ export default function GalleryPage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
             gap: "24px",
           }}
         >
@@ -288,31 +288,25 @@ export default function GalleryPage() {
             .map((file) => (
               <div
                 key={file.path || file.name}
-                className="gallery-item admin-card"
+                className="gallery-card admin-card"
                 style={{
                   padding: 0,
                   overflow: "hidden",
-                  display: "flex",
-                  flexDirection: "column",
-                  marginBottom: 0,
-                  height: "100%",
+                  position: "relative",
+                  height: "220px", // Increased height for better visibility
+                  cursor: "pointer",
+                  border: "none",
                 }}
               >
-                {/* Preview Area */}
+                {/* Image/Video Background */}
                 <div
-                  className="gallery-item-preview"
-                  style={{
-                    height: "180px",
-                    overflow: "hidden",
-                    cursor: "pointer",
-                    background: "#f8f9fa",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    position: "relative",
-                    borderBottom: "1px solid var(--admin-border)",
-                  }}
+                  className="gallery-media-wrapper"
                   onClick={() => setSelectedImage(file)}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    transition: "all 0.4s ease",
+                  }}
                 >
                   {file.name.match(/\.(mp4|mov|avi|webm)$/i) ? (
                     <video
@@ -322,6 +316,10 @@ export default function GalleryPage() {
                         height: "100%",
                         objectFit: "cover",
                       }}
+                      muted
+                      loop
+                      onMouseOver={(e) => e.target.play()}
+                      onMouseOut={(e) => e.target.pause()}
                     />
                   ) : (
                     <img
@@ -331,94 +329,102 @@ export default function GalleryPage() {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        transition: "transform 0.3s",
                       }}
-                      onMouseEnter={(e) =>
-                        (e.currentTarget.style.transform = "scale(1.05)")
-                      }
-                      onMouseLeave={(e) =>
-                        (e.currentTarget.style.transform = "scale(1)")
-                      }
                     />
                   )}
-                  <div
-                    className="hover-overlay"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      background: "rgba(0,0,0,0.3)",
-                      opacity: 0,
-                      transition: "opacity 0.2s",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <FontAwesomeIcon
-                      icon={faEye}
-                      style={{ color: "#fff", fontSize: "24px" }}
-                    />
-                  </div>
                 </div>
 
-                {/* Footer Info & Actions */}
+                {/* Overlay Content */}
                 <div
+                  className="gallery-overlay"
                   style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
                     padding: "16px",
-                    background: "#fff",
-                    flex: 1,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0))",
+                    color: "white",
+                    transform: "translateY(100%)",
+                    transition: "all 0.3s ease",
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "space-between",
+                    justifyContent: "flex-end",
+                    gap: "8px",
                   }}
                 >
                   <div
                     style={{
-                      fontSize: "0.9rem",
                       fontWeight: 600,
-                      marginBottom: "12px",
+                      fontSize: "0.95rem",
                       whiteSpace: "nowrap",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
-                      color: "var(--admin-text)",
+                      textShadow: "0 1px 2px rgba(0,0,0,0.5)",
                     }}
                     title={file.name}
                   >
                     {file.name}
                   </div>
 
-                  {/* Action Buttons */}
                   <div
                     style={{
                       display: "flex",
-                      justifyContent: "space-between",
                       gap: "8px",
+                      marginTop: "4px",
                     }}
                   >
                     <button
-                      onClick={() => handleCopyLink(file.url)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleCopyLink(file.url);
+                      }}
                       title="Copy Link"
-                      className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                      style={{ flex: 1 }}
+                      className="admin-btn admin-btn-sm"
+                      style={{
+                        flex: 1,
+                        background: "rgba(255,255,255,0.2)",
+                        color: "white",
+                        backdropFilter: "blur(4px)",
+                        border: "1px solid rgba(255,255,255,0.3)",
+                        justifyContent: "center",
+                      }}
                     >
                       <FontAwesomeIcon icon={faCopy} />
                     </button>
                     <button
-                      onClick={() => setSelectedImage(file)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedImage(file);
+                      }}
                       title="View"
-                      className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                      style={{ flex: 1 }}
+                      className="admin-btn admin-btn-sm"
+                      style={{
+                        flex: 1,
+                        background: "rgba(255,255,255,0.2)",
+                        color: "white",
+                        backdropFilter: "blur(4px)",
+                        border: "1px solid rgba(255,255,255,0.3)",
+                        justifyContent: "center",
+                      }}
                     >
                       <FontAwesomeIcon icon={faEye} />
                     </button>
                     <button
-                      onClick={() => setDeleteTarget(file)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setDeleteTarget(file);
+                      }}
                       title="Delete"
-                      className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                      style={{ flex: 1 }}
+                      className="admin-btn admin-btn-sm"
+                      style={{
+                        flex: 1,
+                        background: "rgba(239, 68, 68, 0.8)", // Red with opacity
+                        color: "white",
+                        border: "none",
+                        justifyContent: "center",
+                      }}
                     >
                       <FontAwesomeIcon icon={faTrash} />
                     </button>
@@ -554,8 +560,12 @@ export default function GalleryPage() {
             opacity: 1;
           }
         }
-        .gallery-item:hover .hover-overlay {
-          opacity: 1 !important;
+        .gallery-card:hover .gallery-media-wrapper {
+          filter: blur(3px);
+          // transform: scale(1.05);
+        }
+        .gallery-card:hover .gallery-overlay {
+          transform: translateY(0) !important;
         }
       `}</style>
     </div>

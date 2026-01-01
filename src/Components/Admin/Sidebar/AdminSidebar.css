@@ -282,3 +282,34 @@
     width: var(--admin-sidebar-collapsed);
   }
 }
+
+/* ==========================================
+   Collapsed Mode Submenu Overrides
+   ========================================== */
+
+.admin-sidebar-parent-group {
+  position: relative;
+}
+
+.admin-sidebar.collapsed .admin-sidebar-nav {
+  overflow: visible;
+}
+
+.admin-sidebar.collapsed .admin-sidebar-submenu {
+  display: block;
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 0;
+  width: 220px;
+  background: var(--admin-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 8px;
+  z-index: 1000;
+  margin: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-sidebar.collapsed .admin-sidebar-submenu .admin-sidebar-sublink {
+  padding-left: 12px;
+}

@@ -19,6 +19,7 @@ export default function ConfirmModal({
   cancelText = "Cancel",
   type = "danger", // danger, warning, info
   isLoading = false,
+  loadingText = "Processing...",
 }) {
   // Close on escape key
   useEffect(() => {
@@ -83,7 +84,7 @@ export default function ConfirmModal({
             {isLoading ? (
               <>
                 <span className="confirm-modal-spinner"></span>
-                Processing...
+                {loadingText}
               </>
             ) : (
               <>

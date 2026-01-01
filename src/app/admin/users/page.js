@@ -246,7 +246,8 @@ export default function UsersPage() {
         onConfirm={confirmDelete}
         title="Delete User"
         message={`Are you sure you want to delete "${userToDelete?.name}"? This action cannot be undone.`}
-        isProcessing={deleteMutation.isPending}
+        isLoading={deleteMutation.isPending}
+        loadingText="Processing..."
       />
 
       {/* Edit User Modal */}

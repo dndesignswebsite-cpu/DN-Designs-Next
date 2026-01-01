@@ -28,15 +28,21 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
   const [blogsOpen, setBlogsOpen] = useState(false);
 
   // Keep blogs menu open if we are on a blog-related page
+  // Keep blogs menu open if we are on a blog-related page but ONLY if not collapsed
   useEffect(() => {
     if (
-      pathname.startsWith("/admin/blogs") ||
-      pathname.startsWith("/admin/categories") ||
-      pathname.startsWith("/admin/tags")
+      !collapsed &&
+      (pathname.startsWith("/admin/blogs") ||
+        pathname.startsWith("/admin/categories") ||
+        pathname.startsWith("/admin/tags"))
     ) {
       setBlogsOpen(true);
+    } else if (collapsed) {
+      // Logic for when it collapses automatically is handled by the toggle button/Link click,
+      // but ensuring it doesn't force open is key.
+      setBlogsOpen(false);
     }
-  }, [pathname]);
+  }, [pathname, collapsed]);
 
   const menuItems = [
     {
@@ -167,7 +173,7 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
                       </>
                     )}
                   </button>
-                  {blogsOpen && !collapsed && (
+                  {blogsOpen && (
                     <div className="admin-sidebar-submenu">
                       {item.subItems.map((subItem) => (
                         <Link
@@ -178,6 +184,9 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
                               ? "active"
                               : ""
                           }`}
+                          onClick={() => {
+                            if (collapsed) setBlogsOpen(false);
+                          }}
                         >
                           <FontAwesomeIcon
                             icon={subItem.icon}

@@ -127,7 +127,7 @@
   border-radius: 8px;
   box-shadow: var(--admin-shadow);
   padding: 24px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .admin-card-header {
