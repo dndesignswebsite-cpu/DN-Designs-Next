@@ -61,7 +61,7 @@ async function page() {
 
   // fetch api 
 
- const data = await fetch("http://localhost:3000/api/pages", {
+ const data = await fetch("/api/pages", {
   cache: "no-store",
 }).then(res => res.json());
 console.log(data);
