@@ -48,7 +48,7 @@ import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 async function page() {
   // hero section content
-  const heading = "A Branding  Design Studi"
+  const heading = "Branding  Design Studio"
   const subHeading = "Let’s Design, Develop and Promote Your Brand"
   const para = "A collaborative branding and design studio, we build impactful brands. In the last eight years, we have successfully established multiple brands in the market. Our team of creative and marketing experts begin by discussing your product, vision and goals, and thereafter works towards realising your branding dreams. Do you want to know more about us? Come along and discover who we are and what motivates us. Find out about our services and meet the team that works behind the scenes to build a winning brand for you."
 
