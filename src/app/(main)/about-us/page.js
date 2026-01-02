@@ -46,9 +46,9 @@ import AutoCounter from '@/Components/AutoCounter/AutoCounter'
 
 
 
-function page() {
+async function page() {
   // hero section content
-  const heading = "A Branding  Design Studio"
+  const heading = "A Branding  Design Studi"
   const subHeading = "Let’s Design, Develop and Promote Your Brand"
   const para = "A collaborative branding and design studio, we build impactful brands. In the last eight years, we have successfully established multiple brands in the market. Our team of creative and marketing experts begin by discussing your product, vision and goals, and thereafter works towards realising your branding dreams. Do you want to know more about us? Come along and discover who we are and what motivates us. Find out about our services and meet the team that works behind the scenes to build a winning brand for you."
 
@@ -56,6 +56,15 @@ function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee"
   const FormPara = "It’s difficult to be seen and heard in a crowd, isn’t it? There is just so much noise. It is the same with product market – too many brands, lots of promise and intense competition. Rising above this chaos is what helps you establish your identity and secure your position in this competitive landscape. This is what we, as a branding and design agency, do for you. Curious to know more about us? Let’s sit down, enjoy a cup of coffee and discuss your project."
   const pageName = "about-us"
+
+
+
+  // fetch api 
+
+ const data = await fetch("http://localhost:3000/api/pages", {
+  cache: "no-store",
+}).then(res => res.json());
+console.log(data);
 
   return (
     <div>
