@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import styles from "./page.module.css";
 import OurConstant from "@/Components/OurConstant/OurConstant";

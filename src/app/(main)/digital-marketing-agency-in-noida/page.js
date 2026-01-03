@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import React from "react";
 import "./digital-marketing-agency-in-noida.css";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
@@ -292,7 +295,10 @@ async function page() {
           <div className="row">
             <h3>
               Digital Marketing - A World of Endless
-              <span className="every-pr"> Opportunities Possibilities</span>{" "}
+              <span className="every-pr">
+                {" "}
+                Opportunities Possibilities
+              </span>{" "}
             </h3>
             <div className="col-12 col-md-6 we-are-the-leading-para">
               <p>

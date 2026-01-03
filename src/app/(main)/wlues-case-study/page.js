@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import React from "react";
 import "./wlues-case-study.css";
 import { notFound } from "next/navigation";

@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import React from "react";

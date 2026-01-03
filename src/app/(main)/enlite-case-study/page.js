@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 import "./enlite-case-study.css";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";

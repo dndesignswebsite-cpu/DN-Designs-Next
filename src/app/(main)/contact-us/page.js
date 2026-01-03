@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import React from "react";
 import "./contact.css";
 import ContactPageForm from "@/Components/ContactPageForm/ContactPageForm";
