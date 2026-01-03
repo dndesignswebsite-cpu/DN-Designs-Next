@@ -45,6 +45,10 @@ const blogSchema = new mongoose.Schema(
         type: String,
         default: null,
       },
+      altText: {
+        type: String,
+        default: null,
+      },
     },
 
     // Additional images array (for gallery or content images)
@@ -208,6 +212,10 @@ const blogSchema = new mongoose.Schema(
             type: String,
             default: null,
           },
+          altText: {
+            type: String,
+            default: null,
+          },
         },
       ],
       type: {
@@ -241,6 +249,10 @@ const blogSchema = new mongoose.Schema(
             default: null,
           },
           publicId: {
+            type: String,
+            default: null,
+          },
+          altText: {
             type: String,
             default: null,
           },

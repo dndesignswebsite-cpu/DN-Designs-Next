@@ -114,13 +114,14 @@ export const createBlog = async (
     throwError("Author not found", 404, { function: "createBlog", authorId });
   }
 
-  // Upload featured image
+  // Handle Featured Image (Upload takes precedence over URL)
   if (imageBuffer) {
     try {
-      const result = await uploadImageBuffer(imageBuffer);
+      const result = await uploadImageBuffer(imageBuffer, { folder: "blogs" });
       blogData.featuredImage = {
         url: result.secure_url,
         publicId: result.public_id,
+        altText: blogData.featuredImageAltText || null,
       };
     } catch (error) {
       throwError(error, 500, {
@@ -128,35 +129,57 @@ export const createBlog = async (
         operation: "uploadFeaturedImage",
       });
     }
+  } else if (blogData.featuredImageUrl) {
+    blogData.featuredImage = {
+      url: blogData.featuredImageUrl,
+      publicId: null,
+      altText: blogData.featuredImageAltText || null,
+    };
   }
 
-  // Upload OG image
+  // Handle OG Image
   if (socialImages.ogImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer, {
+        folder: "blogs",
+      });
       if (!blogData.openGraph) blogData.openGraph = {};
       blogData.openGraph.images = [
         {
           url: result.secure_url,
           publicId: result.public_id,
           alt: blogData.openGraph.title || "Blog OG Image",
+          altText: blogData.ogImageAltText || null,
         },
       ];
     } catch (error) {
       logError(error, { function: "createBlog", operation: "uploadOgImage" });
     }
+  } else if (blogData.ogImageUrl) {
+    if (!blogData.openGraph) blogData.openGraph = {};
+    blogData.openGraph.images = [
+      {
+        url: blogData.ogImageUrl,
+        publicId: null,
+        alt: blogData.openGraph.title || "Blog OG Image",
+        altText: blogData.ogImageAltText || null,
+      },
+    ];
   }
 
-  // Upload Twitter image
+  // Handle Twitter Image
   if (socialImages.twitterImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer, {
+        folder: "blogs",
+      });
       if (!blogData.twitter) blogData.twitter = {};
       blogData.twitter.images = [
         {
           url: result.secure_url,
           publicId: result.public_id,
           alt: blogData.twitter.title || "Blog Twitter Image",
+          altText: blogData.twitterImageAltText || null,
         },
       ];
     } catch (error) {
@@ -165,6 +188,16 @@ export const createBlog = async (
         operation: "uploadTwitterImage",
       });
     }
+  } else if (blogData.twitterImageUrl) {
+    if (!blogData.twitter) blogData.twitter = {};
+    blogData.twitter.images = [
+      {
+        url: blogData.twitterImageUrl,
+        publicId: null,
+        alt: blogData.twitter.title || "Blog Twitter Image",
+        altText: blogData.twitterImageAltText || null,
+      },
+    ];
   }
 
   blogData.author = authorId;
@@ -197,10 +230,10 @@ export const updateBlog = async (
     });
   }
 
-  // Upload featured image
+  // Handle Featured Image Update
   if (imageBuffer) {
     try {
-      const result = await uploadImageBuffer(imageBuffer);
+      const result = await uploadImageBuffer(imageBuffer, { folder: "blogs" });
 
       if (existingBlog.featuredImage?.publicId) {
         await deleteImage(existingBlog.featuredImage.publicId);
@@ -209,6 +242,10 @@ export const updateBlog = async (
       updateData.featuredImage = {
         url: result.secure_url,
         publicId: result.public_id,
+        altText:
+          updateData.featuredImageAltText ||
+          existingBlog.featuredImage?.altText ||
+          null,
       };
     } catch (error) {
       throwError(error, 500, {
@@ -216,12 +253,39 @@ export const updateBlog = async (
         operation: "uploadFeaturedImage",
       });
     }
+  } else if (updateData.featuredImageUrl) {
+    // If URL is provided, and it's different from current URL OR if it was previously an upload
+    if (
+      updateData.featuredImageUrl !== existingBlog.featuredImage?.url ||
+      existingBlog.featuredImage?.publicId
+    ) {
+      // Delete old upload if it exists
+      if (existingBlog.featuredImage?.publicId) {
+        await deleteImage(existingBlog.featuredImage.publicId);
+      }
+      updateData.featuredImage = {
+        url: updateData.featuredImageUrl,
+        publicId: null,
+        altText:
+          updateData.featuredImageAltText ||
+          existingBlog.featuredImage?.altText ||
+          null,
+      };
+    } else if (updateData.featuredImageAltText !== undefined) {
+      // Just update altText if URL is the same
+      updateData["featuredImage.altText"] = updateData.featuredImageAltText;
+    }
+  } else if (updateData.featuredImageAltText !== undefined) {
+    // Just update altText if no image change
+    updateData["featuredImage.altText"] = updateData.featuredImageAltText;
   }
 
-  // Upload OG image
+  // Handle OG Image Update
   if (socialImages.ogImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer, {
+        folder: "blogs",
+      });
 
       // Delete old image
       const oldImage = existingBlog.openGraph?.images?.[0];
@@ -237,17 +301,42 @@ export const updateBlog = async (
             updateData["openGraph.title"] ||
             existingBlog.openGraph?.title ||
             "Blog OG Image",
+          altText: updateData.ogImageAltText || oldImage?.altText || null,
         },
       ];
     } catch (error) {
       logError(error, { function: "updateBlog", operation: "uploadOgImage" });
     }
+  } else if (updateData.ogImageUrl) {
+    const oldImage = existingBlog.openGraph?.images?.[0];
+    if (updateData.ogImageUrl !== oldImage?.url || oldImage?.publicId) {
+      if (oldImage?.publicId) {
+        await deleteImage(oldImage.publicId);
+      }
+      updateData["openGraph.images"] = [
+        {
+          url: updateData.ogImageUrl,
+          publicId: null,
+          alt:
+            updateData["openGraph.title"] ||
+            existingBlog.openGraph?.title ||
+            "Blog OG Image",
+          altText: updateData.ogImageAltText || oldImage?.altText || null,
+        },
+      ];
+    } else if (updateData.ogImageAltText !== undefined) {
+      updateData["openGraph.images.0.altText"] = updateData.ogImageAltText;
+    }
+  } else if (updateData.ogImageAltText !== undefined) {
+    updateData["openGraph.images.0.altText"] = updateData.ogImageAltText;
   }
 
-  // Upload Twitter image
+  // Handle Twitter Image Update
   if (socialImages.twitterImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer, {
+        folder: "blogs",
+      });
 
       // Delete old image
       const oldImage = existingBlog.twitter?.images?.[0];
@@ -263,6 +352,7 @@ export const updateBlog = async (
             updateData["twitter.title"] ||
             existingBlog.twitter?.title ||
             "Blog Twitter Image",
+          altText: updateData.twitterImageAltText || oldImage?.altText || null,
         },
       ];
     } catch (error) {
@@ -271,6 +361,28 @@ export const updateBlog = async (
         operation: "uploadTwitterImage",
       });
     }
+  } else if (updateData.twitterImageUrl) {
+    const oldImage = existingBlog.twitter?.images?.[0];
+    if (updateData.twitterImageUrl !== oldImage?.url || oldImage?.publicId) {
+      if (oldImage?.publicId) {
+        await deleteImage(oldImage.publicId);
+      }
+      updateData["twitter.images"] = [
+        {
+          url: updateData.twitterImageUrl,
+          publicId: null,
+          alt:
+            updateData["twitter.title"] ||
+            existingBlog.twitter?.title ||
+            "Blog Twitter Image",
+          altText: updateData.twitterImageAltText || oldImage?.altText || null,
+        },
+      ];
+    } else if (updateData.twitterImageAltText !== undefined) {
+      updateData["twitter.images.0.altText"] = updateData.twitterImageAltText;
+    }
+  } else if (updateData.twitterImageAltText !== undefined) {
+    updateData["twitter.images.0.altText"] = updateData.twitterImageAltText;
   }
 
   if (updateData.tags) {
@@ -462,7 +574,7 @@ export const deleteBlogImage = async (blogId, imageId) => {
 
 export const uploadContentImage = async (imageBuffer, blogId = null) => {
   try {
-    const result = await uploadImageBuffer(imageBuffer);
+    const result = await uploadImageBuffer(imageBuffer, { folder: "blogs" });
 
     const imageUrl = result.secure_url;
     const publicId = result.public_id;

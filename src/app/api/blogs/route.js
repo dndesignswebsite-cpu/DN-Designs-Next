@@ -135,6 +135,20 @@ export async function POST(request) {
       };
     }
 
+    // New Image URL and Alt Text fields
+    if (formData.has("featuredImageUrl"))
+      blogData.featuredImageUrl = formData.get("featuredImageUrl");
+    if (formData.has("featuredImageAltText"))
+      blogData.featuredImageAltText = formData.get("featuredImageAltText");
+    if (formData.has("ogImageUrl"))
+      blogData.ogImageUrl = formData.get("ogImageUrl");
+    if (formData.has("ogImageAltText"))
+      blogData.ogImageAltText = formData.get("ogImageAltText");
+    if (formData.has("twitterImageUrl"))
+      blogData.twitterImageUrl = formData.get("twitterImageUrl");
+    if (formData.has("twitterImageAltText"))
+      blogData.twitterImageAltText = formData.get("twitterImageAltText");
+
     // Validation
     if (
       !blogData.title ||

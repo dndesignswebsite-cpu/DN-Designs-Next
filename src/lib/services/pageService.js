@@ -132,11 +132,12 @@ export const createPage = async (
   // Upload featured image
   if (imageBuffer) {
     try {
-      const result = await uploadImageBuffer(imageBuffer);
+      const result = await uploadImageBuffer(imageBuffer, { folder: "pages" });
       pageData.featuredImage = {
         url: result.secure_url,
         publicId: result.public_id,
-        alt: pageData.featuredImageAlt || "",
+        alt: pageData.featuredImageAltText || "",
+        altText: pageData.featuredImageAltText || null,
       };
     } catch (error) {
       throwError(error, 500, {
@@ -144,35 +145,56 @@ export const createPage = async (
         operation: "uploadFeaturedImage",
       });
     }
+  } else if (pageData.featuredImageUrl) {
+    pageData.featuredImage = {
+      url: pageData.featuredImageUrl,
+      publicId: null,
+      altText: pageData.featuredImageAltText || null,
+    };
   }
 
   // Upload OG image
   if (socialImages.ogImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer, {
+        folder: "pages",
+      });
       if (!pageData.openGraph) pageData.openGraph = {};
       pageData.openGraph.images = [
         {
           url: result.secure_url,
           publicId: result.public_id,
           alt: pageData.openGraph.title || "Page OG Image",
+          altText: pageData.ogImageAltText || null,
         },
       ];
     } catch (error) {
       logError(error, { function: "createPage", operation: "uploadOgImage" });
     }
+  } else if (pageData.ogImageUrl) {
+    if (!pageData.openGraph) pageData.openGraph = {};
+    pageData.openGraph.images = [
+      {
+        url: pageData.ogImageUrl,
+        publicId: null,
+        alt: pageData.openGraph.title || "Page OG Image",
+        altText: pageData.ogImageAltText || null,
+      },
+    ];
   }
 
   // Upload Twitter image
   if (socialImages.twitterImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer, {
+        folder: "pages",
+      });
       if (!pageData.twitter) pageData.twitter = {};
       pageData.twitter.images = [
         {
           url: result.secure_url,
           publicId: result.public_id,
-          alt: pageData.twitter.title || "Page Twitter Image",
+          altText: pageData.twitterImageAltText || null,
         },
       ];
     } catch (error) {
@@ -181,6 +203,15 @@ export const createPage = async (
         operation: "uploadTwitterImage",
       });
     }
+  } else if (pageData.twitterImageUrl) {
+    if (!pageData.twitter) pageData.twitter = {};
+    pageData.twitter.images = [
+      {
+        url: pageData.twitterImageUrl,
+        publicId: null,
+        altText: pageData.twitterImageAltText || null,
+      },
+    ];
   }
 
   pageData.lastModifiedBy = userId;
@@ -213,9 +244,9 @@ export const updatePage = async (
   // Upload featured image
   if (imageBuffer) {
     try {
-      const result = await uploadImageBuffer(imageBuffer);
+      const result = await uploadImageBuffer(imageBuffer, { folder: "pages" });
 
-      // Delete old image
+      // Delete old image if it exists and we're uploading a new one
       if (existingPage.featuredImage?.publicId) {
         await deleteImage(existingPage.featuredImage.publicId);
       }
@@ -224,7 +255,13 @@ export const updatePage = async (
         url: result.secure_url,
         publicId: result.public_id,
         alt:
-          updateData.featuredImageAlt || existingPage.featuredImage?.alt || "",
+          updateData.featuredImageAltText ||
+          existingPage.featuredImage?.alt ||
+          "",
+        altText:
+          updateData.featuredImageAltText ||
+          existingPage.featuredImage?.altText ||
+          null,
       };
     } catch (error) {
       throwError(error, 500, {
@@ -232,12 +269,35 @@ export const updatePage = async (
         operation: "uploadFeaturedImage",
       });
     }
+  } else if (updateData.featuredImageUrl) {
+    // If we're providing a URL, delete the old upload if it exists
+    if (existingPage.featuredImage?.publicId) {
+      await deleteImage(existingPage.featuredImage.publicId);
+    }
+    updateData.featuredImage = {
+      url: updateData.featuredImageUrl,
+      publicId: null,
+      altText:
+        updateData.featuredImageAltText ||
+        existingPage.featuredImage?.altText ||
+        null,
+    };
+  } else if (updateData.featuredImageAltText !== undefined) {
+    // Just updating alt text if it's an existing image
+    if (!updateData.featuredImage && existingPage.featuredImage) {
+      updateData.featuredImage = {
+        ...existingPage.featuredImage,
+        altText: updateData.featuredImageAltText,
+      };
+    }
   }
 
   // Upload OG image
   if (socialImages.ogImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.ogImageBuffer);
+      const result = await uploadImageBuffer(socialImages.ogImageBuffer, {
+        folder: "pages",
+      });
 
       if (existingPage.openGraph?.images?.[0]?.publicId) {
         await deleteImage(existingPage.openGraph.images[0].publicId);
@@ -251,20 +311,55 @@ export const updatePage = async (
           url: result.secure_url,
           publicId: result.public_id,
           alt:
+            updateData.ogImageAltText ||
             updateData.openGraph.title ||
             existingPage.openGraph?.title ||
             "Page OG Image",
+          altText:
+            updateData.ogImageAltText ||
+            existingPage.openGraph?.images?.[0]?.altText ||
+            null,
         },
       ];
     } catch (error) {
       logError(error, { function: "updatePage", operation: "uploadOgImage" });
+    }
+  } else if (updateData.ogImageUrl) {
+    if (existingPage.openGraph?.images?.[0]?.publicId) {
+      await deleteImage(existingPage.openGraph.images[0].publicId);
+    }
+    if (!updateData.openGraph)
+      updateData.openGraph = existingPage.openGraph || {};
+    updateData.openGraph.images = [
+      {
+        url: updateData.ogImageUrl,
+        publicId: null,
+        alt: updateData.ogImageAltText || "Page OG Image",
+        altText:
+          updateData.ogImageAltText ||
+          existingPage.openGraph?.images?.[0]?.altText ||
+          null,
+      },
+    ];
+  } else if (updateData.ogImageAltText !== undefined) {
+    if (!updateData.openGraph && existingPage.openGraph?.images?.[0]) {
+      updateData.openGraph = { ...existingPage.openGraph };
+      updateData.openGraph.images = [
+        {
+          ...existingPage.openGraph.images[0],
+          alt: updateData.ogImageAltText,
+          altText: updateData.ogImageAltText,
+        },
+      ];
     }
   }
 
   // Upload Twitter image
   if (socialImages.twitterImageBuffer) {
     try {
-      const result = await uploadImageBuffer(socialImages.twitterImageBuffer);
+      const result = await uploadImageBuffer(socialImages.twitterImageBuffer, {
+        folder: "pages",
+      });
 
       if (existingPage.twitter?.images?.[0]?.publicId) {
         await deleteImage(existingPage.twitter.images[0].publicId);
@@ -276,10 +371,10 @@ export const updatePage = async (
         {
           url: result.secure_url,
           publicId: result.public_id,
-          alt:
-            updateData.twitter.title ||
-            existingPage.twitter?.title ||
-            "Page Twitter Image",
+          altText:
+            updateData.twitterImageAltText ||
+            existingPage.twitter?.images?.[0]?.altText ||
+            null,
         },
       ];
     } catch (error) {
@@ -287,6 +382,31 @@ export const updatePage = async (
         function: "updatePage",
         operation: "uploadTwitterImage",
       });
+    }
+  } else if (updateData.twitterImageUrl) {
+    if (existingPage.twitter?.images?.[0]?.publicId) {
+      await deleteImage(existingPage.twitter.images[0].publicId);
+    }
+    if (!updateData.twitter) updateData.twitter = existingPage.twitter || {};
+    updateData.twitter.images = [
+      {
+        url: updateData.twitterImageUrl,
+        publicId: null,
+        altText:
+          updateData.twitterImageAltText ||
+          existingPage.twitter?.images?.[0]?.altText ||
+          null,
+      },
+    ];
+  } else if (updateData.twitterImageAltText !== undefined) {
+    if (!updateData.twitter && existingPage.twitter?.images?.[0]) {
+      updateData.twitter = { ...existingPage.twitter };
+      updateData.twitter.images = [
+        {
+          ...existingPage.twitter.images[0],
+          altText: updateData.twitterImageAltText,
+        },
+      ];
     }
   }
 
@@ -401,7 +521,9 @@ export const addPageImages = async (pageId, imageBuffers, imageData = []) => {
 
   try {
     for (let i = 0; i < imageBuffers.length; i++) {
-      const result = await uploadImageBuffer(imageBuffers[i]);
+      const result = await uploadImageBuffer(imageBuffers[i], {
+        folder: "pages",
+      });
       uploadedImages.push({
         url: result.secure_url,
         publicId: result.public_id,

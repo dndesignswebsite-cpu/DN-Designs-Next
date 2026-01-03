@@ -59,6 +59,13 @@ const pageSchema = new mongoose.Schema(
       default: "default",
     },
 
+    // Code editor language preference
+    editorLanguage: {
+      type: String,
+      enum: ["html", "css", "javascript"],
+      default: "html",
+    },
+
     // Display order/priority
     order: {
       type: Number,
@@ -78,6 +85,10 @@ const pageSchema = new mongoose.Schema(
       alt: {
         type: String,
         default: "",
+      },
+      altText: {
+        type: String,
+        default: null,
       },
     },
 
@@ -191,6 +202,10 @@ const pageSchema = new mongoose.Schema(
             type: String,
             default: "",
           },
+          altText: {
+            type: String,
+            default: null,
+          },
         },
       ],
       type: {
@@ -228,6 +243,10 @@ const pageSchema = new mongoose.Schema(
             default: null,
           },
           publicId: {
+            type: String,
+            default: null,
+          },
+          altText: {
             type: String,
             default: null,
           },

@@ -129,6 +129,20 @@ export async function PUT(request, { params }) {
         updateData.twitter.description = twitterDescription;
     }
 
+    // New Image URL and Alt Text fields
+    if (formData.has("featuredImageUrl"))
+      updateData.featuredImageUrl = formData.get("featuredImageUrl");
+    if (formData.has("featuredImageAltText"))
+      updateData.featuredImageAltText = formData.get("featuredImageAltText");
+    if (formData.has("ogImageUrl"))
+      updateData.ogImageUrl = formData.get("ogImageUrl");
+    if (formData.has("ogImageAltText"))
+      updateData.ogImageAltText = formData.get("ogImageAltText");
+    if (formData.has("twitterImageUrl"))
+      updateData.twitterImageUrl = formData.get("twitterImageUrl");
+    if (formData.has("twitterImageAltText"))
+      updateData.twitterImageAltText = formData.get("twitterImageAltText");
+
     // Validation
     if (
       updateData.title &&
@@ -149,7 +163,6 @@ export async function PUT(request, { params }) {
     if (imageFile && imageFile.size > 0) {
       const bytes = await imageFile.arrayBuffer();
       imageBuffer = Buffer.from(bytes);
-      updateData.featuredImageAlt = formData.get("featuredImageAlt") || "";
     }
 
     // Handle OG image

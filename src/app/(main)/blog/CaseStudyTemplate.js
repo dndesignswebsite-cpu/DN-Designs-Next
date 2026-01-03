@@ -19,7 +19,7 @@ function CaseStudyTemplate({ blog, recentPosts }) {
                 <img
                   src={blog.featuredImage.url}
                   className="blog-feature-image img-fluid mb-4"
-                  alt={blog.title}
+                  alt={blog.featuredImage.altText || blog.title}
                 />
               )}
               <h1>{blog.title}</h1>

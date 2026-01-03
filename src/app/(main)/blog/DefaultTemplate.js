@@ -20,7 +20,7 @@ function DefaultTemplate({ blog, recentPosts }) {
                 <img
                   src={blog.featuredImage.url}
                   className="blog-feature-image img-fluid"
-                  alt={blog.title}
+                  alt={blog.featuredImage.altText || blog.title}
                 />
               )}
 

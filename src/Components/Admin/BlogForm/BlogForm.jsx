@@ -78,6 +78,13 @@ export default function BlogForm({ initialData, isEditing }) {
     twitterTitle: "",
     twitterDescription: "",
     editorMode: "visual",
+    // New fields
+    featuredImageUrl: "",
+    featuredImageAltText: "",
+    ogImageUrl: "",
+    ogImageAltText: "",
+    twitterImageUrl: "",
+    twitterImageAltText: "",
   });
 
   const [featuredImage, setFeaturedImage] = useState(null);
@@ -265,6 +272,18 @@ export default function BlogForm({ initialData, isEditing }) {
         twitterTitle: initialData.twitter?.title || "",
         twitterDescription: initialData.twitter?.description || "",
         editorMode: initialData.editorMode || "visual",
+        featuredImageUrl: initialData.featuredImage?.publicId
+          ? ""
+          : initialData.featuredImage?.url || "",
+        featuredImageAltText: initialData.featuredImage?.altText || "",
+        ogImageUrl: initialData.openGraph?.images?.[0]?.publicId
+          ? ""
+          : initialData.openGraph?.images?.[0]?.url || "",
+        ogImageAltText: initialData.openGraph?.images?.[0]?.altText || "",
+        twitterImageUrl: initialData.twitter?.images?.[0]?.publicId
+          ? ""
+          : initialData.twitter?.images?.[0]?.url || "",
+        twitterImageAltText: initialData.twitter?.images?.[0]?.altText || "",
       });
       setShowHtmlEditor(initialData.editorMode === "code");
       if (initialData.featuredImage?.url) {
@@ -535,13 +554,27 @@ export default function BlogForm({ initialData, isEditing }) {
 
     if (featuredImage) {
       data.append("featuredImage", featuredImage);
+    } else if (formData.featuredImageUrl) {
+      data.append("featuredImageUrl", formData.featuredImageUrl);
     }
+
     if (ogImage) {
       data.append("ogImage", ogImage);
+    } else if (formData.ogImageUrl) {
+      data.append("ogImageUrl", formData.ogImageUrl);
     }
+
     if (twitterImage) {
       data.append("twitterImage", twitterImage);
+    } else if (formData.twitterImageUrl) {
+      data.append("twitterImageUrl", formData.twitterImageUrl);
     }
+
+    // Append Alt Texts
+    data.append("featuredImageAltText", formData.featuredImageAltText);
+    data.append("ogImageAltText", formData.ogImageAltText);
+    data.append("twitterImageAltText", formData.twitterImageAltText);
+
     if (formData.layout) {
       data.append("layout", formData.layout);
     }
@@ -556,12 +589,15 @@ export default function BlogForm({ initialData, isEditing }) {
       if (type === "featured") {
         setFeaturedImage(file);
         setFeaturedImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, featuredImageUrl: "" }));
       } else if (type === "og") {
         setOgImage(file);
         setOgImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, ogImageUrl: "" }));
       } else if (type === "twitter") {
         setTwitterImage(file);
         setTwitterImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, twitterImageUrl: "" }));
       }
     }
   };
@@ -877,28 +913,66 @@ export default function BlogForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Image</label>
-                {ogImagePreview ? (
-                  <div className="admin-featured-preview">
-                    <img src={ogImagePreview} alt="OG Preview" />
-                    <button
-                      type="button"
-                      className="admin-featured-remove"
-                      onClick={() => {
-                        setOgImage(null);
-                        setOgImagePreview("");
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faTimes} />
-                    </button>
-                  </div>
-                ) : (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                  }}
+                >
                   <input
-                    type="file"
-                    accept="image/*,.webp"
-                    onChange={(e) => handleImageChange(e, "og")}
+                    type="text"
+                    name="ogImageUrl"
+                    value={formData.ogImageUrl}
+                    onChange={(e) => {
+                      handleChange(e);
+                      if (e.target.value) {
+                        setOgImage(null);
+                        setOgImagePreview(e.target.value);
+                      } else if (!ogImage) {
+                        setOgImagePreview("");
+                      }
+                    }}
                     className="admin-form-input"
+                    placeholder="Image URL (paste here)"
                   />
-                )}
+                  <input
+                    type="text"
+                    name="ogImageAltText"
+                    value={formData.ogImageAltText}
+                    onChange={handleChange}
+                    className="admin-form-input"
+                    placeholder="Image Alt Text"
+                  />
+                  <div style={{ position: "relative" }}>
+                    {ogImagePreview ? (
+                      <div className="admin-featured-preview">
+                        <img src={ogImagePreview} alt="OG Preview" />
+                        <button
+                          type="button"
+                          className="admin-featured-remove"
+                          onClick={() => {
+                            setOgImage(null);
+                            setOgImagePreview("");
+                            setFormData((prev) => ({
+                              ...prev,
+                              ogImageUrl: "",
+                            }));
+                          }}
+                        >
+                          <FontAwesomeIcon icon={faTimes} />
+                        </button>
+                      </div>
+                    ) : (
+                      <input
+                        type="file"
+                        accept="image/*,.webp"
+                        onChange={(e) => handleImageChange(e, "og")}
+                        className="admin-form-input"
+                      />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -932,28 +1006,66 @@ export default function BlogForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Image</label>
-                {twitterImagePreview ? (
-                  <div className="admin-featured-preview">
-                    <img src={twitterImagePreview} alt="Twitter Preview" />
-                    <button
-                      type="button"
-                      className="admin-featured-remove"
-                      onClick={() => {
-                        setTwitterImage(null);
-                        setTwitterImagePreview("");
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faTimes} />
-                    </button>
-                  </div>
-                ) : (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                  }}
+                >
                   <input
-                    type="file"
-                    accept="image/*,.webp"
-                    onChange={(e) => handleImageChange(e, "twitter")}
+                    type="text"
+                    name="twitterImageUrl"
+                    value={formData.twitterImageUrl}
+                    onChange={(e) => {
+                      handleChange(e);
+                      if (e.target.value) {
+                        setTwitterImage(null);
+                        setTwitterImagePreview(e.target.value);
+                      } else if (!twitterImage) {
+                        setTwitterImagePreview("");
+                      }
+                    }}
                     className="admin-form-input"
+                    placeholder="Image URL (paste here)"
                   />
-                )}
+                  <input
+                    type="text"
+                    name="twitterImageAltText"
+                    value={formData.twitterImageAltText}
+                    onChange={handleChange}
+                    className="admin-form-input"
+                    placeholder="Image Alt Text"
+                  />
+                  <div style={{ position: "relative" }}>
+                    {twitterImagePreview ? (
+                      <div className="admin-featured-preview">
+                        <img src={twitterImagePreview} alt="Twitter Preview" />
+                        <button
+                          type="button"
+                          className="admin-featured-remove"
+                          onClick={() => {
+                            setTwitterImage(null);
+                            setTwitterImagePreview("");
+                            setFormData((prev) => ({
+                              ...prev,
+                              twitterImageUrl: "",
+                            }));
+                          }}
+                        >
+                          <FontAwesomeIcon icon={faTimes} />
+                        </button>
+                      </div>
+                    ) : (
+                      <input
+                        type="file"
+                        accept="image/*,.webp"
+                        onChange={(e) => handleImageChange(e, "twitter")}
+                        className="admin-form-input"
+                      />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1012,6 +1124,40 @@ export default function BlogForm({ initialData, isEditing }) {
           <div className="admin-card">
             <h3 className="admin-card-title">Featured Image</h3>
 
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+                marginBottom: "12px",
+              }}
+            >
+              <input
+                type="text"
+                name="featuredImageUrl"
+                value={formData.featuredImageUrl}
+                onChange={(e) => {
+                  handleChange(e);
+                  if (e.target.value) {
+                    setFeaturedImage(null);
+                    setFeaturedImagePreview(e.target.value);
+                  } else if (!featuredImage) {
+                    setFeaturedImagePreview("");
+                  }
+                }}
+                className="admin-form-input"
+                placeholder="Image URL (paste here)"
+              />
+              <input
+                type="text"
+                name="featuredImageAltText"
+                value={formData.featuredImageAltText}
+                onChange={handleChange}
+                className="admin-form-input"
+                placeholder="Image Alt Text"
+              />
+            </div>
+
             {featuredImagePreview ? (
               <div className="admin-featured-preview">
                 <img src={featuredImagePreview} alt="Featured" />
@@ -1021,6 +1167,7 @@ export default function BlogForm({ initialData, isEditing }) {
                   onClick={() => {
                     setFeaturedImage(null);
                     setFeaturedImagePreview("");
+                    setFormData((prev) => ({ ...prev, featuredImageUrl: "" }));
                   }}
                 >
                   <FontAwesomeIcon icon={faTimes} />

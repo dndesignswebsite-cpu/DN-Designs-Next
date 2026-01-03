@@ -113,6 +113,20 @@ export async function PUT(request, { params }) {
     if (twitterDescription)
       updateData["twitter.description"] = twitterDescription;
 
+    // New Image URL and Alt Text fields
+    if (formData.has("featuredImageUrl"))
+      updateData.featuredImageUrl = formData.get("featuredImageUrl");
+    if (formData.has("featuredImageAltText"))
+      updateData.featuredImageAltText = formData.get("featuredImageAltText");
+    if (formData.has("ogImageUrl"))
+      updateData.ogImageUrl = formData.get("ogImageUrl");
+    if (formData.has("ogImageAltText"))
+      updateData.ogImageAltText = formData.get("ogImageAltText");
+    if (formData.has("twitterImageUrl"))
+      updateData.twitterImageUrl = formData.get("twitterImageUrl");
+    if (formData.has("twitterImageAltText"))
+      updateData.twitterImageAltText = formData.get("twitterImageAltText");
+
     // Validation
     if (
       updateData.title &&

@@ -146,6 +146,14 @@ export async function POST(request) {
       };
     }
 
+    // New Image URL and Alt Text fields
+    pageData.featuredImageUrl = formData.get("featuredImageUrl");
+    pageData.featuredImageAltText = formData.get("featuredImageAltText");
+    pageData.ogImageUrl = formData.get("ogImageUrl");
+    pageData.ogImageAltText = formData.get("ogImageAltText");
+    pageData.twitterImageUrl = formData.get("twitterImageUrl");
+    pageData.twitterImageAltText = formData.get("twitterImageAltText");
+
     // Validation
     if (
       !pageData.title ||
@@ -177,7 +185,6 @@ export async function POST(request) {
     if (imageFile && imageFile.size > 0) {
       const bytes = await imageFile.arrayBuffer();
       imageBuffer = Buffer.from(bytes);
-      pageData.featuredImageAlt = formData.get("featuredImageAlt") || "";
     }
 
     // Handle OG image

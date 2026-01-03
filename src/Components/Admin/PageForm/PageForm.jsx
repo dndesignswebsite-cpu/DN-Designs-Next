@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import dynamic from "next/dynamic";
+import { Editor } from "@monaco-editor/react";
 import Cookies from "js-cookie";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,32 +11,13 @@ import {
   faArrowLeft,
   faImage,
   faTimes,
-  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import "../BlogForm/BlogForm.css";
-import "react-quill-new/dist/quill.snow.css";
-
-const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
-
-const quillModules = {
-  toolbar: [
-    [{ header: [1, 2, 3, 4, 5, 6, false] }],
-    ["bold", "italic", "underline", "strike"],
-    [{ list: "ordered" }, { list: "bullet" }],
-    [{ indent: "-1" }, { indent: "+1" }],
-    ["link", "image", "video"],
-    [{ color: [] }, { background: [] }],
-    [{ align: [] }],
-    ["blockquote", "code-block"],
-    ["clean"],
-  ],
-};
 
 export default function PageForm({ initialData, isEditing }) {
   const router = useRouter();
   const queryClient = useQueryClient();
-  const [showJsonEditor, setShowJsonEditor] = useState(false);
   const [error, setError] = useState("");
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
 
@@ -46,8 +27,7 @@ export default function PageForm({ initialData, isEditing }) {
     description: "",
     pageType: "default",
     order: 0,
-    content: {},
-    contentRaw: "",
+    content: "",
     isPublished: false,
     publishedAt: "",
     // SEO
@@ -57,7 +37,6 @@ export default function PageForm({ initialData, isEditing }) {
     canonicalUrl: "",
     robotsTag: "index, follow",
     headCode: "",
-    headCode: "",
     authors: [],
     // Social
     ogTitle: "",
@@ -65,12 +44,21 @@ export default function PageForm({ initialData, isEditing }) {
     ogUrl: "",
     twitterTitle: "",
     twitterDescription: "",
+    editorLanguage: "html",
+    featuredImageUrl: "",
+    featuredImageAltText: "",
+    ogImageUrl: "",
+    ogImageAltText: "",
+    twitterImageUrl: "",
+    twitterImageAltText: "",
   });
 
   const [featuredImage, setFeaturedImage] = useState(null);
   const [featuredImagePreview, setFeaturedImagePreview] = useState("");
   const [ogImage, setOgImage] = useState(null);
+  const [ogImagePreview, setOgImagePreview] = useState("");
   const [twitterImage, setTwitterImage] = useState(null);
+  const [twitterImagePreview, setTwitterImagePreview] = useState("");
 
   useEffect(() => {
     if (initialData) {
@@ -80,11 +68,7 @@ export default function PageForm({ initialData, isEditing }) {
         description: initialData.description || "",
         pageType: initialData.pageType || "default",
         order: initialData.order || 0,
-        content: initialData.content || {},
-        contentRaw:
-          typeof initialData.content === "object"
-            ? JSON.stringify(initialData.content, null, 2)
-            : initialData.content || "",
+        content: initialData.content || "",
         isPublished: initialData.isPublished || false,
         publishedAt: initialData.publishedAt
           ? new Date(initialData.publishedAt).toISOString().slice(0, 16)
@@ -101,9 +85,22 @@ export default function PageForm({ initialData, isEditing }) {
         ogUrl: initialData.openGraph?.url || "",
         twitterTitle: initialData.twitter?.title || "",
         twitterDescription: initialData.twitter?.description || "",
+        editorLanguage: initialData.editorLanguage || "html",
+        featuredImageUrl: initialData.featuredImage?.url || "",
+        featuredImageAltText: initialData.featuredImage?.altText || "",
+        ogImageUrl: initialData.openGraph?.images?.[0]?.url || "",
+        ogImageAltText: initialData.openGraph?.images?.[0]?.altText || "",
+        twitterImageUrl: initialData.twitter?.images?.[0]?.url || "",
+        twitterImageAltText: initialData.twitter?.images?.[0]?.altText || "",
       });
       if (initialData.featuredImage?.url) {
         setFeaturedImagePreview(initialData.featuredImage.url);
+      }
+      if (initialData.openGraph?.images?.[0]?.url) {
+        setOgImagePreview(initialData.openGraph.images[0].url);
+      }
+      if (initialData.twitter?.images?.[0]?.url) {
+        setTwitterImagePreview(initialData.twitter.images[0].url);
       }
     }
   }, [initialData]);
@@ -164,17 +161,7 @@ export default function PageForm({ initialData, isEditing }) {
 
     const data = new FormData();
 
-    // Handle content - try to parse as JSON
-    let contentValue = formData.contentRaw;
-    try {
-      if (formData.contentRaw) {
-        JSON.parse(formData.contentRaw); // Validate JSON
-        contentValue = formData.contentRaw;
-      }
-    } catch {
-      // If not valid JSON, send as raw string
-      contentValue = JSON.stringify({ raw: formData.contentRaw });
-    }
+    const contentValue = formData.content;
 
     data.append("title", formData.title);
     data.append("slug", formData.slug);
@@ -205,6 +192,14 @@ export default function PageForm({ initialData, isEditing }) {
     if (formData.twitterDescription)
       data.append("twitterDescription", formData.twitterDescription);
 
+    // Image URL and Alt Text fields
+    data.append("featuredImageUrl", formData.featuredImageUrl);
+    data.append("featuredImageAltText", formData.featuredImageAltText);
+    data.append("ogImageUrl", formData.ogImageUrl);
+    data.append("ogImageAltText", formData.ogImageAltText);
+    data.append("twitterImageUrl", formData.twitterImageUrl);
+    data.append("twitterImageAltText", formData.twitterImageAltText);
+
     if (featuredImage) data.append("featuredImage", featuredImage);
     if (ogImage) data.append("ogImage", ogImage);
     if (twitterImage) data.append("twitterImage", twitterImage);
@@ -218,10 +213,15 @@ export default function PageForm({ initialData, isEditing }) {
       if (type === "featured") {
         setFeaturedImage(file);
         setFeaturedImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, featuredImageUrl: "" }));
       } else if (type === "og") {
         setOgImage(file);
+        setOgImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, ogImageUrl: "" }));
       } else if (type === "twitter") {
         setTwitterImage(file);
+        setTwitterImagePreview(URL.createObjectURL(file));
+        setFormData((prev) => ({ ...prev, twitterImageUrl: "" }));
       }
     }
   };
@@ -313,51 +313,64 @@ export default function PageForm({ initialData, isEditing }) {
                 }}
               >
                 <label className="admin-form-label" style={{ margin: 0 }}>
-                  Content (JSON)
+                  Content ({formData.editorLanguage?.toUpperCase() || "HTML"})
                 </label>
-                <button
-                  type="button"
-                  className="admin-btn admin-btn-outline admin-btn-sm"
-                  onClick={() => setShowJsonEditor(!showJsonEditor)}
+                <div
+                  style={{ display: "flex", gap: "10px", alignItems: "center" }}
                 >
-                  <FontAwesomeIcon icon={faCode} />
-                  {showJsonEditor ? "Visual Helper" : "JSON Editor"}
-                </button>
+                  <label style={{ fontSize: "0.85rem", color: "#666" }}>
+                    Language:
+                  </label>
+                  <select
+                    name="editorLanguage"
+                    value={formData.editorLanguage}
+                    onChange={handleChange}
+                    className="admin-form-select admin-form-select-sm"
+                    style={{
+                      padding: "4px 8px",
+                      fontSize: "0.85rem",
+                      width: "auto",
+                    }}
+                  >
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                  </select>
+                </div>
               </div>
 
-              {showJsonEditor ? (
-                <textarea
-                  name="contentRaw"
-                  value={formData.contentRaw}
-                  onChange={handleChange}
-                  className="admin-form-textarea"
-                  style={{
-                    minHeight: "400px",
-                    fontFamily: "monospace",
-                    fontSize: "0.9rem",
+              <div className="admin-editor-wrapper code-editor-wrapper">
+                <Editor
+                  height="calc(100vh - 400px)"
+                  language={formData.editorLanguage}
+                  path={`content.${
+                    formData.editorLanguage === "javascript"
+                      ? "js"
+                      : formData.editorLanguage
+                  }`}
+                  value={formData.content}
+                  onChange={(value) =>
+                    setFormData((prev) => ({ ...prev, content: value || "" }))
+                  }
+                  options={{
+                    minimap: { enabled: false },
+                    fontSize: 14,
+                    wordWrap: "on",
+                    automaticLayout: true,
+                    scrollBeyondLastLine: false,
+                    renderLineHighlight: "none",
+                    hideCursorInOverviewRuler: true,
+                    suggestOnTriggerCharacters: true,
+                    quickSuggestions: true,
+                    bracketPairColorization: { enabled: true },
+                    formatOnPaste: true,
+                    formatOnType: true,
+                    autoClosingTags: true,
+                    autoClosingBrackets: "always",
+                    autoClosingQuotes: "always",
                   }}
-                  placeholder='{"hero": {"heading": "Welcome", "subheading": "..."}}'
                 />
-              ) : (
-                <div>
-                  <textarea
-                    name="contentRaw"
-                    value={formData.contentRaw}
-                    onChange={handleChange}
-                    className="admin-form-textarea"
-                    style={{
-                      minHeight: "300px",
-                      fontFamily: "monospace",
-                      fontSize: "0.9rem",
-                    }}
-                    placeholder="Enter JSON content structure for your page..."
-                  />
-                  <p className="admin-form-hint">
-                    Enter page content as JSON. Example:{" "}
-                    {`{"hero": {"title": "Welcome"}, "sections": [...]}`}
-                  </p>
-                </div>
-              )}
+              </div>
             </div>
           </div>
 
@@ -467,7 +480,7 @@ export default function PageForm({ initialData, isEditing }) {
               </div>
               {formData.authors.map((author, index) => (
                 <div
-                  key={index}
+                  key={author.id || `author-${index}`}
                   style={{
                     display: "flex",
                     gap: "10px",
@@ -559,12 +572,64 @@ export default function PageForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">OG Image</label>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <input
+                    type="text"
+                    name="ogImageUrl"
+                    value={formData.ogImageUrl}
+                    onChange={(e) => {
+                      handleChange(e);
+                      if (e.target.value) {
+                        setOgImage(null);
+                        setOgImagePreview(e.target.value);
+                      } else if (!ogImage) {
+                        setOgImagePreview("");
+                      }
+                    }}
+                    className="admin-form-input"
+                    placeholder="OG Image URL"
+                  />
+                  <input
+                    type="text"
+                    name="ogImageAltText"
+                    value={formData.ogImageAltText}
+                    onChange={handleChange}
+                    className="admin-form-input"
+                    placeholder="OG Image Alt Text"
+                  />
+                </div>
                 <input
                   type="file"
                   accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "og")}
                   className="admin-form-input"
                 />
+                {ogImagePreview && (
+                  <div
+                    className="admin-featured-preview"
+                    style={{ marginTop: "10px" }}
+                  >
+                    <img src={ogImagePreview} alt="OG Preview" />
+                    <button
+                      type="button"
+                      className="admin-featured-remove"
+                      onClick={() => {
+                        setOgImage(null);
+                        setOgImagePreview("");
+                        setFormData((prev) => ({ ...prev, ogImageUrl: "" }));
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -596,12 +661,67 @@ export default function PageForm({ initialData, isEditing }) {
 
               <div className="admin-form-group">
                 <label className="admin-form-label">Twitter Image</label>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <input
+                    type="text"
+                    name="twitterImageUrl"
+                    value={formData.twitterImageUrl}
+                    onChange={(e) => {
+                      handleChange(e);
+                      if (e.target.value) {
+                        setTwitterImage(null);
+                        setTwitterImagePreview(e.target.value);
+                      } else if (!twitterImage) {
+                        setTwitterImagePreview("");
+                      }
+                    }}
+                    className="admin-form-input"
+                    placeholder="Twitter Image URL"
+                  />
+                  <input
+                    type="text"
+                    name="twitterImageAltText"
+                    value={formData.twitterImageAltText}
+                    onChange={handleChange}
+                    className="admin-form-input"
+                    placeholder="Twitter Image Alt Text"
+                  />
+                </div>
                 <input
                   type="file"
                   accept="image/*,.webp"
                   onChange={(e) => handleImageChange(e, "twitter")}
                   className="admin-form-input"
                 />
+                {twitterImagePreview && (
+                  <div
+                    className="admin-featured-preview"
+                    style={{ marginTop: "10px" }}
+                  >
+                    <img src={twitterImagePreview} alt="Twitter Preview" />
+                    <button
+                      type="button"
+                      className="admin-featured-remove"
+                      onClick={() => {
+                        setTwitterImage(null);
+                        setTwitterImagePreview("");
+                        setFormData((prev) => ({
+                          ...prev,
+                          twitterImageUrl: "",
+                        }));
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -658,6 +778,40 @@ export default function PageForm({ initialData, isEditing }) {
           <div className="admin-card">
             <h3 className="admin-card-title">Featured Image</h3>
 
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+                marginBottom: "12px",
+              }}
+            >
+              <input
+                type="text"
+                name="featuredImageUrl"
+                value={formData.featuredImageUrl}
+                onChange={(e) => {
+                  handleChange(e);
+                  if (e.target.value) {
+                    setFeaturedImage(null);
+                    setFeaturedImagePreview(e.target.value);
+                  } else if (!featuredImage) {
+                    setFeaturedImagePreview("");
+                  }
+                }}
+                className="admin-form-input"
+                placeholder="Image URL (paste here)"
+              />
+              <input
+                type="text"
+                name="featuredImageAltText"
+                value={formData.featuredImageAltText}
+                onChange={handleChange}
+                className="admin-form-input"
+                placeholder="Image Alt Text"
+              />
+            </div>
+
             {featuredImagePreview ? (
               <div className="admin-featured-preview">
                 <img src={featuredImagePreview} alt="Featured" />
@@ -667,6 +821,7 @@ export default function PageForm({ initialData, isEditing }) {
                   onClick={() => {
                     setFeaturedImage(null);
                     setFeaturedImagePreview("");
+                    setFormData((prev) => ({ ...prev, featuredImageUrl: "" }));
                   }}
                 >
                   <FontAwesomeIcon icon={faTimes} />
