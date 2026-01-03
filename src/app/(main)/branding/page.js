@@ -8,30 +8,21 @@ import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import HorizontalScroll from "@/Components/HorizontalScroll/HorizontalScroll";
 import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
-
-// meta data 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
+// meta data
 export async function generateMetadata() {
-  const response = await getPageData();
-  console.log(response)
-  if (!response?.success) {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("about-us", null, false);
+  } catch (error) {
     return {
       title: "About Us",
       robots: "noindex, nofollow",
     };
   }
-
-  const seo = response.data;
 
   return {
     title: seo.metaTitle || seo.title,
@@ -49,7 +40,7 @@ export async function generateMetadata() {
       description: seo.openGraph?.description || seo.metaDescription,
       url: seo.openGraph?.url || seo.alternates?.canonical,
       images: seo.openGraph?.images?.length
-        ? seo.openGraph.images.map(img => ({
+        ? seo.openGraph.images.map((img) => ({
             url: img.url,
             alt: img.alt || seo.title,
             width: img.width || 1200,
@@ -63,37 +54,35 @@ export async function generateMetadata() {
       title: seo.twitter?.title || seo.metaTitle,
       description: seo.twitter?.description || seo.metaDescription,
       images: seo.twitter?.images?.length
-        ? seo.twitter.images.map(img => img.url)
+        ? seo.twitter.images.map((img) => img.url)
         : [],
     },
   };
 }
 //meta end here
 
-
-
 function page() {
-// const response = await getPageData();
+  // const response = await getPageData();
   // const pageData = response?.data;
 
   // if (!pageData) {
   //   notFound();
   // }
 
-
   // hero section content
-  const heading ="Where Brands Are Born"
-  const subHeading ="A Creative Branding Agency"
-  const para ="Branding shapes the future of your business. It determines whether you will craft a legacy or simply fade into oblivion like many others. But what is branding and why is it so crucial? Want to know? Take this exciting branding journey with us – learn about branding, explore our portfolio, & go behind the scenes of our branding process. If you still have queries, check out our FAQs section."
-  
-  
-// form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee"
-  const FormPara = "A leading branding agency in India, we have the expertise and experience to turn your product into a successful brand. We take up every project as a new challenge and commit ourselves to creating something unique and valuable. Our goal is to actualise your vision and mission and in the process make ourselves happy too. So, shall we meet and discuss your project over a steaming hot cup of coffee?"
+  const heading = "Where Brands Are Born";
+  const subHeading = "A Creative Branding Agency";
+  const para =
+    "Branding shapes the future of your business. It determines whether you will craft a legacy or simply fade into oblivion like many others. But what is branding and why is it so crucial? Want to know? Take this exciting branding journey with us – learn about branding, explore our portfolio, & go behind the scenes of our branding process. If you still have queries, check out our FAQs section.";
+
+  // form section content
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "A leading branding agency in India, we have the expertise and experience to turn your product into a successful brand. We take up every project as a new challenge and commit ourselves to creating something unique and valuable. Our goal is to actualise your vision and mission and in the process make ourselves happy too. So, shall we meet and discuss your project over a steaming hot cup of coffee?";
   const pageName = "branding";
 
   // faqs content
-   const leftFaqs = [
+  const leftFaqs = [
     {
       question: "What is branding and why is it Important?",
       answer:
@@ -138,7 +127,8 @@ function page() {
         "We offer a complete range of branding services, right from the consultation phase to the final launch stage, and every other service that comes in between. These include audience and market research; crafting brand strategy; designing a strikingly appealing logo, label and package; creating engaging interfaces and robust functional websites; and shaping a comprehensive communication strategy. We also provide environment design and professional photography services.",
     },
     {
-      question: "What are brand guidelines? Do you provide one and what does it include?",
+      question:
+        "What are brand guidelines? Do you provide one and what does it include?",
       answer:
         "An important aspect of branding is consistency. A brand must appear the same and convey the same messaging and emotion across platforms. Brand guidelines help it to do exactly that. It lists out rules that guide businesses in presenting their brand consistently across all communication channels. We do provide brand guidelines. It includes details about the brand identity and presents its logo. Also included are details about the brand’s colour palette, typography, tone & voice and image.",
     },
@@ -147,9 +137,7 @@ function page() {
       answer:
         "Branding creates a unique identity and image of the product. It leaves a forever-lasting impression on the customers and builds their loyalty. Marketing promotes this brand with techniques like advertising and promotional campaigns. Its ultimate aim is to increase awareness, generate leads and eventually increase sales and revenue. As one of the best branding and marketing agencies in Delhi NCR, DN Designs provides both services to our customers.",
     },
-
   ];
-
 
   return (
     <div>
@@ -160,12 +148,8 @@ function page() {
 
       {/* branding hero section */}
       <section>
-        <PagesHero heading={heading} subHeading={subHeading} para={para}/>
+        <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
-
-
-      
-      
 
       {/* work portfolio */}
       <section className="portfolio">
@@ -192,7 +176,10 @@ function page() {
                   </div>
 
                   <p>
-                    Enlite’s sparkling mineral water and prebiotic drink range, meant to refresh and rejuvenate customers, required a captivating brand identity, including can and logo design, to attract a young audience. We offered them just that.
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
                   </p>
                 </div>
               </div>
@@ -215,7 +202,10 @@ function page() {
                   </div>
 
                   <p>
-                    For the organic dairy & food brand, iOrganic, we created a vibrant and engaging packaging design. Additionally, we provided professional photography services for their e-commerce sale and advertising purposes.
+                    For the organic dairy & food brand, iOrganic, we created a
+                    vibrant and engaging packaging design. Additionally, we
+                    provided professional photography services for their
+                    e-commerce sale and advertising purposes.
                   </p>
                 </div>
               </div>
@@ -244,7 +234,10 @@ function page() {
                   </div>
 
                   <p>
-                    We delivered comprehensive services to the cocktail bombs brand Mr. Bomzy. This included creating their identity, crafting brand guidelines, designing the package, developing UI/UX design & website, and framing social media strategy.
+                    We delivered comprehensive services to the cocktail bombs
+                    brand Mr. Bomzy. This included creating their identity,
+                    crafting brand guidelines, designing the package, developing
+                    UI/UX design & website, and framing social media strategy.
                   </p>
                 </div>
               </div>
@@ -267,7 +260,11 @@ function page() {
                   </div>
 
                   <p>
-                    Deeproot, offering wholesome snacks, collaborated with our creative design agency to strengthen their brand presence in the market. Our range of services for them included identity design, packaging design, UI/UX design and website development.
+                    Deeproot, offering wholesome snacks, collaborated with our
+                    creative design agency to strengthen their brand presence in
+                    the market. Our range of services for them included identity
+                    design, packaging design, UI/UX design and website
+                    development.
                   </p>
                 </div>
               </div>
@@ -331,168 +328,146 @@ function page() {
         </div>
       </section>
 
-
       {/* Branding That Breaks Through desktop*/}
       <section className="branding-that-breaks">
-      <div className="container text-center">
-        <h2>Branding That<span className="every-pr"> Breaks Through</span></h2>
-      </div>
-      <HorizontalScroll/>
+        <div className="container text-center">
+          <h2>
+            Branding That<span className="every-pr"> Breaks Through</span>
+          </h2>
+        </div>
+        <HorizontalScroll />
       </section>
-      
-{/* Branding That Breaks Through mobile*/}
+
+      {/* Branding That Breaks Through mobile*/}
 
       <section className="mobile-view-our-brand">
         <div className="container">
           <div className="row">
-            <h2 className="our-brand-heading text-center">Our <span className="every-pr"> Breaks Through</span></h2>
+            <h2 className="our-brand-heading text-center">
+              Our <span className="every-pr"> Breaks Through</span>
+            </h2>
             <div className="our-brand-mobile-all-div row">
-              <div
-                className="our-brand-mobile-div col-12 col-sm-12 col-md-6"
-              >
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className="our-brand-mobile-div-content">
-                  <h3 className="mobile-view-our-brand-h3">
-                    Rithm’s Enlite
-                  </h3>
-                  <div className="our-brand-mobile-btn-up">
-                    <h4 className="our-brand-mobile-btn">
-                      Label Design
-                    </h4>
-                    <h4 className="our-brand-mobile-btn">
-                      Packaging
-                    </h4>
-                  </div>
-                  <div>
-                    <h4
-                      className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center"
-                    >
-                      Communication Design
-                    </h4>
-                  </div>
-                  <p>
-                    For Rithm’s Enlite, a brand with sparkling mineral water and
-                    prebiotic drink range, we designed a thoughtful and
-                    eye-catching brand identity, including can design, logo
-                    design and character design. We created the character and
-                    the overall brand design around the brand name to promote
-                    the refreshing and calming properties of the product.
-                  </p>
-                </div>
-              </div>
-              </div>
-              <div
-                className="our-brand-mobile-div col-12 col-sm-12 col-md-6"
-              >
-                <div className="our-brand-mobile-div-clield">
-                <video className="img-fluid" autoPlay muted loop playsInline>
-                  <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
-                    type="video/mp4"
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
                   />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="our-brand-mobile-div-content">
-                  <h3 className="mobile-view-our-brand-h3">
-                    Grin Care
-                  </h3>
-                  <div className="our-brand-mobile-btn-up">
-                    <h4 className="our-brand-mobile-btn">
-                      Label Design
-                    </h4>
-                    <h4 className="our-brand-mobile-btn">
-                      Packaging
-                    </h4>
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">Rithm’s Enlite</h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Label Design</h4>
+                      <h4 className="our-brand-mobile-btn">Packaging</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        Communication Design
+                      </h4>
+                    </div>
+                    <p>
+                      For Rithm’s Enlite, a brand with sparkling mineral water
+                      and prebiotic drink range, we designed a thoughtful and
+                      eye-catching brand identity, including can design, logo
+                      design and character design. We created the character and
+                      the overall brand design around the brand name to promote
+                      the refreshing and calming properties of the product.
+                    </p>
                   </div>
-                  <div>
-                    <h4
-                      className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center"
-                    >
-                      Communication Design
-                    </h4>
-                  </div>
-                  <p>
-                    Grincare aspired to establish itself in the highly competitive oral care market. As a brand marketing agency, we worked to build their identity and a strong digital presence. We crafted their identity, designed their UI/UX and developed their website to establish them as a business offering premium oral care solutions.
-                  </p>
                 </div>
               </div>
-              </div>
-              <div
-                className="our-brand-mobile-div col-12 col-sm-12 col-md-6"
-              >
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className="our-brand-mobile-div-content">
-                  <h3 className="mobile-view-our-brand-h3">
-                    Nature's Balance
-                  </h3>
-                  <div className="our-brand-mobile-btn-up">
-                    <h4 className="our-brand-mobile-btn">
-                      Brand Identity
-                    </h4>
-                    <h4 className="our-brand-mobile-btn">
-                      Environment
-                    </h4>
+                  <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">Grin Care</h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Label Design</h4>
+                      <h4 className="our-brand-mobile-btn">Packaging</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        Communication Design
+                      </h4>
+                    </div>
+                    <p>
+                      Grincare aspired to establish itself in the highly
+                      competitive oral care market. As a brand marketing agency,
+                      we worked to build their identity and a strong digital
+                      presence. We crafted their identity, designed their UI/UX
+                      and developed their website to establish them as a
+                      business offering premium oral care solutions.
+                    </p>
                   </div>
-                  <div>
-                    <h4
-                      className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center"
-                    >
-                      Label Design
-                    </h4>
-                  </div>
-                  <p>
-                   An upscale health-focussed cafe, Nature’s Balance approached us with the purpose of building its brand presence. We worked to create their identity & label design. In addition, as a creative design agency, we also provided them with menu design, 3D Ad design, as well as environment design services.
-                  </p>
                 </div>
               </div>
-              </div>
-              <div
-                className="our-brand-mobile-div col-12 col-sm-12 col-md-6"
-              >
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
-                  className="img-fluid"
-                />
-                <div className="our-brand-mobile-div-content">
-                  <h3 className="mobile-view-our-brand-h3">
-                   NECTARPURE
-                  </h3>
-                  <div className="our-brand-mobile-btn-up">
-                    <h4 className="our-brand-mobile-btn">
-                      Brand Identity
-                    </h4>
-                    <h4 className="our-brand-mobile-btn">
-                      Label Design
-                    </h4>
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
+                  />
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">
+                      Nature's Balance
+                    </h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
+                      <h4 className="our-brand-mobile-btn">Environment</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        Label Design
+                      </h4>
+                    </div>
+                    <p>
+                      An upscale health-focussed cafe, Nature’s Balance
+                      approached us with the purpose of building its brand
+                      presence. We worked to create their identity & label
+                      design. In addition, as a creative design agency, we also
+                      provided them with menu design, 3D Ad design, as well as
+                      environment design services.
+                    </p>
                   </div>
-                  <div>
-                    <h4
-                      className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center"
-                    >
-                      UI/UX Design
-                    </h4>
-                  </div>
-                  <p>
-                    NECTARPURE, providing Whey protein and wellness products, wanted to establish itself as a premium lifestyle brand in the protein market. As a brand marketing agency, we created their identity, label design and 3D Ad to give a premium feel. In addition, we also designed and developed their UI/UX and complete website.
-                  </p>
                 </div>
               </div>
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
+                <div className="our-brand-mobile-div-clield">
+                  <img
+                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    className="img-fluid"
+                  />
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">NECTARPURE</h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
+                      <h4 className="our-brand-mobile-btn">Label Design</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        UI/UX Design
+                      </h4>
+                    </div>
+                    <p>
+                      NECTARPURE, providing Whey protein and wellness products,
+                      wanted to establish itself as a premium lifestyle brand in
+                      the protein market. As a brand marketing agency, we
+                      created their identity, label design and 3D Ad to give a
+                      premium feel. In addition, we also designed and developed
+                      their UI/UX and complete website.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
 
       {/* branding identity */}
       <section className="branding-identity">
@@ -512,7 +487,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Brand Identity</h3>
                   <p>
-                    Let’s create an impactful brand identity for your business. Trust us, it’s important. It is how customers will recognise and connect with your product and distinguish it from others in the market.
+                    Let’s create an impactful brand identity for your business.
+                    Trust us, it’s important. It is how customers will recognise
+                    and connect with your product and distinguish it from others
+                    in the market.
                   </p>
                 </div>
               </div>
@@ -527,7 +505,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Brand Voice</h3>
                   <p>
-                    Understanding ‘what is brand voice’ is quite simple. It is your brand’s personality and the way it speaks with its target customers. Brand voice helps breathe life into your brand, and we help you find that voice.
+                    Understanding ‘what is brand voice’ is quite simple. It is
+                    your brand’s personality and the way it speaks with its
+                    target customers. Brand voice helps breathe life into your
+                    brand, and we help you find that voice.
                   </p>
                 </div>
               </div>
@@ -541,7 +522,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Brand Positioning</h3>
                   <p>
-                    Why should customers prefer your product over your competitors? What makes you so special and different? That’s what positioning is all about. It creates a place for your product in the market and your target audience’s mind.
+                    Why should customers prefer your product over your
+                    competitors? What makes you so special and different? That’s
+                    what positioning is all about. It creates a place for your
+                    product in the market and your target audience’s mind.
                   </p>
                 </div>
               </div>
@@ -559,7 +543,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Brand Messaging</h3>
                   <p>
-                    Let’s help you develop a compelling brand message. Why is that important? Because, as a business, you have certain core values and a USP which need to reach your target audience. It fosters connection and inspires trust.
+                    Let’s help you develop a compelling brand message. Why is
+                    that important? Because, as a business, you have certain
+                    core values and a USP which need to reach your target
+                    audience. It fosters connection and inspires trust.
                   </p>
                 </div>
               </div>
@@ -573,7 +560,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Brand Value</h3>
                   <p>
-                    Businesses have certain values and beliefs that form the basis of and direct their functioning. For instance, transparency and sustainability are good examples of a company’s values. What’s your brand value?
+                    Businesses have certain values and beliefs that form the
+                    basis of and direct their functioning. For instance,
+                    transparency and sustainability are good examples of a
+                    company’s values. What’s your brand value?
                   </p>
                 </div>
               </div>
@@ -587,7 +577,10 @@ function page() {
                 <div className="identity-div-content">
                   <h3>Rebranding</h3>
                   <p>
-                    Brands that appealed once may appear outdated today. Branding should, therefore, adapt and evolve with changing times to suit current market conditions and consumer expectations. Rebranding is the solution.
+                    Brands that appealed once may appear outdated today.
+                    Branding should, therefore, adapt and evolve with changing
+                    times to suit current market conditions and consumer
+                    expectations. Rebranding is the solution.
                   </p>
                 </div>
               </div>
@@ -597,7 +590,7 @@ function page() {
       </section>
 
       {/* our constant */}
-      <OurConstant/>
+      <OurConstant />
 
       {/* marque */}
       <section className="marque-sec">
@@ -624,7 +617,12 @@ function page() {
                 <div className="col-10">
                   <h2>Brand Understanding</h2>
                   <p>
-                   If anything has to stand the test of time, it needs to begin with a firm footing. In branding, this beginning is understanding the product/business. We sit down with you for a deep discussion to understand your product or service as well as your vision and mission. This helps us make a good start and prepares us for an exciting journey ahead.
+                    If anything has to stand the test of time, it needs to begin
+                    with a firm footing. In branding, this beginning is
+                    understanding the product/business. We sit down with you for
+                    a deep discussion to understand your product or service as
+                    well as your vision and mission. This helps us make a good
+                    start and prepares us for an exciting journey ahead.
                   </p>
                 </div>
               </div>
@@ -636,7 +634,15 @@ function page() {
                 <div className="col-10">
                   <h2>Competitor Analysis</h2>
                   <p>
-                    You are not alone in the market; there are several other products in the same category out there trying to build their presence. How do you craft your own little corner? Analysing competition is crucial, and this is what we, as a brand design company, do next. We conduct a thorough research of your competitors and understand your current position in the market to ensure that we have enough knowledge and data to take a step forward, creating your branding strategy.
+                    You are not alone in the market; there are several other
+                    products in the same category out there trying to build
+                    their presence. How do you craft your own little corner?
+                    Analysing competition is crucial, and this is what we, as a
+                    brand design company, do next. We conduct a thorough
+                    research of your competitors and understand your current
+                    position in the market to ensure that we have enough
+                    knowledge and data to take a step forward, creating your
+                    branding strategy.
                   </p>
                 </div>
               </div>
@@ -648,7 +654,12 @@ function page() {
                 <div className="col-10">
                   <h2>Planning Your Brand</h2>
                   <p>
-                    It’s now time to create your brand strategy. Every aspect of branding is carefully thought out and discussed with you - be it your brand personality, story, message, values, or even communication and website design. As a creative branding agency, we decide on these elements based on how we want the audience to perceive your brand.
+                    It’s now time to create your brand strategy. Every aspect of
+                    branding is carefully thought out and discussed with you -
+                    be it your brand personality, story, message, values, or
+                    even communication and website design. As a creative
+                    branding agency, we decide on these elements based on how we
+                    want the audience to perceive your brand.
                   </p>
                 </div>
               </div>
@@ -660,7 +671,11 @@ function page() {
                 <div className="col-10">
                   <h2>Implementing the Strategy</h2>
                   <p>
-                    Let’s turn words and ideas into action. We now sit down to do the actual work - naming your brand, designing your logo, creating your packaging design, crafting a tagline, composing your message, and much more. In addition, we design and develop your website too.
+                    Let’s turn words and ideas into action. We now sit down to
+                    do the actual work - naming your brand, designing your logo,
+                    creating your packaging design, crafting a tagline,
+                    composing your message, and much more. In addition, we
+                    design and develop your website too.
                   </p>
                 </div>
               </div>
@@ -672,7 +687,10 @@ function page() {
                 <div className="col-10">
                   <h2>Feedback & Launch</h2>
                   <p>
-                    The final stage in our branding journey, this is where we seek a review of our work. Based on your feedback, we make changes, and reseek your feedback. Once we receive a green light from you, we go ahead and launch your brand.
+                    The final stage in our branding journey, this is where we
+                    seek a review of our work. Based on your feedback, we make
+                    changes, and reseek your feedback. Once we receive a green
+                    light from you, we go ahead and launch your brand.
                   </p>
                 </div>
               </div>
@@ -696,7 +714,12 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Brand Understanding</h2>
                   <p>
-                    If anything has to stand the test of time, it needs to begin with a firm footing. In branding, this beginning is understanding the product/business. We sit down with you for a deep discussion to understand your product or service as well as your vision and mission. This helps us make a good start and prepares us for an exciting journey ahead.
+                    If anything has to stand the test of time, it needs to begin
+                    with a firm footing. In branding, this beginning is
+                    understanding the product/business. We sit down with you for
+                    a deep discussion to understand your product or service as
+                    well as your vision and mission. This helps us make a good
+                    start and prepares us for an exciting journey ahead.
                   </p>
                 </div>
               </div>
@@ -708,7 +731,15 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Competitor Analysis</h2>
                   <p>
-                    You are not alone in the market; there are several other products in the same category out there trying to build their presence. How do you craft your own little corner? Analysing competition is crucial, and this is what we, as a brand design company, do next. We conduct a thorough research of your competitors and understand your current position in the market to ensure that we have enough knowledge and data to take a step forward, creating your branding strategy.
+                    You are not alone in the market; there are several other
+                    products in the same category out there trying to build
+                    their presence. How do you craft your own little corner?
+                    Analysing competition is crucial, and this is what we, as a
+                    brand design company, do next. We conduct a thorough
+                    research of your competitors and understand your current
+                    position in the market to ensure that we have enough
+                    knowledge and data to take a step forward, creating your
+                    branding strategy.
                   </p>
                 </div>
               </div>
@@ -720,7 +751,12 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Planning Your Brand</h2>
                   <p>
-                   It’s now time to create your brand strategy. Every aspect of branding is carefully thought out and discussed with you - be it your brand personality, story, message, values, or even communication and website design. As a creative branding agency, we decide on these elements based on how we want the audience to perceive your brand.
+                    It’s now time to create your brand strategy. Every aspect of
+                    branding is carefully thought out and discussed with you -
+                    be it your brand personality, story, message, values, or
+                    even communication and website design. As a creative
+                    branding agency, we decide on these elements based on how we
+                    want the audience to perceive your brand.
                   </p>
                 </div>
               </div>
@@ -732,7 +768,11 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Implementing the Strategy</h2>
                   <p>
-                    Let’s turn words and ideas into action. We now sit down to do the actual work - naming your brand, designing your logo, creating your packaging design, crafting a tagline, composing your message, and much more. In addition, we design and develop your website too.
+                    Let’s turn words and ideas into action. We now sit down to
+                    do the actual work - naming your brand, designing your logo,
+                    creating your packaging design, crafting a tagline,
+                    composing your message, and much more. In addition, we
+                    design and develop your website too.
                   </p>
                 </div>
               </div>
@@ -744,7 +784,10 @@ function page() {
                 <div className="card-body-create-mobile">
                   <h2>Feedback & Launch</h2>
                   <p>
-                   The final stage in our branding journey, this is where we seek a review of our work. Based on your feedback, we make changes, and reseek your feedback. Once we receive a green light from you, we go ahead and launch your brand.
+                    The final stage in our branding journey, this is where we
+                    seek a review of our work. Based on your feedback, we make
+                    changes, and reseek your feedback. Once we receive a green
+                    light from you, we go ahead and launch your brand.
                   </p>
                 </div>
               </div>
@@ -759,9 +802,8 @@ function page() {
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
-
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />
     </div>
   );
 }

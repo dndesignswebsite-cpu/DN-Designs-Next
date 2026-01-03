@@ -4,6 +4,7 @@
  */
 
 import mongoose from "mongoose";
+import User from "@/lib/models/User.js";
 
 const pageSchema = new mongoose.Schema(
   {

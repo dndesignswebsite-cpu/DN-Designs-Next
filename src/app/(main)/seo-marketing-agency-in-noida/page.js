@@ -9,29 +9,22 @@ import Faqs from "@/Components/Faqs/Faqs";
 import AutoCounter from "@/Components/AutoCounter/AutoCounter";
 import WebsiteAuditForm from "@/Components/WebsiteAuditForm/WebsiteAuditForm";
 import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
 // meta tags
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
 export async function generateMetadata() {
-  const response = await getPageData();
-  console.log(response)
-  if (!response?.success) {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("about-us", null, false);
+  } catch (error) {
+    console.log(error);
     return {
       title: "About Us",
       robots: "noindex, nofollow",
     };
   }
-
-  const seo = response.data;
 
   return {
     title: seo.metaTitle || seo.title,
@@ -49,7 +42,7 @@ export async function generateMetadata() {
       description: seo.openGraph?.description || seo.metaDescription,
       url: seo.openGraph?.url || seo.alternates?.canonical,
       images: seo.openGraph?.images?.length
-        ? seo.openGraph.images.map(img => ({
+        ? seo.openGraph.images.map((img) => ({
             url: img.url,
             alt: img.alt || seo.title,
             width: img.width || 1200,
@@ -63,7 +56,7 @@ export async function generateMetadata() {
       title: seo.twitter?.title || seo.metaTitle,
       description: seo.twitter?.description || seo.metaDescription,
       images: seo.twitter?.images?.length
-        ? seo.twitter.images.map(img => img.url)
+        ? seo.twitter.images.map((img) => img.url)
         : [],
     },
   };
@@ -71,7 +64,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-// const response = await getPageData();
+  // const response = await getPageData();
   // const pageData = response?.data;
 
   // if (!pageData) {
@@ -102,22 +95,21 @@ async function page() {
         "Yes, we provide international SEO services and help your website rank high in the SERP of the target country. For this, we conduct country-specific keyword research, craft content that is useful and suitable for the target audience and create backlinks with that particular country in mind. On the technical side, we implement country-specific domain strategies and include the Hreflang tag to show content in the target audience’s language. ",
     },
 
-       {
+    {
       question: "How can your SEO services help me with my local business?",
       answer:
         "Your local business needs a local audience. We, an SEO agency in Noida, understand this and therefore provide you with local SEO services. Local SEO aims at improving your website’s online ranking and visibility in a particular area through the creation of a Google Business Profile, website optimisation for local search and local citation and link building activities.",
     },
 
-
-       {
+    {
       question: "How long does your SEO process take? What about results?",
       answer:
         "The required time for an SEO process depends entirely on the individual project and its goals. For example, a smaller website with fewer pages will take less time than one with hundreds of pages. Similarly, SEO goals like increasing brand awareness, traffic and leads, each demand a different time frame for completion. To give you an idea, though, it can take anywhere between 3-6 months to complete the process and achieve results.",
     },
 
-
-       {
-      question: "Do you optimise our existing content or create fresh new content?",
+    {
+      question:
+        "Do you optimise our existing content or create fresh new content?",
       answer:
         "This again depends on the project demand and your business goals. If your website already has existing quality content, we can optimise it. On the other hand, we can also create fresh content for your website. A combination of both is another option where we optimise your existing content and further add newer content based on our keyword and industry research. Adding new content can help keep your website updated and additionally draw in new visitors.",
     },
@@ -126,39 +118,46 @@ async function page() {
   const rightFaqs = [
     {
       question: "What makes you the best SEO agency in Noida?",
-      answer: "With over 8 years of experience, DN Designs is the best SEO company in Noida. We craft your SEO strategy only after understanding your business and auditing your website. We perform an elaborate keyword research, optimise content, build high-quality links, and last but not least, ensure the technical health of the site. We have worked for a variety of industries and keep ourselves updated with the latest trends (algorithm updates & new AI search). We also provide you with regular reports so that you can assess the progress of your work and the results achieved. ",
+      answer:
+        "With over 8 years of experience, DN Designs is the best SEO company in Noida. We craft your SEO strategy only after understanding your business and auditing your website. We perform an elaborate keyword research, optimise content, build high-quality links, and last but not least, ensure the technical health of the site. We have worked for a variety of industries and keep ourselves updated with the latest trends (algorithm updates & new AI search). We also provide you with regular reports so that you can assess the progress of your work and the results achieved. ",
     },
     {
       question: "What are some common SEO mistakes businesses make?",
-      answer: "There are a whole lot of SEO mistakes that businesses make. These include neglecting proper keyword research, incorrect keyword targeting on pages, creating duplicate or subpar content and building low-quality backlinks. Moreover, businesses also err when they do not focus on creating a fast, mobile-friendly, secure and user-friendly website.",
+      answer:
+        "There are a whole lot of SEO mistakes that businesses make. These include neglecting proper keyword research, incorrect keyword targeting on pages, creating duplicate or subpar content and building low-quality backlinks. Moreover, businesses also err when they do not focus on creating a fast, mobile-friendly, secure and user-friendly website.",
     },
 
-     {
-      question: "Do we receive any reports regarding the work? If yes, how often?",
-      answer: "You will receive a monthly report of all the SEO activities done and results achieved. This includes reports on keyword rankings, traffic, leads, and CTR. You will also receive a comparison report stating your progress from the last month.",
+    {
+      question:
+        "Do we receive any reports regarding the work? If yes, how often?",
+      answer:
+        "You will receive a monthly report of all the SEO activities done and results achieved. This includes reports on keyword rankings, traffic, leads, and CTR. You will also receive a comparison report stating your progress from the last month.",
     },
 
-     {
-      question: "Do you keep track of Google’s guidelines and follow ethical SEO practices?",
-      answer: "For sure. As a white label SEO agency, we make sure to keep updated with all the guidelines of Google to provide you with the best SEO services possible. In addition, we also keep track of the happenings, trends and updates in the SEO industry.",
+    {
+      question:
+        "Do you keep track of Google’s guidelines and follow ethical SEO practices?",
+      answer:
+        "For sure. As a white label SEO agency, we make sure to keep updated with all the guidelines of Google to provide you with the best SEO services possible. In addition, we also keep track of the happenings, trends and updates in the SEO industry.",
     },
 
-     {
+    {
       question: "Do you use any tools for SEO activity?",
-      answer: "As an SEO agency in Noida, we use multiple tools to get the most out of our SEO efforts. These tools include GA4, Google Search Console, Google Keyword Planner, SemRush, Ahrefs and Ubersuggest. With the assistance of these tools, we conduct activities like keyword research, site audit, competitors research as well as content & backlink analysis.",
+      answer:
+        "As an SEO agency in Noida, we use multiple tools to get the most out of our SEO efforts. These tools include GA4, Google Search Console, Google Keyword Planner, SemRush, Ahrefs and Ubersuggest. With the assistance of these tools, we conduct activities like keyword research, site audit, competitors research as well as content & backlink analysis.",
     },
 
-     {
+    {
       question: "Apart from SEO, what other services do you offer?",
-      answer: "We are a branding, design and marketing agency and therefore offer a whole spectrum of services related to it, be it your brand identity creation, packaging design and catalogue design. We also help you establish your communication and digital marketing strategies.",
+      answer:
+        "We are a branding, design and marketing agency and therefore offer a whole spectrum of services related to it, be it your brand identity creation, packaging design and catalogue design. We also help you establish your communication and digital marketing strategies.",
     },
   ];
 
-
   // form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee"
-  const FormPara = "As a white label SEO agency in Noida, we apply data-driven insights and craft your SEO strategies accordingly to achieve your business goals. Our SEO experts in Noida ensure that your website ranks high on SERP, attracts target visitors and eventually turn into customers. Whether you are a startup business or an already established one, we can help you boost your online presence and reputation. Want us to have a look at your website? Let’s do it over a cup of coffee!"
-
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "As a white label SEO agency in Noida, we apply data-driven insights and craft your SEO strategies accordingly to achieve your business goals. Our SEO experts in Noida ensure that your website ranks high on SERP, attracts target visitors and eventually turn into customers. Whether you are a startup business or an already established one, we can help you boost your online presence and reputation. Want us to have a look at your website? Let’s do it over a cup of coffee!";
 
   return (
     <div>
@@ -176,9 +175,10 @@ async function page() {
       {/* what-drives-our-growth */}
       <section className="what-drives-our-growth">
         <div className="container">
-        <h2 className="what-drives-our-growth-heading">What Drives <span className="rrrr">Our Growth</span></h2>
+          <h2 className="what-drives-our-growth-heading">
+            What Drives <span className="rrrr">Our Growth</span>
+          </h2>
           <div className="row what-drives-our-growth-row">
-          
             <div className="col-12 col-md-12 col-lg-6 what-drives-our-growth-content">
               <h3>Data Driven Insights</h3>
               <p>
@@ -247,7 +247,7 @@ async function page() {
           {/* 1st row */}
           <div className="row">
             <h2 className="text-center headg">
-              Why 
+              Why
               <span className="every-pr"> SEO?</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
@@ -261,13 +261,16 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Generate Organic Traffic</h3>
                   <p>
-                    Start now with SEO if you want to rank high in the SERP. A set of practices and techniques
+                    Start now with SEO if you want to rank high in the SERP. A
+                    set of practices and techniques
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Generate Organic Traffic</h3>
                   <p>
-                   Start now with SEO if you want to rank high in the SERP. A set of practices and techniques, SEO helps optimise your site, draw in more attention and organic traffic.
+                    Start now with SEO if you want to rank high in the SERP. A
+                    set of practices and techniques, SEO helps optimise your
+                    site, draw in more attention and organic traffic.
                   </p>
                 </div>
               </div>
@@ -288,13 +291,18 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Build Brand</h3>
                   <p>
-                    With more people visiting your website, you are now getting recognised as a business. Customers find you easily and know what your services
+                    With more people visiting your website, you are now getting
+                    recognised as a business. Customers find you easily and know
+                    what your services
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Build Brand</h3>
                   <p>
-                   With more people visiting your website, you are now getting recognised as a business. Customers find you easily and know what your services, values, beliefs and USP are. All these help build your brand.
+                    With more people visiting your website, you are now getting
+                    recognised as a business. Customers find you easily and know
+                    what your services, values, beliefs and USP are. All these
+                    help build your brand.
                   </p>
                 </div>
               </div>
@@ -315,13 +323,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Generate Lead</h3>
                   <p>
-                    When your SEO efforts move in the right direction, your website attracts the target audience. Some of these seek information, while
+                    When your SEO efforts move in the right direction, your
+                    website attracts the target audience. Some of these seek
+                    information, while
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Generate Lead</h3>
                   <p>
-                   When your SEO efforts move in the right direction, your website attracts the target audience. Some of these seek information, while others are there to purchase your product or hire your services. You, therefore, generate leads through SEO.
+                    When your SEO efforts move in the right direction, your
+                    website attracts the target audience. Some of these seek
+                    information, while others are there to purchase your product
+                    or hire your services. You, therefore, generate leads
+                    through SEO.
                   </p>
                 </div>
               </div>
@@ -342,13 +356,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Increased ROI</h3>
                   <p>
-                    Every business strives to earn revenue; it is the end goal. If a company fails to do so, it cannot last for a long time. SEO achieves this result
+                    Every business strives to earn revenue; it is the end goal.
+                    If a company fails to do so, it cannot last for a long time.
+                    SEO achieves this result
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Increased ROI</h3>
                   <p>
-                    Every business strives to earn revenue; it is the end goal. If a company fails to do so, it cannot last for a long time. SEO achieves this result - more traffic, more visitors, greater chances of conversion and hence increased return on investment.
+                    Every business strives to earn revenue; it is the end goal.
+                    If a company fails to do so, it cannot last for a long time.
+                    SEO achieves this result - more traffic, more visitors,
+                    greater chances of conversion and hence increased return on
+                    investment.
                   </p>
                 </div>
               </div>
@@ -379,7 +399,10 @@ async function page() {
                   <div>
                     <h3>Start-up SEO</h3>
                     <p>
-                     Partner with us, a white label SEO agency, to give your new business the support it needs and deserves. It includes keyword research, content optimisation & technical SEO.
+                      Partner with us, a white label SEO agency, to give your
+                      new business the support it needs and deserves. It
+                      includes keyword research, content optimisation &
+                      technical SEO.
                     </p>
                   </div>
                 </div>
@@ -390,7 +413,9 @@ async function page() {
                   <div>
                     <h3>Local SEO</h3>
                     <p>
-                      Set your business up for success in your local area. Our local SEO service pack comprises GBP optimisation, local keyword optimisation and local citation building.
+                      Set your business up for success in your local area. Our
+                      local SEO service pack comprises GBP optimisation, local
+                      keyword optimisation and local citation building.
                     </p>
                   </div>
                 </div>
@@ -404,7 +429,10 @@ async function page() {
                 <div>
                   <h3>Global SEO</h3>
                   <p>
-                    Our SEO agency in Noida helps you connect with international or multilingual audiences with a global SEO strategy. We target country-specific keywords and language and ensure culturally appropriate content.
+                    Our SEO agency in Noida helps you connect with international
+                    or multilingual audiences with a global SEO strategy. We
+                    target country-specific keywords and language and ensure
+                    culturally appropriate content.
                   </p>
                 </div>
               </div>
@@ -415,7 +443,10 @@ async function page() {
                 <div>
                   <h3>E-Commerce SEO</h3>
                   <p>
-                    Make your product a hit with customers on e-commerce websites and generate more ROI. Our e-commerce SEO services include optimising product & category pages, content and technical elements.
+                    Make your product a hit with customers on e-commerce
+                    websites and generate more ROI. Our e-commerce SEO services
+                    include optimising product & category pages, content and
+                    technical elements.
                   </p>
                 </div>
               </div>
@@ -426,7 +457,9 @@ async function page() {
                 <div>
                   <h3>YouTube SEO</h3>
                   <p>
-                 As an SEO agency, we leverage the power of YouTube SEO to generate organic traffic and leads for your business. This includes keyword research and optimisation of videos.
+                    As an SEO agency, we leverage the power of YouTube SEO to
+                    generate organic traffic and leads for your business. This
+                    includes keyword research and optimisation of videos.
                   </p>
                 </div>
               </div>
@@ -437,21 +470,26 @@ async function page() {
                 <div>
                   <h3>Answer Engine Optimisation</h3>
                   <p>
-                    Our SEO experts optimise your content to answer user queries. The answers appear straight in the SERP results like in rich snippets or ‘People Also Ask’ segment.
+                    Our SEO experts optimise your content to answer user
+                    queries. The answers appear straight in the SERP results
+                    like in rich snippets or ‘People Also Ask’ segment.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-        {/* 3rd row */}
+          {/* 3rd row */}
           <div className="row appr-pro-row-main">
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
                   <h3>Generative Engine Optimisation</h3>
                   <p>
-                    Want your website to pop up in AI-driven search results -Google’s AI overview, ChatGPT and Perplexity? We create structured and optimised content for better performance on generative platforms.
+                    Want your website to pop up in AI-driven search results
+                    -Google’s AI overview, ChatGPT and Perplexity? We create
+                    structured and optimised content for better performance on
+                    generative platforms.
                   </p>
                 </div>
               </div>
@@ -462,7 +500,10 @@ async function page() {
                 <div>
                   <h3>Artificial Engine Optimisation</h3>
                   <p>
-                   Adapt your strategy to changing times. Team up with us to make your website content friendly for search engines, assistants, and AI agents (read Siri, Alexa, ChatGPT & Gemini).
+                    Adapt your strategy to changing times. Team up with us to
+                    make your website content friendly for search engines,
+                    assistants, and AI agents (read Siri, Alexa, ChatGPT &
+                    Gemini).
                   </p>
                 </div>
               </div>
@@ -473,7 +514,9 @@ async function page() {
                 <div>
                   <h3>Search Experience Optimisation</h3>
                   <p>
-                 Trust us to make your users’ journey - from their initial search to final conversion - a seamless experience. Content & layout optimisation & clear CTA form part of this service.
+                    Trust us to make your users’ journey - from their initial
+                    search to final conversion - a seamless experience. Content
+                    & layout optimisation & clear CTA form part of this service.
                   </p>
                 </div>
               </div>
@@ -484,7 +527,9 @@ async function page() {
                 <div>
                   <h3>Ask Engine Optimisation</h3>
                   <p>
-                   Let’s optimise your website content to rank high for users’ questions on search engines. Climb up the rank, get traffic & capture leads.
+                    Let’s optimise your website content to rank high for users’
+                    questions on search engines. Climb up the rank, get traffic
+                    & capture leads.
                   </p>
                 </div>
               </div>
@@ -497,8 +542,7 @@ async function page() {
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
-           Our <span className="rrrr">Process</span>
-            
+            Our <span className="rrrr">Process</span>
           </h2>
           <ul id="cards-create">
             <li className="card-create" id="card1-create">
@@ -507,7 +551,14 @@ async function page() {
                 <div className="col-10">
                   <h2>Website Analysis</h2>
                   <p>
-                    As an SEO company in India, our first step is to analyse the existing website - its technical aspects, content, on-page optimisation and off-page performance. These typically include the analysis of the site for speed, indexation, mobile-friendliness, keyword ranking, content quality and backlinks. Our objective here is to understand the website in its entirety, its performance in SERP and the potential areas of improvement.
+                    As an SEO company in India, our first step is to analyse the
+                    existing website - its technical aspects, content, on-page
+                    optimisation and off-page performance. These typically
+                    include the analysis of the site for speed, indexation,
+                    mobile-friendliness, keyword ranking, content quality and
+                    backlinks. Our objective here is to understand the website
+                    in its entirety, its performance in SERP and the potential
+                    areas of improvement.
                   </p>
                 </div>
               </div>
@@ -519,7 +570,14 @@ async function page() {
                 <div className="col-10">
                   <h2>Keyword Research</h2>
                   <p>
-                    Once we have a good idea about your website, we focus more on the existing keywords' ranking. Additionally, our SEO experts also research and compile a huge list of new potential keywords that customers are searching for. With further research, we narrow down this list to include only those keywords that are most promising and have the highest chances of success. This includes analysing keywords’ search volume, difficulty and search Intent.
+                    Once we have a good idea about your website, we focus more
+                    on the existing keywords' ranking. Additionally, our SEO
+                    experts also research and compile a huge list of new
+                    potential keywords that customers are searching for. With
+                    further research, we narrow down this list to include only
+                    those keywords that are most promising and have the highest
+                    chances of success. This includes analysing keywords’ search
+                    volume, difficulty and search Intent.
                   </p>
                 </div>
               </div>
@@ -531,7 +589,14 @@ async function page() {
                 <div className="col-10">
                   <h2>On-Page SEO</h2>
                   <p>
-                   Now we begin with individual page optimisation. We add/improve the content and integrate relevant keywords naturally into it. We also incorporate keywords in the URL, title tags, meta descriptions, heading tags and alt tags. The important thing we, as a white label SEO marketing agency, pay particular attention to in this step is to avoid spamming. We, additionally, optimise images, add schema data and create internal linkings.
+                    Now we begin with individual page optimisation. We
+                    add/improve the content and integrate relevant keywords
+                    naturally into it. We also incorporate keywords in the URL,
+                    title tags, meta descriptions, heading tags and alt tags.
+                    The important thing we, as a white label SEO marketing
+                    agency, pay particular attention to in this step is to avoid
+                    spamming. We, additionally, optimise images, add schema data
+                    and create internal linkings.
                   </p>
                 </div>
               </div>
@@ -543,7 +608,15 @@ async function page() {
                 <div className="col-10">
                   <h2>Off-Page SEO</h2>
                   <p>
-                    While your on-page optimisation activities focus on making your website user and search engine friendly, the off-page optimisation activities further focus on boosting your website's online authority and reputation, and improving its SERP ranking. Our SEO experts in Noida now perform link building and citation activities. For this, they conduct in-depth online research to find relevant high-authority websites and create quality backlinks to enhance the trust factor of your website.
+                    While your on-page optimisation activities focus on making
+                    your website user and search engine friendly, the off-page
+                    optimisation activities further focus on boosting your
+                    website's online authority and reputation, and improving its
+                    SERP ranking. Our SEO experts in Noida now perform link
+                    building and citation activities. For this, they conduct
+                    in-depth online research to find relevant high-authority
+                    websites and create quality backlinks to enhance the trust
+                    factor of your website.
                   </p>
                 </div>
               </div>
@@ -555,7 +628,14 @@ async function page() {
                 <div className="col-10">
                   <h2>Technical SEO</h2>
                   <p>
-                    This step is vital to ensure that the faulty technical aspects and elements of your website do not break it down or dampen the user experience. For this, we check and correct your website for proper site architecture, page crawlability, indexing, speed, responsiveness and security. Other technical SEO activities that we carry out include submission of sitemaps, fixing broken links, reviewing robots.txt and adding structured data.
+                    This step is vital to ensure that the faulty technical
+                    aspects and elements of your website do not break it down or
+                    dampen the user experience. For this, we check and correct
+                    your website for proper site architecture, page
+                    crawlability, indexing, speed, responsiveness and security.
+                    Other technical SEO activities that we carry out include
+                    submission of sitemaps, fixing broken links, reviewing
+                    robots.txt and adding structured data.
                   </p>
                 </div>
               </div>
@@ -579,7 +659,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Website Analysis</h2>
                   <p>
-                    As an SEO company in India, our first step is to analyse the existing website - its technical aspects, content, on-page optimisation and off-page performance. These typically include the analysis of the site for speed, indexation, mobile-friendliness, keyword ranking, content quality and backlinks. Our objective here is to understand the website in its entirety, its performance in SERP and the potential areas of improvement.
+                    As an SEO company in India, our first step is to analyse the
+                    existing website - its technical aspects, content, on-page
+                    optimisation and off-page performance. These typically
+                    include the analysis of the site for speed, indexation,
+                    mobile-friendliness, keyword ranking, content quality and
+                    backlinks. Our objective here is to understand the website
+                    in its entirety, its performance in SERP and the potential
+                    areas of improvement.
                   </p>
                 </div>
               </div>
@@ -591,7 +678,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Keyword Research</h2>
                   <p>
-                   Once we have a good idea about your website, we focus more on the existing keywords' ranking. Additionally, our SEO experts also research and compile a huge list of new potential keywords that customers are searching for. With further research, we narrow down this list to include only those keywords that are most promising and have the highest chances of success. This includes analysing keywords’ search volume, difficulty and search Intent.
+                    Once we have a good idea about your website, we focus more
+                    on the existing keywords' ranking. Additionally, our SEO
+                    experts also research and compile a huge list of new
+                    potential keywords that customers are searching for. With
+                    further research, we narrow down this list to include only
+                    those keywords that are most promising and have the highest
+                    chances of success. This includes analysing keywords’ search
+                    volume, difficulty and search Intent.
                   </p>
                 </div>
               </div>
@@ -603,7 +697,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>On-Page SEO</h2>
                   <p>
-                    Now we begin with individual page optimisation. We add/improve the content and integrate relevant keywords naturally into it. We also incorporate keywords in the URL, title tags, meta descriptions, heading tags and alt tags. The important thing we, as a white label SEO marketing agency, pay particular attention to in this step is to avoid spamming. We, additionally, optimise images, add schema data and create internal linkings.
+                    Now we begin with individual page optimisation. We
+                    add/improve the content and integrate relevant keywords
+                    naturally into it. We also incorporate keywords in the URL,
+                    title tags, meta descriptions, heading tags and alt tags.
+                    The important thing we, as a white label SEO marketing
+                    agency, pay particular attention to in this step is to avoid
+                    spamming. We, additionally, optimise images, add schema data
+                    and create internal linkings.
                   </p>
                 </div>
               </div>
@@ -615,7 +716,15 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Off-Page SEO</h2>
                   <p>
-                    While your on-page optimisation activities focus on making your website user and search engine friendly, the off-page optimisation activities further focus on boosting your website's online authority and reputation, and improving its SERP ranking. Our SEO experts in Noida now perform link building and citation activities. For this, they conduct in-depth online research to find relevant high-authority websites and create quality backlinks to enhance the trust factor of your website.
+                    While your on-page optimisation activities focus on making
+                    your website user and search engine friendly, the off-page
+                    optimisation activities further focus on boosting your
+                    website's online authority and reputation, and improving its
+                    SERP ranking. Our SEO experts in Noida now perform link
+                    building and citation activities. For this, they conduct
+                    in-depth online research to find relevant high-authority
+                    websites and create quality backlinks to enhance the trust
+                    factor of your website.
                   </p>
                 </div>
               </div>
@@ -627,7 +736,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Technical SEO</h2>
                   <p>
-                   This step is vital to ensure that the faulty technical aspects and elements of your website do not break it down or dampen the user experience. For this, we check and correct your website for proper site architecture, page crawlability, indexing, speed, responsiveness and security. Other technical SEO activities that we carry out include submission of sitemaps, fixing broken links, reviewing robots.txt and adding structured data.
+                    This step is vital to ensure that the faulty technical
+                    aspects and elements of your website do not break it down or
+                    dampen the user experience. For this, we check and correct
+                    your website for proper site architecture, page
+                    crawlability, indexing, speed, responsiveness and security.
+                    Other technical SEO activities that we carry out include
+                    submission of sitemaps, fixing broken links, reviewing
+                    robots.txt and adding structured data.
                   </p>
                 </div>
               </div>
@@ -640,7 +756,9 @@ async function page() {
       <section className="industries-we-serve">
         <div className="container">
           <div className="row">
-            <h3>Industries <span className="rrrr">We Serve</span></h3>
+            <h3>
+              Industries <span className="rrrr">We Serve</span>
+            </h3>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
@@ -664,7 +782,9 @@ async function page() {
                 />
                 <h4>Business to Customers (B2C)</h4>
                 <p>
-                  We help B2C companies reach the target audience through keyword research, content optimisation, strong CTAs and local SEO.
+                  We help B2C companies reach the target audience through
+                  keyword research, content optimisation, strong CTAs and local
+                  SEO.
                 </p>
               </div>
             </div>
@@ -677,7 +797,9 @@ async function page() {
                 />
                 <h4>Educational Institutions</h4>
                 <p>
-                  Our SEO experts in Noida ensure that your educational institute ranks well above your competitors and is deemed trustworthy in the industry.
+                  Our SEO experts in Noida ensure that your educational
+                  institute ranks well above your competitors and is deemed
+                  trustworthy in the industry.
                 </p>
               </div>
             </div>
@@ -690,7 +812,9 @@ async function page() {
                 />
                 <h4>Retail or Online Business</h4>
                 <p>
-                 Expand the reach of your retail or online business with our white label SEO marketing services. More visitors mean more purchasing customers.
+                  Expand the reach of your retail or online business with our
+                  white label SEO marketing services. More visitors mean more
+                  purchasing customers.
                 </p>
               </div>
             </div>
@@ -705,7 +829,8 @@ async function page() {
                 />
                 <h4>Innovation and SaaS</h4>
                 <p>
-                  Attract potential customers interested in your product or software with our specialised SEO services for the industry.
+                  Attract potential customers interested in your product or
+                  software with our specialised SEO services for the industry.
                 </p>
               </div>
             </div>
@@ -718,7 +843,9 @@ async function page() {
                 />
                 <h4>Financial Services (BFSI)</h4>
                 <p>
-                  Grow your online visibility and build brand trust through E.E.A.T., content marketing and legally compliant SEO activities.
+                  Grow your online visibility and build brand trust through
+                  E.E.A.T., content marketing and legally compliant SEO
+                  activities.
                 </p>
               </div>
             </div>
@@ -731,7 +858,9 @@ async function page() {
                 />
                 <h4>Pharma and Medical services</h4>
                 <p>
-                 Rank your medical websites high on search engines and provide relevant and valuable information to your stakeholders - patients, HCPs and payers. Build trust and authority.
+                  Rank your medical websites high on search engines and provide
+                  relevant and valuable information to your stakeholders -
+                  patients, HCPs and payers. Build trust and authority.
                 </p>
               </div>
             </div>
@@ -744,7 +873,9 @@ async function page() {
                 />
                 <h4>Diversion and Gaming</h4>
                 <p>
-                  Let your gaming website be discovered more online and provide a seamless experience to your visitors. Our gaming SEO services help level up your site performance.
+                  Let your gaming website be discovered more online and provide
+                  a seamless experience to your visitors. Our gaming SEO
+                  services help level up your site performance.
                 </p>
               </div>
             </div>
@@ -757,7 +888,9 @@ async function page() {
       <section className="website-audit">
         <div className="container">
           <div className="row website-audit-row">
-            <h3>Get a <span className="rrrr">Free Website</span> Audit</h3>
+            <h3>
+              Get a <span className="rrrr">Free Website</span> Audit
+            </h3>
             <p>
               Unlock your website's hidden potential for increased organic
               traffic and leads. Contact us today to drive growth!
@@ -771,9 +904,10 @@ async function page() {
       <section className="projects-completed">
         <div className="container">
           <div className="row projects-completed-main-row">
-          
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">
-            <h2 className="projects-completed-heading">Why <span className="rrrr">Choose Us</span> ?</h2>
+              <h2 className="projects-completed-heading">
+                Why <span className="rrrr">Choose Us</span> ?
+              </h2>
               <div className="row">
                 <div className="col-12 col-md-6">
                   <div className="projects-completed-div">
@@ -833,7 +967,11 @@ async function page() {
       </section>
 
       {/* Form */}
-       <Form FormHead={FormHead} FormPara={FormPara}/>
+      <Form
+        FormHead={FormHead}
+        FormPara={FormPara}
+        pageName="seo-marketing-agency-in-noida"
+      />
     </div>
   );
 }

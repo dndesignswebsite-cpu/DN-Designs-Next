@@ -7,30 +7,22 @@ import AnimationSwipper from "@/Components/AnimationSwipper/AnimationSwipper";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import ExploreOurVideoAnimation from "@/Components/ExploreOurVideoAnimation/ExploreOurVideoAnimation";
 import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
-
-// meta data 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
+// meta data
 export async function generateMetadata() {
-  const response = await getPageData();
-  console.log(response)
-  if (!response?.success) {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("about-us", null, false);
+  } catch (error) {
+    console.log(error);
     return {
       title: "Animation",
-      robots: "noindex, nofollow", 
+      robots: "noindex, nofollow",
     };
   }
-
-  const seo = response.data;
 
   return {
     title: seo.metaTitle || seo.title,
@@ -48,7 +40,7 @@ export async function generateMetadata() {
       description: seo.openGraph?.description || seo.metaDescription,
       url: seo.openGraph?.url || seo.alternates?.canonical,
       images: seo.openGraph?.images?.length
-        ? seo.openGraph.images.map(img => ({
+        ? seo.openGraph.images.map((img) => ({
             url: img.url,
             alt: img.alt || seo.title,
             width: img.width || 1200,
@@ -62,26 +54,20 @@ export async function generateMetadata() {
       title: seo.twitter?.title || seo.metaTitle,
       description: seo.twitter?.description || seo.metaDescription,
       images: seo.twitter?.images?.length
-        ? seo.twitter.images.map(img => img.url)
+        ? seo.twitter.images.map((img) => img.url)
         : [],
     },
   };
 }
 //meta end here
 
-
-
-
 async function page() {
-
   //  const response = await getPageData();
   //   const pageData = response?.data;
-  
+
   //   if (!pageData) {
   //     notFound();
   //   }
-
-
 
   const heading = "Animation Company in India";
   const subHeading = "Creating Impactful Video Solutions For Business Growth";
@@ -105,25 +91,26 @@ async function page() {
         "The time needed to create an animated video varies from one project to another. The major reasons for this are the format & style of the videos, the complexities involved in the process and the number of feedback and revisions required. However, for your reference, a short and simple 2D explainer video can be completed in a couple of weeks, while a more complex 3D video can take up to a month.",
     },
 
-      {
+    {
       question: "Can you explain your video-making process?",
       answer:
         "We start with a briefing session where we understand your goals, audience and vision. Based on this, we brainstorm concepts and decide on the type of video to be created, its tone and timeline. We then move towards the scripting and storyboarding stages, where we write an engaging script and sketch the visual flow of the story. It is now time to add voice-overs and turn your storyboard into an animation. In the end, we go for the sound design of the video.",
     },
 
-      {
+    {
       question: "How many revisions can I ask for?",
       answer:
         "Animation videos take a lot of time, and therefore, we seek your approval and incorporate suggested changes (even if they are major) at every stage of our process to ensure that we are moving in the right direction. However, in case you need changes close to video completion or after it, we can provide you with limited revision options twice.",
     },
 
-      {
-      question: "I have a script ready, and I can also provide the voiceover recordings. Can you include it in the video?",
+    {
+      question:
+        "I have a script ready, and I can also provide the voiceover recordings. Can you include it in the video?",
       answer:
         "Sure! We can definitely create a video based on the script and voiceover recording that you provide.",
     },
 
-     {
+    {
       question: "I need videos in different languages. Can DN Designs help?",
       answer:
         "Yes, we can certainly help you with this. We can create videos with voiceover in different languages and add subtitles in the needed language.",
@@ -132,44 +119,55 @@ async function page() {
 
   const rightFaqs = [
     {
-      question: "Do you keep our brand style and follow brand guidelines when creating videos?",
-      answer: "Yes. As a business animation company in India, we do understand the importance of keeping your brand identity intact in your videos. You can share your brand guidelines with us, and we will ensure to retain your brand’s logo, design aesthetics, fonts, colours, and voice in the video we create.",
+      question:
+        "Do you keep our brand style and follow brand guidelines when creating videos?",
+      answer:
+        "Yes. As a business animation company in India, we do understand the importance of keeping your brand identity intact in your videos. You can share your brand guidelines with us, and we will ensure to retain your brand’s logo, design aesthetics, fonts, colours, and voice in the video we create.",
     },
     {
-      question: "Can you utilise the existing footage that I have or update an old video?",
-      answer: "Yes, we can definitely do that. For the purpose, we can use your current branding elements, add fresh voice-overs and include new scenes or animated overlays.",
+      question:
+        "Can you utilise the existing footage that I have or update an old video?",
+      answer:
+        "Yes, we can definitely do that. For the purpose, we can use your current branding elements, add fresh voice-overs and include new scenes or animated overlays.",
     },
 
     {
       question: "How much do your video creation services cost?",
-      answer: "Costing depends on the scope of your project - the format and style of the video (motion graphic or 3D video), its length and the complexities involved. To get an idea about the cost of your project, simply get in touch with us.",
+      answer:
+        "Costing depends on the scope of your project - the format and style of the video (motion graphic or 3D video), its length and the complexities involved. To get an idea about the cost of your project, simply get in touch with us.",
     },
 
     {
       question: "Who retains the ownership of the video?",
-      answer: "Once the payment for the service is made, you have full rights over the video. You can use it wherever you want to - be it on your website, social media, ad campaign, emails or physical events and conferences.",
+      answer:
+        "Once the payment for the service is made, you have full rights over the video. You can use it wherever you want to - be it on your website, social media, ad campaign, emails or physical events and conferences.",
     },
 
     {
       question: "In what format will I receive the videos?",
-      answer: "We will deliver your videos in formats suitable for various platforms. This includes MP4 (HD or 4K) and social formats (square or vertical)."
+      answer:
+        "We will deliver your videos in formats suitable for various platforms. This includes MP4 (HD or 4K) and social formats (square or vertical).",
     },
 
-     {
-      question: "How are you better than the other major animation studios in Noida?",
-      answer: "We are a team of skilled strategists, creative storytellers and expert video creators and editors. We create a video that fulfils your business objectives and impresses your audience. We keep ourselves updated with the current market trends and focus on generating a return on investment through our videos. We also offer flexible pricing options."
+    {
+      question:
+        "How are you better than the other major animation studios in Noida?",
+      answer:
+        "We are a team of skilled strategists, creative storytellers and expert video creators and editors. We create a video that fulfils your business objectives and impresses your audience. We keep ourselves updated with the current market trends and focus on generating a return on investment through our videos. We also offer flexible pricing options.",
     },
 
-     {
+    {
       question: "Do you offer video marketing services too?",
-      answer: "Yes, we can help you create and set up your YouTube channel and optimise videos for SEO purposes. We can also adapt your videos for integration on various social media channels, email and ad campaigns as well as your website. As part of the video marketing services, we can also manage your campaigns, engage with your community and track the performance of your video marketing strategy."
+      answer:
+        "Yes, we can help you create and set up your YouTube channel and optimise videos for SEO purposes. We can also adapt your videos for integration on various social media channels, email and ad campaigns as well as your website. As part of the video marketing services, we can also manage your campaigns, engage with your community and track the performance of your video marketing strategy.",
     },
   ];
 
   // form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee"
-  const FormPara = "Usually, customers prefer to watch an animated video over reading long blogs, manuals or documentation. How do we know this? Well, statistics say this, and we, as consumers, do the same. As an animation company in Noida, we create videos that capture attention, provide the required information, strike an emotional chord with customers and build trust. Want a similar experience for your customers? Let’s discuss your project over a cup of coffee."
-  const pageName = "animation"
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "Usually, customers prefer to watch an animated video over reading long blogs, manuals or documentation. How do we know this? Well, statistics say this, and we, as consumers, do the same. As an animation company in Noida, we create videos that capture attention, provide the required information, strike an emotional chord with customers and build trust. Want a similar experience for your customers? Let’s discuss your project over a cup of coffee.";
+  const pageName = "animation";
 
   return (
     <div>
@@ -200,7 +198,10 @@ async function page() {
       <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
-            <h3>We Are The Leading Video <span className="every-pr"> Production Company For Brands</span></h3>
+            <h3>
+              We Are The Leading Video{" "}
+              <span className="every-pr"> Production Company For Brands</span>
+            </h3>
             <div className="col-12 col-md-6 we-are-the-leading-para">
               <p>
                 A video shouldn’t just play; it should pull its viewer in (well,
@@ -214,7 +215,13 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 we-are-the-leading-para">
               <p>
-               We focus on your objectives and vision and pair them up with our creative and technical skills. Our studio is teeming with strategists, scriptwriters, cinematographers, editors, social media experts and production team – all of whom pool in their special talents to transform your vision into reality. Want us to create a compelling video that grabs attention, evokes emotion and enhances engagement? Just get in touch with us.
+                We focus on your objectives and vision and pair them up with our
+                creative and technical skills. Our studio is teeming with
+                strategists, scriptwriters, cinematographers, editors, social
+                media experts and production team – all of whom pool in their
+                special talents to transform your vision into reality. Want us
+                to create a compelling video that grabs attention, evokes
+                emotion and enhances engagement? Just get in touch with us.
               </p>
             </div>
           </div>
@@ -228,7 +235,8 @@ async function page() {
           {/* 1st row */}
           <div className="row">
             <h2 className="text-center headg">
-              Creative and Effective<br/>
+              Creative and Effective
+              <br />
               <span className="every-pr"> Animated Video Solutions</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-4 px-2 characteristics-of-good-main-div">
@@ -242,13 +250,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Explainer Video</h3>
                   <p>
-                    Let’s engage your audience and market your product & services through explainer videos. Animation combined with 
+                    Let’s engage your audience and market your product &
+                    services through explainer videos. Animation combined with
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Explainer Video</h3>
                   <p>
-                    Let’s engage your audience and market your product & services through explainer videos. Animation combined with vocal narratives and dynamic music creates a video that leaves a lasting impression and encourages users to take action. Good for new product launch & demo as well as complex products and services explanations.
+                    Let’s engage your audience and market your product &
+                    services through explainer videos. Animation combined with
+                    vocal narratives and dynamic music creates a video that
+                    leaves a lasting impression and encourages users to take
+                    action. Good for new product launch & demo as well as
+                    complex products and services explanations.
                   </p>
                 </div>
               </div>
@@ -269,13 +283,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Corporate Videos</h3>
                   <p>
-                    Partner with us to create professional corporate videos to reach your target audience and communicate your message
+                    Partner with us to create professional corporate videos to
+                    reach your target audience and communicate your message
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Corporate Videos</h3>
                   <p>
-                    Partner with us to create professional corporate videos to reach your target audience and communicate your message. These videos are for both external (product/service promotion, brand awareness) and internal (employee training) communication. They are far more informative in nature and aim to build trust in their audience.
+                    Partner with us to create professional corporate videos to
+                    reach your target audience and communicate your message.
+                    These videos are for both external (product/service
+                    promotion, brand awareness) and internal (employee training)
+                    communication. They are far more informative in nature and
+                    aim to build trust in their audience.
                   </p>
                 </div>
               </div>
@@ -296,13 +316,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>3D Animation</h3>
                   <p>
-                  Want to give your customers a 360-degree view of your product and make them feel that it is real? Go for 3D animation videos
+                    Want to give your customers a 360-degree view of your
+                    product and make them feel that it is real? Go for 3D
+                    animation videos
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>3D Animation</h3>
                   <p>
-                    Want to give your customers a 360-degree view of your product and make them feel that it is real? Go for 3D animation videos. As a 3D animation company in Noida, we make highly creative, smooth, detailed and cinematic videos that showcase and explain your products and services.
+                    Want to give your customers a 360-degree view of your
+                    product and make them feel that it is real? Go for 3D
+                    animation videos. As a 3D animation company in Noida, we
+                    make highly creative, smooth, detailed and cinematic videos
+                    that showcase and explain your products and services.
                   </p>
                 </div>
               </div>
@@ -326,13 +352,18 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Promotional Video</h3>
                   <p>
-                    Give your audience a quick and captivating view of your product, services and events. Grab their attention with 
+                    Give your audience a quick and captivating view of your
+                    product, services and events. Grab their attention with
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Promotional Video</h3>
                   <p>
-                   Give your audience a quick and captivating view of your product, services and events. Grab their attention with eye-catching visuals, establish brand identity through design elements and create an upbeat mood through inspiring background music. We are there to guide you throughout.
+                    Give your audience a quick and captivating view of your
+                    product, services and events. Grab their attention with
+                    eye-catching visuals, establish brand identity through
+                    design elements and create an upbeat mood through inspiring
+                    background music. We are there to guide you throughout.
                   </p>
                 </div>
               </div>
@@ -353,13 +384,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>2D Animation Video</h3>
                   <p>
-                    Experience the magic of simple, timeless and versatile 2D animation videos. As an animation studio in Noida
+                    Experience the magic of simple, timeless and versatile 2D
+                    animation videos. As an animation studio in Noida
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>2D Animation Video</h3>
                   <p>
-                    Experience the magic of simple, timeless and versatile 2D animation videos. As an animation studio in Noida, we create informative but engaging videos to make your complex ideas appear easy, establish your brand narrative and boost audience engagement. These are particularly good for explainer and social media videos.
+                    Experience the magic of simple, timeless and versatile 2D
+                    animation videos. As an animation studio in Noida, we create
+                    informative but engaging videos to make your complex ideas
+                    appear easy, establish your brand narrative and boost
+                    audience engagement. These are particularly good for
+                    explainer and social media videos.
                   </p>
                 </div>
               </div>
@@ -380,13 +417,18 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Product Demo Video</h3>
                   <p>
-                   Demonstrate to your audience how your product functions and what its key features and benefits are
+                    Demonstrate to your audience how your product functions and
+                    what its key features and benefits are
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Product Demo Video</h3>
                   <p>
-                   Demonstrate to your audience how your product functions and what its key features and benefits are. Let them see your product in action through our animated videos. We create high-resolution, professional and practical videos for your product’s promotion and marketing.
+                    Demonstrate to your audience how your product functions and
+                    what its key features and benefits are. Let them see your
+                    product in action through our animated videos. We create
+                    high-resolution, professional and practical videos for your
+                    product’s promotion and marketing.
                   </p>
                 </div>
               </div>
@@ -406,10 +448,13 @@ async function page() {
           <div>
             <div className="row appr-pro-anime-row-main">
               <div className="col-12 col-md-12 col-lg-6 mt-3">
-                <h2 className="appr-pro-anime-main-head">
-                  Why Choose Us
-                </h2>
-                <p className="appr-pro-anime-main-para">Great results are not achieved randomly. They need planning, hard work, perseverance, and, when it comes to animated videos, plenty of strategic vision and creativity as well. That’s exactly what we do and what sets us apart.</p>
+                <h2 className="appr-pro-anime-main-head">Why Choose Us</h2>
+                <p className="appr-pro-anime-main-para">
+                  Great results are not achieved randomly. They need planning,
+                  hard work, perseverance, and, when it comes to animated
+                  videos, plenty of strategic vision and creativity as well.
+                  That’s exactly what we do and what sets us apart.
+                </p>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
@@ -417,7 +462,9 @@ async function page() {
                   <div>
                     <h3>Goal & Message</h3>
                     <p>
-                      Before doing anything else, we establish our core objectives - what do we want to achieve and what do we want to communicate through the video.
+                      Before doing anything else, we establish our core
+                      objectives - what do we want to achieve and what do we
+                      want to communicate through the video.
                     </p>
                   </div>
                 </div>
@@ -428,7 +475,10 @@ async function page() {
                   <div>
                     <h3>Format & Style</h3>
                     <p>
-                      To create visually impressive and emotionally connecting videos, we select suitable formats and styles. Depending on the objective, it could be a professional explainer video or a 3D entertaining promotional video.
+                      To create visually impressive and emotionally connecting
+                      videos, we select suitable formats and styles. Depending
+                      on the objective, it could be a professional explainer
+                      video or a 3D entertaining promotional video.
                     </p>
                   </div>
                 </div>
@@ -442,7 +492,10 @@ async function page() {
                 <div>
                   <h3>Adaptability</h3>
                   <p>
-                    Expect the unexpected. We believe in this and are, thus, forever ready to accept challenges that pop up during our process. The end result is always remarkable and something we feel proud of.
+                    Expect the unexpected. We believe in this and are, thus,
+                    forever ready to accept challenges that pop up during our
+                    process. The end result is always remarkable and something
+                    we feel proud of.
                   </p>
                 </div>
               </div>
@@ -453,7 +506,10 @@ async function page() {
                 <div>
                   <h3>Creative Editing</h3>
                   <p>
-                    Our creative video editors at our animation studio in Noida apply their skills effectively to turn your raw video footage into a visually impressive story. The aim is to bring your initial concept vision to life.
+                    Our creative video editors at our animation studio in Noida
+                    apply their skills effectively to turn your raw video
+                    footage into a visually impressive story. The aim is to
+                    bring your initial concept vision to life.
                   </p>
                 </div>
               </div>
@@ -464,7 +520,10 @@ async function page() {
                 <div>
                   <h3>Music & Sound Design</h3>
                   <p>
-                    Without music and sound design, your video will lack something crucial - the feel. We know this, and therefore, we create music and sound design that sets the mood and adds value to your story.
+                    Without music and sound design, your video will lack
+                    something crucial - the feel. We know this, and therefore,
+                    we create music and sound design that sets the mood and adds
+                    value to your story.
                   </p>
                 </div>
               </div>
@@ -475,7 +534,10 @@ async function page() {
                 <div>
                   <h3>Quality Assurance & Delivery</h3>
                   <p>
-                    Quality and timely service - these are two of the most vital guiding principles of our company. As an animation company in Noida, we strive to deliver exactly what you want, and on time!
+                    Quality and timely service - these are two of the most vital
+                    guiding principles of our company. As an animation company
+                    in Noida, we strive to deliver exactly what you want, and on
+                    time!
                   </p>
                 </div>
               </div>
@@ -488,7 +550,9 @@ async function page() {
       <section className="power-of-animation">
         <div className="container">
           <div className="row text-center power-of-animation-row">
-            <h3>The Power of <span className="every-pr"> Animation</span></h3>
+            <h3>
+              The Power of <span className="every-pr"> Animation</span>
+            </h3>
             <p>Spark Interest & Build Engagement</p>
             <div className="col-12 col-md-6 ">
               <div className="horror-image-col">
@@ -572,7 +636,9 @@ async function page() {
                 </div>
                 <h3>User Conversion</h3>
                 <p>
-                 Statistics say that the audience retains more than 90% of the information when they consume it in video form. A staggering 85% are more likely to make a purchase, too.
+                  Statistics say that the audience retains more than 90% of the
+                  information when they consume it in video form. A staggering
+                  85% are more likely to make a purchase, too.
                 </p>
               </div>
             </div>
@@ -587,7 +653,7 @@ async function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />
     </div>
   );
 }

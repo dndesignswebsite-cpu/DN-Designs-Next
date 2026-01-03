@@ -6,30 +6,21 @@ import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
-
-// meta data 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
+// meta data
 export async function generateMetadata() {
-  const response = await getPageData();
-  console.log(response)
-  if (!response?.success) {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("about-us", null, false);
+  } catch (error) {
     return {
-      title: "About Us",
+      title: "Brand Name Suggestion",
       robots: "noindex, nofollow",
     };
   }
-
-  const seo = response.data;
 
   return {
     title: seo.metaTitle || seo.title,
@@ -47,7 +38,7 @@ export async function generateMetadata() {
       description: seo.openGraph?.description || seo.metaDescription,
       url: seo.openGraph?.url || seo.alternates?.canonical,
       images: seo.openGraph?.images?.length
-        ? seo.openGraph.images.map(img => ({
+        ? seo.openGraph.images.map((img) => ({
             url: img.url,
             alt: img.alt || seo.title,
             width: img.width || 1200,
@@ -61,28 +52,21 @@ export async function generateMetadata() {
       title: seo.twitter?.title || seo.metaTitle,
       description: seo.twitter?.description || seo.metaDescription,
       images: seo.twitter?.images?.length
-        ? seo.twitter.images.map(img => img.url)
+        ? seo.twitter.images.map((img) => img.url)
         : [],
     },
   };
 }
 //meta end here
 
-
-
-
-
-
 async function page() {
-
-// const response = await getPageData();
+  // const response = await getPageData();
   // const pageData = response?.data;
 
   // if (!pageData) {
   //   notFound();
   // }
 
-  
   const heading = "Brand Name Suggestion";
   const subHeading = "Crafting Memorable Names For Your Business";
   const para =
@@ -90,7 +74,8 @@ async function page() {
 
   const leftFaqs = [
     {
-      question: "What can I expect from you if I go for your brand name suggestion service?",
+      question:
+        "What can I expect from you if I go for your brand name suggestion service?",
       answer:
         "To begin with, we will sit down with you to understand your brand, vision and goal. Based on our understanding, we will conduct research and come up with brand name suggestions that can work well with your target audience. For every option, we will provide a detailed explanation as to why we chose it, what its meaning is and why, according to us, it will work. Once you shortlist names, we will run a final check, complete formalities and finalise your business or product name.",
     },
@@ -100,7 +85,8 @@ async function page() {
         "Post the initial round of discussion, it takes us around 15 - 20 days to conduct research and finally send you the product or business name ideas.",
     },
     {
-      question: "Do you provide more options in case I do not like the ones you have provided in the first round?",
+      question:
+        "Do you provide more options in case I do not like the ones you have provided in the first round?",
       answer:
         "Since we suggest all the brand name ideas after proper research, it is highly unlikely that you will need more options after the first round. However, if you do require them, we will certainly provide you with more suggestions.",
     },
@@ -108,22 +94,26 @@ async function page() {
 
   const rightFaqs = [
     {
-      question: "What about the domain name associated with my brand name? As a naming agency, can you help check if it is available?",
-      answer: "Yes, we can check whether the domain name associated with your business is available. We can also suggest suitable domain names for your brand.",
+      question:
+        "What about the domain name associated with my brand name? As a naming agency, can you help check if it is available?",
+      answer:
+        "Yes, we can check whether the domain name associated with your business is available. We can also suggest suitable domain names for your brand.",
     },
     {
       question: "What about legalities? How can you help me with it?",
-      answer: "In the initial stages, we conduct basic research to confirm that the brand name is not used by any other business. However, post the shortlisting phase, we conduct a proper trademark search to avoid confusion and legal issues that may arise in future. Once your brand name is decided, we go a step ahead and help you trademark it. With this, we prevent any usage of your business or product name by competitors.",
+      answer:
+        "In the initial stages, we conduct basic research to confirm that the brand name is not used by any other business. However, post the shortlisting phase, we conduct a proper trademark search to avoid confusion and legal issues that may arise in future. Once your brand name is decided, we go a step ahead and help you trademark it. With this, we prevent any usage of your business or product name by competitors.",
     },
-     {
+    {
       question: "I want to rename my current brand. Can DN Designs help?",
       answer: "Yes, we can certainly help rename your current brand.",
     },
   ];
 
-   const FormHead ="Let’s Discuss Over a Cup of Coffee"    
-  const FormPara ="Since you now understand the importance of brand names, you want the best one for your business, right? But it is not an easy job. It requires an understanding of the product, the market, as well as the legalities involved. You don’t need to worry, though, since we are right here. As a brand identity design agency, we make brand name suggestions that perfectly suit your brand. So, let’s meet and discuss your brand."   
-  const pageName = "brand-name-suggestion"
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "Since you now understand the importance of brand names, you want the best one for your business, right? But it is not an easy job. It requires an understanding of the product, the market, as well as the legalities involved. You don’t need to worry, though, since we are right here. As a brand identity design agency, we make brand name suggestions that perfectly suit your brand. So, let’s meet and discuss your brand.";
+  const pageName = "brand-name-suggestion";
 
   return (
     <div>
@@ -159,13 +149,20 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Reflects Brand Identity</h3>
                   <p>
-                    Brand identity is important for success, and identity begins with the brand’s name. A playful name doesn’t really suit a company that provides
+                    Brand identity is important for success, and identity begins
+                    with the brand’s name. A playful name doesn’t really suit a
+                    company that provides
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Reflects Brand Identity</h3>
                   <p>
-                   Brand identity is important for success, and identity begins with the brand’s name. A playful name doesn’t really suit a company that provides medical equipment. Similarly, a toy brand with a serious-sounding name will not connect with the kids. A good brand name should, therefore, reflect the brand identity.
+                    Brand identity is important for success, and identity begins
+                    with the brand’s name. A playful name doesn’t really suit a
+                    company that provides medical equipment. Similarly, a toy
+                    brand with a serious-sounding name will not connect with the
+                    kids. A good brand name should, therefore, reflect the brand
+                    identity.
                   </p>
                 </div>
               </div>
@@ -186,13 +183,21 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Uniqueness</h3>
                   <p>
-                    Along with the product, the brand name, too, should be unique. The primary reason for this is the intense market competition. With so many products in one category vying for consumers
+                    Along with the product, the brand name, too, should be
+                    unique. The primary reason for this is the intense market
+                    competition. With so many products in one category vying for
+                    consumers
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Uniqueness</h3>
                   <p>
-                   Along with the product, the brand name, too, should be unique. The primary reason for this is the intense market competition. With so many products in one category vying for consumers’ attention, it is important to have a brand name that stands out. Similar-sounding names create confusion in buyers’ minds.
+                    Along with the product, the brand name, too, should be
+                    unique. The primary reason for this is the intense market
+                    competition. With so many products in one category vying for
+                    consumers’ attention, it is important to have a brand name
+                    that stands out. Similar-sounding names create confusion in
+                    buyers’ minds.
                   </p>
                 </div>
               </div>
@@ -213,13 +218,20 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Easy To Spell & Pronounce</h3>
                   <p>
-                    You have definitely come across business names that are difficult to say aloud. While several of these are successful, ideally, a brand name should be short 
+                    You have definitely come across business names that are
+                    difficult to say aloud. While several of these are
+                    successful, ideally, a brand name should be short
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Easy To Spell & Pronounce</h3>
                   <p>
-                    You have definitely come across business names that are difficult to say aloud. While several of these are successful, ideally, a brand name should be short and simple to pronounce. It should also sound pleasing. A brand name that sounds good and has simple spellings sticks with the customers.
+                    You have definitely come across business names that are
+                    difficult to say aloud. While several of these are
+                    successful, ideally, a brand name should be short and simple
+                    to pronounce. It should also sound pleasing. A brand name
+                    that sounds good and has simple spellings sticks with the
+                    customers.
                   </p>
                 </div>
               </div>
@@ -240,13 +252,20 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Easy To Remember</h3>
                   <p>
-                    Write down all the business names you can think of. These are brand names that can be termed good (mostly). Why? Because you could easily remember them
+                    Write down all the business names you can think of. These
+                    are brand names that can be termed good (mostly). Why?
+                    Because you could easily remember them
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Easy To Remember</h3>
                   <p>
-                    Write down all the business names you can think of. These are brand names that can be termed good (mostly). Why? Because you could easily remember them. Business or product names with easy recall value emerge victorious amidst tough competition. When customers remember your brand, they are more likely to purchase from you.
+                    Write down all the business names you can think of. These
+                    are brand names that can be termed good (mostly). Why?
+                    Because you could easily remember them. Business or product
+                    names with easy recall value emerge victorious amidst tough
+                    competition. When customers remember your brand, they are
+                    more likely to purchase from you.
                   </p>
                 </div>
               </div>
@@ -270,13 +289,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Good Appearance</h3>
                   <p>
-                    Other than sounding good, a brand name should also look good. It is important to remember that a brand name appears in every place - on packaging, website
+                    Other than sounding good, a brand name should also look
+                    good. It is important to remember that a brand name appears
+                    in every place - on packaging, website
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Good Appearance</h3>
                   <p>
-                   Other than sounding good, a brand name should also look good. It is important to remember that a brand name appears in every place - on packaging, website, social media, marketing collaterals and also along with the logo. If it doesn’t appear good, customers may turn away.
+                    Other than sounding good, a brand name should also look
+                    good. It is important to remember that a brand name appears
+                    in every place - on packaging, website, social media,
+                    marketing collaterals and also along with the logo. If it
+                    doesn’t appear good, customers may turn away.
                   </p>
                 </div>
               </div>
@@ -297,13 +322,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Evokes Positive Responses</h3>
                   <p>
-                    A creative brand name evokes positive responses from customers around the world. It helps customers connect with the brand on an emotional
+                    A creative brand name evokes positive responses from
+                    customers around the world. It helps customers connect with
+                    the brand on an emotional
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Evokes Positive Responses</h3>
                   <p>
-                    A creative brand name evokes positive responses from customers around the world. It helps customers connect with the brand on an emotional level and trust it. Also, a good brand name is culturally sensitive - it doesn’t hurt the sentiments of any group of people.
+                    A creative brand name evokes positive responses from
+                    customers around the world. It helps customers connect with
+                    the brand on an emotional level and trust it. Also, a good
+                    brand name is culturally sensitive - it doesn’t hurt the
+                    sentiments of any group of people.
                   </p>
                 </div>
               </div>
@@ -324,13 +355,19 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Flexibility & Scalability</h3>
                   <p>
-                   Every business aims to grow and become huge. New products and services, inevitably, become part of it. A brand name should, thus, be adaptable so that it can
+                    Every business aims to grow and become huge. New products
+                    and services, inevitably, become part of it. A brand name
+                    should, thus, be adaptable so that it can
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Flexibility & Scalability</h3>
                   <p>
-                    Every business aims to grow and become huge. New products and services, inevitably, become part of it. A brand name should, thus, be adaptable so that it can accommodate the company's growing needs. This flexibility also enables it to adjust to a changing market environment and stay relevant.
+                    Every business aims to grow and become huge. New products
+                    and services, inevitably, become part of it. A brand name
+                    should, thus, be adaptable so that it can accommodate the
+                    company's growing needs. This flexibility also enables it to
+                    adjust to a changing market environment and stay relevant.
                   </p>
                 </div>
               </div>
@@ -351,13 +388,20 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Legally Available & Protectable</h3>
                   <p>
-                    Legal availability of the brand name is important. If it is already owned by someone else, you might not get it at all. Also, the name should be trademarkable
+                    Legal availability of the brand name is important. If it is
+                    already owned by someone else, you might not get it at all.
+                    Also, the name should be trademarkable
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
                   <h3>Legally Available & Protectable</h3>
                   <p>
-                   Legal availability of the brand name is important. If it is already owned by someone else, you might not get it at all. Also, the name should be trademarkable. It is a vital step to ensure any wrongful use by competitors. Domain name availability for the brand’s name is crucial to building an online presence.
+                    Legal availability of the brand name is important. If it is
+                    already owned by someone else, you might not get it at all.
+                    Also, the name should be trademarkable. It is a vital step
+                    to ensure any wrongful use by competitors. Domain name
+                    availability for the brand’s name is crucial to building an
+                    online presence.
                   </p>
                 </div>
               </div>
@@ -437,7 +481,7 @@ async function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />
     </div>
   );
 }

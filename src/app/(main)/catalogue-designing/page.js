@@ -9,29 +9,21 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import CatalougePageFlip from "@/Components/LightBox/LightBox";
 import CatalougeBook from "@/Components/CatalougeBook/CatalougeBook";
 import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
-// meta data 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
+// meta data
 export async function generateMetadata() {
-  const response = await getPageData();
-  console.log(response)
-  if (!response?.success) {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("about-us", null, false);
+  } catch (error) {
     return {
       title: "About Us",
       robots: "noindex, nofollow",
     };
   }
-
-  const seo = response.data;
 
   return {
     title: seo.metaTitle || seo.title,
@@ -49,7 +41,7 @@ export async function generateMetadata() {
       description: seo.openGraph?.description || seo.metaDescription,
       url: seo.openGraph?.url || seo.alternates?.canonical,
       images: seo.openGraph?.images?.length
-        ? seo.openGraph.images.map(img => ({
+        ? seo.openGraph.images.map((img) => ({
             url: img.url,
             alt: img.alt || seo.title,
             width: img.width || 1200,
@@ -63,19 +55,14 @@ export async function generateMetadata() {
       title: seo.twitter?.title || seo.metaTitle,
       description: seo.twitter?.description || seo.metaDescription,
       images: seo.twitter?.images?.length
-        ? seo.twitter.images.map(img => img.url)
+        ? seo.twitter.images.map((img) => img.url)
         : [],
     },
   };
 }
 //meta end here
 
-
-
-
-
 async function page() {
-
   // const response = await getPageData();
   // const pageData = response?.data;
 
@@ -91,12 +78,14 @@ async function page() {
 
   const leftFaqs = [
     {
-      question: "Are a brochure and a catalogue the same thing? How are they different?",
+      question:
+        "Are a brochure and a catalogue the same thing? How are they different?",
       answer:
         "A brochure and a catalogue are similar and yet different things. Both help businesses raise awareness about their company as well as their products and services. A catalogue, however, is much more comprehensive. It includes detailed information about the products or services offered by a business. In contrast, a brochure is much more compact with to-the-point information.",
     },
     {
-      question: "As a business, how can I benefit from a brochure or a catalogue?",
+      question:
+        "As a business, how can I benefit from a brochure or a catalogue?",
       answer:
         "With the help of a catalogue or a brochure, you can share important information about your brand, products and services. They can help you boost brand awareness and customer engagement. They can also increase customers’ confidence in your brand. Moreover, they do not require a heavy investment. Therefore, you can give your brand a boost without investing much.",
     },
@@ -106,42 +95,50 @@ async function page() {
         "At a broader level, catalogues can be categorised into physical or digital catalogues. The former is the more traditional form of catalogue and requires printing, while the latter includes catalogues meant for online platforms like websites. Catalogues can also be categorised based on their purpose. A company catalogue offers details about the company (history, values, mission and services), while a product/service catalogue lists the products/services offered by the company.",
     },
 
-     {
-      question: "What do you mean by brochure style? How many styles are there?",
+    {
+      question:
+        "What do you mean by brochure style? How many styles are there?",
       answer:
         "Brochure style is all about the layouts and folds of the brochure. These decide how users will open and read the information given in the brochure. For example, in the Bi-fold style, the paper is folded into two distinct halves with four panels (two each on front and back) containing information. Other than Bi-fold, brochure styles also include Tri-fold, Accordion-fold, Gate-fold, Double Gate-fold, French-fold, Roll-fold and Double Parallel-fold.",
     },
 
-     {
-      question: "What are the essential elements of a good catalogue or a brochure?",
+    {
+      question:
+        "What are the essential elements of a good catalogue or a brochure?",
       answer:
         "A good brochure and catalogue design must have a captivating cover, visually appealing design, compelling and valuable information, strong CTAs and contact details. In addition, it should also reflect brand identity and be both print and digital-friendly.",
-    }
+    },
   ];
 
   const rightFaqs = [
     {
       question: "What is the process of brochure and catalogue design?",
-      answer: "The process begins with understanding the objectives and the target audience of the brochure and catalogue. After this, the data collection, design planning and concept development stages follow. Once the design concept is finalised, the actual design is created and the content is integrated. The final stages involve reviewing and making required corrections. In the end, printing and publishing of the catalogue are done.",
+      answer:
+        "The process begins with understanding the objectives and the target audience of the brochure and catalogue. After this, the data collection, design planning and concept development stages follow. Once the design concept is finalised, the actual design is created and the content is integrated. The final stages involve reviewing and making required corrections. In the end, printing and publishing of the catalogue are done.",
     },
     {
-      question: "Why should I choose DN Designs for my catalogue and brochure design? What is included in your catalogue design services?",
-      answer: "As a professional catalogue design agency, DN Designs has the required expertise and experience to provide effective brochures and catalogue design services to our clients. We cover every aspect of catalogue design in our services, including understanding the target audiences, planning and designing the layout and structure, as well as content creation. Additionally, we also assist you in printing and publishing the brochures or the catalogues.",
+      question:
+        "Why should I choose DN Designs for my catalogue and brochure design? What is included in your catalogue design services?",
+      answer:
+        "As a professional catalogue design agency, DN Designs has the required expertise and experience to provide effective brochures and catalogue design services to our clients. We cover every aspect of catalogue design in our services, including understanding the target audiences, planning and designing the layout and structure, as well as content creation. Additionally, we also assist you in printing and publishing the brochures or the catalogues.",
     },
     {
       question: "I need to redesign my catalogue. How can you help?",
-      answer: "Our company catalogue design services include redesigning your existing catalogue, too. We can work on your catalogue to make it look more appealing and be more useful for your audience.",
+      answer:
+        "Our company catalogue design services include redesigning your existing catalogue, too. We can work on your catalogue to make it look more appealing and be more useful for your audience.",
     },
     {
-      question: "How much time do you need to design a catalogue or a brochure?",
-      answer: "Every brochure and catalogue is unique, and therefore, the time needed to complete them is also different. A big and difficult project can take time, while a simple one can be completed quickly. The time can also vary depending upon the availability of materials needed (content, images, brand guidelines) and the number of revisions required.",
+      question:
+        "How much time do you need to design a catalogue or a brochure?",
+      answer:
+        "Every brochure and catalogue is unique, and therefore, the time needed to complete them is also different. A big and difficult project can take time, while a simple one can be completed quickly. The time can also vary depending upon the availability of materials needed (content, images, brand guidelines) and the number of revisions required.",
     },
   ];
 
-
-  const FormHead ="Let’s Discuss Over a Cup of Coffee"    
-  const FormPara ="Do you want to showcase your brand as well as your products and services in a compelling and visually appealing manner? A creatively and professionally designed catalogue and brochure is what you need, and at DN Designs, we craft just that for you. Our brochures and catalogues are designed to attract attention, engage the audience and convert them into customers. Want to work with us? Let’s begin by discussing your objectives."   
-  const pageName = "catalogue-designing"
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "Do you want to showcase your brand as well as your products and services in a compelling and visually appealing manner? A creatively and professionally designed catalogue and brochure is what you need, and at DN Designs, we craft just that for you. Our brochures and catalogues are designed to attract attention, engage the audience and convert them into customers. Want to work with us? Let’s begin by discussing your objectives.";
+  const pageName = "catalogue-designing";
 
   return (
     <div>
@@ -157,15 +154,14 @@ async function page() {
       </section>
 
       {/* catalouge book */}
-<section className="catalouge-page-flip">
+      <section className="catalouge-page-flip">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <h2 className="text-center">
-            Our 
-            <span className="every-pr"> Work Portfolio
-            </span>
-          </h2>
+                Our
+                <span className="every-pr"> Work Portfolio</span>
+              </h2>
             </div>
           </div>
         </div>
@@ -205,7 +201,11 @@ async function page() {
                   <div>
                     <h3>Visual Appeal and Hierarchy</h3>
                     <p>
-                      A well-designed brochure and catalogue design not only attracts customers but also makes it easy for them to navigate through it. Colours, typography, white spaces, images and a well-laid-out content structure - all play a vital role.
+                      A well-designed brochure and catalogue design not only
+                      attracts customers but also makes it easy for them to
+                      navigate through it. Colours, typography, white spaces,
+                      images and a well-laid-out content structure - all play a
+                      vital role.
                     </p>
                   </div>
                 </div>
@@ -219,7 +219,10 @@ async function page() {
                 <div>
                   <h3>Consistent Branding</h3>
                   <p>
-                   Consistent brand identity builds trust. Thus, in a catalogue, elements like logo, colours, typography, as well as story, values, mission, and tone should all be consistent with the overall brand identity.
+                    Consistent brand identity builds trust. Thus, in a
+                    catalogue, elements like logo, colours, typography, as well
+                    as story, values, mission, and tone should all be consistent
+                    with the overall brand identity.
                   </p>
                 </div>
               </div>
@@ -230,7 +233,10 @@ async function page() {
                 <div>
                   <h3>Compelling Content</h3>
                   <p>
-                    For brands, it is important to connect with customers, and content is instrumental in forming this connection. Informative, interesting and expressive writing can engage customers, thus enhancing impressions and sales.
+                    For brands, it is important to connect with customers, and
+                    content is instrumental in forming this connection.
+                    Informative, interesting and expressive writing can engage
+                    customers, thus enhancing impressions and sales.
                   </p>
                 </div>
               </div>
@@ -241,7 +247,10 @@ async function page() {
                 <div>
                   <h3>Strong CTAs</h3>
                   <p>
-                    A company catalogue design is created for a purpose, and CTAs (call-to-action) work to fulfil this purpose. They guide customers towards the next step - make a purchase or download a guide. Particularly good for e-catalogue designs.
+                    A company catalogue design is created for a purpose, and
+                    CTAs (call-to-action) work to fulfil this purpose. They
+                    guide customers towards the next step - make a purchase or
+                    download a guide. Particularly good for e-catalogue designs.
                   </p>
                 </div>
               </div>
@@ -252,7 +261,10 @@ async function page() {
                 <div>
                   <h3>Contact Details and Ordering Information</h3>
                   <p>
-                   A catalogue without the company’s contact details is pointless. Customers need to know how to contact and place an order with you. The company’s address, phone number, email, website and social media links should be included.
+                    A catalogue without the company’s contact details is
+                    pointless. Customers need to know how to contact and place
+                    an order with you. The company’s address, phone number,
+                    email, website and social media links should be included.
                   </p>
                 </div>
               </div>
@@ -325,8 +337,8 @@ async function page() {
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
-            Creative Catalogue Designing - <span className="every-pr">  Our Process
-            </span>
+            Creative Catalogue Designing -{" "}
+            <span className="every-pr"> Our Process</span>
           </h2>
           <ul id="cards-create">
             <li className="card-create" id="card1-create">
@@ -335,7 +347,14 @@ async function page() {
                 <div className="col-10">
                   <h2>Understanding Purpose & Target Audience</h2>
                   <p>
-                    Our professional catalogue design process begins with answering a few questions. What is the purpose of the brochure and catalogue? Does it aim to inform the audience about the company, or is it the various products that it wants to showcase? And who is the target audience? Are they the end-consumers, businesses, sales representatives, field marketers or other stakeholders? We hold discussions with you to find answers to these.
+                    Our professional catalogue design process begins with
+                    answering a few questions. What is the purpose of the
+                    brochure and catalogue? Does it aim to inform the audience
+                    about the company, or is it the various products that it
+                    wants to showcase? And who is the target audience? Are they
+                    the end-consumers, businesses, sales representatives, field
+                    marketers or other stakeholders? We hold discussions with
+                    you to find answers to these.
                   </p>
                 </div>
               </div>
@@ -347,7 +366,12 @@ async function page() {
                 <div className="col-10">
                   <h2>Planning & Concept Development</h2>
                   <p>
-                    After a basic understanding is reached, we move to our next stage and begin gathering relevant information. We figure out the important information that needs to be presented, and accordingly plan the design of the catalogue. We create a few of these designs and send them to you for your feedback and approval.
+                    After a basic understanding is reached, we move to our next
+                    stage and begin gathering relevant information. We figure
+                    out the important information that needs to be presented,
+                    and accordingly plan the design of the catalogue. We create
+                    a few of these designs and send them to you for your
+                    feedback and approval.
                   </p>
                 </div>
               </div>
@@ -359,7 +383,14 @@ async function page() {
                 <div className="col-10">
                   <h2>Designing the Catalogue</h2>
                   <p>
-                    Once we receive your approval on one of the designs, we accelerate the process and begin the actual designing. Our design experts create a design that is not just visually appealing but also amply reflects your brand identity. We ensure a design wherein your key information and products get highlighted. Additionally, we include high-quality photographs and call-to-action (CTAs) to increase engagement and conversions.
+                    Once we receive your approval on one of the designs, we
+                    accelerate the process and begin the actual designing. Our
+                    design experts create a design that is not just visually
+                    appealing but also amply reflects your brand identity. We
+                    ensure a design wherein your key information and products
+                    get highlighted. Additionally, we include high-quality
+                    photographs and call-to-action (CTAs) to increase engagement
+                    and conversions.
                   </p>
                 </div>
               </div>
@@ -371,7 +402,13 @@ async function page() {
                 <div className="col-10">
                   <h2>Content Creation & Integration</h2>
                   <p>
-                    At this stage, we begin to create content for your brochure and catalogue. While creating content, we make sure that it is not just high-quality and professional, but also tailored for your target audience. Additionally, we consider your brand voice and tone too. Once the content work is finished (or if you have provided the content), we move forward and insert it into the design.
+                    At this stage, we begin to create content for your brochure
+                    and catalogue. While creating content, we make sure that it
+                    is not just high-quality and professional, but also tailored
+                    for your target audience. Additionally, we consider your
+                    brand voice and tone too. Once the content work is finished
+                    (or if you have provided the content), we move forward and
+                    insert it into the design.
                   </p>
                 </div>
               </div>
@@ -383,7 +420,11 @@ async function page() {
                 <div className="col-10">
                   <h2>Printing & Publishing</h2>
                   <p>
-                    Your catalogue is almost ready. It is now time to review it. We check it on our end and also seek your feedback. If there are errors, we correct them and then finally proceed to the final step. Here, we help you print (paper format) and publish (digital format) your catalogue.
+                    Your catalogue is almost ready. It is now time to review it.
+                    We check it on our end and also seek your feedback. If there
+                    are errors, we correct them and then finally proceed to the
+                    final step. Here, we help you print (paper format) and
+                    publish (digital format) your catalogue.
                   </p>
                 </div>
               </div>
@@ -397,7 +438,7 @@ async function page() {
       <section className="creating-your-brand-mobile">
         <div className="conatiner">
           <h2 className="text-center our-brand-heading-a-mobile">
-            Creative Catalogue Designing - 
+            Creative Catalogue Designing -
             <span className="every-pr"> Our Process</span>
           </h2>
           <div className="row creating-brand-mobile-row">
@@ -407,7 +448,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Understanding Purpose & Target Audience</h2>
                   <p>
-                    Our professional catalogue design process begins with answering a few questions. What is the purpose of the brochure and catalogue? Does it aim to inform the audience about the company, or is it the various products that it wants to showcase? And who is the target audience? Are they the end-consumers, businesses, sales representatives, field marketers or other stakeholders? We hold discussions with you to find answers to these.
+                    Our professional catalogue design process begins with
+                    answering a few questions. What is the purpose of the
+                    brochure and catalogue? Does it aim to inform the audience
+                    about the company, or is it the various products that it
+                    wants to showcase? And who is the target audience? Are they
+                    the end-consumers, businesses, sales representatives, field
+                    marketers or other stakeholders? We hold discussions with
+                    you to find answers to these.
                   </p>
                 </div>
               </div>
@@ -419,7 +467,12 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Planning & Concept Development</h2>
                   <p>
-                    After a basic understanding is reached, we move to our next stage and begin gathering relevant information. We figure out the important information that needs to be presented, and accordingly plan the design of the catalogue. We create a few of these designs and send them to you for your feedback and approval.
+                    After a basic understanding is reached, we move to our next
+                    stage and begin gathering relevant information. We figure
+                    out the important information that needs to be presented,
+                    and accordingly plan the design of the catalogue. We create
+                    a few of these designs and send them to you for your
+                    feedback and approval.
                   </p>
                 </div>
               </div>
@@ -431,7 +484,14 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Designing the Catalogue</h2>
                   <p>
-                    Once we receive your approval on one of the designs, we accelerate the process and begin the actual designing. Our design experts create a design that is not just visually appealing but also amply reflects your brand identity. We ensure a design wherein your key information and products get highlighted. Additionally, we include high-quality photographs and call-to-action (CTAs) to increase engagement and conversions.
+                    Once we receive your approval on one of the designs, we
+                    accelerate the process and begin the actual designing. Our
+                    design experts create a design that is not just visually
+                    appealing but also amply reflects your brand identity. We
+                    ensure a design wherein your key information and products
+                    get highlighted. Additionally, we include high-quality
+                    photographs and call-to-action (CTAs) to increase engagement
+                    and conversions.
                   </p>
                 </div>
               </div>
@@ -443,7 +503,13 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Content Creation & Integration</h2>
                   <p>
-                    At this stage, we begin to create content for your brochure and catalogue. While creating content, we make sure that it is not just high-quality and professional, but also tailored for your target audience. Additionally, we consider your brand voice and tone too. Once the content work is finished (or if you have provided the content), we move forward and insert it into the design.
+                    At this stage, we begin to create content for your brochure
+                    and catalogue. While creating content, we make sure that it
+                    is not just high-quality and professional, but also tailored
+                    for your target audience. Additionally, we consider your
+                    brand voice and tone too. Once the content work is finished
+                    (or if you have provided the content), we move forward and
+                    insert it into the design.
                   </p>
                 </div>
               </div>
@@ -455,7 +521,11 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Printing & Publishing</h2>
                   <p>
-                    Your catalogue is almost ready. It is now time to review it. We check it on our end and also seek your feedback. If there are errors, we correct them and then finally proceed to the final step. Here, we help you print (paper format) and publish (digital format) your catalogue.
+                    Your catalogue is almost ready. It is now time to review it.
+                    We check it on our end and also seek your feedback. If there
+                    are errors, we correct them and then finally proceed to the
+                    final step. Here, we help you print (paper format) and
+                    publish (digital format) your catalogue.
                   </p>
                 </div>
               </div>
@@ -474,7 +544,7 @@ async function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName}/>
+      <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />
     </div>
   );
 }
