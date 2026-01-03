@@ -12,7 +12,7 @@ import { notFound } from "next/navigation";
 // meta data 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 async function getPageData() {
-  const res = await fetch(`${BASE_URL}/api/pages/animation`, {
+  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
     next: { revalidate: 3600 },
   });
 
