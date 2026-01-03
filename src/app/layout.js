@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         {/* JSON-LD Organization Schema*/}
-        <Script
+        {/* <Script
           type="application/ld+json"
           id="organization-schema"
           dangerouslySetInnerHTML={{
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
               ],
             }),
           }}
-        />
+        /> */}
 
         <BootstrapClient />
         {/* <Header />  */}

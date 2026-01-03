@@ -5,38 +5,82 @@ import PagesHero from '@/Components/PagesHero/PagesHero'
 import WebdesignVideoSwipper from '@/Components/WebdesignVideoSwipper/WebdesignVideoSwipper'
 import Faqs from '@/Components/Faqs/Faqs'
 import Form from '@/Components/Form/Form'
+import { notFound } from "next/navigation";
 
 
 // meta tags
-export const metadata = {
-  title: "Web Designing Services In India | DN Designs",
-  description: "We build brands that inspire confidence and drive profit",
-  openGraph: {
-    title: "Web Designing Services In India | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    url: "https://dndesigns.co.in/",
-    siteName: "DN Designs",
-    images: [
-      {
-        url: "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png",
-        width: 1200,
-        height: 630,
-        alt: "DN Designs Portfolio",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Web Designing Services In India | DN Designs",
-    description: "Showcasing our premium brand identity & packaging designs",
-    images: [
-      "https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
-    ],
-  },
-};
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+async function getPageData() {
+  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
+    next: { revalidate: 3600 },
+  });
 
-function page() {
+  if (!res.ok) return null;
+  return res.json();
+}
+
+export async function generateMetadata() {
+  const response = await getPageData();
+  console.log(response)
+  if (!response?.success) {
+    return {
+      title: "About Us",
+      robots: "noindex, nofollow",
+    };
+  }
+
+  const seo = response.data;
+
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
+
+    robots: seo.robotsTag || "index, follow",
+
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
+
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map(img => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map(img => img.url)
+        : [],
+    },
+  };
+}
+// ends here
+
+
+async function page() {
+
+  // const response = await getPageData();
+  // const pageData = response?.data;
+
+  // if (!pageData) {
+  //   notFound();
+  // }
+
+
+
+
   const heading ="Website Design Agency"
   const subHeading ="Building Websites That Deliver Results"
   const para ="In the online space, a website represents and promotes your business. It informs your audience about who you are and what you are offering. Additionally, it helps establish an emotional connection and trust with your customers. However, just a random website cannot achieve the desired results. A website needs to be thoughtful, beautiful and technically robust. Want to know in greater detail? Follow us, a website design agency in India, and find out how we create websites that deliver results. Browse through our website design services and work portfolio, and find answers to some related questions that you might have."
