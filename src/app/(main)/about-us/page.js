@@ -7,46 +7,80 @@ import OurConstant from '@/Components/OurConstant/OurConstant'
 import Form from '@/Components/Form/Form'
 import PagesHero from '@/Components/PagesHero/PagesHero'
 import AutoCounter from '@/Components/AutoCounter/AutoCounter'
+import { notFound } from "next/navigation";
+import Script from "next/script";
 
 
-// meta data 
-// export const metadata = {
-//   title: "About DN Designs – Best Digital Marketing Agency",
-//   description: "Learn about DN Designs, our expert team, and our digital marketing services.",
+// meta data
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+async function getPageData() {
+  const res = await fetch(`${BASE_URL}/api/pages/about-us`, {
+   cache: "no-store",
+  });
 
-//   authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app/about-us" }],
+  if (!res.ok) return null;
+  return res.json();
+}
 
-//   alternates: { canonical: "https://dn-designs-next.vercel.app/about-us" },
+export async function generateMetadata() {
+  const response = await getPageData();
+  // console.log(response);
+  if (!response?.success) {
+    return {
+      title: "About Us",
+      robots: "noindex, nofollow",
+    };
+  }
 
-//   robots: { index: true, follow: true, nocache: true },
+  const seo = response.data;
+  // console.log(seo.content)
 
-//   openGraph: {
-//     title: "About DN Designs",
-//     description: "Learn about DN Designs, our expert team, and our digital marketing services.",
-//     url: "https://dn-designs-next.vercel.app/about",
-//     siteName: "DN Designs",
-//     images: [{
-//       url: "https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg",
-//       width: 1200,
-//       height: 630,
-//       alt: "About DN Designs"
-//     }],
-//     type: "website"
-//   },
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
 
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "About DN Designs",
-//     description: "Learn about DN Designs, our expert team, and our digital marketing services.",
-//     images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/about-og.jpg"]
-//   }
-// };
-//meta end here
+    robots: seo.robotsTag || "index, follow",
 
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
 
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map(img => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
 
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map(img => img.url)
+        : [],
+    },
+  };
+}
+// ends here
 
 async function page() {
+
+ const response = await getPageData();
+  const pageData = response?.data;
+
+  if (!pageData) {
+    notFound();
+  }
+
   // hero section content
   const heading = "A Branding  Design Studio"
   const subHeading = "Let’s Design, Develop and Promote Your Brand"
@@ -58,17 +92,22 @@ async function page() {
   const pageName = "about-us"
 
 
-
-  // fetch api 
-
-//  const data = await fetch("http://localhost:3000/api/pages", {
-//   cache: "no-store",
-// }).then(res => res.json());
-
-// console.log(data);
-
   return (
     <div>
+{/* schema */}
+{pageData?.content?.raw && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: pageData.content.raw
+        .replace(/<script[^>]*>/gi, "")
+        .replace(/<\/script>/gi, "")
+        .trim(),
+    }}
+  />
+)}
+{/*schema ends here */}
+
       {/*Breadcrumb*/}
       <section>
         <Breadcrumb />

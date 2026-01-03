@@ -5,60 +5,156 @@ import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSecti
 import Points from "@/Components/Points/Points";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
+import Script from "next/script";
 
+// schema
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dndesigns.co.in/#organization",
+      "name": "DN Designs",
+      "url": "https://dndesigns.co.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://dndesigns.co.in/#logo",
+        "url": "https://dndesigns.co.in/logo.png",
+        "contentUrl": "https://dndesigns.co.in/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.instagram.com/dn_designs_india/",
+        "https://in.linkedin.com/company/dn-designs-india",
+        "https://twitter.com/digitizersn"
+      ]
+    },
 
-// meta data 
-// export const metadata = {
-//   title: "DN Designs – Best Digital Marketing Agency",
-//   description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
-  
-//   authors: [{ name: "DN Designs Team", url: "https://dn-designs-next.vercel.app" }],
-  
-//   alternates: { canonical: "https://dn-designs-next.vercel.app/" },
-  
-//   robots: { index: true, follow: true },
-  
-//   openGraph: {
-//     title: "DN Designs – Best Digital Marketing Agency",
-//     description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
-//     url: "https://dn-designs-next.vercel.app/",
-//     siteName: "DN Designs",
-//     images: [{ 
-//       url: "https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg", 
-//       width: 1200, 
-//       height: 630, 
-//       alt: "DN Designs SEO and Digital Marketing" 
-//     }],
-//     type: "website"
-//   },
-  
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "DN Designs – Best Digital Marketing Agency",
-//     description: "Grow your business with top-quality digital marketing, SEO, and branding solutions.",
-//     images: ["https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"]
-//   }
-// };
-//meta end here
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://dndesigns.co.in/#localbusiness",
+      "name": "DN Designs",
+      "url": "https://dndesigns.co.in/",
+      "image": "https://dndesigns.co.in/logo.png",
+      "telephone": "+91-9416011100",
+      "priceRange": "₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C-40, Second Floor, Block C, Sector 58",
+        "addressLocality": "Noida",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201301",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "reviewCount": "69"
+      },
+      "review": {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Bhagwat Agrawal"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "After researching several branding and design agencies, I connected with DN Designs and appreciated their clarity and execution."
+      },
+      "parentOrganization": {
+        "@id": "https://dndesigns.co.in/#organization"
+      }
+    },
 
+    {
+      "@type": "WebSite",
+      "@id": "https://dndesigns.co.in/#website",
+      "url": "https://dndesigns.co.in/",
+      "name": "DN Designs",
+      "publisher": {
+        "@id": "https://dndesigns.co.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://dndesigns.co.in/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-IN"
+    },
 
+    {
+      "@type": "WebPage",
+      "@id": "https://dndesigns.co.in/#homepage",
+      "url": "https://dndesigns.co.in/",
+      "name": "Creative Branding Agency | Brand Design & Packaging Company",
+      "description": "Trusted branding and design agency in Noida and Delhi NCR, India, specializing in brand strategy, visual identity, packaging design, and digital branding.",
+      "isPartOf": {
+        "@id": "https://dndesigns.co.in/#website"
+      },
+      "about": {
+        "@id": "https://dndesigns.co.in/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dndesigns.co.in/#primaryimage"
+      },
+      "breadcrumb": {
+        "@id": "https://dndesigns.co.in/#breadcrumb"
+      },
+      "inLanguage": "en-IN"
+    },
 
+    {
+      "@type": "ImageObject",
+      "@id": "https://dndesigns.co.in/#primaryimage",
+      "url": "https://dndesigns.co.in/hero.png",
+      "contentUrl": "https://dndesigns.co.in/hero.png",
+      "width": 1862,
+      "height": 1042
+    },
 
-
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dndesigns.co.in/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dndesigns.co.in/"
+        }
+      ]
+    }
+  ]
+};
+// schema ends here
 
 export default function Home() {
-  //   const ourWork = () => {
-  //   if (ourWorkRef.current) {
-  //     ourWorkRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
-  // form section content
+ 
   const FormHead ="Let’s Discuss Over a Cup of Coffee"    
   const FormPara ="Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy."   
 
   return (
 <>
+
+
+<Script
+  id="home-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+/>
+
+
       {/*.....hero...... */}
       <section className={`${styles.hero}`}>
         <div className="container">
@@ -67,8 +163,6 @@ export default function Home() {
               <h1>We Build Brands That Inspire Confidence and Drive Profit</h1>
               <p className="para-roboto">Let’s collaborate and craft a truly standout brand for you.</p>
               <div>
-                {/* <button>Talk To Us</button>
-                <button onClick={ourWork}>Explore Our Work</button> */}
                 <HomePageBtn />
               </div>
             </div>
