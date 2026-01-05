@@ -22,23 +22,23 @@ const Breadcrumb = () => {
   ];
 
   // JSON-LD schema object
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: breadcrumbItems.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: item.label,
-      item: domain + item.href
-    }))
-  };
+  // const schemaData = {
+  //   "@context": "https://schema.org",
+  //   "@type": "BreadcrumbList",
+  //   itemListElement: breadcrumbItems.map((item, i) => ({
+  //     "@type": "ListItem",
+  //     position: i + 1,
+  //     name: item.label,
+  //     item: domain + item.href
+  //   }))
+  // };
 
   return (
     <div>
       {/* SEO Schema */}
-      <Script id="breadcrumb-schema" type="application/ld+json">
+      {/* <Script id="breadcrumb-schema" type="application/ld+json">
         {JSON.stringify(schemaData)}
-      </Script>
+      </Script> */}
 
       {/* UI Section */}
       <section>

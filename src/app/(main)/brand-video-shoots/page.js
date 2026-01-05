@@ -14,10 +14,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("brand-video-shoots", null, false);
   } catch (error) {
     return {
-      title: "About Us",
+      title: "Brand Video Shoots",
       robots: "noindex, nofollow",
     };
   }
@@ -59,13 +59,34 @@ export async function generateMetadata() {
 }
 //meta end here
 
-function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+async function page() {
+  // ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("brand-video-shoots", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   // hero section content
   const heading = "Brand Video Shoots";
@@ -76,6 +97,17 @@ function page() {
 
   return (
     <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "brand-video-shoots"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
       {/*Breadcrumb*/}
       <section>
         <Breadcrumb />

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://dn-designs-next.vercel.app/blog</loc><lastmod>2026-01-03T16:59:05.443Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/blogs/new</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/blogs</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/categories</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/emails</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/form-submissions</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/gallery</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/login</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/pages/new</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/pages</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/settings</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/tags</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/users/new</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://dn-designs-next.vercel.app/admin/users</loc><lastmod>2026-01-03T16:59:05.444Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/blog</loc><lastmod>2026-01-05T11:05:08.726Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/blogs/new</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/blogs</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/categories</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/emails</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/form-submissions</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/gallery</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/login</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/pages/new</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/pages</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/settings</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/tags</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/users/new</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://dn-designs-next.vercel.app/admin/users</loc><lastmod>2026-01-05T11:05:08.728Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
