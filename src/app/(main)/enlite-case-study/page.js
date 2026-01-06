@@ -10,7 +10,7 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("enlite-case-study", null, false);
   } catch (error) {
     return {
       title: "Enlite Case Study",
@@ -56,15 +56,48 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+// ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("enlite-case-study", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   return (
     <div>
+
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "enlite-case-study"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
       <div className="container-fluid p-0">
         <video
           src="https://dndesigns.co.in/wp-content/uploads/2025/09/1920-1.mp4"

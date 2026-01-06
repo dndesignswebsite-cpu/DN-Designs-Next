@@ -20,10 +20,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("catalogue-designing", null, false);
   } catch (error) {
     return {
-      title: "About Us",
+      title: "Catalogue Designing",
       robots: "noindex, nofollow",
     };
   }
@@ -66,12 +66,33 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+  // ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("catalogue-designing", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   const heading = "Catalogue Design Agency";
   const subHeading =
@@ -145,6 +166,19 @@ async function page() {
 
   return (
     <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "catalogue-designing"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
+
       {/*Breadcrumb*/}
       <section>
         <Breadcrumb />
