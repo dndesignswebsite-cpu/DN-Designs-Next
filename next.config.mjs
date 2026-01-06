@@ -43,6 +43,29 @@ const nextConfig = {
       bodySizeLimit: "10mb",
     },
   },
+
+
+
+
+  // -------
+
+  //  async redirects() {
+  //   return [
+  //     {
+  //       source: "/about-us",
+  //       destination: "/branding",
+  //       permanent: true, // 301
+  //     },
+  //     {
+  //       source: "/temp-page",
+  //       destination: "/",
+  //       permanent: false, // 302
+  //     },
+  //   ];
+  // },
+
+
+  // ------
 };
 
 export default nextConfig;

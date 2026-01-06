@@ -11,7 +11,7 @@ import Form from "@/Components/Form/Form";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import AutoCounter from "@/Components/AutoCounter/AutoCounter";
 import { notFound } from "next/navigation";
-import Script from "next/script";
+// import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
@@ -68,6 +68,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -79,6 +81,20 @@ async function page() {
   if (!pageData) {
     notFound();
   }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // hero section content
   const heading = "A Branding  Design Studio";
@@ -95,15 +111,11 @@ async function page() {
   return (
     <div>
       {/* schema */}
-      {pageData?.content?.raw && (
+      {cleanSchema && (
         <script
+          key={`schema-page-${pageData._id || "about"}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: pageData.content.raw
-              .replace(/<script[^>]*>/gi, "")
-              .replace(/<\/script>/gi, "")
-              .trim(),
-          }}
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
       )}
       {/*schema ends here */}
