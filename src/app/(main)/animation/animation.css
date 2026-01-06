@@ -8,7 +8,7 @@
   font-size: 50px;
   font-family: var(--font-corbert-bold);
   font-weight: 700;
-  color: var(--heading-main-color);
+  color: #000;
   text-align: center;
   padding: 20px 0px 50px 0px;
 
@@ -22,7 +22,7 @@
 .we-are-the-leading h3{
     font-size: 50px;
     font-family: var(--font-corbert-bold);
-    color: var(--heading-main-color);
+    color: #000;
     width: 70%;
 }
 
@@ -80,12 +80,12 @@
   font-size: 24px;
   font-family: var(--font-corbert-bold);
   font-weight: 700;
-  color: var(--heading-main-color);
+  color: #000;
   padding-bottom: 10px;
 }
 
 .characteristics-of-good p {
-  color: var(--heading-main-color);
+  color: #000;
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -258,7 +258,7 @@
   font-size: 18px;
   font-family: var(--font-roboto);
   width: 90%;
-  color: var(--heading-main-color);
+  color: #000;
 }
 
 .app-pro-div-up{
@@ -291,12 +291,12 @@
 font-size: 50px;
     font-family: var(--font-corbert-bold);
     font-weight: 700;
-    color: var(--heading-main-color);
+    color: #000;
 }
 
 .power-of-animation-row p{
     font-size: 18px;
-    color:var(--heading-main-color);
+    color: #000;
    font-family: var(--font-roboto);
     padding: 20px 0px 40px 0px;
 } 
@@ -359,7 +359,7 @@ padding: 20px;
 
 .user-eng-up-div h4{
      font-family: var(--font-corbert-bold);
-     color: var(--heading-main-color);
+     color: #000;
      font-size: 18px;
      font-weight: 700;
 }
@@ -378,18 +378,18 @@ padding: 20px;
     font-size: 24px;
     padding-top: 30px;
     padding-bottom: 10px;
-    color: var(--heading-main-color);
+    color: #000;
 }
 
 .user-engagement-div p{
    font-family: var(--font-roboto);
     font-size: 14px;
-    color: var(--heading-main-color);
+    color: #000;
     font-weight: 500;
 }
 
 .user-engagement-number{
     font-family: var(--font-corbert);
     font-size:40px;
-    color: var(--heading-main-color);
+    color: #000;
 }
