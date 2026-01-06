@@ -154,10 +154,10 @@
 }
 
 .header-solo-link:hover{
-    color: var(--heading-highlite-color);
+    color: #ca2734 !important;
 }
 .active {
-  color: var(--heading-highlite-color);
+  color: #ca2734   !important;
 }
 
 
