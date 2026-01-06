@@ -113,7 +113,7 @@ async function page() {
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "about"}`}
+          key={`schema-page-${pageData._id || "about-us"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />

@@ -17,10 +17,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("influencer-marketing", null, false);
   } catch (error) {
     return {
-      title: "About Us",
+      title: "Influencer Marketing",
       robots: "noindex, nofollow",
     };
   }
@@ -63,12 +63,33 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+  // ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("influencer-marketing", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   const heading = "Influencer Marketing Agency in India";
   const subHeading = "Connecting You With the Right Influencers";
@@ -220,6 +241,19 @@ async function page() {
 
   return (
     <div>
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "influencer-marketing"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
+
+
       {/*Breadcrumb*/}
       <section>
         <Breadcrumb />

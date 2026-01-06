@@ -12,7 +12,7 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("nectarpure-case-study", null, false);
   } catch (error) {
     return {
       title: "Nectarpure Case Study",
@@ -58,15 +58,48 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+  // ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("nectarpure-case-study", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   return (
     <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "nectarpure-case-study"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
       <div className="container nectarpure">
         <div className="row">
           <div className="col-lg-4 col-md-5">

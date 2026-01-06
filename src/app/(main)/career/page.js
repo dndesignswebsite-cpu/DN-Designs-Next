@@ -14,10 +14,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("career", null, false);
   } catch (error) {
     return {
-      title: "About Us",
+      title: "Career",
       robots: "noindex, nofollow",
     };
   }
@@ -60,15 +60,46 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-  // const response = await getPageData();
-  // const pageData = response?.data;
+  // ---
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("career", null, true);
+  } catch (error) {
+    notFound();
+  }
 
-  // if (!pageData) {
-  //   notFound();
-  // }
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
+    }
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
+
 
   return (
     <div>
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "career"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
       {/* career hero banner */}
       <section className="career-hero">
         <div className="container">
