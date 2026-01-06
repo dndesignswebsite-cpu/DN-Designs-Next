@@ -49,6 +49,7 @@ export async function PUT(request, { params }) {
 
     const updateData = {};
     if (formData.has("title")) updateData.title = formData.get("title");
+    if (formData.has("slug")) updateData.slug = formData.get("slug");
     if (formData.has("content")) updateData.content = formData.get("content");
     if (formData.has("excerpt")) updateData.excerpt = formData.get("excerpt");
     if (formData.has("primaryCategory"))

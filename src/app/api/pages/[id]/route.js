@@ -56,7 +56,7 @@ export async function PUT(request, { params }) {
     if (formData.has("pageType"))
       updateData.pageType = formData.get("pageType");
     if (formData.has("order"))
-      updateData.order = parseInt(formData.get("order")) || 0;
+      updateData.order = Number.parseInt(formData.get("order")) || 0;
     if (formData.has("isPublished"))
       updateData.isPublished = formData.get("isPublished") === "true";
 
