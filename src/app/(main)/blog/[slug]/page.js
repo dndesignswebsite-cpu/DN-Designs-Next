@@ -120,6 +120,25 @@ import { notFound } from "next/navigation";
 import { getAuthUserFromToken } from "@/lib/middleware/auth";
 import Script from "next/script";
 
+
+
+// schema start here
+function extractScripts(html = "") {
+  const scripts = [];
+  const regex = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    scripts.push({
+      attrs: match[1],
+      content: match[2].trim(),
+    });
+  }
+
+  return scripts;
+}
+// shema function end here
+
 // Meta data generation
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -191,27 +210,60 @@ export default async function BlogDetailsPage({ params }) {
     );
     const recentPosts = recentResult.blogs;
 
-    let cleanSchema = "";
-    if (blog.headCode) {
-      cleanSchema = blog.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
+    // let cleanSchema = "";
+    // if (blog.headCode) {
+    //   console.log("Head Code:", blog.headCode);
+    //   cleanSchema = blog.headCode
+    //     .replace(/<script.*?>/gi, "")
+    //     .replace(/<\/script>/gi, "")
+    //     .trim();
 
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
+    //   if (cleanSchema.includes('""')) {
+    //     cleanSchema = cleanSchema.replace(/""/g, '"');
+    //   }
+    // }
+
+    const scripts = blog.headCode
+  ? extractScripts(blog.headCode)
+  : [];
 
     return (
       <>
-        {cleanSchema && (
+        {/* {cleanSchema && (
           <script
             key={`schema-blog-${blog._id}`}
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: cleanSchema }}
           />
-        )}
+        )} */}
+
+{scripts.map((script, index) => {
+    const isJsonLd =
+      script.attrs.includes("application/ld+json");
+
+    // JSON-LD validation
+    if (isJsonLd) {
+      try {
+        JSON.parse(script.content);
+      } catch (e) {
+        console.error("Invalid JSON-LD skipped", e);
+        return null;
+      }
+    }
+
+    return (
+      <script
+        key={`schema-${index}`}
+        type={
+          isJsonLd ? "application/ld+json" : undefined
+        }
+        dangerouslySetInnerHTML={{
+          __html: script.content,
+        }}
+      />
+    );
+  })}
+{/* end here */}
 
         {blog.layout === "case-study" ? (
           <CaseStudyTemplate blog={blog} recentPosts={recentPosts} />
