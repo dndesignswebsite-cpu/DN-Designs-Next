@@ -83,7 +83,7 @@ function BlogPage() {
       <section className="blog-list">
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-12 col-md-12 col-lg-8">
               {loading ? (
                 <div className="text-center py-5">
                   <LoadingSpinner isLoading={true} />
@@ -172,7 +172,7 @@ function BlogPage() {
               )}
             </div>
 
-            <div className="col-4">
+            <div className="col-12 col-md-12 col-lg-4">
               {blogs.length > 0 && (
                 <div className="blog-sidebar">
                   <h4 className="sidebar-title">Recent Posts</h4>
@@ -188,6 +188,7 @@ function BlogPage() {
                             src={post.featuredImage.url}
                             alt={post.title}
                             className="recent-post-thumbnail"
+                            style={{objectFit: "contain" }}
                           />
                         )}
                         <h5 className="recent-post-title">{post.title}</h5>
