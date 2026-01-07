@@ -174,7 +174,8 @@ export default function BlogsList() {
                       <th>Category</th>
                       <th>Author</th>
                       <th>Status</th>
-                      <th>Date</th>
+                      <th>Created On</th>
+                      <th>Published On</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
@@ -202,6 +203,11 @@ export default function BlogsList() {
                           </span>
                         </td>
                         <td>{new Date(blog.createdAt).toLocaleDateString()}</td>
+                        <td>
+                          {blog.isPublished
+                            ? new Date(blog.publishedAt).toLocaleDateString()
+                            : "-"}
+                        </td>
                         <td>
                           <div className="admin-table-actions">
                             <Link

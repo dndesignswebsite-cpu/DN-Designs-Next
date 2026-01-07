@@ -298,51 +298,6 @@ export default function BlogForm({ initialData, isEditing }) {
     }
   }, [initialData]);
 
-  // Autosave draft
-  useEffect(() => {
-    // Only save if we have some data and it's not just the initial state
-    if (formData.title || formData.content) {
-      const draftKey = `blog_draft_${initialData?._id || "new"}`;
-      const draftData = {
-        ...formData,
-        timestamp: new Date().getTime(),
-      };
-      localStorage.setItem(draftKey, JSON.stringify(draftData));
-    }
-  }, [formData, initialData?._id]);
-
-  // Restore draft
-  useEffect(() => {
-    const draftKey = `blog_draft_${initialData?._id || "new"}`;
-    const savedDraft = localStorage.getItem(draftKey);
-
-    if (savedDraft) {
-      try {
-        const parsedDraft = JSON.parse(savedDraft);
-        const serverTime = initialData?.updatedAt
-          ? new Date(initialData.updatedAt).getTime()
-          : 0;
-        const draftTime = parsedDraft.timestamp || 0;
-
-        // If draft is newer than server data (or if creating new), restore it
-        if (draftTime > serverTime) {
-          // Remove timestamp from data
-          const { timestamp, ...dataToRestore } = parsedDraft;
-          setFormData((prev) => ({ ...prev, ...dataToRestore }));
-          if (dataToRestore.editorMode === "code") {
-            setShowHtmlEditor(true);
-          }
-          toast.success("Restored unsaved draft", {
-            position: "bottom-right",
-            duration: 4000,
-          });
-        }
-      } catch (e) {
-        console.error("Failed to parse draft", e);
-      }
-    }
-  }, [initialData]);
-
   const mutation = useMutation({
     mutationFn: async (data) => {
       const token = Cookies.get("admin_token");
@@ -365,12 +320,14 @@ export default function BlogForm({ initialData, isEditing }) {
       return res.json();
     },
     onSuccess: (data) => {
-      const draftKey = `blog_draft_${initialData?._id || "new"}`;
-      localStorage.removeItem(draftKey);
       toast.success(
         isEditing ? "Blog updated successfully!" : "Blog created successfully!"
       );
       queryClient.invalidateQueries({ queryKey: ["blogs"] });
+      // Also invalidate the specific blog query so the edit page gets fresh data
+      if (initialData?._id) {
+        queryClient.invalidateQueries({ queryKey: ["blog", initialData._id] });
+      }
       router.push("/admin/blogs");
     },
     onError: (error) => {

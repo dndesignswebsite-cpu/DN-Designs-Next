@@ -22,7 +22,10 @@ export const getAllBlogs = async (
   const allowedRoles = ["admin", "editor", "user"];
   if (!currentUser || !allowedRoles.includes(currentUser.role)) {
     filter.isPublished = true;
-    filter.publishedAt = { $lte: new Date() };
+    // Use end of day to ensure blogs published "today" are visible
+    const endOfDay = new Date();
+    endOfDay.setHours(23, 59, 59, 999);
+    filter.publishedAt = { $lte: endOfDay };
   } else if (
     filters.isPublished === "true" ||
     filters.isPublished === "false"

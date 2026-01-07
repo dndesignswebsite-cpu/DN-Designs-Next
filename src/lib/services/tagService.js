@@ -21,12 +21,15 @@ export const getAllTags = async (filters = {}, pagination = {}) => {
   const result = await tagRepository.findAll(queryFilter, pagination);
 
   // Add blog count for each tag
+  const endOfDay = new Date();
+  endOfDay.setHours(23, 59, 59, 999);
+
   const tagsWithCount = await Promise.all(
     result.tags.map(async (tag) => {
       const blogCount = await Blog.countDocuments({
         tags: tag.slug,
         isPublished: true,
-        publishedAt: { $lte: new Date() },
+        publishedAt: { $lte: endOfDay },
       });
       return { ...tag.toObject(), blogCount };
     })
@@ -44,10 +47,13 @@ export const getTagById = async (id) => {
     throwError("Tag not found", 404, { function: "getTagById", id });
   }
 
+  const endOfDay = new Date();
+  endOfDay.setHours(23, 59, 59, 999);
+
   const blogCount = await Blog.countDocuments({
     tags: tag.name,
     isPublished: true,
-    publishedAt: { $lte: new Date() },
+    publishedAt: { $lte: endOfDay },
   });
   return { ...tag.toObject(), blogCount };
 };
@@ -58,10 +64,13 @@ export const getTagBySlug = async (slug) => {
     throwError("Tag not found", 404, { function: "getTagBySlug", slug });
   }
 
+  const endOfDay = new Date();
+  endOfDay.setHours(23, 59, 59, 999);
+
   const blogCount = await Blog.countDocuments({
     tags: tag.name,
     isPublished: true,
-    publishedAt: { $lte: new Date() },
+    publishedAt: { $lte: endOfDay },
   });
   return { ...tag.toObject(), blogCount };
 };
