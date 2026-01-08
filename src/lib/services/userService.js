@@ -6,11 +6,10 @@
 import * as userRepository from "@/lib/repositories/userRepository.js";
 import { throwError } from "@/lib/middleware/errorHandler.js";
 import { sendUserCredentialsEmail } from "@/lib/services/emailService.js";
-import crypto from "crypto";
-import bcrypt from "bcryptjs";
+import crypto from "node:crypto";
 
-export const getAllUsers = async (filters = {}) => {
-  return await userRepository.findAll(filters);
+export const getAllUsers = async (filters = {}, options = {}) => {
+  return await userRepository.findAll(filters, options);
 };
 
 export const getUserById = async (userId) => {

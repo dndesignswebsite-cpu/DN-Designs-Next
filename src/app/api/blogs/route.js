@@ -149,6 +149,9 @@ export async function POST(request) {
     if (formData.has("twitterImageAltText"))
       blogData.twitterImageAltText = formData.get("twitterImageAltText");
 
+    // Handle Author Selection
+    const selectedAuthorId = formData.get("author");
+
     // Validation
     if (
       !blogData.title ||
@@ -200,7 +203,7 @@ export async function POST(request) {
 
     const blog = await blogService.createBlog(
       blogData,
-      authResult.user.id,
+      selectedAuthorId || authResult.user.id,
       imageBuffer,
       { ogImageBuffer, twitterImageBuffer }
     );

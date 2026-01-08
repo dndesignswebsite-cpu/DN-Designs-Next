@@ -60,7 +60,12 @@ export async function PUT(request, { params }) {
     if (formData.has("editorMode"))
       updateData.editorMode = formData.get("editorMode");
 
-    // Handle publishedAt if provided (editable published date)
+    if (formData.has("editorMode"))
+      updateData.editorMode = formData.get("editorMode");
+
+    if (formData.has("author")) updateData.author = formData.get("author");
+    if (formData.has("authorName"))
+      updateData.authorName = formData.get("authorName");
     const publishedAt = formData.get("publishedAt");
     if (publishedAt) {
       updateData.publishedAt = new Date(publishedAt);

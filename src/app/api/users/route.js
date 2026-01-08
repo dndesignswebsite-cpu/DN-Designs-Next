@@ -25,7 +25,11 @@ export async function GET(request) {
     if (role) filters.role = role;
     if (search) filters.search = search;
 
-    const users = await userService.getAllUsers(filters);
+    const limit = parseInt(searchParams.get("limit")) || 10;
+    const page = parseInt(searchParams.get("page")) || 1;
+    const options = { limit, page };
+
+    const users = await userService.getAllUsers(filters, options);
 
     return NextResponse.json({
       success: true,

@@ -58,6 +58,7 @@ export default function BlogForm({ initialData, isEditing }) {
     slug: "",
     content: "",
     excerpt: "",
+    author: "", // New author field
     categories: [],
     primaryCategory: "",
     layout: "default",
@@ -249,6 +250,7 @@ export default function BlogForm({ initialData, isEditing }) {
         slug: initialData.slug || "",
         content: initialData.content || "",
         excerpt: initialData.excerpt || "",
+        author: initialData.author?._id || initialData.author || "",
         categories:
           initialData.categories ||
           (initialData.category ? [initialData.category] : []),
@@ -400,6 +402,19 @@ export default function BlogForm({ initialData, isEditing }) {
     },
   });
 
+  // Fetch users for Author selection
+  const { data: usersData, isLoading: usersLoading } = useQuery({
+    queryKey: ["admin-users"],
+    queryFn: async () => {
+      const token = Cookies.get("admin_token");
+      const res = await fetch("/api/users?limit=1000", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) throw new Error("Failed to fetch users");
+      return res.json();
+    },
+  });
+
   // Initialize selectedTags from formData.tags and tagsData
   useEffect(() => {
     if (formData.tags && tagsData?.data) {
@@ -536,6 +551,18 @@ export default function BlogForm({ initialData, isEditing }) {
       data.append("layout", formData.layout);
     }
     data.append("editorMode", formData.editorMode);
+
+    // Append Author
+    if (formData.author) {
+      data.append("author", formData.author);
+      // Find author name for redundancy/cache if needed
+      const selectedAuthor = usersData?.data?.users?.find(
+        (u) => u._id === formData.author
+      );
+      if (selectedAuthor) {
+        data.append("authorName", selectedAuthor.name);
+      }
+    }
 
     mutation.mutate(data);
   };
@@ -1074,6 +1101,28 @@ export default function BlogForm({ initialData, isEditing }) {
                   ? "Update"
                   : "Publish"}
               </button>
+            </div>
+          </div>
+
+          {/* Author Selection Card */}
+          <div className="admin-card">
+            <h3 className="admin-card-title">Author</h3>
+            <div className="admin-form-group">
+              <label className="admin-form-label">Select Author</label>
+              <select
+                name="author"
+                value={formData.author}
+                onChange={handleChange}
+                className="admin-form-select"
+                disabled={usersLoading}
+              >
+                <option value="">Select an author...</option>
+                {usersData?.data?.users?.map((user) => (
+                  <option key={user._id} value={user._id}>
+                    {user.name} ({user.email})
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 
