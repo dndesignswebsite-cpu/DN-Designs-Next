@@ -1,3 +1,8 @@
+.tempOne{
+margin-top: 30px;
+margin-bottom: 60px;
+}
+
 .post-details {
   padding-top: 20px;
 }
@@ -25,13 +30,14 @@
   padding-left: 5px;
 }
 
-.single-blog-list-post-head {
+.single-blog-list-post-head-single{
   color: #000;
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 700;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
+  font-family: var(--font-corbert);
 }
 
 .single-blog-list-post-para {
@@ -77,6 +83,34 @@
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+}
+.blog-content {
+ h1,h2,h3,h4,h5,h6 {
+  color: #000000;
+  font-weight: 700;
+  font-family: var(--font-corbert);
+  margin-bottom: 15px;
+}
+p{
+color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family:var(--font-roboto);
+  margin-bottom: 20px;
+}
+}
+
+
+@media screen and (max-width: 991px) {
+  .single-blog-list-post-head-single{
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  transition: 0.5s;
+  line-height: 1.2em;
+  text-decoration: none;
+  font-family: var(--font-corbert);
+}
 }
 
 /* Recent Posts Sidebar Card */
