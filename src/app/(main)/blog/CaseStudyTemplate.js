@@ -22,7 +22,7 @@ function CaseStudyTemplate({ blog, recentPosts }) {
                   alt={blog.featuredImage.altText || blog.title}
                 />
               )}
-              <h1>{blog.title}</h1>
+              <h1 className="single-blog-list-post-head-temp-two">{blog.title}</h1>
 
               <div className="blog-meta-row d-flex align-items-center mt-3 mb-4">
                 <div className="blog-meta-item d-flex align-items-center me-4">

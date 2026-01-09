@@ -1,5 +1,6 @@
-.temp-two {
-  padding: 50px 0;
+.temp-two{
+margin-top: 30px;
+margin-bottom: 60px;
 }
 
 .blog-feature-image {
@@ -10,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.temp-two h1 {
+.temp-two .single-blog-list-post-head-temp-two {
   font-size: 42px;
   font-weight: 700;
   color: #000;
@@ -69,7 +70,30 @@
 }
 
 .blog-content {
-  font-family: "Roboto", sans-serif;
-  color: #43464b;
-  line-height: 1.8;
+ h1,h2,h3,h4,h5,h6 {
+  color: #000000;
+  font-weight: 700;
+  font-family: var(--font-corbert);
+  margin-bottom: 15px;
+}
+p{
+color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family:var(--font-roboto);
+  margin-bottom: 20px;
+}
+}
+
+
+@media screen and (max-width: 991px) {
+  .single-blog-list-post-head-temp-two{
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  transition: 0.5s;
+  line-height: 1.2em;
+  text-decoration: none;
+  font-family: var(--font-corbert);
+}
 }
