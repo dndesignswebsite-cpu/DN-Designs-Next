@@ -285,7 +285,7 @@ export default function EmailsPage() {
                   <th>Emails</th>
                   <th>Description</th>
                   <th>Status</th>
-                  <th>Actions</th>
+                  {(canEdit || canDelete) && <th>Actions</th>}
                 </tr>
               </thead>
               <tbody>
@@ -307,40 +307,42 @@ export default function EmailsPage() {
                         {group.isActive ? "Active" : "Inactive"}
                       </span>
                     </td>
-                    <td>
-                      <div className="admin-table-actions">
-                        {canSend && (
-                          <button
-                            onClick={() => {
-                              setSelectedGroup(group);
-                              setShowSendModal(true);
-                            }}
-                            className="admin-btn admin-btn-primary admin-btn-sm admin-btn-icon"
-                            title="Send Email"
-                          >
-                            <FontAwesomeIcon icon={faPaperPlane} />
-                          </button>
-                        )}
-                        {canEdit && (
-                          <button
-                            onClick={() => handleEditGroup(group)}
-                            className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                            title="Edit"
-                          >
-                            <FontAwesomeIcon icon={faEdit} />
-                          </button>
-                        )}
-                        {canDelete && (
-                          <button
-                            onClick={() => openDeleteModal(group)}
-                            className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                            title="Delete"
-                          >
-                            <FontAwesomeIcon icon={faTrash} />
-                          </button>
-                        )}
-                      </div>
-                    </td>
+                    {(canEdit || canDelete) && (
+                      <td>
+                        <div className="admin-table-actions">
+                          {canSend && (
+                            <button
+                              onClick={() => {
+                                setSelectedGroup(group);
+                                setShowSendModal(true);
+                              }}
+                              className="admin-btn admin-btn-primary admin-btn-sm admin-btn-icon"
+                              title="Send Email"
+                            >
+                              <FontAwesomeIcon icon={faPaperPlane} />
+                            </button>
+                          )}
+                          {canEdit && (
+                            <button
+                              onClick={() => handleEditGroup(group)}
+                              className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                              title="Edit"
+                            >
+                              <FontAwesomeIcon icon={faEdit} />
+                            </button>
+                          )}
+                          {canDelete && (
+                            <button
+                              onClick={() => openDeleteModal(group)}
+                              className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                              title="Delete"
+                            >
+                              <FontAwesomeIcon icon={faTrash} />
+                            </button>
+                          )}
+                        </div>
+                      </td>
+                    )}
                   </tr>
                 ))}
               </tbody>

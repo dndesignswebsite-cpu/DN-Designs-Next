@@ -16,9 +16,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Cookies from "js-cookie";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
+import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
 
 export default function GalleryPage() {
   const queryClient = useQueryClient();
+  const { user } = useAdminAuth();
   const [activeTab, setActiveTab] = useState("avatars");
   const [selectedImage, setSelectedImage] = useState(null); // For modal
   const [deleteTarget, setDeleteTarget] = useState(null);
@@ -164,22 +166,24 @@ export default function GalleryPage() {
         </div>
 
         {/* Upload Button */}
-        <label className="admin-btn admin-btn-primary">
-          {isUploading ? (
-            <FontAwesomeIcon icon={faSpinner} spin />
-          ) : (
-            <FontAwesomeIcon icon={faUpload} />
-          )}
-          {isUploading ? "Uploading..." : "Upload New"}
-          <input
-            type="file"
-            multiple
-            style={{ display: "none" }}
-            onChange={handleFileChange}
-            accept="image/*,video/*"
-            disabled={isUploading}
-          />
-        </label>
+        {user?.role === "user" ? null : (
+          <label className="admin-btn admin-btn-primary">
+            {isUploading ? (
+              <FontAwesomeIcon icon={faSpinner} spin />
+            ) : (
+              <FontAwesomeIcon icon={faUpload} />
+            )}
+            {isUploading ? "Uploading..." : "Upload New"}
+            <input
+              type="file"
+              multiple
+              style={{ display: "none" }}
+              onChange={handleFileChange}
+              accept="image/*,video/*"
+              disabled={isUploading}
+            />
+          </label>
+        )}
       </div>
 
       {/* Segmented Tabs */}
@@ -411,23 +415,25 @@ export default function GalleryPage() {
                     >
                       <FontAwesomeIcon icon={faEye} />
                     </button>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setDeleteTarget(file);
-                      }}
-                      title="Delete"
-                      className="admin-btn admin-btn-sm"
-                      style={{
-                        flex: 1,
-                        background: "rgba(239, 68, 68, 0.8)", // Red with opacity
-                        color: "white",
-                        border: "none",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faTrash} />
-                    </button>
+                    {user?.role !== "user" && (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setDeleteTarget(file);
+                        }}
+                        title="Delete"
+                        className="admin-btn admin-btn-sm"
+                        style={{
+                          flex: 1,
+                          background: "rgba(239, 68, 68, 0.8)", // Red with opacity
+                          color: "white",
+                          border: "none",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <FontAwesomeIcon icon={faTrash} />
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

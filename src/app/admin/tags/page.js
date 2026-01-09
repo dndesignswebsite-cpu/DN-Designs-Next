@@ -167,7 +167,7 @@ export default function TagsPage() {
                       <th>Slug</th>
                       <th>Description</th>
                       <th>Blogs Count</th>
-                      <th>Actions</th>
+                      {(canManage || canDelete) && <th>Actions</th>}
                     </tr>
                   </thead>
                   <tbody>
@@ -187,50 +187,52 @@ export default function TagsPage() {
                             {tag.blogCount || 0}
                           </span>
                         </td>
-                        <td>
-                          <div className="admin-table-actions">
-                            {canManage && (
-                              <>
-                                <Link
-                                  href={`/blog/tag/${tag.slug}`}
-                                  target="_blank"
-                                  className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                                  title="View Blogs"
-                                >
-                                  <FontAwesomeIcon icon={faEye} />
-                                </Link>
+                        {(canManage || canDelete) && (
+                          <td>
+                            <div className="admin-table-actions">
+                              {canManage && (
+                                <>
+                                  <Link
+                                    href={`/blog/tag/${tag.slug}`}
+                                    target="_blank"
+                                    className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                    title="View Blogs"
+                                  >
+                                    <FontAwesomeIcon icon={faEye} />
+                                  </Link>
+                                  <button
+                                    onClick={() =>
+                                      setModal({
+                                        open: true,
+                                        data: tag,
+                                        readOnly: false,
+                                      })
+                                    }
+                                    className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
+                                    title="Edit"
+                                  >
+                                    <FontAwesomeIcon icon={faEdit} />
+                                  </button>
+                                </>
+                              )}
+                              {canDelete && (
                                 <button
                                   onClick={() =>
-                                    setModal({
+                                    setDeleteModal({
                                       open: true,
-                                      data: tag,
-                                      readOnly: false,
+                                      id: tag._id,
+                                      name: tag.name,
                                     })
                                   }
-                                  className="admin-btn admin-btn-outline admin-btn-sm admin-btn-icon"
-                                  title="Edit"
+                                  className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
+                                  title="Delete"
                                 >
-                                  <FontAwesomeIcon icon={faEdit} />
+                                  <FontAwesomeIcon icon={faTrash} />
                                 </button>
-                              </>
-                            )}
-                            {canDelete && (
-                              <button
-                                onClick={() =>
-                                  setDeleteModal({
-                                    open: true,
-                                    id: tag._id,
-                                    name: tag.name,
-                                  })
-                                }
-                                className="admin-btn admin-btn-danger admin-btn-sm admin-btn-icon"
-                                title="Delete"
-                              >
-                                <FontAwesomeIcon icon={faTrash} />
-                              </button>
-                            )}
-                          </div>
-                        </td>
+                              )}
+                            </div>
+                          </td>
+                        )}
                       </tr>
                     ))}
                   </tbody>

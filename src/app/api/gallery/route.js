@@ -11,7 +11,7 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const folder = searchParams.get("folder"); // e.g., 'images', 'blogs'
 
-    const authResult = await withAuth(request, "admin", "editor");
+    const authResult = await withAuth(request, "admin", "editor", "user");
     if (authResult.error) {
       // We allow viewing files, but typically admin pages are protected.
       // Keeping strict for gallery management.

@@ -19,6 +19,9 @@ export default function EditPage() {
       if (!res.ok) throw new Error("Failed to fetch page");
       return res.json();
     },
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
+    refetchOnReconnect: false,
   });
 
   if (isLoading) {
@@ -48,4 +51,3 @@ export default function EditPage() {
     </div>
   );
 }
-

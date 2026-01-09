@@ -147,16 +147,18 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        <div className="admin-card">
-          <div className="admin-card-header">
-            <h2 className="admin-card-title">Analytics Overview</h2>
+        {user?.role === "user" ? null : (
+          <div className="admin-card">
+            <div className="admin-card-header">
+              <h2 className="admin-card-title">Analytics Overview</h2>
+            </div>
+            <div className="admin-chart-placeholder">
+              <FontAwesomeIcon icon={faChartLine} />
+              <p>Chart will be displayed here</p>
+              <span>Connect analytics to see visitor data</span>
+            </div>
           </div>
-          <div className="admin-chart-placeholder">
-            <FontAwesomeIcon icon={faChartLine} />
-            <p>Chart will be displayed here</p>
-            <span>Connect analytics to see visitor data</span>
-          </div>
-        </div>
+        )}
       </div>
 
       {/* Recent Submissions */}

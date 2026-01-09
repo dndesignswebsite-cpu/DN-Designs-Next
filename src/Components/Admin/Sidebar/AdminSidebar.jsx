@@ -65,21 +65,25 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
           label: "All Blogs",
           icon: faList,
           exact: true,
+          show: true,
         },
         {
           path: "/admin/blogs/new",
           label: "Create New",
           icon: faPlus,
+          show: ["admin", "editor"].includes(user?.role),
         },
         {
           path: "/admin/categories",
           label: "Categories",
           icon: faTags,
+          show: true,
         },
         {
           path: "/admin/tags",
           label: "Tags",
           icon: faTags,
+          show: true,
         },
       ],
     },
@@ -133,8 +137,56 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
       {/* Logo */}
       <div className="admin-sidebar-header">
         <Link href="/admin" className="admin-sidebar-logo">
-          {!collapsed && <span>DN Designs</span>}
-          {collapsed && <span>DN</span>}
+          {!collapsed && (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <div
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "50%",
+                  backgroundColor: "#fff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img
+                  src="/logo.webp"
+                  alt=""
+                  style={{ width: "30px", height: "30px" }}
+                />
+              </div>
+              <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                <span>DN Designs</span>
+              </div>
+            </div>
+          )}
+          {collapsed && (
+            <div
+              style={{
+                width: "50px",
+                height: "50px",
+                borderRadius: "50%",
+                backgroundColor: "#fff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src="/logo.webp"
+                alt=""
+                style={{ width: "30px", height: "30px" }}
+              />{" "}
+            </div>
+          )}
         </Link>
         <button className="admin-sidebar-toggle" onClick={onToggle}>
           <FontAwesomeIcon icon={collapsed ? faBars : faChevronLeft} />
@@ -175,27 +227,29 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
                   </button>
                   {blogsOpen && (
                     <div className="admin-sidebar-submenu">
-                      {item.subItems.map((subItem) => (
-                        <Link
-                          key={subItem.path}
-                          href={subItem.path}
-                          className={`admin-sidebar-sublink ${
-                            isActive(subItem.path, subItem.exact)
-                              ? "active"
-                              : ""
-                          }`}
-                          onClick={() => {
-                            if (collapsed) setBlogsOpen(false);
-                          }}
-                        >
-                          <FontAwesomeIcon
-                            icon={subItem.icon}
-                            className="admin-sidebar-icon"
-                            style={{ fontSize: "0.8rem" }}
-                          />
-                          <span>{subItem.label}</span>
-                        </Link>
-                      ))}
+                      {item.subItems
+                        .filter((sub) => sub.show)
+                        .map((subItem) => (
+                          <Link
+                            key={subItem.path}
+                            href={subItem.path}
+                            className={`admin-sidebar-sublink ${
+                              isActive(subItem.path, subItem.exact)
+                                ? "active"
+                                : ""
+                            }`}
+                            onClick={() => {
+                              if (collapsed) setBlogsOpen(false);
+                            }}
+                          >
+                            <FontAwesomeIcon
+                              icon={subItem.icon}
+                              className="admin-sidebar-icon"
+                              style={{ fontSize: "0.8rem" }}
+                            />
+                            <span>{subItem.label}</span>
+                          </Link>
+                        ))}
                     </div>
                   )}
                 </div>
