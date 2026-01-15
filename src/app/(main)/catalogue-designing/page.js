@@ -67,7 +67,7 @@ export async function generateMetadata() {
 
 async function page() {
 
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  // let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
