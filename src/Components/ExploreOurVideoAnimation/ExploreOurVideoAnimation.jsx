@@ -9,6 +9,8 @@ import { Navigation } from "swiper/modules";
 import CatalougePageFlip from "../LightBox/LightBox";
 
 function ExploreOurVideoAnimation() {
+  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+
   return (
     <div>
       <section className="testimonial">

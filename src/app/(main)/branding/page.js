@@ -16,6 +16,8 @@ import { getPageById } from "@/lib/services/pageService.js";
 
 // meta data
 export async function generateMetadata() {
+  
+   
   await connectDB();
   let seo;
   try {
@@ -65,6 +67,8 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
+
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -198,7 +202,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                 src={imageUrl + "Enlite-3.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -224,7 +228,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/I-organic.jpg"
+                  src={imageUrl + "I-organic.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -254,7 +258,7 @@ async function page() {
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/Bombzy.mp4#t=,3"
+                    src={imageUrl + "Enlite-3.webp"}
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -282,7 +286,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Deeproots.jpg"
+                  src={imageUrl + "Deeproots.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -312,7 +316,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.jpg"
+                 src={imageUrl + "Thames.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -338,7 +342,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Smartyums.jpg"
+                  src={imageUrl + "Smartyums.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -387,7 +391,7 @@ async function page() {
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    src={imageUrl + "enlite main graphic.webp"}
                     className="img-fluid"
                   />
                   <div className="our-brand-mobile-div-content">
@@ -414,13 +418,18 @@ async function page() {
               </div>
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                  <video className="img-fluid" autoPlay muted loop playsInline>
+                  {/* <video className="img-fluid" autoPlay muted loop playsInline>
                     <source
                       src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
-                  </video>
+                  </video> */}
+
+                  <img
+                    src={imageUrl + "grin care case study.webp"}
+                    className="img-fluid"
+                  />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">Grin Care</h3>
                     <div className="our-brand-mobile-btn-up">
@@ -446,7 +455,7 @@ async function page() {
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    src={imageUrl + "nature-balance-22.webp"}
                     className="img-fluid"
                   />
                   <div className="our-brand-mobile-div-content">
@@ -476,7 +485,7 @@ async function page() {
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                   src={imageUrl + "ewrfeferf.webp"}
                     className="img-fluid"
                   />
                   <div className="our-brand-mobile-div-content">
@@ -518,7 +527,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/2-3.jpg"
+                  src={imageUrl + "2-3.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">
@@ -536,7 +545,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/3-3.jpg"
+                  src={imageUrl + "3-3.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">
@@ -553,7 +562,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/7-1.jpg"
+                  src={imageUrl + "7-1.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">
@@ -574,7 +583,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/6-1.jpg"
+                  src={imageUrl + "6-1.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">
@@ -591,7 +600,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/5-1.jpg"
+                  src={imageUrl + "5-1.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">
@@ -608,7 +617,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/4-3.jpg"
+                  src={imageUrl + "4-3.webp"}
                   className="img-fluid"
                 />
                 <div className="identity-div-content">

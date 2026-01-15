@@ -2,6 +2,9 @@ import OurWorkToggle from "./OurWorkToggle";
 import  "./OurWorkHomeSection.css"
 
 export default function  OurWorkHomeSection() {
+
+  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+
   return (
     <section className="our-work">
       <div className="container-fluid">
@@ -13,7 +16,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"
+                   src={imageUrl + "enlite graphic.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -26,7 +29,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont ">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2019/02/2-3.jpg"
+                  src={imageUrl + "nectarpure graphic.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -39,7 +42,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2019/02/thames-graphic-webiste-750x1050-1.jpg"
+                  src={imageUrl + "thames-graphic.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -71,7 +74,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/nature-balance.jpg"
+                  src={imageUrl + "nature-balance (1).webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -84,7 +87,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2019/02/VEIKK.jpg"
+                  src={imageUrl + "VEIKK.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -100,7 +103,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-6">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/greenhorn-manu.jpg"
+                 src={imageUrl + "greenhorn-manu.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -113,7 +116,7 @@ export default function  OurWorkHomeSection() {
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/kalprishi.jpg"
+                  src={imageUrl + "kalprishi.webp"}
                   alt="demo"
                 />
                 <div className="overlay"></div>
@@ -129,13 +132,13 @@ export default function  OurWorkHomeSection() {
 
         {/* Hidden content (SEO-rendered but hidden by default) */}
         <div id="more-content" style={{ display: "none" }}>
-          {/* ✅ Still server-rendered for SEO */}
+          {/*  Still server-rendered for SEO */}
          <div>
               <div className="row our-work-row">
                 <div className="col-sm-12 col-md-6">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/04/5.jpg"
+                      src={imageUrl + "the bobalist website.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -148,7 +151,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/9.jpg"
+                      src={imageUrl + "i organic.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -161,7 +164,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/3-2.jpg"
+                      src={imageUrl + "koshish.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -177,7 +180,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/Logo.jpg"
+                      src={imageUrl + "Deeproot logo.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -206,7 +209,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/smartyums-1.jpg"
+                      src={imageUrl + "smartyums graphic.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -222,7 +225,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-6">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/08/Wlues.jpg"
+                      src={imageUrl + "Wlues graphic.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -235,7 +238,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-6 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2024/10/ezgif.com-speed-1.gif"
+                      src={imageUrl + "i orgainc gif.gif"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -267,7 +270,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/9.jpg"
+                      src={imageUrl + "DAVID graphic.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
@@ -280,7 +283,7 @@ export default function  OurWorkHomeSection() {
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/3-2.jpg"
+                      src={imageUrl + "DAVID graphic.webp"}
                       alt="demo"
                     />
                     <div className="overlay"></div>
