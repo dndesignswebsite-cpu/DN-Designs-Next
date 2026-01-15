@@ -117,7 +117,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 career-hero-col-r">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/11/IMAGE.png"
+                src="https://powerfilldrinks.com/uploads/pages/wetyfdghv.webp"
                 className="img-fluid"
               />
             </div>

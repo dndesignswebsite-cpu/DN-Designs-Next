@@ -10,7 +10,7 @@ function Points() {
 <div className="container point-cont">
   <div className="row points-row">
     <div className="col-3 points-left">
-      <img src='https://dndesigns.co.in/wp-content/uploads/2025/06/350x1100.jpg'/>
+      <img src='https://powerfilldrinks.com/uploads/pages/350x1100.webp'/>
     </div>
     <div className="col-12 col-md-12 col-lg-9 points-right">
     <div className='points row'>

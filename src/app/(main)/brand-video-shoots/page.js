@@ -60,6 +60,8 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
+
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
@@ -124,7 +126,7 @@ async function page() {
           <div className="row">
             <div className="col-12 col-md-12 col-lg-6 text-center">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2023/05/camera-man-1.png.webp"
+                src={imageUrl + "camera-man-1.png.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -171,7 +173,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-6 we-are-leading-left-col ">
               <div className="we-are-leading-left-img-div text-center">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2023/05/video-1.svg"
+                  src={imageUrl + "video-1.svg"}
                   className="img-fluid"
                 ></img>
               </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./OurConstant.module.css"
 
 function OurConstant() {
+  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
   return (
     <div>
         <section className={`${styles['our-constant-companions']}`}>
@@ -11,100 +12,77 @@ function OurConstant() {
            
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/holidayinn_logo.png"
+                src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/audi.png"
+                 src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
+                alt=''
               ></img>
             </div>
+
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/PB_Business.png"
+                 src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web.png"
+                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/wlues-1.png"
+               src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
           </div>
 
           <div className={`${styles['comapnies-logo-row']}`}>
            
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web-1.png"
+               src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enlite.png"
+               src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/nectarpure.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2023/10/smartyum.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.png"
-                className="img-fluid"
-              ></img>
-            </div>
-          </div>
 
+            {/* 8 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "nectarpure (1).webp"}
+                className="img-fluid"
+              ></img>
+            </div>
 
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-             <div className={`${styles['companies']}`}>
+            {/* 9 */}
+            <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/veikk.png"
+                src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 10 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enliiv.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/bobalist.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Nature-balance.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Untitled-1.png"
+                src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -113,33 +91,46 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
            
+
+           {/* 11 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/qualiteq.png"
+               src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 12 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/rungta.png"
+               src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 13 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/floris.png"
+               src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 14 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/david.png"
+                src={imageUrl + "Nature-balance.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 15 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/gleephoria.png"
+               src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -148,27 +139,84 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
            
+
+           {/* 16 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/himalayan.png"
+                src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 17 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/fluke.png"
+                src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 18 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/one.png"
+                src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 19 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy.png"
+                src={imageUrl + "david logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+
+            {/* 20 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "gleephoria logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+
+          <div className={`${styles['comapnies-logo-row']}`}>
+           
+
+           {/* 21 */}
+             <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "himalayan.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 22 */}
+            <div className={`${styles['companies']}`}>
+              <img
+               src={imageUrl + "fluke logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 23 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "one science logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+
+            {/* 24 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -188,25 +236,31 @@ function OurConstant() {
            
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/holidayinn_logo.png"
+                src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/audi.png"
+                src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+            
+
+            {/* 3 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/PB_Business.png"
+               src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+              {/* 4 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web.png"
+                src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -214,60 +268,37 @@ function OurConstant() {
           </div>
 
           <div className={`${styles['comapnies-logo-row']}`}>
+              
 
+              {/* 5 */}
           <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/wlues-1.png"
+                src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
            
+
+           {/* 6 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web-1.png"
+                 src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enlite.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/nectarpure.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            
-          </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-          <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2023/10/smartyum.png"
-                className="img-fluid"
-              ></img>
-            </div>
+            {/* 7 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.png"
+                src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
-             <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/veikk.png"
-                className="img-fluid"
-              ></img>
-            </div>
+
+            {/* 8 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enliiv.png"
+                 src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -277,28 +308,82 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
 
+
+
+          {/* 9 */}
           <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/bobalist.png"
+                 src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 10 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Nature-balance.png"
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Untitled-1.png"
+                src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
            
+
+
+           {/* 11 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/qualiteq.png"
+                src={imageUrl + "veikk logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+
+            {/* 12 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "enliiv logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+            
+          </div>
+
+
+          <div className={`${styles['comapnies-logo-row']}`}>
+
+
+
+           {/* 13 */}
+          <div className={`${styles['companies']}`}>
+              <img
+               src={imageUrl + "bobalist logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+
+            {/* 14 */}
+            <div className={`${styles['companies']}`}>
+              <img
+               src={imageUrl + "Nature-balance.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+
+            {/* 15 */}
+            <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "Bachpan logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+           
+
+           {/* 16 */}
+             <div className={`${styles['companies']}`}>
+              <img
+                src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -307,27 +392,39 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
 
+
+
+            {/* 17 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/rungta.png"
+               src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 18 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/floris.png"
+                 src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 19 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/david.png"
+                 src={imageUrl + "david logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 20 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/gleephoria.png"
+                src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -337,27 +434,39 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
            
+
+
+           {/* 21 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/himalayan.png"
+                src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 22 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/fluke.png"
+                src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 23 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/one.png"
+                 src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 24 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy.png"
+               src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -372,31 +481,39 @@ function OurConstant() {
 <div className={`${styles['our-constant-mobile-screen']} container text-center`}>
          <h2 className={`${styles["our-brand-heading"]} text-center`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
           <div className={`${styles['comapnies-logo-row']}`}>
-           
+
+
+           {/* 1 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/holidayinn_logo.png"
+                src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 2 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/audi.png"
+                  src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
             </div>
 
             <div className={`${styles['comapnies-logo-row']}`}>
+
+            {/* 3 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/PB_Business.png"
+                src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 4 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web.png"
+                src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -405,32 +522,42 @@ function OurConstant() {
 
 
           <div className={`${styles['comapnies-logo-row']}`}>
+           
 
+
+           {/* 5 */}
           <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/wlues-1.png"
+                src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
            
+
+           {/* 6 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/iOrganic-Logo-NEW-web-1.png"
+                src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
             </div>
 <div className={`${styles['comapnies-logo-row']}`}>
 
+
+
+             {/* 7 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enlite.png"
+                 src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 8 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/nectarpure.png"
+                src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -440,31 +567,42 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
 
+
+          {/* 9 */}
           <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2023/10/smartyum.png"
+                src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 10 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.png"
+                src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
             </div>
 
             <div className={`${styles['comapnies-logo-row']}`}>
-           
+              
+
+
+              {/* 11 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/veikk.png"
+                src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 12 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/enliiv.png"
+                src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -473,16 +611,21 @@ function OurConstant() {
 
 
           <div className={`${styles['comapnies-logo-row']}`}>
+            
 
+            {/* 13 */}
           <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/bobalist.png"
+               src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 14 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Nature-balance.png"
+                 src={imageUrl + "Nature-balance.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -490,16 +633,21 @@ function OurConstant() {
             </div>
 
             <div className={`${styles['comapnies-logo-row']}`}>
+
+
+            {/* 15 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Untitled-1.png"
+                 src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
            
+
+           {/* 16 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/qualiteq.png"
+               src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -507,16 +655,19 @@ function OurConstant() {
 
 
           <div className={`${styles['comapnies-logo-row']}`}>
-
+             
+             {/* 17 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/rungta.png"
+                 src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 18 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/floris.png"
+                 src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -524,15 +675,19 @@ function OurConstant() {
             </div>
 
             <div className={`${styles['comapnies-logo-row']}`}>
+
+            {/* 19 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/david.png"
+               src={imageUrl + "david logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 20 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/gleephoria.png"
+               src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -542,15 +697,19 @@ function OurConstant() {
 
           <div className={`${styles['comapnies-logo-row']}`}>
            
+
+           {/* 21 */}
              <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/himalayan.png"
+                src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+            {/* 22 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/fluke.png"
+                src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -558,15 +717,20 @@ function OurConstant() {
             </div>
 
             <div className={`${styles['comapnies-logo-row']}`}>
+
+            {/* 23 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2024/08/one.png"
+                src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
+
+
+            {/* 24 */}
             <div className={`${styles['companies']}`}>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy.png"
+                 src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img>
             </div>

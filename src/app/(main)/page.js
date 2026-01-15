@@ -179,7 +179,8 @@ export default function Home() {
                 className={`${styles["hero-bg-img"]}`}
               ></img>
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/09/hgefef.png"
+                // src="https://dndesigns.co.in/wp-content/uploads/2025/09/hgefef.png"
+                src={imageUrl + "hgefef.webp"}
                 className={`${styles["hero-img-main"]}`}
               ></img>
             </div>
@@ -319,7 +320,7 @@ export default function Home() {
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                    src={imageUrl + "enlite main graphic.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
@@ -416,7 +417,7 @@ export default function Home() {
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                   src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
@@ -461,7 +462,7 @@ export default function Home() {
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/1.jpg"
+                     src={imageUrl + "nectarpure case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>

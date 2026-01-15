@@ -61,7 +61,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 col-lg-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/TDG06181.jpg"
+                          src="https://powerfilldrinks.com/uploads/pages/Bhagwat aggarwal client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -127,7 +127,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1662129811700.jpg"
+                          src="https://powerfilldrinks.com/uploads/pages/Vineet tiwari.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -188,7 +188,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1737743837430.jpg"
+                          src="https://powerfilldrinks.com/uploads/pages/nectarpure client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />

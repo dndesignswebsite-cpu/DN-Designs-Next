@@ -5,6 +5,10 @@ import "./OurWorkServiceTabs.css"
 
 export default function OurWorkServiceTabs() {
     const [activeTab, setActiveTab] = useState("Branding");
+    const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+
+
+
   return (
      <div>
       <section className="our-work-tab">
@@ -59,7 +63,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                        src="https://dndesigns.co.in/wp-content/uploads/2024/10/ezgif.com-speed-1.gif"
+                       src={imageUrl + "i orgainc gif.gif"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -67,13 +71,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/enlite-2.jpg"
+                           src={imageUrl + "enlite graphic.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2024/10/smartyums_GIf.gif"
+                           src={imageUrl + "smartyums_GIf.gif"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -81,13 +85,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/nature-balance.jpg"
+                            src={imageUrl + "nature-balance (1).webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/nectarpure-2.jpg"
+                            src={imageUrl + "nectarpure-2.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -102,7 +106,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                        src="https://dndesigns.co.in/wp-content/uploads/2025/07/greenhorn-manu.jpg"
+                        src={imageUrl + "greenhorn-manu.webp"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -110,13 +114,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/BObalist.jpg"
+                           src={imageUrl + "BObalist.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/thames.jpg"
+                            src={imageUrl + "thames.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -124,13 +128,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/kalprishi.jpg"
+                            src={imageUrl + "kalprishi.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/Wlues.jpg"
+                            src={imageUrl + "Wlues graphic.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -145,7 +149,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                        src="https://dndesigns.co.in/wp-content/uploads/2025/08/koshish.jpg"
+                        src={imageUrl + "wehgdwej.webp"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -153,13 +157,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/nature-balance-22.jpg"
+                             src={imageUrl + "nature-balance-22.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/08/deeproot-3.jpg"
+                             src={imageUrl + "deeproot-3.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -167,13 +171,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2024/09/logo-mock-up.jpg"
+                             src={imageUrl + "logo-mock-up.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/luxmi-cars.jpg"
+                          src={imageUrl + "luxmi-cars.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -188,7 +192,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                        src="https://dndesigns.co.in/wp-content/uploads/2025/07/web-vihaan.jpg"
+                         src={imageUrl + "web-vihaan.webp"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -196,13 +200,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/04/5.jpg"
+                             src={imageUrl + "5.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/04/2.jpg"
+                             src={imageUrl + "2.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -210,13 +214,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/Qualiteq-image.jpg"
+                             src={imageUrl + "Qualiteq-image.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/mr-bomzy-2-1.jpg"
+                             src={imageUrl + "mr-bomzy-2-1.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -231,7 +235,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                        src="https://dndesigns.co.in/wp-content/uploads/2025/07/3.jpg"
+                        src={imageUrl + "3.webp"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -239,13 +243,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/Natures-Balance-3D.jpg"
+                           src={imageUrl + "Natures-Balance-3D.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/EAU.jpg"
+                            src={imageUrl + "EAU.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -253,13 +257,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/greenhorn-THUMB.jpg"
+                           src={imageUrl + "greenhorn-THUMB.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                            src="https://dndesigns.co.in/wp-content/uploads/2025/07/foodsure-thumb.jpg"
+                           src={imageUrl + "foodsure-thumb.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
