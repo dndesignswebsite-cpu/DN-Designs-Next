@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,8 +77,21 @@ export default function GalleryPage() {
       });
 
       if (!res.ok) {
-        const err = await res.json();
-        throw new Error(err.message || "Upload failed");
+        let errorMessage = "Upload failed";
+        try {
+          // Try to parse JSON error first
+          const err = await res.json();
+          errorMessage = err.message || errorMessage;
+        } catch (e) {
+          console.log(e);
+          // If not JSON, check status text or use generic message
+          if (res.status === 413) {
+            errorMessage = "File too large. Please upload smaller files.";
+          } else {
+            errorMessage = res.statusText || errorMessage;
+          }
+        }
+        throw new Error(errorMessage);
       }
       return res.json();
     },
@@ -90,6 +103,7 @@ export default function GalleryPage() {
       toast.success(`${count} file(s) uploaded successfully!`);
     },
     onError: (err) => {
+      console.log(err);
       toast.error(err.message);
     },
   });
@@ -167,22 +181,39 @@ export default function GalleryPage() {
 
         {/* Upload Button */}
         {user?.role === "user" ? null : (
-          <label className="admin-btn admin-btn-primary">
-            {isUploading ? (
-              <FontAwesomeIcon icon={faSpinner} spin />
-            ) : (
-              <FontAwesomeIcon icon={faUpload} />
-            )}
-            {isUploading ? "Uploading..." : "Upload New"}
-            <input
-              type="file"
-              multiple
-              style={{ display: "none" }}
-              onChange={handleFileChange}
-              accept="image/*,video/*"
-              disabled={isUploading}
-            />
-          </label>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+            }}
+          >
+            <label className="admin-btn admin-btn-primary">
+              {isUploading ? (
+                <FontAwesomeIcon icon={faSpinner} spin />
+              ) : (
+                <FontAwesomeIcon icon={faUpload} />
+              )}
+              {isUploading ? "Uploading..." : "Upload New"}
+              <input
+                type="file"
+                multiple
+                style={{ display: "none" }}
+                onChange={handleFileChange}
+                accept="image/*,video/*"
+                disabled={isUploading}
+              />
+            </label>
+            <small
+              style={{
+                color: "var(--admin-text-light, #666)",
+                fontSize: "11px",
+                marginTop: "4px",
+              }}
+            >
+              Max: Images 10MB, Videos 50MB
+            </small>
+          </div>
         )}
       </div>
 

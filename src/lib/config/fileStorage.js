@@ -26,8 +26,8 @@ const UPLOAD_DIRS = {
 // File size limits (in bytes)
 const FILE_SIZE_LIMITS = {
   image: 10 * 1024 * 1024, // 10MB for images
-  video: 500 * 1024 * 1024, // 500MB for videos
-  default: 50 * 1024 * 1024, // 50MB default
+  video: 50 * 1024 * 1024, // 50MB for videos
+  default: 10 * 1024 * 1024, // 10MB default
 };
 
 // Allowed file types

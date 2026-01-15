@@ -1,10 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import localFont from "next/font/local";
-import Footer from "@/Components/Footer/Footer";
-import Header from "@/Components/Header/Header";
 import BootstrapClient from "@/Components/BootstrapClient/BootstrapClient";
-import Script from "next/script";
+import { Toaster } from "react-hot-toast";
 
 // Fonts
 const corbert = localFont({
@@ -103,6 +101,14 @@ export default function RootLayout({ children }) {
         /> */}
 
         <BootstrapClient />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 2000,
+            style: { fontSize: "12px" },
+            position: "bottom-right",
+          }}
+        />
         {/* <Header />  */}
         {children}
         {/* <Footer /> */}
