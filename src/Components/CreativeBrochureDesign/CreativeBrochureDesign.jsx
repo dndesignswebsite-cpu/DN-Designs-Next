@@ -30,27 +30,33 @@ function CreativeBrochureDesign() {
         >
           <SwiperSlide>
           <div className="swipper-slide-div-brochure">
-          <img src="https://dndesigns.co.in/wp-content/uploads/2025/02/Bi-fold-1-scaled.jpg" className="img-fluid"/>
+          <img src="https://powerfilldrinks.com/uploads/pages/Bi-fold-1-2048x1229.webp" className="img-fluid"/>
           </div>
           </SwiperSlide>
            <SwiperSlide>
           <div className="swipper-slide-div-brochure">
-          <img src="https://dndesigns.co.in/wp-content/uploads/2025/02/Bi-fold-1-scaled.jpg" className="img-fluid"/>
+          <img src="https://powerfilldrinks.com/uploads/pages/Tri-Fold-2048x1229.webp" className="img-fluid"/>
           </div>
           </SwiperSlide>
            <SwiperSlide>
           <div className="swipper-slide-div-brochure">
-          <img src="https://dndesigns.co.in/wp-content/uploads/2025/02/Bi-fold-1-scaled.jpg" className="img-fluid"/>
+          <img src="https://powerfilldrinks.com/uploads/pages/Z-Fold-2048x1229.webp" className="img-fluid"/>
           </div>
           </SwiperSlide>
            <SwiperSlide>
           <div className="swipper-slide-div-brochure">
-          <img src="https://dndesigns.co.in/wp-content/uploads/2025/02/Bi-fold-1-scaled.jpg" className="img-fluid"/>
+          <img src="https://powerfilldrinks.com/uploads/pages/Roll-Fold-2048x1229.webp" className="img-fluid"/>
           </div>
           </SwiperSlide>
            <SwiperSlide>
           <div className="swipper-slide-div-brochure">
-          <img src="https://dndesigns.co.in/wp-content/uploads/2025/02/Bi-fold-1-scaled.jpg" className="img-fluid"/>
+          <img src="https://powerfilldrinks.com/uploads/pages/Accordion-Fold-2048x1229.webp" className="img-fluid"/>
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <div className="swipper-slide-div-brochure">
+          <img src="https://powerfilldrinks.com/uploads/pages/Gate-Fold-2048x1229.webp" className="img-fluid"/>
           </div>
           </SwiperSlide>
         </Swiper>

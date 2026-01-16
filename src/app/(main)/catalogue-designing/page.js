@@ -67,7 +67,7 @@ export async function generateMetadata() {
 
 async function page() {
 
-  // let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
@@ -339,13 +339,15 @@ async function page() {
                 <div className="row e-catalogues-right-row">
                   <div className="col-12 col-md-12 col-lg-6">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/02/1.jpg"
+                      // src="https://dndesigns.co.in/wp-content/uploads/2025/02/1.jpg"
+
+                      src={imageUrl+"wueygdhwvebjf.webp"}
                       className="img-fluid"
                     />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/02/2.jpg"
+                      src={imageUrl+"hegwhdjh.webp"}
                       className="img-fluid"
                     />
                   </div>
@@ -354,13 +356,13 @@ async function page() {
                 <div className="row e-catalogues-right-row e-catalogues-right-row-d">
                   <div className="col-12 col-md-12 col-lg-6">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/02/3.jpg"
+                      src={imageUrl+"32egwhdvwehv.webp"}
                       className="img-fluid"
                     />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/02/4.jpg"
+                      src={imageUrl+"gyewhdvewf.webp"}
                       className="img-fluid"
                     />
                   </div>
