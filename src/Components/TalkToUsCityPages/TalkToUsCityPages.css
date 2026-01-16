@@ -1,0 +1,41 @@
+.talk-to-us-div {
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+}
+
+.talk-to-us {
+  background-color: #fff;
+  font-family: var(--font-roboto);
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 25px 10px 25px;
+  color: #000;
+  border: none;
+}
+
+.fontAwesomeIcon-right-arrow {
+  padding-left: 10px;
+}
+
+
+.talk-to-us-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .talk-to-us-div {
+    justify-content: start;
+  }
+  
+  .talk-to-us-div {
+    display: none !important;
+  }
+
+  .talk-to-us-Laptop {
+    display: none;
+  }
+
+  .talk-to-us-mobile {
+    display: block;
+  }
+}

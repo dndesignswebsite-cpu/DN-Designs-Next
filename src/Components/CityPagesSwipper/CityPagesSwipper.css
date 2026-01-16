@@ -1,0 +1,76 @@
+/* Container */
+.creative-brochure {
+  padding: 60px 0;
+}
+
+.creative-brochure h2 {
+  margin-bottom: 40px;
+}
+
+/* Card */
+.service-sli {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;   
+  overflow: hidden;
+  border: 1px solid #D8D5D5;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #000;
+}
+
+/* Image */
+.service-sli img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.service-sli-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-sli:hover .service-sli-overlay {
+  opacity: 1;
+}
+
+/* Overlay Content */
+.service-sli-overlay-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.service-sli:hover .service-sli-overlay-box {
+  transform: translateY(0);
+}
+
+.service-sli-overlay-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.service-sli-Pras {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .service-sli {
+    aspect-ratio: 3 / 4;
+  }
+}

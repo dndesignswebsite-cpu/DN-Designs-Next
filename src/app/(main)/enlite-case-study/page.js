@@ -56,6 +56,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
 // ---
   await connectDB();
   let pageData;
@@ -100,7 +101,7 @@ async function page() {
 
       <div className="container-fluid p-0">
         <video
-          src="https://dndesigns.co.in/wp-content/uploads/2025/09/1920-1.mp4"
+          src="https://powerfilldrinks.com/uploads/videos/1920-1.mp4"
           width="100%"
           autoPlay
           muted
@@ -131,7 +132,8 @@ async function page() {
         </div>
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite1.jpg"
+            // src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite1.jpg"
+            src={imageUrl+"Enlite1.webp"}
             alt=""
             className="img-fluid mt-5 enlitecase-study-img1"
           />
@@ -168,12 +170,12 @@ async function page() {
           </div>
         </div>
       </div>
-
+ 
       <div className="container enlitecasestudy-images">
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6 mb-3 mb-lg-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2019/02/Enlite2.jpg"
+              src={imageUrl+"Enlite2.webp"}
               alt=""
               className="img-fluid enlitecase-study-img8"
             />
@@ -181,7 +183,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite3.jpg"
+              src={imageUrl+"Enlite3.webp"}
               alt=""
               className="img-fluid enlitecase-study-img9"
             />
@@ -190,7 +192,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2019/02/Enlite4-1.jpg"
+            src={imageUrl+"Enlite4.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
           />
@@ -198,7 +200,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://dndesigns.co.in/wp-content/uploads/2025/11/elin.mp4"
+            src="https://powerfilldrinks.com/uploads/videos/elin.mp4"
             width="100%"
             autoPlay
             muted
@@ -222,7 +224,7 @@ async function page() {
           </div>
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2019/02/Enlite5.jpg"
+              src={imageUrl+"Enlite5.webp"}
               alt=""
               className="img-fluid enlitecase-study-img6"
             />
@@ -231,7 +233,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite6.jpg"
+            src={imageUrl+"Enlite6.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
           />
@@ -239,7 +241,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/Can-2-1.mp4"
+            src="https://powerfilldrinks.com/uploads/videos/Can-2-1.mp4"
             width="100%"
             autoPlay
             muted
@@ -252,7 +254,7 @@ async function page() {
         <div className="row pt-lg-5">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite7.jpg"
+             src={imageUrl+"Enlite7.webp"}
               alt=""
               className="img-fluid enlitecase-study-img6"
             />
@@ -273,7 +275,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite8.jpg"
+            src={imageUrl+"Enlite8.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
           />
@@ -284,7 +286,7 @@ async function page() {
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite9.jpg"
+              src={imageUrl+"Enlite9.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -292,7 +294,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite10.jpg"
+              src={imageUrl+"Enlite10.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -302,7 +304,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite11.jpg"
+             src={imageUrl+"Enlite11.webp"}
               alt=""
               className="img-fluid enlitecase-study-img2 mt-lg-4"
             />
@@ -310,7 +312,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/8.jpg"
+              src={imageUrl+"gewjvfhjr.webp"}
               alt=""
               className="img-fluid enlitecase-study-img3 mt-lg-4"
             />
@@ -320,7 +322,7 @@ async function page() {
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite13.jpg"
+             src={imageUrl+"Enlite13.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -328,7 +330,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite14.jpg"
+             src={imageUrl+"Enlite14.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -338,7 +340,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite15.jpg"
+              src={imageUrl+"Enlite15.webp"}
               alt=""
               className="img-fluid enlitecase-study-img2 mt-lg-4"
             />
@@ -346,7 +348,7 @@ async function page() {
 
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite16.jpg"
+              src={imageUrl+"Enlite16.webp"}
               alt=""
               className="img-fluid enlitecase-study-img3 mt-lg-4"
             />
@@ -356,7 +358,7 @@ async function page() {
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite17.jpg"
+             src={imageUrl+"Enlite17.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -364,7 +366,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite18.jpg"
+            src={imageUrl+"Enlite18.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -373,7 +375,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite19.jpg"
+            src={imageUrl+"Enlite19.webp"}
             alt=""
             className="img-fluid enlitecase-study-img"
           />
@@ -382,7 +384,7 @@ async function page() {
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite20.jpg"
+             src={imageUrl+"Enlite20.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -390,7 +392,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite21.jpg"
+              src={imageUrl+"Enlite21.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
             />
@@ -399,7 +401,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/Enlite22.jpg"
+            src={imageUrl+"Enlite22.webp"}
             alt=""
             className="img-fluid enlitecase-study-img"
           />
