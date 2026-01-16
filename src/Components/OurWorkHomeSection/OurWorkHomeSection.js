@@ -59,7 +59,7 @@ export default function  OurWorkHomeSection() {
               <div className="imag-cont">
                  <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/finalboba.mp4"
+                    src="https://powerfilldrinks.com/uploads/videos/the bobalist video.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -194,7 +194,7 @@ export default function  OurWorkHomeSection() {
                   <div className="imag-cont">
                      <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/jhfjk.mp4"
+                    src="https://powerfilldrinks.com/uploads/videos/qualiteq website.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -255,7 +255,7 @@ export default function  OurWorkHomeSection() {
                   <div className="imag-cont">
                   <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/finaljhhh.mp4"
+                    src="https://powerfilldrinks.com/uploads/videos/finaljhhh.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -282,10 +282,13 @@ export default function  OurWorkHomeSection() {
                 </div>
                 <div className="col-sm-12 col-md-3 our-work-div-unit">
                   <div className="imag-cont">
-                    <img
-                      src={imageUrl + "DAVID graphic.webp"}
-                      alt="demo"
-                    />
+                    <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://powerfilldrinks.com/uploads/videos/Mr bomzy video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
                     <div className="overlay"></div>
                     <div className="overlay-box">
                       <div className="overlay-title">Koshish</div>
