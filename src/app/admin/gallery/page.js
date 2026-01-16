@@ -17,14 +17,15 @@ import {
 import Cookies from "js-cookie";
 import ConfirmModal from "@/Components/Admin/ConfirmModal/ConfirmModal";
 import { useAdminAuth } from "@/Components/Admin/AdminAuthContext";
+import { useAdminUpload } from "@/Components/Admin/AdminUploadContext";
 
 export default function GalleryPage() {
   const queryClient = useQueryClient();
   const { user } = useAdminAuth();
+  const { isUploading, startUpload } = useAdminUpload();
   const [activeTab, setActiveTab] = useState("avatars");
   const [selectedImage, setSelectedImage] = useState(null); // For modal
   const [deleteTarget, setDeleteTarget] = useState(null);
-  const [isUploading, setIsUploading] = useState(false);
 
   // Fetch Folders
   const { data: folders, isLoading: foldersLoading } = useQuery({
@@ -56,57 +57,6 @@ export default function GalleryPage() {
   });
 
   // Create Mutation
-  const uploadMutation = useMutation({
-    mutationFn: async (files) => {
-      const token = Cookies.get("admin_token");
-      const formData = new FormData();
-
-      // Append all files
-      if (files && files.length) {
-        Array.from(files).forEach((file) => {
-          formData.append("file", file);
-        });
-      }
-
-      formData.append("folder", activeTab);
-
-      const res = await fetch("/api/gallery", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${token}` },
-        body: formData,
-      });
-
-      if (!res.ok) {
-        let errorMessage = "Upload failed";
-        try {
-          // Try to parse JSON error first
-          const err = await res.json();
-          errorMessage = err.message || errorMessage;
-        } catch (e) {
-          console.log(e);
-          // If not JSON, check status text or use generic message
-          if (res.status === 413) {
-            errorMessage = "File too large. Please upload smaller files.";
-          } else {
-            errorMessage = res.statusText || errorMessage;
-          }
-        }
-        throw new Error(errorMessage);
-      }
-      return res.json();
-    },
-    onMutate: () => setIsUploading(true),
-    onSettled: () => setIsUploading(false),
-    onSuccess: (data) => {
-      queryClient.invalidateQueries({ queryKey: ["gallery-files", activeTab] });
-      const count = data.count || 1;
-      toast.success(`${count} file(s) uploaded successfully!`);
-    },
-    onError: (err) => {
-      console.log(err);
-      toast.error(err.message);
-    },
-  });
 
   // Delete Mutation
   const deleteMutation = useMutation({
@@ -147,10 +97,11 @@ export default function GalleryPage() {
   };
 
   const handleFileChange = (e) => {
-    const files = e.target.files;
-    if (files && files.length > 0) {
-      uploadMutation.mutate(files);
+    const files = Array.from(e.target.files || []);
+    if (files.length > 0) {
+      startUpload(files, activeTab);
     }
+    e.target.value = "";
   };
 
   return (
@@ -185,7 +136,7 @@ export default function GalleryPage() {
             style={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "flex-end",
+              alignItems: "center",
             }}
           >
             <label className="admin-btn admin-btn-primary">

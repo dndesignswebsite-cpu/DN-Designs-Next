@@ -7,6 +7,7 @@ import {
   AdminAuthProvider,
   useAdminAuth,
 } from "@/Components/Admin/AdminAuthContext";
+import { AdminUploadProvider } from "@/Components/Admin/AdminUploadContext";
 import AdminSidebar from "@/Components/Admin/Sidebar/AdminSidebar";
 import "./admin.css";
 
@@ -96,9 +97,7 @@ function AdminLayoutContent({ children }) {
   // Authenticated - render dashboard
   return (
     <div
-      className={`admin-wrapper ${
-        sidebarCollapsed ? "sidebar-collapsed" : ""
-      }`}
+      className={`admin-wrapper ${sidebarCollapsed ? "sidebar-collapsed" : ""}`}
     >
       <AdminSidebar
         user={user}
@@ -117,7 +116,9 @@ export default function AdminLayout({ children }) {
   return (
     <QueryClientProvider client={queryClient}>
       <AdminAuthProvider>
-        <AdminLayoutContent>{children}</AdminLayoutContent>
+        <AdminUploadProvider>
+          <AdminLayoutContent>{children}</AdminLayoutContent>
+        </AdminUploadProvider>
       </AdminAuthProvider>
     </QueryClientProvider>
   );

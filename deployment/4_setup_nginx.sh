@@ -26,6 +26,7 @@ server {
     server_name $DOMAIN_NAME www.$DOMAIN_NAME;
 
     location / {
+        client_max_body_size 50M;
         proxy_pass http://localhost:3000; # Upstream Next.js Port
         proxy_http_version 1.1;
         proxy_set_header Upgrade \$http_upgrade;

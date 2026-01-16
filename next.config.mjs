@@ -6,27 +6,12 @@ const nextConfig = {
   // Server-side environment variables
   serverExternalPackages: ["mongoose", "bcryptjs", "nodemailer"],
 
-  // Image domains for Cloudinary
+  // Image domains
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "media.dndesigns.co.in",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
         hostname: "powerfilldrinks.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "media.powerfilldrinks.com",
         pathname: "/**",
       },
       {
