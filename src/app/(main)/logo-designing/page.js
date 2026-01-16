@@ -63,6 +63,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
    // ---
   await connectDB();
   let pageData;
@@ -220,7 +221,9 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  // src="https://powerfilldrinks.com/uploads/videos/Nature-balance.webp"
+
+                  src={imageUrl+"3gweudjgwer.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -247,7 +250,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"jhewjrhjbf.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -277,7 +280,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"Rosnax.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -304,7 +307,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"tftyfhgchg.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -333,7 +336,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"bake-o-Tech.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -360,7 +363,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"erhfLuxmi-cars.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -388,10 +391,20 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                {/* <img
+                 src={imageUrl+"erhfLuxmi-cars.webp"}
                   className="img-fluid"
-                />
+                /> */}
+
+                <video
+            src="https://powerfilldrinks.com/uploads/videos/Greephoria.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="enlitecasestudy-video1"
+          />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -415,7 +428,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                 src={imageUrl+"deeproot-logo.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -453,7 +466,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"Frame-427324115-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -478,7 +491,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -486,7 +499,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"jhguhg-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -510,7 +523,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -518,7 +531,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"hdgh-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -542,7 +555,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -550,7 +563,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl+"fgjhg-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -575,7 +588,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>
@@ -885,21 +898,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/16.png"
+                    src={imageUrl+"HBO logo.webp"}
                     alt="HBO logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/13.png"
+                    src={imageUrl+"IBM logo.webp"}
                     alt="IBM logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/8.png"
+                    src={imageUrl+"Nasa logo.webp"}
                     alt="NASA logo"
                     className="img-fluid"
                   />
@@ -923,21 +936,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/22.png"
+                    src={imageUrl+"visa logo.webp"}
                     alt="Visa logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/18.png"
+                    src={imageUrl+"coca logo.webp"}
                     alt="Coca-Cola logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/4.png"
+                    src={imageUrl+"google logo.webp"}
                     alt="Google logo"
                     className="img-fluid"
                   />
@@ -963,21 +976,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/2-1.png"
+                    src={imageUrl+"apple logo.webp"}
                     alt="Apple logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/9.png"
+                    src={imageUrl+"twitter logo.webp"}
                     alt="X logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/14.png"
+                    src={imageUrl+"pintrest logo.webp"}
                     alt="Pinterest logo"
                     className="img-fluid"
                   />
@@ -1003,21 +1016,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/15.png"
+                    src={imageUrl+"addidas logo.webp"}
                     alt="adidas logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/11.png"
+                    src={imageUrl+"bp[ logo.webp"}
                     alt="BP logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/7.png"
+                   src={imageUrl+"pepsi logo.webp"}
                     alt="Pepsi logo"
                     className="img-fluid"
                   />
@@ -1042,21 +1055,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/5.png"
+                   src={imageUrl+"kfc logo.webp"}
                     alt="KFC logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/19.png"
+                    src={imageUrl+"pringles.webp"}
                     alt="Pringles logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/1-1.png"
+                    src={imageUrl+"amul logo.webp"}
                     alt="Amul logo"
                     className="img-fluid"
                   />
@@ -1081,21 +1094,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/3.png"
+                     src={imageUrl+"doritos.webp"}
                     alt="Doritos logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/12.png"
+                    src={imageUrl+"burger king logo.webp"}
                     alt="Burger King logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/17.png"
+                    src={imageUrl+"lacoster logo.webp"}
                     alt="Lacoste logo"
                     className="img-fluid"
                   />
@@ -1120,21 +1133,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/logo.png"
+                    src={imageUrl+"harley logo.webp"}
                     alt="Harley-Davidson logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/6.png"
+                   src={imageUrl+"vi ri logo.webp"}
                     alt="Harvard logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2024/09/21.png"
+                    src={imageUrl+"starbucks logo.webp"}
                     alt="Starbucks logo"
                     className="img-fluid"
                   />
@@ -1160,13 +1173,13 @@ async function page() {
           <div className="row logo-design-section">
             <div className="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/04/1-3.jpg"
+                src={imageUrl+"nectarpure graph.webp"}
                 alt="Nectarpure"
                 className="img-fluid logo-design-img"
               />
 
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2019/02/nec.jpg"
+                src={imageUrl+"imgi_36_nec.webp"}
                 alt="Slide Overlay"
                 className="img-fluid logo-overlay-img"
               />
@@ -1176,7 +1189,7 @@ async function page() {
               <div className="row">
                 <div className="col-lg-12">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/06/wordmark-2048x1078.png"
+                   src={imageUrl+"wordmark.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
                   />
@@ -1185,7 +1198,7 @@ async function page() {
               <div className="row">
                 <div className="col-lg-12">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/06/nectarpure-1-2048x1078.jpg"
+                    src={imageUrl+"2b3ewebdjh.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
                   />

@@ -58,6 +58,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
@@ -104,7 +106,7 @@ async function page() {
         <div className="row">
           <div className="col-lg-4 col-md-5">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/04/Nectarpure.png"
+              src={imageUrl+"34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
             />
@@ -175,7 +177,7 @@ async function page() {
         <div className="row">
           <div className="col-md-4 col-lg-4 nectarpure-sticky">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/04/Nectarpure.png"
+              src={imageUrl+"34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
             />
@@ -215,19 +217,19 @@ async function page() {
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-7 col-lg-7">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/04/1500-x-1000-1.jpg"
+                      src={imageUrl+"wbehgdvwe.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
                     />
                   </div>
                   <div className="col-md-5 col-lg-5">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/06/5-2-2048x1078.jpg"
+                     src={imageUrl+"nectarpure 1.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2 mb-lg-3 mb-md-3"
                     />
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/04/6-1-2048x1078.jpg"
+                      src={imageUrl+"nectarpure 2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2"
                     />
@@ -249,7 +251,7 @@ async function page() {
                   product’s USP and health benefits take the centre stage.
                 </p>
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/04/banner-1.jpg"
+                  src={imageUrl+"nectarpure 5.webp"}
                   alt=""
                   className="img-fluid packaging-design-img"
                 />
@@ -269,14 +271,14 @@ async function page() {
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-5 col-lg-5">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/04/Untitled-2.png"
+                      src={imageUrl+"Untitled-2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0"
                     />{" "}
                   </div>
                   <div className="col-md-7 col-lg-7">
                     <img
-                      src="https://dndesigns.co.in/wp-content/uploads/2025/04/Frame-427324120.png"
+                      src={imageUrl+"Frame-427324120.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
                     />
@@ -284,12 +286,12 @@ async function page() {
                 </div>
                 <div className="row px-4 py-2">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/04/Group-427321841-2048x807.png"
+                    src={imageUrl+"Group-427321841-2048x807.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1 mb-3"
                   />
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/04/Frame-427324252-2048x808.png"
+                    src={imageUrl+"Frame-427324252-2048x808.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1"
                   />
@@ -302,17 +304,17 @@ async function page() {
 
       <div className="container-fluid p-0">
         <img
-          src="https://dndesigns.co.in/wp-content/uploads/2025/04/bannerrrrr-2048x800.jpg"
+          src={imageUrl+"nectarpure 6.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-          src="https://dndesigns.co.in/wp-content/uploads/2025/04/33-2048x800.jpg"
+          src={imageUrl+"nectarpure 3.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-          src="https://dndesigns.co.in/wp-content/uploads/2025/04/presentation-2048x800.jpg"
+         src={imageUrl+"nectarpure 7.webp"}
           alt=""
           className="img-fluid w-100"
         />

@@ -64,6 +64,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
     // ---
   await connectDB();
   let pageData;
@@ -106,7 +108,7 @@ async function page() {
       description:
         "You want a product package design & your mind is flooded with ideas and questions about design, market & audience. Let’s solve them one at a time.",
       image:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/smart-adult-caucasi.jpg",
+        "https://powerfilldrinks.com/uploads/pages/smart-adult-caucasi.webp",
     },
     {
       id: 2,
@@ -114,7 +116,7 @@ async function page() {
       title: "Brand Identity Design",
       description:
         "Whether it is the name, logo, tagline or a unique feature, all form part of your brand identity. Partner with us to create one that commands attention. ",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/9-1.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/9-1.webp",
     },
     {
       id: 3,
@@ -123,7 +125,7 @@ async function page() {
       description:
         "Want a captivating photograph to enhance the appeal of your packaging design? Utilise our professional product photography service to elevate your packaging.",
       image:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/Untitled-1.jpg",
+        "https://powerfilldrinks.com/uploads/pages/Untitled-1.webp",
     },
     {
       id: 4,
@@ -131,17 +133,17 @@ async function page() {
       title: "Legal Compliance",
       description:
         "Legal compliance can sound a bit complex & intimidating, but your packaging design is incomplete without it. Contact us to create a legally compliant design.",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/10.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/10.webp",
     },
   ];
 
   const mobileCrads = [
     {
       mobileImage:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/jgkj.jpg",
+        "https://powerfilldrinks.com/uploads/pages/jgkj.webp",
     },
     {
-      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/2-4.jpg",
+      mobileImage: "https://powerfilldrinks.com/uploads/pages/2-4.webp",
     },
     {
       mobileImage:
@@ -264,7 +266,8 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src={imageUrl+"3y4rfbrjbj.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -290,7 +293,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/I-organic.jpg"
+                  src={imageUrl+"greenhorn-manu125.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -320,7 +323,7 @@ async function page() {
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/08/Bombzy.mp4#t=,3"
+                    src="https://powerfilldrinks.com/uploads/videos/3ewhbhfderbj.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -349,7 +352,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Deeproots.jpg"
+                  src={imageUrl+"thames-5.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -379,7 +382,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.jpg"
+                  src={imageUrl+"j3kefdbkjer.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -405,10 +408,13 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Smartyums.jpg"
-                  className="img-fluid"
-                />
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://powerfilldrinks.com/uploads/videos/Bobalist-hh.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -436,7 +442,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Thames.jpg"
+                  src={imageUrl+"wyegrygfewj.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -462,7 +468,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/Smartyums.jpg"
+                  src={imageUrl+"kalprishi-1.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -715,7 +721,7 @@ async function page() {
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl+"Vector.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -745,7 +751,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -753,7 +759,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl+"Vector1.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -784,7 +790,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -792,7 +798,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"Vector3.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -822,7 +828,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>
