@@ -226,7 +226,7 @@ export default function Home() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
+                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
