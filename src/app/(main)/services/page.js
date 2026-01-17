@@ -64,6 +64,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
    // ---
   await connectDB();
   let pageData;
@@ -235,7 +236,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
+                    src={imageUrl +"brand-identity.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -301,7 +302,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
+                   src={imageUrl +"Communication.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -368,7 +369,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2019/02/brand-identity.jpg"
+                    src={imageUrl +"wegheghhvg.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -505,7 +506,7 @@ async function page() {
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl +"3gewugj.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -531,7 +532,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl +"imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -539,7 +540,7 @@ async function page() {
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl +"engage-1.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -564,7 +565,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl +"imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -572,7 +573,7 @@ async function page() {
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl +"Achieve.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -596,7 +597,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src={imageUrl +"imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>

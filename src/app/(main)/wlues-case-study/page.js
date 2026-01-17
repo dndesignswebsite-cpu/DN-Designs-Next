@@ -58,6 +58,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
  // ---
   await connectDB();
   let pageData;
@@ -102,7 +103,7 @@ async function page() {
 
       <div className="container-fluid p-0">
         <video
-          src="https://dndesigns.co.in/wp-content/uploads/2025/09/final.mp4"
+          src="https://powerfilldrinks.com/uploads/videos/video-1-1.mp4"
           width="100%"
           autoPlay
           muted
@@ -133,7 +134,7 @@ async function page() {
         </div>
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues1.jpg"
+            src={imageUrl +"wlues1.webp"}
             alt=""
             className="img-fluid mt-5 case-study-img1"
           />
