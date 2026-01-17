@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("packaging-design-agency-in-hyderabad", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Packaging Design Agency in Hyderabad",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("packaging-design-agency-in-hyderabad", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,45 +109,47 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "How does a packaging design agency in Hyderabad create designs that boost sales?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "A packaging design agency in Hyderabad focuses on understanding your products and goals, and thereafter conducts market research to find out what will appeal to the customers. Its experts then create packaging designs that will help you attract customers and boost sales and revenue.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "How is a dedicated product packaging design company in Hyderabad better than a freelance designer?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "An agency is better suited to offer package design services for the simple reason that it has much more experience and expertise. It has a team of strategic and creative experts who together ensure that your packaging is both beautiful and powerful. Moreover, an agency is more reliable, has a structured workflow and a solid communication system in place too.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "Can you also handle brand strategy and visual identity for my product?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "Sure, we can handle brand strategy development and visual identity design for your product. We are a branding and design agency, and so we offer comprehensive branding solutions for your business.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "Do you, as a product packaging design company in Hyderabad, also support printing and vendor coordination?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "As a branding and packaging design agency in Hyderabad, our focus is primarily on creating powerful designs. However, we can certainly put you in touch with our network of printers and vendors.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "Do you offer packaging redesign services for existing products?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
-    },
-    {
-      question: "How can I get started with your branding services?",
-      answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "Yes, we can surely redesign the packaging of your existing product to reflect your current identity and increase sales.",
     }
+    ,
+    {
+      question: "Do you offer packaging design consulting for startups in Hyderabad?",
+      answer:
+        "Absolutely, we can definitely provide consultation services to startups looking for packaging design services in Hyderabad.",
+    }
+    
   ];
 
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +158,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "packaging-design-agency-in-hyderabad"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +170,11 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Packaging Design Company in Hyderabad: Compelling Designs That Deliver Results
+
+</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+              Packaging Design should be visually striking, but together with that, it should be persuasive enough to generate sales and contribute to revenue growth. As a packaging design company in Hyderabad, we create designs to fulfil this objective.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +523,10 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>Why Packaging Design Matters in Hyderabad
+</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                 Hyderabad is no more a simple city. It is a major urban centre and a key economic hub. Its population is a diverse mix - from urban professionals to families and students from all over India and abroad. Business-wise, it has seen massive growth in the FMCG and D2C sector, with shoppers buying products from local stores, supermarkets, hypermarkets, speciality stores as well as e-commerce platforms. In such a competitive environment, brands need compelling packaging design to stand out in the market and impress customers.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -529,7 +534,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city.webp"} className="img-fluid" />
+                <img src={imageUrl + "Packaging-Design.webp"} className="img-fluid" />
               </div>
             </div>
           </div>
@@ -541,15 +546,18 @@ async function page() {
 
           <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-2.webp"} className="img-fluid" />
+                <img src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"} className="img-fluid" />
               </div>
             </div>
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>
+                  What Packaging Design Achieves For Your Brand
+
+</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+               It is often said that packaging design is your silent salesperson. Nothing is truer than this. Your product packaging design pulls consumers’ attention in the busy market (through overall appearance), conveys your identity and story (through logo, taglines, colours and typography) and delivers essential information (for example, ingredients and nutritional facts of a food or beverage) that helps convince the customers and win their trust. This eventually leads to a boost in sales.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +569,10 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>How We Can Help
+</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+               If you are searching for the best packaging design company in Hyderabad, DN Designs is your perfect option. We create packaging designs that look stunning, efficiently convey who you are, inspire confidence and boost overall profitability. And yes, we take care of local and cultural preferences as well. Our packaging design services in Hyderabad include everything - from market and audience research to design conceptualisation and actual designing and delivery of files.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -571,7 +580,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-3.webp"} className="img-fluid" />
+                <img src={imageUrl + "Ready-to-Win-Every-Heart.webp"} className="img-fluid" />
               </div>
             </div>
           </div>

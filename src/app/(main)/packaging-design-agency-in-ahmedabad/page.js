@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("packaging-design-agency-in-ahmedabad", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Packaging Design Agency in Ahmedabad",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("packaging-design-agency-in-ahmedabad", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,32 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "How is DN Designs the best packaging design agency in Ahmedabad?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "What makes us widely regarded as the top packaging design agency in Ahmedabad is our determination to bring together strategy, creativity, and market insights, all together to provide designs that guarantee results. We have a team of professionals who are all experts in their field, and work with an aim to boost your product’s visibility and sales in the market.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "Why is packaging design so important in Ahmedabad?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "As competition increases in the FMCG, food, beauty, and retail sectors, good packaging design helps brands stand out and quickly gain consumer trust.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "What key elements can make a design stand out in Ahmedabad’s competitive market?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "Clear communication, right colours & typography, captivating images, thoughtful placement of elements and brand consistency are some of the key elements that help make packaging design effective. Hence, these are the main focuses of our packaging design services, too.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "Do packaging design companies also provide other services like brand strategy development and visual identity creation?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "Yes. Many packaging design companies do more than just create the pack. They often handle complete branding work, that is, they develop brand strategy, define visual identity elements like logos, and make sure the packaging is consistent with the overall brand story.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "What makes a good packaging design from a consumer psychology perspective?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
-    },
-    {
-      question: "How can I get started with your branding services?",
-      answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "A strong packaging design connects with how consumers think and make choices. It uses clear organisation, familiar signs, and emotional triggers to build trust and interest. Good packaging quickly shows value, is easy to understand, and stands out visually.",
     }
   ];
 
@@ -147,7 +142,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +151,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "packaging-design-agency-in-ahmedabad"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +163,9 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Packaging Design Agency in Ahmedabad: Design That Speaks</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+               Our packaging feels like a beautifully drafted invitation that warmly draws consumers in, holds their attention, and leaves a memorable impression long after they’ve seen it.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +514,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>Why Packaging Design Is Important</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                  In the city’s busy market, your product can often get lost among countless options, reducing its visibility and sales. In such a situation, strong packaging becomes essential to outshine. As a leading packaging design company in Ahmedabad, we help brands overcome this very challenge with memorable visuals. Our packaging design services ensure your product looks premium, professional, and ready to compete in the market.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -529,7 +524,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city.webp"} className="img-fluid" />
+                <img src={imageUrl + "Packaging-Design.webp"} className="img-fluid" />
               </div>
             </div>
           </div>
@@ -541,15 +536,16 @@ async function page() {
 
           <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-2.webp"} className="img-fluid" />
+                <img src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"} className="img-fluid" />
               </div>
             </div>
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>
+                   The Process for High-Impact Packaging Design</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                  We have a very structured approach to packaging design which focuses on delivering result which has a sense of clarity, consumer appeal, and storytelling to it. We study your audience, industry & market trends, and behaviour to create packaging that works both in online and offline stores. Our expert professionals make sure that every element, starting from colours to typography, is perfected.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +557,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>Packaging That Makes a Difference</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                 As the leading packaging design company in Ahmedabad, we create product packaging that makes customers choose you in an instant. We are committed to creating packaging designs that attract attention, clearly convey your identity and story, build trust, and enhance recall and loyalty among consumers. This ensures that your product is set for success in the market.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -571,7 +567,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-3.webp"} className="img-fluid" />
+                <img src={imageUrl + "Ready-to-Win-Every-Heart.webp"} className="img-fluid" />
               </div>
             </div>
           </div>

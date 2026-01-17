@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("branding-agency-in-ahmedabad", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Branding Agency in Ahmedabad",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("branding-agency-in-ahmedabad", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,37 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "What kind of branding services does DN Designs provide?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "We provide complete branding services, including brand consultation, brand strategy development, visual identity creation, packaging design, catalogue design, and the establishment of clear brand messaging, voice, story, and values. Our expertise also extends to digital branding, helping businesses build a consistent and memorable brand presence across platforms.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "Can you elaborate on your branding process from beginning to end?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "Everything begins with a detailed chat with you. Once we gain an insight into your vision, we conduct market and audience research. We then create a brand strategy and put the entire plan into action (designing your visual and verbal identity, collaterals and digital branding, etc). We keep you involved and conduct testing at every step. Once your brand is launched, we provide you with post-launch support.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "How will you ensure that my brand stands out in the Ahmedabad market?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "Through research and creativity. We conduct a thorough market and audience research to understand what will click with the audience. Only after this, we craft a creative brand identity that attracts customers and stands out in the cluttered market of Ahmedabad.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "What kind of industries and businesses do you work with?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "We work with different types of businesses, be it start-ups, SMBs or bigger companies. We also do not limit ourselves to certain industries and work with a diverse range, from food and beverage to retail, nutraceutical, cosmetics and many more.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "Can you help us with the rebranding service?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        "Yes, we provide rebranding services. We ensure that your brand aligns with your current values, doesn’t feel outdated visually and matches the sensibilities of your target audience.",
     },
     {
-      question: "How can I get started with your branding services?",
+      question: "Do you provide a full branding package or individual services?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "We provide both a complete package as well as individual branding services in Ahmedabad.",
     }
   ];
 
@@ -147,7 +147,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-ahmedabad"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +168,9 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Branding Agency in Ahmedabad: Designing Brands That Inspire</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+               Looking for perfection in branding? You have just found it. Our branding services in Ahmedabad take your business to the next level.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +519,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>Importance of Branding in Ahmedabad</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                  Ahmedabad is a city where tradition, innovation, and entrepreneurial spirit thrive. It houses both small growing startups and multinational companies. A good location, modern infrastructure and supportive government policies ensure businesses reach greater heights. However, this also means increased competition and a struggle to make your business stand out. That’s what makes branding crucial for businesses in Ahmedabad.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -547,9 +547,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>How A Branding Agency in Ahmedabad Can Help
+</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                  A branding agency is a specialised firm that can help you understand the market you are about to enter and give shape to your vision. It establishes your visual and verbal identity and helps form an emotional connection with your target audience. This is important because the customers need to trust you to buy from you. When you hire the services of a branding company in Ahmedabad, you essentially allow your business to soar high.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +562,10 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>How We Drive Your Brand Growth
+</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                  As a brand design company, we offer a full range of branding services in Ahmedabad - right from brand consultation and strategy development to logo, packaging, catalogue and website design. In addition, we also drive the growth of your brand through our digital marketing, photography and animation services. So, if you are looking for the best branding agency in Ahmedabad to power up your brand, your search ends right here. Contact DN Designs today!
                 </p>
                 <TalkToUsCityPages />
               </div>

@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("branding-agency-in-pune", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Branding Agency in Pune",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("branding-agency-in-pune", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,37 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "Why is branding important for startups and established businesses in Pune?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "Pune presents a highly competitive environment for businesses, together with strong economic growth, a rapidly growing IT and manufacturing sector and a large consumer base. Businesses, both startups and established, therefore need branding services to create a space for themselves in this market and get recognised and appreciated.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "How to choose the best branding agency in Pune?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "To choose the best branding company in Pune, research the available options and check out their work portfolio and processes. This is important to understand whether they align with your business goals and work standards. It is also important to see whether they fit into your budget and can deliver your work in the given timeframe you want.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "What makes DN Designs the best branding agency in Pune?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "DN Designs comes with extensive experience and proven expertise in brand development. We have worked in this space for over 8 years now and have helped build several brands in different verticals. Our talented team members - strategists, designers and editors - are all passionate individuals who work tirelessly to build your brand and make you happy.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "What industries does DN Designs specialise in for branding services?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "DN Designs works across industries, be it retail, food & beverage, pharmaceuticals, nutraceuticals, education, tourism and cosmetics & skincare.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "Do you provide rebranding services for existing companies in Pune?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        "Certainly, we help existing brand update their identity, positioning and messaging to stay relevant and attractive to their audience.",
     },
     {
-      question: "How can I get started with your branding services?",
+      question: "Do you also provide packaging design and brand strategy?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "Both brand strategy development and packaging design are part of our branding services in Pune. You can avail these services as part of our complete branding package, or opt for individual services too.",
     }
   ];
 
@@ -147,7 +147,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-pune"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +168,9 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Branding Agency in Pune - Driving Your Brand Forward</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+               Trust the best branding agency in Pune to transform your business into a unique, attractive and profitable brand. Let’s join hands to create something great.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +519,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>What is Branding All About</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                 Branding isn’t a single activity. It involves a lot more than what you think. From product/market/audience research and the overall brand strategy development to deciding on finer design details like colour and typography, branding includes everything. To elaborate, it is what defines your brand; establishes its values, messaging and voice; crafts its visual identity and customer interaction; and finally builds customer perception, connection, trust and loyalty.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -547,9 +547,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>The Power of Professional Branding
+</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                  With branding being so important, you sure want it for your business. You might have a vision for the future as well; however, the knowledge and the range of skills needed to build a strong brand might just be missing. That’s where a professional branding company in Pune can really give your business a boost. It comes with strategic insights, creative expertise and plenty of branding experience. It can help transform your vision into a strong, memorable identity that people recognise and connect with at every touch point.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +562,10 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>The Difference We Can Make
+</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                 As the best branding agency in Pune, we can collaborate with you to build a brand that is authentic, consistent, distinctive and memorable. We offer comprehensive branding services in Pune, right from consultation and research to brand identity development, packaging design and catalogue design. To establish your online presence, we also design and develop your website and promote your brand through digital media strategies, photography and animation.
                 </p>
                 <TalkToUsCityPages />
               </div>

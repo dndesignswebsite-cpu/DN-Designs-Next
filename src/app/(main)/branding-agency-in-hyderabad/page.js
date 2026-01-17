@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("branding-agency-in-hyderabad", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Branding Agency in Hyderabad",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("branding-agency-in-hyderabad", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,37 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "What is a branding company, and what does it do?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "A branding company is a firm that excels in creating a complete brand identity design for a business. Be it your product’s visual identity (logos, packaging design, catalogue design) or your positioning, values, story and messaging, a branding company in Hyderabad helps establish and convey it to your audience. It conducts market and audience research, crafts a branding strategy, puts the strategy into action and finally monitors the progress.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "How much does brand development cost with a branding agency?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "There isn’t a fixed price when it comes to brand development. It all depends on the individual project and the work involved.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "Why should I choose DN Designs as my branding agency in Hyderabad?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "DN Designs has expertise and industry knowledge that stems from talent and experience. Our team - a set of enthusiastic and skilled professionals - prioritises your vision and makes sure that you successfully achieve your branding objective. All our work is backed by research, which ensures that your brand is market-ready at the time of launch.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "What are the main branding services offered by DN Designs in Hyderabad?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "Our branding services in Hyderabad include an entire spectrum. We offer brand consultation, research and strategy design as well as logo design, packaging design, catalogue design, photography and animation. Additionally, we also help promote your brand through our digital marketing services.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "Do you offer digital branding and marketing services along with design in Hyderabad?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        "Yes, at DN Designs, we offer digital branding and marketing services too. We design your UI/UX and develop an SEO friendly website for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.",
     },
     {
-      question: "How can I get started with your branding services?",
+      question: "How can I request a quote for branding in Hyderabad?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "Just fill out our contact-us form, or drop us an email at info@dndesigns.co.in. Alternatively, you can call us at +91 941 601 1100 or +91 720 660 5872.",
     }
   ];
 
@@ -147,7 +147,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-hyderabad"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +168,9 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Branding Agency in Hyderabad - For Comprehensive Brand Development</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+               Looking for the best branding agency in Hyderabad to transform your new business into a success story? No worries, we are right here!
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +519,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>What Makes Branding Important?</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                 Branding is what you need if you want to make your presence felt in the market. Why is that so? It is because branding helps you establish your unique identity - visual, verbal and emotional (logo, colours, typography, voice, story, messaging, mission, vision, values and positioning) in the market. Without this identity, it is not possible for customers to either recognise, connect and trust your brand or purchase from you.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -547,9 +547,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>Why You Need A Branding Agency in Hyderabad?
+</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                  Branding is not a simple task. It is a process that involves a whole set of activities, right from logo design, packaging design and catalogue design to website design. It requires a varied skillset, from research and strategy development to designing skills. A branding company in Hyderabad brings you just that - expertise, experience and vision that can catapult your brand to popularity.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +562,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>Let’s Make Your Brand Grow - Together</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                 At DN Designs, we offer comprehensive branding and marketing services for your business. Whether you need a complete branding package or individual service, we are here to help you at every step. We aspire to turn your brand into a story of growth, achievement and inspiration. Want to work with us? Why not contact us today and start a conversation?
                 </p>
                 <TalkToUsCityPages />
               </div>
