@@ -51,6 +51,16 @@ const nextConfig = {
    async redirects() {
     return [
       {
+        source: '/tag/:slug*',
+        destination: '/',
+        permanent: false, // true = 301, false = 302
+      },
+      {
+        source: '/blog/tag/:slug*',
+        destination: '/',
+        permanent: false, // true = 301, false = 302
+      },
+      {
         //1
         source: "/brand-logo-design",
         destination: "/logo-designing",
@@ -351,6 +361,461 @@ const nextConfig = {
         destination: "/blog/category/branding-agency/",
         permanent: true, // 301
       },
+      {
+        //51
+        source: "/category/seo",
+        destination: "/blog/category/seo",
+        permanent: true, // 301
+      },
+      {
+        //52
+        source: "/category/label-designs",
+        destination: "/blog/category/label-designs",
+        permanent: true, // 301
+      },
+      {
+        //53
+        source: "/category/designing/",
+        destination: "/blog/category/designing/",
+        permanent: true, // 301
+      },
+      {
+        //54
+        source: "/category/digital-marketing-agency",
+        destination: "/blog/category/digital-marketing-agency",
+        permanent: true, // 301
+      },
+      {
+        //55
+        source: "/category/food-packaging",
+        destination: "/blog/category/food-packaging",
+        permanent: true, // 301
+      },
+      {
+        //56
+        source: "/category/packaging-designs",
+        destination: "/blog/category/packaging-designs",
+        permanent: true, // 301
+      },
+      {
+        //57
+        source: "/category/photography",
+        destination: "/blog/category/photography",
+        permanent: true, // 301
+      },
+      {
+        //58
+        source: "/advertising",
+        destination: "/digital-marketing-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //59
+        source: "/digital-marketing",
+        destination: "/digital-marketing-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //60
+        source: "/web-designing",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+       {
+        //61
+        source: "/catalogue-design-agency-in-vadodara",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+       {
+        //62
+        source: "/website-designing-agency-in-delhi",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+       {
+        //63
+        source: "/logo-designing-agency-in-panipat",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+       {
+        //64
+        source: "/creative-designing-agency-in-sonipat",
+        destination: "/",
+        permanent: true, // 301
+      },
+       {
+        //65
+        source: "/creative-branding-agency-in-ghaziabad",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //66
+        source: "/creative-designing-agency-in-chandigarh",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //67
+        source: "/creative-designing-agency-in-faridabad",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //68
+        source: "/creative-branding-agency-in-vadodara",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //69
+        source: "/logo-designing-agency-in-noida",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //70
+        source: "/logo-designing-agency-in-sonipat",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //71
+        source: "/food-packaging-design-agency-in-sonipat",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //72
+        source: "/website-designing-agency-in-chandigarh",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //73
+        source: "/food-packaging-design-agency-in-vadodara",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //74
+        source: "/catalogue-design-agency-in-mumbai",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //75
+        source: "/logo-designing-agency-in-chandigarh",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //76
+        source: "/creative-designing-agency-in-delhi",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //77
+        source: "/food-packaging-design-agency-in-panipat",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //78
+        source: "/food-packaging-design-agency-in-delhi",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //79
+        source: "/catalogue-design-agency-in-delhi",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //80
+        source: "/catalogue-design-agency-in-sonipat",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //81
+        source: "/catalogue-design-agency-in-panipat",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //82
+        source: "/catalogue-design-agency-in-chandigarh",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //83
+        source: "/catalogue-design-agency-in-faridabad",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //84
+        source: "/catalogue-design-agency-in-ghaziabad",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //85
+        source: "/catalogue-design-agency-in-surat",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //86
+        source: "/catalogue-design-agency-in-rajkot",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //87
+        source: "/food-packaging-design-agency-in-chandigarh",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //88
+        source: "/food-packaging-design-agency-in-faridabad",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //89
+        source: "/food-packaging-design-agency-in-ghaziabad",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //90
+        source: "/food-packaging-design-agency-in-surat",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //91
+        source: "/food-packaging-design-agency-in-rajkot",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //92
+        source: "/logo-designing-agency-in-delhi",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //93
+        source: "/logo-designing-agency-in-faridabad",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //94
+        source: "/logo-designing-agency-in-ghaziabad",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //95
+        source: "/logo-designing-agency-in-surat",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //96
+        source: "/logo-designing-agency-in-rajkot",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //97
+        source: "/logo-designing-agency-in-vadodara",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //98
+        source: "/website-designing-agency-in-sonipat",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //99
+        source: "/website-designing-agency-in-faridabad",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //100
+        source: "/website-designing-agency-in-ghaziabad",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //101
+        source: "/website-designing-agency-in-surat",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //102
+        source: "/website-designing-agency-in-rajkot",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //103
+        source: "/website-designing-agency-in-vadodara",
+        destination: "/web-designing-services-in-india",
+        permanent: true, // 301
+      },
+      {
+        //104
+        source: "/creative-branding-agency-in-delhi-ncr/",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //105
+        source: "/creative-branding-agency-in-chandigarh",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //106
+        source: "/creative-branding-agency-in-faridabad",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //107
+        source: "/creative-branding-agency-in-surat",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //108
+        source: "/creative-branding-agency-in-rajkot",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //109
+        source: "/creative-designing-agency-in-panipat",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //110
+        source: "/creative-designing-agency-in-surat",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //111
+        source: "/creative-designing-agency-in-rajkot",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //111
+        source: "/creative-designing-agency-in-vadodara",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //112
+        source: "/seo",
+        destination: "/seo-marketing-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //113
+        source: "/our-portfolio",
+        destination: "/services",
+        permanent: true, // 301
+      },
+      {
+        //114
+        source: "/about",
+        destination: "/about-us",
+        permanent: true, // 301
+      },
+      {
+        //115
+        source: "/2023/04",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //116
+        source: "/2023/05",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //117
+        source: "/2023/06",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //118
+        source: "/blog/packaging-design-for-luxury-brands-creating-a-premium-and-exquisite-look",
+        destination: "/blog/luxury-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //119
+        source: "/2023/01",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //120
+        source: "/2023/11",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //121
+        source: "/2023/08",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //122
+        source: "/collaborate-with-us",
+        destination: "/contact-us",
+        permanent: true, // 301
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
