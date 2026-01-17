@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("about-us", null, false);
+    seo = await getPageById("branding-agency-in-gurgaon", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "About Us",
+      title: "Branding Agency in Gurgaon",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("about-us", null, true);
+      pageData = await getPageById("branding-agency-in-gurgaon", null, true);
     } catch (error) {
       notFound();
     }
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "about-us"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-gurgaon"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />

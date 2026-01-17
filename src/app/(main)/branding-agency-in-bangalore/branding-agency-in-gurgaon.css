@@ -1,0 +1,37 @@
+.city-pages-content-img-sec{
+    padding: 50px 0;
+}
+
+.content-box-city-page{
+    background-color: #ca2734;
+    height: 100%;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content-box-city-page h2{
+    color: #fff;
+    font-family: "Corbert";
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.content-box-city-page p{
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.image-box-city-page{
+    padding: 0;
+}
+.image-box-city-page img{
+    border-radius: 10px;
+}
+
+@media(max-width:1200){
+    .image-box-city-page{
+    margin: 20px 0;
+}
+}

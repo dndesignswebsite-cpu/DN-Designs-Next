@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("branding-agency-in-delhi", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Branding Agency in Delhi",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("branding-agency-in-delhi", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,37 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "Why should I hire a professional branding agency in Delhi?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "A professional branding company in Delhi can help create a memorable and consistent brand identity that connects with consumers. A company comes with a skilled team, deep market insights, great designs, and clear communication, which can really help you in your branding journey",
     },
     {
       question: "What types of branding services do you offer?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "Our branding services in Delhi, customised to fit your brand values and business goals, include brand strategy design, logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design.",
     },
     {
       question: "How long does the branding process take?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "The timeline varies based on the project scope. Typically, developing a brand can take 4 to 8 weeks. Rebranding projects may take longer, depending again on the project.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "Can you help with rebranding my existing business in Delhi?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "Absolutely. We specialise in rebranding, redefining positioning, and modernising so that your brand stays relevant in today’s market.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "What makes your agency the best branding agency in Delhi?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        "We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your identity. Every brand we create is backed by research. You can see our work here.",
     },
     {
       question: "How can I get started with your branding services?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "Just reach out through our contact form or schedule a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible.",
     }
   ];
 
@@ -147,7 +147,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-delhi"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +168,9 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Branding Agency in Delhi: Where Brands Find Their Voice</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+                As the best branding agency in Delhi, we deliver end-to-end branding services to help you build an impactful business.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +519,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>Understanding Branding</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                  Branding is about creating the right image for your business. So it’s much more than your logo. Effective branding is what helps people build trust & emotional connection while also defining your brand’s purpose. This is what turns your business into an iconic brand, one that will leave a lasting legacy even in a fast-moving, competitive market.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -547,9 +547,9 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>Why Every Brand Needs Expert Branding Services</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                  In a world driven by first impressions, brands need professional branding services to achieve success. Expert branding helps shape identity and messaging and strengthens the positioning of the brand. Moreover, it attracts the right audience while building recognition and loyalty among them. In Delhi’s demanding market landscape, branding is a service that can turn humble businesses into big names.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +561,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>Powerful Brands Start Here</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                 As the leading branding agency in Delhi, we believe that the best results come from a perfect balance of creativity and strategy. From startups to established brands, we create identities that are always market-forward. Our brand-building company designs unique identities, clear messaging, and impactful visuals, especially for you, from scratch.
                 </p>
                 <TalkToUsCityPages />
               </div>

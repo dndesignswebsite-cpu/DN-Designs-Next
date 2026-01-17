@@ -7,7 +7,7 @@ import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-mumbai.css";
+import "./branding-agency-in-gurgaon.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
@@ -25,11 +25,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-agency-in-mumbai", null, false);
+    seo = await getPageById("branding-agency-in-kolkata", null, false);
   } catch (error) {
     console.log("About Us Error", error);
     return {
-      title: "Branding Agency In Mumbai",
+      title: "Branding Agency in Kolkata",
       robots: "noindex, nofollow",
     };
   }
@@ -82,7 +82,7 @@ async function page() {
     await connectDB();
     let pageData;
     try {
-      pageData = await getPageById("branding-agency-in-mumbai", null, true);
+      pageData = await getPageById("branding-agency-in-kolkata", null, true);
     } catch (error) {
       notFound();
     }
@@ -109,37 +109,37 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding company in Mumbai?",
+      question: "How involved will I be in the process?",
       answer:
-        "Hiring a professional branding agency in Mumbai makes sure your brand leaves a lasting impression. It brings in an experienced team which, through strategic thinking, creative expertise, and deep market understanding, gives your brand an impactful and consistent brand image that connects with your audience.",
+        "As the leading branding agency in Kolkata, we always strive for a collaborative approach. We include you in every discussion & feedback session, and this helps us make certain that the outcome truly reflects your vision for your brand.",
     },
     {
-      question: "What types of branding services do you offer?",
+      question: "Why is branding important for my business?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        "Branding highly influences people’s perspective of your brand, so any brand that wants to build trust, recognition, and communicate its values to its target audience among consumers should have a good branding plan laid out.",
     },
     {
-      question: "How long does the branding process take?",
+      question: "Can you help us name our brand or products?",
       answer:
-        "The duration of the branding process primarily depends on the project's complexity. Generally, it takes about 4 to 8 weeks to develop a new brand. On the other hand, rebranding may take slightly longer, depending on the depth of the required changes.",
+        "Absolutely. Our branding services in Kolkata include brand name suggestions, among our other branding services.",
     }
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Mumbai?",
+      question: "What makes your agency different?",
       answer:
-        "Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market.",
+        "As the best branding agency in Kolkata, we bring market research, strategy, and creativity together and provide custom branding solutions which ensure that we deliver only exceptional results.",
     },
     {
-      question: "Do you offer branding services outside Mumbai?",
+      question: "Do you provide ongoing support after branding?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        "Yes, depending on the package you select, we can offer ongoing support to help you ensure your brand stays consistent and future-ready.",
     },
     {
-      question: "How can I get started with your branding services?",
+      question: "How do we start working with you?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        "Just reach out through our contact form or schedule a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible.",
     }
   ];
 
@@ -147,7 +147,7 @@ async function page() {
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-
+  const pageName = "branding";
 
 
   return (
@@ -156,7 +156,7 @@ async function page() {
     {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-agency-in-mumbai"}`}
+          key={`schema-page-${pageData._id || "branding-agency-in-kolkata"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -168,9 +168,10 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Mumbai: Your Vision, Our Design</h1>
+              <h1>Branding Agency In Kolkata: Crafting Brands With Purpose
+</h1>
               <p className="para-roboto">
-                We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.
+                Inspired by the city’s everyday pulse, our branding agency in Kolkata creates a customised branding strategy to help your business communicate more effectively and stand out.
               </p>
               <div>
                 <HomePageBtn />
@@ -519,9 +520,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Branding: The Reason Behind Every Strong Brand</h2>
+                <h2>What Your Audience Sees First</h2>
                 <p>
-                 In a city full of dreams, achieving yours isn’t a cakewalk. That is why your product/business needs a strong branding plan that helps you express your values and attract your target audience. The sole objective of branding is to establish a unique identity in the market that people remember, connect with & trust. It is eventually this connection and trust that drive sales and profit for your business.
+                  Even before your consumer reads a word about you, they judge what they see first. Whether it is your logo, colours, website layout, or the overall appearance, it remarkably determines how you are perceived in the market. That is why creating a branding that looks professional is necessary if you want attention, better credibility, and enhanced chances of people exploring what you offer.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -547,9 +548,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why is Professional Branding Service Essential?</h2>
+                <h2>How Your Story Comes Across
+</h2>
                 <p>
-                  In a jam-packed market like Mumbai’s, the right branding can do wonders for your brand. It helps draw attention and creates lasting recall among consumers while improving your credibility. Even successful businesses can fade over a period of time without a strong branding plan. Working with a professional branding company in Mumbai can help you establish a strong brand identity which is seen, remembered and chosen. It will give an edge over your competitors.
+                 Once people see you, and you have piqued their interest, they want to know more about what your brand represents and stands for. This can be best expressed through your brand voice, messaging, story, values and how you present information. It’s a cherry on top when your visuals and voice both match each other. It exhibits a more confident picture of your brand to your consumers.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -561,9 +563,9 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why We’re the Right Fit for Your Branding Services</h2>
+                <h2>Your Brand’s Lasting Impression</h2>
                 <p>
-                  As the best branding agency in Mumbai, we strive to strike a perfect balance between innovation & expertise to help brands achieve their goal. Our team offers customised branding solutions to give your brand a boost, making it distinctive, loved, and profitable. Our profound understanding of consumer behaviour and trends ensures that you get noticed instantly.
+                 Lastly, a business grows when people remember it, so it is crucial to create consistent branding across your website, social media, packaging, and ads to ensure you communicate your identity consistently everywhere. This makes your brand easier to remember, trust, and recommend. At DN Designs, we take care of every aspect of your branding. As the best branding company in Kolkata, we are here to help you stay ahead of your competitors. Just get in touch with us.
                 </p>
                 <TalkToUsCityPages />
               </div>
