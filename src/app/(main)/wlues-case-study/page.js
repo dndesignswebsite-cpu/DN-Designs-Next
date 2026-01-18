@@ -411,7 +411,7 @@ async function page() {
 
           <div className="col-lg-6 col-md-6 col-12 wlue-sign-off">
             <h2 id="caststudy-heading">Wlue's</h2>
-            <p id="casestudy-span">#SigningOff</p>
+            <p id="casestudy-span">#SigningOf</p>
           </div>
         </div>
       </div>
