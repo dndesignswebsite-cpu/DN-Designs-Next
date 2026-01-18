@@ -67,6 +67,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
@@ -229,7 +231,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-6 what-drives-our-growth-img-section">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/jkjk.png"
+                src={imageUrl + "jkjk.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -251,7 +253,7 @@ async function page() {
                   off-page optimisation as well as technical SEO.
                 </p>
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/jhfjhh.png"
+                   src={imageUrl + "jhfjhh.webp"}
                   className="img-fluid"
                 />
               </div>
@@ -267,7 +269,7 @@ async function page() {
                   yielding positive results or requires modifications.
                 </p>
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/06/jkjk.png"
+                  src={imageUrl + "jkjk (1).webp"}
                   className="img-fluid"
                 />
               </div>
@@ -290,7 +292,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "bewjdhj.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -312,7 +314,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -320,7 +322,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "jekrjfkertbk.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -344,7 +346,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -352,7 +354,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "jekrjfkertbk.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -377,7 +379,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -385,7 +387,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl + "gewhjbjbj.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -410,7 +412,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -798,7 +800,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                 src={imageUrl + "deal_8958919.svg"}
                   className="img-fluid"
                 />
                 <h4>Business to Business (B2B)</h4>
@@ -813,7 +815,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "consumer_8915169.svg"}
                   className="img-fluid"
                 />
                 <h4>Business to Customers (B2C)</h4>
@@ -828,7 +830,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                 src={imageUrl + "training_1654193.svg"}
                   className="img-fluid"
                 />
                 <h4>Educational Institutions</h4>
@@ -843,7 +845,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "online-shop_1098535.svg"}
                   className="img-fluid"
                 />
                 <h4>Retail or Online Business</h4>
@@ -860,7 +862,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "innovation_12450959.svg"}
                   className="img-fluid"
                 />
                 <h4>Innovation and SaaS</h4>
@@ -874,7 +876,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "remuneration_12515725.svg"}
                   className="img-fluid"
                 />
                 <h4>Financial Services (BFSI)</h4>
@@ -889,7 +891,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "safety_4287754.svg"}
                   className="img-fluid"
                 />
                 <h4>Pharma and Medical services</h4>
@@ -904,7 +906,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                  src={imageUrl + "joystick_808513.svg"}
                   className="img-fluid"
                 />
                 <h4>Diversion and Gaming</h4>
@@ -988,7 +990,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-6">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/seo-01.png"
+                src={imageUrl + "wjebhhdseo-01.webp"}
                 className="img-fluid"
               />
             </div>

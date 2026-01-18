@@ -182,7 +182,7 @@ async function page() {
       title: "Brand Awareness & Trust",
       description:
         "Helps reach a newer and more targeted audience, enhancing brand awareness. Promotion by an influencer further establishes customers’ trust in your brand.",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/3-1-1.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/brand-lap.jpg",
     },
     {
       id: 2,
@@ -190,7 +190,7 @@ async function page() {
       title: "Fresh Content Strategy",
       description:
         "The same old content can become monotonous. New perspectives and increased creativity give your content strategy a new direction. ",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/4-1-2.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/fresh-content-lap.jpg",
     },
     {
       id: 3,
@@ -198,7 +198,7 @@ async function page() {
       title: "Support SEO",
       description:
         "Interesting content engages consumers and encourages them to share it. This brings in more website traffic and, additionally, helps build quality backlinks.",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/2-1-1.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/seo-lap.jpg",
     },
     {
       id: 4,
@@ -206,7 +206,7 @@ async function page() {
       title: "Increase Conversion & ROI",
       description:
         "Influencers have the trust of their audience. They can, therefore, convince customers to purchase your products, bringing in increased sales and profits for you.",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/3-2-1.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/roi-lap.jpg",
     },
     {
       id: 5,
@@ -214,24 +214,24 @@ async function page() {
       title: "Cost Saving",
       description:
         "Traditional marketing is rather expensive. In comparison, influencer marketing is still an extremely cost-effective option, except of course in a few cases.",
-      image: "https://dndesigns.co.in/wp-content/uploads/2025/06/3-2-1.jpg",
+      image: "https://powerfilldrinks.com/uploads/pages/cost-saving-lap.jpg",
     },
   ];
 
   const mobileCrads = [
     {
       mobileImage:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1-1.jpg",
+        "https://powerfilldrinks.com/uploads/pages/brand.jpg",
     },
     {
-      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/7-2.jpg",
+      mobileImage: "https://powerfilldrinks.com/uploads/pages/fresh-content.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/nature-balance-mangoe-2.jpg",
+        "https://powerfilldrinks.com/uploads/pages/seo.jpg",
     },
     {
-      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1.jpg",
+      mobileImage: "https://powerfilldrinks.com/uploads/pages/roi.jpg",
     },
   ];
 
@@ -273,7 +273,7 @@ async function page() {
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-1">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"Frame 1000001631 (1).svg"}
                     className="img-fluid"
                   ></img>
                   <h3>Grow Your Business</h3>
@@ -288,7 +288,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-6">
               <div className="grow-your-bussiness-col-2">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2023/10/kerfin7_nea_3157.png"
+                  src={imageUrl + "hwehvdhghd.webp"}
                   className="img-fluid"
                 ></img>
               </div>
@@ -298,7 +298,7 @@ async function page() {
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-3">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl+"Frame 1000001626 (1).svg"}
                     className="img-fluid"
                   ></img>
                   <h3>Expert Solutions</h3>
@@ -367,7 +367,7 @@ async function page() {
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "Frame 427324112 (6).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -395,7 +395,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -403,7 +403,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "Frame 427324112 (7).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -431,7 +431,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -439,7 +439,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src={imageUrl + "Frame 427324112 (8).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -467,7 +467,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -477,7 +477,7 @@ async function page() {
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "Frame 427324112 (9).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -505,7 +505,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -513,7 +513,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "Frame 427324112 (10).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -541,7 +541,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -549,7 +549,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src={imageUrl + "Frame 427324112 (12).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -577,7 +577,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
