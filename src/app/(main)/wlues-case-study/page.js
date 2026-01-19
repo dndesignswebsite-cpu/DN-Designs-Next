@@ -176,7 +176,7 @@ async function page() {
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6 mb-3 mb-lg-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues2-1.jpg"
+              src={imageUrl + "gsadjgjhsd.webp"}
               alt=""
               className="img-fluid case-study-img8"
             />
@@ -184,7 +184,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues3.jpg"
+              src={imageUrl +"wvehdhjej.webp"}
               alt=""
               className="img-fluid case-study-img9"
             />
@@ -193,7 +193,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues4.jpg"
+            src={imageUrl +"3ygewudhgew.webp"}
             alt=""
             className="img-fluid case-study-img5"
           />
@@ -201,7 +201,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues5.mp4"
+            src="https://powerfilldrinks.com/uploads/videos/wlues5.mp4"
             width="100%"
             autoPlay
             muted
@@ -226,7 +226,7 @@ async function page() {
           </div>
           <div className="col-lg-6 col-12 col-md-6">
             <video
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues6.mp4"
+              src="https://powerfilldrinks.com/uploads/videos/wlues6.mp4"
               width="100%"
               autoPlay
               muted
@@ -240,7 +240,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues7.jpg"
+             src={imageUrl +"whevdhvhjvh.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -248,7 +248,7 @@ async function page() {
 
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues8.jpg"
+              src={imageUrl +"whgevghsdavcd.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -257,7 +257,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/video-1-1.mp4"
+            src="https://powerfilldrinks.com/uploads/videos/video-1-1.mp4"
             width="100%"
             autoPlay
             muted
@@ -270,7 +270,7 @@ async function page() {
         <div className="row pt-lg-5">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/11/wlues9.jpg"
+              src={imageUrl +"tfewgygvdhgvw.webp"}
               alt=""
               className="img-fluid case-study-img6"
             />
@@ -292,7 +292,7 @@ async function page() {
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues10.jpg"
+              src={imageUrl +"uyfjhjhjhgvvhj.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -300,7 +300,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues11.jpg"
+              src={imageUrl +"rwqtefdgwvh.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -309,7 +309,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues12.jpg"
+            src={imageUrl +"werwhvdshj.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -318,7 +318,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues13.jpg"
+             src={imageUrl +"rwefhdgvhrjdj.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -326,7 +326,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues14.jpg"
+             src={imageUrl +"nwjkebhdn.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -335,7 +335,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues15.jpg"
+            src={imageUrl +"mweghgcadsvjg.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -344,7 +344,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues16.jpg"
+              src={imageUrl +"wyegwhdvbnbn.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -352,7 +352,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues17.jpg"
+              src={imageUrl +"yewfdewghe.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -361,7 +361,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues18.jpg"
+            src={imageUrl +"tyweffdcewghvh.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -370,7 +370,7 @@ async function page() {
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues19.jpg"
+             src={imageUrl +"nwejkbhdvvjh.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -378,7 +378,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues20.jpg"
+             src={imageUrl +"weigydshvwjd.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -387,7 +387,7 @@ async function page() {
 
         <div className="row">
           <img
-            src="https://dndesigns.co.in/wp-content/uploads/2025/09/wlues21.jpg"
+            src={imageUrl +"wejhbvdhgvwehd.webp"}
             alt=""
             className="img-fluid case-study-img mt-4 p-2"
           />
@@ -411,7 +411,7 @@ async function page() {
 
           <div className="col-lg-6 col-md-6 col-12 wlue-sign-off">
             <h2 id="caststudy-heading">Wlue's</h2>
-            <p id="casestudy-span">#SigningOf</p>
+            <p id="casestudy-span">#SigningOff</p>
           </div>
         </div>
       </div>

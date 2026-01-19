@@ -260,7 +260,7 @@ async function page() {
 
               <div className="social-media-image-div">
                 <img
-                  src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                  src={imageUrl +"wjhbevasdbh.webp"}
                   className="img-fluid"
                 />
               </div>
@@ -281,7 +281,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                    src={imageUrl +"Frame 427324115.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -313,7 +313,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                   src={imageUrl +"Frame 427324115 (1).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -345,7 +345,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                   src={imageUrl +"Frame 427324115 (3).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -377,7 +377,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                    src={imageUrl +"Group 36813.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -705,7 +705,7 @@ async function page() {
           <div className="row projects-completed-main-row">
             <div className="col-12 col-md-12 col-lg-6">
               <img
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl +"mobile-mockup.webp"}
                 className="img-fluid"
               />
             </div>

@@ -784,6 +784,459 @@ const nextConfig = {
         destination: "/contact-us",
         permanent: true, // 301
       },
+      {
+        //123
+        source: "/blog/whats-in-store-while-working-together-with-a-creative-design-agency-in-noida",
+        destination: "/blog/creative-design-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //124
+        source: "/blog/how-to-find-the-best-logo-design-agency-in-noida",
+        destination: "/blog/best-logo-design-agency-noida",
+        permanent: true, // 301
+      },
+      {
+        //125
+        source: "/2023/07",
+        destination: "/blog",
+        permanent: true, // 301
+      },
+       {
+        //126
+        source: "/blog/sweet-box-design-trends-to-watch-out-for-in-2023",
+        destination: "/blog/sweet-box-design-trends",
+        permanent: true, // 301
+      },
+      {
+        //127
+        source: "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
+        destination: "/blog/catalogues-ecommerce-success-design-insights",
+        permanent: true, // 301
+      },
+      {
+        //128
+        source: "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
+        destination: "/blog/catalogues-ecommerce-success-design-insights",
+        permanent: true, // 301
+      },
+      {
+        //129
+        source: "/blog/5-tips-for-effective-social-media-marketing-strategies",
+        destination: "/blog/effective-social-media-marketing-tips",
+        permanent: true, // 301
+      },
+       {
+        //130
+        source: "/blog/how-a-food-labels-design-helped-a-company-build-brand-loyalty",
+        destination: "/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //131
+        source: "/blog/finding-the-right-packaging-design-agency-in-gujarat",
+        destination: "/blog/packaging-design-agency-gujarat",
+        permanent: true, // 301
+      },
+      {
+        //132
+        source: "/wp-content/uploads/2025/02/53-300x300.png",
+        destination: "/blog/beverage-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //133
+        source: "/wp-content/uploads/2025/02/23-300x300.png",
+        destination: "/blog/beverage-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //134
+        source: "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-3-300x300.png",
+        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        permanent: true, // 301
+      },
+      {
+        //135
+        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-4-300x300.png",
+        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        permanent: true, // 301
+      },
+      {
+        //136
+        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-300x300.png",
+        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        permanent: true, // 301
+      },
+      {
+        //137
+        source: "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-300x300.png",
+        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        permanent: true, // 301
+      },
+      {
+        //138
+        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-3-300x300.png",
+        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        permanent: true, // 301
+      },
+      {
+        //139
+        source: "/blog/brand-design-for-makhana-with-marketing-strategies-in-2024",
+        destination: "/blog/brand-design-for-makhana-with-marketing-strategies",
+        permanent: true, // 301
+      },
+      {
+        //140
+        source: "/blog/spice-packaging-design-ideas-in-2024",
+        destination: "/blog/spice-packaging-design-ideas",
+        permanent: true, // 301
+      },
+      {
+        //141
+        source: "/llms.txt",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //142
+        source: "/blog/whey-protein-branding-and-packaging/els",
+        destination: "/blog/whey-protein-branding-and-packaging",
+        permanent: true, // 301
+      },
+      {
+        //143
+        source: "/blog/author/digitizersn",
+        destination: "/blog",
+        permanent: true, // 301
+      },
+      {
+        //144
+        source: "/blog/author/ankitseo",
+        destination: "/blog",
+        permanent: true, // 301
+      },
+      {
+        //145
+        source: "/home",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //146
+        source: "/creative-designing-agency-in-noida",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //147
+        source: "/brands-promotional-video",
+        destination: "/blog/brands-promotional-video",
+        permanent: true, // 301
+      },
+      {
+        //148
+        source: "/professional-logo-design-agency-in-noida",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //149
+        source: "/product-packaging-design-company-in-noida",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //150
+        source: "/logo-masters-creating-icons-for-your-business-success",
+        destination: "/blog/logo-masters-creating-icons-for-your-business-success",
+        permanent: true, // 301
+      },
+      {
+        //151
+        source: "/how-to-create-eye-catching-food-packaging-labels",
+        destination: "/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //152
+        source: "/blog/whey-protein-branding-and-packaging/search_term_string",
+        destination: "/blog/whey-protein-branding-and-packaging",
+        permanent: true, // 301
+      },
+       {
+        //153
+        source: "/blog/create-successful-toy-brand-design-with-strategies",
+        destination: "/blog/toy-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //154
+        source: "/blog/packaging-design-luxury-brands-premium-exquisite-look",
+        destination: "/blog/luxury-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //155
+        source: "/blog/best-branding-agency-in-delhi",
+        destination: "/branding-agency-in-delhi",
+        permanent: true, // 301
+      },
+      {
+        //156
+        source: "/blog/energy-drink-brand-design",
+        destination: "/blog/energy-drink-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //157
+        source: "/blog/protein-powder-label-design-whey-supplement-logo",
+        destination: "/blog/whey-protein-label-design",
+        permanent: true, // 301
+      },
+      {
+        //158
+        source: "/blog/beverage-packaging-label-design-in-summer",
+        destination: "/blog/beverage-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //159
+        source: "/blog/creative-food-packaging-design",
+        destination: "/blog/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //160
+        source: "/food-packaging-design-agency-in-ahmedabad",
+        destination: "/packaging-design-agency-in-ahmedabad",
+        permanent: true, // 301
+      },
+      {
+        //161
+        source: "/blog/food-label-design-brand-loyalty",
+        destination: "/blog/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //162
+        source: "/blog/2024/12/21",
+        destination: "/blog",
+        permanent: true, // 301
+      },
+      {
+        //163
+        source: "/blog/product-packaging-design-company-in-noida",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //164
+        source: "/blog/5-factors-for-food-packaging-designing",
+        destination: "/blog/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //165
+        source: "/blog/professional-logo-design-agency-in-noida",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //166
+        source: "/blog/creative-design-agency-in-noida",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //167
+        source: "/blog/logo-masters-creating-icons-for-your-business-success",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //168
+        source: "/packagong-design-agency-in-mumbai",
+        destination: "/packaging-design-agency-in-mumbai",
+        permanent: true, // 301
+      },
+      {
+        //169
+        source: "/blog/branding-agencies-in-ncr",
+        destination: "/branding-agency-in-delhi",
+        permanent: true, // 301
+      },
+       {
+        //170
+        source: "/blog/catalogues-ecommerce-success-design-insights",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //171
+        source: "/blog/how-to-create-eye-catching-food-packaging-labels",
+        destination: "/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //172
+        source: "/blog/food-package-design-companies-for-e-commerce-food",
+        destination: "/food-packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //173
+        source: "/blog/create-wow-brochures-with-brochure-design-agency",
+        destination: "/catalogue-designing",
+        permanent: true, // 301
+      },
+      {
+        //174
+        source: "/blog/category/designing-and-marketing",
+        destination: "/blog/category/marketing",
+        permanent: true, // 301
+      },
+      {
+        //175
+        source: "/blog/category/branding-agency",
+        destination: "/blog/category/branding",
+        permanent: true, // 301
+      },
+      {
+        //176
+        source: "/blog/category/packaging-designs",
+        destination: "/blog/category/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //177
+        source: "/blog/category/branding-and-packaging",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //178
+        source: "/blog/category/social-media",
+        destination: "/social-media-marketing",
+        permanent: true, // 301
+      },
+      {
+        //179
+        source: "/blog/category/seo",
+        destination: "/seo-marketing-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //180
+        source: "/blog/category/influencer-marketing",
+        destination: "/influencer-marketing",
+        permanent: true, // 301
+      },
+      {
+        //181
+        source: "/blog/category/logo-design-agency",
+        destination: "/logo-designing",
+        permanent: true, // 301
+      },
+      {
+        //182
+        source: "/blog/category/label-designs",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //183
+        source: "/blog/category/label-design",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //184
+        source: "/blog/category/food-packaging",
+        destination: "/packaging-design",
+        permanent: true, // 301
+      },
+      {
+        //185
+        source: "/blog/category/digital-marketing-agency",
+        destination: "/digital-marketing-agency-in-noida",
+        permanent: true, // 301
+      },
+      {
+        //186
+        source: "/blog/category/designing",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //187
+        source: "/blog/category/designing/page/2",
+        destination: "/",
+        permanent: true, // 301
+      },
+      {
+        //188
+        source: "/blog/best-packaging-design-branding-agency-dubai",
+        destination: "/blog/branding-agency-in-dubai",
+        permanent: true, // 301
+      },
+      {
+        //189
+        source: "/blog/best-branding-agency-in-dubai",
+        destination: "/blog/branding-agency-in-dubai",
+        permanent: true, // 301
+      },
+      {
+        //190
+        source: "/blog/powerful-brand-story-for-effective-brand-positioning",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      {
+        //191
+        source: "/creative-branding-and-design-agency-for-new-businesses",
+        destination: "/branding",
+        permanent: true, // 301
+      },
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

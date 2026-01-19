@@ -63,6 +63,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
+  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
   // ---
   await connectDB();
   let pageData;
@@ -228,7 +229,8 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src = {imageUrl + "bobalist-mockup.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -255,7 +257,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src = {imageUrl + "Qualiteq.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -285,7 +287,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src = {imageUrl + "bombzy.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -313,7 +315,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src = {imageUrl + "foodsure.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -344,7 +346,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                  src = {imageUrl + "parda.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -373,7 +375,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                 src = {imageUrl + "Letssup.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -608,7 +610,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src = {imageUrl + "Frame 427324115 (4).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -634,7 +636,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -642,7 +644,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src = {imageUrl + "Group 36813 (1).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -667,7 +669,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -675,7 +677,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src = {imageUrl + "Frame 427324115 (5).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -701,7 +703,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -712,7 +714,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src = {imageUrl + "Frame 427324115 (6).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -738,7 +740,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -746,7 +748,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                    src = {imageUrl + "Frame 427324115 (7).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -773,7 +775,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -781,7 +783,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/wp-content/uploads/2025/07/design.svg"
+                   src = {imageUrl + "Group 36813 (2).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -808,7 +810,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/Frame-427324112.png"
+                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -843,7 +845,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-6">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2025/06/jkjk.png"
+               src = {imageUrl + "mobile-mockup.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -860,7 +862,7 @@ async function page() {
           <div className="row">
             <h2>Make your brand click!</h2>
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2025/04/web-banner-2048x800.jpg"
+              src = {imageUrl + "lowest-image-on-page.webp"}
               className="img-fluid"
             />
 
@@ -892,7 +894,7 @@ async function page() {
       <section className="faqs">
         <div className="container">
           <div className="row text-center">
-            <h2>Frequently Asked Questions</h2>
+            {/* <h2>Frequently Asked Questions</h2> */}
           </div>
         </div>
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
