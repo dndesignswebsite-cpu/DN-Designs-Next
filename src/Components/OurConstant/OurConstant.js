@@ -118,7 +118,7 @@ function OurConstant() {
             {/* 14 */}
             <div className={`${styles["companies"]}`}>
               <img
-                src={imageUrl + "Nature-balance.webp"}
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -333,7 +333,7 @@ function OurConstant() {
             {/* 14 */}
             <div className={`${styles["companies"]}`}>
               <img
-                src={imageUrl + "Nature-balance.webp"}
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -554,7 +554,7 @@ function OurConstant() {
             {/* 14 */}
             <div className={`${styles["companies"]}`}>
               <img
-                src={imageUrl + "Nature-balance.webp"}
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className="img-fluid"
               ></img>
             </div>

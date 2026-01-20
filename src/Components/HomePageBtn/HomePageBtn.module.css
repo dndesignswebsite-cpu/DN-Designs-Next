@@ -1,4 +1,10 @@
-.hero button {
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero button,
+.hero a {
   font-family: var(--font-roboto);
   padding: 14px 60px;
   font-size: 18px;
@@ -8,38 +14,40 @@
   cursor: pointer;
   transition: 0.3s ease;
   margin-right: 15px;
-}
-.hero{
-  display: flex;
-  flex-direction: row;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero button::after{
+/* arrow */
+.hero button::after,
+.hero a::after {
   content: "\2192";
   padding-left: 10px;
   font-weight: 600;
   font-size: 18px;
 }
 
-
+/* first button */
 .hero button:first-child {
   background-color: #ca2734;
   color: white;
 }
 
-.hero button:last-child {
+/* second button (anchor) */
+.hero a {
   background-color: #000;
   color: white;
 }
 
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
 
-@media(max-width:992px){
-
-  .hero{
-  display: flex;
-  flex-direction: column;
-}
-  .hero button {
+  .hero button,
+  .hero a {
     margin: 5px;
     width: 100%;
   }

@@ -723,10 +723,10 @@ async function page() {
                 <div className="col">
                   <div className="projects-completed-div projects-completed-div-box-sh">
                     <h3>
-                      <AutoCounter target={300} />+
+                        <AutoCounter target={150} />+
                     </h3>
-                    <h4>Projects Completed</h4>
-                    <p>Successfully delivered across industries</p>
+                    <h4>Happy Clients</h4>
+                    <p>Trusted by businesses worldwide</p>
                   </div>
                 </div>
               </div>
@@ -735,19 +735,19 @@ async function page() {
                 <div className="col">
                   <div className="projects-completed-div projects-completed-div-box-sh">
                     <h3>
-                      <AutoCounter target={300} />+
+                      <AutoCounter target={8} />+
                     </h3>
-                    <h4>Projects Completed</h4>
-                    <p>Successfully delivered across industries</p>
+                    <h4>Years Experience</h4>
+                    <p>Proven expertise</p>
                   </div>
                 </div>
                 <div className="col">
                   <div className="projects-completed-div">
                     <h3>
-                      <AutoCounter target={300} />+
+                       <AutoCounter target={98} />%
                     </h3>
-                    <h4>Projects Completed</h4>
-                    <p>Successfully delivered across industries</p>
+                    <h4>Client Satisfaction</h4>
+                    <p>Exceeding expectation consistently</p>
                   </div>
                 </div>
               </div>
@@ -757,7 +757,7 @@ async function page() {
       </section>
 
       {/* sucess stories */}
-      <section className="sucess-stories">
+      {/* <section className="sucess-stories">
         <div className="container success-stories py-5">
           <h2 className="success-stories-title text-center">Success Stories</h2>
           <p className="success-stories-para text-center">
@@ -826,7 +826,7 @@ async function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* faqs */}
 

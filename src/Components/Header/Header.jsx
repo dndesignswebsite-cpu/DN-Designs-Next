@@ -71,7 +71,7 @@ export default function Header() {
         <div className={`${styles["logo"]}`}>
           <Link href="/" onClick={handleLinkClick}>
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2019/02/cropped-dn_new-logolines.png"
+              src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
               alt="DN Designs Logo"
             />
           </Link>
