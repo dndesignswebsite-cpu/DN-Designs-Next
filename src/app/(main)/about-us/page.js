@@ -68,9 +68,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
   await connectDB();
@@ -141,7 +139,7 @@ async function page() {
               <img
                 // src="https://dndesigns.co.in/wp-content/uploads/2025/07/ghfh.jpg"
 
-                src ={imageUrl + "ghfh.webp"}
+                src={imageUrl + "ghfh.webp"}
                 className="img-fluid"
               />
             </div>
@@ -293,10 +291,7 @@ async function page() {
                 </span>
               </h2>
             </div>
-            <img
-              src={imageUrl + "Team.webp"}
-              className="img-fluid"
-            />
+            <img src={imageUrl + "Team.webp"} className="img-fluid" />
           </div>
         </div>
       </section>

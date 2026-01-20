@@ -63,7 +63,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -206,8 +206,7 @@ async function page() {
 
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "social-media-marketing"}`}
@@ -260,7 +259,7 @@ async function page() {
 
               <div className="social-media-image-div">
                 <img
-                  src={imageUrl +"wjhbevasdbh.webp"}
+                  src={imageUrl + "wjhbevasdbh.webp"}
                   className="img-fluid"
                 />
               </div>
@@ -281,7 +280,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"Frame 427324115.svg"}
+                    src={imageUrl + "Frame 427324115.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -305,7 +304,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -313,7 +312,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl +"Frame 427324115 (1).svg"}
+                    src={imageUrl + "Frame 427324115 (1).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -337,7 +336,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -345,7 +344,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl +"Frame 427324115 (3).svg"}
+                    src={imageUrl + "Frame 427324115 (3).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -369,7 +368,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -377,7 +376,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"Group 36813.svg"}
+                    src={imageUrl + "Group 36813.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -401,7 +400,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -705,7 +704,7 @@ async function page() {
           <div className="row projects-completed-main-row">
             <div className="col-12 col-md-12 col-lg-6">
               <img
-                src={imageUrl +"mobile-mockup.webp"}
+                src={imageUrl + "mobile-mockup.webp"}
                 className="img-fluid"
               />
             </div>
@@ -769,7 +768,7 @@ async function page() {
             <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
               <div className="success-story p-0">
                 <img
-                 src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                  src={imageUrl + "imgi_2_Frame-427324112.webp"}
                   className="img-fluid"
                 />
                 <div className="p-4 success-story-content">
@@ -789,7 +788,7 @@ async function page() {
             <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
               <div className="success-story p-0">
                 <img
-                  src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                  src={imageUrl + "imgi_2_Frame-427324112.webp"}
                   className="img-fluid"
                 />
                 <div className="p-4 success-story-content">
@@ -809,7 +808,7 @@ async function page() {
             <div className="col-12 col-lg-4 col-md-6 text-start px-3 py-0 mt-4">
               <div className="success-story p-0">
                 <img
-                  src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                  src={imageUrl + "imgi_2_Frame-427324112.webp"}
                   className="img-fluid"
                 />
                 <div className="p-4 success-story-content">

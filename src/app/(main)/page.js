@@ -149,8 +149,7 @@ export default function Home() {
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
 
-
-    const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   return (
     <>
@@ -226,7 +225,7 @@ export default function Home() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -417,7 +416,7 @@ export default function Home() {
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                   src={imageUrl + "grin care case study.webp"}
+                    src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
@@ -462,7 +461,7 @@ export default function Home() {
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                     src={imageUrl + "nectarpure case study.webp"}
+                    src={imageUrl + "nectarpure case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>

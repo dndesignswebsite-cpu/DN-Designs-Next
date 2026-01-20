@@ -16,8 +16,6 @@ import { getPageById } from "@/lib/services/pageService.js";
 
 // meta data
 export async function generateMetadata() {
-  
-   
   await connectDB();
   let seo;
   try {
@@ -67,8 +65,7 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -95,7 +92,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   // hero section content
   const heading = "Where Brands Are Born";
@@ -169,8 +165,7 @@ async function page() {
 
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding"}`}
@@ -179,8 +174,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
-
 
       {/*Breadcrumb*/}
       <section>
@@ -201,10 +194,7 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
-                <img
-                 src={imageUrl + "Enlite-3.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Enlite-3.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -227,10 +217,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
-                <img
-                  src={imageUrl + "I-organic.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "I-organic.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -258,7 +245,7 @@ async function page() {
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/brnadingBombzy.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/brnadingBombzy.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -285,10 +272,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
-                  src={imageUrl + "Deeproots.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Deeproots.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -315,10 +299,7 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
-                 src={imageUrl + "Thames.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Thames.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -341,10 +322,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
-                  src={imageUrl + "Smartyums.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Smartyums.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -485,7 +463,7 @@ async function page() {
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
                   <img
-                   src={imageUrl + "ewrfeferf.webp"}
+                    src={imageUrl + "ewrfeferf.webp"}
                     className="img-fluid"
                   />
                   <div className="our-brand-mobile-div-content">
@@ -526,10 +504,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "2-3.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "2-3.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Brand Identity</h3>
                   <p>
@@ -544,10 +519,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "3-3.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "3-3.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Brand Voice</h3>
                   <p>
@@ -561,10 +533,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "7-1.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "7-1.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Brand Positioning</h3>
                   <p>
@@ -582,10 +551,7 @@ async function page() {
           <div className="row brand-identity-div-row">
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "6-1.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "6-1.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Brand Messaging</h3>
                   <p>
@@ -599,10 +565,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "5-1.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "5-1.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Brand Value</h3>
                   <p>
@@ -616,10 +579,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img
-                  src={imageUrl + "4-3.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "4-3.webp"} className="img-fluid" />
                 <div className="identity-div-content">
                   <h3>Rebranding</h3>
                   <p>

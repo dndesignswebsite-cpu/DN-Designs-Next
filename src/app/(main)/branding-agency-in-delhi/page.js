@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,35 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("branding-agency-in-delhi", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("branding-agency-in-delhi", null, true);
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +114,7 @@ async function page() {
       question: "How long does the branding process take?",
       answer:
         "The timeline varies based on the project scope. Typically, developing a brand can take 4 to 8 weeks. Rebranding projects may take longer, depending again on the project.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -140,7 +132,7 @@ async function page() {
       question: "How can I get started with your branding services?",
       answer:
         "Just reach out through our contact form or schedule a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible.",
-    }
+    },
   ];
 
   // form section content
@@ -149,11 +141,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding-agency-in-delhi"}`}
@@ -170,7 +160,8 @@ async function page() {
             <div className={`${styles["left-hero"]} col`}>
               <h1>Branding Agency in Delhi: Where Brands Find Their Voice</h1>
               <p className="para-roboto">
-                As the best branding agency in Delhi, we deliver end-to-end branding services to help you build an impactful business.
+                As the best branding agency in Delhi, we deliver end-to-end
+                branding services to help you build an impactful business.
               </p>
               <div>
                 <HomePageBtn />
@@ -228,7 +219,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -515,13 +506,17 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>Understanding Branding</h2>
                 <p>
-                  Branding is about creating the right image for your business. So it’s much more than your logo. Effective branding is what helps people build trust & emotional connection while also defining your brand’s purpose. This is what turns your business into an iconic brand, one that will leave a lasting legacy even in a fast-moving, competitive market.
+                  Branding is about creating the right image for your business.
+                  So it’s much more than your logo. Effective branding is what
+                  helps people build trust & emotional connection while also
+                  defining your brand’s purpose. This is what turns your
+                  business into an iconic brand, one that will leave a lasting
+                  legacy even in a fast-moving, competitive market.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -534,12 +529,8 @@ async function page() {
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
               </div>
@@ -549,21 +540,30 @@ async function page() {
               <div className="content-box-city-page">
                 <h2>Why Every Brand Needs Expert Branding Services</h2>
                 <p>
-                  In a world driven by first impressions, brands need professional branding services to achieve success. Expert branding helps shape identity and messaging and strengthens the positioning of the brand. Moreover, it attracts the right audience while building recognition and loyalty among them. In Delhi’s demanding market landscape, branding is a service that can turn humble businesses into big names.
+                  In a world driven by first impressions, brands need
+                  professional branding services to achieve success. Expert
+                  branding helps shape identity and messaging and strengthens
+                  the positioning of the brand. Moreover, it attracts the right
+                  audience while building recognition and loyalty among them. In
+                  Delhi’s demanding market landscape, branding is a service that
+                  can turn humble businesses into big names.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>Powerful Brands Start Here</h2>
                 <p>
-                 As the leading branding agency in Delhi, we believe that the best results come from a perfect balance of creativity and strategy. From startups to established brands, we create identities that are always market-forward. Our brand-building company designs unique identities, clear messaging, and impactful visuals, especially for you, from scratch.
+                  As the leading branding agency in Delhi, we believe that the
+                  best results come from a perfect balance of creativity and
+                  strategy. From startups to established brands, we create
+                  identities that are always market-forward. Our brand-building
+                  company designs unique identities, clear messaging, and
+                  impactful visuals, especially for you, from scratch.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -579,17 +579,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

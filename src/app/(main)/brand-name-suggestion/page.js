@@ -63,9 +63,8 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-  
   // ---
   await connectDB();
   let pageData;
@@ -204,7 +203,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -212,7 +211,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                     src={imageUrl + "download (7).svg"}
+                    src={imageUrl + "download (7).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -239,7 +238,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -273,7 +272,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -281,7 +280,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                     src={imageUrl + "download (5).svg"}
+                    src={imageUrl + "download (5).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -307,7 +306,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -318,7 +317,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                     src={imageUrl + "download (4).svg"}
+                    src={imageUrl + "download (4).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -343,7 +342,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -351,7 +350,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                     src={imageUrl + "download (3).svg"}
+                    src={imageUrl + "download (3).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -384,7 +383,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                     src={imageUrl + "download (2).svg"}
+                    src={imageUrl + "download (2).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -409,7 +408,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -443,7 +442,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>

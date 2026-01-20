@@ -58,8 +58,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
-   // ---
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -86,10 +86,9 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   return (
     <div>
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "grincare-case-study"}`}
@@ -99,15 +98,13 @@ async function page() {
       )}
       {/*schema ends here */}
 
-
-
       <div className="container-fluid grincare">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5">
               <img
                 // src="https://dndesigns.co.in/wp-content/uploads/2025/03/Frame-427324077.png"
-                src={imageUrl+"Frame-427324077.webp"}
+                src={imageUrl + "Frame-427324077.webp"}
                 alt=""
                 className="img-fluid w-50"
               />
@@ -128,11 +125,7 @@ async function page() {
       </div>
 
       <div className="container grincare-banner">
-        <img
-          src={imageUrl+"grin 8.webp"}
-          alt=""
-          className="img-fluid"
-        />
+        <img src={imageUrl + "grin 8.webp"} alt="" className="img-fluid" />
       </div>
 
       <div className="container grincare-second">
@@ -181,7 +174,7 @@ async function page() {
           <div className="row">
             <div className="col-md-4 col-lg-4 grincare-sticky">
               <img
-               src={imageUrl+"Frame-427324077.webp"}
+                src={imageUrl + "Frame-427324077.webp"}
                 alt=""
                 className="img-fluid"
               />
@@ -225,19 +218,19 @@ async function page() {
                   <div className="row grincare-problem-img">
                     <div className="col-md-7 col-lg-7">
                       <img
-                        src={imageUrl+"grin 5.webp"}
+                        src={imageUrl + "grin 5.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1"
                       />
                     </div>
                     <div className="col-md-5 col-lg-5">
                       <img
-                        src={imageUrl+"grin 2.webp"}
+                        src={imageUrl + "grin 2.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img2 mb-lg-3 mb-md-3"
                       />
                       <img
-                        src={imageUrl+"grin 1.webp"}
+                        src={imageUrl + "grin 1.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img2"
                       />
@@ -260,7 +253,7 @@ async function page() {
                   </p>
                   <img
                     // src={imageUrl+"grin ui.webps"}
-                    src="https://powerfilldrinks.com/uploads/pages/grin ui.webp"
+                    src="https://dndesigns.co.in/uploads/pages/grin ui.webp"
                     alt=""
                     className="img-fluid grincare-packaging-design-img"
                   />
@@ -285,14 +278,14 @@ async function page() {
                   <div className="row grincare-problem-img">
                     <div className="col-md-5 col-lg-5">
                       <img
-                        src={imageUrl+"grin care logo.webp"}
+                        src={imageUrl + "grin care logo.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1 mb-3 mb-lg-0 mb-md-0"
                       />
                     </div>
                     <div className="col-md-7 col-lg-7">
                       <img
-                        src={imageUrl+"Frame-427324120.webp"}
+                        src={imageUrl + "Frame-427324120.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1"
                       />
@@ -300,12 +293,12 @@ async function page() {
                   </div>
                   <div className="row px-2 py-2">
                     <img
-                      src={imageUrl+"Group-427321841-2048x807.webp"}
+                      src={imageUrl + "Group-427321841-2048x807.webp"}
                       alt=""
                       className="img-fluid grincare-problem-img1 mb-3"
                     />
                     <img
-                      src={imageUrl+"Group-427321842-2048x807.webp"}
+                      src={imageUrl + "Group-427321842-2048x807.webp"}
                       alt=""
                       className="img-fluid grincare-problem-img1"
                     />
@@ -330,7 +323,7 @@ async function page() {
                     with GrinCare.
                   </p>
                   <img
-                    src={imageUrl+"grin ux.webp"}
+                    src={imageUrl + "grin ux.webp"}
                     alt=""
                     className="img-fluid grincare-packaging-design-img"
                   />
@@ -343,22 +336,22 @@ async function page() {
 
       <div className="container-fluid p-0">
         <img
-          src={imageUrl+"grin 3.webp"}
+          src={imageUrl + "grin 3.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-         src={imageUrl+"grin 6.webp"}
+          src={imageUrl + "grin 6.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-         src={imageUrl+"grin 7.webp"}
+          src={imageUrl + "grin 7.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <video
-          src="https://powerfilldrinks.com/uploads/videos/Grincare.mp4"
+          src="https://dndesigns.co.in/uploads/videos/Grincare.mp4"
           width="100%"
           autoPlay
           muted
@@ -366,7 +359,7 @@ async function page() {
           className="nectarpurecasestudy-video"
         />
         <img
-         src="https://powerfilldrinks.com/uploads/videos/grin 4.webp"
+          src="https://dndesigns.co.in/uploads/videos/grin 4.webp"
           alt=""
           className="img-fluid w-100"
         />

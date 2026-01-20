@@ -64,8 +64,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
-   // ---
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -91,7 +91,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   // hero section content
   const heading = "Services";
@@ -203,8 +202,7 @@ async function page() {
 
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "services"}`}
@@ -213,7 +211,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
 
       {/*Breadcrumb*/}
       <section>
@@ -236,7 +233,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                    src={imageUrl +"brand-identity.webp"}
+                    src={imageUrl + "brand-identity.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -302,7 +299,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                   src={imageUrl +"Communication.webp"}
+                    src={imageUrl + "Communication.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -369,7 +366,7 @@ async function page() {
               <div className="service-card">
                 <div className="front">
                   <img
-                    src={imageUrl +"wegheghhvg.webp"}
+                    src={imageUrl + "wegheghhvg.webp"}
                     alt="Image"
                     className="img-fluid"
                   />
@@ -505,10 +502,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl +"3gewugj.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "3gewugj.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Design</h3>
@@ -532,7 +526,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -540,7 +534,7 @@ async function page() {
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"engage-1.svg"}
+                    src={imageUrl + "engage-1.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -565,17 +559,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                   src={imageUrl +"Achieve.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "Achieve.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Achieve</h3>
@@ -597,7 +588,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-               src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>

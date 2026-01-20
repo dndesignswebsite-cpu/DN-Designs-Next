@@ -63,7 +63,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -90,7 +90,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   const heading = "Influencer Marketing Agency in India";
   const subHeading = "Connecting You With the Right Influencers";
@@ -182,7 +181,7 @@ async function page() {
       title: "Brand Awareness & Trust",
       description:
         "Helps reach a newer and more targeted audience, enhancing brand awareness. Promotion by an influencer further establishes customers’ trust in your brand.",
-      image: "https://powerfilldrinks.com/uploads/pages/brand-lap.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/brand-lap.jpg",
     },
     {
       id: 2,
@@ -190,7 +189,7 @@ async function page() {
       title: "Fresh Content Strategy",
       description:
         "The same old content can become monotonous. New perspectives and increased creativity give your content strategy a new direction. ",
-      image: "https://powerfilldrinks.com/uploads/pages/fresh-content-lap.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/fresh-content-lap.jpg",
     },
     {
       id: 3,
@@ -198,7 +197,7 @@ async function page() {
       title: "Support SEO",
       description:
         "Interesting content engages consumers and encourages them to share it. This brings in more website traffic and, additionally, helps build quality backlinks.",
-      image: "https://powerfilldrinks.com/uploads/pages/seo-lap.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/seo-lap.jpg",
     },
     {
       id: 4,
@@ -206,7 +205,7 @@ async function page() {
       title: "Increase Conversion & ROI",
       description:
         "Influencers have the trust of their audience. They can, therefore, convince customers to purchase your products, bringing in increased sales and profits for you.",
-      image: "https://powerfilldrinks.com/uploads/pages/roi-lap.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/roi-lap.jpg",
     },
     {
       id: 5,
@@ -214,24 +213,22 @@ async function page() {
       title: "Cost Saving",
       description:
         "Traditional marketing is rather expensive. In comparison, influencer marketing is still an extremely cost-effective option, except of course in a few cases.",
-      image: "https://powerfilldrinks.com/uploads/pages/cost-saving-lap.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/cost-saving-lap.jpg",
     },
   ];
 
   const mobileCrads = [
     {
-      mobileImage:
-        "https://powerfilldrinks.com/uploads/pages/brand.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/brand.jpg",
     },
     {
-      mobileImage: "https://powerfilldrinks.com/uploads/pages/fresh-content.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/fresh-content.jpg",
     },
     {
-      mobileImage:
-        "https://powerfilldrinks.com/uploads/pages/seo.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/seo.jpg",
     },
     {
-      mobileImage: "https://powerfilldrinks.com/uploads/pages/roi.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/roi.jpg",
     },
   ];
 
@@ -242,7 +239,7 @@ async function page() {
 
   return (
     <div>
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "influencer-marketing"}`}
@@ -251,9 +248,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
-
-
 
       {/*Breadcrumb*/}
       <section>
@@ -273,7 +267,7 @@ async function page() {
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-1">
                   <img
-                    src={imageUrl+"Frame 1000001631 (1).svg"}
+                    src={imageUrl + "Frame 1000001631 (1).svg"}
                     className="img-fluid"
                   ></img>
                   <h3>Grow Your Business</h3>
@@ -298,7 +292,7 @@ async function page() {
               <div className="grow-your-bussiness-col-main">
                 <div className="grow-your-bussiness-col-3">
                   <img
-                    src={imageUrl+"Frame 1000001626 (1).svg"}
+                    src={imageUrl + "Frame 1000001626 (1).svg"}
                     className="img-fluid"
                   ></img>
                   <h3>Expert Solutions</h3>
@@ -439,7 +433,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl + "Frame 427324112 (8).svg"}
+                    src={imageUrl + "Frame 427324112 (8).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -467,7 +461,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-               src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>

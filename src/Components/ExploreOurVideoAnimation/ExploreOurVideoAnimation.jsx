@@ -9,7 +9,7 @@ import { Navigation } from "swiper/modules";
 import CatalougePageFlip from "../LightBox/LightBox";
 
 function ExploreOurVideoAnimation() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   return (
     <div>

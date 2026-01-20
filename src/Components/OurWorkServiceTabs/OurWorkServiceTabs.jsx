@@ -1,16 +1,14 @@
-"use client"
+"use client";
 
-import React,{useState} from 'react'
-import "./OurWorkServiceTabs.css"
+import React, { useState } from "react";
+import "./OurWorkServiceTabs.css";
 
 export default function OurWorkServiceTabs() {
-    const [activeTab, setActiveTab] = useState("Branding");
-    const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const [activeTab, setActiveTab] = useState("Branding");
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   return (
-     <div>
+    <div>
       <section className="our-work-tab">
         <div className="container">
           <div className="row">
@@ -21,37 +19,42 @@ export default function OurWorkServiceTabs() {
             <div>
               <div className="tab">
                 <button
-                  className={`tablinks ${activeTab === "Branding" ? "active" : ""
-                    }`}
+                  className={`tablinks ${
+                    activeTab === "Branding" ? "active" : ""
+                  }`}
                   onClick={() => setActiveTab("Branding")}
                 >
                   Branding
                 </button>
                 <button
-                  className={`tablinks ${activeTab === "Packaging Design" ? "active" : ""
-                    }`}
+                  className={`tablinks ${
+                    activeTab === "Packaging Design" ? "active" : ""
+                  }`}
                   onClick={() => setActiveTab("Packaging Design")}
                 >
                   Packaging Design
                 </button>
                 <button
-                  className={`tablinks ${activeTab === "Brand Identity" ? "active" : ""
-                    }`}
+                  className={`tablinks ${
+                    activeTab === "Brand Identity" ? "active" : ""
+                  }`}
                   onClick={() => setActiveTab("Brand Identity")}
                 >
                   Brand Identity
                 </button>
                 <button
-                  className={`tablinks ${activeTab === "Website Development" ? "active" : ""
-                    }`}
+                  className={`tablinks ${
+                    activeTab === "Website Development" ? "active" : ""
+                  }`}
                   onClick={() => setActiveTab("Website Development")}
                 >
                   Website Development
                 </button>
 
                 <button
-                  className={`tablinks ${activeTab === "CGI Ads" ? "active" : ""
-                    }`}
+                  className={`tablinks ${
+                    activeTab === "CGI Ads" ? "active" : ""
+                  }`}
                   onClick={() => setActiveTab("CGI Ads")}
                 >
                   CGI Ads
@@ -63,7 +66,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                       src={imageUrl + "i orgainc gif.gif"}
+                        src={imageUrl + "i orgainc gif.gif"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -71,13 +74,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                           src={imageUrl + "enlite graphic.webp"}
+                            src={imageUrl + "enlite graphic.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                           src={imageUrl + "smartyums_GIf.gif"}
+                            src={imageUrl + "smartyums_GIf.gif"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -114,7 +117,7 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                           src={imageUrl + "BObalist.webp"}
+                            src={imageUrl + "BObalist.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -157,13 +160,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                             src={imageUrl + "nature-balance-22.webp"}
+                            src={imageUrl + "nature-balance-22.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                             src={imageUrl + "deeproot-3.webp"}
+                            src={imageUrl + "deeproot-3.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -171,13 +174,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                             src={imageUrl + "logo-mock-up.webp"}
+                            src={imageUrl + "logo-mock-up.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                          src={imageUrl + "luxmi-cars.webp"}
+                            src={imageUrl + "luxmi-cars.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -192,7 +195,7 @@ export default function OurWorkServiceTabs() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <img
-                         src={imageUrl + "web-vihaan.webp"}
+                        src={imageUrl + "web-vihaan.webp"}
                         className="img-fluid tab-img"
                       ></img>
                     </div>
@@ -200,13 +203,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                             src={imageUrl + "5.webp"}
+                            src={imageUrl + "5.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                             src={imageUrl + "2.webp"}
+                            src={imageUrl + "2.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -214,13 +217,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                             src={imageUrl + "Qualiteq-image.webp"}
+                            src={imageUrl + "Qualiteq-image.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                             src={imageUrl + "mr-bomzy-2-1.webp"}
+                            src={imageUrl + "mr-bomzy-2-1.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -243,7 +246,7 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                           src={imageUrl + "Natures-Balance-3D.webp"}
+                            src={imageUrl + "Natures-Balance-3D.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -257,13 +260,13 @@ export default function OurWorkServiceTabs() {
                       <div className="row">
                         <div className="col-6">
                           <img
-                           src={imageUrl + "greenhorn-THUMB.webp"}
+                            src={imageUrl + "greenhorn-THUMB.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
                         <div className="col-6">
                           <img
-                           src={imageUrl + "foodsure-thumb.webp"}
+                            src={imageUrl + "foodsure-thumb.webp"}
                             className="img-fluid tab-img"
                           ></img>
                         </div>
@@ -280,6 +283,5 @@ export default function OurWorkServiceTabs() {
         </div>
       </section>
     </div>
-
-  )
+  );
 }

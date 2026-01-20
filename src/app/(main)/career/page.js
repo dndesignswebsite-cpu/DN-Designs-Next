@@ -87,10 +87,9 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   return (
     <div>
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "career"}`}
@@ -117,7 +116,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 career-hero-col-r">
               <img
-                src="https://powerfilldrinks.com/uploads/pages/wetyfdghv.webp"
+                src="https://dndesigns.co.in/uploads/pages/wetyfdghv.webp"
                 className="img-fluid"
               />
             </div>

@@ -66,8 +66,7 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -94,7 +93,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   const heading = "Catalogue Design Agency";
   const subHeading =
@@ -168,8 +166,7 @@ async function page() {
 
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "catalogue-designing"}`}
@@ -178,8 +175,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
-
 
       {/*Breadcrumb*/}
       <section>
@@ -341,13 +336,13 @@ async function page() {
                     <img
                       // src="https://dndesigns.co.in/wp-content/uploads/2025/02/1.jpg"
 
-                      src={imageUrl+"wueygdhwvebjf.webp"}
+                      src={imageUrl + "wueygdhwvebjf.webp"}
                       className="img-fluid"
                     />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
                     <img
-                      src={imageUrl+"hegwhdjh.webp"}
+                      src={imageUrl + "hegwhdjh.webp"}
                       className="img-fluid"
                     />
                   </div>
@@ -356,13 +351,13 @@ async function page() {
                 <div className="row e-catalogues-right-row e-catalogues-right-row-d">
                   <div className="col-12 col-md-12 col-lg-6">
                     <img
-                      src={imageUrl+"32egwhdvwehv.webp"}
+                      src={imageUrl + "32egwhdvwehv.webp"}
                       className="img-fluid"
                     />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
                     <img
-                      src={imageUrl+"gyewhdvewf.webp"}
+                      src={imageUrl + "gyewhdvewf.webp"}
                       className="img-fluid"
                     />
                   </div>

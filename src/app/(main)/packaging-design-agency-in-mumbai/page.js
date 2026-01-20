@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,39 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("packaging-design-agency-in-mumbai", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById(
+      "packaging-design-agency-in-mumbai",
+      null,
+      true,
+    );
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +118,7 @@ async function page() {
       question: "What industries do you work with?",
       answer:
         "We work for all industries such as FMCG, beauty, food & beverage, wellness, personal care, and many more.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -132,17 +128,16 @@ async function page() {
         "Absolutely. We can completely redesign your existing packaging. As per your needs, we can also make a few tweaks in your current packaging to improve clarity and customer appeal.",
     },
     {
-      question: "Do you provide luxury packaging design services for premium products?",
+      question:
+        "Do you provide luxury packaging design services for premium products?",
       answer:
         "Indeed! We design packaging that highlights the premium nature of your brand. Our designs help your products stand out on the shelf and enhance their perceived value.",
-    }
-    ,
+    },
     {
       question: "Do you also help with the printing of the packaging?",
       answer:
         "As a packaging design agency, our forte is packaging design services, and we are primarily focused on creating stunning labels for your brand. However, we can put you in touch with a few of our reliable printers who can help you with the matter.",
-    }
-    
+    },
   ];
 
   // form section content
@@ -151,11 +146,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "packaging-design-agency-in-mumbai"}`}
@@ -170,11 +163,13 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Packaging Design Agency In Mumbai: Making Products Feel Iconic
-
-</h1>
+              <h1>
+                Packaging Design Agency In Mumbai: Making Products Feel Iconic
+              </h1>
               <p className="para-roboto">
-            Mumbai never stops moving, and you must match that zeal. In a competitive business landscape, our packaging design company in Mumbai ensures that your brand always stays appealing.
+                Mumbai never stops moving, and you must match that zeal. In a
+                competitive business landscape, our packaging design company in
+                Mumbai ensures that your brand always stays appealing.
               </p>
               <div>
                 <HomePageBtn />
@@ -232,7 +227,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -519,14 +514,19 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why Packaging Design Matters in a Busy Market
-</h2>
+                <h2>Why Packaging Design Matters in a Busy Market</h2>
                 <p>
-                 Mumbai’s market is packed with innumerable brands that compete for consumers’ attention. With an array of options available, consumers are constantly evaluating products and brands to find the one that best suits them. In such a situation, it isn't easy to reel in their attention. Your packaging design plays a crucial role here. A well-designed packaging can deliver its impact within a few seconds and make your brand a standout one.
+                  Mumbai’s market is packed with innumerable brands that compete
+                  for consumers’ attention. With an array of options available,
+                  consumers are constantly evaluating products and brands to
+                  find the one that best suits them. In such a situation, it
+                  isn't easy to reel in their attention. Your packaging design
+                  plays a crucial role here. A well-designed packaging can
+                  deliver its impact within a few seconds and make your brand a
+                  standout one.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -534,44 +534,53 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "Packaging-Design.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "Packaging-Design.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>
-                  How We Help Your Product Stand Out
-</h2>
+                <h2>How We Help Your Product Stand Out</h2>
                 <p>
-              As one of the best packaging design agencies in Mumbai, we offer aesthetically pleasing as well as strategic packaging design for your products. We study consumer behaviour and market trends to help you keep up with your consumer needs and create packaging that is captivating and, at the same time, communicates your core values well.
+                  As one of the best packaging design agencies in Mumbai, we
+                  offer aesthetically pleasing as well as strategic packaging
+                  design for your products. We study consumer behaviour and
+                  market trends to help you keep up with your consumer needs and
+                  create packaging that is captivating and, at the same time,
+                  communicates your core values well.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Ready to Win Every Heart
-</h2>
+                <h2>Ready to Win Every Heart</h2>
                 <p>
-            Your brand must get noticed both in physical stores as well as on online platforms. But with an overwhelming number of products, your brand falls into the risk of going unnoticed. You need a packaging that works in all kinds of settings. So, we focus on packaging that enhances the product's visibility and recall, and make sure it stands out on every platform alike. By combining creativity with effective packaging design services, we help your brand thrive.
+                  Your brand must get noticed both in physical stores as well as
+                  on online platforms. But with an overwhelming number of
+                  products, your brand falls into the risk of going unnoticed.
+                  You need a packaging that works in all kinds of settings. So,
+                  we focus on packaging that enhances the product's visibility
+                  and recall, and make sure it stands out on every platform
+                  alike. By combining creativity with effective packaging design
+                  services, we help your brand thrive.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -579,7 +588,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "Ready-to-Win-Every-Heart.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "Ready-to-Win-Every-Heart.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -587,17 +599,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

@@ -2,12 +2,12 @@
 
 # setup_image_serving.sh
 # Configures Nginx to serve images from the 'public/uploads' directory 
-# under the subdomain 'media.powerfilldrinks.com'.
+# under the subdomain 'media.dndesigns.co.in'.
 
 set -e
 
 # Configuration
-DOMAIN="media.powerfilldrinks.com"
+DOMAIN="media.dndesigns.co.in"
 APP_ROOT="/root/DN-Designs-Next" # CHANGE THIS to your actual app root on VPS
 UPLOADS_DIR="$APP_ROOT/public/uploads"
 NGINX_CONF="/etc/nginx/sites-available/$DOMAIN"

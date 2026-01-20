@@ -64,9 +64,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
-    // ---
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -93,7 +92,6 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   const heading = "Strategic Packaging Design Agency";
   const subHeading = "Get Noticed, Build Connection and Drive Sales";
   const para =
@@ -107,8 +105,7 @@ async function page() {
       title: "Consultation and Research",
       description:
         "You want a product package design & your mind is flooded with ideas and questions about design, market & audience. Let’s solve them one at a time.",
-      image:
-        "https://powerfilldrinks.com/uploads/pages/smart-adult-caucasi.webp",
+      image: "https://dndesigns.co.in/uploads/pages/smart-adult-caucasi.webp",
     },
     {
       id: 2,
@@ -116,7 +113,7 @@ async function page() {
       title: "Brand Identity Design",
       description:
         "Whether it is the name, logo, tagline or a unique feature, all form part of your brand identity. Partner with us to create one that commands attention. ",
-      image: "https://powerfilldrinks.com/uploads/pages/9-1.webp",
+      image: "https://dndesigns.co.in/uploads/pages/9-1.webp",
     },
     {
       id: 3,
@@ -124,8 +121,7 @@ async function page() {
       title: "Product Photography",
       description:
         "Want a captivating photograph to enhance the appeal of your packaging design? Utilise our professional product photography service to elevate your packaging.",
-      image:
-        "https://powerfilldrinks.com/uploads/pages/Untitled-1.webp",
+      image: "https://dndesigns.co.in/uploads/pages/Untitled-1.webp",
     },
     {
       id: 4,
@@ -133,17 +129,16 @@ async function page() {
       title: "Legal Compliance",
       description:
         "Legal compliance can sound a bit complex & intimidating, but your packaging design is incomplete without it. Contact us to create a legally compliant design.",
-      image: "https://powerfilldrinks.com/uploads/pages/10.webp",
+      image: "https://dndesigns.co.in/uploads/pages/10.webp",
     },
   ];
 
   const mobileCrads = [
     {
-      mobileImage:
-        "https://powerfilldrinks.com/uploads/pages/jgkj.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/jgkj.webp",
     },
     {
-      mobileImage: "https://powerfilldrinks.com/uploads/pages/2-4.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/2-4.webp",
     },
     {
       mobileImage:
@@ -233,9 +228,7 @@ async function page() {
 
   return (
     <div>
-
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "packaging-design"}`}
@@ -244,7 +237,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
 
       {/*Breadcrumb*/}
       <section>
@@ -267,7 +259,7 @@ async function page() {
               <div className="port-div">
                 <img
                   // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
-                  src={imageUrl+"3y4rfbrjbj.webp"}
+                  src={imageUrl + "3y4rfbrjbj.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -293,7 +285,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
                 <img
-                  src={imageUrl+"greenhorn-manu125.webp"}
+                  src={imageUrl + "greenhorn-manu125.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -323,7 +315,7 @@ async function page() {
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/3ewhbhfderbj.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -351,10 +343,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
-                  src={imageUrl+"thames-5.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "thames-5.webp"} className="img-fluid" />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -382,7 +371,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src={imageUrl+"j3kefdbkjer.webp"}
+                  src={imageUrl + "j3kefdbkjer.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -410,7 +399,7 @@ async function page() {
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/Bobalist-hh.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/Bobalist-hh.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -442,7 +431,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src={imageUrl+"wyegrygfewj.webp"}
+                  src={imageUrl + "wyegrygfewj.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -468,7 +457,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <img
-                  src={imageUrl+"kalprishi-1.webp"}
+                  src={imageUrl + "kalprishi-1.webp"}
                   className="img-fluid"
                 />
                 <div className="port-content">
@@ -720,10 +709,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                   src={imageUrl+"Vector.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "Vector.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Reference Board</h3>
@@ -751,17 +737,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                   src={imageUrl+"Vector1.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "Vector1.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Mood Board</h3>
@@ -790,17 +773,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+"Vector3.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "Vector3.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>3D Mockups</h3>
@@ -828,7 +808,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>

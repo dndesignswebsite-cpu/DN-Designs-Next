@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,35 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("branding-agency-in-gurgaon", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("branding-agency-in-gurgaon", null, true);
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +114,7 @@ async function page() {
       question: "What services does your branding agency offer?",
       answer:
         "We offer a complete range of branding services - from identity design to website and communication design. To elaborate, we design brand logos, packaging, catalogue, UI/UX and website and also help you with services like SEO, social media marketing, influencer marketing, animation and photography.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -140,7 +132,7 @@ async function page() {
       question: "How much do your branding services cost?",
       answer:
         "The cost of our branding services varies depending on the specific solutions you require or the package you choose.",
-    }
+    },
   ];
 
   // form section content
@@ -149,11 +141,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding-agency-in-gurgaon"}`}
@@ -168,9 +158,12 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency in Gurgaon - Designing Iconic Brands For You</h1>
+              <h1>
+                Branding Agency in Gurgaon - Designing Iconic Brands For You
+              </h1>
               <p className="para-roboto">
-                We are a creative branding agency, passionate about helping businesses create an impactful brand presence.
+                We are a creative branding agency, passionate about helping
+                businesses create an impactful brand presence.
               </p>
               <div>
                 <HomePageBtn />
@@ -228,7 +221,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -515,7 +508,6 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
@@ -538,12 +530,8 @@ async function page() {
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
               </div>
@@ -553,21 +541,29 @@ async function page() {
               <div className="content-box-city-page">
                 <h2>Be the Brand They Remember</h2>
                 <p>
-                  In a market brimming with brands, consumers often forget new businesses, struggle to choose, and look for products they can trust. Businesses, therefore, must find ways to rise above the crowd. Strong branding addresses these challenges. It helps your brand get noticed, recognised and chosen the first time, while building a loyal customer base over time.
+                  In a market brimming with brands, consumers often forget new
+                  businesses, struggle to choose, and look for products they can
+                  trust. Businesses, therefore, must find ways to rise above the
+                  crowd. Strong branding addresses these challenges. It helps
+                  your brand get noticed, recognised and chosen the first time,
+                  while building a loyal customer base over time.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>We Bring Your Brand to Life</h2>
                 <p>
-                  As a creative agency, we analyse your brand to identify what makes it unique. We create an identity and experience that will leave a lasting impact on your audience. Whether you are just starting, want to expand or rebrand, we offer the best branding services to create a consistent and compelling brand for you.
+                  As a creative agency, we analyse your brand to identify what
+                  makes it unique. We create an identity and experience that
+                  will leave a lasting impact on your audience. Whether you are
+                  just starting, want to expand or rebrand, we offer the best
+                  branding services to create a consistent and compelling brand
+                  for you.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -583,17 +579,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

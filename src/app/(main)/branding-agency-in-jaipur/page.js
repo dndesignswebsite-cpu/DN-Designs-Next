@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,35 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("branding-agency-in-jaipur", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("branding-agency-in-jaipur", null, true);
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +114,7 @@ async function page() {
       question: "How involved will I be in the branding process?",
       answer:
         "We believe in a collaborative approach, and hence we include you in every key discussion, feedback, and decision. This helps us ensure that the final brand identity that we deliver truly depicts your goals and vision for your brand.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -140,7 +132,7 @@ async function page() {
       question: "How do we start working with you?",
       answer:
         "Simply contact us through our website form. You can also book a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will connect with you promptly and guide you through the next steps.",
-    }
+    },
   ];
 
   // form section content
@@ -149,11 +141,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding-agency-in-jaipur"}`}
@@ -168,9 +158,13 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Jaipur: Good Branding Speaks Before You Do</h1>
+              <h1>
+                Branding Agency In Jaipur: Good Branding Speaks Before You Do
+              </h1>
               <p className="para-roboto">
-                Our branding agency in Jaipur ensures your brand appeals and connects with your target audience. Get in touch with us today to build a brand that is powerful and inspiring.
+                Our branding agency in Jaipur ensures your brand appeals and
+                connects with your target audience. Get in touch with us today
+                to build a brand that is powerful and inspiring.
               </p>
               <div>
                 <HomePageBtn />
@@ -228,7 +222,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -515,13 +509,19 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>The Start of Every Brand Experience</h2>
                 <p>
-                  In a city like Jaipur, where everything, from Hawa Mahal’s façade to the lanes of Johari Bazaar, speaks of beautiful design, your brand must appear beautiful too. Customers will evaluate your brand by its visual appearance first, even before they explore details about you. They will pay attention to your logo, colours, images and overall look. That shows that visuals naturally attract people and make them curious to learn more about you.
+                  In a city like Jaipur, where everything, from Hawa Mahal’s
+                  façade to the lanes of Johari Bazaar, speaks of beautiful
+                  design, your brand must appear beautiful too. Customers will
+                  evaluate your brand by its visual appearance first, even
+                  before they explore details about you. They will pay attention
+                  to your logo, colours, images and overall look. That shows
+                  that visuals naturally attract people and make them curious to
+                  learn more about you.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -534,12 +534,8 @@ async function page() {
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
               </div>
@@ -549,22 +545,30 @@ async function page() {
               <div className="content-box-city-page">
                 <h2>How Your Message Builds Connection</h2>
                 <p>
-                  Once your appearance stirs your consumers' interest, they will want to know more about your brand's purpose, values, story and personality. They will trust you only if they feel an emotional connection with your brand. And it is nothing short of essential to align your visual identity with your verbal identity to make your brand feel more genuine and confident.
+                  Once your appearance stirs your consumers' interest, they will
+                  want to know more about your brand's purpose, values, story
+                  and personality. They will trust you only if they feel an
+                  emotional connection with your brand. And it is nothing short
+                  of essential to align your visual identity with your verbal
+                  identity to make your brand feel more genuine and confident.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>How We Make Your Brand Memorable
-</h2>
+                <h2>How We Make Your Brand Memorable</h2>
                 <p>
-                 As a branding agency in Jaipur, we make sure to create a brand identity that connects with your target audience. We provide consistent branding across your website, packaging, social media, and ads, ensuring people recognise you instantly wherever they see you. When your identity feels uniform and dependable, your brand becomes easier for your consumers to remember, trust, and confidently recommend to others.
+                  As a branding agency in Jaipur, we make sure to create a brand
+                  identity that connects with your target audience. We provide
+                  consistent branding across your website, packaging, social
+                  media, and ads, ensuring people recognise you instantly
+                  wherever they see you. When your identity feels uniform and
+                  dependable, your brand becomes easier for your consumers to
+                  remember, trust, and confidently recommend to others.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -580,17 +584,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

@@ -50,9 +50,7 @@ function Testimonial() {
                         </div>
 
                         <div className="founder-name">
-                          <h2 className="fs-4 mb-0">
-                            Mr. Bhagwat Aggarwal
-                          </h2>
+                          <h2 className="fs-4 mb-0">Mr. Bhagwat Aggarwal</h2>
                           <p className="fs-6 opacity-75">
                             Founder, Nature Balance
                           </p>
@@ -61,7 +59,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 col-lg-4 testi-main-img">
                         <img
-                          src="https://powerfilldrinks.com/uploads/pages/Bhagwat aggarwal client.webp"
+                          src="https://dndesigns.co.in/uploads/pages/Bhagwat aggarwal client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -127,7 +125,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://powerfilldrinks.com/uploads/pages/Vineet tiwari.webp"
+                          src="https://dndesigns.co.in/uploads/pages/Vineet tiwari.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />
@@ -188,7 +186,7 @@ function Testimonial() {
 
                       <div className="col-6 col-md-4 testi-main-img">
                         <img
-                          src="https://powerfilldrinks.com/uploads/pages/nectarpure client.webp"
+                          src="https://dndesigns.co.in/uploads/pages/nectarpure client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
                         />

@@ -1,294 +1,64 @@
-import React from 'react'
-import styles from "./OurConstant.module.css"
+import React from "react";
+import styles from "./OurConstant.module.css";
 
 function OurConstant() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
   return (
     <div>
-        <section className={`${styles['our-constant-companions']}`}>
-        <div className={`${styles['large-screen']} container text-center`}>
-         <h2 className={`${styles['our-brand-heading']}`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-             <div className={`${styles['companies']}`}>
+      <section className={`${styles["our-constant-companions"]}`}>
+        <div className={`${styles["large-screen"]} container text-center`}>
+          <h2 className={`${styles["our-brand-heading"]}`}>
+            Our{" "}
+            <span className={`${styles["our-constant-comapny-heqadg-red"]}`}>
+              Constant Companions
+            </span>
+          </h2>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-            <div className={`${styles['companies']}`}>
-              <img
-                 src={imageUrl + "audi logo.webp"}
-                className="img-fluid"
-                alt=''
-              ></img>
-            </div>
-
-            <div className={`${styles['companies']}`}>
-              <img
-                 src={imageUrl + "PB_Business logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            <div className={`${styles['companies']}`}>
-              <img
-                 src={imageUrl + "iOrganic-Logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "wlues logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-          </div>
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-             <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "Grin care logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "enlite logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 8 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "nectarpure (1).webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 9 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "smartyum logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 10 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "Thames logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-          </div>
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-           {/* 11 */}
-             <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "veikk logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 12 */}
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "enliiv logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 13 */}
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "bobalist logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 14 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "Nature-balance.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 15 */}
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "Bachpan logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-          </div>
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-           {/* 16 */}
-             <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "qualiteq logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 17 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "rungta logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 18 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "floris logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 19 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "david logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 20 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "gleephoria logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-          </div>
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-           {/* 21 */}
-             <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "himalayan.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 22 */}
-            <div className={`${styles['companies']}`}>
-              <img
-               src={imageUrl + "fluke logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            {/* 23 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "one science logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-
-            {/* 24 */}
-            <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "mr-bomzy logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-            <div className={`${styles['companies']}`}>
-            <img></img>
-            </div>
-          </div>
-        </div>
-
-
-
-{/* tab */}
-
-<div className={`${styles['tab-screen']} container text-center`}>
-         <h2 className={`${styles['our-brand-heading']}`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-             <div className={`${styles['companies']}`}>
-              <img
-                src={imageUrl + "holidayinn_logo.webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
+                alt=""
               ></img>
             </div>
-            
 
-            {/* 3 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "PB_Business logo.webp"}
+                src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-              {/* 4 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            
-          </div>
 
-          <div className={`${styles['comapnies-logo-row']}`}>
-              
-
-              {/* 5 */}
-          <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
+          </div>
 
-           {/* 6 */}
-             <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "Grin care logo.webp"}
+                src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
-            {/* 7 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
@@ -296,133 +66,107 @@ function OurConstant() {
             </div>
 
             {/* 8 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "nectarpure (1).webp"}
-                className="img-fluid"
-              ></img>
-            </div>
-            
-          </div>
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-
-
-          {/* 9 */}
-          <div className={`${styles['companies']}`}>
-              <img
-                 src={imageUrl + "smartyum logo.webp"}
+                src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
               ></img>
             </div>
 
+            {/* 9 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "smartyum logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
 
             {/* 10 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
+          </div>
 
-
-           {/* 11 */}
-             <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 11 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 12 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            
-          </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-
-
-           {/* 13 */}
-          <div className={`${styles['companies']}`}>
+            {/* 13 */}
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "bobalist logo.webp"}
+                src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
 
             {/* 14 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "Nature-balance.webp"}
+                src={imageUrl + "Nature-balance.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 15 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
+          </div>
 
-           {/* 16 */}
-             <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 16 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-          </div>
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-
 
             {/* 17 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "rungta logo.webp"}
+                src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
 
             {/* 18 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "floris logo.webp"}
+                src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
 
             {/* 19 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "david logo.webp"}
+                src={imageUrl + "david logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 20 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
@@ -430,80 +174,70 @@ function OurConstant() {
             </div>
           </div>
 
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-
-           {/* 21 */}
-             <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 21 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 22 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 23 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "one science logo.webp"}
+                src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 24 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "mr-bomzy logo.webp"}
+                src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img>
+            </div>
+            <div className={`${styles["companies"]}`}>
+              <img></img>
             </div>
           </div>
         </div>
 
+        {/* tab */}
 
-
-{/* mobile */}
-
-
-<div className={`${styles['our-constant-mobile-screen']} container text-center`}>
-         <h2 className={`${styles["our-brand-heading"]} text-center`}>Our <span className={`${styles['our-constant-comapny-heqadg-red']}`}>Constant Companions</span></h2>
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-
-           {/* 1 */}
-             <div className={`${styles['companies']}`}>
+        <div className={`${styles["tab-screen"]} container text-center`}>
+          <h2 className={`${styles["our-brand-heading"]}`}>
+            Our{" "}
+            <span className={`${styles["our-constant-comapny-heqadg-red"]}`}>
+              Constant Companions
+            </span>
+          </h2>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-            {/* 2 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                  src={imageUrl + "audi logo.webp"}
+                src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            </div>
-
-            <div className={`${styles['comapnies-logo-row']}`}>
 
             {/* 3 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
@@ -511,195 +245,153 @@ function OurConstant() {
             </div>
 
             {/* 4 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            
           </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-
-           {/* 5 */}
-          <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 5 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
 
-           {/* 6 */}
-             <div className={`${styles['companies']}`}>
+            {/* 6 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            </div>
-<div className={`${styles['comapnies-logo-row']}`}>
 
-
-
-             {/* 7 */}
-            <div className={`${styles['companies']}`}>
+            {/* 7 */}
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "enlite logo.webp"}
+                src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
             {/* 8 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
               ></img>
             </div>
-            
           </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-
-
-          {/* 9 */}
-          <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 9 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 10 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            </div>
 
-            <div className={`${styles['comapnies-logo-row']}`}>
-              
-
-
-              {/* 11 */}
-             <div className={`${styles['companies']}`}>
+            {/* 11 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 12 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-            
           </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-            
-
+          <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 13 */}
-          <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "bobalist logo.webp"}
+                src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
 
             {/* 14 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "Nature-balance.webp"}
+                src={imageUrl + "Nature-balance.webp"}
                 className="img-fluid"
               ></img>
             </div>
-
-            </div>
-
-            <div className={`${styles['comapnies-logo-row']}`}>
-
 
             {/* 15 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "Bachpan logo.webp"}
+                src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
-           
 
-           {/* 16 */}
-             <div className={`${styles['companies']}`}>
+            {/* 16 */}
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "qualiteq logo.webp"}
+                src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
           </div>
 
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-             
-             {/* 17 */}
-            <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 17 */}
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "rungta logo.webp"}
+                src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
             {/* 18 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "floris logo.webp"}
+                src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-            </div>
-
-            <div className={`${styles['comapnies-logo-row']}`}>
-
             {/* 19 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "david logo.webp"}
+                src={imageUrl + "david logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
             {/* 20 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-               src={imageUrl + "gleephoria logo.webp"}
+                src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
           </div>
 
-
-
-          <div className={`${styles['comapnies-logo-row']}`}>
-           
-
-           {/* 21 */}
-             <div className={`${styles['companies']}`}>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 21 */}
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
@@ -707,40 +399,260 @@ function OurConstant() {
             </div>
 
             {/* 22 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-            </div>
-
-            <div className={`${styles['comapnies-logo-row']}`}>
-
             {/* 23 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
                 src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
 
-
             {/* 24 */}
-            <div className={`${styles['companies']}`}>
+            <div className={`${styles["companies"]}`}>
               <img
-                 src={imageUrl + "mr-bomzy logo.webp"}
+                src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img>
             </div>
           </div>
         </div>
 
-      </section>
+        {/* mobile */}
 
+        <div
+          className={`${styles["our-constant-mobile-screen"]} container text-center`}
+        >
+          <h2 className={`${styles["our-brand-heading"]} text-center`}>
+            Our{" "}
+            <span className={`${styles["our-constant-comapny-heqadg-red"]}`}>
+              Constant Companions
+            </span>
+          </h2>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 1 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "holidayinn_logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 2 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "audi logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 3 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "PB_Business logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 4 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "iOrganic-Logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 5 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "wlues logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 6 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "Grin care logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 7 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "enlite logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 8 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "nectarpure (1).webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 9 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "smartyum logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 10 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "Thames logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 11 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "veikk logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 12 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "enliiv logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 13 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "bobalist logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 14 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "Nature-balance.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 15 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "Bachpan logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 16 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "qualiteq logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 17 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "rungta logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 18 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "floris logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 19 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "david logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 20 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "gleephoria logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 21 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "himalayan.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 22 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "fluke logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+
+          <div className={`${styles["comapnies-logo-row"]}`}>
+            {/* 23 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "one science logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+
+            {/* 24 */}
+            <div className={`${styles["companies"]}`}>
+              <img
+                src={imageUrl + "mr-bomzy logo.webp"}
+                className="img-fluid"
+              ></img>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default OurConstant
+export default OurConstant;

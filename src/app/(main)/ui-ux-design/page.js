@@ -62,7 +62,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -89,7 +89,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   // page hero
   const heading = "UI/UX Design Agency in India";
@@ -192,9 +191,7 @@ async function page() {
 
   return (
     <div>
-
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "ui-ux-design"}`}
@@ -203,7 +200,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
 
       {/*Breadcrumb*/}
       <section>
@@ -226,17 +222,17 @@ async function page() {
           </h2>
 
           <img
-            src={imageUrl +"qbwjhbbjh.webp"}
+            src={imageUrl + "qbwjhbbjh.webp"}
             alt=""
             className="img-fluid ui-img1"
           />
           <img
-            src={imageUrl +"grin-care-2.webp"}
+            src={imageUrl + "grin-care-2.webp"}
             alt=""
             className="img-fluid ui-img2"
           />
           <img
-            src={imageUrl +"action-air.webp"}
+            src={imageUrl + "action-air.webp"}
             alt=""
             className="img-fluid ui-img3"
           />
@@ -272,7 +268,7 @@ async function page() {
             </div>
             <div className="col-12 col-lg-6 col-md-6">
               <img
-                src={imageUrl +"bwjhbdjh.webp"}
+                src={imageUrl + "bwjhbdjh.webp"}
                 alt=""
                 className="img-fluid"
               />
@@ -499,7 +495,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"Group-36813.svg"}
+                    src={imageUrl + "Group-36813.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -525,7 +521,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -533,7 +529,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl +"Wireframing.svg"}
+                    src={imageUrl + "Wireframing.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -558,7 +554,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -566,7 +562,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"visual-design.svg"}
+                    src={imageUrl + "visual-design.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -592,7 +588,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -603,7 +599,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"usability.svg"}
+                    src={imageUrl + "usability.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -630,7 +626,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -638,7 +634,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl +"client-feedback.svg"}
+                    src={imageUrl + "client-feedback.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -665,17 +661,14 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
             <div className="col-12 col-md-6 col-lg-4 px-2 characteristics-of-good-main-div">
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl +"launch.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "launch.svg"} className="cap-img"></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Launch & Monitoring</h3>
@@ -698,7 +691,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src={imageUrl +"imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -733,7 +726,7 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
                 <img
-                  src={imageUrl +"LANDING-PAGE1.webp"}
+                  src={imageUrl + "LANDING-PAGE1.webp"}
                   alt=""
                   className="img-fluid w-100"
                 />
@@ -761,7 +754,7 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
                 <img
-                   src={imageUrl +"MULTIPAGE.webp"}
+                  src={imageUrl + "MULTIPAGE.webp"}
                   alt=""
                   className="img-fluid w-100"
                 />
@@ -789,7 +782,7 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
                 <img
-                   src={imageUrl +"ONLINE.webp"}
+                  src={imageUrl + "ONLINE.webp"}
                   alt=""
                   className="img-fluid w-100"
                 />
@@ -816,7 +809,7 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
                 <img
-                  src={imageUrl +"FIGMA.webp"}
+                  src={imageUrl + "FIGMA.webp"}
                   alt=""
                   className="img-fluid w-100"
                 />

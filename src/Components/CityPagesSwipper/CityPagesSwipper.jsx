@@ -58,93 +58,79 @@ export default CityPagesSwipper;
 const slidesData = [
   {
     title: "Brand Name Suggestion",
-    desc:
-      "What’s in the name? We say, it’s quite significant, especially in branding. We craft names that are remembered.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "What’s in the name? We say, it’s quite significant, especially in branding. We craft names that are remembered.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
   {
     title: "Brand Development",
-    desc:
-      "Without branding, your business will not be recognised, trusted or remembered. We create strong brands.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "Without branding, your business will not be recognised, trusted or remembered. We create strong brands.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
   {
     title: "Brand Identity Design",
-    desc:
-      "Your logo is your first impression. We design logos that communicate your brand’s essence.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "Your logo is your first impression. We design logos that communicate your brand’s essence.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
   {
     title: "Packaging Design",
-    desc:
-      "Attractive packaging can be your winning move. We design packaging that speaks your brand.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "Attractive packaging can be your winning move. We design packaging that speaks your brand.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
   {
     title: "Catalogue Design",
-    desc:
-      "We create organised catalogues that reflect your product with clarity and impact.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create organised catalogues that reflect your product with clarity and impact.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
   {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
 
-   {
+  {
     title: "Digital Marketing",
-    desc:
-      "We create digital marketing strategies that increase visibility and drive measurable results.",
-    img: "https://powerfilldrinks.com/uploads/pages/swip1.webp",
+    desc: "We create digital marketing strategies that increase visibility and drive measurable results.",
+    img: "https://dndesigns.co.in/uploads/pages/swip1.webp",
   },
-
 ];

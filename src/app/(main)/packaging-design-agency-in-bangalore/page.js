@@ -16,16 +16,16 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("packaging-design-agency-in-bangalore", null, false);
+    seo = await getPageById(
+      "packaging-design-agency-in-bangalore",
+      null,
+      false,
+    );
   } catch (error) {
     console.log("About Us Error", error);
     return {
@@ -72,39 +72,39 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("packaging-design-agency-in-bangalore", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById(
+      "packaging-design-agency-in-bangalore",
+      null,
+      true,
+    );
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +122,7 @@ async function page() {
       question: "How long does the packaging design process take?",
       answer:
         "Every project varies, but mostly takes anywhere between 3 to 4 weeks (based on the SKUs and the design scope). As one of the top packaging design agencies in Bangalore, we provide a clear schedule before work starts.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -132,10 +132,11 @@ async function page() {
         "Definitely, our packaging design services include redesigning your current packaging as well. Our team can modernise, overhaul or completely give your product a new packaging to improve brand recognition, shelf impact, and customer appeal.",
     },
     {
-      question: "Why should I hire a dedicated product packaging design agency instead of a freelance designer?",
+      question:
+        "Why should I hire a dedicated product packaging design agency instead of a freelance designer?",
       answer:
         "Hiring a packaging design agency ensures that a full team of experts creates strategic, eye-catching designs that align with your brand vision and goals. They handle everything, from concept to production, offering reliability and experience that freelancers may lack.",
-    }
+    },
   ];
 
   // form section content
@@ -144,11 +145,9 @@ async function page() {
     "Since we are a product packaging design company in Bangalore, our primary focus is on designing high-impact visuals and labels for your packaging. But in case you need help with printing, we can connect you with trusted printers, too.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "packaging-design-agency-in-bangalore"}`}
@@ -163,9 +162,14 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Packaging Design Agency In Bangalore: We Design to Impress & Connect</h1>
+              <h1>
+                Packaging Design Agency In Bangalore: We Design to Impress &
+                Connect
+              </h1>
               <p className="para-roboto">
-               We create thoughtful packaging by turning simple ideas into striking designs. We help brands stand out, connect with customers, and grow even in a fast-moving market.
+                We create thoughtful packaging by turning simple ideas into
+                striking designs. We help brands stand out, connect with
+                customers, and grow even in a fast-moving market.
               </p>
               <div>
                 <HomePageBtn />
@@ -223,7 +227,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -510,13 +514,19 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>Importance of Packaging Design in Bangalore</h2>
                 <p>
-                  Over the year, Bangalore, or Bengaluru, as it is now known, has become a megacity. The market has evolved, customers' expectations have increased, and the competition has become tougher. Branding and packaging design have therefore gained more prominence. With just a few seconds to capture consumers’ attention, brands need product packaging designs that are both visually stunning and effectively convey their brand identity and values.
+                  Over the year, Bangalore, or Bengaluru, as it is now known,
+                  has become a megacity. The market has evolved, customers'
+                  expectations have increased, and the competition has become
+                  tougher. Branding and packaging design have therefore gained
+                  more prominence. With just a few seconds to capture consumers’
+                  attention, brands need product packaging designs that are both
+                  visually stunning and effectively convey their brand identity
+                  and values.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -524,42 +534,56 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "Packaging-Design.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "Packaging-Design.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>
-                   What We Offer for Bangalore Brands</h2>
+                <h2>What We Offer for Bangalore Brands</h2>
                 <p>
-                 As the best packaging design agency in Bangalore, we strive to provide customised solutions that cater to the needs of both startups and established businesses. We work across all industries and create packaging designs that appeal and connect alike. As a trusted product packaging design company in Bangalore, we support businesses with fresh and market-ready designs that promise to leave a great shelf impact.
+                  As the best packaging design agency in Bangalore, we strive to
+                  provide customised solutions that cater to the needs of both
+                  startups and established businesses. We work across all
+                  industries and create packaging designs that appeal and
+                  connect alike. As a trusted product packaging design company
+                  in Bangalore, we support businesses with fresh and
+                  market-ready designs that promise to leave a great shelf
+                  impact.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
-
-
 
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>The Reason Why Bangalore Brands Choose Us</h2>
                 <p>
-                We help your product make a strong first impression. Brands choose us because we understand the city’s pace, its consumers, and their expectations. Our packaging is clean, creative and attractive, and performs efficiently in-store and online as well. We believe in a simple, collaborative approach and set a precise timeline for the completion of the projects. So, if you are a brand in Bangalore and need your product packaging design to appeal and resonate with your target customers, just get in touch with us.
+                  We help your product make a strong first impression. Brands
+                  choose us because we understand the city’s pace, its
+                  consumers, and their expectations. Our packaging is clean,
+                  creative and attractive, and performs efficiently in-store and
+                  online as well. We believe in a simple, collaborative approach
+                  and set a precise timeline for the completion of the projects.
+                  So, if you are a brand in Bangalore and need your product
+                  packaging design to appeal and resonate with your target
+                  customers, just get in touch with us.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -567,7 +591,10 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "Ready-to-Win-Every-Heart.webp"} className="img-fluid" />
+                <img
+                  src={imageUrl + "Ready-to-Win-Every-Heart.webp"}
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -575,17 +602,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

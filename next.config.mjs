@@ -11,7 +11,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "powerfilldrinks.com",
+        hostname: "dndesigns.co.in",
         pathname: "/**",
       },
       {
@@ -29,20 +29,16 @@ const nextConfig = {
     },
   },
 
-
-
-
-
-   async redirects() {
+  async redirects() {
     return [
       {
-        source: '/tag/:slug*',
-        destination: '/',
+        source: "/tag/:slug*",
+        destination: "/",
         permanent: false, // true = 301, false = 302
       },
       {
-        source: '/blog/tag/:slug*',
-        destination: '/',
+        source: "/blog/tag/:slug*",
+        destination: "/",
         permanent: false, // true = 301, false = 302
       },
       {
@@ -64,7 +60,7 @@ const nextConfig = {
         permanent: true, // 301
       },
 
-     {
+      {
         //4
         source: "/catalogue-design-agency-in-panipat",
         destination: "/catalogue-designing",
@@ -94,13 +90,13 @@ const nextConfig = {
         destination: "/web-designing-services-in-india",
         permanent: true, // 301
       },
-       {
+      {
         //9
         source: "/website-designing-agency-in-panipat",
         destination: "/web-designing-services-in-india",
         permanent: true, // 301
       },
-       {
+      {
         //10
         source: "/creative-branding-agency-in-noida",
         destination: "/branding",
@@ -133,19 +129,22 @@ const nextConfig = {
       {
         //15
         source: "/finding-the-right-packaging-design-agency-in-gujarat",
-        destination: "/blog/finding-the-right-packaging-design-agency-in-gujarat",
+        destination:
+          "/blog/finding-the-right-packaging-design-agency-in-gujarat",
         permanent: true, // 301
       },
       {
         //16
-        source: "/whats-in-store-while-working-together-with-a-creative-design-agency-in-noida/",
+        source:
+          "/whats-in-store-while-working-together-with-a-creative-design-agency-in-noida/",
         destination: "/blog/creative-design-agency-in-noida",
         permanent: true, // 301
       },
       {
         //17
         source: "/how-a-company-used-video-to-increase-brand-awareness-by-20",
-        destination: "/blog/how-a-company-used-video-to-increase-brand-awareness-by-20",
+        destination:
+          "/blog/how-a-company-used-video-to-increase-brand-awareness-by-20",
         permanent: true, // 301
       },
       {
@@ -157,25 +156,30 @@ const nextConfig = {
       {
         //19
         source: "/how-a-company-used-creative-design-to-rebrand-itself",
-        destination: "/blog/how-a-company-used-creative-design-to-rebrand-itself",
+        destination:
+          "/blog/how-a-company-used-creative-design-to-rebrand-itself",
         permanent: true, // 301
       },
       {
         //20
-        source: "/how-a-food-labels-design-helped-a-company-build-brand-loyalty",
+        source:
+          "/how-a-food-labels-design-helped-a-company-build-brand-loyalty",
         destination: "/blog/food-label-design-brand-loyalty",
         permanent: true, // 301
       },
       {
         //21
-        source: "/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
+        source:
+          "/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
         destination: "/blog/catalogues-ecommerce-success-design-insights",
         permanent: true, // 301
       },
       {
         //22
-        source: "/high-resolution-photography-in-advertising-making-your-brand-stand-out",
-        destination: "/blog/high-resolution-photography-in-advertising-making-your-brand-stand-out",
+        source:
+          "/high-resolution-photography-in-advertising-making-your-brand-stand-out",
+        destination:
+          "/blog/high-resolution-photography-in-advertising-making-your-brand-stand-out",
         permanent: true, // 301
       },
       {
@@ -187,31 +191,39 @@ const nextConfig = {
       {
         //24
         source: "/how-to-use-fluent-packaging-design-to-launch-a-new-product",
-        destination: "/blog/how-to-use-fluent-packaging-design-to-launch-a-new-product",
+        destination:
+          "/blog/how-to-use-fluent-packaging-design-to-launch-a-new-product",
         permanent: true, // 301
       },
       {
         //25
         source: "/the-impact-of-social-media-integration-on-website-engagement",
-        destination: "/blog/the-impact-of-social-media-integration-on-website-engagement",
+        destination:
+          "/blog/the-impact-of-social-media-integration-on-website-engagement",
         permanent: true, // 301
       },
       {
         //26
-        source: "/web-development-for-startups-building-a-strong-online-presence",
-        destination: "/blog/web-development-for-startups-building-a-strong-online-presence",
+        source:
+          "/web-development-for-startups-building-a-strong-online-presence",
+        destination:
+          "/blog/web-development-for-startups-building-a-strong-online-presence",
         permanent: true, // 301
       },
       {
         //27
-        source: "/e-commerce-website-development-key-features-for-online-retail-success",
-        destination: "/blog/e-commerce-website-development-key-features-for-online-retail-success",
+        source:
+          "/e-commerce-website-development-key-features-for-online-retail-success",
+        destination:
+          "/blog/e-commerce-website-development-key-features-for-online-retail-success",
         permanent: true, // 301
       },
       {
         //28
-        source: "/guide-for-startups-how-to-choose-the-best-web-designing-company",
-        destination: "/blog/guide-for-startups-how-to-choose-the-best-web-designing-company",
+        source:
+          "/guide-for-startups-how-to-choose-the-best-web-designing-company",
+        destination:
+          "/blog/guide-for-startups-how-to-choose-the-best-web-designing-company",
         permanent: true, // 301
       },
       {
@@ -222,26 +234,32 @@ const nextConfig = {
       },
       {
         //30
-        source: "/nurturing-new-ideas-and-concepts-for-product-designing-agency",
-        destination: "/blog/nurturing-new-ideas-and-concepts-for-product-designing-agency",
+        source:
+          "/nurturing-new-ideas-and-concepts-for-product-designing-agency",
+        destination:
+          "/blog/nurturing-new-ideas-and-concepts-for-product-designing-agency",
         permanent: true, // 301
       },
       {
         //31
         source: "/packaging-power-guide-consumer-behavior-through-design",
-        destination: "/blog/packaging-power-guide-consumer-behavior-through-design",
+        destination:
+          "/blog/packaging-power-guide-consumer-behavior-through-design",
         permanent: true, // 301
       },
       {
         //32
-        source: "/the-role-of-packaging-designing-agency-in-healthcare-branding",
-        destination: "/blog/the-role-of-packaging-designing-agency-in-healthcare-branding",
+        source:
+          "/the-role-of-packaging-designing-agency-in-healthcare-branding",
+        destination:
+          "/blog/the-role-of-packaging-designing-agency-in-healthcare-branding",
         permanent: true, // 301
       },
       {
         //33
         source: "/techniques-for-stunning-product-photography-a-how-to-guide",
-        destination: "/blog/techniques-for-stunning-product-photography-a-how-to-guide",
+        destination:
+          "/blog/techniques-for-stunning-product-photography-a-how-to-guide",
         permanent: true, // 301
       },
       {
@@ -253,13 +271,15 @@ const nextConfig = {
       {
         //35
         source: "/designing-with-visual-impact-the-art-of-visual-communication",
-        destination: "/blog/designing-with-visual-impact-the-art-of-visual-communication",
+        destination:
+          "/blog/designing-with-visual-impact-the-art-of-visual-communication",
         permanent: true, // 301
       },
       {
         //36
         source: "/creative-designing-agency-transforming-ideas-into-reality",
-        destination: "/blog/creative-designing-agency-transforming-ideas-into-reality",
+        destination:
+          "/blog/creative-designing-agency-transforming-ideas-into-reality",
         permanent: true, // 301
       },
       {
@@ -282,14 +302,17 @@ const nextConfig = {
       },
       {
         //40
-        source: "/strategies-for-growth-and-expansion-in-digital-marketing-industry",
-        destination: "/blog/strategies-for-growth-and-expansion-in-digital-marketing-industry",
+        source:
+          "/strategies-for-growth-and-expansion-in-digital-marketing-industry",
+        destination:
+          "/blog/strategies-for-growth-and-expansion-in-digital-marketing-industry",
         permanent: true, // 301
       },
       {
         //41
         source: "/key-factors-to-consider-when-choosing-a-web-design-agency",
-        destination: "/blog/key-factors-to-consider-when-choosing-a-web-design-agency",
+        destination:
+          "/blog/key-factors-to-consider-when-choosing-a-web-design-agency",
         permanent: true, // 301
       },
       {
@@ -300,20 +323,25 @@ const nextConfig = {
       },
       {
         //43
-        source: "/the-role-of-visual-communication-design-in-building-strong-brand",
-        destination: "/blog/the-role-of-visual-communication-design-in-building-strong-brand",
+        source:
+          "/the-role-of-visual-communication-design-in-building-strong-brand",
+        destination:
+          "/blog/the-role-of-visual-communication-design-in-building-strong-brand",
         permanent: true, // 301
       },
       {
         //44
-        source: "/packaging-design-for-luxury-brands-creating-a-premium-and-exquisite-look",
+        source:
+          "/packaging-design-for-luxury-brands-creating-a-premium-and-exquisite-look",
         destination: "/blog/luxury-packaging-design",
         permanent: true, // 301
       },
       {
         //45
-        source: "/why-a-rebranding-is-important-for-our-business-rebranding-definition",
-        destination: "/blog/why-a-rebranding-is-important-for-our-business-rebranding-definition",
+        source:
+          "/why-a-rebranding-is-important-for-our-business-rebranding-definition",
+        destination:
+          "/blog/why-a-rebranding-is-important-for-our-business-rebranding-definition",
         permanent: true, // 301
       },
       {
@@ -325,7 +353,8 @@ const nextConfig = {
       {
         //47
         source: "/collaborating-with-a-design-agency-in-noida-what-to-expect",
-        destination: "/blog/collaborating-with-a-design-agency-in-noida-what-to-expect",
+        destination:
+          "/blog/collaborating-with-a-design-agency-in-noida-what-to-expect",
         permanent: true, // 301
       },
       {
@@ -406,31 +435,31 @@ const nextConfig = {
         destination: "/web-designing-services-in-india",
         permanent: true, // 301
       },
-       {
+      {
         //61
         source: "/catalogue-design-agency-in-vadodara",
         destination: "/catalogue-designing",
         permanent: true, // 301
       },
-       {
+      {
         //62
         source: "/website-designing-agency-in-delhi",
         destination: "/web-designing-services-in-india",
         permanent: true, // 301
       },
-       {
+      {
         //63
         source: "/logo-designing-agency-in-panipat",
         destination: "/logo-designing",
         permanent: true, // 301
       },
-       {
+      {
         //64
         source: "/creative-designing-agency-in-sonipat",
         destination: "/",
         permanent: true, // 301
       },
-       {
+      {
         //65
         source: "/creative-branding-agency-in-ghaziabad",
         destination: "/branding",
@@ -756,7 +785,8 @@ const nextConfig = {
       },
       {
         //118
-        source: "/blog/packaging-design-for-luxury-brands-creating-a-premium-and-exquisite-look",
+        source:
+          "/blog/packaging-design-for-luxury-brands-creating-a-premium-and-exquisite-look",
         destination: "/blog/luxury-packaging-design",
         permanent: true, // 301
       },
@@ -786,7 +816,8 @@ const nextConfig = {
       },
       {
         //123
-        source: "/blog/whats-in-store-while-working-together-with-a-creative-design-agency-in-noida",
+        source:
+          "/blog/whats-in-store-while-working-together-with-a-creative-design-agency-in-noida",
         destination: "/blog/creative-design-agency-in-noida",
         permanent: true, // 301
       },
@@ -802,7 +833,7 @@ const nextConfig = {
         destination: "/blog",
         permanent: true, // 301
       },
-       {
+      {
         //126
         source: "/blog/sweet-box-design-trends-to-watch-out-for-in-2023",
         destination: "/blog/sweet-box-design-trends",
@@ -810,13 +841,15 @@ const nextConfig = {
       },
       {
         //127
-        source: "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
+        source:
+          "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
         destination: "/blog/catalogues-ecommerce-success-design-insights",
         permanent: true, // 301
       },
       {
         //128
-        source: "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
+        source:
+          "/blog/the-role-of-catalogues-in-e-commerce-success-insights-from-design-experts",
         destination: "/blog/catalogues-ecommerce-success-design-insights",
         permanent: true, // 301
       },
@@ -826,9 +859,10 @@ const nextConfig = {
         destination: "/blog/effective-social-media-marketing-tips",
         permanent: true, // 301
       },
-       {
+      {
         //130
-        source: "/blog/how-a-food-labels-design-helped-a-company-build-brand-loyalty",
+        source:
+          "/blog/how-a-food-labels-design-helped-a-company-build-brand-loyalty",
         destination: "/food-packaging-design",
         permanent: true, // 301
       },
@@ -852,37 +886,48 @@ const nextConfig = {
       },
       {
         //134
-        source: "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-3-300x300.png",
-        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        source:
+          "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-3-300x300.png",
+        destination:
+          "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
         permanent: true, // 301
       },
       {
         //135
-        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-4-300x300.png",
-        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        source:
+          "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-4-300x300.png",
+        destination:
+          "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
         permanent: true, // 301
       },
       {
         //136
-        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-300x300.png",
-        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        source:
+          "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-300x300.png",
+        destination:
+          "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
         permanent: true, // 301
       },
       {
         //137
-        source: "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-300x300.png",
-        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        source:
+          "/wp-content/uploads/2024/08/Why-is-Digital-Marketing-Important-for-the-Health-and-Wellness-Industry-300x300.png",
+        destination:
+          "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
         permanent: true, // 301
       },
       {
         //138
-        source: "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-3-300x300.png",
-        destination: "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
+        source:
+          "/wp-content/uploads/2024/08/Best-Digital-Marketing-Practices-in-the-Health-and-Wellness-Industry-3-300x300.png",
+        destination:
+          "/blog/importance-of-digital-marketing-for-health-and-wellness-industry",
         permanent: true, // 301
       },
       {
         //139
-        source: "/blog/brand-design-for-makhana-with-marketing-strategies-in-2024",
+        source:
+          "/blog/brand-design-for-makhana-with-marketing-strategies-in-2024",
         destination: "/blog/brand-design-for-makhana-with-marketing-strategies",
         permanent: true, // 301
       },
@@ -949,7 +994,8 @@ const nextConfig = {
       {
         //150
         source: "/logo-masters-creating-icons-for-your-business-success",
-        destination: "/blog/logo-masters-creating-icons-for-your-business-success",
+        destination:
+          "/blog/logo-masters-creating-icons-for-your-business-success",
         permanent: true, // 301
       },
       {
@@ -964,7 +1010,7 @@ const nextConfig = {
         destination: "/blog/whey-protein-branding-and-packaging",
         permanent: true, // 301
       },
-       {
+      {
         //153
         source: "/blog/create-successful-toy-brand-design-with-strategies",
         destination: "/blog/toy-packaging-design",
@@ -1066,7 +1112,7 @@ const nextConfig = {
         destination: "/branding-agency-in-delhi",
         permanent: true, // 301
       },
-       {
+      {
         //170
         source: "/blog/catalogues-ecommerce-success-design-insights",
         destination: "/catalogue-designing",
@@ -1198,66 +1244,6 @@ const nextConfig = {
         destination: "/branding",
         permanent: true, // 301
       },
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
 
       // {
       //   source: "/temp-page",
@@ -1266,8 +1252,6 @@ const nextConfig = {
       // },
     ];
   },
-
-
 };
 
 export default nextConfig;

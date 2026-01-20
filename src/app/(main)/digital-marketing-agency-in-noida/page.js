@@ -66,12 +66,16 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
   try {
-    pageData = await getPageById("digital-marketing-agency-in-noida", null, true);
+    pageData = await getPageById(
+      "digital-marketing-agency-in-noida",
+      null,
+      true,
+    );
   } catch (error) {
     notFound();
   }
@@ -93,7 +97,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   const heading = "Digital Marketing Agency in Noida";
   const subHeading = "Smart Marketing For Digital Impact, Growth & Success";
@@ -192,7 +195,7 @@ async function page() {
       title: "Website Design and Development and SEO ",
       description:
         "We created their website, a professional-looking one with an added element of fun. Our SEO strategies ensure that it ranks well in the SERP.",
-      image: "https://powerfilldrinks.com/uploads/pages/wehfdvb.webp",
+      image: "https://dndesigns.co.in/uploads/pages/wehfdvb.webp",
     },
     {
       id: 2,
@@ -200,7 +203,7 @@ async function page() {
       title: "Content Strategy & Creation",
       description:
         "Content strategy and creation followed as we crafted content that highlighted the benefits of their cocktail bombs and attracted the target customers.",
-      image: "https://powerfilldrinks.com/uploads/pages/photoshoot.webp",
+      image: "https://dndesigns.co.in/uploads/pages/photoshoot.webp",
     },
     {
       id: 3,
@@ -208,7 +211,7 @@ async function page() {
       title: "Social Media Management",
       description:
         "With a product like Mr. Bomzy, social media had to be an integral part of the larger marketing plan. We helped establish their presence on various social media platforms.",
-      image: "https://powerfilldrinks.com/uploads/pages/insta.webp",
+      image: "https://dndesigns.co.in/uploads/pages/insta.webp",
     },
     {
       id: 4,
@@ -216,31 +219,28 @@ async function page() {
       title: "Email Marketing & Automation",
       description:
         "Our e-mail marketing campaigns helped them reach out to their target customers regularly, build strong relationships and drive sales.",
-      image: "https://powerfilldrinks.com/uploads/pages/3hgewjrhfber.webp",
+      image: "https://dndesigns.co.in/uploads/pages/3hgewjrhfber.webp",
     },
   ];
 
   const mobileCrads = [
     {
-      mobileImage:
-        "https://powerfilldrinks.com/uploads/pages/wehfdvb.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/wehfdvb.webp",
     },
     {
-      mobileImage: "https://powerfilldrinks.com/uploads/pages/photoshoot.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/photoshoot.webp",
     },
     {
-      mobileImage:
-        "https://powerfilldrinks.com/uploads/pages/insta.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/insta.webp",
     },
     {
-      mobileImage: "https://powerfilldrinks.com/uploads/pages/3hgewjrhfber.webp",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/3hgewjrhfber.webp",
     },
   ];
 
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "digital-marketing-agency-in-noida"}`}
@@ -249,8 +249,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
-
 
       {/*Breadcrumb*/}
       <section>
@@ -308,7 +306,7 @@ async function page() {
                 <div className="col switch-on-middle-div-img">
                   <img
                     // src="https://dndesigns.co.in/wp-content/uploads/2025/06/1-01-01.png"
-                    src={imageUrl+ "successfull groth.webp"}
+                    src={imageUrl + "successfull groth.webp"}
                     className="img-fluid"
                   ></img>
                 </div>
@@ -316,10 +314,7 @@ async function page() {
             </div>
 
             <div className="col-12 col-md-12 col-lg-6 main-switch-img">
-              <img
-                src={imageUrl+ "2-01.webp"}
-                className="img-fluid"
-              />
+              <img src={imageUrl + "2-01.webp"} className="img-fluid" />
             </div>
           </div>
         </div>
@@ -371,10 +366,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "web.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "web.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Website Design & Development</h3>
@@ -394,17 +386,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "seo.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "seo.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Search Engine Optimisation</h3>
@@ -425,17 +414,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "SMM.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "SMM.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Social Media Marketing</h3>
@@ -456,7 +442,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>
@@ -465,10 +451,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "IM.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "IM.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Influencer Marketing</h3>
@@ -488,17 +471,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                   src={imageUrl+ "ppc.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "ppc.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Pay-per-Click</h3>
@@ -520,7 +500,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -528,7 +508,7 @@ async function page() {
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl+ "digital-video.svg"}
+                    src={imageUrl + "digital-video.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -551,7 +531,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>
@@ -561,7 +541,7 @@ async function page() {
               <div className=" top-cap-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl+ "content-writing.svg"}
+                    src={imageUrl + "content-writing.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -585,17 +565,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "ORP.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "ORP.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Online Reputation Management</h3>
@@ -615,17 +592,14 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                 src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
             <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
               <div className="p-3 top-cap-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl+ "email.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "email.svg"} className="cap-img"></img>
                 </div>
                 <div className="top-cap-btm">
                   <h3>Email Campaigns</h3>
@@ -647,7 +621,7 @@ async function page() {
               </div>
               <img
                 className="top-cap-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>

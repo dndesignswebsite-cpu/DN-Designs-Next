@@ -58,8 +58,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
- // ---
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -86,11 +86,8 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   return (
     <div>
-
-
       {/* schema */}
       {cleanSchema && (
         <script
@@ -103,7 +100,7 @@ async function page() {
 
       <div className="container-fluid p-0">
         <video
-          src="https://powerfilldrinks.com/uploads/videos/video-1-1.mp4"
+          src="https://dndesigns.co.in/uploads/videos/video-1-1.mp4"
           width="100%"
           autoPlay
           muted
@@ -134,7 +131,7 @@ async function page() {
         </div>
         <div className="row">
           <img
-            src={imageUrl +"wlues1.webp"}
+            src={imageUrl + "wlues1.webp"}
             alt=""
             className="img-fluid mt-5 case-study-img1"
           />
@@ -184,7 +181,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src={imageUrl +"wvehdhjej.webp"}
+              src={imageUrl + "wvehdhjej.webp"}
               alt=""
               className="img-fluid case-study-img9"
             />
@@ -193,7 +190,7 @@ async function page() {
 
         <div className="row">
           <img
-            src={imageUrl +"3ygewudhgew.webp"}
+            src={imageUrl + "3ygewudhgew.webp"}
             alt=""
             className="img-fluid case-study-img5"
           />
@@ -201,7 +198,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://powerfilldrinks.com/uploads/videos/wlues5.mp4"
+            src="https://dndesigns.co.in/uploads/videos/wlues5.mp4"
             width="100%"
             autoPlay
             muted
@@ -226,7 +223,7 @@ async function page() {
           </div>
           <div className="col-lg-6 col-12 col-md-6">
             <video
-              src="https://powerfilldrinks.com/uploads/videos/wlues6.mp4"
+              src="https://dndesigns.co.in/uploads/videos/wlues6.mp4"
               width="100%"
               autoPlay
               muted
@@ -240,7 +237,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-             src={imageUrl +"whevdhvhjvh.webp"}
+              src={imageUrl + "whevdhvhjvh.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -248,7 +245,7 @@ async function page() {
 
           <div className="col-lg-6 col-md-6 col-12 px-0">
             <img
-              src={imageUrl +"whgevghsdavcd.webp"}
+              src={imageUrl + "whgevghsdavcd.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -257,7 +254,7 @@ async function page() {
 
         <div className="row">
           <video
-            src="https://powerfilldrinks.com/uploads/videos/video-1-1.mp4"
+            src="https://dndesigns.co.in/uploads/videos/video-1-1.mp4"
             width="100%"
             autoPlay
             muted
@@ -270,7 +267,7 @@ async function page() {
         <div className="row pt-lg-5">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src={imageUrl +"tfewgygvdhgvw.webp"}
+              src={imageUrl + "tfewgygvdhgvw.webp"}
               alt=""
               className="img-fluid case-study-img6"
             />
@@ -292,7 +289,7 @@ async function page() {
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src={imageUrl +"uyfjhjhjhgvvhj.webp"}
+              src={imageUrl + "uyfjhjhjhgvvhj.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -300,7 +297,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-              src={imageUrl +"rwqtefdgwvh.webp"}
+              src={imageUrl + "rwqtefdgwvh.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -309,7 +306,7 @@ async function page() {
 
         <div className="row">
           <img
-            src={imageUrl +"werwhvdshj.webp"}
+            src={imageUrl + "werwhvdshj.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -318,7 +315,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-             src={imageUrl +"rwefhdgvhrjdj.webp"}
+              src={imageUrl + "rwefhdgvhrjdj.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -326,7 +323,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-             src={imageUrl +"nwjkebhdn.webp"}
+              src={imageUrl + "nwjkebhdn.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -335,7 +332,7 @@ async function page() {
 
         <div className="row">
           <img
-            src={imageUrl +"mweghgcadsvjg.webp"}
+            src={imageUrl + "mweghgcadsvjg.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -344,7 +341,7 @@ async function page() {
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src={imageUrl +"wyegwhdvbnbn.webp"}
+              src={imageUrl + "wyegwhdvbnbn.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
             />
@@ -352,7 +349,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
             <img
-              src={imageUrl +"yewfdewghe.webp"}
+              src={imageUrl + "yewfdewghe.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
             />
@@ -361,7 +358,7 @@ async function page() {
 
         <div className="row">
           <img
-            src={imageUrl +"tyweffdcewghvh.webp"}
+            src={imageUrl + "tyweffdcewghvh.webp"}
             alt=""
             className="img-fluid case-study-img"
           />
@@ -370,7 +367,7 @@ async function page() {
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
             <img
-             src={imageUrl +"nwejkbhdvvjh.webp"}
+              src={imageUrl + "nwejkbhdvvjh.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -378,7 +375,7 @@ async function page() {
 
           <div className="col-lg-6 col-12 col-md-6">
             <img
-             src={imageUrl +"weigydshvwjd.webp"}
+              src={imageUrl + "weigydshvwjd.webp"}
               alt=""
               className="img-fluid case-study-img7"
             />
@@ -387,7 +384,7 @@ async function page() {
 
         <div className="row">
           <img
-            src={imageUrl +"wejhbvdhgvwehd.webp"}
+            src={imageUrl + "wejhbvdhgvwehd.webp"}
             alt=""
             className="img-fluid case-study-img mt-4 p-2"
           />

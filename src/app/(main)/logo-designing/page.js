@@ -63,8 +63,8 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
-   // ---
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+  // ---
   await connectDB();
   let pageData;
   try {
@@ -90,7 +90,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   const pageName = "Logo Design Services";
   const heading = "Logo Design Services";
@@ -189,7 +188,6 @@ async function page() {
 
   return (
     <div>
-
       {/* schema */}
       {cleanSchema && (
         <script
@@ -199,7 +197,6 @@ async function page() {
         />
       )}
       {/*schema ends here */}
-
 
       {/*Breadcrumb*/}
       <section>
@@ -221,9 +218,9 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  // src="https://powerfilldrinks.com/uploads/videos/Nature-balance.webp"
+                  // src="https://dndesigns.co.in/uploads/videos/Nature-balance.webp"
 
-                  src={imageUrl+"3gweudjgwer.webp"}
+                  src={imageUrl + "3gweudjgwer.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -249,10 +246,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src={imageUrl+"jhewjrhjbf.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "jhewjrhjbf.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -279,10 +273,7 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src={imageUrl+"Rosnax.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Rosnax.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -306,10 +297,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src={imageUrl+"tftyfhgchg.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -336,7 +324,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src={imageUrl+"bake-o-Tech.webp"}
+                  src={imageUrl + "bake-o-Tech.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -363,7 +351,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                  src={imageUrl+"erhfLuxmi-cars.webp"}
+                  src={imageUrl + "erhfLuxmi-cars.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -397,14 +385,14 @@ async function page() {
                 /> */}
 
                 <video
-            src="https://powerfilldrinks.com/uploads/videos/Greephoria.mp4"
-            width="100%"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="enlitecasestudy-video1"
-          />
+                  src="https://dndesigns.co.in/uploads/videos/Greephoria.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="enlitecasestudy-video1"
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -428,7 +416,7 @@ async function page() {
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
                 <img
-                 src={imageUrl+"deeproot-logo.webp"}
+                  src={imageUrl + "deeproot-logo.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -466,7 +454,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl+"Frame-427324115-300x295.webp"}
+                    src={imageUrl + "Frame-427324115-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -491,7 +479,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -499,7 +487,7 @@ async function page() {
               <div className=" but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl+"jhguhg-300x295.webp"}
+                    src={imageUrl + "jhguhg-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -523,7 +511,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -531,7 +519,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src={imageUrl+"hdgh-300x295.webp"}
+                    src={imageUrl + "hdgh-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -555,7 +543,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-               src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
 
@@ -563,7 +551,7 @@ async function page() {
               <div className="p-3 but-why-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl+"fgjhg-300x295.webp"}
+                    src={imageUrl + "fgjhg-300x295.webp"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -588,7 +576,7 @@ async function page() {
               </div>
               <img
                 className="but-why-check-eye"
-                src="https://powerfilldrinks.com/uploads/pages/imgi_2_Frame-427324112.webp"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
               />
             </div>
           </div>
@@ -898,21 +886,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"HBO logo.webp"}
+                    src={imageUrl + "HBO logo.webp"}
                     alt="HBO logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"IBM logo.webp"}
+                    src={imageUrl + "IBM logo.webp"}
                     alt="IBM logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"Nasa logo.webp"}
+                    src={imageUrl + "Nasa logo.webp"}
                     alt="NASA logo"
                     className="img-fluid"
                   />
@@ -936,21 +924,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"visa logo.webp"}
+                    src={imageUrl + "visa logo.webp"}
                     alt="Visa logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"coca logo.webp"}
+                    src={imageUrl + "coca logo.webp"}
                     alt="Coca-Cola logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"google logo.webp"}
+                    src={imageUrl + "google logo.webp"}
                     alt="Google logo"
                     className="img-fluid"
                   />
@@ -976,21 +964,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"apple logo.webp"}
+                    src={imageUrl + "apple logo.webp"}
                     alt="Apple logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"twitter logo.webp"}
+                    src={imageUrl + "twitter logo.webp"}
                     alt="X logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"pintrest logo.webp"}
+                    src={imageUrl + "pintrest logo.webp"}
                     alt="Pinterest logo"
                     className="img-fluid"
                   />
@@ -1016,21 +1004,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"addidas logo.webp"}
+                    src={imageUrl + "addidas logo.webp"}
                     alt="adidas logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"bp[ logo.webp"}
+                    src={imageUrl + "bp[ logo.webp"}
                     alt="BP logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                   src={imageUrl+"pepsi logo.webp"}
+                    src={imageUrl + "pepsi logo.webp"}
                     alt="Pepsi logo"
                     className="img-fluid"
                   />
@@ -1055,21 +1043,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                   src={imageUrl+"kfc logo.webp"}
+                    src={imageUrl + "kfc logo.webp"}
                     alt="KFC logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"pringles.webp"}
+                    src={imageUrl + "pringles.webp"}
                     alt="Pringles logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"amul logo.webp"}
+                    src={imageUrl + "amul logo.webp"}
                     alt="Amul logo"
                     className="img-fluid"
                   />
@@ -1094,21 +1082,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                     src={imageUrl+"doritos.webp"}
+                    src={imageUrl + "doritos.webp"}
                     alt="Doritos logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"burger king logo.webp"}
+                    src={imageUrl + "burger king logo.webp"}
                     alt="Burger King logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"lacoster logo.webp"}
+                    src={imageUrl + "lacoster logo.webp"}
                     alt="Lacoste logo"
                     className="img-fluid"
                   />
@@ -1133,21 +1121,21 @@ async function page() {
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"harley logo.webp"}
+                    src={imageUrl + "harley logo.webp"}
                     alt="Harley-Davidson logo"
                     className="img-fluid logo"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                   src={imageUrl+"vi ri logo.webp"}
+                    src={imageUrl + "vi ri logo.webp"}
                     alt="Harvard logo"
                     className="img-fluid"
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
                   <img
-                    src={imageUrl+"starbucks logo.webp"}
+                    src={imageUrl + "starbucks logo.webp"}
                     alt="Starbucks logo"
                     className="img-fluid"
                   />
@@ -1173,13 +1161,13 @@ async function page() {
           <div className="row logo-design-section">
             <div className="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
               <img
-                src={imageUrl+"nectarpure graph.webp"}
+                src={imageUrl + "nectarpure graph.webp"}
                 alt="Nectarpure"
                 className="img-fluid logo-design-img"
               />
 
               <img
-                src={imageUrl+"imgi_36_nec.webp"}
+                src={imageUrl + "imgi_36_nec.webp"}
                 alt="Slide Overlay"
                 className="img-fluid logo-overlay-img"
               />
@@ -1189,7 +1177,7 @@ async function page() {
               <div className="row">
                 <div className="col-lg-12">
                   <img
-                   src={imageUrl+"wordmark.webp"}
+                    src={imageUrl + "wordmark.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
                   />
@@ -1198,7 +1186,7 @@ async function page() {
               <div className="row">
                 <div className="col-lg-12">
                   <img
-                    src={imageUrl+"2b3ewebdjh.webp"}
+                    src={imageUrl + "2b3ewebdjh.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
                   />

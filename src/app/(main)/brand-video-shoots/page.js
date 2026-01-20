@@ -60,8 +60,7 @@ export async function generateMetadata() {
 //meta end here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -89,7 +88,6 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   // hero section content
   const heading = "Brand Video Shoots";
   const subHeading =
@@ -99,8 +97,7 @@ async function page() {
 
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "brand-video-shoots"}`}
@@ -172,10 +169,7 @@ async function page() {
           <div className="row">
             <div className="col-12 col-md-12 col-lg-6 we-are-leading-left-col ">
               <div className="we-are-leading-left-img-div text-center">
-                <img
-                  src={imageUrl + "video-1.svg"}
-                  className="img-fluid"
-                ></img>
+                <img src={imageUrl + "video-1.svg"} className="img-fluid"></img>
               </div>
               <h3>
                 We are Leading Video Production Company for Businesses and

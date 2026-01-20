@@ -58,8 +58,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -87,11 +86,9 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
-
   return (
     <div>
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "nectarpure-case-study"}`}
@@ -101,12 +98,11 @@ async function page() {
       )}
       {/*schema ends here */}
 
-
       <div className="container nectarpure">
         <div className="row">
           <div className="col-lg-4 col-md-5">
             <img
-              src={imageUrl+"34ebjrhbkr.webp"}
+              src={imageUrl + "34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
             />
@@ -177,7 +173,7 @@ async function page() {
         <div className="row">
           <div className="col-md-4 col-lg-4 nectarpure-sticky">
             <img
-              src={imageUrl+"34ebjrhbkr.webp"}
+              src={imageUrl + "34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
             />
@@ -217,19 +213,19 @@ async function page() {
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-7 col-lg-7">
                     <img
-                      src={imageUrl+"wbehgdvwe.webp"}
+                      src={imageUrl + "wbehgdvwe.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
                     />
                   </div>
                   <div className="col-md-5 col-lg-5">
                     <img
-                     src={imageUrl+"nectarpure 1.webp"}
+                      src={imageUrl + "nectarpure 1.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2 mb-lg-3 mb-md-3"
                     />
                     <img
-                      src={imageUrl+"nectarpure 2.webp"}
+                      src={imageUrl + "nectarpure 2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2"
                     />
@@ -251,7 +247,7 @@ async function page() {
                   product’s USP and health benefits take the centre stage.
                 </p>
                 <img
-                  src={imageUrl+"nectarpure 5.webp"}
+                  src={imageUrl + "nectarpure 5.webp"}
                   alt=""
                   className="img-fluid packaging-design-img"
                 />
@@ -271,14 +267,14 @@ async function page() {
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-5 col-lg-5">
                     <img
-                      src={imageUrl+"Untitled-2.webp"}
+                      src={imageUrl + "Untitled-2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0"
                     />{" "}
                   </div>
                   <div className="col-md-7 col-lg-7">
                     <img
-                      src={imageUrl+"Frame-427324120.webp"}
+                      src={imageUrl + "Frame-427324120.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
                     />
@@ -286,12 +282,12 @@ async function page() {
                 </div>
                 <div className="row px-4 py-2">
                   <img
-                    src={imageUrl+"Group-427321841-2048x807.webp"}
+                    src={imageUrl + "Group-427321841-2048x807.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1 mb-3"
                   />
                   <img
-                    src={imageUrl+"Frame-427324252-2048x808.webp"}
+                    src={imageUrl + "Frame-427324252-2048x808.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1"
                   />
@@ -304,17 +300,17 @@ async function page() {
 
       <div className="container-fluid p-0">
         <img
-          src={imageUrl+"nectarpure 6.webp"}
+          src={imageUrl + "nectarpure 6.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-          src={imageUrl+"nectarpure 3.webp"}
+          src={imageUrl + "nectarpure 3.webp"}
           alt=""
           className="img-fluid w-100"
         />
         <img
-         src={imageUrl+"nectarpure 7.webp"}
+          src={imageUrl + "nectarpure 7.webp"}
           alt=""
           className="img-fluid w-100"
         />

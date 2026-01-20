@@ -67,8 +67,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -95,7 +94,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   // seo hero
   const heading = "SEO Agency in Noida";
@@ -187,9 +185,7 @@ async function page() {
 
   return (
     <div>
-
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "seo-marketing-agency-in-noida"}`}
@@ -230,10 +226,7 @@ async function page() {
               <ContactUsBtn />
             </div>
             <div className="col-12 col-md-12 col-lg-6 what-drives-our-growth-img-section">
-              <img
-                src={imageUrl + "jkjk.webp"}
-                className="img-fluid"
-              ></img>
+              <img src={imageUrl + "jkjk.webp"} className="img-fluid"></img>
             </div>
           </div>
         </div>
@@ -252,10 +245,7 @@ async function page() {
                   drive more organic traffic. At the core are on-page and
                   off-page optimisation as well as technical SEO.
                 </p>
-                <img
-                   src={imageUrl + "jhfjhh.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "jhfjhh.webp"} className="img-fluid" />
               </div>
             </div>
 
@@ -268,10 +258,7 @@ async function page() {
                   activities. It also helps confirm whether the strategy is
                   yielding positive results or requires modifications.
                 </p>
-                <img
-                  src={imageUrl + "jkjk (1).webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "jkjk (1).webp"} className="img-fluid" />
               </div>
             </div>
           </div>
@@ -291,10 +278,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
-                  <img
-                    src={imageUrl + "bewjdhj.svg"}
-                    className="cap-img"
-                  ></img>
+                  <img src={imageUrl + "bewjdhj.svg"} className="cap-img"></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Generate Organic Traffic</h3>
@@ -346,7 +330,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-               src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -387,7 +371,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src={imageUrl + "gewhjbjbj.svg"}
+                    src={imageUrl + "gewhjbjbj.svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -800,7 +784,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                 src={imageUrl + "deal_8958919.svg"}
+                  src={imageUrl + "deal_8958919.svg"}
                   className="img-fluid"
                 />
                 <h4>Business to Business (B2B)</h4>
@@ -830,7 +814,7 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="industries-we-serve-col">
                 <img
-                 src={imageUrl + "training_1654193.svg"}
+                  src={imageUrl + "training_1654193.svg"}
                   className="img-fluid"
                 />
                 <h4>Educational Institutions</h4>

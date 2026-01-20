@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,35 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("branding-agency-in-hyderabad", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("branding-agency-in-hyderabad", null, true);
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -119,20 +111,23 @@ async function page() {
         "There isn’t a fixed price when it comes to brand development. It all depends on the individual project and the work involved.",
     },
     {
-      question: "Why should I choose DN Designs as my branding agency in Hyderabad?",
+      question:
+        "Why should I choose DN Designs as my branding agency in Hyderabad?",
       answer:
         "DN Designs has expertise and industry knowledge that stems from talent and experience. Our team - a set of enthusiastic and skilled professionals - prioritises your vision and makes sure that you successfully achieve your branding objective. All our work is backed by research, which ensures that your brand is market-ready at the time of launch.",
-    }
+    },
   ];
 
   const rightFaqs = [
     {
-      question: "What are the main branding services offered by DN Designs in Hyderabad?",
+      question:
+        "What are the main branding services offered by DN Designs in Hyderabad?",
       answer:
         "Our branding services in Hyderabad include an entire spectrum. We offer brand consultation, research and strategy design as well as logo design, packaging design, catalogue design, photography and animation. Additionally, we also help promote your brand through our digital marketing services.",
     },
     {
-      question: "Do you offer digital branding and marketing services along with design in Hyderabad?",
+      question:
+        "Do you offer digital branding and marketing services along with design in Hyderabad?",
       answer:
         "Yes, at DN Designs, we offer digital branding and marketing services too. We design your UI/UX and develop an SEO friendly website for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.",
     },
@@ -140,7 +135,7 @@ async function page() {
       question: "How can I request a quote for branding in Hyderabad?",
       answer:
         "Just fill out our contact-us form, or drop us an email at info@dndesigns.co.in. Alternatively, you can call us at +91 941 601 1100 or +91 720 660 5872.",
-    }
+    },
   ];
 
   // form section content
@@ -149,11 +144,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding-agency-in-hyderabad"}`}
@@ -168,9 +161,14 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency in Hyderabad - For Comprehensive Brand Development</h1>
+              <h1>
+                Branding Agency in Hyderabad - For Comprehensive Brand
+                Development
+              </h1>
               <p className="para-roboto">
-               Looking for the best branding agency in Hyderabad to transform your new business into a success story? No worries, we are right here!
+                Looking for the best branding agency in Hyderabad to transform
+                your new business into a success story? No worries, we are right
+                here!
               </p>
               <div>
                 <HomePageBtn />
@@ -228,7 +226,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -515,13 +513,19 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>What Makes Branding Important?</h2>
                 <p>
-                 Branding is what you need if you want to make your presence felt in the market. Why is that so? It is because branding helps you establish your unique identity - visual, verbal and emotional (logo, colours, typography, voice, story, messaging, mission, vision, values and positioning) in the market. Without this identity, it is not possible for customers to either recognise, connect and trust your brand or purchase from you.
+                  Branding is what you need if you want to make your presence
+                  felt in the market. Why is that so? It is because branding
+                  helps you establish your unique identity - visual, verbal and
+                  emotional (logo, colours, typography, voice, story, messaging,
+                  mission, vision, values and positioning) in the market.
+                  Without this identity, it is not possible for customers to
+                  either recognise, connect and trust your brand or purchase
+                  from you.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -534,12 +538,8 @@ async function page() {
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
               </div>
@@ -547,24 +547,32 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>Why You Need A Branding Agency in Hyderabad?
-</h2>
+                <h2>Why You Need A Branding Agency in Hyderabad?</h2>
                 <p>
-                  Branding is not a simple task. It is a process that involves a whole set of activities, right from logo design, packaging design and catalogue design to website design. It requires a varied skillset, from research and strategy development to designing skills. A branding company in Hyderabad brings you just that - expertise, experience and vision that can catapult your brand to popularity.
+                  Branding is not a simple task. It is a process that involves a
+                  whole set of activities, right from logo design, packaging
+                  design and catalogue design to website design. It requires a
+                  varied skillset, from research and strategy development to
+                  designing skills. A branding company in Hyderabad brings you
+                  just that - expertise, experience and vision that can catapult
+                  your brand to popularity.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>Let’s Make Your Brand Grow - Together</h2>
                 <p>
-                 At DN Designs, we offer comprehensive branding and marketing services for your business. Whether you need a complete branding package or individual service, we are here to help you at every step. We aspire to turn your brand into a story of growth, achievement and inspiration. Want to work with us? Why not contact us today and start a conversation?
+                  At DN Designs, we offer comprehensive branding and marketing
+                  services for your business. Whether you need a complete
+                  branding package or individual service, we are here to help
+                  you at every step. We aspire to turn your brand into a story
+                  of growth, achievement and inspiration. Want to work with us?
+                  Why not contact us today and start a conversation?
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -580,17 +588,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }

@@ -63,7 +63,7 @@ export async function generateMetadata() {
 // ends here
 
 async function page() {
-  let imageUrl = "https://powerfilldrinks.com/uploads/pages/"
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
   // ---
   await connectDB();
   let pageData;
@@ -90,7 +90,6 @@ async function page() {
     }
   }
   // --- SCHEMA CLEANING LOGIC END ---
-
 
   const heading = "Website Design Agency";
   const subHeading = "Building Websites That Deliver Results";
@@ -197,9 +196,7 @@ async function page() {
 
   return (
     <div>
-
-
-     {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "web-designing-services-in-india"}`}
@@ -230,7 +227,7 @@ async function page() {
               <div className="brand-identity-div">
                 <img
                   // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
-                  src = {imageUrl + "bobalist-mockup.webp"}
+                  src={imageUrl + "bobalist-mockup.webp"}
                   className="img-fluid"
                 />
                 <div className="brand-identity-content">
@@ -256,10 +253,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src = {imageUrl + "Qualiteq.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Qualiteq.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -286,10 +280,7 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src = {imageUrl + "bombzy.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "bombzy.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -314,10 +305,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src = {imageUrl + "foodsure.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "foodsure.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -345,10 +333,7 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  src = {imageUrl + "parda.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "parda.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -374,10 +359,7 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                 src = {imageUrl + "Letssup.webp"}
-                  className="img-fluid"
-                />
+                <img src={imageUrl + "Letssup.webp"} className="img-fluid" />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -610,7 +592,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src = {imageUrl + "Frame 427324115 (4).svg"}
+                    src={imageUrl + "Frame 427324115 (4).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -636,7 +618,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -644,7 +626,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src = {imageUrl + "Group 36813 (1).svg"}
+                    src={imageUrl + "Group 36813 (1).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -669,7 +651,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -677,7 +659,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src = {imageUrl + "Frame 427324115 (5).svg"}
+                    src={imageUrl + "Frame 427324115 (5).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -703,7 +685,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -714,7 +696,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src = {imageUrl + "Frame 427324115 (6).svg"}
+                    src={imageUrl + "Frame 427324115 (6).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -740,7 +722,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -748,7 +730,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src = {imageUrl + "Frame 427324115 (7).svg"}
+                    src={imageUrl + "Frame 427324115 (7).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -775,7 +757,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-               src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
 
@@ -783,7 +765,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                   src = {imageUrl + "Group 36813 (2).svg"}
+                    src={imageUrl + "Group 36813 (2).svg"}
                     className="cap-img"
                   ></img>
                 </div>
@@ -810,7 +792,7 @@ async function page() {
               </div>
               <img
                 className="characteristics-of-good-check-eye"
-                src = {imageUrl + "imgi_2_Frame-427324112.webp"}
+                src={imageUrl + "imgi_2_Frame-427324112.webp"}
               />
             </div>
           </div>
@@ -845,7 +827,7 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-6">
               <img
-               src = {imageUrl + "mobile-mockup.webp"}
+                src={imageUrl + "mobile-mockup.webp"}
                 className="img-fluid"
               ></img>
             </div>
@@ -862,7 +844,7 @@ async function page() {
           <div className="row">
             <h2>Make your brand click!</h2>
             <img
-              src = {imageUrl + "lowest-image-on-page.webp"}
+              src={imageUrl + "lowest-image-on-page.webp"}
               className="img-fluid"
             />
 

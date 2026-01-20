@@ -16,10 +16,6 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 
-
-
-
-
 // meta data
 export async function generateMetadata() {
   await connectDB();
@@ -72,39 +68,35 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
-  const imageUrl = "https://powerfilldrinks.com/uploads/pages/";
-
-
+  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   // ---
-    await connectDB();
-    let pageData;
-    try {
-      pageData = await getPageById("branding-agency-in-kolkata", null, true);
-    } catch (error) {
-      notFound();
+  await connectDB();
+  let pageData;
+  try {
+    pageData = await getPageById("branding-agency-in-kolkata", null, true);
+  } catch (error) {
+    notFound();
+  }
+
+  if (!pageData) {
+    notFound();
+  }
+
+  // ---  SCHEMA CLEANING LOGIC START ---
+  let cleanSchema = "";
+  if (pageData.headCode) {
+    // Script tags remove karke raw JSON nikalna
+    cleanSchema = pageData.headCode
+      .replace(/<script.*?>/gi, "")
+      .replace(/<\/script>/gi, "")
+      .trim();
+    if (cleanSchema.includes('""')) {
+      cleanSchema = cleanSchema.replace(/""/g, '"');
     }
-  
-    if (!pageData) {
-      notFound();
-    }
-  
-    // ---  SCHEMA CLEANING LOGIC START ---
-    let cleanSchema = "";
-    if (pageData.headCode) {
-      // Script tags remove karke raw JSON nikalna
-      cleanSchema = pageData.headCode
-        .replace(/<script.*?>/gi, "")
-        .replace(/<\/script>/gi, "")
-        .trim();
-      if (cleanSchema.includes('""')) {
-        cleanSchema = cleanSchema.replace(/""/g, '"');
-      }
-    }
-    // --- SCHEMA CLEANING LOGIC END ---
-  
+  }
+  // --- SCHEMA CLEANING LOGIC END ---
 
   // faqs content
   const leftFaqs = [
@@ -122,7 +114,7 @@ async function page() {
       question: "Can you help us name our brand or products?",
       answer:
         "Absolutely. Our branding services in Kolkata include brand name suggestions, among our other branding services.",
-    }
+    },
   ];
 
   const rightFaqs = [
@@ -140,7 +132,7 @@ async function page() {
       question: "How do we start working with you?",
       answer:
         "Just reach out through our contact form or schedule a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible.",
-    }
+    },
   ];
 
   // form section content
@@ -149,11 +141,9 @@ async function page() {
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
   const pageName = "branding";
 
-
   return (
     <div>
-
-    {/* schema */}
+      {/* schema */}
       {cleanSchema && (
         <script
           key={`schema-page-${pageData._id || "branding-agency-in-kolkata"}`}
@@ -168,10 +158,11 @@ async function page() {
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency In Kolkata: Crafting Brands With Purpose
-</h1>
+              <h1>Branding Agency In Kolkata: Crafting Brands With Purpose</h1>
               <p className="para-roboto">
-                Inspired by the city’s everyday pulse, our branding agency in Kolkata creates a customised branding strategy to help your business communicate more effectively and stand out.
+                Inspired by the city’s everyday pulse, our branding agency in
+                Kolkata creates a customised branding strategy to help your
+                business communicate more effectively and stand out.
               </p>
               <div>
                 <HomePageBtn />
@@ -229,7 +220,7 @@ async function page() {
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
-                    src="https://powerfilldrinks.com/uploads/videos/GIF_1_1.mp4"
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -516,13 +507,18 @@ async function page() {
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
         <div className="container">
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>What Your Audience Sees First</h2>
                 <p>
-                  Even before your consumer reads a word about you, they judge what they see first. Whether it is your logo, colours, website layout, or the overall appearance, it remarkably determines how you are perceived in the market. That is why creating a branding that looks professional is necessary if you want attention, better credibility, and enhanced chances of people exploring what you offer.
+                  Even before your consumer reads a word about you, they judge
+                  what they see first. Whether it is your logo, colours, website
+                  layout, or the overall appearance, it remarkably determines
+                  how you are perceived in the market. That is why creating a
+                  branding that looks professional is necessary if you want
+                  attention, better credibility, and enhanced chances of people
+                  exploring what you offer.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -535,12 +531,8 @@ async function page() {
             </div>
           </div>
 
-
-
-          
           <div className="row mt-5">
-
-          <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
+            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
               </div>
@@ -548,24 +540,34 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>How Your Story Comes Across
-</h2>
+                <h2>How Your Story Comes Across</h2>
                 <p>
-                 Once people see you, and you have piqued their interest, they want to know more about what your brand represents and stands for. This can be best expressed through your brand voice, messaging, story, values and how you present information. It’s a cherry on top when your visuals and voice both match each other. It exhibits a more confident picture of your brand to your consumers.
+                  Once people see you, and you have piqued their interest, they
+                  want to know more about what your brand represents and stands
+                  for. This can be best expressed through your brand voice,
+                  messaging, story, values and how you present information. It’s
+                  a cherry on top when your visuals and voice both match each
+                  other. It exhibits a more confident picture of your brand to
+                  your consumers.
                 </p>
                 <TalkToUsCityPages />
               </div>
             </div>
           </div>
 
-
-
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
                 <h2>Your Brand’s Lasting Impression</h2>
                 <p>
-                 Lastly, a business grows when people remember it, so it is crucial to create consistent branding across your website, social media, packaging, and ads to ensure you communicate your identity consistently everywhere. This makes your brand easier to remember, trust, and recommend. At DN Designs, we take care of every aspect of your branding. As the best branding company in Kolkata, we are here to help you stay ahead of your competitors. Just get in touch with us.
+                  Lastly, a business grows when people remember it, so it is
+                  crucial to create consistent branding across your website,
+                  social media, packaging, and ads to ensure you communicate
+                  your identity consistently everywhere. This makes your brand
+                  easier to remember, trust, and recommend. At DN Designs, we
+                  take care of every aspect of your branding. As the best
+                  branding company in Kolkata, we are here to help you stay
+                  ahead of your competitors. Just get in touch with us.
                 </p>
                 <TalkToUsCityPages />
               </div>
@@ -581,17 +583,16 @@ async function page() {
       </section>
 
       {/* swipper */}
-      <CityPagesSwipper/>
+      <CityPagesSwipper />
 
-       {/* faqs */}
+      {/* faqs */}
       <section className="faqs">
-      <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
+        <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
       {/* testimonial  */}
-            <Testimonial />
-            <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
-
+      <Testimonial />
+      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </div>
   );
 }
