@@ -825,9 +825,9 @@ async function page() {
               </div>
             </div>
 
-            <div className="col-12 col-md-12 col-lg-6">
+            <div className="col-12 col-md-12 col-lg-6 our-technologies-img-div">
               <img
-                src={imageUrl + "mobile-mockup.webp"}
+                src={imageUrl + "Frame-1000001599.jpg"}
                 className="img-fluid"
               ></img>
             </div>

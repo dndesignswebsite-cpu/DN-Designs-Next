@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import BootstrapClient from "@/Components/BootstrapClient/BootstrapClient";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 // Fonts
 const corbert = localFont({
@@ -24,6 +25,12 @@ const roboto = localFont({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
+};
+
+export const metadata = {
+  verification: {
+    google: "NawdyTQVpBV3gOAngfWPzw5h57s40AR6lcNvVmLjk7Y",
+  },
 };
 
 // Meta data (Home page default)
@@ -71,6 +78,20 @@ export default function RootLayout({ children }) {
       className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}
     >
       <body>
+
+
+      <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-P8KJMC21BG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-P8KJMC21BG');
+          `}
+        </Script>
         {/* JSON-LD Organization Schema*/}
         {/* <Script
           type="application/ld+json"
