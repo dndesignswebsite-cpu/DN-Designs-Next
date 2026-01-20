@@ -31,6 +31,43 @@ const nextConfig = {
 
   async redirects() {
     return [
+
+      // logo rediction start
+       {
+        source: "/logo-designing-company-in-delhi",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+      {
+        source: "/logo-designing-company-in-noida",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/logo-designing-company-in-karnal",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/logo-designing-company-in-mumbai",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/logo-designing-company-in-pune",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+      // logo rediction end
+
       {
         source: "/tag/:slug*",
         destination: "/",

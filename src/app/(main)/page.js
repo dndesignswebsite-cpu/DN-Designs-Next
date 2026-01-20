@@ -505,8 +505,10 @@ export default function Home() {
       </section>
       {/*.....our-constant-companions...... */}
       <OurConstant />
+      <section id="ourworksection">
       {/*.....Our work...... */}
       <OurWorkHomeSection />
+      </section>
       {/*.....points...... */}
       <Points />
       {/* testimonial  */}
