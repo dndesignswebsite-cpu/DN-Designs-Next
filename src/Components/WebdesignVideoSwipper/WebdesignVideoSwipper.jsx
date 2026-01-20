@@ -54,7 +54,7 @@ export default function WebdesignVideoSwipper() {
         <SwiperSlide>
           <div>
             <div className="ratio ratio-16x9 shoot-video-youtube">
-              <iframe
+              {/* <iframe
                 width="1120"
                 height="630"
                 src="https://www.youtube.com/embed/s-PQhgPFPjE"
@@ -63,7 +63,15 @@ export default function WebdesignVideoSwipper() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
+
+              <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/uploads/videos/Startups.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
@@ -95,7 +103,7 @@ export default function WebdesignVideoSwipper() {
         <SwiperSlide>
           <div>
             <div className="ratio ratio-16x9 shoot-video-youtube">
-              <iframe
+              {/* <iframe
                 width="1120"
                 height="630"
                 src="https://www.youtube.com/embed/dt35fewQRho"
@@ -104,7 +112,15 @@ export default function WebdesignVideoSwipper() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
+
+              <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/uploads/videos/enterprise.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
@@ -137,7 +153,7 @@ export default function WebdesignVideoSwipper() {
         <SwiperSlide>
           <div className="">
             <div className="ratio ratio-16x9 shoot-video-youtube">
-              <iframe
+              {/* <iframe
                 width="1120"
                 height="630"
                 src="https://www.youtube.com/embed/FfouzC6rBJY"
@@ -146,7 +162,15 @@ export default function WebdesignVideoSwipper() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
+
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/uploads/videos/Ecommerce.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
