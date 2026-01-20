@@ -7,7 +7,7 @@ import "./WhatsApp.css";
 function WhatsApp() {
   return (
     <div>
-        <a href="https://wa.me/+919999999999" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+919416011100" target="_blank" rel="noopener noreferrer">
       <button className="Whatsapp">
               <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: "40px" }}/>
             </button>

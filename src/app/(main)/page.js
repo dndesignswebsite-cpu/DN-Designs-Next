@@ -11,48 +11,51 @@ import Form from "@/Components/Form/Form";
 import Script from "next/script";
 
 // schema
+// HOME PAGE SCHEMA
 const homeSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://dndesigns.co.in/#organization",
-      name: "DN Designs",
-      url: "https://dndesigns.co.in/",
-      logo: {
-        "@type": "ImageObject",
-        "@id": "https://dndesigns.co.in/#logo",
-        url: "https://dndesigns.co.in/logo.png",
-        contentUrl: "https://dndesigns.co.in/logo.png",
-        width: 512,
-        height: 512,
-      },
-      sameAs: [
-        "https://www.instagram.com/dn_designs_india/",
-        "https://in.linkedin.com/company/dn-designs-india",
-        "https://twitter.com/digitizersn",
-      ],
-    },
-
-    {
       "@type": "ProfessionalService",
-      "@id": "https://dndesigns.co.in/#localbusiness",
+      "@id": "https://dndesigns.co.in/#professionalservice",
       name: "DN Designs",
       url: "https://dndesigns.co.in/",
-      image: "https://dndesigns.co.in/logo.png",
-      telephone: "+91-9416011100",
+      image:
+        "https://dndesigns.co.in/uploads/pages/dn-logo.png",
       priceRange: "₹₹₹",
+      telephone: "+91-9416011100",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "C-40, Second Floor, Block C, Sector 58",
+        streetAddress: "C-40, Second Floor, C Block, Sector 58",
         addressLocality: "Noida",
         addressRegion: "Uttar Pradesh",
         postalCode: "201301",
         addressCountry: "IN",
       },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 28.6102974,
+        longitude: 77.3582909,
+      },
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "10:00",
+        closes: "20:00",
+      },
       areaServed: {
         "@type": "Country",
         name: "India",
+      },
+      parentOrganization: {
+        "@id": "https://dndesigns.co.in/#organization",
       },
       aggregateRating: {
         "@type": "AggregateRating",
@@ -60,41 +63,6 @@ const homeSchema = {
         bestRating: "5",
         reviewCount: "69",
       },
-      review: {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Bhagwat Agrawal",
-        },
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-        },
-        reviewBody:
-          "After researching several branding and design agencies, I connected with DN Designs and appreciated their clarity and execution.",
-      },
-      parentOrganization: {
-        "@id": "https://dndesigns.co.in/#organization",
-      },
-    },
-
-    {
-      "@type": "WebSite",
-      "@id": "https://dndesigns.co.in/#website",
-      url: "https://dndesigns.co.in/",
-      name: "DN Designs",
-      publisher: {
-        "@id": "https://dndesigns.co.in/#organization",
-      },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: "https://dndesigns.co.in/?s={search_term_string}",
-        },
-        "query-input": "required name=search_term_string",
-      },
-      inLanguage: "en-IN",
     },
 
     {
@@ -111,19 +79,16 @@ const homeSchema = {
         "@id": "https://dndesigns.co.in/#organization",
       },
       primaryImageOfPage: {
-        "@id": "https://dndesigns.co.in/#primaryimage",
-      },
-      breadcrumb: {
-        "@id": "https://dndesigns.co.in/#breadcrumb",
+        "@id": "https://dndesigns.co.in/#homepage-image",
       },
       inLanguage: "en-IN",
     },
 
     {
       "@type": "ImageObject",
-      "@id": "https://dndesigns.co.in/#primaryimage",
-      url: "https://dndesigns.co.in/hero.png",
-      contentUrl: "https://dndesigns.co.in/hero.png",
+      "@id": "https://dndesigns.co.in/#homepage-image",
+      url: "https://dndesigns.co.in/uploads/pages/hgefef.webp",
+      contentUrl: "https://dndesigns.co.in/uploads/pages/hgefef.webp",
       width: 1862,
       height: 1042,
     },
@@ -142,6 +107,7 @@ const homeSchema = {
     },
   ],
 };
+
 // schema ends here
 
 export default function Home() {
@@ -153,11 +119,13 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        id="home-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
-      />
+     <Script
+  id="home-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(homeSchema),
+  }}
+/>
       {/*.....hero...... */}
       <section className={`${styles.hero}`}>
         <div className="container">
@@ -195,7 +163,7 @@ export default function Home() {
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
-            <li className={`${styles["card"]} ${styles["card-1"]}`}>
+            <li className={`${styles["card"]} ${styles["card-1"]}`} >
               <div
                 className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
               >

@@ -120,7 +120,7 @@ async function page() {
         </div>
       </div>
 
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 text-center">
         <iframe
           width="1522"
           height="855"
