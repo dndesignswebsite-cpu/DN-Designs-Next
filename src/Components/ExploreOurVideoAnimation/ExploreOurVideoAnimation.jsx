@@ -49,7 +49,7 @@ function ExploreOurVideoAnimation() {
                 type="youtube"
               >
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/comex.jpg"
+                 src={imageUrl + "stava.jpg"}
                   className="img-fluid"
                 />
               </CatalougePageFlip>
@@ -57,11 +57,11 @@ function ExploreOurVideoAnimation() {
 
             <SwiperSlide>
               <CatalougePageFlip
-                src="https://youtu.be/X8Wmc9gMNE4"
+                src="https://youtu.be/BKMcr1Fkg5o"
                 type="youtube"
               >
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/BKMcr1Fkg5o-HD.jpg"
+                  src={imageUrl + "kharvas.jpg"}
                   className="img-fluid"
                 />
               </CatalougePageFlip>
@@ -69,11 +69,11 @@ function ExploreOurVideoAnimation() {
 
             <SwiperSlide>
               <CatalougePageFlip
-                src="https://youtu.be/X8Wmc9gMNE4"
+                src="https://youtu.be/21i1C-297-M"
                 type="youtube"
               >
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/21i1C-297-M-HD.jpg"
+                 src={imageUrl + "foodsure12.jpg"}
                   className="img-fluid"
                 />
               </CatalougePageFlip>
@@ -81,11 +81,11 @@ function ExploreOurVideoAnimation() {
 
             <SwiperSlide>
               <CatalougePageFlip
-                src="https://youtu.be/X8Wmc9gMNE4"
+                src="https://youtu.be/CUAECKViZsg"
                 type="youtube"
               >
                 <img
-                  src="https://dndesigns.co.in/wp-content/uploads/2025/07/X8Wmc9gMNE4-SD.jpg"
+                  src={imageUrl + "comex.jpg"}
                   className="img-fluid"
                 />
               </CatalougePageFlip>
