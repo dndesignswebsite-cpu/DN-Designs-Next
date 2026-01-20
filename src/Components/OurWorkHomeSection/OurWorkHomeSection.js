@@ -66,8 +66,8 @@ export default function  OurWorkHomeSection() {
                 </video>
                 <div className="overlay"></div>
                 <div className="overlay-box">
-                  <div className="overlay-title">Thames</div>
-                  <p className="Pras">For the Love of Protein</p>
+                  <div className="overlay-title">The Bobalist</div>
+                  <p className="Pras">Pop the boba, feel the Fun</p>
                 </div>
               </div>
             </div>
@@ -201,8 +201,8 @@ export default function  OurWorkHomeSection() {
                 </video>
                     <div className="overlay"></div>
                     <div className="overlay-box">
-                      <div className="overlay-title">The Bobalist</div>
-                      <p className="Pras">Pop the boba, feel the Fun</p>
+                      <div className="overlay-title">Qualiteq</div>
+                      <p className="Pras">Because your vision needs precision</p>
                     </div>
                   </div>
                 </div>
@@ -262,8 +262,8 @@ export default function  OurWorkHomeSection() {
                 </video>
                     <div className="overlay"></div>
                     <div className="overlay-box">
-                      <div className="overlay-title">The Bobalist</div>
-                      <p className="Pras">Pop the boba, feel the Fun</p>
+                      <div className="overlay-title">Fluke</div>
+                      <p className="Pras">Energy With Purpose</p>
                     </div>
                   </div>
                 </div>
@@ -275,8 +275,8 @@ export default function  OurWorkHomeSection() {
                     />
                     <div className="overlay"></div>
                     <div className="overlay-box">
-                      <div className="overlay-title">iOrganic</div>
-                      <p className="Pras">Ideal food for you</p>
+                      <div className="overlay-title">David Morris</div>
+                      <p className="Pras">The London Jeweller</p>
                     </div>
                   </div>
                 </div>
@@ -291,8 +291,8 @@ export default function  OurWorkHomeSection() {
                 </video>
                     <div className="overlay"></div>
                     <div className="overlay-box">
-                      <div className="overlay-title">Koshish</div>
-                      <p className="Pras">Vasudhaiva Kutumvakam</p>
+                      <div className="overlay-title">Mr.Bomzy</div>
+                      <p className="Pras">Drop Fizz Chill Spik</p>
                     </div>
                   </div>
                 </div>
