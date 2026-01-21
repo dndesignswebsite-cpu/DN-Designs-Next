@@ -241,7 +241,7 @@ export const sendUserCredentialsEmail = async (email, name, password) => {
             <p>Please login and change your password immediately.</p>
             <p><a href="${
               process.env.NEXT_PUBLIC_APP_URL
-            }/login">Click here to Login</a></p>
+            }/admin/login">Click here to Login</a></p>
           </div>
           <div class="footer">
             <p>&copy; ${new Date().getFullYear()} DN Designs. All rights reserved.</p>

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import BootstrapClient from "@/Components/BootstrapClient/BootstrapClient";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
+import TawkToChat from "@/Components/TawkToChat/TawkToChat";
 
 /* =========================
    LOCAL FONTS
@@ -45,7 +46,6 @@ export default function RootLayout({ children }) {
       className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}
     >
       <body suppressHydrationWarning>
-
         {/* =========================
            GTM - NOSCRIPT (BODY START)
         ========================= */}
@@ -89,28 +89,7 @@ export default function RootLayout({ children }) {
         ========================= */}
         {children}
 
-        {/* =========================
-           TAWK.TO LIVE CHAT
-        ========================= */}
-        <Script
-          id="tawk-to"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-                var s1=document.createElement("script"),
-                s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/655dbd6b91e5c13bb5b29610/1hfr2nrlg';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-              })();
-            `,
-          }}
-        />
-
+        <TawkToChat />
       </body>
     </html>
   );
