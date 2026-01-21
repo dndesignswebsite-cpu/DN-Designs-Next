@@ -5,7 +5,7 @@
 
 
 .contact-para{
-    color: var(--heading-main-color);
+    color: #000;
     line-height: 32px;
     font-size:20px;
     width: 100%;
@@ -15,6 +15,7 @@
 
 .contact-para p{
     width: 50%;  
+    font-family: "Roboto";
 }
 
 .contact-h1{
@@ -22,7 +23,7 @@
 }
 
 .contact-h1 h1{
- color: var(--heading-main-color);
+ color: #000;
     font-family: var(--font-corbert-bold);
     font-size: 50px;
     font-weight: 700;
@@ -37,7 +38,7 @@
 }
 
 .contact-h1 h1{
- color: var(--heading-main-color);
+ color: #000;
     font-family: var(--font-corbert);
     font-size: 30px;
     font-weight: 700;

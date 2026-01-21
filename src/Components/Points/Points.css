@@ -26,12 +26,12 @@
   font-family: var(--font-corbert);
   font-size: 180px;
   font-weight: 700;
-  color: var(--heading-main-color);
+  color: #000;
   position: absolute;
   bottom: 0%;
 }
 .points-right h3 {
-  color: var(--heading-main-color);
+  color: #000;
   font-family: var(--font-corbert);
   font-size: 25px;
   font-weight: 700;

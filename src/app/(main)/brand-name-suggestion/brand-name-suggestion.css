@@ -13,7 +13,7 @@
 }
 
 .characteristics-of-good p {
-  color: var(--heading-main-color);
+  color: #000;
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.4em;
@@ -50,7 +50,7 @@
   font-size: 22px;
   font-family: var(--font-corbert-bold);
   font-weight: 700;
-  color: var(--heading-main-color);
+  color: #000;
   margin-bottom: 15px;
 }
 
@@ -74,7 +74,7 @@
  font-size: 22px;
   font-family: var(--font-corbert-bold);
   font-weight: 700;
-  color: white;
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -92,7 +92,7 @@
   }
 
   .characteristics-of-good-div {
-    background-color: var(--heading-highlite-color);
+    background-color: #ca2734;
   }
 
   .characteristics-of-good-back-content {
@@ -132,7 +132,7 @@
     font-size: 50px;
     font-family: var(--font-corbert-bold);
     font-weight: 700;
-    color: var(--heading-main-color);
+    color: #000;
 }
 
 .winning-brand-names-btn-div{
@@ -143,7 +143,7 @@
 
 .winning-brand-names p {
   margin-bottom: 40px;
-  color: var(--heading-main-color);
+  color: #000;
   line-height: 1.7em;
   font-size: 18px;
   font-family: var(--font-roboto);
@@ -204,7 +204,7 @@
     font-size: 56px;
     font-family: var(--font-corbert);
     font-weight: 700;
-    color: var(--heading-main-color);
+    color: #000;
 }
 @media(max-width:767px){
   .faqs h2 {

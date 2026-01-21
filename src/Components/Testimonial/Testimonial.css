@@ -126,7 +126,7 @@
 
 .testi-right-content p i {
   font-style: italic;
-  color: var(--heading-main-color);
+  color: #000;
   max-width: 90%;
 }
 
@@ -203,7 +203,7 @@
 .testimonial-swiper .swiper-button-prev {
   width: 35px;
   height: 35px;
-  background: var(--heading-highlite-color);
+  background: #ca2734;
   border-radius: 50%;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   color: #fff;

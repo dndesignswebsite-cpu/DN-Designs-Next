@@ -2,7 +2,7 @@
 
 
 .every-pr {
-  color: var(--heading-highlite-color);
+  color: #ca2734;
 }
 
 .creative-brochure{
@@ -20,7 +20,7 @@
   font-size: 50px;
   font-family: var(--font-corbert-bold);
   font-weight: 700;
-  color: var(--heading-main-color);
+  color: #000;
   padding-bottom:20px;
 }
 
