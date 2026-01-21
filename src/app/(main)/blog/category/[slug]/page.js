@@ -7,6 +7,7 @@ import { slugify } from "@/lib/utils/slugify";
 import LoadingSpinner from "@/Components/Loading Spinner/LoadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import "../../blog.css"
 
 function CategoryPage({ params }) {
   const { slug } = React.use(params);
@@ -128,7 +129,7 @@ function CategoryPage({ params }) {
           </div>
 
           <div className="row">
-            <div className="col-8">
+            <div className="col-12 col-md-12 col-lg-8">
               {loading && blogs.length === 0 ? (
                 <div className="text-center py-5">
                   <LoadingSpinner isLoading={true} />
@@ -213,7 +214,7 @@ function CategoryPage({ params }) {
             </div>
 
             {blogs.length > 0 && (
-              <div className="col-4">
+              <div className="col-12 col-md-12 col-lg-4 recent-posts-sidebar">
                 <div className="blog-sidebar">
                   <h4 className="sidebar-title">Recent Posts</h4>
                   <div className="recent-posts-list">

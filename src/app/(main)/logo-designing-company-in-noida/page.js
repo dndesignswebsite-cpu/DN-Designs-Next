@@ -3,7 +3,7 @@ export const revalidate = 0;
 
 import React from "react";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
-import "./logo-designing.css";
+import "../logo-designing/logo-designing.css";
 import LogoDesigningTab from "@/Components/LogoDesingningTab/LogoDesigningTab";
 import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
@@ -17,10 +17,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("logo-designing", null, false);
+    seo = await getPageById("logo-designing-company-in-noida", null, false);
   } catch (error) {
     return {
-      title: "Logo Designing",
+      title: "Logo Designing Company In Noida",
       robots: "noindex, nofollow",
     };
   }
@@ -68,7 +68,7 @@ async function page() {
   await connectDB();
   let pageData;
   try {
-    pageData = await getPageById("logo-designing", null, true);
+    pageData = await getPageById("logo-designing-company-in-noida", null, true);
   } catch (error) {
     notFound();
   }
@@ -92,10 +92,11 @@ async function page() {
   // --- SCHEMA CLEANING LOGIC END ---
 
   const pageName = "Logo Design Services";
-  const heading = "Logo Design Services";
-  const subHeading = "Don’t Just Be Seen, Be Remembered";
+  // hero section content
+  const heading = "Custom Logo Designs";
+  const subHeading = "Logo Designs That Are Eye-Catchy And Memorable";
   const para =
-    "  Logos have strong recall value. A compelling and creative company logo can, therefore, make your business a brand that people will forever remember. As a premium brand identity design agency in India, we strive to achieve exactly that for you. Come along as we show you the types of logos we design and our work process. Explore our portfolio and read through the FAQs to find the answers you are looking for.";
+    " Your logo is your brand’s identity, and creating an identity that puts forth your brand story can take time and effort. Logo designing is like putting the puzzle pieces together, testing your creativity and patience and demanding a well-thought-out strategy. But who needs these when you have DN Designs? We are the leading logo designing agency in Noida, India, known for creating logos that speak your brand story at a glance. So, what about leaving a lasting impression with your logo?";
 
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
@@ -106,104 +107,87 @@ async function page() {
   const leftFaqs = [
     {
       question:
-        "Why are there so many types of logos? How should I choose the best one for my business?",
+        "How is DN Designs the best logo designing company in Noida?",
       answer:
-        "Businesses have their own distinct identity, values and vision. They want their logo to reflect all these. Moreover, they also want their logo to appeal to their target audience. The different types of logos help them do that. To decide which type of logo best suits your business, you must consider the various factors mentioned above. Alternatively, you can just get in touch with us and we will do the needful.",
+        "Being a logo designing company in Noida with over eight years of experience working in the design industry, we are known to be the best among our clients. We make a lasting first impression on the audience while telling your brand story to your audience.",
     },
     {
-      question: "What are logo variations and what are their different types?",
+      question: "How is your logo better?",
       answer:
-        "Businesses need to use their company logo in different places -  official website, social media platforms, business cards, emails, reports, product packaging and letterhead. A single logo is not suitable for all due to space and layout restrictions. Therefore, businesses adapt the primary logo and use the variations in different places. These variations include a secondary logo (stacked or horizontal), submark logo, wordmark/lettermark logo, icon/brandmark design,  monochrome/one-colour logo and inverted/reversed logo.",
+        "Our experience and expertise in the industry have enabled us to create unique logo designs that go through a long stage of planning. Our team of logo designers in Noida ensures your logo aligns with your brand and makes you stand out.",
     },
     {
-      question: "How do I design a good logo?",
+      question: "Would your logo be so good enough to get global reach?",
       answer:
-        "To design a logo, you must use the right mix of strategy, creativity and style. If you have these skill sets, you can certainly design a good logo yourself. However, we suggest that for a more professional design, you should collaborate with a creative logo design company in India. ",
+        "Our experience in the industry makes us the best creative agency in Noida. Our professional design team develops easily recognizable and aesthetically pleasing logos for the international market. Global clients have appreciated our premium logo designs.",
     },
     {
-      question: "What makes you the best logo designing company?",
+      question: "What's the process of creating a logo design?",
       answer:
-        "Noida-based DN Designs has been in the business for over 8 years and, therefore, has concrete experience in understanding what kind of logo will best suit a particular brand. We have created professional, creative, quirky and premium logo designs for a variety of businesses. Our logos reflect brand identity and values, and have an outstanding recall potential. Happy customers are what we want to achieve in the end. ",
+        "As the best logo design firm in Noida, we start by understanding your brand and doing market research. We discuss with our expert graphic designers how to make multiple logo variations. After getting your valuable feedback, we will finalize and hand you your logo design! ",
     },
     {
-      question: "What's your process of creating a logo design?",
+      question: "What details do you need to start the logo design process?",
       answer:
-        "Our logo design process begins with researching your brand, industry and logo integration needs across physical and digital space. This is followed by brainstorming, where ideas and concepts are explored and sketched on paper. Further refinements are made once these design sketches are narrowed down and digitised. The final designs are sent for your approval. Once finalised, we deliver the premium logo design to you.",
+        "To start the logo design process, we need details, including your target audience, competitor, and any specific inspiration or idea you may have for the logo. Such detail helps us to create the best logos for you.",
     },
     {
       question:
-        "What information do you need from me to start the logo design process?",
+        "What if I want to redesign my existing logo?",
       answer:
-        "You own the brand and you have a specific vision for it. We need to understand it to design the creative company logo you envisioned. To elaborate, we need details about your brand (name & industry), target audience & competitors, as well as any design preference/idea/inspiration you may have and want to share with us. ",
-    },
-    {
-      question: "Will you redesign my existing logo?",
-      answer:
-        "Yes, we can redesign your existing logo depending on your current brand values, as well as market and audience preferences. We can also redesign your existing logo in a way that gives it a fresh look but retains your existing brand identity and values.",
-    },
-    {
-      question: "How many revisions could I get for my logo design?",
-      answer:
-        "Our primary objective is to provide you with the best and premium logo design services. We work in pursuit of this goal, and therefore do not restrict ourselves to a particular number of revisions.",
+        "Offering logo design in Noida, we can surely redesign your current logo to ensure it matches your brand identity and value. The only concern we have is to keep your branding in check. ",
     },
   ];
 
   const rightFaqs = [
     {
-      question: "How long does it take you to create a logo?",
+      question: "How long does it take you to create a logo design?",
       answer:
-        "Usually, it takes around a week for a premium logo design; however, depending on your project requirements and the number of revisions needed, it can take a little longer.",
+        "The average duration for logo design is usually 7 to 8 days. This can also differ based on the extent of the revisions that may be required in line with the project’s complexity. Our professional logo designers ensure you get the designs at the right time.",
     },
     {
-      question: "In what formats do you provide logos?",
+      question: "How many logo design revisions could you offer me?",
       answer:
-        "We provide logos in multiple formats to ensure that you can use them wherever you need. These include raster files (JPEG, PNG), vector files (AI, EPS) and web-friendly formats.",
+        "Our packages include free unlimited revisions to all our logo design services. We work on your logo for as long as you are not fully satisfied. ",
     },
     {
-      question: "How much do your creative company logo design services cost?",
+      question: "In what formats will I get logos?",
       answer:
-        "The cost of our logo design services can differ based on your needs and the design complexities involved. The cost may also vary depending on other services that you might request.",
+        "You will receive the high-resolution logo in raster (JPEG, PNG) and vector (AI, EPS) format. This will allow you to use them on different platforms. ",
     },
     {
-      question: "Do you specialise in creating logos for a specific industry?",
+      question: "How much does your logo design cost?",
       answer:
-        "As a creative design agency, we do not restrict ourselves to any particular vertical; rather, we work for different industries like tech, fashion, food, wellness, real estate, and more. We ensure to create a captivating logo design that reflects the brand identity, whichever industry it may be from.",
-    },
-    {
-      question: "Would your logo be so appealing to get global reach?",
-      answer:
-        "Yes, we work with clients worldwide and therefore have experience in creating a creative company logo that appeals to the audience around the globe. Our clients have always loved the timeless and premium logos we have created for them.",
+        "The cost of our logo design depends on your project. Please get in touch with us for more details. ",
     },
     {
       question: "Can you help me with the logo trademark?",
       answer:
-        "Yes, we assist you in obtaining a logo trademark.  We put you in touch with a trademark attorney, and through him/her, we ensure that your logo is obtained under intellectual property rights. ",
+        "As the best brand building agency in Noida, we can help by procuring a trademark attorney’s services for the logo’s trademark process. We can thoroughly guide you with your logo trademark and offer complete support.",
     },
     {
       question: "What services do you provide other than logo designing?",
       answer:
-        "As a full-service branding and design agency, we offer a comprehensive suite of services including brand identity design, packaging design, catalogue design, web design & development, and company profiling. In addition, we can also provide digital marketing, brand video shoots, product photography and animation services.",
-    },
+        "Apart from logo designing services, we offer packaging, catalogue, web development, website, brand identity, display box designing, and company profiling. We provide complete branding and designing services to help you achieve success! ",
+    }
   ];
 
+  let para1 = "DN Designs, the best logo designing company in Noida, creates logos in styles like combination marks, wordmarks, letter marks, abstract designs, emblems, 3D, animated and dynamic. Your logo style should depend thoroughly on your brand’s personality, philosophy and culture. Our team brainstorms what style would align with your brand.";
 
-  let para1 = "Type/Style is all about how your logo appears in totality. As the best logo design company in India, we invest a lot of thought and carefully select the logo style for your brand depending on your requirements. We take into consideration your brand identity, personality, voice and how you want to be perceived by your audience, and match it up with the best logo type. These styles include combination marks, wordmarks, letter marks, abstract, emblems and dynamic.";
+ let para2 = "Every colour speaks uniquely and differently to people’s moods and emotions. Our expert logo designing services focus on choosing the right colour depending on what you want people to think of your brand. Our creative logo designers in Noida choose your logo colour after thorough contemplation.";
 
- let para2 = "Colours convey certain emotions, and hence are a crucial design element. Our creative logo designers in Noida choose a colour palette that perfectly reflects your brand’s personality and emotions. To ensure the right selection and usage of colours, we – a logo design agency in Delhi NCR – research your target audience and market and additionally decide which colour will effectively communicate your brand’s USP.";
+ let para3 = "The typography of your logo design speaks a specific tone and communicates your brand message. As a crucial element of your logo design, we carefully choose the right typography to ensure it makes you stand out.";
 
- let para3 = "Like colours, typography, too, conveys the brand identity – its message, voice and tone. Whether your brand voice is more polished and professional or it is warm and friendly, whether it is inspiring and uplifting or leans more towards authority, your typography can reveal all. As a logo design agency, we can create a premium logo design that communicates your brand voice accurately.";
+ let para4 = "Coupled with the right choice of typography, images and colours, shapes add a sustainable meaning to your logo designs. As a top logo design company in Noida, India, we understand the hidden subconscious meaning behind every shape and set the proper foundation for your logo designs.";
 
- let para4 = "Like colours and typography, shapes too have a psychological effect on customers. These are silent messengers of brand personality, values and tone. For example, shapes like circles and ovals convey a feeling of inclusiveness and community. On the other hand, squares and rectangles evoke a sense of stability and reliability. Designers at a logo designing agency know this and hence select an appropriate shape for your creative company logo. ";
-
- let para5 = "Anything in the background doesn’t have much value. This could perhaps be true for a lot of things, but not logo design. Think of the red background of the McDonald’s logo. The feel of the brand is not complete without this background. As a logo design agency, we understand the importance of this design element and therefore create a layout that enhances the effect of your logo. While deciding the layout, we consider the need to incorporate a symbol or a tagline as well. ";
-
+ let para5 = "The most underrated element of logo design is the layout, which, in short, is the background of your design. Based on if you have a slogan or symbol and your company’s name, we craft the best business logo design for you.";
 
   return (
     <div>
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "logo-designing"}`}
+          key={`schema-page-${pageData._id || "logo-designing-company-in-noida"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -460,7 +444,7 @@ async function page() {
         <div className="container">
           <div className="row">
             <h2 className="text-center headg">
-              But Why Your<span className="every-pr"> Logo Even Matters?</span>
+              But Why Do You  <span className="every-pr"> Even Need A Logo</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-3 px-2 but-why-main-div">
               <div className=" but-why-div m-3">
@@ -471,21 +455,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Leaves A Powerful First Impression</h3>
+                  <h3>Powerful First Impression</h3>
                   <p>
-                    A logo catches attention instantly, and when it does, it
-                    creates a powerful first impression.
+                    The power of a logo is that people can pick you in a single glance in a crowded market, organically differentiating
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Leaves A Powerful First Impression</h3>
+                  <h3>Powerful First Impression</h3>
                   <p>
-                    A logo catches attention instantly, and when it does, it
-                    creates a powerful first impression. Let’s elucidate a
-                    little. With a declining attention span, businesses have
-                    just a few seconds to command attention. An expertly crafted
-                    logo can draw customers, spark curiosity and encourage
-                    engagement.
+                   The power of a logo is that people can pick you in a single glance in a crowded market, organically differentiating you and making them know what you do without them having to give it much thought.
                   </p>
                 </div>
               </div>
@@ -504,20 +482,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Forms The Core of Brand Identity</h3>
+                  <h3>Grabs Attention</h3>
                   <p>
-                    Brand identity includes several elements but the logo forms
-                    its foundation. It is what people identify & associate with
+                    Your logo can grab your audience’s attention and communicate your brand‘s message in seconds. If your logo is memorable and 
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Forms The Core of Brand Identity</h3>
+                  <h3>Grabs Attention</h3>
                   <p>
-                    Brand identity includes several elements but the logo forms
-                    its foundation. It is what people identify & associate with
-                    & also what they remember in the long term. Think of any big
-                    brand - Ford, IBM, Airtel and Reliance? You most definitely
-                    remember what their logo looks like. Don’t you?
+                   Your logo can grab your audience’s attention and communicate your brand‘s message in seconds. If your logo is memorable and eye-catching, it is a brownie point for your brand.
                   </p>
                 </div>
               </div>
@@ -536,20 +509,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Builds Differentiation & Brand Loyalty</h3>
+                  <h3>Forms Brand Identity</h3>
                   <p>
-                    How do consumers differentiate between brands and trust one?
-                    Brand values, beliefs and USP play
+                   Your logo design is the foundation of your brand. It's not just a visual but an element that tells your brand story and defines
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Builds Differentiation & Brand Loyalty</h3>
+                  <h3>Forms Brand Identity</h3>
                   <p>
-                    How do consumers differentiate between brands and trust one?
-                    Brand values, beliefs and USP play a major role here and
-                    your logo represents all these. Take the same brand examples
-                    again. When you see their familiar logo, you trust them and
-                    are therefore willing to engage with them again.
+                    Your logo design is the foundation of your brand. It's not just a visual but an element that tells your brand story and defines people's thoughts.
                   </p>
                 </div>
               </div>
@@ -568,21 +536,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Fulfils Audience Expectations</h3>
+                  <h3>Make You Stand Out</h3>
                   <p>
-                    As a brand, you will communicate with your audience
-                    variously - emails, website, social media, brochures, etc.
+                   Everyone wants to stand out from the competition, right? A logo can help you do that. Our team of expert logo designers in Noida
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Fulfils Audience Expectations</h3>
+                  <h3>Make You Stand Out</h3>
                   <p>
-                    As a brand, you will communicate with your audience
-                    variously - emails, website, social media, brochures, etc.
-                    Whatever the means may be, the consistent part is the
-                    inclusion of the logo in all. It is this brand identity that
-                    customers expect. It establishes the authenticity of your
-                    communication.
+                  Everyone wants to stand out from the competition, right? A logo can help you do that. Our team of expert logo designers in Noida can make your brand instantly recognizable with good logos.
                   </p>
                 </div>
               </div>
@@ -887,11 +849,7 @@ async function page() {
               <h2 className="logo-brand-title">Monogram</h2>
               <h6 className="logo-type">Lettermark</h6>
               <p className="logo-brand-paragraph">
-                This combines the initial letters of the brand name to create an
-                abbreviated version. Think of ESPN (Entertainment and Sports
-                Programming Network) and P&G (Procter & Gamble). Companies with
-                longer names prefer this type of design to make their logo
-                compact and memorable.
+               Made from a brand’s initial, monogram logos are best for brands with a longer name or those who want to make their brand memorable. DN Designs, a creative logo company in Noida, is confident that monogram logos are best for luxury, fashion and corporate brands.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-12 com-md-12 logo-list">
@@ -924,12 +882,9 @@ async function page() {
           <div className="row logo-brand2">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Wordmarks</h2>
-              <h6 className="logo-type">Logotype</h6>
+              <h6 className="logo-type">Similar to letter mark</h6>
               <p className="logo-brand-paragraph">
-                This comprises solely the brand name. Examples include Google,
-                L’oreal and ebay. Brands with concise names and a strong persona
-                pick this type of logo. Custom typography and styling that
-                reflect brand identity make these logos memorable.
+               Designed entirely from the brand’s name, wordmark logos are made in a custom typeface that speaks to a brand’s unique identity. These allow you to reflect your brand’s essence through the right typography, colour palette and style to better resonate with the audience.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -962,14 +917,9 @@ async function page() {
           <div className="row logo-brand3">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Pictorial</h2>
-              <h6 className="logo-type">Brandmark/Symbol</h6>
+              <h6 className="logo-type"> Symbols</h6>
               <p className="logo-brand-paragraph">
-                As per its name, this type of logo draws on graphics, images,
-                icons and symbols from the real world. The best example of this
-                is Apple. This type of logo is best when brands can find
-                pictures or symbols that appropriately present their business,
-                whether literally or figuratively. This is very easy to
-                recognise.
+                Also known as graphic or icon-based logos, pictorial marks symbolize a brand’s essence. These logos stand alone, enabling spontaneous recognition and connection with your audience. They are perfect for brands that wish to establish a symbolic bond with their customers.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1004,12 +954,7 @@ async function page() {
               <h2 className="logo-brand-title">Abstract</h2>
               <h6 className="logo-type">Represent Your Brand</h6>
               <p className="logo-brand-paragraph">
-                In contrast to pictorial logos that use images from the real
-                world, abstract logos use geometric shapes and colours to convey
-                the right message and emotion. Few brands that use this type of
-                logo include Mastercard, Pepsi and Mitsubishi. Brands that want
-                a timeless logo that breaks cultural and language barriers (and
-                thus has a global appeal) opt for an abstract logo.
+                Abstract logos use geometric shapes to design a non-representational image of the brand that carries your values and communicates your message. Being the best brand-building agency in Noida, we create abstract logos that convey your concepts using suitable shapes.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1044,11 +989,7 @@ async function page() {
               <h2 className="logo-brand-title">Mascots</h2>
               <h6 className="logo-type">Characters</h6>
               <p className="logo-brand-paragraph">
-                Brands that want to evoke a more fun and friendly emotion opt
-                for this type of logo. Remember the logos of KFC and Amul? This
-                type of logo has an illustrated character that represents the
-                brand and fosters a strong emotional connection with the
-                customers.
+               Among all types of logos, mascot logos are playful and have illustrated characters that represent your brand. These logos make the brand more approachable and create a resonating image.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1081,13 +1022,9 @@ async function page() {
           <div className="row logo-brand6">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Combination</h2>
-              <h6 className="logo-type">Text and Pictures</h6>
+              <h6 className="logo-type">Picture and Text</h6>
               <p className="logo-brand-paragraph">
-                This logo combines text with symbol, image, mascot and shape to
-                create a unique identity for the brand. It is adaptable, giving
-                brands a scope to split the main logo and carve out variations
-                from it. Few examples of this type of logos include Puma, Jaguar
-                and Burger King.
+                Combination mark logos have both a wordmark and a pictorial mark. The pictures and text in this logo are placed side by side or designed at the top of each other. Combination marks reflect the complete representation of a brand identity.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1120,13 +1057,9 @@ async function page() {
           <div className="row logo-brand7">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">The Emblem</h2>
-              <h6 className="logo-type">Badge</h6>
+              <h6 className="logo-type">Symbol or an Icon</h6>
               <p className="logo-brand-paragraph">
-                Businesses that wish to convey an air of legacy, prestige and
-                tradition usually go for an emblem logo. These logos include a
-                shape that encompasses text, image or symbol. Some of the best
-                examples of this type of logos are Harley-Davidson, Starbucks,
-                Harvard University and Oxford University.
+               Emblem logos are a fusion of a symbol and an icon. These have a conventional appearance and reflect authority and professionalism. Emblem logos have a classic style that gives a brand a timeless look.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">

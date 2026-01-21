@@ -100,7 +100,7 @@ async function page() {
 
       <div className="container-fluid p-0">
         <video
-          src="https://dndesigns.co.in/uploads/videos/video-1-1.mp4"
+          src="https://dndesigns.co.in/uploads/videos/wlues01final.mp4"
           width="100%"
           autoPlay
           muted

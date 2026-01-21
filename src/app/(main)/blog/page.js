@@ -172,7 +172,7 @@ function BlogPage() {
               )}
             </div>
 
-            <div className="col-12 col-md-12 col-lg-4">
+            <div className="col-12 col-md-12 col-lg-4 recent-posts-sidebar">
               {blogs.length > 0 && (
                 <div className="blog-sidebar">
                   <h4 className="sidebar-title">Recent Posts</h4>

@@ -309,6 +309,8 @@ export default function Home() {
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
             </h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
+
+            <Link href="/enlite-case-study" className={`${styles["mobile-casestudy-wrapper-link"]}`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -353,6 +355,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              </Link>
+
+
+             <Link href="/wlues-case-study" className={`${styles["mobile-casestudy-wrapper-link"]}`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -406,6 +412,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              </Link>
+
+              <Link href="/nectarpure-case-study" className={`${styles["mobile-casestudy-wrapper-link"]}`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -451,6 +460,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              </Link>
+
+
+              <Link href="/grincare-case-study" className={`${styles["mobile-casestudy-wrapper-link"]}`}>
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -494,6 +507,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+                </Link>
+
+
+
             </div>
           </div>
         </div>
