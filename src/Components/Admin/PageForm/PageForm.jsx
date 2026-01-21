@@ -68,7 +68,14 @@ export default function PageForm({ initialData, isEditing }) {
         description: initialData.description || "",
         pageType: initialData.pageType || "default",
         order: initialData.order || 0,
-        content: initialData.content || "",
+        content:
+          typeof initialData.content === "object" &&
+          initialData.content !== null
+            ? initialData.content.raw ||
+              (Object.keys(initialData.content).length === 0
+                ? ""
+                : JSON.stringify(initialData.content, null, 2))
+            : initialData.content || "",
         isPublished: initialData.isPublished || false,
         publishedAt: initialData.publishedAt
           ? new Date(initialData.publishedAt).toISOString().slice(0, 16)
@@ -769,8 +776,8 @@ export default function PageForm({ initialData, isEditing }) {
                 {mutation.isPending
                   ? "Saving..."
                   : isEditing
-                  ? "Update"
-                  : "Create"}
+                    ? "Update"
+                    : "Create"}
               </button>
             </div>
           </div>
