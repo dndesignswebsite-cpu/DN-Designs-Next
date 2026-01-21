@@ -23,22 +23,52 @@ export default function Header() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [isLocked, setIsLocked] = useState(false);
 
-  const toggleNav = () => {
-    if (isAnimating) {
-      setIsAnimating(false);
-      setTimeout(() => {
-        setIsVisible(false);
-        document.body.style.overflowY = "auto";
-      }, TRANSITION_DURATION);
-    } else {
-      setIsVisible(true);
-      // document.body.style.overflowY = "hidden";
-      setTimeout(() => {
-        setIsAnimating(true);
-      }, 50);
-    }
-  };
+  // const toggleNav = () => {
+  //   if (isAnimating) {
+  //     setIsAnimating(false);
+  //     setTimeout(() => {
+  //       setIsVisible(false);
+  //       document.body.style.overflowY = "auto";
+  //     }, TRANSITION_DURATION);
+  //   } else {
+  //     setIsVisible(true);
+  //     // document.body.style.overflowY = "hidden";
+  //     setTimeout(() => {
+  //       setIsAnimating(true);
+  //     }, 50);
+  //   }
+  // };
+const toggleNav = () => {
+  if (isLocked) return;
+
+  
+  setIsLocked(true);
+
+  if (isAnimating) {
+
+    setIsAnimating(false);
+
+    setTimeout(() => {
+      setIsVisible(false);
+      document.body.style.overflowY = "auto";
+      setIsLocked(false); 
+    }, TRANSITION_DURATION);
+  } else {
+
+    setIsVisible(true);
+
+    setTimeout(() => {
+      setIsAnimating(true);
+    }, 50);
+
+    setTimeout(() => {
+      setIsLocked(false); 
+    }, TRANSITION_DURATION);
+  }
+};
+// toggle nav 
 
   const toggleSubMenu = (menuId) => {
     setOpenSubmenu(openSubmenu === menuId ? null : menuId);
@@ -77,7 +107,7 @@ export default function Header() {
           </Link>
         </div>
 
-        <button
+        {/* <button
           className={`${styles["nav-toggle-btn"]} ${
             isAnimating ? styles["is-active"] : ""
           }`}
@@ -86,7 +116,22 @@ export default function Header() {
           aria-expanded={isAnimating}
         >
           <span className={`${styles["toggle-icon"]}`}></span>
-        </button>
+        </button> */}
+
+        <button
+  className={`${styles["nav-toggle-btn"]} ${
+    isAnimating ? styles["is-active"] : ""
+  }`}
+  onClick={toggleNav}
+  disabled={isLocked}
+  aria-label="Toggle Navigation"
+  aria-expanded={isAnimating}
+>
+  <span className={`${styles["toggle-icon"]}`}></span>
+</button>
+
+
+
       </header>
       <div
         className={`${styles["desktop-nav"]}`}
@@ -106,7 +151,7 @@ export default function Header() {
               <div className="row">
                 <div className={`${styles["open-nav-col"]} col-12`}>
                   <div className={`${styles["open-nav-btn"]}`}>
-                    <button
+                    {/* <button
                       className={`${styles["nav-toggle-btn"]} ${
                         isAnimating ? styles["is-active"] : ""
                       }`}
@@ -115,7 +160,24 @@ export default function Header() {
                       aria-expanded={isAnimating}
                     >
                       <span className={`${styles["toggle-icon"]}`}></span>
-                    </button>
+                    </button> */}
+                    <button
+  className={`${styles["nav-toggle-btn"]} ${
+    isAnimating ? styles["is-active"] : ""
+  }`}
+  onClick={toggleNav}
+  disabled={isLocked}
+  aria-label="Toggle Navigation"
+  aria-expanded={isAnimating}
+>
+  <span className={`${styles["toggle-icon"]}`}></span>
+</button>
+
+
+
+
+
+
                   </div>
                 </div>
               </div>
@@ -709,7 +771,9 @@ export default function Header() {
               <div className="row">
                 <div className={`${styles["open-nav-col"]} col-12`}>
                   <div className={`${styles["open-nav-btn"]}`}>
-                    <button
+
+
+                    {/* <button
                       className={`${styles["nav-toggle-btn"]} ${
                         isAnimating ? styles["is-active"] : ""
                       }`}
@@ -718,7 +782,21 @@ export default function Header() {
                       aria-expanded={isAnimating}
                     >
                       <span className={`${styles["toggle-icon"]}`}></span>
-                    </button>
+                    </button> */}
+
+                    <button
+  className={`${styles["nav-toggle-btn"]} ${
+    isAnimating ? styles["is-active"] : ""
+  }`}
+  onClick={toggleNav}
+  disabled={isLocked}
+  aria-label="Toggle Navigation"
+  aria-expanded={isAnimating}
+>
+  <span className={`${styles["toggle-icon"]}`}></span>
+</button>
+
+
                   </div>
                 </div>
               </div>

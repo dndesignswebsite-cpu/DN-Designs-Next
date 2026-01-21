@@ -3,7 +3,7 @@ export const revalidate = 0;
 
 import React from "react";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
-import "./logo-designing.css";
+import "../logo-designing/logo-designing.css";
 import LogoDesigningTab from "@/Components/LogoDesingningTab/LogoDesigningTab";
 import Faqs from "@/Components/Faqs/Faqs";
 import Form from "@/Components/Form/Form";
@@ -17,10 +17,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("logo-designing", null, false);
+    seo = await getPageById("logo-designing-company-in-pune", null, false);
   } catch (error) {
     return {
-      title: "Logo Designing",
+      title: "Logo Designing Company In Pune",
       robots: "noindex, nofollow",
     };
   }
@@ -68,7 +68,7 @@ async function page() {
   await connectDB();
   let pageData;
   try {
-    pageData = await getPageById("logo-designing", null, true);
+    pageData = await getPageById("logo-designing-company-in-pune", null, true);
   } catch (error) {
     notFound();
   }
@@ -92,10 +92,11 @@ async function page() {
   // --- SCHEMA CLEANING LOGIC END ---
 
   const pageName = "Logo Design Services";
-  const heading = "Logo Design Services";
-  const subHeading = "Don’t Just Be Seen, Be Remembered";
+  // hero section content
+  const heading = "Professional Logo Designs";
+  const subHeading = "Logo Designs That Are Unique And Creative";
   const para =
-    "  Logos have strong recall value. A compelling and creative company logo can, therefore, make your business a brand that people will forever remember. As a premium brand identity design agency in India, we strive to achieve exactly that for you. Come along as we show you the types of logos we design and our work process. Explore our portfolio and read through the FAQs to find the answers you are looking for.";
+    " Your logo is your brand’s face, and creating a face to speak your brand’s story can be tricky. It’s much like solving a puzzle, which requires patience and strategy. But you do not need strategy or patience; you only need DN Designs! We are a professional logo design agency in Pune, and we design logos that carry a brand’s essence and attract people’s attention. With us, create logos that stand out!";
 
   // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
@@ -106,104 +107,87 @@ async function page() {
   const leftFaqs = [
     {
       question:
-        "Why are there so many types of logos? How should I choose the best one for my business?",
+        "Which is the best logo designing company in Pune?",
       answer:
-        "Businesses have their own distinct identity, values and vision. They want their logo to reflect all these. Moreover, they also want their logo to appeal to their target audience. The different types of logos help them do that. To decide which type of logo best suits your business, you must consider the various factors mentioned above. Alternatively, you can just get in touch with us and we will do the needful.",
+        "With over eight years of experience in the industry, DN Designs is renowned among customers as the best logo designing company in Pune. Our professional logo design leaves a lasting impact on the people while creating a unique yet strong brand identity.",
     },
     {
-      question: "What are logo variations and what are their different types?",
+      question: "How is your logo better than so many in the market?",
       answer:
-        "Businesses need to use their company logo in different places -  official website, social media platforms, business cards, emails, reports, product packaging and letterhead. A single logo is not suitable for all due to space and layout restrictions. Therefore, businesses adapt the primary logo and use the variations in different places. These variations include a secondary logo (stacked or horizontal), submark logo, wordmark/lettermark logo, icon/brandmark design,  monochrome/one-colour logo and inverted/reversed logo.",
+        "Our logo designs are creatively made and go through a lengthy process. Our team of logo designers in Pune ensures your logo matches your brand image and makes you stand out.",
     },
     {
-      question: "How do I design a good logo?",
+      question: "What is your process of making a logo?",
       answer:
-        "To design a logo, you must use the right mix of strategy, creativity and style. If you have these skill sets, you can certainly design a good logo yourself. However, we suggest that for a more professional design, you should collaborate with a creative logo design company in India. ",
+        "Being the best logo design firm in Pune, we start by learning about your brand and doing market research. Later, we will discuss with our creative graphic designers to create multiple sketches for you. After getting your feedback, we will finalize and hand you your creative logo design!",
     },
     {
-      question: "What makes you the best logo designing company?",
+      question: "What details do you need for logo design?",
       answer:
-        "Noida-based DN Designs has been in the business for over 8 years and, therefore, has concrete experience in understanding what kind of logo will best suit a particular brand. We have created professional, creative, quirky and premium logo designs for a variety of businesses. Our logos reflect brand identity and values, and have an outstanding recall potential. Happy customers are what we want to achieve in the end. ",
+        "To get started, we need details about your brand, target audience, competitors, style preference, and any specific ideas you may have. Details like these help us design a blueprint for your logo. ",
     },
     {
-      question: "What's your process of creating a logo design?",
+      question: "When will I get my logo design?",
       answer:
-        "Our logo design process begins with researching your brand, industry and logo integration needs across physical and digital space. This is followed by brainstorming, where ideas and concepts are explored and sketched on paper. Further refinements are made once these design sketches are narrowed down and digitised. The final designs are sent for your approval. Once finalised, we deliver the premium logo design to you.",
+        "Our logo design process takes around 7-8 days. Even that entirely depends on your needs, as we initiate logo design as soon as we know your wants and vision. Our professional logo designers ensure you get the designs on time.",
     },
     {
       question:
-        "What information do you need from me to start the logo design process?",
+        "Would your logo get global reach?",
       answer:
-        "You own the brand and you have a specific vision for it. We need to understand it to design the creative company logo you envisioned. To elaborate, we need details about your brand (name & industry), target audience & competitors, as well as any design preference/idea/inspiration you may have and want to share with us. ",
-    },
-    {
-      question: "Will you redesign my existing logo?",
-      answer:
-        "Yes, we can redesign your existing logo depending on your current brand values, as well as market and audience preferences. We can also redesign your existing logo in a way that gives it a fresh look but retains your existing brand identity and values.",
-    },
-    {
-      question: "How many revisions could I get for my logo design?",
-      answer:
-        "Our primary objective is to provide you with the best and premium logo design services. We work in pursuit of this goal, and therefore do not restrict ourselves to a particular number of revisions.",
+        "As an experienced creative agency in Pune, we have many clients worldwide for our logo design services in Pune. Our clients love our professional logo designs and are left in ‘awe.’ ",
     },
   ];
 
   const rightFaqs = [
     {
-      question: "How long does it take you to create a logo?",
+      question: "I want to redesign my logo. Can you help me?",
       answer:
-        "Usually, it takes around a week for a premium logo design; however, depending on your project requirements and the number of revisions needed, it can take a little longer.",
+        "Offering logo design in Pune, we can redesign your logo to match your brand value and identity. Our top priority is to maintain uniformity with your overall brand design.",
     },
     {
-      question: "In what formats do you provide logos?",
+      question: "In what formats will I get the logos?",
       answer:
-        "We provide logos in multiple formats to ensure that you can use them wherever you need. These include raster files (JPEG, PNG), vector files (AI, EPS) and web-friendly formats.",
+        "To meet your needs, we provide logos in formats like raster files ( JPEG, PNG) and vector files (AI, EPS). It confirms you can use your logo on any platform. ",
     },
     {
-      question: "How much do your creative company logo design services cost?",
+      question: "Do you offer revision for the designs?",
       answer:
-        "The cost of our logo design services can differ based on your needs and the design complexities involved. The cost may also vary depending on other services that you might request.",
+        "Yes, you will get unlimited revisions for your logo design. It is because our only goal is your satisfaction. ",
     },
     {
-      question: "Do you specialise in creating logos for a specific industry?",
+      question: "How much do you charge for your logo design?",
       answer:
-        "As a creative design agency, we do not restrict ourselves to any particular vertical; rather, we work for different industries like tech, fashion, food, wellness, real estate, and more. We ensure to create a captivating logo design that reflects the brand identity, whichever industry it may be from.",
+        "Our logo design costs depend on your needs, the complexity of your project, and the additional services you are likely to take up. After knowing about your project, we also offer custom quotes for your specific needs. ",
     },
     {
-      question: "Would your logo be so appealing to get global reach?",
+      question: "Do you provide logo trademark service?",
       answer:
-        "Yes, we work with clients worldwide and therefore have experience in creating a creative company logo that appeals to the audience around the globe. Our clients have always loved the timeless and premium logos we have created for them.",
+        "As the best brand building agency in Pune, India, we can assist you with your logo trademark. We can help you collaborate with a trademark attorney to ensure you acquire your logo under intellectual property law.",
     },
     {
-      question: "Can you help me with the logo trademark?",
+      question: "What services do you offer in logo design?",
       answer:
-        "Yes, we assist you in obtaining a logo trademark.  We put you in touch with a trademark attorney, and through him/her, we ensure that your logo is obtained under intellectual property rights. ",
-    },
-    {
-      question: "What services do you provide other than logo designing?",
-      answer:
-        "As a full-service branding and design agency, we offer a comprehensive suite of services including brand identity design, packaging design, catalogue design, web design & development, and company profiling. In addition, we can also provide digital marketing, brand video shoots, product photography and animation services.",
-    },
+        "Besides logo design services, we offer packaging, brand identity, web development, catalogue, website, company profiling, and display box design. We provide end-to-end services to help brands like yours reach the next level! ",
+    }
   ];
 
+  let para1 = "Being a top logo designing company in Pune, we advise you to choose your logo correctly because there are different logo styles. Whether the logos are in combination marks or words, letters, abstract signs, emblems, three-dimensional logos, animated logos, or dynamic logos, it’s all based on the approach you want to take to communicate your brand’s philosophy, personality and culture. Each logo style has meaning; we ensure you pick the right one since it represents your brand. For example, the wordmark logo is perfect if you have a short brand name and desire more brand visibility. Our expert logo design services in Pune ensure your brand gets visibility in overcrowded markets.";
 
-  let para1 = "Type/Style is all about how your logo appears in totality. As the best logo design company in India, we invest a lot of thought and carefully select the logo style for your brand depending on your requirements. We take into consideration your brand identity, personality, voice and how you want to be perceived by your audience, and match it up with the best logo type. These styles include combination marks, wordmarks, letter marks, abstract, emblems and dynamic.";
+ let para2 = "The choice of colour is a significant consideration in logo design. When it comes to a logo colour, it signifies your brand’s character and creates moods. They also form a key part of brand image. Remember Cadbury’s purple or Marvel’s red colour? Our logo design services in Pune specialize in selecting the right colour for your brand. We ensure that our creative logo designers in Pune choose the colour palette that resonates with your target market and conveys your unique selling proposition (USP).";
 
- let para2 = "Colours convey certain emotions, and hence are a crucial design element. Our creative logo designers in Noida choose a colour palette that perfectly reflects your brand’s personality and emotions. To ensure the right selection and usage of colours, we – a logo design agency in Delhi NCR – research your target audience and market and additionally decide which colour will effectively communicate your brand’s USP.";
+ let para3 = "Typography is one of the important aspects of your logo that greatly expresses your brand’s message. Your business logo design’s typography should depict the mood you want to connect with. For example, script fonts convey exclusivity and elaboration, and modern fonts handle bold messages better. To get the desired balance in logo design, we pay close attention to the typography used in your logo. It can be as simple as Disney’s font or as classy as Zara’s and may contribute to your brand recall.";
 
- let para3 = "Like colours, typography, too, conveys the brand identity – its message, voice and tone. Whether your brand voice is more polished and professional or it is warm and friendly, whether it is inspiring and uplifting or leans more towards authority, your typography can reveal all. As a logo design agency, we can create a premium logo design that communicates your brand voice accurately.";
+ let para4 = "Presumably, shapes are quite important regarding how consumers perceive your brand. Being the best logo design company in Pune, we mix the right shape with typography, colours and images to make the logo more meaningful. As shapes have deep psychological aspects, we design memorable and great logos. Shape has a subconsciously embedded message, and we apply this knowledge as the foundation for creating your logo.";
 
- let para4 = "Like colours and typography, shapes too have a psychological effect on customers. These are silent messengers of brand personality, values and tone. For example, shapes like circles and ovals convey a feeling of inclusiveness and community. On the other hand, squares and rectangles evoke a sense of stability and reliability. Designers at a logo designing agency know this and hence select an appropriate shape for your creative company logo. ";
-
- let para5 = "Anything in the background doesn’t have much value. This could perhaps be true for a lot of things, but not logo design. Think of the red background of the McDonald’s logo. The feel of the brand is not complete without this background. As a logo design agency, we understand the importance of this design element and therefore create a layout that enhances the effect of your logo. While deciding the layout, we consider the need to incorporate a symbol or a tagline as well. ";
-
+ let para5 = "More often than not, logo style, colour, typography, and shape are distinctive aspects overshadowed by the layout. Again, the layout defines how your logo looks as it is being placed on the designing platform.  For instance, Ikea’s yellow or McDonald’s red background signifies a logo layout. We are a reputed logo design company in Pune, so design your business logo layout to make the logo noticeable without much effort.";
 
   return (
     <div>
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "logo-designing"}`}
+          key={`schema-page-${pageData._id || "logo-designing-company-in-pune"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -460,7 +444,8 @@ async function page() {
         <div className="container">
           <div className="row">
             <h2 className="text-center headg">
-              But Why Your<span className="every-pr"> Logo Even Matters?</span>
+             The Importance of 
+  <span className="every-pr"> Your Logo Design</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-3 px-2 but-why-main-div">
               <div className=" but-why-div m-3">
@@ -471,21 +456,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Leaves A Powerful First Impression</h3>
+                  <h3>Powerful First Impression</h3>
                   <p>
-                    A logo catches attention instantly, and when it does, it
-                    creates a powerful first impression.
+                    Your business logo often makes a first impression on people. A creatively designed logo can compel your customers and
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Leaves A Powerful First Impression</h3>
+                  <h3>Powerful First Impression</h3>
                   <p>
-                    A logo catches attention instantly, and when it does, it
-                    creates a powerful first impression. Let’s elucidate a
-                    little. With a declining attention span, businesses have
-                    just a few seconds to command attention. An expertly crafted
-                    logo can draw customers, spark curiosity and encourage
-                    engagement.
+                   Your business logo often makes a first impression on people. A creatively designed logo can compel your customers and make them want to know more about your brand.
                   </p>
                 </div>
               </div>
@@ -504,20 +483,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Forms The Core of Brand Identity</h3>
+                  <h3>Grabs Attention</h3>
                   <p>
-                    Brand identity includes several elements but the logo forms
-                    its foundation. It is what people identify & associate with
+                    Your logo can instantly grab people's attention and convey your brand values. Having a memorable logo design adds to 
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Forms The Core of Brand Identity</h3>
+                  <h3>Grabs Attention</h3>
                   <p>
-                    Brand identity includes several elements but the logo forms
-                    its foundation. It is what people identify & associate with
-                    & also what they remember in the long term. Think of any big
-                    brand - Ford, IBM, Airtel and Reliance? You most definitely
-                    remember what their logo looks like. Don’t you?
+                   Your logo can instantly grab people's attention and convey your brand values. Having a memorable logo design adds to your advantage.
                   </p>
                 </div>
               </div>
@@ -536,20 +510,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Builds Differentiation & Brand Loyalty</h3>
+                  <h3>Forms Brand Identity</h3>
                   <p>
-                    How do consumers differentiate between brands and trust one?
-                    Brand values, beliefs and USP play
+                   Your creative logo is important for your brand identity design. As your logo reflects your brand’s essence, it forms the
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Builds Differentiation & Brand Loyalty</h3>
+                  <h3>Forms Brand Identity</h3>
                   <p>
-                    How do consumers differentiate between brands and trust one?
-                    Brand values, beliefs and USP play a major role here and
-                    your logo represents all these. Take the same brand examples
-                    again. When you see their familiar logo, you trust them and
-                    are therefore willing to engage with them again.
+                    Your creative logo is important for your brand identity design. As your logo reflects your brand’s essence, it forms the foundation of your brand identity.
                   </p>
                 </div>
               </div>
@@ -568,21 +537,15 @@ async function page() {
                   ></img>
                 </div>
                 <div className="but-why-btm">
-                  <h3>Fulfils Audience Expectations</h3>
+                  <h3>Make You Stand Out</h3>
                   <p>
-                    As a brand, you will communicate with your audience
-                    variously - emails, website, social media, brochures, etc.
+                   With so many competitors in the industry, our professional logo designers in Pune design logos to make you more recognizable
                   </p>
                 </div>
                 <div className="but-why-back-content">
-                  <h3>Fulfils Audience Expectations</h3>
+                  <h3>Make You Stand Out</h3>
                   <p>
-                    As a brand, you will communicate with your audience
-                    variously - emails, website, social media, brochures, etc.
-                    Whatever the means may be, the consistent part is the
-                    inclusion of the logo in all. It is this brand identity that
-                    customers expect. It establishes the authenticity of your
-                    communication.
+                  With so many competitors in the industry, our professional logo designers in Pune design logos to make you more recognizable and stronger.
                   </p>
                 </div>
               </div>
@@ -887,11 +850,7 @@ async function page() {
               <h2 className="logo-brand-title">Monogram</h2>
               <h6 className="logo-type">Lettermark</h6>
               <p className="logo-brand-paragraph">
-                This combines the initial letters of the brand name to create an
-                abbreviated version. Think of ESPN (Entertainment and Sports
-                Programming Network) and P&G (Procter & Gamble). Companies with
-                longer names prefer this type of design to make their logo
-                compact and memorable.
+               Monogram logos are ideal for brand names with many letters as these logos combine your image into a clean, easily recognizable shape. Sleek typography makes these logos memorable and intensive for corporate, fashion or luxury brands. As the top logo design company in Pune, we specialize in creating logos – an embodiment of your brand’s spirit.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-12 com-md-12 logo-list">
@@ -924,12 +883,9 @@ async function page() {
           <div className="row logo-brand2">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Wordmarks</h2>
-              <h6 className="logo-type">Logotype</h6>
+              <h6 className="logo-type">Similar to letter mark</h6>
               <p className="logo-brand-paragraph">
-                This comprises solely the brand name. Examples include Google,
-                L’oreal and ebay. Brands with concise names and a strong persona
-                pick this type of logo. Custom typography and styling that
-                reflect brand identity make these logos memorable.
+              When your brand name is the hero, a wordmark logo is a star. These logos are created using chosen typefaces, turning your brand’s name into artwork. With the help of the right selection of colours and fonts, we reveal the nature of your brand in the most vulnerable manner.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -962,14 +918,9 @@ async function page() {
           <div className="row logo-brand3">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Pictorial</h2>
-              <h6 className="logo-type">Brandmark/Symbol</h6>
+              <h6 className="logo-type"> Symbols</h6>
               <p className="logo-brand-paragraph">
-                As per its name, this type of logo draws on graphics, images,
-                icons and symbols from the real world. The best example of this
-                is Apple. This type of logo is best when brands can find
-                pictures or symbols that appropriately present their business,
-                whether literally or figuratively. This is very easy to
-                recognise.
+                Picture this: a symbol that conveys your company’s message to the public; that’s what a pictorial logo does. Pictorial mark logos or icon-based logos are the logos that define the soul of your brand. These logos keep constructing a relationship with your audience and create a unique brand identity that is difficult to forget.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1004,12 +955,7 @@ async function page() {
               <h2 className="logo-brand-title">Abstract</h2>
               <h6 className="logo-type">Represent Your Brand</h6>
               <p className="logo-brand-paragraph">
-                In contrast to pictorial logos that use images from the real
-                world, abstract logos use geometric shapes and colours to convey
-                the right message and emotion. Few brands that use this type of
-                logo include Mastercard, Pepsi and Mitsubishi. Brands that want
-                a timeless logo that breaks cultural and language barriers (and
-                thus has a global appeal) opt for an abstract logo.
+             Abstract logos develop the unique identity of your brand and the message by working with figures, usually symbolic or geometric. Unlike the purely figurative marks, these logos themselves do not represent a specific object but imply certain meanings at a deeper level. Being the best brand-building agency in Pune, we deal with abstract logos that can leave people in awe.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1044,11 +990,7 @@ async function page() {
               <h2 className="logo-brand-title">Mascots</h2>
               <h6 className="logo-type">Characters</h6>
               <p className="logo-brand-paragraph">
-                Brands that want to evoke a more fun and friendly emotion opt
-                for this type of logo. Remember the logos of KFC and Amul? This
-                type of logo has an illustrated character that represents the
-                brand and fosters a strong emotional connection with the
-                customers.
+              Are you thinking of making your brand lively? A mascot logo is what you need. Mascot logos incorporate illustrated characters that help to give your brand personality in a friendly manner. Whether it is a friendly face or a quirky figure, mascot logos can make your brand more memorable and likeable.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1081,13 +1023,9 @@ async function page() {
           <div className="row logo-brand6">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">Combination</h2>
-              <h6 className="logo-type">Text and Pictures</h6>
+              <h6 className="logo-type">Picture and Text</h6>
               <p className="logo-brand-paragraph">
-                This logo combines text with symbol, image, mascot and shape to
-                create a unique identity for the brand. It is adaptable, giving
-                brands a scope to split the main logo and carve out variations
-                from it. Few examples of this type of logos include Puma, Jaguar
-                and Burger King.
+                A combination mark is the fusion of image and text. It pairs abstract symbols with wordmarks that give your brand the flexibility to be displayed in multiple ways. These are often designed side by side or on top of each other and share your brand story through both visuals and words, adding to your versatility.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
@@ -1120,13 +1058,9 @@ async function page() {
           <div className="row logo-brand7">
             <div className="col-12 col-lg-5 col-md-12">
               <h2 className="logo-brand-title">The Emblem</h2>
-              <h6 className="logo-type">Badge</h6>
+              <h6 className="logo-type">Symbol or an Icon</h6>
               <p className="logo-brand-paragraph">
-                Businesses that wish to convey an air of legacy, prestige and
-                tradition usually go for an emblem logo. These logos include a
-                shape that encompasses text, image or symbol. Some of the best
-                examples of this type of logos are Harley-Davidson, Starbucks,
-                Harvard University and Oxford University.
+              Emblem logos are the essence of tradition and timelessness. You may think of these as a combination of heritage, professionalism and authority. Emblem logos are perfect for government organizations or schools to remain timeless forever.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">

@@ -347,3 +347,8 @@
     padding: 40px 0 10px 0px;
   }
 }
+
+.mobile-casestudy-wrapper-link {
+  text-decoration: none;
+  color: #000;
+}
