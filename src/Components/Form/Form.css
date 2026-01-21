@@ -17,13 +17,13 @@
 .inpt label{
     font-family: var(--font-corbert);
         cursor: pointer;
-        color: var(--heading-main-color);
+        color: #000;
         font-size: 16px;
         font-weight:400;
 }
 
 .inpt label span{
-  color: var(--heading-highlite-color);
+  color: #ca2734;
 }
 
 .inpt input {
@@ -58,7 +58,7 @@
 .sbmt-btn {
   width: 100%;
   padding: 16px;
-  background: var(--heading-main-color);
+  background: #ca2734;
   color: white;
   font-size: 18px;
   border: none;
@@ -70,7 +70,7 @@
 
 .form-box{
   padding: 10px;
-  background-color: var(--heading-highlite-color);
+  background-color: #ca2734;
   margin: 0;
   height: 100%;
 }
@@ -84,9 +84,9 @@
 
 
 .form-left-content{
-  border-right: 10px solid var(--heading-highlite-color);
-  border-top: 10px solid var(--heading-highlite-color);
-  border-bottom: 10px solid var(--heading-highlite-color);
+  border-right: 10px solid #ca2734;
+  border-top: 10px solid #ca2734;
+  border-bottom: 10px solid #ca2734;
   padding: 0;
   margin: 0;
 }
@@ -107,7 +107,7 @@
 
 
 .form-main-content h3{
-    color: var(--heading-main-color);
+    color: #000;
     font-family: var(--font-corbert-bold);
     font-size: 50px;
     font-weight: 700;
@@ -117,7 +117,7 @@
 
 .form-main-content p{
        font-family: var(--font-roboto);
-        color: var(--heading-main-color);
+        color: #000;
         line-height:1.6em;
         font-weight: 500;
         font-size: 18px;

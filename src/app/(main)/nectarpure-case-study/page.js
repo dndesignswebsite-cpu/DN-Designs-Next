@@ -99,7 +99,7 @@ async function page() {
       {/*schema ends here */}
 
       <div className="container nectarpure">
-        <div className="row">
+        <div className="row nextarpure-first-row-case-study">
           <div className="col-lg-4 col-md-5">
             <img
               src={imageUrl + "34ebjrhbkr.webp"}
@@ -121,17 +121,18 @@ async function page() {
       </div>
 
       <div className="container-fluid p-0 text-center">
-        <iframe
-          width="1522"
-          height="855"
-          src="https://www.youtube.com/embed/s-PQhgPFPjE"
-          title="Nectarpure - 3D Product Cinematic Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div>
+  <div className="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/s-PQhgPFPjE"
+      title="Nectarpure - 3D Product Cinematic Video"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
 
       <div className="container nectarpure-second">
         <div className="row">

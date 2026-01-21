@@ -9,6 +9,7 @@ import Points from "@/Components/Points/Points";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 import Script from "next/script";
+import Link from 'next/link';
 
 // schema
 // HOME PAGE SCHEMA
@@ -163,6 +164,8 @@ export default function Home() {
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
+
+           <Link href="/enlite-case-study">
             <li className={`${styles["card"]} ${styles["card-1"]}`} >
               <div
                 className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
@@ -189,6 +192,11 @@ export default function Home() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+            <Link href="/wlues-case-study">
             <li className={`${styles["card"]} ${styles["card-2"]}`}>
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
@@ -220,6 +228,13 @@ export default function Home() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+
+
+            <Link href="/nectarpure-case-study">
             <li className={`${styles["card"]} ${styles["card-3"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
@@ -245,6 +260,14 @@ export default function Home() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+
+
+
+           <Link href="/grincare-case-study">
             <li className={`${styles["card"]} ${styles["card-4"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -268,6 +291,10 @@ export default function Home() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
           </ul>
         </div>
       </section>

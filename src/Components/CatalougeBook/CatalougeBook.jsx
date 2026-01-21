@@ -3,7 +3,7 @@ import "./CatalougeBook.css";
 import LightBoxBookCatalouge from "./LightBoxBookCatalouge";
 
 function CatalougeBook() {
-  let imageUrl = "https://dndesigns.co/uploads/pages/";
+  let imageUrl = "https://dndesigns.co.in/uploads/pages/";
 
   return (
     <div>
@@ -21,13 +21,12 @@ function CatalougeBook() {
               <LightBoxBookCatalouge
                 type="flipbook"
                 pages={[
-                  "https://dndesigns.co/uploads/pages/wherbfett.webp",
+                  "https://dndesigns.co.in/uploads/pages/wherbfett.webp",
 
-                  "https://dndesigns.co/uploads/pages/whjjdbbhj.webp",
+                  "https://dndesigns.co.in/uploads/pages/whjjdbbhj.webp",
 
-                  "https://dndesigns.co/uploads/pages/weghhd.webp",
-
-                  "https://dndesigns.co/uploads/pages/wefascg.webp",
+                  "https://dndesigns.co.in/uploads/pages/weghhd.webp",
+                  "https://dndesigns.co.in/uploads/pages/wefascg.webp",
                 ]}
               >
                 <div>
@@ -49,16 +48,15 @@ function CatalougeBook() {
               <LightBoxBookCatalouge
                 type="flipbook"
                 pages={[
-                  "https://dndesigns.co/uploads/pages/gh2wevdhv.webp",
+                  "https://dndesigns.co.in/uploads/pages/gh2wevdhv.webp",
 
-                  "https://dndesigns.co/uploads/pages/hjweghj.webp",
+                  "https://dndesigns.co.in/uploads/pages/hjweghj.webp",
 
-                  "https://dndesigns.co/uploads/pages/rtwqfedgfewg.webp",
+                  "https://dndesigns.co.in/uploads/pages/rtwqfedgfewg.webp",
+                  "https://dndesigns.co.in/uploads/pages/twfehdghg.webp",
 
-                  "https://dndesigns.co/uploads/pages/twfehdghg.webp",
-
-                  "https://dndesigns.co/uploads/pages/g23yghdhjedh.webp",
-                  "https://dndesigns.co/uploads/pages/gh2wevdhv.webp",
+                  "https://dndesigns.co.in/uploads/pages/g23yghdhjedh.webp",
+                  "https://dndesigns.co.in/uploads/pages/gh2wevdhv.webp",
                 ]}
               >
                 <div>
@@ -82,19 +80,18 @@ function CatalougeBook() {
               <LightBoxBookCatalouge
                 type="flipbook"
                 pages={[
-                  "https://dndesigns.co/uploads/pages/erjkdshfve.webp",
+                  "https://dndesigns.co.in/uploads/pages/erjkdshfve.webp",
 
-                  "https://dndesigns.co/uploads/pages/hewgehg.webp",
+                  "https://dndesigns.co.in/uploads/pages/hewgehg.webp",
 
-                  "https://dndesigns.co/uploads/pages/huieyfhdj.webp",
+                  "https://dndesigns.co.in/uploads/pages/huieyfhdj.webp",
+                  "https://dndesigns.co.in/uploads/pages/reghderjkb.webp",
 
-                  "https://dndesigns.co/uploads/pages/reghderjkb.webp",
+                  "https://dndesigns.co.in/uploads/pages/3ewrcgyurgyu.webp",
 
-                  "https://dndesigns.co/uploads/pages/3ewrcgyurgyu.webp",
-
-                  "https://dndesigns.co/uploads/pages/wheghvdew.webp",
-                  "https://dndesigns.co/uploads/pages/wgehdwjegdjs.webp",
-                  "https://dndesigns.co/uploads/pages/pastandn.webp",
+                  "https://dndesigns.co.in/uploads/pages/wheghvdew.webp",
+                  "https://dndesigns.co.in/uploads/pages/wgehdwjegdjs.webp",
+                  "https://dndesigns.co.in/uploads/pages/pastandn.webp",
                 ]}
               >
                 <div>
@@ -142,7 +139,7 @@ function CatalougeBook() {
               />
             </div>
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <LightBoxBookCatalouge
+              {/* <LightBoxBookCatalouge
                 type="flipbook"
                 pages={[
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
@@ -157,11 +154,11 @@ function CatalougeBook() {
 
                   "https://dndesigns.co.in/wp-content/uploads/2019/02/1-2.png.webp",
                 ]}
-              >
+              > */}
                 <div>
                   <img src={imageUrl + "uewgdj.webp"} className="img-fluid" />
                 </div>
-              </LightBoxBookCatalouge>
+              {/* </LightBoxBookCatalouge> */}
             </div>
           </div>
         </div>

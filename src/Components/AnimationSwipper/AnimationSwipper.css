@@ -12,7 +12,7 @@
     font-size: 40px;
     font-family: var(--font-corbert-bold);
     font-weight: 700;
-    color: var(--heading-main-color);
+    color: #000;
 }
 
 .hori-line{
@@ -59,7 +59,7 @@ font-weight: 700;
 .hr-animation{
     height: 2px;
     width: 100%;
-    background-color: var(--heading-main-color);
+    background-color: #000;
     margin: 10px 0;
 }
 
@@ -109,7 +109,7 @@ font-weight: 700;
 
 
 .swiper-pagination-bullet-active {
-  background: var(--heading-highlite-color);
+  background: #ca2734;
   transform: scale(1.3); 
 }
 
