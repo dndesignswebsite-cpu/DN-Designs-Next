@@ -101,6 +101,8 @@ color: #000000;
 }
 
 
+
+
 @media screen and (max-width: 991px) {
   .single-blog-list-post-head-single{
   color: #000;
@@ -148,4 +150,13 @@ color: #000000;
 
 .recent-post-sidebar-link:hover .recent-post-sidebar-name {
   color: #ca2734;
+}
+
+
+.blog-categories-label{
+  font-family: "Roboto", sans-serif;
+}
+
+.blog-category-tag{
+  font-family: "Roboto", sans-serif;
 }

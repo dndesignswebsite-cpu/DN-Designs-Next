@@ -387,7 +387,7 @@
 }
 
 .top-cap-btm h3{
-  font-family: "Corbert-Bold", sans-serif;
+  font-family: var(--font-corbert-bold);
   font-weight: 500;
 }
 

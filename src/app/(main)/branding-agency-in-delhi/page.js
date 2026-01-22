@@ -3,6 +3,7 @@ export const revalidate = 0;
 
 import React from "react";
 import styles from "../page.module.css";
+import Link from "next/link";
 import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
 import OurConstant from "@/Components/OurConstant/OurConstant";
 import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
@@ -189,6 +190,7 @@ async function page() {
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
+          <Link href="/enlite-case-study">
             <li className={`${styles["card"]} ${styles["card-1"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
@@ -215,6 +217,11 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+            <Link href="/wlues-case-study">
             <li className={`${styles["card"]} ${styles["card-2"]}`}>
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
@@ -246,6 +253,12 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+
+           <Link href="/nectarpure-case-study">
             <li className={`${styles["card"]} ${styles["card-3"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
@@ -271,6 +284,12 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+
+
+
+
+            <Link href="/grincare-case-study">
             <li className={`${styles["card"]} ${styles["card-4"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -294,6 +313,7 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
           </ul>
         </div>
       </section>
@@ -308,6 +328,8 @@ async function page() {
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
             </h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
+
+            <Link href="/enlite-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -352,6 +374,9 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+
+              <Link href="/wlues-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -405,6 +430,8 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/nectarpure-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -450,6 +477,8 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/grincare-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -493,6 +522,7 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         </div>

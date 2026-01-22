@@ -45,6 +45,7 @@
   font-weight: 600;
   margin-bottom: 5px;
   text-transform: uppercase;
+  font-family: "Roboto";
 }
 
 .required-star {
@@ -106,6 +107,7 @@
   cursor: pointer;
   letter-spacing: 1px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Corbert";
 }
 
 .succes-class-form{

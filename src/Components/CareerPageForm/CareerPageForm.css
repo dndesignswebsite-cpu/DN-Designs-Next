@@ -28,6 +28,7 @@
   font-weight: 600;
   margin-bottom: 5px;
   text-transform: uppercase;
+  font-family: "Roboto";
 }
 
 .required-star {
@@ -45,7 +46,7 @@
  border-radius: 10px;
   padding: 5px;
   border: 1px solid #69727d;
-  
+  font-family: "Roboto";  
 }
 
 .form-group input:focus,
