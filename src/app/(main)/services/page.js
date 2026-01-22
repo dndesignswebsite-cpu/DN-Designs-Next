@@ -3,6 +3,7 @@ export const revalidate = 0;
 
 import React from "react";
 import "./services.css";
+import Link from 'next/link';
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
 import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import OurWorkServiceTabs from "@/Components/OurWorkServiceTabs/OurWorkServiceTabs";
@@ -251,44 +252,44 @@ async function page() {
                   <div className="back-down">
                     <ul>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/branding/"
+                        <Link
+                          href="/branding"
                           className="page-linking"
                         >
                           Branding
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/logo-designing/"
+                        <Link
+                          href="/logo-designing"
                           className="page-linking"
                         >
                           Logo Designing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/brand-name-suggestion/"
+                        <Link
+                          href="/brand-name-suggestion"
                           className="page-linking"
                         >
                           Brand Name Suggestion
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/packaging-design/"
+                        <Link
+                          href="/packaging-design"
                           className="page-linking"
                         >
                           Packaging Design
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/catalogue-designing/"
+                        <Link
+                          href="/catalogue-designing"
                           className="page-linking"
                         >
                           Catalogue Designing
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -317,44 +318,44 @@ async function page() {
                   <div className="back-down">
                     <ul>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/branding/"
+                        <Link
+                          href="/animation"
                           className="page-linking"
                         >
                           Animation
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/logo-designing/"
+                        <Link
+                          href="/digital-marketing"
                           className="page-linking"
                         >
                           Digital Marketing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/brand-name-suggestion/"
+                        <Link
+                          href="/influencer-marketing"
                           className="page-linking"
                         >
                           Influencer Marketing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/packaging-design/"
+                        <Link
+                          href="/social-media-marketing"
                           className="page-linking"
                         >
                           Social Media Marketing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/catalogue-designing/"
+                        <Link
+                          href="/photography"
                           className="page-linking"
                         >
                           Photography
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -384,28 +385,28 @@ async function page() {
                   <div className="back-down">
                     <ul>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/branding/"
+                        <Link
+                          href="/ui-ux-design"
                           className="page-linking"
                         >
                           UI/UX Design
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/logo-designing/"
+                        <Link
+                          href="/web-designing-services-in-india"
                           className="page-linking"
                         >
                           Web Design
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://dndesigns.co.in/brand-name-suggestion/"
+                        <Link
+                          href="/seo-marketing-agency-in-noida"
                           className="page-linking"
                         >
                           SEO
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -50,11 +50,13 @@
     text-align: left;
     font-size: 56px;
     margin-bottom: 20px; 
+    font-family: "Corbert";
 }
 
 .nectarpure-p{
     font-size: 22px;
     color: var(--heading-main-color);
+    font-family: "Roboto";
 }
 
 .nectarpure-link{
@@ -62,6 +64,7 @@
     font-size: 18px;
     text-decoration: underline;
     font-weight: 400;
+    font-family: "Roboto";
 }
 
 .nectarpurecase-study{
@@ -93,6 +96,7 @@
     font-size: 20px;
     padding: 10px 0;
     transition: all 0.8s ease;
+    font-family: "Roboto";
 }
 
 .nectarpure-button1:hover{
@@ -106,12 +110,14 @@
 .problem-statement-h3{
     font-size: 55px;
     font-weight: 700;
+    font-family: "Corbert";
 }
 
 .problem-para{
     color: var(--heading-main-color);
     font-size: 22px;
     margin-top: 30px;
+    font-family: "Roboto";
 }
 .nectarpure-problem-img{
     padding: 10px;

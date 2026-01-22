@@ -12,6 +12,7 @@ import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
 import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
+import Link from "next/link";
 
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
@@ -201,6 +202,7 @@ async function page() {
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
+          <Link href="/enlite-case-study">
             <li className={`${styles["card"]} ${styles["card-1"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
@@ -227,6 +229,8 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+            <Link href="/wlues-case-study">
             <li className={`${styles["card"]} ${styles["card-2"]}`}>
               <div className={`${styles["card-body"]}`}>
                 <video className="img-fluid" autoPlay muted loop playsInline>
@@ -258,6 +262,8 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+            <Link href="/nectarpure-case-study">
             <li className={`${styles["card"]} ${styles["card-3"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
@@ -283,6 +289,8 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
+            <Link href="/grincare-case-study">
             <li className={`${styles["card"]} ${styles["card-4"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -306,6 +314,7 @@ async function page() {
                 </div>
               </div>
             </li>
+            </Link>
           </ul>
         </div>
       </section>
@@ -320,6 +329,7 @@ async function page() {
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
             </h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
+            <Link href="/enlite-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -364,6 +374,8 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/wlues-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -417,6 +429,8 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/nectarpure-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -462,6 +476,8 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/grincare-case-study">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -505,6 +521,7 @@ async function page() {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         </div>

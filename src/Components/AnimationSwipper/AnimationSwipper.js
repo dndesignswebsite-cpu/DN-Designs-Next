@@ -42,7 +42,7 @@ export default function AnimationSwipper() {
                 <div className="animation-video-swipper-up">
                   <h3>NECTACPURE</h3>
                 </div>
-                <hr className="hori-line" />
+                {/* <hr className="hori-line" /> */}
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -93,7 +93,7 @@ export default function AnimationSwipper() {
                 <div className="animation-video-swipper-up">
                   <h3>Green Horn</h3>
                   </div>
-                  <hr className="hori-line" />
+                  {/* <hr className="hori-line" /> */}
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -140,7 +140,7 @@ export default function AnimationSwipper() {
                 <div className="animation-video-swipper-up">
                   <h3>Nature’s Balance</h3>
                   </div>
-                  <hr className="hori-line" />
+                  {/* <hr className="hori-line" /> */}
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">
@@ -190,7 +190,7 @@ export default function AnimationSwipper() {
                 <div className="animation-video-swipper-up">
                   <h3>Eau-Chauffage</h3>
                   </div>
-                  <hr className="hori-line" />
+                  {/* <hr className="hori-line" /> */}
                 <div className="hr-animation"></div>
                 <div className="row animation-video-swipper-bottom">
                   <div className="col animation-video-swipper-content">

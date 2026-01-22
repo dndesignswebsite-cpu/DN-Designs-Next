@@ -60,9 +60,9 @@ const homeSchema = {
       },
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.8",
+        ratingValue: "5.0",
         bestRating: "5",
-        reviewCount: "69",
+        reviewCount: "153",
       },
     },
 
@@ -142,12 +142,10 @@ export default function Home() {
             </div>
             <div className={`${styles["hero-img"]} col`}>
               <img
-                // src="https://dndesigns.co.in/wp-content/uploads/2025/09/gkjeg.png"
                 src={imageUrl + "gkjeg.webp"}
                 className={`${styles["hero-bg-img"]}`}
               ></img>
               <img
-                // src="https://dndesigns.co.in/wp-content/uploads/2025/09/hgefef.png"
                 src={imageUrl + "hgefef.webp"}
                 className={`${styles["hero-img-main"]}`}
               ></img>

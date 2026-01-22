@@ -123,7 +123,7 @@ function CategoryPage({ params }) {
                 Category: {category ? category.name : slug}
               </h1>
               {category?.description && (
-                <p className="text-muted mt-2">{category.description}</p>
+                <p className="text-muted mt-2 category-description">{category.description}</p>
               )}
             </div>
           </div>

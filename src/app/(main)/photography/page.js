@@ -90,10 +90,10 @@ async function page() {
   // --- SCHEMA CLEANING LOGIC END ---
 
 
-  const heading = "Where Brands Are Born";
-  const subHeading = "A Creative Branding Agency";
+  const heading = "Capturing creativity in every frame";
+  const subHeading = "A modern photography studio focused on creativity";
   const para =
-    "  Successful brands are not made in a day. They are a result of consistent hard work, perseverance and unwavering passion. Long-term vision, strategy and creativity are pivotal too. Lots of work and lots of dedication are required. This is why you need the services of a branding & design agency like us. Let’s walk you through our services and inform you of our capabilities and approach. If there are questions in your mind, check out our FAQs section. Alternatively, reach out to us and we will promptly answer them.";
+    "  Exceptional photography requires time, dedication, and a deep understanding of light, composition, and emotion. That’s where we come in. As a professional photography studio, we work closely with our clients to capture authentic moments and compelling visuals that leave a lasting impression. Let us take you through our photography services and showcase our capabilities, style, and creative process. If you have any questions, feel free to explore our FAQs section. Alternatively, reach out to us anytime—we’ll be happy to assist you.";
 
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
@@ -129,7 +129,7 @@ async function page() {
         <div className="container">
           <div className="row photography-image-img">
             <img
-              src="https://dndesigns.co.in/wp-content/uploads/2019/02/Neha-Secretary-Look-2-scaled.jpg"
+              src="https://dndesigns.co.in/uploads/pages/sahbdnvnbn.webp"
               className="img-fluid"
             />
           </div>
@@ -144,12 +144,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
-                  <h3>Discovery & Planning</h3>
+                  <h3>Portrait Photography</h3>
                   <p>
-                    The fundamentals come first - understanding the product, its
-                    USP, the brand’s vision, its target audience and
-                    competitors. Solid research leads to a solid foundation upon
-                    which we base our strategic plan.
+                    Our portrait photography focuses on personality, expression, and confidence, using creative lighting and composition to deliver natural, elegant portraits that reflect individuality, emotion, and style for personal or professional use.
                   </p>
                 </div>
               </div>
@@ -158,12 +155,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className="app-pro-div app-pro-div-gray">
                 <div>
-                  <h3>Design, Development & Execution</h3>
+                  <h3>Commercial & Product Photography</h3>
                   <p>
-                    Designing and developing practical options follows. A
-                    crucial aspect of this step is revision and refinement. We
-                    work on and modify our designs to ensure they match your
-                    vision.
+                    We create impactful commercial and product photographs that highlight details, texture, and brand identity, helping businesses showcase products professionally, attract customers, and build trust through clean, creative visuals.
                   </p>
                 </div>
               </div>
@@ -172,12 +166,10 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
-                  <h3>Testing & Launch</h3>
+                  <h3>Event & Lifestyle Photography
+</h3>
                   <p>
-                    Once everything is ready, it’s time to test it. For us,
-                    testing is important both before and after the product
-                    launch. This is to ensure that everything works smoothly at
-                    both stages.
+                   From corporate events to lifestyle shoots, we document real moments and interactions with a candid approach, capturing energy, atmosphere, and storytelling visuals that communicate experiences naturally and memorably.
                   </p>
                 </div>
               </div>
@@ -186,11 +178,10 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-gray">
                 <div>
-                  <h3>Ongoing Support</h3>
+                  <h3>Fashion & Editorial Photography
+</h3>
                   <p>
-                    We provide our clients with ongoing support even after the
-                    project is over. If you face problems post-completion of the
-                    work, we are there to resolve them.
+                    Our fashion and editorial photography blends concept, styling, and creative direction to produce striking visuals, capturing trends, attitude, and storytelling imagery designed for magazines, campaigns, portfolios, and digital platforms.
                   </p>
                 </div>
               </div>
@@ -205,30 +196,30 @@ async function page() {
           <div className="row organic-sessions-row">
             <div className="col-12 col-md-3 organic-sessions-col">
               <h3>
-                <AutoCounter target={150} />%
+                <AutoCounter target={200} />+
               </h3>
-              <p>Organic Sessions (6 mo)</p>
+              <p>Projects Completed</p>
             </div>
 
             <div className="col-12 col-md-3 organic-sessions-col">
               <h3>
-                <AutoCounter target={150} />%
+                <AutoCounter target={7} />+
               </h3>
-              <p>Organic Sessions (6 mo)</p>
+              <p>Years Professional Experience</p>
             </div>
 
             <div className="col-12 col-md-3 organic-sessions-col">
               <h3>
-                <AutoCounter target={150} />%
+                <AutoCounter target={250} />+
               </h3>
-              <p>Organic Sessions (6 mo)</p>
+              <p>Happy Clients</p>
             </div>
 
             <div className="col-12 col-md-3 organic-sessions-col">
               <h3>
-                <AutoCounter target={150} />%
+                <AutoCounter target={100} />%
               </h3>
-              <p>Organic Sessions (6 mo)</p>
+              <p>Client Satisfaction</p>
             </div>
           </div>
         </div>
@@ -240,19 +231,16 @@ async function page() {
           <div className="row">
             <div className="col">
               <div className="visual-stories-that-content">
-                <h3>Crafting visual stories that drive business impact.</h3>
+                <h3>Food Product Photography
+</h3>
                 <p>
-                  Commercial photography at DN Designs is tailored to elevate
-                  brand presence through clean, professional imagery. From
-                  corporate portraits to product showcases and promotional
-                  shoots, the focus is on delivering visuals that speak directly
-                  to target audiences.{" "}
+                 Our food product photography highlights texture, freshness, and detail through carefully styled compositions and professional lighting. We create visually appetizing images that enhance brand appeal, attract customers, and communicate quality across websites, menus, packaging, and marketing campaigns.{" "}
                 </p>
               </div>
             </div>
             <div className="col">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2019/02/flat-lay-nazakat-1-1.jpg"
+                src="https://dndesigns.co.in/uploads/pages/TDG02954.webp"
                 className="img-fluid"
               ></img>
             </div>
@@ -266,19 +254,16 @@ async function page() {
           <div className="row">
             <div className="col">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2019/02/flat-lay-nazakat-1-1.jpg"
+                src="https://dndesigns.co.in/uploads/pages/Neha-Secretary-Look-2-scaled.webp"
                 className="img-fluid"
               ></img>
             </div>
             <div className="col">
               <div className="visual-stories-that-content">
-                <h3>Crafting visual stories that drive business impact.</h3>
+                <h3>Fashion Model Photography
+</h3>
                 <p>
-                  Commercial photography at DN Designs is tailored to elevate
-                  brand presence through clean, professional imagery. From
-                  corporate portraits to product showcases and promotional
-                  shoots, the focus is on delivering visuals that speak directly
-                  to target audiences.{" "}
+                 Our fashion model photography captures confidence, style, and personality through creative direction, professional lighting, and refined compositions. We produce striking visuals that enhance portfolios, support brand campaigns, and showcase individuality across editorials, lookbooks, social media, and advertising platforms.{" "}
                 </p>
               </div>
             </div>
@@ -292,19 +277,16 @@ async function page() {
           <div className="row">
             <div className="col">
               <div className="visual-stories-that-content">
-                <h3>Crafting visual stories that drive business impact.</h3>
+                <h3>Jewellery Photography
+</h3>
                 <p>
-                  Commercial photography at DN Designs is tailored to elevate
-                  brand presence through clean, professional imagery. From
-                  corporate portraits to product showcases and promotional
-                  shoots, the focus is on delivering visuals that speak directly
-                  to target audiences.{" "}
+                 Our jewellery photography emphasizes brilliance, craftsmanship, and fine details using precise lighting and elegant compositions. We create luxurious visuals that highlight textures, stones, and finishes, helping brands elevate presentation, attract customers, and build trust across catalogs, websites, and marketing campaigns.{" "}
                 </p>
               </div>
             </div>
             <div className="col">
               <img
-                src="https://dndesigns.co.in/wp-content/uploads/2019/02/flat-lay-nazakat-1-1.jpg"
+                src="https://dndesigns.co.in/uploads/pages/qwhjehbjbhjbh.webp"
                 className="img-fluid"
               ></img>
             </div>
