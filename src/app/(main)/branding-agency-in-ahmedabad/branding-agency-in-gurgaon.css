@@ -6,14 +6,14 @@
     background-color: #ca2734;
     height: 100%;
     color: #fff;
-    padding: 40px;
+    padding: 20px 20px 20px 20px;
     border-radius: 10px;
 }
 
 .content-box-city-page h2{
     color: #fff;
     font-family: "Corbert";
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -21,6 +21,8 @@
     color: #fff;
     font-family: "Roboto";
     font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .image-box-city-page{
@@ -30,8 +32,22 @@
     border-radius: 10px;
 }
 
+@media(max-width:1399.68px){
+    .content-box-city-page h2{
+        font-size: 28px;
+    }
+    .content-box-city-page p{
+        font-size: 16px;
+    }
+}
+
 @media(max-width:1200){
     .image-box-city-page{
     margin: 20px 0;
 }
+}
+
+.mobile-casestudy-wrapper-link {
+  text-decoration: none;
+  color: #000;
 }

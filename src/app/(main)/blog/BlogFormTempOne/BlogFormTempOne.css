@@ -1,5 +1,5 @@
 .BlogFormTempOne{
-        padding: 10px;
+        /* padding: 10px; */
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
 }
@@ -28,4 +28,30 @@ input, textarea{
     transition: 0.5s;
     letter-spacing: 0.1px;
     font-family: "Roboto";
+}
+
+.blog-form-srip{
+    background-color: #ca2734;
+    padding: 15px 10px;
+}
+
+.blog-form-srip h3{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Corbert";
+}
+
+.blog-form-srip p{
+    font-size: 18px;    
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.blog-form-srip h3, .blog-form-srip p{
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+.grop-form-below-strip{
+    margin-top: 15px;
+    padding: 20px;
 }
