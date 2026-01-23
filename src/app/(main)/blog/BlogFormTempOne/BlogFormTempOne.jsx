@@ -92,6 +92,12 @@ function BlogFromTempOne() {
 
   return (
     <form className="BlogFormTempOne" onSubmit={handleSubmit}>
+    <div className="blog-form-srip">
+    <h3 className="text-center">Book a Free Consultation </h3>
+    <p className="text-center">For Your Branding and Design Requirements.</p>
+    </div>
+
+    <div className="grop-form-below-strip">
       {/* NAME + MOBILE */}
       <div className="input-grp">
         <div style={{ width: "50%", paddingRight: "10px" }}>
@@ -113,6 +119,7 @@ function BlogFromTempOne() {
           />
         </div>
       </div>
+      
 
       {/* EMAIL */}
       <div style={{ marginTop: "15px" }}>
@@ -146,6 +153,7 @@ function BlogFromTempOne() {
         <button className="sbmt-button-blog-frm" type="submit">
           {btn}
         </button>
+      </div>
       </div>
     </form>
   );

@@ -1,76 +1,92 @@
-/* Container */
-.creative-brochure {
-  padding: 60px 0;
+.citypagesswipper-h2{
+  font-size: 35px;
+  font-family: "Corbert";
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.creative-brochure h2 {
-  margin-bottom: 40px;
+.citypagesswipper{
+  padding: 40px 0;
 }
 
-/* Card */
-.service-sli {
+.citypagewiper-slide {
   position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 5;   
   overflow: hidden;
-  border: 1px solid #D8D5D5;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  background: #000;
 }
 
-/* Image */
-.service-sli img {
+.citypagewiper-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+/* image */
+.citypagewiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Overlay */
-.service-sli-overlay {
+/* overlay */
+.cityswiperoverlay {
   position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.service-sli:hover .service-sli-overlay {
-  opacity: 1;
-}
-
-/* Overlay Content */
-.service-sli-overlay-box {
-  position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: #000;
   color: #fff;
-  padding: 16px;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
+  padding: 20px;
+  height: 70px;                
+  transition: height 0.4s ease;
+  overflow: hidden;            
 }
 
-.service-sli:hover .service-sli-overlay-box {
+/* heading */
+.cityswiperoverlay h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  transition: transform 0.4s ease;
+  font-family: "Corbert";
+}
+
+
+.cityswiperoverlay p {
+  font-size: 16px;
+  margin-top: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  font-family: "ROboto";
+}
+
+
+.citypagewiper-slide:hover .cityswiperoverlay {
+  height: 40%;                
+}
+
+.citypagewiper-slide:hover h3 {
+  transform: translateY(-10px);
+}
+
+.citypagewiper-slide:hover p {
+  opacity: 1;
   transform: translateY(0);
 }
 
-.service-sli-overlay-title {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
+@media(max-width:1399px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 60%;                
+}
 }
 
-.service-sli-Pras {
-  font-size: 14px;
-  line-height: 1.5;
+@media(max-width:1399px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 60%;                
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-  .service-sli {
-    aspect-ratio: 3 / 4;
-  }
 }

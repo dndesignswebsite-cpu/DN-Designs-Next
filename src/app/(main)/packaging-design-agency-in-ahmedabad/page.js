@@ -288,7 +288,7 @@ async function page() {
               </div>
             </li>
             </Link>
-            <Link href="/grin-care-case-study">
+            <Link href="/grincare-case-study">
             <li className={`${styles["card"]} ${styles["card-4"]}`}>
               <div
                 className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -327,7 +327,7 @@ async function page() {
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
             </h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
-            <Link href="/enlite-case-study">
+            <Link href="/enlite-case-study" className="mobile-casestudy-wrapper-link">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
@@ -373,14 +373,14 @@ async function page() {
                 </div>
               </div>
               </Link>
-              <Link href="/wlues-case-study">
+              <Link href="/wlues-case-study" className="mobile-casestudy-wrapper-link">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <video className="img-fluid" autoPlay muted loop playsInline>
                     <source
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
+                      src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -428,13 +428,13 @@ async function page() {
                 </div>
               </div>
               </Link>
-              <Link href="/nectarpure-case-study">
+              <Link href="/nectarpure-case-study" className="mobile-casestudy-wrapper-link">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                    src={imageUrl + "grin care case study.webp"}
+                    src={imageUrl + "nectarpure case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
@@ -475,13 +475,14 @@ async function page() {
                 </div>
               </div>
               </Link>
-              <Link href="/grin-care-case-study">
+              <Link href="/grincare-case-study" className="mobile-casestudy-wrapper-link">
               <div
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                   <img
-                    src={imageUrl + "nectarpure case study.webp"}
+                    
+                    src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
                   />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
@@ -561,7 +562,7 @@ async function page() {
             </div>
           </div>
 
-          <div className="row mt-5">
+          <div className="row flex-column-reverse flex-xl-row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img
