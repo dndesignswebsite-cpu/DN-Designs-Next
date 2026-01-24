@@ -229,10 +229,9 @@ async function page() {
       <section className="visual-stories-that">
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-md-12 col-lg-6">
               <div className="visual-stories-that-content">
-                <h3>Food Product Photography
-</h3>
+                <h3>Food Product Photography</h3>
                 <p>
                  Our food product photography highlights texture, freshness, and detail through carefully styled compositions and professional lighting. We create visually appetizing images that enhance brand appeal, attract customers, and communicate quality across websites, menus, packaging, and marketing campaigns.{" "}
                 </p>
@@ -251,8 +250,8 @@ async function page() {
       {/* Crafting visual stories that drive business impact. */}
       <section className="visual-stories-that">
         <div className="container">
-          <div className="row">
-            <div className="col">
+          <div className="row flex-column-reverse flex-lg-row">
+            <div className="col-12 col-md-12 col-lg-6">
               <img
                 src="https://dndesigns.co.in/uploads/pages/Neha-Secretary-Look-2-scaled.webp"
                 className="img-fluid"
@@ -260,8 +259,7 @@ async function page() {
             </div>
             <div className="col">
               <div className="visual-stories-that-content">
-                <h3>Fashion Model Photography
-</h3>
+                <h3>Fashion Model Photography</h3>
                 <p>
                  Our fashion model photography captures confidence, style, and personality through creative direction, professional lighting, and refined compositions. We produce striking visuals that enhance portfolios, support brand campaigns, and showcase individuality across editorials, lookbooks, social media, and advertising platforms.{" "}
                 </p>
@@ -275,10 +273,9 @@ async function page() {
       <section className="visual-stories-that">
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-md-12 col-lg-6">
               <div className="visual-stories-that-content">
-                <h3>Jewellery Photography
-</h3>
+                <h3>Jewellery Photography</h3>
                 <p>
                  Our jewellery photography emphasizes brilliance, craftsmanship, and fine details using precise lighting and elegant compositions. We create luxurious visuals that highlight textures, stones, and finishes, helping brands elevate presentation, attract customers, and build trust across catalogs, websites, and marketing campaigns.{" "}
                 </p>

@@ -103,9 +103,9 @@ function BlogPage() {
                       )}
 
                       <div className="row post-details">
-                        <div className="posted-by col d-flex">
+                        <div className="posted-by col d-md-flex">
                           <p className="sstatic">Posted By :</p>
-                          <p className="dyna">{blog.authorName}</p>
+                          <p className="dyna mobile-fix-blog-name">{blog.authorName}</p>
                         </div>
 
                         <div className="category col d-flex">

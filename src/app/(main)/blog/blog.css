@@ -20,6 +20,14 @@
   font-weight: 400;
 }
 
+@media(max-width:767px){
+.mobile-fix-blog-name{
+  margin:-15px 0px 5px -5px;
+  padding: 0;
+}
+}
+
+
 .dyna {
   font-size: 14px;
   color: #ca2734;
