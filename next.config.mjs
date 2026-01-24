@@ -1281,6 +1281,21 @@ const nextConfig = {
         destination: "/branding",
         permanent: true, // 301
       },
+      
+        {
+        //192
+        source: "/blog/whey-protein-logo-and-label-design",
+        destination: "/blog/whey-protein-label-design",
+        permanent: true, // 301
+      },
+
+
+        {
+        //193
+        source: "/thames-food-packaging-working",
+        destination: "/blog/food-packaging-design",
+        permanent: true, // 301
+      },
 
       // {
       //   source: "/temp-page",
@@ -1291,4 +1306,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default nextConfig; 

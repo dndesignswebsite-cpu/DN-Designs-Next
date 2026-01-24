@@ -574,7 +574,7 @@ async function page() {
             </div>
           </div>
 
-          <div className="row flex-column-reverse flex-xl-rowmt-5">
+          <div className="row flex-column-reverse flex-xl-row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 <img src={imageUrl + "city-2.webp"} className="img-fluid" />
