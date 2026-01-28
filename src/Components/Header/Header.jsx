@@ -612,7 +612,7 @@ const toggleNav = () => {
                   </h3>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-3`}>
+                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
                   <Image
                     src="/phone.svg"
                     alt="Phone"
@@ -625,17 +625,17 @@ const toggleNav = () => {
                     {/* <p>+91 941 601 1100</p>
                     <p>+91 720 660 5872</p> */}
 
-                    <p>
+                    <p className={`${styles["header-desktop-mobile-number"]}`}>
                       <a href="tel:+919416011100">+91 941 601 1100</a>
                     </p>
 
-                    <p>
+                    <p className={`${styles["header-desktop-mobile-number"]}`}>
                       <a href="tel:+917206605872">+91 720 660 5872</a>
                     </p>
                   </div>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-3`}>
+                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
                   <Image
                     src="/Email.svg"
                     alt="Phone"
@@ -654,7 +654,7 @@ const toggleNav = () => {
                   </div>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-3`}>
+                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
                   <Image
                     src="/Address.svg"
                     alt="Phone"
@@ -671,7 +671,7 @@ const toggleNav = () => {
                   </div>
                 </div>
 
-                <div className="col-3">
+                <div className="col-12 col-md-6 col-lg-3">
                   <div className={`${styles["contact-us-col"]}`}>
                     <div
                       className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}

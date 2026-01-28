@@ -58,6 +58,8 @@ export const getAllBlogs = async (
     page: pagination.page,
     limit: pagination.limit,
     select: "-content",
+    // for sorting by published date
+    sort: { publishedAt: -1, createdAt: -1 }, 
   };
 
   if (currentUser?.role === "admin" && filters.sortBy) {
