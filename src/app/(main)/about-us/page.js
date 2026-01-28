@@ -299,7 +299,14 @@ async function page() {
                 </span>
               </h2>
             </div>
-            <img src={imageUrl + "Team.webp"} className="img-fluid" />
+            {/* <img src={imageUrl + "Team.webp"} className="img-fluid" /> */}
+            <Image
+                src={imageUrl + "Team.webp"}
+                alt="blog"
+                width={1600}
+                height={1973}
+                className="responsive-img"
+              />
           </div>
         </div>
       </section>
@@ -310,7 +317,14 @@ async function page() {
         <div className="container point-cont">
           <div className="row points-about-row">
             <div className="col-3 points-about-left">
-              <img src={imageUrl + "350x1100.webp"} />
+              {/* <img src={imageUrl + "350x1100.webp"} /> */}
+                <Image
+                src={imageUrl + "350x1100.webp"}
+                alt="blog"
+                width={350}
+                height={1100}
+                className="responsive-img points-about-left-img"
+              />
             </div>
             <div className="col-12 col-md-12 col-lg-9 points-about-right">
               <div className="points-about row">

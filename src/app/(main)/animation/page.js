@@ -12,6 +12,7 @@ import ExploreOurVideoAnimation from "@/Components/ExploreOurVideoAnimation/Expl
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -600,27 +601,60 @@ async function page() {
             <p>Spark Interest & Build Engagement</p>
             <div className="col-12 col-md-6 ">
               <div className="horror-image-col">
-                <img
+                {/* <img
                   src={imageUrl + "animation 1.webp"}
                   className="img-fluid horror-img"
-                ></img>
-                <img
+                ></img> */}
+                  <Image
+               src={imageUrl + "animation 1.webp"}
+                alt="blog"
+                width={1500}
+                height={1000}
+                className="responsive-img horror-img"
+              />
+                {/* <img
                   src={imageUrl + "animation 11.webp"}
                   className="img-fluid normal-img"
-                ></img>
+                ></img> */}
+
+                  <Image
+               src={imageUrl + "animation 11.webp"}
+                alt="blog"
+                width={1500}
+                height={1000}
+                className="responsive-img normal-img"
+              />
               </div>
             </div>
 
             <div className="col-12 col-md-6  ">
               <div className="horror-image-col">
-                <img
+                {/* <img
                   src={imageUrl + "animation 2.webp"}
                   className="img-fluid horror-img"
-                ></img>
-                <img
+                ></img> */}
+
+                   <Image
+               src={imageUrl + "animation 2.webp"}
+                alt="blog"
+                width={1500}
+                height={1000}
+                className="responsive-img horror-img"
+              />
+
+
+                {/* <img
                   src={imageUrl + "animation22.webp"}
                   className="img-fluid normal-img"
-                ></img>
+                ></img> */}
+
+                 <Image
+               src={imageUrl + "animation22.webp"}
+                alt="blog"
+                width={1500}
+                height={1000}
+                className="responsive-img normal-img"
+              />
               </div>
             </div>
           </div>
@@ -657,13 +691,24 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-2">
               <div className="user-engagement-div">
-                <img
+                {/* <img
                   src={
                     imageUrl +
                     "172356855_ae84189b-ee2b-40e9-8ad6-4b3c9585df84.webp"
                   }
                   className="user-engagement-div-mid-img"
-                ></img>
+                ></img> */}
+
+                 <Image
+               src={
+                    imageUrl +
+                    "172356855_ae84189b-ee2b-40e9-8ad6-4b3c9585df84.webp"
+                  }
+                alt="animation-page"
+                width={1000}
+                height={1100}
+                className="responsive-img user-engagement-div-mid-img"
+              />
               </div>
             </div>
 

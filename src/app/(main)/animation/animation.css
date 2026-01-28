@@ -393,3 +393,10 @@ padding: 20px;
     font-size:40px;
     color: #000;
 }
+
+/* image  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

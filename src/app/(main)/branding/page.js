@@ -13,6 +13,7 @@ import HorizontalScroll from "@/Components/HorizontalScroll/HorizontalScroll";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
