@@ -11,6 +11,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -473,33 +474,65 @@ async function page() {
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3">
                   <div className="winning-brand-companies">
-                    <img
+                    {/* <img
                       src={imageUrl + "fluke logo.webp"}
                       className="img-fluid"
+                    /> */}
+
+                    <Image
+                       src={imageUrl + "fluke logo.webp"}
+                      alt="brand-name-suggestion"
+                      width={750}
+                      height={750}
+                      className="responsive-img"
                     />
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                   <div className="winning-brand-companies">
-                    <img
+                    {/* <img
                       src={imageUrl + "miviq logom.webp"}
                       className="img-fluid"
+                    /> */}
+
+                     <Image
+                       src={imageUrl + "miviq logom.webp"}
+                      alt="brand-name-suggestion"
+                      width={750}
+                      height={750}
+                      className="responsive-img"
                     />
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                   <div className="winning-brand-companies">
-                    <img
+                    {/* <img
                       src={imageUrl + "mr-bomzy logo.webp"}
                       className="img-fluid"
+                    /> */}
+
+                     <Image
+                       src={imageUrl + "mr-bomzy logo.webp"}
+                      alt="brand-name-suggestion"
+                      width={750}
+                      height={750}
+                      className="responsive-img"
                     />
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3">
                   <div className="winning-brand-companies">
-                    <img
+                    {/* <img
                       src={imageUrl + "bobalist logo.webp"}
                       className="img-fluid"
+                    /> */}
+
+                    <Image
+                       src={imageUrl + "bobalist logo.webp"}
+                      alt="brand-name-suggestion"
+                      width={750}
+                      height={750}
+                      className="responsive-img"
                     />
                   </div>
                 </div>
