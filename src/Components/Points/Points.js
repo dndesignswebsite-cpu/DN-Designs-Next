@@ -1,5 +1,6 @@
 import React from "react";
 import "./Points.css";
+import Image from "next/image";
 
 function Points() {
   return (
@@ -10,7 +11,15 @@ function Points() {
         <div className="container point-cont">
           <div className="row points-row">
             <div className="col-3 points-left">
-              <img src="https://dndesigns.co.in/uploads/pages/350x1100.webp" />
+              {/* <img src="https://dndesigns.co.in/uploads/pages/350x1100.webp" /> */}
+
+              <Image
+                src="https://dndesigns.co.in/uploads/pages/350x1100.webp"
+                alt="blog"
+                width={350}
+                height={1101}
+                className="responsive-img"
+              />
             </div>
             <div className="col-12 col-md-12 col-lg-9 points-right">
               <div className="points row">

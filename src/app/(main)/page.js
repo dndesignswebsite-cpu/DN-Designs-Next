@@ -10,6 +10,7 @@ import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 import Script from "next/script";
 import Link from 'next/link';
+import Image from "next/image";
 
 // schema
 // HOME PAGE SCHEMA
@@ -141,14 +142,32 @@ export default function Home() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              <img
+              {/* <img
                 src={imageUrl + "gkjeg.webp"}
                 className={`${styles["hero-bg-img"]}`}
-              ></img>
-              <img
+              ></img> */}
+
+              <Image 
+                src={imageUrl + "gkjeg.webp"}
+                className={`${styles["hero-bg-img"]} ${styles["responsive-img"]}`}
+                alt="home page image"
+                width={1000}
+                height={1000}
+                />
+
+              {/* <img
                 src={imageUrl + "hgefef.webp"}
                 className={`${styles["hero-img-main"]}`}
-              ></img>
+              ></img> */}
+
+               <Image 
+               src={imageUrl + "hgefef.webp"}
+                className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
+                alt="home page image"
+                width={700}
+                height={700}
+                />
+
             </div>
           </div>
         </div>
@@ -313,10 +332,18 @@ export default function Home() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                     src={imageUrl + "enlite main graphic.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+
+                  <Image 
+               src={imageUrl + "enlite main graphic.webp"}
+                className={`${styles["responsive-img"]}`}
+                alt="home page image"
+                width={1500}
+                height={1000}
+                />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
@@ -417,10 +444,18 @@ export default function Home() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                   src={imageUrl + "nectarpure case study.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image 
+               src={imageUrl + "nectarpure case study.webp"}
+                className={`${styles["responsive-img"]}`}
+                alt="home page image"
+                width={1500}
+                height={1000}
+                />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
@@ -466,10 +501,17 @@ export default function Home() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                     src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image 
+               src={imageUrl + "grin care case study.webp"}
+                className={`${styles["responsive-img"]}`}
+                alt="home page image"
+                width={1500}
+                height={1000}
+                />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}

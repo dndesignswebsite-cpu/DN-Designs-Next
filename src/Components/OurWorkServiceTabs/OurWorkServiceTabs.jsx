@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./OurWorkServiceTabs.css";
+import Image from "next/image";
 
 export default function OurWorkServiceTabs() {
   const [activeTab, setActiveTab] = useState("Branding");
@@ -65,38 +66,74 @@ export default function OurWorkServiceTabs() {
                 <div id="Branding" className="tabcontent">
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
-                      <img
+                      {/* <img
                         src={imageUrl + "i orgainc gif.gif"}
                         className="img-fluid tab-img"
-                      ></img>
+                      ></img> */}
+
+                      <Image
+                        src={imageUrl + "i orgainc gif.gif"}
+                        alt="blog"
+                        width={1500}
+                        height={1000}
+                        className="responsive-img tab-img"
+                      />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "enlite graphic.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "enlite graphic.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "smartyums_GIf.gif"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "smartyums_GIf.gif"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "nature-balance (1).webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "nature-balance (1).webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "nectarpure-2.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "nectarpure-2.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                     </div>
@@ -108,38 +145,74 @@ export default function OurWorkServiceTabs() {
                 <div id="Packaging Design" className="tabcontent">
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
-                      <img
+                      {/* <img
                         src={imageUrl + "greenhorn-manu.webp"}
                         className="img-fluid tab-img"
-                      ></img>
+                      ></img> */}
+                      <Image
+                        src={imageUrl + "greenhorn-manu.webp"}
+                        alt="blog"
+                        width={1500}
+                        height={1000}
+                        className="responsive-img tab-img"
+                      />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "BObalist.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "BObalist.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "thames.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "thames.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "kalprishi.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "kalprishi.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "Wlues graphic.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "Wlues graphic.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                     </div>
@@ -151,38 +224,76 @@ export default function OurWorkServiceTabs() {
                 <div id="Brand Identity" className="tabcontent">
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
-                      <img
+                      {/* <img
                         src={imageUrl + "wehgdwej.webp"}
                         className="img-fluid tab-img"
-                      ></img>
+                      ></img> */}
+                      <Image
+                        src={imageUrl + "wehgdwej.webp"}
+                        alt="blog"
+                        width={1500}
+                        height={1000}
+                        className="responsive-img tab-img"
+                      />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "nature-balance-22.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "nature-balance-22.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "deeproot-3.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "deeproot-3.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "logo-mock-up.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "logo-mock-up.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "luxmi-cars.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "luxmi-cars.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                     </div>
@@ -194,38 +305,76 @@ export default function OurWorkServiceTabs() {
                 <div id="Website Development" className="tabcontent">
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
-                      <img
+                      {/* <img
                         src={imageUrl + "web-vihaan.webp"}
                         className="img-fluid tab-img"
-                      ></img>
+                      ></img> */}
+                      <Image
+                        src={imageUrl + "web-vihaan.webp"}
+                        alt="blog"
+                        width={1500}
+                        height={1000}
+                        className="responsive-img tab-img"
+                      />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "5.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "5.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "2.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "2.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "Qualiteq-image.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "Qualiteq-image.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "mr-bomzy-2-1.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "mr-bomzy-2-1.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                     </div>
@@ -237,38 +386,74 @@ export default function OurWorkServiceTabs() {
                 <div id="CGI Ads" className="tabcontent">
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
-                      <img
+                      {/* <img
                         src={imageUrl + "3.webp"}
                         className="img-fluid tab-img"
-                      ></img>
+                      ></img> */}
+                      <Image
+                        src={imageUrl + "3.webp"}
+                        alt="blog"
+                        width={1500}
+                        height={1000}
+                        className="responsive-img tab-img"
+                      />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "Natures-Balance-3D.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+
+                          <Image
+                            src={imageUrl + "Natures-Balance-3D.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "EAU.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "EAU.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "greenhorn-THUMB.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "greenhorn-THUMB.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                         <div className="col-6">
-                          <img
+                          {/* <img
                             src={imageUrl + "foodsure-thumb.webp"}
                             className="img-fluid tab-img"
-                          ></img>
+                          ></img> */}
+                          <Image
+                            src={imageUrl + "foodsure-thumb.webp"}
+                            alt="blog"
+                            width={1500}
+                            height={1000}
+                            className="responsive-img tab-img"
+                          />
                         </div>
                       </div>
                     </div>

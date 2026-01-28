@@ -12,7 +12,7 @@
 .our-constant-comapny-heqadg-red{
   color: #ca2734;
 }
-.companies img {
+.companies-img {
   width: 150px;
   margin: 10px;
   border-radius: 8px;
@@ -25,7 +25,7 @@
   margin-top: 20px;  
 }
 
-.companies img:hover {
+.companies-img:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -87,3 +87,10 @@
   font-family: var(--font-corbert-bold);
   }
 }
+
+
+/* image  */
+/* .responsive-img {
+  width: 100%;
+  height: auto;
+} */

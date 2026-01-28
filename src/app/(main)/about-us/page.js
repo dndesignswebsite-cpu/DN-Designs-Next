@@ -14,6 +14,8 @@ import { notFound } from "next/navigation";
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
+
 
 // meta data
 export async function generateMetadata() {
@@ -136,11 +138,17 @@ async function page() {
         <div className="container">
           <div className="row projects-completed-main-row">
             <div className="col-12 col-md-12 col-lg-6">
-              <img
-                // src="https://dndesigns.co.in/wp-content/uploads/2025/07/ghfh.jpg"
-
+              {/* <img
                 src={imageUrl + "ghfh.webp"}
                 className="img-fluid"
+              /> */}
+              
+              <Image
+                src={imageUrl + "ghfh.webp"}
+                alt="blog"
+                width={1500}
+                height={1400}
+                className="responsive-img"
               />
             </div>
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">

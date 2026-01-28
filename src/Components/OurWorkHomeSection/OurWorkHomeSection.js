@@ -1,5 +1,6 @@
 import OurWorkToggle from "./OurWorkToggle";
 import "./OurWorkHomeSection.css";
+import Image from "next/image";
 
 export default function OurWorkHomeSection() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
@@ -15,7 +16,16 @@ export default function OurWorkHomeSection() {
           <div className="row our-work-row">
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
-                <img src={imageUrl + "enlite graphic.webp"} alt="demo" />
+                {/* <img src={imageUrl + "enlite graphic.webp"} alt="demo" /> */}
+
+                <Image
+                  src={imageUrl + "enlite graphic.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Rithm's Enlite</div>
@@ -25,7 +35,15 @@ export default function OurWorkHomeSection() {
             </div>
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont ">
-                <img src={imageUrl + "nectarpure graphic.webp"} alt="demo" />
+                {/* <img src={imageUrl + "nectarpure graphic.webp"} alt="demo" /> */}
+
+                 <Image
+                  src={imageUrl + "nectarpure graphic.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">NectarPure</div>
@@ -35,7 +53,15 @@ export default function OurWorkHomeSection() {
             </div>
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont">
-                <img src={imageUrl + "thames-graphic.webp"} alt="demo" />
+                {/* <img src={imageUrl + "thames-graphic.webp"} alt="demo" /> */}
+
+                <Image
+                  src={imageUrl + "thames-graphic.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Thames</div>
@@ -64,7 +90,15 @@ export default function OurWorkHomeSection() {
             </div>
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
-                <img src={imageUrl + "nature-balance (1).webp"} alt="demo" />
+                {/* <img src={imageUrl + "nature-balance (1).webp"} alt="demo" /> */}
+
+                 <Image
+                  src={imageUrl + "nature-balance (1).webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Nature's Balance</div>
@@ -74,7 +108,15 @@ export default function OurWorkHomeSection() {
             </div>
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont">
-                <img src={imageUrl + "VEIKK.webp"} alt="demo" />
+                {/* <img src={imageUrl + "VEIKK.webp"} alt="demo" /> */}
+
+                 <Image
+                  src={imageUrl + "VEIKK.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Veikk</div>
@@ -87,7 +129,15 @@ export default function OurWorkHomeSection() {
           <div className="row our-work-row">
             <div className="col-sm-12 col-md-6">
               <div className="imag-cont">
-                <img src={imageUrl + "greenhorn-manu.webp"} alt="demo" />
+                {/* <img src={imageUrl + "greenhorn-manu.webp"} alt="demo" /> */}
+
+                <Image
+                  src={imageUrl + "greenhorn-manu.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Green Horn</div>
@@ -97,7 +147,14 @@ export default function OurWorkHomeSection() {
             </div>
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
-                <img src={imageUrl + "kalprishi.webp"} alt="demo" />
+                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
+                 <Image
+                  src={imageUrl + "kalprishi.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                 <div className="overlay"></div>
                 <div className="overlay-box">
                   <div className="overlay-title">Kalprishi</div>
@@ -115,10 +172,18 @@ export default function OurWorkHomeSection() {
             <div className="row our-work-row">
               <div className="col-sm-12 col-md-6">
                 <div className="imag-cont">
-                  <img
+                  {/* <img
                     src={imageUrl + "the bobalist website.webp"}
                     alt="demo"
-                  />
+                  /> */}
+
+                   <Image
+                  src={imageUrl + "the bobalist website.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">The Bobalist</div>
@@ -128,7 +193,14 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                  <img src={imageUrl + "i organic.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "i organic.webp"} alt="demo" /> */}
+                   <Image
+                  src={imageUrl + "i organic.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">iOrganic</div>
@@ -138,7 +210,14 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                  <img src={imageUrl + "koshish.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "koshish.webp"} alt="demo" /> */}
+                    <Image
+                 src={imageUrl + "koshish.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">Koshish</div>
@@ -151,7 +230,15 @@ export default function OurWorkHomeSection() {
             <div className="row our-work-row">
               <div className="col-sm-12 col-md-3">
                 <div className="imag-cont">
-                  <img src={imageUrl + "Deeproot logo.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "Deeproot logo.webp"} alt="demo" /> */}
+
+                   <Image
+                 src={imageUrl + "Deeproot logo.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">Deeproot</div>
@@ -177,7 +264,15 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                  <img src={imageUrl + "smartyums graphic.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "smartyums graphic.webp"} alt="demo" /> */}
+
+                   <Image
+                 src={imageUrl + "smartyums graphic.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">Smart Yums</div>
@@ -190,7 +285,14 @@ export default function OurWorkHomeSection() {
             <div className="row our-work-row">
               <div className="col-sm-12 col-md-6">
                 <div className="imag-cont">
-                  <img src={imageUrl + "Wlues graphic.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "Wlues graphic.webp"} alt="demo" /> */}
+                    <Image
+                 src={imageUrl + "Wlues graphic.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">Wlue's</div>
@@ -200,7 +302,15 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-6 our-work-div-unit">
                 <div className="imag-cont">
-                  <img src={imageUrl + "i orgainc gif.gif"} alt="demo" />
+                  {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
+
+                    <Image
+                 src={imageUrl + "i orgainc gif.gif"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">iOrganic</div>
@@ -229,7 +339,15 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                  <img src={imageUrl + "DAVID graphic.webp"} alt="demo" />
+                  {/* <img src={imageUrl + "DAVID graphic.webp"} alt="demo" /> */}
+
+                      <Image
+                 src={imageUrl + "DAVID graphic.webp"} 
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">David Morris</div>
