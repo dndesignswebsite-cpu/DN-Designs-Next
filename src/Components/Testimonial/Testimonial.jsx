@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import "./Testimonial.css";
+import Image from "next/image";
 
 function Testimonial() {
   return (
@@ -58,10 +59,18 @@ function Testimonial() {
                       </div>
 
                       <div className="col-6 col-md-4 col-lg-4 testi-main-img">
-                        <img
+                        {/* <img
                           src="https://dndesigns.co.in/uploads/pages/Bhagwat aggarwal client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
+                        /> */}
+
+                        <Image
+                          src="https://dndesigns.co.in/uploads/pages/Bhagwat aggarwal client.webp"
+                          alt="testinomial"
+                          width={500}
+                          height={700}
+                          className="responsive-img"
                         />
                       </div>
 
@@ -124,10 +133,18 @@ function Testimonial() {
                       </div>
 
                       <div className="col-6 col-md-4 testi-main-img">
-                        <img
+                        {/* <img
                           src="https://dndesigns.co.in/uploads/pages/Vineet tiwari.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
+                        /> */}
+
+                        <Image
+                          src="https://dndesigns.co.in/uploads/pages/Vineet tiwari.webp"
+                          alt="testinomial"
+                          width={500}
+                          height={700}
+                          className="responsive-img"
                         />
                       </div>
 
@@ -185,10 +202,18 @@ function Testimonial() {
                       </div>
 
                       <div className="col-6 col-md-4 testi-main-img">
-                        <img
+                        {/* <img
                           src="https://dndesigns.co.in/uploads/pages/nectarpure client.webp"
                           alt="Testimonial Person"
                           className="img-fluid"
+                        /> */}
+
+                        <Image
+                          src="https://dndesigns.co.in/uploads/pages/nectarpure client.webp"
+                          alt="testinomial"
+                          width={500}
+                          height={700}
+                          className="responsive-img"
                         />
                       </div>
 

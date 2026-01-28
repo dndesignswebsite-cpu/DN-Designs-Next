@@ -187,6 +187,7 @@ async function page() {
           </div>
         </div>
       </section>
+      
       {/*.....our brands desktop view...... */}
       <section className={`${styles["our-brand"]}`}>
         <div className="container">
