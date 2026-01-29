@@ -4,6 +4,7 @@ import "./enlite-case-study.css";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -128,12 +129,20 @@ async function page() {
           </div>
         </div>
         <div className="row">
-          <img
+          {/* <img
             // src="https://dndesigns.co.in/wp-content/uploads/2025/11/Enlite1.jpg"
             src={imageUrl + "Enlite1.webp"}
             alt=""
             className="img-fluid mt-5 enlitecase-study-img1"
-          />
+          /> */}
+
+            <Image
+                 src={imageUrl + "Enlite1.webp"}
+                  className="responsive-img mt-5 enlitecase-study-img1"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
 
         <div className="row align-items-start mt-5">
@@ -171,28 +180,52 @@ async function page() {
       <div className="container enlitecasestudy-images">
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6 mb-3 mb-lg-0">
-            <img
+            {/* <img
               src={imageUrl + "Enlite2.webp"}
               alt=""
               className="img-fluid enlitecase-study-img8"
-            />
+            /> */}
+
+            
+            <Image
+                src={imageUrl + "Enlite2.webp"}
+                  className="responsive-img enlitecase-study-img8"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite3.webp"}
               alt=""
               className="img-fluid enlitecase-study-img9"
-            />
+            /> */}
+            <Image
+                src={imageUrl + "Enlite3.webp"}
+                  className="responsive-img enlitecase-study-img9"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "Enlite4.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
-          />
+          /> */}
+
+           <Image
+                src={imageUrl + "Enlite4.webp"}
+                  className="responsive-img enlitecase-study-img5"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
 
         <div className="row">
@@ -220,20 +253,36 @@ async function page() {
             </p>
           </div>
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite5.webp"}
               alt=""
               className="img-fluid enlitecase-study-img6"
-            />
+            /> */}
+
+              <Image
+                src={imageUrl + "Enlite5.webp"}
+                  className="responsive-img enlitecase-study-img6"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "Enlite6.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
-          />
+          /> */}
+
+           <Image
+               src={imageUrl + "Enlite6.webp"}
+                  className="responsive-img enlitecase-study-img5"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
 
         <div className="row">
@@ -250,11 +299,19 @@ async function page() {
 
         <div className="row pt-lg-5">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite7.webp"}
               alt=""
               className="img-fluid enlitecase-study-img6"
-            />
+            /> */}
+
+             <Image
+                 src={imageUrl + "Enlite7.webp"}
+                  className="responsive-img enlitecase-study-img6"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
           <div className="col-lg-6 col-12 col-md-6">
             <h2 id="enliteapproach-heading1">Our Approach</h2>
@@ -271,137 +328,258 @@ async function page() {
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "Enlite8.webp"}
             alt=""
             className="img-fluid enlitecase-study-img5"
-          />
+          /> */}
+
+          <Image
+                 src={imageUrl + "Enlite8.webp"}
+                  className="responsive-img enlitecase-study-img5"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
       </div>
 
       <div className="container enlitecasestudy-images">
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite9.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+            <Image
+                 src={imageUrl + "Enlite9.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite10.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+            <Image
+                 src={imageUrl + "Enlite10.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "Enlite11.webp"}
               alt=""
               className="img-fluid enlitecase-study-img2 mt-lg-4"
-            />
+            /> */}
+
+            
+            <Image
+                 src={imageUrl + "Enlite11.webp"}
+                  className="responsive-img enlitecase-study-img2 mt-lg-4"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "gewjvfhjr.webp"}
               alt=""
               className="img-fluid enlitecase-study-img3 mt-lg-4"
-            />
+            /> */}
+
+            <Image
+                 src={imageUrl + "gewjvfhjr.webp"}
+                  className="responsive-img enlitecase-study-img3 mt-lg-4"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite13.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+             <Image
+                 src={imageUrl + "Enlite13.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite14.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+             <Image
+                 src={imageUrl + "Enlite14.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row g-0">
           <div className="col-lg-6 col-md-6 col-12 px-0">
-            <img
+            {/* <img
               src={imageUrl + "Enlite15.webp"}
               alt=""
               className="img-fluid enlitecase-study-img2 mt-lg-4"
-            />
+            /> */}
+
+             <Image
+                src={imageUrl + "Enlite15.webp"}
+                  className="responsive-img enlitecase-study-img2 mt-lg-4"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-md-6 col-12 px-0">
-            <img
+            {/* <img
               src={imageUrl + "Enlite16.webp"}
               alt=""
               className="img-fluid enlitecase-study-img3 mt-lg-4"
-            />
+            /> */}
+
+             <Image
+                src={imageUrl + "Enlite16.webp"}
+                  className="responsive-img enlitecase-study-img3 mt-lg-4"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite17.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+             <Image
+                 src={imageUrl + "Enlite17.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite18.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+             <Image
+                src={imageUrl + "Enlite18.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "Enlite19.webp"}
             alt=""
             className="img-fluid enlitecase-study-img"
-          />
+          /> */}
+
+          <Image
+                  src={imageUrl + "Enlite19.webp"}
+                  className="responsive-img enlitecase-study-img"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
 
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite20.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+            <Image
+                  src={imageUrl + "Enlite20.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "Enlite21.webp"}
               alt=""
               className="img-fluid enlitecase-study-img7"
-            />
+            /> */}
+
+             <Image
+                  src={imageUrl + "Enlite21.webp"}
+                  className="responsive-img enlitecase-study-img7"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1500}
+                />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "Enlite22.webp"}
             alt=""
             className="img-fluid enlitecase-study-img"
-          />
+          /> */}
+
+           <Image
+                  src={imageUrl + "Enlite22.webp"}
+                  className="responsive-img enlitecase-study-img"
+                  alt="enlite case study page image"
+                  width={1500}
+                  height={1000}
+                />
         </div>
       </div>
 

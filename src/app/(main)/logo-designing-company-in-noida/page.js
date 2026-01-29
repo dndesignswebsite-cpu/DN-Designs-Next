@@ -11,6 +11,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -106,8 +107,7 @@ async function page() {
   // faqs content
   const leftFaqs = [
     {
-      question:
-        "How is DN Designs the best logo designing company in Noida?",
+      question: "How is DN Designs the best logo designing company in Noida?",
       answer:
         "Being a logo designing company in Noida with over eight years of experience working in the design industry, we are known to be the best among our clients. We make a lasting first impression on the audience while telling your brand story to your audience.",
     },
@@ -132,8 +132,7 @@ async function page() {
         "To start the logo design process, we need details, including your target audience, competitor, and any specific inspiration or idea you may have for the logo. Such detail helps us to create the best logos for you.",
     },
     {
-      question:
-        "What if I want to redesign my existing logo?",
+      question: "What if I want to redesign my existing logo?",
       answer:
         "Offering logo design in Noida, we can surely redesign your current logo to ensure it matches your brand identity and value. The only concern we have is to keep your branding in check. ",
     },
@@ -169,18 +168,23 @@ async function page() {
       question: "What services do you provide other than logo designing?",
       answer:
         "Apart from logo designing services, we offer packaging, catalogue, web development, website, brand identity, display box designing, and company profiling. We provide complete branding and designing services to help you achieve success! ",
-    }
+    },
   ];
 
-  let para1 = "DN Designs, the best logo designing company in Noida, creates logos in styles like combination marks, wordmarks, letter marks, abstract designs, emblems, 3D, animated and dynamic. Your logo style should depend thoroughly on your brand’s personality, philosophy and culture. Our team brainstorms what style would align with your brand.";
+  let para1 =
+    "DN Designs, the best logo designing company in Noida, creates logos in styles like combination marks, wordmarks, letter marks, abstract designs, emblems, 3D, animated and dynamic. Your logo style should depend thoroughly on your brand’s personality, philosophy and culture. Our team brainstorms what style would align with your brand.";
 
- let para2 = "Every colour speaks uniquely and differently to people’s moods and emotions. Our expert logo designing services focus on choosing the right colour depending on what you want people to think of your brand. Our creative logo designers in Noida choose your logo colour after thorough contemplation.";
+  let para2 =
+    "Every colour speaks uniquely and differently to people’s moods and emotions. Our expert logo designing services focus on choosing the right colour depending on what you want people to think of your brand. Our creative logo designers in Noida choose your logo colour after thorough contemplation.";
 
- let para3 = "The typography of your logo design speaks a specific tone and communicates your brand message. As a crucial element of your logo design, we carefully choose the right typography to ensure it makes you stand out.";
+  let para3 =
+    "The typography of your logo design speaks a specific tone and communicates your brand message. As a crucial element of your logo design, we carefully choose the right typography to ensure it makes you stand out.";
 
- let para4 = "Coupled with the right choice of typography, images and colours, shapes add a sustainable meaning to your logo designs. As a top logo design company in Noida, India, we understand the hidden subconscious meaning behind every shape and set the proper foundation for your logo designs.";
+  let para4 =
+    "Coupled with the right choice of typography, images and colours, shapes add a sustainable meaning to your logo designs. As a top logo design company in Noida, India, we understand the hidden subconscious meaning behind every shape and set the proper foundation for your logo designs.";
 
- let para5 = "The most underrated element of logo design is the layout, which, in short, is the background of your design. Based on if you have a slogan or symbol and your company’s name, we craft the best business logo design for you.";
+  let para5 =
+    "The most underrated element of logo design is the layout, which, in short, is the background of your design. Based on if you have a slogan or symbol and your company’s name, we craft the best business logo design for you.";
 
   return (
     <div>
@@ -213,11 +217,17 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  // src="https://dndesigns.co.in/uploads/videos/Nature-balance.webp"
-
+                {/* <img
                   src={imageUrl + "3gweudjgwer.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "3gweudjgwer.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -242,7 +252,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "jhewjrhjbf.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "jhewjrhjbf.webp"} className="img-fluid" /> */}
+                <Image
+                  src={imageUrl + "jhewjrhjbf.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -269,7 +286,14 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "Rosnax.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Rosnax.webp"} className="img-fluid" /> */}
+                <Image
+                  src={imageUrl + "Rosnax.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -293,7 +317,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" /> */}
+                <Image
+                  src={imageUrl + "tftyfhgchg.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -319,9 +350,17 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "bake-o-Tech.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "bake-o-Tech.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -346,9 +385,17 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "erhfLuxmi-cars.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "erhfLuxmi-cars.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -411,9 +458,17 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "deeproot-logo.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "deeproot-logo.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1500}
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -444,7 +499,7 @@ async function page() {
         <div className="container">
           <div className="row">
             <h2 className="text-center headg">
-              But Why Do You  <span className="every-pr"> Even Need A Logo</span>
+              But Why Do You <span className="every-pr"> Even Need A Logo</span>
             </h2>
             <div className="col-12 col-md-6 col-lg-3 px-2 but-why-main-div">
               <div className=" but-why-div m-3">
@@ -457,13 +512,17 @@ async function page() {
                 <div className="but-why-btm">
                   <h3>Powerful First Impression</h3>
                   <p>
-                    The power of a logo is that people can pick you in a single glance in a crowded market, organically differentiating
+                    The power of a logo is that people can pick you in a single
+                    glance in a crowded market, organically differentiating
                   </p>
                 </div>
                 <div className="but-why-back-content">
                   <h3>Powerful First Impression</h3>
                   <p>
-                   The power of a logo is that people can pick you in a single glance in a crowded market, organically differentiating you and making them know what you do without them having to give it much thought.
+                    The power of a logo is that people can pick you in a single
+                    glance in a crowded market, organically differentiating you
+                    and making them know what you do without them having to give
+                    it much thought.
                   </p>
                 </div>
               </div>
@@ -484,13 +543,17 @@ async function page() {
                 <div className="but-why-btm">
                   <h3>Grabs Attention</h3>
                   <p>
-                    Your logo can grab your audience’s attention and communicate your brand‘s message in seconds. If your logo is memorable and 
+                    Your logo can grab your audience’s attention and communicate
+                    your brand‘s message in seconds. If your logo is memorable
+                    and
                   </p>
                 </div>
                 <div className="but-why-back-content">
                   <h3>Grabs Attention</h3>
                   <p>
-                   Your logo can grab your audience’s attention and communicate your brand‘s message in seconds. If your logo is memorable and eye-catching, it is a brownie point for your brand.
+                    Your logo can grab your audience’s attention and communicate
+                    your brand‘s message in seconds. If your logo is memorable
+                    and eye-catching, it is a brownie point for your brand.
                   </p>
                 </div>
               </div>
@@ -511,13 +574,17 @@ async function page() {
                 <div className="but-why-btm">
                   <h3>Forms Brand Identity</h3>
                   <p>
-                   Your logo design is the foundation of your brand. It's not just a visual but an element that tells your brand story and defines
+                    Your logo design is the foundation of your brand. It's not
+                    just a visual but an element that tells your brand story and
+                    defines
                   </p>
                 </div>
                 <div className="but-why-back-content">
                   <h3>Forms Brand Identity</h3>
                   <p>
-                    Your logo design is the foundation of your brand. It's not just a visual but an element that tells your brand story and defines people's thoughts.
+                    Your logo design is the foundation of your brand. It's not
+                    just a visual but an element that tells your brand story and
+                    defines people's thoughts.
                   </p>
                 </div>
               </div>
@@ -538,13 +605,18 @@ async function page() {
                 <div className="but-why-btm">
                   <h3>Make You Stand Out</h3>
                   <p>
-                   Everyone wants to stand out from the competition, right? A logo can help you do that. Our team of expert logo designers in Noida
+                    Everyone wants to stand out from the competition, right? A
+                    logo can help you do that. Our team of expert logo designers
+                    in Noida
                   </p>
                 </div>
                 <div className="but-why-back-content">
                   <h3>Make You Stand Out</h3>
                   <p>
-                  Everyone wants to stand out from the competition, right? A logo can help you do that. Our team of expert logo designers in Noida can make your brand instantly recognizable with good logos.
+                    Everyone wants to stand out from the competition, right? A
+                    logo can help you do that. Our team of expert logo designers
+                    in Noida can make your brand instantly recognizable with
+                    good logos.
                   </p>
                 </div>
               </div>
@@ -849,30 +921,58 @@ async function page() {
               <h2 className="logo-brand-title">Monogram</h2>
               <h6 className="logo-type">Lettermark</h6>
               <p className="logo-brand-paragraph">
-               Made from a brand’s initial, monogram logos are best for brands with a longer name or those who want to make their brand memorable. DN Designs, a creative logo company in Noida, is confident that monogram logos are best for luxury, fashion and corporate brands.
+                Made from a brand’s initial, monogram logos are best for brands
+                with a longer name or those who want to make their brand
+                memorable. DN Designs, a creative logo company in Noida, is
+                confident that monogram logos are best for luxury, fashion and
+                corporate brands.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-12 com-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "HBO logo.webp"}
                     alt="HBO logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "HBO logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "IBM logo.webp"}
                     alt="IBM logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "IBM logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "Nasa logo.webp"}
                     alt="NASA logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "Nasa logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -884,30 +984,57 @@ async function page() {
               <h2 className="logo-brand-title">Wordmarks</h2>
               <h6 className="logo-type">Similar to letter mark</h6>
               <p className="logo-brand-paragraph">
-               Designed entirely from the brand’s name, wordmark logos are made in a custom typeface that speaks to a brand’s unique identity. These allow you to reflect your brand’s essence through the right typography, colour palette and style to better resonate with the audience.
+                Designed entirely from the brand’s name, wordmark logos are made
+                in a custom typeface that speaks to a brand’s unique identity.
+                These allow you to reflect your brand’s essence through the
+                right typography, colour palette and style to better resonate
+                with the audience.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "visa logo.webp"}
                     alt="Visa logo"
                     className="img-fluid logo"
+                  /> */}
+                  <Image
+                    src={imageUrl + "visa logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "coca logo.webp"}
                     alt="Coca-Cola logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "coca logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "google logo.webp"}
                     alt="Google logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "google logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -919,30 +1046,58 @@ async function page() {
               <h2 className="logo-brand-title">Pictorial</h2>
               <h6 className="logo-type"> Symbols</h6>
               <p className="logo-brand-paragraph">
-                Also known as graphic or icon-based logos, pictorial marks symbolize a brand’s essence. These logos stand alone, enabling spontaneous recognition and connection with your audience. They are perfect for brands that wish to establish a symbolic bond with their customers.
+                Also known as graphic or icon-based logos, pictorial marks
+                symbolize a brand’s essence. These logos stand alone, enabling
+                spontaneous recognition and connection with your audience. They
+                are perfect for brands that wish to establish a symbolic bond
+                with their customers.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "apple logo.webp"}
                     alt="Apple logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "apple logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "twitter logo.webp"}
                     alt="X logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "twitter logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pintrest logo.webp"}
                     alt="Pinterest logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "pintrest logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -954,30 +1109,58 @@ async function page() {
               <h2 className="logo-brand-title">Abstract</h2>
               <h6 className="logo-type">Represent Your Brand</h6>
               <p className="logo-brand-paragraph">
-                Abstract logos use geometric shapes to design a non-representational image of the brand that carries your values and communicates your message. Being the best brand-building agency in Noida, we create abstract logos that convey your concepts using suitable shapes.
+                Abstract logos use geometric shapes to design a
+                non-representational image of the brand that carries your values
+                and communicates your message. Being the best brand-building
+                agency in Noida, we create abstract logos that convey your
+                concepts using suitable shapes.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "addidas logo.webp"}
                     alt="adidas logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "addidas logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "bp[ logo.webp"}
                     alt="BP logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "bp[ logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pepsi logo.webp"}
                     alt="Pepsi logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "pepsi logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -989,30 +1172,56 @@ async function page() {
               <h2 className="logo-brand-title">Mascots</h2>
               <h6 className="logo-type">Characters</h6>
               <p className="logo-brand-paragraph">
-               Among all types of logos, mascot logos are playful and have illustrated characters that represent your brand. These logos make the brand more approachable and create a resonating image.
+                Among all types of logos, mascot logos are playful and have
+                illustrated characters that represent your brand. These logos
+                make the brand more approachable and create a resonating image.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "kfc logo.webp"}
                     alt="KFC logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "kfc logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pringles.webp"}
                     alt="Pringles logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "pringles.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "amul logo.webp"}
                     alt="Amul logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "amul logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -1024,30 +1233,57 @@ async function page() {
               <h2 className="logo-brand-title">Combination</h2>
               <h6 className="logo-type">Picture and Text</h6>
               <p className="logo-brand-paragraph">
-                Combination mark logos have both a wordmark and a pictorial mark. The pictures and text in this logo are placed side by side or designed at the top of each other. Combination marks reflect the complete representation of a brand identity.
+                Combination mark logos have both a wordmark and a pictorial
+                mark. The pictures and text in this logo are placed side by side
+                or designed at the top of each other. Combination marks reflect
+                the complete representation of a brand identity.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "doritos.webp"}
                     alt="Doritos logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "doritos.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "burger king logo.webp"}
                     alt="Burger King logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "burger king logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "lacoster logo.webp"}
                     alt="Lacoste logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "lacoster logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -1059,30 +1295,57 @@ async function page() {
               <h2 className="logo-brand-title">The Emblem</h2>
               <h6 className="logo-type">Symbol or an Icon</h6>
               <p className="logo-brand-paragraph">
-               Emblem logos are a fusion of a symbol and an icon. These have a conventional appearance and reflect authority and professionalism. Emblem logos have a classic style that gives a brand a timeless look.
+                Emblem logos are a fusion of a symbol and an icon. These have a
+                conventional appearance and reflect authority and
+                professionalism. Emblem logos have a classic style that gives a
+                brand a timeless look.
               </p>
             </div>
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "harley logo.webp"}
                     alt="Harley-Davidson logo"
                     className="img-fluid logo"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "harley logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "vi ri logo.webp"}
                     alt="Harvard logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "vi ri logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "starbucks logo.webp"}
                     alt="Starbucks logo"
                     className="img-fluid"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "starbucks logo.webp"}
+                    className="responsive-img logo"
+                    alt="logo-designing page"
+                    width={1500}
+                    height={1000}
                   />
                 </div>
               </div>
@@ -1105,35 +1368,67 @@ async function page() {
 
           <div className="row logo-design-section">
             <div className="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
-              <img
+              {/* <img
                 src={imageUrl + "nectarpure graph.webp"}
                 alt="Nectarpure"
                 className="img-fluid logo-design-img"
+              /> */}
+
+              <Image
+                src={imageUrl + "nectarpure graph.webp"}
+                className="responsive-img logo-design-img"
+                alt="logo-designing "
+                width={1500}
+                height={1000}
               />
 
-              <img
+              {/* <img
                 src={imageUrl + "imgi_36_nec.webp"}
                 alt="Slide Overlay"
                 className="img-fluid logo-overlay-img"
+              /> */}
+
+              <Image
+                src={imageUrl + "imgi_36_nec.webp"}
+                className="responsive-img logo-overlay-img"
+                alt="logo-designing "
+                width={1500}
+                height={1000}
               />
             </div>
 
             <div className="col-lg-4 col-md-5 mb-sm-4 image-stack">
               <div className="row">
                 <div className="col-lg-12">
-                  <img
+                  {/* <img
                     src={imageUrl + "wordmark.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "wordmark.webp"}
+                    className="responsive-img logo-design-img2"
+                    alt="logo-designing "
+                    width={1600}
+                    height={942}
                   />
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-12">
-                  <img
+                  {/* <img
                     src={imageUrl + "2b3ewebdjh.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
+                  /> */}
+
+                  <Image
+                    src={imageUrl + "2b3ewebdjh.webp"}
+                    className="responsive-img logo-design-img2"
+                    alt="logo-designing "
+                    width={1600}
+                    height={942}
                   />
                 </div>
               </div>
@@ -1142,7 +1437,13 @@ async function page() {
         </div>
       </section>
 
-      <LogoDesigningTab para1={para1} para2={para2} para3={para3} para4={para4} para5={para5}/>
+      <LogoDesigningTab
+        para1={para1}
+        para2={para2}
+        para3={para3}
+        para4={para4}
+        para5={para5}
+      />
 
       {/* faqs */}
 

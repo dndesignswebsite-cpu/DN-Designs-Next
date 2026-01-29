@@ -11,6 +11,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -212,12 +213,18 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  // src="https://dndesigns.co.in/uploads/videos/Nature-balance.webp"
-
+                {/* <img
                   src={imageUrl + "3gweudjgwer.webp"}
                   className="img-fluid"
-                />
+                /> */}
+
+                   <Image
+                                 src={imageUrl + "3gweudjgwer.webp"}
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -241,7 +248,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "jhewjrhjbf.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "jhewjrhjbf.webp"} className="img-fluid" /> */}
+
+                <Image
+                                 src={imageUrl + "jhewjrhjbf.webp"} 
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -268,7 +283,14 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "Rosnax.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Rosnax.webp"} className="img-fluid" /> */}
+                 <Image
+                                 src={imageUrl + "Rosnax.webp"}  
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -292,7 +314,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" /> */}
+
+                   <Image
+                                 src={imageUrl + "tftyfhgchg.webp"}
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -318,10 +348,18 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "bake-o-Tech.webp"}
                   className="img-fluid"
-                />
+                /> */}
+
+                 <Image
+                                 src={imageUrl + "bake-o-Tech.webp"}
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -345,10 +383,18 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "erhfLuxmi-cars.webp"}
                   className="img-fluid"
-                />
+                /> */}
+
+                 <Image
+                                 src={imageUrl + "erhfLuxmi-cars.webp"}
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -410,10 +456,18 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
+                {/* <img
                   src={imageUrl + "deeproot-logo.webp"}
                   className="img-fluid"
-                />
+                /> */}
+
+                  <Image
+                                src={imageUrl + "deeproot-logo.webp"}
+                                  className="responsive-img brand-identity-div-img"
+                                  alt="grin care case study page image"
+                                  width={1500}
+                                  height={1500}
+                                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -854,25 +908,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-12 com-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "HBO logo.webp"}
                     alt="HBO logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                  src={imageUrl + "HBO logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "IBM logo.webp"}
                     alt="IBM logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image
+                                   src={imageUrl + "IBM logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "Nasa logo.webp"}
                     alt="NASA logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                                   src={imageUrl + "Nasa logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -889,25 +967,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "visa logo.webp"}
                     alt="Visa logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                   src={imageUrl + "visa logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "coca logo.webp"}
                     alt="Coca-Cola logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                     <Image
+                                    src={imageUrl + "coca logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "google logo.webp"}
                     alt="Google logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                                    src={imageUrl + "google logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -924,25 +1026,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "apple logo.webp"}
                     alt="Apple logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                   src={imageUrl + "apple logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "twitter logo.webp"}
                     alt="X logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                                   src={imageUrl + "twitter logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pintrest logo.webp"}
                     alt="Pinterest logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                     <Image
+                                    src={imageUrl + "pintrest logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -959,25 +1085,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "addidas logo.webp"}
                     alt="adidas logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                    src={imageUrl + "addidas logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "bp[ logo.webp"}
                     alt="BP logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image
+                                     src={imageUrl + "bp[ logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pepsi logo.webp"}
                     alt="Pepsi logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                                   src={imageUrl + "pepsi logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -994,25 +1144,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "kfc logo.webp"}
                     alt="KFC logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                   <Image
+                                    src={imageUrl + "kfc logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "pringles.webp"}
                     alt="Pringles logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                                    src={imageUrl + "pringles.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "amul logo.webp"}
                     alt="Amul logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image
+                                    src={imageUrl + "amul logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -1029,25 +1203,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "doritos.webp"}
                     alt="Doritos logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                    src={imageUrl + "doritos.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "burger king logo.webp"}
                     alt="Burger King logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                     <Image
+                                    src={imageUrl + "burger king logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "lacoster logo.webp"}
                     alt="Lacoste logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                      <Image
+                                    src={imageUrl + "lacoster logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -1064,25 +1262,49 @@ async function page() {
             <div className="col-12 col-lg-7 col-md-12 logo-list">
               <div className="row logo-brand-row">
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "harley logo.webp"}
                     alt="Harley-Davidson logo"
                     className="img-fluid logo"
-                  />
+                  /> */}
+
+                    <Image
+                                    src={imageUrl + "harley logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "vi ri logo.webp"}
                     alt="Harvard logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image
+                                    src={imageUrl + "vi ri logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
                 <div className="col-4 col-lg-4 col-md-4">
-                  <img
+                  {/* <img
                     src={imageUrl + "starbucks logo.webp"}
                     alt="Starbucks logo"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                   <Image
+                                    src={imageUrl + "starbucks logo.webp"}
+                                    className="responsive-img logo"
+                                    alt="logo-designing page"
+                                    width={1500}
+                                    height={1000}
+                                  />
                 </div>
               </div>
             </div>
@@ -1104,36 +1326,68 @@ async function page() {
 
           <div className="row logo-design-section">
             <div className="col-lg-8 col-md-7 position-relative logo-hover-wrapper">
-              <img
+              {/* <img
                 src={imageUrl + "nectarpure graph.webp"}
                 alt="Nectarpure"
                 className="img-fluid logo-design-img"
-              />
+              /> */}
 
-              <img
+              <Image
+                                src={imageUrl + "nectarpure graph.webp"}
+                                className="responsive-img logo-design-img"
+                                alt="logo-designing "
+                                width={1500}
+                                height={1000}
+                              />
+
+              {/* <img
                 src={imageUrl + "imgi_36_nec.webp"}
                 alt="Slide Overlay"
                 className="img-fluid logo-overlay-img"
-              />
+              /> */}
+
+               <Image
+                               src={imageUrl + "imgi_36_nec.webp"}
+                                className="responsive-img logo-overlay-img"
+                                alt="logo-designing "
+                                width={1500}
+                                height={1000}
+                              />
             </div>
 
             <div className="col-lg-4 col-md-5 mb-sm-4 image-stack">
               <div className="row">
                 <div className="col-lg-12">
-                  <img
+                  {/* <img
                     src={imageUrl + "wordmark.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
-                  />
+                  /> */}
+
+                     <Image
+                                   src={imageUrl + "wordmark.webp"}
+                                    className="responsive-img logo-design-img2"
+                                    alt="logo-designing "
+                                    width={1600}
+                                    height={942}
+                                  />
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-12">
-                  <img
+                  {/* <img
                     src={imageUrl + "2b3ewebdjh.webp"}
                     alt=""
                     className="img-fluid logo-design-img2"
-                  />
+                  /> */}
+
+                   <Image
+                                    src={imageUrl + "2b3ewebdjh.webp"}
+                                    className="responsive-img logo-design-img2"
+                                    alt="logo-designing "
+                                    width={1600}
+                                    height={942}
+                                  />
                 </div>
               </div>
             </div>

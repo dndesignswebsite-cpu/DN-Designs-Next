@@ -379,3 +379,9 @@
     font-weight: 700;
     font-family: var(--font-corbert);
 }
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

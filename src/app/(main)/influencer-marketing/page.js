@@ -11,6 +11,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -281,10 +282,18 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-6">
               <div className="grow-your-bussiness-col-2">
-                <img
+                {/* <img
                   src={imageUrl + "hwehvdhghd.webp"}
                   className="img-fluid"
-                ></img>
+                ></img> */}
+
+                <Image
+                src={imageUrl + "hwehvdhghd.webp"}
+                  className="responsive-img"
+                  alt="grin care case study page image"
+                  width={500}
+                  height={500}
+                />
               </div>
             </div>
 

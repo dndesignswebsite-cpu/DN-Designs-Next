@@ -16,6 +16,7 @@ import Form from "@/Components/Form/Form";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Link from "next/link";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -176,14 +177,31 @@ async function page() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              <img
+               {/* <img
                 src={imageUrl + "gkjeg.webp"}
                 className={`${styles["hero-bg-img"]}`}
-              ></img>
-              <img
+              ></img> */}
+
+              <Image
+                src={imageUrl + "gkjeg.webp"}
+                className={`${styles["hero-bg-img"]} ${styles["responsive-img"]}`}
+                alt="home page image"
+                width={1000}
+                height={1000}
+              />
+
+              {/* <img
                 src={imageUrl + "hgefef.webp"}
                 className={`${styles["hero-img-main"]}`}
-              ></img>
+              ></img> */}
+
+              <Image
+                src={imageUrl + "hgefef.webp"}
+                className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
+                alt="home page image"
+                width={700}
+                height={700}
+              />
             </div>
           </div>
         </div>
@@ -329,10 +347,17 @@ async function page() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                     src={imageUrl + "enlite main graphic.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image
+                                        src={imageUrl + "enlite main graphic.webp"}
+                                        className={`${styles["responsive-img"]}`}
+                                        alt="home page image"
+                                        width={1500}
+                                        height={1000}
+                                      />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
@@ -430,10 +455,17 @@ async function page() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                     src={imageUrl + "nectarpure case study.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image
+                                        src={imageUrl + "nectarpure case study.webp"}
+                                        className={`${styles["responsive-img"]}`}
+                                        alt="home page image"
+                                        width={1500}
+                                        height={1000}
+                                      />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
@@ -477,11 +509,18 @@ async function page() {
                 className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
               >
                 <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                  <img
+                  {/* <img
                     
                     src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image
+                                        src={imageUrl + "grin care case study.webp"}
+                                        className={`${styles["responsive-img"]}`}
+                                        alt="home page image"
+                                        width={1500}
+                                        height={1000}
+                                      />
                   <div className={`${styles["our-brand-mobile-div-content"]}`}>
                     <h3
                       className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
@@ -551,7 +590,14 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "city.webp"} className="img-fluid" /> */}
+                <Image
+                                  src={imageUrl + "city.webp"}
+                                  className="responsive-img image-box-city-page-img"
+                                  alt="home city page image"
+                                  width={1500}
+                                  height={1000}
+                                />
               </div>
             </div>
           </div>
@@ -559,7 +605,14 @@ async function page() {
           <div className="row flex-column-reverse flex-xl-row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-2.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "city-2.webp"} className="img-fluid" /> */}
+                 <Image
+                                  src={imageUrl + "city-2.webp"}
+                                  className="responsive-img image-box-city-page-img"
+                                  alt="home city page image"
+                                  width={1500}
+                                  height={1000}
+                                />
               </div>
             </div>
 
@@ -598,7 +651,14 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
-                <img src={imageUrl + "city-3.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "city-3.webp"} className="img-fluid" /> */}
+                <Image
+                                  src={imageUrl + "city-3.webp"}
+                                  className="responsive-img image-box-city-page-img"
+                                  alt="home city page image"
+                                  width={1500}
+                                  height={1000}
+                                />
               </div>
             </div>
           </div>

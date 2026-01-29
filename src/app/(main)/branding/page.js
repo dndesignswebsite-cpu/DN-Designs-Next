@@ -195,7 +195,15 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
-                <img src={imageUrl + "Enlite-3.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Enlite-3.webp"} className="img-fluid" /> */}
+
+                <Image
+                  src={imageUrl + "Enlite-3.webp"}
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -218,7 +226,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
-                <img src={imageUrl + "I-organic.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "I-organic.webp"} className="img-fluid" /> */}
+
+                 <Image
+                  src={imageUrl + "I-organic.webp"} 
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -273,7 +289,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img src={imageUrl + "Deeproots.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Deeproots.webp"} className="img-fluid" /> */}
+
+                <Image
+                 src={imageUrl + "Deeproots.webp"} 
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -300,7 +324,14 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img src={imageUrl + "Thames.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Thames.webp"} className="img-fluid" /> */}
+                 <Image
+                 src={imageUrl + "Thames.webp"} 
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -323,7 +354,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img src={imageUrl + "Smartyums.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Smartyums.webp"} className="img-fluid" /> */}
+                <Image
+                 src={imageUrl + "Smartyums.webp"} 
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -369,10 +407,17 @@ async function page() {
             <div className="our-brand-mobile-all-div row">
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                  <img
+                  {/* <img
                     src={imageUrl + "enlite main graphic.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image
+                 src={imageUrl + "enlite main graphic.webp"} 
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">Rithm’s Enlite</h3>
                     <div className="our-brand-mobile-btn-up">
@@ -405,10 +450,17 @@ async function page() {
                     Your browser does not support the video tag.
                   </video> */}
 
-                  <img
+                  {/* <img
                     src={imageUrl + "grin care case study.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                  <Image
+                  src={imageUrl + "grin care case study.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">Grin Care</h3>
                     <div className="our-brand-mobile-btn-up">
@@ -433,10 +485,17 @@ async function page() {
               </div>
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                  <img
+                  {/* <img
                     src={imageUrl + "nature-balance-22.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                  <Image
+                  src={imageUrl + "nature-balance-22.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">
                       Nature's Balance
@@ -463,10 +522,17 @@ async function page() {
               </div>
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
                 <div className="our-brand-mobile-div-clield">
-                  <img
+                  {/* <img
                     src={imageUrl + "ewrfeferf.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                  <Image
+                  src={imageUrl + "ewrfeferf.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">NECTARPURE</h3>
                     <div className="our-brand-mobile-btn-up">
@@ -505,7 +571,15 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "2-3.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "2-3.webp"} className="img-fluid" /> */}
+
+                 <Image
+                  src={imageUrl + "2-3.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Brand Identity</h3>
                   <p>
@@ -520,7 +594,14 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "3-3.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "3-3.webp"} className="img-fluid" /> */}
+                 <Image
+                  src={imageUrl + "3-3.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Brand Voice</h3>
                   <p>
@@ -534,7 +615,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "7-1.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "7-1.webp"} className="img-fluid" /> */}
+                 <Image
+                  src={imageUrl + "7-1.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Brand Positioning</h3>
                   <p>
@@ -552,7 +640,14 @@ async function page() {
           <div className="row brand-identity-div-row">
             <div className="col-12 col-md-12 col-lg-4 identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "6-1.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "6-1.webp"} className="img-fluid" /> */}
+                 <Image
+                  src={imageUrl + "6-1.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Brand Messaging</h3>
                   <p>
@@ -566,7 +661,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "5-1.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "5-1.webp"} className="img-fluid" /> */}
+
+                 <Image
+                  src={imageUrl + "5-1.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Brand Value</h3>
                   <p>
@@ -580,7 +683,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-12 col-lg-4  identity-main-div">
               <div className="identity-div">
-                <img src={imageUrl + "4-3.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "4-3.webp"} className="img-fluid" /> */}
+                 <Image
+                  src={imageUrl + "4-3.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img branding-that-mobile-div-img"
+                />
                 <div className="identity-div-content">
                   <h3>Rebranding</h3>
                   <p>

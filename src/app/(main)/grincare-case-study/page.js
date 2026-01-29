@@ -6,6 +6,7 @@ import "./grincare-case-study.css";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -102,12 +103,19 @@ async function page() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5">
-              <img
-                // src="https://dndesigns.co.in/wp-content/uploads/2025/03/Frame-427324077.png"
+              {/* <img
                 src={imageUrl + "Frame-427324077.webp"}
                 alt=""
                 className="img-fluid w-50"
-              />
+              /> */}
+
+               <Image
+                  src={imageUrl + "Frame-427324077.webp"}
+                  className="responsive-img w-50"
+                  alt="enlite case study page image"
+                  width={1090}
+                  height={425}
+                />
             </div>
             <div className="col-lg-7 col-md-7 justify-content-space-between">
               <h2 className="grincare-h1">
@@ -125,7 +133,15 @@ async function page() {
       </div>
 
       <div className="container grincare-banner">
-        <img src={imageUrl + "grin 8.webp"} alt="" className="img-fluid" />
+        {/* <img src={imageUrl + "grin 8.webp"} alt="" className="img-fluid" /> */}
+
+                <Image
+                  src={imageUrl + "grin 8.webp"}
+                  className="responsive-img"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={938}
+                />
       </div>
 
       <div className="container grincare-second">
@@ -173,11 +189,19 @@ async function page() {
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-lg-4 grincare-sticky">
-              <img
+              {/* <img
                 src={imageUrl + "Frame-427324077.webp"}
                 alt=""
                 className="img-fluid"
-              />
+              /> */}
+
+                <Image
+                  src={imageUrl + "Frame-427324077.webp"}
+                  className="responsive-img"
+                  alt="grin care case study page image"
+                  width={1090}
+                  height={425}
+                />
               <div className="grincare-buttons d-flex flex-column align-items-start">
                 <a
                   href="#grincare-problem-statement"
@@ -217,23 +241,46 @@ async function page() {
                   </p>
                   <div className="row grincare-problem-img">
                     <div className="col-md-7 col-lg-7">
-                      <img
+                      {/* <img
                         src={imageUrl + "grin 5.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1"
-                      />
+                      /> */}
+
+                      <Image
+                   src={imageUrl + "grin 5.webp"}
+                  className="responsive-img grincare-problem-img1"
+                  alt="grin care case study page image"
+                  width={1500}
+                  height={1000}
+                />
                     </div>
                     <div className="col-md-5 col-lg-5">
-                      <img
+                      {/* <img
                         src={imageUrl + "grin 2.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img2 mb-lg-3 mb-md-3"
-                      />
-                      <img
+                      /> */}
+                       <Image
+                  src={imageUrl + "grin 2.webp"}
+                  className="responsive-img grincare-problem-img2 mb-lg-3 mb-md-3"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={842}
+                />
+                      {/* <img
                         src={imageUrl + "grin 1.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img2"
-                      />
+                      /> */}
+
+                         <Image
+                  src={imageUrl + "grin 1.webp"}
+                  className="responsive-img grincare-problem-img2"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={842}
+                />
                     </div>
                   </div>
                 </div>
@@ -251,12 +298,21 @@ async function page() {
                     text and our structure, without worrying about the details
                     of the application design.
                   </p>
-                  <img
+                  {/* <img
                     // src={imageUrl+"grin ui.webps"}
                     src="https://dndesigns.co.in/uploads/pages/grin ui.webp"
                     alt=""
                     className="img-fluid grincare-packaging-design-img"
-                  />
+                  /> */}
+                  
+                         <Image
+                  src="https://dndesigns.co.in/uploads/pages/grin ui.webp"
+                  className="responsive-img grincare-packaging-design-img"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={1921}
+                />
+
                 </div>
               </div>
 
@@ -277,31 +333,63 @@ async function page() {
                   </p>
                   <div className="row grincare-problem-img">
                     <div className="col-md-5 col-lg-5">
-                      <img
+                      {/* <img
                         src={imageUrl + "grin care logo.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1 mb-3 mb-lg-0 mb-md-0"
-                      />
+                      /> */}
+
+                  <Image
+                  src={imageUrl + "grin care logo.webp"}
+                  className="responsive-img grincare-problem-img1 mb-3 mb-lg-0 mb-md-0"
+                  alt="grin care case study page image"
+                  width={1232}
+                  height={1048}
+                />
                     </div>
                     <div className="col-md-7 col-lg-7">
-                      <img
+                      {/* <img
                         src={imageUrl + "Frame-427324120.webp"}
                         alt=""
                         className="img-fluid grincare-problem-img1"
-                      />
+                      /> */}
+                       <Image
+                  src={imageUrl + "Frame-427324120.webp"}
+                  className="responsive-img grincare-problem-img1"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={915}
+                />
+
                     </div>
                   </div>
                   <div className="row px-2 py-2">
-                    <img
+                    {/* <img
                       src={imageUrl + "Group-427321841-2048x807.webp"}
                       alt=""
                       className="img-fluid grincare-problem-img1 mb-3"
-                    />
-                    <img
+                    /> */}
+
+                      <Image
+                  src={imageUrl + "Group-427321841-2048x807.webp"}
+                  className="responsive-img grincare-problem-img1 mb-3"
+                  alt="grin care case study page image"
+                  width={2048}
+                  height={807}
+                />
+                    {/* <img
                       src={imageUrl + "Group-427321842-2048x807.webp"}
                       alt=""
                       className="img-fluid grincare-problem-img1"
-                    />
+                    /> */}
+
+                       <Image
+                   src={imageUrl + "Group-427321842-2048x807.webp"}
+                  className="responsive-img grincare-problem-img1"
+                  alt="grin care case study page image"
+                  width={2048}
+                  height={807}
+                />
                   </div>
                 </div>
               </div>
@@ -322,11 +410,19 @@ async function page() {
                     Explore their range and elevate your daily oral care routine
                     with GrinCare.
                   </p>
-                  <img
+                  {/* <img
                     src={imageUrl + "grin ux.webp"}
                     alt=""
                     className="img-fluid grincare-packaging-design-img"
-                  />
+                  /> */}
+
+                      <Image
+                  src={imageUrl + "grin ux.webp"}
+                  className="responsive-img grincare-packaging-design-img"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={1920}
+                />
                 </div>
               </div>
             </div>
@@ -335,21 +431,46 @@ async function page() {
       </div>
 
       <div className="container-fluid p-0">
-        <img
+        {/* <img
           src={imageUrl + "grin 3.webp"}
           alt=""
           className="img-fluid w-100"
-        />
-        <img
+        /> */}
+
+           <Image
+                  src={imageUrl + "grin 3.webp"}
+                  className="responsive-img w-100"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={625}
+                />
+        {/* <img
           src={imageUrl + "grin 6.webp"}
           alt=""
           className="img-fluid w-100"
-        />
-        <img
+        /> */}
+
+        
+           <Image
+                 src={imageUrl + "grin 6.webp"}
+                  className="responsive-img w-100"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={625}
+                />
+        {/* <img
           src={imageUrl + "grin 7.webp"}
           alt=""
           className="img-fluid w-100"
-        />
+        /> */}
+              <Image
+                 src={imageUrl + "grin 7.webp"}
+                  className="responsive-img w-100"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={625}
+                />
+
         <video
           src="https://dndesigns.co.in/uploads/videos/Grincare.mp4"
           width="100%"
@@ -358,11 +479,19 @@ async function page() {
           playsInline
           className="nectarpurecasestudy-video"
         />
-        <img
+        {/* <img
           src="https://dndesigns.co.in/uploads/videos/grin 4.webp"
           alt=""
           className="img-fluid w-100"
-        />
+        /> */}
+
+        <Image
+                  src="https://dndesigns.co.in/uploads/videos/grin 4.webp"
+                  className="responsive-img w-100"
+                  alt="grin care case study page image"
+                  width={1600}
+                  height={625}
+                />
       </div>
     </div>
   );

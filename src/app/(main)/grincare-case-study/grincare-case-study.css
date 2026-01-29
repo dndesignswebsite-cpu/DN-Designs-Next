@@ -218,3 +218,9 @@
         font-size: 20px;
     }
 }
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
