@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
       className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}
     >
       <body suppressHydrationWarning>
+
         {/* =========================
            GTM - NOSCRIPT (BODY START)
         ========================= */}
@@ -89,19 +90,6 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* =========================
-            MICROSOFT CLARITY
-            ========================= */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "jjlvg2o4nh");
-  `}
-        </Script>
-
-        {/* =========================
            TAWK.TO LIVE CHAT
         ========================= */}
         <Script
@@ -122,6 +110,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
       </body>
     </html>
   );
