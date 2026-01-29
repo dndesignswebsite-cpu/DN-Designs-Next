@@ -26,6 +26,12 @@
   border-radius: 12px 12px 0 0;
 }
 
+.port-div-img {
+  margin: 0;
+  padding: 0;
+  border-radius: 12px 12px 0 0;
+}
+
 .port-div video {
   margin: 0;
   padding: 0;
@@ -503,3 +509,8 @@
 }
 }
 
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

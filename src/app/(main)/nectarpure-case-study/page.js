@@ -6,6 +6,7 @@ import "./nectarpure-case-study.css";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -101,11 +102,19 @@ async function page() {
       <div className="container nectarpure">
         <div className="row nextarpure-first-row-case-study">
           <div className="col-lg-4 col-md-5">
-            <img
+            {/* <img
               src={imageUrl + "34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
-            />
+            /> */}
+
+             <Image
+                  src={imageUrl + "34ebjrhbkr.webp"}
+                  className="responsive-img"
+                  alt="nectarpure case study "
+                  width={1188}
+                  height={388}
+                />
           </div>
           <div className="col-lg-8 col-md-7 justify-content-space-between">
             <h2 className="nectarpure-h1">
@@ -173,11 +182,19 @@ async function page() {
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-lg-4 nectarpure-sticky">
-            <img
+            {/* <img
               src={imageUrl + "34ebjrhbkr.webp"}
               alt=""
               className="img-fluid"
-            />
+            /> */}
+
+            <Image
+                  src={imageUrl + "34ebjrhbkr.webp"}
+                  className="responsive-img"
+                  alt="nectarpure case study "
+                  width={1188}
+                  height={388}
+                />
             <div className="nectarpure-buttons d-flex flex-column align-items-start">
               <a href="#problem-statement" className="nectarpure-button1">
                 Problem Statement
@@ -213,23 +230,48 @@ async function page() {
                 </p>
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-7 col-lg-7">
-                    <img
+                    {/* <img
                       src={imageUrl + "wbehgdvwe.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
-                    />
+                    /> */}
+
+                    <Image
+                 src={imageUrl + "wbehgdvwe.webp"}
+                  className="responsive-img nectarpureproblem-img1"
+                  alt="nectarpure case study "
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                   <div className="col-md-5 col-lg-5">
-                    <img
+                    {/* <img
                       src={imageUrl + "nectarpure 1.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2 mb-lg-3 mb-md-3"
-                    />
-                    <img
+                    /> */}
+
+                     <Image
+                  src={imageUrl + "nectarpure 1.webp"}
+                  className="responsive-img nectarpureproblem-img2 mb-lg-3 mb-md-3"
+                  alt="nectarpure case study "
+                  width={1500}
+                  height={1000}
+                />
+                    {/* <img
                       src={imageUrl + "nectarpure 2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img2"
-                    />
+                    /> */}
+                    
+
+                <Image
+                  src={imageUrl + "nectarpure 2.webp"}
+                  className="responsive-img nectarpureproblem-img2"
+                  alt="nectarpure case study "
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                 </div>
               </div>
@@ -247,10 +289,18 @@ async function page() {
                   the market. With our minimalistic design, we ensured that the
                   product’s USP and health benefits take the centre stage.
                 </p>
-                <img
+                {/* <img
                   src={imageUrl + "nectarpure 5.webp"}
                   alt=""
                   className="img-fluid packaging-design-img"
+                /> */}
+
+                 <Image
+                 src={imageUrl + "nectarpure 5.webp"}
+                  className="responsive-img packaging-design-img"
+                  alt="nectarpure case study "
+                  width={1600}
+                  height={1921}
                 />
               </div>
             </div>
@@ -267,31 +317,64 @@ async function page() {
                 </p>
                 <div className="row nectarpure-problem-img">
                   <div className="col-md-5 col-lg-5">
-                    <img
+                    {/* <img
                       src={imageUrl + "Untitled-2.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0"
-                    />{" "}
+                    /> */}
+
+                      <Image
+                src={imageUrl + "Untitled-2.webp"}
+                  className="responsive-img nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0"
+                  alt="nectarpure case study "
+                  width={1200}
+                  height={915}
+                />
+                    {" "}
                   </div>
                   <div className="col-md-7 col-lg-7">
-                    <img
+                    {/* <img
                       src={imageUrl + "Frame-427324120.webp"}
                       alt=""
                       className="img-fluid nectarpureproblem-img1"
-                    />
+                    /> */}
+
+                          <Image
+                src={imageUrl + "Frame-427324120.webp"}
+                  className="responsive-img nectarpureproblem-img1"
+                  alt="nectarpure case study "
+                  width={1600}
+                  height={1048}
+                />
                   </div>
                 </div>
                 <div className="row px-4 py-2">
-                  <img
+                  {/* <img
                     src={imageUrl + "Group-427321841-2048x807.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1 mb-3"
-                  />
-                  <img
+                  /> */}
+
+                         <Image
+                 src={imageUrl + "Group-427321841-2048x807.webp"}
+                  className="responsive-img nectarpureproblem-img1 mb-3"
+                  alt="nectarpure case study "
+                  width={2048}
+                  height={807}
+                />
+                  {/* <img
                     src={imageUrl + "Frame-427324252-2048x808.webp"}
                     alt=""
                     className="img-fluid nectarpureproblem-img1"
-                  />
+                  /> */}
+
+                         <Image
+                 src={imageUrl + "Frame-427324252-2048x808.webp"}
+                  className="responsive-img nectarpureproblem-img1"
+                  alt="nectarpure case study "
+                  width={2048}
+                  height={807}
+                />
                 </div>
               </div>
             </div>
@@ -300,21 +383,45 @@ async function page() {
       </div>
 
       <div className="container-fluid p-0">
-        <img
+        {/* <img
           src={imageUrl + "nectarpure 6.webp"}
           alt=""
           className="img-fluid w-100"
-        />
-        <img
+        /> */}
+
+              <Image
+                 src={imageUrl + "nectarpure 6.webp"}
+                  className="responsive-img w-100"
+                  alt="nectarpure case study "
+                  width={1600}
+                  height={625}
+                />
+        {/* <img
           src={imageUrl + "nectarpure 3.webp"}
           alt=""
           className="img-fluid w-100"
-        />
-        <img
+        /> */}
+
+        <Image
+                  src={imageUrl + "nectarpure 3.webp"}
+                  className="responsive-img w-100"
+                  alt="nectarpure case study "
+                  width={1600}
+                  height={625}
+                />
+        {/* <img
           src={imageUrl + "nectarpure 7.webp"}
           alt=""
           className="img-fluid w-100"
-        />
+        /> */}
+
+        <Image
+                  src={imageUrl + "nectarpure 7.webp"}
+                  className="responsive-img w-100"
+                  alt="nectarpure case study "
+                  width={1600}
+                  height={625}
+                />
       </div>
     </div>
   );

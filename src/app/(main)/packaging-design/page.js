@@ -12,6 +12,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -257,10 +258,16 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
-                <img
-                  // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                {/* <img
                   src={imageUrl + "3y4rfbrjbj.webp"}
                   className="img-fluid"
+                /> */}
+                <Image
+                   src={imageUrl + "3y4rfbrjbj.webp"}
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -284,9 +291,16 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
-                <img
+                {/* <img
                   src={imageUrl + "greenhorn-manu125.webp"}
                   className="img-fluid"
+                /> */}
+                <Image
+                   src={imageUrl + "greenhorn-manu125.webp"}
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -343,7 +357,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img src={imageUrl + "thames-5.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "thames-5.webp"} className="img-fluid" /> */}
+                 <Image
+                   src={imageUrl + "thames-5.webp"} 
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -370,9 +391,17 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
+                {/* <img
                   src={imageUrl + "j3kefdbkjer.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                   src={imageUrl + "j3kefdbkjer.webp"}
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -430,9 +459,16 @@ async function page() {
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
+                {/* <img
                   src={imageUrl + "wyegrygfewj.webp"}
                   className="img-fluid"
+                /> */}
+                 <Image
+                   src={imageUrl + "wyegrygfewj.webp"}
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -456,9 +492,17 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                <img
+                {/* <img
                   src={imageUrl + "kalprishi-1.webp"}
                   className="img-fluid"
+                /> */}
+
+                 <Image
+                  src={imageUrl + "kalprishi-1.webp"}
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">

@@ -14,6 +14,7 @@ import DigitalMarketingToggleBtn from "@/Components/DigitalMarketingToggleBtn/Di
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -304,17 +305,30 @@ async function page() {
 
               <div className="switch-on-middle-div-img-last">
                 <div className="col switch-on-middle-div-img">
-                  <img
-                    // src="https://dndesigns.co.in/wp-content/uploads/2025/06/1-01-01.png"
+                  {/* <img
                     src={imageUrl + "successfull groth.webp"}
                     className="img-fluid"
-                  ></img>
+                  ></img> */}
+                     <Image
+                  src={imageUrl + "successfull groth.webp"}
+                  className="responsive-img"
+                  alt="digital markting page image"
+                  width={1500}
+                  height={800}
+                />
                 </div>
               </div>
             </div>
 
             <div className="col-12 col-md-12 col-lg-6 main-switch-img">
-              <img src={imageUrl + "2-01.webp"} className="img-fluid" />
+              {/* <img src={imageUrl + "2-01.webp"} className="img-fluid" /> */}
+                <Image
+                  src={imageUrl + "2-01.webp"}
+                  className="responsive-img"
+                  alt="digital markting page image"
+                  width={600}
+                  height={600}
+                />
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import Faqs from "@/Components/Faqs/Faqs";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 import Link from "next/link";
+import Image from "next/image";
 
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";

@@ -14,6 +14,7 @@ import CatalougeBook from "@/Components/CatalougeBook/CatalougeBook";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -333,33 +334,60 @@ async function page() {
               <div className="e-catalogues-right">
                 <div className="row e-catalogues-right-row">
                   <div className="col-12 col-md-12 col-lg-6">
-                    <img
-                      // src="https://dndesigns.co.in/wp-content/uploads/2025/02/1.jpg"
-
+                    {/* <img
                       src={imageUrl + "wueygdhwvebjf.webp"}
                       className="img-fluid"
-                    />
+                    /> */}
+                    <Image
+                  src={imageUrl + "wueygdhwvebjf.webp"}
+                  className="responsive-img e-catalogues-right-img"
+                  alt="home city page image"
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
-                    <img
+                    {/* <img
                       src={imageUrl + "hegwhdjh.webp"}
                       className="img-fluid"
-                    />
+                    /> */}
+
+                      <Image
+                  src={imageUrl + "hegwhdjh.webp"}
+                  className="responsive-img e-catalogues-right-img"
+                  alt="home city page image"
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                 </div>
 
                 <div className="row e-catalogues-right-row e-catalogues-right-row-d">
                   <div className="col-12 col-md-12 col-lg-6">
-                    <img
+                    {/* <img
                       src={imageUrl + "32egwhdvwehv.webp"}
                       className="img-fluid"
-                    />
+                    /> */}
+                        <Image
+                  src={imageUrl + "32egwhdvwehv.webp"}
+                  className="responsive-img e-catalogues-right-img"
+                  alt="home city page image"
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
-                    <img
+                    {/* <img
                       src={imageUrl + "gyewhdvewf.webp"}
                       className="img-fluid"
-                    />
+                    /> */}
+                       <Image
+                  src={imageUrl + "gyewhdvewf.webp"}
+                  className="responsive-img e-catalogues-right-img"
+                  alt="home city page image"
+                  width={1500}
+                  height={1000}
+                />
                   </div>
                 </div>
               </div>

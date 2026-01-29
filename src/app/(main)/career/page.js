@@ -8,6 +8,7 @@ import CareerPageForm from "@/Components/CareerPageForm/CareerPageForm";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta data
 export async function generateMetadata() {
@@ -115,10 +116,17 @@ async function page() {
               </p>
             </div>
             <div className="col-12 col-md-6 career-hero-col-r">
-              <img
+              {/* <img
                 src="https://dndesigns.co.in/uploads/pages/wetyfdghv.webp"
                 className="img-fluid"
-              />
+              /> */}
+              <Image
+                  src="https://dndesigns.co.in/uploads/pages/wetyfdghv.webp"
+                  className="responsive-img"
+                  alt="career page image"
+                  width={1000}
+                  height={1000}
+                />
             </div>
           </div>
         </div>
