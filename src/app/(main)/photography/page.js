@@ -10,6 +10,7 @@ import Form from "@/Components/Form/Form";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -128,10 +129,18 @@ async function page() {
       <section className="photography-image">
         <div className="container">
           <div className="row photography-image-img">
-            <img
+            {/* <img
               src="https://dndesigns.co.in/uploads/pages/sahbdnvnbn.webp"
               className="img-fluid"
-            />
+            /> */}
+
+                <Image
+                  src="https://dndesigns.co.in/uploads/pages/sahbdnvnbn.webp"
+                  className="responsive-img"
+                  alt="photography page image"
+                  width={1600}
+                  height={800}
+                />
           </div>
         </div>
       </section>
@@ -238,10 +247,18 @@ async function page() {
               </div>
             </div>
             <div className="col">
-              <img
+              {/* <img
                 src="https://dndesigns.co.in/uploads/pages/TDG02954.webp"
                 className="img-fluid"
-              ></img>
+              ></img> */}
+
+              <Image
+                  src="https://dndesigns.co.in/uploads/pages/TDG02954.webp"
+                  className="responsive-img visual-stories-that-img"
+                  alt="photography page image"
+                  width={1600}
+                  height={1067}
+                />
             </div>
           </div>
         </div>
@@ -252,10 +269,18 @@ async function page() {
         <div className="container">
           <div className="row flex-column-reverse flex-lg-row">
             <div className="col-12 col-md-12 col-lg-6">
-              <img
+              {/* <img
                 src="https://dndesigns.co.in/uploads/pages/Neha-Secretary-Look-2-scaled.webp"
                 className="img-fluid"
-              ></img>
+              ></img> */}
+
+               <Image
+                  src="https://dndesigns.co.in/uploads/pages/Neha-Secretary-Look-2-scaled.webp"
+                  className="responsive-img visual-stories-that-img"
+                  alt="photography page image"
+                  width={1600}
+                  height={1067}
+                />
             </div>
             <div className="col">
               <div className="visual-stories-that-content">
@@ -282,10 +307,18 @@ async function page() {
               </div>
             </div>
             <div className="col">
-              <img
+              {/* <img
                 src="https://dndesigns.co.in/uploads/pages/qwhjehbjbhjbh.webp"
                 className="img-fluid"
-              ></img>
+              ></img> */}
+
+                <Image
+                  src="https://dndesigns.co.in/uploads/pages/qwhjehbjbhjbh.webp"
+                  className="responsive-img visual-stories-that-img"
+                  alt="photography page image"
+                  width={1600}
+                  height={1067}
+                />
             </div>
           </div>
         </div>

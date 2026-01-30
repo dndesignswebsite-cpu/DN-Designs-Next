@@ -5,6 +5,7 @@ import BootstrapClient from "@/Components/BootstrapClient/BootstrapClient";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
 import TawkToChat from "@/Components/TawkToChat/TawkToChat";
+import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 
 /* =========================
    LOCAL FONTS
@@ -88,6 +89,12 @@ export default function RootLayout({ children }) {
            PAGE CONTENT
         ========================= */}
         {children}
+
+        {/* =========================
+            MICROSOFT CLARITY
+         ========================= */}
+        {/* <MicrosoftClarity /> */}
+        <MicrosoftClarity/>
 
         <TawkToChat />
       </body>

@@ -310,3 +310,9 @@
         font-size: 40px;
     }
 }
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

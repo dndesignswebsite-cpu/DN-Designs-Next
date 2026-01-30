@@ -6,6 +6,7 @@ import "./wlues-case-study.css";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -130,11 +131,19 @@ async function page() {
           </div>
         </div>
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "wlues1.webp"}
             alt=""
             className="img-fluid mt-5 case-study-img1"
-          />
+          /> */}
+
+                  <Image
+                  src={imageUrl + "wlues1.webp"}
+                  className="responsive-img mt-5 case-study-img1"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
 
         <div className="row align-items-start mt-5">
@@ -172,28 +181,52 @@ async function page() {
       <div className="container casestudy-images">
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6 mb-3 mb-lg-0">
-            <img
+            {/* <img
               src={imageUrl + "gsadjgjhsd.webp"}
               alt=""
               className="img-fluid case-study-img8"
-            />
+            /> */}
+
+             <Image
+                  src={imageUrl + "gsadjgjhsd.webp"}
+                  className="responsive-img case-study-img8"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "wvehdhjej.webp"}
               alt=""
               className="img-fluid case-study-img9"
-            />
+            /> */}
+
+              <Image
+                  src={imageUrl + "wvehdhjej.webp"}
+                  className="responsive-img case-study-img9"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "3ygewudhgew.webp"}
             alt=""
             className="img-fluid case-study-img5"
-          />
+          /> */}
+
+           <Image
+                   src={imageUrl + "3ygewudhgew.webp"}
+                  className="responsive-img case-study-img5"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
 
         <div className="row">
@@ -236,19 +269,35 @@ async function page() {
 
         <div className="row g-0">
           <div className="col-lg-6 col-md-6 col-12 px-0">
-            <img
+            {/* <img
               src={imageUrl + "whevdhvhjvh.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
-            />
+            /> */}
+
+                 <Image
+                  src={imageUrl + "whevdhvhjvh.webp"}
+                  className="responsive-img case-study-img2 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-md-6 col-12 px-0">
-            <img
+            {/* <img
               src={imageUrl + "whgevghsdavcd.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
-            />
+            /> */}
+
+            <Image
+                  src={imageUrl + "whgevghsdavcd.webp"}
+                  className="responsive-img case-study-img3 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
@@ -266,11 +315,19 @@ async function page() {
 
         <div className="row pt-lg-5">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "tfewgygvdhgvw.webp"}
               alt=""
               className="img-fluid case-study-img6"
-            />
+            /> */}
+
+            <Image
+                  src={imageUrl + "tfewgygvdhgvw.webp"}
+                  className="responsive-img case-study-img6"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
           <div className="col-lg-6 col-12 col-md-6">
             <h2 id="approach-heading1">Our Approach</h2>
@@ -288,106 +345,199 @@ async function page() {
       <div className="container casestudy-images">
         <div className="row">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "uyfjhjhjhgvvhj.webp"}
               alt=""
               className="img-fluid case-study-img7"
-            />
+            /> */}
+             <Image
+                  src={imageUrl + "uyfjhjhjhgvvhj.webp"}
+                  className="responsive-img case-study-img7"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "rwqtefdgwvh.webp"}
               alt=""
               className="img-fluid case-study-img7"
-            />
+            /> */}
+
+             <Image
+                  src={imageUrl + "rwqtefdgwvh.webp"}
+                  className="responsive-img case-study-img7"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "werwhvdshj.webp"}
             alt=""
             className="img-fluid case-study-img"
-          />
+          /> */}
+
+          <Image
+                  src={imageUrl + "werwhvdshj.webp"}
+                  className="responsive-img case-study-img"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
 
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "rwefhdgvhrjdj.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
-            />
+            /> */}
+             <Image
+                  src={imageUrl + "rwefhdgvhrjdj.webp"}
+                  className="responsive-img case-study-img2 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "nwjkebhdn.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
-            />
+            /> */}
+
+            <Image
+                  src={imageUrl + "nwjkebhdn.webp"}
+                  className="responsive-img case-study-img3 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "mweghgcadsvjg.webp"}
             alt=""
             className="img-fluid case-study-img"
-          />
+          /> */}
+          <Image
+                   src={imageUrl + "mweghgcadsvjg.webp"}
+                  className="responsive-img case-study-img"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
 
         <div className="row g-0">
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "wyegwhdvbnbn.webp"}
               alt=""
               className="img-fluid case-study-img2 mt-lg-4"
-            />
+            /> */}
+
+            <Image
+                   src={imageUrl + "wyegwhdvbnbn.webp"}
+                  className="responsive-img case-study-img2 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6 px-0">
-            <img
+            {/* <img
               src={imageUrl + "yewfdewghe.webp"}
               alt=""
               className="img-fluid case-study-img3 mt-lg-4"
-            />
+            /> */}
+
+            <Image
+                   src={imageUrl + "yewfdewghe.webp"}
+                  className="responsive-img case-study-img3 mt-lg-4"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "tyweffdcewghvh.webp"}
             alt=""
             className="img-fluid case-study-img"
-          />
+          /> */}
+
+          <Image
+                  src={imageUrl + "tyweffdcewghvh.webp"}
+                  className="responsive-img case-study-img"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
 
         <div className="row mt-lg-4">
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "nwejkbhdvvjh.webp"}
               alt=""
               className="img-fluid case-study-img7"
-            />
+            /> */}
+
+             <Image
+                  src={imageUrl + "nwejkbhdvvjh.webp"}
+                  className="responsive-img case-study-img7"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
 
           <div className="col-lg-6 col-12 col-md-6">
-            <img
+            {/* <img
               src={imageUrl + "weigydshvwjd.webp"}
               alt=""
               className="img-fluid case-study-img7"
-            />
+            /> */}
+
+             <Image
+                 src={imageUrl + "weigydshvwjd.webp"}
+                  className="responsive-img case-study-img7"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1500}
+                  />
           </div>
         </div>
 
         <div className="row">
-          <img
+          {/* <img
             src={imageUrl + "wejhbvdhgvwehd.webp"}
             alt=""
             className="img-fluid case-study-img mt-4 p-2"
-          />
+          /> */}
+
+           <Image
+                  src={imageUrl + "wejhbvdhgvwehd.webp"}
+                  className="responsive-img case-study-img mt-4 p-2"
+                  alt="Wlues case study page image"
+                  width={1500}
+                  height={1000}
+                  />
         </div>
       </div>
 

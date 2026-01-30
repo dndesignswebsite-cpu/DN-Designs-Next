@@ -126,6 +126,7 @@ async function page() {
                   alt="career page image"
                   width={1000}
                   height={1000}
+                  priority
                 />
             </div>
           </div>

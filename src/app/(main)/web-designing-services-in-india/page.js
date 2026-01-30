@@ -11,6 +11,7 @@ import Form from "@/Components/Form/Form";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -225,10 +226,17 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img
-                  // src="https://dndesigns.co.in/wp-content/uploads/2025/08/Enlite-3.jpg"
+                {/* <img
                   src={imageUrl + "bobalist-mockup.webp"}
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "bobalist-mockup.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -253,7 +261,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "Qualiteq.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Qualiteq.webp"} className="img-fluid" /> */}
+                 <Image
+                   src={imageUrl + "Qualiteq.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -280,7 +295,14 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "bombzy.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "bombzy.webp"} className="img-fluid" /> */}
+                  <Image
+                    src={imageUrl + "bombzy.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -305,7 +327,15 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "foodsure.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "foodsure.webp"} className="img-fluid" /> */}
+
+                 <Image
+                    src={imageUrl + "foodsure.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -333,7 +363,14 @@ async function page() {
           <div className="row brand-identity-row">
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "parda.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "parda.webp"} className="img-fluid" /> */}
+                  <Image
+                    src={imageUrl + "parda.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -359,7 +396,14 @@ async function page() {
             </div>
             <div className="col-12 col-md-6 px-2 brand-identity-main-div ">
               <div className="brand-identity-div">
-                <img src={imageUrl + "Letssup.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "Letssup.webp"} className="img-fluid" /> */}
+                  <Image
+                    src={imageUrl + "Letssup.webp"}
+                  className="responsive-img brand-identity-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
@@ -826,10 +870,18 @@ async function page() {
             </div>
 
             <div className="col-12 col-md-12 col-lg-6 our-technologies-img-div">
-              <img
+              {/* <img
                 src={imageUrl + "Frame-1000001599.jpg"}
                 className="img-fluid"
-              ></img>
+              ></img> */}
+
+                <Image
+                    src={imageUrl + "Frame-1000001599.jpg"}
+                  className="responsive-img our-technologies-img-div-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={1000}
+                />
             </div>
           </div>
         </div>
@@ -843,10 +895,18 @@ async function page() {
         <div className="container">
           <div className="row">
             <h2>Make your brand click!</h2>
-            <img
+            {/* <img
               src={imageUrl + "lowest-image-on-page.webp"}
               className="img-fluid"
-            />
+            /> */}
+
+            <Image
+                    src={imageUrl + "lowest-image-on-page.webp"}
+                  className="responsive-img"
+                  alt="web designing page image"
+                  width={1500}
+                  height={800}
+                />
 
             <div className="col-12 col-md-6 make-your-brand-col">
               <p>

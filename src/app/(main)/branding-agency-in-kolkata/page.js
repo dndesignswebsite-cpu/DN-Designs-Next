@@ -182,6 +182,7 @@ async function page() {
                 alt="home page image"
                 width={1000}
                 height={1000}
+                priority
               />
 
               {/* <img
@@ -195,6 +196,7 @@ async function page() {
                 alt="home page image"
                 width={700}
                 height={700}
+                priority
               />
             </div>
           </div>

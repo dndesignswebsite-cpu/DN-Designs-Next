@@ -45,6 +45,11 @@
     position: relative;
     bottom: -25.7%;
   }
+
+   .what-drives-our-growth-img-section-img{
+    position: relative;
+    bottom: -25.7%;
+  }
 }
 
 @media(max-width:767px){
@@ -634,6 +639,12 @@
   width: 100%;
   border-radius: 18px;
 }
+
+.projects-completed-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
 .projects-completed-div-main-col{
   display: flex;
   flex-direction: column;
@@ -722,4 +733,10 @@ font-family: var(--font-corbert-bold);
     font-size: 40px;
     padding: 0 10px;
   }
+}
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
 }
