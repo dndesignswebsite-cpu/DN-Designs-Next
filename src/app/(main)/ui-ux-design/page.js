@@ -10,6 +10,7 @@ import Form from "@/Components/Form/Form";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -221,21 +222,48 @@ async function page() {
             <span className="every-pr">Industry's Language</span>
           </h2>
 
-          <img
+          {/* <img
             src={imageUrl + "qbwjhbbjh.webp"}
             alt=""
             className="img-fluid ui-img1"
-          />
-          <img
+          /> */}
+
+              <Image
+                 src={imageUrl + "qbwjhbbjh.webp"}
+                  className="responsive-img ui-img1"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={700}
+                  priority
+                />
+          {/* <img
             src={imageUrl + "grin-care-2.webp"}
             alt=""
             className="img-fluid ui-img2"
-          />
-          <img
+          /> */}
+
+          <Image
+                  src={imageUrl + "grin-care-2.webp"}
+                  className="responsive-img ui-img2"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={700}
+                  priority
+                />
+          {/* <img
             src={imageUrl + "action-air.webp"}
             alt=""
             className="img-fluid ui-img3"
-          />
+          /> */}
+
+           <Image
+                  src={imageUrl + "action-air.webp"}
+                  className="responsive-img ui-img3"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={700}
+                  priority
+                />
         </div>
       </section>
 
@@ -267,11 +295,20 @@ async function page() {
               </div>
             </div>
             <div className="col-12 col-lg-6 col-md-6">
-              <img
+              {/* <img
                 src={imageUrl + "bwjhbdjh.webp"}
                 alt=""
                 className="img-fluid"
-              />
+              /> */}
+
+               <Image
+                  src={imageUrl + "bwjhbdjh.webp"}
+                  className="responsive-img"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1500}
+                  priority
+                />
             </div>
           </div>
         </div>
@@ -725,10 +762,18 @@ async function page() {
 
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
-                <img
+                {/* <img
                   src={imageUrl + "LANDING-PAGE1.webp"}
                   alt=""
                   className="img-fluid w-100"
+                /> */}
+
+                 <Image
+                  src={imageUrl + "LANDING-PAGE1.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -753,10 +798,18 @@ async function page() {
 
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
-                <img
+                {/* <img
                   src={imageUrl + "MULTIPAGE.webp"}
                   alt=""
                   className="img-fluid w-100"
+                /> */}
+
+                <Image
+                  src={imageUrl + "MULTIPAGE.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -781,10 +834,18 @@ async function page() {
 
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
-                <img
+                {/* <img
                   src={imageUrl + "ONLINE.webp"}
                   alt=""
                   className="img-fluid w-100"
+                /> */}
+
+                  <Image
+                  src={imageUrl + "ONLINE.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -808,10 +869,18 @@ async function page() {
 
             <div className="col-12 col-lg-7 col-md-12 d-flex">
               <div className="landing-row rounded-4 d-flex">
-                <img
+                {/* <img
                   src={imageUrl + "FIGMA.webp"}
                   alt=""
                   className="img-fluid w-100"
+                /> */}
+
+                 <Image
+                  src={imageUrl + "FIGMA.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -841,10 +910,18 @@ async function page() {
               </div>
 
               <div className="craft-first-div-mobile-img">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/wp-content/uploads/2024/12/FIGMA.png"
                   alt=""
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "LANDING-PAGE1.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -863,10 +940,18 @@ async function page() {
               </div>
 
               <div className="craft-first-div-mobile-img">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/wp-content/uploads/2024/12/FIGMA.png"
                   alt=""
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "MULTIPAGE.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -885,10 +970,18 @@ async function page() {
               </div>
 
               <div className="craft-first-div-mobile-img">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/wp-content/uploads/2024/12/FIGMA.png"
                   alt=""
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "ONLINE.webp"}
+                  className="responsive-img w-100"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>
@@ -906,10 +999,18 @@ async function page() {
               </div>
 
               <div className="craft-first-div-mobile-img">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/wp-content/uploads/2024/12/FIGMA.png"
                   alt=""
                   className="img-fluid"
+                /> */}
+
+                <Image
+                  src={imageUrl + "FIGMA.webp"}
+                  className="responsive-img"
+                  alt="ui-ux page image"
+                  width={1500}
+                  height={1000}
                 />
               </div>
             </div>

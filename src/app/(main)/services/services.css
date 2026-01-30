@@ -46,6 +46,12 @@
   border-radius: 20px;
 }
 
+.front-img {
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+
 .front h3 {
   color: #000;
   padding: 20px 0px 8px 10px;
@@ -391,3 +397,9 @@
   font-weight: 500;
 }
 
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

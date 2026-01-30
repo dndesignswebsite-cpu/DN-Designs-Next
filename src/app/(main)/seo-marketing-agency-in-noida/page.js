@@ -14,6 +14,7 @@ import WebsiteAuditForm from "@/Components/WebsiteAuditForm/WebsiteAuditForm";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -226,7 +227,15 @@ async function page() {
               <ContactUsBtn />
             </div>
             <div className="col-12 col-md-12 col-lg-6 what-drives-our-growth-img-section">
-              <img src={imageUrl + "jkjk.webp"} className="img-fluid"></img>
+              {/* <img src={imageUrl + "jkjk.webp"} className="img-fluid"></img> */}
+                <Image
+                  src={imageUrl + "jkjk.webp"} 
+                  className="responsive-img what-drives-our-growth-img-section-img"
+                  alt="seo page image"
+                  width={1500}
+                  height={1000}
+                  priority
+                />
             </div>
           </div>
         </div>
@@ -245,7 +254,17 @@ async function page() {
                   drive more organic traffic. At the core are on-page and
                   off-page optimisation as well as technical SEO.
                 </p>
-                <img src={imageUrl + "jhfjhh.webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "jhfjhh.webp"} className="img-fluid" /> */}
+
+
+                  <Image
+                  src={imageUrl + "jhfjhh.webp"}
+                  className="responsive-img what-drives-our-growth-img-section-img"
+                  alt="seo page image"
+                  width={900}
+                  height={600}
+                  priority
+                />
               </div>
             </div>
 
@@ -258,7 +277,15 @@ async function page() {
                   activities. It also helps confirm whether the strategy is
                   yielding positive results or requires modifications.
                 </p>
-                <img src={imageUrl + "jkjk (1).webp"} className="img-fluid" />
+                {/* <img src={imageUrl + "jkjk (1).webp"} className="img-fluid" /> */}
+                  <Image
+                   src={imageUrl + "jkjk (1).webp"} 
+                  className="responsive-img what-drives-our-growth-img-section-img"
+                  alt="seo page image"
+                  width={1500}
+                  height={1000}
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -973,10 +1000,18 @@ async function page() {
               </div>
             </div>
             <div className="col-12 col-md-12 col-lg-6">
-              <img
+              {/* <img
                 src={imageUrl + "wjebhhdseo-01.webp"}
                 className="img-fluid"
-              />
+              /> */}
+
+                <Image
+                  src={imageUrl + "wjebhhdseo-01.webp"}
+                  className="responsive-img projects-completed-img"
+                  alt="seo page image"
+                  width={1000}
+                  height={1000}
+                />
             </div>
           </div>
         </div>

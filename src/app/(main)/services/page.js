@@ -13,6 +13,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -233,11 +234,20 @@ async function page() {
             <div className="col-12 col-md-4 service-div">
               <div className="service-card">
                 <div className="front">
-                  <img
+                  {/* <img
                     src={imageUrl + "brand-identity.webp"}
                     alt="Image"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                    <Image
+                 src={imageUrl + "brand-identity.webp"}
+                  className="responsive-img front-img"
+                  alt="services page image"
+                  width={1500}
+                  height={1500}
+                  priority
+                />
                   <h3>01</h3>
                   <p>Brand Identity</p>
                 </div>
@@ -299,11 +309,19 @@ async function page() {
             <div className="col-12 col-md-4 service-div">
               <div className="service-card">
                 <div className="front">
-                  <img
+                  {/* <img
                     src={imageUrl + "Communication.webp"}
                     alt="Image"
                     className="img-fluid"
-                  />
+                  /> */}
+                    <Image
+                 src={imageUrl + "Communication.webp"}
+                  className="responsive-img front-img"
+                  alt="services page image"
+                  width={1500}
+                  height={1500}
+                  priority
+                />
                   <h3>02</h3>
                   <p>Communication strategy</p>
                 </div>
@@ -366,11 +384,20 @@ async function page() {
             <div className="col-12 col-md-4 service-div">
               <div className="service-card">
                 <div className="front">
-                  <img
+                  {/* <img
                     src={imageUrl + "wegheghhvg.webp"}
                     alt="Image"
                     className="img-fluid"
-                  />
+                  /> */}
+
+                      <Image
+                 src={imageUrl + "wegheghhvg.webp"}
+                  className="responsive-img front-img"
+                  alt="services page image"
+                  width={1500}
+                  height={1500}
+                  priority
+                />
                   <h3>03</h3>
                   <p>Web Design</p>
                 </div>

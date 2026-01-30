@@ -149,6 +149,7 @@ async function page() {
                 width={1500}
                 height={1400}
                 className="responsive-img"
+                priority
               />
             </div>
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">

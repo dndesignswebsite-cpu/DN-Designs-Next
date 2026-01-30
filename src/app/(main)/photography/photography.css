@@ -151,6 +151,10 @@
     border-radius: 20px;
 }
 
+.visual-stories-that-img{
+    border-radius: 20px;
+}
+
 
 @media (max-width:991px){
   .visual-stories-that{
@@ -160,4 +164,10 @@
 .visual-stories-that-content h3{
   font-size: 30px;
 }
+}
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
 }

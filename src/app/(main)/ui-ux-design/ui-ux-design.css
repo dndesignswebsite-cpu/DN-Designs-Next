@@ -523,3 +523,9 @@ font-weight: 700;
   margin-top: 20px;
 }
 
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+

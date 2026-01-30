@@ -11,6 +11,7 @@ import AutoCounter from "@/Components/AutoCounter/AutoCounter";
 import PagesHero from "@/Components/PagesHero/PagesHero";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
 
 // meta tags
 export async function generateMetadata() {
@@ -258,9 +259,18 @@ async function page() {
               </div>
 
               <div className="social-media-image-div">
-                <img
+                {/* <img
                   src={imageUrl + "wjhbevasdbh.webp"}
                   className="img-fluid"
+                /> */}
+
+                    <Image
+                 src={imageUrl + "wjhbevasdbh.webp"}
+                  className="responsive-img social-media-image-div-img"
+                  alt="social media marketing page image"
+                  width={1000}
+                  height={1300}
+                  priority
                 />
               </div>
             </div>
@@ -703,10 +713,19 @@ async function page() {
         <div className="container">
           <div className="row projects-completed-main-row">
             <div className="col-12 col-md-12 col-lg-6">
-              <img
+              {/* <img
                 src={imageUrl + "mobile-mockup.webp"}
                 className="img-fluid"
-              />
+              /> */}
+
+                  <Image
+                 src={imageUrl + "mobile-mockup.webp"}
+                  className="responsive-img projects-completed-img"
+                  alt="services page image"
+                  width={1500}
+                  height={1500}
+                  priority
+                />
             </div>
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">
               <h3 className="text-center">E-commerce Brand Growth</h3>

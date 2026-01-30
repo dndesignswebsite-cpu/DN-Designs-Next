@@ -57,6 +57,16 @@
  border-radius: 10px;
 }
 
+.social-media-image-div-img{
+ position: relative;
+ left: -20px;
+ margin-top: 50px;
+ top: 0px;
+ padding-bottom: 0;
+ bottom: 0;
+ border-radius: 10px;
+}
+
 .social-media-content h2{
   font-family: var(--font-corbert-bold);
   font-size: 42px;
@@ -144,6 +154,14 @@
 }
 
 .social-media-image-div img{
+  width: 100%;  
+  position: relative;
+  left: 0;
+  top:0;
+  margin-bottom: 10px;
+}
+
+.social-media-image-div-img{
   width: 100%;  
   position: relative;
   left: 0;
@@ -502,6 +520,12 @@
   width: 100%;
   border-radius: 18px;
 }
+
+.projects-completed-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
 .projects-completed-div-main-col{
   display: flex;
   flex-direction: column;
@@ -671,6 +695,12 @@
     font-size: 40px;
     padding: 0 10px;
   }
+}
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
 }
 
 
