@@ -95,10 +95,10 @@
   height: auto;
 } */
 
-.companies:empty {
+.companies-desk:empty {
   visibility: hidden;
 }
-.companies {
+.companies-desk {
   margin-top: 20px;
   width: 150px;      
   flex-shrink: 0;      

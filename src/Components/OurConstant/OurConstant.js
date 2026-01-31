@@ -15,7 +15,7 @@ function OurConstant() {
             </span>
           </h2>
           <div className={`${styles["comapnies-logo-row"]}`}>
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
@@ -30,7 +30,7 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
@@ -47,7 +47,7 @@ function OurConstant() {
 
             </div>
 
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
@@ -62,7 +62,7 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
@@ -77,7 +77,7 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
@@ -94,7 +94,7 @@ function OurConstant() {
           </div>
 
           <div className={`${styles["comapnies-logo-row"]}`}>
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
@@ -108,7 +108,7 @@ function OurConstant() {
                 height={150}
               />
             </div>
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
@@ -124,7 +124,7 @@ function OurConstant() {
             </div>
 
             {/* 8 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
@@ -140,7 +140,7 @@ function OurConstant() {
             </div>
 
             {/* 9 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
@@ -156,7 +156,7 @@ function OurConstant() {
             </div>
 
             {/* 10 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
@@ -174,7 +174,7 @@ function OurConstant() {
 
           <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 11 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
@@ -190,7 +190,7 @@ function OurConstant() {
             </div>
 
             {/* 12 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
@@ -206,7 +206,7 @@ function OurConstant() {
             </div>
 
             {/* 13 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
@@ -222,7 +222,7 @@ function OurConstant() {
             </div>
 
             {/* 14 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className="img-fluid"
@@ -237,7 +237,7 @@ function OurConstant() {
             </div>
 
             {/* 15 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
@@ -255,7 +255,7 @@ function OurConstant() {
 
           <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 16 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
@@ -271,7 +271,7 @@ function OurConstant() {
             </div>
 
             {/* 17 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
@@ -286,7 +286,7 @@ function OurConstant() {
             </div>
 
             {/* 18 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
@@ -302,7 +302,7 @@ function OurConstant() {
             </div>
 
             {/* 19 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "david logo.webp"}
                 className="img-fluid"
@@ -318,7 +318,7 @@ function OurConstant() {
             </div>
 
             {/* 20 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
@@ -334,9 +334,9 @@ function OurConstant() {
             </div>
           </div>
 
-          <div className={`${styles["comapnies-logo-row"]}`}>
+          <div className={`${styles["comapnies-logo-row"]} `}>
             {/* 21 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
@@ -352,7 +352,7 @@ function OurConstant() {
             </div>
 
             {/* 22 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
@@ -368,7 +368,7 @@ function OurConstant() {
             </div>
 
             {/* 23 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
@@ -384,7 +384,7 @@ function OurConstant() {
             </div>
 
             {/* 24 */}
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
               {/* <img
                 src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
@@ -398,7 +398,7 @@ function OurConstant() {
                 height={150}
               />
             </div>
-            <div className={`${styles["companies"]}`}>
+            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
              
             </div>
           </div>
