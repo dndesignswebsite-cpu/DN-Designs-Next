@@ -45,80 +45,121 @@ const slidesData = [
 export default function HorizontalScroll() {
   const containerRef = useRef(null);
 
+  // useLayoutEffect(() => {
+  //   let container = containerRef.current;
+  //   let ctx;
+  //   let handleResize;
+
+  //   const setupAnimations = () => {
+  //     if (ctx) {
+  //       ctx.revert();
+  //     }
+
+  //     ctx = gsap.context(() => {
+  //       let tl = gsap.timeline({
+  //         scrollTrigger: {
+  //           trigger: container,
+  //           pin: true,
+  //           scrub: 1,
+
+  //           // end: () => container.scrollWidth - document.documentElement.clientWidth
+  //           end: () => "+=" + (container.scrollWidth - window.innerWidth),
+  //         },
+  //         defaults: { ease: "none", duration: 1 },
+  //       });
+
+  //       tl.to(".parallax", { x: 300 })
+  //         .to(
+  //           ".hrpanel",
+  //           {
+  //             x: () =>
+  //               -(container.scrollWidth - document.documentElement.clientWidth),
+  //           },
+  //           0,
+  //         )
+  //         .from(
+  //           ".secondAn",
+  //           {
+  //             opacity: 0,
+  //             scale: 0.5,
+  //             duration: 0.2,
+  //             stagger: { amount: 0.8 },
+  //           },
+  //           0,
+  //         );
+
+  //       gsap.from(".firstAn", {
+  //         duration: 1,
+  //         opacity: 0,
+  //         scale: 0.5,
+  //         scrollTrigger: {
+  //           trigger: container,
+  //           start: "top 90%",
+  //           end: "bottom 10%",
+  //           toggleActions: "play none none reverse",
+  //         },
+  //       });
+  //     }, container);
+
+  //     ScrollTrigger.refresh();
+  //   };
+
+  //   setupAnimations();
+
+  //   handleResize = () => {
+  //     setupAnimations();
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //     if (ctx) {
+  //       ctx.revert();
+  //     }
+  //   };
+  // }, []);
+
   useLayoutEffect(() => {
-    let container = containerRef.current;
-    let ctx;
-    let handleResize;
+  const container = containerRef.current;
+  if (!container) return;
 
-    const setupAnimations = () => {
-      if (ctx) {
-        ctx.revert();
-      }
+  let ctx;
 
-      ctx = gsap.context(() => {
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: container,
-            pin: true,
-            scrub: 1,
+  const setup = () => {
+    if (ctx) ctx.revert();
 
-            // end: () => container.scrollWidth - document.documentElement.clientWidth
-            end: () => "+=" + (container.scrollWidth - window.innerWidth),
-          },
-          defaults: { ease: "none", duration: 1 },
-        });
+    ctx = gsap.context(() => {
+      const panels = gsap.utils.toArray(".hrpanel");
 
-        tl.to(".parallax", { x: 300 })
-          .to(
-            ".hrpanel",
-            {
-              x: () =>
-                -(container.scrollWidth - document.documentElement.clientWidth),
-            },
-            0,
-          )
-          .from(
-            ".secondAn",
-            {
-              opacity: 0,
-              scale: 0.5,
-              duration: 0.2,
-              stagger: { amount: 0.8 },
-            },
-            0,
-          );
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          pin: true,
+          scrub: 1,
+          invalidateOnRefresh: true,
+          end: () =>
+            "+=" + (container.scrollWidth - window.innerWidth),
+        },
+      }).to(panels, {
+        x: () =>
+          -(container.scrollWidth - window.innerWidth),
+        ease: "none",
+      });
+    }, container);
 
-        gsap.from(".firstAn", {
-          duration: 1,
-          opacity: 0,
-          scale: 0.5,
-          scrollTrigger: {
-            trigger: container,
-            start: "top 90%",
-            end: "bottom 10%",
-            toggleActions: "play none none reverse",
-          },
-        });
-      }, container);
+    ScrollTrigger.refresh();
+  };
 
-      ScrollTrigger.refresh();
-    };
+  setup();
+  window.addEventListener("resize", setup);
 
-    setupAnimations();
+  return () => {
+    window.removeEventListener("resize", setup);
+    ctx && ctx.revert();
+  };
+}, []);
 
-    handleResize = () => {
-      setupAnimations();
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (ctx) {
-        ctx.revert();
-      }
-    };
-  }, []);
 
   return (
     <>
@@ -155,17 +196,4 @@ export default function HorizontalScroll() {
   );
 }
 
-{
-  /* <div className="hr-brand-that-overlay">
-                        <div className="hr-our-brand-that-content">
-                            <h3>{slidesData.title}</h3>
-                            <div className="hr-brand-that-buttons">
-                                <button>Brand Identity</button>
-                                <button>UI/UX</button>
-                                <button>Website</button>
-                                <button>Website</button>
-                            </div>
-                            <p>{slidesData.para}</p>
-                        </div>
-                    </div> */
-}
+
