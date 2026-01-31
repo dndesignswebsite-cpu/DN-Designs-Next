@@ -94,3 +94,12 @@
   width: 100%;
   height: auto;
 } */
+
+.companies:empty {
+  visibility: hidden;
+}
+.companies {
+  margin-top: 20px;
+  width: 150px;      
+  flex-shrink: 0;      
+}

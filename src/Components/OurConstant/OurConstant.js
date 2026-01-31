@@ -399,7 +399,7 @@ function OurConstant() {
               />
             </div>
             <div className={`${styles["companies"]}`}>
-              
+             
             </div>
           </div>
         </div>
