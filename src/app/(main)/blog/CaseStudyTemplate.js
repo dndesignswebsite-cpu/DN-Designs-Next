@@ -20,6 +20,8 @@ function CaseStudyTemplate({ blog, recentPosts }) {
                   src={blog.featuredImage.url}
                   className="blog-feature-image img-fluid mb-4"
                   alt={blog.featuredImage.altText || blog.title}
+                  height="540"
+                  width="855"
                 />
               )}
               <h1 className="single-blog-list-post-head-temp-two">{blog.title}</h1>

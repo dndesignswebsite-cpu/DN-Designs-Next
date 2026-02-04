@@ -21,6 +21,8 @@ function DefaultTemplate({ blog, recentPosts }) {
                   src={blog.featuredImage.url}
                   className="blog-feature-image img-fluid"
                   alt={blog.featuredImage.altText || blog.title}
+                  height="540"
+                  width="855"
                 />
               )}
 
