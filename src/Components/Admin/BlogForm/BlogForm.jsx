@@ -594,28 +594,48 @@ export default function BlogForm({ initialData, isEditing }) {
     }));
   };
 
-  // Auto-generate slug from title (only if not manually edited)
-  const handleTitleChange = (e) => {
-    const title = e.target.value;
-    const newSlug = title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/(^-|-$)/g, "");
-    setFormData((prev) => ({
-      ...prev,
-      title,
-      slug: slugManuallyEdited ? prev.slug : newSlug,
-    }));
-  };
+  // // Auto-generate slug from title (only if not manually edited)
+  // const handleTitleChange = (e) => {
+  //   const title = e.target.value;
+  //   const newSlug = title
+  //     .toLowerCase()
+  //     .replace(/[^a-z0-9]+/g, "-")
+  //     .replace(/(^-|-$)/g, "");
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     title,
+  //     slug: slugManuallyEdited ? prev.slug : newSlug,
+  //   }));
+  // };
 
-  // Track manual slug edits
-  const handleSlugChange = (e) => {
-    setSlugManuallyEdited(true);
-    setFormData((prev) => ({
-      ...prev,
-      slug: e.target.value,
-    }));
-  };
+  // // Track manual slug edits
+  // const handleSlugChange = (e) => {
+  //   setSlugManuallyEdited(true);
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     slug: e.target.value,
+  //   }));
+  // };
+
+// update start
+  // Title change handler 
+const handleTitleChange = (e) => {
+  const title = e.target.value;
+
+  setFormData((prev) => ({
+    ...prev,
+    title,
+  }));
+};
+
+// Slug change handler 
+const handleSlugChange = (e) => {
+  setFormData((prev) => ({
+    ...prev,
+    slug: e.target.value,
+  }));
+};
+  // update end
 
   const handleEditorToggle = () => {
     if (
