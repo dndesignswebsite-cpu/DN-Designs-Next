@@ -12,6 +12,10 @@
   gap: 24px;
 }
 
+.settings-grid>* {
+  min-width: 0;
+}
+
 .settings-avatar-card {
   grid-column: 1 / -1;
 }
@@ -42,11 +46,9 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--admin-primary) 0%,
-    var(--admin-primary-light) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--admin-primary) 0%,
+      var(--admin-primary-light) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
