@@ -10,18 +10,41 @@ import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 /* =========================
    LOCAL FONTS
 ========================= */
+// const corbert = localFont({
+//   src: "../../public/fonts/Corbert-Medium.woff2",
+//   variable: "--font-corbert",
+// });
+// const corbertBold = localFont({
+//   src: "../../public/fonts/Corbert-Bold.woff2",
+//   variable: "--font-corbert-bold",
+// });
+// const roboto = localFont({
+//   src: "../../public/fonts/Roboto-Regular.woff2",
+//   variable: "--font-roboto",
+// });
+
+
 const corbert = localFont({
   src: "../../public/fonts/Corbert-Medium.woff2",
   variable: "--font-corbert",
+  display: "swap",
+  preload: true,
 });
+
 const corbertBold = localFont({
   src: "../../public/fonts/Corbert-Bold.woff2",
   variable: "--font-corbert-bold",
+  display: "swap",
+  preload: true,
 });
+
 const roboto = localFont({
   src: "../../public/fonts/Roboto-Regular.woff2",
   variable: "--font-roboto",
+  display: "swap",
+  preload: true,
 });
+
 
 /* =========================
    VIEWPORT
