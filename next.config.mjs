@@ -68,6 +68,37 @@ const nextConfig = {
 
       // logo rediction end
 
+      // new redirctions 
+
+       {
+        source: "/product-photography",
+        destination: "/photography",
+        permanent: false, // true = 301, false = 302
+      },
+
+       {
+        source: "/logo-trademark",
+        destination: "/logo-designing",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/sharnay-food-packaging-work",
+        destination: "/blog/food-packaging-design",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/food-packaging-design",
+        destination: "/blog/food-packaging-design",
+        permanent: false, // true = 301, false = 302
+      },
+
+
+      // new end here
+
       {
         source: "/tag/:slug*",
         destination: "/",
