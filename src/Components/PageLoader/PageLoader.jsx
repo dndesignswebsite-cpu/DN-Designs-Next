@@ -15,7 +15,7 @@ export default function PageLoader({ children }) {
 
     const removeTimer = setTimeout(() => {
       setRemove(true);
-    }, 1800);
+    }, 1900);
 
     return () => {
       clearTimeout(exitTimer);
