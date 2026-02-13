@@ -5,6 +5,7 @@ import "../globals.css";
 import ScrollToTop from "@/Components/ScrollToTop/ScrollToTop";
 import WhatsApp from "@/Components/WhatsApp/WhatsApp";
 import Script from "next/script";
+import PageLoader from "@/Components/PageLoader/PageLoader";
 
 /* =========================
    METADATA (HOME PAGE)
@@ -115,13 +116,16 @@ export default function MainLayout({ children }) {
         }}
       />
 
-      <SmoothScroll>
-        <Header />
-        <main>{children}</main>
-        <ScrollToTop />
-        <Footer />
-        <WhatsApp />
-      </SmoothScroll>
+     <PageLoader>
+  <SmoothScroll>
+    <Header />
+    <main>{children}</main>
+    <ScrollToTop />
+    <Footer />
+    <WhatsApp />
+  </SmoothScroll>
+</PageLoader>
+
     </>
   );
 }
