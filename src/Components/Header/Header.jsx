@@ -192,9 +192,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Main Links
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -242,9 +242,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <span className={`${styles["header-solo-heading"]}`}>
                       Brand Identity
-                    </h3>
+                    </span>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -321,9 +321,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Communication Strategy
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -389,9 +389,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Website Design
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -445,9 +445,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Case Studies
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -515,9 +515,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Additional Links
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -580,9 +580,9 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <h3 className={`${styles["header-solo-heading"]}`}>
+                    <p className={`${styles["header-solo-heading"]}`}>
                       Blog System
-                    </h3>
+                    </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
@@ -607,9 +607,9 @@ const toggleNav = () => {
                     className="px-2 mb-1"
                     style={{ fontSize: "26px" }}
                   />
-                  <h3 className={`${styles["header-solo-heading"]}`}>
+                  <span className={`${styles["header-solo-heading"]}`}>
                     Contact Us
-                  </h3>
+                  </span>
                 </div>
 
                 <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
@@ -621,7 +621,7 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <h4>Phone Number</h4>
+                    <span className={`${styles["contact-us-col-h4"]}`}>Phone Number</span>
                     {/* <p>+91 941 601 1100</p>
                     <p>+91 720 660 5872</p> */}
 
@@ -644,7 +644,7 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <h4>Email Address</h4>
+                    <span className={`${styles["contact-us-col-h4"]}`}>Email Address</span>
                     {/* <p>info@dndesigns.co.in</p> */}
                     <p>
                       <a href="mailto:info@dndesigns.co.in">
@@ -663,7 +663,7 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <h4>Office Address</h4>
+                    <span className={`${styles["contact-us-col-h4"]}`}>Office Address</span>
                     <p>
                       C-40, Second Floor, Block C, Sector 58, Noida, Uttar
                       Pradesh 201301
@@ -681,9 +681,9 @@ const toggleNav = () => {
                         className="px-2 mb-1"
                         style={{ fontSize: "24px" }}
                       />
-                      <h3 className={`${styles["header-solo-heading"]}`}>
+                      <span className={`${styles["header-solo-heading"]}`}>
                         Follow Us
-                      </h3>
+                      </span>
                     </div>
                   </div>
                   <div className={`${styles["footer-social-icons"]}`}>
@@ -808,7 +808,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <p className="accordion-header">
                     <button
                       className="accordion-button"
                       type="button"
@@ -823,12 +823,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Main Links
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </p>
                   <div
                     id="collapseOne"
                     className="accordion-collapse collapse show"
@@ -871,7 +871,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <span className="accordion-header">
                     <button
                       className="accordion-button collapsed"
                       type="button"
@@ -886,12 +886,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Brand Identity
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </span>
                   <div
                     id="collapseTwo"
                     className="accordion-collapse collapse"
@@ -944,7 +944,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <span className="accordion-header">
                     <button
                       className={`${styles["accordion-item-button"]} accordion-button collapsed`}
                       type="button"
@@ -959,12 +959,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Communication Strategy
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </span>
                   <div
                     id="collapseThree"
                     className="accordion-collapse collapse"
@@ -1017,7 +1017,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <span className="accordion-header">
                     <button
                       className={`${styles["accordion-item-button"]} accordion-button collapsed`}
                       type="button"
@@ -1032,12 +1032,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Web Design
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </span>
                   <div
                     id="collapseFour"
                     className="accordion-collapse collapse"
@@ -1090,7 +1090,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <span className="accordion-header">
                     <button
                       className={`${styles["accordion-item-button"]} accordion-button collapsed`}
                       type="button"
@@ -1105,12 +1105,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Additional Pages
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </span>
                   <div
                     id="collapseFive"
                     className="accordion-collapse collapse"
@@ -1144,7 +1144,7 @@ const toggleNav = () => {
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
                 >
-                  <h2 className="accordion-header">
+                  <span className="accordion-header">
                     <button
                       className={`${styles["accordion-item-button"]} accordion-button collapsed`}
                       type="button"
@@ -1159,12 +1159,12 @@ const toggleNav = () => {
                           className="px-2 mb-1"
                           style={{ fontSize: "1.6em" }}
                         />
-                        <h3 className={`${styles["header-solo-heading"]}`}>
+                        <span className={`${styles["header-solo-heading"]}`}>
                           Case Studies
-                        </h3>
+                        </span>
                       </div>
                     </button>
-                  </h2>
+                  </span>
                   <div
                     id="collapseSix"
                     className="accordion-collapse collapse"

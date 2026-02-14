@@ -17,9 +17,9 @@ export default function Footer() {
     >
       <div className="container mb-5">
         <div className="container mb-4">
-          <h5 className={`${styles["footer-join"]}`}>
+          <p className={`${styles["footer-join"]}`}>
             Join DN Today. Getting More Done Together.
-          </h5>
+          </p>
         </div>
 
         <div className="container mt-5 ">
@@ -73,9 +73,9 @@ export default function Footer() {
 
             <div className="col-12 col-md-4 ms-auto text-start text-md-end footer-right-sec">
               <div className="mb-4">
-                <h6 className={`${styles["footer-add-conn"]}  mb-4`}>
+                <p className={`${styles["footer-add-conn"]}  mb-4`}>
                   Address
-                </h6>
+                </p>
                 <a
                   href="https://www.google.com/maps/place/DN+Designs/@28.6026697,77.3518461,17z/data=!3m1!4b1!4m6!3m5!1s0x390e656d7b05555d:0xf4c59d6befa39e13!8m2!3d28.602665!4d77.354421!16s%2Fg%2F11sm_vf71p?shorturl=1"
                   target="_blank"
@@ -91,9 +91,9 @@ export default function Footer() {
               </div>
 
               <div className="mt-5">
-                <h6 className={`${styles["footer-add-conn"]} fw-bold  mb-4`}>
+                <p className={`${styles["footer-add-conn"]} fw-bold  mb-4`}>
                   Contact Us
-                </h6>
+                </p>
                 <p className={`${styles["contact-details"]} mb-0`}>
                   <a href="tel:+91 9416011100"> +91 941 601 1100 </a>
                   <br />
