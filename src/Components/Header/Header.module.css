@@ -170,6 +170,7 @@
     color: var(--heading-main-color);
     font-family: var(--font-corbert-bold);
     font-weight: 700;
+    margin-bottom: 2px;;
 }
 
 .contact-us-heading-div{
@@ -184,7 +185,14 @@
     margin-right: 20px;
 }
 
-.contact-us-col h4{
+/* .contact-us-col h4{
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--heading-main-color);
+} */
+
+.contact-us-col-h4{
     font-family: var(--font-corbert-bold);
     font-weight: 700;
     font-size: 18px;
