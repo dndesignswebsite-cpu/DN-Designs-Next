@@ -535,20 +535,13 @@ async function page() {
                 <div className="top-cap-btm">
                   <h3>Design</h3>
                   <p>
-                    Designing is our core, and we excel in it. Be it the overall
-                    brand design, website design or content design
+                    Designing is our core, and we excel in it. Be it the overall brand design, website design or
                   </p>
                 </div>
                 <div className="top-cap-back-content">
                   <h3>Design</h3>
                   <p>
-                    Designing is our core, and Designing is our core, and we
-                    excel in it. BeDesigning is our core, and we excel in it.
-                    BeDesigning is our core, and we excel in it. Bewe excel in
-                    it. Be it the overall brand design, website design or
-                    content design – we have expertise and experience in all. We
-                    understand your vision and create a design that boosts your
-                    brand value and increases ROI.
+                    Designing is our core, and we excel in it. Be it the overall brand design, website design or content design – we have expertise and experience in all. We understand your vision and create a design that boosts your brand value and increases ROI.
                   </p>
                 </div>
               </div>
