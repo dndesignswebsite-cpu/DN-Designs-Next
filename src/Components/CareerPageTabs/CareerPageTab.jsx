@@ -55,7 +55,7 @@ function CareerPageTab() {
                 >
                   UI/UX Designer
  <br/>
-                  Experience: 2+ years
+                  Experience: Fresher
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -113,9 +113,9 @@ function CareerPageTab() {
                   aria-controls="simple-tabpanel-6"
                   aria-selected="false"
                 >
-                  Content Writer
+                  Content Writer 
  <br/>
-                Experience : 1+ years
+                Experience : Fresher
                 </a>
               </li>
               <li className="nav-item" role="presentation">
@@ -495,43 +495,75 @@ function CareerPageTab() {
                <h2>Content Writer</h2>
                 <h3>Job Description:</h3>
                 <p>
-                 We are looking for a talented and creative Content Writer to join our team. In this role, you will craft engaging and impactful content for various platforms, including graphics, websites, blogs, and articles. Your work will help enhance our brand presence and ensure alignment with our marketing strategies. The ideal candidate will have a flair for creative writing and a basic understanding of SEO to produce high-quality, optimized content that captures attention and drives results.
+                 We are looking for a passionate and creative Content Writing Intern to join our team. As a content writer, you will play a key role in creating compelling, engaging, and SEO-optimized content for blogs, social media, websites, product descriptions, and more. This is a great opportunity to sharpen your writing skills and gain real-world experience in digital marketing and brand communication.
                 </p>
                 <h3>What You’ll Do:</h3>
                 
                   <ul>
-                        <li>Develop compelling content for graphics, web pages, and marketing materials.</li>
+                        <li>Write clear, engaging, and grammatically correct content for various platforms</li>
 
-                        <li>Write SEO-friendly blogs and articles that drive organic traffic.</li>
+                        <li>Conduct research on industry-related topics to develop original content
+</li>
 
-                        <li>Collaborate with designers and marketers to create cohesive campaigns.</li>
+                        <li>Assist in developing content calendars and strategies
+</li>
 
-                        <li>Conduct research to stay updated on trends and generate fresh ideas.</li>
+                        <li>Edit and proofread content before publication
+</li>
 
-                        <li>Proofread and edit content to ensure clarity, accuracy, and consistency.</li>
+                        <li>Ensure all content aligns with brand tone and voice
+</li>
+
+ <li>Work closely with the marketing/design team for campaign content
+</li>
+
+ <li>Stay updated with content trends, SEO practices, and audience preferences
+</li>
                   </ul>
                 
 
 
                  <h3>Requirements:</h3>
                    <ul>
-                        <li>Proven experience in creative writing and content creation.
+                        <li>Strong command of English (written and verbal)
                           </li>
 
-                        <li>Basic understanding of SEO and content strategy.</li>
+                        <li>Passion for storytelling, creativity, and writing
+</li>
 
-                        <li>Strong copywriting skills with attention to detail.</li>
+                        <li>Basic understanding of SEO and content marketing is a plus
+</li>
+
+     <li>Ability to meet deadlines and manage multiple tasks
+</li>
+
+     <li>Familiarity with tools like Google Docs, Grammarly, WordPress is a bonus
+</li>
+
+     <li>Students pursuing degrees in English, Journalism, Mass Communication, Marketing, or related fields are preferred
+</li>
                   </ul>
 
 
-                 <h3>Skills:</h3>
+                 <h3>Perks:</h3>
                  <ul>
-                        <li>Excellent communication and creative writing skills.
+                        <li>Certificate of Internship
                           </li>
 
-                        <li>Ability to work collaboratively in a team environment.</li>
+                        <li>Letter of Recommendation (based on performance)
+</li>
 
-                        <li>Strong multitasking and time-management abilities.</li>
+                        <li>Opportunity to work on real-time projects
+</li>
+
+      <li>Learning experience in content strategy and SEO
+</li>
+
+      <li>Stipend Based
+</li>
+
+      <li>Possibility of a full-time offer after internship
+</li>
                   </ul>
               
               </div>

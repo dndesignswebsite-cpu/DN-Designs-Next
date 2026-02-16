@@ -82,6 +82,12 @@ const nextConfig = {
         permanent: false, // true = 301, false = 302
       },
 
+      {
+        source: "/blog/importance-of-the-right-packaging-design-for-fmcg-products",
+        destination: "/blog/fmcg-packaging-design",
+        permanent: false, // true = 301, false = 302
+      },
+
 
       {
         source: "/sharnay-food-packaging-work",
