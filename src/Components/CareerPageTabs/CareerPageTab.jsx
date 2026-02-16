@@ -10,7 +10,7 @@ function CareerPageTab() {
       <div className="container career-tabs">
         <div className="row g-0 career-tab-row">
 
-          {/* Left Side - Tab Links */}
+          {/* Left Sid - Tab Links */}
           <div className="col-3 links-col-career">
             <ul className="nav nav-tabs career-tabs-links" role="tablist">
               <li className="nav-item" role="presentation">
