@@ -17,6 +17,8 @@ import Image from "next/image";
 
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
+import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 
 // meta data
 export async function generateMetadata() {
@@ -76,6 +78,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Packaging Design Agency In Bangalore: We Design to Impress & Connect";
+  const description =
+    " We create thoughtful packaging by turning simple ideas into striking designs. We help brands stand out, connect with customers, and grow even in a fast-moving market.";
 
   // ---
   await connectDB();
@@ -160,7 +167,7 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
+      {/* <section className={`${styles.hero}`}>
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
@@ -178,10 +185,7 @@ async function page() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+
 
               <Image
                 src={imageUrl + "gkjeg.webp"}
@@ -191,10 +195,6 @@ async function page() {
                 height={1000}
               />
 
-              {/* <img
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]}`}
-              ></img> */}
 
               <Image
                 src={imageUrl + "hgefef.webp"}
@@ -206,11 +206,15 @@ async function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+       {/*.....hero...... */}
+     <HomePageHero title={title} description={description} />
      
 
      {/* our brands section */}
         <OurBrandsSectionHome/>
+        
       
       {/*.....our-constant-companions...... */}
       <OurConstant />

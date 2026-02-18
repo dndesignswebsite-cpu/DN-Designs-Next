@@ -18,6 +18,7 @@ import Image from "next/image";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // meta data
 export async function generateMetadata() {
@@ -73,6 +74,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Packaging Design Agency in Pune: Designing Impressive Packaging For You";
+  const description =
+    "Let’s increase your product’s market appeal through standout packaging designs. As a packaging design agency in Pune, we craft designs that instantly attract consumers’ attention, convey your brand values and increase sales.";
 
   // ---
   await connectDB();
@@ -159,7 +165,7 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
+      {/* <section className={`${styles.hero}`}>
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
@@ -178,10 +184,7 @@ async function page() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+  
 
               <Image
                 src={imageUrl + "gkjeg.webp"}
@@ -192,11 +195,7 @@ async function page() {
                 priority
               />
 
-              {/* <img
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]}`}
-              ></img> */}
-
+           
               <Image
                 src={imageUrl + "hgefef.webp"}
                 className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
@@ -209,7 +208,11 @@ async function page() {
           </div>
         </div>
       </section>
-     
+      */}
+
+       {/*.....hero...... */}
+     <HomePageHero title={title} description={description} />
+    
 
 
      {/* our brands section */}

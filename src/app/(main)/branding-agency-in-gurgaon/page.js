@@ -18,6 +18,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Link from "next/link";
 import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // meta data
 export async function generateMetadata() {
@@ -73,6 +74,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Branding Agency in Gurgaon - Designing Iconic Brands For You";
+  const description =
+    "We are a creative branding agency, passionate about helping businesses create an impactful brand presence.";
 
   // ---
   await connectDB();
@@ -156,55 +162,8 @@ async function page() {
       )}
       {/*schema ends here */}
 
-      {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
-        <div className="container">
-          <div className={`${styles["hero-rows"]} row`}>
-            <div className={`${styles["left-hero"]} col`}>
-              <h1>
-                Branding Agency in Gurgaon - Designing Iconic Brands For You
-              </h1>
-              <p className="para-roboto">
-                We are a creative branding agency, passionate about helping
-                businesses create an impactful brand presence.
-              </p>
-              <div>
-                <HomePageBtn />
-              </div>
-            </div>
-            <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                              src={imageUrl + "gkjeg.webp"}
-                              className={`${styles["hero-bg-img"]}`}
-                            ></img> */}
-
-              <Image
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={1000}
-                height={1000}
-                priority
-              />
-
-              {/* <img
-                              src={imageUrl + "hgefef.webp"}
-                              className={`${styles["hero-img-main"]}`}
-                            ></img> */}
-
-              <Image
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={700}
-                height={700}
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      
+        {/*.....hero...... */}
+     <HomePageHero title={title} description={description} />
 
       {/* our brands section */}
         <OurBrandsSectionHome/>

@@ -9,9 +9,9 @@ import Points from "@/Components/Points/Points";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 import Script from "next/script";
-import Link from 'next/link';
 import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // schema
 // HOME PAGE SCHEMA
@@ -114,6 +114,11 @@ const homeSchema = {
 // schema ends here
 
 export default function Home() {
+  // home page hero content
+  const title = "We Build Brands That Inspire Confidence and Drive Profit";
+  const description = "Let’s collaborate and craft a truly standout brand for you.";
+
+  // form content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
     "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
@@ -130,7 +135,7 @@ export default function Home() {
   }}
 />
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
+      {/* <section className={`${styles.hero}`}>
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
@@ -143,10 +148,7 @@ export default function Home() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+              
 
               <Image 
                 src={imageUrl + "gkjeg.webp"}
@@ -157,10 +159,7 @@ export default function Home() {
                  priority 
                 />
 
-              {/* <img
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]}`}
-              ></img> */}
+              
 
                <Image 
                src={imageUrl + "hgefef.webp"}
@@ -170,26 +169,27 @@ export default function Home() {
                 height={700}
                  priority 
                 />
-
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <HomePageHero title={title} description={description} />
      
 
      {/* our brands section */}
-        <OurBrandsSectionHome/>
-    
+        <OurBrandsSectionHome/>  
       {/*.....our-constant-companions...... */}
       <OurConstant />
+       {/*.....Our work...... */}
       <section id="ourworksection">
-      {/*.....Our work...... */}
       <OurWorkHomeSection />
       </section>
       {/*.....points...... */}
       <Points />
       {/* testimonial  */}
       <Testimonial />
+      {/* form */}
       <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </>
   );

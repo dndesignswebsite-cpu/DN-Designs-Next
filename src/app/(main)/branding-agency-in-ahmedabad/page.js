@@ -18,6 +18,7 @@ import Image from "next/image";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // meta data
 export async function generateMetadata() {
@@ -73,6 +74,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Branding Agency in Ahmedabad: Designing Brands That Inspire";
+  const description =
+    "Looking for perfection in branding? You have just found it. Our branding services in Ahmedabad take your business to the next level.";
 
   // ---
   await connectDB();
@@ -160,56 +166,12 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
-        <div className="container">
-          <div className={`${styles["hero-rows"]} row`}>
-            <div className={`${styles["left-hero"]} col`}>
-              <h1>
-                Branding Agency in Ahmedabad: Designing Brands That Inspire
-              </h1>
-              <p className="para-roboto">
-                Looking for perfection in branding? You have just found it. Our
-                branding services in Ahmedabad take your business to the next
-                level.
-              </p>
-              <div>
-                <HomePageBtn />
-              </div>
-            </div>
-            <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+     <HomePageHero title={title} description={description} />
+    
 
-              <Image
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={1000}
-                height={1000}
-                priority
-              />
-
-             
-
-              <Image
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={700}
-                height={700}
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
 
       {/* our brands section */}
-        <OurBrandsSectionHome/>
+      <OurBrandsSectionHome />
 
       {/*.....our-constant-companions...... */}
       <OurConstant />
@@ -255,7 +217,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 {/* <img src={imageUrl + "city-2.webp"} className="img-fluid" /> */}
-                 <Image
+                <Image
                   src={imageUrl + "city-2.webp"}
                   className="responsive-img image-box-city-page-img"
                   alt="home city page image"
@@ -304,7 +266,7 @@ async function page() {
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
               <div className="image-box-city-page">
                 {/* <img src={imageUrl + "city-3.webp"} className="img-fluid" /> */}
-                 <Image
+                <Image
                   src={imageUrl + "city-3.webp"}
                   className="responsive-img image-box-city-page-img"
                   alt="home city page image"
