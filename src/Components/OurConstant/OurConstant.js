@@ -446,9 +446,7 @@ function OurConstant() {
             </div>
 
             {/* 25 */}
-            {/* <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
-             
-            </div> */}
+            
 
             <div
               className={`${styles["companies"]} ${styles["companies-desk"]}`}
