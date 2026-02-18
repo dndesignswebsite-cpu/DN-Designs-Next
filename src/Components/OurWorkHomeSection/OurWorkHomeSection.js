@@ -155,21 +155,22 @@ export default function OurWorkHomeSection() {
               </div>
             </div>
             <div className="col-sm-12 col-md-6 our-work-div-unit">
-              <div className="imag-cont">
-                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
-                 <Image
-                  src={imageUrl + "kalprishi.webp"}
+             <div className="imag-cont">
+                  {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
+
+                    <Image
+                 src={imageUrl + "lets (1).webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
                 />
-                <div className="overlay"></div>
-                <div className="overlay-box">
-                  <div className="overlay-title">Kalprishi</div>
-                  <p className="Pras">Flavours that celebrate</p>
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Let's Up</div>
+                    <p className="Pras">Complete Wellness, Simplified</p>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -405,21 +406,20 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-6 our-work-div-unit">
                 <div className="imag-cont">
-                  {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
-
-                    <Image
-                 src={imageUrl + "lets (1).webp"}
+                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
+                 <Image
+                  src={imageUrl + "kalprishi.webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
                 />
-                  <div className="overlay"></div>
-                  <div className="overlay-box">
-                    <div className="overlay-title">Let's Up</div>
-                    <p className="Pras">Complete Wellness, Simplified</p>
-                  </div>
+                <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">Kalprishi</div>
+                  <p className="Pras">Flavours that celebrate</p>
                 </div>
+              </div>
               </div>
             </div>
 
