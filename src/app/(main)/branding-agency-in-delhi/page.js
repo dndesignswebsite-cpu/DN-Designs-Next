@@ -18,6 +18,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // meta data
 export async function generateMetadata() {
@@ -73,6 +74,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Branding Agency in Delhi: Where Brands Find Their Voice";
+  const description =
+    "As the best branding agency in Delhi, we deliver end-to-end branding services to help you build an impactful business.";
 
   // ---
   await connectDB();
@@ -157,7 +163,7 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
+      {/* <section className={`${styles.hero}`}>
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
@@ -171,10 +177,7 @@ async function page() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+          
 
               <Image
                 src={imageUrl + "gkjeg.webp"}
@@ -185,10 +188,7 @@ async function page() {
                 priority
               />
 
-              {/* <img
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]}`}
-              ></img> */}
+            
 
               <Image
                 src={imageUrl + "hgefef.webp"}
@@ -202,7 +202,13 @@ async function page() {
           </div>
         </div>
       </section>
+      */}
+
+       {/*.....hero...... */}
+     <HomePageHero title={title} description={description} />
      
+
+
         {/* our brands section */}
         <OurBrandsSectionHome/>
      

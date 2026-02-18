@@ -9,7 +9,7 @@ import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSecti
 import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
 import "./branding-agency-in-mumbai.css";
 import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
-import Faqs from "@/Components/Faqs/Faqs";
+import Faqs from "@/Components/Faqs/Faqs"; 
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import Form from "@/Components/Form/Form";
 import Image from "next/image";
@@ -17,6 +17,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Link from "next/link";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 
 // meta data
 export async function generateMetadata() {
@@ -72,6 +73,11 @@ export async function generateMetadata() {
 
 async function page() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // home page hero content
+  const title = "Branding Agency In Mumbai: Your Vision, Our Design";
+  const description =
+    "We are a leading branding agency in Mumbai, offering solutions that establish your brand’s identity & voice in the market and propel its massive growth.";
 
   // ---
   await connectDB();
@@ -155,7 +161,7 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      <section className={`${styles.hero}`}>
+      {/* <section className={`${styles.hero}`}>
         <div className="container">
           <div className={`${styles["hero-rows"]} row`}>
             <div className={`${styles["left-hero"]} col`}>
@@ -170,10 +176,7 @@ async function page() {
               </div>
             </div>
             <div className={`${styles["hero-img"]} col`}>
-              {/* <img
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]}`}
-              ></img> */}
+
 
               <Image
                 src={imageUrl + "gkjeg.webp"}
@@ -184,10 +187,6 @@ async function page() {
                 priority
               />
 
-              {/* <img
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]}`}
-              ></img> */}
 
               <Image
                 src={imageUrl + "hgefef.webp"}
@@ -201,7 +200,10 @@ async function page() {
           </div>
         </div>
       </section>
-     
+      */}
+
+       {/*.....hero...... */}
+     <HomePageHero title={title} description={description} />
 
      {/* our brands section */}
              <OurBrandsSectionHome/>
