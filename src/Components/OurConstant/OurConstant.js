@@ -15,7 +15,9 @@ function OurConstant() {
             </span>
           </h2>
           <div className={`${styles["comapnies-logo-row"]}`}>
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "holidayinn_logo.webp"}
                 className="img-fluid"
@@ -30,31 +32,34 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
                 alt=""
               ></img> */}
 
-               <Image
-               src={imageUrl + "audi logo.webp"}
+              <Image
+                src={imageUrl + "audi logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
                 height={150}
               />
-
             </div>
 
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "PB_Business logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "PB_Business logo.webp"}
+              <Image
+                src={imageUrl + "PB_Business logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -62,14 +67,16 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "iOrganic-Logo.webp"}
+              <Image
+                src={imageUrl + "iOrganic-Logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -77,14 +84,16 @@ function OurConstant() {
               />
             </div>
 
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "wlues logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
-             src={imageUrl + "wlues logo.webp"}
+              <Image
+                src={imageUrl + "wlues logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -94,13 +103,15 @@ function OurConstant() {
           </div>
 
           <div className={`${styles["comapnies-logo-row"]}`}>
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-                <Image
+              <Image
                 src={imageUrl + "Grin care logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -108,13 +119,15 @@ function OurConstant() {
                 height={150}
               />
             </div>
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "enlite logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
+              <Image
                 src={imageUrl + "enlite logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -124,7 +137,9 @@ function OurConstant() {
             </div>
 
             {/* 8 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "nectarpure (1).webp"}
                 className="img-fluid"
@@ -140,7 +155,9 @@ function OurConstant() {
             </div>
 
             {/* 9 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "smartyum logo.webp"}
                 className="img-fluid"
@@ -156,14 +173,16 @@ function OurConstant() {
             </div>
 
             {/* 10 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "Thames logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
-                  src={imageUrl + "Thames logo.webp"}
+              <Image
+                src={imageUrl + "Thames logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -174,14 +193,16 @@ function OurConstant() {
 
           <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 11 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "veikk logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                  src={imageUrl + "veikk logo.webp"}
+                src={imageUrl + "veikk logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -190,30 +211,33 @@ function OurConstant() {
             </div>
 
             {/* 12 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "enliiv logo.webp"}
                 className="img-fluid"
               ></img> */}
-                <Image
-                  src={imageUrl + "enliiv logo.webp"}
+              <Image
+                src={imageUrl + "enliiv logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
                 height={150}
               />
-
             </div>
 
             {/* 13 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "bobalist logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                  src={imageUrl + "bobalist logo.webp"}
+                src={imageUrl + "bobalist logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -222,13 +246,15 @@ function OurConstant() {
             </div>
 
             {/* 14 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className="img-fluid"
               ></img> */}
               <Image
-                  src={imageUrl + "wjvaghsdvhesgadcv.webp"}
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -237,14 +263,16 @@ function OurConstant() {
             </div>
 
             {/* 15 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "Bachpan logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                  src={imageUrl + "Bachpan logo.webp"}
+                src={imageUrl + "Bachpan logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -255,14 +283,16 @@ function OurConstant() {
 
           <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 16 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "qualiteq logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                  src={imageUrl + "qualiteq logo.webp"}
+                src={imageUrl + "qualiteq logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -271,13 +301,15 @@ function OurConstant() {
             </div>
 
             {/* 17 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "rungta logo.webp"}
                 className="img-fluid"
               ></img> */}
-               <Image
-                   src={imageUrl + "rungta logo.webp"}
+              <Image
+                src={imageUrl + "rungta logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -286,14 +318,16 @@ function OurConstant() {
             </div>
 
             {/* 18 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "floris logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                  src={imageUrl + "floris logo.webp"}
+                src={imageUrl + "floris logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -302,14 +336,16 @@ function OurConstant() {
             </div>
 
             {/* 19 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "david logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                 src={imageUrl + "david logo.webp"}
+                src={imageUrl + "david logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -318,14 +354,16 @@ function OurConstant() {
             </div>
 
             {/* 20 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "gleephoria logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                 src={imageUrl + "gleephoria logo.webp"}
+                src={imageUrl + "gleephoria logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -336,14 +374,16 @@ function OurConstant() {
 
           <div className={`${styles["comapnies-logo-row"]} `}>
             {/* 21 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "himalayan.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
-                 src={imageUrl + "himalayan.webp"}
+              <Image
+                src={imageUrl + "himalayan.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -352,14 +392,16 @@ function OurConstant() {
             </div>
 
             {/* 22 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "fluke logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                 src={imageUrl + "fluke logo.webp"}
+                src={imageUrl + "fluke logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -368,14 +410,16 @@ function OurConstant() {
             </div>
 
             {/* 23 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "one science logo.webp"}
                 className="img-fluid"
               ></img> */}
 
               <Image
-                 src={imageUrl + "one science logo.webp"}
+                src={imageUrl + "one science logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -384,13 +428,15 @@ function OurConstant() {
             </div>
 
             {/* 24 */}
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
               {/* <img
                 src={imageUrl + "mr-bomzy logo.webp"}
                 className="img-fluid"
               ></img> */}
 
-               <Image
+              <Image
                 src={imageUrl + "mr-bomzy logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -398,9 +444,24 @@ function OurConstant() {
                 height={150}
               />
             </div>
-            <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
+
+            {/* 25 */}
+            {/* <div className={`${styles["companies"]} ${styles["companies-desk"]}`}>
              
+            </div> */}
+
+            <div
+              className={`${styles["companies"]} ${styles["companies-desk"]}`}
+            >
+               <Image
+                src={imageUrl + "3-sisters-logo-1.webp"}
+                className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
+                alt="home page image"
+                width={150}
+                height={150}
+              />
             </div>
+            {/* 25 end */}
           </div>
         </div>
 
@@ -434,14 +495,13 @@ function OurConstant() {
                 src={imageUrl + "audi logo.webp"}
                 className="img-fluid"
               ></img> */}
-                <Image
+              <Image
                 src={imageUrl + "audi logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
                 height={150}
               />
-
             </div>
 
             {/* 3 */}
@@ -466,7 +526,7 @@ function OurConstant() {
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className="img-fluid"
               ></img> */}
-               <Image
+              <Image
                 src={imageUrl + "iOrganic-Logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -484,8 +544,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "wlues logo.webp"}
+              <Image
+                src={imageUrl + "wlues logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -499,8 +559,8 @@ function OurConstant() {
                 src={imageUrl + "Grin care logo.webp"}
                 className="img-fluid"
               ></img> */}
-               <Image
-              src={imageUrl + "Grin care logo.webp"}
+              <Image
+                src={imageUrl + "Grin care logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -516,7 +576,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "enlite logo.webp"}
+                src={imageUrl + "enlite logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -532,7 +592,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "nectarpure (1).webp"}
+                src={imageUrl + "nectarpure (1).webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -549,8 +609,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "smartyum logo.webp"}
+              <Image
+                src={imageUrl + "smartyum logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -565,8 +625,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "Thames logo.webp"}
+              <Image
+                src={imageUrl + "Thames logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -581,8 +641,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "veikk logo.webp"}
+              <Image
+                src={imageUrl + "veikk logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -598,7 +658,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-               src={imageUrl + "enliiv logo.webp"}
+                src={imageUrl + "enliiv logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -616,7 +676,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-               src={imageUrl + "bobalist logo.webp"}
+                src={imageUrl + "bobalist logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -631,8 +691,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "wjvaghsdvhesgadcv.webp"}
+              <Image
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -648,7 +708,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "Bachpan logo.webp"}
+                src={imageUrl + "Bachpan logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -664,7 +724,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "qualiteq logo.webp"}
+                src={imageUrl + "qualiteq logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -681,8 +741,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "rungta logo.webp"}
+              <Image
+                src={imageUrl + "rungta logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -698,7 +758,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "floris logo.webp"}
+                src={imageUrl + "floris logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -713,8 +773,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "david logo.webp"}
+              <Image
+                src={imageUrl + "david logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -730,7 +790,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "gleephoria logo.webp"}
+                src={imageUrl + "gleephoria logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -747,8 +807,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "himalayan.webp"}
+              <Image
+                src={imageUrl + "himalayan.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -763,8 +823,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "fluke logo.webp"}
+              <Image
+                src={imageUrl + "fluke logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -779,8 +839,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "one science logo.webp"}
+              <Image
+                src={imageUrl + "one science logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -795,15 +855,22 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-            src={imageUrl + "mr-bomzy logo.webp"}
+              <Image
+                src={imageUrl + "mr-bomzy logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
                 height={150}
               />
             </div>
+
+
+
+            
+
           </div>
+
+          
         </div>
 
         {/* mobile */}
@@ -825,8 +892,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-                  <Image
-            src={imageUrl + "holidayinn_logo.webp"}
+              <Image
+                src={imageUrl + "holidayinn_logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -841,8 +908,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-                <Image
-            src={imageUrl + "audi logo.webp"}
+              <Image
+                src={imageUrl + "audi logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -859,8 +926,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-            src={imageUrl + "PB_Business logo.webp"}
+              <Image
+                src={imageUrl + "PB_Business logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -875,8 +942,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-                <Image
-            src={imageUrl + "iOrganic-Logo.webp"}
+              <Image
+                src={imageUrl + "iOrganic-Logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -893,7 +960,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-                <Image
+              <Image
                 src={imageUrl + "wlues logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -909,7 +976,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
+              <Image
                 src={imageUrl + "Grin care logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -926,7 +993,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
+              <Image
                 src={imageUrl + "enlite logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -960,7 +1027,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
+              <Image
                 src={imageUrl + "smartyum logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
@@ -994,8 +1061,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "veikk logo.webp"}
+              <Image
+                src={imageUrl + "veikk logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1010,8 +1077,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "enliiv logo.webp"}
+              <Image
+                src={imageUrl + "enliiv logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1028,8 +1095,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-               src={imageUrl + "bobalist logo.webp"}
+              <Image
+                src={imageUrl + "bobalist logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1045,7 +1112,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-             src={imageUrl + "wjvaghsdvhesgadcv.webp"}
+                src={imageUrl + "wjvaghsdvhesgadcv.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1062,8 +1129,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "Bachpan logo.webp"}
+              <Image
+                src={imageUrl + "Bachpan logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1079,7 +1146,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "qualiteq logo.webp"}
+                src={imageUrl + "qualiteq logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1096,8 +1163,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-              src={imageUrl + "rungta logo.webp"}
+              <Image
+                src={imageUrl + "rungta logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1112,8 +1179,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-                <Image
-              src={imageUrl + "floris logo.webp"}
+              <Image
+                src={imageUrl + "floris logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1130,7 +1197,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
               <Image
-              src={imageUrl + "david logo.webp"}
+                src={imageUrl + "david logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1146,7 +1213,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "gleephoria logo.webp"}
+                src={imageUrl + "gleephoria logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1164,7 +1231,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-              src={imageUrl + "himalayan.webp"}
+                src={imageUrl + "himalayan.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1179,8 +1246,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-             src={imageUrl + "fluke logo.webp"}
+              <Image
+                src={imageUrl + "fluke logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1198,7 +1265,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-            src={imageUrl + "one science logo.webp"}
+                src={imageUrl + "one science logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1213,8 +1280,8 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
 
-               <Image
-           src={imageUrl + "mr-bomzy logo.webp"}
+              <Image
+                src={imageUrl + "mr-bomzy logo.webp"}
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}

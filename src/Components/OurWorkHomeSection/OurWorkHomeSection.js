@@ -92,17 +92,26 @@ export default function OurWorkHomeSection() {
               <div className="imag-cont">
                 {/* <img src={imageUrl + "nature-balance (1).webp"} alt="demo" /> */}
 
-                 <Image
+                 {/* <Image
                   src={imageUrl + "nature-balance (1).webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
-                />
+                /> */}
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                    <source
+                      src="https://dndesigns.co.in/uploads/videos/threeSistersVideo.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                
                 <div className="overlay"></div>
                 <div className="overlay-box">
-                  <div className="overlay-title">Nature's Balance</div>
-                  <p className="Pras">Fuel your day the green way</p>
+                  <div className="overlay-title">3 sisters</div>
+                  <p className="Pras">Taste the Freedom to Celebrate
+</p>
                 </div>
               </div>
             </div>
@@ -372,6 +381,50 @@ export default function OurWorkHomeSection() {
                 </div>
               </div>
             </div>
+
+
+
+
+            <div className="row our-work-row">
+              <div className="col-sm-12 col-md-6">
+                <div className="imag-cont">
+                  {/* <img src={imageUrl + "Wlues graphic.webp"} alt="demo" /> */}
+                   <Image
+                  src={imageUrl + "nature-balance (1).webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Nature's Balance</div>
+                    <p className="Pras">Fuel your day the green way</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 our-work-div-unit">
+                <div className="imag-cont">
+                  {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
+
+                    <Image
+                 src={imageUrl + "lets (1).webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Let's Up</div>
+                    <p className="Pras">Complete Wellness, Simplified</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
 
