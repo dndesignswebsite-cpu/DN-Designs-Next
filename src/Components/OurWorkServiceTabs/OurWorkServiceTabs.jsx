@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import "./OurWorkServiceTabs.css";
 import Image from "next/image";
+import CatalougePageFlip from "../LightBox/LightBox";
 
 export default function OurWorkServiceTabs() {
   const [activeTab, setActiveTab] = useState("Branding");
@@ -390,6 +391,10 @@ export default function OurWorkServiceTabs() {
                         src={imageUrl + "3.webp"}
                         className="img-fluid tab-img"
                       ></img> */}
+                       <CatalougePageFlip
+                                      src="https://youtu.be/s-PQhgPFPjE?si=OChhC9NiQYv-6LQd"
+                                      type="youtube"
+                                    >
                       <Image
                         src={imageUrl + "3.webp"}
                         alt="blog"
@@ -397,6 +402,7 @@ export default function OurWorkServiceTabs() {
                         height={1000}
                         className="responsive-img tab-img"
                       />
+                      </CatalougePageFlip>
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="row">
@@ -405,7 +411,10 @@ export default function OurWorkServiceTabs() {
                             src={imageUrl + "Natures-Balance-3D.webp"}
                             className="img-fluid tab-img"
                           ></img> */}
-
+                           <CatalougePageFlip
+                                      src="https://youtu.be/FfouzC6rBJY?si=mwNz09qzDZTzWzOw"
+                                      type="youtube"
+                                    >
                           <Image
                             src={imageUrl + "Natures-Balance-3D.webp"}
                             alt="blog"
@@ -413,12 +422,17 @@ export default function OurWorkServiceTabs() {
                             height={1000}
                             className="responsive-img tab-img"
                           />
+                          </CatalougePageFlip>
                         </div>
                         <div className="col-6">
                           {/* <img
                             src={imageUrl + "EAU.webp"}
                             className="img-fluid tab-img"
                           ></img> */}
+                           <CatalougePageFlip
+                                      src="https://youtu.be/vJMby5XhQ9Y?si=q4HdfoqoXwSbD5SQ"
+                                      type="youtube"
+                                    >
                           <Image
                             src={imageUrl + "EAU.webp"}
                             alt="blog"
@@ -426,6 +440,7 @@ export default function OurWorkServiceTabs() {
                             height={1000}
                             className="responsive-img tab-img"
                           />
+                          </CatalougePageFlip>
                         </div>
                       </div>
                       <div className="row">
@@ -434,6 +449,10 @@ export default function OurWorkServiceTabs() {
                             src={imageUrl + "greenhorn-THUMB.webp"}
                             className="img-fluid tab-img"
                           ></img> */}
+                           <CatalougePageFlip
+                                      src="https://youtu.be/dt35fewQRho?si=d0pg4tQOrymXjcql"
+                                      type="youtube"
+                                    >
                           <Image
                             src={imageUrl + "greenhorn-THUMB.webp"}
                             alt="blog"
@@ -441,12 +460,17 @@ export default function OurWorkServiceTabs() {
                             height={1000}
                             className="responsive-img tab-img"
                           />
+                          </CatalougePageFlip>
                         </div>
                         <div className="col-6">
                           {/* <img
                             src={imageUrl + "foodsure-thumb.webp"}
                             className="img-fluid tab-img"
                           ></img> */}
+                           <CatalougePageFlip
+                                      src="https://youtu.be/21i1C-297-M?si=YYDzNTm3AyAWorl-"
+                                      type="youtube"
+                                    >
                           <Image
                             src={imageUrl + "foodsure-thumb.webp"}
                             alt="blog"
@@ -454,6 +478,7 @@ export default function OurWorkServiceTabs() {
                             height={1000}
                             className="responsive-img tab-img"
                           />
+                          </CatalougePageFlip>
                         </div>
                       </div>
                     </div>
