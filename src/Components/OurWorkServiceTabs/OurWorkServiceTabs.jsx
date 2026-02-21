@@ -400,7 +400,7 @@ export default function OurWorkServiceTabs() {
                         alt="blog"
                         width={1500}
                         height={1000}
-                        className="responsive-img tab-img"
+                        className="responsive-img tab-img cgi-ad-img"
                       />
                       </CatalougePageFlip>
                     </div>
@@ -420,7 +420,7 @@ export default function OurWorkServiceTabs() {
                             alt="blog"
                             width={1500}
                             height={1000}
-                            className="responsive-img tab-img"
+                            className="responsive-img tab-img cgi-ad-img"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -438,7 +438,7 @@ export default function OurWorkServiceTabs() {
                             alt="blog"
                             width={1500}
                             height={1000}
-                            className="responsive-img tab-img"
+                            className="responsive-img tab-img cgi-ad-img"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -458,7 +458,7 @@ export default function OurWorkServiceTabs() {
                             alt="blog"
                             width={1500}
                             height={1000}
-                            className="responsive-img tab-img"
+                            className="responsive-img tab-img cgi-ad-img"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -476,7 +476,7 @@ export default function OurWorkServiceTabs() {
                             alt="blog"
                             width={1500}
                             height={1000}
-                            className="responsive-img tab-img"
+                            className="responsive-img tab-img cgi-ad-img"
                           />
                           </CatalougePageFlip>
                         </div>

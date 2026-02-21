@@ -4,7 +4,9 @@
   padding-top: 70px;
   padding-bottom: 30px;
 }
-
+.every-pr{
+  color: #ca2734;;
+}
 :root {
   --cards: 4;
   --cardHeight: 95vh;
