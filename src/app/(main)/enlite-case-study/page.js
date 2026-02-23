@@ -103,6 +103,7 @@ async function page() {
           width="100%"
           autoPlay
           muted
+          loop
           playsInline
           className="enlitecasestudy-video"
         />
