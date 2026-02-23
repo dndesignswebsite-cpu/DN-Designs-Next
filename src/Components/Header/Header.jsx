@@ -463,6 +463,21 @@ const toggleNav = () => {
                         Enlite
                       </Link>
                     </li>
+
+                    <li>
+                      <Link
+                        href="/letssupp-case-study"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${
+                          pathname === "/letssupp-case-study"
+                            ? styles["active"]
+                            : ""
+                        }`}
+                      >
+                        Let's Supp
+                      </Link>
+                    </li>
+
                     <li>
                       <Link
                         href="/grincare-case-study"

@@ -45,6 +45,13 @@ const roboto = localFont({
   preload: true,
 });
 
+const letsupfont = localFont({
+  src: "../../public/fonts/CormorantGaramond-MediumItalic.woff2",
+  variable: "--font-letsup",
+  display: "swap",
+  preload: true,
+});
+
 
 /* =========================
    VIEWPORT
@@ -67,7 +74,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}`}
+      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}`}
     >
       <body suppressHydrationWarning>
         {/* =========================
