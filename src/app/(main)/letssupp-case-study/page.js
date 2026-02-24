@@ -1006,17 +1006,24 @@ async function page() {
          <div className="col-12 col-md-6 lets-up-elevate-btn-signing-off">
               <div className="lets-up-elevate-btn-up-div">
                 <span className="btn-1">Let’s Supp</span>
-                <span className="btn-2">Branding Identity</span>
+                <span className="btn-2">Branding</span>
+                
                 
               </div>
 
               <div className="lets-up-elevate-btn-down-div">
-                <span className="btn-4">Packaging Design</span>
-                <span className="btn-5">website</span>
+                <span className="btn-4">Brand architecture</span>
+               <span className="btn-5">Branding Identity</span>
+              </div>
+              <div className="lets-up-elevate-btn-down-div">
+                 <span className="btn-5">Packaging and label designs
+</span>
+               
               </div>
 
               <div className="lets-up-elevate-btn-down-div">
-                <span className="btn-4">Social Media Marketing</span>
+                <span className="btn-1">UI/UX</span>
+                <span className="btn-4">Website Development</span>
               </div>
             </div>
 
