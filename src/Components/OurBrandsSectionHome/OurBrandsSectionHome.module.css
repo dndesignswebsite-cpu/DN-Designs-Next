@@ -32,6 +32,10 @@
   --index: 4;
 }
 
+.card5 {
+  --index: 5;
+}
+
 .card {
   position: sticky;
   top: 20px;
@@ -75,6 +79,13 @@
 }
 .card-body-grin {
   background-image: url("https://dndesigns.co.in/uploads/pages/13.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-body-letssupp {
+  background-image: url("https://dndesigns.co.in/uploads/pages/hero44.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

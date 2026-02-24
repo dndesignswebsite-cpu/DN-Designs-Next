@@ -1,11 +1,109 @@
 import React from "react";
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 import "./lets-up-case-study.css";
 import Image from "next/image";
+import LetssuppAosCompFirst from "@/Components/LetssuppAosComp/LetssuppAosCompFirst";
+import LetssuppAosCompSecond  from "@/Components/LetssuppAosComp/LetssuppAosCompSecond";
+import { notFound } from "next/navigation";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
-function page() {
+
+
+// meta tags
+export async function generateMetadata() {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("letssupp-case-study", null, false);
+  } catch (error) {
+    return {
+      title: "Letssupp Case Study",
+      robots: "noindex, nofollow",
+    };
+  }
+
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
+
+    robots: seo.robotsTag || "index, follow",
+
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
+
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map((img) => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map((img) => img.url)
+        : [],
+    },
+  };
+}
+// ends here
+
+
+
+async function page() {
   let imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
+  // ---
+    await connectDB();
+    let pageData;
+    try {
+      pageData = await getPageById("letssupp-case-study", null, true);
+    } catch (error) {
+      notFound();
+    }
+  
+    if (!pageData) {
+      notFound();
+    }
+  
+    // ---  SCHEMA CLEANING LOGIC START ---
+    let cleanSchema = "";
+    if (pageData.headCode) {
+      cleanSchema = pageData.headCode
+        .replace(/<script.*?>/gi, "")
+        .replace(/<\/script>/gi, "")
+        .trim();
+      if (cleanSchema.includes('""')) {
+        cleanSchema = cleanSchema.replace(/""/g, '"');
+      }
+    }
+    // --- SCHEMA CLEANING LOGIC END ---
+  
   return (
     <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "letssupp-case-study"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
       {/* hero section */}
       <section className="lets-up-hero">
         <div className="container-fluid p-0">
@@ -154,10 +252,10 @@ function page() {
       </section>
 
       {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Strategic Insight</h2>
               <p className="text-image-head-first">
                 Wellness Lives in Repetition
@@ -175,7 +273,7 @@ function page() {
               </div>
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
                 {/* <Image
                 src={imageUrl + "Enlite2.webp"}
                 className="letsup-case-study-three-image-col-img responsive-img"
@@ -237,10 +335,10 @@ function page() {
 
 
       {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
-          <div className="row">
-           <div className="col-12 col-md-6">
+          <div className="row flex-column-reverse flex-lg-row">
+           <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsup9.webp"}
                 className="letsup-case-study-three-image-col-img responsive-img"
@@ -250,7 +348,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Brand Idea</h2>
               <p className="text-image-head-first">
                 Continuity as the Core Visual Language
@@ -315,10 +413,10 @@ function page() {
       </section>
 
        {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Identity System</h2>
               <p className="text-image-head-first">
                 A System Built on Flow, Not Fragments
@@ -339,10 +437,10 @@ function page() {
               </div>
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase13.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img bigger-z-index"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
@@ -354,40 +452,44 @@ function page() {
 
 
       {/* small-large-image section */}
-      {/* <section className="small-large-image-section">
+       <section className="small-large-image-section">
         <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-7">
-                  <Image
-                src={imageUrl + "Enlite2.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
-                alt="enlite case study page image"
-                width={1500}
-                height={1500}
-              />
+          <div className="row align-items-end">
+            <div className="col-12 col-lg-8">
+                  <video
+            src="https://dndesigns.co.in/uploads/videos/lat8vid.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className="enlitecasestudy-video less-video-z-index"
+          />
             </div>
 
-             <div className="col-12 col-md-5">
-                  <Image
-                src={imageUrl + "Enlite2.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
-                alt="enlite case study page image"
-                width={1500}
-                height={1500}
-              />
+             <div className="col-12 col-lg-4 small-large-image-small-col">
+                 <video
+            src="https://dndesigns.co.in/uploads/videos/lat9vid.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            
+            playsInline
+            className="enlitecasestudy-video"
+          />
             </div>
           </div>
         </div>
       </section>
 
 
-      
-      <section className="small-large-image-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-7">
+      {/* infinity logo section */}
+     <section className="small-large-image-section-infinity">
+        <div className="container small-large-image-section-infinity-container">
+          <div className="row small-large-image-section-infinity-row">
+            <div className="col-12 col-md-8">
                   <Image
-                src={imageUrl + "Enlite2.webp"}
+                src={imageUrl + "Artboard-34.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
                 alt="enlite case study page image"
                 width={1500}
@@ -395,9 +497,9 @@ function page() {
               />
             </div>
 
-             <div className="col-12 col-md-5">
+             <div className="col-12 col-md-4">
                   <Image
-                src={imageUrl + "Enlite2.webp"}
+                src={imageUrl + "ghfq.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
                 alt="enlite case study page image"
                 width={1500}
@@ -405,8 +507,19 @@ function page() {
               />
             </div>
           </div>
+          <div className="absolute-infinity-div">
+           <Image
+                src={imageUrl + "infintylogoletsup.png"}
+                className="letsup-case-study-three-image-col-img responsive-img infinity-logo-img"
+                alt="enlite case study page image "
+                width={1500}
+                height={1500}
+              />
+              </div>
         </div>
-      </section> */}
+      </section> 
+
+      {/* infinity logo section end*/}
 
       {/* two image 1*/}
       <section className="three-image1">
@@ -438,10 +551,10 @@ function page() {
       </section>
 
         {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
-          <div className="row">
-           <div className="col-12 col-md-6">
+          <div className="row flex-column-reverse flex-lg-row">
+           <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase19.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
@@ -451,7 +564,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Packaging System
 </h2>
               <p className="text-image-head-first">
@@ -460,6 +573,10 @@ function page() {
               <div className="second-para-div">
               <p className="text-image-head-second">
                The packaging was designed to simplify decision-making. Information is organised in a clear, intuitive hierarchy, allowing users to understand the product quickly and confidently.
+              </p>
+
+              <p className="text-image-head-second">
+                The infinity concept is expressed as an abstract flowing form within the packaging, guiding the composition and reinforcing a sense of continuous wellness.
               </p>
 
               <p className="text-image-head-second">
@@ -498,19 +615,19 @@ function page() {
         <div className="container">
           <div className="row three-row-content">
               <div className="col-12 col-md-4 three-col-content1">
-                <p className="three-col-content-para">Protect, energize, and thrive with</p>
-                <h3 className="three-col-content-head">Advanced Omega 3 care</h3>
+                <p className="three-col-content-para">Protect, energize,<br></br> and thrive with<br></br> 
+                 <span className="three-col-content-head"> Advanced <br></br>Omega 3 care</span></p>
               </div>
 
               <div className="col-12 col-md-4 three-col-content2">
-                <p className="three-col-content-para">No Fish. No Smell. No Guilt. Just Pure</p>
-                <h3 className="three-col-content-head">Plant Based Vegan Omega</h3>
+                <p className="three-col-content-para">No Fish. No Smell.<br></br> No Guilt. Just Pure<br></br> Plant Based
+                <span className="three-col-content-head">  Vegan<br></br> Omega</span></p>
               </div>
 
 
               <div className="col-12 col-md-4 three-col-content3">
-                <p className="three-col-content-para">Daily Stress? Restore your inner calm with </p>
-                <h3 className="three-col-content-head">Magnesium Balance</h3>
+                <p className="three-col-content-para">Daily Stress? Restore<br></br> your inner calm with<br></br>  
+                <span className="three-col-content-head"> Magnesium <br></br>Balance</span></p>
               </div>
           </div>
         </div>
@@ -561,8 +678,8 @@ function page() {
        <div className="container">
        <div className="row three-row-content">
               <div className="col-12 three-col-mob-content1">
-                <p className="three-col-content-para">Protect, energize, and thrive with</p>
-                <h3 className="three-col-content-head">Advanced Omega 3 care</h3>
+                 <p className="three-col-content-para">Protect, energize,<br></br> and thrive with<br></br> 
+                 <span className="three-col-content-head"> Advanced <br></br>Omega 3 care</span></p>
               </div>
 
               <div className="col-12">
@@ -578,8 +695,8 @@ function page() {
 
 
               <div className="col-12 three-col-mob-content2">
-                <p className="three-col-content-para">No Fish. No Smell. No Guilt. Just Pure</p>
-                <h3 className="three-col-content-head">Plant Based Vegan Omega</h3>
+                <p className="three-col-content-para">No Fish. No Smell.<br></br> No Guilt. Just Pure<br></br> Plant Based
+                <span className="three-col-content-head">  Vegan<br></br> Omega</span></p>
               </div>
 
                <div className="col-12">
@@ -594,8 +711,8 @@ function page() {
 
 
               <div className="col-12 three-col-mob-content3">
-                <p className="three-col-content-para">Daily Stress? Restore your inner calm with</p>
-                <h3 className="three-col-content-head">Magnesium Balance</h3>
+                <p className="three-col-content-para">Daily Stress? Restore<br></br> your inner calm with<br></br>  
+                <span className="three-col-content-head"> Magnesium <br></br>Balance</span></p>
               </div>
 
                <div className="col-12">
@@ -618,10 +735,10 @@ function page() {
 
 
        {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Brand in Experience</h2>
               <p className="text-image-head-first">
                 Extending Continuity Beyond Packaging
@@ -632,7 +749,7 @@ function page() {
               </p>
 
               <p className="text-image-head-second">
-                From interface design to brand communications, the system maintains consistency while adapting fluidly to context.
+                From product packaging design to interface design and brand communications, the system maintains consistency while adapting fluidly to context.
               </p>
 
               <p className="text-image-head-second">This creates a unified ecosystem where each interaction reinforces recognition and trust.
@@ -640,7 +757,7 @@ function page() {
               </div>
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcasess24.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
@@ -724,10 +841,10 @@ function page() {
 
 
        {/*  text and image section  */}
-      <section className="text-image-section">
+      <section className="text-image-section top-spacing">
         <div className="container">
-          <div className="row">
-           <div className="col-12 col-md-6">
+          <div className="row flex-column-reverse flex-lg-row">
+           <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase27.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
@@ -737,7 +854,7 @@ function page() {
               />
             </div>
 
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <h2 className="text-image-head">Outcome
 </h2>
               <p className="text-image-head-first">
@@ -779,47 +896,69 @@ function page() {
 
 
 
-       {/* three image in a column */}
-      {/* <section className="three-img-col">
+       {/* three image in a column and vieo essentials */}
+       <section className="three-img-col">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-4">
-                   <Image
-                src={imageUrl + "Enlite2.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
-                alt="enlite case study page image"
-                width={1500}
-                height={1500}
-              />
+            <div className="col-12 col-lg-4 modern-essentials-col">
+            
+
+            <div className="letssuppAosCompsecond">
+            <LetssuppAosCompSecond/>
             </div>
 
-            <div className="col-12 col-md-4">
+            <div className="modern-essentials-img">
                    <Image
-                src={imageUrl + "Enlite2.webp"}
+                src={imageUrl + "letsupSunlight.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
               />
+              </div>
+
             </div>
 
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-lg-4">
+            
                    <Image
-                src={imageUrl + "Enlite2.webp"}
+                src={imageUrl + "essentialsletsup29.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
               />
+
+              
+              
+            </div>
+
+            <div className="col-12 col-lg-4 modern-essentials-col">
+            
+            <div className="modern-essentials-img">
+                   <Image
+                src={imageUrl + "letsupcasePill-Shadow.jpg"}
+                className="letsup-case-study-three-image-col-img responsive-img"
+                alt="enlite case study page image"
+                width={1500}
+                height={1500}
+              />
+              </div>
+
+              <div className="letssuppAosCompFirst">
+            <LetssuppAosCompFirst/>
+            </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
+
+        {/* three image in a column and vieo essentials end*/}
 
 
 
        {/* three image 1*/}
-      <section className="three-image1">
+      <section className="three-image1 ">
         <div className="container">
            <div className="row">
             <div className="col-12 col-md-6">
@@ -855,6 +994,42 @@ function page() {
             />
           </div>
         </div>
+      </section>
+
+
+      {/* signing off section */}
+      <section className="signing-off-section">
+
+      <div className="container">
+         <div className="row">
+
+         <div className="col-12 col-md-6 lets-up-elevate-btn-signing-off">
+              <div className="lets-up-elevate-btn-up-div">
+                <span className="btn-1">Let’s Supp</span>
+                <span className="btn-2">Branding Identity</span>
+                
+              </div>
+
+              <div className="lets-up-elevate-btn-down-div">
+                <span className="btn-4">Packaging Design</span>
+                <span className="btn-5">website</span>
+              </div>
+
+              <div className="lets-up-elevate-btn-down-div">
+                <span className="btn-4">Social Media Marketing</span>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 signing-off-content-section">
+                <h2 className="signing-off-head">Letssupp</h2>
+                <p className="signing-off-para">#SigningOff</p>
+            </div>
+
+         </div>
+      </div>
+
+      
+
       </section>
 
 

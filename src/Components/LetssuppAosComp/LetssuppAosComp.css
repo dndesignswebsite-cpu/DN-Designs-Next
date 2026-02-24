@@ -1,0 +1,31 @@
+.modern-essentials-text h2 {
+   font-family: Corbert;
+    font-size: 35px;
+    text-align: center;
+    color:#3f4737;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.letsupfont-head{
+font-family: letsupfont;
+font-size: 40px;
+}
+
+.modern-essentials-text{
+    overflow: hidden;
+    /* padding: 15px;; */
+}
+
+.modern-essentials-textsec{
+    overflow: hidden;
+}
+
+.modern-essentials-textsec h2 {
+   font-family: Corbert;
+    font-size: 35px;
+    text-align: center;
+    color:#068CA6;
+    font-weight: 500;
+    line-height: 1.2em;
+}
