@@ -973,7 +973,7 @@ async function page() {
 
             <div className="col-12 col-md-6">
               <Image
-                src={imageUrl + "letsupcasea31.jpg"}
+                src={imageUrl + "last-final.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img"
                 alt="enlite case study page image"
                 width={1500}
