@@ -50,8 +50,33 @@ function OurBrandsSectionHome() {
               </li>
             </Link>
 
-            <Link href="/wlues-case-study">
+
+             <Link href="/letssupp-case-study">
               <li className={`${styles["card"]} ${styles["card-2"]}`}>
+                <div
+                  className={`${styles["card-body"]} ${styles["card-body-letssupp"]}`}
+                >
+                  <div className={`${styles["brand-overlay"]}`}>
+                    <div className={`${styles["our-brand-content"]}`}>
+                      <h3 className="heading-corbert">Let's Supp</h3>
+                      <div className={`${styles["brand-buttons"]}`}>
+                      <button className="para-roboto">Brand Identity</button>
+                        <button className="para-roboto">Packaging Design</button>
+                        <button className="para-roboto">UI/UX</button>
+                        <button className="para-roboto">Website</button>
+                      </div>
+                      <p className="para-roboto">
+                        Wellness should be simple, joyful and consistent. This is the core belief of the nutraceutical brand Let’s Supp, and to convey this, we created a complete identity and packaging system centred around the ‘continuity’ principle. This principle is expressed through the ‘infinity structure/symbol’, which is embedded in the logo and also governs the packaging design. This identity is also reflected in the interface design and brand communications we created for them. To win customers’ trust, our overall design focus was on clarity, consistency, honesty, and emotional resonance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </Link>
+
+
+            <Link href="/wlues-case-study">
+              <li className={`${styles["card"]} ${styles["card-3"]}`}>
                 <div className={`${styles["card-body"]}`}>
                   <video className="img-fluid" autoPlay muted loop playsInline>
                     <source
@@ -87,7 +112,7 @@ function OurBrandsSectionHome() {
             </Link>
 
             <Link href="/nectarpure-case-study">
-              <li className={`${styles["card"]} ${styles["card-3"]}`}>
+              <li className={`${styles["card"]} ${styles["card-4"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
                 >
@@ -115,7 +140,7 @@ function OurBrandsSectionHome() {
             </Link>
 
             <Link href="/grincare-case-study">
-              <li className={`${styles["card"]} ${styles["card-4"]}`}>
+              <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
                 >
@@ -139,6 +164,13 @@ function OurBrandsSectionHome() {
                 </div>
               </li>
             </Link>
+
+
+
+
+           
+
+
           </ul>
         </div>
       </section>
@@ -213,6 +245,63 @@ function OurBrandsSectionHome() {
                   </div>
                 </div>
               </Link>
+
+              <Link
+                href="/letssupp-case-study"
+               className={styles["mobile-casestudy-wrapper-link"]}
+              >
+                <div
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                >
+                  <div className={`${styles["our-brand-mobile-div-clield"]}`}>
+                   <Image
+                      src="https://dndesigns.co.in/uploads/pages/lestupcase12mobile.jpg.jpeg"
+                      className={`${styles["responsive-img"]}`}
+                      alt="home page image"
+                      width={1500}
+                      height={1000}
+                    />
+                    <div
+                      className={`${styles["our-brand-mobile-div-content"]}`}
+                    >
+                      <h3
+                        className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
+                      >
+                        Let's Supp
+                      </h3>
+                      <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          Brand Identity
+                        </h4>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          Packaging Design
+                        </h4>
+                      </div>
+                      <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          UI/UX
+                        </h4>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          Website
+                        </h4>
+                      </div>
+                      <p className="para-roboto">
+                      Wellness should be simple, joyful and consistent. This is the core belief of the nutraceutical brand Let’s Supp, and to convey this, we created a complete identity and packaging system centred around the ‘continuity’ principle. This principle is expressed through the ‘infinity structure/symbol’, which is embedded in the logo and also governs the packaging design. This identity is also reflected in the interface design and brand communications we created for them. To win customers’ trust, our overall design focus was on clarity, consistency, honesty, and emotional resonance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              
 
               <Link
                 href="/wlues-case-study"
