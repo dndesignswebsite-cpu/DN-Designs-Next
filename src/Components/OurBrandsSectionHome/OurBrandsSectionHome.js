@@ -18,7 +18,7 @@ function OurBrandsSectionHome() {
             Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
-            <Link href="/enlite-case-study">
+            <Link href="/enlite-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-1"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
@@ -51,7 +51,7 @@ function OurBrandsSectionHome() {
             </Link>
 
 
-             <Link href="/letssupp-case-study">
+             <Link href="/letssupp-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-2"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-letssupp"]}`}
@@ -75,7 +75,7 @@ function OurBrandsSectionHome() {
             </Link>
 
 
-            <Link href="/wlues-case-study">
+            <Link href="/wlues-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-3"]}`}>
                 <div className={`${styles["card-body"]}`}>
                   <video className="img-fluid" autoPlay muted loop playsInline>
@@ -111,7 +111,7 @@ function OurBrandsSectionHome() {
               </li>
             </Link>
 
-            <Link href="/nectarpure-case-study">
+            <Link href="/nectarpure-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-4"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
@@ -139,7 +139,7 @@ function OurBrandsSectionHome() {
               </li>
             </Link>
 
-            <Link href="/grincare-case-study">
+            <Link href="/grincare-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -188,6 +188,7 @@ function OurBrandsSectionHome() {
               <Link
                 href="/enlite-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}
+                scroll={true}
               >
               
                 <div
@@ -249,6 +250,7 @@ function OurBrandsSectionHome() {
               <Link
                 href="/letssupp-case-study"
                className={styles["mobile-casestudy-wrapper-link"]}
+               scroll={true}
               >
                 <div
                   className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
@@ -306,6 +308,7 @@ function OurBrandsSectionHome() {
               <Link
                 href="/wlues-case-study"
                className={styles["mobile-casestudy-wrapper-link"]}
+               scroll={true}
               >
                 <div
                   className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
@@ -373,6 +376,7 @@ function OurBrandsSectionHome() {
               <Link
                 href="/nectarpure-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}
+                scroll={true}
               >
                 <div
                   className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
@@ -433,6 +437,7 @@ function OurBrandsSectionHome() {
               <Link
                 href="/grincare-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}
+                scroll={true}
               >
                 <div
                   className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}

@@ -1,50 +1,69 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import "./ScrollToTop.css";
 
+import { getLenis } from "@/Components/SmoothScroll";
+import { usePathname } from "next/navigation";
 
+export default function ScrollToTop() {
 
+  const [show, setShow] = useState(false);
+  const pathname = usePathname();
 
+  // Show / hide button
+  useEffect(() => {
 
-function ScrollToTop() {
-
-
-    const [showScrollTop, setShowScrollTop] = useState(false);
-    
-useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
+      setShow(window.scrollY > 500);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
   }, []);
 
+  // Auto scroll on route change
+  useEffect(() => {
+
+    const lenis = getLenis();
+
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+
+  }, [pathname]);
+
+  // Button click
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+
+    const lenis = getLenis();
+
+    if (lenis) {
+      lenis.scrollTo(0, { smooth: true });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
   };
 
   return (
-    <div>
-      {/* Scroll to Top Button */}
-            <button
-              className={`scroll-to-top-btn ${showScrollTop ? "visible" : ""}`}
-              onClick={scrollToTop}
-              title="Scroll to Top"
-            >
-              <FontAwesomeIcon icon={faArrowUp} />
-            </button>
-    </div>
-  )
+    <button
+      className={`scroll-to-top-btn ${show ? "visible" : ""}`}
+      onClick={scrollToTop}
+      title="Scroll to Top"
+    >
+      <FontAwesomeIcon icon={faArrowUp} />
+    </button>
+  );
 }
-
-export default ScrollToTop
