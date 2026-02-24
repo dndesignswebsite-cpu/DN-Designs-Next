@@ -192,7 +192,7 @@ function OurBrandsSectionHome() {
               >
               
                 <div
-                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                     {/* <img
@@ -253,7 +253,7 @@ function OurBrandsSectionHome() {
                scroll={true}
               >
                 <div
-                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                    <Image
@@ -311,7 +311,7 @@ function OurBrandsSectionHome() {
                scroll={true}
               >
                 <div
-                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                     <video
@@ -379,7 +379,7 @@ function OurBrandsSectionHome() {
                 scroll={true}
               >
                 <div
-                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                     {/* <img
@@ -440,7 +440,7 @@ function OurBrandsSectionHome() {
                 scroll={true}
               >
                 <div
-                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-md-6`}
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
                     {/* <img
