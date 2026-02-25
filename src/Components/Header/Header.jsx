@@ -1187,15 +1187,30 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-                        <li>
+
+                       <li>
                           <Link
-                            href="/wlues-case-study"
+                            href="/enlite-case-study"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                            Wlues Case Study
+                            Enlite Case Study
                           </Link>
                         </li>
+
+                         <li>
+                          <Link
+                            href="/letssupp-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Let's Supp Case Study
+                          </Link>
+                        </li>
+
+
+                       
+
                         <li>
                           <Link
                             href="/grincare-case-study"
@@ -1205,15 +1220,8 @@ const toggleNav = () => {
                             Grincare Case Study
                           </Link>
                         </li>
-                        <li>
-                          <Link
-                            href="/enlite-case-study"
-                            onClick={handleLinkClick}
-                            className={`${styles["header-solo-link"]}`}
-                          >
-                            Enlite Case Study
-                          </Link>
-                        </li>
+
+                       
 
                         <li>
                           <Link
@@ -1224,6 +1232,18 @@ const toggleNav = () => {
                             Nectarpure Case Study
                           </Link>
                         </li>
+
+
+                         <li>
+                          <Link
+                            href="/wlues-case-study"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Wlues Case Study
+                          </Link>
+                        </li>
+
                       </ul>
                     </div>
                   </div>
