@@ -27,9 +27,9 @@ function OurBrandsSectionHome() {
                     <div className={`${styles["our-brand-content"]}`}>
                       <h3 className="heading-corbert">Rithm’s Enlite</h3>
                       <div className={`${styles["brand-buttons"]}`}>
-                        <button className="para-roboto">Brand Identity</button>
+                        <button className="para-roboto">Branding</button>
                         <button className="para-roboto">
-                          Packaging Design
+                          Can Design
                         </button>
                         <button className="para-roboto">
                           Communication Design
@@ -218,12 +218,12 @@ function OurBrandsSectionHome() {
                         <h4
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
-                          Packaging Design
+                          Branding
                         </h4>
                         <h4
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
-                          Packaging Design
+Can Design
                         </h4>
                       </div>
                       <div>
