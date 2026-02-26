@@ -1,6 +1,7 @@
 import React from "react";
 import "./Points.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Points() {
   return (
@@ -40,9 +41,9 @@ function Points() {
                 <div className="points-para col-12 col-md-12 col-lg-3">
                   <p>We provide end-to-end branding services.</p>
                   <p>
-                    Brand Identity Design<br></br>
-                    Packaging Design<br></br>
-                    Catalogue Design
+                    <Link href="/branding" className="points-links-point">Brand Identity Design</Link><br></br>
+                    <Link href="/packaging-design" className="points-links-point">Packaging Design</Link><br></br>
+                    <Link href="/catalogue-designing" className="points-links-point">Catalogue Design</Link>
                   </p>
                 </div>
               </div>
@@ -67,9 +68,9 @@ function Points() {
                     Let our experts devise a communication strategy for you.
                   </p>
                   <p>
-                    Digital Marketing <br></br>
-                    Influencer Marketing<br></br>
-                    Animation
+                    <Link href="/digital-marketing-agency-in-noida" className="points-links-point">Digital Marketing</Link><br></br>
+                    <Link href="/influencer-marketing" className="points-links-point">Influencer Marketing</Link><br></br>
+                    <Link href="/animation" className="points-links-point">Animation</Link>
                   </p>
                 </div>
               </div>
@@ -95,9 +96,9 @@ function Points() {
                 <div className="points-para col-12 col-md-12 col-lg-3">
                   <p>Explore our range of web design services.</p>
                   <p>
-                    UI/UX<br></br>
-                    Website Design<br></br>
-                    SEO
+                    <Link href="/ui-ux-design" className="points-links-point">UI/UX</Link><br></br>
+                    <Link href="/web-designing-services-in-india" className="points-links-point">Website Design</Link><br></br>
+                    <Link href="/seo-marketing-agency-in-noida" className="points-links-point">SEO</Link>
                   </p>
                 </div>
               </div>

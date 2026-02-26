@@ -4,7 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "./CreativeBrochureDesign.css";
 
 function CreativeBrochureDesign() {
@@ -25,7 +25,11 @@ function CreativeBrochureDesign() {
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination]}
+            autoplay={{
+    delay: 3000, 
+    disableOnInteraction: false,
+  }}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide>
