@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "./Testimonial.css";
 import Image from "next/image";
 
@@ -20,12 +20,12 @@ function Testimonial() {
             slidesPerView={1}
             spaceBetween={10}
             autoplay={{
-              delay: 500,
-              disableOnInteraction: false,
-            }}
+    delay: 3000, // 3 seconds
+    disableOnInteraction: false, // user swipe kare tab bhi autoplay continue rahe
+  }}
+  modules={[Navigation, Autoplay]}
             loop={true}
             navigation={true}
-            modules={[Navigation]}
             className="custom-swiper"
           >
             <SwiperSlide>

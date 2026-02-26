@@ -87,6 +87,14 @@ padding: 10px 10px 20px 10px;
 }
 }
 
+.points-links-point{
+  color:#888888;
+  font-family: var(--font-roboto);
+  font-weight:500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 /* image  */
 
 .responsive-img {

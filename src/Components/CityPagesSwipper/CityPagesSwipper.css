@@ -162,3 +162,27 @@
   margin-top: 0px;
 }
 }
+
+
+/* navigation buttons */
+
+.city-swiper .swiper-button-next,
+.city-swiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+ background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.city-swiper .swiper-button-next::after,
+.city-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.city-swiper .swiper-button-next:hover,
+.city-swiper .swiper-button-prev:hover {
+  
+   background-color: #ca2734;
+}
