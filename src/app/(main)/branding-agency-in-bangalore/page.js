@@ -111,39 +111,34 @@ async function page() {
   const leftFaqs = [
     {
       question:
-        "Why is branding important for startups and established businesses in Pune?",
+        "What is a branding company, and what does it do?",
       answer:
-        "Pune presents a highly competitive environment for businesses, together with strong economic growth, a rapidly growing IT and manufacturing sector and a large consumer base. Businesses, both startups and established, therefore need branding services to create a space for themselves in this market and get recognised and appreciated.",
+        "A branding company helps businesses design and express their brand identity consistently across all platforms to their target audience. They use strategy, messaging, and visuals to connect with audiences and improve brand perception.",
     },
     {
-      question: "How to choose the best branding agency in Pune?",
+      question: "How much does professional branding cost in Bangalore?",
       answer:
-        "To choose the best branding company in Pune, research the available options and check out their work portfolio and processes. This is important to understand whether they align with your business goals and work standards. It is also important to see whether they fit into your budget and can deliver your work in the given timeframe you want.",
+        "Since each brand has unique requirements, the pricing depends on your vision and needs.",
     },
     {
-      question: "What makes DN Designs the best branding agency in Pune?",
+      question: "Do you work with startups as well as established companies?",
       answer:
-        "DN Designs comes with extensive experience and proven expertise in brand development. We have worked in this space for over 8 years now and have helped build several brands in different verticals. Our talented team members - strategists, designers and editors - are all passionate individuals who work tirelessly to build your brand and make you happy.",
+        "Yes, as the best branding agency in Bangalore, we collaborate with both startups and established brands alike. We customise every project to fit your objective. So if you are a startup, we can design a brand identity for you from the ground up, and in case you are an already established company, we can rebrand you afresh.",
     },
   ];
 
   const rightFaqs = [
     {
       question:
-        "What industries does DN Designs specialise in for branding services?",
+        "Do you also handle packaging design and brand strategy?",
       answer:
-        "DN Designs works across industries, be it retail, food & beverage, pharmaceuticals, nutraceuticals, education, tourism and cosmetics & skincare.",
+        "Yes, we do. Our branding services in Bangalore include everything your brand needs, from brand strategy development and identity design to packaging design. We make sure that every element of your brand identity shows a comprehensive story that effectively communicates your brand values.",
     },
     {
       question:
-        "Do you provide rebranding services for existing companies in Pune?",
+        "Can I see examples of your branding projects?",
       answer:
-        "Certainly, we help existing brand update their identity, positioning and messaging to stay relevant and attractive to their audience.",
-    },
-    {
-      question: "Do you also provide packaging design and brand strategy?",
-      answer:
-        "Both brand strategy development and packaging design are part of our branding services in Pune. You can avail these services as part of our complete branding package, or opt for individual services too.",
+        "We’ve worked with various industries and brands across India. Explore our branding portfolio.",
     },
   ];
 
