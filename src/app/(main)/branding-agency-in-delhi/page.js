@@ -117,7 +117,7 @@ async function page() {
     {
       question: "What types of branding services do you offer?",
       answer:
-        "Our branding services in Delhi, customised to fit your brand values and business goals, include brand strategy design, logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design.",
+        (<>Our branding services in Delhi, customised to fit your brand values and business goals, include <Link href="branding" className="faq-link">brand strategy design,</Link> logo design, brand name suggestions,<Link href="packaging-design-agency-in-delhi" className="faq-link"> packaging design,</Link> catalogue design, digital marketing, and web design.</>)
     },
     {
       question: "How long does the branding process take?",
@@ -135,7 +135,7 @@ async function page() {
     {
       question: "What makes your agency the best branding agency in Delhi?",
       answer:
-        "We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your identity. Every brand we create is backed by research. You can see our work here.",
+        (<>We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your identity. Every brand we create is backed by research. You can see our work <Link href="/" className="faq-link">here.</Link></>)
     },
     {
       question: "How can I get started with your branding services?",

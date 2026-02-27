@@ -112,7 +112,7 @@ async function page() {
     {
       question: "What kind of branding services does DN Designs provide?",
       answer:
-        "We provide complete branding services, including brand consultation, brand strategy development, visual identity creation, packaging design, catalogue design, and the establishment of clear brand messaging, voice, story, and values. Our expertise also extends to digital branding, helping businesses build a consistent and memorable brand presence across platforms.",
+        (<>We provide <Link href="/branding" className="faq-link">complete branding services,</Link> including brand consultation, brand strategy development, visual identity creation, <Link href="/packaging-design-agency-in-ahmedabad" className="faq-link">packaging design,</Link> catalogue design, and the establishment of clear brand messaging, voice, story, and values. Our expertise also extends to digital branding, helping businesses build a consistent and memorable brand presence across platforms.</>)
     },
     {
       question:

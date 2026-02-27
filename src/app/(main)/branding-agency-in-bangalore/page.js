@@ -132,7 +132,7 @@ async function page() {
       question:
         "Do you also handle packaging design and brand strategy?",
       answer:
-        "Yes, we do. Our branding services in Bangalore include everything your brand needs, from brand strategy development and identity design to packaging design. We make sure that every element of your brand identity shows a comprehensive story that effectively communicates your brand values.",
+        (<>Yes, we do. Our branding services in Bangalore include everything your brand needs, from <Link href="/branding" className="faq-link">brand strategy development</Link> and identity design to <Link href="/packaging-design-agency-in-bangalore" className="faq-link">packaging design.</Link> We make sure that every element of your brand identity shows a comprehensive story that effectively communicates your brand values.</>)
     },
     {
       question:

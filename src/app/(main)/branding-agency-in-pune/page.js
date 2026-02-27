@@ -123,7 +123,7 @@ async function page() {
     {
       question: "What makes DN Designs the best branding agency in Pune?",
       answer:
-        "DN Designs comes with extensive experience and proven expertise in brand development. We have worked in this space for over 8 years now and have helped build several brands in different verticals. Our talented team members - strategists, designers and editors - are all passionate individuals who work tirelessly to build your brand and make you happy.",
+        (<><Link href="/" className="faq-link">DN Designs</Link> comes with extensive experience and proven expertise in <Link href="/branding" className="faq-link">brand development.</Link> We have worked in this space for over 8 years now and have helped build several brands in different verticals. Our talented team members - strategists, designers and editors - are all passionate individuals who work tirelessly to build your brand and make you happy.</>)
     },
   ];
 
@@ -143,7 +143,7 @@ async function page() {
     {
       question: "Do you also provide packaging design and brand strategy?",
       answer:
-        "Both brand strategy development and packaging design are part of our branding services in Pune. You can avail these services as part of our complete branding package, or opt for individual services too.",
+        (<>Both brand strategy development and <Link href="/packaging-design-agency-in-pune" className="faq-link">packaging design</Link> are part of our branding services in Pune. You can avail these services as part of our complete branding package, or opt for individual <Link href="/services" className="faq-link">services</Link> too.</>)
     },
   ];
 
