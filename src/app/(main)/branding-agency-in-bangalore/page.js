@@ -105,7 +105,7 @@ async function page() {
       cleanSchema = cleanSchema.replace(/""/g, '"');
     }
   }
-  // --- SCHEMA CLEANING LOGIC END ---
+  // --- SCHEMA CLaning LOGIC END ---
 
   // faqs content
   const leftFaqs = [
