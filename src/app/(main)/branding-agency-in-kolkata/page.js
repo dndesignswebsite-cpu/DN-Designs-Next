@@ -121,7 +121,7 @@ async function page() {
     {
       question: "Can you help us name our brand or products?",
       answer:
-        "Absolutely. Our branding services in Kolkata include brand name suggestions, among our other branding services.",
+        (<>Absolutely. Our <Link href="/branding" className="faq-link">branding</Link> services in Kolkata include<Link href="/brand-name-suggestion" className="faq-link"> brand name suggestions,</Link> among our other branding services.</>)
     },
   ];
 

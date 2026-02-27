@@ -116,7 +116,7 @@ async function page() {
     {
       question: "What types of branding services do you offer?",
       answer:
-        "We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.",
+        (<>We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include <Link href="/logo-designing" className="faq-link">logo design,</Link> brand name suggestions, <Link href="/packaging-design-agency-in-mumbai" className="faq-link">packaging design,</Link> catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine.</>)
     },
     {
       question: "How long does the branding process take?",
@@ -134,7 +134,7 @@ async function page() {
     {
       question: "Do you offer branding services outside Mumbai?",
       answer:
-        "Yes, we do. We provide branding services not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.",
+        (<>Yes, we do. We provide <Link href="/branding" className="faq-link">branding services</Link> not only in Mumbai but around the world. We work to maintain a seamless collaboration between our team and you. This helps us attain the same level of creativity and attention to detail, regardless of where your business is located.</>)
     },
     {
       question: "How can I get started with your branding services?",

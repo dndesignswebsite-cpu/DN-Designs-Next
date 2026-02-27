@@ -117,7 +117,7 @@ async function page() {
     {
       question: "How much does professional branding cost in Chennai?",
       answer:
-        "Every brand has its own goals, style, and needs, so pricing varies from project to project. We adjust the cost based on your vision, scope of work, and the level of branding services you require.",
+        (<>Every brand has its own goals, style, and needs, so pricing varies from project to project. We adjust the cost based on your vision, scope of work, and the level of <Link href="/branding" className="faq-link">branding services</Link> you require.</>)
     },
     {
       question: "Do you work with both startups and established companies?",
@@ -130,12 +130,12 @@ async function page() {
     {
       question: "Do you also offer packaging design and brand strategy?",
       answer:
-        "Absolutely. Our branding services in Chennai include everything from brand identity, packaging, to web design and communication strategy. We offer you a comprehensive package as well as individual services so that you get everything you need to market yourself effectively.",
+        (<>Absolutely. Our branding <Link href="/services" className="faq-link">services</Link> in Chennai include everything from brand identity, <Link href="/packaging-design-agency-in-chennai" className="faq-link">packaging,</Link> to web design and communication strategy. We offer you a comprehensive package as well as individual services so that you get everything you need to market yourself effectively.</>)
     },
     {
       question: "Can I see examples of your branding work?",
       answer:
-        "Yes, you can. As the best branding agency in Chennai, we’ve built various brands across diverse sectors. Feel free to check out our branding portfolio.",
+        (<>Yes, you can. As the best branding agency in Chennai, we’ve built various brands across diverse sectors. Feel free to check out our <Link href="/" className="faq-link">branding portfolio.</Link></>)
     },
   ];
 

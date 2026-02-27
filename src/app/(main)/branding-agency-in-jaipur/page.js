@@ -130,12 +130,12 @@ async function page() {
     {
       question: "Can you help us name our brand or products?",
       answer:
-        "Definitely. Our comprehensive branding services in Jaipur cover everything, including brand name suggestions. We help you select a name that reflects your brand identity, is distinctive, memorable, scalable and most importantly, legally available.",
+        (<>Definitely. Our comprehensive branding services in Jaipur cover everything, including <Link href="/brand-name-suggestion" className="faq-link">brand name suggestions.</Link> We help you select a name that reflects your brand identity, is distinctive, memorable, scalable and most importantly, legally available.</>)
     },
     {
       question: "What makes your agency different?",
       answer:
-        "Being the best branding agency in Jaipur, we believe that striking a balance between research-driven strategy and creativity can deliver the best results. We focus on providing customised branding solutions for your brand and are committed to delivering high-quality results. Your satisfaction with our services is of vital importance to us, and we work diligently to achieve this goal.",
+        (<>Being the best branding agency in Jaipur, we believe that striking a balance between research-driven strategy and creativity can deliver the best results. We focus on providing customised <Link href="/branding" className="faq-link">branding solutions</Link> for your brand and are committed to delivering high-quality results. Your satisfaction with our services is of vital importance to us, and we work diligently to achieve this goal.</>)
     },
     {
       question: "How do we start working with you?",

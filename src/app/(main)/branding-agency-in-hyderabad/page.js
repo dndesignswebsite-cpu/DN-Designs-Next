@@ -123,7 +123,7 @@ async function page() {
       question:
         "Why should I choose DN Designs as my branding agency in Hyderabad?",
       answer:
-        "DN Designs has expertise and industry knowledge that stems from talent and experience. Our team - a set of enthusiastic and skilled professionals - prioritises your vision and makes sure that you successfully achieve your branding objective. All our work is backed by research, which ensures that your brand is market-ready at the time of launch.",
+        (<><Link href="/" className="faq-link">DN Designs</Link> has expertise and industry knowledge that stems from talent and experience. Our team - a set of enthusiastic and skilled professionals - prioritises your vision and makes sure that you successfully achieve your branding objective. All our work is backed by research, which ensures that your brand is market-ready at the time of launch.</>)
     },
   ];
 
@@ -132,13 +132,13 @@ async function page() {
       question:
         "What are the main branding services offered by DN Designs in Hyderabad?",
       answer:
-        "Our branding services in Hyderabad include an entire spectrum. We offer brand consultation, research and strategy design as well as logo design, packaging design, catalogue design, photography and animation. Additionally, we also help promote your brand through our digital marketing services.",
+        (<>Our branding services in Hyderabad include an entire spectrum. We offer brand consultation, research and strategy design as well as logo design,<Link href="/packaging-design-agency-in-hyderabad" className="faq-link"> packaging design,</Link> catalogue design, photography and <Link href="/animation" className="faq-link">animation.</Link> Additionally, we also help promote your brand through our digital marketing services.</>)
     },
     {
       question:
         "Do you offer digital branding and marketing services along with design in Hyderabad?",
       answer:
-        "Yes, at DN Designs, we offer digital branding and marketing services too. We design your UI/UX and develop an SEO friendly website for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.",
+        (<>Yes, at DN Designs, we offer <Link href="/branding" className="faq-link">digital branding </Link>and marketing services too. We design your UI/UX and develop an <Link href="/web-designing-services-in-india" className="faq-link">SEO friendly </Link>website for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.</>)
     },
     {
       question: "How can I request a quote for branding in Hyderabad?",

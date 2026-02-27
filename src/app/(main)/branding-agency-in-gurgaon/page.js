@@ -111,18 +111,22 @@ async function page() {
   const leftFaqs = [
     {
       question: "Why is branding important for my business?",
-      answer:
-        "Branding builds identity and makes your business recognisable. It helps you stand out from the competition and, most importantly, builds trust, making customers more likely to choose you over your competitors.",
+      answer:(
+        <>
+        Branding builds identity and makes your business recognisable. It helps you stand out from the competition and, most importantly, builds trust, making customers more likely to choose you over your competitors.
+        </>
+        )
     },
     {
       question: "How can a branding agency in Gurgaon assist small businesses?",
-      answer:
-        "A branding agency in Gurgaon can help create brand identity and presence - compelling brand name, logos, packaging, digital strategy, and an engaging website, to name a few. These give your brand its own identity, establish it in the market, and make it look credible.",
+      answer:(<>
+        A branding agency in Gurgaon can help create brand identity and presence - compelling <Link href="/brand-name-suggestion" className="faq-link">brand name,</Link> <Link href="/logo-designing" className="faq-link">logos,</Link> packaging, digital strategy, and an engaging website, to name a few. These give your brand its own identity, establish it in the market, and make it look credible.
+        </>)
     },
     {
       question: "What services does your branding agency offer?",
-      answer:
-        "We offer a complete range of branding services - from identity design to website and communication design. To elaborate, we design brand logos, packaging, catalogue, UI/UX and website and also help you with services like SEO, social media marketing, influencer marketing, animation and photography.",
+      answer:(<>
+        We offer a complete range of branding services - from identity design to website and communication design. To elaborate, we design brand logos, <Link href="/packaging-design" className="faq-link">packaging,</Link> <Link href="/catalogue-designing" className="faq-link">catalogue,</Link> UI/UX and website and also help you with services like SEO, social media marketing, influencer marketing, animation and photography.</>)
     },
   ];
 
@@ -134,13 +138,16 @@ async function page() {
     },
     {
       question: "How do I get started with your branding services?",
-      answer:
-        "Just reach out to us at info@dndesigns.co.in or give us a call at +91 941 601 1100 / +91 720 660 5872.",
+      answer: (<>
+       Just reach out to us at info@dndesigns.co.in or give us a call at <a href="tel:+91941 601 1100" className="faq-link">+91 941 601 1100</a> / <a href="tel:+91720 660 5872" className="faq-link">+91 720 660 5872</a>.
+        </>)
     },
     {
       question: "How much do your branding services cost?",
-      answer:
-        "The cost of our branding services varies depending on the specific solutions you require or the package you choose.",
+      answer:(<>
+        The cost of our <Link href="/branding" className="faq-link">branding services</Link> varies depending on the specific solutions you require or the package you choose.
+        </>
+        )
     },
   ];
 
