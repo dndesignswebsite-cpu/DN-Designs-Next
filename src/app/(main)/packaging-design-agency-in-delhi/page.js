@@ -123,7 +123,7 @@ async function page() {
       question:
         "Do you offer complete packaging design services from start to finish?",
       answer:
-        "Yes, our packaging design services include everything from start to finish. It begins from market & audience research and is followed by concept creation, design planning and implementation, revisions and final delivery of the design files.",
+        (<>Yes, our <Link href="/packaging-design" className="faq-link">packaging design services </Link>include everything from start to finish. It begins from market & audience research and is followed by concept creation, design planning and implementation, revisions and final delivery of the design files.</>)
     },
     {
       question:
@@ -143,7 +143,7 @@ async function page() {
     {
       question: "Can you support large brands with multiple products?",
       answer:
-        "Yes, we can surely support larger brands that have several products and sub-variants. We can design packages that give a unique identity to each of your products, and yet reflect the overall brand identity.",
+        (<>Yes, we can surely support larger brands that have several products and sub-variants. We can design packages that give a unique identity to each of your products, and yet reflect the overall <Link href="/branding" className="faq-link">brand identity.</Link></>)
     },
   ];
 

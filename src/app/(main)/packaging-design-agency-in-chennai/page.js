@@ -117,7 +117,7 @@ async function page() {
       question:
         "What makes DN Designs one of the top packaging design agencies in Chennai?",
       answer:
-        "At DN Designs, we believe in basing all our designs on sound research. We create packaging designs that reflect your brand identity, resonate with your target audience, are culturally appropriate and establish a unique positioning for your product in the market. Our experience and expertise ensure that you stand out in the market and earn profits.",
+        (<>At <Link href="/" className="faq-link">DN Designs,</Link> we believe in basing all our designs on sound research. We create packaging designs that reflect your <Link href="/branding" className="faq-link">brand identity,</Link> resonate with your target audience, are culturally appropriate and establish a unique positioning for your product in the market. Our experience and expertise ensure that you stand out in the market and earn profits.</>)
     },
     {
       question: "What is your packaging design process?",
@@ -137,7 +137,7 @@ async function page() {
       question:
         "I have several products and their respective variants. Can you design packaging for each?",
       answer:
-        "Yes, we can definitely create packaging designs for your different products and their variants. We make sure that each of your products appears attractive and different from the other, and yet stays consistent with the overall identity of your brand.",
+        (<>Yes, we can definitely create <Link href="/packaging-design" className="faq-link">packaging designs</Link> for your different products and their variants. We make sure that each of your products appears attractive and different from the other, and yet stays consistent with the overall identity of your brand.</>)
     },
     {
       question:

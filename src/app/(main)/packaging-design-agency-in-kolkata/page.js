@@ -122,7 +122,7 @@ async function page() {
       question:
         "What are the benefits of working with a packaging design agency in Kolkata?",
       answer:
-        "When you hire a product packaging design agency in Kolkata, you essentially hire a team of professional experts. This team has the industry knowledge and design experience to create a packaging that conveys your brand identity perfectly and resonates with your target audience. Availing package design services in Kolkata can really help your product establish a strong presence in the market.",
+        (<>When you hire a product packaging design agency in Kolkata, you essentially hire a team of professional experts. This team has the industry knowledge and design experience to create a packaging that conveys your <Link href="/branding" className="faq-link">brand identity</Link> perfectly and resonates with your target audience. Availing package design services in Kolkata can really help your product establish a strong presence in the market.</>)
     },
     {
       question:
@@ -137,7 +137,7 @@ async function page() {
       question:
         "Can you design packaging for all my products and their variants?",
       answer:
-        "Absolutely! We would be delighted to create product packaging designs for all your products and their variants.",
+        (<>Absolutely! We would be delighted to create <Link href="/packaging-design" className="faq-link">product packaging designs</Link> for all your products and their variants.</>)
     },
     {
       question: "Do you accept revisions? How many can I get?",

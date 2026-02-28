@@ -19,6 +19,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -142,7 +143,7 @@ async function page() {
     {
       question: "Can you redesign the packaging of my existing products?",
       answer:
-        "Sure, we can redesign the packaging of your existing products to make it more modern, attractive and in sync with your brand values. ",
+        (<>Sure, we can redesign the <Link href="/packaging-design" className="faq-link">packaging</Link> of your existing products to make it more modern, attractive and in sync with your brand values. </>)
     },
   ];
 

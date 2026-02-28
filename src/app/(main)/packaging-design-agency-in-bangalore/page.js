@@ -138,7 +138,7 @@ async function page() {
     {
       question: "Can you redesign my current packaging?",
       answer:
-        "Definitely, our packaging design services include redesigning your current packaging as well. Our team can modernise, overhaul or completely give your product a new packaging to improve brand recognition, shelf impact, and customer appeal.",
+        (<>Definitely, our <Link href="/packaging-design" className="faq-link">packaging design services</Link> include redesigning your current packaging as well. Our team can modernise, overhaul or completely give your product a new packaging to improve brand recognition, shelf impact, and customer appeal.</>)
     },
     {
       question:

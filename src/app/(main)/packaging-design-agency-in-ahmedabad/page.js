@@ -132,7 +132,7 @@ async function page() {
       question:
         "What key elements can make a design stand out in Ahmedabad’s competitive market?",
       answer:
-        "Clear communication, right colours & typography, captivating images, thoughtful placement of elements and brand consistency are some of the key elements that help make packaging design effective. Hence, these are the main focuses of our packaging design services, too.",
+        (<>Clear communication, right colours & typography, captivating images, thoughtful placement of elements and brand consistency are some of the key elements that help make packaging design effective. Hence, these are the main focuses of our <Link href="/packaging-design" className="faq-link">packaging design services,</Link> too.</>)
     },
   ];
 
@@ -141,7 +141,7 @@ async function page() {
       question:
         "Do packaging design companies also provide other services like brand strategy development and visual identity creation?",
       answer:
-        "Yes. Many packaging design companies do more than just create the pack. They often handle complete branding work, that is, they develop brand strategy, define visual identity elements like logos, and make sure the packaging is consistent with the overall brand story.",
+        (<>Yes. Many packaging design companies do more than just create the pack. They often handle complete <Link href="/branding" className="faq-link">branding</Link> work, that is, they develop brand strategy, define visual identity elements like <Link href="/logo-designing" className="faq-link">logos,</Link> and make sure the packaging is consistent with the overall brand story.</>)
     },
     {
       question:
