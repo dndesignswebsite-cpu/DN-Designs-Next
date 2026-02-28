@@ -324,6 +324,63 @@ async function page() {
             </div>
           </div>
 
+
+          <div className="row port-row">
+            <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className=" port-div">
+                 <Image
+                   src={imageUrl + "let.jpg"} 
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Let's Supp</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Packaging</h4>
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                    For the nutraceutical brand Let’s Supp, we designed a structured packaging system with intuitive information hierarchy, abstract infinity-led composition, and transparent containers - creating clarity, reinforcing purity, and delivering a calm, credible, effortless product experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className=" port-div">
+                {/* <img src={imageUrl + "thames-5.webp"} className="img-fluid" /> */}
+                 <Image
+                   src={imageUrl + "iorg.jpg"} 
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>iOrganic</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Label Design</h4>
+                      <h4 className="our-port-btn">Box Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   For iOrganic, we crafted premium packaging designs for its festive and corporate gift boxes. The focus was on combining sophisticated detailing and nature-inspired aesthetics to elevate gifting experiences while staying rooted in the brand’s pure, organic philosophy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
@@ -397,7 +454,7 @@ async function page() {
                 /> */}
 
                 <Image
-                   src={imageUrl + "j3kefdbkjer.webp"}
+                   src={imageUrl + "nwjkebhdn.webp"}
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
@@ -463,13 +520,21 @@ async function page() {
                   src={imageUrl + "wyegrygfewj.webp"}
                   className="img-fluid"
                 /> */}
-                 <Image
+                 {/* <Image
                    src={imageUrl + "wyegrygfewj.webp"}
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
                   height={1500}
-                />
+                /> */}
+
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
