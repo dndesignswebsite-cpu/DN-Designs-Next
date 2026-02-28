@@ -356,7 +356,7 @@ async function page() {
               <div className=" port-div">
                 {/* <img src={imageUrl + "Smartyums.webp"} className="img-fluid" /> */}
                 <Image
-                 src={imageUrl + "Smartyums.webp"} 
+                 src={imageUrl + "let.jpg"} 
                   alt="branding page"
                   width={750}
                   height={750}
@@ -365,19 +365,16 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>Smartyums</h3>
+                      <h3>Let's Supp</h3>
                     </div>
                     <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Merchandising</h4>
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Packaging</h4>
                     </div>
                   </div>
 
                   <p>
-                    Smartyums, with their crunchy protein bite products, wanted
-                    a packaging design that focussed on, and attracted kids.
-                    Expert designers at our agency created a playful and
-                    visually appealing packaging design for them.
+                    For the nutraceutical brand Let’s Supp, we created a complete brand identity and packaging design. The goal was to create a calm, clear, and trustworthy presence in the market and transform complex supplementation into a simple, repeatable daily wellness ritual.
                   </p>
                 </div>
               </div>
