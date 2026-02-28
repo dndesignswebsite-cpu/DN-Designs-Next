@@ -127,13 +127,13 @@ async function page() {
       question:
         "How is a dedicated product packaging design company in Hyderabad better than a freelance designer?",
       answer:
-        "An agency is better suited to offer package design services for the simple reason that it has much more experience and expertise. It has a team of strategic and creative experts who together ensure that your packaging is both beautiful and powerful. Moreover, an agency is more reliable, has a structured workflow and a solid communication system in place too.",
+        (<>An agency is better suited to offer <Link href="/packaging-design" className="faq-link">package design services</Link> for the simple reason that it has much more experience and expertise. It has a team of strategic and creative experts who together ensure that your packaging is both beautiful and powerful. Moreover, an agency is more reliable, has a structured workflow and a solid communication system in place too.</>)
     },
     {
       question:
         "Can you also handle brand strategy and visual identity for my product?",
       answer:
-        "Sure, we can handle brand strategy development and visual identity design for your product. We are a branding and design agency, and so we offer comprehensive branding solutions for your business.",
+        (<>Sure, we can handle <Link href="/branding" className="faq-link">brand strategy development</Link> and <Link href="/logo-designing" className="faq-link">visual identity design</Link> for your product. We are a branding and design agency, and so we offer comprehensive branding solutions for your business.</>)
     },
   ];
 

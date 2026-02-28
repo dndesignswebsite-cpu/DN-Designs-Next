@@ -942,6 +942,17 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
+
+                         <li>
+                          <Link
+                            href="/packaging-design"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Packaging Design
+                          </Link>
+                        </li>
+
                         <li>
                           <Link
                             href="/brand-name-suggestion"
@@ -1088,15 +1099,7 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-                        <li>
-                          <Link
-                            href="/packaging-design"
-                            onClick={handleLinkClick}
-                            className={`${styles["header-solo-link"]}`}
-                          >
-                            Packaging Design
-                          </Link>
-                        </li>
+                       
                       </ul>
                     </div>
                   </div>
@@ -1121,7 +1124,7 @@ const toggleNav = () => {
                           style={{ fontSize: "1.6em" }}
                         />
                         <span className={`${styles["header-solo-heading"]}`}>
-                          Additional Pages
+                          Additional Links
                         </span>
                       </div>
                     </button>
@@ -1133,6 +1136,36 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
+                       <li>
+                          <Link
+                            href="/career"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Career
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/brand-video-shoots"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Brand Video Shoots
+                          </Link>
+                        </li>
+
+                         <li>
+                          <Link
+                            href="/photography"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Photography
+                          </Link>
+                        </li>
+
                         <li>
                           <Link
                             href="/contact-us"
@@ -1142,7 +1175,44 @@ const toggleNav = () => {
                             Contact Us
                           </Link>
                         </li>
-                        <li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <span className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <span className={`${styles["header-solo-heading"]}`}>
+                          Blog
+                        </span>
+                      </div>
+                    </button>
+                  </span>
+                  <div
+                    id="collapseSeven"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                       <li>
                           <Link
                             href="/blog"
                             onClick={handleLinkClick}

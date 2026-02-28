@@ -121,7 +121,7 @@ async function page() {
     {
       question: "How long does the packaging design process take?",
       answer:
-        "If you are looking for packaging design services, it can take up to 3-4 weeks, depending primarily on the number of SKUs and the complexity of the project. As one of the leading packaging design companies in Mumbai, we share a clear timeline before starting.",
+        (<>If you are looking for <Link href="/packaging-design" className="faq-link">packaging design services,</Link> it can take up to 3-4 weeks, depending primarily on the number of SKUs and the complexity of the project. As one of the leading packaging design companies in Mumbai, we share a clear timeline before starting.</>)
     },
     {
       question: "What industries do you work with?",

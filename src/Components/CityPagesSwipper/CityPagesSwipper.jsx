@@ -13,7 +13,7 @@ function CityPagesSwipper() {
     <section className="citypagesswipper">
       <div className="container">
         <h2 className="citypagesswipper-h2 ">
-          Branding and Marketing Services That Build Trust - And Admiration Too
+          Branding and Marketing Services <span className="every-pr">That Build Trust and Admiration</span>
         </h2>
 
         <Swiper
