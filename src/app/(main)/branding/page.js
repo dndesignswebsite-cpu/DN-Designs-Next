@@ -14,6 +14,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -402,7 +403,8 @@ async function page() {
               Our <span className="every-pr"> Breaks Through</span>
             </h2>
             <div className="our-brand-mobile-all-div row">
-              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="enlite-case-study" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "enlite main graphic.webp"}
@@ -436,8 +438,92 @@ async function page() {
                     </p>
                   </div>
                 </div>
+                </Link>
               </div>
-              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
+
+
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="letssupp-case-study" className="pane-link">
+                <div className="our-brand-mobile-div-clield">
+                  {/* <img
+                    src={imageUrl + "nature-balance-22.webp"}
+                    className="img-fluid"
+                  /> */}
+                  <Image
+                  src="https://dndesigns.co.in/uploads/pages/lestupcase12mobile.jpg.jpeg"
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                />
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">
+                      Let's Supp
+                    </h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
+                      <h4 className="our-brand-mobile-btn">Packaging Design</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        UI/UX Design
+                      </h4>
+                    </div>
+                    <p>
+                      For the nutraceutical brand Let’s Supp, we designed a structured packaging system with intuitive information hierarchy, abstract infinity-led composition, and transparent containers - creating clarity, reinforcing purity, and delivering a calm, credible, effortless product experience.
+                    </p>
+                  </div>
+                </div>
+                </Link>
+              </div>
+
+
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="wlues-case-study" className="pane-link">
+                <div className="our-brand-mobile-div-clield">
+                  {/* <img
+                    src={imageUrl + "nature-balance-22.webp"}
+                    className="img-fluid"
+                  /> */}
+                  {/* <Image
+                  src={imageUrl + "nature-balance-22.webp"}
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                /> */}
+
+                 <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/GIF_1_1.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">
+                      Wlue's
+                    </h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
+                      <h4 className="our-brand-mobile-btn">Packaging Design</h4>
+                    </div>
+                    <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        UI/UX Design
+                      </h4>
+                    </div>
+                    <p>
+                      Makhana brand Wlue’s approached us to launch and promote its product in the market. Their target audience was the youth worldwide. We created its logo and packaging design. In its packaging, we adopted a retro approach with a superhero vibe, while through its logo (with a star integrated in it), we established that the product is meant for winners.
+                    </p>
+                  </div>
+                </div>
+                </Link>
+              </div>
+
+
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="grincare-case-study" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <video className="img-fluid" autoPlay muted loop playsInline>
                     <source
@@ -479,45 +565,11 @@ async function page() {
                     </p>
                   </div>
                 </div>
+                </Link>
               </div>
-              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
-                <div className="our-brand-mobile-div-clield">
-                  {/* <img
-                    src={imageUrl + "nature-balance-22.webp"}
-                    className="img-fluid"
-                  /> */}
-                  <Image
-                  src={imageUrl + "nature-balance-22.webp"}
-                  alt="branding page"
-                  width={1500}
-                  height={1000}
-                  className="responsive-img our-brand-mobile-div-img"
-                />
-                  <div className="our-brand-mobile-div-content">
-                    <h3 className="mobile-view-our-brand-h3">
-                      Nature's Balance
-                    </h3>
-                    <div className="our-brand-mobile-btn-up">
-                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
-                      <h4 className="our-brand-mobile-btn">Environment</h4>
-                    </div>
-                    <div>
-                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
-                        Label Design
-                      </h4>
-                    </div>
-                    <p>
-                      An upscale health-focussed cafe, Nature’s Balance
-                      approached us with the purpose of building its brand
-                      presence. We worked to create their identity & label
-                      design. In addition, as a creative design agency, we also
-                      provided them with menu design, 3D Ad design, as well as
-                      environment design services.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-6">
+              
+              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="nectarpure-case-study" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "ewrfeferf.webp"}
@@ -551,6 +603,7 @@ async function page() {
                     </p>
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
           </div>
