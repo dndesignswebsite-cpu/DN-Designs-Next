@@ -668,6 +668,11 @@
     padding: 5px 0px;
 }
 
+.pane-link{
+  text-decoration: none;
+  color: #212529;
+}
+
 
 /* image  */
 .responsive-img {
