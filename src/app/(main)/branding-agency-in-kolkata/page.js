@@ -139,7 +139,7 @@ async function page() {
     {
       question: "How do we start working with you?",
       answer:
-        "Just reach out through our contact form or schedule a consultation by emailing info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible.",
+        (<>Just reach out through our contact form or schedule a consultation by emailing <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a> or calling <a href="tel:9416011100" className="faq-link">9416011100</a>. Our team will get back to you as soon as possible.</>)
     },
   ];
 

@@ -139,7 +139,7 @@ async function page() {
     {
       question: "How can I get started with your branding services?",
       answer:
-        "To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call 9416011100 and schedule a consultation. Our team will get back to you shortly to discuss your needs.",
+        (<>To contact us, you can fill out our contact form, email us at <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a>, or call <a href="tel:9416011100" className="faq-link">9416011100</a> and schedule a consultation. Our team will get back to you shortly to discuss your needs.</>)
     },
   ];
 
