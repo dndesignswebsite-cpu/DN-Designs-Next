@@ -232,19 +232,22 @@
   padding: 40px;
 }
 
-@media(max-width:1300px){
-  .overlay-content-pure {
-  position: absolute;
-  top: 60%;
-  padding: 20px;
-}
-}
+
 
 .panel-link {
   display: block;
   width: 100%;
   height: 96%;
   cursor: url("https://dndesigns.co.in/uploads/misc/cese1.png"), auto;
+}
+
+
+@media(max-width:1300px){
+  .overlay-content-pure {
+  position: absolute;
+  top: 50%;
+  padding: 20px;
+}
 }
 
 
