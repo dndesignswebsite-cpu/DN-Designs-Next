@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import "./LightBox.css"
 
 export default function CatalougePageFlip({ children, src, type }) {
   const [open, setOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function CatalougePageFlip({ children, src, type }) {
       {open &&
         createPortal(
           <div
+           className="lightbox-container-padding"
             onClick={() => setOpen(false)}
             style={{
               position: "fixed",

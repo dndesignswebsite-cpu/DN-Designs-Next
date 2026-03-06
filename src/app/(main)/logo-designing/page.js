@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -124,7 +125,7 @@ async function page() {
     {
       question: "What makes you the best logo designing company?",
       answer:
-        "Noida-based DN Designs has been in the business for over 8 years and, therefore, has concrete experience in understanding what kind of logo will best suit a particular brand. We have created professional, creative, quirky and premium logo designs for a variety of businesses. Our logos reflect brand identity and values, and have an outstanding recall potential. Happy customers are what we want to achieve in the end. ",
+        (<>Noida-based <Link href="/" className="faq-link">DN Designs</Link> has been in the business for over 8 years and, therefore, has concrete experience in understanding what kind of logo will best suit a particular brand. We have created professional, creative, quirky and premium logo designs for a variety of businesses. Our logos reflect brand identity and values, and have an outstanding recall potential. Happy customers are what we want to achieve in the end. </>)
     },
     {
       question: "What's your process of creating a logo design?",
@@ -183,7 +184,7 @@ async function page() {
     {
       question: "What services do you provide other than logo designing?",
       answer:
-        "As a full-service branding and design agency, we offer a comprehensive suite of services including brand identity design, packaging design, catalogue design, web design & development, and company profiling. In addition, we can also provide digital marketing, brand video shoots, product photography and animation services.",
+        (<>As a full-service branding and design agency, we offer a comprehensive suite of services including <Link href="/branding" className="faq-link">brand identity design</Link> , <Link href="/packaging-design" className="faq-link">packaging design</Link>, catalogue design, web design & development, and company profiling. In addition, we can also provide digital marketing, brand video shoots, product photography and animation services.</>)
     },
   ];
 

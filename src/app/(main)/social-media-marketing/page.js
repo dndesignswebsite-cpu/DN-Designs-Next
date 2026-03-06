@@ -12,6 +12,7 @@ import PagesHero from "@/Components/PagesHero/PagesHero";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -115,7 +116,7 @@ async function page() {
       question:
         "What type of services does a social media marketing agency in India provide?",
       answer:
-        "A social media marketing agency in India offers a comprehensive range of services, right from developing a data-driven strategy to creating and publishing relevant content, interacting with and managing the community and monitoring performance. Apart from these, agencies may also offer services like paid advertising, influencer marketing, social listening & brand monitoring, reputation management, as well as social media training and consulting.",
+        (<>A social media marketing agency in India offers a comprehensive range of services, right from developing a data-driven strategy to creating and publishing relevant content, interacting with and managing the community and monitoring performance. Apart from these, agencies may also offer services like paid advertising, <Link href="/influencer-marketing" className="faq-link">influencer marketing</Link>, social listening & brand monitoring, reputation management, as well as social media training and consulting.</>)
     },
 
     {

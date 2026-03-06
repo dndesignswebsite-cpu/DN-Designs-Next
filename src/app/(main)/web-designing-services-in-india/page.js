@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -103,7 +104,7 @@ async function page() {
       question:
         "What kind of services does a website design company like DN Designs offer? ",
       answer:
-        "A website design company like DN Designs offers a complete range of services. It includes creating a brand new website or redesigning an existing one. It could either be an informative or an e-commerce website. We also create content for your website and offer SEO services to promote your business. In addition, we help you migrate your website to other platforms, too.",
+        (<>A website design company like <Link href="/" className="faq-link">DN Designs</Link> offers a complete range of services. It includes creating a brand new website or redesigning an existing one. It could either be an informative or an e-commerce website. We also create content for your website and offer <Link href="/seo-marketing-agency-in-noida" className="faq-link">SEO services</Link> to promote your business. In addition, we help you migrate your website to other platforms, too.</>)
     },
     {
       question:
@@ -114,13 +115,13 @@ async function page() {
     {
       question: "I need to redesign my current website. Can you do it?",
       answer:
-        "Yes, we can surely redesign your website. Just contact us and let's discuss your goals and vision.",
+        (<>Yes, we can surely redesign your website. Just <Link href="/contact-us" className="faq-link">contact us</Link> and let's discuss your goals and vision.</>)
     },
 
     {
       question: "How do you create a website? How does your process unfold?",
       answer:
-        "Our website design and development process begins with a discussion about your brand and goals. We then plan out the website, design its UI/UX and create content. When everything is ready, we begin the website development work. In the end, we test it, fix errors and make it live.",
+        (<>Our website design and development process begins with a discussion about your brand and goals. We then plan out the website, design its <Link href="/ui-ux-design" className="faq-link">UI/UX</Link> and create content. When everything is ready, we begin the website development work. In the end, we test it, fix errors and make it live.</>)
     },
 
     {
@@ -185,7 +186,7 @@ async function page() {
     {
       question: "I want you to design my website. How should we get started?",
       answer:
-        "Firstly, we are glad that you have decided to work with us. To get started, you can simply fill out the form below. Alternatively, you can drop us an email at info@dndesigns.co.in or give us a call at  91 9416011100.",
+        (<>Firstly, we are glad that you have decided to work with us. To get started, you can simply fill out the form below. Alternatively, you can drop us an email at <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a> or give us a call at  <a href="tel:+919416011100" className="faq-link">+91 9416011100</a>.</>)
     },
   ];
 

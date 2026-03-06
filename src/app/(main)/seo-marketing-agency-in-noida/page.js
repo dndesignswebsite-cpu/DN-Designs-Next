@@ -15,6 +15,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -144,7 +145,7 @@ async function page() {
     {
       question: "What makes you the best SEO agency in Noida?",
       answer:
-        "With over 8 years of experience, DN Designs is the best SEO company in Noida. We craft your SEO strategy only after understanding your business and auditing your website. We perform an elaborate keyword research, optimise content, build high-quality links, and last but not least, ensure the technical health of the site. We have worked for a variety of industries and keep ourselves updated with the latest trends (algorithm updates & new AI search). We also provide you with regular reports so that you can assess the progress of your work and the results achieved. ",
+        (<>With over 8 years of experience, <Link href="/" className="faq-link">DN Designs</Link> is the best SEO company in Noida. We craft your SEO strategy only after understanding your business and auditing your website. We perform an elaborate keyword research, optimise content, build high-quality links, and last but not least, ensure the technical health of the site. We have worked for a variety of industries and keep ourselves updated with the latest trends (algorithm updates & new AI search). We also provide you with regular reports so that you can assess the progress of your work and the results achieved. </>)
     },
     {
       question: "What are some common SEO mistakes businesses make?",
@@ -175,7 +176,7 @@ async function page() {
     {
       question: "Apart from SEO, what other services do you offer?",
       answer:
-        "We are a branding, design and marketing agency and therefore offer a whole spectrum of services related to it, be it your brand identity creation, packaging design and catalogue design. We also help you establish your communication and digital marketing strategies.",
+        (<>We are a <Link href="/branding" className="faq-link">branding</Link>, design and marketing agency and therefore offer a whole spectrum of services related to it, be it your brand identity creation, <Link href="/packaging-design" className="faq-link">packaging design</Link> and <Link href="/catalogue-designing" className="faq-link">catalogue design</Link>. We also help you establish your communication and digital marketing strategies.</>)
     },
   ];
 
