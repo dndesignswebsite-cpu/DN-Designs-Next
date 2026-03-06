@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -116,7 +117,7 @@ async function page() {
       question:
         "Does User Interface & User Experience design affect SEO and search rankings?",
       answer:
-        "Yes, UI/UX design does have an impact on SEO and search rankings. A good design ensures that the website is visually appealing, has a proper information architecture and loads quickly on all kinds of devices. All these enhance user experience and, therefore, they spend more time on the website. This reduces the bounce rate. A logical architecture also helps search engines crawl and index a website easily.",
+        (<>Yes, UI/UX design does have an impact on <Link href="/seo-marketing-agency-in-noida" className="faq-link">SEO</Link> and search rankings. A good design ensures that the website is visually appealing, has a proper information architecture and loads quickly on all kinds of devices. All these enhance user experience and, therefore, they spend more time on the website. This reduces the bounce rate. A logical architecture also helps search engines crawl and index a website easily.</>)
     },
 
     {
@@ -181,7 +182,7 @@ async function page() {
     {
       question: "What other services do you provide?",
       answer:
-        "Apart from our professional UI/UX design services, we offer services like website development, SEO, content marketing, branding, and more. We offer complete branding and marketing services to create a complete brand experience.",
+        (<>Apart from our professional UI/UX design services, we offer services like <Link href="/web-designing-services-in-india" className="faq-link">website development</Link>, SEO, content marketing, <Link href="/branding" className="faq-link">branding</Link>, and more. We offer complete branding and marketing services to create a complete brand experience.</>)
     },
   ];
 

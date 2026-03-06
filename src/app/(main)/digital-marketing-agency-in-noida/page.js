@@ -15,6 +15,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -126,7 +127,7 @@ async function page() {
       question:
         "What kind of services does a full-service digital marketing company in India provide?",
       answer:
-        "A full-service digital marketing agency in India takes care of every aspect of a business’s online marketing, be it brand building and awareness or generating traffic and profits. To elaborate, it takes care of the following services - website design & development, search engine optimisation (SEO), social media marketing, content marketing, influencer marketing, email marketing and paid advertising. In addition, a digital marketing company in India also conducts market research and crafts a comprehensive online marketing strategy for its clients.",
+        (<>A full-service digital marketing agency in India takes care of every aspect of a business’s online marketing, be it brand building and awareness or generating traffic and profits. To elaborate, it takes care of the following services - <Link href="/web-designing-services-in-india" className="faq-link">website design & development</Link>, search engine optimisation (SEO), <Link href="/social-media-marketing" className="faq-link">social media marketing</Link>, content marketing, <Link href="/influencer-marketing" className="faq-link">influencer marketing</Link>, email marketing and paid advertising. In addition, a digital marketing company in India also conducts market research and crafts a comprehensive online marketing strategy for its clients.</>)
     },
     {
       question: "Does my business really need digital marketing services?",
@@ -164,7 +165,7 @@ async function page() {
     {
       question: "What makes you a top digital marketing agency in Noida?",
       answer:
-        "We have worked for 8 years and thus have solid work experience behind us. Our team of digital marketers excel in their areas, be it website development, SEO, SMO or email marketing. We focus on understanding your business and goals and conduct thorough market research before crafting your online marketing strategy. Moreover, we also believe in transparency and keep you informed about the progress and results at every step. All these make us a top digital marketing agency. ",
+        (<>We have worked for 8 years and thus have solid work experience behind us. Our team of digital marketers excel in their areas, be it website development, <Link href="/seo-marketing-agency-in-noida" className="faq-link">SEO</Link>, SMO or email marketing. We focus on understanding your business and goals and conduct thorough market research before crafting your online marketing strategy. Moreover, we also believe in transparency and keep you informed about the progress and results at every step. All these make us a top digital marketing agency. </>)
     },
 
     {

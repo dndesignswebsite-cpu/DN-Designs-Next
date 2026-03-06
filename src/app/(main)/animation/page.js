@@ -13,6 +13,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -113,12 +114,12 @@ async function page() {
     {
       question: "What kind of animated videos does your company create?",
       answer:
-        "One of the most popular animation studios in India, DN Designs, provides a complete range of animated videos. These formats include product demo videos, corporate videos, promotional videos and explainer videos. As for video styles, we provide 2D, 3D, motion graphics and CGI videos.",
+        (<>One of the most popular animation studios in India, <Link href="/" className="faq-link">DN Designs</Link>, provides a complete range of animated videos. These formats include product demo videos, corporate videos, promotional videos and explainer videos. As for video styles, we provide 2D, 3D, motion graphics and CGI videos.</>)
     },
     {
       question: "How do I decide which type of video best suits my business?",
       answer:
-        "To decide which types of videos will benefit your company, you should first know your business goals and your target audience’s requirements. For instance, if your product is new, you can select a product demo or a promotional video to help launch & market it better. You can also go for 3D animated videos to enhance your users’ experience. If you are unsure about how you should proceed, don’t worry. Just contact us, and we will research and make appropriate recommendations.",
+        (<>To decide which types of videos will benefit your company, you should first know your business goals and your target audience’s requirements. For instance, if your product is new, you can select a product demo or a <Link href="/brand-video-shoots" className="faq-link">promotional video</Link> to help launch & market it better. You can also go for 3D animated videos to enhance your users’ experience. If you are unsure about how you should proceed, don’t worry. Just <Link href="/contact-us" className="faq-link">contact us</Link>, and we will research and make appropriate recommendations.</>)
     },
     {
       question: "How much time do you need to create an animated video?",
@@ -157,7 +158,7 @@ async function page() {
       question:
         "Do you keep our brand style and follow brand guidelines when creating videos?",
       answer:
-        "Yes. As a business animation company in India, we do understand the importance of keeping your brand identity intact in your videos. You can share your brand guidelines with us, and we will ensure to retain your brand’s logo, design aesthetics, fonts, colours, and voice in the video we create.",
+        (<>Yes. As a business animation company in India, we do understand the importance of keeping your <Link href="/branding" className="faq-link">brand identity</Link> intact in your videos. You can share your brand guidelines with us, and we will ensure to retain your <Link href="/logo-designing" className="faq-link">brand’s logo</Link>, design aesthetics, fonts, colours, and voice in the video we create.</>)
     },
     {
       question:
@@ -169,7 +170,7 @@ async function page() {
     {
       question: "How much do your video creation services cost?",
       answer:
-        "Costing depends on the scope of your project - the format and style of the video (motion graphic or 3D video), its length and the complexities involved. To get an idea about the cost of your project, simply get in touch with us.",
+        (<>Costing depends on the scope of your project - the format and style of the video (motion graphic or 3D video), its length and the complexities involved. To get an idea about the cost of your project, simply <Link href="/contact-us" className="faq-link">get in touch with us</Link>.</>)
     },
 
     {

@@ -15,6 +15,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -145,7 +146,7 @@ async function page() {
       question:
         "Why should I choose DN Designs for my catalogue and brochure design? What is included in your catalogue design services?",
       answer:
-        "As a professional catalogue design agency, DN Designs has the required expertise and experience to provide effective brochures and catalogue design services to our clients. We cover every aspect of catalogue design in our services, including understanding the target audiences, planning and designing the layout and structure, as well as content creation. Additionally, we also assist you in printing and publishing the brochures or the catalogues.",
+        (<>As a professional catalogue design agency, <Link href="/" className="faq-link">DN Designs</Link> has the required expertise and experience to provide effective brochures and catalogue design services to our clients. We cover every aspect of catalogue design in our services, including understanding the target audiences, planning and designing the layout and structure, as well as content creation. Additionally, we also assist you in printing and publishing the brochures or the catalogues.</>)
     },
     {
       question: "I need to redesign my catalogue. How can you help?",

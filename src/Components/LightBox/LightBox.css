@@ -1,5 +1,8 @@
-.page-flip-com{
+/* .page-flip-com{
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+.lightbox-container-padding{
+    padding: 30px 0 0 0;
 }

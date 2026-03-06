@@ -13,6 +13,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -165,7 +166,7 @@ async function page() {
       question:
         "How are your package designs unique or better than other label designing companies?",
       answer:
-        "DN Designs is a branding and design company with over 8 years of experience in creative packaging, label, can and pouch design. Our designs are created to reflect your brand identity, establish a unique positioning for your product in the market and attract the target customer segment. We base all our packaging and label designs on an accurate product understanding and solid research work (market & audience). That, combined with the skills of our creative design team, is what sets us apart from other label design companies. Our list of happy customers is only growing, and we invite you to be one of them.",
+        (<> <Link href="/" className="faq-link">DN Designs</Link> is a branding and design company with over 8 years of experience in creative packaging, label, can and pouch design. Our designs are created to reflect your <Link href="/branding" className="faq-link">brand identity</Link>, establish a unique positioning for your product in the market and attract the target customer segment. We base all our packaging and label designs on an accurate product understanding and solid research work (market & audience). That, combined with the skills of our creative design team, is what sets us apart from other label design companies. Our list of happy customers is only growing, and we invite you to be one of them.</>)
     },
 
     {
@@ -218,7 +219,7 @@ async function page() {
     {
       question: "What services do you provide other than package designing?",
       answer:
-        "We are a Noida-based branding and design agency, and our suite of services includes everything - from branding solutions to website design and communication strategy development. To put it broadly, we help your business establish its presence both online and offline.",
+        (<>We are a Noida-based branding and design agency, and our suite of services includes everything - from branding solutions to <Link href="/web-designing-services-in-india" className="faq-link">website design</Link> and communication strategy development. To put it broadly, we help your business establish its presence both online and offline.</>)
     },
   ];
 
@@ -347,7 +348,7 @@ async function page() {
                   </div>
 
                   <p>
-                    For the nutraceutical brand Let’s Supp, we designed a structured packaging system with intuitive information hierarchy, abstract infinity-led composition, and transparent containers - creating clarity, reinforcing purity, and delivering a calm, credible, effortless product experience.
+                    For the nutraceutical brand Let’s Supp, we designed a structured packaging with an intuitive information hierarchy, abstract infinity-led composition, and transparent containers. The goal was to simplify decision-making by reinforcing purity and delivering a calm, credible and effortless product experience.
                   </p>
                 </div>
               </div>
@@ -374,7 +375,7 @@ async function page() {
                   </div>
 
                   <p>
-                   For iOrganic, we crafted premium packaging designs for its festive and corporate gift boxes. The focus was on combining sophisticated detailing and nature-inspired aesthetics to elevate gifting experiences while staying rooted in the brand’s pure, organic philosophy.
+                   For iOrganic’s festive and corporate gift boxes, we crafted thoughtful and premium packaging designs that blended intricate refinement with nature-inspired aesthetics. The ultimate objective was to enhance the gifting experience while staying true to the brand’s pure and organic philosophy.
                   </p>
                 </div>
               </div>
