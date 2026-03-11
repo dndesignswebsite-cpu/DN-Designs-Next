@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper/modules';
 import "./WebdesignVideoSwipper.css";
+import TalkToUs from '../TalkToUs/TalkToUs';
+import Link from 'next/link';
 
 export default function WebdesignVideoSwipper() {
   const swiperRef = useRef(null);
@@ -75,17 +77,20 @@ export default function WebdesignVideoSwipper() {
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
-                <h3>NECTACPURE</h3>
-                <button>Know More</button>
+                <h3>For Start-ups</h3>
+                
+                <Link className="animation-video-swipper-up-button" href="/contact-us">
+                  Contact Us
+                </Link>
+                
               </div>
               <div className="hr-animation"></div>
               <div className="row animation-video-swipper-bottom">
                 <div className="col animation-video-swipper-content">
-                  <h4>2025</h4>
+                  
                 </div>
 
                 <div className="col animation-video-swipper-content">
-                  <h4>TYPE 3-D ANIMATION</h4>
                   <p>
                   You are a new business and aspire to be successful. However, customers have no idea about you or your products. What you primarily need to do then is to build awareness and inspire confidence. 
                   </p>
@@ -124,17 +129,20 @@ export default function WebdesignVideoSwipper() {
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
-                <h3>NECTACPURE</h3>
-                <button>Know More</button>
+                <h3>For Enterprise</h3>
+                {/* <TalkToUs/> */}
+                 <Link className="animation-video-swipper-up-button" href="/contact-us">
+                  Contact Us
+                </Link>
               </div>
               <div className="hr-animation"></div>
               <div className="row animation-video-swipper-bottom">
                 <div className="col animation-video-swipper-content">
-                  <h4>2025</h4>
+                  
                 </div>
 
                 <div className="col animation-video-swipper-content">
-                  <h4>TYPE 3-D ANIMATION</h4>
+                  
                   <p>
                     You need a well-built and secure website that can handle a huge amount of data & traffic. You also need a website where multiple users can work conveniently, and several tools can be integrated.
                   </p>
@@ -174,17 +182,20 @@ export default function WebdesignVideoSwipper() {
             </div>
             <div className="swipper-content-animation">
               <div className="animation-video-swipper-up">
-                <h3>NECTACPURE</h3>
-                <button>Know More</button>
+                <h3>For E-Commerce</h3>
+                {/* <TalkToUs/> */}
+                 <Link className="animation-video-swipper-up-button" href="/contact-us">
+                  Contact Us
+                </Link>
               </div>
               <div className="hr-animation"></div>
               <div className="row animation-video-swipper-bottom">
                 <div className="col animation-video-swipper-content">
-                  <h4>2025</h4>
+                  
                 </div>
 
                 <div className="col animation-video-swipper-content">
-                  <h4>TYPE 3-D ANIMATION</h4>
+                  
                   <p>
                    A good e-commerce website serves two purposes. First, it allows users to explore and purchase products easily. Secondly, it enables the platform owner to perform tasks easily - management of data, orders, inventory and customer relationships.
                   </p>
