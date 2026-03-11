@@ -138,7 +138,7 @@ async function page() {
       question:
         "Do you offer digital branding and marketing services along with design in Hyderabad?",
       answer:
-        (<>Yes, at DN Designs, we offer <Link href="/branding" className="faq-link">digital branding </Link>and marketing services too. We design your UI/UX and develop an <Link href="/web-designing-services-in-india" className="faq-link">SEO friendly </Link>website for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.</>)
+        (<>Yes, at DN Designs, we offer <Link href="/branding" className="faq-link">digital branding </Link>and marketing services too. We design your UI/UX and develop an <Link href="/web-designing-services-in-india" className="faq-link">SEO friendly website</Link> for you. We also help promote your brand through our services like SEO, digital marketing, social media marketing and influencer marketing. Additionally, we provide photography and animation video creation services as well to boost your brand.</>)
     },
     {
       question: "How can I request a quote for branding in Hyderabad?",
