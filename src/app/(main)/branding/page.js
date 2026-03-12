@@ -120,9 +120,9 @@ async function page() {
         "Several key elements have to work in perfect unison to create a successful brand. These include an unforgettable name and logo, a consistent visual identity (colour & typography), a captivating brand story & message, a clear vision and mission statement, a unique voice & positioning, strong values, and an overall seamless brand experience.",
     },
     {
-      question: (<>Why do I need a <Link href="/" className="faq-link">brand consultation services</Link> company?</>),
+      question: (<>Why do I need a brand consultation services company?</>),
       answer:
-        "A brand consultation company can help you transform your simple product into a successful brand that customers remember and buy. It has a team of skilled and experienced strategists, designers and marketers who can combine their expertise to create a winning brand for you.",
+        (<>A <Link href="/" className="faq-link">brand consultation company</Link> can help you transform your simple product into a successful brand that customers remember and buy. It has a team of skilled and experienced strategists, designers and marketers who can combine their expertise to create a winning brand for you.</>)
     },
     {
       question: "What does a branding agency do?",
