@@ -5,16 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
-import "./CityPagesSwipper.css";
+import "./CreativeAgencySwipper.css";
 import Link from "next/link";
 
-function CityPagesSwipper({cityPagesSlideData}) {
+function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
-  return (
-    <section className="citypagesswipper">
+  return (<>
+          {/* swipper */}
+      <section className="city-pages-swipper">
+        <section className="citypagesswipper">
       <div className="container">
         <h2 className="citypagesswipper-h2 ">
-         {cityPagesSlideData.CityPagesSwipper_heading}
+         {cityPagesSlideDataCreativeAgency.CityPagesSwipper_heading}
         </h2>
 
         <Swiper
@@ -45,12 +47,12 @@ function CityPagesSwipper({cityPagesSlideData}) {
             <Link href="/brand-name-suggestion">
               <div className="citypagewiper-slide">
                 <img
-                  src="https://dndesigns.co.in/uploads/pages/citypageswiper1.webp"
+                  src="https://dndesigns.co.in/uploads/pages/branddevecity.webp"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_1_slide_head}</h3>
-                  <p>{cityPagesSlideData.slide_1_slide_para}</p>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_1_slide_head}</h3>
+                  <p>{cityPagesSlideDataCreativeAgency.slide_1_slide_para}</p>
                 </div>
               </div>
             </Link>
@@ -58,16 +60,16 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 2 */}
           <SwiperSlide>
-            <Link href="/branding">
+            <Link href="/photography">
               <div className="citypagewiper-slide">
                 <img
-                  src="https://dndesigns.co.in/uploads/pages/branddevecity.webp"
+                  src="https://dndesigns.co.in/uploads/pages/photographycity.webp"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_2_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_2_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_2_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_2_slide_para}
                   </p>
                 </div>
               </div>
@@ -76,16 +78,16 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
-            <Link href="/logo-designing">
+            <Link href="/branding">
               <div className="citypagewiper-slide">
                 <img
                   src="https://dndesigns.co.in/uploads/pages/brandidentitycity.webp"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_3_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_3_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_3_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_3_slide_para}
                   </p>
                 </div>
               </div>
@@ -101,9 +103,9 @@ function CityPagesSwipper({cityPagesSlideData}) {
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_4_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_4_slide_head}</h3>
                   <p>
-                   {cityPagesSlideData.slide_4_slide_para}
+                   {cityPagesSlideDataCreativeAgency.slide_4_slide_para}
                   </p>
                 </div>
               </div>
@@ -119,9 +121,9 @@ function CityPagesSwipper({cityPagesSlideData}) {
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_5_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_5_slide_head}</h3>
                   <p>
-                  {cityPagesSlideData.slide_5_slide_para}
+                  {cityPagesSlideDataCreativeAgency.slide_5_slide_para}
                   </p>
                 </div>
               </div>
@@ -137,9 +139,9 @@ function CityPagesSwipper({cityPagesSlideData}) {
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_6_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_6_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_6_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_6_slide_para}
                   </p>
                 </div>
               </div>
@@ -148,16 +150,16 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 7 */}
           <SwiperSlide>
-            <Link href="/influencer-marketing">
+            <Link href="/animation">
               <div className="citypagewiper-slide">
                 <img
-                  src="https://dndesigns.co.in/uploads/pages/cityswiperr1.webp"
+                  src="https://dndesigns.co.in/uploads/pages/animationcity.webp"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_7_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_7_slide_head}</h3>
                   <p>
-                   {cityPagesSlideData.slide_7_slide_para}
+                   {cityPagesSlideDataCreativeAgency.slide_7_slide_para}
                   </p>
                 </div>
               </div>
@@ -166,16 +168,16 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 8 */}
           <SwiperSlide>
-            <Link href="/social-media-marketing">
+            <Link href="/brand-video-shoots">
               <div className="citypagewiper-slide">
                 <img
-                  src="https://dndesigns.co.in/uploads/pages/socialmediamarketingcity.webp"
+                  src="https://dndesigns.co.in/uploads/pages/man-recording-video-blog.jpg"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_8_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_8_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_8_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_8_slide_para}
                   </p>
                 </div>
               </div>
@@ -184,16 +186,16 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 9 */}
           <SwiperSlide>
-            <Link href="/animation">
+            <Link href="/web-designing-services-in-india">
               <div className="citypagewiper-slide">
                 <img
-                  src="https://dndesigns.co.in/uploads/pages/animationcity.webp"
+                  src="https://dndesigns.co.in/uploads/pages/webdesigncity.webp"
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_9_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_9_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_9_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_9_slide_para}
                   </p>
                 </div>
               </div>
@@ -202,42 +204,6 @@ function CityPagesSwipper({cityPagesSlideData}) {
 
           {/* SLIDE 10 */}
           <SwiperSlide>
-            <Link href="/seo-marketing-agency-in-noida">
-              <div className="citypagewiper-slide">
-                <img
-                  src="https://dndesigns.co.in/uploads/pages/seocity.webp"
-                  alt="Branding"
-                />
-                <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_10_slide_head}</h3>
-                  <p>
-                    {cityPagesSlideData.slide_10_slide_para}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </SwiperSlide>
-
-          {/* SLIDE 11 */}
-          <SwiperSlide>
-            <Link href="/web-designing-services-in-india">
-              <div className="citypagewiper-slide">
-                <img
-                  src="https://dndesigns.co.in/uploads/pages/webdesigncity.webp"
-                  alt="Branding"
-                />
-                <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_11_slide_head}</h3>
-                  <p>
-                    {cityPagesSlideData.slide_11_slide_para}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </SwiperSlide>
-
-          {/* SLIDE 12 */}
-          <SwiperSlide>
             <Link href="/ui-ux-design">
               <div className="citypagewiper-slide">
                 <img
@@ -245,27 +211,9 @@ function CityPagesSwipper({cityPagesSlideData}) {
                   alt="Branding"
                 />
                 <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_12_slide_head}</h3>
+                  <h3>{cityPagesSlideDataCreativeAgency.slide_10_slide_head}</h3>
                   <p>
-                    {cityPagesSlideData.slide_12_slide_para}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </SwiperSlide>
-
-          {/* SLIDE 13 */}
-          <SwiperSlide>
-            <Link href="/photography">
-              <div className="citypagewiper-slide">
-                <img
-                  src="https://dndesigns.co.in/uploads/pages/photographycity.webp"
-                  alt="Branding"
-                />
-                <div className="cityswiperoverlay">
-                  <h3>{cityPagesSlideData.slide_13_slide_head}</h3>
-                  <p>
-                   {cityPagesSlideData.slide_13_slide_para}
+                    {cityPagesSlideDataCreativeAgency.slide_10_slide_para}
                   </p>
                 </div>
               </div>
@@ -274,6 +222,8 @@ function CityPagesSwipper({cityPagesSlideData}) {
         </Swiper>
       </div>
     </section>
+      </section>
+      </>
   );
 }
 
