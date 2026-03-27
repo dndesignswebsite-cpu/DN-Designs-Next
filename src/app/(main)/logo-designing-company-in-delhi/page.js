@@ -18,10 +18,10 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("logo-designing", null, false);
+    seo = await getPageById("logo-designing-company-in-delhi", null, false);
   } catch (error) {
     return {
-      title: "Logo Designing",
+      title: "Logo Designing Company In Delhi",
       robots: "noindex, nofollow",
     };
   }
@@ -69,7 +69,7 @@ async function page() {
   await connectDB();
   let pageData;
   try {
-    pageData = await getPageById("logo-designing", null, true);
+    pageData = await getPageById("logo-designing-company-in-delhi", null, true);
   } catch (error) {
     notFound();
   }
@@ -187,7 +187,7 @@ async function page() {
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "logo-designing"}`}
+          key={`schema-page-${pageData._id || "logo-designing-company-in-delhi"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
