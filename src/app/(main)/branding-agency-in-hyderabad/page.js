@@ -143,7 +143,7 @@ async function page() {
     {
       question: "How can I request a quote for branding in Hyderabad?",
       answer:
-        (<>Just fill out our contact-us form, or drop us an email at <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a>. Alternatively, you can call us at <a href="tel:+919416011100" className="faq-link">+91 941 601 1100</a> or <a href="+917206605872" className="faq-link">+91 720 660 5872</a>.</>)
+        (<>Just fill out our contact-us form, or drop us an email at <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a>. Alternatively, you can call us at <a href="tel:+919416011100" className="faq-link">+91 941 601 1100</a> or <a href="tel:+917206605872" className="faq-link">+91 720 660 5872</a>.</>)
     },
   ];
 
