@@ -11,9 +11,9 @@ import PageLoader from "@/Components/PageLoader/PageLoader";
    METADATA (HOME PAGE)
 ========================= */
 export const metadata = {
-  title: "Creative Branding Agency | Brand Design & Packaging Company",
+  title: "DN Designs | Creative Branding Agency & Brand Design Company",
   description:
-    "Trusted branding & design agency in Noida & Delhi NCR, India with years of success in creative brand design, packaging & marketing for global brands.",
+    "DN Designs is a trusted branding and design agency with years of experience in brand design, packaging, web design, and marketing for global brands.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -25,9 +25,9 @@ export const metadata = {
   alternates: { canonical: "https://dndesigns.co.in/" },
   robots: { index: true, follow: true, nocache: true },
   openGraph: {
-    title: "Creative Branding Agency | Brand Design & Packaging Company",
+    title: "DN Designs | Creative Branding Agency & Brand Design Company",
     description:
-      "Trusted branding & design agency in Noida & Delhi NCR, India with years of success in creative brand design, packaging & marketing for global brands.",
+      "DN Designs is a trusted branding and design agency with years of experience in brand design, packaging, web design, and marketing for global brands.",
     url: "https://dndesigns.co.in/",
     siteName: "DN Designs",
     images: [
@@ -42,9 +42,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Creative Branding Agency | Brand Design & Packaging Company",
+    title: "DN Designs | Creative Branding Agency & Brand Design Company",
     description:
-      "Trusted branding & design agency in Noida & Delhi NCR, India with years of success in creative brand design, packaging & marketing for global brands.",
+      "DN Designs is a trusted branding and design agency with years of experience in brand design, packaging, web design, and marketing for global brands.",
     images: ["https://dndesigns.co.in/uploads/pages/dn-logo.png"],
   },
 };
