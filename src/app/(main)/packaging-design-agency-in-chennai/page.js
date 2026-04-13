@@ -385,7 +385,7 @@ async function page() {
         </div>
       </section>
 
-      {/* swipper */}
+      {/* swippeer */}
        <CityPagesSwipper cityPagesSlideData={cityPagesSlideData}/>
 
       {/* faqs */}
