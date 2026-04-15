@@ -127,7 +127,7 @@ async function page() {
     {
       question: "What does a branding agency do?",
       answer:
-        (<>A creative branding agency takes care of your entire branding work, right from conducting market and competitive research to planning your brand strategy, designing your visual identity (logo, label and <Link href="/packaging-design" className="faq-link">packaging design</Link>), shaping your brand story and messaging, etc. It can also build responsive websites for you.</>)
+        (<>A <Link href="/" className="faq-link">creative branding agency</Link> takes care of your entire branding work, right from conducting market and competitive research to planning your brand strategy, designing your visual identity (logo, label and <Link href="/packaging-design" className="faq-link">packaging design</Link>), shaping your brand story and messaging, etc. It can also build responsive websites for you.</>)
     },
     {
       question: "How do you choose a branding agency?",
@@ -150,7 +150,7 @@ async function page() {
     {
       question: "What kinds of branding services do you offer?",
       answer:
-        (<>We offer a complete range of branding services, right from the consultation phase to the final launch stage, and every other service that comes in between. These include audience and market research; crafting brand strategy; designing a strikingly <Link href="/logo-designing" className="faq-link">appealing logo</Link>, label and package; creating engaging interfaces and robust functional websites; and shaping a comprehensive communication strategy. We also provide environment design and professional photography services.</>)
+        (<>We offer a complete range of branding services, right from the consultation phase to the final launch stage, and every other service that comes in between. These include audience and market research; crafting brand strategy; designing a strikingly appealing logo, label and package; creating engaging interfaces and robust functional websites; and shaping a comprehensive communication strategy. We also provide environment design and professional photography services.</>)
     },
     {
       question:
@@ -161,7 +161,7 @@ async function page() {
     {
       question: "What is the difference between branding and marketing?",
       answer:
-        (<>Branding creates a unique identity and image of the product. It leaves a forever-lasting impression on the customers and builds their loyalty. Marketing promotes this brand with techniques like advertising and promotional campaigns. Its ultimate aim is to increase awareness, generate leads and eventually increase sales and revenue. As one of the <Link href="/branding-agency-in-delhi" className="faq-link">best branding and marketing agencies in Delhi NCR</Link>, DN Designs provides both services to our customers.</>)
+        (<>Branding creates a unique identity and image of the product. It leaves a forever-lasting impression on the customers and builds their loyalty. Marketing promotes this brand with techniques like advertising and promotional campaigns. Its ultimate aim is to increase awareness, generate leads and eventually increase sales and revenue. As one of the best branding and marketing agencies in Delhi NCR, DN Designs provides both services to our customers.</>)
     },
   ];
 
