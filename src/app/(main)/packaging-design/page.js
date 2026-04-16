@@ -144,10 +144,10 @@ async function page() {
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/wp-content/uploads/2025/06/nature-balance-mangoe-2.jpg",
+        "https://dndesigns.co.in/uploads/pages/nature-balance-mangoe-2.webp",
     },
     {
-      mobileImage: "https://dndesigns.co.in/wp-content/uploads/2025/06/1-1.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/1-1.webp",
     },
   ];
 
