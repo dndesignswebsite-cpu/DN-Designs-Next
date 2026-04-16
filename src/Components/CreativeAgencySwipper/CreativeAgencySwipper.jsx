@@ -132,7 +132,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
           {/* SLIDE 6 */}
           <SwiperSlide>
-            <Link href="/digital-marketing">
+            <Link href="/digital-marketing-agency-in-noida">
               <div className="citypagewiper-slide">
                 <img
                   src="https://dndesigns.co.in/uploads/pages/digitalmarketing.webp"
