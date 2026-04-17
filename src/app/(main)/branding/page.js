@@ -161,10 +161,17 @@ async function page() {
     {
       question: "What is the difference between branding, marketing, and advertising?",
       answer:
-        (<>Branding establishes your identity (logo, voice, vision, values and beliefs). It helps build perception, trust and loyalty. <br></br>
-        Once your brand is established, marketing helps grow it both in physical and digital environments through paid and unpaid strategies.<br></br>
-        Advertising is a part of marketing. It focuses on paid targeted promotion to boost your brand’s success.<br></br>
+        (<><p className="faq-multi-para">Branding establishes your identity (logo, voice, vision, values and beliefs). It helps build perception, trust and loyalty.
+        </p>
+        <p className="faq-multi-para">
+        Once your brand is established, marketing helps grow it both in physical and digital environments through paid and unpaid strategies.
+        </p>
+        <p className="faq-multi-para">
+        Advertising is a part of marketing. It focuses on paid targeted promotion to boost your brand’s success.
+        </p>
+        <p className="faq-multi-para">
         A business succeeds when all three come together. A<Link href="creative-agency" className="faq-link"> creative agency </Link>like DN Designs offers all three services so that your brand appears consistent, trustworthy and compelling and drives conversions.
+        </p>
 </>)
     },
   ];
