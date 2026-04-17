@@ -120,9 +120,9 @@ async function page() {
         "Several key elements have to work in perfect unison to create a successful brand. These include an unforgettable name and logo, a consistent visual identity (colour & typography), a captivating brand story & message, a clear vision and mission statement, a unique voice & positioning, strong values, and an overall seamless brand experience.",
     },
     {
-      question: (<>Why do I need a brand consultation services company?</>),
+      question: (<>Why do I need brand consulting services?</>),
       answer:
-        (<>A <Link href="/" className="faq-link">brand consultation company</Link> can help you transform your simple product into a successful brand that customers remember and buy. It has a team of skilled and experienced strategists, designers and marketers who can combine their expertise to create a winning brand for you.</>)
+        (<>Hiring brand consulting services can help you transform your simple product into a successful brand that customers remember and buy. Branding consultants or professional brand consulting companies help establish brand strategy, develop brand identity and create clear market positioning and presence. Additionally, they come with a team of skilled and experienced strategists, designers and marketers who can combine their expertise to create a winning brand for you.</>)
     },
     {
       question: "What does a branding agency do?",
@@ -159,9 +159,13 @@ async function page() {
         "An important aspect of branding is consistency. A brand must appear the same and convey the same messaging and emotion across platforms. Brand guidelines help it to do exactly that. It lists out rules that guide businesses in presenting their brand consistently across all communication channels. We do provide brand guidelines. It includes details about the brand identity and presents its logo. Also included are details about the brand’s colour palette, typography, tone & voice and image.",
     },
     {
-      question: "What is the difference between branding and marketing?",
+      question: "What is the difference between branding, marketing, and advertising?",
       answer:
-        (<>Branding creates a unique identity and image of the product. It leaves a forever-lasting impression on the customers and builds their loyalty. Marketing promotes this brand with techniques like advertising and promotional campaigns. Its ultimate aim is to increase awareness, generate leads and eventually increase sales and revenue. As one of the best branding and marketing agencies in Delhi NCR, DN Designs provides both services to our customers.</>)
+        (<>Branding establishes your identity (logo, voice, vision, values and beliefs). It helps build perception, trust and loyalty. <br></br>
+        Once your brand is established, marketing helps grow it both in physical and digital environments through paid and unpaid strategies.<br></br>
+        Advertising is a part of marketing. It focuses on paid targeted promotion to boost your brand’s success.<br></br>
+        A business succeeds when all three come together. A<Link href="creative-agency" className="faq-link"> creative agency </Link>like DN Designs offers all three services so that your brand appears consistent, trustworthy and compelling and drives conversions.
+</>)
     },
   ];
 
