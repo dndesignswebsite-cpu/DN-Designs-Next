@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./BlogFormTempOne.css";
 
-function BlogFromTempOne() {
+function BlogFromTempOne({ blogSlug }) {
   // FORM STATES
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,7 +12,8 @@ function BlogFromTempOne() {
   const [btn, setBtn] = useState("Send Message");
   const [successMessage, setsuccessMessage] = useState("");
 
-  const pageName = "Blog Page";
+  // const pageName = "Blog Page";
+  const pageName = blogSlug ? `Blog - ${blogSlug}` : "Blog Page";
 
   // FORM SUBMIT
   const handleSubmit = (e) => {

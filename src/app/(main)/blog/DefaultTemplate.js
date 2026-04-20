@@ -113,7 +113,8 @@ function DefaultTemplate({ blog, recentPosts }) {
               </div>
 
               <div className="blog-form sticky-blog-form">
-                <BlogFromTempOne />
+                {/* <BlogFromTempOne /> */}
+                <BlogFromTempOne blogSlug={blog.slug}/>
               </div>
             </div>
           </div>
