@@ -59,6 +59,13 @@ const nextConfig = {
       },
 
 
+      {
+        source: "/blog/brand-assets-growth-vs-decoration",
+        destination: "/blog/brand-assets",
+        permanent: false, // true = 301, false = 302
+      },
+
+
       // {
       //   source: "/logo-designing-company-in-mumbai",
       //   destination: "/logo-designing",
