@@ -13,7 +13,7 @@ function BlogFromTempOne({ blogSlug }) {
   const [successMessage, setsuccessMessage] = useState("");
 
   // const pageName = "Blog Page";
-  const pageName = blogSlug ? `Blog - ${blogSlug}` : "Blog Page";
+  const pageName = blogSlug ? `Blog: ${blogSlug}` : "Blog Page";
 
   // FORM SUBMIT
   const handleSubmit = (e) => {
