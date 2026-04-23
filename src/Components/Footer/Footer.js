@@ -95,7 +95,7 @@ export default function Footer() {
                   Contact Us
                 </p>
                 <p className={`${styles["contact-details"]} mb-0`}>
-                  <a href="tel:+91 9416011100"> +91 941 601 1100 </a>
+                  <a href="tel:+91 8683911100"> +91 868 391 1100 </a>
                   <br />
                   <a href="tel:+91 7206605872"> +91 720 660 5872 </a>
                   <br />
