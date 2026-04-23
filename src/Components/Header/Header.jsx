@@ -535,7 +535,7 @@ const toggleNav = () => {
                     </p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
-                    <li>
+                    {/* <li>
                       <Link
                         href="/career"
                         onClick={handleLinkClick}
@@ -545,7 +545,7 @@ const toggleNav = () => {
                       >
                         Career
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         href="/brand-video-shoots"
@@ -613,6 +613,35 @@ const toggleNav = () => {
                     </li>
                   </ul>
                 </div>
+
+
+                <div className="col-3">
+                  <div
+                    className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowCircleRight}
+                      className="px-2 mb-1"
+                      style={{ fontSize: "26px" }}
+                    />
+                    <p className={`${styles["header-solo-heading"]}`}>
+                      Career
+                    </p>
+                  </div>
+                  <ul className={`${styles["nav-main-links"]}`}>
+                     <li>
+                      <Link
+                        href="/career"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${
+                          pathname === "/career" ? styles["active"] : ""
+                        }`}
+                      >
+                        Career
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className={`${styles["contact-us-row"]} row`}>
@@ -641,7 +670,7 @@ const toggleNav = () => {
                     <p>+91 720 660 5872</p> */}
 
                     <p className={`${styles["header-desktop-mobile-number"]}`}>
-                      <a href="tel:+919416011100">+91 941 601 1100</a>
+                      <a href="tel:+918683911100">+91 868 391 1100</a>
                     </p>
 
                     <p className={`${styles["header-desktop-mobile-number"]}`}>
@@ -1318,6 +1347,55 @@ const toggleNav = () => {
                     </div>
                   </div>
                 </div>
+
+                <div
+                  className={`${styles["accordion-item-custom"]} accordion-item`}
+                >
+                  <span className="accordion-header">
+                    <button
+                      className={`${styles["accordion-item-button"]} accordion-button collapsed`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                      aria-expanded="false"
+                      aria-controls="collapseEight"
+                    >
+                      <div className="d-flex align-items-center">
+                        <FontAwesomeIcon
+                          icon={faArrowCircleRight}
+                          className="px-2 mb-1"
+                          style={{ fontSize: "1.6em" }}
+                        />
+                        <span className={`${styles["header-solo-heading"]}`}>
+                          Career
+                        </span>
+                      </div>
+                    </button>
+                  </span>
+                  <div
+                    id="collapseEight"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ul className={`${styles["nav-main-links"]}`}>
+                       <li>
+                          <Link
+                            href="/career"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Career
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
               </div>
             </div>
           </div>
