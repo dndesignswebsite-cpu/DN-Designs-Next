@@ -1165,7 +1165,7 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-                       <li>
+                       {/* <li>
                           <Link
                             href="/career"
                             onClick={handleLinkClick}
@@ -1173,7 +1173,7 @@ const toggleNav = () => {
                           >
                             Career
                           </Link>
-                        </li>
+                        </li> */}
 
                         <li>
                           <Link
