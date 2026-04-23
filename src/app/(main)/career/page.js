@@ -123,7 +123,7 @@ async function page() {
               <Image
                   src="https://dndesigns.co.in/uploads/pages/wetyfdghv.webp"
                   className="responsive-img"
-                  alt="career page image"
+                  alt="Careers at Dn Designs: Join Our Creative Design & Branding Team"
                   width={1000}
                   height={1000}
                   priority
