@@ -18,55 +18,55 @@ import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 const homeSchema = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://dndesigns.co.in/#professionalservice",
-      name: "DN Designs",
-      url: "https://dndesigns.co.in/",
-      image:
-        "https://dndesigns.co.in/uploads/pages/dn-logo.png",
-      priceRange: "₹₹₹",
-      telephone: "+91-9416011100",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "C-40, Second Floor, C Block, Sector 58",
-        addressLocality: "Noida",
-        addressRegion: "Uttar Pradesh",
-        postalCode: "201301",
-        addressCountry: "IN",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 28.6102974,
-        longitude: 77.3582909,
-      },
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        opens: "10:00",
-        closes: "20:00",
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "India",
-      },
-      parentOrganization: {
-        "@id": "https://dndesigns.co.in/#organization",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        bestRating: "5",
-        reviewCount: "153",
-      },
-    },
+    // {
+    //   "@type": "ProfessionalService",
+    //   "@id": "https://dndesigns.co.in/#professionalservice",
+    //   name: "DN Designs",
+    //   url: "https://dndesigns.co.in/",
+    //   image:
+    //     "https://dndesigns.co.in/uploads/pages/dn-logo.png",
+    //   priceRange: "₹₹₹",
+    //   telephone: "+91-9416011100",
+    //   address: {
+    //     "@type": "PostalAddress",
+    //     streetAddress: "C-40, Second Floor, C Block, Sector 58",
+    //     addressLocality: "Noida",
+    //     addressRegion: "Uttar Pradesh",
+    //     postalCode: "201301",
+    //     addressCountry: "IN",
+    //   },
+    //   geo: {
+    //     "@type": "GeoCoordinates",
+    //     latitude: 28.6102974,
+    //     longitude: 77.3582909,
+    //   },
+    //   openingHoursSpecification: {
+    //     "@type": "OpeningHoursSpecification",
+    //     dayOfWeek: [
+    //       "Monday",
+    //       "Tuesday",
+    //       "Wednesday",
+    //       "Thursday",
+    //       "Friday",
+    //       "Saturday",
+    //     ],
+    //     opens: "10:00",
+    //     closes: "20:00",
+    //   },
+    //   areaServed: {
+    //     "@type": "Country",
+    //     name: "India",
+    //   },
+    //   parentOrganization: {
+    //     "@id": "https://dndesigns.co.in/#organization",
+    //   },
+    //   aggregateRating: {
+    //     "@type": "AggregateRating",
+    //     ratingValue: "5.0",
+    //     bestRating: "5",
+    //     reviewCount: "153",
+    //   },
+    // },
 
     {
       "@type": "WebPage",
