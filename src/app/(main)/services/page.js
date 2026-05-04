@@ -115,7 +115,7 @@ async function page() {
       question:
         "How can a creative branding & design agency like DN Designs help me, a new business?",
       answer:
-        "DN Designs can help design your brand identity and strategy. We can design your logo, packaging, catalogue, and website. We can also help craft your communication strategy and establish your digital presence through our services like SEO, social media marketing, performance marketing, photography and video marketing. All these can, together, make your brand stand out and be successful amidst tough competition.",
+        (<>DN Designs can help design your<Link href="/branding" className="faq-link"> brand identity and strategy</Link>. We can design your logo, packaging, catalogue, and website. We can also help craft your communication strategy and establish your digital presence through our services like SEO, social media marketing, performance marketing, photography and video marketing. All these can, together, make your brand stand out and be successful amidst tough competition.</>),
     },
     {
       question: "How do you decide on a branding & design concept?",
@@ -132,25 +132,26 @@ async function page() {
       question:
         "Do you provide packaging design services for FMCG or D2C brands?",
       answer:
-        "Absolutely, we do provide custom packaging solutions for FMCG and D2C brands. We create packaging designs that stand out on store shelves and additionally engage customers on online stores. Our packaging design services ensure that your product performs well in the market, improves sales and drives revenue. ",
+        (<>Absolutely, we do provide custom <Link href="/blog/fmcg-packaging-design" className="faq-link">
+        packaging solutions for FMCG</Link> and D2C brands. We create packaging designs that stand out on store shelves and additionally engage customers on online stores. Our <Link href="/packaging-design" className="faq-link">packaging design services</Link> ensure that your product performs well in the market, improves sales and drives revenue. </>),
     },
     {
       question:
         "Do you provide UI/UX design services for apps or digital products?",
       answer:
-        "Yes, we design user interface (UI) and user experience (UX) for your websites and applications. Through our UI/UX design, we ensure that your website and app have beautiful and easy-to-use interfaces and that users have an overall positive experience with your digital products.",
+        (<>Yes, we design user interface (UI) and user experience (UX) for your websites and applications. Through our <Link href="/ui-ux-design" className="faq-link">UI/UX design</Link>, we ensure that your website and app have beautiful and easy-to-use interfaces and that users have an overall positive experience with your digital products.</>),
     },
     {
       question:
         "I need digital marketing services apart from design services? Do you provide it?",
       answer:
-        "Yes, being an end-to-end branding and design agency, we do offer digital marketing services. These include website design & development, SEO, social media marketing, performance marketing, influencer marketing and video marketing.",
+        (<>Yes, being an end-to-end branding and design agency, we do offer <Link href="/digital-marketing-agency-in-noida" className="faq-link">digital marketing services</Link>. These include website design & development, SEO, social media marketing, performance marketing, influencer marketing and video marketing.</>),
     },
     {
       question:
         "Can DN Designs handle end-to-end e-commerce website development?",
       answer:
-        "Yes, we can surely take care of your e-commerce website development - right from the initial planning stage to finally creating your website. In addition to making your e-commerce website visually appealing, user-friendly and SEO optimised, we also ensure integration of a payment gateway and upload and manage inventory (the latter for 6 to 12 months, depending on your project).",
+        (<>Yes, we can surely take care of your <Link href="https://dndesigns.co.in/web-designing-services-in-india" className="faq-link">e-commerce website development</Link> - right from the initial planning stage to finally creating your website. In addition to making your e-commerce website visually appealing, user-friendly and SEO optimised, we also ensure integration of a payment gateway and upload and manage inventory (the latter for 6 to 12 months, depending on your project).</>),
     },
   ];
 
@@ -159,7 +160,7 @@ async function page() {
       question:
         "What industries do you work with, and what geographical area do you serve?",
       answer:
-        "Though we are a Noida-based company, we collaborate and work with clients globally. We are also not restricted to particular verticals and are happy to work with different types of companies, be it retail, food & beverage, pharmaceuticals, nutraceuticals, education, tourism and cosmetics & skincare. In addition, we work with start-ups, medium-sized companies as well as big established brands.",
+        (<>Though we are a Noida-based company, we collaborate and work with clients globally. We are also not restricted to particular verticals and are happy to work with different types of companies, be it retail,<Link href="/blog/food-packaging-design" className="faq-link"> food </Link>& <Link href="/blog/beverage-packaging-design" className="faq-link"> beverage</Link>, pharmaceuticals, nutraceuticals, education, tourism and cosmetics & skincare. In addition, we work with start-ups, medium-sized companies as well as big established brands.</>),
     },
     {
       question: "Do you offer retainer or monthly creative support packages?",

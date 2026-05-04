@@ -1,0 +1,132 @@
+.about-us-hover-section {
+  padding: 80px 0;
+}
+
+.about-us-hover-img-col {
+  height: 330px;
+  width: 330px;
+  overflow: hidden;
+}
+
+.about-us-hover-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Animation */
+.fade-in {
+  animation: zoomOut 0.8s ease forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.about-us-list-col-div{
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+}
+
+.about-us-hover-list-head{
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-family: var(--font-corbert);
+    color: #000000;
+}
+
+.about-us-hover-list-item{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 500;
+    color: #000000;
+    display: block;
+    width: fit-content;
+    padding: 2px;
+    margin: 5px;
+}
+
+.about-us-hover-list-item:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.list-item-link{
+    text-decoration: none;
+}
+
+.about-us-hover-section-head-div{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.about-us-hover-section-head-div-head{
+    font-size: 50px;
+    font-family: var(--font-corbert);
+    color: #000000;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.about-us-hover-section-head-div-para{
+    font-size: 18px;
+    color: #000000;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media(max-width:991px){
+  .about-us-hover-img-col-div-for-hide{
+    display: none;
+  }
+  .about-us-list-col-div{
+    justify-content: space-around;
+  }
+}
+
+/* about-us-hover-section-mobile */
+ .about-us-hover-section-mobile{
+    display: none;
+  }
+
+@media(max-width:767px){
+  .about-us-hover-section {
+  padding: 40px 0;
+}
+  .about-us-hover-section-desktop{
+    display: none;
+  }
+  .about-us-hover-section-mobile{
+    display: block;
+  }
+
+  .about-us-hover-section-head-div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.about-us-hover-section-head-div-head{
+  font-size: 35px;
+}
+
+.about-us-hover-list-div{
+  padding: 40px 0;
+}
+
+.about-us-hover-section-mobile-div-img{
+  padding-top: 20px;
+}
+}
