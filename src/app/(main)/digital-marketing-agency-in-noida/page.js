@@ -643,6 +643,8 @@ async function page() {
         </div>
       </section>
 
+      {/* stand alone section */}
+
       <section className="standalone-sec">
         <div className="container">
           <div className="row">

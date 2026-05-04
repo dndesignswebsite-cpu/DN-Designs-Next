@@ -18,6 +18,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import TalkToUs from "@/Components/TalkToUs/TalkToUs";
+import Link from "next/link";
 
 // meta data
 export async function generateMetadata() {
@@ -118,7 +119,7 @@ async function page() {
     {
       question: "As a creative agency in India, what services do you offer?",
       answer:
-        "We are a full-service creative agency in India, and therefore, we offer all creative services related to branding, promotion, and communication under one roof. This includes brand identity and strategy design, packaging design, website design, and catalogue design. As a creative marketing agency and a creative ad agency, we also help you with digital marketing, photography, brand video shoots and animation services.",
+        (<>We are a full-service creative agency in India, and therefore, we offer all creative services related to <Link href="/branding" className="faq-link">branding</Link>, promotion, and communication under one roof. This includes brand identity and strategy design, <Link href="/packaging-design" className="faq-link">packaging</Link> design, website design, and catalogue design. As a creative marketing agency and a creative ad agency, we also help you with digital marketing, photography, brand video shoots and animation services.</>),
     },
     {
       question: "What makes your design approach different?",
@@ -136,7 +137,7 @@ async function page() {
     {
       question: "Do you offer UI/UX and website development together?",
       answer:
-        "Yes. We can definitely offer you both UI/UX design and website development services together. However, in case you need only one of these services, we can also provide them individually. You just need to tell us your requirement, and we will deliver accordingly.",
+        (<>Yes. We can definitely offer you both <Link href="/ui-ux-design" className="faq-link">UI/UX design</Link> and <Link href="/web-designing-services-in-india" className="faq-link">website development</Link> services together. However, in case you need only one of these services, we can also provide them individually. You just need to tell us your requirement, and we will deliver accordingly.</>),
     },
     {
       question: "Do you offer a fixed package or a customised one?",
