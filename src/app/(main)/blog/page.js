@@ -15,7 +15,7 @@ import BlogList from "./BlogList";
 
 /* =========================
    METADATA (Blog PAGE)
-========================= */
+======================= */
 export const metadata = {
   title: "DN Designs Blog. Branding, Packaging & Strategy Insights",
   description:
