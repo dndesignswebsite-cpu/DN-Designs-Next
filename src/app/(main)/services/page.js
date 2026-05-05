@@ -346,7 +346,7 @@ async function page() {
                       </li>
                       <li>
                         <Link
-                          href="/digital-marketing"
+                          href="/digital-marketing-agency-in-noida"
                           className="page-linking"
                         >
                           Digital Marketing
