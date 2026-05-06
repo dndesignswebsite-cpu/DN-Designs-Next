@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get page by pageType (e.g., home, about, services, contact). Useful for fetching specific pages in the frontend.
+url: "{{base_url}}/api/pages/type/home"
+method: GET
+order: 3000

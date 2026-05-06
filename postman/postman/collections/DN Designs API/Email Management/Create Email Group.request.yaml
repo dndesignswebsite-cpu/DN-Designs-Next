@@ -1,0 +1,27 @@
+$kind: http-request
+description: Create new email group (Admin only). Type must be unique.
+url: "{{base_url}}/api/emails"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "type": "dn-team",
+        "emails": [
+            "team1@dndesigns.co.in",
+            "team2@dndesigns.co.in"
+        ],
+        "description": "DN Team email group"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("email_id", response.data._id);
+      }
+    language: text/javascript
+order: 4000

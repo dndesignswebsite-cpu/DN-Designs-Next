@@ -1,0 +1,15 @@
+$kind: collection
+description: Complete API collection for DN Designs backend - Authentication, Blog, Pages, Contact, and Email Management endpoints
+variables:
+  base_url: http://localhost:3000
+  auth_token: ""
+  admin_token: ""
+  user_id: ""
+  admin_id: ""
+  blog_id: ""
+  page_id: ""
+  contact_id: ""
+  email_id: ""
+  image_id: ""
+  category_id: ""
+  tag_id: ""

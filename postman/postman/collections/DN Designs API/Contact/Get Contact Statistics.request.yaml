@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get contact form statistics (Admin only)
+url: "{{base_url}}/api/contact/stats/summary"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 6000

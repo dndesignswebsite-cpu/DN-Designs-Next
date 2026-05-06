@@ -17,7 +17,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 
 
-// meta data
+// meta   data
 export async function generateMetadata() {
   await connectDB();
   let seo;

@@ -1,0 +1,15 @@
+$kind: http-request
+description: Get email group by ID or type (Admin only)
+url: "{{base_url}}/api/emails/dn-team"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          pm.environment.set("email_id", response.data._id);
+      }
+    language: text/javascript
+order: 3000

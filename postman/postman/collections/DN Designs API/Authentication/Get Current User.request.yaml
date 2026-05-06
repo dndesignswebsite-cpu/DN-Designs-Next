@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get current logged in user profile
+url: "{{base_url}}/api/auth/me"
+method: GET
+headers:
+  Authorization: Bearer {{auth_token}}
+order: 4000

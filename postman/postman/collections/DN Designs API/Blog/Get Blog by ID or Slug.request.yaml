@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get blog post by ID or slug
+url: "{{base_url}}/api/blogs/{{blog_id}}"
+method: GET
+order: 2000

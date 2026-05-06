@@ -1,0 +1,15 @@
+$kind: http-request
+description: Update tag details (Admin/Editor only)
+url: "{{base_url}}/api/tags/{{tag_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Updated Tag Name",
+        "slug": "updated-tag-slug"
+    }
+order: 4000

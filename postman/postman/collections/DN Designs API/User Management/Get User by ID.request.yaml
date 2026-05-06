@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get user details by ID (Admin only)
+url: "{{base_url}}/api/users/{{created_user_id}}"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 3000

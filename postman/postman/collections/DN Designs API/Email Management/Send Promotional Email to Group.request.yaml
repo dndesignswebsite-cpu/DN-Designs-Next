@@ -1,0 +1,16 @@
+$kind: http-request
+description: Send promotional/advertisement email to all emails in a group (Admin only). Content can be HTML or plain text.
+url: "{{base_url}}/api/emails/dn-team/send"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "subject": "Special Offer - 50% Off!",
+        "content": "<h1>Special Promotion</h1><p>Get 50% off on all services this month! Visit our website for more details.</p><a href=\"https://dndesigns.co.in\">Visit Now</a>",
+        "isHtml": true
+    }
+order: 9000

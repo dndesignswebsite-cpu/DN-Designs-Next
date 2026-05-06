@@ -1,0 +1,7 @@
+$kind: http-request
+description: Delete user by ID (Admin only)
+url: "{{base_url}}/api/users/{{created_user_id}}"
+method: DELETE
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 5000

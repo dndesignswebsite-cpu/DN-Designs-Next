@@ -1,0 +1,23 @@
+$kind: http-request
+description: Login with email and password
+url: "{{base_url}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "email": "john@example.com",
+        "password": "password123"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          pm.environment.set("auth_token", response.token);
+          pm.environment.set("user_id", response.user.id);
+      }
+    language: text/javascript
+order: 3000

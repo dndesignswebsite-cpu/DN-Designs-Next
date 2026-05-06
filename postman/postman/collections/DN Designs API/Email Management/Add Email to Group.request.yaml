@@ -1,0 +1,14 @@
+$kind: http-request
+description: Add email to a group (Admin only)
+url: "{{base_url}}/api/emails/dn-team/add"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "email": "newmember@dndesigns.co.in"
+    }
+order: 7000

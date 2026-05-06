@@ -1,0 +1,14 @@
+$kind: http-request
+description: Get all email groups (Admin only)
+url: "{{base_url}}/api/emails"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+queryParams:
+  - key: type
+    value: dn-team
+    disabled: true
+  - key: isActive
+    value: "true"
+    disabled: true
+order: 1000

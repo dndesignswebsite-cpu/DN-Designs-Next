@@ -1,0 +1,81 @@
+$kind: http-request
+description: Create a new page with full SEO and social media support (Admin only)
+url: "{{base_url}}/api/pages"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Home Page
+    - type: text
+      key: slug
+      value: home
+    - type: text
+      key: pageType
+      value: home
+    - type: text
+      key: description
+      value: Welcome to DN Designs - A creative design agency
+    - type: text
+      key: content
+      value: '{"hero":{"heading":"Welcome to DN Designs","subheading":"Creative solutions for your brand","ctaText":"Get Started"},"services":[{"title":"Branding","description":"Build your brand identity"},{"title":"Web Design","description":"Modern web experiences"}]}'
+    - type: text
+      key: order
+      value: "1"
+    - type: text
+      key: isPublished
+      value: "true"
+    - type: text
+      key: metaTitle
+      value: DN Designs - Creative Design Agency
+    - type: text
+      key: metaDescription
+      value: DN Designs is a creative agency specializing in branding and web design
+    - type: text
+      key: focusKeywords
+      value: design agency,branding,web design,creative
+    - type: text
+      key: canonicalUrl
+      value: https://dndesigns.co.in
+    - type: text
+      key: robotsTag
+      value: index, follow
+    - type: text
+      key: headCode
+      value: <script>console.log('Home page loaded');</script>
+    - type: text
+      key: ogTitle
+      value: DN Designs - Creative Design Agency
+    - type: text
+      key: ogDescription
+      value: Transform your brand with DN Designs
+    - type: text
+      key: twitterTitle
+      value: DN Designs - Creative Agency
+    - type: text
+      key: twitterDescription
+      value: Transform your brand with DN Designs
+    - type: file
+      key: featuredImage
+      src: []
+    - type: text
+      key: featuredImageAlt
+      value: DN Designs Hero Image
+    - type: file
+      key: ogImage
+      src: []
+    - type: file
+      key: twitterImage
+      src: []
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("page_id", response.data._id);
+      }
+    language: text/javascript
+order: 5000

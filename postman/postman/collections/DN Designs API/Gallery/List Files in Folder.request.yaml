@@ -1,0 +1,9 @@
+$kind: http-request
+description: List all files in a specific folder (Admin/Editor only)
+url: "{{base_url}}/api/gallery?folder=images"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+queryParams:
+  folder: images
+order: 2000

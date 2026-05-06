@@ -1,0 +1,18 @@
+name: DN Designs API Environment
+values:
+  - key: base_url
+    value: 'http://localhost:5000'
+  - key: auth_token
+    value: ''
+  - key: admin_token
+    value: ''
+  - key: user_id
+    value: ''
+  - key: admin_id
+    value: ''
+  - key: blog_id
+    value: ''
+  - key: contact_id
+    value: ''
+  - key: image_id
+    value: ''

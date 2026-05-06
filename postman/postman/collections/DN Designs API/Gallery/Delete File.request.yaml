@@ -1,0 +1,9 @@
+$kind: http-request
+description: Delete a file by its path (Admin only)
+url: "{{base_url}}/api/gallery/delete?path=uploads/images/file-to-delete.jpg"
+method: DELETE
+headers:
+  Authorization: Bearer {{admin_token}}
+queryParams:
+  path: uploads/images/file-to-delete.jpg
+order: 4000

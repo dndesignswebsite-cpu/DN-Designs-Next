@@ -1,0 +1,14 @@
+$kind: http-request
+description: Get all users with optional role/search filters (Admin only)
+url: "{{base_url}}/api/users"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+queryParams:
+  - key: role
+    value: user
+    disabled: true
+  - key: search
+    value: John
+    disabled: true
+order: 1000

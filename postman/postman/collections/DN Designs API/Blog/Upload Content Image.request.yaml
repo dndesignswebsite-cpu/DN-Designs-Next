@@ -1,0 +1,17 @@
+$kind: http-request
+description: Upload image for blog content. Returns URL and HTML tag. Optionally link to blog. (Admin only)
+url: "{{base_url}}/api/blogs/upload-image"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src: []
+    - type: text
+      key: blogId
+      value: "{{blog_id}}"
+      disabled: true
+order: 7000

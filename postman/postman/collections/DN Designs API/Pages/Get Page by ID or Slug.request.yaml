@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Get page by ID or slug. Can also use slug like: /api/pages/home"
+url: "{{base_url}}/api/pages/{{page_id}}"
+method: GET
+order: 2000

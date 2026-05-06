@@ -1,0 +1,14 @@
+$kind: http-request
+description: Remove email from a group (Admin only)
+url: "{{base_url}}/api/emails/dn-team/remove"
+method: DELETE
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "email": "oldmember@dndesigns.co.in"
+    }
+order: 8000

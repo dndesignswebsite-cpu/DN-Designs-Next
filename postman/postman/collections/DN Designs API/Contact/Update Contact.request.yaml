@@ -1,0 +1,15 @@
+$kind: http-request
+description: "Update contact submission status (Admin only). Status: new, read, replied, resolved"
+url: "{{base_url}}/api/contact/{{contact_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "replied",
+        "adminNotes": "Customer responded positively. Follow up scheduled."
+    }
+order: 4000

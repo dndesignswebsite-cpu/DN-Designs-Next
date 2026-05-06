@@ -1,0 +1,26 @@
+$kind: http-request
+description: Create a new user. Password is auto-generated and emailed. (Admin only)
+url: "{{base_url}}/api/users"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "New User",
+        "email": "newuser@example.com",
+        "role": "user"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if(pm.response.code===201){
+          var data=pm.response.json();
+          if(data.data && data.data._id) {
+              pm.environment.set('created_user_id', data.data._id);
+          }
+      }
+    language: text/javascript
+order: 2000

@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get page statistics - total, published, drafts (Admin only)
+url: "{{base_url}}/api/pages/stats"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 4000

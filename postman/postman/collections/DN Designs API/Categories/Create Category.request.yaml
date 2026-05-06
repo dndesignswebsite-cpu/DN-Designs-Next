@@ -1,0 +1,23 @@
+$kind: http-request
+description: Create a new category (Admin/Editor only)
+url: "{{base_url}}/api/categories"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Web Development",
+        "description": "Articles about building modern web applications"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("category_id", response.data._id);
+      }
+    language: text/javascript
+order: 2000

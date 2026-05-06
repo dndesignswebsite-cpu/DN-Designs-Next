@@ -1,0 +1,7 @@
+$kind: http-request
+description: Delete page (Admin only)
+url: "{{base_url}}/api/pages/{{page_id}}"
+method: DELETE
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 8000
