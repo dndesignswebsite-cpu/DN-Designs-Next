@@ -1,0 +1,25 @@
+$kind: http-request
+description: Register a new user account
+url: "{{base_url}}/api/auth/register"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "password123",
+        "role": "user"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("auth_token", response.token);
+          pm.environment.set("user_id", response.user.id);
+      }
+    language: text/javascript
+order: 1000

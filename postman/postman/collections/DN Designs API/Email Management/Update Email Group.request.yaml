@@ -1,0 +1,20 @@
+$kind: http-request
+description: Update email group (Admin only)
+url: "{{base_url}}/api/emails/{{email_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "emails": [
+            "team1@dndesigns.co.in",
+            "team2@dndesigns.co.in",
+            "team3@dndesigns.co.in"
+        ],
+        "description": "Updated DN Team email group",
+        "isActive": true
+    }
+order: 5000

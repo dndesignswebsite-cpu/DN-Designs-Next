@@ -1,0 +1,25 @@
+$kind: http-request
+description: Submit contact form (Public endpoint). pageName field tracks which page the form was submitted from.
+url: "{{base_url}}/api/contact"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Jane Doe",
+        "email": "jane@example.com",
+        "mobile": "+1234567890",
+        "message": "I'm interested in your branding services. Please contact me.",
+        "pageName": "Home Page"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("contact_id", response.data._id);
+      }
+    language: text/javascript
+order: 1000

@@ -46,6 +46,12 @@ const nextConfig = {
       // },
 
 
+       {
+        source: "/creative-branding-agency-in-delhi-ncr",
+        destination: "/branding-agency-in-delhi",
+        permanent: false, // true = 301, false = 302
+      },
+
       {
         source: "/logo-designing-company-in-karnal",
         destination: "/logo-designing",

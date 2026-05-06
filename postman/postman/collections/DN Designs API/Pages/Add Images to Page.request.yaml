@@ -1,0 +1,22 @@
+$kind: http-request
+description: Add multiple images to a page (max 10 per upload). Admin only.
+url: "{{base_url}}/api/pages/{{page_id}}/images"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: file
+      key: images
+      src: []
+    - type: file
+      key: images
+      src: []
+    - type: text
+      key: alts
+      value: '["Image 1 alt text", "Image 2 alt text"]'
+    - type: text
+      key: captions
+      value: '["Caption for image 1", "Caption for image 2"]'
+order: 9000

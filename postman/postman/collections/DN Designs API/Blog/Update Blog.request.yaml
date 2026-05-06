@@ -1,0 +1,28 @@
+$kind: http-request
+description: Update blog post. publishedAt is editable. (Admin only)
+url: "{{base_url}}/api/blogs/{{blog_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Updated Blog Title
+    - type: text
+      key: content
+      value: Updated blog content with more details...
+    - type: text
+      key: isPublished
+      value: "true"
+    - type: text
+      key: publishedAt
+      value: 2025-12-15T10:00:00.000Z
+    - type: text
+      key: metaTitle
+      value: Updated Meta Title
+    - type: text
+      key: headCode
+      value: <script>console.log('Updated tracking');</script>
+order: 4000

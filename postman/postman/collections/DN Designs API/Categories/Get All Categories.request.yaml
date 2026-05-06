@@ -1,0 +1,13 @@
+$kind: http-request
+description: Get all categories with optional search and pagination
+url: "{{base_url}}/api/categories?page=1&limit=10"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: limit
+    value: "10"
+  - key: search
+    value: ""
+    disabled: true
+order: 1000

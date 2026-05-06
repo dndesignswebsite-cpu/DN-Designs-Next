@@ -1,0 +1,7 @@
+$kind: http-request
+description: List all subfolders in the uploads directory (Admin/Editor only)
+url: "{{base_url}}/api/gallery"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 1000

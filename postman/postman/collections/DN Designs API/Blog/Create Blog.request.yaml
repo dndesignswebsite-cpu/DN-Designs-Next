@@ -1,0 +1,79 @@
+$kind: http-request
+description: Create a new blog post with full SEO support (Admin only)
+url: "{{base_url}}/api/blogs"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: How to Build a Strong Brand Identity
+    - type: text
+      key: content
+      value: Building a strong brand identity is crucial for any business. It helps you stand out from competitors and creates a memorable impression in the minds of your customers. In this comprehensive guide, we'll explore the key elements of brand identity and how to create one that resonates with your target audience.
+    - type: text
+      key: excerpt
+      value: Learn how to build a strong brand identity that resonates with your audience.
+    - type: text
+      key: tags
+      value: branding,design,marketing
+    - type: text
+      key: category
+      value: Branding
+    - type: text
+      key: isPublished
+      value: "true"
+    - type: text
+      key: publishedAt
+      value: 2025-12-11T10:00:00.000Z
+      disabled: true
+    - type: text
+      key: metaTitle
+      value: How to Build a Strong Brand Identity - DN Designs
+    - type: text
+      key: metaDescription
+      value: Comprehensive guide on building a strong brand identity for your business
+    - type: text
+      key: metaKeywords
+      value: brand identity,branding guide,logo design
+    - type: text
+      key: canonicalUrl
+      value: https://dndesigns.co.in/blog/brand-identity
+    - type: text
+      key: robotsTag
+      value: index, follow
+    - type: text
+      key: headCode
+      value: <script>console.log('Blog tracking');</script>
+    - type: text
+      key: ogTitle
+      value: How to Build a Strong Brand Identity
+    - type: text
+      key: ogDescription
+      value: Learn the secrets of building a memorable brand identity
+    - type: text
+      key: twitterTitle
+      value: Build a Strong Brand Identity
+    - type: text
+      key: twitterDescription
+      value: Learn the secrets of building a memorable brand
+    - type: file
+      key: featuredImage
+      src: []
+    - type: file
+      key: ogImage
+      src: []
+    - type: file
+      key: twitterImage
+      src: []
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("blog_id", response.data._id);
+      }
+    language: text/javascript
+order: 3000

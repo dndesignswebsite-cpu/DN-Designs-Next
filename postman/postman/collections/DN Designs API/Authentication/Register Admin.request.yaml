@@ -1,0 +1,25 @@
+$kind: http-request
+description: Register an admin user
+url: "{{base_url}}/api/auth/register"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Admin User",
+        "email": "admin@dndesigns.co.in",
+        "password": "admin123456",
+        "role": "admin"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("admin_token", response.token);
+          pm.environment.set("admin_id", response.user.id);
+      }
+    language: text/javascript
+order: 2000

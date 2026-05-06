@@ -1,0 +1,45 @@
+$kind: http-request
+description: Create About page example (Admin only)
+url: "{{base_url}}/api/pages"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: About Us
+    - type: text
+      key: slug
+      value: about
+    - type: text
+      key: pageType
+      value: about
+    - type: text
+      key: description
+      value: Learn more about DN Designs and our team
+    - type: text
+      key: content
+      value: '{"intro":{"heading":"About DN Designs","text":"We are a creative agency...."},"team":[{"name":"John Doe","role":"Creative Director"},{"name":"Jane Smith","role":"Lead Designer"}],"values":["Innovation","Quality","Collaboration"]}'
+    - type: text
+      key: order
+      value: "2"
+    - type: text
+      key: isPublished
+      value: "true"
+    - type: text
+      key: metaTitle
+      value: About Us - DN Designs
+    - type: text
+      key: metaDescription
+      value: Learn about DN Designs, our team, and our creative process
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+          const response = pm.response.json();
+          pm.environment.set("about_page_id", response.data._id);
+      }
+    language: text/javascript
+order: 6000

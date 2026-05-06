@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get all active email addresses (flattened list) (Admin only)
+url: "{{base_url}}/api/emails/all"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+order: 2000

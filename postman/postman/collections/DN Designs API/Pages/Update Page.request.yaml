@@ -1,0 +1,25 @@
+$kind: http-request
+description: Update page (Admin only). publishedAt is editable.
+url: "{{base_url}}/api/pages/{{page_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Home Page Updated
+    - type: text
+      key: content
+      value: '{"hero":{"heading":"Welcome to DN Designs - Updated","subheading":"New creative solutions"}}'
+    - type: text
+      key: metaTitle
+      value: DN Designs - Updated
+    - type: text
+      key: isPublished
+      value: "true"
+    - type: text
+      key: publishedAt
+      value: 2025-12-15T10:00:00.000Z
+order: 7000

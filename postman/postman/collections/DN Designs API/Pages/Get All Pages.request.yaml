@@ -1,0 +1,25 @@
+$kind: http-request
+description: Get all published pages (public). Admin can see all pages including drafts.
+url: "{{base_url}}/api/pages?page=1&limit=50"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: limit
+    value: "50"
+  - key: pageType
+    value: home
+    disabled: true
+  - key: search
+    value: about
+    disabled: true
+  - key: isPublished
+    value: "true"
+    disabled: true
+  - key: sortBy
+    value: order
+    disabled: true
+  - key: sortOrder
+    value: asc
+    disabled: true
+order: 1000
