@@ -828,7 +828,7 @@ async function page() {
       <section className="">
         <div className="container">
             <video
-            src="https://dndesigns.co.in/uploads/videos/lat6vid.mp4"
+            src="https://dndesigns.co.in/uploads/videos/Let's supp_1_2 (1).mp4"
             width="100%"
             autoPlay 
             muted
