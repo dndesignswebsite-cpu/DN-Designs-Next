@@ -15,6 +15,7 @@ import {
   faFacebook,
   faPinterest,
   faLinkedin,
+  faBehance,
 } from "@fortawesome/free-brands-svg-icons";
 
 const TRANSITION_DURATION = 1000;
@@ -279,7 +280,8 @@ const toggleNav = () => {
                             : ""
                         }`}
                       >
-                        Catalogue Designing
+                        {/* Catalogue Designing */}
+                        Editorial and Catalogue Designing
                       </Link>
                     </li>
                     <li>
@@ -306,7 +308,8 @@ const toggleNav = () => {
                             : ""
                         }`}
                       >
-                        Brand Name Suggestion
+                        {/* Brand Name Suggestion */}
+                        Brand Naming
                       </Link>
                     </li>
                   </ul>
@@ -360,7 +363,8 @@ const toggleNav = () => {
                             : ""
                         }`}
                       >
-                        Influencer Marketing
+                        {/* Influencer Marketing */}
+                        Influencer and Strategic Seeding
                       </Link>
                     </li>
 
@@ -743,7 +747,7 @@ const toggleNav = () => {
                       />
                     </a>
 
-                    <a
+                    {/* <a
                       href="https://www.facebook.com/digitizersnation"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -753,9 +757,9 @@ const toggleNav = () => {
                         icon={faFacebook}
                         className={`${styles["footer-social-icons-unit"]}`}
                       />
-                    </a>
+                    </a> */}
 
-                    <a
+                    {/* <a
                       href="https://x.com/digitizersn?lang=en"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -765,9 +769,9 @@ const toggleNav = () => {
                         icon={faXTwitter}
                         className={`${styles["footer-social-icons-unit"]}`}
                       />
-                    </a>
+                    </a> */}
 
-                    <a
+                    {/* <a
                       href="https://in.pinterest.com/dndesigns1100/_created/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -775,6 +779,19 @@ const toggleNav = () => {
                     >
                       <FontAwesomeIcon
                         icon={faPinterest}
+                        className={`${styles["footer-social-icons-unit"]}`}
+                      />
+                    </a> */}
+
+
+                      <a
+                      href="https://www.behance.net/dndesignss"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Behance"
+                    >
+                      <FontAwesomeIcon
+                        icon={faBehance}
                         className={`${styles["footer-social-icons-unit"]}`}
                       />
                     </a>
@@ -790,6 +807,10 @@ const toggleNav = () => {
                         className={`${styles["footer-social-icons-unit"]}`}
                       />
                     </a>
+
+
+                   
+
                   </div>
                 </div>
               </div>
@@ -967,7 +988,8 @@ const toggleNav = () => {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                            Catalogue Designing
+                            {/* Catalogue Designing */}
+                            Editorial and Catalogue Designing
                           </Link>
                         </li>
 
@@ -988,7 +1010,8 @@ const toggleNav = () => {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                            Brand Name Suggestion
+                            {/* Brand Name Suggestion */}
+                            Brand Naming
                           </Link>
                         </li>
                       </ul>
@@ -1051,7 +1074,8 @@ const toggleNav = () => {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                            Influencer Marketing
+                            {/* Influencer Marketing */}
+                            Influencer and Strategic Seeding
                           </Link>
                         </li>
 

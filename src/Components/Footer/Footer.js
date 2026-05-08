@@ -7,6 +7,7 @@ import {
   faFacebook,
   faPinterest,
   faLinkedin,
+  faBehance,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -121,6 +122,18 @@ export default function Footer() {
             </a>
 
             <a
+              href="https://www.behance.net/dndesignss"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <FontAwesomeIcon
+                icon={faBehance}
+                className={styles["footer-social-icons-unit"]}
+              />
+            </a>
+
+            {/* <a
               href="https://www.facebook.com/digitizersnation"
               target="_blank"
               rel="noopener noreferrer"
@@ -130,9 +143,9 @@ export default function Footer() {
                 icon={faFacebook}
                 className={`${styles["footer-social-icons-unit"]}`}
               />
-            </a>
+            </a> */}
 
-            <a
+            {/* <a
               href="https://x.com/digitizersn?lang=en"
               target="_blank"
               rel="noopener noreferrer"
@@ -142,9 +155,9 @@ export default function Footer() {
                 icon={faXTwitter}
                 className={`${styles["footer-social-icons-unit"]}`}
               />
-            </a>
+            </a> */}
 
-            <a
+            {/* <a
               href="https://in.pinterest.com/dndesigns1100/_created/"
               target="_blank"
               rel="noopener noreferrer"
@@ -154,7 +167,7 @@ export default function Footer() {
                 icon={faPinterest}
                 className={`${styles["footer-social-icons-unit"]}`}
               />
-            </a>
+            </a> */}
 
             <a
               href="https://www.linkedin.com/company/dn-designs-india"

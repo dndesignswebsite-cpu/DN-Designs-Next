@@ -112,7 +112,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "Grin care logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/1am.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -219,7 +219,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
               <Image
-                src={imageUrl + "enliiv logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Pureluxe.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -327,7 +327,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "floris logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/logoconstLet's-Supp.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -363,7 +363,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "gleephoria logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Ekos.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -383,7 +383,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "himalayan.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Brrat.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -558,7 +558,7 @@ function OurConstant() {
                 className="img-fluid"
               ></img> */}
               <Image
-                src={imageUrl + "Grin care logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/1am.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -656,7 +656,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "enliiv logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/logoconstLet's-Supp.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -756,7 +756,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "floris logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Ekos.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -788,7 +788,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "gleephoria logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Brrat.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -806,7 +806,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "himalayan.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Pureluxe.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -975,7 +975,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "Grin care logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/1am.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -983,6 +983,7 @@ function OurConstant() {
               />
             </div>
           </div>
+
           <div className={`${styles["comapnies-logo-row"]}`}>
             {/* 7 */}
             <div className={`${styles["companies"]}`}>
@@ -1076,7 +1077,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "enliiv logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Pureluxe.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1178,7 +1179,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "floris logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/logoconstLet's-Supp.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1211,7 +1212,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "gleephoria logo.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Ekos.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
@@ -1229,7 +1230,7 @@ function OurConstant() {
               ></img> */}
 
               <Image
-                src={imageUrl + "himalayan.webp"}
+                src="https://dndesigns.co.in/uploads/pages/Brrat.webp"
                 className={`${styles["responsive-img"]} ${styles["companies-img"]}`}
                 alt="home page image"
                 width={150}
