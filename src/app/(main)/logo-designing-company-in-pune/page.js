@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -110,12 +111,12 @@ async function page() {
       question:
         "Which is the best logo designing company in Pune?",
       answer:
-        "With over eight years of experience in the industry, DN Designs is renowned among customers as the best logo designing company in Pune. Our professional logo design leaves a lasting impact on the people while creating a unique yet strong brand identity.",
+        (<>With over eight years of experience in the industry, <Link href="/" className="faq-link">DN Designs</Link> is renowned among customers as the best logo designing company in Pune. Our professional logo design leaves a lasting impact on the people while creating a unique yet strong brand identity.</>),
     },
     {
       question: "How is your logo better than so many in the market?",
       answer:
-        "Our logo designs are creatively made and go through a lengthy process. Our team of logo designers in Pune ensures your logo matches your brand image and makes you stand out.",
+        (<>Our <Link href="/logo-designing" className="faq-link">logo designs</Link> are creatively made and go through a lengthy process. Our team of logo designers in Pune ensures your logo matches your brand image and makes you stand out.</>),
     },
     {
       question: "What is your process of making a logo?",
@@ -169,9 +170,11 @@ async function page() {
     {
       question: "What services do you offer in logo design?",
       answer:
-        "Besides logo design services, we offer packaging, brand identity, web development, catalogue, website, company profiling, and display box design. We provide end-to-end services to help brands like yours reach the next level! ",
+        (<>Besides logo design services, we offer <Link href="packaging-design" className="faq-link">packaging</Link>, <Link href="/branding" className="faq-link">brand identity</Link>, web development, catalogue, website, company profiling, and display box design. We provide end-to-end services to help brands like yours reach the next level! </>),
     }
   ];
+
+ 
 
   let para1 = "Being a top logo designing company in Pune, we advise you to choose your logo correctly because there are different logo styles. Whether the logos are in combination marks or words, letters, abstract signs, emblems, three-dimensional logos, animated logos, or dynamic logos, it’s all based on the approach you want to take to communicate your brand’s philosophy, personality and culture. Each logo style has meaning; we ensure you pick the right one since it represents your brand. For example, the wordmark logo is perfect if you have a short brand name and desire more brand visibility. Our expert logo design services in Pune ensure your brand gets visibility in overcrowded markets.";
 
