@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -109,7 +110,7 @@ async function page() {
       question:
         "What makes DN Designs the best logo design company in Delhi NCR?",
       answer:
-        "With over eight years of experience in logo design, we’re popular among our clients as the best logo designing company in Delhi NCR. Our professional logo design makes a lasting impact on people while sharing your brand story.",
+        (<>With over eight years of experience in logo design, we’re popular among our clients as the best logo designing company in Delhi NCR. Our <Link href="/logo-designing" className="faq-link">professional logo design</Link> makes a lasting impact on people while sharing your brand story.</>),
     },
     {
       question: "Why should I choose you for my logo design?",
@@ -153,7 +154,7 @@ async function page() {
     {
       question: "I also need my logo trademark. Can you help me?",
       answer:
-        "Indeed, as the most popular brand building agency in Delhi NCR, we can assist you with your logo trademark. We can assist you in involving a trademark attorney to get your logo under the regime of intellectual property.",
+        (<>Indeed, as the most popular <Link href="branding-agency-in-delhi" className="faq-link">brand building agency in Delhi</Link> NCR, we can assist you with your logo trademark. We can assist you in involving a trademark attorney to get your logo under the regime of intellectual property.</>),
     },
     {
       question: "How many revisions do you provide to the logo design that I need from you?",
@@ -168,7 +169,7 @@ async function page() {
     {
       question: "Apart from logo designing, which services do you provide?",
       answer:
-        "In addition to logo designing services, we also provide many more services including catalogue designing, brand identity designing, web development, packaging designing, display box designing, website designing and company profiling services. We offer you end-to-end services to aid you better! ",
+        (<>In addition to logo designing services, we also provide many more services including catalogue designing, <Link href="/branding" className="faq-link">brand identity designing</Link>, web development, <Link href="/packaging-design" className="faq-link">packaging designing</Link>, display box designing, website designing and company profiling services. We offer you end-to-end services to aid you better! </>),
     }
   ];
 

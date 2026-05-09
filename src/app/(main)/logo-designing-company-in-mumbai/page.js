@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import Link from "next/link";
 
 // meta tags
 export async function generateMetadata() {
@@ -113,7 +114,7 @@ async function page() {
     {
       question: "Who is the best logo design company in Mumbai?",
       answer:
-        "DN Designs is the best logo design company in Mumbai, and it has been providing services for over eight years now. Our team of expert logo designers provides an excellent service, creates unique logo designs that could be easily imprinted in people’s minds and provide firms with consistent branding solutions",
+        (<><Link href="/" className="faq-link">DN Designs</Link> is the best logo design company in Mumbai, and it has been providing services for over eight years now. Our team of expert logo designers provides an excellent service, creates unique logo designs that could be easily imprinted in people’s minds and provide firms with consistent <Link href="/branding" className="faq-link">branding solutions</Link></>),
     },
     {
       question: "How do you design your logo?",
@@ -146,7 +147,7 @@ async function page() {
     {
       question: "Can the logo you design get global recognition?",
       answer:
-        "Over the years, we have specialised in logo designing services as a creative agency in Mumbai; we have worked for international clients. Our clients are satisfied with our work and are amazed at the professional look of the logo design.",
+        (<>Over the years, we have specialised in <Link href="/logo-designing" className="faq-link">logo designing services</Link> as a creative agency in Mumbai; we have worked for international clients. Our clients are satisfied with our work and are amazed at the professional look of the logo design.</>),
     },
     {
       question: "How many revisions am I entitled to?",
@@ -171,7 +172,7 @@ async function page() {
     {
       question: "What other services do you offer apart from designing logos?",
       answer:
-        "Besides logo designing, we have services like packaging, web design, brand identity, catalogue, company profile, website, and display box designing. It is because it is our responsibility to make your brand shine through a complete service offering.",
+        (<>Besides logo designing, we have services like <Link href="/packaging-design" className="faq-link">packaging</Link>, web design, brand identity, <Link href="/catalogue-designing" className="faq-link">catalogue</Link>, company profile, website, and display box designing. It is because it is our responsibility to make your brand shine through a complete service offering.</>),
     },
   ];
 
