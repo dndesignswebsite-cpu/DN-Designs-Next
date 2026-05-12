@@ -394,9 +394,21 @@ padding: 20px;
     color: #000;
 }
 
-/* image  */
+/* image optimaztion */
 
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.normal-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.horror-img{
+  aspect-ratio: 1500 / 1000;
+}
+.user-engagement-div-mid-img{
+  aspect-ratio: 1000 / 1100;
 }

@@ -41,20 +41,20 @@
     }
 }
 
-@media(max-width:1200){
+@media(max-width:1200px){
     .image-box-city-page{
     margin: 20px 0;
 }
 }
-
-/* .faq-link{
-    color: #000;
-    text-decoration: none;
-} */
 
 
 /* image  */
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.image-box-city-page-img{
+    aspect-ratio: 1500 / 1000;
 }

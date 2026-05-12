@@ -282,6 +282,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:1200px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -297,6 +298,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:1200px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -342,6 +344,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:1200px) 100vw, 50vw"
                 />
               </div>
             </div>

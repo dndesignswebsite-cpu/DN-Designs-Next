@@ -484,7 +484,8 @@ async function page() {
                       alt="brand-name-suggestion"
                       width={750}
                       height={750}
-                      className="responsive-img"
+                      className="responsive-img winning-brand-companies-img"
+                        sizes="(max-width:768px) 100vw, 25vw"
                     />
                   </div>
                 </div>
@@ -500,7 +501,8 @@ async function page() {
                       alt="brand-name-suggestion"
                       width={750}
                       height={750}
-                      className="responsive-img"
+                      className="responsive-img winning-brand-companies-img"
+                        sizes="(max-width:768px) 100vw, 25vw"
                     />
                   </div>
                 </div>
@@ -516,7 +518,8 @@ async function page() {
                       alt="brand-name-suggestion"
                       width={750}
                       height={750}
-                      className="responsive-img"
+                      className="responsive-img winning-brand-companies-img"
+                        sizes="(max-width:768px) 100vw, 25vw"
                     />
                   </div>
                 </div>
@@ -532,7 +535,8 @@ async function page() {
                       alt="brand-name-suggestion"
                       width={750}
                       height={750}
-                      className="responsive-img"
+                      className="responsive-img winning-brand-companies-img"
+                        sizes="(max-width:768px) 100vw, 25vw"
                     />
                   </div>
                 </div>

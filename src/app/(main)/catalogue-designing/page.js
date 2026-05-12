@@ -345,6 +345,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                    sizes="(max-width:768px) 100vw, 25vw"
                 />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
@@ -359,6 +360,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 25vw"
                 />
                   </div>
                 </div>
@@ -375,6 +377,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 25vw"
                 />
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 e-cata-right-img">
@@ -388,6 +391,7 @@ async function page() {
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 25vw"
                 />
                   </div>
                 </div>

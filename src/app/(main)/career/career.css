@@ -51,4 +51,9 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.career-hero-img{
+    aspect-ratio: 1000 / 1000;
 }

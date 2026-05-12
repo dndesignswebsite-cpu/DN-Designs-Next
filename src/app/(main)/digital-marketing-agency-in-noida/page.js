@@ -312,10 +312,11 @@ async function page() {
                   ></img> */}
                      <Image
                   src={imageUrl + "successfull groth.webp"}
-                  className="responsive-img"
+                  className="responsive-img switch-on-left-img"
                   alt="digital markting page image"
                   width={1500}
                   height={800}
+                    sizes="(max-width:768px) 100vw, 50vw"
                 />
                 </div>
               </div>
@@ -325,10 +326,11 @@ async function page() {
               {/* <img src={imageUrl + "2-01.webp"} className="img-fluid" /> */}
                 <Image
                   src={imageUrl + "2-01.webp"}
-                  className="responsive-img"
+                  className="responsive-img switch-on-right-img"
                   alt="digital markting page image"
                   width={600}
                   height={600}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
             </div>
           </div>

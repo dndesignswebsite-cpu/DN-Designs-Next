@@ -678,6 +678,19 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.port-div-img{
+  aspect-ratio: 750 / 750;
+}
+
+.our-brand-mobile-div-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.branding-that-mobile-div-img{
+  aspect-ratio: 1500 / 1000;
 }
 
 

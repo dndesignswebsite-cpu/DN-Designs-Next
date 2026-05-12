@@ -378,4 +378,13 @@ padding: 0;
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.switch-on-left-img{
+  aspect-ratio: 1500 / 800;
+}
+
+.switch-on-right-img{
+  aspect-ratio: 600 / 600;
 }
