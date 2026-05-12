@@ -78,6 +78,7 @@ export default function OurWorkServiceTabs() {
                         width={1500}
                         height={1000}
                         className="responsive-img tab-img"
+                        sizes="(max-width:768px) 100vw, 50vw"
                       />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
@@ -93,6 +94,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                            sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -106,6 +108,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                            sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -121,6 +124,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                            sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -134,6 +138,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                            sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -156,6 +161,7 @@ export default function OurWorkServiceTabs() {
                         width={1500}
                         height={1000}
                         className="responsive-img tab-img"
+                        sizes="(max-width:768px) 100vw, 50vw"
                       />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
@@ -172,6 +178,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                            sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -185,6 +192,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -200,6 +208,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -213,6 +222,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -235,6 +245,7 @@ export default function OurWorkServiceTabs() {
                         width={1500}
                         height={1000}
                         className="responsive-img tab-img"
+                         sizes="(max-width:768px) 100vw, 50vw"
                       />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
@@ -250,6 +261,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -264,6 +276,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -280,6 +293,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -294,6 +308,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -316,6 +331,7 @@ export default function OurWorkServiceTabs() {
                         width={1500}
                         height={1000}
                         className="responsive-img tab-img"
+                         sizes="(max-width:768px) 100vw, 50vw"
                       />
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
@@ -332,6 +348,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -346,6 +363,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -362,6 +380,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                         <div className="col-6">
@@ -375,6 +394,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                         </div>
                       </div>
@@ -401,6 +421,7 @@ export default function OurWorkServiceTabs() {
                         width={1500}
                         height={1000}
                         className="responsive-img tab-img cgi-ad-img"
+                         sizes="(max-width:768px) 100vw, 50vw"
                       />
                       </CatalougePageFlip>
                     </div>
@@ -421,6 +442,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img cgi-ad-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -439,6 +461,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img cgi-ad-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -459,6 +482,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img cgi-ad-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                           </CatalougePageFlip>
                         </div>
@@ -477,6 +501,7 @@ export default function OurWorkServiceTabs() {
                             width={1500}
                             height={1000}
                             className="responsive-img tab-img cgi-ad-img"
+                             sizes="(max-width:768px) 50vw, 25vw"
                           />
                           </CatalougePageFlip>
                         </div>

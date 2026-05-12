@@ -215,6 +215,7 @@ async function page() {
                   width={750}
                   height={750}
                   className="responsive-img port-div-img"
+                    sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -246,6 +247,7 @@ async function page() {
                   width={750}
                   height={750}
                   className="responsive-img port-div-img"
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -309,6 +311,7 @@ async function page() {
                   width={750}
                   height={750}
                   className="responsive-img port-div-img"
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -343,6 +346,7 @@ async function page() {
                   width={750}
                   height={750}
                   className="responsive-img port-div-img"
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -373,6 +377,7 @@ async function page() {
                   width={750}
                   height={750}
                   className="responsive-img port-div-img"
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -427,6 +432,7 @@ async function page() {
                   width={1500}
                   height={1000}
                   className="responsive-img our-brand-mobile-div-img"
+                  sizes="100vw"
                 />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">Rithm’s Enlite</h3>
@@ -466,6 +472,7 @@ async function page() {
                   width={1500}
                   height={1000}
                   className="responsive-img our-brand-mobile-div-img"
+                  sizes="100vw"
                 />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">
@@ -554,6 +561,7 @@ async function page() {
                   width={1500}
                   height={1000}
                   className="responsive-img our-brand-mobile-div-img"
+                  sizes="100vw"
                 />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">Grin Care</h3>
@@ -592,6 +600,7 @@ async function page() {
                   width={1500}
                   height={1000}
                   className="responsive-img our-brand-mobile-div-img"
+                  sizes="100vw"
                 />
                   <div className="our-brand-mobile-div-content">
                     <h3 className="mobile-view-our-brand-h3">NECTARPURE</h3>
@@ -640,6 +649,7 @@ async function page() {
                   width={1500}
                   height={1000}
                   className="responsive-img branding-that-mobile-div-img"
+                  
                 />
                 <div className="identity-div-content">
                   <h3>Brand Identity</h3>

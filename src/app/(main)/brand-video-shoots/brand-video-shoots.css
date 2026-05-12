@@ -121,4 +121,9 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.brand-video-shoots-img{
+    aspect-ratio: 503 / 493;
 }

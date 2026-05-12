@@ -481,6 +481,7 @@ async function page() {
               <img
                 className="characteristics-of-good-check-eye"
                 src={imageUrl + "imgi_2_Frame-427324112.webp"}
+                
               />
             </div>
           </div>
@@ -612,6 +613,7 @@ async function page() {
                 width={1500}
                 height={1000}
                 className="responsive-img horror-img"
+                sizes="(max-width:767px) 100vw, 50vw"
               />
                 {/* <img
                   src={imageUrl + "animation 11.webp"}
@@ -624,6 +626,7 @@ async function page() {
                 width={1500}
                 height={1000}
                 className="responsive-img normal-img"
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
             </div>
@@ -641,6 +644,7 @@ async function page() {
                 width={1500}
                 height={1000}
                 className="responsive-img horror-img"
+                sizes="(max-width:767px) 100vw, 50vw"
               />
 
 
@@ -655,6 +659,7 @@ async function page() {
                 width={1500}
                 height={1000}
                 className="responsive-img normal-img"
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
             </div>
@@ -709,6 +714,7 @@ async function page() {
                 width={1000}
                 height={1100}
                 className="responsive-img user-engagement-div-mid-img"
+                sizes="(max-width:767px) 100vw, 20vw"
               />
               </div>
             </div>

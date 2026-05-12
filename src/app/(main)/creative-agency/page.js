@@ -394,6 +394,14 @@ async function page() {
               className="abs-img abs-img-1"
             />
 
+             {/* <Image 
+             src={"https://dndesigns.co.in/uploads/pages/creative_agency_5.jpg"}
+              alt="why-dn-designs"
+              className="abs-img abs-img-1"
+              height={1500}
+              width={1500}
+            /> */}
+
             <img
               src={"https://dndesigns.co.in/uploads/pages/creative_agency_1.jpeg"}
               alt="why-dn-designs"

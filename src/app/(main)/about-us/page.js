@@ -148,7 +148,8 @@ async function page() {
                 alt="blog"
                 width={1500}
                 height={1400}
-                className="responsive-img"
+                className="responsive-img projects-completed-img"
+                 sizes="(max-width:768px) 100vw, 50vw"
                 priority
               />
             </div>
@@ -306,7 +307,8 @@ async function page() {
                 alt="blog"
                 width={1600}
                 height={1973}
-                className="responsive-img"
+                sizes="100vw"
+                className="responsive-img dedicated-team-img"
               />
           </div>
         </div>
@@ -324,6 +326,7 @@ async function page() {
                 alt="blog"
                 width={350}
                 height={1100}
+                sizes="100vw"
                 className="responsive-img points-about-left-img"
               />
             </div>

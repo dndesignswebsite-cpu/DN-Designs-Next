@@ -132,7 +132,8 @@ async function page() {
                       alt="brand-name-suggestion"
                       width={503}
                       height={493}
-                      className="responsive-img"
+                      className="responsive-img brand-video-shoots-img"
+                      sizes="(max-width:991px) 100vw, 50vw"
                     />
             </div>
             <div className="col-12 col-md-12 col-lg-6 brand-video-shoots-col-right">
