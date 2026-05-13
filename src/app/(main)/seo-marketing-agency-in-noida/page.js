@@ -231,11 +231,12 @@ async function page() {
               {/* <img src={imageUrl + "jkjk.webp"} className="img-fluid"></img> */}
                 <Image
                   src={imageUrl + "jkjk.webp"} 
-                  className="responsive-img what-drives-our-growth-img-section-img"
+                  className="responsive-img what-drives-our-growth-img-section-img what-drives-our-upper-img"
                   alt="seo page image"
                   width={1500}
                   height={1000}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             </div>
           </div>
@@ -260,11 +261,12 @@ async function page() {
 
                   <Image
                   src={imageUrl + "jhfjhh.webp"}
-                  className="responsive-img what-drives-our-growth-img-section-img"
+                  className="responsive-img what-drives-our-growth-img-section-img what-drives-our-lower-img"
                   alt="seo page image"
                   width={900}
                   height={600}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -281,11 +283,12 @@ async function page() {
                 {/* <img src={imageUrl + "jkjk (1).webp"} className="img-fluid" /> */}
                   <Image
                    src={imageUrl + "jkjk (1).webp"} 
-                  className="responsive-img what-drives-our-growth-img-section-img"
+                  className="responsive-img what-drives-our-growth-img-section-img what-drives-our-lower-img"
                   alt="seo page image"
                   width={1500}
                   height={1000}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -1012,6 +1015,7 @@ async function page() {
                   alt="seo page image"
                   width={1000}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             </div>
           </div>

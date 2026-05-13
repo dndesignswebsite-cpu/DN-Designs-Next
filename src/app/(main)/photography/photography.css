@@ -170,4 +170,13 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.photography-image-after-hero{
+  aspect-ratio: 1600/800;
+}
+
+.visual-stories-that-img{
+  aspect-ratio: 1600/1067;
 }

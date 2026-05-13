@@ -513,4 +513,9 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.port-div-img{
+  aspect-ratio: 1500 / 1500;
 }

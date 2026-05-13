@@ -289,10 +289,11 @@ async function page() {
 
                 <Image
                 src={imageUrl + "hwehvdhghd.webp"}
-                  className="responsive-img"
+                  className="responsive-img grow-your-business-img"
                   alt="grin care case study page image"
                   width={500}
                   height={500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>

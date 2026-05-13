@@ -269,6 +269,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -302,6 +303,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -335,6 +337,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -362,6 +365,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -422,6 +426,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -460,6 +465,7 @@ async function page() {
                   alt="packaging design "
                   width={1500}
                   height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">

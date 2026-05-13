@@ -739,4 +739,17 @@ font-family: var(--font-corbert-bold);
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.what-drives-our-upper-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.what-drives-our-lower-img{
+  aspect-ratio: 900 / 600;
+}
+
+.projects-completed-img{
+  aspect-ratio: 1000 / 1000;
 }

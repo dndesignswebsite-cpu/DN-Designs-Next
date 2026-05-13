@@ -219,4 +219,31 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.nectarpure-hero-logo{
+    aspect-ratio: 1188 / 388;
+}
+
+.nectarpure-problem-img-1{
+    aspect-ratio: 1500 / 1000;
+}
+
+.problem-statement-img-large{
+    aspect-ratio: 1600 / 1921;
+}
+.new-identity-img-1{
+    aspect-ratio: 1200 / 915;
+}
+.new-identity-img-2{
+    aspect-ratio: 1600 / 1048;
+}
+
+.new-identity-img-3{
+    aspect-ratio: 2048 / 807;
+}
+
+.new-identity-img-full-img{
+    aspect-ratio: 1600 / 625;
 }

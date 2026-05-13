@@ -139,10 +139,11 @@ async function page() {
 
             <Image
                  src={imageUrl + "Enlite1.webp"}
-                  className="responsive-img mt-5 enlitecase-study-img1"
+                  className="responsive-img mt-5 enlitecase-study-img1 enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
 
@@ -190,10 +191,11 @@ async function page() {
             
             <Image
                 src={imageUrl + "Enlite2.webp"}
-                  className="responsive-img enlitecase-study-img8"
+                  className="responsive-img enlitecase-study-img8 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -205,10 +207,11 @@ async function page() {
             /> */}
             <Image
                 src={imageUrl + "Enlite3.webp"}
-                  className="responsive-img enlitecase-study-img9"
+                  className="responsive-img enlitecase-study-img9 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -222,10 +225,11 @@ async function page() {
 
            <Image
                 src={imageUrl + "Enlite4.webp"}
-                  className="responsive-img enlitecase-study-img5"
+                  className="responsive-img enlitecase-study-img5 enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
 
@@ -262,10 +266,11 @@ async function page() {
 
               <Image
                 src={imageUrl + "Enlite5.webp"}
-                  className="responsive-img enlitecase-study-img6"
+                  className="responsive-img enlitecase-study-img6 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -279,10 +284,11 @@ async function page() {
 
            <Image
                src={imageUrl + "Enlite6.webp"}
-                  className="responsive-img enlitecase-study-img5"
+                  className="responsive-img enlitecase-study-img5 enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
 
@@ -308,10 +314,11 @@ async function page() {
 
              <Image
                  src={imageUrl + "Enlite7.webp"}
-                  className="responsive-img enlitecase-study-img6"
+                  className="responsive-img enlitecase-study-img6 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
           <div className="col-lg-6 col-12 col-md-6">
@@ -337,10 +344,11 @@ async function page() {
 
           <Image
                  src={imageUrl + "Enlite8.webp"}
-                  className="responsive-img enlitecase-study-img5"
+                  className="responsive-img enlitecase-study-img5 enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
       </div>
@@ -356,10 +364,11 @@ async function page() {
 
             <Image
                  src={imageUrl + "Enlite9.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -372,10 +381,11 @@ async function page() {
 
             <Image
                  src={imageUrl + "Enlite10.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -391,10 +401,11 @@ async function page() {
             
             <Image
                  src={imageUrl + "Enlite11.webp"}
-                  className="responsive-img enlitecase-study-img2 mt-lg-4"
+                  className="responsive-img enlitecase-study-img2 mt-lg-4 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -407,10 +418,11 @@ async function page() {
 
             <Image
                  src={imageUrl + "gewjvfhjr.webp"}
-                  className="responsive-img enlitecase-study-img3 mt-lg-4"
+                  className="responsive-img enlitecase-study-img3 mt-lg-4 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -425,10 +437,11 @@ async function page() {
 
              <Image
                  src={imageUrl + "Enlite13.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -441,10 +454,11 @@ async function page() {
 
              <Image
                  src={imageUrl + "Enlite14.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -459,10 +473,11 @@ async function page() {
 
              <Image
                 src={imageUrl + "Enlite15.webp"}
-                  className="responsive-img enlitecase-study-img2 mt-lg-4"
+                  className="responsive-img enlitecase-study-img2 mt-lg-4 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -475,10 +490,11 @@ async function page() {
 
              <Image
                 src={imageUrl + "Enlite16.webp"}
-                  className="responsive-img enlitecase-study-img3 mt-lg-4"
+                  className="responsive-img enlitecase-study-img3 mt-lg-4 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -493,10 +509,11 @@ async function page() {
 
              <Image
                  src={imageUrl + "Enlite17.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -509,10 +526,11 @@ async function page() {
 
              <Image
                 src={imageUrl + "Enlite18.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -526,10 +544,11 @@ async function page() {
 
           <Image
                   src={imageUrl + "Enlite19.webp"}
-                  className="responsive-img enlitecase-study-img"
+                  className="responsive-img enlitecase-study-img enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
 
@@ -543,10 +562,11 @@ async function page() {
 
             <Image
                   src={imageUrl + "Enlite20.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
 
@@ -559,10 +579,11 @@ async function page() {
 
              <Image
                   src={imageUrl + "Enlite21.webp"}
-                  className="responsive-img enlitecase-study-img7"
+                  className="responsive-img enlitecase-study-img7 enlitecaseStudyImgSquare"
                   alt="enlite case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
           </div>
         </div>
@@ -576,10 +597,11 @@ async function page() {
 
            <Image
                   src={imageUrl + "Enlite22.webp"}
-                  className="responsive-img enlitecase-study-img"
+                  className="responsive-img enlitecase-study-img enlitecaseStudyImgThreeByTwo"
                   alt="enlite case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
       </div>

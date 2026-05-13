@@ -242,12 +242,13 @@ async function page() {
                   /> */}
 
                     <Image
-                 src={imageUrl + "brand-identity.webp"}
-                  className="responsive-img front-img"
+                  src={imageUrl + "brand-identity.webp"}
+                  className="responsive-img front-img-services-page"
                   alt="services page image"
                   width={1500}
                   height={1500}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   <h3>01</h3>
                   <p>Brand Identity</p>
@@ -317,11 +318,12 @@ async function page() {
                   /> */}
                     <Image
                  src={imageUrl + "Communication.webp"}
-                  className="responsive-img front-img"
+                  className="responsive-img front-img front-img-services-page"
                   alt="services page image"
                   width={1500}
                   height={1500}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   <h3>02</h3>
                   <p>Communication strategy</p>
@@ -393,11 +395,12 @@ async function page() {
 
                       <Image
                  src={imageUrl + "wegheghhvg.webp"}
-                  className="responsive-img front-img"
+                  className="responsive-img front-img front-img-services-page"
                   alt="services page image"
                   width={1500}
                   height={1500}
                   priority
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   <h3>03</h3>
                   <p>Web Design</p>

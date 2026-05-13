@@ -384,4 +384,12 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.enlitecaseStudyImgThreeByTwo{
+    aspect-ratio: 1500 / 1000;
+}
+.enlitecaseStudyImgSquare{
+    aspect-ratio: 1500 / 1500;
 }
