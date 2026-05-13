@@ -110,10 +110,11 @@ async function page() {
 
              <Image
                   src={imageUrl + "34ebjrhbkr.webp"}
-                  className="responsive-img"
+                  className="responsive-img nectarpure-hero-logo"
                   alt="nectarpure case study "
                   width={1188}
                   height={388}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
           </div>
           <div className="col-lg-8 col-md-7 justify-content-space-between">
@@ -190,10 +191,11 @@ async function page() {
 
             <Image
                   src={imageUrl + "34ebjrhbkr.webp"}
-                  className="responsive-img"
+                  className="responsive-img nectarpure-hero-logo"
                   alt="nectarpure case study "
                   width={1188}
                   height={388}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             <div className="nectarpure-buttons d-flex flex-column align-items-start">
               <a href="#problem-statement" className="nectarpure-button1">
@@ -238,10 +240,11 @@ async function page() {
 
                     <Image
                  src={imageUrl + "wbehgdvwe.webp"}
-                  className="responsive-img nectarpureproblem-img1"
+                  className="responsive-img nectarpureproblem-img1 nectarpure-problem-img-1"
                   alt="nectarpure case study "
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   </div>
                   <div className="col-md-5 col-lg-5">
@@ -253,10 +256,11 @@ async function page() {
 
                      <Image
                   src={imageUrl + "nectarpure 1.webp"}
-                  className="responsive-img nectarpureproblem-img2 mb-lg-3 mb-md-3"
+                  className="responsive-img nectarpureproblem-img2 mb-lg-3 mb-md-3 nectarpure-problem-img-1"
                   alt="nectarpure case study "
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                     {/* <img
                       src={imageUrl + "nectarpure 2.webp"}
@@ -267,10 +271,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "nectarpure 2.webp"}
-                  className="responsive-img nectarpureproblem-img2"
+                  className="responsive-img nectarpureproblem-img2 nectarpure-problem-img-1"
                   alt="nectarpure case study "
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   </div>
                 </div>
@@ -297,7 +302,7 @@ async function page() {
 
                  <Image
                  src={imageUrl + "nectarpure 5.webp"}
-                  className="responsive-img packaging-design-img"
+                  className="responsive-img packaging-design-img problem-statement-img-large"
                   alt="nectarpure case study "
                   width={1600}
                   height={1921}
@@ -325,10 +330,11 @@ async function page() {
 
                       <Image
                 src={imageUrl + "Untitled-2.webp"}
-                  className="responsive-img nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0"
+                  className="responsive-img nectarpureproblem-img1 mb-3 mb-lg-0 mb-md-0 new-identity-img-1"
                   alt="nectarpure case study "
                   width={1200}
                   height={915}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                     {" "}
                   </div>
@@ -341,10 +347,11 @@ async function page() {
 
                           <Image
                 src={imageUrl + "Frame-427324120.webp"}
-                  className="responsive-img nectarpureproblem-img1"
+                  className="responsive-img nectarpureproblem-img1 new-identity-img-2"
                   alt="nectarpure case study "
                   width={1600}
                   height={1048}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
                   </div>
                 </div>
@@ -357,10 +364,11 @@ async function page() {
 
                          <Image
                  src={imageUrl + "Group-427321841-2048x807.webp"}
-                  className="responsive-img nectarpureproblem-img1 mb-3"
+                  className="responsive-img nectarpureproblem-img1 mb-3 new-identity-img-3"
                   alt="nectarpure case study "
                   width={2048}
                   height={807}
+                   sizes="(max-width:767px) 100vw, 100vw"
                 />
                   {/* <img
                     src={imageUrl + "Frame-427324252-2048x808.webp"}
@@ -370,10 +378,11 @@ async function page() {
 
                          <Image
                  src={imageUrl + "Frame-427324252-2048x808.webp"}
-                  className="responsive-img nectarpureproblem-img1"
+                  className="responsive-img nectarpureproblem-img1 new-identity-img-3"
                   alt="nectarpure case study "
                   width={2048}
                   height={807}
+                   sizes="(max-width:767px) 100vw, 100vw"
                 />
                 </div>
               </div>
@@ -391,10 +400,11 @@ async function page() {
 
               <Image
                  src={imageUrl + "nectarpure 6.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 new-identity-img-full-img"
                   alt="nectarpure case study "
                   width={1600}
                   height={625}
+                   sizes="(max-width:767px) 100vw, 100vw"
                 />
         {/* <img
           src={imageUrl + "nectarpure 3.webp"}
@@ -404,10 +414,11 @@ async function page() {
 
         <Image
                   src={imageUrl + "nectarpure 3.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 new-identity-img-full-img"
                   alt="nectarpure case study "
                   width={1600}
                   height={625}
+                  sizes="(max-width:767px) 100vw, 100vw"
                 />
         {/* <img
           src={imageUrl + "nectarpure 7.webp"}
@@ -417,10 +428,11 @@ async function page() {
 
         <Image
                   src={imageUrl + "nectarpure 7.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 new-identity-img-full-img"
                   alt="nectarpure case study "
                   width={1600}
                   height={625}
+                  sizes="(max-width:767px) 100vw, 100vw"
                 />
       </div>
     </div>

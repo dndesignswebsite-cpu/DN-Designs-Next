@@ -402,4 +402,9 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.front-img-services-page{
+aspect-ratio: 1500 / 1500;
 }

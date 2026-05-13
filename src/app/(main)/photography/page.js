@@ -136,10 +136,11 @@ async function page() {
 
                 <Image
                   src="https://dndesigns.co.in/uploads/pages/sahbdnvnbn.webp"
-                  className="responsive-img"
+                  className="responsive-img photography-image-after-hero"
                   alt="photography page image"
                   width={1600}
                   height={800}
+                  sizes="(max-width:767px) 100vw, 100vw"
                 />
           </div>
         </div>
@@ -258,6 +259,7 @@ async function page() {
                   alt="photography page image"
                   width={1600}
                   height={1067}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             </div>
           </div>
@@ -280,6 +282,7 @@ async function page() {
                   alt="photography page image"
                   width={1600}
                   height={1067}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             </div>
             <div className="col">
@@ -318,6 +321,7 @@ async function page() {
                   alt="photography page image"
                   width={1600}
                   height={1067}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
             </div>
           </div>

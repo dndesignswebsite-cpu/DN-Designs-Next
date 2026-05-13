@@ -307,10 +307,11 @@ async function page() {
                 /> */}
                 <Image
                   src={imageUrl + "Packaging-Design.webp"}
-                  className="responsive-img image-box-city-page-img"
+                  className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -325,10 +326,11 @@ async function page() {
                 /> */}
                 <Image
                   src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"}
-                  className="responsive-img image-box-city-page-img"
+                  className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -378,10 +380,11 @@ async function page() {
                 /> */}
                 <Image
                   src={imageUrl + "Ready-to-Win-Every-Heart.webp"}
-                  className="responsive-img image-box-city-page-img"
+                  className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
             </div>

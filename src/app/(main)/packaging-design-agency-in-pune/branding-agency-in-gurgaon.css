@@ -41,7 +41,7 @@
     }
 }
 
-@media(max-width:1200){
+@media(max-width:1200px){
     .image-box-city-page{
     margin: 20px 0;
 }
@@ -53,4 +53,9 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.packaging-design-img-next-section{
+    aspect-ratio: 1500 / 1000;
 }

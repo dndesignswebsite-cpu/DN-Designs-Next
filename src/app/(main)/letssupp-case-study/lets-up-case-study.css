@@ -363,11 +363,7 @@
 }
 
 
-/* image  */
-.responsive-img {
-  width: 100%;
-  height: auto;
-}
+
 
 @media(max-width:767px){
     .overview-h3-main-head{
@@ -561,4 +557,19 @@ align-items: end;
     .signing-off-head{
         font-size: 50px;
 }
+}
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.letssuppSaqureImg{
+    aspect-ratio: 1500 / 1500;
+}
+
+.letssuppThreeTwoImg{
+     aspect-ratio: 1500 / 1000;
 }

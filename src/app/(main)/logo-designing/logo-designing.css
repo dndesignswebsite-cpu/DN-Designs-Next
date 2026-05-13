@@ -793,4 +793,21 @@ margin:0 !important;
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.brand-identity-div-img{
+  aspect-ratio: 1500 / 1500;
+}
+
+.monogram-logo-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.wow-making-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.wordmark-img{
+  aspect-ratio: 1600 / 942;
 }

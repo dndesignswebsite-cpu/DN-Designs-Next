@@ -151,6 +151,7 @@
     .grincare-h1{
         font-size: 22px;
         margin-top: 40px;
+        text-align: left;
     }
 
     .grincare-second{
@@ -219,8 +220,56 @@
     }
 }
 
+.nectarpurecase-study-wrapper{
+    display: flex;
+    gap:10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
 /* image  */
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.grincare-hero-logo-img{
+    aspect-ratio: 1090 / 425;
+}
+
+.grincare-banner-img{
+    aspect-ratio: 1600 / 938;
+}
+
+.grincareThreeByTwoImg{
+    aspect-ratio: 1500 / 1000;
+}
+
+.grincareThreeByTwoImgDiff{
+     aspect-ratio: 1600 / 842;
+}
+
+.grincareThreeByTwoImgDiffVery{
+    aspect-ratio: 1600 / 1921;
+}
+
+.new-identity-img{
+    aspect-ratio: 1232 / 1048;
+}
+
+.new-identity-img-2{
+    aspect-ratio: 1600 / 915;
+}
+
+.new-identity-img-3{
+    aspect-ratio: 2048 / 807;
+}
+
+.grincare-packaging-design-img-long{
+    aspect-ratio: 1600 / 1920;
+}
+
+.grincare-packaging-design-img-full{
+    aspect-ratio: 1600 / 625;
 }

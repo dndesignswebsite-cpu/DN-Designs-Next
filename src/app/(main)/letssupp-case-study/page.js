@@ -215,20 +215,22 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcase1.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcase2.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -242,10 +244,11 @@ async function page() {
 
             <Image
               src={imageUrl + "letsupcase4.webp"}
-              className="responsive-img letsup-case-study-three-image-row-img"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
               alt="enlite case study page image"
               width={1500}
               height={1000}
+              sizes="(max-width:767px) 100vw, 100vw"
             />
           </div>
         </div>
@@ -313,20 +316,22 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcase7.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsup8.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -341,10 +346,11 @@ async function page() {
            <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsup9.webp"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
@@ -379,10 +385,11 @@ async function page() {
 
             <Image
               src={imageUrl + "caselets.webp"}
-              className="responsive-img letsup-case-study-three-image-row-img"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
               alt="enlite case study page image"
               width={1500}
               height={1000}
+              sizes="(max-width:767px) 100vw, 100vw"
             />
           </div>
 
@@ -402,10 +409,11 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcase12.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -440,10 +448,11 @@ async function page() {
             <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase13.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img bigger-z-index"
+                className="letsup-case-study-three-image-col-img responsive-img bigger-z-index letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -490,30 +499,33 @@ async function page() {
             <div className="col-12 col-md-8">
                   <Image
                 src={imageUrl + "Artboard-34.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 100vw"
               />
             </div>
 
              <div className="col-12 col-md-4">
                   <Image
                 src={imageUrl + "ghfq.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
           <div className="absolute-infinity-div">
            <Image
                 src={imageUrl + "infintylogoletsup.png"}
-                className="letsup-case-study-three-image-col-img responsive-img infinity-logo-img"
+                className="letsup-case-study-three-image-col-img responsive-img infinity-logo-img letssuppSaqureImg"
                 alt="enlite case study page image "
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
         </div>
@@ -530,20 +542,22 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letscase17.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcase18.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -557,10 +571,11 @@ async function page() {
            <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase19.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
@@ -599,10 +614,11 @@ async function page() {
           <div className="row">
             <Image
               src={imageUrl + "letsupcase20.jpg"}
-              className="responsive-img letsup-case-study-three-image-row-img"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
               alt="enlite case study page image"
               width={1500}
               height={1000}
+              sizes="(max-width:767px) 100vw, 100vw"
             />
           </div>
         </div>
@@ -641,30 +657,33 @@ async function page() {
             <div className="col-12 col-md-4">
                    <Image
                 src={imageUrl + "letsupcase21.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-4">
                    <Image
                 src={imageUrl + "letsupcase22.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-4">
                    <Image
                 src={imageUrl + "letscasej23.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -685,10 +704,11 @@ async function page() {
               <div className="col-12">
                     <Image
                 src={imageUrl + "letsupcase21.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
 
@@ -702,10 +722,11 @@ async function page() {
                <div className="col-12">
                     <Image
                 src={imageUrl + "letsupcase22.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
 
@@ -718,10 +739,11 @@ async function page() {
                <div className="col-12">
                     <Image
                 src={imageUrl + "letscasej23.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
 
@@ -760,10 +782,11 @@ async function page() {
             <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcasess24.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -802,20 +825,22 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcasen25.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "letsupcasehdb26.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -847,10 +872,11 @@ async function page() {
            <div className="col-12 col-lg-6">
                 <Image
                 src={imageUrl + "letsupcase27.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
@@ -910,10 +936,11 @@ async function page() {
             <div className="modern-essentials-img">
                    <Image
                 src={imageUrl + "letsupSunlight.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
 
@@ -923,10 +950,11 @@ async function page() {
             
                    <Image
                 src={imageUrl + "essentialsletsup29.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
 
               
@@ -938,10 +966,11 @@ async function page() {
             <div className="modern-essentials-img">
                    <Image
                 src={imageUrl + "letsupcasePill-Shadow.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
               </div>
 
@@ -964,20 +993,22 @@ async function page() {
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "ejletsupcase.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
 
             <div className="col-12 col-md-6">
               <Image
                 src={imageUrl + "last-final.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -987,10 +1018,11 @@ async function page() {
 
             <Image
               src={imageUrl + "letsupcaseh32.jpg"}
-              className="responsive-img letsup-case-study-three-image-row-img"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
               alt="enlite case study page image"
               width={1500}
               height={1000}
+              sizes="(max-width:767px) 100vw, 100vw"
             />
           </div>
         </div>
