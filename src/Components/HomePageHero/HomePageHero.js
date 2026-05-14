@@ -34,6 +34,7 @@ function HomePageHero({ title, description }) {
               width={1000}
               height={1000}
               priority
+              sizes="(max-width:992px) 100vw, 50vw"
             />
 
             <Image
@@ -43,6 +44,7 @@ function HomePageHero({ title, description }) {
               width={700}
               height={700}
               priority
+              sizes="(max-width:992px) 100vw, 50vw"
             />
 
           </div>

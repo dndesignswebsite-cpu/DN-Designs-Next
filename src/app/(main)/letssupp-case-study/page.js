@@ -499,7 +499,7 @@ async function page() {
             <div className="col-12 col-md-8">
                   <Image
                 src={imageUrl + "Artboard-34.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppThreeTwoImg"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
@@ -510,7 +510,7 @@ async function page() {
              <div className="col-12 col-md-4">
                   <Image
                 src={imageUrl + "ghfq.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssupp-aspect-ratio-img"
                 alt="enlite case study page image"
                 width={1500}
                 height={1500}
@@ -521,7 +521,7 @@ async function page() {
           <div className="absolute-infinity-div">
            <Image
                 src={imageUrl + "infintylogoletsup.png"}
-                className="letsup-case-study-three-image-col-img responsive-img infinity-logo-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img infinity-logo-img "
                 alt="enlite case study page image "
                 width={1500}
                 height={1500}

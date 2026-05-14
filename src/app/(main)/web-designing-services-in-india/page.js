@@ -238,6 +238,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -269,6 +270,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -303,6 +305,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -336,6 +339,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -371,6 +375,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -404,6 +409,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
@@ -882,6 +888,7 @@ async function page() {
                   alt="web designing page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 50vw"
                 />
             </div>
           </div>
@@ -903,10 +910,11 @@ async function page() {
 
             <Image
                     src={imageUrl + "lowest-image-on-page.webp"}
-                  className="responsive-img"
+                  className="responsive-img make-your-brand-img"
                   alt="web designing page image"
                   width={1500}
                   height={800}
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
 
             <div className="col-12 col-md-6 make-your-brand-col">

@@ -315,4 +315,13 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.wlues-three-by-two-img{
+    aspect-ratio: 1500 / 1000;
+}
+
+.wlues-swaure-img{
+    aspect-ratio: 1500 / 1500;
 }

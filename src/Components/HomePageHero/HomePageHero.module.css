@@ -96,4 +96,13 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.hero-bg-img {
+  aspect-ratio: 1000 / 1000; 
+}
+
+.hero-img-main {
+  aspect-ratio: 700 / 700; 
 }

@@ -231,11 +231,12 @@ async function page() {
 
               <Image
                  src={imageUrl + "qbwjhbbjh.webp"}
-                  className="responsive-img ui-img1"
+                  className="responsive-img ui-img1 designs-that-ui-stcky-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={700}
                   priority
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
           {/* <img
             src={imageUrl + "grin-care-2.webp"}
@@ -245,11 +246,12 @@ async function page() {
 
           <Image
                   src={imageUrl + "grin-care-2.webp"}
-                  className="responsive-img ui-img2"
+                  className="responsive-img ui-img2 designs-that-ui-stcky-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={700}
                   priority
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
           {/* <img
             src={imageUrl + "action-air.webp"}
@@ -259,11 +261,12 @@ async function page() {
 
            <Image
                   src={imageUrl + "action-air.webp"}
-                  className="responsive-img ui-img3"
+                  className="responsive-img ui-img3 designs-that-ui-stcky-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={700}
                   priority
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
         </div>
       </section>
@@ -272,7 +275,7 @@ async function page() {
       <section className="nailing-the-basics">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6 col-md-6 text-start">
+            <div className="col-12 col-lg-6 col-md-12 text-start">
               <h2 id="ui-heading">UI/UX Meaning - Nailing the Basics</h2>
               <div className="ui-description">
                 <p className="ui-description">
@@ -295,7 +298,7 @@ async function page() {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-lg-6 col-md-6">
+            <div className="col-12 col-lg-6 col-md-12">
               {/* <img
                 src={imageUrl + "bwjhbdjh.webp"}
                 alt=""
@@ -304,11 +307,12 @@ async function page() {
 
                <Image
                   src={imageUrl + "bwjhbdjh.webp"}
-                  className="responsive-img"
+                  className="responsive-img nailing-the-basics-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1500}
                   priority
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
             </div>
           </div>
@@ -771,10 +775,11 @@ async function page() {
 
                  <Image
                   src={imageUrl + "LANDING-PAGE1.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -807,10 +812,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "MULTIPAGE.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -843,10 +849,11 @@ async function page() {
 
                   <Image
                   src={imageUrl + "ONLINE.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -878,10 +885,11 @@ async function page() {
 
                  <Image
                   src={imageUrl + "FIGMA.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -919,10 +927,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "LANDING-PAGE1.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                 />
               </div>
             </div>
@@ -949,10 +958,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "MULTIPAGE.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
               </div>
             </div>
@@ -979,10 +989,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "ONLINE.webp"}
-                  className="responsive-img w-100"
+                  className="responsive-img w-100 solutions-we-craft-img"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
               </div>
             </div>
@@ -1008,10 +1019,11 @@ async function page() {
 
                 <Image
                   src={imageUrl + "FIGMA.webp"}
-                  className="responsive-img"
+                  className="responsive-img solutions-we-craft-img w-100"
                   alt="ui-ux page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 100vw"
                 />
               </div>
             </div>

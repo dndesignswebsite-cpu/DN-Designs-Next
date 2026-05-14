@@ -70,7 +70,8 @@ function Testimonial() {
                           alt="testinomial"
                           width={500}
                           height={700}
-                          className="responsive-img"
+                          className="responsive-img testinomail-img-for-aspect"
+                          sizes="(max-width:992px) 100vw, 50vw"
                         />
                       </div>
 
@@ -144,7 +145,8 @@ function Testimonial() {
                           alt="testinomial"
                           width={500}
                           height={700}
-                          className="responsive-img"
+                          className="responsive-img testinomail-img-for-aspect"
+                          sizes="(max-width:992px) 100vw, 50vw"
                         />
                       </div>
 
@@ -213,7 +215,8 @@ function Testimonial() {
                           alt="testinomial"
                           width={500}
                           height={700}
-                          className="responsive-img"
+                          className="responsive-img testinomail-img-for-aspect"
+                          sizes="(max-width:992px) 100vw, 50vw"
                         />
                       </div>
 

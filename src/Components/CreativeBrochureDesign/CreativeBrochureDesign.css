@@ -32,3 +32,15 @@
   padding: 50px 0;
 }
 }
+
+/* images optimisation  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.city-page-swiperr-slide-img-cr{
+  aspect-ratio: 1600 / 960 ;
+}

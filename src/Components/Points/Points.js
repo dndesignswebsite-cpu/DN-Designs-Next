@@ -19,7 +19,8 @@ function Points() {
                 alt="blog"
                 width={350}
                 height={1101}
-                className="responsive-img"
+                className="responsive-img points-left-img-aspext"
+                sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
             <div className="col-12 col-md-12 col-lg-9 points-right">

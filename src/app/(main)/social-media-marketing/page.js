@@ -267,11 +267,12 @@ async function page() {
 
                     <Image
                  src={imageUrl + "wjhbevasdbh.webp"}
-                  className="responsive-img social-media-image-div-img"
+                  className="responsive-img social-media-image-div-img social-mediam-marketing-img"
                   alt="social media marketing page image"
                   width={1000}
                   height={1300}
                   priority
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -726,6 +727,7 @@ async function page() {
                   width={1500}
                   height={1500}
                   priority
+                  sizes="(max-width:768px) 100vw, 50vw"
                 />
             </div>
             <div className="col-12 col-md-12 col-lg-6 projects-completed-div-main-col">

@@ -324,6 +324,11 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.testinomail-img-for-aspect{
+  aspect-ratio: 500 / 700;
 }
 
 

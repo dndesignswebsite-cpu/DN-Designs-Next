@@ -100,4 +100,9 @@ padding: 10px 10px 20px 10px;
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.points-left-img-aspext{
+  aspect-ratio: 350 / 1101;
 }

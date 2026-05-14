@@ -573,3 +573,7 @@ align-items: end;
 .letssuppThreeTwoImg{
      aspect-ratio: 1500 / 1000;
 }
+
+.letssupp-aspect-ratio-img{
+    aspect-ratio: 720 / 1020;
+}

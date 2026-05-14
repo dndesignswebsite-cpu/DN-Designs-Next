@@ -6,3 +6,16 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* images optimisation  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.catalougeBookFlip-img{
+    aspect-ratio: 1600 / 1000;
+}

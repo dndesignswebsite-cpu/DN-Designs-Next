@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./StandAlonePackaging.css";
+import Image from "next/image";
 
 function StandAlonePackaging({ cards, mobileCrads }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,48 +12,59 @@ function StandAlonePackaging({ cards, mobileCrads }) {
     <div>
       {/* Standalone Packaging Design Services desktop view */}
       <section className="standalone">
-      <div className="container my-5 d-xl-block d-none">
-        {/* <h2 className="text-center packaging-heading">
+        <div className="container my-5 d-xl-block d-none">
+          {/* <h2 className="text-center packaging-heading">
           {cards[0].mainTitle}
         </h2> */}
 
-        <div className="row align-items-start g-5">
-          <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-            <img
+          <div className="row align-items-start g-5">
+            <div className="col-lg-6 mb-4 mb-lg-0 text-center">
+              {/* <img
               src={cards[activeIndex].image}
               alt={cards[activeIndex].title}
               className="img-fluid packaging-images"
               style={{ transition: "0.5s ease" }}
-            />
-          </div>
+            /> */}
 
-          <div className="col-lg-6">
-            {cards.map((card, index) => (
-              <div
-                key={card.id}
-                className={`row p-3 packaging-cards mb-2 ${
-                  activeIndex === index ? "active-card" : ""
-                }`}
-                onMouseEnter={() => setActiveIndex(index)}
-              >
-                <div className="col-lg-2 text-center">
-                  <h3 className="fw-bold packaging-point-number">
-                    {card.point}
-                  </h3>
+              <Image
+                src={cards[activeIndex].image}
+                alt={cards[activeIndex].title}
+                className="img-fluid packaging-images standalone-hover-desktop-img"
+                style={{ transition: "0.5s ease" }}
+                width={1500}
+                height={1500}
+                sizes="(max-width:767px) 100vw, 50vw"
+              />
+              
+            </div>
+
+            <div className="col-lg-6">
+              {cards.map((card, index) => (
+                <div
+                  key={card.id}
+                  className={`row p-3 packaging-cards mb-2 ${
+                    activeIndex === index ? "active-card" : ""
+                  }`}
+                  onMouseEnter={() => setActiveIndex(index)}
+                >
+                  <div className="col-lg-2 text-center">
+                    <h3 className="fw-bold packaging-point-number">
+                      {card.point}
+                    </h3>
+                  </div>
+                  <div className="col-lg-10 text-start">
+                    <h3 className="fw-semibold packaging-points-title">
+                      {card.title}
+                    </h3>
+                    <p className="packaging-points-para m-0">
+                      {card.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="col-lg-10 text-start">
-                  <h3 className="fw-semibold packaging-points-title">
-                    {card.title}
-                  </h3>
-                  <p className="packaging-points-para m-0">
-                    {card.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
       {/* Standalone Packaging Design Services mobile view */}
@@ -65,11 +77,21 @@ function StandAlonePackaging({ cards, mobileCrads }) {
 
           <div className="row  standalone-packaging-mobile">
             <div className="col-md-6 col-12">
-              <img
+              {/* <img
                 src={mobileCrads[0].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
+              /> */}
+
+              <Image
+                src={mobileCrads[0].mobileImage}
+                alt={cards[activeIndex].title}
+                className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+                width={800}
+                height={533}
+                sizes="(max-width:767px) 100vw, 100vw"
               />
+
               <div className="d-flex align-items-center">
                 <h3 className="fw-bold packaging-point-number m-0">01</h3>
                 <h4 className="fw-semibold packaging-points-title ms-4 text-start">
@@ -82,11 +104,21 @@ function StandAlonePackaging({ cards, mobileCrads }) {
             </div>
 
             <div className="col-md-6 col-12">
-              <img
+              {/* <img
                 src={mobileCrads[1].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
+              /> */}
+
+              <Image
+                src={mobileCrads[1].mobileImage}
+                alt={cards[activeIndex].title}
+                className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+                width={800}
+                height={533}
+                sizes="(max-width:767px) 100vw, 100vw"
               />
+
               <div className="d-flex align-items-center">
                 <h3 className="fw-bold packaging-point-number m-0">02</h3>
                 <h4 className="fw-semibold packaging-points-title ms-4 text-start">
@@ -101,10 +133,19 @@ function StandAlonePackaging({ cards, mobileCrads }) {
 
           <div className="row  mt-2">
             <div className="col-md-6 col-12">
-              <img
+              {/* <img
                 src={mobileCrads[2].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
+              /> */}
+
+              <Image
+                src={mobileCrads[2].mobileImage}
+                alt={cards[activeIndex].title}
+                className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+                width={800}
+                height={533}
+                sizes="(max-width:767px) 100vw, 100vw"
               />
               <div className="d-flex align-items-center">
                 <h3 className="fw-bold packaging-point-number m-0">03</h3>
@@ -118,10 +159,18 @@ function StandAlonePackaging({ cards, mobileCrads }) {
             </div>
 
             <div className="col-md-6 col-12">
-              <img
+              {/* <img
                 src={mobileCrads[3].mobileImage}
                 alt=""
                 className="img-fluid mb-3 packaging-images"
+              /> */}
+              <Image
+                src={mobileCrads[3].mobileImage}
+                alt={cards[activeIndex].title}
+                className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+                width={800}
+                height={533}
+                sizes="(max-width:767px) 100vw, 100vw"
               />
               <div className="d-flex align-items-center">
                 <h3 className="fw-bold packaging-point-number m-0">04</h3>

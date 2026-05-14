@@ -1,6 +1,7 @@
 import React from "react";
 import "./CatalougeBook.css";
 import LightBoxBookCatalouge from "./LightBoxBookCatalouge";
+import Image from "next/image";
 
 function CatalougeBook() {
   let imageUrl = "https://dndesigns.co.in/uploads/pages/";
@@ -11,11 +12,20 @@ function CatalougeBook() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <img
+              {/* <img
                 // src="https://dndesigns.co.in/wp-content/uploads/2025/01/Green-Horn-Catalogue.jpg"
                 src={imageUrl + "Green-Horn-Catalogue.webp"}
                 className="img-fluid"
-              />
+              /> */}
+
+              <Image src={"https://dndesigns.co.in/uploads/pages/Green-Horn-Catalogue.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
+
             </div>
             <div className="col-12 col-md-6 catalougeBookFlipCol">
               <LightBoxBookCatalouge
@@ -30,10 +40,18 @@ function CatalougeBook() {
                 ]}
               >
                 <div>
-                  <img
+                  {/* <img
                     src={imageUrl + "wherbfett.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image 
+                   src={imageUrl + "wherbfett.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
                 </div>
               </LightBoxBookCatalouge>
             </div>
@@ -41,7 +59,14 @@ function CatalougeBook() {
 
           <div className="row">
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <img src={imageUrl + "eiuwhiofwej.webp"} className="img-fluid" />
+              {/* <img src={imageUrl + "eiuwhiofwej.webp"} className="img-fluid" /> */}
+               <Image src={imageUrl + "eiuwhiofwej.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
             </div>
 
             <div className="col-12 col-md-6 catalougeBookFlipCol">
@@ -60,10 +85,17 @@ function CatalougeBook() {
                 ]}
               >
                 <div>
-                  <img
+                  {/* <img
                     src={imageUrl + "gh2wevdhv.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image src={imageUrl + "gh2wevdhv.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
                 </div>
               </LightBoxBookCatalouge>
             </div>
@@ -71,10 +103,17 @@ function CatalougeBook() {
 
           <div className="row">
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <img
+              {/* <img
                 src={imageUrl + "Naturz_-Veda-Moc.webp"}
                 className="img-fluid"
-              />
+              /> */}
+               <Image src={imageUrl + "Naturz_-Veda-Moc.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
             </div>
             <div className="col-12 col-md-6 catalougeBookFlipCol">
               <LightBoxBookCatalouge
@@ -95,10 +134,17 @@ function CatalougeBook() {
                 ]}
               >
                 <div>
-                  <img
+                  {/* <img
                     src={imageUrl + "erjkdshfve.webp"}
                     className="img-fluid"
-                  />
+                  /> */}
+                   <Image src={imageUrl + "erjkdshfve.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
                 </div>
               </LightBoxBookCatalouge>
             </div>
@@ -106,7 +152,14 @@ function CatalougeBook() {
 
           <div className="row">
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <img src={imageUrl + "kavaliers.webp"} className="img-fluid" />
+              {/* <img src={imageUrl + "kavaliers.webp"} className="img-fluid" /> */}
+               <Image src={imageUrl + "kavaliers.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
             </div>
             <div className="col-12 col-md-6 catalougeBookFlipCol">
               {/* <LightBoxBookCatalouge
@@ -122,9 +175,17 @@ function CatalougeBook() {
                 ]}
               > */}
               <div>
-                <img
+                {/* <img
                   src={imageUrl + "kavaliers-1.webp"}
                   className="img-fluid"
+                /> */}
+                 <Image 
+                 src={imageUrl + "kavaliers-1.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
                 />
               </div>
               {/* </LightBoxBookCatalouge> */}
@@ -133,10 +194,17 @@ function CatalougeBook() {
 
           <div className="row">
             <div className="col-12 col-md-6 catalougeBookFlipCol">
-              <img
+              {/* <img
                 src={imageUrl + "double-click-to-change2-1.webp"}
                 className="img-fluid"
-              />
+              /> */}
+               <Image src={imageUrl + "double-click-to-change2-1.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
             </div>
             <div className="col-12 col-md-6 catalougeBookFlipCol">
               {/* <LightBoxBookCatalouge
@@ -156,7 +224,14 @@ function CatalougeBook() {
                 ]}
               > */}
                 <div>
-                  <img src={imageUrl + "uewgdj.webp"} className="img-fluid" />
+                  {/* <img src={imageUrl + "uewgdj.webp"} className="img-fluid" /> */}
+                   <Image src={imageUrl + "uewgdj.webp"}
+               alt="Green Horn Catalogue"
+                width={1600} 
+                height={1000} 
+                className="responsive-img catalougeBookFlip-img" 
+                sizes="(max-width:768px) 100vw, 50vw"
+                />
                 </div>
               {/* </LightBoxBookCatalouge> */}
             </div>

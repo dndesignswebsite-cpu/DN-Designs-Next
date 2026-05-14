@@ -552,4 +552,18 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+
+.brand-identity-div-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.our-technologies-img-div-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.make-your-brand-img{
+  aspect-ratio: 1500 / 800;
 }
