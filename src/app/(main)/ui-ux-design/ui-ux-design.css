@@ -527,5 +527,17 @@ font-weight: 700;
 .responsive-img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
+.designs-that-ui-stcky-img{
+  aspect-ratio: 1500 / 700;
+}
+
+.nailing-the-basics-img{
+  aspect-ratio: 1500 / 1500;
+}
+
+.solutions-we-craft-img{
+  aspect-ratio: 1500 / 1000;
+}

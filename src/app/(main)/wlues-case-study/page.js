@@ -139,10 +139,11 @@ async function page() {
 
                   <Image
                   src={imageUrl + "wlues1.webp"}
-                  className="responsive-img mt-5 case-study-img1"
+                  className="responsive-img mt-5 case-study-img1 wlues-three-by-two-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                   sizes="(max-width:768px) 100vw, 100vw"
                   />
         </div>
 
@@ -189,10 +190,11 @@ async function page() {
 
              <Image
                   src={imageUrl + "gsadjgjhsd.webp"}
-                  className="responsive-img case-study-img8"
+                  className="responsive-img case-study-img8 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -205,10 +207,11 @@ async function page() {
 
               <Image
                   src={imageUrl + "wvehdhjej.webp"}
-                  className="responsive-img case-study-img9"
+                  className="responsive-img case-study-img9 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -222,10 +225,11 @@ async function page() {
 
            <Image
                    src={imageUrl + "3ygewudhgew.webp"}
-                  className="responsive-img case-study-img5"
+                  className="responsive-img case-study-img5 wlues-three-by-two-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                   />
         </div>
 
@@ -277,10 +281,11 @@ async function page() {
 
                  <Image
                   src={imageUrl + "whevdhvhjvh.webp"}
-                  className="responsive-img case-study-img2 mt-lg-4"
+                  className="responsive-img case-study-img2 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -293,10 +298,11 @@ async function page() {
 
             <Image
                   src={imageUrl + "whgevghsdavcd.webp"}
-                  className="responsive-img case-study-img3 mt-lg-4"
+                  className="responsive-img case-study-img3 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -323,10 +329,11 @@ async function page() {
 
             <Image
                   src={imageUrl + "tfewgygvdhgvw.webp"}
-                  className="responsive-img case-study-img6"
+                  className="responsive-img case-study-img6 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
           <div className="col-lg-6 col-12 col-md-6">
@@ -352,10 +359,11 @@ async function page() {
             /> */}
              <Image
                   src={imageUrl + "uyfjhjhjhgvvhj.webp"}
-                  className="responsive-img case-study-img7"
+                  className="responsive-img case-study-img7 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -368,10 +376,11 @@ async function page() {
 
              <Image
                   src={imageUrl + "rwqtefdgwvh.webp"}
-                  className="responsive-img case-study-img7"
+                  className="responsive-img case-study-img7 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -385,10 +394,11 @@ async function page() {
 
           <Image
                   src={imageUrl + "werwhvdshj.webp"}
-                  className="responsive-img case-study-img"
+                  className="responsive-img case-study-img wlues-three-by-two-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                   />
         </div>
 
@@ -401,10 +411,11 @@ async function page() {
             /> */}
              <Image
                   src={imageUrl + "rwefhdgvhrjdj.webp"}
-                  className="responsive-img case-study-img2 mt-lg-4"
+                  className="responsive-img case-study-img2 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -417,10 +428,11 @@ async function page() {
 
             <Image
                   src={imageUrl + "nwjkebhdn.webp"}
-                  className="responsive-img case-study-img3 mt-lg-4"
+                  className="responsive-img case-study-img3 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -433,10 +445,11 @@ async function page() {
           /> */}
           <Image
                    src={imageUrl + "mweghgcadsvjg.webp"}
-                  className="responsive-img case-study-img"
+                  className="responsive-img case-study-img wlues-three-by-two-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                   />
         </div>
 
@@ -450,10 +463,11 @@ async function page() {
 
             <Image
                    src={imageUrl + "wyegwhdvbnbn.webp"}
-                  className="responsive-img case-study-img2 mt-lg-4"
+                  className="responsive-img case-study-img2 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -466,10 +480,11 @@ async function page() {
 
             <Image
                    src={imageUrl + "yewfdewghe.webp"}
-                  className="responsive-img case-study-img3 mt-lg-4"
+                  className="responsive-img case-study-img3 mt-lg-4 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -483,10 +498,11 @@ async function page() {
 
           <Image
                   src={imageUrl + "tyweffdcewghvh.webp"}
-                  className="responsive-img case-study-img"
+                  className="responsive-img case-study-img wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
         </div>
 
@@ -500,10 +516,11 @@ async function page() {
 
              <Image
                   src={imageUrl + "nwejkbhdvvjh.webp"}
-                  className="responsive-img case-study-img7"
+                  className="responsive-img case-study-img7 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
 
@@ -516,10 +533,11 @@ async function page() {
 
              <Image
                  src={imageUrl + "weigydshvwjd.webp"}
-                  className="responsive-img case-study-img7"
+                  className="responsive-img case-study-img7 wlues-swaure-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1500}
+                  sizes="(max-width:768px) 100vw, 50vw"
                   />
           </div>
         </div>
@@ -533,10 +551,11 @@ async function page() {
 
            <Image
                   src={imageUrl + "wejhbvdhgvwehd.webp"}
-                  className="responsive-img case-study-img mt-4 p-2"
+                  className="responsive-img case-study-img mt-4 p-2 wlues-three-by-two-img"
                   alt="Wlues case study page image"
                   width={1500}
                   height={1000}
+                  sizes="(max-width:768px) 100vw, 100vw"
                   />
         </div>
       </div>

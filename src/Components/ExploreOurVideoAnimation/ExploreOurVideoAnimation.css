@@ -1,0 +1,11 @@
+/* images optimisation  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.city-page-swiperr-slide-img-cr-animation{
+  aspect-ratio: 1280 / 720 ;
+}

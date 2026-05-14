@@ -4,6 +4,7 @@ import "./HorizontalScroll.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -209,7 +210,16 @@ export default function HorizontalScroll() {
                       playsInline
                     />
                   ) : (
-                    <img src={item.img} className="img-fluid" />
+                     <img src={item.img} className="img-fluid" /> 
+                    // change
+                    /* <Image 
+                    src={item.img}
+                    className="responsive-img-horizontal " 
+                    width="1500"
+                    height="800"
+                    sizes="100vw"
+                    /> */
+                    
                   )}
                   <div className="overlay-data">
                     <div className="overlay-content-pure">

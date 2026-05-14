@@ -41,35 +41,32 @@ export default function Header() {
   //     }, 50);
   //   }
   // };
-const toggleNav = () => {
-  if (isLocked) return;
+  const toggleNav = () => {
+    if (isLocked) return;
 
-  
-  setIsLocked(true);
+    setIsLocked(true);
 
-  if (isAnimating) {
+    if (isAnimating) {
+      setIsAnimating(false);
 
-    setIsAnimating(false);
+      setTimeout(() => {
+        setIsVisible(false);
+        document.body.style.overflowY = "auto";
+        setIsLocked(false);
+      }, TRANSITION_DURATION);
+    } else {
+      setIsVisible(true);
 
-    setTimeout(() => {
-      setIsVisible(false);
-      document.body.style.overflowY = "auto";
-      setIsLocked(false); 
-    }, TRANSITION_DURATION);
-  } else {
+      setTimeout(() => {
+        setIsAnimating(true);
+      }, 50);
 
-    setIsVisible(true);
-
-    setTimeout(() => {
-      setIsAnimating(true);
-    }, 50);
-
-    setTimeout(() => {
-      setIsLocked(false); 
-    }, TRANSITION_DURATION);
-  }
-};
-// toggle nav 
+      setTimeout(() => {
+        setIsLocked(false);
+      }, TRANSITION_DURATION);
+    }
+  };
+  // toggle nav
 
   const toggleSubMenu = (menuId) => {
     setOpenSubmenu(openSubmenu === menuId ? null : menuId);
@@ -101,9 +98,18 @@ const toggleNav = () => {
       <header className={`${styles["header"]} container`}>
         <div className={`${styles["logo"]}`}>
           <Link href="/" onClick={handleLinkClick}>
-            <img
+            {/* <img
               src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
               alt="DN Designs Logo"
+            /> */}
+
+            <Image
+              src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
+              alt="DN Designs Logo"
+              width={250}
+              height={250}
+              priority
+              className={`${styles["logo-image-dn"]}`}
             />
           </Link>
         </div>
@@ -120,19 +126,16 @@ const toggleNav = () => {
         </button> */}
 
         <button
-  className={`${styles["nav-toggle-btn"]} ${
-    isAnimating ? styles["is-active"] : ""
-  }`}
-  onClick={toggleNav}
-  disabled={isLocked}
-  aria-label="Toggle Navigation"
-  aria-expanded={isAnimating}
->
-  <span className={`${styles["toggle-icon"]}`}></span>
-</button>
-
-
-
+          className={`${styles["nav-toggle-btn"]} ${
+            isAnimating ? styles["is-active"] : ""
+          }`}
+          onClick={toggleNav}
+          disabled={isLocked}
+          aria-label="Toggle Navigation"
+          aria-expanded={isAnimating}
+        >
+          <span className={`${styles["toggle-icon"]}`}></span>
+        </button>
       </header>
       <div
         className={`${styles["desktop-nav"]}`}
@@ -163,22 +166,16 @@ const toggleNav = () => {
                       <span className={`${styles["toggle-icon"]}`}></span>
                     </button> */}
                     <button
-  className={`${styles["nav-toggle-btn"]} ${
-    isAnimating ? styles["is-active"] : ""
-  }`}
-  onClick={toggleNav}
-  disabled={isLocked}
-  aria-label="Toggle Navigation"
-  aria-expanded={isAnimating}
->
-  <span className={`${styles["toggle-icon"]}`}></span>
-</button>
-
-
-
-
-
-
+                      className={`${styles["nav-toggle-btn"]} ${
+                        isAnimating ? styles["is-active"] : ""
+                      }`}
+                      onClick={toggleNav}
+                      disabled={isLocked}
+                      aria-label="Toggle Navigation"
+                      aria-expanded={isAnimating}
+                    >
+                      <span className={`${styles["toggle-icon"]}`}></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -618,7 +615,6 @@ const toggleNav = () => {
                   </ul>
                 </div>
 
-
                 <div className="col-3">
                   <div
                     className={`${styles["header-solo-heading-parent"]} d-flex align-items-center`}
@@ -628,12 +624,10 @@ const toggleNav = () => {
                       className="px-2 mb-1"
                       style={{ fontSize: "26px" }}
                     />
-                    <p className={`${styles["header-solo-heading"]}`}>
-                      Career
-                    </p>
+                    <p className={`${styles["header-solo-heading"]}`}>Career</p>
                   </div>
                   <ul className={`${styles["nav-main-links"]}`}>
-                     <li>
+                    <li>
                       <Link
                         href="/career"
                         onClick={handleLinkClick}
@@ -660,7 +654,9 @@ const toggleNav = () => {
                   </span>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
+                <div
+                  className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}
+                >
                   <Image
                     src="/phone.svg"
                     alt="Phone"
@@ -669,7 +665,9 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <span className={`${styles["contact-us-col-h4"]}`}>Phone Number</span>
+                    <span className={`${styles["contact-us-col-h4"]}`}>
+                      Phone Number
+                    </span>
                     {/* <p>+91 941 601 1100</p>
                     <p>+91 720 660 5872</p> */}
 
@@ -683,7 +681,9 @@ const toggleNav = () => {
                   </div>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
+                <div
+                  className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}
+                >
                   <Image
                     src="/Email.svg"
                     alt="Phone"
@@ -692,7 +692,9 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <span className={`${styles["contact-us-col-h4"]}`}>Email Address</span>
+                    <span className={`${styles["contact-us-col-h4"]}`}>
+                      Email Address
+                    </span>
                     {/* <p>info@dndesigns.co.in</p> */}
                     <p>
                       <a href="mailto:info@dndesigns.co.in">
@@ -702,7 +704,9 @@ const toggleNav = () => {
                   </div>
                 </div>
 
-                <div className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}>
+                <div
+                  className={`${styles["contact-us-col"]} col-12 col-md-6 col-lg-3`}
+                >
                   <Image
                     src="/Address.svg"
                     alt="Phone"
@@ -711,7 +715,9 @@ const toggleNav = () => {
                     className={`${styles["me-2"]}`}
                   />
                   <div>
-                    <span className={`${styles["contact-us-col-h4"]}`}>Office Address</span>
+                    <span className={`${styles["contact-us-col-h4"]}`}>
+                      Office Address
+                    </span>
                     <p>
                       C-40, Second Floor, Block C, Sector 58, Noida, Uttar
                       Pradesh 201301
@@ -783,8 +789,7 @@ const toggleNav = () => {
                       />
                     </a> */}
 
-
-                      <a
+                    <a
                       href="https://www.behance.net/dndesignss"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -807,10 +812,6 @@ const toggleNav = () => {
                         className={`${styles["footer-social-icons-unit"]}`}
                       />
                     </a>
-
-
-                   
-
                   </div>
                 </div>
               </div>
@@ -836,8 +837,6 @@ const toggleNav = () => {
               <div className="row">
                 <div className={`${styles["open-nav-col"]} col-12`}>
                   <div className={`${styles["open-nav-btn"]}`}>
-
-
                     {/* <button
                       className={`${styles["nav-toggle-btn"]} ${
                         isAnimating ? styles["is-active"] : ""
@@ -850,18 +849,16 @@ const toggleNav = () => {
                     </button> */}
 
                     <button
-  className={`${styles["nav-toggle-btn"]} ${
-    isAnimating ? styles["is-active"] : ""
-  }`}
-  onClick={toggleNav}
-  disabled={isLocked}
-  aria-label="Toggle Navigation"
-  aria-expanded={isAnimating}
->
-  <span className={`${styles["toggle-icon"]}`}></span>
-</button>
-
-
+                      className={`${styles["nav-toggle-btn"]} ${
+                        isAnimating ? styles["is-active"] : ""
+                      }`}
+                      onClick={toggleNav}
+                      disabled={isLocked}
+                      aria-label="Toggle Navigation"
+                      aria-expanded={isAnimating}
+                    >
+                      <span className={`${styles["toggle-icon"]}`}></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -993,8 +990,7 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-
-                         <li>
+                        <li>
                           <Link
                             href="/packaging-design"
                             onClick={handleLinkClick}
@@ -1151,8 +1147,6 @@ const toggleNav = () => {
                             SEO
                           </Link>
                         </li>
-
-                       
                       </ul>
                     </div>
                   </div>
@@ -1189,7 +1183,7 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-                       {/* <li>
+                        {/* <li>
                           <Link
                             href="/career"
                             onClick={handleLinkClick}
@@ -1209,7 +1203,7 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-                         <li>
+                        <li>
                           <Link
                             href="/photography"
                             onClick={handleLinkClick}
@@ -1232,7 +1226,6 @@ const toggleNav = () => {
                     </div>
                   </div>
                 </div>
-
 
                 <div
                   className={`${styles["accordion-item-custom"]} accordion-item`}
@@ -1265,7 +1258,7 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-                       <li>
+                        <li>
                           <Link
                             href="/blog"
                             onClick={handleLinkClick}
@@ -1310,8 +1303,7 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-
-                       <li>
+                        <li>
                           <Link
                             href="/enlite-case-study"
                             onClick={handleLinkClick}
@@ -1321,7 +1313,7 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-                         <li>
+                        <li>
                           <Link
                             href="/letssupp-case-study"
                             onClick={handleLinkClick}
@@ -1330,9 +1322,6 @@ const toggleNav = () => {
                             Let's Supp Case Study
                           </Link>
                         </li>
-
-
-                       
 
                         <li>
                           <Link
@@ -1344,8 +1333,6 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-                       
-
                         <li>
                           <Link
                             href="/nectarpure-case-study"
@@ -1356,8 +1343,7 @@ const toggleNav = () => {
                           </Link>
                         </li>
 
-
-                         <li>
+                        <li>
                           <Link
                             href="/wlues-case-study"
                             onClick={handleLinkClick}
@@ -1366,7 +1352,6 @@ const toggleNav = () => {
                             Wlues Case Study
                           </Link>
                         </li>
-
                       </ul>
                     </div>
                   </div>
@@ -1403,7 +1388,7 @@ const toggleNav = () => {
                   >
                     <div className="accordion-body">
                       <ul className={`${styles["nav-main-links"]}`}>
-                       <li>
+                        <li>
                           <Link
                             href="/career"
                             onClick={handleLinkClick}
@@ -1416,10 +1401,6 @@ const toggleNav = () => {
                     </div>
                   </div>
                 </div>
-
-
-
-
               </div>
             </div>
           </div>

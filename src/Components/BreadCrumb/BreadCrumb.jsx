@@ -10,7 +10,7 @@ const Breadcrumb = () => {
   const paths = pathname.split("/").filter(x => x);
 
   
-  const domain = "https://dn-designs-next.vercel.app/"; 
+  const domain = "https://dndesigns.co.in/"; 
  
   
   const breadcrumbItems = [

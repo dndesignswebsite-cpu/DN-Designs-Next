@@ -190,3 +190,15 @@
 .every-pr{
   color:#ca2734;
 }
+
+/* images optimisation  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.city-page-swiperr-slide-img{
+  aspect-ratio: 750 / 1050 ;
+}

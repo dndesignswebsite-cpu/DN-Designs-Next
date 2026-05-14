@@ -54,3 +54,19 @@
 .standalone-packaging-mobile .packaging-images{
   padding-bottom: 10px;
 }
+
+
+
+.standalone-hover-desktop-img{
+height: auto;
+width: 100%;
+display: block;
+aspect-ratio: 1500 / 1500;
+}
+
+.standalone-mobile-aspect-img{
+  aspect-ratio: 800 / 533;
+  width: 100%;
+  height: auto;
+  display: block;
+}
