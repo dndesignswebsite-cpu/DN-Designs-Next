@@ -27,29 +27,33 @@ import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 const corbert = localFont({
   src: "../../public/fonts/Corbert-Medium.woff2",
   variable: "--font-corbert",
-  display: "swap",
+  display: "optional",
   preload: true,
+  adjustFontFallback: false,
 });
 
 const corbertBold = localFont({
   src: "../../public/fonts/Corbert-Bold.woff2",
   variable: "--font-corbert-bold",
-  display: "swap",
+  display: "optional",
   preload: true,
+  adjustFontFallback: false,
 });
 
 const roboto = localFont({
   src: "../../public/fonts/Roboto-Regular.woff2",
   variable: "--font-roboto",
-  display: "swap",
+ display: "optional",
   preload: true,
+  adjustFontFallback: false,
 });
 
 const letsupfont = localFont({
   src: "../../public/fonts/CormorantGaramond-MediumItalic.woff2",
   variable: "--font-letsup",
-  display: "swap",
+  display: "optional",
   preload: true,
+  adjustFontFallback: false,
 });
 
 
