@@ -319,6 +319,18 @@
  
 }
 
+
+/* quwhagHSVH */
+.testimonial-swiper .swiper {
+  min-height: 520px;  
+}
+
+@media (max-width: 767px) {
+  .testimonial-swiper .swiper {
+    min-height: 650px;  
+  }
+}
+
 /* image  */
 
 .responsive-img {
