@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
            GTM - MAIN SCRIPT (HEAD)
            BEST PRACTICE: beforeInteractive
         ========================= */}
-        <Script id="gtm-head" strategy="beforeInteractive">
+        <Script id="gtm-head" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];
             w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});

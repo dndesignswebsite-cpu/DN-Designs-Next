@@ -1,4 +1,4 @@
-/* ================= PAGE TRANSITION ================= */
+/* 
 
 .page-transition {
   position: fixed;
@@ -10,31 +10,53 @@
   transform: translateY(100%);
 }
 
-/* Run animation */
+
 
 .page-transition.run {
   animation: pageSlide 1s ease-in-out forwards;
 }
 
-/* With pause */
+
 
 @keyframes pageSlide {
-  /* Enter */
+  
   0% {
     transform: translateY(100%);
   }
 
-  /* Full cover */
-  /* 35% {
-    transform: translateY(0);
-  } */
+  
+  100% {
+    transform: translateY(-100%);
+  }
+} */
 
-  /* Pause */
-  /* 60% {
-    transform: translateY(0);
-  } */
 
-  /* Exit */
+
+/* ================= PAGE TRANSITION ================= */
+
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: #ca2734;
+  z-index: 9999998;
+  pointer-events: none;
+
+  
+  contain: strict;
+  will-change: transform;
+
+  transform: translateY(100%);
+}
+
+.page-transition.run {
+  animation: pageSlide 1s ease-out forwards;
+  
+}
+
+@keyframes pageSlide {
+  0% {
+    transform: translateY(100%);
+  }
   100% {
     transform: translateY(-100%);
   }
