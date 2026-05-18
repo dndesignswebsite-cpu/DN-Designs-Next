@@ -36,8 +36,8 @@ function Testimonial() {
                       <div className="col-6 col-md-4 col-lg-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
-                            <img
-                              src="https://images.vexels.com/media/users/3/223246/isolated/preview/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
+                            <Image
+                              src="https://dndesigns.co.in/uploads/pages/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
                               alt="Icon"
                               width="24"
                               height="24"
@@ -151,8 +151,8 @@ function Testimonial() {
                       <div className="col-6 col-md-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
-                            <img
-                              src="https://images.vexels.com/media/users/3/223246/isolated/preview/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
+                            <Image
+                              src="https://dndesigns.co.in/uploads/pages/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
                               alt="Icon"
                               width="24"
                               height="24"
@@ -267,8 +267,8 @@ function Testimonial() {
                       <div className="col-6 col-md-4 testi-left-content">
                         <div>
                           <div className="testi-icon">
-                            <img
-                              src="https://images.vexels.com/media/users/3/223246/isolated/preview/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
+                            <Image
+                              src="https://dndesigns.co.in/uploads/pages/a5e1b4a04c71beac7b6d7537dd007b35-like-icon-flat.png"
                               alt="Icon"
                               width="24"
                               height="24"
