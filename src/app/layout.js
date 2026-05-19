@@ -27,7 +27,7 @@ import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 const corbert = localFont({
   src: "../../public/fonts/Corbert-Medium.woff2",
   variable: "--font-corbert",
-  display: "optional",
+  display: "swap",
   preload: true,
   adjustFontFallback: false,
 });
@@ -35,7 +35,7 @@ const corbert = localFont({
 const corbertBold = localFont({
   src: "../../public/fonts/Corbert-Bold.woff2",
   variable: "--font-corbert-bold",
-  display: "optional",
+  display: "swap",
   preload: true,
   adjustFontFallback: false,
 });
@@ -43,7 +43,7 @@ const corbertBold = localFont({
 const roboto = localFont({
   src: "../../public/fonts/Roboto-Regular.woff2",
   variable: "--font-roboto",
- display: "optional",
+ display: "swap",
   preload: true,
   adjustFontFallback: false,
 });
@@ -51,7 +51,7 @@ const roboto = localFont({
 const letsupfont = localFont({
   src: "../../public/fonts/CormorantGaramond-MediumItalic.woff2",
   variable: "--font-letsup",
-  display: "optional",
+  display: "swap",
   preload: true,
   adjustFontFallback: false,
 });
