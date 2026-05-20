@@ -385,7 +385,7 @@ async function page() {
                   className="img-fluid"
                 /> */}
                 <Image
-                   src={imageUrl + "3y4rfbrjbj.webp"}
+                   src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp"
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
@@ -395,7 +395,7 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>NECTARPURE</h3>
+                      <h3>Pureluxe</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Brand Identity</h4>
@@ -404,10 +404,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Nutraceutical brand NECTARPURE wanted to establish its
-                    FusionMax Whey Protein product as a niche lifestyle protein
-                    brand. We provided consultation services to them and created
-                    a premium label design to appeal to their target audience.
+                    For the protein bar brand ‘Pureluxe’, we crafted a premium packaging design to appeal to its health-conscious and taste-driven consumers. The design captures the essence of indulgence and sophistication while balancing nutrition and flavour appeal. Each of the three variants reflects a modern and premium identity and creates a strong shelf presence.
                   </p>
                 </div>
               </div>
@@ -419,7 +416,7 @@ async function page() {
                   className="img-fluid"
                 /> */}
                 <Image
-                   src={imageUrl + "greenhorn-manu125.webp"}
+                   src="https://dndesigns.co.in/uploads/pages/fluke.webp"
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
@@ -429,19 +426,16 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>Green Horn</h3>
+                      <h3>Fluke</h3>
                     </div>
                     <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
                       <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Website</h4>
                     </div>
                   </div>
 
                   <p>
-                    With their energy drink, Green Horn aspired to appeal to its
-                    young audience, who frequent clubs in New Zealand. We
-                    created a can design for the brand which conveyed a sense of
-                    energy and fun, perfect for party-loving youth.
+                    For Fluke, a functional beverage brand, we created a clean, premium can design to resonate with its young & health-conscious audience. Through our design, we clearly highlighted key elements such as logo, functional benefits & flavour cues (accent colours behind the logo). With a white background, we created space for every element to shine.
                   </p>
                 </div>
               </div>
