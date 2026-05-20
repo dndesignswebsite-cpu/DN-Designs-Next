@@ -46,6 +46,14 @@ const nextConfig = {
       // },
 
 
+
+       {
+        source: "/category/branding-agency",
+        destination: "/branding",
+        permanent: false, // true = 301, false = 302
+      },
+
+
        {
         source: "/blog/collaborating-with-a-design-agency-in-noida-what-to-expect",
         destination: "/branding",
