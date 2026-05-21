@@ -5,7 +5,7 @@ import Image from 'next/image'
 // import styles from "../../app/(main)/page.module.css"
 
 
-function OurBrandsSectionHome() {
+function OurBrandsSectionHome({ heading1, heading2 }) {
     const imageUrl = "https://dndesigns.co.in/uploads/pages/";
   return (
     <div>
@@ -15,7 +15,7 @@ function OurBrandsSectionHome() {
           <h2
             className={`${styles["our-brand-heading"]} text-center heading-corbert`}
           >
-            Our <span className={`${styles["every-pr"]}`}>Brand Journals</span>
+            {heading1} <span className={`${styles["every-pr"]}`}>{heading2}</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
             <Link href="/enlite-case-study" scroll={true}>

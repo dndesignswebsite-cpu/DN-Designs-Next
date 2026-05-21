@@ -247,7 +247,7 @@ async function page() {
      <HomePageHero title={title} description={description} />
 
      {/* our brands section */}
-             <OurBrandsSectionHome/>
+     <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>
              
       {/*.....our-constant-companions...... */}
       <OurConstant />

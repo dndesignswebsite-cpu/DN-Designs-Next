@@ -178,7 +178,7 @@ export default function Home() {
      
 
      {/* our brands section */}
-        <OurBrandsSectionHome/>  
+        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>  
       {/*.....our-constant-companions...... */}
       <OurConstant />
        {/*.....Our work...... */}

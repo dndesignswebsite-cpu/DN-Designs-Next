@@ -251,125 +251,7 @@ async function page() {
         <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
 
-      {/* case studiies section */}
-      <OurBrandsSectionHome/>
 
-       {/* top capibilities */}
-      <section className="top-cap">
-        <div className="container">
-          <div className="row">
-            <h2 className="text-center headg">
-              Your Visual Guide Through Your
-              <span className="every-pr"> Packaging Design Journey</span>
-            </h2>
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className=" top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img src={imageUrl + "Vector.svg"} className="cap-img"></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>Reference Board</h3>
-                  <p>
-                    How does a packaging design agency convey its design plan
-                    research to clients? It’s given that words alone can never
-                    do justice to it. After all, design is a visual creative
-                    process, and you need to see it
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>Reference Board</h3>
-                  <p>
-                    How does a packaging design agency convey its design plan
-                    research to clients? It’s given that words alone can never
-                    do justice to it. After all, design is a visual creative
-                    process, and you need to see it to get a feel of it. In
-                    comes the reference board, a perfect visual tool through
-                    which we share with you our inspiration, design references
-                    and style direction. It includes visuals of existing
-                    packaging, label and pouch designs in the market as well as
-                    structural or dieline inspirations.
-                  </p>
-                </div>
-              </div>
-              <img
-                className="top-cap-check-eye"
-                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
-              />
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img src={imageUrl + "Vector1.svg"} className="cap-img"></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>Mood Board</h3>
-                  <p>
-                    While the reference board draws on inspiration and design
-                    ideas from the market, the mood board is where we define the
-                    design ideas for your product. It includes colours,
-                    typography and visuals - all of which
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>Mood Board</h3>
-                  <p>
-                    While the reference board draws on inspiration and design
-                    ideas from the market, the mood board is where we define the
-                    design ideas for your product. It includes colours,
-                    typography and visuals - all of which convey a certain
-                    emotion suitable to your brand identity. It offers a better
-                    visual idea of the final design, even before the design
-                    process has begun. In addition, it serves as a guide to the
-                    entire design process that follows, ensuring that the
-                    process stays on track and the number of revisions is
-                    minimal.
-                  </p>
-                </div>
-              </div>
-              <img
-                className="top-cap-check-eye"
-                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
-              />
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
-              <div className="p-3 top-cap-div m-3">
-                <div className="text-center m-5">
-                  <img src={imageUrl + "Vector3.svg"} className="cap-img"></img>
-                </div>
-                <div className="top-cap-btm">
-                  <h3>3D Mockups</h3>
-                  <p>
-                    Your label design is ready, but you are still struggling to
-                    visualise how it will eventually look. Don’t worry, you are
-                    not alone. This is a pretty common issue, and we have just
-                    the perfect solution for you - 3D mockups. These
-                  </p>
-                </div>
-                <div className="top-cap-back-content">
-                  <h3>3D Mockups</h3>
-                  <p>
-                    Your label design is ready, but you are still struggling to
-                    visualise how it will eventually look. Don’t worry, you are
-                    not alone. This is a pretty common issue, and we have just
-                    the perfect solution for you - 3D mockups. These give you a
-                    more precise and practical visualisation of how your product
-                    will appear and feel in the real world. Even now, if
-                    something doesn’t feel right, modifications and refinements
-                    can be made before finalising the design. Super helpful and
-                    interesting, right?
-                  </p>
-                </div>
-              </div>
-              <img
-                className="top-cap-check-eye"
-                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Our Work Portfolio */}
       <section className="portfolio">
@@ -716,6 +598,130 @@ async function page() {
         </div>
       </section>
 
+
+      
+
+       {/* top capibilities */}
+      <section className="top-cap">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center headg">
+              Your Visual Guide Through Your
+              <span className="every-pr"> Packaging Design Journey</span>
+            </h2>
+            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
+              <div className=" top-cap-div m-3">
+                <div className="text-center m-5">
+                  <img src={imageUrl + "Vector.svg"} className="cap-img"></img>
+                </div>
+                <div className="top-cap-btm">
+                  <h3>Reference Board</h3>
+                  <p>
+                    How does a packaging design agency convey its design plan
+                    research to clients? It’s given that words alone can never
+                    do justice to it. After all, design is a visual creative
+                    process, and you need to see it
+                  </p>
+                </div>
+                <div className="top-cap-back-content">
+                  <h3>Reference Board</h3>
+                  <p>
+                    How does a packaging design agency convey its design plan
+                    research to clients? It’s given that words alone can never
+                    do justice to it. After all, design is a visual creative
+                    process, and you need to see it to get a feel of it. In
+                    comes the reference board, a perfect visual tool through
+                    which we share with you our inspiration, design references
+                    and style direction. It includes visuals of existing
+                    packaging, label and pouch designs in the market as well as
+                    structural or dieline inspirations.
+                  </p>
+                </div>
+              </div>
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
+              />
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
+              <div className="p-3 top-cap-div m-3">
+                <div className="text-center m-5">
+                  <img src={imageUrl + "Vector1.svg"} className="cap-img"></img>
+                </div>
+                <div className="top-cap-btm">
+                  <h3>Mood Board</h3>
+                  <p>
+                    While the reference board draws on inspiration and design
+                    ideas from the market, the mood board is where we define the
+                    design ideas for your product. It includes colours,
+                    typography and visuals - all of which
+                  </p>
+                </div>
+                <div className="top-cap-back-content">
+                  <h3>Mood Board</h3>
+                  <p>
+                    While the reference board draws on inspiration and design
+                    ideas from the market, the mood board is where we define the
+                    design ideas for your product. It includes colours,
+                    typography and visuals - all of which convey a certain
+                    emotion suitable to your brand identity. It offers a better
+                    visual idea of the final design, even before the design
+                    process has begun. In addition, it serves as a guide to the
+                    entire design process that follows, ensuring that the
+                    process stays on track and the number of revisions is
+                    minimal.
+                  </p>
+                </div>
+              </div>
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
+              />
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 top-cap-main-div">
+              <div className="p-3 top-cap-div m-3">
+                <div className="text-center m-5">
+                  <img src={imageUrl + "Vector3.svg"} className="cap-img"></img>
+                </div>
+                <div className="top-cap-btm">
+                  <h3>3D Mockups</h3>
+                  <p>
+                    Your label design is ready, but you are still struggling to
+                    visualise how it will eventually look. Don’t worry, you are
+                    not alone. This is a pretty common issue, and we have just
+                    the perfect solution for you - 3D mockups. These
+                  </p>
+                </div>
+                <div className="top-cap-back-content">
+                  <h3>3D Mockups</h3>
+                  <p>
+                    Your label design is ready, but you are still struggling to
+                    visualise how it will eventually look. Don’t worry, you are
+                    not alone. This is a pretty common issue, and we have just
+                    the perfect solution for you - 3D mockups. These give you a
+                    more precise and practical visualisation of how your product
+                    will appear and feel in the real world. Even now, if
+                    something doesn’t feel right, modifications and refinements
+                    can be made before finalising the design. Super helpful and
+                    interesting, right?
+                  </p>
+                </div>
+              </div>
+              <img
+                className="top-cap-check-eye"
+                src="https://dndesigns.co.in/uploads/pages/imgi_2_Frame-427324112.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* case studiies section */}
+      <OurBrandsSectionHome heading1="A Deeper Look " heading2="Into The Build"/>
+
+      
       {/* Creating Your Brand desktop view */}
       <section className="creating-your-brand">
         <div className="container sticky-con">
