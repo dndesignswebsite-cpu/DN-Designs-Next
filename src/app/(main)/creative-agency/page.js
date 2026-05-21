@@ -227,7 +227,7 @@ async function page() {
 
       {/* our brands section */}
       <section className="our-brands-section-home">
-        <OurBrandsSectionHome />
+       <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>
       </section>
 
       {/*.....our-constant-companions...... */}
