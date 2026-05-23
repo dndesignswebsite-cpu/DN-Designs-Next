@@ -57,6 +57,24 @@ const letsupfont = localFont({
 });
 
 
+const OutfitRegular = localFont({
+  src: "../../public/fonts/Outfit-Regular.woff2",
+  variable: "--font-outfit-regular",
+  display: "swap",
+  preload: true,
+  adjustFontFallback: false,
+});
+
+
+const OutfitLight = localFont({
+  src: "../../public/fonts/Outfit-Light.woff2",
+  variable: "--font-outfit-light",
+  display: "swap",
+  preload: true,
+  adjustFontFallback: false,
+});
+
+
 /* =========================
    VIEWPORT
 ========================= */
@@ -78,7 +96,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}`}
+      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable}`}
     >
       <body suppressHydrationWarning>
         {/* =========================

@@ -49,3 +49,7 @@ html {
 .para-roboto {
   font-family: var(--font-roboto);
 }
+
+.outfit-regular {
+  font-family: var(--font-outfit-regular);
+}
