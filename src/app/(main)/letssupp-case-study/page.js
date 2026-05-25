@@ -394,7 +394,7 @@ async function page() {
               
 
               <h3 className="overview-h3-head">Brand Principles</h3>
-              <h2 className="overview-h3-main-head">
+              <h2 className="overview-h3-main-head overview-h3-main-head-big">
                 Three pillars that guide every decision
               </h2>
             </div>
@@ -722,7 +722,7 @@ digital, print, and environmental design.
           <div className="row">
             <div className="col-12 col-lg-6">
               <h3 className="overview-h3-head">Logo Meaning</h3>
-              <h2 className="overview-h3-main-head">
+              <h2 className="overview-h3-main-head-smaller">
                 A Mark of Continuous Care
               </h2>
               <p className="overview-content-para1-new">
@@ -791,7 +791,9 @@ digital, print, and environmental design.
           <div className="row">
             <div className="col-12 col-lg-6">
               <h3 className="overview-h3-head">Colour System</h3>
-              <h2 className="overview-h3-main-head">Unified Through Tones</h2>
+              <h2 className="overview-h3-main-head-smaller">
+                Unified Through Tones
+              </h2>
               <p className="overview-content-para1-new">
                 Clarity, balance, and continuity in every colour choice
               </p>
@@ -855,7 +857,7 @@ digital, print, and environmental design.
           <div className="row">
             <div className="col-12 col-lg-6">
               <h3 className="overview-h3-head">Typography</h3>
-              <h2 className="overview-h3-main-head">
+              <h2 className="overview-h3-main-head-smaller">
                 Disciplined & Intentional
               </h2>
               <p className="overview-content-para1-new">
@@ -1065,10 +1067,10 @@ digital, print, and environmental design.
             <div className="col-12">
               <Image
                 src={imageUrl + "letsupcase21.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1440}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -1087,10 +1089,10 @@ digital, print, and environmental design.
             <div className="col-12">
               <Image
                 src={imageUrl + "letsupcase22.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1440}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -1108,10 +1110,10 @@ digital, print, and environmental design.
             <div className="col-12">
               <Image
                 src={imageUrl + "letscasej23.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1440}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -1243,6 +1245,7 @@ digital, print, and environmental design.
       <section className="three-image1">
         <div className="container">
           <div className="row">
+          <div className="col-12">
              <video
                 src="https://dndesigns.co.in/uploads/videos/letssuppnewcase5hd.mp4"
                 width="100%"
@@ -1252,6 +1255,7 @@ digital, print, and environmental design.
                 playsInline
                 className="enlitecasestudy-video"
               />
+              </div>
           </div>
         </div>
       </section>
@@ -1263,7 +1267,7 @@ digital, print, and environmental design.
           <div className="row">
             <div className="col-12 col-lg-6">
               <h3 className="overview-h3-head">Social & Digital</h3>
-              <h2 className="overview-h3-main-head">A calm voice across every channel</h2>
+              <h2 className="overview-h3-main-head-smaller">A calm voice across every channel</h2>
               {/* <p className="overview-content-para1-new">
                 Extending continuity beyond packaging
               </p> */}
@@ -1358,6 +1362,26 @@ digital, print, and environmental design.
               sizes="(max-width:767px) 100vw, 100vw"
             />
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* two image 1*/}
+      <section className="three-image1">
+        <div className="container">
+          <div className="row">
+          <div className="col-12">
+             <video
+                src="https://dndesigns.co.in/uploads/videos/Let's supp_1_2 (1).mp4"
+                width="100%"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="enlitecasestudy-video"
+              />
+              </div>
           </div>
         </div>
       </section>

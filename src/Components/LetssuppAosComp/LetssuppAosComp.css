@@ -9,7 +9,7 @@
 
 .letsupfont-head{
 font-family: letsupfont;
-font-size: 40px;
+
 }
 
 .modern-essentials-text{
@@ -23,9 +23,18 @@ font-size: 40px;
 
 .modern-essentials-textsec h2 {
    font-family: Corbert;
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     color:#068CA6;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1em;
+}
+
+.letsupfont-head{
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.modern-essentials-text h2{
+  font-size: 50px;  
 }
