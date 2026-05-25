@@ -102,6 +102,7 @@ async function page() {
         />
       )}
       {/*schema ends here */}
+
       {/* hero section */}
       <section className="lets-up-hero">
         <div className="container-fluid p-0">
@@ -147,14 +148,15 @@ async function page() {
       <section className="lets-up-first-image">
         <div className="container">
           <div className="row">
+          <div className="col-12">
             <Image
               src="https://dndesigns.co.in/uploads/pages/letssupnewcase1.webp"
-              className="responsive-img mt-5 lets-up-study-img1"
+              className="responsive-img mt-5 lets-up-study-img1 letssuppThreeTwoImgthreebytwo"
               alt="enlite case study page image"
               width={1500}
               height={1000}
             />
-        
+        </div>
           </div>
         </div>
       </section>
@@ -258,7 +260,7 @@ async function page() {
           <div className="col-12">
             <Image
               src={imageUrl + "letsupcase4.webp"}
-              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImgthreebytwo"
               alt="enlite case study page image"
               width={1500}
               height={1000}
@@ -299,7 +301,7 @@ async function page() {
             muted
             loop
             playsInline
-            className="enlitecasestudy-video"
+            className="enlitecasestudy-video letssuppSaqureImg"
           />
             </div>
           </div>
@@ -353,7 +355,7 @@ async function page() {
                 muted
                 loop
                 playsInline
-                className="enlitecasestudy-video"
+                className="enlitecasestudy-video letssuppSaqureImg"
               />
             </div>
 
@@ -402,8 +404,8 @@ async function page() {
                 src="https://dndesigns.co.in/uploads/pages/letsuppnewcase3.webp"
                 className="letsup-case-study-three-image-col-img responsive-img bigger-z-index letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -448,11 +450,11 @@ async function page() {
             <div className="col-12 col-md-8">
               <Image
                 src={imageUrl + "Artboard-34.jpg"}
-                className="letsup-case-study-three-image-col-img responsive-img letssuppThreeTwoImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppThreeTwoImgthreebytwo"
                 alt="enlite case study page image"
                 width={1500}
-                height={1500}
-                sizes="(max-width:767px) 100vw, 100vw"
+                height={1000}
+                sizes="(max-width:767px) 100vw, 80vw"
               />
             </div>
 
@@ -461,9 +463,9 @@ async function page() {
                 src={imageUrl + "ghfq.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img letssupp-aspect-ratio-img"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
-                sizes="(max-width:767px) 100vw, 50vw"
+                width={750}
+                height={1020}
+                sizes="(max-width:767px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -527,7 +529,7 @@ async function page() {
           <div className="col-12">
             <Image
               src={imageUrl + "caselets.webp"}
-              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImgthreebytwo"
               alt="enlite case study page image"
               width={1500}
               height={1000}
@@ -542,8 +544,8 @@ async function page() {
                 src={imageUrl + "letscase17.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -553,8 +555,8 @@ async function page() {
                 src={imageUrl + "letsupcase18.jpg"}
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -673,8 +675,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/lestsuppcasenew17ewjhv.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -691,8 +693,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letsupcasen25.jpg"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -702,8 +704,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase10wekdbh.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -763,8 +765,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letsupcase13.jpg"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -774,8 +776,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -827,8 +829,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letsup9.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -838,8 +840,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letsupcasess24.jpg"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -882,8 +884,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase12wkjed.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -893,8 +895,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase4uwegd13.webp"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -955,7 +957,7 @@ digital, print, and environmental design.
           <div className="col-12">
             <Image
               src={imageUrl + "letsupcase20.jpg"}
-              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImgthreebytwo"
               alt="enlite case study page image"
               width={1500}
               height={1000}
@@ -1011,10 +1013,10 @@ digital, print, and environmental design.
               <div className="col-12 col-md-4">
                 <Image
                   src={imageUrl + "letsupcase21.jpg"}
-                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                   alt="enlite case study page image"
-                  width={1500}
-                  height={1500}
+                  width={1080}
+                  height={1440}
                   sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
@@ -1022,10 +1024,10 @@ digital, print, and environmental design.
               <div className="col-12 col-md-4">
                 <Image
                   src={imageUrl + "letsupcase22.jpg"}
-                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                   alt="enlite case study page image"
-                  width={1500}
-                  height={1500}
+                  width={1080}
+                  height={1440}
                   sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
@@ -1033,10 +1035,10 @@ digital, print, and environmental design.
               <div className="col-12 col-md-4">
                 <Image
                   src={imageUrl + "letscasej23.jpg"}
-                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                  className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImgspeaspect"
                   alt="enlite case study page image"
-                  width={1500}
-                  height={1500}
+                  width={1080}
+                  height={1440}
                   sizes="(max-width:767px) 100vw, 50vw"
                 />
               </div>
@@ -1195,18 +1197,18 @@ digital, print, and environmental design.
             <div className="col-12 col-md-6">
               <Image
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase414edwgjh.webp"
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppthirteenimg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1000}
+                height={1300}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
                <Image
                 src="https://dndesigns.co.in/uploads/pages/ejletsupcase.jpg"
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg letsupspeimgformargin"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -1216,8 +1218,8 @@ digital, print, and environmental design.
                 src="https://dndesigns.co.in/uploads/pages/last-final.jpg"
                 className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1080}
+                height={1080}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
         
@@ -1314,10 +1316,10 @@ digital, print, and environmental design.
             <div className="col-12 col-md-6">
               <Image
                 src="https://dndesigns.co.in/uploads/pages/letssuppnewcase15whdb.webp"
-                className="letsup-case-study-three-image-col-img responsive-img letssuppSaqureImg"
+                className="letsup-case-study-three-image-col-img responsive-img letssuppthirteenimg"
                 alt="enlite case study page image"
-                width={1500}
-                height={1500}
+                width={1000}
+                height={1300}
                 sizes="(max-width:767px) 100vw, 50vw"
               />
             </div>
@@ -1349,7 +1351,7 @@ digital, print, and environmental design.
           <div className="col-12">
             <Image
               src="https://dndesigns.co.in/uploads/pages/letsupcaseh32.jpg"
-              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImg"
+              className="responsive-img letsup-case-study-three-image-row-img letssuppThreeTwoImgthreebytwo"
               alt="enlite case study page image"
               width={1500}
               height={1000}
