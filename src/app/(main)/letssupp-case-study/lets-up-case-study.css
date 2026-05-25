@@ -1,3 +1,18 @@
+/* heading sizes */
+.overview-h3-main-head-smaller{
+        font-size: 50px;
+    font-weight: 500;
+    font-family: letsupfont;
+    color: #345f71;
+   line-height: 1.2em;
+   width:70%;
+}
+
+.overview-h3-main-head-big{
+    font-size: 80px;
+}
+
+
 .lets-up-elevate{
     padding: 40px 0;
 }
@@ -124,6 +139,7 @@
     font-family: letsupfont;
     color: #345f71;
    line-height: 1.2em;
+   width:70%;
 }
 
 .overview-content-para1-new{
@@ -132,6 +148,7 @@
     color: #345f71;
     font-weight: 400;
     line-height: 1.4em;
+    width:70%;
 }
 
 .overview-btn-div{
@@ -207,19 +224,7 @@
     
 }
 
-@media(max-width:767px){
-    .overview-h3-main-head{
-        font-size: 45px;
-    }
 
-.overview-h3-head{
-font-size:20px;
-}
-
-.overview-content-para1-new {
-    font-size:24px;
-}
-}
 
 
 /* three image */
@@ -625,9 +630,7 @@ align-items: end;
   will-change: transform;
 }
 
-/* .marquee-track:hover {
-  animation-play-state: paused;
-} */
+
 
 @keyframes marquee-scroll {
   0%   { transform: translateX(0); }
@@ -651,24 +654,19 @@ align-items: end;
 
 .marque-outfit{
     font-family: var(--font-outfit-light);
-    
+    font-weight: 300;
 }
 .marque-letsupfont{
     font-family: letsupfont;
-    /* font-weight: 500; */
+    font-weight: 500;
 }
 
 .marquee-item span {
   margin-right: 0.3em;
 }
-/* .marquee-dot {
-  margin-left: 2rem;
-  color: #3d9fe0;
-  font-size: 10px;
-} */
+
 
 .overview-content-para1-new-strong{
-    /* padding-top: 10px; */
     font-family: var(--font-outfit-regular);
     font-size: 18px;
     font-weight: 400;
@@ -685,7 +683,7 @@ align-items: end;
 
 
 
-/* aspect ratios  *//* image cls */
+/* aspect ratios  image cls */
 .responsive-img {
   width: 100%;
   height: auto;
@@ -713,3 +711,26 @@ align-items: end;
 .letssuppthirteenimg{
     aspect-ratio: 1000 / 1300;
 }
+
+
+@media(max-width:767px){
+    .overview-h3-main-head{
+        font-size: 45px;
+        width:100%;
+    }
+    
+
+.overview-h3-head{
+font-size:20px;
+width:100%;
+}
+
+.overview-content-para1-new {
+    font-size:24px;
+    width:100%;
+}
+.overview-h3-main-head-smaller{
+    width:100%;
+}
+}
+
