@@ -123,8 +123,6 @@
     font-weight: 500;
     font-family: letsupfont;
     color: #345f71;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
    line-height: 1.2em;
 }
 
@@ -137,7 +135,6 @@
 }
 
 .overview-btn-div{
-    /* padding: 30px 0; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -585,24 +582,7 @@ align-items: end;
 }
 }
 
-/* image cls */
-.responsive-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
-/* .letssuppSaqureImg{
-    aspect-ratio: 1500 / 1500;
-}
-
-.letssuppThreeTwoImg{
-     aspect-ratio: 1500 / 1000;
-}
-
-.letssupp-aspect-ratio-img{
-    aspect-ratio: 720 / 1020;
-} */
 
 
 
@@ -698,3 +678,38 @@ align-items: end;
 .overview-content-para1-new-strong-strong{
     color: #068ca6;
 }   
+
+.letsupspeimgformargin{
+    margin-top: 30px;
+}
+
+
+
+/* aspect ratios  *//* image cls */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.letssuppThreeTwoImgthreebytwo{
+     aspect-ratio: 1500 / 1000;
+}
+
+.letssuppSaqureImg{
+    aspect-ratio: 1 / 1;
+}
+
+
+
+.letssupp-aspect-ratio-img{
+    aspect-ratio: 750 / 1020;
+}
+
+.letssuppSaqureImgspeaspect{
+    aspect-ratio: 1080 / 1440;
+}
+
+.letssuppthirteenimg{
+    aspect-ratio: 1000 / 1300;
+}
