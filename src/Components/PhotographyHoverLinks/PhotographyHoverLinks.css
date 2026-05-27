@@ -1,0 +1,49 @@
+.floating-hover-image {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.hover-preview-image {
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+/* .hover-section-to-div {
+    position: relative;
+}
+
+
+.hover-section-to-div::after{
+    content: 'bb';
+    position: absolute;
+    left: 100%;
+    top: -10%;
+    width: 100%;
+} */
+
+
+.hover-section-to-div {
+    position: relative;
+    /* border-top: 1px solid #444; */
+    /* padding-top: 30px; */
+}
+
+.hover-section-to-div::after {
+    content: '↗';
+    position: absolute;
+    right: 0;
+    top: 0%;
+
+    font-size: 25px;
+    color: gray;
+    /* font-weight: 600; */
+    transition: 0.3s ease;
+}
+
+.hover-section-to-div:hover::after {
+    color: white;
+    transform: rotate(45deg);
+    color: yellow;
+}
