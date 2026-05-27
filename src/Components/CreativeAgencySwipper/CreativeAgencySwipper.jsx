@@ -45,7 +45,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
         >
           {/* SLIDE 1 */}
           <SwiperSlide>
-            <Link href="/brand-name-suggestion">
+            <Link href="/branding">
               <div className="citypagewiper-slide">
                 {/* <img
                   src="https://dndesigns.co.in/uploads/pages/branddevecity.webp"
@@ -97,7 +97,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
-            <Link href="/branding">
+            <Link href="/logo-designing">
               <div className="citypagewiper-slide">
                 {/* <img
                   src="https://dndesigns.co.in/uploads/pages/brandidentitycity.webp"
