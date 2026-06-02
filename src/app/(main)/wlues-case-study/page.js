@@ -496,14 +496,16 @@ async function page() {
             className="img-fluid case-study-img"
           /> */}
 
+<div className="col-12">
           <Image
                   src={imageUrl + "tyweffdcewghvh.webp"}
-                  className="responsive-img case-study-img wlues-swaure-img"
+                  className="responsive-img case-study-img wlues-swaure-img-hgdeh"
                   alt="Wlues case study page image"
-                  width={1500}
-                  height={1000}
-                  sizes="(max-width:768px) 100vw, 50vw"
+                  width={1080}
+                  height={720}
+                  sizes="(max-width:768px) 100vw, 100vw"
                   />
+                  </div>
         </div>
 
         <div className="row mt-lg-4">
