@@ -125,10 +125,10 @@ export default function AnimatedStudioSection() {
   if (!mounted) {
     return (
       <section className="studio-section">
-        <p className="studio-label">Our Process</p>
+        {/* <p className="studio-label">Our Process</p>
         <h2 className="studio-heading">
           Every pixel is a deliberate <em>moment</em> — crafted to redefine what a studio website can be.
-        </h2>
+        </h2> */}
         <div className="studio-canvas-wrapper">
           <svg viewBox="0 0 1200 520" className="studio-svg" preserveAspectRatio="xMidYMid meet">
             <defs>
@@ -154,10 +154,10 @@ export default function AnimatedStudioSection() {
     const dash2 = MOBILE_PATH_LEN * a2;
     return (
       <section ref={sectionRef} className="studio-section">
-        <p className="studio-label">Our Process</p>
+        {/* <p className="studio-label">Our Process</p>
         <h2 className="studio-heading">
           Every pixel is a deliberate <em>moment</em> — crafted to redefine what a studio website can be.
-        </h2>
+        </h2> */}
 
         <div className="studio-canvas-wrapper">
           <svg viewBox="0 0 480 760" className="studio-svg" preserveAspectRatio="xMidYMid meet">
@@ -227,10 +227,10 @@ export default function AnimatedStudioSection() {
   const dash2 = DESKTOP_PATH_LEN * a2;
   return (
     <section ref={sectionRef} className="studio-section">
-      <p className="studio-label">Our Process</p>
+      {/* <p className="studio-label">Our Process</p>
       <h2 className="studio-heading">
         Every pixel is a deliberate <em>moment</em> — crafted to redefine what a studio website can be.
-      </h2>
+      </h2> */}
 
       <div className="studio-canvas-wrapper">
         <svg viewBox="0 0 1200 520" className="studio-svg" preserveAspectRatio="xMidYMid meet">
