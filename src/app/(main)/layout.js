@@ -23,7 +23,7 @@ export const metadata = {
     { name: "DN Designs Team", url: "https://dndesigns.co.in/" },
   ],
   alternates: { canonical: "https://dndesigns.co.in/" },
-  robots: { index: true, follow: true, nocache: true },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "DN Designs | Creative Branding Agency & Brand Design Company",
     description:

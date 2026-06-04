@@ -56,13 +56,13 @@ export default function AboutUsZoomSection() {
   return (
     <section ref={sectionRef} className="zoom-section">
       <div className="container bg-text-container">
-        <h1 ref={textTopRef} className="bg-text top-text">INERTIA</h1>
-        <h1 ref={textBottomRef} className="bg-text bottom-text">STUDIOS</h1>
+        <h1 ref={textTopRef} className="bg-text top-text">DN</h1>
+        <h1 ref={textBottomRef} className="bg-text bottom-text">DESIGNS</h1>
       </div>
 
       <div className="container bg-stick-text-container">
-        <p className="bg-stick-text">A Creative Studio</p>
-        <p className="bg-stick-text">Based in India</p>
+        <p className="bg-stick-text">You Envision It. <br></br>We Design It</p>
+        <p className="bg-stick-text">The World <br></br>Experiences It.</p>
       </div>
 
 
