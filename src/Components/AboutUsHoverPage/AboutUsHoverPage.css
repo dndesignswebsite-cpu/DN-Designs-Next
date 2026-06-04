@@ -39,6 +39,7 @@
     padding-bottom: 20px;
     font-family: var(--font-corbert);
     color: #000000;
+    text-transform: uppercase;
 }
 
 .about-us-hover-list-item{
@@ -51,6 +52,7 @@
     width: fit-content;
     padding: 2px;
     margin: 5px;
+    text-transform: uppercase;
 }
 
 .about-us-hover-list-item:hover{
@@ -76,6 +78,7 @@
     color: #000000;
     font-weight: 600;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .about-us-hover-section-head-div-para{
