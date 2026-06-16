@@ -130,4 +130,54 @@
   .imag-cont {
     min-height: 200px;
   }
+  .our-work-div-unit-purelux{
+    margin-top: 0px;
+  }
+}
+
+
+
+/* css for muted */
+.sound-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 20;
+
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.purelux-video{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.purelux-video-component{
+  height: 100%;
+  width: 100%;
+}
+
+@media(max-width:991px){
+  .our-work-div-unit-purelux{
+    margin-top: 20px;
+  }
 }
