@@ -21,7 +21,7 @@ export default function OurWorkHomeSection() {
           <div className="row our-work-row">
             <div className="col-sm-12 col-md-6 our-work-div-unit">
               <div className="imag-cont">
-                {/* <img src={imageUrl + "enlite graphic.webp"} alt="demo" /> */}
+                
 
                 <Image
                   src={imageUrl + "enlite graphic.webp"}
