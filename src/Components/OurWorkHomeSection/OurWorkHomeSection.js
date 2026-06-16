@@ -1,9 +1,14 @@
+
+
 import OurWorkToggle from "./OurWorkToggle";
 import "./OurWorkHomeSection.css";
 import Image from "next/image";
+import PureluxVideo from "./PureluxVideo";
+
 
 export default function OurWorkHomeSection() {
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
+
 
   return (
     <section className="our-work">
@@ -56,7 +61,7 @@ export default function OurWorkHomeSection() {
                 {/* <img src={imageUrl + "thames-graphic.webp"} alt="demo" /> */}
 
                 <Image
-                  src={imageUrl + "thames-graphic.webp"}
+                  src={imageUrl + "brrat.jpg"}
                   alt="blog"
                   width={750}
                   height={1050}
@@ -64,8 +69,8 @@ export default function OurWorkHomeSection() {
                 />
                 <div className="overlay"></div>
                 <div className="overlay-box">
-                  <div className="overlay-title">Thames</div>
-                  <p className="Pras">For the Love of Protein</p>
+                  <div className="overlay-title">BRRAT</div>
+                  <p className="Pras">Sip the Chaos. Stay a Brrat</p>
                 </div>
               </div>
             </div>
@@ -136,25 +141,12 @@ export default function OurWorkHomeSection() {
           </div>
 
           <div className="row our-work-row">
-            <div className="col-sm-12 col-md-6">
-              <div className="imag-cont">
-                {/* <img src={imageUrl + "greenhorn-manu.webp"} alt="demo" /> */}
-
-                <Image
-                  src={imageUrl + "greenhorn-manu.webp"}
-                  alt="blog"
-                  width={1500}
-                  height={1000}
-                  className="responsive-img image-cont-img"
-                />
-                <div className="overlay"></div>
-                <div className="overlay-box">
-                  <div className="overlay-title">Green Horn</div>
-                  <p className="Pras">Smart Energy, Bold You</p>
-                </div>
-              </div>
+            <div className="col-sm-12 col-md-12 col-lg-6">
+<div class="purelux-video-component">
+<PureluxVideo/>
+</div>
             </div>
-            <div className="col-sm-12 col-md-6 our-work-div-unit">
+            <div className="col-sm-12 col-md-12 col-lg-6 our-work-div-unit our-work-div-unit-purelux">
              <div className="imag-cont">
                   {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
 

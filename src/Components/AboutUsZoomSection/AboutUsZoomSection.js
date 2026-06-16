@@ -71,7 +71,7 @@ export default function AboutUsZoomSection() {
         <div className="zoom-inner">
           <video
             ref={videoRef}
-            src="https://dndesigns.co.in/uploads/videos/1920-1.mp4"
+            src="https://dndesigns.co.in/uploads/videos/about video.mp4"
             autoPlay
             muted
             loop
