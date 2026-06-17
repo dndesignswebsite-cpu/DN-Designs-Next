@@ -309,6 +309,22 @@ export default function Header() {
                         Brand Naming
                       </Link>
                     </li>
+
+                     <li>
+                      <Link
+                        href="/rebranding"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${
+                          pathname === "/rebranding"
+                            ? styles["active"]
+                            : ""
+                        }`}
+                      >
+                        {/* Brand Name Suggestion */}
+                        Rebranding
+                      </Link>
+                    </li>
+
                   </ul>
                 </div>
 
@@ -1010,6 +1026,18 @@ export default function Header() {
                             Brand Naming
                           </Link>
                         </li>
+
+                         <li>
+                          <Link
+                            href="/rebranding"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            {/* Brand Name Suggestion */}
+                            Rebranding
+                          </Link>
+                        </li>
+
                       </ul>
                     </div>
                   </div>
