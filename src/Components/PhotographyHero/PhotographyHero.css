@@ -9,7 +9,9 @@
   align-items: center;
   cursor: grab;
   user-select: none;
-  touch-action: none;
+  
+ 
+  touch-action: pan-y; 
   isolation: isolate;
 }
 
@@ -21,11 +23,9 @@
   position: absolute;
   inset: 0;
   z-index: 999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   pointer-events: none;
   mix-blend-mode: difference;
 }
@@ -41,7 +41,6 @@
   font-family: var(--font-corbert-bold);
   transform: translateZ(0);
   will-change: transform;
-  margin-bottom: 80px;
 }
 
 .registered {
@@ -52,25 +51,20 @@
 .grid-wrapper {
   position: absolute;
   z-index: 1;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   will-change: transform;
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns:
-    repeat(var(--pattern-cols), var(--tile-size));
-
+  grid-template-columns: repeat(var(--pattern-cols), var(--tile-size));
   grid-auto-rows: var(--tile-size);
   gap: var(--grid-gap);
-
   width: max-content;
   height: max-content;
-
+  
   --tile-size: 280px;
   --grid-gap: 24px;
   --tile-radius: 16px;
@@ -79,20 +73,12 @@
 .grid-item-card {
   position: relative;
   overflow: hidden;
-
   border-radius: 3px;
   background-color: #121212;
-
   width: var(--tile-size);
   height: var(--tile-size);
-
-  box-shadow:
-    0 25px 50px -12px rgba(0, 0, 0, 0.7);
-
-  transition:
-    filter 0.4s
-    cubic-bezier(0.25, 1, 0.5, 1);
-
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  transition: filter 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   transform: none !important;
 }
 
@@ -101,12 +87,8 @@
   height: 100%;
   display: block;
   object-fit: cover;
-
   pointer-events: none;
-
-  transition:
-    transform 0.4s
-    cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .grid-item-card:hover {
@@ -124,11 +106,22 @@
   }
 }
 
+
 @media (max-width: 1024px) {
   .image-grid {
     --tile-size: 220px;
     --grid-gap: 20px;
     --tile-radius: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    touch-action: pan-y !important; 
+  }
+  .hero-title {
+    margin-bottom: 80px; 
+    
   }
 }
 
@@ -138,7 +131,6 @@
     --grid-gap: 16px;
     --tile-radius: 12px;
   }
-
   .hero-title {
     letter-spacing: -0.02em;
   }
