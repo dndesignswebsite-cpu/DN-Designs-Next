@@ -4,7 +4,6 @@ import { useRef, useState, useMemo, useCallback, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import "./PhotographyHero.css";
 
-
 const BASE_IMAGES = [
   'https://picsum.photos/600/600?random=1',
   'https://picsum.photos/600/600?random=2',
@@ -19,21 +18,6 @@ const BASE_IMAGES = [
   'https://picsum.photos/600/600?random=11',
   'https://picsum.photos/600/600?random=12',
 ];
-
-// const BASE_IMAGES = [
-//   "https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/1-2-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/10-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/11-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/12-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/13-768x768 (1).webp",
-//   "https://dndesigns.co.in/uploads/blogs/14-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/14.webp",
-//   "https://dndesigns.co.in/uploads/blogs/15-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/16-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/2-1-768x768.webp",
-//   "https://dndesigns.co.in/uploads/blogs/20-768x768.webp",
-// ];
 
 const PATTERN_COLUMNS = 6;
 
@@ -55,23 +39,19 @@ function buildPattern() {
   const rows = Math.ceil(BASE_IMAGES.length / PATTERN_COLUMNS);
   const patternSize = rows * PATTERN_COLUMNS;
   const pattern = [];
-
   for (let i = 0; i < patternSize; i++) {
     pattern.push(BASE_IMAGES[i % BASE_IMAGES.length]);
   }
-
   return { rows, pattern };
 }
 
 function buildTiledGrid(pattern, rows, tileRepeat) {
   const tiles = [];
-
   for (let tileRow = 0; tileRow < tileRepeat; tileRow++) {
     for (let tileCol = 0; tileCol < tileRepeat; tileCol++) {
       for (let i = 0; i < pattern.length; i++) {
         const localRow = Math.floor(i / PATTERN_COLUMNS);
         const localCol = i % PATTERN_COLUMNS;
-
         tiles.push({
           key: `${tileRow}-${tileCol}-${i}`,
           row: tileRow * rows + localRow,
@@ -81,25 +61,7 @@ function buildTiledGrid(pattern, rows, tileRepeat) {
       }
     }
   }
-
   return tiles;
-}
-
-function getSafeTileRepeat({
-  viewportW,
-  viewportH,
-  oneTileW,
-  oneTileH,
-}) {
-  const neededForW = (viewportW + oneTileW * 2) / oneTileW;
-  const neededForH = (viewportH + oneTileH * 2) / oneTileH;
-
-  let n = Math.ceil(Math.max(neededForW, neededForH));
-
-  if (n % 2 === 0) n += 1;
-  if (n < 3) n = 3;
-
-  return n;
 }
 
 export default function PhotographyHero() {
@@ -114,91 +76,67 @@ export default function PhotographyHero() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const springConfig = {
-    damping: 65,
-    stiffness: 180,
-    mass: 1.2,
-  };
-
+  const springConfig = { damping: 65, stiffness: 180, mass: 1.2 };
   const smoothX = useSpring(x, springConfig);
   const smoothY = useSpring(y, springConfig);
 
-  const [isDragging, setIsDragging] = useState(false);
+  const [, setIsDragging] = useState(false);
   const [tileRepeat, setTileRepeat] = useState(3);
+  const [isMobile, setIsMobile] = useState(false);
 
   const { rows, pattern } = useMemo(() => buildPattern(), []);
 
   const recompute = useCallback(() => {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
+    
+    setIsMobile(vw <= 768); 
 
     const { tileSize, gap } = getResponsiveTileTokens(vw);
-
-    const oneTileW =
-      PATTERN_COLUMNS * tileSize + (PATTERN_COLUMNS - 1) * gap;
-
+    const oneTileW = PATTERN_COLUMNS * tileSize + (PATTERN_COLUMNS - 1) * gap;
     const oneTileH = rows * tileSize + (rows - 1) * gap;
 
-    const repeatCount = getSafeTileRepeat({
-      viewportW: vw,
-      viewportH: vh,
-      oneTileW,
-      oneTileH,
-    });
-
-    setTileRepeat(repeatCount);
+    const neededForW = (vw + oneTileW * 2) / oneTileW;
+    const neededForH = (vh + oneTileH * 2) / oneTileH;
+    let n = Math.ceil(Math.max(neededForW, neededForH));
+    if (n % 2 === 0) n += 1;
+    if (n < 3) n = 3;
+    setTileRepeat(n);
 
     dragX.current = 0;
     dragY.current = 0;
-
     x.set(0);
     y.set(0);
   }, [rows, x, y]);
 
   useEffect(() => {
     recompute();
-
     const t = setTimeout(recompute, 60);
-
     window.addEventListener("resize", recompute);
-
     return () => {
       window.removeEventListener("resize", recompute);
       clearTimeout(t);
     };
   }, [recompute]);
 
-  const tiles = useMemo(
-    () => buildTiledGrid(pattern, rows, tileRepeat),
-    [pattern, rows, tileRepeat]
-  );
+  const tiles = useMemo(() => buildTiledGrid(pattern, rows, tileRepeat), [pattern, rows, tileRepeat]);
 
   const updateMotionValues = useCallback(() => {
     x.set(dragX.current + parallaxX.current);
     y.set(dragY.current + parallaxY.current);
   }, [x, y]);
 
-  const handlePointerMove = useCallback(
-    (e) => {
-      const rect = containerRef.current?.getBoundingClientRect();
+  const handlePointerMove = useCallback((e) => {
+    const rect = containerRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const relativeX = (e.clientX - rect.left) / rect.width - 0.5;
+    const relativeY = (e.clientY - rect.top) / rect.height - 0.5;
+    const intensity = 200;
 
-      if (!rect) return;
-
-      const relativeX =
-        (e.clientX - rect.left) / rect.width - 0.5;
-
-      const relativeY =
-        (e.clientY - rect.top) / rect.height - 0.5;
-
-      const intensity = 200;
-
-      parallaxX.current = relativeX * -intensity;
-      parallaxY.current = relativeY * -intensity;
-
-      updateMotionValues();
-    },
-    [updateMotionValues]
-  );
+    parallaxX.current = relativeX * -intensity;
+    parallaxY.current = relativeY * -intensity;
+    updateMotionValues();
+  }, [updateMotionValues]);
 
   const handlePointerLeave = useCallback(() => {
     parallaxX.current = 0;
@@ -206,20 +144,15 @@ export default function PhotographyHero() {
     updateMotionValues();
   }, [updateMotionValues]);
 
-  const handleDrag = useCallback(
-    (_, info) => {
-      dragX.current += info.delta.x;
-      dragY.current += info.delta.y;
-      updateMotionValues();
-    },
-    [updateMotionValues]
-  );
+  const handleDrag = useCallback((_, info) => {
+    dragX.current += info.delta.x;
+    dragY.current += info.delta.y;
+    updateMotionValues();
+  }, [updateMotionValues]);
 
   const handleDragEnd = useCallback(() => {
     setTimeout(() => setIsDragging(false), 50);
-
     const node = wrapperRef.current;
-
     if (!node || tileRepeat < 1) return;
 
     const tileW = node.offsetWidth / tileRepeat;
@@ -229,12 +162,10 @@ export default function PhotographyHero() {
       const wraps = Math.round(dragX.current / tileW);
       dragX.current -= wraps * tileW;
     }
-
     if (Math.abs(dragY.current) > tileH / 2) {
       const wraps = Math.round(dragY.current / tileH);
       dragY.current -= wraps * tileH;
     }
-
     updateMotionValues();
   }, [tileRepeat, updateMotionValues]);
 
@@ -247,31 +178,22 @@ export default function PhotographyHero() {
     >
       <div className="hero-overlay">
         <h1 className="hero-title">
-          DN DESIGNS
-          <span className="registered">®</span>
+          DN DESIGNS<span className="registered">®</span>
         </h1>
       </div>
 
       <motion.div
         ref={wrapperRef}
         className="grid-wrapper"
-        style={{
-          x: smoothX,
-          y: smoothY,
-        }}
-        drag
-        dragElastic={0}
+        style={{ x: smoothX, y: smoothY }}
+        drag={isMobile ? "x" : true} 
+        dragElastic={0.1}
         dragMomentum={false}
         onDragStart={() => setIsDragging(true)}
         onDrag={handleDrag}
         onDragEnd={handleDragEnd}
       >
-        <div
-          className="image-grid"
-          style={{
-            "--pattern-cols": PATTERN_COLUMNS,
-          }}
-        >
+        <div className="image-grid" style={{ "--pattern-cols": PATTERN_COLUMNS }}>
           {tiles.map((tile) => (
             <div
               key={tile.key}
@@ -281,12 +203,7 @@ export default function PhotographyHero() {
                 gridColumn: tile.col + 1,
               }}
             >
-              <img
-                src={tile.url}
-                alt="Gallery item"
-                draggable="false"
-                loading="lazy"
-              />
+              <img src={tile.url} alt="Gallery item" draggable="false" loading="lazy" />
             </div>
           ))}
         </div>
