@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./AboutUsZoomSection.css";
@@ -12,6 +12,22 @@ export default function AboutUsZoomSection() {
   const videoRef = useRef(null);
   const textTopRef = useRef(null);
   const textBottomRef = useRef(null);
+
+
+  // responsiveness for video 
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const check = () => {
+    setIsMobile(window.innerWidth <= 767);
+  };
+
+  check();
+  window.addEventListener("resize", check);
+
+  return () => window.removeEventListener("resize", check);
+}, []);
+// end
 
   useEffect(() => {
   let mm = gsap.matchMedia();
@@ -69,26 +85,28 @@ export default function AboutUsZoomSection() {
       {/* Video Layer */}
       <div className="container container-zoom">
         <div className="zoom-inner">
-          <video
-            ref={videoRef}
-            src="https://dndesigns.co.in/uploads/videos/about video.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="zoom-video"
-          />
-          {/*zoom-video-mobile*/}
-          {/* <video
-            ref={videoRef}
-            src="https://download-video-ak.vimeocdn.com/v3-1/playback/2f8abaaf-816f-4772-87e3-c4c5215580c9/68ea99c9?__token__=st=1777535428~exp=1777539028~acl=%2Fv3-1%2Fplayback%2F2f8abaaf-816f-4772-87e3-c4c5215580c9%2F68ea99c9%2A~hmac=c7cc7b397e0e7250965a705d5d5ba3afa3bda44b026b307e1a0ba6c99934081e&r=dXMtY2VudHJhbDE%3D"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="zoom-video-mobile"
-          /> */}
-        </div>
+  {isMobile ? (
+    <video
+      ref={videoRef}
+      src="https://dndesigns.co.in/uploads/videos/Mr bomzy video.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="zoom-video"
+    />
+  ) : (
+    <video
+      ref={videoRef}
+      src="https://dndesigns.co.in/uploads/videos/Startups.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="zoom-video"
+    />
+  )}
+</div>
       </div>
     </section>
   );
