@@ -331,7 +331,8 @@ async function page() {
                           <div className="vertical-bar"></div>
                           <div className="switch-on-div-content">
                             <h3>
-                              <AutoCounter target={74} />%
+                              {/* <AutoCounter target={74} />% */}
+                              74%
                             </h3>
                             <p> S&P 100 companies rebranded within their first 7 years.</p>
                           </div>
@@ -342,7 +343,8 @@ async function page() {
                           <div className="vertical-bar"></div>
                           <div className="switch-on-div-content">
                             <h3>
-                              <AutoCounter target={10} /> years
+                              {/* <AutoCounter target={10} /> years */}
+                              7-10 years
                             </h3>
                             <p> Average rebranding cycle for businesses.</p>
                           </div>
