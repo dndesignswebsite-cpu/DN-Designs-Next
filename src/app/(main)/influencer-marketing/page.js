@@ -13,7 +13,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 
-// meta tags
+// meta tag
 export async function generateMetadata() {
   await connectDB();
   let seo;
