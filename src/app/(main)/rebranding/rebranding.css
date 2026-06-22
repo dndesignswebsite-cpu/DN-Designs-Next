@@ -453,6 +453,18 @@
   margin-top: 20px;
 }
 
+#card7-create {
+  --index: 6;
+  top: 350px;
+  margin-top: 20px;
+}
+
+#card8-create {
+  --index: 6;
+  top: 380px;
+  margin-top: 20px;
+}
+
 .card-create {
   position: sticky;
   top: 50%;
@@ -543,7 +555,7 @@
 @media(max-width:992px){
 
  .card-body-create {
-  height: 40vh; 
+  height: 41vh; 
 }
 
 .create-number{
