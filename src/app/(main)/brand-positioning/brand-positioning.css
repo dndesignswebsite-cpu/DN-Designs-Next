@@ -1,0 +1,52 @@
+.rewrite-your-brand-story-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 50px;
+}
+
+.rewrite-your-brand-story-head-mian{
+    font-size: 50px;
+    font-family: var(--font-corbert-bold);
+    padding-bottom: 10px !important;
+    font-weight: 700;
+
+}
+
+.brand-positioning-banner-img-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .rewrite-your-brand-story-head{
+   flex-direction: column;
+}
+.brand-positioning-banner-img-desktop{
+    display: none;
+}
+.brand-positioning-banner-img-mobile{
+    display: block;
+}
+}
+
+.brand-positioning-banner-img{
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+
+
+.brand-positioning-banner-img-desktop-img{
+    width: 100%;
+  height: auto;
+  display:block;
+  aspect-ratio: 1500 / 800;
+}
+
+.brand-positioning-banner-img-mobile-img{
+      width: 100%;
+  height: auto;
+  display:block;
+  aspect-ratio: 1080 / 864;
+}
+
+
