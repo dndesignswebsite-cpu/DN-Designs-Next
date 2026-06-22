@@ -68,7 +68,7 @@
 
 
 .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 45%;                
+  height: 50%;                
 }
 
 .citypagewiper-slide:hover h3 {
@@ -82,13 +82,13 @@
 
 @media(max-width:1399.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 50%;                
+  height: 55%;                
 }
 }
 
 @media(max-width:1199.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 70%;                
+  height: 75%;                
 }
 
 .cityswiperoverlay h3 {
@@ -98,7 +98,7 @@
 
 @media(max-width:991.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 55%;                
+  height: 70%;                
 }
 
 .cityswiperoverlay h3 {
@@ -109,7 +109,7 @@
 
 @media(max-width:767.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 30%;                
+  height: 40%;                
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
@@ -118,7 +118,7 @@
 
 @media(max-width:486.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 35%;                
+  height: 40%;                
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
@@ -127,7 +127,7 @@
 
 @media(max-width:428.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 45%;                
+  height: 50%;                
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
@@ -137,7 +137,7 @@
 
 @media(max-width:370.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 60%;                
+  height: 65%;                
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
@@ -152,7 +152,7 @@
 
 @media(max-width:320.68px){
   .citypagewiper-slide:hover .cityswiperoverlay {
-  height: 70%;                
+  height: 75%;                
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
