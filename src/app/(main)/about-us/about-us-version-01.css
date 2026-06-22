@@ -10,6 +10,7 @@
     font-family: var(--font-corbert);
     font-size: 35px;
     padding-bottom: 40px;
+    font-weight: 600;
  }
 
  .brand-building-content-sub-div{
@@ -62,7 +63,7 @@
 .brand-building-angled-head-first{
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 100px;
+    font-size: 85px;
     font-family: var(--font-corbert);
     font-weight: 600;
     color: #000000;

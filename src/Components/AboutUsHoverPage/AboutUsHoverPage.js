@@ -6,100 +6,100 @@ import Link from "next/link";
 
 function AboutUsHoverPage() {
   const [activeImage, setActiveImage] = useState(
-    "https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp",
+    "https://dndesigns.co.in/uploads/pages/brand-stratergy.webp",
   );
 
   const services = [
-    {
-      title: "Brand Strategy",
-      img: "https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp",
-      url: "/",
-    },
+    // {
+    //   title: "Brand Strategy",
+    //   img: "https://dndesigns.co.in/uploads/pages/brand-stratergy.webp",
+    //   url: "/branding",
+    // },
     {
       title: "Brand Positioning",
-      img: "https://dndesigns.co.in/uploads/blogs/1-2-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutbrand-positning.webp",
+      url: "/brand-positioning",
     },
     {
       title: "Brand Identity Design",
-      img: "https://dndesigns.co.in/uploads/blogs/10-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/brand-identy.webp",
+      url: "/branding",
     },
     {
       title: "Packaging Design",
-      img: "https://dndesigns.co.in/uploads/blogs/11-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutpackaging-design.webp",
+      url: "/packaging-design",
     },
     {
       title: "Editorial and Catalogue Designing",
-      img: "https://dndesigns.co.in/uploads/blogs/12-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/abouteditorialcatalog.webp",
+      url: "/catalogue-designing",
     },
     {
       title: "Brand Naming",
-      img: "https://dndesigns.co.in/uploads/blogs/14-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutbrand-name.webp",
+      url: "/brand-name-suggestion",
     },
     {
       title: "Rebranding",
-      img: "https://dndesigns.co.in/uploads/blogs/14-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutrebranding.webp",
+      url: "/rebranding",
     },
-     {
-      title: "GTM",
-      img: "https://dndesigns.co.in/uploads/blogs/14-768x768.webp",
-      url: "/",
-    },
+    //  {
+    //   title: "GTM",
+    //   img: "https://dndesigns.co.in/uploads/pages/GTM.webp",
+    //   url: "/",
+    // },
   ];
 
   const servicesTwo = [
     {
       title: "Digital Marketing",
-      img: "https://dndesigns.co.in/uploads/blogs/15-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutdigital-marketing.webp",
+      url: "/digital-marketing-agency-in-noida",
     },
     {
       title: "Social Media Marketing",
-      img: "https://dndesigns.co.in/uploads/blogs/16-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/social-media-marketing.webp",
+      url: "/social-media-marketing",
     },
     {
       title: "Influencer Marketing",
-      img: "https://dndesigns.co.in/uploads/blogs/19-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/influencer-marketing.webp",
+      url: "/influencer-marketing",
     },
     {
       title: "Photography",
-      img: "https://dndesigns.co.in/uploads/blogs/20-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutphotoshoot.webp",
+      url: "/photography",
     },
     {
       title: "Animation",
-      img: "https://dndesigns.co.in/uploads/blogs/2fdb227c80faa66e892e2a457ab188e0-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutanimationhover4.webp",
+      url: "/animation",
     },
     {
       title: "Brand Video Shoot",
-      img: "https://dndesigns.co.in/uploads/blogs/31-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutvideography.webp",
+      url: "/brand-video-shoots",
     },
   ];
 
   const servicesThree = [
     {
       title: "Web Designing",
-      img: "https://dndesigns.co.in/uploads/blogs/34hje.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutwebsite-development.webp",
+      url: "/web-designing-services-in-india",
     },
     {
       title: "UI/UX Design",
-      img: "https://dndesigns.co.in/uploads/blogs/38-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/aboutui-ux.webp",
+      url: "/ui-ux-design",
     },
     {
       title: "SEO",
-      img: "https://dndesigns.co.in/uploads/blogs/10-768x768.webp",
-      url: "/",
+      img: "https://dndesigns.co.in/uploads/pages/abouthoverseo.webp",
+      url: "/seo-marketing-agency-in-noida",
     },
   ];
 
@@ -181,7 +181,7 @@ function AboutUsHoverPage() {
         <div className="about-us-hover-section-mobile">
 
           <div className="about-us-hover-section-mobile-div">
-            <img src="https://dndesigns.co.in/uploads/blogs/10-768x768.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
+            <img src="https://dndesigns.co.in/uploads/pages/brand-stratergy.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
           <div className="about-us-hover-list-div">
                 <h3 className="about-us-hover-list-head">
                   [ Branding ]
@@ -201,7 +201,7 @@ function AboutUsHoverPage() {
 
 
                <div className="about-us-hover-section-mobile-div">
-            <img src="https://dndesigns.co.in/uploads/blogs/10-768x768.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
+            <img src="https://dndesigns.co.in/uploads/pages/aboutdigital-marketing.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
           <div className="about-us-hover-list-div">
                 <h3 className="about-us-hover-list-head">
                   [ Communication ]
@@ -221,7 +221,7 @@ function AboutUsHoverPage() {
 
 
                <div className="about-us-hover-section-mobile-div">
-            <img src="https://dndesigns.co.in/uploads/blogs/10-768x768.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
+            <img src="https://dndesigns.co.in/uploads/pages/aboutwebsite-development.webp" className="img-fluid about-us-hover-section-mobile-div-img"></img>
           <div className="about-us-hover-list-div">
                 <h3 className="about-us-hover-list-head">
                   [ Web Design ]

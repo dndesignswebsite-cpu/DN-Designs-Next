@@ -88,7 +88,7 @@ useEffect(() => {
   {isMobile ? (
     <video
       ref={videoRef}
-      src="https://dndesigns.co.in/uploads/videos/Mr bomzy video.mp4"
+      src="https://dndesigns.co.in/uploads/videos/aboutmobilevideoIMG_1884_1.mp4"
       autoPlay
       muted
       loop
@@ -98,7 +98,7 @@ useEffect(() => {
   ) : (
     <video
       ref={videoRef}
-      src="https://dndesigns.co.in/uploads/videos/Startups.mp4"
+      src="https://dndesigns.co.in/uploads/videos/aboutusfinalvideo3 (1).mp4"
       autoPlay
       muted
       loop
