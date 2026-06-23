@@ -19,7 +19,7 @@ export default function AboutUsZoomSection() {
 
 useEffect(() => {
   const check = () => {
-    setIsMobile(window.innerWidth <= 767);
+    setIsMobile(window.innerWidth <= 575);
   };
 
   check();
