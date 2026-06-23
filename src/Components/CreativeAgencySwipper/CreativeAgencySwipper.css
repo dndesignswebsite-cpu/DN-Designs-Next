@@ -203,3 +203,8 @@
 .city-page-swiperr-slide-img{
   aspect-ratio: 750 / 1050 ;
 }
+
+
+:is(.swiper-button-prev,.swiper-button-next) ::slotted(svg), :is(.swiper-button-prev,.swiper-button-next) svg{
+  width:20%;
+}

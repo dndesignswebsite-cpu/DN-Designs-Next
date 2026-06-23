@@ -112,11 +112,19 @@
 
 @media(max-width:767px){
   .bg-text{
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .zoom-video-mobile{
     display: block;
+  }
+
+  .zoom-section{
+    height: auto;
+  }
+
+  .bg-stick-text{
+    font-size: 14px;
   }
 }
 
