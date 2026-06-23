@@ -14,7 +14,7 @@ export default function AboutUsZoomSection() {
   const textBottomRef = useRef(null);
 
 
-  // responsives for video 
+  // responsiveclss for video 
   const [isMobile, setIsMobile] = useState(false);
 
 useEffect(() => {
