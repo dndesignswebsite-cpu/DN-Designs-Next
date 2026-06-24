@@ -307,7 +307,7 @@ async function page() {
                 {/* <img src={imageUrl + "Rosnax.webp"} className="img-fluid" /> */}
 
                  <Image
-                 src={imageUrl + "Rosnax.webp"}  
+                 src="https://dndesigns.co.in/uploads/pages/logo-designing-fluke-logo.jpg.webp"  
                   className="responsive-img brand-identity-div-img"
                   alt="grin care case study page image"
                   width={1500}
@@ -317,7 +317,7 @@ async function page() {
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
-                      <h3>Rosnax</h3>
+                      <h3>Fluke</h3>
                     </div>
                     <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
@@ -326,11 +326,7 @@ async function page() {
                   </div>
 
                   <p>
-                    FMCG company Rosnax offers premium flavoured roasted snacks
-                    like makhana to its customers. It envisioned a brand
-                    identity that conveyed a sense of wholesomeness and
-                    simultaneously exuded a playful and fun vibe. We gave them
-                    exactly what they needed.
+                    Fluke is a functional beverage brand targeting young & health-conscious audiences. For the brand, we created a logo that feels sharp and energetic at first glance, but holds a deeper meaning within. The logo reflects the idea that unexpected turns in life can actually lead to success. It is a symbol of movement, energy, progress and growth.
                   </p>
                 </div>
               </div>
@@ -340,7 +336,7 @@ async function page() {
                 {/* <img src={imageUrl + "tftyfhgchg.webp"} className="img-fluid" /> */}
 
                   <Image
-                 src={imageUrl + "tftyfhgchg.webp"}
+                 src="https://dndesigns.co.in/uploads/pages/weigydshvwjd.webp"
                   className="responsive-img brand-identity-div-img"
                   alt="grin care case study page image"
                   width={1500}
@@ -377,18 +373,28 @@ async function page() {
                   className="img-fluid"
                 /> */}
 
-                 <Image
+                 {/* <Image
                  src={imageUrl + "bake-o-Tech.webp"}
                   className="responsive-img brand-identity-div-img"
                   alt="grin care case study page image"
                   width={1500}
                   height={1500}
                   sizes="(max-width:767px) 100vw, 50vw"
+                /> */}
+
+                 <video
+                  src="https://dndesigns.co.in/uploads/videos/letssuppnewcase4.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="enlitecasestudy-video1"
                 />
                 <div className="brand-identity-content">
                   <div className="brand-identity-div-btns">
                     <div className="brand-identity-div-headg">
-                      <h3>Bake O Tech</h3>
+                      <h3>Let’s Supp</h3>
                     </div>
                     <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
@@ -397,11 +403,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Offering food & bakery consultancy, Bake O Tech wanted a
-                    professional and unique brand identity that set them apart
-                    in the industry. We played with the initial letters to
-                    reflect their name and establish the industry they belong
-                    to.
+                   Let’s Supp, a modern nutraceutical brand, wished to communicate that wellness lives in repetition. Accordingly, we built the brand around the idea of continuity and expressed it through an infinity structure. The logo, too, has the infinity-inspired double “P” that symbolises consistent nourishment, renewal, and long-term wellbeing. 
                   </p>
                 </div>
               </div>
