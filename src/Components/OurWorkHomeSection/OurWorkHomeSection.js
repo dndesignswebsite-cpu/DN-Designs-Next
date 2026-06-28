@@ -142,7 +142,7 @@ export default function OurWorkHomeSection() {
 
           <div className="row our-work-row">
             <div className="col-sm-12 col-md-12 col-lg-6">
-<div class="purelux-video-component">
+<div className="purelux-video-component">
 <PureluxVideo/>
 </div>
             </div>

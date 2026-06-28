@@ -1,0 +1,12 @@
+.lp-footer{
+    padding: 50px 0;
+    background-color: #ca2734;
+}
+
+.lp-footer-para{
+    font-family: var(--font-corbert-bold);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+   color: #fff;
+}

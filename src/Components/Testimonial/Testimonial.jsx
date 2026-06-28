@@ -90,11 +90,7 @@ function Testimonial() {
                         </p>
 
                         <div className="rating-icons">
-                          {/* <i className="bi bi-star-fill"></i>
-                          <i className="bi bi-star-fill"></i>
-                          <i className="bi bi-star-fill"></i>
-                          <i className="bi bi-star-half"></i>
-                          <i className="bi bi-star"></i> */}
+                         
                           <svg
                             width="20"
                             height="20"

@@ -454,14 +454,20 @@
 }
 
 #card7-create {
-  --index: 6;
+  --index: 7;
   top: 350px;
   margin-top: 20px;
 }
 
 #card8-create {
-  --index: 6;
+  --index: 8;
   top: 380px;
+  margin-top: 20px;
+}
+
+#card9-create {
+  --index: 9;
+  top: 410px;
   margin-top: 20px;
 }
 
