@@ -114,7 +114,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
 
   return (
     <section className="all-page-form">
-      <div className="container">
+      <div className="container all-page-form-container">
         <div className="row form-row">
           <div className="col-12">
             <div className="form-box">
