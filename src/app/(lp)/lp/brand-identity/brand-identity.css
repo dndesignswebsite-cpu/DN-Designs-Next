@@ -199,6 +199,85 @@ width: 100%;
 .red-bg-overlay{
     background-color: #ca2734;
     width: 100%;
-    height:250px;
-    margin-top: -250px;
+    height:300px;
+    margin-top: -235px;
+}
+
+
+/* hero */
+.switch-on-div{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  height: 100%;
+  background-color: #fff;
+  
+}
+
+
+.switch-on-div h3{
+  font-size: 43px;
+  color: #ca2734;
+ font-family: var(--font-corbert-bold);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.switch-on-div p{
+  font-size: 18px;
+  color: #000;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  line-height: 1em;
+}
+
+
+
+@media(max-width:991px){
+  
+
+  .switch-on-div{
+   margin:20px 20px;
+}
+
+.switch-row{
+    margin-top: 40px;
+    padding-left: 15px;
+  }
+
+  .switch-on-middle-div-img-last{
+    margin: 20px 0;
+  }
+
+  .switch-on-div-main{
+    margin-top: 20px;
+  }
+}
+
+.switch-on-div-content{
+    padding: 20px;
+}
+
+.vertical-bar{
+    height: 130px;
+    width: 4px;
+    background-color: #000;
+    margin: 20px;
+}
+
+.switch-on-div-content{
+    padding: 20px;
+}
+
+
+.hero-left-col-div{
+    padding: 50px 0;
+}
+
+.lpform-right-col-div{
+    height: 100%;
+    
 }
