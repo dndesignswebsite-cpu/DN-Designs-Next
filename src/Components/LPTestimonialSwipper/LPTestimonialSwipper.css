@@ -1,0 +1,144 @@
+.lp-testimonial-swipper{
+    padding: 60px 0;
+    background: #ca2734;
+}
+
+.rating-icons {
+  display: flex;
+  color: yellow;
+  font-size: 24px;
+  gap: 10px;
+}
+
+.client-info-div{
+    display: flex;
+    gap: 10px;
+}
+
+.client-img-para{
+    font-size: 20px;
+    color: #ca2734;
+    font-family: var(--font-corbert);
+    background-color: rgba(202, 39, 52, 0.2);
+    font-weight: 400;
+    padding: 12px 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-name{
+    font-family: var(--font-corbert-bold);
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+}
+
+.client-designation{
+    color: rgba(18, 18, 18, 0.5);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1em;
+}
+
+.client-info-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lp-testimonial-swipper-slide-div{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lp-testimonial-para{
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0 10px 0;
+}
+
+
+
+.testimonial-controls{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.testimonial-prev,
+.testimonial-next{
+    width:42px;
+    height:42px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover{
+    background:#fff;
+}
+
+.testimonial-prev:hover svg path,
+.testimonial-next:hover svg path{
+    stroke:#ca2734;
+}
+
+.swiper-pagination{
+    position:relative !important;
+    bottom:unset !important;
+    width:auto !important;
+    padding-top:20px;
+}
+
+.swiper-pagination-bullet{
+    width:8px;
+    height:8px;
+    background:rgba(255,255,255,.45);
+    opacity:1;
+    margin:0px 5px !important;
+    
+}
+
+.swiper-pagination-bullet-active{
+
+    background:#fff;
+    width:24px;
+    border-radius:30px;
+
+    transition:.35s;
+
+}
+
+.what-our-client-say-head{
+    text-align: center;
+    font-family: var(--font-corbert-bold);
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.what-our-client-say-para{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: center;
+}

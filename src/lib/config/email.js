@@ -34,6 +34,7 @@ const createTransporter = () => {
 export const sendEmail = async ({ to, subject, html, text }) => {
   try {
     const transporter = createTransporter();
+    
 
     const recipients = Array.isArray(to) ? to : [to];
 
@@ -421,9 +422,324 @@ export const sendCareerApplicationEmail = async (
   }
 };
 
+
+
+export const sendLPFormEmail = async (
+  formData,
+  additionalEmails = [],
+) => {
+  const {
+    name,
+    email,
+    mobile,
+    serviceRequired,
+    projectDetails,
+    pageName,
+  } = formData;
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+background:#f4f4f5;
+color:#1f2937;
+}
+
+.wrapper{
+width:100%;
+background:#f4f4f5;
+padding:40px 0;
+}
+
+.container{
+max-width:650px;
+margin:auto;
+background:#ffffff;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 15px rgba(0,0,0,.08);
+}
+
+.header{
+background:linear-gradient(135deg,#111827,#374151);
+padding:45px;
+text-align:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#fff;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#d1d5db;
+font-size:15px;
+}
+
+.content{
+padding:35px;
+}
+
+.section{
+margin-bottom:25px;
+}
+
+.label{
+font-size:11px;
+text-transform:uppercase;
+letter-spacing:1px;
+color:#6b7280;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.value{
+font-size:16px;
+font-weight:600;
+color:#111827;
+line-height:1.6;
+}
+
+.value a{
+color:#2563eb;
+text-decoration:none;
+}
+
+.box{
+background:#f9fafb;
+border-left:4px solid #3b82f6;
+padding:20px;
+border-radius:8px;
+line-height:1.8;
+white-space:pre-wrap;
+}
+
+.badge{
+display:inline-block;
+background:#e5e7eb;
+padding:6px 16px;
+border-radius:20px;
+font-size:13px;
+font-weight:700;
+color:#374151;
+}
+
+.footer{
+background:#f9fafb;
+padding:25px;
+text-align:center;
+font-size:12px;
+color:#9ca3af;
+border-top:1px solid #e5e7eb;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 28px;
+background:#111827;
+color:#ffffff;
+text-decoration:none;
+border-radius:8px;
+font-weight:700;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="container">
+
+<div class="header">
+<div class="logo">DN Designs</div>
+<div class="subtitle">
+🚀 New Landing Page Enquiry
+</div>
+</div>
+
+<div class="content">
+
+<div class="section">
+<div class="label">
+Landing Page
+</div>
+
+<div class="value">
+<span class="badge">
+${pageName || "Landing Page"}
+</span>
+</div>
+</div>
+
+<div class="section">
+
+<div class="label">
+Client Name
+</div>
+
+<div class="value">
+${name}
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">
+Email Address
+</div>
+
+<div class="value">
+<a href="mailto:${email}">
+${email}
+</a>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">
+Mobile Number
+</div>
+
+<div class="value">
+<a href="tel:${mobile}">
+${mobile}
+</a>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">
+Service Required
+</div>
+
+<div class="box">
+
+${serviceRequired.replace(/\n/g,"<br>")}
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">
+Project Details
+</div>
+
+<div class="box">
+
+${projectDetails.replace(/\n/g,"<br>")}
+
+</div>
+
+</div>
+
+<div style="text-align:center;">
+
+<a href="mailto:${email}" class="btn">
+
+Reply to ${name}
+
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+
+<p>
+Received via DN Designs Website • ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}
+</p>
+
+<p>
+This is an automated notification.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+`;
+
+  const recipients = [process.env.ADMIN_EMAIL];
+
+  additionalEmails.forEach((emailAddr) => {
+    if (emailAddr && !recipients.includes(emailAddr)) {
+      recipients.push(emailAddr);
+    }
+  });
+
+  try {
+    const transporter = createTransporter();
+
+    const mailOptions = {
+      from: `"DN Designs" <${process.env.EMAIL_USER}>`,
+      to: recipients.join(", "),
+      subject: `🚀 New Landing Page Enquiry - ${name}`,
+      html: html,
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+
+    console.log(
+      "✅ Landing Page enquiry email sent successfully:",
+      info.messageId,
+    );
+
+    return {
+      success: true,
+      messageId: info.messageId,
+      recipients: recipients.length,
+    };
+  } catch (error) {
+    logError(error, {
+      function: "sendLPFormEmail",
+      formData,
+    });
+
+    throw error;
+  }
+};
+
+// export default {
+//   sendEmail,
+//   sendContactNotification,
+//   sendPromotionalEmail,
+//   sendCareerApplicationEmail,
+// };
+
+
 export default {
   sendEmail,
   sendContactNotification,
   sendPromotionalEmail,
   sendCareerApplicationEmail,
+  sendLPFormEmail,
 };

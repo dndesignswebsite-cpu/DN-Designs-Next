@@ -1,0 +1,56 @@
+.lp-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.lp-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee linear infinite;
+  will-change: transform;
+}
+
+.lp-marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+.lp-marquee:hover .lp-marquee-track {
+  animation-play-state: paused;
+}
+
+.lp-marquee-item {
+  flex: 0 0 auto;
+  width: 220px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-marquee-item img {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: .7;
+  transition: .35s;
+}
+
+.lp-marquee-item:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(-25%,0,0);
+  }
+}

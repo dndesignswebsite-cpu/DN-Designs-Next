@@ -1,0 +1,15 @@
+.lp-faq-images-col{
+   padding: 50px 10px 40px 10px;
+}
+
+.lp-faq-images-col-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 40px;
+    font-weight: 700;
+    color: #161616;
+    padding-bottom: 50px;
+}
+
+.lp-faq-images{
+    border-radius: 16px;
+}
