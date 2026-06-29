@@ -118,9 +118,6 @@ function page() {
   ];
 
   // form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee";
-  const FormPara =
-    "Usually, customers prefer to watch an animated video over reading long blogs, manuals or documentation. How do we know this? Well, statistics say this, and we, as consumers, do the same. As an animation company in Noida, we create videos that capture attention, provide the required information, strike an emotional chord with customers and build trust. Want a similar experience for your customers? Let’s discuss your project over a cup of coffee.";
   const pageName = "lp/brand-identity";
   return (
     <div>
@@ -180,13 +177,11 @@ function page() {
               </div>
 
               <h1 className="hero-head">
-                Your Creative Partner for <span className="hero-head-span">Packaging, Branding & Digital</span>
-                Experiences
+                A Full-Service Branding <span className="hero-head-span">Agency For Growth, </span>
+                 Recognition & Impact
               </h1>
               <p className="hero-para-desc">
-                We help FMCG, Pharma, Healthcare and Consumer brands build
-                memorable identities through strategic branding, packaging, web
-                design and marketing creatives.
+               Collaborate with us to build a brand that stands out, inspires confidence, drives loyalty and brings in business profit. We are your trusted partner in your branding journey.
               </p>
 
 
@@ -204,9 +199,9 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={68} />%
+                        <AutoCounter target={8} />+
                       </h3>
-                      <p>of the global population uses the Internet</p>
+                      <p> Years of Experience</p>
                     </div>
                   </div>
                 </div>
@@ -215,10 +210,10 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={63} />%
+                        <AutoCounter target={100} />+
                       </h3>
 
-                      <p>of the global population are social media users.</p>
+                      <p>Brands Built</p>
                     </div>
                   </div>
                 </div>
@@ -235,9 +230,9 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={68} />%
+                        <AutoCounter target={10} />+
                       </h3>
-                      <p>of the global population uses the Internet</p>
+                      <p>Industries Served</p>
                     </div>
                   </div>
                 </div>
@@ -246,10 +241,10 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={63} />%
+                        <AutoCounter target={90} />%
                       </h3>
 
-                      <p>of the global population are social media users.</p>
+                      <p>Client Retention Rate</p>
                     </div>
                   </div>
                 </div>
@@ -260,7 +255,7 @@ function page() {
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-          <div className="">
+          <div className="lpform-dektop-form">
           <div className="lpform-right-col-div lpform-right-col-div-desktop" >
             <LPForm pageName={pageName} />
             </div>
@@ -275,9 +270,9 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={68} />%
+                        <AutoCounter target={8} />+
                       </h3>
-                      <p>of the global population uses the Internet</p>
+                      <p>Years of Experience</p>
                     </div>
                   </div>
                 </div>
@@ -286,10 +281,10 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={63} />%
+                        <AutoCounter target={100} />+
                       </h3>
 
-                      <p>of the global population are social media users.</p>
+                      <p>Brands Built</p>
                     </div>
                   </div>
                 </div>
@@ -301,9 +296,9 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={68} />%
+                        <AutoCounter target={10} />+
                       </h3>
-                      <p>of the global population uses the Internet</p>
+                      <p>Industries Served</p>
                     </div>
                   </div>
                 </div>
@@ -312,10 +307,10 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={63} />%
+                        <AutoCounter target={90} />%
                       </h3>
 
-                      <p>of the global population are social media users.</p>
+                      <p>Client Retention Rate</p>
                     </div>
                   </div>
                 </div>
@@ -333,17 +328,16 @@ function page() {
 
       <div className="brands-that-us">
         <div className="container">
-          <h2 className="brands-that-us-head">Brands That <span className="brands-that-us-head-span">Trust Us</span></h2>
+          <h2 className="brands-that-us-head">Trusted By <span className="brands-that-us-head-span">Visionary Brands</span></h2>
           <p className="brands-that-us-para">
-            We've partnered with startups, SMEs and established companies across
-            multiple industries.
+            From food & beverage to nutraceuticals, we partner with businesses across industries to create lasting impact.
           </p>
         </div>
       </div>
       <div className="marque-div">
         <LPMarque brands={topBrands} speed={22} />
       </div>
-      <div className="marque-div">
+      <div className="marque-div marque-div-2">
         <LPMarque brands={bottomBrands} reverse speed={22} />
       </div>
 
@@ -353,17 +347,16 @@ function page() {
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-left-col">
-                <p className="what-we-do-lefty-col-para">What We Do</p>
+                <p className="what-we-do-lefty-col-para">Explore our Expertise</p>
                 <h2 className="what-we-do-lefty-col-head">
-                  Everything You Need To Build A Strong Brand
+                  Branding, Design & Marketing Services
                 </h2>
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-right-col">
                 <p className="what-we-do-right-col-para">
-                  End-to-end creative solutions for FMCG, Pharma, Healthcare and
-                  Consumer brands.
+                  See how we transform your vision into an impactful brand experience.
                 </p>
               </div>
             </div>
@@ -383,7 +376,7 @@ function page() {
                     </div>
                     <div className="overlay-bottom">
                       <p className="overlay-para">
-                        Identity · Strategy · Visual System
+                        Insightful. Scalable. Powerful 
                       </p>
                       <h2 className="overlay-head">Branding</h2>
                     </div>
@@ -391,16 +384,17 @@ function page() {
                 </div>
                 <div className="what-we-do-box-div-content">
                   <p className="what-we-do-box-div-content-para">
-                    We build brands that command attention, create loyalty, and
-                    communicate value before a word is spoken.
+                    Transform your business into brands people remember and choose. We offer end-to-end branding services - from brand strategy and identity design to packaging design. 
                   </p>
                   <div className="what-we-do-spans-div">
+                    <span className="what-we-do-span">Brand Strategy</span>
                     <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
+                    <span className="what-we-do-span">Logo Design</span>
+                    <span className="what-we-do-span">Brand Positioning</span>
+                    <span className="what-we-do-span">Packaging Design</span>
+                    <span className="what-we-do-span">Catalogue Design</span>
+                    <span className="what-we-do-span">Brand Naming</span>
+                    <span className="what-we-do-span">Rebranding</span>
                   </div>
                   
                 </div>
@@ -420,24 +414,22 @@ function page() {
                     </div>
                     <div className="overlay-bottom">
                       <p className="overlay-para">
-                        Identity · Strategy · Visual System
+                        Brand-Aligned. Clear. Consistent
                       </p>
-                      <h2 className="overlay-head">Branding</h2>
+                      <h2 className="overlay-head">Communication</h2>
                     </div>
                   </div>
                 </div>
                 <div className="what-we-do-box-div-content">
                   <p className="what-we-do-box-div-content-para">
-                    We build brands that command attention, create loyalty, and
-                    communicate value before a word is spoken.
+                   Fuel your business growth with strategic communications. Our brand communication services help you reach the right audience, build stronger customer relationships and drive success.
                   </p>
                   <div className="what-we-do-spans-div">
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
+                    <span className="what-we-do-span">Digital Marketing</span>
+                    <span className="what-we-do-span">Social Media Marketing</span>
+                    <span className="what-we-do-span">Influencer Marketing</span>
+                    <span className="what-we-do-span">Animation</span>
+                    <span className="what-we-do-span">Photography</span>
                   </div>
                  
                 </div>
@@ -457,24 +449,20 @@ function page() {
                     </div>
                     <div className="overlay-bottom">
                       <p className="overlay-para">
-                        Identity · Strategy · Visual System
+                        User-Centric. Conversion-Oriented
                       </p>
-                      <h2 className="overlay-head">Branding</h2>
+                      <h2 className="overlay-head">Web Design</h2>
                     </div>
                   </div>
                 </div>
                 <div className="what-we-do-box-div-content">
                   <p className="what-we-do-box-div-content-para">
-                    We build brands that command attention, create loyalty, and
-                    communicate value before a word is spoken.
+                   Build a powerful online presence to succeed in the digital-first era. We design visually appealing and user-friendly websites that attract, engage and generate results.
                   </p>
                   <div className="what-we-do-spans-div">
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Brand Identity</span>
+                    <span className="what-we-do-span">UI/UX Design</span>
+                    <span className="what-we-do-span">Web Designing</span>
+                    <span className="what-we-do-span">SEO</span>
                   </div>
                  
                 </div>

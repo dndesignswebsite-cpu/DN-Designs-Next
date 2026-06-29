@@ -21,9 +21,9 @@ export default function OurWorkHomeSection() {
       <div className="row">
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-left-col">
-                <p className="what-we-do-lefty-col-para">What We Do</p>
+                <p className="what-we-do-lefty-col-para">Our Work Portfolio</p>
                 <h2 className="what-we-do-lefty-col-head">
-                  Everything You Need To Build A Strong Brand
+                   Explore Our Finest Brand Creations
                 </h2>
               </div>
             </div>

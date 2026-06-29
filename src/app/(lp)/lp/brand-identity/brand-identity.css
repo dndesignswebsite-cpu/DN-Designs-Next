@@ -23,6 +23,9 @@
 .marque-div{
     padding: 20px 0;
 }
+.marque-div-2{
+    padding-bottom: 80px;
+}
 
 @media(max-width:767px){
     .brands-that-us-head{
@@ -209,7 +212,7 @@ width: 100%;
 .switch-on-div{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   /* justify-content: space-between; */
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   border: 1px solid #E5E7EB;
@@ -217,6 +220,8 @@ width: 100%;
   background-color: #fff;
   
 }
+
+
 
 
 .switch-on-div h3{
@@ -275,7 +280,7 @@ width: 100%;
 
 
 .hero-left-col-div{
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .lpform-right-col-div{
@@ -359,4 +364,17 @@ width: 100%;
     display: block;
     
 }
+#faq{
+    padding-top: 00px;
+    padding-bottom: 10px;
+}
+}
+
+.what-we-do-box-div{
+    height:100%;
+}
+
+#faq{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

@@ -147,7 +147,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                 <div className="row">
                   <div className="inpt">
                     <label htmlFor="name">
-                      Name <span>*</span>
+                      Name 
                     </label>
 
                     <input
@@ -168,7 +168,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                     <div className="inpt">
 
                       <label htmlFor="email">
-                        Email <span>*</span>
+                        Email 
                       </label>
 
                       <input
@@ -189,7 +189,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                     <div className="inpt">
 
                       <label htmlFor="mobile">
-                        Mobile Number <span>*</span>
+                        Mobile Number 
                       </label>
 
                       <input
@@ -216,7 +216,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                   <div className="inpt">
 
                     <label htmlFor="serviceRequired">
-                      Service Required <span>*</span>
+                      Service Required
                     </label>
 
                     <textarea
@@ -239,7 +239,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                   <div className="inpt">
 
                     <label htmlFor="projectDetails">
-                      Project Details <span>*</span>
+                      Project Details 
                     </label>
 
                     <textarea

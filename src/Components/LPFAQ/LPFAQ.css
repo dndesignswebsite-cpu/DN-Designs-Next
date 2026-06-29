@@ -13,3 +13,12 @@
 .lp-faq-images{
     border-radius: 16px;
 }
+
+
+@media(max-width:767px){
+    .lp-faq-images-col{
+   padding: 10px 10px 40px 10px;
+}
+
+
+}
