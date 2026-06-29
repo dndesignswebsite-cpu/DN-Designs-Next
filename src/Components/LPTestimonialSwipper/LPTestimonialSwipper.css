@@ -7,13 +7,13 @@
   display: flex;
   color: yellow;
   font-size: 24px;
-  gap: 10px;
+  gap:6px;
 }
 
-.client-info-div{
+/* .client-info-div{
     display: flex;
     gap: 10px;
-}
+} */
 
 .client-img-para{
     font-size: 20px;
@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .lp-testimonial-swipper-slide-div{
@@ -55,6 +56,7 @@
     padding: 20px;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
 }
 
 .lp-testimonial-para{
@@ -141,4 +143,62 @@
     color: #fff;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.client-info-div-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.client-info-div-right-img{
+    width: 80px;
+}
+
+.client-info-div-right{
+    padding: 20px;
+}
+
+.swipper-slider-wrapper-div-for-height{
+    height: 100%;
+}
+
+.client-img-for-lp-swipper{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+/* for height */
+/* Swiper stretch */
+.lp-testimonial-swipper .swiper-wrapper{
+    align-items: stretch;
+}
+
+.lp-testimonial-swipper .swiper-slide{
+    height: auto !important;
+    display: flex;
+}
+
+.swipper-slider-wrapper-div-for-height{
+    width:100%;
+    display:flex;
+}
+
+.lp-testimonial-swipper-slide-div{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+}
+
+/* Push client info to bottom */
+.client-info-div{
+    margin-top:auto;
+}
+
+.client-name-designation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

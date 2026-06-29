@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import BootstrapClient from "@/Components/BootstrapClient/BootstrapClient";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
-import TawkToChat from "@/Components/TawkToChat/TawkToChat";
-import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
+// import TawkToChat from "@/Components/TawkToChat/TawkToChat";
+// import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 
 /* =========================
    LOCAL FONTS
@@ -146,9 +146,9 @@ export default function RootLayout({ children }) {
             MICROSOFT CLARITY
          ========================= */}
         {/* <MicrosoftClarity /> */}
-        <MicrosoftClarity/>
+        {/* <MicrosoftClarity/>
 
-        <TawkToChat />
+        <TawkToChat /> */}
       </body>
     </html>
   );

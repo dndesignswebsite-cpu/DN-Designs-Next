@@ -7,6 +7,11 @@ import WhatsApp from "@/Components/WhatsApp/WhatsApp";
 import Script from "next/script";
 import PageLoader from "@/Components/PageLoader/PageLoader";
 
+
+// add lp
+import TawkToChat from "@/Components/TawkToChat/TawkToChat";
+import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
+
 /* =========================
    METADATA (HOME PAGE)
 ========================= */
@@ -125,6 +130,10 @@ export default function MainLayout({ children }) {
     <WhatsApp />
   </SmoothScroll>
 </PageLoader>
+
+{/* lp */}
+<MicrosoftClarity />
+      <TawkToChat />
 
     </>
   );

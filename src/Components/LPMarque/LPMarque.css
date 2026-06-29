@@ -23,7 +23,7 @@
 .lp-marquee-item {
   flex: 0 0 auto;
   width: 220px;
-  height: 90px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
