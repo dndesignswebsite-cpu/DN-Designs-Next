@@ -5,8 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./LPForm.css";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 function LPForm({ FormHead, FormPara, pageName }) {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
@@ -89,16 +91,34 @@ function LPForm({ FormHead, FormPara, pageName }) {
       const data = await response.json();
 
       if (response.ok) {
-        toast.success(
-          data.message || "Enquiry submitted successfully!"
-        );
+  toast.success(
+    data.message || "Enquiry submitted successfully!"
+  );
 
-        setName("");
-        setEmail("");
-        setMobile("");
-        setServiceRequired("");
-        setProjectDetails("");
-      } else {
+  setName("");
+  setEmail("");
+  setMobile("");
+  setServiceRequired("");
+  setProjectDetails("");
+
+  
+  setTimeout(() => {
+    router.push("/lp/thank-you");
+  }, 1000);
+}
+
+      // if (response.ok) {
+      //   toast.success(
+      //     data.message || "Enquiry submitted successfully!"
+      //   );
+
+      //   setName("");
+      //   setEmail("");
+      //   setMobile("");
+      //   setServiceRequired("");
+      //   setProjectDetails("");
+      // }
+        else {
         toast.error(
           data.message || "Failed to submit enquiry."
         );
@@ -118,7 +138,10 @@ function LPForm({ FormHead, FormPara, pageName }) {
         <div className="row form-row">
           <div className="col-12">
             <div className="form-box">
-
+            <div className="form-content-head-para">
+               <h2 className="form-content-head">Let's Build Your Brand</h2>
+               <p className="form-content-para">Fill the form · Get a free strategy call</p>
+               </div>
               <form className="main-form" onSubmit={handleSubmit}>
 
                 <div className="row">
@@ -198,7 +221,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
 
                     <textarea
                       id="serviceRequired"
-                      rows="4"
+                      rows="1"
                       placeholder="Which service are you looking for?"
                       value={serviceRequired}
                       onChange={(e) =>

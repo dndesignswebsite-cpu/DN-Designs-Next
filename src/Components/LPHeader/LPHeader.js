@@ -3,10 +3,18 @@
 import React, { useState } from "react";
 import "./LPHeader.css";
 import Image from "next/image";
+import { getLenis } from "@/Components/SmoothScroll";
 
 function LPHeader() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const scrollToSection = (id) => {
+  const lenis = getLenis();
+
+  if (lenis) {
+    lenis.scrollTo(`#${id}`);
+  }
+};
 
   return (
     <>
@@ -31,7 +39,7 @@ function LPHeader() {
               </div>
             </div>
 
-            <div className="col-8">
+            <div className="col-10">
 
               <div className="navlinks-div">
 
@@ -67,7 +75,7 @@ function LPHeader() {
 
             </div>
 
-            <div className="col-2">
+            {/* <div className="col-2">
 
               <div className="lets-connect-cta-div">
                 <button className="lets-connect-cta-btn">
@@ -75,7 +83,7 @@ function LPHeader() {
                 </button>
               </div>
 
-            </div>
+            </div> */}
 
           </div>
 
@@ -102,7 +110,7 @@ function LPHeader() {
 
             <div className="col-6">
 
-              <div
+              {/* <div
   className={`mobile-navbar-bar ${menuOpen ? "hide-hamburger" : ""}`}
   onClick={() => setMenuOpen(true)}
 >
@@ -111,8 +119,17 @@ function LPHeader() {
                 <span className="navbar-bar-line"></span>
                 <span className="navbar-bar-line"></span>
 
-              </div>
+              </div> */}
 
+
+              <div className="lets-connect-cta-div">
+              <a href="tel:+919876543210">
+                <button className="lets-connect-cta-btn">
+                  Lets Connect
+                </button>
+                </a>
+              </div>
+              
             </div>
 
           </div>
@@ -123,23 +140,23 @@ function LPHeader() {
 
       {/* Overlay */}
 
-      <div
+      {/* <div
         className={`mobile-overlay ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(false)}
-      ></div>
+      ></div> */}
 
       {/* Close Button */}
 
-      <button
+      {/* <button
         className={`close-btn ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(false)}
       >
         ✕
-      </button>
+      </button> */}
 
       {/* Mobile Drawer */}
 
-      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+      {/* <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
 
         <ul>
 
@@ -177,7 +194,7 @@ function LPHeader() {
 
         </ul>
 
-      </div>
+      </div> */}
 
     </>
   );

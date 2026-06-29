@@ -39,7 +39,7 @@ Navigation
 .navlinks-list-ul{
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:end;
     gap:25px;
     list-style:none;
     height:100%;
@@ -306,4 +306,11 @@ Responsive
     opacity:0;
     visibility:hidden;
     pointer-events:none;
+}
+
+
+@media(max-width:767px){
+    .lets-connect-cta-btn{
+        font-size: 14px;
+    }
 }

@@ -1,11 +1,11 @@
 /* marque section */
 .brands-that-us{
-    padding: 50px 0;
+    padding: 80px 0 30px 0;
 }
 .brands-that-us-head{
     text-align: center;
     font-family: var(--font-corbert-bold);
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     color: #161616;
     padding-bottom: 15px;
@@ -17,7 +17,7 @@
     color: #888888;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .marque-div{
@@ -79,7 +79,7 @@
     position: relative;
 }
 
-.overlay{
+.overlay-lp-page{
     position: absolute;
     top: 0;
     left: 0;
@@ -121,6 +121,7 @@
     gap: 8px;
     align-items: center;
     /* justify-content: center; */
+    margin-bottom: 10px;
 }
 .what-we-do-span{
     font-family: var(--font-roboto);
@@ -144,7 +145,7 @@
 }
 
 .overlay-para{
-    color: #ca2734;
+    color: #fff;
     text-transform: uppercase;
     font-family:var(--font-roboto);
     font-weight: 500;
@@ -279,5 +280,83 @@ width: 100%;
 
 .lpform-right-col-div{
     height: 100%;
+}
+
+.rating-icons {
+  display: flex;
+  color: #CA2734;
+  font-size: 20px;
+  gap: 0px;
+}
+
+.hero-col-label{
+    display: flex;
+    gap: 5px;
+    border: 1px solid rgba(202, 39, 52, 0.2);
+    background-color: rgba(202, 39, 52, 0.1);
+    border-radius: 16px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px;
+}
+
+.hero-label-para{
+    /* line-height: 1em; */
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 14px;
+    color: #ca2734;
+    /* padding-top: 8px; */
+}
+
+.hero-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 32px;
+    font-weight: 700;
+    color: #161616;
+    padding-top: 50px;
+}
+
+.hero-head-span{
+    color: #ca2734;
+}
+
+.hero-para-desc{
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    padding: 20px 0 10px 0;
+}
+
+
+.brands-that-us-head-span{
+    color: #ca2734;
+}
+
+.lpform-right-col-div-mobile{
+    display: none;
+}
+
+.hero-counter-row-div-for-mobile{
+    display: none;
+}
+
+
+@media(max-width:767px){
+.lpform-right-col-div-mobile{
+    display: block;
     
+}
+.hero-counter-row-div-for-desktop{
+    display: none;
+}
+.lpform-right-col-div-desktop{
+    display: none;
+}
+.hero-counter-row-div-for-mobile{
+    display: block;
+    
+}
 }
