@@ -5,25 +5,51 @@ import "./LPFAQ.css"
 function LPFAQ() {
      const leftFaqs = [
        {
-          question: "What is a brand positioning statement? ",
+          question: "What services does DN Designs offer? ",
           answer:
-            (<>It is an internal document - clear and concise - which defines your brand’s unique value that sets it apart from competitors in the market. It typically defines your target audience, product category, the unique benefits offered, and the reason why customers should trust your brand. It ensures your messaging and marketing stay consistent.</>)
+            (<>As a full-service branding & marketing agency, we offer complete branding solutions for modern businesses. We craft your brand strategy and positioning, and design your identity, packaging and catalogue. In addition, we help boost your brand presence through our digital marketing, photography and animation services.</>)
         },
         {
-          question: "What does a brand positioning agency do?",
+          question: "How are you different from other branding agencies?",
           answer:
-            (<>A brand positioning agency, like DN Designs, helps businesses create a distinct space for themselves in the market and the customers’ minds. It combines research insights and creativity to craft a positioning that connects with customers and drives profit.</>)
+            (<>We don’t focus on the visual aspect alone. Instead, we combine research, strategy and creativity to create brands that impress visually and drive recognition, sales and profits.</>)
         },
         {
-          question: "How long does the brand positioning process take? ",
+          question: "Which industries do you serve? ",
           answer:
-            (<>Usually, it takes 2 to 6 weeks to complete the process; however, the timelines can vary depending on the project complexities.</>)
+            (<>We work across multiple industries, including FMCG, food & beverage, pharmaceuticals, nutraceutical, skincare, jewellery, technology, education, tourism, etc.</>)
         },
         {
-          question: "Can an existing brand be repositioned? ",
+          question: "Can you work with clients outside India? ",
           answer:
-            "Yes, if you want to better adapt to market changes, target new audiences and grow your business, you can reposition your brand. As a brand positioning agency, we offer both brand positioning and repositioning services.  ",
+            "Yes, we are a global branding agency and work with both Indian and international clients.",
         },
+        {
+          question: "Do you work only with established businesses? ",
+          answer:
+            "We work with all types of businesses - startups, mid-size and well-established. We customise our branding, design and marketing services to suit their requirements.",
+        },
+        {
+          question: "Do you provide packaging design services? ",
+          answer:
+            "Yes, we provide packaging design services. Our strategic packaging designs help your products stand out and drive purchase in both physical and digital environments.",
+        },
+        {
+          question: "Does your creative agency provide animation and photography services?",
+          answer:
+            "Yes, our creative agency offers services like product photography, brand shoots, motion graphics and animated videos. These help brands capture attention, build recognition, and connect with their audience across platforms.",
+        },
+        {
+          question: "Can your rebranding agency transform my existing brand?",
+          answer:
+            "Yes, we can definitely help transform your existing business. We can refresh your identity, refine your positioning and strengthen your communication to ensure your brand stands out in the market, connects with target customers and drives business growth. ",
+        },
+         {
+          question: "How can we get started?",
+          answer:
+            "Simply fill out our contact form or give us a call. We can schedule a meeting immediately or as per your convenience.",
+        },
+    
     
         
       ];
@@ -41,28 +67,28 @@ function LPFAQ() {
             <h2 className='lp-faq-images-col-head'>Inside Our Studio</h2>
             <div className='row'>
                 <div className='col-7'>
-                    <img src="https://dndesigns.co.in/uploads/pages/1-1.webp" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/hhhfekjgefj.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
                 <div className='col-5'>
-                    <img src="https://dndesigns.co.in/uploads/pages/2_mob.jpg" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/rtyuio.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
             </div>
 
             <div className='row mt-3'>
             <div className='col-5'>
-                    <img src="https://dndesigns.co.in/uploads/pages/2_mob.jpg" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/ru3yu.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
                 <div className='col-7'>
-                    <img src="https://dndesigns.co.in/uploads/pages/1-1.webp" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/yui.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
             </div>
 
             <div className='row mt-3'>
                 <div className='col-7'>
-                    <img src="https://dndesigns.co.in/uploads/pages/1-1.webp" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/kphghf.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
                 <div className='col-5'>
-                    <img src="https://dndesigns.co.in/uploads/pages/2_mob.jpg" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/uyrygjk.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
             </div>
         </div>

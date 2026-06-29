@@ -202,3 +202,10 @@
     flex-direction: column;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+    .what-our-client-say-head{
+        font-size: 40px;
+    }
+
+}

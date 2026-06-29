@@ -17,8 +17,8 @@ function LPTestimonialSwipper() {
     <div>
       <div className="lp-testimonial-swipper">
         <div className="container">
-        <h2 className="what-our-client-say-head">What Our Clients Say</h2>
-        <p className="what-our-client-say-para">Real feedback from brands we've helped grow.</p>
+        <h2 className="what-our-client-say-head">Client Testimonials</h2>
+        <p className="what-our-client-say-para">Find out what our clients have to say about our services.</p>
           <Swiper
   loop={true}
   spaceBetween={30}
@@ -331,7 +331,7 @@ function LPTestimonialSwipper() {
                   </div>
                   <div className="client-name-designation">
                     <span className="client-name">Arihant Jain</span>
-                    <span className="client-designation">AT1AM</span>
+                    <span className="client-designation">@1AM</span>
                   </div>
                   </div>
                   <div className="client-info-div-right">

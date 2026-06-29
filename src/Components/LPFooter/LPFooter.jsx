@@ -18,7 +18,7 @@ function LPFooter() {
   return (
     <div className='lp-footer'>
     <div className='container'>
-      <p className='lp-footer-para'>Copyright © 2025 DN Designs . All rights reserved</p>
+      <p className='lp-footer-para'>Copyright © 2026 DN Designs . All rights reserved</p>
     </div>
 
     <div className='mobile-footer-btn-div'>
