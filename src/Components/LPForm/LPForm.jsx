@@ -219,7 +219,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
                       Service Required
                     </label> */}
 
-                    <textarea
+                    <input
                       id="serviceRequired"
                       rows="1"
                       placeholder="Which service are you looking for?"
