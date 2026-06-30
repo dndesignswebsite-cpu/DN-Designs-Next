@@ -47,9 +47,7 @@ export default function Faqs({ leftFaqs, title = "FAQs" }) {
                 question={item.question}
                 answer={item.answer}
                 isOpen={leftActive === index}
-                onClick={() =>
-                  setLeftActive(leftActive === index ? null : index)
-                }
+                onClick={() => setLeftActive(index)}
               />
             ))}
           </div>

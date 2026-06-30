@@ -199,7 +199,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={8} />+
+                        <AutoCounter target={8} speed={150}/>+
                       </h3>
                       <p> Years of Experience</p>
                     </div>
@@ -210,7 +210,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={300} />+
+                        <AutoCounter target={300} speed={10}/>+
                       </h3>
 
                       <p>Brands Built</p>
@@ -230,7 +230,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={10} />+
+                        <AutoCounter target={10} speed={150}/>+
                       </h3>
                       <p>Industries Served</p>
                     </div>
@@ -241,7 +241,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={90} />%
+                        <AutoCounter target={90} speed={40}/>%
                       </h3>
 
                       <p>Client Retention Rate</p>
@@ -270,7 +270,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={8} />+
+                        <AutoCounter target={8} speed={150}/>+
                       </h3>
                       <p>Years of Experience</p>
                     </div>
@@ -281,7 +281,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={300} />+
+                        <AutoCounter target={300} speed={10}/>+
                       </h3>
 
                       <p>Brands Built</p>
@@ -296,7 +296,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={10} />+
+                        <AutoCounter target={10} speed={150}/>+
                       </h3>
                       <p>Industries Served</p>
                     </div>
@@ -307,7 +307,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={90} />%
+                        <AutoCounter target={90} speed={40}/>%
                       </h3>
 
                       <p>Client Retention Rate</p>
@@ -326,7 +326,7 @@ function page() {
 
       {/* marque */}
 
-      <div className="brands-that-us">
+      <div className="brands-that-us" id="our-clients">
         <div className="container">
           <h2 className="brands-that-us-head">Trusted By <span className="brands-that-us-head-span">Visionary Brands</span></h2>
           <p className="brands-that-us-para">
