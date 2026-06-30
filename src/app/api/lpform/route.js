@@ -112,7 +112,7 @@ export async function POST(request) {
 
     try {
       const contactGroup =
-        await emailRepository.findByType("contact");
+        await emailRepository.findByType("ads");
 
       if (contactGroup && contactGroup.emails) {
         additionalEmails = contactGroup.emails;
@@ -120,7 +120,7 @@ export async function POST(request) {
     } catch (error) {
       logError(error, {
         function: "POST /api/lpform",
-        message: "Failed to fetch contact email group",
+        message: "Failed to fetch ads email group",
       });
     }
 

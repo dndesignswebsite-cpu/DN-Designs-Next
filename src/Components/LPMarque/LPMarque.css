@@ -36,8 +36,8 @@
   height: auto;
   object-fit: contain;
 
-  filter: grayscale(100%);
-  opacity: .7;
+  /* filter: grayscale(100%); */
+  opacity: 1;
   transition: .35s;
 }
 

@@ -1,7 +1,7 @@
 .all-page-form{
   padding-top:50px;
   padding-bottom:50px;
-  padding-left: 20px;
+  padding-left: 100px;
   padding-right: 20px;
      height: 100%;
 }
@@ -45,7 +45,8 @@
   font-size: 14px;
   margin:10px 0px;
   background-color: #F2F2F2;
-  color: rgba(0, 0, 0, 0.29);
+  /* color: rgba(0, 0, 0, 0.29); */
+  color:#000;
 }
 .inpt textarea {
   width: 100%;
@@ -57,7 +58,8 @@
   font-size: 14px;
   margin-top: 10px;
   background-color: #F2F2F2;
-  color: rgba(0, 0, 0, 0.29);
+  /* color: rgba(0, 0, 0, 0.29); */
+  color:#000;
 }
 
 
@@ -70,10 +72,10 @@
 
 .sbmt-btn {
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   background: #ca2734;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   border-radius: 15px;
   font-weight: 600;
@@ -164,6 +166,14 @@ background-color: #fff;
 .form-main-content h3{
   font-size: 40px;
 }
+
+.all-page-form{
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left: 20px;
+  padding-right: 20px;
+     height: 100%;
+}
 }
 
 .succes-class-form{
@@ -200,5 +210,10 @@ background-color: #fff;
 @media(max-width:767px){
   .all-page-form{
     padding: 0px;
+  }
+
+  .sbmt-btn{
+    padding: 10px;
+    font-size: 14px;
   }
 }

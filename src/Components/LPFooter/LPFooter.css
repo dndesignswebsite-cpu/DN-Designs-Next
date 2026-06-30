@@ -1,5 +1,5 @@
 .lp-footer{
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #ca2734;
 }
 
@@ -17,7 +17,7 @@
 
 @media(max-width:767px){
     .lp-footer{
-        padding: 40px 0 70px 0;
+        padding: 20px 0 80px 0;
     }
     .mobile-footer-btn-div{
         display: flex;
@@ -27,7 +27,7 @@
         width:100%;
         z-index: 9999;
         background-color: #ca2734;
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
         gap: 10px;
     }
 
@@ -38,7 +38,7 @@
         font-family: var(--font-corbert-bold);
         font-weight: 700;
         font-size: 16px;
-        padding: 12px 0;
+        padding: 10px 0;
         border: 1px solid #000;
         border-radius: 35px;
     }

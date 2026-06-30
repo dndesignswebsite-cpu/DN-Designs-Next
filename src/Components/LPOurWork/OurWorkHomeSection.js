@@ -51,13 +51,23 @@ export default function OurWorkHomeSection() {
               <div className="imag-cont">
                 
 
-                <Image
+                {/* <Image
                   src={imageUrl + "enlite graphic.webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
-                />
+                /> */}
+
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/Can-2-1.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+
+                
 
                 <div className="overlay"></div>
                 <div className="overlay-box">
@@ -178,13 +188,21 @@ export default function OurWorkHomeSection() {
              <div className="imag-cont">
                   {/* <img src={imageUrl + "i orgainc gif.gif"} alt="demo" /> */}
 
-                    <Image
+                    {/* <Image
                  src={imageUrl + "lets (1).webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
-                />
+                /> */}
+
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/lat3vid.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
                   <div className="overlay"></div>
                   <div className="overlay-box">
                     <div className="overlay-title">Let's Up</div>
@@ -257,10 +275,10 @@ export default function OurWorkHomeSection() {
               </div>
             </div>
 
-            <div className="row our-work-row">
+            {/* <div className="row our-work-row">
               <div className="col-sm-12 col-md-3">
                 <div className="imag-cont">
-                  {/* <img src={imageUrl + "Deeproot logo.webp"} alt="demo" /> */}
+                 
 
                    <Image
                  src={imageUrl + "Deeproot logo.webp"}
@@ -294,7 +312,7 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                  {/* <img src={imageUrl + "smartyums graphic.webp"} alt="demo" /> */}
+                 
 
                    <Image
                  src={imageUrl + "smartyums graphic.webp"}
@@ -310,7 +328,7 @@ export default function OurWorkHomeSection() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="row our-work-row">
               <div className="col-sm-12 col-md-6">
