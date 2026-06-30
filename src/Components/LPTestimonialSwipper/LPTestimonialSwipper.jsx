@@ -330,7 +330,7 @@ function LPTestimonialSwipper() {
                     <img src="https://dndesigns.co.in/uploads/pages/1am-CEO.jpg.jpeg" className="client-img-for-lp-swipper img-fluid"/>
                   </div>
                   <div className="client-name-designation">
-                    <span className="client-name">Arihant Jain</span>
+                    <span className="client-name">Mr. Arihant Jain</span>
                     <span className="client-designation">@1AM</span>
                   </div>
                   </div>
