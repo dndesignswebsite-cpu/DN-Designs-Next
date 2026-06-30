@@ -210,7 +210,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={100} />+
+                        <AutoCounter target={300} />+
                       </h3>
 
                       <p>Brands Built</p>
@@ -281,7 +281,7 @@ function page() {
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
                       <h3>
-                        <AutoCounter target={100} />+
+                        <AutoCounter target={300} />+
                       </h3>
 
                       <p>Brands Built</p>
