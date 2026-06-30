@@ -24,7 +24,7 @@ function LPFooter() {
     <div className='mobile-footer-btn-div'>
        
        
-       <a href="tel:+919876543210" className='mobile-footer-btn-1-ahref'>
+       <a href="tel:+918683911100" className='mobile-footer-btn-1-ahref'>
       <button className='mobile-footer-btn mobile-footer-btn-1'>Call Now</button>
       </a>
       

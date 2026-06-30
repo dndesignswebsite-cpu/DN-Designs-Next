@@ -129,7 +129,7 @@ function page() {
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className="hero-left-col-div">
-
+{/* 
               <div className="hero-col-label">
  <div className="rating-icons">
                   <svg
@@ -174,7 +174,7 @@ function page() {
                   </svg>
                 </div>
                 <span className="hero-label-para">Trusted by India's growing brands</span>
-              </div>
+              </div> */}
 
               <h1 className="hero-head">
                 A Full-Service Branding <span className="hero-head-span">Agency For Growth, </span>
@@ -265,7 +265,7 @@ function page() {
             <div>
     <div className="hero-counter-row-div-for-mobile">
               <div className="row">
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
+                <div className="col-6 col-md-6 switch-on-div-main mt-4">
                   <div className="switch-on-div">
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
@@ -276,7 +276,7 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
+                <div className="col-6 col-md-6 switch-on-div-main mt-4">
                   <div className="switch-on-div">
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
@@ -291,7 +291,7 @@ function page() {
               </div>
 
                  <div className="row">
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
+                <div className="col-6 col-md-6 switch-on-div-main mt-4">
                   <div className="switch-on-div">
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">
@@ -302,7 +302,7 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
+                <div className="col-6 col-md-6 switch-on-div-main mt-4">
                   <div className="switch-on-div">
                     <div className="vertical-bar"></div>
                     <div className="switch-on-div-content">

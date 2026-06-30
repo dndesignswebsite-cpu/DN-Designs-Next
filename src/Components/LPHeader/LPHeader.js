@@ -18,7 +18,7 @@ function LPHeader() {
 
   return (
     <>
-      <header>
+      <header className="navlink-container">
 
         <div className="container">
 
@@ -91,7 +91,7 @@ function LPHeader() {
 
           <div className="row navlink-row-mobile">
 
-            <div className="col-6">
+            <div className="col-12">
 
               <div className="head-brand-logo-div">
 
@@ -108,7 +108,7 @@ function LPHeader() {
 
             </div>
 
-            <div className="col-6">
+            {/* <div className="col-6"> */}
 
               {/* <div
   className={`mobile-navbar-bar ${menuOpen ? "hide-hamburger" : ""}`}
@@ -122,7 +122,7 @@ function LPHeader() {
               </div> */}
 
 
-              <div className="lets-connect-cta-div">
+              {/* <div className="lets-connect-cta-div">
               <a href="tel:+919876543210">
                 <button className="lets-connect-cta-btn">
                   Lets Connect
@@ -130,7 +130,7 @@ function LPHeader() {
                 </a>
               </div>
               
-            </div>
+            </div> */}
 
           </div>
 

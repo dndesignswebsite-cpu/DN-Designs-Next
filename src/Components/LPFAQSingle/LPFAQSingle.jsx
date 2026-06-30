@@ -31,7 +31,7 @@ function AccordionItem({ question, answer, isOpen, onClick }) {
 }
 
 export default function Faqs({ leftFaqs, title = "FAQs" }) {
-  const [leftActive, setLeftActive] = useState(null);
+  const [leftActive, setLeftActive] = useState(0);
 
 
   return (

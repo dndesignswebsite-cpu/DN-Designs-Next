@@ -39,16 +39,16 @@ function LPFAQ() {
           answer:
             "Yes, our creative agency offers services like product photography, brand shoots, motion graphics and animated videos. These help brands capture attention, build recognition, and connect with their audience across platforms.",
         },
-        {
-          question: "Can your rebranding agency transform my existing brand?",
-          answer:
-            "Yes, we can definitely help transform your existing business. We can refresh your identity, refine your positioning and strengthen your communication to ensure your brand stands out in the market, connects with target customers and drives business growth. ",
-        },
-         {
-          question: "How can we get started?",
-          answer:
-            "Simply fill out our contact form or give us a call. We can schedule a meeting immediately or as per your convenience.",
-        },
+        // {
+        //   question: "Can your rebranding agency transform my existing brand?",
+        //   answer:
+        //     "Yes, we can definitely help transform your existing business. We can refresh your identity, refine your positioning and strengthen your communication to ensure your brand stands out in the market, connects with target customers and drives business growth. ",
+        // },
+        //  {
+        //   question: "How can we get started?",
+        //   answer:
+        //     "Simply fill out our contact form or give us a call. We can schedule a meeting immediately or as per your convenience.",
+        // },
     
     
         
@@ -65,30 +65,40 @@ function LPFAQ() {
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
         <div className='lp-faq-images-col'>
             <h2 className='lp-faq-images-col-head'>Inside Our Studio</h2>
-            <div className='row'>
-                <div className='col-7'>
+
+            <div className='row-div'>
+                <div className='col-7-div'>
                     <img src="https://dndesigns.co.in/uploads/pages/hhhfekjgefj.jpg" className='img-fluid lp-faq-images'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/yui.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
-                <div className='col-5'>
-                    <img src="https://dndesigns.co.in/uploads/pages/rtyuio.jpg" className='img-fluid lp-faq-images'></img>
+                <div className='col-5-div'>
+                    {/* <img src="https://dndesigns.co.in/uploads/pages/rtyuio.jpg" className='img-fluid lp-faq-images'></img> */}
+                    <video className="img-fluid dn-video-lp" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/dn video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
                 </div>
             </div>
 
-            <div className='row mt-3'>
+            {/* <div className='row mt-3'>
             <div className='col-5'>
                     <img src="https://dndesigns.co.in/uploads/pages/ru3yu.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
                 <div className='col-7'>
                     <img src="https://dndesigns.co.in/uploads/pages/yui.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
-            </div>
+            </div> */}
 
             <div className='row mt-3'>
-                <div className='col-7'>
-                    <img src="https://dndesigns.co.in/uploads/pages/kphghf.jpg" className='img-fluid lp-faq-images'></img>
-                </div>
+                
                 <div className='col-5'>
                     <img src="https://dndesigns.co.in/uploads/pages/uyrygjk.jpg" className='img-fluid lp-faq-images'></img>
+                </div>
+                <div className='col-7'>
+                    <img src="https://dndesigns.co.in/uploads/pages/kphghf.jpg" className='img-fluid lp-faq-images'></img>
                 </div>
             </div>
         </div>
