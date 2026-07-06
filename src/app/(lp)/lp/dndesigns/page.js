@@ -2,12 +2,13 @@ import React from "react";
 import LPHeader from "@/Components/LPHeader/LPHeader";
 import LPFooter from "@/Components/LPFooter/LPFooter";
 import LPMarque from "@/Components/LPMarque/LPMarque";
-import "./brand-identity.css";
+import "../brand-identity/brand-identity.css";
 import OurWorkHomeSection from "@/Components/LPOurWork/OurWorkHomeSection";
 import LPTestimonialSwipper from "@/Components/LPTestimonialSwipper/LPTestimonialSwipper";
 import LPFAQ from "@/Components/LPFAQ/LPFAQ";
 import LPForm from "@/Components/LPForm/LPForm";
 import AutoCounter from "@/Components/AutoCounter/AutoCounter";
+import LPFooterTwo from "@/Components/LPFooterTwo/LPFooterTwo";
 
 function page() {
   // marque images
@@ -118,7 +119,7 @@ function page() {
   ];
 
   // form section content
-  const pageName = "lp/brand-identity";
+  const pageName = "lp/dn-designs";
   return (
     <div>
       {/* header */}
@@ -443,7 +444,7 @@ function page() {
       </div>
 
       {/* footer */}
-      <LPFooter />
+      <LPFooterTwo/>
     </div>
   );
 }
