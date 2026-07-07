@@ -1,0 +1,534 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+import AutoCounter from '@/Components/AutoCounter/AutoCounter';
+import LPForm from '@/Components/LPForm/LPForm'
+import LPHeader from '@/Components/LPHeader/LPHeader'
+import React from 'react'
+import "./branding-services.css"
+import LPMarque from '@/Components/LPMarque/LPMarque';
+import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonialSwipper';
+import LPFAQ from '@/Components/LPFAQ/LPFAQ';
+import LPFooter from '@/Components/LPFooter/LPFooter';
+import LPWhatWeCanBrandingServices from '@/Components/LPWhatWeCanBrandingServices/LPWhatWeCanBrandingServices';
+import LPBrandServicesSwipper from '@/Components/LPBrandServicesSwipper/LPBrandServicesSwipper';
+import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
+
+// import Script from "next/script";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
+import Image from "next/image";
+
+
+// meta   data
+export async function generateMetadata() {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("branding-services", null, false);
+  } catch (error) {
+    console.log("Branding Services Error", error);
+    return {
+      title: "Branding Services",
+      robots: "noindex, nofollow",
+    };
+  }
+  // console.log(seo.content)
+
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
+
+    robots: seo.robotsTag || "index, follow",
+
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
+
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map((img) => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map((img) => img.url)
+        : [],
+    },
+  };
+}
+// ends here
+
+
+
+async function page() {
+
+
+   // ---
+      await connectDB();
+      let pageData;
+      try {
+        pageData = await getPageById("branding-services", null, true);
+      } catch (error) {
+        notFound();
+      }
+    
+      if (!pageData) {
+        notFound();
+      }
+    
+      // ---  SCHEMA CLEANING LOGIC START ---
+      let cleanSchema = "";
+      if (pageData.headCode) {
+        // Script tags remove karke raw JSON nikalna
+        cleanSchema = pageData.headCode
+          .replace(/<script.*?>/gi, "")
+          .replace(/<\/script>/gi, "")
+          .trim();
+        if (cleanSchema.includes('""')) {
+          cleanSchema = cleanSchema.replace(/""/g, '"');
+        }
+      }
+      // --- SCHEMA CLEANING LOGIC END ---
+
+
+     // marque images
+  const topBrands = [
+    {
+      image: "https://dndesigns.co.in/uploads/pages/holidayinn_logo.webp",
+      alt: "Veskn",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/audi logo.webp",
+      alt: "Kafoori",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/PB_Business logo.webp",
+      alt: "Luxmi",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/iOrganic-Logo.webp",
+      alt: "One Science",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/wlues logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/1am.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/enlite logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/nectarpure (1).webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/smartyum logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/Thames logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/veikk logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/Pureluxe.webp",
+      alt: "Legal4Sure",
+    },
+  ];
+
+  const bottomBrands = [
+    {
+      image: "https://dndesigns.co.in/uploads/pages/bobalist logo.webp",
+      alt: "Veskn",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/wjvaghsdvhesgadcv.webp",
+      alt: "Kafoori",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/Bachpan logo.webp",
+      alt: "Luxmi",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/qualiteq logo.webp",
+      alt: "One Science",
+    },
+    {
+      image: "https://dndesigns.co.in/uploads/pages/rungta logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/logoconstLet's-Supp.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/david logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/Ekos.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/Brrat.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/fluke logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/one science logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/mr-bomzy logo.webp",
+      alt: "Legal4Sure",
+    },
+     {
+      image: "https://dndesigns.co.in/uploads/pages/3-sisters-logo-1.webp",
+      alt: "Legal4Sure",
+    },
+  ];
+  // form section content
+  const pageName = "lp/brand-services";
+  return (
+    <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "branding-services"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
+      <LPHeader/>
+
+      {/* hero */}
+      <div className='branding-services-hero'>
+
+       <div className='video-div-hero'>
+        <video
+          src="https://dndesigns.co.in/uploads/videos/Can-2-1.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          loop
+          className="branding-lp-services-video"
+        />
+      </div>
+
+  
+      <div className="container branding-services-hero-container" id="enquiry-form-desktop">
+        <div className="row">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className="hero-left-col-div">
+            
+ 
+              <div className="hero-col-label">
+ <div className="rating-icons">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 16 16"
+                    fill="#CA2734"
+                  >
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 16 16"
+                    fill="#CA2734"
+                  >
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 16 16"
+                    fill="#CA2734"
+                  >
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 16 16"
+                    fill="#CA2734"
+                  >
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 16 16"
+                    fill="#CA2734"
+                  >
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                </div>
+                <span className="hero-label-para">Trusted by India's growing brands</span>
+              </div> 
+
+              <h1 className="hero-head">
+                A Full-Service   Branding<span className="hero-head-span"> Agency For Growth, </span>
+                 Recognition & Impact
+              </h1>
+              <p className="hero-para-desc">
+               Collaborate with us to build a brand that stands out, inspires confidence, drives loyalty and brings in business profit. We are your trusted partner in your branding journey.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div className="lpform-dektop-form">
+          <div className="lpform-right-col-div" >
+            <LPForm pageName={pageName} />
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     
+      </div>
+
+
+      {/* marque */}
+            <div className="brands-that-us" id="our-clients">
+              <div className="container">
+                <h2 className="brands-that-us-head">Trusted By  <span className="brands-that-us-head-span">Visionary Brands</span></h2>
+                <p className="brands-that-us-para">
+                  From food & beverage to nutraceuticals, we partner with businesses across industries to create lasting impact.
+                </p>
+              </div>
+            </div>
+            <div className="marque-div">
+              <LPMarque brands={topBrands} speed={22} />
+            </div>
+            <div className="marque-div marque-div-2">
+              <LPMarque brands={bottomBrands} reverse speed={22} />
+            </div>
+
+
+
+            {/* what we can do brnading services */}
+            <LPWhatWeCanBrandingServices/>
+
+
+
+            {/* process */}
+             {/* Creative Catalogue Designing - Our Process desktop view */}
+      <section className="creating-your-brand">
+        <div className="container sticky-con">
+          <h2 className="text-center our-brand-heading-a">
+            Our  {" "}
+            <span className="every-pr"> Branding Process </span>
+          </h2>
+          <ul id="cards-create">
+            <li className="card-create" id="card1-create">
+              <div className="card-body-create row">
+                <div className="col-2 create-number text-center">01</div>
+                <div className="col-10">
+                  <h2>Discover</h2>
+                  <p>
+                   Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li className="card-create" id="card2-create">
+              <div className="card-body-create row">
+                <div className="col-2 create-number text-center">02</div>
+                <div className="col-10">
+                  <h2>Define</h2>
+                  <p>
+                  Facts become direction here. We lock your positioning, your messaging and the reason why customers should pick you. This is the strategic backbone of the brand, decided before a single visual gets touched, so design has something real to express.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li className="card-create" id="card3-create">
+              <div className="card-body-create row">
+                <div className="col-2 create-number text-center">03</div>
+                <div className="col-10">
+                  <h2>Design</h2>
+                  <p>
+                   The full visual system of logo, colour and typography is now built. This is where the brand becomes visible. Every choice here answers back to what we defined in stage two, not to trend or taste. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li className="card-create" id="card4-create">
+              <div className="card-body-create row">
+                <div className="col-2 create-number text-center">04</div>
+                <div className="col-10">
+                  <h2> Apply</h2>
+                  <p>
+                  Strategy and design mean nothing sitting in a folder. Our creative branding agency now rolls the identity out across packaging, website, social and every surface it needs to live on. We ensure it holds up consistently everywhere, not just on the deck.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li className="card-create" id="card5-create">
+              <div className="card-body-create row">
+                <div className="col-2 create-number text-center">05</div>
+                <div className="col-10">
+                  <h2>Launch & Grow</h2>
+                  <p>
+                   We don't hand over a brand book and disappear. Post-launch, we stay on to check the brand is being applied correctly, catch where it's drifting and sharpen it wherever needed.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      {/* Creative Catalogue Designing - Our Process mobile view */}
+      <section className="creating-your-brand-mobile">
+        <div className="conatiner">
+          <h2 className="text-center our-brand-heading-a-mobile">
+            Our 
+            <span className="every-pr"> Branding Process</span>
+          </h2>
+          <div className="row creating-brand-mobile-row">
+            <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">01</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Discover</h2>
+                  <p>
+                  Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">02</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Brand Strategy Development</h2>
+                  <p>
+                    Valuable insights gained in the previous step give direction to our rebranding strategy. We now define the core of the brand - its vision, mission, values, principles, USP, positioning, as well as the target audience. Defining this core is essential because these foundational elements shape the brand's visual and verbal identity in the next step.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">03</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Building Visual & Verbal Identity</h2>
+                  <p>
+                   It’s now time to establish the brand’s visual identity and communication style. For this, we design the brand’s logo and define its colours, typography, graphics, iconography and illustration styles. Along with these, we craft the brand’s story, taglines, key messages, and describe the voice, tone and guidelines for communication.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">04</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Building Design Systems</h2>
+                  <p>
+                   No brand can ever succeed if it confuses its customers, so at this stage of our rebranding process, we work towards consistency. We create comprehensive brand guidelines and design systems (social media & presentation templates, marketing collateral, packaging guidelines) to ensure a cohesive brand experience across physical and digital touchpoints.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">05</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Updating & Internal Testing</h2>
+                  <p>
+                    We now update all your brand assets - website, packaging, marketing material and social media - to reflect the new brand identity. Thereafter, we introduce the new brand internally. The goal is to identify and fix issues before the final launch. Additionally, when the internal team understands the new brand better, communicating it to the customers post-launch becomes easier.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+               <div className="col-12">
+              <div className="creating-your-brand-mobile-box">
+                <h3 className="create-number-mobile">06</h3>
+                <div className="card-body-create-mobile">
+                  <h2>Launch, Monitoring & Optimisation</h2>
+                  <p>
+                    Your new brand has finally launched. We closely monitor the feedback and progress, and make further changes accordingly. The rebranding process is now complete.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      {/* lp brnad services hover swipper */}
+      <LPBrandServicesSwipper/>
+
+
+
+      {/* testimonials */}
+        {/* testimonial */}
+      <div  id="testimonials">
+      {/* <LPTestimonialSwipper/> */}
+      <LPBradingServicesTestimonial/>
+      </div>
+      
+      {/* LPFAQ */}
+      <div id="faq">
+      <LPFAQ />
+      </div>
+
+      {/* footer */}
+      <LPFooter />
+
+
+            
+
+      
+    </div>
+  )
+}
+
+export default page
