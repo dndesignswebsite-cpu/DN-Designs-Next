@@ -49,4 +49,11 @@
   aspect-ratio: 1080 / 864;
 }
 
+.brand-identity-banner-img-desktop-img-mobile{
+       width: 100%;
+  height: auto;
+  display:block;
+  aspect-ratio: 1050 / 1190;
+}
+
 
