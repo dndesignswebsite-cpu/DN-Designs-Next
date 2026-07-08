@@ -105,6 +105,47 @@ async function page() {
       // --- SCHEMA CLEANING LOGIC END ---
 
 
+
+       // faqs content
+   const leftFaqs = [
+       {
+          question: "What does a brand design agency actually do? ",
+          answer:
+            (<>A branding agency helps you define your positioning, build a visual identity, shape your core messaging and establish a digital presence so your business looks and feels like a brand people trust and choose, not just one they scroll past. </>)
+        },
+        {
+          question: "What kind of branding services do you offer?",
+          answer:
+            (<>We offer comprehensive branding services including brand strategy, brand identity design, brand positioning, brand naming and packaging design. We also provide rebranding services.</>)
+        },
+        {
+          question: "Do we require branding before building a website? ",
+          answer:
+            (<>Yes, and it's worth getting it right. A website built without a clear brand strategy tends to feel generic. Your brand sets the direction, tone and messaging of the website; then it becomes a true expression of your brand, not just a set of pages.  </>)
+        },
+        {
+          question: "How involved do we need to be in the process? ",
+          answer:
+            "Thoroughly. Your insights, data and your point of view are very crucial in building the brand you envisioned.",
+        },
+        {
+          question: "What's the difference between a logo and a brand identity?",
+          answer:
+            "A logo is one asset. Brand identity is the complete system that includes the logo as well as the brand name, colour, typography, imagery, tone, and other elements that make your brand identifiable. Think of the logo as the face and the identity as the personality of a person.",
+        },
+        {
+          question: "Do you only work with startups, or established businesses too? ",
+          answer:
+            "We work with both new brands and existing ones looking to sharpen, reposition or rebuild what they already have. ",
+        },
+        {
+          question: "How can we get started with your brand consultant services?",
+          answer:
+            "Simply fill out our contact form or give us a call. We can schedule a meeting immediately or as per your convenience.",
+        },    
+      ];
+
+
      // marque images
   const topBrands = [
     {
@@ -432,7 +473,7 @@ async function page() {
                 <div className="card-body-create-mobile">
                   <h2>Discover</h2>
                   <p>
-                  Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
+                 Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
                   </p>
                 </div>
               </div>
@@ -442,9 +483,9 @@ async function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">02</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Strategy Development</h2>
+                  <h2>Define</h2>
                   <p>
-                    Valuable insights gained in the previous step give direction to our rebranding strategy. We now define the core of the brand - its vision, mission, values, principles, USP, positioning, as well as the target audience. Defining this core is essential because these foundational elements shape the brand's visual and verbal identity in the next step.
+                    Facts become direction here. We lock your positioning, your messaging and the reason why customers should pick you. This is the strategic backbone of the brand, decided before a single visual gets touched, so design has something real to express.
                   </p>
                 </div>
               </div>
@@ -454,9 +495,9 @@ async function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">03</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Building Visual & Verbal Identity</h2>
+                  <h2>Design</h2>
                   <p>
-                   It’s now time to establish the brand’s visual identity and communication style. For this, we design the brand’s logo and define its colours, typography, graphics, iconography and illustration styles. Along with these, we craft the brand’s story, taglines, key messages, and describe the voice, tone and guidelines for communication.
+                   The full visual system of logo, colour and typography is now built. This is where the brand becomes visible. Every choice here answers back to what we defined in stage two, not to trend or taste. 
                   </p>
                 </div>
               </div>
@@ -466,9 +507,9 @@ async function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">04</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Building Design Systems</h2>
+                  <h2>Apply</h2>
                   <p>
-                   No brand can ever succeed if it confuses its customers, so at this stage of our rebranding process, we work towards consistency. We create comprehensive brand guidelines and design systems (social media & presentation templates, marketing collateral, packaging guidelines) to ensure a cohesive brand experience across physical and digital touchpoints.
+                   Strategy and design mean nothing sitting in a folder. Our creative branding agency now rolls the identity out across packaging, website, social and every surface it needs to live on. We ensure it holds up consistently everywhere, not just on the deck.
                   </p>
                 </div>
               </div>
@@ -478,25 +519,15 @@ async function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">05</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Updating & Internal Testing</h2>
+                  <h2> Launch & Grow</h2>
                   <p>
-                    We now update all your brand assets - website, packaging, marketing material and social media - to reflect the new brand identity. Thereafter, we introduce the new brand internally. The goal is to identify and fix issues before the final launch. Additionally, when the internal team understands the new brand better, communicating it to the customers post-launch becomes easier.
+                    We don't hand over a brand book and disappear. Post-launch, we stay on to check the brand is being applied correctly, catch where it's drifting and sharpen it wherever needed.
                   </p>
                 </div>
               </div>
             </div>
 
-               <div className="col-12">
-              <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
-                <div className="card-body-create-mobile">
-                  <h2>Launch, Monitoring & Optimisation</h2>
-                  <p>
-                    Your new brand has finally launched. We closely monitor the feedback and progress, and make further changes accordingly. The rebranding process is now complete.
-                  </p>
-                </div>
-              </div>
-            </div>
+             
 
           </div>
         </div>
@@ -517,7 +548,7 @@ async function page() {
       
       {/* LPFAQ */}
       <div id="faq">
-      <LPFAQ />
+      <LPFAQ  leftFaqs={leftFaqs}/>
       </div>
 
       {/* footer */}

@@ -228,6 +228,18 @@ export default function Header() {
                         Services
                       </Link>
                     </li>
+
+                     <li>
+                      <Link
+                        href="/contact-us"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${
+                          pathname === "/contact-us" ? styles["active"] : ""
+                        }`}
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
                   </ul>
                 </div>
 
@@ -322,6 +334,21 @@ export default function Header() {
                       >
                         {/* Brand Name Suggestion */}
                         Rebranding
+                      </Link>
+                    </li>
+
+                       <li>
+                      <Link
+                        href="/brand-positioning"
+                        onClick={handleLinkClick}
+                        className={`${styles["header-solo-link"]} ${
+                          pathname === "/brand-positioning"
+                            ? styles["active"]
+                            : ""
+                        }`}
+                      >
+                        {/* Brand Name Suggestion */}
+                        Brand Positioning
                       </Link>
                     </li>
 
@@ -589,17 +616,7 @@ export default function Header() {
                       </Link>
                     </li>
 
-                    <li>
-                      <Link
-                        href="/contact-us"
-                        onClick={handleLinkClick}
-                        className={`${styles["header-solo-link"]} ${
-                          pathname === "/contact-us" ? styles["active"] : ""
-                        }`}
-                      >
-                        Contact Us
-                      </Link>
-                    </li>
+                   
                   </ul>
                 </div>
 
@@ -941,6 +958,15 @@ export default function Header() {
                             Services
                           </Link>
                         </li>
+                        <li>
+                          <Link
+                            href="/contact-us"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            Contact Us
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1035,6 +1061,17 @@ export default function Header() {
                           >
                             {/* Brand Name Suggestion */}
                             Rebranding
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/brand-positioning"
+                            onClick={handleLinkClick}
+                            className={`${styles["header-solo-link"]}`}
+                          >
+                            {/* Brand Name Suggestion */}
+                            Brand Positioning
                           </Link>
                         </li>
 
@@ -1241,15 +1278,7 @@ export default function Header() {
                           </Link>
                         </li>
 
-                        <li>
-                          <Link
-                            href="/contact-us"
-                            onClick={handleLinkClick}
-                            className={`${styles["header-solo-link"]}`}
-                          >
-                            Contact Us
-                          </Link>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
