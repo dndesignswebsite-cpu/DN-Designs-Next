@@ -45,6 +45,11 @@ const nextConfig = {
       //   permanent: false, // true = 301, false = 302
       // },
 
+       {
+        source: "/blog/techniques-for-stunning-product-photography-a-how-to-guide",
+        destination: "/blog/roi-of-rebranding",
+        permanent: false, // true = 301, false = 302
+      },
 
 
        {
