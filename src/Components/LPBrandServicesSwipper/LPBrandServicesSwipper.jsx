@@ -11,27 +11,27 @@ import "./LPBrandServicesSwipper.css";
 const projects = [
   {
     title: "Hermès Ski",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswipperidentity (2).jpg",
   },
   {
     title: "Dior Rouge",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswipperlogo.jpg",
   },
   {
     title: "Vogue The Independents",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswippernaming.jpg",
   },
   {
     title: "Louis Vuitton Cruise",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswipperpositining.jpg",
   },
   {
     title: "Jacquemus",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswipperrebranding.jpg",
   },
   {
     title: "Vogue Beyond Paris",
-    image: "https://dndesigns.co.in/uploads/pages/image-1500x800.jpg",
+    image: "https://dndesigns.co.in/uploads/avatars/hoverswipperstrtergy.jpg",
   },
 ];
 
@@ -96,7 +96,6 @@ export default function LPBrandServicesSwiper() {
   };
 
   return (
-    <div className="portfolio__section-wrapper">
     <section className="portfolio__section">
       <div className="portfolio__window">
         
@@ -128,7 +127,8 @@ export default function LPBrandServicesSwiper() {
             direction={direction}
             slidesPerView={direction === "horizontal" ? 1.5 : 3} 
             centeredSlides={true}
-            spaceBetween={typeof window !== "undefined" && window.innerWidth <= 992 ? 15 : 30}
+            // spaceBetween={typeof window !== "undefined" && window.innerWidth <= 992 ? 15 : 30}
+            spaceBetween={direction === "horizontal" ? 20 : 100}
             speed={600}
             loop={true}
             
@@ -167,6 +167,5 @@ export default function LPBrandServicesSwiper() {
 
       </div>
     </section>
-    </div>
   );
 }

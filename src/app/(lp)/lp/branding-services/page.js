@@ -3,7 +3,7 @@ export const revalidate = 0;
 
 import AutoCounter from '@/Components/AutoCounter/AutoCounter';
 import LPForm from '@/Components/LPForm/LPForm'
-import LPHeader from '@/Components/LPHeader/LPHeader'
+import LPHeader from '@/Components/BrandingServicesHeader/LPHeader'
 import React from 'react'
 import "./branding-services.css"
 import LPMarque from '@/Components/LPMarque/LPMarque';
@@ -18,6 +18,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import LPFooterTwo from '@/Components/LPFooterTwo/LPFooterTwo';
 
 
 // meta   data
@@ -382,12 +383,15 @@ async function page() {
 
 
             {/* what we can do brnading services */}
+            <div id='services'>
             <LPWhatWeCanBrandingServices/>
+            </div>
 
 
 
             {/* process */}
              {/* Creative Catalogue Designing - Our Process desktop view */}
+             <div id="our-process">
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
@@ -458,6 +462,8 @@ async function page() {
           </ul>
         </div>
       </section>
+
+      </div>
 
       {/* Creative Catalogue Designing - Our Process mobile view */}
       <section className="creating-your-brand-mobile">
@@ -535,8 +541,9 @@ async function page() {
 
 
       {/* lp brnad services hover swipper */}
+      <div id="our-work">
       <LPBrandServicesSwipper/>
-
+</div>
 
 
       {/* testimonials */}
@@ -552,7 +559,8 @@ async function page() {
       </div>
 
       {/* footer */}
-      <LPFooter />
+      {/* <LPFooter /> */}
+      <LPFooterTwo/>
 
 
             

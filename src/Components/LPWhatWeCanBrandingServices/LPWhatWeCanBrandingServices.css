@@ -55,6 +55,7 @@
     font-family: var(--font-corbert);
     font-weight: 600;
     font-size: 36px;
+    padding-bottom: 20px;
 }
 
 .asthetic-para-desc{
@@ -70,6 +71,10 @@
 .what-we-can-do-col-left{
     background-color: #fff;
     border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
 }
 
 .what-we-can-do-col-left-img{
@@ -79,6 +84,12 @@
 .what-we-can-do-col-left-third-div{
       display: flex;
     align-items: stretch;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
 }
 
 .what-we-can-do-col-left-content{
@@ -89,4 +100,38 @@
     width: 50%;
     object-fit: cover;
       border-radius: 0 12px 12px 0px;
+}
+
+
+.row-div-abc{
+    display: flex;
+    gap: 20px;
+}
+
+.col-div-left{
+     width: 64.5%;
+}
+.col-div-right{
+    width: 35.5%;
+}
+
+
+@media(max-width:991px){
+    .row-div-abc{
+    flex-direction: column;
+}
+.col-div-left{
+     width: 100%;
+}
+.col-div-right{
+    width: 100%;
+}
+
+.asthetic-head{
+    font-size: 25px;
+}
+
+    /* .what-we-do-lefty-col-head{
+        font-size: 30px;
+    } */
 }
