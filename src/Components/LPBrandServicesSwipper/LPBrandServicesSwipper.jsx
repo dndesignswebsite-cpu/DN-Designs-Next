@@ -96,6 +96,7 @@ export default function LPBrandServicesSwiper() {
   };
 
   return (
+    <div className="portfolio__section-wrapper">
     <section className="portfolio__section">
       <div className="portfolio__window">
         
@@ -166,5 +167,6 @@ export default function LPBrandServicesSwiper() {
 
       </div>
     </section>
+    </div>
   );
 }
