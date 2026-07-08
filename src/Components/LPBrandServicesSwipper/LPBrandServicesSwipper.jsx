@@ -10,27 +10,27 @@ import "./LPBrandServicesSwipper.css";
 
 const projects = [
   {
-    title: "Hermès Ski",
+    title: "Fluke",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswipperidentity (2).jpg",
   },
   {
-    title: "Dior Rouge",
+    title: "Nature Balance",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswipperlogo.jpg",
   },
   {
-    title: "Vogue The Independents",
+    title: "Mr. Bomzy",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswippernaming.jpg",
   },
   {
-    title: "Louis Vuitton Cruise",
+    title: "wlues",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswipperpositining.jpg",
   },
   {
-    title: "Jacquemus",
+    title: "Koshish",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswipperrebranding.jpg",
   },
   {
-    title: "Vogue Beyond Paris",
+    title: "Let’s Supp",
     image: "https://dndesigns.co.in/uploads/avatars/hoverswipperstrtergy.jpg",
   },
 ];
@@ -133,7 +133,7 @@ export default function LPBrandServicesSwiper() {
             loop={true}
             
             autoplay={{
-              delay: 3000, 
+              delay: 2000, 
               disableOnInteraction: false, 
               pauseOnMouseEnter: true, 
             }}

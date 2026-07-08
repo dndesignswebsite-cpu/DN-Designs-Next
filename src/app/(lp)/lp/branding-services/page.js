@@ -18,7 +18,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
-import LPFooterTwo from '@/Components/LPFooterTwo/LPFooterTwo';
+import LPFooterTwo from '@/Components/LPFooterThree/LPFooterTwo';
 
 
 // meta   data
@@ -274,9 +274,21 @@ async function page() {
       {/* hero */}
       <div className='branding-services-hero'>
 
-       <div className='video-div-hero'>
+       <div className='video-div-hero video-div-hero-desktop'>
         <video
-          src="https://dndesigns.co.in/uploads/videos/Can-2-1.mp4"
+          src="https://dndesigns.co.in/uploads/videos/cube.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          loop
+          className="branding-lp-services-video"
+        />
+      </div>
+
+      <div className='video-div-hero video-div-hero-mobile'>
+        <video
+          src="https://dndesigns.co.in/uploads/videos/mobilecub2.mp4"
           width="100%"
           autoPlay
           muted
@@ -287,7 +299,7 @@ async function page() {
       </div>
 
   
-      <div className="container branding-services-hero-container" id="enquiry-form-desktop">
+      <div className="container branding-services-hero-container" >
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className="hero-left-col-div">
@@ -350,7 +362,7 @@ async function page() {
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-          <div className="lpform-dektop-form">
+          <div className="lpform-dektop-form" id="enquiry-form">
           <div className="lpform-right-col-div" >
             <LPForm pageName={pageName} />
             </div>
