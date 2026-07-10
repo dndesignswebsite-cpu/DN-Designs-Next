@@ -340,7 +340,7 @@
 
 .hero-head{
     font-family: var(--font-corbert-bold);
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     color: #161616;
     /* padding-top: 50px; */
@@ -403,6 +403,10 @@
 
 
 @media(max-width:767px){
+
+    .hero-head{
+        font-size: 30px;
+    }
 
     .hero-para-desc{
     width:100%;
@@ -784,6 +788,29 @@
 
 .branding-services-hero-container{
     padding-top: 50px;
+    padding-bottom: 40px;
+    
+}
+.hero-col-label{
+    margin-bottom: 30px;
+}
+.branding-lp-services-video{
+    object-fit: cover;
+    height: 150vh;
+}
+}
+
+@media(max-width:415px){
+    .video-div-hero-mobile{
+    display: block;
+}
+
+.video-div-hero-desktop{
+    display: none;
+}
+
+.branding-services-hero-container{
+    padding-top: 0px;
     padding-bottom: 40px;
     
 }
