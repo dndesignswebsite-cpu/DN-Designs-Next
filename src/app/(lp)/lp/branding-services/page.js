@@ -288,7 +288,7 @@ async function page() {
 
       <div className='video-div-hero video-div-hero-mobile'>
         <video
-          src="https://dndesigns.co.in/uploads/videos/mobilecub2.mp4"
+          src="https://dndesigns.co.in/uploads/videos/mmmmobilecub2.mp4"
           width="100%"
           autoPlay
           muted

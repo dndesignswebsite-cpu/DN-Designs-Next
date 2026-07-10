@@ -9,13 +9,24 @@ import { useRouter } from "next/navigation";
 function Page() {
   const router = useRouter();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      router.replace("/lp/brand-identity"); 
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     router.replace("/lp/brand-identity"); 
+  //   }, 5000);
 
-    return () => clearTimeout(timer);
-  }, [router]);
+  //   return () => clearTimeout(timer);
+  // }, [router]);
+
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    const returnUrl =
+      sessionStorage.getItem("returnUrl") || "/lp/brand-identity";
+
+    router.replace(returnUrl);
+  }, 5000);
+
+  return () => clearTimeout(timer);
+}, [router]);
 
   return (
     <div>
@@ -38,7 +49,12 @@ function Page() {
             we'll get back to you with a strategic response within 24 hours.
           </p>
 
-          <button className="return-to-homepage"   onClick={() => router.replace("/lp/brand-identity")}>Return to Homepage</button>
+          <button className="return-to-homepage"   onClick={() => {
+  const returnUrl =
+    sessionStorage.getItem("returnUrl") || "/lp/brand-identity";
+
+  router.replace(returnUrl);
+}}>Return to Homepage</button>
         </div>
       </div>
 
