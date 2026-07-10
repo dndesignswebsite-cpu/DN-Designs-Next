@@ -378,7 +378,7 @@ async function page() {
 
       {/* marque */}
             <div className="brands-that-us" id="our-clients">
-              <div className="container">
+              <div className="container brands-that-us-head-div">
                 <h2 className="brands-that-us-head">Trusted By  <span className="brands-that-us-head-span">Visionary Brands</span></h2>
                 <p className="brands-that-us-para">
                   From food & beverage to nutraceuticals, we partner with businesses across industries to create lasting impact.

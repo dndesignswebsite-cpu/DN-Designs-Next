@@ -138,7 +138,7 @@ export default function LPBrandServicesSwiper() {
               pauseOnMouseEnter: true, 
             }}
             modules={[Mousewheel, Autoplay]} 
-            mousewheel={{ forceToAxis: true }}
+            // mousewheel={{ forceToAxis: true }}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
