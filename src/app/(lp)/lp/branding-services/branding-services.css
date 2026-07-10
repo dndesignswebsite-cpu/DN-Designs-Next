@@ -34,6 +34,7 @@
 }
 .brands-that-us-para{
     margin-bottom: 0px;
+    width:100%;
 }
 .marque-div{
     padding: 10px 0;
@@ -355,6 +356,7 @@
     font-weight: 400;
     color: #555555;
     padding: 20px 0 10px 0;
+    width: 80%;
 }
 
 
@@ -402,6 +404,10 @@
 
 @media(max-width:767px){
 
+    .hero-para-desc{
+    width:100%;
+}
+
        .branding-services-hero{
     position: relative;
     min-height: 150vh;
@@ -435,6 +441,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+
 
 
 #enquiry-form-desktop{
@@ -723,7 +731,7 @@
 }
 
 .branding-services-hero-container{
-    padding-top: 150px;
+    /* padding-top: 150px; */
     padding-bottom: 50px;
 }
 .hero-col-label{
@@ -732,7 +740,10 @@
 
 .branding-lp-services-video{
     object-fit: cover;
-    height: 165vh;
+    height: 150vh;
+}
+.hero-col-label{
+    display:none;
 }
 }
 
@@ -781,7 +792,7 @@
 }
 .branding-lp-services-video{
     object-fit: cover;
-    height: 170vh;
+    height: 150vh;
 }
 }
 
