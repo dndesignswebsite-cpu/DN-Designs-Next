@@ -145,6 +145,7 @@ export default function LPBrandServicesSwiper() {
             spaceBetween={direction === "horizontal" ? 20 : 100}
             speed={600}
             loop={true}
+            allowTouchMove={false} 
             
             autoplay={{
               delay: 2000, 
