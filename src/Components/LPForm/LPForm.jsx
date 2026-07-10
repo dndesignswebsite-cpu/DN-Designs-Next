@@ -102,9 +102,14 @@ function LPForm({ FormHead, FormPara, pageName }) {
   setProjectDetails("");
 
   
+  // setTimeout(() => {
+  //   router.push("/lp/thank-you");
+  // }, 1000);
+
   setTimeout(() => {
-    router.push("/lp/thank-you");
-  }, 1000);
+  sessionStorage.setItem("returnUrl", window.location.pathname);
+  router.push("/lp/thank-you");
+}, 1000);
 }
 
       // if (response.ok) {
@@ -244,7 +249,7 @@ function LPForm({ FormHead, FormPara, pageName }) {
 
                     <textarea
                       id="projectDetails"
-                      rows="5"
+                      rows="4"
                       placeholder="Tell us about your project..."
                       value={projectDetails}
                       onChange={(e) =>
