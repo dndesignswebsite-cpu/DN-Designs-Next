@@ -42,7 +42,7 @@ function AboutUsHoverPage() {
     },
     {
       title: "Rebranding",
-      img: "https://dndesigns.co.in/uploads/pages/aboutrebranding.webp",
+      img: "https://dndesigns.co.in/uploads/pages/newcompressedKoshish-First-Carousel_02.jpg",
       url: "/rebranding",
     },
     //  {
@@ -88,7 +88,7 @@ function AboutUsHoverPage() {
   const servicesThree = [
     {
       title: "Web Designing",
-      img: "https://dndesigns.co.in/uploads/pages/aboutwebsite-development.webp",
+      img: "https://dndesigns.co.in/uploads/pages/compressednewimagewebdesignabout-us.jpg",
       url: "/web-designing-services-in-india",
     },
     {

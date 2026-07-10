@@ -32,7 +32,7 @@ function LPWhatWeCanBrandingServices() {
             <div className='what-we-can-do-col-left-content'>
                 <p className='asthetic-para-label'>FOUNDATION</p>
                 <h2 className='asthetic-head'> Brand Strategy</h2>
-                <p className='asthetic-para-desc'>Every strong brand starts with a decision, not a design. We define your direction, your audience, and your message, so nothing built after this stage is guesswork.</p>
+                <p className='asthetic-para-desc'> Every strong brand starts with a decision, not a design. We define your direction, your audience, and your message before anything gets built, so nothing after this stage is guesswork, and nothing gets built twice.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
                 <img src="https://dndesigns.co.in/uploads/pages/seclphdbidentity.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
@@ -72,7 +72,7 @@ function LPWhatWeCanBrandingServices() {
             <div className='what-we-can-do-col-left-content'>
                 <p className='asthetic-para-label'>TERRITORY</p>
                 <h2 className='asthetic-head'> Brand Positioning</h2>
-                <p className='asthetic-para-desc'>Being different means nothing if nobody notices. We carve out a place in the market that's unmistakably yours, so people choose you without comparing you to anyone else.</p>
+                <p className='asthetic-para-desc'> Being different means nothing if nobody notices it. We carve out a place in the market that's unmistakably yours, so people choose you without comparing you to anyone else, and stop mistaking you for a competitor.</p>
                 </div>
                 <img src="https://dndesigns.co.in/uploads/pages/fourthlpdvdhpositining.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
@@ -87,7 +87,7 @@ function LPWhatWeCanBrandingServices() {
             <div className='what-we-can-do-col-left-content'>
                 <p className='asthetic-para-label'>TITLE</p>
                 <h2 className='asthetic-head'>Brand Naming</h2>
-                <p className='asthetic-para-desc'>A name has to do its job before anyone hears the pitch. We find one that's ownable, easy to say, and true to what you actually stand for.</p>
+                <p className='asthetic-para-desc'>A name plays a crucial role in carving the space for a brand in the market. It  has to do its job before anyone hears the pitch. We find one that's ownable, easy to say and true to what you actually stand for. It has to survive a trademark search, a domain check and a first impression, all at once. And it has to sound just as right in a pitch deck as it does out loud, five years from now.</p>
                 </div>
                 <img src="https://dndesigns.co.in/uploads/pages/fifthlpjedjhNaming.jpg" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
             </div>
