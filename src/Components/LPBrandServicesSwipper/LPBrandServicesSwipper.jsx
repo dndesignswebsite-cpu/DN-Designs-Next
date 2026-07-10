@@ -35,11 +35,14 @@ const projects = [
   },
 ];
 
+
 export default function LPBrandServicesSwiper() {
+  
   const swiperRef = useRef(null);
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState("vertical");
   const isHoverChanging = useRef(false);
+    const isMobile = direction === "horizontal"; 
 
   
   useEffect(() => {
@@ -83,17 +86,17 @@ export default function LPBrandServicesSwiper() {
     }, 0);
   };
 
-  const handleMouseEnter = (index) => {
-    if (direction === "vertical") {
-      changeSlide(index);
-    }
-  };
+  // const handleMouseEnter = (index) => {
+  //   if (direction === "vertical") {
+  //     changeSlide(index);
+  //   }
+  // };
 
-  const handleClick = (index) => {
-    if (direction === "horizontal") {
-      changeSlide(index);
-    }
-  };
+  // const handleClick = (index) => {
+  //   if (direction === "horizontal") {
+  //     changeSlide(index);
+  //   }
+  // };
 
   return (
     <section className="portfolio__section">
@@ -108,11 +111,22 @@ export default function LPBrandServicesSwiper() {
           <div className="portfolio__list">
             {projects.map((item, index) => (
               <div
-                key={index}
-                className={`portfolio__item ${active === index ? "active" : ""}`}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onClick={() => handleClick(index)}
-              >
+  key={index}
+  className={`portfolio__item ${active === index ? "active" : ""}`}
+  onPointerEnter={(e) => {
+    if (e.pointerType === "mouse") {
+      changeSlide(index);
+    }
+  }}
+  onClick={() => {
+    if (window.innerWidth <= 992) {
+      changeSlide(index);
+    }
+  }}
+>
+
+              
+              
                 {item.title}
                 {active === index && <span className="active__indicator"></span>}
               </div>

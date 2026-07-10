@@ -41,7 +41,7 @@ Logo
 .head-brand-logo-div{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: center !important; */
 }
 
 .head-brand-logo-div img{
@@ -53,6 +53,7 @@ Logo
 .head-brand-logo-div img{
     width:60px;
 }
+
 
 
 }
@@ -343,3 +344,5 @@ Responsive
         font-size: 14px;
     }
 }
+
+

@@ -479,13 +479,13 @@ async function page() {
 
       {/* Creative Catalogue Designing - Our Process mobile view */}
       <section className="creating-your-brand-mobile">
-        <div className="conatiner">
+        <div className="conatiner creating-your-brand-mobile">
           <h2 className="text-center our-brand-heading-a-mobile">
             Our 
             <span className="every-pr"> Branding Process</span>
           </h2>
           <div className="row creating-brand-mobile-row">
-            <div className="col-12">
+            <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-1">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">01</h3>
                 <div className="card-body-create-mobile">
@@ -497,7 +497,7 @@ async function page() {
               </div>
             </div>
 
-            <div className="col-12">
+            <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-2">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">02</h3>
                 <div className="card-body-create-mobile">
@@ -509,7 +509,7 @@ async function page() {
               </div>
             </div>
 
-            <div className="col-12">
+            <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-3">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">03</h3>
                 <div className="card-body-create-mobile">
@@ -521,7 +521,7 @@ async function page() {
               </div>
             </div>
 
-            <div className="col-12">
+            <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-4">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">04</h3>
                 <div className="card-body-create-mobile">
@@ -533,7 +533,7 @@ async function page() {
               </div>
             </div>
 
-            <div className="col-12">
+            <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-5">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">05</h3>
                 <div className="card-body-create-mobile">
@@ -571,8 +571,8 @@ async function page() {
       </div>
 
       {/* footer */}
-      {/* <LPFooter /> */}
-      <LPFooterTwo/>
+      <LPFooter />
+      {/* <LPFooterTwo/> */}
 
 
             
