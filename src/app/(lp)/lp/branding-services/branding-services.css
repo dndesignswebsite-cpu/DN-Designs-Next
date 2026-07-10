@@ -722,10 +722,10 @@
     display: none;
 }
 
-/* .branding-services-hero-container{
+.branding-services-hero-container{
     padding-top: 150px;
     padding-bottom: 50px;
-} */
+}
 .hero-col-label{
     margin-bottom: 30px;
 }
@@ -757,8 +757,40 @@
 }
 .branding-lp-services-video{
     object-fit: cover;
+    height: 150vh;
+}
+}
+
+
+@media(max-width:500px){
+    .video-div-hero-mobile{
+    display: block;
+}
+
+.video-div-hero-desktop{
+    display: none;
+}
+
+.branding-services-hero-container{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+}
+.hero-col-label{
+    margin-bottom: 30px;
+}
+.branding-lp-services-video{
+    object-fit: cover;
     height: 170vh;
 }
+}
+
+
+.brands-that-us-head-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
