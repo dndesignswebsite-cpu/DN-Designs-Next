@@ -135,13 +135,7 @@ justify-content: space-between;
 
 .asthetic-head{
     font-size: 25px;
-}
-
-    /* .what-we-do-lefty-col-head{
-        font-size: 30px;
-    } */
-
-    
+}    
 }
 
 @media(max-width:767px){
