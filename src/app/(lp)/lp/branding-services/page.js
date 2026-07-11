@@ -276,7 +276,7 @@ async function page() {
 
        <div className='video-div-hero video-div-hero-desktop'>
         <video
-          src="https://dndesigns.co.in/uploads/videos/cube.mp4"
+          src="https://dndesigns.co.in/uploads/videos/newherovideocompresseddesktopcube (1).mp4"
           width="100%"
           autoPlay
           muted
@@ -288,7 +288,7 @@ async function page() {
 
       <div className='video-div-hero video-div-hero-mobile'>
         <video
-          src="https://dndesigns.co.in/uploads/videos/mmmmobilecub2.mp4"
+          src="https://dndesigns.co.in/uploads/videos/newherovideocompressedmobilecub2 (1).mp4"
           width="100%"
           autoPlay
           muted

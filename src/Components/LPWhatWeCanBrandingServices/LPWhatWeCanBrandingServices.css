@@ -3,11 +3,6 @@
     padding: 60px 0;
 }
 
-/* .what-we-do{
-    padding: 60px 0;
-    background-color: #F3F3F3;
-}
-
 .what-we-do-lefty-col-para{
     color: #ca2734;
     text-transform: uppercase;
@@ -37,7 +32,18 @@
     align-items: end;
     justify-content: end;
     height: 100%;
-} */
+} 
+
+/* .what-we-do{
+    padding: 60px 0;
+    background-color: #F3F3F3;
+}
+
+
+
+
+
+*/
 
 
 /* cols css */
@@ -134,4 +140,22 @@ justify-content: space-between;
     /* .what-we-do-lefty-col-head{
         font-size: 30px;
     } */
+
+    
+}
+
+@media(max-width:767px){
+    .what-we-do-right-col{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+} 
+
+.what-we-do-right-col-para{
+    width: 100%;
+}
+.what-we-do-lefty-col-head{
+    width: 100%;
+}
 }
