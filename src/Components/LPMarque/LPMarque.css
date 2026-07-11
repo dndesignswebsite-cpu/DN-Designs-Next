@@ -16,9 +16,9 @@
   animation-direction: reverse;
 }
 
-.lp-marquee:hover .lp-marquee-track {
+/* .lp-marquee:hover .lp-marquee-track {
   animation-play-state: paused;
-}
+} */
 
 .lp-marquee-item {
   flex: 0 0 auto;

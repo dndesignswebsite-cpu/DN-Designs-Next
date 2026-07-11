@@ -90,10 +90,32 @@ function LPForm({ FormHead, FormPara, pageName }) {
 
       const data = await response.json();
 
-      if (response.ok) {
-  toast.success(
-    data.message || "Enquiry submitted successfully!"
-  );
+//       if (response.ok) {
+//   toast.success(
+//     data.message || "Enquiry submitted successfully!"
+//   );
+
+//   setName("");
+//   setEmail("");
+//   setMobile("");
+//   setServiceRequired("");
+//   setProjectDetails("");
+
+//   setTimeout(() => {
+//   sessionStorage.setItem("returnUrl", window.location.pathname);
+//   router.push("/lp/thank-you");
+// }, 1000);
+// }
+
+
+if (response.ok) {
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({
+    event: "lead_submission_success",
+  });
+
+  toast.success(data.message || "Enquiry submitted successfully!");
 
   setName("");
   setEmail("");
@@ -101,33 +123,14 @@ function LPForm({ FormHead, FormPara, pageName }) {
   setServiceRequired("");
   setProjectDetails("");
 
-  
-  // setTimeout(() => {
-  //   router.push("/lp/thank-you");
-  // }, 1000);
+  sessionStorage.setItem("returnUrl", window.location.pathname);
 
   setTimeout(() => {
-  sessionStorage.setItem("returnUrl", window.location.pathname);
-  router.push("/lp/thank-you");
-}, 1000);
+    router.push("/lp/thank-you");
+  }, 1000);
+} else {
+  toast.error(data.message || "Failed to submit enquiry.");
 }
-
-      // if (response.ok) {
-      //   toast.success(
-      //     data.message || "Enquiry submitted successfully!"
-      //   );
-
-      //   setName("");
-      //   setEmail("");
-      //   setMobile("");
-      //   setServiceRequired("");
-      //   setProjectDetails("");
-      // }
-        else {
-        toast.error(
-          data.message || "Failed to submit enquiry."
-        );
-      }
     } catch (error) {
       console.error(error);
 

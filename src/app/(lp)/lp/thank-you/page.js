@@ -17,16 +17,16 @@ function Page() {
   //   return () => clearTimeout(timer);
   // }, [router]);
 
-  useEffect(() => {
-  const timer = setTimeout(() => {
-    const returnUrl =
-      sessionStorage.getItem("returnUrl") || "/lp/brand-identity";
+//   useEffect(() => {
+//   const timer = setTimeout(() => {
+//     const returnUrl =
+//       sessionStorage.getItem("returnUrl") || "/lp/brand-identity";
 
-    router.replace(returnUrl);
-  }, 5000);
+//     router.replace(returnUrl);
+//   }, 5000);
 
-  return () => clearTimeout(timer);
-}, [router]);
+//   return () => clearTimeout(timer);
+// }, [router]);
 
   return (
     <div>

@@ -1,0 +1,283 @@
+/* lppackagingHero */
+.lppackagingHero{
+    background-image: url("https://dndesigns.co.in/uploads/pages/herobgpaper01ebdimage-104jj.jpg" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 120px 0;
+   
+}
+
+.lppackagingHero-left-col-upper{
+    background-image: url("https://dndesigns.co.in/uploads/pages/herobgpaperdhsgfjhgherdcrumpled-checkered.jpg" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 30px 50px;
+    position: relative;
+}
+
+
+
+.hero-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 40px;
+    font-weight: 700;
+    color: #161616;
+}
+
+.hero-head-span{
+    color: #ca2734;
+}
+
+.hero-para-desc{
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    padding: 20px 0 10px 0;
+    width: 80%;
+}
+
+@media(max-width:767px){
+
+    .hero-head{
+        font-size: 30px;
+    }
+     .hero-para-desc{
+    width:100%;
+}
+}
+
+
+
+/* pop image div */
+/* .popImagesdiv{
+    display: flex;
+}
+.pop-up-image{
+    height: 50px;
+    width: 50px;
+} */
+
+
+/* .img1{
+    top:0;
+    left:110px;
+    animation:topPop .8s forwards;
+}
+
+.img2{
+    top:80px;
+    left:0;
+    animation:leftPop .8s .2s forwards;
+}
+
+.img3{
+    top:80px;
+    right:0;
+    animation:rightPop .8s .4s forwards;
+}
+
+.img4{
+    bottom:0;
+    left:75px;
+    animation:bottomPop .8s .6s forwards;
+}
+
+.img5{
+    bottom:0;
+    right:75px;
+    animation:bottomPop .8s .8s forwards;
+}
+
+
+@keyframes topPop{
+    from{
+        transform:translateY(-180px) scale(.2);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes leftPop{
+    from{
+        transform:translateX(-220px) rotate(-25deg) scale(.2);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0) rotate(0) scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes rightPop{
+    from{
+        transform:translateX(220px) rotate(25deg) scale(.2);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0) rotate(0) scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes bottomPop{
+    from{
+        transform:translateY(180px) scale(.2);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+} */
+
+/* tapes */
+
+.lpheropackingstraighttape{
+    position: absolute;
+    left: -37%;
+    top:-5%;
+    width:280px;
+}
+.lpherotaptiltimg{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width:250px;
+}
+
+@media(max-width:1399.5px){
+    .lpheropackingstraighttape{
+    position: absolute;
+    left: -37%;
+    top:-5%;
+    width:230px;
+}
+.lpherotaptiltimg{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width:250px;
+}
+}
+
+
+@media(max-width:1200.5px){
+    .lpheropackingstraighttape{
+    position: absolute;
+    left: -35%;
+    top:-3%;
+    width:200px;
+}
+.lpherotaptiltimg{
+    position: absolute;
+    left: 75%;
+    top: 85%;
+    width:160px;
+}
+}
+
+@media(max-width:991.5px){
+    .lpheropackingstraighttape{
+    position: absolute;
+    left: -23%;
+    top:-3%;
+    width:180px;
+}
+.lpherotaptiltimg{
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width:180px;
+}
+}
+
+@media(max-width:767.5px){
+    .packging-design-agency-form{
+        padding-top: 20px;
+    }
+    .lpheropackingstraighttape{
+    position: absolute;
+    left: -20%;
+    top:-8%;
+    width:170px;
+}
+.lpherotaptiltimg{
+    position: absolute;
+    left: 76%;
+    top: 83%;
+    /* right:-10%; */
+    width:170px;
+}
+
+.lppackagingHero{
+    overflow: hidden;
+}
+}
+
+
+
+/* marque */
+
+.brands-that-us{
+    padding: 80px 0 30px 0;
+}
+.brands-that-us-head{
+    text-align: center;
+    font-family: var(--font-corbert-bold);
+    font-size: 45px;
+    font-weight: 700;
+    color: #161616;
+    padding-bottom: 15px;
+}
+
+.brands-that-us-para{
+    text-align: center;
+    font-family: var(--font-roboto);
+    color: #888888;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    width:70%;
+}
+
+.marque-div{
+    padding: 20px 0;
+}
+.marque-div-2{
+    padding-bottom: 80px;
+}
+
+@media(max-width:767px){
+    .brands-that-us-head{
+    font-size: 30px;
+}
+.brands-that-us-para{
+    margin-bottom: 0px;
+    width:100%;
+}
+.marque-div{
+    padding: 10px 0;
+}
+}
+
+.brands-that-us-head-span{
+    color: #ca2734;
+}
+
+.brands-that-us-head-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
