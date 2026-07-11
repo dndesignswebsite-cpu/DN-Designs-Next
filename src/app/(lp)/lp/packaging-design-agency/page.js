@@ -8,6 +8,7 @@ import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonia
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
+import LPPackagingDesignAgencySwipper from '@/Components/LPPackagingDesignAgencySwipper/LPPackagingDesignAgencySwipper';
 
 function page() {
 
@@ -509,7 +510,7 @@ function page() {
 
 
 {/* our work swipper component */}
-
+<LPPackagingDesignAgencySwipper/>
 
 
 {/* testimonial */}
@@ -521,6 +522,9 @@ function page() {
       <div id="faq">
       <LPFAQ  leftFaqs={leftFaqs}/>
       </div>
+
+
+      
 
 
        {/* footer */}

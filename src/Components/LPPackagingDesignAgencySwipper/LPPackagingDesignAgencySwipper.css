@@ -1,0 +1,51 @@
+ .LPPackagingDesignAgencySwipperContainer{
+    padding: 80px 0;
+}
+
+.swipeer-slide-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+}
+
+.swipeer-slide-div img{
+    width: 100%;
+    transition: transform .9s cubic-bezier(.22,.61,.36,1);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+     box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.25);
+     border-radius: 25px;
+}
+
+
+.city-swiper .swiper-slide-prev .swipeer-slide-div img {
+    transform: rotateY(20deg); 
+    transform-origin: left center;
+}
+
+
+.city-swiper .swiper-slide-next .swipeer-slide-div img{
+    transform: rotateY(-20deg); 
+    transform-origin: right center; 
+}
+
+
+.city-swiper .swiper-slide-active .swipeer-slide-div{
+    transition: all 2s ease;
+    transform: rotateY(0) scale(1);
+}
+
+
+
+
+@media(max-width:767px){
+    .LPPackagingDesignAgencySwipperContainer{
+    padding: 80px 10px;
+}
+}
+
+
+
+
+
