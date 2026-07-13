@@ -120,7 +120,7 @@ Mobile Header
     display:none;
 }
 
-@media(max-width:767px){
+@media(max-width:991px){
 
 .navlink-row-desktop{
     display:none;
@@ -130,6 +130,12 @@ Mobile Header
     display:flex;
     align-items:center;
     padding:10px;
+}
+
+.head-brand-logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 }

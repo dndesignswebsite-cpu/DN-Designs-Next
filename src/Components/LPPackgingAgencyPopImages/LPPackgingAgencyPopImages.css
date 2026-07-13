@@ -1,65 +1,3 @@
-/* .LPPackgingAgencyPopImagessection{
-    position: relative;
-    height: 100%;
-}
-
-.LPPackgingAgencyPopImagessectionimg1{
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    width: 150px;
-    transform: scale(0) rotateX(20deg);
-      animation: popScale 0.8s ease-out forwards;
-      transform: rotateX(20deg);
-}
-
-.LPPackgingAgencyPopImagessectionimg2{
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    width: 150px;
-     transform: scale(0);
-       animation: popScale 0.8s ease-out forwards;
-}
-
-.LPPackgingAgencyPopImagessectionimg3{
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    width: 150px;
-     transform: scale(0);
-       animation: popScale 0.8s ease-out forwards;
-}
-
-.LPPackgingAgencyPopImagessectionimg4{
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    width: 150px;
-     transform: scale(0);
-       animation: popScale 0.8s ease-out forwards;
-}
-
-.LPPackgingAgencyPopImagessectionimg5{
-   position: absolute;
-    top: 50px;
-    left: 20%;
-    width: 150px;
-     transform: scale(0);
-       animation: popScale 0.8s ease-out forwards;
-}
-
-@keyframes popScale {
-    0%{
-        transform: scale(0) rotateX(20deg);
-    }
-    100%{
-        transform: scale(1) rotateX(0deg);
-    }
-}
- */
-
-
 .LPPackgingAgencyPopImagessection{
     position: relative;
     height: 100%;
@@ -78,34 +16,54 @@
     transform-origin: center;
 }
 
+@media(max-width:1299px){
+    .LPPackgingAgencyPopImagessectionimg1,
+.LPPackgingAgencyPopImagessectionimg2,
+.LPPackgingAgencyPopImagessectionimg3,
+.LPPackgingAgencyPopImagessectionimg4,
+.LPPackgingAgencyPopImagessectionimg5{
+    width: 180px;
+}
+}
+
+@media(max-width:991px){
+    .LPPackgingAgencyPopImagessectionimg1,
+.LPPackgingAgencyPopImagessectionimg2,
+.LPPackgingAgencyPopImagessectionimg3,
+.LPPackgingAgencyPopImagessectionimg4,
+.LPPackgingAgencyPopImagessectionimg5{
+    width: 180px;
+}
+}
+
 /* Position & Rotation */
 
 .LPPackgingAgencyPopImagessectionimg1{
-    left: 15%;
+    left: 10%;
     --rotate: -18deg;
     animation-delay: 0s;
 }
 
 .LPPackgingAgencyPopImagessectionimg4{
-    left: 25%;
+    left: 20%;
     --rotate: -8deg;
     animation-delay: .2s;
 }
 
 .LPPackgingAgencyPopImagessectionimg5{
-    left: 35%;
+    left: 30%;
     --rotate: 0deg;
     animation-delay: .4s;
 }
 
 .LPPackgingAgencyPopImagessectionimg3{
-    left: 45%;
+    left: 40%;
     --rotate: 8deg;
     animation-delay: .6s;
 }
 
 .LPPackgingAgencyPopImagessectionimg2{
-    left: 55%;
+    left: 50%;
     --rotate: 18deg;
     animation-delay: .8s;
 }
@@ -116,7 +74,7 @@
         opacity: 0;
     }
     70%{
-        transform: scale(1.12) rotate(var(--rotate));
+        transform: scale(1.05) rotate(var(--rotate));
         opacity: 1;
     }
     100%{
