@@ -10,6 +10,17 @@
    
 }
 
+/* .lppackagingHero-left-col{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+} */
+
+.lppackagingHero-left-col-bottom{
+    position: relative;
+}
+
 .lppackagingHero-left-col-upper{
     background-image: url("https://dndesigns.co.in/uploads/pages/herobgpaperdhsgfjhgherdcrumpled-checkered.jpg" );
     background-repeat: no-repeat;
@@ -19,7 +30,12 @@
     height: 100%;
     padding: 30px 50px;
     position: relative;
+    /* height:70%; */
 }
+
+/* .lppackagingHero-left-col-bottom{
+    height: 50%;
+} */
 
 
 
@@ -408,7 +424,15 @@ justify-content: space-between;
 
 .asthetic-head{
     font-size: 25px;
-}    
+}  
+
+.what-we-can-do-col-left-third-div{
+    flex-direction: column !important;
+}
+.what-we-can-do-col-left-img-third-row{
+    width:100% !important;
+    border-radius: 0 0 12px 12px !important;
+}
 }
 
 @media(max-width:767px){
@@ -686,4 +710,142 @@ justify-content: space-between;
     position: sticky;
     top:180px;
     z-index:5;
+}
+
+
+/* what we do section */
+
+.what-we-do-section{
+    padding: 80px 0;
+    /* background-color: #F3F3F3; */
+}
+
+.everything-you-need-para{
+    color: #ca2734;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+}
+
+.everything-you-need-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 40px;
+    font-weight: 700;
+    color: #0A0A0A;
+    width: 80%;
+}
+
+
+.everything-you-need-desc-div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100%;
+}
+
+.everything-you-need-desc{
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 14px;
+    color: #888888;
+    width: 50%;
+}
+
+.what-we-do-section-content-row{
+    padding-bottom: 20px;
+}
+
+.foundation-col-img{
+    border-radius: 25px;
+}
+
+.lp-packaging-video{
+    border-radius: 25px;
+}
+
+
+/* row-div-what-we-do */
+.row-div-what-we-do{
+    display:flex;
+    gap:20px;
+}
+.coldiv-what-we-do-left{
+    width: 32.4%;
+}
+.coldiv-what-we-do-right{
+    width: 67.6%;
+}
+
+.coldiv-what-we-do-one{
+    width: 27%;
+}
+
+.coldiv-what-we-do-two{
+    width: 47.5%;
+}
+
+.coldiv-what-we-do-three{
+    width: 25.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    .everything-you-need-desc-div{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.everything-you-need-desc{
+    width: 100%;
+}
+
+.everything-you-need-head{
+    width: 100%;
+    font-size: 30px;
+}
+
+.what-we-do-section-content-row{
+    padding-bottom: 0px;
+}
+.row-div-what-we-do{
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.coldiv-what-we-do-left{
+    width: 100%;
+}
+.coldiv-what-we-do-right{
+    width: 100%;
+}
+
+.coldiv-what-we-do-one{
+    width: 100%;
+}
+
+.coldiv-what-we-do-two{
+    width: 100%;
+}
+
+.coldiv-what-we-do-three{
+    width: 100%;
+}
 }

@@ -9,6 +9,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPPackagingDesignAgencySwipper from '@/Components/LPPackagingDesignAgencySwipper/LPPackagingDesignAgencySwipper';
+import LPPackgingAgencyPopImages from '@/Components/LPPackgingAgencyPopImages/LPPackgingAgencyPopImages';
 
 function page() {
 
@@ -185,40 +186,8 @@ function page() {
                Collaborate with us to build a brand that stands out, inspires confidence, drives loyalty and brings in business profit. We are your trusted partner in your branding journey.
               </p>
             </div>
-            <div className='lppackagingHero-left-col-bottom'>
-            {/* <div className='popImagesdiv'>
-                <img src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp" className='img-fluid pop-up-image'/>
-                <img src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp" className='img-fluid pop-up-image'/>
-                <img src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp" className='img-fluid pop-up-image'/>
-            </div> */}
-            {/* <div className="popImagesdiv">
-  <img
-    src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp"
-    className="img-fluid pop-up-image img1"
-  />
-
-  <img
-    src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp"
-    className="img-fluid pop-up-image img2"
-  />
-
-  <img
-    src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp"
-    className="img-fluid pop-up-image img3"
-  />
-
-  <img
-    src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp"
-    className="img-fluid pop-up-image img4"
-  />
-
-  <img
-    src="https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp"
-    className="img-fluid pop-up-image img5"
-  />
-</div> */}
-
-            
+            <div className='lppackagingHero-left-col-bottom'>    
+                   <LPPackgingAgencyPopImages/>
             </div>
 
             </div>
@@ -230,6 +199,82 @@ function page() {
           </div>  
         </div>
     </div>
+
+
+
+    {/* what we do section */}
+
+    <section className='what-we-do-section'>
+      <div className='container'>
+        <div className='row what-we-do-section-content-row'>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+        <div className=' everything-you-need-head-div'>
+          <p className='everything-you-need-para'>What We Do</p>
+          <h2 className='everything-you-need-head'>Everything You Need To Build A Strong Brand</h2>
+        </div>
+        </div>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+        <div className=' everything-you-need-desc-div'>
+          <p className='everything-you-need-desc'>End-to-end creative solutions for FMCG, Pharma, Healthcare and Consumer brands.</p>
+          </div>
+        </div>
+        </div>
+
+        <div className='row-div-what-we-do'>
+          <div className='coldiv-what-we-do-left mt-4'>
+          <div className='foundation-col'>
+            <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/>
+          </div>
+          </div>
+
+          <div className='coldiv-what-we-do-right mt-4'>
+          <div className='foundation-col'>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid foundation-col-img'/> */}
+            <video
+            src="https://dndesigns.co.in/uploads/videos/lppackgingvideonewsection.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          />
+          </div>
+          </div>  
+        </div>
+
+        <div className='row-div-what-we-do'>
+          <div className='coldiv-what-we-do-one mt-4'>
+          <div className='foundation-col'>
+            <img src="https://dndesigns.co.in/uploads/pages/lppackpackgingfluke-gr.jpg.jpeg" className='img-fluid foundation-col-img'/>
+          </div>
+          </div>
+
+          <div className='coldiv-what-we-do-two mt-4'>
+          <div className='foundation-col'>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid foundation-col-img'/> */}
+
+             <video
+            src="https://dndesigns.co.in/uploads/videos/threeSistersVideo.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          />
+          </div>
+          </div> 
+
+          <div className='coldiv-what-we-do-three mt-4'>
+          <div className='foundation-col'>
+            <img src="https://dndesigns.co.in/uploads/pages/lppackgingDAVID20graphic.jpg.jpeg" className='img-fluid foundation-col-img'/>
+          </div>
+          </div>  
+        </div>
+        
+      </div>
+    </section>
 
 
 
@@ -280,11 +325,11 @@ function page() {
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
                 <p className='asthetic-para-label'>FOUNDATION</p>
-                <h2 className='asthetic-head'> Brand Strategy</h2>
+                <h2 className='asthetic-head'>Brand Strategy</h2>
                 <p className='asthetic-para-desc'> Every strong brand starts with a decision, not a design. We define your direction, your audience, and your message before anything gets built, so nothing after this stage is guesswork, and nothing gets built twice.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                <img src="https://dndesigns.co.in/uploads/pages/seclphdbidentity.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/lppackigning5compressedRectangle-25698.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
 
@@ -296,7 +341,7 @@ function page() {
                 <p className='asthetic-para-desc'>We build a visual and verbal identity that signals where you're going, not just where you are. One that earns its place in the market without needing an explanation.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/seclphdbidentity.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                 <img src="https://dndesigns.co.in/uploads/pages/thirdlpjdbhlogo.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning2image112.png" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
@@ -310,7 +355,7 @@ function page() {
                 <p className='asthetic-para-desc'>A logo has one job: get recognised in half a second. We design marks that hold up at a glance, stay memorable and hold their own across every size and surface.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/thirdlpjdbhlogo.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/lppackigning1image107.png" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
 
@@ -321,7 +366,7 @@ function page() {
                 <h2 className='asthetic-head'> Brand Positioning</h2>
                 <p className='asthetic-para-desc'> Being different means nothing if nobody notices it. We carve out a place in the market that's unmistakably yours, so people choose you without comparing you to anyone else, and stop mistaking you for a competitor.</p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/fourthlpdvdhpositining.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/lppackigning6compressedRectangle-25739.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
@@ -336,7 +381,7 @@ function page() {
                 <h2 className='asthetic-head'>Brand Naming</h2>
                 <p className='asthetic-para-desc'>A name plays a crucial role in carving the space for a brand in the market. It  has to do its job before anyone hears the pitch. We find one that's ownable, easy to say and true to what you actually stand for. It has to survive a trademark search, a domain check and a first impression, all at once. And it has to sound just as right in a pitch deck as it does out loud, five years from now.</p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/fifthlpjedjhNaming.jpg" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/lppackigning4Rectangle25704.png" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
             </div>
           </div>
 
@@ -347,7 +392,7 @@ function page() {
                 <h2 className='asthetic-head'>Rebranding</h2>
                 <p className='asthetic-para-desc'>Brands outgrow themselves. We rebuild your brand around who you've become, keeping what customers already trust you for and cutting what no longer fits.</p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/lastpfrowcolRebranding.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/lppackigning3Rectangle25703.png" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
@@ -510,7 +555,7 @@ function page() {
 
 
 {/* our work swipper component */}
-<LPPackagingDesignAgencySwipper/>
+{/* <LPPackagingDesignAgencySwipper/> */}
 
 
 {/* testimonial */}

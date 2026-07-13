@@ -1,0 +1,126 @@
+/* .LPPackgingAgencyPopImagessection{
+    position: relative;
+    height: 100%;
+}
+
+.LPPackgingAgencyPopImagessectionimg1{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    width: 150px;
+    transform: scale(0) rotateX(20deg);
+      animation: popScale 0.8s ease-out forwards;
+      transform: rotateX(20deg);
+}
+
+.LPPackgingAgencyPopImagessectionimg2{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    width: 150px;
+     transform: scale(0);
+       animation: popScale 0.8s ease-out forwards;
+}
+
+.LPPackgingAgencyPopImagessectionimg3{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    width: 150px;
+     transform: scale(0);
+       animation: popScale 0.8s ease-out forwards;
+}
+
+.LPPackgingAgencyPopImagessectionimg4{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    width: 150px;
+     transform: scale(0);
+       animation: popScale 0.8s ease-out forwards;
+}
+
+.LPPackgingAgencyPopImagessectionimg5{
+   position: absolute;
+    top: 50px;
+    left: 20%;
+    width: 150px;
+     transform: scale(0);
+       animation: popScale 0.8s ease-out forwards;
+}
+
+@keyframes popScale {
+    0%{
+        transform: scale(0) rotateX(20deg);
+    }
+    100%{
+        transform: scale(1) rotateX(0deg);
+    }
+}
+ */
+
+
+.LPPackgingAgencyPopImagessection{
+    position: relative;
+    height: 100%;
+}
+
+.LPPackgingAgencyPopImagessectionimg1,
+.LPPackgingAgencyPopImagessectionimg2,
+.LPPackgingAgencyPopImagessectionimg3,
+.LPPackgingAgencyPopImagessectionimg4,
+.LPPackgingAgencyPopImagessectionimg5{
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    transform: scale(0);
+    animation: popScale .6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    transform-origin: center;
+}
+
+/* Position & Rotation */
+
+.LPPackgingAgencyPopImagessectionimg1{
+    left: 15%;
+    --rotate: -18deg;
+    animation-delay: 0s;
+}
+
+.LPPackgingAgencyPopImagessectionimg4{
+    left: 25%;
+    --rotate: -8deg;
+    animation-delay: .2s;
+}
+
+.LPPackgingAgencyPopImagessectionimg5{
+    left: 35%;
+    --rotate: 0deg;
+    animation-delay: .4s;
+}
+
+.LPPackgingAgencyPopImagessectionimg3{
+    left: 45%;
+    --rotate: 8deg;
+    animation-delay: .6s;
+}
+
+.LPPackgingAgencyPopImagessectionimg2{
+    left: 55%;
+    --rotate: 18deg;
+    animation-delay: .8s;
+}
+
+@keyframes popScale{
+    0%{
+        transform: scale(0) rotate(var(--rotate));
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1.12) rotate(var(--rotate));
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) rotate(var(--rotate));
+        opacity: 1;
+    }
+}
