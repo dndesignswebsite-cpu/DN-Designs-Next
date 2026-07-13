@@ -124,41 +124,39 @@ function page() {
    // faqs content
    const leftFaqs = [
        {
-          question: "What does a brand design agency actually do? ",
+          question: "Why is professional packaging design important?",
           answer:
-            (<>A branding agency helps you define your positioning, build a visual identity, shape your core messaging and establish a digital presence so your business looks and feels like a brand people trust and choose, not just one they scroll past. </>)
+            (<>Because there’s tough competition out there. To survive and win, beautiful packaging alone is not sufficient. What you need is a packaging design based on research and strategy, so your product stands out and gets chosen. A professional packaging design achieves just that for you. </>)
         },
         {
-          question: "What kind of branding services do you offer?",
+          question: "What does a packaging design agency actually do? ",
           answer:
-            (<>We offer comprehensive branding services including brand strategy, brand identity design, brand positioning, brand naming and packaging design. We also provide rebranding services.</>)
+            (<>A product packaging design agency combines research, strategy and creativity to create packaging that expresses the brand, helps it stand out on store shelves, enhances the customer experience and drives purchase decisions.</>)
         },
         {
-          question: "Do we require branding before building a website? ",
+          question: "Can you help with multiple SKUs or product variants? ",
           answer:
-            (<>Yes, and it's worth getting it right. A website built without a clear brand strategy tends to feel generic. Your brand sets the direction, tone and messaging of the website; then it becomes a true expression of your brand, not just a set of pages.  </>)
+            (<>Yes, we can design packaging for all your SKUs and product variants. We design packaging systems that help customers identify and differentiate each product while ensuring your brand identity and messaging stay consistent. </>)
         },
         {
-          question: "How involved do we need to be in the process? ",
+          question: "What makes good packaging design? ",
           answer:
-            "Thoroughly. Your insights, data and your point of view are very crucial in building the brand you envisioned.",
+            "A great packaging design serves multiple purposes simultaneously. It helps convey brand identity and story, attract customers visually, convey key information, and enhance customer experience through functionality. The end goal of good packaging design is to make the product appealing and convincing enough for the customers to choose it over others.",
         },
         {
-          question: "What's the difference between a logo and a brand identity?",
+          question: "Do you handle FMCG packaging design specifically? ",
           answer:
-            "A logo is one asset. Brand identity is the complete system that includes the logo as well as the brand name, colour, typography, imagery, tone, and other elements that make your brand identifiable. Think of the logo as the face and the identity as the personality of a person.",
+            "Yes, FMCG packaging design is a large part of our work, alongside pharma, healthcare and consumer brands.",
         },
         {
-          question: "Do you only work with startups, or established businesses too? ",
+          question: "How many revisions can I get during the packaging design? ",
           answer:
-            "We work with both new brands and existing ones looking to sharpen, reposition or rebuild what they already have. ",
-        },
-        {
-          question: "How can we get started with your brand consultant services?",
-          answer:
-            "Simply fill out our contact form or give us a call. We can schedule a meeting immediately or as per your convenience.",
-        },    
+            "Unlimited. We don’t focus on the number of revisions. What’s important to us is your satisfaction. We rework our designs until it becomes what you really wanted and envisioned.",
+        }  
       ];
+
+      // form section content
+  const pageName = "lp/packaging-design-agency";
 
 
   return (
@@ -179,24 +177,47 @@ function page() {
     <img src="https://dndesigns.co.in/uploads/pages/tapimagetiltimage-114.png" className='img-fluid lpherotaptiltimg'></img>
     
                 <h1 className="hero-head">
-                A Full-Service   Branding<span className="hero-head-span"> Agency For Growth, </span>
-                 Recognition & Impact
+                A Full-Service Packaging 
+<span className="hero-head-span"> Design Agency For </span>
+                  Standout Shelf Impact
               </h1>
               <p className="hero-para-desc">
-               Collaborate with us to build a brand that stands out, inspires confidence, drives loyalty and brings in business profit. We are your trusted partner in your branding journey.
+               Collaborate with us to build packaging that stands out, survives the shelf, meets every compliance requirement and drives real sales. We are your trusted partner in your packaging journey.
               </p>
             </div>
             <div className='lppackagingHero-left-col-bottom'>    
-                   <LPPackgingAgencyPopImages/>
+                   {/* <LPPackgingAgencyPopImages/> */}
             </div>
 
             </div>
             </div>
 
-            <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4 packging-design-agency-form'>
-            <LPForm/>
+            <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4 packging-design-agency-form' id='enquiry-form'>
+            <LPForm pageName={pageName} className="form-section-packging"/>
             </div>
           </div>  
+        </div>
+
+        <div className='popImages-div'>
+          <img src="https://dndesigns.co.in/uploads/videos/lppopupimageMAKIO.png" className='PopImagessectionimg1 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage5.png" className='PopImagessectionimg2 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage4(1).png" className='PopImagessectionimg3 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage3(1).png" className='PopImagessectionimg4 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage2(1).png" className='PopImagessectionimg5 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimageMAKIO.png" className='PopImagessectionimg6 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage5.png" className='PopImagessectionimg7 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage4(1).png" className='PopImagessectionimg8 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage3(1).png" className='PopImagessectionimg9 img-fluid'/>
+
+        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage2(1).png" className='PopImagessectionimg10 img-fluid'/>
         </div>
     </div>
 
@@ -204,7 +225,7 @@ function page() {
 
     {/* what we do section */}
 
-    <section className='what-we-do-section'>
+    <section className='what-we-do-section' id="our-work">
       <div className='container'>
         <div className='row what-we-do-section-content-row'>
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
@@ -281,9 +302,9 @@ function page() {
      {/* marque */}
                 <div className="brands-that-us" id="our-clients">
                   <div className="container brands-that-us-head-div">
-                    <h2 className="brands-that-us-head">Trusted By  <span className="brands-that-us-head-span">Visionary Brands</span></h2>
+                    <h2 className="brands-that-us-head">Chosen by<span className="brands-that-us-head-span"> Ambitious Brands </span></h2>
                     <p className="brands-that-us-para">
-                      From food & beverage to nutraceuticals, we partner with businesses across industries to create lasting impact.
+                      From FMCG to pharma, we provide packaging design services to brands across categories.
                     </p>
                   </div>
                 </div>
@@ -297,7 +318,7 @@ function page() {
 
 
                  {/* what we can do brnading services */}
-                      <div>
+                      <div id='services'>
       <div className='what-we-can-branding-services'>
         <div className="container">
 
@@ -324,9 +345,9 @@ function page() {
           <div className='col-div-left mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>FOUNDATION</p>
-                <h2 className='asthetic-head'>Brand Strategy</h2>
-                <p className='asthetic-para-desc'> Every strong brand starts with a decision, not a design. We define your direction, your audience, and your message before anything gets built, so nothing after this stage is guesswork, and nothing gets built twice.</p>
+                <p className='asthetic-para-label'>Foundation</p>
+                <h2 className='asthetic-head'>Consultation & Research</h2>
+                <p className='asthetic-para-desc'>We map your category, competitor packs, retail formats, what's winning shelf space and why. Every structural and design call downstream traces back to something we found here, not a hunch.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning5compressedRectangle-25698.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
@@ -336,9 +357,9 @@ function page() {
            <div className='col-div-right mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>SYSTEM</p>
-                <h2 className='asthetic-head'>Brand Identity Design</h2>
-                <p className='asthetic-para-desc'>We build a visual and verbal identity that signals where you're going, not just where you are. One that earns its place in the market without needing an explanation.</p>
+                <p className='asthetic-para-label'>Engineering</p>
+                <h2 className='asthetic-head'>Packaging Architecture</h2>
+                <p className='asthetic-para-desc'> We define the shape, material, texture and functionality of the packaging to ensure every interaction feels unmistakably on-brand, leaves the right impression and enhances the customer experience.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/seclphdbidentity.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
                  <img src="https://dndesigns.co.in/uploads/pages/lppackigning2image112.png" className='img-fluid what-we-can-do-col-left-img'></img>
@@ -350,9 +371,9 @@ function page() {
           <div className='col-div-right mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>MARK</p>
-                <h2 className='asthetic-head'> Logo Design</h2>
-                <p className='asthetic-para-desc'>A logo has one job: get recognised in half a second. We design marks that hold up at a glance, stay memorable and hold their own across every size and surface.</p>
+                <p className='asthetic-para-label'>Aesthetics</p>
+                <h2 className='asthetic-head'>Packaging Design</h2>
+                <p className='asthetic-para-desc'> Design layout, hierarchy, colour and typography built to capture attention in under three seconds from two feet away, because that's roughly what you get on a crowded shelf. </p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/thirdlpjdbhlogo.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning1image107.png" className='img-fluid what-we-can-do-col-left-img'></img>
@@ -362,9 +383,9 @@ function page() {
            <div className='col-div-left mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>TERRITORY</p>
-                <h2 className='asthetic-head'> Brand Positioning</h2>
-                <p className='asthetic-para-desc'> Being different means nothing if nobody notices it. We carve out a place in the market that's unmistakably yours, so people choose you without comparing you to anyone else, and stop mistaking you for a competitor.</p>
+                <p className='asthetic-para-label'>Symbolism</p>
+                <h2 className='asthetic-head'>Brand Identity Design</h2>
+                <p className='asthetic-para-desc'>Logo, tagline and USP built to hold up across pack sizes, materials and print methods. So the brand looks like one brand whether it's on a 50ml bottle or a bulk carton.</p>
                 </div>
                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning6compressedRectangle-25739.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
@@ -377,9 +398,9 @@ function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-7 mt-4'>
             <div className='what-we-can-do-col-left-third-div'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>TITLE</p>
-                <h2 className='asthetic-head'>Brand Naming</h2>
-                <p className='asthetic-para-desc'>A name plays a crucial role in carving the space for a brand in the market. It  has to do its job before anyone hears the pitch. We find one that's ownable, easy to say and true to what you actually stand for. It has to survive a trademark search, a domain check and a first impression, all at once. And it has to sound just as right in a pitch deck as it does out loud, five years from now.</p>
+                <p className='asthetic-para-label'>Imagery</p>
+                <h2 className='asthetic-head'>Product Photography</h2>
+                <p className='asthetic-para-desc'>Shot to show texture, scale and real use, not staged perfection. The kind of images that convert on Amazon listings and Instagram feeds, where design alone can't close the sale.</p>
                 </div>
                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning4Rectangle25704.png" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
             </div>
@@ -388,9 +409,10 @@ function page() {
            <div className='col-12 col-sm-12 col-md-12 col-lg-5 mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>EVOLUTION</p>
-                <h2 className='asthetic-head'>Rebranding</h2>
-                <p className='asthetic-para-desc'>Brands outgrow themselves. We rebuild your brand around who you've become, keeping what customers already trust you for and cutting what no longer fits.</p>
+                <p className='asthetic-para-label'>Standards</p>
+                <h2 className='asthetic-head'>Legal Compliance </h2>
+                <p className='asthetic-para-desc'>FSSAI, Legal Metrology and category mandatories reviewed at the design stage, not after your batch is printed and stuck at customs or pulled off a shelf.
+</p>
                 </div>
                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning3Rectangle25703.png" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
@@ -410,16 +432,16 @@ function page() {
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
             Our  {" "}
-            <span className="every-pr"> Branding Process </span>
+            <span className="every-pr"> Process </span>
           </h2>
           <ul id="cards-create">
             <li className="card-create" id="card1-create">
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Discover</h2>
+                  <h2>Discovery & Brief</h2>
                   <p>
-                   Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
+                   Every packaging design service starts here - understanding your product, category, competitors, budget and timeline. This is also where consultation and research happen, the groundwork that prevents every later stage from becoming guesswork.
                   </p>
                 </div>
               </div>
@@ -429,9 +451,9 @@ function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Define</h2>
+                  <h2>Positioning</h2>
                   <p>
-                  Facts become direction here. We lock your positioning, your messaging and the reason why customers should pick you. This is the strategic backbone of the brand, decided before a single visual gets touched, so design has something real to express.
+                  The research reveals crucial details - competitor packaging, category conventions, what's overused and what's missing. Based on this, the USP and positioning are decided. For FMCG, consumer brands and pharma packaging designs especially, this stage decides whether a product gets noticed in three seconds or gets lost among forty other boxes that look the same.
                   </p>
                 </div>
               </div>
@@ -441,9 +463,9 @@ function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Design</h2>
+                  <h2>Architecture & Design</h2>
                   <p>
-                   The full visual system of logo, colour and typography is now built. This is where the brand becomes visible. Every choice here answers back to what we defined in stage two, not to trend or taste. 
+                 Packaging architecture and packaging design happen side by side here, not in a one-after-the-other sequence. Packaging material, shape, texture, functionality, visual design, brand identity - every element that helps create a standout brand and enhance customer experience - takes centre stage here.
                   </p>
                 </div>
               </div>
@@ -453,9 +475,9 @@ function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2> Apply</h2>
+                  <h2> Refinement & Compliance  </h2>
                   <p>
-                  Strategy and design mean nothing sitting in a folder. Our creative branding agency now rolls the identity out across packaging, website, social and every surface it needs to live on. We ensure it holds up consistently everywhere, not just on the deck.
+                  Design is tightened around visual hierarchy, brand identity elements, and typography, while legal compliance like FSSAI and Legal Metrology are checked in parallel, not after approval. It's the stage where we catch problems early to prevent passing them down to the printer.
                   </p>
                 </div>
               </div>
@@ -465,9 +487,9 @@ function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Launch & Grow</h2>
+                  <h2> Production Handoff</h2>
                   <p>
-                   We don't hand over a brand book and disappear. Post-launch, we stay on to check the brand is being applied correctly, catch where it's drifting and sharpen it wherever needed.
+                  Final print-ready artwork and product photography go out together, checked against every compliance requirement one last time. This is what separates a packaging design studio from a design-only shop files. Your printer can run without sending back questions about specs, bleed or material.
                   </p>
                 </div>
               </div>
@@ -484,16 +506,16 @@ function page() {
         <div className="conatiner creating-your-brand-mobile">
           <h2 className="text-center our-brand-heading-a-mobile">
             Our 
-            <span className="every-pr"> Branding Process</span>
+            <span className="every-pr"> Process</span>
           </h2>
           <div className="row creating-brand-mobile-row">
             <div className="col-12 creating-brand-mobile-row-col creating-brand-mobile-row-col-1">
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">01</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Discover</h2>
+                  <h2> Discovery & Brief</h2>
                   <p>
-                 Our brand designing services start with research, not assumptions. We understand your audience, your competitors and your market position. This stage sets the base everything else gets built on. Skip it, and every decision made afterwards is guesswork dressed up as a strategy.
+              Every packaging design service starts here - understanding your product, category, competitors, budget and timeline. This is also where consultation and research happen, the groundwork that prevents every later stage from becoming guesswork.
                   </p>
                 </div>
               </div>
@@ -503,9 +525,9 @@ function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">02</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Define</h2>
+                  <h2>Positioning</h2>
                   <p>
-                    Facts become direction here. We lock your positioning, your messaging and the reason why customers should pick you. This is the strategic backbone of the brand, decided before a single visual gets touched, so design has something real to express.
+                   The research reveals crucial details - competitor packaging, category conventions, what's overused and what's missing. Based on this, the USP and positioning are decided. For FMCG, consumer brands and pharma packaging designs especially, this stage decides whether a product gets noticed in three seconds or gets lost among forty other boxes that look the same.
                   </p>
                 </div>
               </div>
@@ -515,9 +537,9 @@ function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">03</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Design</h2>
+                  <h2> Architecture & Design</h2>
                   <p>
-                   The full visual system of logo, colour and typography is now built. This is where the brand becomes visible. Every choice here answers back to what we defined in stage two, not to trend or taste. 
+                  Packaging architecture and packaging design happen side by side here, not in a one-after-the-other sequence. Packaging material, shape, texture, functionality, visual design, brand identity - every element that helps create a standout brand and enhance customer experience - takes centre stage here.
                   </p>
                 </div>
               </div>
@@ -527,9 +549,9 @@ function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">04</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Apply</h2>
+                  <h2>Refinement & Compliance</h2>
                   <p>
-                   Strategy and design mean nothing sitting in a folder. Our creative branding agency now rolls the identity out across packaging, website, social and every surface it needs to live on. We ensure it holds up consistently everywhere, not just on the deck.
+                   Design is tightened around visual hierarchy, brand identity elements, and typography, while legal compliance like FSSAI and Legal Metrology are checked in parallel, not after approval. It's the stage where we catch problems early to prevent passing them down to the printer.
                   </p>
                 </div>
               </div>
@@ -539,9 +561,9 @@ function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">05</h3>
                 <div className="card-body-create-mobile">
-                  <h2> Launch & Grow</h2>
+                  <h2> Production Handoff</h2>
                   <p>
-                    We don't hand over a brand book and disappear. Post-launch, we stay on to check the brand is being applied correctly, catch where it's drifting and sharpen it wherever needed.
+                   Final print-ready artwork and product photography go out together, checked against every compliance requirement one last time. This is what separates a packaging design studio from a design-only shop files. Your printer can run without sending back questions about specs, bleed or material.
                   </p>
                 </div>
               </div>
@@ -559,8 +581,9 @@ function page() {
 
 
 {/* testimonial */}
+<div id='testimonials'>
 <LPBradingServicesTestimonial/>
-
+</div>
 
 
 {/* LPFAQ */}

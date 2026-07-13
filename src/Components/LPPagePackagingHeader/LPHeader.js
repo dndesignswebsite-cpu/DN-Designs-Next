@@ -45,23 +45,34 @@ function LPHeader() {
 
                 <ul className="navlinks-list-ul">
 
-                <li>
-                    <a href="#our-clients" className="navlink-anchor-tag">
-                      Our Clients
-                    </a>
-                  </li>
+                
 
-                  <li>
-                    <a href="#services" className="navlink-anchor-tag">
-                      Services
-                    </a>
-                  </li>
+                 
 
                   <li>
                     <a href="#our-work" className="navlink-anchor-tag">
                       Our Work
                     </a>
                   </li>
+
+                  <li>
+                    <a href="#our-clients" className="navlink-anchor-tag">
+                      Our Clients
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="#services" className="navlink-anchor-tag">
+                      Services
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#our-process" className="navlink-anchor-tag">
+                      Our Process
+                    </a>
+                  </li>
+                  
 
                   <li>
                     <a href="#testimonials" className="navlink-anchor-tag">
