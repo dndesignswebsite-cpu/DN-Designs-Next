@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding: 120px 0 30px 0; 
+    padding: 120px 0 0px 0; 
 }
 
 
@@ -19,6 +19,7 @@
     height: 100%;
     padding: 30px 50px;
     position: relative;
+    z-index: 50;
 }
 
 
@@ -70,13 +71,7 @@
 }
 
 
-
-/* popimages */
-
-/* .form-section-packging{
-      position: relative;
-    z-index: 999;
-} */
+/* ================= POPUP IMAGES ================= */
 
 .popImages-div{
     position: relative;
@@ -87,113 +82,393 @@
     z-index: 1;
 }
 
-.PopImagessectionimg1, .PopImagessectionimg2, .PopImagessectionimg3, .PopImagessectionimg4, .PopImagessectionimg5, .PopImagessectionimg6, .PopImagessectionimg7, .PopImagessectionimg8, .PopImagessectionimg9, .PopImagessectionimg10{
-     position:absolute;
-    bottom:-200px;      
-    width:180px;
+/* Common Style */
 
-    opacity:0;
-    z-index: 1;
+.popImages-div img{
+    position: absolute;
+    /* width: 100px; */
+    opacity: 0;
 
-    animation:popup 1s forwards,
-               floating 4s ease-in-out infinite;
+    transform: translateY(260px) rotate(var(--rotate)) scale(.85);
+
+    animation: popup .8s ease-out forwards;
 }
 
 
+/* ================= IMAGE POSITIONS ================= */
+
 .PopImagessectionimg1{
-    left:2%;
-    width:220px;
-    transform:rotate(-18deg);
-    animation-delay:.2s;
+    left: -10px;
+    bottom: -60px;
+    --rotate: -8deg;
+    animation-delay: 0.1s !important;
+    width: 170px;
 }
 
 .PopImagessectionimg2{
-    left:12%;
-    width:180px;
-    transform:rotate(-12deg);
-    animation-delay:.4s;
+    left: 150px;
+    bottom: -80px;
+    --rotate: 0deg;
+    animation-delay: .4s !important;
+    width: 150px;
 }
 
 .PopImagessectionimg3{
-    left:22%;
-    width:160px;
-    transform:rotate(8deg);
-    /* animation-delay:.6s; */
+    left: 290px;
+    bottom: -80px;
+    --rotate: 6deg;
+    animation-delay: .6s !important;
+    width: 190px;
 }
 
 .PopImagessectionimg4{
-    left:34%;
-    width:150px;
-    transform:rotate(-6deg);
-    /* animation-delay:.8s; */
+    left: 450px;
+    bottom: -80px;
+    --rotate: -7deg;
+    animation-delay: .8s !important;
+    width: 150px;
 }
 
 .PopImagessectionimg5{
-    left:43%;
-    width:170px;
-    transform:rotate(6deg);
-    /* animation-delay:1s; */
+    left: 600px;
+    bottom: -80px;
+    --rotate: 8deg;
+    animation-delay: 1s !important;
+    width: 125px;
 }
 
 .PopImagessectionimg6{
-    left:55%;
-    width:170px;
-    transform:rotate(-10deg);
-    /* animation-delay:1.2s; */
+    left: 715px;
+    bottom: -80px;
+    --rotate: 0deg;
+    animation-delay: 1.2s !important;
+    width: 185px;
 }
 
 .PopImagessectionimg7{
-    left:65%;
-    width:170px;
-    transform:rotate(8deg);
-    /* animation-delay:1.4s; */
+    left: 895px;
+    bottom: -80px;
+    --rotate: 4deg;
+    animation-delay: 1.4s !important;
+    width: 155px;
 }
 
 .PopImagessectionimg8{
-    left:75%;
-    width:170px;
-    transform:rotate(-8deg);
-    /* animation-delay:1.6s; */
+    left: 1030px;
+    bottom: -80px;
+    --rotate: -7deg;
+    animation-delay: 1.6s !important;
+    width: 155px;
 }
 
 .PopImagessectionimg9{
-    left:84%;
-    width:160px;
-    transform:rotate(10deg);
-    /* animation-delay:1.8s; */
+    left: 1100px;
+    bottom: -80px;
+    --rotate: 130deg;
+    animation-delay: 1.8s !important;
+    width: 370px;
 }
 
 .PopImagessectionimg10{
-    right:0;
-    width:190px;
-    transform:rotate(-12deg);
-    /* animation-delay:2s; */
+    left: 1400px;
+    bottom: -80px;
+    --rotate: -9deg;
+    animation-delay: 2s !important;
+    width: 135px;
 }
+
+
+/* ================= POPUP ANIMATION ================= */
 
 @keyframes popup{
 
     0%{
-        bottom:-260px;
         opacity:0;
+        transform: translateY(260px) rotate(var(--rotate)) scale(.85);
     }
 
-    70%{
-        bottom:15px;
+    60%{
         opacity:1;
     }
 
     100%{
-        bottom:0;
         opacity:1;
+        transform: translateY(0) rotate(var(--rotate)) scale(1);
     }
 
 }
 
 
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px){
+
+   
+.PopImagessectionimg1{
+    left: -10px;
+    bottom: -100px;
+    --rotate: -8deg;
+    animation-delay: 0.1s !important;
+    width: 150px;
+}
+
+.PopImagessectionimg2{
+    left: 150px;
+    bottom: -100px;
+    --rotate: 0deg;
+    animation-delay: .4s !important;
+    width: 130px;
+}
+
+.PopImagessectionimg3{
+    left: 290px;
+    bottom: -100px;
+    --rotate: 6deg;
+    animation-delay: .6s !important;
+    width: 170px;
+}
+
+.PopImagessectionimg4{
+    left: 450px;
+    bottom: -100px;
+    --rotate: -7deg;
+    animation-delay: .8s !important;
+    width: 130px;
+}
+
+.PopImagessectionimg5{
+    left: 600px;
+    bottom: -100px;
+    --rotate: 8deg;
+    animation-delay: 1s !important;
+    width: 105px;
+}
+
+.PopImagessectionimg6{
+    left: 715px;
+    bottom: -100px;
+    --rotate: 0deg;
+    animation-delay: 1.2s !important;
+    width: 165px;
+}
+
+.PopImagessectionimg7{
+    left: 895px;
+    bottom: -100px;
+    --rotate: 4deg;
+    animation-delay: 1.4s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg8{
+    left: 1030px;
+    bottom: -100px;
+    --rotate: -7deg;
+    animation-delay: 1.6s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg9{
+    left: 1100px;
+    bottom: -100px;
+    --rotate: 130deg;
+    animation-delay: 1.8s !important;
+    width: 360px;
+}
+
+.PopImagessectionimg10{
+    left: 1400px;
+    bottom: -100px;
+    --rotate: -9deg;
+    animation-delay: 2s !important;
+    width: 115px;
+}
 
 
+}
 
-/* popimages end*/
+@media (max-width: 991px){
+
+    .popImages-div{
+        height:220px;
+        margin-top:-200px;
+    }
+
+       
+.PopImagessectionimg1{
+    left: -10px;
+    bottom: -100px;
+    --rotate: -8deg;
+    animation-delay: 0.1s !important;
+    width: 150px;
+}
+
+.PopImagessectionimg2{
+    left: 150px;
+    bottom: -100px;
+    --rotate: 0deg;
+    animation-delay: .4s !important;
+    width: 130px;
+}
+
+.PopImagessectionimg3{
+    left: 290px;
+    bottom: -100px;
+    --rotate: 6deg;
+    animation-delay: .6s !important;
+    width: 170px;
+}
+
+.PopImagessectionimg4{
+    left: 450px;
+    bottom: -100px;
+    --rotate: -7deg;
+    animation-delay: .8s !important;
+    width: 130px;
+}
+
+.PopImagessectionimg5{
+    left: 600px;
+    bottom: -100px;
+    --rotate: 8deg;
+    animation-delay: 1s !important;
+    width: 105px;
+}
+
+.PopImagessectionimg6{
+    left: 715px;
+    bottom: -100px;
+    --rotate: 0deg;
+    animation-delay: 1.2s !important;
+    width: 165px;
+}
+
+.PopImagessectionimg7{
+    left: 895px;
+    bottom: -100px;
+    --rotate: 4deg;
+    animation-delay: 1.4s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg8{
+    left: 1030px;
+    bottom: -100px;
+    --rotate: -7deg;
+    animation-delay: 1.6s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg9{
+    left: 1100px;
+    bottom: -100px;
+    --rotate: 130deg;
+    animation-delay: 1.8s !important;
+    width: 360px;
+}
+
+.PopImagessectionimg10{
+    left: 1400px;
+    bottom: -100px;
+    --rotate: -9deg;
+    animation-delay: 2s !important;
+    width: 115px;
+}
+
+
+}
+
+@media (max-width: 767px){
+
+    .popImages-div{
+        height:300px;
+        margin-top: -100px;
+    }
+
+      
+.PopImagessectionimg1{
+    left: -10px;
+    bottom: -60px;
+    --rotate: -8deg;
+    animation-delay: 0.1s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg2{
+    left: 70px;
+    bottom: -60px;
+    --rotate: 0deg;
+    animation-delay: .4s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg3{
+    left: 150px;
+    bottom: -50px;
+    --rotate: 6deg;
+    animation-delay: .6s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg4{
+    left: 220px;
+    bottom: -60px;
+    --rotate: -7deg;
+    animation-delay: .8s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg5{
+    left: 320px;
+    bottom: -60px;
+    --rotate: 8deg;
+    animation-delay: 1s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg6{
+    left: 400px;
+    bottom: -60px;
+    --rotate: 0deg;
+    animation-delay: 1.2s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg7{
+    left: 490px;
+    bottom: -60px;
+    --rotate: 4deg;
+    animation-delay: 1.4s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg8{
+    left: 560px;
+    bottom: -60px;
+    --rotate: -7deg;
+    animation-delay: 1.6s !important;
+    width: 100px;
+}
+
+.PopImagessectionimg9{
+    left: 770px;
+    bottom: -60px;
+    --rotate: 130deg;
+    animation-delay: 1.8s !important;
+    width: 120px;
+}
+
+.PopImagessectionimg10{
+    left: 650px;
+    bottom: -60px;
+    --rotate: -9deg;
+    animation-delay: 2s !important;
+    width: 120px;
+}
+
+
+}
+/* end */
 
 @media(max-width:1399.5px){
     .lpheropackingstraighttape{

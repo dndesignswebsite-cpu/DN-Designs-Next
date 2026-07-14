@@ -199,25 +199,35 @@ function page() {
         </div>
 
         <div className='popImages-div'>
-          <img src="https://dndesigns.co.in/uploads/videos/lppopupimageMAKIO.png" className='PopImagessectionimg1 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage5.png" className='PopImagessectionimg2 img-fluid'/>
+        <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHerossh-1.png" className='PopImagessectionimg1 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage4(1).png" className='PopImagessectionimg3 img-fluid'/>
+       <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroMineral-Water-1.png" className='PopImagessectionimg2 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage3(1).png" className='PopImagessectionimg4 img-fluid'/>
+         <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroRed--1.png" className='PopImagessectionimg3 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage2(1).png" className='PopImagessectionimg5 img-fluid'/>
+         <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroOmega-Jar-1.png" className='PopImagessectionimg4 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimageMAKIO.png" className='PopImagessectionimg6 img-fluid'/>
+         <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHero1-1285610144.png" className='PopImagessectionimg5 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage5.png" className='PopImagessectionimg7 img-fluid'/>
+          <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHero-1.png" className='PopImagessectionimg6 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage4(1).png" className='PopImagessectionimg8 img-fluid'/>
+           <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHero4-14224225.png" className='PopImagessectionimg7 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage3(1).png" className='PopImagessectionimg9 img-fluid'/>
+            <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroMAKIO-2.png" className='PopImagessectionimg8 img-fluid'/>
 
-        <img src="https://dndesigns.co.in/uploads/videos/lppopupimage2(1).png" className='PopImagessectionimg10 img-fluid'/>
+             <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeromockup-final-cashew-1.png" className='PopImagessectionimg9 img-fluid'/>
+
+
+        <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroRender_Mockup_1920_1920_2026-01-21-(1)-1.png" className='PopImagessectionimg10 img-fluid'/>
+
+
+        
+
+       
+
+        
+
         </div>
     </div>
 
@@ -230,13 +240,14 @@ function page() {
         <div className='row what-we-do-section-content-row'>
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
         <div className=' everything-you-need-head-div'>
-          <p className='everything-you-need-para'>What We Do</p>
-          <h2 className='everything-you-need-head'>Everything You Need To Build A Strong Brand</h2>
+          <p className='everything-you-need-para'>OUR WORK</p>
+          <h2 className='everything-you-need-head'>Packaging Design Projects Doing Real Work On Shelves</h2>
         </div>
         </div>
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
         <div className=' everything-you-need-desc-div'>
-          <p className='everything-you-need-desc'>End-to-end creative solutions for FMCG, Pharma, Healthcare and Consumer brands.</p>
+          <p className='everything-you-need-desc'>A look at packaging design projects we've shipped  from concept to shelf.
+Real products, real categories, real results.</p>
           </div>
         </div>
         </div>
@@ -325,16 +336,16 @@ function page() {
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-left-col">
-                <p className="what-we-do-lefty-col-para">Our Service</p>
+                <p className="what-we-do-lefty-col-para">WHAT WE DO</p>
                 <h2 className="what-we-do-lefty-col-head">
-                 End-To-End Branding Solutions
+                 Everything That Goes Into Getting Packaging Design Right
                 </h2>
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-right-col">
                 <p className="what-we-do-right-col-para">
-                  See how we transform your vision into an impactful brand experience.
+                  End-to-end packaging design solutions for FMCG, pharma, healthcare and consumer brands.
                 </p>
               </div>
             </div>
@@ -350,7 +361,7 @@ function page() {
                 <p className='asthetic-para-desc'>We map your category, competitor packs, retail formats, what's winning shelf space and why. Every structural and design call downstream traces back to something we found here, not a hunch.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                <img src="https://dndesigns.co.in/uploads/pages/lppackigning5compressedRectangle-25698.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/compreddsedRectangle-25740.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
 
@@ -362,7 +373,7 @@ function page() {
                 <p className='asthetic-para-desc'> We define the shape, material, texture and functionality of the packaging to ensure every interaction feels unmistakably on-brand, leaves the right impression and enhances the customer experience.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/seclphdbidentity.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                 <img src="https://dndesigns.co.in/uploads/pages/lppackigning2image112.png" className='img-fluid what-we-can-do-col-left-img'></img>
+                 <img src="https://dndesigns.co.in/uploads/pages/compressedimage-247.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
@@ -376,7 +387,7 @@ function page() {
                 <p className='asthetic-para-desc'> Design layout, hierarchy, colour and typography built to capture attention in under three seconds from two feet away, because that's roughly what you get on a crowded shelf. </p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/thirdlpjdbhlogo.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
-                <img src="https://dndesigns.co.in/uploads/pages/lppackigning1image107.png" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/compreddsedimage-248.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
 
@@ -387,7 +398,7 @@ function page() {
                 <h2 className='asthetic-head'>Brand Identity Design</h2>
                 <p className='asthetic-para-desc'>Logo, tagline and USP built to hold up across pack sizes, materials and print methods. So the brand looks like one brand whether it's on a 50ml bottle or a bulk carton.</p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/lppackigning6compressedRectangle-25739.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/compredsedRectangle-25741.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
@@ -402,7 +413,7 @@ function page() {
                 <h2 className='asthetic-head'>Product Photography</h2>
                 <p className='asthetic-para-desc'>Shot to show texture, scale and real use, not staged perfection. The kind of images that convert on Amazon listings and Instagram feeds, where design alone can't close the sale.</p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/lppackigning4Rectangle25704.png" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/compressedRectangle-25742.jpg" className='img-fluid  what-we-can-do-col-left-img-third-row'></img>
             </div>
           </div>
 
@@ -414,7 +425,7 @@ function page() {
                 <p className='asthetic-para-desc'>FSSAI, Legal Metrology and category mandatories reviewed at the design stage, not after your batch is printed and stuck at customs or pulled off a shelf.
 </p>
                 </div>
-                <img src="https://dndesigns.co.in/uploads/pages/lppackigning3Rectangle25703.png" className='img-fluid what-we-can-do-col-left-img'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/compredssedRectangle-25743.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
             </div>
           </div>
           </div>
