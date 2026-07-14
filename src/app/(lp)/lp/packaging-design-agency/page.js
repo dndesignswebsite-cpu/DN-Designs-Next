@@ -10,6 +10,8 @@ import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPPackagingDesignAgencySwipper from '@/Components/LPPackagingDesignAgencySwipper/LPPackagingDesignAgencySwipper';
 import LPPackgingAgencyPopImages from '@/Components/LPPackgingAgencyPopImages/LPPackgingAgencyPopImages';
+import PureluxVideo from '@/Components/LPOurWork/PureluxVideo';
+import LPPureluxVideo from '@/Components/OurWorkHomeSection/LPPureLuxVideo';
 
 function page() {
 
@@ -198,6 +200,8 @@ function page() {
           </div>  
         </div>
 
+        <div className="popImages-div-wrapper">
+
         <div className='popImages-div'>
 
         <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHerossh-1.png" className='PopImagessectionimg1 img-fluid'/>
@@ -221,13 +225,13 @@ function page() {
 
         <img src="https://dndesigns.co.in/uploads/pages/compreesedpopimageProteinLPHeroRender_Mockup_1920_1920_2026-01-21-(1)-1.png" className='PopImagessectionimg10 img-fluid'/>
 
+        <img src="https://dndesigns.co.in/uploads/pages/compressed13psd-3.png" className='PopImagessectionimg11 img-fluid'/>
 
-        
+        <img src="https://dndesigns.co.in/uploads/pages/compress12edLichi-1.png" className='PopImagessectionimg12 img-fluid'/>
 
-       
+        <img src="https://dndesigns.co.in/uploads/pages/compress11ed1-1285610148.png" className='PopImagessectionimg13 img-fluid'/>
 
-        
-
+        </div>
         </div>
     </div>
 
@@ -261,8 +265,8 @@ Real products, real categories, real results.</p>
 
           <div className='coldiv-what-we-do-right mt-4'>
           <div className='foundation-col'>
-            {/* <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid foundation-col-img'/> */}
-            <video
+           
+            {/* <video
             src="https://dndesigns.co.in/uploads/videos/lppackgingvideonewsection.mp4"
             width="100%"
             autoPlay
@@ -270,7 +274,9 @@ Real products, real categories, real results.</p>
             loop
             playsInline
             className='lp-packaging-video'
-          />
+          /> */}
+
+          <LPPureluxVideo/>
           </div>
           </div>  
         </div>

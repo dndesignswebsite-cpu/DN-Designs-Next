@@ -73,10 +73,18 @@
 
 /* ================= POPUP IMAGES ================= */
 
+.popImages-div-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width:1600px; */
+    width: 100%;
+}
+
 .popImages-div{
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 340px;
     overflow: hidden;
     margin-top: -200px;
     z-index: 1;
@@ -102,7 +110,7 @@
 /* ================= IMAGE POSITIONS ================= */
 
 .PopImagessectionimg1{
-    left: -1%;
+    left: -5%;
     bottom: -60px;
     --rotate: -8deg;
     animation-delay: 0.1s !important;
@@ -110,7 +118,7 @@
 }
 
 .PopImagessectionimg2{
-    left: 10%;
+    left: 5%;
     bottom: -80px;
     --rotate: 0deg;
     animation-delay: .4s !important;
@@ -118,7 +126,7 @@
 }
 
 .PopImagessectionimg3{
-    left: 18%;
+    left: 14%;
     bottom: -80px;
     --rotate: 6deg;
     animation-delay: .6s !important;
@@ -126,7 +134,7 @@
 }
 
 .PopImagessectionimg4{
-    left: 30%;
+    left: 25%;
     bottom: -80px;
     --rotate: -7deg;
     animation-delay: .8s !important;
@@ -134,7 +142,7 @@
 }
 
 .PopImagessectionimg5{
-    left: 39%;
+    left: 33%;
     bottom: -80px;
     --rotate: 8deg;
     animation-delay: 1s !important;
@@ -142,7 +150,7 @@
 }
 
 .PopImagessectionimg6{
-    left: 47%;
+    left: 41%;
     bottom: -80px;
     --rotate: 0deg;
     animation-delay: 1.2s !important;
@@ -150,15 +158,15 @@
 }
 
 .PopImagessectionimg7{
-    left: 58%;
-    bottom: -80px;
+    left: 52%;
+    bottom: -85px;
     --rotate: 4deg;
     animation-delay: 1.4s !important;
-    width: 155px;
+    width: 130px;
 }
 
 .PopImagessectionimg8{
-    left: 68%;
+    left: 60%;
     bottom: -80px;
     --rotate: -7deg;
     animation-delay: 1.6s !important;
@@ -166,18 +174,42 @@
 }
 
 .PopImagessectionimg9{
-    left: 73%;
+    left: 63%;
     bottom: -80px;
-    --rotate: 130deg;
+    --rotate: 110deg;
     animation-delay: 1.8s !important;
     width: 370px;
 }
 
 .PopImagessectionimg10{
-    left: 95%;
+    left: 80%;
     bottom: -80px;
     --rotate: -9deg;
     animation-delay: 2s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg11{
+    left: 88%;
+    bottom: -6px;
+    --rotate: 0deg;
+    animation-delay: 2.1s !important;
+    width: 150px;
+}
+
+.PopImagessectionimg12{
+    left: 95%;
+    bottom: -80px;
+    --rotate: -9deg;
+    animation-delay: 2.2s !important;
+    width: 135px;
+}
+
+.PopImagessectionimg13{
+    left: 100%;
+    bottom: -80px;
+    --rotate: -9deg;
+    animation-delay: 2.3s !important;
     width: 135px;
 }
 
@@ -379,6 +411,10 @@
     width: 115px;
 }
 
+  .PopImagessectionimg11, .PopImagessectionimg12, .PopImagessectionimg13{
+        display:none;
+    }
+
 
 }
 
@@ -387,6 +423,10 @@
     .popImages-div{
         height:300px;
         margin-top: -100px;
+    }
+
+    .PopImagessectionimg11, .PopImagessectionimg12, .PopImagessectionimg13{
+        display:none;
     }
 
       

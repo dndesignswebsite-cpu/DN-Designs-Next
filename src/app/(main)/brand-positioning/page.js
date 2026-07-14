@@ -22,7 +22,8 @@ import "../brand-name-suggestion/brand-name-suggestion.css";
 
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
-// import AtOneAm from '@/Components/AtOneAm/AtOneAm';
+import AtOneAm from '@/Components/AtOneAm/AtOneAm';
+
 
 
 
@@ -238,6 +239,7 @@ async function page() {
 
 
            {/* <AtOneAm/> */}
+          
 
     {/* about hero */}
       <section>

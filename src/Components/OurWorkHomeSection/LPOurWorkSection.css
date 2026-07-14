@@ -1,0 +1,183 @@
+
+.every-pr {
+  color: #ca2734;
+}
+.our-work{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.our-work h2{
+  color: #000;
+  font-family: var(--font-corbert-bold);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 30px;
+}
+
+.imag-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  /* border: 1px solid #d8d5d5; */
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.imag-cont:hover .overlay {
+  opacity: 1;
+}
+
+.imag-cont img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+.image-cont-img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.imag-cont video {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.imag-cont:hover .overlay-box {
+  transform: translateY(0px);
+}
+
+.overlay-title {
+  font-family: var(--font-corbert);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 0px 10px;
+}
+
+.Pras {
+  color: white;
+  font-family: var(--font-roboto);
+  margin: 0px 0px 0px 10px;
+}
+
+
+
+.our-work-row{
+  margin-top: 20px;
+}
+
+@media(max-width:767px){
+  .our-work h2{
+  font-size: 40px;
+}
+.our-work-row{
+  margin-top: 10px;
+}
+
+.our-work-div-unit{
+  margin-top: 10px;
+}
+}
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* changes for cls */
+.imag-cont {
+  min-height: 300px;  
+  background: #f0f0f0; 
+}
+
+@media (max-width: 767px) {
+  .imag-cont {
+    min-height: 200px;
+  }
+  .our-work-div-unit-purelux{
+    margin-top: 0px;
+  }
+}
+
+
+
+/* css for muted */
+.sound-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 20;
+
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.purelux-video{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.purelux-video-component{
+  height: 100%;
+  width: 100%;
+}
+
+@media(max-width:991px){
+  .our-work-div-unit-purelux{
+    margin-top: 20px;
+  }
+}
