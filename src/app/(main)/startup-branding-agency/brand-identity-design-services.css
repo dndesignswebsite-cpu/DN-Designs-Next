@@ -1,0 +1,24 @@
+/* standalone  */
+.standalone-sec{
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.standalone-sec .headg{
+  font-size: 50px;
+    color: #000;
+    font-family: var(--font-corbert-bold);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:767px) {
+  .standalone-sec .headg{
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .standalone-sec{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+}
