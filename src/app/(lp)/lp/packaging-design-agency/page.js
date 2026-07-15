@@ -3,14 +3,9 @@ import LPHeader from '@/Components/LPPagePackagingHeader/LPHeader'
 import "./packaging-design-agency.css"
 import LPForm from '@/Components/LPForm/LPForm'
 import LPMarque from '@/Components/LPMarque/LPMarque';
-import LPWhatWeCanBrandingServices from '@/Components/LPWhatWeCanBrandingServices/LPWhatWeCanBrandingServices';
-import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonialSwipper';
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
-import LPPackagingDesignAgencySwipper from '@/Components/LPPackagingDesignAgencySwipper/LPPackagingDesignAgencySwipper';
-import LPPackgingAgencyPopImages from '@/Components/LPPackgingAgencyPopImages/LPPackgingAgencyPopImages';
-import PureluxVideo from '@/Components/LPOurWork/PureluxVideo';
 import LPPureluxVideo from '@/Components/OurWorkHomeSection/LPPureLuxVideo';
 
 function page() {
