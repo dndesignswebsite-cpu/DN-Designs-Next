@@ -159,7 +159,7 @@ export default function OurWorkHomeSection() {
                 />
                   <div className="overlay"></div>
                   <div className="overlay-box">
-                    <div className="overlay-title">Let's Up</div>
+                    <div className="overlay-title">Let's Supp</div>
                     <p className="Pras">Complete Wellness, Simplified</p>
                   </div>
                 </div>
