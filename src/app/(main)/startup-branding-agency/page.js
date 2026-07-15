@@ -184,7 +184,7 @@ async function page() {
     // faqs
          const leftFaqs = [
            {
-              question: "Why Startups Need A Branding Agency? ",
+              question: "Why startups need a branding agency? ",
               answer:
                 (<>Most founders treat branding as something to sort after the product is ready. Also, a majority of startups struggle to communicate their idea to their target audience. They lose on perceived value, which affects what they can charge, where they can sell, and the time it takes to build word-of-mouth. A branding agency for startups helps new businesses overcome these challenges and launch strongly.</>)
             },
@@ -499,7 +499,7 @@ async function page() {
                 <div className="characteristics-of-good-btm">
                   <h3>Animation</h3>
                   <p>
-                       Motion communicates what static design can't. We create brand animations that simplify complex
+                       Motion communicates what static design can't. We create brand animations that simplify
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
