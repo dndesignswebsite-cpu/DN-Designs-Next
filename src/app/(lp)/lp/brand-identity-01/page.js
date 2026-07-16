@@ -187,10 +187,11 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder1imagetwo.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder1imgone.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  <p className='folder-name-para'>Packaging-design</p>
                 </div>
                 </div>
 
@@ -201,10 +202,11 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder2imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hovverfolder2imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  <p className='folder-name-para'>Logo Design</p>
                 </div>
                 </div>
 
@@ -214,10 +216,11 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  <p className='folder-name-para'>Brand Identity</p>
                 </div>
                 </div>
                 </div>
@@ -244,8 +247,8 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                 <img src="https://dndesigns.co.in/uploads/pages/hoverfolder1imagetwo.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder1imgone.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
@@ -258,8 +261,8 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder2imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hovverfolder2imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
@@ -271,8 +274,8 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
                   {/* folder images */}
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
-                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                   <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
@@ -328,7 +331,7 @@ function page() {
 
         <div className='row'>
         {/* col 1 */}
-        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -366,11 +369,11 @@ function page() {
                 <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
               </div>
             </div>
-            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
         </div>
         {/* col 2 */}
-        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -408,12 +411,12 @@ function page() {
                 <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
               </div>
             </div>
-            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
         </div>
 
         {/* col 3 */}
-        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -439,7 +442,7 @@ function page() {
 
             <div className='communication-strategy-hover-col-bottom'>
               <p className='communication-strategy-hover-col-bottom-para-desc'>
-                From label to shelf, we craft packaging that stops shoppers, communicates quality, and drives conversions.
+                From 
               </p>
               <div className='communication-strategy-hover-col-bottom-btn-div'>
                 <span className='communication-strategy-hover-col-bottom-btn'>Product Packaging</span>
@@ -451,7 +454,7 @@ function page() {
                 <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
               </div>
             </div>
-            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
         </div>
         </div>
