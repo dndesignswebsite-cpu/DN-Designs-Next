@@ -306,9 +306,158 @@ function page() {
 
 
      {/* our work */}
-
      <OurWorkHomeSection/>
 
+     {/* Communication Strategy hover section*/}
+     <section className='communication-strategy-hover-section'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className='communication-strategy-hover-section-left-col'>
+            <p className='communication-strategy-label-para'>What We Do</p>
+            <h2 className='communication-strategy-head'>Every Service You Need For  Your Brand</h2>
+          </div>
+          </div>
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className='communication-strategy-hover-section-right-col'>
+            <p className='communication-strategy-desc-para'>End-to-end creative solutions for FMCG, Pharma, Healthcare and Consumer brands.</p>
+          </div>
+          </div>
+        </div>
+
+        <div className='row'>
+        {/* col 1 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Brand Identity</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>01</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+              <video
+          src="https://dndesigns.co.in/uploads/videos/Bobalist-hh.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        />
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+                From label to shelf, we craft packaging that stops shoppers, communicates quality, and drives conversions.
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>Product Packaging</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Label Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Box Packaging</span>
+
+                <span className='communication-strategy-hover-col-bottom-btn'>Print Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Packaging Systems</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
+              </div>
+            </div>
+            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+          </div>
+        </div>
+        {/* col 2 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Brand Identity</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>01</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+              <video
+          src="https://dndesigns.co.in/uploads/videos/Bobalist-hh.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        />
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+                From label to shelf, we craft packaging that stops shoppers, communicates quality, and drives conversions.
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>Product Packaging</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Label Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Box Packaging</span>
+
+                <span className='communication-strategy-hover-col-bottom-btn'>Print Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Packaging Systems</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
+              </div>
+            </div>
+            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+          </div>
+        </div>
+
+        {/* col 3 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Brand Identity</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>01</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+              <video
+          src="https://dndesigns.co.in/uploads/videos/Bobalist-hh.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        />
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+                From label to shelf, we craft packaging that stops shoppers, communicates quality, and drives conversions.
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>Product Packaging</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Label Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Box Packaging</span>
+
+                <span className='communication-strategy-hover-col-bottom-btn'>Print Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Packaging Systems</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Dieline & Artwork</span>
+              </div>
+            </div>
+            <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/>
+          </div>
+        </div>
+        </div>
+
+      </div>
+     </section>
  
 
 
