@@ -175,15 +175,112 @@ function page() {
                 <h1 className='brand-identity-hero-section-head'>A Full-Stack Branding Agency – Building Brands That Don't Just Get Seen. <span className='every-pr'>They Get Chosen.</span> </h1>
                 <p className='brand-identity-hero-section-para'>We're a full-service branding agency building brand strategy, communication and web design for FMCG, pharma, healthcare and consumer brands. Collaborate with us to build a brand that stands out, inspires confidence and drives growth.</p>
                 </div>
-                <div className='brand-identity-hero-section-left-col-bottom'>
 
+
+
+                <div className='brand-identity-hero-section-left-col-bottom'>
+                {/* folder div */}
+                <div className='folder-parnet-div'>
+                {/* folder 1 */}
+                <div className='folder-01'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
+                </div>
+
+
+                {/* folder 2 */}
+                <div className='folder-02'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+
+                {/* folder 3 */}
+                <div className='folder-03'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+                </div>
+                {/* folder div end*/}
+                </div>
+
+
+
+
+
                 </div>
 
                 <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
                 <div className='brand-identity-hero-section-right-col'>
                     <LPForm pageName={pageName} />
                 </div>
+                {/* folder mobile view */}
+                <div className='brand-identity-hero-section-left-col-bottom-mobile'>
+                {/* folder div */}
+                <div className='folder-parnet-div'>
+                {/* folder 1 */}
+                <div className='folder-01'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+
+
+                {/* folder 2 */}
+                <div className='folder-02'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+
+                {/* folder 3 */}
+                <div className='folder-03'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderthree.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+                </div>
+                {/* folder div end*/}
+                </div>
+                {/* folder mobile view end */}
                 </div>
             </div>
         </div>

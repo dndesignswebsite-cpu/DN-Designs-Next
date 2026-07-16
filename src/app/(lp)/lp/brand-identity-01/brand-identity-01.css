@@ -2,7 +2,8 @@
 .brand-identity-hero-section{
     background-color: #F3F3F3;
     padding-top: 140px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+    overflow: hidden;
 }
 
 .brand-identity-hero-section-head{
@@ -24,6 +25,180 @@
     color: #CA2734;
 }
 
+
+
+/* folder css */
+
+.folder-parnet-div{
+    position: relative;
+}
+
+.folder-01{
+    position: relative;
+    z-index: 222;
+    top: 100px;
+    left: -100px;
+    transform: rotate(10deg);
+}
+
+.folder-02{
+    position: relative;
+    z-index: 111;
+    /* top: 10%; */
+    left: 50px;
+    top: 0;
+}
+
+.folder-03{
+    position: relative;
+    z-index: 333;
+     left: 150px;
+     top: 150px;
+     transform: rotate(-5deg);
+}
+
+.folder{
+    position: relative;
+}
+.folder-base-layer-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.folder-mid-layer-img{
+    position: absolute;
+    top: 30px;
+     left: -8px;
+     z-index: 2;
+}
+.folder-upper-layer-img{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    z-index: 4;
+}
+
+.folder-content-img{
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 40%;
+    transition: all 0.6s ease;
+    width: 150px;
+    transform-origin: center center;
+    transform: rotate(5deg); 
+}
+
+.folder:hover .folder-content-img{
+    top: -60px;
+    transform: rotate(20deg); 
+    left: 55%;
+}
+
+.folder-content-img-two{
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 20%;
+    transition: all 0.6s ease;
+    width: 150px;
+    transform-origin: center center;
+    transform: rotate(-5deg); 
+}
+
+.folder:hover .folder-content-img-two{
+    top: -60px;
+    transform: rotate(-15deg); 
+    left: 25%;
+}
+
+
+@media(max-width:1199.5px){
+    .folder-base-layer-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+}
+
+.folder-mid-layer-img{
+    position: absolute;
+    top: 20px;
+     left: -8px;
+}
+.folder-upper-layer-img{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+}
+}
+
+ .brand-identity-hero-section-left-col-bottom-mobile{
+        display: none;
+    }
+
+@media(max-width:991px){
+    .brand-identity-hero-section-left-col-bottom{
+        display:none;
+    }
+    .brand-identity-hero-section-left-col-bottom-mobile{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .brand-identity-hero-section{
+    background-color: #F3F3F3;
+    padding-top: 140px;
+    padding-bottom: 400px;
+    overflow: hidden;
+}
+
+.folder-mid-layer-img{
+    width: 98%;
+}
+
+.folder-upper-layer-img{
+   width: 99%;
+}
+}
+
+@media(max-width:767px){
+      .brand-identity-hero-section-left-col-bottom{
+        display:none;
+    }
+    .brand-identity-hero-section-left-col-bottom-mobile{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .brand-identity-hero-section{
+    background-color: #F3F3F3;
+    padding-top: 140px;
+    padding-bottom: 400px;
+    overflow: hidden;
+}
+
+   .folder-base-layer-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+}
+
+.folder-mid-layer-img{
+    position: absolute;
+    top: 20px;
+     left: -8px;
+}
+.folder-upper-layer-img{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+}
+}
+/* folder css end*/
 
 /* marque div */
 .marque-div-container{
