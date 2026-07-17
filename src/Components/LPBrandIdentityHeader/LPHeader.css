@@ -41,7 +41,7 @@ Logo
 .head-brand-logo-div{
     display: flex;
     align-items: center;
-    /* justify-content: center !important; */
+    justify-content: center !important;
 }
 
 .head-brand-logo-div img{

@@ -258,12 +258,24 @@ margin-bottom:20px
     border-radius: 25px;
 }
 
+.what-we-do-right-col-para{
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  width:50%;
+}
+
 
 
 @media(max-width:991px){
   .row-div-what-we-do{
     flex-direction: column;
     gap: 0;
+}
+
+.what-we-do-right-col-para{
+  width: 100%;
 }
 
 .coldiv-what-we-do-left{
