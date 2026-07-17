@@ -396,7 +396,7 @@ async function page() {
 
       {/* testimonial  */}
       <Testimonial />
-      <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
+      <Form FormHead={FormHead} FormPara={FormPara}  />
     </div>
   );
 }
