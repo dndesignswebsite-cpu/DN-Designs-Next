@@ -13,7 +13,9 @@
 .lp-faq-images{
     border-radius: 16px;
 }
-
+.every-pr{
+  color: #ca2734;
+}
 
 .row-div{
     display: flex;

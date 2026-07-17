@@ -5,13 +5,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Form.css";
 
-function Form({ FormHead, FormPara, pageName }) {
+function Form({ FormHead, FormPara }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
   let [btn, setBtn] = useState("Send Message");
   let [successMessage, setsuccessMessage] = useState("");
+
+  const [pageName, setPageName] = useState("");
+
+useEffect(() => {
+  setPageName(window.location.href);
+}, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
