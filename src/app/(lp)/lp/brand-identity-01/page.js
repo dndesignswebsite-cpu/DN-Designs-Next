@@ -8,10 +8,15 @@ import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonia
 import LPMarque from '@/Components/LPMarque/LPMarque';
 import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
+import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIdentity/LPVideoHoverCardBrandIdentity';
+import CursorFollower from '@/Components/CursorFollower/CursorFollower';
+import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 
 
 
 function page() {
+
+  
 
      // faqs content
    const leftFaqs = [
@@ -164,6 +169,7 @@ function page() {
      <LPHeader/>
 
      {/* hero sectio  */}
+     <div className='brand-identity-hero-for-index'>
      <section className='brand-identity-hero-section'>
         <div className='container'>
             <div className='row'>
@@ -231,9 +237,9 @@ function page() {
 
                 </div>
 
-                <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                <div className='brand-identity-hero-section-right-col'>
-                    <LPForm pageName={pageName} />
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4' id="enquiry-form">
+                <div className='brand-identity-hero-section-right-col' >
+                    <LPForm />
                 </div>
                 {/* folder mobile view */}
                 <div className='brand-identity-hero-section-left-col-bottom-mobile'>
@@ -288,6 +294,7 @@ function page() {
             </div>
         </div>
      </section>
+     </div>
 
 
 
@@ -307,13 +314,13 @@ function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className='communication-strategy-hover-section-left-col'>
             <p className='communication-strategy-label-para'>CAPABILITIES</p>
-            <h2 className='communication-strategy-head'>Strategy, Design, and Digital, Built As One System</h2>
+            <h2 className='communication-strategy-head'>Strategy, Design, and Digital, <span className='every-pr'>Built As One System</span></h2>
           </div>
           </div>
 
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className='communication-strategy-hover-section-right-col'>
-            <p className='communication-strategy-desc-para'>End-to-end branding and marketing solutions for businesses - handled under one roof.</p>
+            <p className='communication-strategy-desc-para'>End-to-end branding solutions for businesses - handled under one roof.</p>
           </div>
           </div>
         </div>
@@ -321,6 +328,7 @@ function page() {
         <div className='row'>
         {/* col 1 */}
         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -328,11 +336,11 @@ function page() {
                 <p className='communication-strategy-hover-col-upper-head-div-para'>01</p>
               </div>
               <div className='communication-strategy-hover-col-video-div'>
-               <span class="corner tl"></span>
+               {/* <span class="corner tl"></span>
     <span class="corner tr"></span>
     <span class="corner bl"></span>
-    <span class="corner br"></span>
-              <video
+    <span class="corner br"></span> */}
+              {/* <video
            src="https://dndesigns.co.in/uploads/videos/comunicationbrandidentityvideo.mp4"
           width="100%"
           autoPlay
@@ -340,7 +348,10 @@ function page() {
           playsInline
           className="communication-strategy-hover-col-video"
           loop
-        />
+        /> */}
+
+        <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/avatars/brandidentitynewredvideo (1).mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
         </div>
             </div>
 
@@ -360,9 +371,11 @@ function page() {
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
+          </CursorFollower>
         </div>
         {/* col 2 */}
         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -370,11 +383,11 @@ function page() {
                 <p className='communication-strategy-hover-col-upper-head-div-para'>02</p>
               </div>
               <div className='communication-strategy-hover-col-video-div'>
-               <span class="corner tl"></span>
+               {/* <span class="corner tl"></span>
     <span class="corner tr"></span>
     <span class="corner bl"></span>
-    <span class="corner br"></span>
-              <video
+    <span class="corner br"></span> */}
+              {/* <video
          src="https://dndesigns.co.in/uploads/videos/brandidentitybrandvideo.mp4"
           width="100%"
           autoPlay
@@ -382,7 +395,9 @@ function page() {
           playsInline
           className="communication-strategy-hover-col-video"
           loop
-        />
+        /> */}
+        <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/videos/brandidentitybrandvideo.mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
         </div>
             </div>
 
@@ -402,10 +417,12 @@ function page() {
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
+          </CursorFollower>
         </div>
 
         {/* col 3 */}
         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
           <div className='communication-strategy-hover-col'>
             <div className='communication-strategy-hover-col-upper'>
               <div className='communication-strategy-hover-col-upper-head-div'>
@@ -413,11 +430,11 @@ function page() {
                 <p className='communication-strategy-hover-col-upper-head-div-para'>03</p>
               </div>
               <div className='communication-strategy-hover-col-video-div'>
-               <span class="corner tl"></span>
+               {/* <span class="corner tl"></span>
     <span class="corner tr"></span>
     <span class="corner bl"></span>
-    <span class="corner br"></span>
-              <video
+    <span class="corner br"></span> */}
+              {/* <video
           src="https://dndesigns.co.in/uploads/videos/webdesigningbrandidenityvideo.mp4"
           width="100%"
           autoPlay
@@ -425,7 +442,10 @@ function page() {
           playsInline
           className="communication-strategy-hover-col-video"
           loop
-        />
+        /> */}
+
+         <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/videos/webdesigningbrandidenityvideo.mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
         </div>
             </div>
 
@@ -441,6 +461,7 @@ function page() {
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
           </div>
+          </CursorFollower>
         </div>
         </div>
 
@@ -453,7 +474,7 @@ function page() {
      <div className="marque-div-container" id="our-clients">
         <div className='container marque-div-container-content'>
             <h2 className='marque-div-container-head'>50+</h2>
-            <h3 className='marque-div-container-sub-head'>Brands. Every One Built To Be Remembered. Real Growth. Zero Guesswork.</h3>
+            <h3 className='marque-div-container-sub-head'>Brands Built To  <span className='every-pr'>Be Remembered.</span></h3>
             <p className='marque-div-container-para'>From early-stage D2C startups to established FMCG names. Here's who trusted us to build their brand.</p>
         </div>
         <div className="marque-div">
@@ -474,7 +495,7 @@ function page() {
                 <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
                 <div className='brand-identity-what-we-do-col-div-left'>
                 <p className='brand-identity-what-we-do-col-div-left-para-label'>Sector Expertise</p>
-                <h2 className='brand-identity-what-we-do-col-div-left-head'>Industries We Serve</h2>
+                <h2 className='brand-identity-what-we-do-col-div-left-head'>Industries <span className='every-pr'>We Serve</span></h2>
                 </div>
                 </div>
 
@@ -590,6 +611,9 @@ function page() {
 
       {/* footer */}
       <LPFooter />
+
+
+    <LPStickyCTAFooter/>
 
 
     </div>

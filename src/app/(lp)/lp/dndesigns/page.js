@@ -184,7 +184,7 @@ function page() {
 
                <div className="lpform-right-col-div-mobile" id="enquiry-form">
           <div className="lpform-right-col-div">
-            <LPForm pageName={pageName} />
+            <LPForm/>
             </div>
             </div>
 
@@ -254,7 +254,7 @@ function page() {
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
           <div className="lpform-dektop-form">
           <div className="lpform-right-col-div lpform-right-col-div-desktop" >
-            <LPForm pageName={pageName} />
+            <LPForm/>
             </div>
             </div>
 

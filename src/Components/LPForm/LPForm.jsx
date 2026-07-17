@@ -7,7 +7,7 @@ import "./LPForm.css";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
-function LPForm({ FormHead, FormPara, pageName }) {
+function LPForm({ FormHead, FormPara}) {
   const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,6 +16,12 @@ function LPForm({ FormHead, FormPara, pageName }) {
   const [projectDetails, setProjectDetails] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [pageName, setPageName] = useState("");
+
+useEffect(() => {
+  setPageName(window.location.href);
+}, []);
 
   useEffect(() => {
     AOS.init({

@@ -24,7 +24,7 @@ export default function OurWorkHomeSection() {
               <div className="what-we-do-left-col">
                 <p className="what-we-do-lefty-col-para">OUR PORTFOLIO</p>
                 <h2 className="what-we-do-lefty-col-head">
-                   Ideas Turned Into Iconic Brands
+                   Ideas Turned Into <span className="every-pr">Iconic Brands</span>
                 </h2>
               </div>
             </div>
@@ -52,7 +52,16 @@ export default function OurWorkHomeSection() {
           <div className='row-div-what-we-do'>
           <div className='coldiv-what-we-do-left mt-4'>
           <div className='foundation-col'>
-            <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
+             <video
+            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          />
           </div>
           </div>
 
@@ -166,7 +175,7 @@ export default function OurWorkHomeSection() {
           <div className='coldiv-what-we-do-left mt-4'>
           <div className='foundation-col'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
-            <video
+            {/* <video
             src="https://dndesigns.co.in/uploads/videos/enli.mp4"
             width="100%"
             autoPlay
@@ -174,7 +183,9 @@ export default function OurWorkHomeSection() {
             loop
             playsInline
             className='lp-packaging-video'
-          />
+          /> */}
+
+             <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/>
           </div>
           </div>
 

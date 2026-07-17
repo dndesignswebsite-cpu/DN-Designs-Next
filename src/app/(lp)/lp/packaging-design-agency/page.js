@@ -190,7 +190,7 @@ function page() {
             </div>
 
             <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4 packging-design-agency-form' id='enquiry-form'>
-            <LPForm pageName={pageName} className="form-section-packging"/>
+            <LPForm  className="form-section-packging"/>
             </div>
           </div>  
         </div>

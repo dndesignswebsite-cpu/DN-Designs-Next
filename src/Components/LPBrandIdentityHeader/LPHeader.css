@@ -41,7 +41,8 @@ Logo
 .head-brand-logo-div{
     display: flex;
     align-items: center;
-    justify-content: center !important;
+    /* justify-content: center !important; */
+    margin-left: -14px;
 }
 
 .head-brand-logo-div img{
@@ -52,6 +53,12 @@ Logo
 
 .head-brand-logo-div img{
     width:60px;
+}
+
+.head-brand-logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
 }
 
 
@@ -83,6 +90,10 @@ Navigation
     font-size:16px;
     font-family:var(--font-corbert-bold);
     font-weight:700;
+}
+
+.navlink-anchor-tag:hover{
+    color: #ca2734;
 }
 
 /*=========================

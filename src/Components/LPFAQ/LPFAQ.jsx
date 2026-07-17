@@ -43,7 +43,7 @@ function LPFAQ({leftFaqs}) {
       
   return (
     <div>
-      <div className='container'>
+      <div className='container py-4'>
         <div className='row'>
 
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
@@ -52,7 +52,7 @@ function LPFAQ({leftFaqs}) {
 
         <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
         <div className='lp-faq-images-col'>
-            <h2 className='lp-faq-images-col-head'>Inside Our Studio</h2>
+            <h2 className='lp-faq-images-col-head'>Inside <span className='every-pr'>Our Studio</span></h2>
 
             <div className='row-div'>
                 <div className='col-7-div'>
