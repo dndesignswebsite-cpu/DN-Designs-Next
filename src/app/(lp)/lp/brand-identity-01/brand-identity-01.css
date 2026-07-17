@@ -67,6 +67,7 @@
 .folder{
     position: relative;
     /* padding: 20px; */
+    cursor: pointer;
 }
 
 .folder-name-para{
@@ -79,6 +80,7 @@
     color: #fff;
     text-transform: uppercase;
     z-index: 4;
+   
 }
 .folder-base-layer-img{
     position: absolute;
@@ -347,6 +349,7 @@
     font-size: 40px;
     font-weight: 700;
     color: #000;
+    width: 70%;
 }
 
 .marque-div-container-para{
@@ -367,7 +370,9 @@
     }
     .marque-div-container-sub-head{
         font-size: 30px;
+        width: 100%;
     }
+
 }
 
 
@@ -411,21 +416,21 @@
 .category-div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100%;
     gap: 15px;
-   padding:10px 0;
+   padding:16px 0;
 }
 
 .category-div-para{
     font-family: var(--font-corbert-bold);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #000;
 }
 
 .category-div-img{
-    width:60px;
+    width:32px;
 }
 
 .categories-col{
@@ -467,6 +472,10 @@
 }
 
 .communication-strategy-hover-col-upper{
+    flex: 1;
+}
+
+.communication-strategy-hover-col-bottom{
     flex: 1;
 }
 
@@ -709,7 +718,7 @@
 
 
 .communication-strategy-hover-col{
-    cursor: url("https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg"), auto;
+    cursor: url("https://dndesigns.co.in/uploads/pages/startuourjourneycursoricon.svg"), auto;
 }
 
 @media(max-width:1199.5px){

@@ -22,9 +22,9 @@ export default function OurWorkHomeSection() {
       <div className="row">
             <div className="col-12 col-sm-12 col-md-6">
               <div className="what-we-do-left-col">
-                <p className="what-we-do-lefty-col-para">Our Work Portfolio</p>
+                <p className="what-we-do-lefty-col-para">OUR PORTFOLIO</p>
                 <h2 className="what-we-do-lefty-col-head">
-                   Explore Our Finest Brand Creations
+                   Ideas Turned Into Iconic Brands
                 </h2>
               </div>
             </div>
@@ -32,12 +32,14 @@ export default function OurWorkHomeSection() {
               <div className="what-we-do-right-col">
                 {/* <TalkToUs/> */}
 
-                 <a
+                <p className="what-we-do-right-col-para">Take a look at the brands we've transformed from category newcomers to shelf leaders. </p>
+
+                 {/* <a
           href="#enquiry-form-desktop"
           className='btn-2-for-scroll'
         >
        <button className="talk-to-us">Talk to Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button> 
-       </a>
+       </a> */}
               </div>
             </div>
           </div>
@@ -137,16 +139,65 @@ export default function OurWorkHomeSection() {
               </div>
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
-                    <Image
+                    {/* <Image
                  src={imageUrl + "koshish.webp"}
                   alt="blog"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
-                />
+                /> */}
+
+                 <video
+            src="https://dndesigns.co.in/uploads/videos/Mr bomzy video.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          />
                 </div>
               </div>
             </div>
+
+
+
+          <div className='row-div-what-we-do'>
+          <div className='coldiv-what-we-do-left mt-4'>
+          <div className='foundation-col'>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
+            <video
+            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          />
+          </div>
+          </div>
+
+          <div className='coldiv-what-we-do-right mt-4'>
+          <div className='foundation-col'>
+           
+            {/* <video
+            src="https://dndesigns.co.in/uploads/videos/lppackgingvideonewsection.mp4"
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className='lp-packaging-video'
+          /> */}
+
+          <img src="https://dndesigns.co.in/uploads/pages/brandidentityletsupimagelppageghjkl;.jpg.jpeg" className='img-fluid foundation-col-img'/>
+
+          {/* <LPPureluxVideo/> */}
+          {/* <LPPureluxVideo/> */}
+          </div>
+          </div>  
+        </div>
 
          
 
