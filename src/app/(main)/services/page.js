@@ -630,7 +630,7 @@ async function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName="services" />
+      <Form FormHead={FormHead} FormPara={FormPara} />
     </div>
   );
 }

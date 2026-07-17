@@ -1038,7 +1038,7 @@ async function page() {
       </section>
 
       {/* Form */}
-      <Form FormHead={FormHead} FormPara={FormPara} pageName="ui-ux-design" />
+      <Form FormHead={FormHead} FormPara={FormPara} />
     </div>
   );
 }
