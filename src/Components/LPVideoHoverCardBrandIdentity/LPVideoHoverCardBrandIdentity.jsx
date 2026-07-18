@@ -13,7 +13,13 @@ export default function LPVideoHoverCardBrandIdentity({
 
     if (!video) return;
 
-    // card ko find karo
+    // Mobile: autoplay
+    if (window.innerWidth <= 991) {
+      video.play().catch(() => {});
+      return;
+    }
+
+    // Desktop: hover play/pause
     const card = video.closest(".communication-strategy-hover-col");
 
     if (!card) return;
