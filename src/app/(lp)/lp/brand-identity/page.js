@@ -1,53 +1,57 @@
-import React from "react";
-import LPHeader from "@/Components/LPHeader/LPHeader";
-import LPFooter from "@/Components/LPFooter/LPFooter";
-import LPMarque from "@/Components/LPMarque/LPMarque";
-import "./brand-identity.css";
-import OurWorkHomeSection from "@/Components/LPOurWork/OurWorkHomeSection";
-import LPTestimonialSwipper from "@/Components/LPTestimonialSwipper/LPTestimonialSwipper";
-import LPFAQ from "@/Components/LPFAQ/LPFAQ";
-import LPForm from "@/Components/LPForm/LPForm";
-import AutoCounter from "@/Components/AutoCounter/AutoCounter";
+import React from 'react'
+import LPHeader from '@/Components/LPBrandIdentityHeader/LPHeader'
+import "./brand-identity-01.css"
+import LPForm from '@/Components/LPForm/LPForm'
+import LPFooter from '@/Components/LPFooter/LPFooter';
+import LPFAQ from '@/Components/LPFAQ/LPFAQ';
+import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonialSwipper';
+import LPMarque from '@/Components/LPMarque/LPMarque';
+import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
+import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
+import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIdentity/LPVideoHoverCardBrandIdentity';
+import CursorFollower from '@/Components/CursorFollower/CursorFollower';
+import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
+import AOSProvider from '@/Components/AosProvider/AosProvider';
+
+
 
 function page() {
 
-  // faqs content
+  
+
+     // faqs content
    const leftFaqs = [
        {
-          question: "What services does DN Designs offer? ",
+          question: "What does a branding agency actually do? ",
           answer:
-            (<>As a full-service branding & marketing agency, we offer complete branding solutions for modern businesses. We craft your brand strategy and positioning, and design your identity, packaging and catalogue. In addition, we help boost your brand presence through our digital marketing, photography and animation services.</>)
+            (<>A creative branding agency builds the entire brand identity, both visual and verbal. This includes logo, packaging design, messaging and the digital experience. It defines how the brand appears and communicates, and how it is perceived by the customers. The goal is to build a brand that people recognise, trust and choose.</>)
         },
         {
-          question: "How are you different from other branding agencies?",
+          question: "What makes your branding company unique?",
           answer:
-            (<>We don’t focus on the visual aspect alone. Instead, we combine research, strategy and creativity to create brands that impress visually and drive recognition, sales and profits.</>)
+            (<>Our branding services are rooted in thorough research and analysis. We hold detailed discussions with you to understand your product and additionally conduct market, audience and competitor research to define a strategic direction. It’s only after these that we get to the actual design part. Also, for us, customer satisfaction is paramount. We work to make our client happy with our work.</>)
         },
         {
-          question: "Which industries do you serve? ",
+          question: "What's included in brand identity design? ",
           answer:
-            (<>We work across multiple industries, including FMCG, food & beverage, pharmaceuticals, nutraceutical, skincare, jewellery, technology, education, tourism, etc.</>)
+            (<>Brand identity design covers both visual and verbal identity. To elaborate, it covers logo, colour, typography, messaging, taglines, voice, tone, and images. Together, these keep a brand consistent on a shelf, website and social feed alike.</>)
         },
         {
-          question: "Can you work with clients outside India? ",
+          question: "Why does packaging design matter this much for FMCG brands?  ",
           answer:
-            "Yes, we are a global branding agency and work with both Indian and international clients.",
+            "For most FMCG products, the market competition is intense. Capturing consumers’ attention and inspiring them to make a purchase is a real challenge. This is where an effective packaging design plays a crucial role. It serves as a silent salesperson, communicating the brand identity and product information clearly. It helps build connection and trust with the customers, which eventually leads to sales.",
         },
         {
-          question: "Do you work only with established businesses? ",
+          question: "What triggers the need for a rebranding agency?  ",
           answer:
-            "We work with all types of businesses - startups, mid-size and well-established. We customise our branding, design and marketing services to suit their requirements.",
+            "Rebranding is a strategic reset - new positioning, new visual system, and sometimes a new name. However, before rebranding, it's essential to evaluate your brand, audience, and competitive landscape. A poorly executed rebrand can do more harm than good. A rebranding agency has the expertise in the field. It audits what's still working before touching what isn't.",
         },
         {
-          question: "Do you provide packaging design services? ",
+          question: "Can one creative agency deliver branding, web design and packaging design services together? ",
           answer:
-            "Yes, we provide packaging design services. Our strategic packaging designs help your products stand out and drive purchase in both physical and digital environments.",
+            "Yes, and it's the stronger route. When branding, packaging design and web design sit under one branding company, the brand stays intact across every format instead of getting diluted through multiple vendors and multiple interpretations of the same brief.",
         },
-        {
-          question: "Does your creative agency provide animation and photography services?",
-          answer:
-            "Yes, our creative agency offers services like product photography, brand shoots, motion graphics and animated videos. These help brands capture attention, build recognition, and connect with their audience across platforms.",
-        },    
+         
       ];
 
   // marque images
@@ -157,370 +161,471 @@ function page() {
     },
   ];
 
-  // form section content
+
+    // form section content
   const pageName = "lp/brand-identity";
+
   return (
     <div>
-      {/* header */}
-      <LPHeader />
+     <LPHeader/>
 
-      {/* hero */}
-      <div className="container" id="enquiry-form-desktop">
-        <div className="row">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-            <div className="hero-left-col-div">
-{/* 
-              <div className="hero-col-label">
- <div className="rating-icons">
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 16 16"
-                    fill="#CA2734"
-                  >
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 16 16"
-                    fill="#CA2734"
-                  >
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 16 16"
-                    fill="#CA2734"
-                  >
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 16 16"
-                    fill="#CA2734"
-                  >
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 16 16"
-                    fill="#CA2734"
-                  >
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
+     {/* hero sectio  */}
+     <div className='brand-identity-hero-for-index'>
+     <section className='brand-identity-hero-section'>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
+                <div className='brand-identity-hero-section-left-col-upper'>
+                <h1 className='brand-identity-hero-section-head'>A Full-Stack Branding Agency – Building   <span className='every-pr'>Brands That Don't Just</span> Get Seen. They Get Chosen.</h1>
+                <p className='brand-identity-hero-section-para'>We're a full-service branding agency building brand strategy, communication and web design for FMCG, pharma, healthcare and consumer brands. Collaborate with us to build a brand that stands out, inspires confidence and drives growth.  </p>
                 </div>
-                <span className="hero-label-para">Trusted by India's growing brands</span>
-              </div> */}
-
-              <h1 className="hero-head">
-                A Full-Service Branding <span className="hero-head-span">Agency For Growth, </span>
-                 Recognition & Impact
-              </h1>
-              <p className="hero-para-desc">
-               Collaborate with us to build a brand that stands out, inspires confidence, drives loyalty and brings in business profit. We are your trusted partner in your branding journey.
-              </p>
 
 
-               <div className="lpform-right-col-div-mobile" id="enquiry-form">
-          <div className="lpform-right-col-div">
-            <LPForm />
-            </div>
-            </div>
 
-              {/* hero counter row */}
-              <div className="hero-counter-row-div-for-desktop">
-              <div className="row">
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={8} speed={150}/>+
-                      </h3>
-                      <p> Years of Experience</p>
-                    </div>
-                  </div>
+                <div className='brand-identity-hero-section-left-col-bottom'>
+                {/* folder div */}
+               
+                <div className='folder-parnet-div'  >
+                {/* folder 1 */}
+                 
+                <div className='folder-01'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/packagingbackimage.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/nectarpure graphic.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/nectarpure graphic.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imagetwo.png" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  {/* <p className='folder-name-para'>Packaging-design</p> */}
                 </div>
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={300} speed={10}/>+
-                      </h3>
-
-                      <p>Brands Built</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                
 
 
-             
+                {/* folder 2 */}
+                
+                <div className='folder-02'>
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                   <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/weigydshvwjd.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  {/* <p className='folder-name-para'>Logo Design</p> */}
+                </div>
+                </div>
+                
 
-              {/* hero counter row */}
+                {/* folder 3 */}
               
-              <div className="row">
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={10} speed={150}/>+
-                      </h3>
-                      <p>Industries Served</p>
-                    </div>
-                  </div>
+                <div className='folder-03' >
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/barndidentity.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hovverfolder2imagetwo.png" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                  {/* <p className='folder-name-para'>Brand Identity</p> */}
                 </div>
-                <div className="col-12 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={90} speed={40}/>%
-                      </h3>
-
-                      <p>Client Retention Rate</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-          <div className="lpform-dektop-form">
-          <div className="lpform-right-col-div lpform-right-col-div-desktop" >
-            <LPForm/>
-            </div>
-            </div>
-
-{/* for mobile aito counter */}
-            <div>
-    <div className="hero-counter-row-div-for-mobile">
-              <div className="row">
-                <div className="col-6 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={8} speed={150}/>+
-                      </h3>
-                      <p>Years of Experience</p>
-                    </div>
-                  </div>
+                
                 </div>
-                <div className="col-6 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={300} speed={10}/>+
-                      </h3>
-
-                      <p>Brands Built</p>
-                    </div>
-                  </div>
+                
+                {/* folder div end*/}
                 </div>
-              </div>
 
-                 <div className="row">
-                <div className="col-6 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={10} speed={150}/>+
-                      </h3>
-                      <p>Industries Served</p>
-                    </div>
-                  </div>
+
+
+
+
                 </div>
-                <div className="col-6 col-md-6 switch-on-div-main mt-4">
-                  <div className="switch-on-div">
-                    <div className="vertical-bar"></div>
-                    <div className="switch-on-div-content">
-                      <h3>
-                        <AutoCounter target={90} speed={40}/>%
-                      </h3>
 
-                      <p>Client Retention Rate</p>
-                    </div>
-                  </div>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4' id="enquiry-form">
+                <div className='brand-identity-hero-section-right-col' >
+                    <LPForm />
                 </div>
-              </div>
-              </div>
-            </div>
-            {/* for mobile autocounter*/}
-          </div>
-        </div>
-      </div>
-
-      <div className="red-bg-overlay"></div>
-
-      
-
-      {/* marque */}
-      <div className="brands-that-us" id="our-clients">
-        <div className="container">
-          <h2 className="brands-that-us-head">Trusted By <span className="brands-that-us-head-span">Visionary Brands</span></h2>
-          <p className="brands-that-us-para">
-            From food & beverage to nutraceuticals, we partner with businesses across industries to create lasting impact.
-          </p>
-        </div>
-      </div>
-      <div className="marque-div">
-        <LPMarque brands={topBrands} speed={22} />
-      </div>
-      <div className="marque-div marque-div-2">
-        <LPMarque brands={bottomBrands} reverse speed={22} />
-      </div>
-
-      {/* What We Do */}
-      <div className="what-we-do" id="services">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-sm-12 col-md-6">
-              <div className="what-we-do-left-col">
-                <p className="what-we-do-lefty-col-para">Explore our Expertise</p>
-                <h2 className="what-we-do-lefty-col-head">
-                  Branding, Design & Marketing Services
-                </h2>
-              </div>
-            </div>
-            <div className="col-12 col-sm-12 col-md-6">
-              <div className="what-we-do-right-col">
-                <p className="what-we-do-right-col-para">
-                  See how we transform your vision into an impactful brand experience.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row what-we-do-row-div">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <div className="what-we-do-box-div">
-                <div className="what-we-do-box-div-img-overlay">
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/aboutbranding1%20(2).webp"
-                    className="img-fluid what-we-do-box-div-img"
-                  ></img>
-                  <div className="overlay-lp-page">
-                    <div className="overlay-upper">
-                      <h2 className="overlay-upper-number">01</h2>
-                    </div>
-                    <div className="overlay-bottom">
-                      <p className="overlay-para">
-                        Insightful. Scalable. Powerful 
-                      </p>
-                      <h2 className="overlay-head">Branding</h2>
-                    </div>
-                  </div>
+                {/* folder mobile view */}
+                <div className='brand-identity-hero-section-left-col-bottom-mobile'>
+                {/* folder div */}
+                <div className='folder-parnet-div'>
+                {/* folder 1 */}
+                <AOSProvider>
+                <div className='folder-01'  data-aos="fade-right"
+                   data-aos-duration="1500">
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/packagingbackimage.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                  <img src="https://dndesigns.co.in/uploads/pages/nectarpure graphic.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imagetwo.png" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
-                <div className="what-we-do-box-div-content">
-                  <p className="what-we-do-box-div-content-para">
-                    Transform your business into brands people remember and choose. We offer end-to-end branding services - from brand strategy and identity design to packaging design. 
-                  </p>
-                  <div className="what-we-do-spans-div">
-                    <span className="what-we-do-span">Brand Strategy</span>
-                    <span className="what-we-do-span">Brand Identity</span>
-                    <span className="what-we-do-span">Logo Design</span>
-                    <span className="what-we-do-span">Brand Positioning</span>
-                    <span className="what-we-do-span">Packaging Design</span>
-                    <span className="what-we-do-span">Catalogue Design</span>
-                    <span className="what-we-do-span">Brand Naming</span>
-                    <span className="what-we-do-span">Rebranding</span>
-                  </div>
-                  
                 </div>
-              </div>
-            </div>
+                </AOSProvider>
 
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <div className="what-we-do-box-div">
-                <div className="what-we-do-box-div-img-overlay">
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/communicationabout2.webp"
-                    className="img-fluid what-we-do-box-div-img"
-                  ></img>
-                  <div className="overlay-lp-page">
-                    <div className="overlay-upper">
-                      <h2 className="overlay-upper-number">02</h2>
-                    </div>
-                    <div className="overlay-bottom">
-                      <p className="overlay-para">
-                        Brand-Aligned. Clear. Consistent
-                      </p>
-                      <h2 className="overlay-head">Communication</h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="what-we-do-box-div-content">
-                  <p className="what-we-do-box-div-content-para">
-                   Fuel your business growth with strategic communications. Our brand communication services help you reach the right audience, build stronger customer relationships and drive success.
-                  </p>
-                  <div className="what-we-do-spans-div">
-                    <span className="what-we-do-span">Digital Marketing</span>
-                    <span className="what-we-do-span">Social Media Marketing</span>
-                    <span className="what-we-do-span">Influencer Marketing</span>
-                    <span className="what-we-do-span">Animation</span>
-                    <span className="what-we-do-span">Photography</span>
-                  </div>
+
+                {/* folder 2 */}
+                <AOSProvider>
+                <div className='folder-02'  data-aos="fade-up"
+  data-aos-duration="1500">
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
                  
-                </div>
-              </div>
-            </div>
 
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <div className="what-we-do-box-div">
-                <div className="what-we-do-box-div-img-overlay">
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/aboutuswebsite.webp"
-                    className="img-fluid what-we-do-box-div-img"
-                  ></img>
-                  <div className="overlay-lp-page">
-                    <div className="overlay-upper">
-                      <h2 className="overlay-upper-number">03</h2>
-                    </div>
-                    <div className="overlay-bottom">
-                      <p className="overlay-para">
-                        User-Centric. Conversion-Oriented
-                      </p>
-                      <h2 className="overlay-head">Web Design</h2>
-                    </div>
-                  </div>
+                  <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/weigydshvwjd.webp" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
-                <div className="what-we-do-box-div-content">
-                  <p className="what-we-do-box-div-content-para">
-                   Build a powerful online presence to succeed in the digital-first era. We design visually appealing and user-friendly websites that attract, engage and generate results.
-                  </p>
-                  <div className="what-we-do-spans-div">
-                    <span className="what-we-do-span">UI/UX Design</span>
-                    <span className="what-we-do-span">Web Designing</span>
-                    <span className="what-we-do-span">SEO</span>
-                  </div>
-                 
                 </div>
-              </div>
+                </AOSProvider>
+
+                {/* folder 3 */}
+                <AOSProvider>
+                <div className='folder-03'  data-aos="fade-left"
+  data-aos-duration="1500">
+                <div className='folder'>
+                  <img src="https://dndesigns.co.in/uploads/pages/barndidentity.png" className='folder-base-layer-img img-fluid'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
+                  {/* folder images */}
+                   <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imageone.png" className='img-fluid folder-content-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/hovverfolder2imagetwo.png" className='img-fluid folder-content-img-two'/>
+                  {/* folder layer upper */}
+                  <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
+                </div>
+                </div>
+                </AOSProvider>
+                </div>
+                {/* folder div end*/}
+                </div>
+                {/* folder mobile view end */}
+                </div>
             </div>
+        </div>
+     </section>
+     </div>
+
+
+
+    
+
+
+
+     {/* our work */}
+     <div id='our-work'>
+     <OurWorkHomeSection/>
+     </div>
+
+     {/* Communication Strategy hover section*/}
+     <section className='communication-strategy-hover-section' id="capabilities">
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className='communication-strategy-hover-section-left-col'>
+            <p className='communication-strategy-label-para'>CAPABILITIES</p>
+            <h2 className='communication-strategy-head'>Strategy, Design, and Digital, <span className='every-pr'>Built As One System</span></h2>
+          </div>
+          </div>
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className='communication-strategy-hover-section-right-col'>
+            <p className='communication-strategy-desc-para'>End-to-end branding solutions for businesses - handled under one roof.</p>
+          </div>
           </div>
         </div>
-      </div>
 
-      {/* our work */}
-      <div id="our-work">
-      <OurWorkHomeSection />
+        <div className='row'>
+        {/* col 1 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Branding</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>01</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               {/* <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span> */}
+              {/* <video
+           src="https://dndesigns.co.in/uploads/videos/comunicationbrandidentityvideo.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        /> */}
+
+        <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/avatars/brandidentitynewredvideo (1).mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+                Brand design rooted in strategy first. Logo, naming, positioning and packaging design built to hold up among competitors. 
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>Brand Identity</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Brand Strategy</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Brand Naming</span>
+
+                <span className='communication-strategy-hover-col-bottom-btn'>Brand Positioning</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Packaging Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Rebranding</span>
+              </div>
+            </div>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
+          </div>
+          </CursorFollower>
+        </div>
+        {/* col 2 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Communication</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>02</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               {/* <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span> */}
+              {/* <video
+         src="https://dndesigns.co.in/uploads/videos/brandidentitybrandvideo.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        /> */}
+        <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/videos/brandidentitybrandvideo.mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+               Brand communication that carries the same strategy across offline and online campaigns. Consistency competitors can't replicate.
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>Digital Marketing</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Social Media Marketing</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Influencer Marketing</span>
+
+                <span className='communication-strategy-hover-col-bottom-btn'>Animation</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>Photography</span>
+                <span className='communication-strategy-hover-col-bottom-btn'> Brand Video Shoot</span>
+              </div>
+            </div>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
+          </div>
+          </CursorFollower>
+        </div>
+
+        {/* col 3 */}
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4 communication-strategy-hover-col-origianl d-flex'>
+        <CursorFollower>
+          <div className='communication-strategy-hover-col'>
+            <div className='communication-strategy-hover-col-upper'>
+              <div className='communication-strategy-hover-col-upper-head-div'>
+                <h2 className='communication-strategy-hover-col-upper-head-div-heading'>Web Design</h2>
+                <p className='communication-strategy-hover-col-upper-head-div-para'>03</p>
+              </div>
+              <div className='communication-strategy-hover-col-video-div'>
+               {/* <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span> */}
+              {/* <video
+          src="https://dndesigns.co.in/uploads/videos/webdesigningbrandidenityvideo.mp4"
+          width="100%"
+          autoPlay
+          muted
+          playsInline
+          className="communication-strategy-hover-col-video"
+          loop
+        /> */}
+
+         <LPVideoHoverCardBrandIdentity  src="https://dndesigns.co.in/uploads/videos/webdesigningbrandidenityvideo.mp4"
+  className="communication-strategy-hover-col-video img-fluid"/>
+        </div>
+            </div>
+
+            <div className='communication-strategy-hover-col-bottom'>
+              <p className='communication-strategy-hover-col-bottom-para-desc'>
+                Websites built to convert, not just look good. We design digital touchpoints that feel world-class, load fast and turn visitors into leads, not just page views.
+              </p>
+              <div className='communication-strategy-hover-col-bottom-btn-div'>
+                <span className='communication-strategy-hover-col-bottom-btn'>UI/UX</span>
+                <span className='communication-strategy-hover-col-bottom-btn'> Web Design</span>
+                <span className='communication-strategy-hover-col-bottom-btn'>SEO</span>
+              </div>
+            </div>
+            {/* <img src="https://dndesigns.co.in/uploads/pages/brandidentityhovercircle.svg" className='img-fluid communication-strategy-hover-col-circle-img'/> */}
+          </div>
+          </CursorFollower>
+        </div>
+        </div>
+
       </div>
+     </section>
+
+
+
+      {/* marque div */}
+     <div className="marque-div-container" id="our-clients">
+        <div className='container marque-div-container-content'>
+            <h2 className='marque-div-container-head'>50+</h2>
+            <h3 className='marque-div-container-sub-head'>Brands Built To  <span className='every-pr'>Be Remembered.</span></h3>
+            <p className='marque-div-container-para'>From early-stage D2C startups to established FMCG names. Here's who trusted us to build their brand.</p>
+        </div>
+        <div className="marque-div">
+                <LPMarque brands={topBrands} speed={22} />
+              </div>
+              <div className="marque-div marque-div-2">
+                <LPMarque brands={bottomBrands} reverse speed={22} />
+              </div>
+     </div>
+ 
+
+
+
+     {/* what we do categories*/}
+     <div className='brand-identity-what-we-do' id="services">
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                <div className='brand-identity-what-we-do-col-div-left'>
+                <p className='brand-identity-what-we-do-col-div-left-para-label'>Sector Expertise</p>
+                <h2 className='brand-identity-what-we-do-col-div-left-head'>Industries <span className='every-pr'>We Serve</span></h2>
+                </div>
+                </div>
+
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                <div className='brand-identity-what-we-do-col-div-right'>
+                    <p className='brand-identity-what-we-do-col-div-left-para-desc'>Providing end-to-end solutions to build brands across categories. </p>
+                </div>
+                </div>
+            </div>
+
+
+            <div className='row categories-row-div'>
+            {/* col 1 */}
+                <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
+                    <div className='categories-col'>
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/foodandberageslpbrandidentity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Food & Beverage</span>
+                        </div>
+                    
+
+                    
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/fmcgbarnd-identity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>FMCG</span>
+                        </div>
+                   
+
+                    
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/personalwellnessbrandidentity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Personal Wellness</span>
+                        </div>
+                    </div>
+                </div>
+                {/* col 2 */}
+
+                <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
+                    <div className='categories-col'>
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/healthcarebarndsidenoity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Healthcare Brands</span>
+                        </div>
+                    
+
+                    
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/jwellarybrandidentity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Jewellery</span>
+                        </div>
+                    
+
+                    
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/skincarebarndidentity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Skincare </span>
+                        </div>
+                    </div>
+                </div>
+
+                {/* col 3 */}
+                <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
+                    <div className='categories-col'>
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/fashionbrandidenity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Fashion</span>
+                        </div>
+                   
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/educationbrandideniuty.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Education</span>
+                        </div>
+                    
+
+                    
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/travelandhospiotialtybrandsidenity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Travel & Hospitality </span>
+                        </div>
+                    </div>
+                </div>
+
+                {/* col 4 */}
+                <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
+                    <div className='categories-col'>
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/technologybrandidenity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Technology</span>
+                        </div>
+                    
+
+                   
+                        <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/pages/automobilebrandidenity.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Automobile</span>
+                        </div>
+
+                         <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/avatars/brandidenityrealestate.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Real Estate</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
 
       {/* testimonial */}
       <div  id="testimonials">
-      <LPTestimonialSwipper/>
+      {/* <LPTestimonialSwipper/> */}
+      <LPBradingServicesTestimonial/>
       </div>
       
       {/* LPFAQ */}
@@ -530,8 +635,13 @@ function page() {
 
       {/* footer */}
       <LPFooter />
+
+
+    <LPStickyCTAFooter/>
+
+
     </div>
-  );
+  )
 }
 
-export default page;
+export default page
