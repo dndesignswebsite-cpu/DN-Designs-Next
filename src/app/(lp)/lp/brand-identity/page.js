@@ -552,7 +552,7 @@ function page() {
                 {/* col 2 */}
 
                 <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
-                    <div className='categories-col'>
+                    <div className='categories-col categories-col-two'>
                         <div className='category-div'>
                             <img src="https://dndesigns.co.in/uploads/pages/healthcarebarndsidenoity.svg" className='img-fluid category-div-img'></img>
                             <span className='category-div-para'>Healthcare Brands</span>

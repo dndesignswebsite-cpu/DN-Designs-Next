@@ -439,6 +439,10 @@
    border-bottom: 1px solid #000;
 }
 
+.categories-col-two{
+    margin-top: 46px !important;
+}
+
 .category-div-para{
     font-family: var(--font-corbert-bold);
     font-size: 16px;
@@ -475,6 +479,9 @@
         align-items: start;
         justify-content: start;
     }
+    .categories-col-two{
+    margin-top: 4px !important;
+}
 
     .brand-identity-what-we-do-col-div-left-para-desc{
         width: 100%;
