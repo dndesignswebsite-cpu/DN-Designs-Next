@@ -12,7 +12,7 @@ import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIde
 import CursorFollower from '@/Components/CursorFollower/CursorFollower';
 import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 import AOSProvider from '@/Components/AosProvider/AosProvider';
-import LPFooter from '@/Components/LPFooterBrandIdentity/LPFooter';
+import LPFooter from '@/Components/LPFooterBrandIdentityVOne/LPFooter';
 
 
 
@@ -636,7 +636,8 @@ function page() {
 
       {/* footer */}
       {/* <LPFooter /> */}
-      <LPFooter/>
+     <LPFooter/> 
+      
 
 
     <LPStickyCTAFooter/>
