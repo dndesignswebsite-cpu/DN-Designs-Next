@@ -27,7 +27,7 @@
         display: flex;
         margin-top: 50px;
         position: fixed;
-        bottom: 0px;
+        bottom: -15px;
         width:100%;
         z-index: 9999;
         background-color: #ca2734;
@@ -62,11 +62,11 @@
 
     .mobile-footer-btn-1-ahref{
         text-decoration: none;
-        width: 50%;
+        /* width: 100%; */
     }
 
     .btn-2-for-scroll{
         text-decoration: none;
-        width: 50%;
+        width: 100%;
     }
 }
