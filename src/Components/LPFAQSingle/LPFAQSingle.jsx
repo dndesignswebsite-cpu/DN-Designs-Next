@@ -38,7 +38,7 @@ export default function Faqs({ leftFaqs, title = "FAQs" }) {
     <section className="faq-section">
       <div className="container">
         <div className="row">
-          <h2 className="text-center">Frequently<span className="every-pr"> Asked Questions</span> </h2>
+          <h2>Frequently<span className="every-pr"> Asked Questions</span> </h2>
           {/* Left Column */}
           <div className="col-12">
             {leftFaqs.map((item, index) => (

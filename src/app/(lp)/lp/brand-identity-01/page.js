@@ -11,6 +11,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIdentity/LPVideoHoverCardBrandIdentity';
 import CursorFollower from '@/Components/CursorFollower/CursorFollower';
 import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
+import AOSProvider from '@/Components/AosProvider/AosProvider';
 
 
 
@@ -183,8 +184,10 @@ function page() {
 
                 <div className='brand-identity-hero-section-left-col-bottom'>
                 {/* folder div */}
-                <div className='folder-parnet-div'>
+               
+                <div className='folder-parnet-div'  >
                 {/* folder 1 */}
+                 
                 <div className='folder-01'>
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/packagingbackimage.png" className='folder-base-layer-img img-fluid'/>
@@ -198,9 +201,11 @@ function page() {
                   {/* <p className='folder-name-para'>Packaging-design</p> */}
                 </div>
                 </div>
+                
 
 
                 {/* folder 2 */}
+                
                 <div className='folder-02'>
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
@@ -213,9 +218,11 @@ function page() {
                   {/* <p className='folder-name-para'>Logo Design</p> */}
                 </div>
                 </div>
+                
 
                 {/* folder 3 */}
-                <div className='folder-03'>
+              
+                <div className='folder-03' >
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/barndidentity.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
@@ -227,7 +234,9 @@ function page() {
                   {/* <p className='folder-name-para'>Brand Identity</p> */}
                 </div>
                 </div>
+                
                 </div>
+                
                 {/* folder div end*/}
                 </div>
 
@@ -246,7 +255,9 @@ function page() {
                 {/* folder div */}
                 <div className='folder-parnet-div'>
                 {/* folder 1 */}
-                <div className='folder-01'>
+                <AOSProvider>
+                <div className='folder-01'  data-aos="fade-right"
+                   data-aos-duration="1500">
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/packagingbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
@@ -257,10 +268,13 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
                 </div>
+                </AOSProvider>
 
 
                 {/* folder 2 */}
-                <div className='folder-02'>
+                <AOSProvider>
+                <div className='folder-02'  data-aos="fade-up"
+  data-aos-duration="1500">
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
@@ -273,9 +287,12 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
                 </div>
+                </AOSProvider>
 
                 {/* folder 3 */}
-                <div className='folder-03'>
+                <AOSProvider>
+                <div className='folder-03'  data-aos="fade-left"
+  data-aos-duration="1500">
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/barndidentity.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
@@ -286,6 +303,7 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
                 </div>
                 </div>
+                </AOSProvider>
                 </div>
                 {/* folder div end*/}
                 </div>
@@ -592,6 +610,12 @@ function page() {
                             <img src="https://dndesigns.co.in/uploads/pages/automobilebrandidenity.svg" className='img-fluid category-div-img'></img>
                             <span className='category-div-para'>Automobile</span>
                         </div>
+
+                         <div className='category-div'>
+                            <img src="https://dndesigns.co.in/uploads/avatars/brandidenityrealestate.svg" className='img-fluid category-div-img'></img>
+                            <span className='category-div-para'>Real Estate</span>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
