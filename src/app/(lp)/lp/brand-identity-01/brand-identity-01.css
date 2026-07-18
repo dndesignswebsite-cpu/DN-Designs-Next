@@ -775,7 +775,7 @@
 }
 
 
-@media(max-width:991px){
+/* @media(max-width:991px){
 
  .communication-strategy-hover-col-upper{
     background-color: #CA2734;
@@ -821,7 +821,7 @@
 .communication-strategy-hover-col-video{
     visibility: visible;
 }
-}
+} */
 
 
 .communication-strategy-hover-col-bottom{
@@ -853,6 +853,17 @@
 .fixed-cta-content{
     background-color: red;
 }
+
+
+
+/* folder mobiel view animation */
+/* .brand-identity-hero-section-left-col-bottom-mobile {
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+} */
+
+
 
 
 

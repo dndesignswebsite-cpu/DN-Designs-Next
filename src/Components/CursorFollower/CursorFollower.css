@@ -78,3 +78,14 @@
 .cursor-hover-wrapper > *{
     width:100%;
 }
+
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-follower {
+    display: none !important;
+  }
+
+  .cursor-hover-wrapper {
+    cursor: auto;
+  }
+}

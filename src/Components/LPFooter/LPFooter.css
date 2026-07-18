@@ -1,6 +1,8 @@
 .lp-footer{
     padding: 10px 0;
     background-color: #ca2734;
+    z-index: 109;
+    position: relative;
 }
 
 .lp-footer-para{
