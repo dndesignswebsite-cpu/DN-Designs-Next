@@ -35,11 +35,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("startup-branding-agency", null, false);
+    seo = await getPageById("go-to-market-strategy", null, false);
   } catch (error) {
-    console.log("Startup Branding Agency Error", error);
+    console.log("Go To Market Strategy Error", error);
     return {
-      title: "Startup Branding Agency",
+      title: "Go To Market Strategy",
       robots: "noindex, nofollow",
     };
   }
@@ -91,7 +91,7 @@ async function page() {
           await connectDB();
           let pageData;
           try {
-            pageData = await getPageById("startup-branding-agency", null, true);
+            pageData = await getPageById("go-to-market-strategy", null, true);
           } catch (error) {
             notFound();
           }
@@ -131,7 +131,7 @@ async function page() {
       title: "Accelerated Go-to-Market",
       description:
         "Brands without a GTM plan spend months testing what should've been decided before launch. With GTM, you enter faster, spend sharper and hit product-market fit without burning through your first-year budget finding it.",
-        image: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagedesktop1.jpg",
+        image: "https://dndesigns.co.in/uploads/pages/gtmimagedesktopfour.jpg",
     },
     {
       id: 2,
@@ -139,7 +139,7 @@ async function page() {
       title: "Buyer Clarity",
       description:
         "You actually know who your customers are. And, when you know exactly who's buying, why they're buying and what makes them switch, then your product, pricing and messaging stop missing and start converting.",
-       image: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagedesktop2.jpg",
+       image: "https://dndesigns.co.in/uploads/pages/gtmimagedesktopone.jpg",
     },
     {
       id: 3,
@@ -147,7 +147,7 @@ async function page() {
       title: "Smarter Resource Allocation",
       description:
         "Scattered resource allocation produces scattered results. A GTM strategy ensures optimal use of your budget, time and talent so you invest where it counts, minimise waste, and improve profitability.",
-      image: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagedesktop3.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/gtmimagedesktopthree.jpg",
     },
     {
       id: 4,
@@ -155,22 +155,22 @@ async function page() {
       title: "Category Edge",
       description:
         "You don't enter reactive; you enter positioned. Stress-tested pricing, defined differentiation and a sequenced launch so you're not catching up to the category; you're setting the pace in it. ",
-      image: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagedesktop4.jpg",
+      image: "https://dndesigns.co.in/uploads/pages/gtmimagedesktoptwo.jpg",
     }
   ];
 
   const mobileCrads = [
     {
-      mobileImage: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagemobile1.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/gtmimagemobilefour.jpg",
     },
     {
-      mobileImage: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagemobile2.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/gtmimagemobileone.jpg",
     },
     {
-      mobileImage: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagemobile3.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/gtmimagemobilethree.jpg",
     },
     {
-      mobileImage: "https://dndesigns.co.in/uploads/pages/startupbrandinghoverimagemobile4.jpg",
+      mobileImage: "https://dndesigns.co.in/uploads/pages/gtmimagemobiletwo.jpg",
     },
   ];
 
@@ -238,7 +238,7 @@ async function page() {
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "startup-branding-agency"}`}
+          key={`schema-page-${pageData._id || "go-to-market-strategy"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -265,7 +265,7 @@ async function page() {
           <div className="brand-positioning-banner-img-desktop">
          
            <Image
-                          src="https://dndesigns.co.in/uploads/pages/startupbrandingdesktop.jpg"
+                          src="https://dndesigns.co.in/uploads/pages/gtmimagedesktopbannner.jpg"
                           alt="brand positioning"
                           width={1500}
                           height={800}
@@ -278,11 +278,11 @@ async function page() {
           <div className="brand-positioning-banner-img-mobile">
          
            <Image
-                          src="https://dndesigns.co.in/uploads/pages/startupbrandingmobile.jpg"
+                          src="https://dndesigns.co.in/uploads/pages/gtmimagemobilebanner.jpg"
                           alt="brand positioning"
                           width={1050}
                           height={1190}
-                          className="brand-identity-banner-img-desktop-img-mobile"
+                          className="gtm-banner-mobile img-fluid"
                            sizes="(max-width:768px) 100vw, 100vw"
                           priority
                         />
@@ -545,7 +545,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/biFrame 427324114.svg"
+                    src="https://dndesigns.co.in/uploads/pages/marketgotoicon1.svg"
                     className="cap-img"
                   ></img>
                 </div>
@@ -572,7 +572,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/biFrame 427324115 (9).svg"
+                    src="https://dndesigns.co.in/uploads/pages/chanelstrgtygoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
@@ -599,7 +599,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/biGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/quickcommercegoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
@@ -626,14 +626,14 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/bidgdGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/marketplacestregetygoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Marketplace Strategy</h3>
                   <p>
-                     Being on Amazon, Flipkart, or Nykaa isn't enough. Getting noticed and chosen is equally important. We
+                     Being on Amazon, Flipkart, or Nykaa isn't enough. Getting noticed and chosen is equally
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -656,14 +656,14 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/birdfFrame 427324114.svg"
+                    src="https://dndesigns.co.in/uploads/pages/btwobgrowthgoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>B2B Growth Strategy </h3>
                   <p>
-                     Whether you’re selling to institutions, distributors, wholesalers, or corporates, B2B deals move
+                     Whether you’re selling to institutions, distributors, wholesalers, or corporates, B2B
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -684,14 +684,14 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/erkdshbfjGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/retailexpansiongoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Retail Expansion Strategy</h3>
                   <p>
-                       Shelf space is earned, not given. We plan your rollout from first listing to national distribution, mapping
+                       Shelf space is earned, not given. We plan your rollout from first listing to national distribution
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -711,7 +711,7 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/jewrbhfjGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/pricingmininggoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
@@ -739,14 +739,14 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/3relwshfddjvhFrame 427324112 (13).svg"
+                    src="https://dndesigns.co.in/uploads/pages/launchstregtygotto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Launch Strategy </h3>
                   <p>
-                      A launch is more than a product intro; it's a positioning strategy which sets the tone of a brand. We
+                      A launch is more than a product intro; it's a positioning strategy which sets the tone of a brand
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -770,14 +770,14 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/birdfFrame 427324114.svg"
+                    src="https://dndesigns.co.in/uploads/pages/demandgenerationstregtygoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Demand Generation Strategy</h3>
                   <p>
-                     We build a demand strategy that compounds, not just campaign spikes that die when the budget stops. Grounded
+                     We build a demand strategy that compounds, not just campaign spikes that die when the budget
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -798,7 +798,7 @@ async function page() {
               <div className=" characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/erkdshbfjGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/salesenablementgotto.svg"
                     className="cap-img"
                   ></img>
                 </div>
@@ -825,14 +825,14 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/jewrbhfjGroup 36813 (3).svg"
+                    src="https://dndesigns.co.in/uploads/pages/growthroadmapgotto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Growth Roadmap </h3>
                   <p>
-                     Growth without a plan is just momentum, and momentum runs out. We create a systematic plan backed
+                     Growth without a plan is just momentum, and momentum runs out. We create a systematic plan
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
@@ -853,14 +853,14 @@ async function page() {
               <div className="p-3 characteristics-of-good-div m-3">
                 <div className="text-center m-5">
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/3relwshfddjvhFrame 427324112 (13).svg"
+                    src="https://dndesigns.co.in/uploads/pages/analyticsandoptimizationgoto.svg"
                     className="cap-img"
                   ></img>
                 </div>
                 <div className="characteristics-of-good-btm">
                   <h3>Analytics & Optimisation </h3>
                   <p>
-                     Strategy without feedback is a hypothesis. We track performance across channels, identify what's
+                     Strategy without feedback is a hypothesis. We track performance across channels
                   </p>
                 </div>
                 <div className="characteristics-of-good-back-content">
