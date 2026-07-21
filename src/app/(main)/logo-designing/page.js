@@ -13,6 +13,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import Link from "next/link";
+import BrandIdentityServiceWhyDN from "@/Components/BrandIdentityServiceWhyDN/BrandIdentityServiceWhyDN";
 
 // meta tags
 export async function generateMetadata() {
@@ -1507,6 +1508,9 @@ async function page() {
       <section className="faqs">
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
+
+      {/* brand identity scroll */}
+      {/* <BrandIdentityServiceWhyDN/> */}
 
       {/* Form */}
       <Form FormHead={FormHead} FormPara={FormPara}  />
