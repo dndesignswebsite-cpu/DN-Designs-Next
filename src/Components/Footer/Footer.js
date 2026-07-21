@@ -53,7 +53,7 @@ export default function Footer() {
                     href="/contact-us"
                     className="text-white text-decoration-none"
                   >
-                    Contact Us
+                    Contac
                   </Link> */}
                   <Link
   href="/contact-us"
