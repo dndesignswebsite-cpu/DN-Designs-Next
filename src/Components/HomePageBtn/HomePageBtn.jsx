@@ -1,14 +1,17 @@
 "use client";
 import React from "react";
 import styles from "./HomePageBtn.module.css";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 function HomePageBtn() {
   const router = useRouter();
+  const pathname = usePathname();
 
   const goToContact = () => {
-    router.push("/contact-us");
-  };
+  const sourcePage = pathname === "/" ? "Home" : pathname;
+  sessionStorage.setItem("sourcePage", sourcePage);
+  router.push("/contact-us");
+};
 
   return (
     <div className={styles.hero}>

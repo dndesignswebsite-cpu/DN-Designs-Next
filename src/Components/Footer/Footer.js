@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
+  const pathname = usePathname();
   const currentYear = new Date().getFullYear();
   return (
     <footer
@@ -46,12 +49,22 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
+                  {/* <Link
                     href="/contact-us"
                     className="text-white text-decoration-none"
                   >
                     Contact Us
-                  </Link>
+                  </Link> */}
+                  <Link
+  href="/contact-us"
+  onClick={() => {
+    const sourcePage = pathname === "/" ? "Home" : pathname;
+    sessionStorage.setItem("sourcePage", sourcePage);
+  }}
+  className="text-white text-decoration-none"
+>
+  Contact Us
+</Link>
                 </li>
                 <li className="mb-2">
                   <Link
