@@ -1,6 +1,6 @@
 "use client"
 
-import React,{useState} from 'react'
+import React, { useState, useEffect } from "react";
 import "./ContactPageForm.css"
 
 function ContactPageForm() {
@@ -10,7 +10,17 @@ function ContactPageForm() {
        const [message, setMessage] = useState("");
        let [btn, setBtn] = useState("Send Message");
        let [successMessage, setsuccessMessage] = useState("");
-       let pageName = "Contact Us"
+      //  let pageName = "Contact Us"
+
+       const [pageName, setPageName] = useState("Contact Us");
+
+useEffect(() => {
+  const source = sessionStorage.getItem("sourcePage");
+
+  if (source) {
+    setPageName(`Contact Us source: ${ source}`);
+  }
+}, []);
 
 
 
