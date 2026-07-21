@@ -26,7 +26,7 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("branding-services", null, false);
+    seo = await getPageById("lp/branding-services", null, false);
   } catch (error) {
     console.log("Branding Services Error", error);
     return {
@@ -82,7 +82,7 @@ async function page() {
       await connectDB();
       let pageData;
       try {
-        pageData = await getPageById("branding-services", null, true);
+        pageData = await getPageById("lp/branding-services", null, true);
       } catch (error) {
         notFound();
       }
@@ -261,7 +261,7 @@ async function page() {
      {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "branding-services"}`}
+          key={`schema-page-${pageData._id || "lp/branding-services"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
