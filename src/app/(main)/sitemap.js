@@ -12,7 +12,7 @@ export default async function sitemap() {
 
   const staticUrls = staticPages.map((route) => ({
     url: `${SITE_URL}/${route}`,
-    lastModified: new Date(),
+    // lastModified: new Date(),
   }));
 
   /* ======================
@@ -32,7 +32,7 @@ export default async function sitemap() {
         .filter((page) => page.isPublished && page.slug)
         .map((page) => ({
           url: `${SITE_URL}/${page.slug}`,
-          lastModified: page.publishedAt ? new Date(page.publishedAt) : new Date(),
+          // lastModified: page.publishedAt ? new Date(page.publishedAt) : new Date(),
         }));
     }
   } catch (err) {
@@ -56,7 +56,7 @@ export default async function sitemap() {
         .filter((blog) => blog.isPublished && blog.slug)
         .map((blog) => ({
           url: `${SITE_URL}/blog/${blog.slug}`,
-          lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
+          // lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
         }));
     }
   } catch (err) {
