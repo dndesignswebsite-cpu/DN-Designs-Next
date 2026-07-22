@@ -32,7 +32,7 @@ export default async function sitemap() {
         .filter((page) => page.isPublished && page.slug)
         .map((page) => ({
           url: `${SITE_URL}/${page.slug}`,
-          lastModified: page.updatedAt ? new Date(page.updatedAt) : new Date(),
+          lastModified: page.publishedAt ? new Date(page.publishedAt) : new Date(),
         }));
     }
   } catch (err) {
