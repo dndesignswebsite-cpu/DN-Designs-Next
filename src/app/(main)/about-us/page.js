@@ -11,7 +11,7 @@ import OurConstant from '@/Components/OurConstant/OurConstant';
 import AboutUsHoverPage from '@/Components/AboutUsHoverPage/AboutUsHoverPage';
 import Faqs from '@/Components/Faqs/Faqs';
 import Form from '@/Components/Form/Form';
-import Link from 'next/link';
+
 
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
