@@ -229,7 +229,7 @@ async function page() {
         
           // form section content
           const FormHead = "Let's Talk Over A Cup Of Coffee ";
-          const FormPara = (<>Most brands don't fail because the product's bad; they fail because nobody mapped how it actually reaches the right customer at the right price through the right channel. If that's where you're stuck, we'd rather hear it straight over coffee than over a sales call.<br></br> Bring the problem, we'll bring a plan.</>);
+          const FormPara = (<>Most brands don't fail because the product's bad; they fail because nobody mapped how it actually reaches the right customer at the right price through the right channel. If that's where you're stuck, we'd rather hear it straight over coffee than over a sales call.<br></br><br></br> Bring the problem, we'll bring a plan.</>);
     
           const pageName = "startup-branding-agency";
     
@@ -948,7 +948,7 @@ async function page() {
       
                 <div className="row why-dn-sec-content-row">
                   <div className="col-12 col-lg-6">
-                    <h2 className="why-dn-head">Why DN Designs </h2>
+                    <h2 className="why-dn-head">Why DN Designs ?</h2>
                     <p className="why-dn-para">
                   We're not a deck-and-disappear agency. We've built GTM strategies across beverage, retail, and D2C brands in India, and we stick around through execution because a strategy that never leaves the slide deck isn't a strategy; it's a wish.
                     </p>
@@ -966,7 +966,7 @@ async function page() {
             <div className="why-dn-designs-mobile">
               <div className="container">
               <div className="why-dn-designs-mobile-content">
-              <h2 className="why-dn-designs-mobile-head">Why DN Designs</h2>
+              <h2 className="why-dn-designs-mobile-head">Why DN Designs ?</h2>
                 <p className="why-dn-designs-mobile-para">We're not a deck-and-disappear agency. We've built GTM strategies across beverage, retail, and D2C brands in India, and we stick around through execution because a strategy that never leaves the slide deck isn't a strategy; it's a wish.</p>
                 <TalkToUs/>
                 </div>
