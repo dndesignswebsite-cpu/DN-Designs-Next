@@ -265,7 +265,7 @@ async function page() {
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
                 <div className="fnb-page-hero-img-col">
-                    <img src="https://dndesigns.co.in/uploads/pages/Enlite17.webp" className="img-fluid fnb-page-hero-img-col-img"></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesherobannerimagerevised.webp.jpeg" className="img-fluid fnb-page-hero-img-col-img"></img>
                 </div>
             </div>
 
@@ -466,6 +466,7 @@ async function page() {
 
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/brand-strategy">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">01 / STRATEGY</p>
@@ -474,9 +475,11 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedtwo.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
 
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/brand-identity-design-services">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">02 / Identity</p>
@@ -485,9 +488,11 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedthree.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
 
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/packaging-design">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">03 / Design</p>
@@ -496,13 +501,16 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfour.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
+                  
                 </div>
 
 
                 
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/branding">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">04 / Communication</p>
@@ -511,9 +519,11 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedone.jpeg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
 
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/web-designing-services-in-india">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">05 / Website</p>
@@ -522,9 +532,11 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedsix.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
 
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                  <Link href="/go-to-market-strategy">
                     <div className="everything-a-food-section-col">
                       <div className="everything-a-food-section-col-content-div">
                         <p className="everything-a-food-section-col-content-div-para-label">06 / GTM</p>
@@ -533,6 +545,7 @@ async function page() {
                       </div>
                       <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfive.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
+                    </Link>
                   </div>
                 </div>
               </div>
