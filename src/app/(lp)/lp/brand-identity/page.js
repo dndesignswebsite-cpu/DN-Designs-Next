@@ -13,6 +13,7 @@ import CursorFollower from '@/Components/CursorFollower/CursorFollower';
 import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 import AOSProvider from '@/Components/AosProvider/AosProvider';
 import LPFooter from '@/Components/LPFooterBrandIdentity/LPFooter';
+import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 
 
 
@@ -508,6 +509,7 @@ function page() {
 
 
      {/* what we do categories*/}
+     {/* <LPBrandIdentityCategorySwipper/> */}
      <div className='brand-identity-what-we-do' id="services">
         <div className='container'>
             <div className='row'>
@@ -622,6 +624,8 @@ function page() {
             </div>
         </div>
      </div>
+
+     
 
       {/* testimonial */}
       <div  id="testimonials">

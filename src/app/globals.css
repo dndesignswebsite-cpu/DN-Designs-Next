@@ -53,3 +53,19 @@ html {
 .outfit-regular {
   font-family: var(--font-outfit-regular);
 }
+
+
+
+
+/* Disable text selection */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Disable image dragging */
+img {
+  -webkit-user-drag: none;
+}

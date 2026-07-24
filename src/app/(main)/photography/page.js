@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -327,6 +328,10 @@ async function page() {
           </div>
         </div>
       </section>
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+            
 
       {/* form */}
       <Form FormHead={FormHead} FormPara={FormPara} pageName={pageName} />

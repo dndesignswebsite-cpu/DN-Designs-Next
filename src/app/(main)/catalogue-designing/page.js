@@ -16,6 +16,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import Link from "next/link";
+import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 
 // meta data
 export async function generateMetadata() {
@@ -605,6 +606,10 @@ async function page() {
 
       {/*  Creative Brochure Design But With A Twist */}
       <CreativeBrochureDesign />
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+           
 
       {/* faqs */}
 

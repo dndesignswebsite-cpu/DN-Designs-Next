@@ -24,6 +24,7 @@ import "./brand-identity-design-services.css";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import BrandIdentityDesignServicesBanner from '@/Components/BrandIdentityDesignServicesBanner/BrandIdentityDesignServicesBanner';
+import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 
 
 
@@ -574,6 +575,9 @@ async function page() {
         </div>
       </section>
 
+
+{/* industries we serve */}
+      <LPBrandIdentityCategorySwipper/>
 
       
 

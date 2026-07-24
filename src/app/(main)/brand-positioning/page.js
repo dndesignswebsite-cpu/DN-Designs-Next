@@ -23,6 +23,7 @@ import "../brand-name-suggestion/brand-name-suggestion.css";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import AtOneAm from '@/Components/AtOneAm/AtOneAm';
+import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 
 
 
@@ -304,6 +305,11 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+            
 
 
 

@@ -19,6 +19,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import Link from "next/link";
+import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 
 // meta data
 export async function generateMetadata() {
@@ -376,6 +377,10 @@ async function page() {
           </div>
         </div>
       </section>
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+            
 
       {/* our work tabs */}
       <section className="our-work-tabs">
