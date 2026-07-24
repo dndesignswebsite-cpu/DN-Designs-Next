@@ -19,6 +19,7 @@ import Link from "next/link";
 import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
+import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 
 // meta data
 export async function generateMetadata() {
@@ -254,6 +255,10 @@ async function page() {
         
       {/*.....our-constant-companions...... */}
       <OurConstant />
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+            
       {/*.....Our work...... */}
       <OurWorkHomeSection />
 

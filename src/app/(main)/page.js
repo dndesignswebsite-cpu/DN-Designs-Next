@@ -12,6 +12,7 @@ import Script from "next/script";
 import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
+import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 
 // schema
 // HOME PAGE SCHEMA
@@ -181,6 +182,9 @@ export default function Home() {
         <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>  
       {/*.....our-constant-companions...... */}
       <OurConstant />
+
+      {/* industries we serve */}
+      <LPBrandIdentityCategorySwipper/>
        {/*.....Our work...... */}
       <section id="ourworksection">
       <OurWorkHomeSection />

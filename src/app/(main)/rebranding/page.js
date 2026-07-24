@@ -20,6 +20,7 @@ import Link from 'next/link';
 
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 
 
 
@@ -430,6 +431,10 @@ async function page() {
           </div>
         </div>
       </section>
+
+        {/* industries we serve */}
+            <LPBrandIdentityCategorySwipper/>
+          
 
 
       {/* Brand Identity We Created*/}
