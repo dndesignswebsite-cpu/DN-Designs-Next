@@ -368,7 +368,7 @@ export default function AnimatedStudioSection() {
   const desktopPathLen = Math.sqrt(Math.pow(456 - 360, 2) + Math.pow(dynamicY - 145, 2)) + 180;
 
   const MOBILE_PATH1    = "M 240,230 C 240,260 240,280 240,306";
-  const MOBILE_PATH2    = "M 240,480 C 240,510 240,530 240,556"; // Adjusted mobile points relative to text growth
+  const MOBILE_PATH2 = "M 240,560 C 240,590 240,610 240,636"; // Adjusted mobile points relative to text growth
   const MOBILE_PATH_LEN = 90;
 
   if (!mounted) return <div className="studio-section" />;
@@ -380,7 +380,7 @@ export default function AnimatedStudioSection() {
     return (
       <section ref={sectionRef} className="studio-section">
         <div className="studio-canvas-wrapper">
-          <svg viewBox="0 0 480 820" className="studio-svg" preserveAspectRatio="xMidYMid meet">
+          <svg viewBox="0 0 480 900" className="studio-svg" preserveAspectRatio="xMidYMid meet">
             <defs>
               <marker id="mah1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
                 <path d="M0,1 L7,4 L0,7 Z" fill="#ffffff" />
@@ -389,15 +389,15 @@ export default function AnimatedStudioSection() {
                 <path d="M0,1 L7,4 L0,7 Z" fill="#ffffff" />
               </marker>
               <clipPath id="mClipLeft"><rect x="60" y="30" width="360" height="200" rx="12" /></clipPath>
-              <clipPath id="mClipRight"><rect x="60" y="560" width="360" height="200" rx="12" /></clipPath>
+              <clipPath id="mClipRight"><rect x="60" y="640" width="360" height="200" rx="12" /></clipPath>
             </defs>
 
             <image href={LEFT_IMAGE}  x="60" y="30"  width="360" height="200" clipPath="url(#mClipLeft)"  preserveAspectRatio="xMidYMid slice" />
             <rect x="60" y="30" width="360" height="200" rx="12" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
 
-            <image href={RIGHT_IMAGE} x="60" y="560" width="360" height="200" clipPath="url(#mClipRight)" preserveAspectRatio="xMidYMid slice" opacity={rightOpacity} />
-            <rect x="60" y="560" width="360" height="200" rx="12" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" opacity={rightOpacity} />
-            <rect x="60" y="560" width="360" height="200" rx="12" fill="rgba(11,11,11,0.85)" opacity={1 - rightOpacity} />
+            <image href={RIGHT_IMAGE} x="60" y="640" width="360" height="200" clipPath="url(#mClipRight)" preserveAspectRatio="xMidYMid slice" opacity={rightOpacity} />
+            <rect x="60" y="640" width="360" height="200" rx="12" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" opacity={rightOpacity} />
+            <rect x="60" y="640" width="360" height="200" rx="12" fill="rgba(11,11,11,0.85)" opacity={1 - rightOpacity} />
 
             {showPath1      && <path d={MOBILE_PATH1} fill="none" stroke="rgba(255,255,255,0.15)"  strokeWidth="1.2" strokeDasharray="4 4" />}
             {showArrow2Path && <path d={MOBILE_PATH2} fill="none" stroke="rgba(255,255,255,0.15)"  strokeWidth="1.2" strokeDasharray="4 4" />}
