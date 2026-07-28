@@ -53,4 +53,7 @@
     .hover-section-to-div::after {
         content: "";
     }
+    .hover-preview-image{
+        display: none;
+    }
 }

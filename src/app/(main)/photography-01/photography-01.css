@@ -294,6 +294,9 @@
 }
 
 
+
+
+
 @media(max-width:767px){
     .driven-by-curiosity-content-head{
         font-size: 40px;
@@ -301,4 +304,21 @@
     .driven-by-curiosity-content-para{
         width: 100%;
     }
+
+    /* paddings */
+.content-creation-main-sub-col-left{
+    padding: 10px;
+}
+.content-creation-main-sub-col-mid{
+    padding: 10px;
+}
+.content-creation-main-sub-mid-col-super-sub-col{
+    padding: 5px;
+}
+.content-creation-main-sub-col-left{
+    padding: 5px;
+}
+.content-creation-main-sub-col-right{
+    padding: 5px;
+}
 }

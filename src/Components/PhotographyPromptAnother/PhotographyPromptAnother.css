@@ -118,10 +118,17 @@
 /* Mobile Alignment Engine */
 .studio-typewriter--mobile {
   left: 0%;    /* 60 / 480 */
-  top: 36.5%;     /* Lifted up slightly to perfectly align with path updates */
+  top: 34.5%;     /* Lifted up slightly to perfectly align with path updates */
   width: 100%;     /* 360 / 480 */
   height: auto; 
   margin: 10px 0;  
+}
+
+@media(max-width:550px){
+  .studio-typewriter--mobile{
+    top: 27.5%;
+  }
+
 }
 
 .studio-label-text {
