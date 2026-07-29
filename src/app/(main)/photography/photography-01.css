@@ -122,7 +122,7 @@
     font-family: var(--font-corbert-bold);
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .at-echelon-para-theme{
@@ -135,6 +135,25 @@
 .theme-based-content-row{
     padding: 40px 0 20px 0;
 }
+
+.conceptual-photgraphy-div-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+.conceptual-photgraphy-div-desktop{
+    display: none;
+}
+.conceptual-photgraphy-div-mobile{
+    display: block;
+}
+.conceptual-photgraphy-div-mobile-img{
+    border-radius: 6px;
+    width: 100%;
+    margin: 10px 0;
+}
+}
+
 
 
 
@@ -293,11 +312,26 @@
     padding: 80px 0 0 0 ;
 }
 
+/* talk to us cta for mobiel amd destop */
+.at-echelon-mid-col-mobile{
+    display: none;
+}
 
 
+@media(max-width:991px){
+     .at-echelon-mid-col-desktop{
+        display: none;
+    }
+    .at-echelon-mid-col-mobile{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+}
 
 
 @media(max-width:767px){
+   
     .driven-by-curiosity-content-head{
         font-size: 40px;
     }

@@ -234,4 +234,7 @@
   .studio-section{
   padding: 0 !important;
 }
+.studio-replay-btn{
+    margin-top: 0px;
+  }
 }

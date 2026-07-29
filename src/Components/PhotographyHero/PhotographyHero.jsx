@@ -6,20 +6,25 @@ import "./PhotographyHero.css";
 
 const BASE_IMAGES = [
   'https://dndesigns.co.in/uploads/pages/photographyherobanner1.webp',
-  'https://dndesigns.co.in/uploads/pages/photographyherobanner2.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner3.webp',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner16.jpg',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner4.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner5.webp',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner19.jpg',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner6.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner7.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner8.webp',
-  'https://dndesigns.co.in/uploads/pages/photographyherobanner9.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner10.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner11.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner12.jpg',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner13.jpg',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner15.jpg',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner17.jpg',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner18.jpg',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner2.webp',
   'https://dndesigns.co.in/uploads/pages/photographyherobanner14.jpg',
-  'https://dndesigns.co.in/uploads/pages/photographyherobanner15.jpg'
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner20.jpg',
+  'https://dndesigns.co.in/uploads/pages/photographyherobanner9.webp',
 ];
 
 const PATTERN_COLUMNS = 6;
