@@ -1,0 +1,110 @@
+.conceptualphotographyarrowsection{
+    padding: 20px 0;
+}
+
+.conceptualphotography-col-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.conceptualphotography-col-img{
+  width: 85%;
+  border-radius: 6px;
+}
+.conceptualphotography-mid-col-img{
+  border-radius: 6px;
+}
+
+.conceptualphotography-col-right{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: end;
+}
+
+.conceptualphotographyarrowsection-row{
+  position: relative;
+}
+
+.conceptualphotography-col-img-upper{
+  margin-top: -60px;
+}
+
+
+/* wave css */
+.wave-container {
+  width: 100%;
+}
+
+.wave {
+  width: 100%;
+  overflow: visible;
+}
+
+.wave path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawWave 4s ease forwards infinite;
+}
+
+@keyframes drawWave {
+  0%   { stroke-dashoffset: 400; }
+  50%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -400; }
+}
+
+/* ---- 4 corners ---- */
+
+.wave-1{
+  position: absolute;
+  width: 10.5%;
+  left: 17.9%;
+  transform: rotate(60deg);
+  top: 10%;
+}
+
+.wave-2{
+  position: absolute;
+  width: 10.5%;
+  left: 17.9%;
+  transform: rotate(-60deg) scaleY(-1);
+  bottom: 10%;
+}
+
+.wave-3{
+  position: absolute;
+  width: 10.5%;
+  right: 17.9%;
+  transform: rotate(-60deg) scaleX(-1);
+  top: 10%;
+}
+
+.wave-4{
+  position: absolute;
+  width: 10.5%;
+  right: 17.9%;
+  transform: rotate(60deg) scaleX(-1) scaleY(-1);
+  bottom: 10%;
+}
+
+@media (max-width: 991px){
+  .wave-1, .wave-2, .wave-3, .wave-4{
+    display: none;
+  }
+}
+
+.conceptualphotography-col-img,
+.conceptualphotography-mid-col-img {
+  position: relative;
+  z-index: 1;
+}
+

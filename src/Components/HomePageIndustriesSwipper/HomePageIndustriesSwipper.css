@@ -1,0 +1,267 @@
+.citypagesswipper-h2{
+  font-size: 40px;
+  font-family: "Corbert";
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.citypagesswipper{
+  padding: 40px 0;
+}
+
+.citypagewiper-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.citypagewiper-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+/* image */
+.citypagewiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay */
+.cityswiperoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  height: 70px;                
+  transition: height 0.4s ease;
+  overflow: hidden;            
+}
+
+/* heading */
+.cityswiperoverlay h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  transition: transform 0.4s ease;
+  font-family: "Corbert";
+}
+
+
+.cityswiperoverlay p {
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  font-family: "ROboto";
+}
+
+
+.citypagewiper-slide:hover .cityswiperoverlay {
+  height: 40%;                
+}
+
+.citypagewiper-slide:hover h3 {
+  transform: translateY(-10px);
+}
+
+.citypagewiper-slide:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:1399.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 50%;                
+}
+}
+
+@media(max-width:1199.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 70%;                
+}
+
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+}
+
+@media(max-width:991.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 55%;                
+}
+
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+}
+
+
+@media(max-width:767.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 30%;                
+}
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+}
+
+@media(max-width:486.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 35%;                
+}
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+}
+
+@media(max-width:428.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 45%;                
+}
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+}
+
+
+@media(max-width:370.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 60%;                
+}
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+
+.cityswiperoverlay p {
+  margin-top: 0px;
+}
+}
+
+
+
+@media(max-width:320.68px){
+  .citypagewiper-slide:hover .cityswiperoverlay {
+  height: 70%;                
+}
+.cityswiperoverlay h3 {
+  font-size: 20px;
+}
+
+.cityswiperoverlay p {
+  margin-top: 0px;
+}
+}
+
+
+/* navigation buttons */
+
+.city-swiper .swiper-button-next,
+.city-swiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+ background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.city-swiper .swiper-button-next::after,
+.city-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.city-swiper .swiper-button-next:hover,
+.city-swiper .swiper-button-prev:hover {
+  
+   background-color: #ca2734;
+}
+
+.every-pr{
+  color:#ca2734;
+}
+
+/* images optimisation  */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.city-page-swiperr-slide-img{
+  aspect-ratio: 750 / 1050 ;
+}
+
+
+:is(.swiper-button-prev,.swiper-button-next) ::slotted(svg), :is(.swiper-button-prev,.swiper-button-next) svg{
+  width:20%;
+}
+
+
+/* wenkjsdn */
+.homepageindusriesswipper-content{
+    padding-bottom: 20px;
+}
+
+.homepageindusriesswipper-content-left-para-label{
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ca2734;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.homepageindusriesswipper-content-left-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 40px;
+    font-weight: 700;
+    color: #0A0A0A;
+}
+
+.homepageindusriesswipper-content-right-para-desc{
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 14px;
+    color: #888888;
+    width: 50%;
+}
+
+.homepageindusriesswipper-content-right-col{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100%;
+}
+
+.homepageindusriesswipper{
+    padding: 90px 0 50px 0;
+}
+
+@media(max-width:767px){
+    .homepageindusriesswipper-content-right-col{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+}
+.homepageindusriesswipper-content-right-para-desc{
+    width: 100%;
+    padding-top:10px ;
+}
+.homepageindusriesswipper-content-left-head{
+    font-size: 30px;
+}
+}

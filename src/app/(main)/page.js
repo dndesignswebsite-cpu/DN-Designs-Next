@@ -13,6 +13,7 @@ import Image from "next/image";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 
 // schema
 // HOME PAGE SCHEMA
@@ -185,6 +186,8 @@ export default function Home() {
 
       {/* industries we serve */}
       <LPBrandIdentityCategorySwipper/>
+      {/* <HomePageIndustriesSwipper/> */}
+
        {/*.....Our work...... */}
       <section id="ourworksection">
       <OurWorkHomeSection />
