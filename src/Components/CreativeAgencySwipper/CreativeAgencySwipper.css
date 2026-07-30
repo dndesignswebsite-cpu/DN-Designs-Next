@@ -14,14 +14,14 @@
 .citypagewiper-slide {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   cursor: pointer;
 }
 
 .citypagewiper-slide {
   position: relative;
   overflow: hidden;
-  border-radius: 14px;
+  /* border-radius: 14px; */
   cursor: pointer;
 }
 

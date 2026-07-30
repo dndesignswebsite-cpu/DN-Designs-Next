@@ -22,7 +22,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
         <Swiper
           loop={true}
-          spaceBetween={30}
+          spaceBetween={15}
           navigation={true}
           pagination={false}
           // autoplay={{

@@ -102,7 +102,7 @@ async function page() {
    // form section content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
-    "It’s difficult to be seen and heard in a crowd, isn’t it? There is just so much noise. It is the same with product market – too many brands, lots of promise and intense competition. Rising above this chaos is what helps you establish your identity and secure your position in this competitive landscape. This is what we, as a branding and design agency, do for you. Curious to know more about us? Let’s sit down, enjoy a cup of coffee and discuss your project.";
+    "Visuals often form the first impression for your brand. And that impression has to be positive. That’s the tough job, indeed. Good photography and videos don’t happen by accident; they are a product of strategy and creativity. An understanding of the brand, audience and technicalities produces visuals that enhance brand perception and yield profits. At DN Designs, we create visuals that truly represent your brand and make your audience fall in love with it. If this resonates with you, let’s sit down, understand your vision, exchange ideas, and create visuals that make your products impossible to overlook.";
     // const pageName = "about-us";
   return (
     <div>
@@ -497,7 +497,7 @@ No guesswork, no wasted production time, and no on-set surprises. Just visuals t
                 className=""
               /> */}
 
-              <img src="https://dndesigns.co.in/uploads/pages/eccomercePhotography.gif" className="img-fluid"/>
+              <img src="https://dndesigns.co.in/uploads/pages/eccomercePhotography.gif" className="img-fluid e-commerce-photography-img"/>
             </div>
           </div>
           <div className="row">
