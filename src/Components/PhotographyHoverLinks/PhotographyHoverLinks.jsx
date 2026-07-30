@@ -21,13 +21,13 @@ export default function HoverLinks() {
       image: "https://dndesigns.co.in/uploads/blogs/1-1-768x768.webp",
     },
     {
-      title: "Content Creation",
-      subTitle:"Visual Stories That Engage. ",
+      title: (<>Content<br></br> Creation</>),
+      subTitle:(<>Visual Stories That <br></br> Engage.</>) ,
       href: "#content-creation",
       image: "https://dndesigns.co.in/uploads/blogs/1-2-768x768.webp",
     },
     {
-      title: "Conceptual Photography.",
+      title: "Conceptual Photography",
       subTitle:"Where Ideas Become Imagery ",
       href: "#conceptual-photography",
       image: "https://dndesigns.co.in/uploads/blogs/10-768x768.webp",

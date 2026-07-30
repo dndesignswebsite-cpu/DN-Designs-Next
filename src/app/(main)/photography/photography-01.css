@@ -21,8 +21,8 @@
 .content-creation-main-col-label-para{
     color: rgba(2, 1, 8, 1);
     font-family: var(--font-roboto);
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     padding:40px 0 20px 40px;
 }
 
@@ -317,6 +317,11 @@
     display: none;
 }
 
+.e-commerce-photography-img{
+    border: 2px solid #000;
+    border-radius: 24px;
+}
+
 
 @media(max-width:991px){
      .at-echelon-mid-col-desktop{
@@ -352,7 +357,7 @@
 .content-creation-main-sub-col-left{
     padding: 5px;
 }
-.content-creation-main-sub-col-right{
+/* .content-creation-main-sub-col-right{
     padding: 5px;
-}
+} */
 }

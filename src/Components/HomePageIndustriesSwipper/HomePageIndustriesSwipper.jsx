@@ -68,7 +68,7 @@ function HomePageIndustriesSwipper() {
     {/* swipper started */}
         <Swiper
                   loop={true}
-                  spaceBetween={30}
+                  spaceBetween={0}
                   navigation={true}
                   pagination={false}
                   // autoplay={{

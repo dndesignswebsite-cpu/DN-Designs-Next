@@ -284,7 +284,7 @@ async function page() {
                 </h2>
 
                 <div className="row port-row">
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
                       <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" />
                       <div className="port-content">
@@ -300,6 +300,35 @@ async function page() {
       
                         <p>
                           For the protein bar brand ‘Pureluxe’, we crafted a premium packaging design to appeal to its health-conscious and taste-driven consumers. The design captures the essence of indulgence and sophistication while balancing nutrition and flavour appeal. Each of the three variants reflects a modern and premium identity and creates a strong shelf presence.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+
+                        <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                             <video
+            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Enlite</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Label Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it a vibrant yet calming identity: a logo, a character and a can that fizzes with personality and freshness.
                         </p>
                       </div>
                     </div>
@@ -329,13 +358,13 @@ async function page() {
                         </div>
       
                         <p>
-                         For the cocktail bomb brand, Mr. Bomzy, we created a packaging design that conveyed a sense of fun and ease (of making a drink). Moreover, we assisted them in selecting an appropriate box—a window box with a magnetic flap—for a better user experience.
+                        Cocktail bomb brand. From identity and packaging to website and social media strategy, we designed a brand as fun and explosive as the product itself.
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
                       <img src="https://dndesigns.co.in/uploads/pages/fluke.webp" className="img-fluid" />
                       <div className="port-content">
@@ -354,35 +383,63 @@ async function page() {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
-
-             
-                </div>
-
-                          <div className="row port-row">
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
-                      <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" />
+                      <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
-                            <h3>Thames</h3>
+                            <h3>Wlue's</h3>
                           </div>
                           <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
                             <h4 className="our-port-btn">Packaging</h4>
-                            <h4 className="our-port-btn">Website</h4>
                           </div>
                         </div>
       
                         <p>
-                          Thames specialises in offering healthy snacking options to its customers. For its various products, like dry fruits, oats, muesli and protein bars, it collaborated with us to create package designs that reflected health and refreshment. We, no doubt, delivered.
+                         Makhana brand. With a retro superhero-inspired identity and packaging, we gave it main-character energy, making it a Gen Z favourite and the snack aisle hero.
                         </p>
                       </div>
                     </div>
                   </div>
 
+                </div>
+
+                          <div className="row port-row">
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
+                                <video
+            src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>3Sisters</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Packaging</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Premium Non-Alcoholic Drinks Brand. We built the digital home for a full lineup of their non-alcoholic beverages that are anything but ordinary.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
                       <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
                       <div className="port-content">
@@ -401,13 +458,34 @@ async function page() {
                         </p>
                       </div>
                     </div>
+                  </div> */}
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Pureluxe</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Premium Protein Bar Brand. We designed the packaging and digital experience that celebrates indulgence and taste while balancing nutrition and health.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
 
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
                     <div className="port-div">
                              <video
-            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
             width="100%"
             autoPlay 
             muted
@@ -418,16 +496,16 @@ async function page() {
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
-                            <h3>Enlite</h3>
+                            <h3>1:AM </h3>
                           </div>
                           <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Label Design</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
                             <h4 className="our-port-btn">Brand Identity</h4>
                           </div>
                         </div>
       
                         <p>
-                          Enlite’s healthy sparkling mineral water & prebiotic drinks come in a variety. Our can design for them included character creation around the brand name. We also used design elements to convey a sense of freshness and calmness.
+                          Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with. 
                         </p>
                       </div>
                     </div>

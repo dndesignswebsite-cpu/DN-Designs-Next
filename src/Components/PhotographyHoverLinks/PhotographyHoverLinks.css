@@ -24,6 +24,8 @@
 } */
 
 
+
+
 .hover-section-to-div {
     position: relative;
     /* border-top: 1px solid #444; */
@@ -45,7 +47,7 @@
 .hover-section-to-div:hover::after {
     color: white;
     transform: rotate(45deg);
-    color: yellow;
+    color: #ca2734;
 }
 
 
@@ -56,4 +58,10 @@
     .hover-preview-image{
         display: none;
     }
+}
+
+@media(max-width:767px){
+    .hover-section-to-div-head-span{
+    width: 30%;
+}
 }
