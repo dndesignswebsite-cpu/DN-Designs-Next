@@ -17,6 +17,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 
 // meta data
 export async function generateMetadata() {
@@ -608,7 +609,8 @@ async function page() {
       <CreativeBrochureDesign />
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            <HomePageIndustriesSwipper/>
            
 
       {/* faqs */}

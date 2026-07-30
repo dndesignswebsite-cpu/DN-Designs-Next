@@ -68,7 +68,7 @@ function HomePageIndustriesSwipper() {
     {/* swipper started */}
         <Swiper
                   loop={true}
-                  spaceBetween={0}
+                  spaceBetween={10}
                   navigation={true}
                   pagination={false}
                   // autoplay={{
@@ -148,7 +148,7 @@ function HomePageIndustriesSwipper() {
           {/* SLIDE 4 */}
           <SwiperSlide>
               <div className="citypagewiper-slide">
-                 <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionHEALTH.jpg"}
+                 <Image src={"https://dndesigns.co.in/uploads/avatars/insdustriesnewoptimizedimageHEALTH.jpg"}
                alt="Green Horn Catalogue"
                 width={750} 
                 height={1050} 

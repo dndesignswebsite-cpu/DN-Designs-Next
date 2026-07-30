@@ -16,6 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -936,7 +937,8 @@ async function page() {
       </section>
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            <HomePageIndustriesSwipper/>
             
 
 

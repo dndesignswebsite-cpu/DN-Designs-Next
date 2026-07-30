@@ -15,6 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BrandIdentityServiceWhyDN from "@/Components/BrandIdentityServiceWhyDN/BrandIdentityServiceWhyDN";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -1505,7 +1506,8 @@ async function page() {
       <LogoDesigningTab para1={para1} para2={para2} para3={para3} para4={para4} para5={para5}/>
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            <HomePageIndustriesSwipper/>
             
       {/* faqs */}
 
