@@ -12,6 +12,7 @@ import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPWhatWeCanBrandingServices from '@/Components/LPWhatWeCanBrandingServices/LPWhatWeCanBrandingServices';
 import LPBrandServicesSwipper from '@/Components/LPBrandServicesSwipper/LPBrandServicesSwipper';
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
+import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
 
 // import Script from "next/script";
 // import connectDB from "@/lib/config/database.js";
@@ -373,6 +374,10 @@ async function page() {
 
      
       </div>
+
+
+      <OurWorkHomeSection/>
+      
 
 
       {/* marque */}
