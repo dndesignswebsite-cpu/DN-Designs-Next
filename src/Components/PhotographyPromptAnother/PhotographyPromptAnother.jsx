@@ -232,7 +232,7 @@ const TYPEWRITER_TEXT =
   "Five polished chrome basin mixer faucets matching the reference designs, displayed on staggered dark concrete plinths. Split backdrop: glowing cracked volcanic rock and polished graphite wall with gold vein. Black reflective water foreground, basalt gravel, cinematic amber rim lighting, cool fill, brutalist luxury aesthetic, Hasselblad H6D, 80mm, f/5.6, ultra-sharp 4K commercial photography.";
 
 const LEFT_IMAGE  = "https://dndesigns.co.in/uploads/avatars/promptinputiameg.jpg";
-const RIGHT_IMAGE = "https://dndesigns.co.in/uploads/avatars/Promptresult.gif";
+const RIGHT_IMAGE = "https://dndesigns.co.in/uploads/pages/promptgenratedimageright.jpg";
 
 function easeInOut(t) {
   return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
@@ -322,7 +322,7 @@ export default function AnimatedStudioSection() {
         clearInterval(id);
         setTimeout(() => setPhase("arrow2"), 500);
       }
-    }, 26);
+    }, 12);
     return () => clearInterval(id);
   }, [phase]);
 
