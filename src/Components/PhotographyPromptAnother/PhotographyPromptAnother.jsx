@@ -266,7 +266,6 @@ export default function AnimatedStudioSection() {
     const updateArrowCoordinates = () => {
       if (terminalBoxRef.current) {
         const boxHeight = terminalBoxRef.current.offsetHeight;
-        // Base top position is 305. The arrow hits perfectly at the middle-left of the terminal box height.
         const calculatedY = 305 + (boxHeight / 2);
         setDynamicY(calculatedY);
       }
