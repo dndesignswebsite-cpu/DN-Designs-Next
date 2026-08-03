@@ -10,6 +10,10 @@ import { sendLPFormEmail } from "@/lib/config/email.js";
 import { handleError, logError } from "@/lib/middleware/errorHandler.js";
 
 export async function POST(request) {
+
+  const GOOGLE_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbzGNuW3p6K1JtsTlVGZtvsTfj4su2qDKcr_8P1kL6XAw2V1tX4wlbQvx-uoLk9X1Dzw/exec";
+
   try {
     await connectDB();
 
@@ -126,6 +130,20 @@ export async function POST(request) {
 
     // Send Email
     await sendLPFormEmail(lpData, additionalEmails);
+
+    // Save to Google Sheet
+    try {
+  await fetch(GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(lpData),
+  });
+} catch (error) {
+  console.error("Google Sheet Error:", error);
+}
+// end of Google Sheet Save
 
     return NextResponse.json(
       {
