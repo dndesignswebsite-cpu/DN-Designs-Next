@@ -12,7 +12,7 @@ import { handleError, logError } from "@/lib/middleware/errorHandler.js";
 export async function POST(request) {
 
   const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzGNuW3p6K1JtsTlVGZtvsTfj4su2qDKcr_8P1kL6XAw2V1tX4wlbQvx-uoLk9X1Dzw/exec";
+  "https://script.google.com/macros/s/AKfycbzYxaj70cgTcbN0F-_MWgFS0tdMC72UMXxqQz--beqdFfGtkIfcEx_TC5DcsWYbk9-v/exec";
 
   try {
     await connectDB();
