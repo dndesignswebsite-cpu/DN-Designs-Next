@@ -14,98 +14,45 @@ import LPBrandServicesSwipper from '@/Components/LPBrandServicesSwipper/LPBrandS
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
 
-// import Script from "next/script";
-// import connectDB from "@/lib/config/database.js";
-// import { getPageById } from "@/lib/services/pageService.js";
-// import Image from "next/image";
-// import LPFooterTwo from '@/Components/LPFooterThree/LPFooterTwo';
 
 
-// meta   data
-// export async function generateMetadata() {
-//   await connectDB();
-//   let seo;
-//   try {
-//     seo = await getPageById("lp/branding-services", null, false);
-//   } catch (error) {
-//     console.log("Branding Services Error", error);
-//     return {
-//       title: "Branding Services",
-//       robots: "noindex, nofollow",
-//     };
-//   }
-  // console.log(seo.content)
-
-//   return {
-//     title: seo.metaTitle || seo.title,
-//     description: seo.metaDescription || seo.description,
-
-//     robots: seo.robotsTag || "index, follow",
-
-//     alternates: {
-//       canonical: seo.alternates?.canonical,
-//     },
-
-//     openGraph: {
-//       type: seo.openGraph?.type || "website",
-//       title: seo.openGraph?.title || seo.metaTitle,
-//       description: seo.openGraph?.description || seo.metaDescription,
-//       url: seo.openGraph?.url || seo.alternates?.canonical,
-//       images: seo.openGraph?.images?.length
-//         ? seo.openGraph.images.map((img) => ({
-//             url: img.url,
-//             alt: img.alt || seo.title,
-//             width: img.width || 1200,
-//             height: img.height || 630,
-//           }))
-//         : [],
-//     },
-
-//     twitter: {
-//       card: "summary_large_image",
-//       title: seo.twitter?.title || seo.metaTitle,
-//       description: seo.twitter?.description || seo.metaDescription,
-//       images: seo.twitter?.images?.length
-//         ? seo.twitter.images.map((img) => img.url)
-//         : [],
-//     },
-//   };
-// }
-// ends here
+export const metadata = {
+  title: "Branding Services Agency - DN Designs",
+  description:
+    "Build a powerful brand with our branding services. We offer brand strategy, identity design, logo design, brand positioning, and rebranding solutions.",
+  keywords: [
+    "branding agency",
+    "branding firms",
+    "branding company",
+    "branding services",
+    "brand identity",
+    "branding and identity",
+    "branding in design",
+    "branding design",
+    "creative agency",
+    "brand design",
+    "branding studios",
+    "companies branding",
+    "design and branding",
+    "branding and identity design",
+    "identity design branding",
+    "branding design agency",
+    "personal branding companies",
+    "branding & design agency",
+    "best branding agencies",
+    "top branding agencies",
+    "best branding companies",
+    "top branding companies",
+    "branding agency for startups",
+    "brand design studio",
+    "branding agency startup"
+  ],
+};
 
 
 
-async function page() {
 
-
-   // ---
-      // await connectDB();
-      // let pageData;
-      // try {
-      //   pageData = await getPageById("lp/branding-services", null, true);
-      // } catch (error) {
-      //   notFound();
-      // }
-    
-      // if (!pageData) {
-      //   notFound();
-      // }
-    
-      // ---  SCHEMA CLEANING LOGIC START ---
-      // let cleanSchema = "";
-      // if (pageData.headCode) {
-      //   // Script tags remove karke raw JSON nikalna
-      //   cleanSchema = pageData.headCode
-      //     .replace(/<script.*?>/gi, "")
-      //     .replace(/<\/script>/gi, "")
-      //     .trim();
-      //   if (cleanSchema.includes('""')) {
-      //     cleanSchema = cleanSchema.replace(/""/g, '"');
-      //   }
-      // }
-      // --- SCHEMA CLEANING LOGIC END ---
-
-
+function page() {
 
        // faqs content
    const leftFaqs = [
@@ -257,17 +204,6 @@ async function page() {
   const pageName = "lp/brand-services";
   return (
     <div>
-
-     {/* schema */}
-      {/* {cleanSchema && (
-        <script
-          key={`schema-page-${pageData._id || "lp/branding-services"}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: cleanSchema }}
-        />
-      )} */}
-      {/*schema ends here */}
-
 
       <LPHeader/>
 
