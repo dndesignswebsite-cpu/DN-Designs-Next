@@ -409,8 +409,8 @@ function page() {
           <div className='col-div-left mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>Brand Strategy</p>
-                <h2 className='asthetic-head'>Consultation & Research</h2>
+                <p className='asthetic-para-label'>Foundation</p>
+                <h2 className='asthetic-head'>Brand Strategy</h2>
                 <p className='asthetic-para-desc'>We research your category, competitors, and audience to craft a strategy that puts your brand on the path to success. Every design decision that follows is rooted in this strategy.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
