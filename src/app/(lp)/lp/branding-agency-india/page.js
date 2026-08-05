@@ -254,8 +254,7 @@ function page() {
         <div className='row-div-what-we-do'>
           <div className='coldiv-what-we-do-left mt-4'>
           <div className='foundation-col'>
-            {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
-            {/* <video src="https://dndesigns.co.in/uploads/videos/enli.mp4" width="100%" autoplay muted loop class="lp-packaging-video"></video> */}
+           
             <video
             src="https://dndesigns.co.in/uploads/videos/enli.mp4"
             width="100%"
@@ -265,24 +264,25 @@ function page() {
             playsInline
             className='lp-packaging-video'
           />
+          <div className="overlay-video"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">Rithm's Enlite</div>
+                  <p className="Pras">Bubbles with benefits</p>
+                </div>
           </div>
           </div>
 
           <div className='coldiv-what-we-do-right mt-4'>
           <div className='foundation-col'>
-           
-            {/* <video
-            src="https://dndesigns.co.in/uploads/videos/lppackgingvideonewsection.mp4"
-            width="100%"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className='lp-packaging-video'
-          /> */}
+
           <img src="https://dndesigns.co.in/uploads/pages/brandidentityletsupimagelppageghjkl;.jpg.jpeg" className='img-fluid foundation-col-img'/>
 
-          {/* <LPPureluxVideo/> */}
+           <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">Let's Supp</div>
+                  <p className="Pras">Complete Wellness, Simplified</p>
+                </div>
+
           </div>
           </div>  
         </div>
@@ -291,13 +291,18 @@ function page() {
           <div className='coldiv-what-we-do-one mt-4'>
           <div className='foundation-col'>
             <img src="https://dndesigns.co.in/uploads/pages/weasbjhdwebjdnectarpure20graphic-(1).jpg" className='img-fluid foundation-col-img'/>
+
+             <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">NectarPure</div>
+                  <p className="Pras">A Revolution in Nutritional Absorption</p>
+                </div>
           </div>
           </div>
 
           <div className='coldiv-what-we-do-two mt-4'>
           <div className='foundation-col'>
-            {/* <img src="https://dndesigns.co.in/uploads/pages/1.webp" className='img-fluid foundation-col-img'/> */}
-
+        
              <video
             src="https://dndesigns.co.in/uploads/videos/threeSistersVideo.mp4"
             width="100%"
@@ -307,12 +312,25 @@ function page() {
             playsInline
             className='lp-packaging-video'
           />
+
+           <div className="overlay-video"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">
+3 sisters</div>
+                  <p className="Pras">Taste the Freedom to Celebrate</p>
+                </div>
           </div>
           </div> 
 
           <div className='coldiv-what-we-do-three mt-4'>
           <div className='foundation-col'>
             <img src="https://dndesigns.co.in/uploads/pages/wesjdkwekjdjjbrrat-(2.jpg" className='img-fluid foundation-col-img'/>
+
+             <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">BRRAT</div>
+                  <p className="Pras">Sip the Chaos. Stay a Brrat</p>
+                </div>
           </div>
           </div>  
         </div>
@@ -322,6 +340,12 @@ function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
           <div className='foundation-col'>
             <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/>
+
+             <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">iOrganic</div>
+                  <p className="Pras">Ideal food for you</p>
+                </div>
           </div>
           </div>
 
@@ -329,21 +353,19 @@ function page() {
           <div className='foundation-col'>
             <img src="https://dndesigns.co.in/uploads/pages/wlues-packhing-lp-pagegrapihc.jpeg" className='img-fluid foundation-col-img'/>
 
-             {/* <video
-            src="https://dndesigns.co.in/uploads/videos/threeSistersVideo.mp4"
-            width="100%"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className='lp-packaging-video'
-          /> */}
+             <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">Wlue's</div>
+                  <p className="Pras">Only for winners</p>
+                </div>
+
+          
           </div>
           </div> 
 
           <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
           <div className='foundation-col'>
-            {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
+       
             
              <video
             src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
@@ -354,6 +376,12 @@ function page() {
             playsInline
             className='lp-packaging-video'
           />
+
+           <div className="overlay-video"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">At 1 Am</div>
+                  <p className="Pras">Own the Night</p>
+                </div>
           </div>
           </div>  
         </div>
@@ -391,7 +419,7 @@ function page() {
               <div className="what-we-do-left-col">
                 <p className="what-we-do-lefty-col-para">Our Services</p>
                 <h2 className="what-we-do-lefty-col-head">
-                 Everything That Goes Into Getting Branding, Packaging & Design Right
+                Everything That Powers Brand Success 
                 </h2>
               </div>
             </div>
