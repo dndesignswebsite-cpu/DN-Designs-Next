@@ -96,12 +96,7 @@ function LPBradingServicesTestimonial() {
 
                 <div className="lp-testimonial-para-bst-div">
                 <p className="lp-testimonial-para-bst">
-                  "After researching several branding and design
-                            agencies, I connected with Mr. Paras Kalra. I really
-                            appreciate the hard work he and his team put in to
-                            position Nature’s Balance as a premium brand in the
-                            market. My project was completed successfully and on
-                            time."
+                  "After researching several branding and design agencies, I connected with Mr. Paras Kalra. I really appreciate the hard work he and his team put in to position Nature’s Balance as a premium brand in the market. We’re now a trusted and commercially successful brand."
                 </p>
                 </div>
 
@@ -173,11 +168,7 @@ function LPBradingServicesTestimonial() {
 
                 <div className="lp-testimonial-para-bst-div">
                 <p className="lp-testimonial-para-bst">
-                  "Our association with DN Designs was very fruitful.
-                            They handled the entire branding for us, right from
-                            consultation to the final launch of the products in
-                            the retail market. Customer feedback is simply
-                            amazing. Great Work Team! Way to Go!"
+                  "Our association with DN Designs was very fruitful. They handled the entire branding for us, right from consultation to the final launch of the products in the retail market. Customer feedback is simply amazing. And the business growth that followed is incredible! Great Work Team! Way to Go!"
                 </p>
                 </div>
 
