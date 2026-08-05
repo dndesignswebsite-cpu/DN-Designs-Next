@@ -319,7 +319,7 @@ function page() {
 
 
         <div className='row'>
-          <div className='col mt-4'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
           <div className='foundation-col'>
             <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/>
           </div>
@@ -341,7 +341,7 @@ function page() {
           </div>
           </div> 
 
-          <div className='col mt-4'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
           <div className='foundation-col'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className='img-fluid foundation-col-img'/> */}
             
@@ -409,9 +409,9 @@ function page() {
           <div className='col-div-left mt-4'>
             <div className='what-we-can-do-col-left'>
             <div className='what-we-can-do-col-left-content'>
-                <p className='asthetic-para-label'>Foundation</p>
+                <p className='asthetic-para-label'>Brand Strategy</p>
                 <h2 className='asthetic-head'>Consultation & Research</h2>
-                <p className='asthetic-para-desc'>We map your category, competitors, audience, what's winning shelf space and why. Every design call downstream traces back to something we found here, not a hunch.</p>
+                <p className='asthetic-para-desc'>We research your category, competitors, and audience to craft a strategy that puts your brand on the path to success. Every design decision that follows is rooted in this strategy.</p>
                 </div>
                 {/* <img src="https://dndesigns.co.in/uploads/pages/lpfrow1colstrategy.jpg" className='img-fluid what-we-can-do-col-left-img'></img> */}
                 <img src="https://dndesigns.co.in/uploads/pages/compreddsedRectangle-25740.jpg" className='img-fluid what-we-can-do-col-left-img'></img>
