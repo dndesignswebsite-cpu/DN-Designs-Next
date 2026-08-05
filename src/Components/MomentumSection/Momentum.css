@@ -1,0 +1,45 @@
+.momentum-wrapper {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-fluid-custom{
+    max-width: 1400px;
+}
+
+.animated-text-on-scroll {
+  color: #1154A8;
+  text-align: center;
+  font-family: var(--font-corbert);
+  line-height: 1.4em;
+  font-weight: 1000;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.word-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.word-inner {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+@media(max-width:991px){
+    .animated-text-on-scroll{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px){
+    .animated-text-on-scroll{
+        font-size: 25px;
+        line-height: 1.2em;
+    }
+}
