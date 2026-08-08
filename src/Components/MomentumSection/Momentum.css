@@ -1,45 +1,62 @@
-.momentum-wrapper {
-  padding: 100px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.container-fluid-custom{
-    max-width: 1400px;
-}
-
-.animated-text-on-scroll {
+/* .animated-text-on-scroll {
   color: #1154A8;
-  text-align: center;
   font-family: var(--font-corbert);
-  line-height: 1.4em;
-  font-weight: 1000;
-  font-size: 50px;
-  text-transform: uppercase;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 55px;
+} */
+
+/* Word aur Space handlers */
+.word-group {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-.word-wrapper {
+.space-wrapper {
+  display: inline-block;
+}
+
+/* Character level clipping for letters */
+.char-wrapper {
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
 }
 
-.word-inner {
+.char-inner {
   display: inline-block;
   will-change: transform, opacity;
 }
 
-@media(max-width:991px){
-    .animated-text-on-scroll{
-        font-size: 35px;
-    }
+
+.animated-text-on-scroll {
+  color: #1154A8;
+  font-family: var(--font-corbert);
+  line-height: 1.2em;
+  font-weight: 700;
 }
 
-@media(max-width:991px){
-    .animated-text-on-scroll{
-        font-size: 25px;
-        line-height: 1.2em;
-    }
+.word-group {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.space-wrapper {
+  display: inline-block;
+}
+
+.char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.char-inner {
+  display: inline-block;
+  will-change: transform, opacity;
+  /* IMPORTANT: hidden by default via CSS itself — page load hote hi
+     yehi paint hoga, JS ka wait nahi karna padega. Isse "flash of
+     visible text before JS hides it" glitch khatam ho jaata hai. */
+  opacity: 0;
+  transform: translateY(110%);
 }

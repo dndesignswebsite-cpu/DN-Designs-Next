@@ -1,0 +1,25 @@
+.momentum-para-outer {
+  position: relative;
+}
+
+.momentum-para-measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.line-wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.line-inner {
+  display: inline-block;
+  will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(110%);
+}
