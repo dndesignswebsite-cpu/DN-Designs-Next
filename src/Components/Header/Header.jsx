@@ -705,7 +705,7 @@ export default function Header() {
                     <p>+91 720 660 5872</p> */}
 
                     <p className={`${styles["header-desktop-mobile-number"]}`}>
-                      <a href="tel:+919416011100">+91 941 601 1100</a>
+                      <a href="tel:+91 8683911100">+91 868 391 1100</a>
                     </p>
 
                     <p className={`${styles["header-desktop-mobile-number"]}`}>
