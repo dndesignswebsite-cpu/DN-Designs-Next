@@ -1,0 +1,307 @@
+@import url("https://use.typekit.net/kub7grf.css");
+
+.at-one-am-case-study-page{
+    background-color: rgba(254, 243, 227, 1);
+}
+
+.container-fluid-custom{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* banner-after-hero-img */
+.banner-after-hero-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    margin-top: -320px;
+}
+.banner-after-hero-img{
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+/* para-desc-para-section */
+.para-desc-para-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.para-desc-para{
+    text-align: center;
+    color: #1154A8;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1em;
+    font-family: neutronic-condensed;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+   
+}
+
+/* at-one-am-logo */
+.at-one-am-logo-section{
+    margin: 50px 0;
+}
+.at-one-am-logo{
+    width: 20%;
+}
+
+.container-fluid-custom-for-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.at-one-am-font{
+ font-family: "neutronic-condensed";
+font-weight: 700;
+font-style: normal;
+}
+
+
+
+
+
+
+
+/* sticky */
+.sticky-section-parent{
+    padding: 50px 0;
+    position: relative;
+}
+
+.sticky-section-text{
+    color: #1154A8;
+  /* font-family: var(--font-corbert); */
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 90px;
+}
+
+/* images */
+.sticky-section-div{
+position: sticky;
+top: 100px;
+display: flex;
+justify-content: space-between;
+}
+
+.sticky-section-img-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 80px 0;
+}
+
+.sticky-section-img-left{
+    width: 50%;
+    z-index: 22;
+    /* border-radius: 20px; */
+}
+
+.sticky-section-img-right{
+    width: 40%;
+    z-index: 22;
+    /* border-radius: 20px; */
+}
+
+.sticky-section-img-div-two{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    gap: 30px;
+    padding: 80px 0;
+}
+
+.sticky-section-img-div-three{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 100px;
+    padding: 80px 0;
+    justify-content: space-between;
+}
+
+
+/* blue-background-section */
+.blue-background-section{
+    background-color: rgba(17, 84, 168, 1);
+    padding: 200px 0;
+    margin-top: 150px;
+}
+
+.banner-image-section{
+    margin-top: -250px;
+}
+
+.negative-margin-text{
+      margin-top: -250px;
+      padding: 0 80px;
+      margin-bottom: 100px;
+}
+
+
+/* second-section-stack-img */
+.second-section-stack-img{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+}
+
+.sticky-section-two-img-div-two{
+    z-index: 22;
+    position: relative;
+    gap: 20px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+.footer-section{
+    padding: 60px 0;
+}
+.btn-div-col{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.blue-footer-btn{
+    background-color: rgba(255, 108, 53, 1);
+    color: rgba(17, 84, 168, 1);
+    text-transform: uppercase;
+    font-family: "neutronic-condensed";
+font-weight: 700;
+font-style: normal;
+font-size: 18px;
+padding: 8px 20px;
+border-radius: 8PX;
+}
+
+.orange-footer-btn{
+    background-color: rgba(17, 84, 168, 1);
+    color:  rgba(255, 108, 53, 1);
+    text-transform: uppercase;
+    font-family: "neutronic-condensed";
+font-weight: 700;
+font-style: normal;
+font-size: 18px;
+padding: 8px 20px;
+border-radius: 8PX;
+}
+
+.btn-div{
+    display: flex;
+    gap: 7px;
+}
+
+.footer-right-col{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+.footer-right-col-head{
+    font-family: "neutronic-condensed";
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(17, 84, 168, 1);
+    text-transform: uppercase;
+}
+
+.footer-right-col-para{
+    font-family: "neutronic-condensed";
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(17, 84, 168, 1);
+    
+}
+
+@media(max-width:767px){
+    .footer-right-col{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    margin-top: 20px;
+}
+}
+
+/* skate-board-div */
+.skate-board-div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: -250px;
+    position: relative;
+    z-index: 30;
+    width
+: 100%;
+}
+
+.skate-borad-img{
+    width:50%; 
+}
+
+
+.at-one-am-video-after-banner{
+    width: 40%;
+    height: 100%;
+    z-index: 22;
+}
+
+/* alone two images after slider */
+.alone-two-images{
+    padding: 60px 0;
+}
+.alone-two-images-after-slider-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+
+/* for responsive */
+
+@media(max-width:991px){
+    .para-desc-para{
+        font-size: 50px;
+    }
+    .sticky-section-text{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:767px){
+    .para-desc-para{
+        font-size: 30px;
+    }
+    .at-one-am-logo{
+        width: 50%;
+    }
+      .sticky-section-text{
+        font-size: 30px;
+    }
+}

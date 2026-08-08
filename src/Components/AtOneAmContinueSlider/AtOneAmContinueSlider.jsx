@@ -4,20 +4,21 @@ import "./AtOneAmContinueSlider.css";
 
 export default function AtOneAmContinueSlider() {
   const slides = [
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider1.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider2.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider3.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider4.jpg",
   ];
 
    const slides_two = [
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
-    "https://dndesigns.co.in/uploads/pages/brand-strategydesktopbanner.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider5.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider6.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider7.jpg",
+    "https://dndesigns.co.in/uploads/pages/atoneamcasestudyslider8.jpg",
   ];
 
   return (
+    <div className="atoneam-continue-slider">
     <div className="slider-wrapper">
 
       {/* Row 1 */}
@@ -42,6 +43,7 @@ export default function AtOneAmContinueSlider() {
         </div>
       </div>
 
+    </div>
     </div>
   );
 }
