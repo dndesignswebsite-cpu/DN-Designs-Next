@@ -16,6 +16,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
+import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 
 // meta tags
 export async function generateMetadata() {
@@ -624,14 +625,19 @@ async function page() {
 
       {/* industries we serve */}
       {/* <LPBrandIdentityCategorySwipper/> */}
-      <HomePageIndustriesSwipper/>
+      {/* <HomePageIndustriesSwipper/> */}
+
+       {/* IndustriesSectionNewLayout */}
+        <IndustriesSectionNewLayout/>
       
 
       {/* our work service tabs */}
       <OurWorkServiceTabs />
 
-      {/* faqs */}
+     
+     
 
+      {/* faqs */}
       <section className="faqs">
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>

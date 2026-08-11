@@ -24,6 +24,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import AtOneAm from '@/Components/AtOneAm/AtOneAm';
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
+import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
 
 
 
@@ -308,7 +309,10 @@ async function page() {
 
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            {/* IndustriesSectionNewLayout */}
+        <IndustriesSectionNewLayout/>
+        
             
 
 

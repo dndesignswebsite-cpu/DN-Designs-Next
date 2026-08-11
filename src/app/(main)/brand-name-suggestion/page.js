@@ -550,7 +550,7 @@ async function page() {
 
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
-            <HomePageIndustriesSwipper/>
+            {/* <HomePageIndustriesSwipper/> */}
          
 
       {/* faqs */}

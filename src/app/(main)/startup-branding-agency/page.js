@@ -26,6 +26,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import BrandIdentityDesignServicesBanner from '@/Components/BrandIdentityDesignServicesBanner/BrandIdentityDesignServicesBanner';
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 import HomePageIndustriesSwipper from '@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper';
+import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
 
 
 
@@ -579,7 +580,10 @@ async function page() {
 
 {/* industries we serve */}
       {/* <LPBrandIdentityCategorySwipper/> */}
-      <HomePageIndustriesSwipper/>
+      {/* <HomePageIndustriesSwipper/> */}
+      {/* IndustriesSectionNewLayout */}
+              <IndustriesSectionNewLayout/>
+              
 
       
 

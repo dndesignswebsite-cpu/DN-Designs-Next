@@ -17,6 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
+import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 
 // meta data
 export async function generateMetadata() {
@@ -988,7 +989,11 @@ async function page() {
 
       {/* industries we serve */}
       {/* <LPBrandIdentityCategorySwipper/> */}
-      <HomePageIndustriesSwipper/>
+      {/* <HomePageIndustriesSwipper/> */}
+
+      {/* IndustriesSectionNewLayout */}
+              
+              <IndustriesSectionNewLayout/>
       
 
       {/* faqs */}
