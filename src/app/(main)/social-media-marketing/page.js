@@ -853,7 +853,7 @@ async function page() {
       </section> */}
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
-            <HomePageIndustriesSwipper/>
+            {/* <HomePageIndustriesSwipper/> */}
            
 
 

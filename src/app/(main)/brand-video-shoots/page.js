@@ -268,7 +268,7 @@ async function page() {
 
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
-            <HomePageIndustriesSwipper/>
+            {/* <HomePageIndustriesSwipper/> */}
             
 
       {/* Our Portfolio,, */}

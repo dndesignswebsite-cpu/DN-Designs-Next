@@ -101,7 +101,7 @@ justify-content: space-between;
 }
 
 .sticky-section-img-left{
-    width: 50%;
+    width: 45%;
     z-index: 22;
     /* border-radius: 20px; */
 }
@@ -284,7 +284,7 @@ border-radius: 8PX;
 
 
 /* for responsive */
-
+/* section 1 */
 @media(max-width:991px){
     .para-desc-para{
         font-size: 50px;
@@ -304,4 +304,229 @@ border-radius: 8PX;
       .sticky-section-text{
         font-size: 30px;
     }
+    .negative-margin-text{
+      margin-top: -150px;
+      padding: 0 30px;
+      margin-bottom: 00px;
 }
+}
+
+
+/* section after hero section */
+ .section-one-for-mobile{
+        display: none;
+    }
+@media(max-width:767px){
+    .section-one-for-desktop{
+        display: none;
+    }
+    .section-one-for-mobile{
+        display: block;
+    }
+
+    .blue-background-section{
+    background-color: rgba(17, 84, 168, 1);
+    padding: 100px 0;
+    margin-top: 60px;
+}
+.banner-image-section{
+    margin-top: -130px;
+}
+}
+
+.section-one-div-two{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+
+
+.section-one-div-two-para-one{
+    font-family: "neutronic-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: rgba(17, 84, 168, 1);
+padding: 10px 0;
+font-size: 16px;
+}
+
+.sticky-section-img-left-mobile{
+    width: 70%;
+}
+.sticky-section-img-left-mobile-div-2{
+    width: 60%;
+}
+
+.section-one-div-three{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.sticky-section-img-right-mobile-div-3{
+    width: 40%;
+}
+
+.at-one-am-video-after-banner-for-mobile{
+    width: 50%;
+}
+
+.section-one-div-four{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 40px;
+}
+
+
+/* section 2 images */
+.sticky-section-img-left-section-2{
+    width: 40%;
+    z-index: 22;
+}
+
+.at-one-am-video-section-two-video-one{
+    width: 38%;
+    z-index: 22;
+}
+
+.at-one-am-section-2-video-2{
+    width: 30%;
+}
+
+.atoneamsectionseond-image-two{
+    width: 65%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.sticky-section-img-left-mobile{
+    width: 45%;
+}
+
+/* for responsive */
+.section-two-for-mobile{
+        display: none;
+    }
+@media(max-width:767px){
+    .section-two-for-desktop{
+        display: none;
+    }
+    .section-two-for-mobile{
+        display: block;
+    }
+    .at-one-am-video-section-two-video-one{
+        width: 50%;
+    }
+
+    .at-one-am-section-2-video-2 {
+        width: 50%;
+    }
+    .sticky-section-img-left-mobile{
+        width: 80%;
+    }
+    .atoneamsectionseond-image-two{
+        width: 80%;
+        padding-left: 0;
+    }
+}
+
+.sticky-section-img-left-section-2-mobile{
+    width:60%;
+}
+
+.section-two-div-two-mobile{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+
+/* section 2.5   alone two images after slider section 2.5 */
+.alone-two-images-mobile{
+        display: none;
+    }
+@media(max-width:767px){
+    .alone-two-images-mobile{
+        display: block;
+    }
+    .alone-two-images-desktop{
+        display: none;
+    }
+    .alone-two-images-after-slider-div{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .alone-two-images-after-slider-div-second-image-div{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        align-items: end;
+    }
+
+    .sticky-section-img-right-alone{
+        width:50%;
+    }
+
+    .sticky-section-img-left-alone{
+        width:50%;
+    }
+}
+
+
+/* skate board */
+.skate-board-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .skate-board-mobile{
+    display: block;
+}
+.skate-board-desktop{
+    display: none;
+}
+}
+
+.skate-board-section-mobile-img-one{
+    width: 100%;
+}
+
+.skate-board-section-mobile-img-one{
+    width: 60%;
+}
+
+.skate-board-mobile-div-two{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+
+/* section after skate board  */
+.section-after-skate-and-box-div{
+    display: flex;
+}
+
+.section-after-skate-and-box-div-child-img-one{
+    width: 50%;
+    /* height: 100%; */
+}
+.section-after-skate-and-box-div-child-video-one{
+    width: 50%;
+}
+
+
+

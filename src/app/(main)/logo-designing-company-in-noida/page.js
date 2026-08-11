@@ -13,6 +13,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 
 // meta tags
 export async function generateMetadata() {
@@ -1479,7 +1480,10 @@ async function page() {
       />
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            {/* IndustriesSectionNewLayout */}
+        <IndustriesSectionNewLayout/>
+      
             
 
       {/* faqs */}

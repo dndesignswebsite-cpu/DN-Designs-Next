@@ -20,6 +20,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 
 // meta data
 export async function generateMetadata() {
@@ -379,7 +380,10 @@ async function page() {
       </section>
 
         {/* industries we serve */}
-            <LPBrandIdentityCategorySwipper/>
+            {/* <LPBrandIdentityCategorySwipper/> */}
+            {/* IndustriesSectionNewLayout */}
+        <IndustriesSectionNewLayout/>
+      
             
 
       {/* our work tabs */}
