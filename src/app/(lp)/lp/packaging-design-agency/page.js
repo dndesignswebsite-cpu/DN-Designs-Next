@@ -7,6 +7,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPPureluxVideo from '@/Components/OurWorkHomeSection/LPPureLuxVideo';
+import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 
 function page() {
 
@@ -599,8 +600,11 @@ Real products, real categories, real results.</p>
 
 
 {/* LPFAQ */}
+
       <div id="faq">
+      <div className='class-for-margin'>
       <LPFAQ  leftFaqs={leftFaqs}/>
+      </div>
       </div>
 
 
@@ -611,6 +615,7 @@ Real products, real categories, real results.</p>
             <LPFooter />
       
                 
+<LPStickyCTAFooter/>
 
 
 

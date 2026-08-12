@@ -17,6 +17,7 @@ import AOSProvider from "@/Components/AosProvider/AosProvider";
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import IndustriesPageHero from "@/Components/IndustriesPageHero/IndustriesPageHero";
 
 
 
@@ -102,6 +103,77 @@ async function page() {
           }
         }
         // --- SCHEMA CLEANING LOGIC END ---
+
+        // hero banner data
+        let heroLabel = "Turning Recipes and Formulas Into Brands People Trust";
+        let heroHead = "Food And Beverage Branding Agency";
+        let heroParaDesc = " A food or beverage brand gets judged in seconds, on a shelf, in a delivery app, or on a scroll, much before anyone actually tastes the product itself. Packaging, logo, messaging, colour, and other elements do the convincing first. And with D2C brands and legacy FMCG names, all fighting for the same eyeballs, that first impression has never mattered more. DN Designs works as a food and beverage branding agency, crafting strategy, identities, packaging, and go‑to‑market systems that turn products into brands people remember and buy from.";
+
+        const phases = [
+  {
+    number: "01",
+    label: "PHASE ONE",
+    title: "Discovery & Category Audit",
+    desc: "We start by understanding your product and studying competitors, shelf context, consumer behaviour, and regulatory constraints. Everything is researched and clarified before a single design concept is proposed, so each recommendation is grounded in how the market actually works. ",
+    // points: [
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+      
+    // ],
+  },
+  {
+    number: "02",
+    label: "PHASE TWO",
+    title: "Strategy & Positioning Planning",
+    desc: "Next comes a defined brand territory, not a mood board but a clear point of view on what the brand stands for, who it's for and why it deserves shelf or app space.",
+    // points: [
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    // ],
+  },
+
+    {
+    number: "03",
+    label: "PHASE THREE",
+    title: "The Design Implementation",
+    desc: "This is where design takes centre stage. Brand identity, packaging and websites are designed and developed with your vision and feedback integrated at every step. ",
+    // points: [
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    // ],
+  },
+
+    {
+    number: "04",
+    label: "PHASE FOUR",
+    title: "Go-to-Market Planning ",
+    desc: "At this stage, we build your GTM strategy: where to sell, who to sell to, as well as how to price and distribute products and acquire and retain customers. This strategy ensures your business launches strong and grows consistently across physical and digital platforms. ",
+    // points: [
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    // ],
+  },
+
+    {
+    number: "05",
+    label: "PHASE FIVE",
+    title: "Launch & Monitoring",
+    desc: "Once a brand is live, we track the response and refine messaging, packaging, or positioning if needed.  ",
+    // points: [
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    //   "COMPETITIVE LANDSCAPE MAPPING",
+    // ],
+  },
+];
+
+ let phaseLabel = "Our Process";
+ let phaseHead = "How We Take a Brand From Idea to Shelf ";
+
       
     // standalone
       const cards = [
@@ -243,10 +315,11 @@ async function page() {
         <Breadcrumb />
       </section>
 
-      
+       {/* fnb page hero */}
+       <IndustriesPageHero heroLabel={heroLabel} heroHead={heroHead} heroParaDesc={heroParaDesc}/>
 
       {/* fnb page hero */}
-      <section className="fnb-page-hero">
+      {/* <section className="fnb-page-hero">
         <div className="container">
           <div className="row">
 
@@ -271,7 +344,7 @@ async function page() {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -535,7 +608,6 @@ async function page() {
             </section>
 
             {/* everything-a-food */}
-
             <section className="everything-a-food-section">
               <div className="container">
               <div className="everything-a-food-section-head-div">
@@ -647,7 +719,7 @@ async function page() {
 
       {/* OUR STRATEGIC FRAMEWORK desktop*/}
       <div className="fnb-our-framework-dektop">
-      <StrategicFrameworkFNB/>
+      <StrategicFrameworkFNB phases={phases} phaseLabel={phaseLabel} phaseHead={phaseHead}/>
       </div>
 
       {/* OUR STRATEGIC FRAMEWORK mobile*/}

@@ -3,71 +3,69 @@
 import { useEffect, useRef } from "react";
 import "./StrategicFrameworkFNB.css";
 
-const phases = [
-  {
-    number: "01",
-    label: "PHASE ONE",
-    title: "Discovery & Category Audit",
-    desc: "We start by understanding your product and studying competitors, shelf context, consumer behaviour, and regulatory constraints. Everything is researched and clarified before a single design concept is proposed, so each recommendation is grounded in how the market actually works. ",
-    // points: [
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
+// const phases = [
+//   {
+//     number: "01",
+//     label: "PHASE ONE",
+//     title: "Discovery & Category Audit",
+//     desc: "We start by understanding your product and studying competitors, shelf context, consumer behaviour, and regulatory constraints. Everything is researched and clarified before a single design concept is proposed, so each recommendation is grounded in how the market actually works. ",
+//     // points: [
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
       
-    // ],
-  },
-  {
-    number: "02",
-    label: "PHASE TWO",
-    title: "Strategy & Positioning Planning",
-    desc: "Next comes a defined brand territory, not a mood board but a clear point of view on what the brand stands for, who it's for and why it deserves shelf or app space.",
-    // points: [
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    // ],
-  },
+//     // ],
+//   },
+//   {
+//     number: "02",
+//     label: "PHASE TWO",
+//     title: "Strategy & Positioning Planning",
+//     desc: "Next comes a defined brand territory, not a mood board but a clear point of view on what the brand stands for, who it's for and why it deserves shelf or app space.",
+//     // points: [
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     // ],
+//   },
 
-    {
-    number: "03",
-    label: "PHASE THREE",
-    title: "The Design Implementation",
-    desc: "This is where design takes centre stage. Brand identity, packaging and websites are designed and developed with your vision and feedback integrated at every step. ",
-    // points: [
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    // ],
-  },
+//     {
+//     number: "03",
+//     label: "PHASE THREE",
+//     title: "The Design Implementation",
+//     desc: "This is where design takes centre stage. Brand identity, packaging and websites are designed and developed with your vision and feedback integrated at every step. ",
+//     // points: [
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     // ],
+//   },
 
-    {
-    number: "04",
-    label: "PHASE FOUR",
-    title: "Go-to-Market Planning ",
-    desc: "At this stage, we build your GTM strategy: where to sell, who to sell to, as well as how to price and distribute products and acquire and retain customers. This strategy ensures your business launches strong and grows consistently across physical and digital platforms. ",
-    // points: [
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    // ],
-  },
+//     {
+//     number: "04",
+//     label: "PHASE FOUR",
+//     title: "Go-to-Market Planning ",
+//     desc: "At this stage, we build your GTM strategy: where to sell, who to sell to, as well as how to price and distribute products and acquire and retain customers. This strategy ensures your business launches strong and grows consistently across physical and digital platforms. ",
+//     // points: [
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     // ],
+//   },
 
-    {
-    number: "05",
-    label: "PHASE FIVE",
-    title: "Launch & Monitoring",
-    desc: "Once a brand is live, we track the response and refine messaging, packaging, or positioning if needed.  ",
-    // points: [
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    //   "COMPETITIVE LANDSCAPE MAPPING",
-    // ],
-  },
+//     {
+//     number: "05",
+//     label: "PHASE FIVE",
+//     title: "Launch & Monitoring",
+//     desc: "Once a brand is live, we track the response and refine messaging, packaging, or positioning if needed.  ",
+//     // points: [
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     //   "COMPETITIVE LANDSCAPE MAPPING",
+//     // ],
+//   },
+// ];
 
-  
-];
-
-export default function StrategicFrameworkFNB() {
+export default function StrategicFrameworkFNB({phases, phaseHead, phaseLabel}) {
   const rowRefs = useRef([]);
 
   useEffect(() => {
@@ -112,13 +110,15 @@ export default function StrategicFrameworkFNB() {
       <div className="container">
         <div className="our-stregetic-framework-head-content-div">
           <p className="our-stregetic-framework-label-para">
-            Our Process
+            {/* Our Process */}
+            {phaseLabel}
           </p>
           <h2 className="our-stregetic-framework-head">
-            How We Take a Brand From {" "}
+            {/* How We Take a Brand From {" "}
             <span className="our-stregetic-framework-head-span">
               Idea to Shelf 
-            </span>
+            </span> */}
+            {phaseHead}
           </h2>
         </div>
 
