@@ -491,7 +491,6 @@ async function page() {
       </section>
 
       {/*The Protagonists */}
-
       <section className="appr-pro-anime">
         <div className="container">
           <div>

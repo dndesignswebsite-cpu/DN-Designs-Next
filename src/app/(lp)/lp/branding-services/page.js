@@ -13,6 +13,7 @@ import LPWhatWeCanBrandingServices from '@/Components/LPWhatWeCanBrandingService
 import LPBrandServicesSwipper from '@/Components/LPBrandServicesSwipper/LPBrandServicesSwipper';
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
+import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 
 
 
@@ -513,6 +514,9 @@ function page() {
       {/* footer */}
       <LPFooter />
       {/* <LPFooterTwo/> */}
+
+      <LPStickyCTAFooter/>
+      
 
 
             

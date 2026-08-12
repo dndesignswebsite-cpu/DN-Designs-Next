@@ -7,6 +7,7 @@ import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimon
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
 import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPPureluxVideo from '@/Components/OurWorkHomeSection/LPPureLuxVideo';
+import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 
 function page() {
 
@@ -680,7 +681,9 @@ function page() {
 
 {/* LPFAQ */}
       <div id="faq">
+      <div className='class-for-margin'>
       <LPFAQ  leftFaqs={leftFaqs}/>
+      </div>
       </div>
 
 
@@ -691,6 +694,7 @@ function page() {
             <LPFooter />
       
                 
+<LPStickyCTAFooter/>
 
 
 

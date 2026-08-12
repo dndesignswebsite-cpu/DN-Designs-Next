@@ -14,6 +14,7 @@ import AOSProvider from '@/Components/AosProvider/AosProvider'
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
 
 
 
@@ -386,6 +387,13 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+
+
+
+      {/* video on scroll box opening */}
+      <AtOneAmVideoOnScroll/>
 
 
 

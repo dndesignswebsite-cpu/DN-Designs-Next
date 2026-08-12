@@ -384,6 +384,7 @@
 .branding-services-hero{
     position: relative;
     min-height: 100vh;
+    z-index: 110 !important;
 }
 
 .branding-services-hero-container{
