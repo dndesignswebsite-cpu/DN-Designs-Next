@@ -9,6 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from 'next/link';
 
 function IndustriesSectionNewLayout() {
     const [activeSlide, setActiveSlide] = useState(6);
@@ -78,11 +79,13 @@ function IndustriesSectionNewLayout() {
                 */}
            
 
+              
              <div className={`citypagewiper-slide-i img1 img ${
         activeSlide === 1 ? "active" : ""
     }`}
     onMouseEnter={() => setActiveSlide(1)}
     onMouseLeave={() => setActiveSlide(6)}>
+    <Link href="/food-beverage-branding">
                              <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionFOOD-AND-BEVERAGES.jpg"}
                            alt="Green Horn Catalogue"
                             width={750} 
@@ -90,18 +93,23 @@ function IndustriesSectionNewLayout() {
                             className="responsive-img city-page-swiperr-slide-img responsive-img" 
                             sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
                             />
-                           
+                            </Link>
+                           <Link href="/food-beverage-branding">
                             <div className="cityswiperoverlay-a">
                               <h3>{cityPagesSlideData.slide_1_slide_head}</h3>
                               <p>{cityPagesSlideData.slide_1_slide_para}</p>
                             </div>
+                            </Link>
                           </div>
+                          
 
+                           
                           <div className={`citypagewiper-slide-i img2 img ${
         activeSlide === 2 ? "active" : ""
     }`}
     onMouseEnter={() => setActiveSlide(2)}
     onMouseLeave={() => setActiveSlide(6)}>
+    <Link href="fmcg-branding">
                              <Image src={"https://dndesigns.co.in/uploads/pages/wjegdhvjFMCG.jpg.jpeg"}
                            alt="Green Horn Catalogue"
                             width={750} 
@@ -109,12 +117,15 @@ function IndustriesSectionNewLayout() {
                             className="responsive-img city-page-swiperr-slide-img responsive-img" 
                             sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
                             />
-                           
+                             </Link>
+                           <Link href="fmcg-branding">
                             <div className="cityswiperoverlay-a">
                               <h3>{cityPagesSlideData.slide_2_slide_head}</h3>
                               <p>{cityPagesSlideData.slide_2_slide_para}</p>
                             </div>
+                            </Link>
                           </div>
+                         
 
 
                           <div className={`citypagewiper-slide-i img3 img ${

@@ -111,6 +111,7 @@ function HomePageIndustriesSwipper() {
 
           {/* SLIDE 2 */}
           <SwiperSlide>
+          <Link href="/fmcg-branding">
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/wjegdhvjFMCG.jpg.jpeg"}
                alt="Green Horn Catalogue"
@@ -125,6 +126,7 @@ function HomePageIndustriesSwipper() {
                   <p>{cityPagesSlideData.slide_2_slide_para}</p>
                 </div>
               </div>
+              </Link>
           </SwiperSlide>
 
           {/* SLIDE 3 */}
