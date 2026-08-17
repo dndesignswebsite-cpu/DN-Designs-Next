@@ -233,6 +233,10 @@ async function page() {
     {
       mobileImage: "https://dndesigns.co.in/uploads/pages/roi.jpg",
     },
+
+    {
+      mobileImage: "https://dndesigns.co.in/uploads/pages/influencermarketingnewupdatecost-saving.jpg",
+    },
   ];
 
   // form section content

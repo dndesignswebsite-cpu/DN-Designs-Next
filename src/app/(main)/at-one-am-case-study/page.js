@@ -15,6 +15,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
+import AtOneAmBoxBottle from '@/Components/AtOneAmBoxBottle/AtOneAmBoxBottle';
 
 
 
@@ -358,6 +359,9 @@ async function page() {
           </div>
         </div>
       </section>
+
+      {/* glb section */}
+      <AtOneAmBoxBottle/>
 
       {/* skate board for mobile */}
       <section className='container-fluid-custom skate-board-mobile'>

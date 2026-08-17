@@ -69,19 +69,13 @@ function StandAlonePackaging({ cards, mobileCrads }) {
 
       {/* Standalone Packaging Design Services mobile view */}
 
-      <section>
+      {/* <section>
         <div className="container my-5 d-xl-none d-block">
-          {/* <h2 className="text-center fw-bold packaging-heading mb-4">
-           {cards[0].mainTitle}
-          </h2> */}
+         
 
           <div className="row  standalone-packaging-mobile">
-            <div className="col-md-6 col-12">
-              {/* <img
-                src={mobileCrads[0].mobileImage}
-                alt=""
-                className="img-fluid mb-3 packaging-images"
-              /> */}
+            <div className=" col-12">
+            
 
               <Image
                 src={mobileCrads[0].mobileImage}
@@ -103,12 +97,8 @@ function StandAlonePackaging({ cards, mobileCrads }) {
               </p>
             </div>
 
-            <div className="col-md-6 col-12">
-              {/* <img
-                src={mobileCrads[1].mobileImage}
-                alt=""
-                className="img-fluid mb-3 packaging-images"
-              /> */}
+            <div className=" col-12">
+           
 
               <Image
                 src={mobileCrads[1].mobileImage}
@@ -132,12 +122,8 @@ function StandAlonePackaging({ cards, mobileCrads }) {
           </div>
 
           <div className="row  mt-2">
-            <div className="col-md-6 col-12">
-              {/* <img
-                src={mobileCrads[2].mobileImage}
-                alt=""
-                className="img-fluid mb-3 packaging-images"
-              /> */}
+            <div className=" col-12">
+             
 
               <Image
                 src={mobileCrads[2].mobileImage}
@@ -158,12 +144,8 @@ function StandAlonePackaging({ cards, mobileCrads }) {
               </p>
             </div>
 
-            <div className="col-md-6 col-12">
-              {/* <img
-                src={mobileCrads[3].mobileImage}
-                alt=""
-                className="img-fluid mb-3 packaging-images"
-              /> */}
+            <div className=" col-12">
+            
               <Image
                 src={mobileCrads[3].mobileImage}
                 alt={cards[activeIndex].title}
@@ -182,9 +164,78 @@ function StandAlonePackaging({ cards, mobileCrads }) {
                 {cards[3].description}
               </p>
             </div>
+
+
+              <div className=" col-12">
+          
+              <Image
+                src={mobileCrads[4].mobileImage}
+                alt={cards[activeIndex].title}
+                className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+                width={800}
+                height={533}
+                sizes="(max-width:767px) 100vw, 100vw"
+              />
+              <div className="d-flex align-items-center">
+                <h3 className="fw-bold packaging-point-number m-0">05</h3>
+                <h4 className="fw-semibold packaging-points-title ms-4 text-start">
+                  {cards[4].title}
+                </h4>
+              </div>
+              <p className="mt-4 packaging-points-para text-start">
+                {cards[4].description}
+              </p>
+            </div>
+
+
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      {/* Standalone Packaging Design Services mobile view */}
+
+<section>
+  <div className="container my-5 d-xl-none d-block">
+    <div className="row standalone-packaging-mobile">
+      {mobileCrads?.map((mobileCard, index) => {
+        const card = cards?.[index];
+
+        // Agar corresponding card nahi hai to render mat karo
+        if (!card) return null;
+
+        return (
+          <div className="col-12" key={card.id || index}>
+            <Image
+              src={mobileCard.mobileImage}
+              alt={card.title}
+              className="img-fluid mb-3 packaging-images standalone-mobile-aspect-img"
+              width={800}
+              height={533}
+              sizes="(max-width:767px) 100vw, 100vw"
+            />
+
+            <div className="d-flex align-items-center">
+              <h3 className="fw-bold packaging-point-number m-0">
+                {card.point || String(index + 1).padStart(2, "0")}
+              </h3>
+
+              <h4 className="fw-semibold packaging-points-title ms-4 text-start">
+                {card.title}
+              </h4>
+            </div>
+
+            <p className="mt-4 packaging-points-para text-start">
+              {card.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+
     </div>
   );
 }

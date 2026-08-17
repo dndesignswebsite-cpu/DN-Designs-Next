@@ -2,7 +2,7 @@ import React from 'react'
 import TalkToUs from '../TalkToUs/TalkToUs'
 import "./IndustriesPageHero.css"
 
-function IndustriesPageHero({heroLabel,heroHead, heroParaDesc}) {
+function IndustriesPageHero({heroLabel,heroHead, heroParaDesc, pageHeroimgurl}) {
   return (
     <div>
        {/* fnb page hero */}
@@ -25,7 +25,7 @@ function IndustriesPageHero({heroLabel,heroHead, heroParaDesc}) {
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
                 <div className="fnb-page-hero-img-col">
-                    <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesherobannerimagerevised.webp.jpeg" className="img-fluid fnb-page-hero-img-col-img"></img>
+                    <img src={pageHeroimgurl} className="img-fluid fnb-page-hero-img-col-img"></img>
                 </div>
             </div>
 

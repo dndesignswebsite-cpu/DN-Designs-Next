@@ -179,6 +179,9 @@ async function page() {
     {
       mobileImage: "https://dndesigns.co.in/uploads/pages/rebrandingmobile4.jpg",
     },
+    {
+      mobileImage: "https://dndesigns.co.in/uploads/pages/newupdaterebrandingmobile5.jpg"
+    }
   ];
 
 
