@@ -108,6 +108,7 @@ async function page() {
         let heroLabel = "Turning Recipes and Formulas Into Brands People Trust";
         let heroHead = "Food And Beverage Branding Agency";
         let heroParaDesc = " A food or beverage brand gets judged in seconds, on a shelf, in a delivery app, or on a scroll, much before anyone actually tastes the product itself. Packaging, logo, messaging, colour, and other elements do the convincing first. And with D2C brands and legacy FMCG names, all fighting for the same eyeballs, that first impression has never mattered more. DN Designs works as a food and beverage branding agency, crafting strategy, identities, packaging, and go‑to‑market systems that turn products into brands people remember and buy from.";
+        let pageHeroimgurl = "https://dndesigns.co.in/uploads/pages/foodandbaveragesherobannerimagerevised.webp.jpeg"
 
         const phases = [
   {
@@ -316,7 +317,7 @@ async function page() {
       </section>
 
        {/* fnb page hero */}
-       <IndustriesPageHero heroLabel={heroLabel} heroHead={heroHead} heroParaDesc={heroParaDesc}/>
+       <IndustriesPageHero heroLabel={heroLabel} heroHead={heroHead} heroParaDesc={heroParaDesc} pageHeroimgurl={pageHeroimgurl}/>
 
       {/* fnb page hero */}
       {/* <section className="fnb-page-hero">
@@ -623,7 +624,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">Brand Strategy</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">Before any design work begins, we define what a food or beverage brand stands for: its positioning, values and the promise it can actually keep. This foundation shapes every decision that follows, from naming to packaging to campaign tone.</p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedtwo.jpg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedstrategy.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>
@@ -636,7 +637,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">Brand Identity</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">A brand's identity is more than a logo; it's the visual and verbal language that makes a product recognisable across a shelf, a delivery app and a social feed. As a food branding and design agency, we build identity systems that scale as SKUs and categories expand.</p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedthree.jpg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedidentity.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>
@@ -649,7 +650,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">Packaging Design</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">As a food and drink branding agency, we build packaging that wins attention first, and trust next. Together, they win customers. Our designs meet regulatory requirements and perform equally well on physical retail shelves, quick commerce, and marketplaces.  </p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfour.jpg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedpackaging-design.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>
@@ -667,7 +668,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">Brand Communication</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">From product copy to social posts, brand communication is where a food brand's personality either lands or falls flat. We build communication that speaks with clarity and confidence, so a brand connects emotionally with its target audience and appears credible.</p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedone.jpeg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedbrand-communication.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>
@@ -680,7 +681,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">Website Design</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">In the digital space, a website is often a food or beverage brand's first real storefront, and it needs to build trust as fast as a shelf pack does in a store. We designs and develop websites that convert browsers into buyers, with SEO built in from day one.</p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedsix.jpg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedwebsite-design.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>
@@ -693,7 +694,7 @@ async function page() {
                         <h2 className="everything-a-food-section-col-content-div-head">GTM Strategy</h2>
                         <p className="everything-a-food-section-col-content-div-para-desc">Launching a food or beverage product takes more than a good recipe: it takes the right launch and expansion strategy, listing strategy, and retail approach. Our GTM strategy maps how a brand actually reaches its first customers and builds momentum.</p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfive.jpg" className="img-fluid everything-a-food-section-col-img"></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedgtm.jpg" className="img-fluid everything-a-food-section-col-img"></img>
                     </div>
                     </Link>
                   </div>

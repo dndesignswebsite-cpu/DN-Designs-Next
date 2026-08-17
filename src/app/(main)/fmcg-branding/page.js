@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import React from "react";
 import "./fmcg-branding.css";
 import IndustriesPageHero from "@/Components/IndustriesPageHero/IndustriesPageHero";
@@ -10,15 +13,103 @@ import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import StandAlonePackaging from "@/Components/StandAlonePackaging/StandAlonePackaging";
 import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
 
-function page() {
+// import Script from "next/script";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
+
+
+
+
+// meta   data
+export async function generateMetadata() {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("fmcg-branding", null, false);
+  } catch (error) {
+    console.log("FMCG Branding", error);
+    return {
+      title: "FMCG Branding",
+      robots: "noindex, nofollow",
+    };
+  }
+  // console.log(seo.content)
+
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
+
+    robots: seo.robotsTag || "index, follow",
+
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
+
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map((img) => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map((img) => img.url)
+        : [],
+    },
+  };
+}
+// ends here
+
+
+async function page() {
+   // ---
+          await connectDB();
+          let pageData;
+          try {
+            pageData = await getPageById("fmcg-branding", null, true);
+          } catch (error) {
+            notFound();
+          }
+        
+          if (!pageData) {
+            notFound();
+          }
+        
+          // ---  SCHEMA CLEANING LOGIC START ---
+          let cleanSchema = "";
+          if (pageData.headCode) {
+            // Script tags remove karke raw JSON nikalna
+            cleanSchema = pageData.headCode
+              .replace(/<script.*?>/gi, "")
+              .replace(/<\/script>/gi, "")
+              .trim();
+            if (cleanSchema.includes('""')) {
+              cleanSchema = cleanSchema.replace(/""/g, '"');
+            }
+          }
+          // --- SCHEMA CLEANING LOGIC END ---
+  
   // hero banner data
   let heroLabel = "Building FMCG Brands That Get Chosen";
   let heroHead = "FMCG Branding Agency in India";
   let heroParaDesc =
     "FMCG brands do not get a second chance at a first impression, not on a shelf, not on a quick commerce app, not in a customer's hand. Every product is competing against dozens fighting for the same three seconds of attention. We work as an FMCG branding agency in India, building identity and packaging that hold up under that pressure. The work starts with strategy, so nothing on the shelf is there by accident.";
+  let pageHeroimgurl = "https://dndesigns.co.in/uploads/pages/heroFMCG-2.jpg.jpeg";
 
   let phaseLabel = "Our Process";
-  let phaseHead = "From Insight to Shelf, Step by Step";
+  let phaseHead = (<>From Insight to Shelf, <span className="every-pr">Step by Step</span></>);
 
   const phases = [
     {
@@ -91,7 +182,7 @@ function page() {
       description:
         "An FMCG brand built to be noticed on a shelf and a grid gets picked up faster, in more places, without relying on discounting to earn attention.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimageone.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-improve-visibility.jpg",
     },
     {
       id: 2,
@@ -100,7 +191,7 @@ function page() {
       description:
         "Consistent positioning and honest claims mean a first-time buyer does not have to think twice. That hesitation is usually what costs a sale.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagefour.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-trust.jpg",
     },
     {
       id: 3,
@@ -109,7 +200,7 @@ function page() {
       description:
         "A strong brand has higher perceived value, fewer stalled purchase decisions and more repeat buys. Result? Increased sales and improved profitability.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagethree.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-revenue.jpg",
     },
     {
       id: 4,
@@ -118,7 +209,7 @@ function page() {
       description:
         "Consistency strengthens brand recognition. One identity across platforms means a brand stays recognisable no matter where a customer meets it next.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagetwo.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-GROWTH-desktop-higher recall value.jpg",
     },
     {
       id: 5,
@@ -127,26 +218,31 @@ function page() {
       description:
         "A brand system built to flex across SKUs and categories means expansion does not have to start from the identity conversation over and over again.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagetwo.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-GROWTH-desktop-READINESS.jpg",
     },
   ];
 
   const mobileCrads = [
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimageone.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-1.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagefour.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-2.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagethree.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-3.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagetwo.jpg",
+        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-4.jpg",
+    },
+
+     {
+      mobileImage:
+        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-5.jpg",
     },
   ];
 
@@ -233,6 +329,18 @@ function page() {
 
   return (
     <div>
+
+     {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "fmcg-branding"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
       {/* breadcrump  */}
       <Breadcrumb />
 
@@ -241,6 +349,7 @@ function page() {
         heroLabel={heroLabel}
         heroHead={heroHead}
         heroParaDesc={heroParaDesc}
+        pageHeroimgurl={pageHeroimgurl}
       />
 
       {/* work portfolio */}
@@ -274,7 +383,7 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
               <div className="port-div">
-                <video
+                {/* <video
                   src="https://dndesigns.co.in/uploads/videos/enli.mp4"
                   width="100%"
                   autoPlay
@@ -282,7 +391,8 @@ function page() {
                   loop
                   playsInline
                   className=""
-                />
+                /> */}
+                <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -305,7 +415,7 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
               <div className="port-div">
-                <video
+                {/* <video
                   src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
                   width="100%"
                   autoPlay
@@ -313,7 +423,8 @@ function page() {
                   loop
                   playsInline
                   className=""
-                />
+                /> */}
+                <img src="https://dndesigns.co.in/uploads/pages/let.jpg" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -388,7 +499,7 @@ function page() {
               <div className="port-div">
                 {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
                 <video
-                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                  src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4"
                   width="100%"
                   autoPlay
                   muted
@@ -439,9 +550,14 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
               <div className="port-div">
-                <img
-                  src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp"
-                  className="img-fluid"
+               <video
+                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
                 />
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -465,7 +581,7 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
               <div className="port-div">
-                <video
+                {/* <video
                   src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
                   width="100%"
                   autoPlay
@@ -473,7 +589,8 @@ function page() {
                   loop
                   playsInline
                   className=""
-                />
+                /> */}
+                <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -653,47 +770,47 @@ function page() {
             </div>
             {/* 2 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Beverages</p>
             </div>
             {/* 3 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Dairy</p>
             </div>
             {/* 4 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Confectionery</p>
             </div>
             {/* 5 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Staples & Grocery</p>
             </div>
             {/* 6 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Staples & Grocery</p>
+              <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Personal Care</p>
             </div>
             {/* 7 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Home Care</p>
             </div>
             {/* 8 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Baby Care</p>
             </div>
             {/* 9 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/wellnessfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Health & Wellness</p>
             </div>
             {/* 10 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconpetcare.svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Pet Care</p>
             </div>
           </div>
@@ -715,7 +832,7 @@ function page() {
 
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/brand-strategy">
+              <Link href="/brand-identity-design-services">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
@@ -732,7 +849,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedtwo.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedidentity.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -740,7 +857,7 @@ function page() {
             </div>
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/brand-identity-design-services">
+              <Link href="/brand-positioning">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
@@ -758,7 +875,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedthree.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/fmcg-pagebrand-positining.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -784,7 +901,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfour.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedpackaging-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -794,7 +911,7 @@ function page() {
 
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/branding">
+              <Link href="/web-designing-services-in-india">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
@@ -811,7 +928,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedone.jpeg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedwebsite-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -819,7 +936,7 @@ function page() {
             </div>
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/web-designing-services-in-india">
+              <Link href="/photography">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
@@ -836,7 +953,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedsix.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/fmcg-pagevisual-assets.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -861,7 +978,7 @@ function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfive.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedgtm.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
