@@ -133,6 +133,7 @@ function IndustriesSectionNewLayout() {
     }`}
     onMouseEnter={() => setActiveSlide(3)}
     onMouseLeave={() => setActiveSlide(6)}>
+    <Link href="wellness-branding">
                              <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionPERSONAL-WELLNESS.jpg"}
                            alt="Green Horn Catalogue"
                             width={750} 
@@ -140,11 +141,13 @@ function IndustriesSectionNewLayout() {
                             className="responsive-img city-page-swiperr-slide-img responsive-img" 
                             sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 33vw"
                             />
-                           
+                            </Link>
+                           <Link href="wellness-branding">
                             <div className="cityswiperoverlay-a">
                               <h3>{cityPagesSlideData.slide_3_slide_head}</h3>
                               <p>{cityPagesSlideData.slide_3_slide_para}</p>
                             </div>
+                            </Link>
                           </div>
 
 

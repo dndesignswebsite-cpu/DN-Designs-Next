@@ -131,6 +131,7 @@ function HomePageIndustriesSwipper() {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
+          <Link href="/wellness-branding">
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionPERSONAL-WELLNESS.jpg"}
                alt="Green Horn Catalogue"
@@ -145,6 +146,7 @@ function HomePageIndustriesSwipper() {
                   <p>{cityPagesSlideData.slide_3_slide_para}</p>
                 </div>
               </div>
+              </Link>
           </SwiperSlide>
 
           {/* SLIDE 4 */}
