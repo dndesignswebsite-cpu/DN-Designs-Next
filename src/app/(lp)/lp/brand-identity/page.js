@@ -10,10 +10,11 @@ import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHo
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIdentity/LPVideoHoverCardBrandIdentity';
 import CursorFollower from '@/Components/CursorFollower/CursorFollower';
-import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
+// import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 import AOSProvider from '@/Components/AosProvider/AosProvider';
 import LPFooter from '@/Components/LPFooterBrandIdentity/LPFooter';
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
+import LPStickyCTAFooter from '@/Components/LPStickyFooterCTABrandIdentity/LPStickyFooterCTABrandIdentity';
 
 
 
@@ -642,8 +643,10 @@ function page() {
       {/* <LPFooter /> */}
       <LPFooter/>
 
-
+<div className='cta-footer-brand-identity'>
     <LPStickyCTAFooter/>
+    
+</div>
 
 
     </div>

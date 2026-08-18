@@ -4,6 +4,10 @@
     display: none;
 }
 
+#enquiry-form{
+    scroll-margin-top: 140px; 
+}
+
 .brands-that-us{
     padding: 80px 0 30px 0;
 }

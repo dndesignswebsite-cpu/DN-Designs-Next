@@ -1,0 +1,793 @@
+/* =========================================
+   DN DESIGNS - 404 PAGE
+   ========================================= */
+
+.dn-404 {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.dn-404-container {
+  position: relative;
+
+  width: min(1180px, 90%);
+
+  padding: 55px 0 35px;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   TOP LABEL
+   ========================================= */
+
+.dn-404-top {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  font-family: var(--font-roboto);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #777777;
+}
+
+
+.dn-404-top-line {
+  width: 42px;
+  height: 2px;
+
+  background: #ca2734;
+
+  display: block;
+}
+
+
+/* =========================================
+   MAIN VISUAL
+   ========================================= */
+
+.dn-404-visual {
+  position: relative;
+
+  margin-top: 18px;
+
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   404 NUMBER
+   ========================================= */
+
+.dn-404-number {
+  display: flex;
+  align-items: center;
+
+  font-family: var(--font-corbert-bold);
+
+  font-size: clamp(180px, 25vw, 360px);
+
+  line-height: 0.72;
+
+  letter-spacing: -0.09em;
+
+  color: #111111;
+
+  user-select: none;
+}
+
+
+.dn-404-number > span {
+  display: inline-block;
+}
+
+
+/* Red zero */
+
+.dn-404-zero {
+  position: relative;
+
+  color: #ca2734;
+
+  transform: rotate(-7deg);
+
+  z-index: 2;
+}
+
+
+/* Tiny dot inside zero */
+
+.dn-404-zero-dot {
+  position: absolute;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #111111;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   EMOJI AREA
+   ========================================= */
+
+.dn-404-emoji-wrap {
+  position: absolute;
+
+  right: 8%;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 150px;
+  height: 150px;
+}
+
+
+.dn-404-emoji-circle {
+  position: absolute;
+
+  width: 125px;
+  height: 125px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #ca2734;
+
+  opacity: 0.1;
+}
+
+
+.dn-404-emoji {
+  position: absolute;
+
+  width: 105px;
+  height: 105px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) rotate(8deg);
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 2px solid #111111;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 55px;
+
+  box-shadow: 8px 8px 0 #ca2734;
+
+  animation: dn404Float 3s ease-in-out infinite;
+}
+
+
+@keyframes dn404Float {
+  0% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+
+  50% {
+    transform: translate(-50%, calc(-50% - 8px)) rotate(3deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+}
+
+
+.dn-404-emoji-label {
+  position: absolute;
+
+  right: -15px;
+  bottom: -8px;
+
+  padding: 7px 12px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-family: var(--font-roboto);
+
+  font-size: 9px;
+
+  border-radius: 30px;
+
+  letter-spacing: 0.5px;
+
+  transform: rotate(-5deg);
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.dn-404-content {
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  align-items: end;
+
+  gap: 80px;
+
+  margin-top: 35px;
+
+  padding-left: 5%;
+}
+
+
+.dn-404-heading {
+  position: relative;
+}
+
+
+.dn-404-small-heading {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-family: var(--font-roboto);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #ca2734;
+}
+
+
+.dn-404-heading h1 {
+  margin: 0;
+
+  font-family: var(--font-corbert-bold);
+
+  font-size: clamp(38px, 4.5vw, 68px);
+
+  line-height: 0.98;
+
+  letter-spacing: -2.5px;
+
+  color: #111111;
+}
+
+
+.dn-404-heading h1 span {
+  color: #777777;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.dn-404-description {
+  max-width: 390px;
+
+  padding-bottom: 3px;
+}
+
+
+.dn-404-description p {
+  margin: 0 0 24px;
+
+  font-family: var(--font-roboto);
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  color: #666666;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.dn-404-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 14px 18px 14px 23px;
+
+  border: 0;
+
+  border-radius: 50px;
+
+  background: #ca2734;
+
+  color: #ffffff;
+
+  font-family: var(--font-roboto);
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+
+.dn-404-button-arrow {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #ca2734;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+.dn-404-button:hover {
+  background: #111111;
+
+  transform: translateY(-3px);
+
+  gap: 28px;
+}
+
+
+.dn-404-button:hover .dn-404-button-arrow {
+  color: #111111;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   BOTTOM
+   ========================================= */
+
+.dn-404-bottom {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 55px;
+
+  padding-left: 5%;
+
+  font-family: var(--font-roboto);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  color: #999999;
+}
+
+
+.dn-404-bottom span:first-child {
+  color: #ca2734;
+}
+
+
+.dn-404-bottom-line {
+  width: 70px;
+
+  height: 1px;
+
+  background: #dddddd;
+}
+
+
+/* =========================================
+   BACKGROUND CIRCLES
+   ========================================= */
+
+.dn-404-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+.dn-404-circle-one {
+  width: 400px;
+  height: 400px;
+
+  right: -220px;
+  top: -180px;
+
+  border: 1px solid rgba(202, 39, 52, 0.12);
+}
+
+
+.dn-404-circle-two {
+  width: 280px;
+  height: 280px;
+
+  left: -180px;
+  bottom: -150px;
+
+  border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .dn-404-container {
+    width: 88%;
+
+    padding-top: 45px;
+  }
+
+
+  .dn-404-visual {
+    min-height: 240px;
+  }
+
+
+  .dn-404-number {
+    font-size: clamp(150px, 28vw, 270px);
+  }
+
+
+  .dn-404-emoji-wrap {
+    right: 3%;
+
+    width: 120px;
+    height: 120px;
+  }
+
+
+  .dn-404-emoji-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .dn-404-emoji {
+    width: 85px;
+    height: 85px;
+
+    font-size: 43px;
+
+    box-shadow: 6px 6px 0 #ca2734;
+  }
+
+
+  .dn-404-content {
+    gap: 45px;
+
+    padding-left: 3%;
+  }
+
+
+  .dn-404-heading h1 {
+    font-size: clamp(35px, 5vw, 52px);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .dn-404 {
+    align-items: center;
+
+    min-height: 100svh;
+  }
+
+
+  .dn-404-container {
+    width: calc(100% - 40px);
+
+    padding: 35px 0 25px;
+  }
+
+
+  /* Top */
+
+  .dn-404-top {
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .dn-404-top-line {
+    width: 30px;
+  }
+
+
+  /* Visual */
+
+  .dn-404-visual {
+    min-height: 180px;
+
+    margin-top: 20px;
+  }
+
+
+  .dn-404-number {
+    font-size: clamp(125px, 40vw, 190px);
+
+    letter-spacing: -0.11em;
+  }
+
+
+  .dn-404-zero-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+
+  /* Emoji */
+
+  .dn-404-emoji-wrap {
+    width: 90px;
+    height: 90px;
+
+    right: -3%;
+
+    top: 47%;
+  }
+
+
+  .dn-404-emoji-circle {
+    width: 78px;
+    height: 78px;
+  }
+
+
+  .dn-404-emoji {
+    width: 67px;
+    height: 67px;
+
+    font-size: 34px;
+
+    border-width: 1.5px;
+
+    box-shadow: 5px 5px 0 #ca2734;
+  }
+
+
+  .dn-404-emoji-label {
+    right: -18px;
+
+    bottom: -8px;
+
+    padding: 5px 8px;
+
+    font-size: 7px;
+  }
+
+
+  /* Content */
+
+  .dn-404-content {
+    display: block;
+
+    margin-top: 38px;
+
+    padding-left: 0;
+  }
+
+
+  .dn-404-small-heading {
+    margin-bottom: 11px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .dn-404-heading h1 {
+    font-size: clamp(34px, 10vw, 45px);
+
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .dn-404-description {
+    max-width: 100%;
+
+    margin-top: 20px;
+  }
+
+
+  .dn-404-description p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+  }
+
+
+  /* Button */
+
+  .dn-404-button {
+    padding: 12px 15px 12px 19px;
+
+    gap: 17px;
+
+    font-size: 12px;
+  }
+
+
+  .dn-404-button-arrow {
+    width: 25px;
+    height: 25px;
+
+    font-size: 15px;
+  }
+
+
+  /* Bottom */
+
+  .dn-404-bottom {
+    margin-top: 42px;
+
+    padding-left: 0;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    gap: 10px;
+  }
+
+
+  .dn-404-bottom-line {
+    width: 40px;
+  }
+
+
+  /* Background */
+
+  .dn-404-circle-one {
+    width: 220px;
+    height: 220px;
+
+    right: -150px;
+    top: -100px;
+  }
+
+
+  .dn-404-circle-two {
+    width: 180px;
+    height: 180px;
+
+    left: -130px;
+    bottom: -100px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .dn-404-container {
+    width: calc(100% - 30px);
+  }
+
+
+  .dn-404-number {
+    font-size: 125px;
+  }
+
+
+  .dn-404-emoji-wrap {
+    right: -5%;
+  }
+
+
+  .dn-404-content {
+    margin-top: 30px;
+  }
+
+
+  .dn-404-heading h1 {
+    font-size: 31px;
+  }
+
+
+  .dn-404-description p {
+    font-size: 12px;
+  }
+
+
+  .dn-404-bottom {
+    margin-top: 32px;
+  }
+}
