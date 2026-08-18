@@ -1232,7 +1232,9 @@ justify-content: space-between;
   object-fit: cover;
 }
 
-
+#enquiry-form{
+    scroll-margin-top: 180px; 
+}
 .overlay-box {
   position: absolute;
   bottom: 0;

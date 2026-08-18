@@ -10,9 +10,10 @@ import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHo
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
 import LPVideoHoverCardBrandIdentity from '@/Components/LPVideoHoverCardBrandIdentity/LPVideoHoverCardBrandIdentity';
 import CursorFollower from '@/Components/CursorFollower/CursorFollower';
-import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
+// import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 import AOSProvider from '@/Components/AosProvider/AosProvider';
 import LPFooter from '@/Components/LPFooterBrandIdentityVOne/LPFooter';
+import LPStickyCTAFooter from '@/Components/LPStickyFooterCTABrandIdentity/LPStickyFooterCTABrandIdentity';
 
 
 

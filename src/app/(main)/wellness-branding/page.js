@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import React from 'react'
 import "./wellness-branding.css"
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
@@ -10,12 +13,102 @@ import StandAlonePackaging from '@/Components/StandAlonePackaging/StandAlonePack
 import AOSProvider from '@/Components/AosProvider/AosProvider';
 import TalkToUs from '@/Components/TalkToUs/TalkToUs';
 
-function page() {
+// import Script from "next/script";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
+
+
+// meta   data
+export async function generateMetadata() {
+  await connectDB();
+  let seo;
+  try {
+    seo = await getPageById("wellness-branding", null, false);
+  } catch (error) {
+    console.log("Wellness Branding", error);
+    return {
+      title: "Wellness Branding",
+      robots: "noindex, nofollow",
+    };
+  }
+  // console.log(seo.content)
+
+  return {
+    title: seo.metaTitle || seo.title,
+    description: seo.metaDescription || seo.description,
+
+    robots: seo.robotsTag || "index, follow",
+
+    alternates: {
+      canonical: seo.alternates?.canonical,
+    },
+
+    openGraph: {
+      type: seo.openGraph?.type || "website",
+      title: seo.openGraph?.title || seo.metaTitle,
+      description: seo.openGraph?.description || seo.metaDescription,
+      url: seo.openGraph?.url || seo.alternates?.canonical,
+      images: seo.openGraph?.images?.length
+        ? seo.openGraph.images.map((img) => ({
+            url: img.url,
+            alt: img.alt || seo.title,
+            width: img.width || 1200,
+            height: img.height || 630,
+          }))
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: seo.twitter?.title || seo.metaTitle,
+      description: seo.twitter?.description || seo.metaDescription,
+      images: seo.twitter?.images?.length
+        ? seo.twitter.images.map((img) => img.url)
+        : [],
+    },
+  };
+}
+// ends here
+
+async function page() {
+
+   // ---
+          await connectDB();
+          let pageData;
+          try {
+            pageData = await getPageById("wellness-branding", null, true);
+          } catch (error) {
+            notFound();
+          }
+        
+          if (!pageData) {
+            notFound();
+          }
+        
+          // ---  SCHEMA CLEANING LOGIC START ---
+          let cleanSchema = "";
+          if (pageData.headCode) {
+            // Script tags remove karke raw JSON nikalna
+            cleanSchema = pageData.headCode
+              .replace(/<script.*?>/gi, "")
+              .replace(/<\/script>/gi, "")
+              .trim();
+            if (cleanSchema.includes('""')) {
+              cleanSchema = cleanSchema.replace(/""/g, '"');
+            }
+          }
+          // --- SCHEMA CLEANING LOGIC END ---
+  
+
   // hero banner data
   let heroLabel = "Building Brands People Try Once And Trust Forever";
   let heroHead = "Health and Wellness Branding Agency";
   let heroParaDesc =
     "In wellness, nobody buys the first time because of how beautiful your brand looks. They buy because something inside them believes this will actually work. That belief doesn't happen by accident. The health and wellness industry is crowded, over-claimed and quietly sceptical. Most buyers have been let down before, so every label, every shade of green and every line of copy on a packaging either earns confidence or loses it in seconds. This is what makes branding for health and wellness so different from branding anything else. DN Designs works as a health and wellness branding agency that make people notice first and then earn trust that lasts. ";
+
+    let pageHeroimgurl ="https://dndesigns.co.in/uploads/pages/wellness-hero-bannermain-image.jpg.jpeg"
+
+    
 
 
      let phaseLabel = "Our Process";
@@ -92,7 +185,7 @@ function page() {
       description:
         "Strong branding lets wellness products hold premium pricing, because customers are paying for confidence, not just contents.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimageone.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop1.jpg",
     },
     {
       id: 2,
@@ -101,7 +194,7 @@ function page() {
       description:
         "Brands with genuine positioning keep customers past the first purchase, because people stay loyal to what feels like it understands them.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagefour.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop2.jpg",
     },
     {
       id: 3,
@@ -110,7 +203,7 @@ function page() {
       description:
         "Clear, consistent branding closes the trust gap. Consumers see a brand that’s reliable, credible and trustworthy.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagethree.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop3.jpg",
     },
     {
       id: 4,
@@ -119,26 +212,26 @@ function page() {
       description:
         "A brand built to scale means every new product, market or channel builds on existing trust, instead of starting from zero each time.",
       image:
-        "https://dndesigns.co.in/uploads/pages/desktopfoodandbaverageshoverimagetwo.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop4.jpg",
     }
   ];
 
   const mobileCrads = [
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimageone.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile1.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagefour.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile3.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagethree.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile2.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/mobilefoodandbaverageshoverimagetwo.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile4.jpg",
     },
   ];
 
@@ -193,7 +286,7 @@ function page() {
       question:
         "Do beauty and wellness branding agency handle packaging compliance, too? ",
       answer:
-        "Beauty and wellness branding agency focus on designing packaging which is in compliance with regulatory requirements like mandatory disclosures, ingredient listings, and labeling guidelines. The focus is on making the packaging legally complaint. However, for regulatory approvals, you will need to collaborate with a certified regulatory consultant.  ",
+        "Beauty and wellness branding agency focus on designing packaging which is in compliance with regulatory requirements like mandatory disclosures, ingredient listings, and labeling guidelines. The focus is on making the packaging legally compliant. However, for regulatory approvals, you will need to collaborate with a certified regulatory consultant.",
     },
 
     {
@@ -226,15 +319,23 @@ function page() {
 
   return (
     <div>
+
+         {/* schema */}
+      {cleanSchema && (
+        <script
+          key={`schema-page-${pageData._id || "wellness-branding"}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: cleanSchema }}
+        />
+      )}
+      {/*schema ends here */}
+
+
       {/* breadcrump */}
       <Breadcrumb/>
 
       {/* hero section */}
-       <IndustriesPageHero
-        heroLabel={heroLabel}
-        heroHead={heroHead}
-        heroParaDesc={heroParaDesc}
-      />
+         <IndustriesPageHero heroLabel={heroLabel} heroHead={heroHead} heroParaDesc={heroParaDesc} pageHeroimgurl={pageHeroimgurl}/>
 
 
        {/* work portfolio */}
@@ -268,7 +369,7 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
               <div className="port-div">
-                <video
+                {/* <video
                   src="https://dndesigns.co.in/uploads/videos/enli.mp4"
                   width="100%"
                   autoPlay
@@ -276,7 +377,8 @@ function page() {
                   loop
                   playsInline
                   className=""
-                />
+                /> */}
+                 <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -289,9 +391,7 @@ function page() {
                   </div>
 
                   <p>
-                    Whey protein brand. We crafted a clean, minimal identity and
-                    label design to position it as a lifestyle product, not
-                    another gym supplement.
+                    Whey protein brand. We crafted a clean, minimal identity and label design to position it as a lifestyle product, not another gym supplement.
                   </p>
                 </div>
               </div>
@@ -299,7 +399,7 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
               <div className="port-div">
-                <video
+                {/* <video
                   src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
                   width="100%"
                   autoPlay
@@ -307,7 +407,8 @@ function page() {
                   loop
                   playsInline
                   className=""
-                />
+                /> */}
+                <img src="https://dndesigns.co.in/uploads/pages/let.jpg" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -320,10 +421,7 @@ function page() {
                   </div>
 
                   <p>
-                    Nutraceutical Brand. We built a cohesive identity,
-                    packaging, and digital design to reflect simplicity,
-                    consistency, and care - inspiring trust and making wellness
-                    a daily ritual.
+                    Nutraceutical Brand. We built a cohesive identity, packaging, and digital design to reflect simplicity, consistency, and care - inspiring trust and making wellness a daily ritual.
                   </p>
                 </div>
               </div>
@@ -352,37 +450,12 @@ function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
               <div className="port-div">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp"
                   className="img-fluid"
-                />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Wlue's</h3>
-                    </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Brand Identity</h4>
-                      <h4 className="our-port-btn">Packaging</h4>
-                    </div>
-                  </div>
-
-                  <p>
-                    Makhana brand. With a retro superhero-inspired identity and
-                    packaging, we gave it main-character energy, making it a Gen
-                    Z favourite and the snack aisle hero.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row port-row">
-            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
-              <div className="port-div">
-                {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
-                <video
-                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                /> */}
+                  <video
+                  src="https://dndesigns.co.in/uploads/videos/enli.mp4"
                   width="100%"
                   autoPlay
                   muted
@@ -393,7 +466,43 @@ function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>1 AM</h3>
+                      <h3>Enlite</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Packaging</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it a vibrant yet calming identity: a logo, a character and a can that fizzes with personality and freshness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row port-row">
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
+                {/* <video
+                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
+                /> */}
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/our-work-portfolioneuzen.jpg.jpeg"
+                  className="img-fluid"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Neuzen</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Brand Identity</h4>
@@ -402,9 +511,7 @@ function page() {
                   </div>
 
                   <p>
-                    Canned Cold Coffee Brand. From logo and identity to website
-                    and social media, we brewed a bold and pretty cool brand
-                    that Gen Z love vibing with.
+                    A mental wellness brand with a productivity drink as its debut product. From identity to positioning and packaging design, we crafted a brand experience as sharp and focused as the product itself.  
                   </p>
                 </div>
               </div>
@@ -440,7 +547,7 @@ function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>3 Sisters</h3>
+                      <h3>Pureluxe</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Label Design</h4>
@@ -449,9 +556,7 @@ function page() {
                   </div>
 
                   <p>
-                    Premium Non-Alcoholic Drinks Brand. We built the digital
-                    home for a full lineup of their non-alcoholic beverages that
-                    are anything but ordinary.
+                   Premium Protein Bar Brand. We designed the packaging and digital experience that celebrates indulgence and taste while balancing nutrition and health.
                   </p>
                 </div>
               </div>
@@ -471,7 +576,7 @@ function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>iOrganic</h3>
+                      <h3>1AM</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Label Design</h4>
@@ -480,10 +585,7 @@ function page() {
                   </div>
 
                   <p>
-                    Organic Food & Dairy brand. We brought a refined,
-                    nature-inspired aesthetic to their festive and corporate
-                    gift boxes, ensuring the unboxing experience is as special
-                    as what's inside.
+                    Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with. 
                   </p>
                 </div>
               </div>
@@ -625,52 +727,52 @@ function page() {
           <div className="fmcg-industries-row-div">
           {/* 1 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice11984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Nutraceuticals</p>
             </div>
             {/* 2 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice2Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Supplements</p>
             </div>
             {/* 3 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice3Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Functional Beverages</p>
             </div>
             {/* 4 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice4Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Healthy Snacks</p>
             </div>
             {/* 5 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewedjFrame 1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Organic Foods</p>
             </div>
             {/* 6 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameserviceayurvedicFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Ayurveda and Herbal Products</p>
             </div>
             {/* 7 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewsdaeFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Sports Nutrition</p>
             </div>
             {/* 8 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewegvdshvhvqw778Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Skincare and Personal Care</p>
             </div>
             {/* 9 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicemcbdrew789Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Medical Nutrition</p>
             </div>
             {/* 10 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewsadvnnmeFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
               <p className="fmcg-industries-para">Wellness Startups</p>
             </div>
           </div>
@@ -697,20 +799,17 @@ function page() {
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      01 / Identity
+                      01 / Strategy
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      Brand Identity Design
+                      Brand Strategy
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      An FMCG brand's identity has to work at thumbnail size on
-                      an app and at full size on a shelf. We build identity
-                      systems that hold their shape across both, so recognition
-                      does not drop just because the format changes.
+                      Building and launching a brand in the highly competitive market is no mean task. Success hinges on solid research and a clear strategy. We chart out this strategy for you so that success follows naturally.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedtwo.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedstrategy.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -722,21 +821,17 @@ function page() {
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      02 / Positioning
+                      02 / Identity
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      Brand Positioning
+                      Brand Identity
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      In a crowded category, trying to appeal to everyone
-                      usually means being memorable to no one. This is the core
-                      of FMCG branding strategy. So, before designing, we
-                      finalise what a brand can credibly claim and who it is
-                      actually for.
+                     You have a product but no face or voice for it. We give you that identity, visual and verbal, so even a stranger reads credibility in the first three seconds. This is custom branding for health & wellness at the root, not the surface.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedthree.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingbrand-identity.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -754,15 +849,11 @@ function page() {
                       Packaging Design
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      As competition intensifies across digital and retail
-                      shelves, FMCG packaging design carries more
-                      responsibilities than ever. We design packaging that grabs
-                      attention, builds buzz, and turns browsers into
-                      buyers.{" "}
+                      Your product is right but the pack undersells it. In wellness, the package is your only salesperson on a crowded shelf and we design it to communicate quality without shouting for attention. 
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfour.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingpackaging-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -776,45 +867,17 @@ function page() {
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      04 / Website
+                      04 / Communication
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      Website Design
+                      Communication Design
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      For many FMCG brands, the website is where a first-time
-                      buyer checks credibility before trusting an app listing or
-                      a shelf pack. We build sites that turn that curiosity into
-                      a first purchase.
+                      If your websites, social media, and brochures don't sound like the same brand, you’ll leave your customers confused. We build communication strategies so a customer sees one consistent brand no matter where they meet you. 
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedone.jpeg"
-                    className="img-fluid everything-a-food-section-col-img"
-                  ></img>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/web-designing-services-in-india">
-                <div className="everything-a-food-section-col">
-                  <div className="everything-a-food-section-col-content-div">
-                    <p className="everything-a-food-section-col-content-div-para-label">
-                      05 / Visual Asset
-                    </p>
-                    <h2 className="everything-a-food-section-col-content-div-head">
-                      Visual Asset Creation
-                    </h2>
-                    <p className="everything-a-food-section-col-content-div-para-desc">
-                      Visuals have the power to capture attention and engage way
-                      more than words ever can. We bring your FMCG products to
-                      life with our professional photography and video content,
-                      so they appeal and sell more across platforms.
-                    </p>
-                  </div>
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedsix.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingcommunication-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -826,20 +889,39 @@ function page() {
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      06 / GTM
+                      05 / GTM
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
                       GTM Strategy
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      Launching or relaunching an FMCG product means knowing
-                      exactly which channels, listings and retail formats matter
-                      first. We build GTM plans around how the category actually
-                      moves, not a generic launch checklist.
+                      Building a brand is one thing; launching it in the right market, at the right time is another. We help plan your go-to-market strategy, so you launch strong and continue to grow consistently.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foddandbeveragesneedfive.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandinggtm.jpg"
+                    className="img-fluid everything-a-food-section-col-img"
+                  ></img>
+                </div>
+              </Link>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+              <Link href="/photography">
+                <div className="everything-a-food-section-col">
+                  <div className="everything-a-food-section-col-content-div">
+                    <p className="everything-a-food-section-col-content-div-para-label">
+                      06 / Visuals 
+                    </p>
+                    <h2 className="everything-a-food-section-col-content-div-head">
+                     Product Visuals 
+                    </h2>
+                    <p className="everything-a-food-section-col-content-div-para-desc">
+                      Your product looks flat in photos and invisible online. We shoot and render packaging until it feels as premium on screen as on shelf, then bring it alive with 3D animation people stop scrolling for. 
+                    </p>
+                  </div>
+                  <img
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingproduct-visual.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
