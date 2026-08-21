@@ -599,8 +599,11 @@ async function page() {
        {/* why f and b */}
             <section className="why-fandb-section">
               <div className="container">
+              <div className='why-fandb-section-head-div'>
               <h2 className="why-fandb-section-head">Understanding the Health &  <span className="why-fandb-section-head-span">Wellness Industry 
 </span></h2>
+<TalkToUs/>
+</div>
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
                     <div className="why-fandb-section-col">
@@ -791,6 +794,7 @@ async function page() {
                 Services 
               </span>
             </h2>
+            <TalkToUs/>
           </div>
 
           <div className="row">
@@ -1101,6 +1105,17 @@ async function page() {
         </div>
         <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
       </section>
+
+      {/* Looking for something */}
+      
+            <section className="looking-for-someone">
+              <div className="container">
+                <div className="looking-for-someone-container">
+                  <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
+                  <TalkToUs/>
+                </div>
+              </div>
+            </section>
 
       {/* Why DN Designs? desktop*/}
       <section className="why-dn-designs">

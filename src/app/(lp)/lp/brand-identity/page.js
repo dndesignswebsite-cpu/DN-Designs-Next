@@ -4,7 +4,6 @@ import "./brand-identity-01.css"
 import LPForm from '@/Components/LPForm/LPForm'
 // import LPFooter from '@/Components/LPFooter/LPFooter';
 import LPFAQ from '@/Components/LPFAQ/LPFAQ';
-import LPTestimonialSwipper from '@/Components/LPTestimonialSwipper/LPTestimonialSwipper';
 import LPMarque from '@/Components/LPMarque/LPMarque';
 import OurWorkHomeSection from '@/Components/LPOurWorkNewBrandIdentity/OurWorkHomeSection';
 import LPBradingServicesTestimonial from '@/Components/LPBradingServicesTestimonial/LPBradingServicesTestimonial';
@@ -13,8 +12,9 @@ import CursorFollower from '@/Components/CursorFollower/CursorFollower';
 // import LPStickyCTAFooter from '@/Components/LPStickyCTAFooter/LPStickyCTAFooter';
 import AOSProvider from '@/Components/AosProvider/AosProvider';
 import LPFooter from '@/Components/LPFooterBrandIdentity/LPFooter';
-import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
+
 import LPStickyCTAFooter from '@/Components/LPStickyFooterCTABrandIdentity/LPStickyFooterCTABrandIdentity';
+import LPBrandIdentityHero from '@/Components/LPBrandIdentityHero/LPBrandIdentityHero';
 
 
 
@@ -172,8 +172,8 @@ function page() {
     <div>
      <LPHeader/>
 
-     {/* hero sectio  */}
-     <div className='brand-identity-hero-for-index'>
+     {/* hero section  */}
+      <div className='brand-identity-hero-for-index'>
      <section className='brand-identity-hero-section'>
         <div className='container'>
             <div className='row'>
@@ -201,7 +201,7 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/hoverfolder3imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
-                  {/* <p className='folder-name-para'>Packaging-design</p> */}
+    
                 </div>
                 </div>
                 
@@ -213,12 +213,12 @@ function page() {
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
-                  {/* folder images */}
+                  folder images
                    <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
                   <img src="https://dndesigns.co.in/uploads/pages/weigydshvwjd.webp" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
-                  {/* <p className='folder-name-para'>Logo Design</p> */}
+                
                 </div>
                 </div>
                 
@@ -234,7 +234,7 @@ function page() {
                   <img src="https://dndesigns.co.in/uploads/pages/hovverfolder2imagetwo.png" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfolderone.png" className='folder-upper-layer-img img-fluid'/>
-                  {/* <p className='folder-name-para'>Brand Identity</p> */}
+                 
                 </div>
                 </div>
                 
@@ -281,7 +281,7 @@ function page() {
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
-                  {/* folder images */}
+                  folder images
                  
 
                   <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
@@ -316,6 +316,10 @@ function page() {
         </div>
      </section>
      </div>
+
+
+     {/* hero section new version */}
+     {/* <LPBrandIdentityHero/> */}
 
 
 

@@ -1,23 +1,21 @@
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-import React from "react";
-import "./fmcg-branding.css";
-import IndustriesPageHero from "@/Components/IndustriesPageHero/IndustriesPageHero";
-import Link from "next/link";
-import AOSProvider from "@/Components/AosProvider/AosProvider";
-import StrategicFrameworkFNB from "@/Components/StrategicFrameworkFNB/StrategicFrameworkFNB";
-import Form from "@/Components/Form/Form";
-import Faqs from "@/Components/Faqs/Faqs";
-import TalkToUs from "@/Components/TalkToUs/TalkToUs";
-import StandAlonePackaging from "@/Components/StandAlonePackaging/StandAlonePackaging";
-import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
+import React from 'react'
+import "../wellness-branding/wellness-branding.css"
+import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb'
+import IndustriesPageHero from '@/Components/IndustriesPageHero/IndustriesPageHero'
+import Link from 'next/link';
+import StrategicFrameworkFNB from '@/Components/StrategicFrameworkFNB/StrategicFrameworkFNB';
+import Faqs from '@/Components/Faqs/Faqs';
+import Form from '@/Components/Form/Form';
+import StandAlonePackaging from '@/Components/StandAlonePackaging/StandAlonePackaging';
+import AOSProvider from '@/Components/AosProvider/AosProvider';
+import TalkToUs from '@/Components/TalkToUs/TalkToUs';
 
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
-
-
 
 
 // meta   data
@@ -25,11 +23,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("fmcg-branding", null, false);
+    seo = await getPageById("wellness-branding", null, false);
   } catch (error) {
-    console.log("FMCG Branding", error);
+    console.log("Wellness Branding", error);
     return {
-      title: "FMCG Branding",
+      title: "Wellness Branding",
       robots: "noindex, nofollow",
     };
   }
@@ -72,13 +70,13 @@ export async function generateMetadata() {
 }
 // ends here
 
-
 async function page() {
+
    // ---
           await connectDB();
           let pageData;
           try {
-            pageData = await getPageById("fmcg-branding", null, true);
+            pageData = await getPageById("wellness-branding", null, true);
           } catch (error) {
             notFound();
           }
@@ -101,22 +99,28 @@ async function page() {
           }
           // --- SCHEMA CLEANING LOGIC END ---
   
-  // hero banner data
-  let heroLabel = "Building FMCG Brands That Get Chosen";
-  let heroHead = "FMCG Branding Agency in India";
-  let heroParaDesc =
-    "FMCG brands do not get a second chance at a first impression, not on a shelf, not on a quick commerce app, not in a customer's hand. Every product is competing against dozens fighting for the same three seconds of attention. We work as an FMCG branding agency in India, building identity and packaging that hold up under that pressure. The work starts with strategy, so nothing on the shelf is there by accident.";
-  let pageHeroimgurl = "https://dndesigns.co.in/uploads/pages/heroFMCG-2.jpg.jpeg";
 
-  let phaseLabel = "Our Process";
-  let phaseHead = (<>From Insight to Shelf, <span className="every-pr">Step by Step</span></>);
+  // hero banner data
+  let heroLabel = "Brands Engineered For Trust, Growth And Repeat Sales ";
+  let heroHead = "Beverage Branding Agency";
+  let heroParaDesc =
+    "Every beverage category is crowded. Beverages have to fight harder: rows of cans, packed shelves, and barely a moment to make an impression. Whether it's a craft kombucha, a functional wellness can, or a premium tropical juice, the line between a shelf-warmer and a bestseller usually isn't the drink itself; it's the branding wrapped around it. A beverage branding agency, DN Designs builds brand identities and packaging systems for beverage startups ready to scale. We work with founders who know their product is good and just need the world to notice. ";
+
+    let pageHeroimgurl ="https://dndesigns.co.in/uploads/pages/wellness-hero-bannermain-image.jpg.jpeg"
+
+    
+
+
+     let phaseLabel = "Our Process";
+  let phaseHead = (<>The Making of a 
+ <span className="every-pr"> Beverage Brand</span></>);
 
   const phases = [
     {
       number: "01",
       label: "PHASE ONE",
-      title: "Market and Category Audit",
-      desc: "As an FMCG branding agency, we start by understanding where a brand actually sits (competitors, price bands, retail formats) and where the category is actually shifting, before proposing a single design direction. ",
+      title: "Discovery & Research",
+      desc: "We start by understanding your product, category, competitors and target audience through founder interviews, market scans and shelf audits. This is essential before a single design decision gets made, so that strategy leads and aesthetics follow. ",
       // points: [
       //   "COMPETITIVE LANDSCAPE MAPPING",
       //   "COMPETITIVE LANDSCAPE MAPPING",
@@ -127,8 +131,8 @@ async function page() {
     {
       number: "02",
       label: "PHASE TWO",
-      title: "Positioning and Strategy",
-      desc: "We develop a clear brand strategy  with unique brand positioning as the next step. It’s a clear point of view on what the brand stands for and who it is built for, so every decision after this has something to measure against.",
+      title: "Positioning & Strategy",
+      desc: "We define what your beverage stands for, who it's for, and why it beats the next can on the shelf, building a strategic foundation for every future design and marketing decision.",
       // points: [
       //   "COMPETITIVE LANDSCAPE MAPPING",
       //   "COMPETITIVE LANDSCAPE MAPPING",
@@ -139,8 +143,8 @@ async function page() {
     {
       number: "03",
       label: "PHASE THREE",
-      title: "Brand Design Planning & Execution",
-      desc: "At this stage, we begin turning strategy into visuals. Concepts and ideas for identity, packaging, and website design are brainstormed and developed. Shortlisted ideas are shared for your review, and only afterwards a final design is locked. Your brand now comes to life as something consumers can see, experience, and interact with. ",
+      title: "Identity & Design",
+      desc: "The actual design work, planning as well as implementation, is the hero here.  Logo, colour, typography, and packaging come together into one visual system, tested under real shelf conditions and in digital placements. This ensures the brand looks as strong in a cooler as it does on Instagram. This is also where we design your website.",
       // points: [
       //   "COMPETITIVE LANDSCAPE MAPPING",
       //   "COMPETITIVE LANDSCAPE MAPPING",
@@ -151,8 +155,8 @@ async function page() {
     {
       number: "04",
       label: "PHASE FOUR",
-      title: "The Market Entry",
-      desc: "With the launch date closing in, we now plan out the GTM strategy. It helps put the brand in front of the right channels and retail formats at the right time, so the launch lands where it actually matters, not everywhere at once.",
+      title: "Refinement & Testing ",
+      desc: "We pressure-test designs one last time against real-world scenarios, integrating your feedback and refining until the branding works in practice, not just on a screen. ",
       // points: [
       //   "COMPETITIVE LANDSCAPE MAPPING",
       //   "COMPETITIVE LANDSCAPE MAPPING",
@@ -163,8 +167,8 @@ async function page() {
     {
       number: "05",
       label: "PHASE FIVE",
-      title: "Track and Refine ",
-      desc: "Once live, we monitor market response and adjust positioning, packaging, and design as needed. Branding does not stop working at launch, which is really the whole point of treating FMCG branding as a strategy rather than a one-time project.",
+      title: "Launch & Support ",
+      desc: "Finally, we hand over design assets, brand guidelines, and GTM guidance for the launch. We further extend ongoing brand support, staying involved as your beverage brand grows.",
       // points: [
       //   "COMPETITIVE LANDSCAPE MAPPING",
       //   "COMPETITIVE LANDSCAPE MAPPING",
@@ -178,162 +182,139 @@ async function page() {
     {
       id: 1,
       point: "01",
-      title: "Improved Visibility",
+      title: "Differentiation",
       description:
-        "An FMCG brand built to be noticed on a shelf and a grid gets picked up faster, in more places, without relying on discounting to earn attention.",
+        "Clear positioning separates your beverage brand from competitors selling nearly identical products, so buyers know exactly why to choose you.",
       image:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-improve-visibility.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop1.jpg",
     },
     {
       id: 2,
       point: "02",
-      title: "Enhanced Trust",
+      title: "Trust",
       description:
-        "Consistent positioning and honest claims mean a first-time buyer does not have to think twice. That hesitation is usually what costs a sale.",
+        "A polished, consistent beverage brand identity signals quality before the first sip, turning sceptical first-time buyers into confident repeat customers.",
       image:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-trust.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop2.jpg",
     },
     {
       id: 3,
       point: "03",
-      title: "Revenue Growth",
+      title: "Retail Traction ",
       description:
-        "A strong brand has higher perceived value, fewer stalled purchase decisions and more repeat buys. Result? Increased sales and improved profitability.",
+        "Packaging designed for real-world conditions helps you win in physical/online retail environments and hold space against bigger, better-funded competitors.",
       image:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-desktop-revenue.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop3.jpg",
     },
     {
       id: 4,
       point: "04",
-      title: "Higher Recall Value",
+      title: "Scalability",
       description:
-        "Consistency strengthens brand recognition. One identity across platforms means a brand stays recognisable no matter where a customer meets it next.",
+        "A strategic and flexible beverage brand system supports the launch of new flavours, formats and market entry. No starting from scratch every time.",
       image:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-GROWTH-desktop-higher recall value.jpg",
-    },
-    {
-      id: 5,
-      point: "05",
-      title: "Growth Readiness",
-      description:
-        "A brand system built to flex across SKUs and categories means expansion does not have to start from the identity conversation over and over again.",
-      image:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-GROWTH-desktop-READINESS.jpg",
-    },
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthdesktop4.jpg",
+    }
   ];
 
   const mobileCrads = [
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-1.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile1.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-2.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile3.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-3.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile2.jpg",
     },
     {
       mobileImage:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-4.jpg",
-    },
-
-     {
-      mobileImage:
-        "https://dndesigns.co.in/uploads/pages/fmcghover-mobile-5.jpg",
+        "https://dndesigns.co.in/uploads/pages/wellnessbrandinghealthmobile4.jpg",
     },
   ];
 
   const leftFaqs = [
     {
-      question: "What does an FMCG branding agency actually do?",
+      question: "What is beverage or drinks branding and why does it matter? ",
       answer:
-        "It handles the strategy and design decisions behind how a product looks, sounds, and gets positioned, from the name on the pack to the words on the website. A good agency makes sure all of that adds up to one brand, not five disconnected pieces.",
+        "Modern beverage branding revolves around designing the identity, packaging and messaging system that make a drink recognisable and desirable on shelf and screen. It matters because most buying decisions happen in seconds, and branding is what gets a beverage picked up in the first place.",
     },
     {
       question:
-        "How is FMCG branding different from branding in other industries?",
+        " How much does creative beverage branding cost? ",
       answer:
-        "FMCG products move faster and get judged harder. A customer decides in seconds, on a shelf or a screen, and there is rarely a salesperson around to explain the product. So branding has to do that convincing on its own.",
+        "Cost depends on scope. We provide a tailored amount after understanding your category, SKU count and growth stage.",
     },
     {
       question:
-        "Does FMCG packaging design really matter that much for sales?",
+        " How long does a beverage branding project takes? ",
       answer: 
-          "Yes, more than most founders expect going in. FMCG packaging design is often the only thing standing between a product and a purchase decision. A strong one boosts conversion, while a weak one loses to competitors."
+          "It depends on scope, how many SKUs are involved, and how many revision rounds you need before production. "
         
     },
 
     {
       question:
-        "Do you work with legacy FMCG brands or only new ones?",
+        "What's the difference between beverage branding and packaging design? ",
       answer:
-        "Both, and the work looks quite different depending on which one we are talking to. New brands usually need help building trust from scratch. Legacy brands usually need help staying relevant without losing what already works for them.",
+        "Branding is the strategy, identity design and story behind a drink - the why and the who. Packaging design is one output of that strategy: the physical can, bottle and label that carries the brand into a buyer's hand.",
     },
 
     {
       question:
-        "Can you help with GTM strategy along with design?",
+        " Do you work with small or early-stage beverage startups?  ",
       answer:
-        "Yes, design and go-to-market planning are not treated as separate projects here. A pack that looks right but launches on the wrong channels, or with the wrong retail approach, still fails.",
+        "Yes. As a beverage branding company, we love working with small and early-stage beverage startups.",
     },
-    {
-      question:
-        "What is the typical process like when working with DN Designs?",
-      answer:
-        "It starts with understanding the category and the brand's actual position in it, then moves into strategy, design and finally rollout. Nothing gets designed without a reason behind it.",
-    },
+    
   ];
 
   const rightFaqs = [
     {
-      question: "We are relaunching an old product line; can that honestly work?",
-      answer:
-        "It can, and it is often more interesting work than a fresh launch. The tricky part is not the redesign itself; it is not losing the customers who already trust the product while updating everything around it.",
-    },
-    {
       question:
-        "Do you offer photography as part of the branding work?",
+        "Can you help with functional beverage branding specifically? ",
       answer:
-        "Yes, we also offer product photography services, if needed, as part of our FMCG branding services. This is important since so much of the buying decision now happens on a screen where a customer cannot touch or smell the product.",
+        "Yes. Functional beverages need branding that communicates a claim, like energy, focus or gut health, fast and credibly, without looking like a supplement label. That's a distinct design challenge from standard drink branding.",
     },
 
     {
-      question: "Why is FMCG branding important in the first place?",
+      question: "What makes premium beverage branding different from budget branding? ",
       answer:
-        "Because competition is intense in the FMCG landscape and products do not usually have a salesperson standing next to them explaining the difference. Strong branding ensures your products make that case entirely on their own, in the two or three seconds someone actually gives them.",
+        "Premium beverage branding leans on restraint, fewer elements, better materials, more considered typography, signalling quality through what's left off the can as much as what's on it.",
     },
 
     {
       question:
-        "How do you make sure branding stays consistent across shelves, apps and websites?",
+        " Can you design for both packaging and digital presence?",
       answer:
-        "By building the identity system to work across all three from the start, rather than designing for one format and adapting it later. That is usually where consistency breaks down for other agencies. Brand guidelines further ensure your brand stays consistent across platforms.",
+        "Yes. Beverage brands need to look consistent on a shelf and on a screen, so identity, packaging and website work are typically scoped together rather than as separate projects.",
     },
 
     {
       question:
-        "Is it worth investing in branding for a smaller FMCG brand right now?",
+        " What segments within the beverage industry do you work with?  ",
       answer: 
-          "Genuinely, yes, arguably more than for a larger one. Smaller brands do not have existing recognition to fall back on, so the branding has to work harder from day one to earn that first purchase."
+          "Work spans across functional drinks, wellness beverages, craft and RTD beverages, juices, energy drinks and other emerging categories within the beverage industry."
         
     },
   ];
 
   // form section content
-  const FormHead = "Ready to Turn Attention Into Loyalty? Let's Talk";
+  const FormHead = "Let's Talk Over a Cup of Coffee";
   const FormPara =
-    "Every FMCG brand still standing today figured out how to earn attention and loyalty early on. That is the hardest part, and it is where most of our work actually happens. If your brand is fighting for shelf space, app visibility, or just a bit more trust from someone scrolling past it, that is worth an honest conversation. No pitch deck, no sales script. Just coffee and a real look at what it would take to get your brand noticed and chosen.";
+    "Your beverage deserves more than a good recipe; it deserves a brand people reach for without thinking twice. Without strong branding, every day is a day a competitor’s can gets picked instead of yours. Our beverage branding agency has helped brands get noticed and admired and turned shelf-scrolls into sales, from first sip to repeat order. Let's talk over a cup of coffee, real or virtual, and figure out how your brand can become customers’ first choice.";
+
 
   return (
     <div>
 
-     {/* schema */}
+         {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "fmcg-branding"}`}
+          key={`schema-page-${pageData._id || "wellness-branding"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -341,18 +322,14 @@ async function page() {
       {/*schema ends here */}
 
 
-      {/* breadcrump  */}
-      <Breadcrumb />
+      {/* breadcrump */}
+      <Breadcrumb/>
 
-      {/* fnb page hero */}
-      <IndustriesPageHero
-        heroLabel={heroLabel}
-        heroHead={heroHead}
-        heroParaDesc={heroParaDesc}
-        pageHeroimgurl={pageHeroimgurl}
-      />
+      {/* hero section */}
+         <IndustriesPageHero heroLabel={heroLabel} heroHead={heroHead} heroParaDesc={heroParaDesc} pageHeroimgurl={pageHeroimgurl}/>
 
-      {/* work portfolio */}
+
+       {/* work portfolio */}
       <section className="portfolio">
         <div className="container">
           <h2 className="text-center">
@@ -392,7 +369,7 @@ async function page() {
                   playsInline
                   className=""
                 /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"></img>
+                 <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -405,9 +382,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Whey protein brand. We crafted a clean, minimal identity and
-                    label design to position it as a lifestyle product, not
-                    another gym supplement.
+                    Whey protein brand. We crafted a clean, minimal identity and label design to position it as a lifestyle product, not another gym supplement.
                   </p>
                 </div>
               </div>
@@ -437,10 +412,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Nutraceutical Brand. We built a cohesive identity,
-                    packaging, and digital design to reflect simplicity,
-                    consistency, and care - inspiring trust and making wellness
-                    a daily ritual.
+                    Nutraceutical Brand. We built a cohesive identity, packaging, and digital design to reflect simplicity, consistency, and care - inspiring trust and making wellness a daily ritual.
                   </p>
                 </div>
               </div>
@@ -469,37 +441,12 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
               <div className="port-div">
-                <img
+                {/* <img
                   src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp"
                   className="img-fluid"
-                />
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>Wlue's</h3>
-                    </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Brand Identity</h4>
-                      <h4 className="our-port-btn">Packaging</h4>
-                    </div>
-                  </div>
-
-                  <p>
-                    Makhana brand. With a retro superhero-inspired identity and
-                    packaging, we gave it main-character energy, making it a Gen
-                    Z favourite and the snack aisle hero.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row port-row">
-            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
-              <div className="port-div">
-                {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
-                <video
-                  src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4"
+                /> */}
+                  <video
+                  src="https://dndesigns.co.in/uploads/videos/enli.mp4"
                   width="100%"
                   autoPlay
                   muted
@@ -510,7 +457,43 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>1 AM</h3>
+                      <h3>Enlite</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Packaging</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it a vibrant yet calming identity: a logo, a character and a can that fizzes with personality and freshness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row port-row">
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
+                {/* <video
+                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
+                /> */}
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/our-work-portfolioneuzen.jpg.jpeg"
+                  className="img-fluid"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Neuzen</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Brand Identity</h4>
@@ -519,9 +502,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Canned Cold Coffee Brand. From logo and identity to website
-                    and social media, we brewed a bold and pretty cool brand
-                    that Gen Z love vibing with.
+                    A mental wellness brand with a productivity drink as its debut product. From identity to positioning and packaging design, we crafted a brand experience as sharp and focused as the product itself.  
                   </p>
                 </div>
               </div>
@@ -550,8 +531,32 @@ async function page() {
 
             <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
               <div className="port-div">
-               <video
-                  src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp"
+                  className="img-fluid"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Pureluxe</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Label Design</h4>
+                      <h4 className="our-port-btn">Web Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   Premium Protein Bar Brand. We designed the packaging and digital experience that celebrates indulgence and taste while balancing nutrition and health.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+              <div className="port-div">
+                <video
+                  src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
                   width="100%"
                   autoPlay
                   muted
@@ -562,39 +567,7 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>3 Sisters</h3>
-                    </div>
-                    <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Web Design</h4>
-                    </div>
-                  </div>
-
-                  <p>
-                    Premium Non-Alcoholic Drinks Brand. We built the digital
-                    home for a full lineup of their non-alcoholic beverages that
-                    are anything but ordinary.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
-              <div className="port-div">
-                {/* <video
-                  src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
-                  width="100%"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className=""
-                /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className="img-fluid"></img>
-                <div className="port-content">
-                  <div className="potfolio-div-btns">
-                    <div className="port-div-headg">
-                      <h3>iOrganic</h3>
+                      <h3>1AM</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Label Design</h4>
@@ -603,10 +576,7 @@ async function page() {
                   </div>
 
                   <p>
-                    Organic Food & Dairy brand. We brought a refined,
-                    nature-inspired aesthetic to their festive and corporate
-                    gift boxes, ensuring the unboxing experience is as special
-                    as what's inside.
+                    Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with. 
                   </p>
                 </div>
               </div>
@@ -615,50 +585,41 @@ async function page() {
         </div>
       </section>
 
-      {/* understanding fmcg */}
-      <section className="understanding-fmcg">
-        <div className="container">
-          <h2 className="understanding-fmcg-head">
-            Understanding Today's{" "}
-            <span className="understanding-fmcg-head-span">FMCG Landscape</span>
-          </h2>
-          <div className="row mt-4">
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <div className="understanding-fmcg-col-div">
-                <p className="understanding-fmcg-col-para">
-                  The FMCG category in India is not what it was even five years
-                  ago. Retail used to be the whole game. Now a product has to
-                  work across a kirana counter, a modern trade aisle, and a
-                  ten-minute delivery app, often at the same time.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <div className="understanding-fmcg-col-div">
-                <p className="understanding-fmcg-col-para">
-                  Consumers have more choice than they know what to do with, and
-                  loyalty is harder to earn and easier to lose than ever. This
-                  is exactly where the importance of branding in FMCG products
-                  becomes hard to ignore; a brand that cannot hold attention
-                  across all three simply gets skipped.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/*The Protagonists */}
+
+       {/* why f and b */}
+            <section className="why-fandb-section">
+              <div className="container">
+              <h2 className="why-fandb-section-head">What Is Beverage Branding and   <span className="why-fandb-section-head-span">Why Is It Complex 
+</span></h2>
+                <div className="row">
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                    <div className="why-fandb-section-col">
+                      <p className="why-fandb-section-col-para">Beverage branding is not just a logo and a colour palette slapped onto a can, it's the entire system that decides whether a drink survives contact with the market. Every year, hundreds of new beverage brands launch with a genuinely good product and no real answer to who it's for, why it exists and why a buyer should trust it over the fifteen other cans on the same shelf. That gap between good product and good business is where most beverage founders lose momentum. Not because the drink was wrong, but because nobody built a brand strong enough to carry it past the first sample.</p>
+                    </div>
+                  </div>
+
+                   <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                    <div className="why-fandb-section-col">
+                      <p className="why-fandb-section-col-para">What makes drinks branding genuinely difficult is that it has to work across more surfaces than almost any other category. A beverage bottle or can has to perform in a retail store fridge under fluorescent light, on a phone screen in three seconds of scrolling, on a restaurant menu, and next to a dozen near-identical competitors at a trade show. Add to this shifting consumer expectations, and branding stops being decoration. It becomes the single hardest strategic decision a beverage founder makes. And that’s where a beverage branding agency steps in to ensure your drink brand performs everywhere consistently. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+              {/*The Protagonists */}
       <section className="appr-pro-anime">
         <div className="container">
           <div>
             <div className="row appr-pro-anime-row-main">
               <div className="col-12 col-md-12 col-lg-6 mt-3">
                 <h2 className="appr-pro-anime-main-head">
-                  A Few Things Define The
+                  Why Beverage Branding 
                   <span className="appr-pro-anime-main-head-span">
                     {" "}
-                    Landscape Right Now
+                    Is Challenging
                   </span>
                 </h2>
                 {/* <p className="appr-pro-anime-main-para">
@@ -670,26 +631,22 @@ async function page() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
-                {/* <div className="app-pro-div app-pro-div-white">
+                <div className="app-pro-div app-pro-div-white">
                   <div>
-                    <h3>Goal & Message</h3>
+                    <h3>Product Can’t Speak</h3>
                     <p>
-                      Before doing anything else, we establish our core
-                      objectives - what do we want to achieve and what do we
-                      want to communicate through the video.
+                     You can see and feel a piece of apparel before buying. Taste, though, cannot be previewed or photographed. Branding has to create desire and convey experience. 
                     </p>
                   </div>
-                </div> */}
+                </div>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 mt-3">
                 <div className=" app-pro-div app-pro-div-white">
                   <div>
-                    <h3>Digital-First Discovery</h3>
+                    <h3>Low Attention, High Frequency </h3>
                     <p>
-                      Quick commerce has changed the rules. Products get
-                      discovered on a grid, not a shelf, and FMCG packaging
-                      design has to work as a thumbnail first.
+                      Beverage purchase decisions are quick, not researched. Branding has just 2-3 seconds to land on the shelf and scroll - through colour, form and messaging.  
                     </p>
                   </div>
                 </div>
@@ -701,11 +658,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
-                  <h3>The Rise of D2C Brands</h3>
+                  <h3>Balancing Familiarity with Distinctiveness </h3>
                   <p>
-                    D2C brands are eating into categories legacy players once
-                    owned, forcing established names to rethink their FMCG
-                    branding strategy faster than they're used to.
+                   Every beverage category has its own visual language. Too close, you blend in. Too far, you confuse. Branding has to balance familiarity and differentiation. 
                   </p>
                 </div>
               </div>
@@ -714,10 +669,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className="app-pro-div app-pro-div-gray">
                 <div>
-                  <h3>Changing Consumer Expectations</h3>
+                  <h3>Regulatory Limits</h3>
                   <p>
-                    Consumers read labels now: ingredients, claims, and sourcing
-                    get scrutinised in ways they weren't a decade ago.
+                    Labelling laws and health-claim restrictions limit how much creative freedom a brand actually has. Drinks branding must balance creativity with compliance. 
                   </p>
                 </div>
               </div>
@@ -726,11 +680,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-white">
                 <div>
-                  <h3>The Regional Brand Boom</h3>
+                  <h3>Category Ambiguity</h3>
                   <p>
-                    Regional and value brands are gaining ground, which means
-                    national players can't rely on brand recognition alone
-                    anymore.
+                  New formats like functional sodas and adaptogenic drinks don't fit existing shelf sets or consumer mental models yet, making positioning genuinely hard.
                   </p>
                 </div>
               </div>
@@ -739,11 +691,9 @@ async function page() {
             <div className="col-12 col-md-6 col-lg-3 mt-3">
               <div className=" app-pro-div app-pro-div-gray">
                 <div>
-                  <h3>Scattered Attention</h3>
+                  <h3>Claim Fatigue</h3>
                   <p>
-                    Attention is fragmented, so a brand's shelf, app and social
-                    presence all need to say the same thing, which is really
-                    what FMCG branding agency is meant to solve.
+                   Overused language like "natural," "functional", and "wellness" has left consumers sceptical, so a brand has to earn trust rather than just claim it.
                   </p>
                 </div>
               </div>
@@ -752,105 +702,103 @@ async function page() {
         </div>
       </section>
 
-      {/* FMCG Industries We Brand */}
-      <section className="fmcg-industries-we-section">
+
+       {/* FMCG Industries We Brand */}
+      {/* <section className="fmcg-industries-we-section">
         <div className="container">
         <div className="fmcg-industries-head-content">
           <h2 className="fmcg-industries-head">
-            FMCG Industries{" "}
-            <span className="fmcg-industries-head-span">We Brand</span>
+            Industries We {" "}
+            <span className="fmcg-industries-head-span">Serve</span>
           </h2>
           </div>
 
           <div className="fmcg-industries-row-div">
-          {/* 1 */}
+          1
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Food & Packaged Foods</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice11984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Nutraceuticals</p>
             </div>
-            {/* 2 */}
+            2
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Beverages</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice2Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Supplements</p>
             </div>
-            {/* 3 */}
+            3
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Dairy</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice3Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Functional Beverages</p>
             </div>
-            {/* 4 */}
+            4
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Confectionery</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservice4Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Healthy Snacks</p>
             </div>
-            {/* 5 */}
+            5
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Staples & Grocery</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewedjFrame 1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Organic Foods</p>
             </div>
-            {/* 6 */}
+             6 
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Personal Care</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameserviceayurvedicFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Ayurveda and Herbal Products</p>
             </div>
-            {/* 7 */}
+             7 
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Home Care</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewsdaeFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Sports Nutrition</p>
             </div>
-            {/* 8 */}
+             8 
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Baby Care</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewegvdshvhvqw778Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Skincare and Personal Care</p>
             </div>
-            {/* 9 */}
+             9 
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/wellnessfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Health & Wellness</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicemcbdrew789Frame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Medical Nutrition</p>
             </div>
-            {/* 10 */}
+             10 
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconpetcare.svg" className="fmcg-industries-icon"></img>
-              <p className="fmcg-industries-para">Pet Care</p>
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessFrameservicewsadvnnmeFrame1984081826 (1).svg" className="fmcg-industries-icon"></img>
+              <p className="fmcg-industries-para">Wellness Startups</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
 
       {/* everything-a-food */}
       <section className="everything-a-food-section">
         <div className="container">
           <div className="everything-a-food-section-head-div">
             <h2 className="everything-a-food-section-head">
-              Everything an FMCG Brand{" "}
+              Full-Service Branding,  {" "}
               <span className="everything-a-food-section-head-span">
                 {" "}
-                Needs to Sell
+                Done Right  
               </span>
             </h2>
-            <TalkToUs/>
           </div>
 
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/brand-identity-design-services">
+              <Link href="/brand-strategy">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      01 / Identity
+                      01 / Strategy
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      Brand Identity Design
+                      Brand Strategy
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      An FMCG brand's identity has to work at thumbnail size on
-                      an app and at full size on a shelf. We build identity
-                      systems that hold their shape across both, so recognition
-                      does not drop just because the format changes.
+                     We map your positioning, audience and category context, answering why your beverage exists, who it's for, and how it stands apart from competitors already crowding the same fridge, cooler or search result.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedidentity.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedstrategy.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -858,25 +806,21 @@ async function page() {
             </div>
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/brand-positioning">
+              <Link href="/brand-identity-design-services">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      02 / Positioning
+                      02 / Identity
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      Brand Positioning
+                      Brand Identity
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      In a crowded category, trying to appeal to everyone
-                      usually means being memorable to no one. This is the core
-                      of FMCG branding strategy. So, before designing, we
-                      finalise what a brand can credibly claim and who it is
-                      actually for.
+                     Logo, colour system, typography and visual and verbal language built to work everywhere your beverage shows up, from can and bottle to website and social, so buyers recognise you instantly.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/fmcg-pagebrand-positining.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingbrand-identity.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -894,15 +838,11 @@ async function page() {
                       Packaging Design
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      As competition intensifies across digital and retail
-                      shelves, FMCG packaging design carries more
-                      responsibilities than ever. We design packaging that grabs
-                      attention, builds buzz, and turns browsers into
-                      buyers.{" "}
+                      Can, bottle and label design engineered to sell in three seconds flat, balancing shelf standout with regulatory requirements, print production realities, and the practical demands of retail and ecommerce display.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedpackaging-design.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingpackaging-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -912,7 +852,7 @@ async function page() {
 
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/web-designing-services-in-india">
+              <Link href="/branding">
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
@@ -922,39 +862,11 @@ async function page() {
                       Website Design
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      For many FMCG brands, the website is where a first-time
-                      buyer checks credibility before trusting an app listing or
-                      a shelf pack. We build sites that turn that curiosity into
-                      a first purchase.
+                      A website built to convert browsers into buyers and retailers into believers, translating your beverage brand into a digital storefront that sells the story as clearly as the can does.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedwebsite-design.jpg"
-                    className="img-fluid everything-a-food-section-col-img"
-                  ></img>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-              <Link href="/photography">
-                <div className="everything-a-food-section-col">
-                  <div className="everything-a-food-section-col-content-div">
-                    <p className="everything-a-food-section-col-content-div-para-label">
-                      05 / Visual Asset
-                    </p>
-                    <h2 className="everything-a-food-section-col-content-div-head">
-                      Visual Asset Creation
-                    </h2>
-                    <p className="everything-a-food-section-col-content-div-para-desc">
-                      Visuals have the power to capture attention and engage way
-                      more than words ever can. We bring your FMCG products to
-                      life with our professional photography and video content,
-                      so they appeal and sell more across platforms.
-                    </p>
-                  </div>
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/fmcg-pagevisual-assets.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingcommunication-design.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -966,20 +878,39 @@ async function page() {
                 <div className="everything-a-food-section-col">
                   <div className="everything-a-food-section-col-content-div">
                     <p className="everything-a-food-section-col-content-div-para-label">
-                      06 / GTM
+                      05 / Video
                     </p>
                     <h2 className="everything-a-food-section-col-content-div-head">
-                      GTM Strategy
+                      Video & Photography
                     </h2>
                     <p className="everything-a-food-section-col-content-div-para-desc">
-                      Launching or relaunching an FMCG product means knowing
-                      exactly which channels, listings and retail formats matter
-                      first. We build GTM plans around how the category actually
-                      moves, not a generic launch checklist.
+                      Visuals designed to convey, convince and captivate the target audience on packaging, website, and social media. Because sometimes a frame says what a sentence cannot.
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedgtm.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandinggtm.jpg"
+                    className="img-fluid everything-a-food-section-col-img"
+                  ></img>
+                </div>
+              </Link>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+              <Link href="/photography">
+                <div className="everything-a-food-section-col">
+                  <div className="everything-a-food-section-col-content-div">
+                    <p className="everything-a-food-section-col-content-div-para-label">
+                      06 / GTM
+                    </p>
+                    <h2 className="everything-a-food-section-col-content-div-head">
+                     GTM Strategy 
+                    </h2>
+                    <p className="everything-a-food-section-col-content-div-para-desc">
+                      Launch planning that covers pricing, distribution channels, retail positioning and early messaging, so your beverage brand enters the market with a plan for who buys and how they find you, not just a launch date.
+                    </p>
+                  </div>
+                  <img
+                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingproduct-visual.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -989,7 +920,9 @@ async function page() {
         </div>
       </section>
 
-      {/* OUR STRATEGIC FRAMEWORK desktop*/}
+
+
+        {/* OUR STRATEGIC FRAMEWORK desktop*/}
       <div className="fnb-our-framework-dektop">
         <StrategicFrameworkFNB
           phases={phases}
@@ -1004,9 +937,9 @@ async function page() {
           <div className="our-stregetic-framework-head-content-div">
             <p className="our-stregetic-framework-label-para">Our Process</p>
             <h2 className="our-stregetic-framework-head">
-              From Insight to Shelf,{" "}
+             The Making of a  {" "}
               <span className="our-stregetic-framework-head-span">
-                Step by Step{" "}
+                Beverage Brand{" "}
               </span>
             </h2>
           </div>
@@ -1021,10 +954,10 @@ async function page() {
                       PHASE ONE
                     </p>
                     <h2 className="our-stregetic-framework-col-content-div-head">
-                      Market and Category Audit
+                      Discovery & Research
                     </h2>
                     <p className="our-stregetic-framework-col-content-div-desc-para">
-                     As an FMCG branding agency, we start by understanding where a brand actually sits (competitors, price bands, retail formats) and where the category is actually shifting, before proposing a single design direction.
+                    We start by understanding your product, category, competitors and target audience through founder interviews, market scans and shelf audits. This is essential before a single design decision gets made, so that strategy leads and aesthetics follow.
                     </p>
                     {/* <ul className="our-stregetic-framework-col-content-div-unorderd-list">
                                 <li className="our-stregetic-framework-col-content-div-list-item">COMPETITIVE LANDSCAPE MAPPING</li>
@@ -1047,10 +980,10 @@ async function page() {
                       PHASE TWO
                     </p>
                     <h2 className="our-stregetic-framework-col-content-div-head">
-                      Positioning and Strategy
+                     Positioning & Strategy 
                     </h2>
                     <p className="our-stregetic-framework-col-content-div-desc-para">
-                     We develop a clear brand strategy  with unique brand positioning as the next step. It’s a clear point of view on what the brand stands for and who it is built for, so every decision after this has something to measure against.
+                    We define what your beverage stands for, who it's for, and why it beats the next can on the shelf, building a strategic foundation for every future design and marketing decision.
                     </p>
                     {/* <ul className="our-stregetic-framework-col-content-div-unorderd-list">
                                 <li className="our-stregetic-framework-col-content-div-list-item">COMPETITIVE LANDSCAPE MAPPING</li>
@@ -1072,10 +1005,10 @@ async function page() {
                       PHASE THREE
                     </p>
                     <h2 className="our-stregetic-framework-col-content-div-head">
-                      Brand Design Planning & Execution
+                     Identity & Design
                     </h2>
                     <p className="our-stregetic-framework-col-content-div-desc-para">
-                      At this stage, we begin turning strategy into visuals. Concepts and ideas for identity, packaging, and website design are brainstormed and developed. Shortlisted ideas are shared for your review, and only afterwards a final design is locked. Your brand now comes to life as something consumers can see, experience, and interact with.{" "}
+                     The actual design work, planning as well as implementation, is the hero here.  Logo, colour, typography, and packaging come together into one visual system, tested under real shelf conditions and in digital placements. This ensures the brand looks as strong in a cooler as it does on Instagram. This is also where we design your website.
                     </p>
                     {/* <ul className="our-stregetic-framework-col-content-div-unorderd-list">
                                 <li className="our-stregetic-framework-col-content-div-list-item">COMPETITIVE LANDSCAPE MAPPING</li>
@@ -1098,10 +1031,10 @@ async function page() {
                       PHASE FOUR
                     </p>
                     <h2 className="our-stregetic-framework-col-content-div-head">
-                      The Market Entry 
+                      Refinement & Testing 
                     </h2>
                     <p className="our-stregetic-framework-col-content-div-desc-para">
-                      With the launch date closing in, we now plan out the GTM strategy. It helps put the brand in front of the right channels and retail formats at the right time, so the launch lands where it actually matters, not everywhere at once. {" "}
+                    We pressure-test designs one last time against real-world scenarios, integrating your feedback and refining until the branding works in practice, not just on a screen. 
                     </p>
                     {/* <ul className="our-stregetic-framework-col-content-div-unorderd-list">
                                 <li className="our-stregetic-framework-col-content-div-list-item">COMPETITIVE LANDSCAPE MAPPING</li>
@@ -1124,10 +1057,10 @@ async function page() {
                       PHASE FIVE
                     </p>
                     <h2 className="our-stregetic-framework-col-content-div-head">
-                      Track and Refine
+                      Launch & Support
                     </h2>
                     <p className="our-stregetic-framework-col-content-div-desc-para">
-                      Once live, we monitor market response and adjust positioning, packaging, and design as needed. Branding does not stop working at launch, which is really the whole point of treating FMCG branding as a strategy rather than a one-time project.{" "}
+                    Finally, we hand over design assets, brand guidelines, and GTM guidance for the launch. We further extend ongoing brand support, staying involved as your beverage brand grows.
                     </p>
                     {/* <ul className="our-stregetic-framework-col-content-div-unorderd-list">
                                 <li className="our-stregetic-framework-col-content-div-list-item">COMPETITIVE LANDSCAPE MAPPING</li>
@@ -1147,28 +1080,16 @@ async function page() {
         <div className="container">
           <div className="row headg-row-div">
             <h2 className="text-center headg">
-              What Changes When{" "}
+              What Changes When 
               <span className="every-pr">
                 {" "}
-                Branding Actually Works{" "}
+              Beverage Branding Works 
               </span>{" "}
             </h2>
           </div>
         </div>
         <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
       </section>
-
-
-      {/* Looking for something */}
-      
-            <section className="looking-for-someone">
-              <div className="container">
-                <div className="looking-for-someone-container">
-                  <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
-                  <TalkToUs/>
-                </div>
-              </div>
-            </section>
 
       {/* Why DN Designs? desktop*/}
       <section className="why-dn-designs">
@@ -1219,9 +1140,9 @@ async function page() {
 
           <div className="row why-dn-sec-content-row">
             <div className="col-12 col-lg-6">
-              <h2 className="why-dn-head">Why Choose Us </h2>
+              <h2 className="why-dn-head">Why Choose Us? </h2>
               <p className="why-dn-para">
-                We do not treat FMCG branding as a design exercise. We treat it as a market problem. As an FMCG branding firm, every identity, packaging, and page we build is shaped around how a brand actually gets discovered, trusted, and repurchased in a category where attention is short, and competition never lets up. Whether it is a legacy name losing ground or a new brand trying to earn its first thousand customers, we build what it takes to hold shelf space and keep it. 
+                We have built beverage brands across categories, from popping boba drinks and cold coffee to premium juices and prebiotic sparkling drink brands. With our extensive experience in the category, we have helped founders go from a vague concept to impactful shelf-ready identities. The result: brands that didn’t just launch; they won. At our beverage branding agency, we work with startups, category disruptors and established brands entering new formats and markets, bringing the same enthusiasm to every project so that the result is always what you envisioned. 
               </p>
             </div>
 
@@ -1237,9 +1158,9 @@ async function page() {
       <div className="why-dn-designs-mobile">
         <div className="container">
           <div className="why-dn-designs-mobile-content">
-            <h2 className="why-dn-designs-mobile-head">Why Choose Us</h2>
+            <h2 className="why-dn-designs-mobile-head">Why Choose Us?</h2>
             <p className="why-dn-designs-mobile-para">
-              We do not treat FMCG branding as a design exercise. We treat it as a market problem. As an FMCG branding firm, every identity, packaging, and page we build is shaped around how a brand actually gets discovered, trusted, and repurchased in a category where attention is short, and competition never lets up. Whether it is a legacy name losing ground or a new brand trying to earn its first thousand customers, we build what it takes to hold shelf space and keep it. 
+             We have built beverage brands across categories, from popping boba drinks and cold coffee to premium juices and prebiotic sparkling drink brands. With our extensive experience in the category, we have helped founders go from a vague concept to impactful shelf-ready identities. The result: brands that didn’t just launch; they won. At our beverage branding agency, we work with startups, category disruptors and established brands entering new formats and markets, bringing the same enthusiasm to every project so that the result is always what you envisioned. 
             </p>
             <TalkToUs />
           </div>
@@ -1301,8 +1222,11 @@ async function page() {
 
       {/* Form */}
       <Form FormHead={FormHead} FormPara={FormPara} />
+      
+      
+
     </div>
-  );
+  )
 }
 
-export default page;
+export default page

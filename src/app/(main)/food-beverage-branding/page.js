@@ -591,7 +591,10 @@ async function page() {
             {/* why f and b */}
             <section className="why-fandb-section">
               <div className="container">
+              <div className="why-fandb-section-head-div">
               <h2 className="why-fandb-section-head">Why Food & Beverage Businesses <span className="why-fandb-section-head-span">Need A Branding Agency</span></h2>
+              <TalkToUs/>
+              </div>
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
                     <div className="why-fandb-section-col">
@@ -613,6 +616,7 @@ async function page() {
               <div className="container">
               <div className="everything-a-food-section-head-div">
                 <h2 className="everything-a-food-section-head">Everything a Food Brand Needs, <span className="everything-a-food-section-head-span"> Under One Roof</span></h2>
+                <TalkToUs/>
                 </div>
 
                 <div className="row">
@@ -716,6 +720,18 @@ async function page() {
         <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
       </section>
 
+
+
+      {/* Looking for something */}
+
+      <section className="looking-for-someone">
+        <div className="container">
+          <div className="looking-for-someone-container">
+            <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
+            <TalkToUs/>
+          </div>
+        </div>
+      </section>
 
 
       {/* OUR STRATEGIC FRAMEWORK desktop*/}
@@ -835,6 +851,31 @@ async function page() {
 
         </div>
       </section> 
+
+
+
+      {/* Book a call directly with our founders */}
+      {/* <section className="book-a-call-section">
+        <div className="container">
+          <div className="book-a-call-section-container">
+            <div className="row">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="book-a-call-section-col">
+                <h2 className="book-a-call-section-col-head">Book a call directly with our founders</h2>
+                <p className="book-a-call-section-col-para-desc">A food or beverage brand gets judged in seconds. We craft strategy, identities, packaging, and GTM systems that turn products into brands people remember and buy from.</p>
+                <TalkToUs/>
+              </div>
+              </div>
+
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div className="book-a-call-section-col">
+                  <img src="https://dndesigns.co.in/uploads/pages/2-3.webp" className="img-fluid book-a-call-section-col-img"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
 
 

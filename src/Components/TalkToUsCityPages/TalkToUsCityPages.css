@@ -14,7 +14,9 @@
 }
 
 .fontAwesomeIcon-right-arrow {
-  padding-left: 10px;
+  padding-left: 6px;
+  transform: rotate(-40deg);
+
 }
 
 

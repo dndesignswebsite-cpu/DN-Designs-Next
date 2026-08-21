@@ -70,13 +70,3 @@
     transform: translateZ(0);
     will-change: transform;
 }
-
-.mix-blend-multiply {
-  /* mix-blend-mode: multiply; */
-/* mix-blend-mode: screen; */
-/* mix-blend-mode: overlay;
-mix-blend-mode: darken;
-
-mix-blend-mode: difference; */
-/* mix-blend-mode: overlay; */
-}

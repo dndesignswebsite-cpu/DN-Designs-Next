@@ -456,8 +456,8 @@
 
 .everything-a-food-section-head-div{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -466,7 +466,7 @@
   font-size: 40px;
   font-weight: 700;
   color: #000;
-  text-align: center;
+  /* text-align: center; */
   width: 50%;
 }
 
@@ -873,5 +873,51 @@ a{
 }
 .every-pr{
   color: #ca2734;
+}
+
+
+
+/* new cta  */
+.looking-for-someone{
+  padding-bottom: 40px;
+}
+.why-fandb-section-head-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.looking-for-someone-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100%;
+}
+
+.looking-for-someone-para{
+  margin-bottom: 0;
+  font-family: var(--font-corbert);
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+@media(max-width:991px){
+  .why-fandb-section-head-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+
+.everything-a-food-section-head-div{
+  flex-direction: column;
+}
+.looking-for-someone-container{
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
 }
 
