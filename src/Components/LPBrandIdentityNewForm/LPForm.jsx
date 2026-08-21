@@ -56,18 +56,13 @@ useEffect(() => {
       return;
     }
 
-    if (!mobile.trim()) {
-      toast.error("Mobile number is required");
-      return;
-    }
-
-    // if (!/^\d{10}$/.test(mobile)) {
-    //   toast.error("Please enter a valid 10 digit mobile number");
+    // if (!mobile.trim()) {
+    //   toast.error("Mobile number is required");
     //   return;
     // }
 
-    // if (!serviceRequired.trim()) {
-    //   toast.error("Please enter required service");
+    // if (!/^\d{10}$/.test(mobile)) {
+    //   toast.error("Please enter a valid 10 digit mobile number");
     //   return;
     // }
 
@@ -81,6 +76,11 @@ if (!/^[6-9]\d{9}$/.test(mobile)) {
   toast.error("Please enter a valid 10 digit mobile number starting with 6, 7, 8 or 9");
   return;
 }
+
+    if (!serviceRequired.trim()) {
+      toast.error("Please enter required service");
+      return;
+    }
 
     if (!projectDetails.trim()) {
       toast.error("Please enter project details");
@@ -158,9 +158,9 @@ if (response.ok) {
   };
 
   return (
-    <section className="all-page-form">
+    <section className="all-page-form-new">
       <div className="container all-page-form-container">
-        <div className="row form-row">
+        <div className="row form-row-new">
           <div className="col-12">
             <div className="form-box">
             <div className="form-content-head-para">
@@ -230,7 +230,6 @@ if (response.ok) {
                         }
                         required
                       /> */}
-
 
                       <input
   id="mobile"

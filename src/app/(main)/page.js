@@ -184,14 +184,16 @@ export default function Home() {
       {/*.....our-constant-companions...... */}
       <OurConstant />
 
-      {/* industries we serve */}
-      {/* <LPBrandIdentityCategorySwipper/> */}
-      <HomePageIndustriesSwipper/>
+     
 
        {/*.....Our work...... */}
       <section id="ourworksection">
       <OurWorkHomeSection />
       </section>
+
+       {/* industries we serve */}
+      {/* <LPBrandIdentityCategorySwipper/> */}
+      <HomePageIndustriesSwipper/>
       {/*.....points...... */}
       <Points />
       {/* testimonial  */}

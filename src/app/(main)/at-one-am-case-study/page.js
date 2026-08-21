@@ -16,6 +16,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
 import AtOneAmBoxBottle from '@/Components/AtOneAmBoxBottle/AtOneAmBoxBottle';
+import SkateboardAnimation from '@/Components/SkateboardAnimation/SkateboardAnimation';
 
 
 
@@ -238,7 +239,7 @@ async function page() {
 
           <div className='sticky-section-two-img-div-two'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
             
             <div>
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
@@ -267,7 +268,7 @@ async function page() {
 
         <div className='sticky-section-two-img-div-two'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
             
             <div>
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
@@ -315,7 +316,7 @@ async function page() {
 
 
        {/* section 3  skate board*/}
-      {/* blue background */}
+     
       <div className='blue-background-section'></div>
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
@@ -348,7 +349,11 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid sticky-section-img-left' alt="" />
           </div>
 
-          <div className='skate-board-div'>
+        <div className="skate-board-div">
+  <SkateboardAnimation />
+</div>
+
+          {/* <div className='skate-board-div'>
           <AOSProvider> <div data-aos="slide-right"
     data-aos-duration="3000"
     data-aos-once="false"
@@ -356,7 +361,7 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/pages/ssqwsdxatoneamcasestudysaketeboard.jpg.png" className='img-fluid skate-borad-img'></img>
             </div>
              </AOSProvider>
-          </div>
+          </div> */}
         </div>
       </section>
 
