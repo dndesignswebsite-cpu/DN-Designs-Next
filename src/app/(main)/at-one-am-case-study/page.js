@@ -126,7 +126,8 @@ async function page() {
   
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" />
+          {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" /> */}
+          <video src="https://dndesigns.co.in/uploads/videos/atoneamshowreelasd.mp4" loop muted autoPlay className="img-fluid banner-after-hero-img"></video>
         </div>
       </div>
 
@@ -206,7 +207,7 @@ async function page() {
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" />
+          <img src="https://dndesigns.co.in/uploads/pages/atoneamnsecondsectionbabnnerbbbn.jpg.jpeg" className='img-fluid banner-after-hero-img' alt="" />
         </div>
       </div>
       </div>
@@ -239,13 +240,19 @@ async function page() {
 
           <div className='sticky-section-two-img-div-two'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
-            
-            <div>
+            {/* <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video> */}
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
+
+            <div className='video-in-end'>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
+            </div>
+            <div>
+            {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
             <div className="second-section-stack-img">
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-three.jpg" className='img-fluid sticky-section-img-left' alt="" />
-            </div>
+            </div> */}
+
+            
             </div>
           </div>
 
