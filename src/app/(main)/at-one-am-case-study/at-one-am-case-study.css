@@ -37,7 +37,7 @@
     color: #1154A8;
     font-size: 80px;
     font-weight: 700;
-    line-height: 1em;
+    line-height: 0.5em;
     font-family: neutronic-condensed;
 font-weight: 700;
 font-style: normal;
@@ -159,8 +159,9 @@ justify-content: space-between;
 .sticky-section-two-img-div-two{
     z-index: 22;
     position: relative;
-    gap: 20px;
+    /* gap: 20px; */
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -396,13 +397,14 @@ font-size: 16px;
 }
 
 .at-one-am-section-2-video-2{
-    width: 30%;
+    width: 50%;
 }
 
 .atoneamsectionseond-image-two{
-    width: 65%;
+    width: 40%;
     padding-bottom: 20px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    height: 100%;
 }
 .sticky-section-img-left-mobile{
     width: 45%;
@@ -526,6 +528,12 @@ font-size: 16px;
 }
 .section-after-skate-and-box-div-child-video-one{
     width: 50%;
+}
+
+.video-in-end{
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 

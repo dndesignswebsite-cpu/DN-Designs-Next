@@ -7,7 +7,7 @@ function PagesHero({ heading, subHeading, para }) {
     <section className="pages-hero">
       <div className="container">
        <h1>{heading}</h1>
-          <h3>{subHeading}</h3>
+          <h2>{subHeading}</h2>
         <div className="row"> 
           <div className="col-12 col-md-4"></div>
           <div className="col-12 col-md-8">

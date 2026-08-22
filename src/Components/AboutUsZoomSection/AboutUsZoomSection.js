@@ -72,8 +72,8 @@ useEffect(() => {
   return (
     <section ref={sectionRef} className="zoom-section">
       <div className="container bg-text-container">
-        <h1 ref={textTopRef} className="bg-text top-text">DN</h1>
-        <h1 ref={textBottomRef} className="bg-text bottom-text">DESIGNS</h1>
+        <h2 ref={textTopRef} className="bg-text top-text">DN</h2>
+        <h2 ref={textBottomRef} className="bg-text bottom-text">DESIGNS</h2>
       </div>
 
       <div className="container bg-stick-text-container">

@@ -139,7 +139,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               </li>
             </Link>
 
-            <Link href="/grincare-case-study" scroll={true}>
+            {/* <Link href="/grincare-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -163,7 +163,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                   </div>
                 </div>
               </li>
-            </Link>
+            </Link> */}
 
 
 
@@ -434,7 +434,7 @@ Can Design
                 </div>
               </Link>
 
-              <Link
+              {/* <Link
                 href="/grincare-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}
                 scroll={true}
@@ -443,10 +443,7 @@ Can Design
                   className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
                 >
                   <div className={`${styles["our-brand-mobile-div-clield"]}`}>
-                    {/* <img
-                      src={imageUrl + "grin care case study.webp"}
-                      className="img-fluid"
-                    /> */}
+                  
 
                     <Image
                       src={imageUrl + "grin care case study.webp"}
@@ -492,7 +489,9 @@ Can Design
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
+
+
             </div>
           </div>
         </div>
