@@ -22,6 +22,7 @@ function PagesHero({ heading, subHeading, para }) {
         </div>
       </div>
     </section>
+    
   );
 }
 
