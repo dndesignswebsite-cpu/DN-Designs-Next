@@ -213,7 +213,7 @@ function page() {
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
-                  folder images
+                  {/* folder images */}
                    <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
                   <img src="https://dndesigns.co.in/uploads/pages/weigydshvwjd.webp" className='img-fluid folder-content-img-two'/>
                   {/* folder layer upper */}
@@ -281,7 +281,7 @@ function page() {
                 <div className='folder'>
                   <img src="https://dndesigns.co.in/uploads/pages/logodesignbackimage.png" className='folder-base-layer-img img-fluid'/>
                   <img src="https://dndesigns.co.in/uploads/pages/brandidentityfoldertwo.svg" className='folder-mid-layer-img img-fluid'/>
-                  folder images
+                  {/* folder images */}
                  
 
                   <img src="https://dndesigns.co.in/uploads/pages/letssuppnewcase11hewjd.webp" className='img-fluid folder-content-img'/>
