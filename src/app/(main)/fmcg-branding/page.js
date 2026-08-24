@@ -16,6 +16,8 @@ import Breadcrumb from "@/Components/BreadCrumb/BreadCrumb";
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 
 
@@ -765,42 +767,69 @@ async function page() {
           <div className="fmcg-industries-row-div">
           {/* 1 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
+
               <p className="fmcg-industries-para">Food & Packaged Foods</p>
             </div>
             {/* 2 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Beverages</p>
             </div>
             {/* 3 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Dairy</p>
             </div>
             {/* 4 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img> */}
+
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Confectionery</p>
             </div>
             {/* 5 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Staples & Grocery</p>
             </div>
             {/* 6 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Personal Care</p>
             </div>
             {/* 7 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Home Care</p>
             </div>
             {/* 8 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img>
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Baby Care</p>
             </div>
             {/* 9 */}
@@ -1164,7 +1193,7 @@ async function page() {
             <section className="looking-for-someone">
               <div className="container">
                 <div className="looking-for-someone-container">
-                  <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
+                  <p className="looking-for-someone-para">Ready to Bring Your Brand  <br></br> to Life? Get on a call with us.</p>
                   <TalkToUs/>
                 </div>
               </div>
@@ -1231,6 +1260,12 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+      {/* cta swipper */}
+      {/* <CTAMarqueSwipper/> */}
+      {/* book a direct call */}
+      <BookDirectCallCTA/>
 
       {/* Why DN Designs? mobile*/}
 

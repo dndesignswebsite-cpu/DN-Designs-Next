@@ -993,6 +993,25 @@ a{
   color: #fff;
 }
 
+/* fmcg-industries-icon */
+.fmcg-industries-icon-div{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fmcg-industries-icon{
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.fmcg-industries-single-col-div:hover .fmcg-industries-icon {
+    filter: invert(35.64%) sepia(98.48%) saturate(267.63%)
+        hue-rotate(-53.46deg) brightness(65.31%) contrast(190.48%);
+}
 
 @media (max-width: 1299px) {
   .fmcg-industries-single-col-div {
