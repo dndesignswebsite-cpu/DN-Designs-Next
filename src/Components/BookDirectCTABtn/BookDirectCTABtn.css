@@ -1,0 +1,17 @@
+
+
+.talk-to-us-cta {
+  background-color: #fff;
+  font-family: var(--font-roboto);
+  /* border-radius: 100px 100px 100px 100px; */
+  padding: 10px 25px 10px 25px;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+}
+
+.fontAwesomeIcon-right-arrow {
+  padding-left: 6px;
+  transform: rotate(-40deg);
+}
+

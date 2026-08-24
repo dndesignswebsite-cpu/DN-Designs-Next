@@ -160,7 +160,7 @@ async function page() {
           </div>
 
           <div className='sticky-section-img-div-two'>
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagefour.jpg" className='img-fluid sticky-section-img-right' alt="" />
+            <img src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className='img-fluid sticky-section-img-right' alt="" />
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' alt="" /> */}
             <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner'></video>
           </div>
@@ -224,12 +224,12 @@ async function page() {
       </div>
       </div>
 
-      <section className="sticky-section-parent section-two-for-desktop" id="sticky-parent-2">
+      <section className="sticky-section-parent section-two-for-desktop blue-background" id="sticky-parent-2">
         <div className='container-fluid-custom'>
 
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font at-one-am-font-white">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font at-one-am-font-white">LOREM IPSUM</MomentumSection>
           </div>
 
           <div className='sticky-section-img-div'>
@@ -328,7 +328,7 @@ async function page() {
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" />
+          <img src="https://dndesigns.co.in/uploads/pages/atoneewghdsvhblur.jpg.jpeg" className='img-fluid banner-after-hero-img' alt="" />
         </div>
       </div>
       </div>
@@ -352,7 +352,7 @@ async function page() {
           </div>
 
           <div className='sticky-section-img-div'>
-           <img src="https://dndesigns.co.in/uploads/videos/skatesectionimageoneatoneam.jpg" className='img-fluid sticky-section-img-right' alt="" />
+           <img src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className='img-fluid sticky-section-img-right' alt="" />
             <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid sticky-section-img-left' alt="" />
           </div>
 
@@ -373,7 +373,7 @@ async function page() {
       </section>
 
       {/* glb section */}
-      <AtOneAmBoxBottle/>
+      {/* <AtOneAmBoxBottle/> */}
 
       {/* skate board for mobile */}
       <section className='container-fluid-custom skate-board-mobile'>

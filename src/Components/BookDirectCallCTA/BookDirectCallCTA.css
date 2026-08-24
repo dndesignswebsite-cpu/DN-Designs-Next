@@ -1,0 +1,38 @@
+.book-a-direct-call-section{
+    padding: 60px 0;
+}
+
+.book-a-direct-call-row{
+    background: #000;
+    border-radius: 10px;
+    padding: 70px 40px;
+}
+
+.book-a-direct-call-col-main-head{
+    font-family: var(--font-corbert-bold);
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+.book-a-direct-call-col-main-head-span{
+    color: #ca2734;
+}
+
+.book-a-direct-call-col-para-desc{
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+@media(max-width:991px){
+    .book-a-direct-call-col-para-desc{
+        margin-top: 20px;
+    }
+    .book-a-direct-call-col-main-head{
+        font-size: 35px;
+    }
+}
