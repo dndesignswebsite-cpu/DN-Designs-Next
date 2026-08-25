@@ -17,7 +17,8 @@
 
 .career-tabs-links li a{
     font-size: 18px;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     color: #fff;
 }
 
@@ -85,19 +86,22 @@
 
 .content-career-unit h2{
     font-size: 31px;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
 }
 
 .content-career-unit h3{
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: var(--font-helvetica);
     padding-top: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .content-career-unit p{
     font-size: 16px;
-    font-family: "Roboto";
+    font-family: var(--font-helvetica);
+  font-weight: 400;
     line-height: 1.8em;
     padding: 20px 0;
 }
@@ -110,7 +114,8 @@
      }
     .content-career-unit ul li {
         padding: 5px 0;
-        font-family: "Roboto";
+       font-family: var(--font-helvetica);
+       font-weight: 400;
     }
 
 
@@ -140,12 +145,15 @@ margin: 20px 0;
 
 .mobile-content-career h2{
     font-size: 30px;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
 }
 
 .mobile-content-career h3{
     font-size: 18px;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+   font-weight: 400;
     padding: 10px 0;
 }
 
@@ -155,14 +163,16 @@ margin: 20px 0;
 
 .mobile-content-career ul li{
      padding: 5px 0;
-     font-family: "Roboto";
+     font-family: var(--font-helvetica);
+    font-weight: 400;
 }
 
 
 
 .mobile-content-career p{
     font-size: 16px;
-    font-family: "Roboto";
+   font-family: var(--font-helvetica);
+   font-weight: 400;
 }
 
 

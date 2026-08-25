@@ -6,8 +6,9 @@
 }
 .explore-our-video-gallery h2{
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #000;
   text-align: center;
   padding: 20px 0px 50px 0px;
@@ -21,7 +22,9 @@
 
 .we-are-the-leading h3{
     font-size: 50px;
-    font-family: var(--font-corbert-bold);
+     font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     color: #000;
     width: 70%;
 }
@@ -32,9 +35,10 @@
 
 .we-are-the-leading-para p{
   font-size: 18px;
-  font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+    
   line-height: 1.6em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media (max-width: 991px) {
@@ -73,20 +77,23 @@
 
 .characteristics-of-good h2 {
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
 }
 .characteristics-of-good-btm h3{
   font-size: 24px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 10px;
 }
 
 .characteristics-of-good p {
   color: #000;
-  font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+    font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -102,7 +109,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -139,8 +146,9 @@
 .characteristics-of-good-back-content h3 {
   color: #fff;
   font-size: 24px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 10px;
 }
 
@@ -196,8 +204,9 @@
 
 .appr-pro-anime .appr-pro-anime-main-head {
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 15px;
 }
 
@@ -207,7 +216,8 @@
   line-height: 1.6em;
   font-size: 18px;
   width: 100%;
-  font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+  font-weight: 400;
   margin-bottom: 40px;
 }
 
@@ -229,7 +239,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
 }
 .appr-pro-anime-row-main {
@@ -241,8 +251,9 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #ca2734;
 }
 
@@ -250,12 +261,14 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
- font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  
 }
 
 .appr-pro-anime-main-para{
   font-size: 18px;
-  font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+  font-weight: 400;
   width: 90%;
   color: #000;
 }
@@ -288,31 +301,33 @@
 
 .power-of-animation-row h3{
 font-size: 50px;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     color: #000;
 }
 
 .power-of-animation-row p{
     font-size: 18px;
     color: #000;
-   font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+   font-weight: 400;
     padding: 20px 0px 40px 0px;
 } 
 .horror-image-col{
     position: relative;
-    border-radius: 24px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .normal-img{
-    border-radius: 24px;
+    border-radius: 5px;
 }
 
 .horror-img{
     position: absolute;
     transition: opacity 0.3s ease;
-    border-radius: 24px;
+    border-radius: 5px;
 }
 
 .horror-image-col:hover{
@@ -339,7 +354,7 @@ font-size: 40px;
 
 .user-engagement-div{
     
-    border-radius: 24px;
+    border-radius: 5px;
     height: 100%;
 }
 
@@ -357,10 +372,11 @@ padding: 20px;
 }
 
 .user-eng-up-div h4{
-     font-family: var(--font-corbert-bold);
+      font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
      color: #000;
      font-size: 18px;
-     font-weight: 700;
+     font-weight: 500;
 }
 
 .user-eng-up-div .user-eng-svg-img{
@@ -372,8 +388,9 @@ padding: 20px;
 }
 
 .user-engagement-div h3{
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 24px;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -381,14 +398,15 @@ padding: 20px;
 }
 
 .user-engagement-div p{
-   font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .user-engagement-number{
-    font-family: var(--font-corbert);
+     font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size:40px;
     color: #000;
 }

@@ -7,9 +7,10 @@
 
 .rewrite-your-brand-story-head-mian{
     font-size: 50px;
-    font-family: var(--font-corbert-bold);
+     font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     padding-bottom: 10px !important;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 

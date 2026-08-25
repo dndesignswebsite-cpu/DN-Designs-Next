@@ -7,7 +7,7 @@
 .points {
   background-color: rgb(241, 241, 241);
   box-shadow: 0px 0px 1.16px 0px rgba(1.700000000000012, 1.700000000000012, 1.700000000000012, 0.21);
-  border-radius: 32px;
+  border-radius: 5px;
   
   margin: 0px 0px 20px 0px;
   position: relative;
@@ -23,32 +23,35 @@
 
 
 .points-right h2 {
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
   font-size: 180px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   position: absolute;
   bottom: 0%;
 }
 .points-right h3 {
   color: #000;
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 500;
   
 }
 
 .points-para p {
     color: #888888;
-    font-family: var(--font-roboto);
-    font-weight:500;
+    font-family: var(--font-helvetica);
+
+    font-weight:400;
     font-size: 16px;
     line-height: 1.4em;
 }
 
 .points-left img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .points-left {
   padding-right: 10px;
@@ -80,8 +83,8 @@ padding: 10px 10px 20px 10px;
 }
 .points-para p {
     color: #888888;
-    font-family: var(--font-roboto);
-    font-weight:500;
+   font-family: var(--font-helvetica);
+    font-weight:400;
     font-size: 17px;
     line-height: 1.4em;
 }
@@ -89,8 +92,8 @@ padding: 10px 10px 20px 10px;
 
 .points-links-point{
   color:#888888;
-  font-family: var(--font-roboto);
-  font-weight:500;
+  font-family: var(--font-helvetica);
+  font-weight:400;
   font-size: 16px;
   text-decoration: none;
 }

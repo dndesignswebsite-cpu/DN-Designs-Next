@@ -26,13 +26,15 @@
 
 .bg-text {
   font-size: 140px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   margin: 0;
   letter-spacing: -0.05em;
   line-height: 0.8;
   white-space: nowrap;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  
 }
 
 .top-text {
@@ -86,10 +88,10 @@
 }
 
 .bg-stick-text{
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
   font-size: 18px;
   color: #000;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .zoom-video-mobile{

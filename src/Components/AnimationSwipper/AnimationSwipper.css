@@ -10,8 +10,9 @@
 
 .animation-video-swipper-up h3{
     font-size: 40px;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     color: #000;
 }
 
@@ -36,13 +37,14 @@
 
 
 .animation-video-swipper-bottom h4{
-font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
 font-size: 18px;
-font-weight: 700;
+font-weight: 400;
 }
 
 .animation-video-swipper-bottom p{
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.6em;
     padding-top: 30px;

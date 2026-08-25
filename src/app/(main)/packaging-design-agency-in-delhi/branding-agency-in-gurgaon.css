@@ -7,19 +7,21 @@
     height: 100%;
     color: #fff;
     padding: 20px 20px 20px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .content-box-city-page h2{
     color: #fff;
-    font-family: "Corbert";
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content-box-city-page p{
     color: #fff;
-    font-family: "Roboto";
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -29,7 +31,7 @@
     padding: 0;
 }
 .image-box-city-page img{
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @media(max-width:1399.68px){

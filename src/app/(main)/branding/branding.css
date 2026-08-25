@@ -6,26 +6,26 @@
 .port-div {
   border: 1px solid #a8a8a8;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 5px;
   height: 100%;
 }
 
 .port-div img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div-img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div video {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
   object-fit: cover;
 }
 
@@ -35,9 +35,10 @@
 
 .portfolio h2 {
   color: #000;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -55,12 +56,11 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px 5px 5px 5px;
   padding: 7px 20px;
   font-family: var(--font-roboto);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-radius: 6px 6px 6px 6px;
   font-size: 16px;
   color: #ca2734;
 }
@@ -72,11 +72,12 @@
 }
 
 .our-port-btn-up button {
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+   font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px;
   font-size: 18px;
 }
 
@@ -85,15 +86,17 @@
 }
 .port-div-headg h3 {
   color: #ca2734;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   font-size: 32px;
 }
 
 .port-content p {
   color: #888888; 
-  font-family: var(--font-roboto);
-  font-weight: 500;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
   padding-top: 5px;
@@ -177,8 +180,9 @@
 
 .branding-that-breaks h2{
   font-size: 50px;
- font-family: var(--font-corbert-bold);
- font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+ font-weight: 500;
 }
 
 .mobile-view-our-brand{
@@ -205,16 +209,18 @@
 
 .mobile-view-our-brand h2{
   font-size: 35px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 20px;
 }
 
 .mobile-view-our-brand-h3 {
   color: #ca2734;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   font-size: 32px;
   padding-bottom: 8px;
 }
@@ -229,19 +235,19 @@
 }
 .our-brand-mobile-div-clield{
   border: 1px solid #A8A8A8;
-  border-radius: 12px;
+  border-radius: 5px;
   height: 100%;
 }
 
 .our-brand-mobile-div img{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 
 .our-brand-mobile-div-img{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 .our-brand-mobile-div video{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 
 .our-brand-mobile-div-content{
@@ -253,7 +259,7 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px 5px 5px 5px;
   padding: 5px;
 }
 
@@ -266,20 +272,22 @@
   width: 50%;
     font-size: 15px;
     text-align: center;
-   font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  font-weight: 400;
 }
 .our-brand-mobile-btn-bottom {
   width: 100%;
   padding: 10px;
   font-size: 15px;
     text-align: center;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+    font-weight: 400;
 }
 
 .our-brand-mobile-div-content p{
       color: #888888;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
     padding-top: 10px;
@@ -298,13 +306,16 @@
 
 .mobile-view-branding-that h2{
   font-size: 40px;
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
   color: #000;
 }
 
 .mobile-view-branding-that-h3 {
   color: #ca2734;
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+    font-weight: 400;
   font-size: 32px;
 }
 
@@ -314,20 +325,20 @@
 
 .branding-that-mobile-div{
   border: 1px solid #A8A8A8;
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 0px;
   margin: 20px 0;
 }
 
 .branding-that-mobile-div img{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 
 .branding-that-mobile-div-img{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 .branding-that-mobile-div video{
-  border-radius:12px 12px 0 0 ;
+  border-radius:5px 5px 0 0 ;
 }
 
 .branding-that-mobile-div-content{
@@ -339,7 +350,7 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius:5px;
   padding: 5px;
 }
 
@@ -352,7 +363,8 @@
   width: 50%;
     font-size: 15px;
     text-align: center;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+    font-weight: 400;
 }
 .branding-that-mobile-btn-bottom {
   width: 100%;
@@ -362,12 +374,14 @@
 .branding-that-mobile-btn-bottom{
   font-size: 15px;
     text-align: center;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+   font-weight: 400;
 }
 
 .branding-that-mobile-div-content p{
       color: #888888;
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -390,9 +404,10 @@
 }
 .branding-identity h2{
    color: #000;
- font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -400,12 +415,12 @@
 .identity-div{
    box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
   padding: 20px;
-   border-radius: 16px;
+   border-radius: 5px;
    height: 100%;
 }
 
 .identity-div img{
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .identity-div-content{
@@ -414,16 +429,17 @@
 
 .identity-div-content h3{
       color: #000;
-    font-family: var(--font-corbert);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 5px 10px;
 }
 
 .identity-div-content p{
   color: #888888;
-    font-family: var(--font-roboto);
-      font-weight: 500;
+    font-family: var(--font-helvetica);
+      font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 10px;
@@ -456,8 +472,9 @@
 
 .noun-mar{
           vertical-align: middle;
-       font-family: var(--font-corbert-bold);
-        font-weight: 700;
+       font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+        font-weight: 500;
         font-size: 150px;
         padding: 40px 0px 40px 0px;
 }
@@ -511,7 +528,7 @@
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -542,9 +559,10 @@
   padding: 30px 0;
   text-align: center;
   color: #000;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 20px;
 }
@@ -561,23 +579,25 @@
 
 .create-number{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 85px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create h2{
   color: #000;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 10px;
 }
 
 .card-body-create p{
       color: #888888;
-   font-family: var(--font-roboto);
-   font-weight: 500;
+  font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -626,9 +646,10 @@
 
 .our-brand-heading-a-mobile{
   color: #000;
- font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -639,30 +660,33 @@
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
 }
 
 .create-number-mobile{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create-mobile h2{
       color: #ca2734;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 0;
 }
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;

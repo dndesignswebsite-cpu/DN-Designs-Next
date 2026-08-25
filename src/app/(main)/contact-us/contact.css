@@ -15,7 +15,8 @@
 
 .contact-para p{
     width: 50%;  
-    font-family: "Roboto";
+    font-family: var(--font-helvetica);
+    font-weight: 400;
 }
 
 .contact-h1{
@@ -24,9 +25,10 @@
 
 .contact-h1 h1{
  color: #000;
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 @media(max-width:767px){
@@ -39,9 +41,10 @@
 
 .contact-h1 h1{
  color: #000;
-    font-family: var(--font-corbert);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     width: 100%;
 }
 }

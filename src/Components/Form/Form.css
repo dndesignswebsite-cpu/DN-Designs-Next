@@ -9,13 +9,13 @@
   background-color: #ca2734;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 0px 16px 16px 0px ;
+  border-radius: 0px 5px 5px 0px ;
 }
 
 
 
 .inpt label{
-    font-family: var(--font-corbert);
+   font-family: var(--font-helvetica);
         cursor: pointer;
         color: #000;
         font-size: 16px;
@@ -30,8 +30,9 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #ADADAD;
-  border-radius: 12px;
- font-family: var(--font-roboto);
+  border-radius: 5px;
+font-family: var(--font-helvetica);
+  font-weight: 400;
   padding: 10px;
   font-size: 14px;
   margin:10px 0px;
@@ -40,8 +41,9 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #ADADAD;
-  border-radius: 12px;
- font-family: var(--font-roboto);
+  border-radius: 5px;
+ font-family: var(--font-helvetica);
+  font-weight: 400;
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
@@ -52,7 +54,8 @@
 .inpt textarea::placeholder {
   color: #ADADAD;
   opacity: 1;
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+ font-weight: 400;
 }
 
 .sbmt-btn {
@@ -62,10 +65,11 @@
   color: white;
   font-size: 18px;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
- font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+  font-weight: 400;
 } 
 
 .form-box{
@@ -76,7 +80,7 @@
 }
 
 .main-form{
-  border-radius: 16px;
+  border-radius: 5px;
   background-color: #fff;
   padding: 20px;
   height: 100%;
@@ -84,9 +88,9 @@
 
 
 .form-left-content{
-  border-right: 10px solid #ca2734;
-  border-top: 10px solid #ca2734;
-  border-bottom: 10px solid #ca2734;
+  border-right: 5px solid #ca2734;
+  border-top: 5px solid #ca2734;
+  border-bottom: 5px solid #ca2734;
   padding: 0;
   margin: 0;
 }
@@ -97,7 +101,7 @@
 
 .form-main-content{
   background-color: #ffffff;
-  border-radius: 0px 16px 16px 0px ;
+  border-radius: 0px 5px 5px 0px ;
   padding: 25px;
   height: 100% !important;
   width: 100%;
@@ -108,15 +112,17 @@
 
 .form-main-content h3{
     color: #000;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 20px;
     
 }
 
 .form-main-content p{
-       font-family: var(--font-roboto);
+       font-family: var(--font-helvetica);
+       font-weight: 400;
         color: #000;
         line-height:1.6em;
         font-weight: 500;
@@ -152,7 +158,8 @@
 
 .succes-class-form{
   color: #ca2734;
-  font-family: "Roboto";
+ font-family: var(--font-helvetica);
+ font-weight: 400;
   font-size: 18px;
   margin-top: 10px;
 }

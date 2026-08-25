@@ -4,16 +4,17 @@
 
 .book-a-direct-call-row{
     background: #000;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 70px 40px;
 }
 
 .book-a-direct-call-col-main-head{
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
     color: #fff;
     line-height: 1.1em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .book-a-direct-call-col-main-head-span{
@@ -21,7 +22,7 @@
 }
 
 .book-a-direct-call-col-para-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 18px;
     font-weight: 400;
     color: #fff;

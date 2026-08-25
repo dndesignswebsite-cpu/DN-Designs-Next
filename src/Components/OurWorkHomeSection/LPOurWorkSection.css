@@ -9,9 +9,11 @@
 
 .our-work h2{
   color: #000;
-  font-family: var(--font-corbert-bold);
+  /* font-family: var(--font-corbert-bold); */
+  font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 30px;
 }
@@ -83,15 +85,18 @@
 }
 
 .overlay-title {
-  font-family: var(--font-corbert);
+  /* font-family: var(--font-corbert); */
+  font-family: var(--font-helvetica);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0px 0px 0px 10px;
 }
 
 .Pras {
   color: white;
-  font-family: var(--font-roboto);
+  /* font-family: var(--font-roboto); */
+  font-family: var(--font-helvetica);
+  font-weight: 400;
   margin: 0px 0px 0px 10px;
 }
 
@@ -150,7 +155,7 @@
   width: 35px;
   height: 35px;
   border: none;
-  border-radius: 50%;
+  border-radius: 5px;
 
   background: rgba(0, 0, 0, 0.6);
   color: #fff;

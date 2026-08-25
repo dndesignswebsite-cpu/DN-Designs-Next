@@ -94,14 +94,15 @@
 }
 
 .cta-swipper-heading{
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   color:#434343;
 }
 
 .cta-col-img-main{
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .cta-swipper-para-desc{
@@ -109,7 +110,8 @@
   border-bottom: 2px solid #4D4D4D;
   padding-bottom: 2px;
   color: #4D4D4D;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  font-weight: 400;
 }
 
 .cta-swipper-para-icon-div{
@@ -119,9 +121,9 @@
 
 .cta-swipper-label-para{
   color: #ca2734;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-bottom: 0;
@@ -130,10 +132,11 @@
 
 
 .swipper-slider-cta-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
     color: #fff;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     width:50%;
     text-align: center;
 }
@@ -166,7 +169,7 @@
 /* jeds */
 .cta-swipper-slide{
     background: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cta-swipper-slide-special{
@@ -175,13 +178,13 @@
 }
 
 .cta-swipper-img{
-      border-radius: 0px 10px 10px 0;
+      border-radius: 0px 5px 5px 0;
       width:100%;
 }
 
 @media(max-width:767px){
     .cta-swipper-img{
-      border-radius: 0px 0px 10px 10px;
+      border-radius: 0px 0px 5px 5px;
 }
 .cta-col-content-div{
     gap: 10px;

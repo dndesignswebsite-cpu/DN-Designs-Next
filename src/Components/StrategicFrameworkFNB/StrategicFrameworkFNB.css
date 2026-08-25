@@ -2,20 +2,22 @@
 
 .our-stregetic-framework-label-para {
   text-align: center;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+    
   font-size: 14px;
   text-transform: uppercase;
   color: #ca2734;
   letter-spacing: 2.4px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 .our-stregetic-framework-head {
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -33,7 +35,7 @@
 
 .our-stregetic-framework-col-content-div {
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.12);
   border: 1px solid rgba(197, 198, 205, 0.1);
@@ -44,23 +46,26 @@
 
 .our-stregetic-framework-col-content-div-label-para {
   color: #ca2734;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-bottom: 0;
 }
 
 .our-stregetic-framework-col-content-div-head {
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ca2734;
 }
 
 .our-stregetic-framework-col-content-div-desc-para {
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+
   font-weight: 400;
   font-size: 16px;
   color: #44474c;
@@ -78,7 +83,8 @@
 
 .our-stregetic-framework-col-content-div-list-item {
   color: #000;
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+  
   font-size: 14px;
   font-weight: 400;
   padding: 5px 0;
@@ -102,9 +108,10 @@
 }
 
 .our-stregetic-framework-col-number {
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 55px;
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(202, 39, 52, 0.4);
 }
 

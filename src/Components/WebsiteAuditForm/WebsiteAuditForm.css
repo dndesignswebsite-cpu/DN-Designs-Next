@@ -1,6 +1,6 @@
 .contact-form{
     box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 20px;
 }
 .form-group {
@@ -11,10 +11,11 @@
 .form-group label {
   display: block;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
   text-transform: uppercase;
-  font-family: "Roboto";
+ font-family: var(--font-helvetica);
+    
 }
 
 .required-star {
@@ -30,9 +31,10 @@
   color: #000;
   font-size:20px;
   padding: 10px 0;
- border-radius: 10px;
+ border-radius: 5px;
   padding: 5px;
-  font-family: "Roboto";
+  font-family: var(--font-helvetica);
+   font-weight: 400;
 }
 
 .form-group input:focus,
@@ -67,10 +69,11 @@
   background-color: #ca2734;
   color:#fff ;
   border: none;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
-  font-family: var(--font-corbert);
-  border-radius: 100px;
+ font-family: var(--font-helvetica);
+   
+  border-radius: 5px;
 }
 
 .row1{
