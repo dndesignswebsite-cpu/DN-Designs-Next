@@ -16,34 +16,35 @@
 .port-div {
   border: 1px solid #a8a8a8;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 5px;
   height: 100%;
 }
 
 .port-div img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div-img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div video {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
   object-fit: cover;
 }
 
 .portfolio h2 {
   color: #000;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -57,12 +58,12 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px;
   padding: 10px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+    font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-radius: 6px 6px 6px 6px;
   font-size: 16px;
   color: #000;
 }
@@ -74,11 +75,12 @@
 }
 
 .our-port-btn-up button {
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
+    font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius:5px;
   font-size: 18px;
 }
 
@@ -87,14 +89,16 @@
 }
 .port-div-headg h3 {
   color: #ca2734;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .port-content p {
   color: #888888;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+   font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
   padding-top: 5px;
@@ -211,7 +215,7 @@
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -242,9 +246,10 @@
   padding: 30px 0;
   text-align: center;
   color: #000;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 20px;
 }
@@ -268,16 +273,17 @@
 
 .card-body-create h2{
   color: #000;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 10px;
 }
 
 .card-body-create p{
       color: #888888;
-   font-family: var(--font-roboto);
-   font-weight: 500;
+   font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -327,9 +333,10 @@
 
 .our-brand-heading-a-mobile{
   color: #000;
- font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -340,7 +347,7 @@
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
 }
@@ -354,16 +361,17 @@
 
 .card-body-create-mobile h2{
       color: #000;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 0;
 }
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -378,13 +386,15 @@
 
 .top-cap h2 {
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
 }
 
 .top-cap p {
   color: #000;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+    font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -400,7 +410,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -419,8 +429,9 @@
 
 .top-cap-btm h3 {
   font-size: 22px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 10px;
 }
@@ -445,7 +456,9 @@
 
 .top-cap-back-content h3 {
   font-size: 22px;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
   color: #fff;
   padding-bottom: 10px;
 }
@@ -492,8 +505,9 @@
 .standalone-sec-pac .headg{
   font-size: 50px;
     color: #000;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     padding-bottom: 30px;
 
 }

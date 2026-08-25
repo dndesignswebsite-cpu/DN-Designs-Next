@@ -33,12 +33,12 @@
 .hero-title {
   color: #ffffff;
   font-size: clamp(2rem, 10vw, 6rem);
-  font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.9;
   white-space: nowrap;
   margin: 0;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+  font-weight: 500;
   transform: translateZ(0);
   will-change: transform;
 }

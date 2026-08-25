@@ -1,10 +1,12 @@
 .modern-essentials-text h2 {
-   font-family: Corbert;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
     text-align: center;
     color:#3f4737;
     font-weight: 500;
     line-height: 1.2em;
+    font-weight: 500;
 }
 
 .letsupfont-head{
@@ -22,12 +24,14 @@ font-family: letsupfont;
 }
 
 .modern-essentials-textsec h2 {
-   font-family: Corbert;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
     text-align: center;
     color:#068CA6;
     font-weight: 500;
     line-height: 1em;
+    font-weight: 500;
 }
 
 .letsupfont-head{

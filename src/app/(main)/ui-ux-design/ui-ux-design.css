@@ -9,7 +9,9 @@
 }
 
 .designs-that-speak .designs-that-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
   font-size: 50px;
   padding-bottom: 40px;
 }
@@ -42,8 +44,10 @@
 }
 
 .designs-that-speak .designs-that-head{
-    font-family: var(--font-corbert-bold);
-  font-size: 40px;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+font-weight: 500;
+    font-size: 40px;
   padding-bottom: 40px;
 }
 
@@ -62,8 +66,9 @@
 
 #ui-heading{
   font-size: 56px;
-  font-weight: 700;
-  font-family: var(--font-corbert-bold);
+  font-weight: 500;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   padding-bottom: 30px;
   color: #000;
 }
@@ -71,7 +76,7 @@
 .ui-description{
   font-size: 18px;
   font-weight: 400;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
   line-height: 1.6em;
    color: #000;
 }
@@ -115,7 +120,7 @@
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -146,9 +151,10 @@
   padding: 30px 0px 0px 0px;
   text-align: center;
   color: #000;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 20px;
 }
@@ -165,23 +171,25 @@
 
 .create-number{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 85px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create h2{
   color: #000;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 10px;
 }
 
 .card-body-create p{
       color: #888888;
-   font-family: var(--font-roboto);
-   font-weight: 500;
+   font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -230,9 +238,10 @@
 
 .our-brand-heading-a-mobile{
   color: #000;
- font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -243,30 +252,33 @@
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
 }
 
 .create-number-mobile{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create-mobile h2{
       color: #000;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 0;
 }
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+   font-family: var(--font-helvetica);
+
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
     padding: 5px 0px;
@@ -285,13 +297,15 @@
 
 .characteristics-of-good h2 {
   font-size: 50px;
- font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
 }
 
 .characteristics-of-good p {
   color: #000;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+    font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -307,7 +321,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -326,8 +340,9 @@
 
 .characteristics-of-good-btm h3{
   font-size: 24px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #000;
   padding-bottom: 10px;
 }
@@ -351,15 +366,16 @@
 
 .characteristics-of-good-back-content h3{
   font-size: 28px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 10px;
 }
 
 .characteristics-of-good-back-content p {
   color: #fff;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+ font-family: var(--font-helvetica);
+  font-weight: 400;
 }
 
 .characteristics-of-good-main-div:hover {
@@ -406,7 +422,9 @@
 
 .craft-heading{
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
   color: #000;
 }
 
@@ -414,9 +432,10 @@
   position: sticky;
   top: 20;
   padding-bottom: 50px;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
    color: #000;
 }
 
@@ -435,7 +454,8 @@
 .craft-para{
   font-size: 16px;
   font-weight: 400;
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+
 }
 .landing-row{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -489,8 +509,9 @@ margin: 0;
 
 .craft-tab-view-row h2{
  font-size: 40px;
-font-family: var(--font-corbert-bold);
-font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+font-weight: 500;
 }
 
 .craft-first-div-mobile{
@@ -500,26 +521,28 @@ font-weight: 700;
 .craft-first-div-mobile-content{
   box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 20px;
 }
 
 .craft-first-div-mobile-content h2{
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   font-size: 35px;
   padding-bottom: 20px;
 }
 
 .craft-first-div-mobile-content p{
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+   font-weight: 400;
   font-size: 18px;
 }
 
 .craft-first-div-mobile-img{
   box-shadow:0px 2px 11px -1px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 20px;
 }
 

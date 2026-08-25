@@ -869,14 +869,14 @@
     z-index: 3;
 
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
 
     margin: 0;
     margin-bottom: 0;
 
     transition: transform 0.4s ease;
 
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
 }
 
 
@@ -898,8 +898,8 @@
     transform: translateY(20px);
 
     transition: all 0.4s ease;
-
-    font-family: "Roboto";
+font-family: var(--font-helvetica);
+font-weight: 400;
 }
 
 
@@ -1115,9 +1115,10 @@
 
 
 .homepageindusriesswipper-content-left-para-label {
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
 
-    font-weight: 500;
+
+    font-weight: 400;
 
     font-size: 14px;
 
@@ -1132,18 +1133,20 @@
 
 
 .homepageindusriesswipper-content-left-head {
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
 
     font-size: 40px;
 
-    font-weight: 700;
+    font-weight: 500;
 
     color: #0A0A0A;
 }
 
 
 .homepageindusriesswipper-content-right-para-desc {
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+    
 
     font-weight: 400;
 
@@ -1245,17 +1248,19 @@
 }
 
 .overlay-text-content h3{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+   
     font-size: 24px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .overlay-text-content p{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+  
     color: #fff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }   
 
 
@@ -1269,26 +1274,29 @@
 }
 
 .industreis-section-content-label-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+    
     font-size: 18px;
     text-transform: uppercase;
     color: #ca2734;
     letter-spacing: 1px;
    text-align: center;
-   font-weight: 500;
+   font-weight: 400;
    margin-bottom: 0;
 }
 
 .industreis-section-content-head{
     font-size: 50px;
-    font-weight: 700;
-    font-family: var(--font-corbert-bold);
+    font-weight: 500;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     color: #000;
     text-align: center;
 }
 
 .industreis-section-content-para-desc{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+    
     font-weight: 400;
     font-size: 16px;
     color: #535353;

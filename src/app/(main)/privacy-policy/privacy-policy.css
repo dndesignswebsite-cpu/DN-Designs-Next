@@ -11,14 +11,17 @@
 }
 
 .privacy-policy-block-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 35px;
     color: #000;
     padding-bottom: 5px;
 }
 
 .privacy-policy-block-para{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+   
     font-weight: 400;
     font-size: 16px;
     color: #000;
@@ -26,7 +29,9 @@
 
 
 .privacy-policy-block-head-sub{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 25px;
     color: #000;
     padding-bottom: 5px;

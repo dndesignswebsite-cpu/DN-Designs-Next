@@ -6,7 +6,7 @@
 .port-div {
   border: 1px solid #a8a8a8;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 5px;
   height: 100%;
  
 }
@@ -14,19 +14,19 @@
 .port-div img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div-img {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .port-div video {
   margin: 0;
   padding: 0;
-  border-radius: 12px 12px 0 0;
+  border-radius: 5px 5px 0 0;
   object-fit: cover;
 }
 
@@ -36,9 +36,10 @@
 
 .portfolio h2 {
   color: #000;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -56,12 +57,12 @@
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px;
   padding: 7px 10px;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+    font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-radius: 6px 6px 6px 6px;
   font-size: 12px;
   color: #ca2734;
 }
@@ -74,11 +75,12 @@
 }
 
 .our-port-btn-up button {
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
+ font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ca2734;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 5px;
   font-size: 18px;
 }
 
@@ -87,15 +89,17 @@
 }
 .port-div-headg h3 {
   color: #ca2734;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   font-size: 32px;
 }
 
 .port-content p {
   color: #888888; 
-  font-family: var(--font-roboto);
-  font-weight: 500;
+  font-family: var(--font-helvetica);
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
   padding-top: 5px;
@@ -208,9 +212,10 @@
     padding: 80px 0;
 }
 .understanding-fmcg-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     width: 60%;
 }
@@ -218,7 +223,7 @@
     color: #ca2734;
 }
 .understanding-fmcg-col-para{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 16px;
     font-weight: 400;
     color: #000;
@@ -226,9 +231,10 @@
 
 @media(max-width:991px){
     .understanding-fmcg-head{
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     width: 100%;
 }
@@ -248,8 +254,9 @@
 
 .appr-pro-anime .appr-pro-anime-main-head {
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 15px;
 }
 
@@ -259,7 +266,8 @@
   line-height: 1.6em;
   font-size: 18px;
   width: 100%;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+font-weight: 400;
   margin-bottom: 40px;
 }
 
@@ -281,7 +289,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
 }
 .appr-pro-anime-row-main {
@@ -293,8 +301,9 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #ca2734;
 }
 
@@ -302,12 +311,14 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
- font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+
 }
 
 .appr-pro-anime-main-para{
   font-size: 18px;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+   font-weight: 400;
   width: 90%;
   color: #000;
 }
@@ -349,9 +360,10 @@
 }
 
 .everything-a-food-section-head{
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   /* text-align: center; */
   width: 50%;
@@ -370,7 +382,7 @@
 }
 
 .everything-a-food-section-col{
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow:0 1px 3px rgba(0, 0, 0, 0.2),
   0 1px 2px rgba(0, 0, 0, 0.14),
   0 2px 1px rgba(0, 0, 0, 0.12);
@@ -387,7 +399,7 @@
 }
 
 .everything-a-food-section-col-img{
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 5px 5px;
 }
 
 .everything-a-food-section-col-content-div{
@@ -395,25 +407,27 @@
 }
 
 .everything-a-food-section-col-content-div-para-label{
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: rgba(202, 39, 52, 0.4);
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .everything-a-food-section-col-content-div-head{
-  font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ca2734;
   padding-bottom: 10px;
 }
 
 .everything-a-food-section-col-content-div-para-desc{
   color: #44474C;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+   
   font-size: 16px;
   font-weight: 400;
 }
@@ -447,20 +461,21 @@ a{
 
 .our-stregetic-framework-label-para{
   text-align: center;
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
   font-size: 14px;
   text-transform: uppercase;
   color: #ca2734;
   letter-spacing: 2.4px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 .our-stregetic-framework-head{
-  font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -478,7 +493,7 @@ a{
 
 .our-stregetic-framework-col-content-div{
   background-color: #fff;
-   border-radius: 15px;
+   border-radius: 5px;
   box-shadow:0 1px 3px rgba(0, 0, 0, 0.2),
   0 1px 2px rgba(0, 0, 0, 0.14),
   0 2px 1px rgba(0, 0, 0, 0.12);
@@ -490,23 +505,25 @@ a{
 
 .our-stregetic-framework-col-content-div-label-para{
   color: #ca2734;
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-bottom: 0;
 }
 
 .our-stregetic-framework-col-content-div-head{
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ca2734;
 }
 
 .our-stregetic-framework-col-content-div-desc-para{
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
   font-weight: 400;
   font-size: 16px;
   color: #44474C;
@@ -525,7 +542,7 @@ a{
 
 .our-stregetic-framework-col-content-div-list-item{
   color: #000;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
   font-size: 14px;
   font-weight: 400;
   padding: 5px 0;
@@ -544,9 +561,9 @@ a{
 }
 
 .our-stregetic-framework-col-number{
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
   font-size: 55px;
-  font-weight: 700;
+  font-weight: 400;
   color: rgba(202, 39, 52, 0.2);
 }
 
@@ -582,8 +599,9 @@ a{
 .standalone-sec-pac .headg{
   font-size: 50px;
     color: #000;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     padding-bottom: 30px;
     width: 80%;
 }
@@ -620,16 +638,18 @@ a{
 }
 .why-dn-head{
     color: #000;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 50px;
 }
 
 .why-dn-para{
     color: #000;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
+  
     font-size:16px;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: 20px;
 }
 .why-dn-sec-content-btn-col{
@@ -639,12 +659,13 @@ a{
 }
 
 .why-dn-btn{
-    border-radius: 70px;
+    border-radius: 5px;
     background-color: #000;
     color: #fff;
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 10px 20px 12px 20px;
     border: none;
 }
@@ -666,7 +687,7 @@ a{
 .abs-img {
   position: absolute;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 5px;
   /* box-shadow: 0 4px 20px rgba(0,0,0,0.15); */
 }
 
@@ -743,18 +764,19 @@ a{
 
 .why-dn-designs-mobile-head{
       color: rgb(0, 0, 0);
-    font-family: var(--font-corbert-bold);
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 20px;
 }
 
 .why-dn-designs-mobile-para{
       color: #000;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     /* padding-top: 10px; */
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .why-dn-designs-mobile-mid-div{
@@ -928,9 +950,10 @@ a{
 }
 
 .fmcg-industries-head {
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1A1C1B;
   text-align: center;
 }
@@ -954,8 +977,7 @@ a{
 .fmcg-industries-single-col-div {
   background-color: #F9F9F9;
   border: 1px solid #E6E5E5;
-  border-radius: 29px;
-
+  border-radius: 5px;
   display: flex;
   gap: 10px;
   justify-content: flex-start;
@@ -970,10 +992,10 @@ a{
 
 
 .fmcg-industries-para {
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
   color: #6D6D6D;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 0;
   padding-right: 10px;
 
@@ -1057,9 +1079,9 @@ a{
 
 .looking-for-someone-para{
   margin-bottom: 0;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000;
 }
 

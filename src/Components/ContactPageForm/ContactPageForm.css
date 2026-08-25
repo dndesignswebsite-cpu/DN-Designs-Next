@@ -42,10 +42,11 @@
 .form-group label {
   display: block;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
   text-transform: uppercase;
-  font-family: "Roboto";
+font-family: var(--font-helvetica);
+
 }
 
 .required-star {
@@ -64,7 +65,8 @@
   padding: 10px 0;
   transition: border-bottom-color 0.3s ease;
   /* font-weight: 800; */
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
+   font-weight: 400;
 }
 
 .form-group input:focus,
@@ -107,7 +109,9 @@
   cursor: pointer;
   letter-spacing: 1px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Corbert";
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+
 }
 
 .succes-class-form{

@@ -62,7 +62,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
-  border-radius: 40px;
+  border-radius: 5px;
 }
 
 .oo-cc-pp{
@@ -76,22 +76,26 @@
 }
 
 .overlay-content-pure h2{
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
   margin-left: 20px;
+  font-weight: 500;
 }
 
 .overlay-content-pure p{
-  font-family: var(--font-roboto);
+ font-family: var(--font-helvetica);
+    font-weight: 400;
   font-size: 18px;
   margin-left:20px;
   margin-top: 10px;
 }
 
 .overlay-content-pure button{
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  font-weight: 400;
   font-size: 16px;
-  border-radius: 100px;
+  border-radius: 5px;
   margin: 10px 20px;
   width: 25%;
   color: white;
@@ -101,11 +105,11 @@
 
 
 .horizonatl-scroll-all-content img{
-   border-radius: 40px;
+   border-radius: 5px;
 }
 
 .horizonatl-scroll-all-content video{
-   border-radius: 40px;
+   border-radius: 5px;
 }
 
 @media(max-width:1380px){
@@ -118,7 +122,7 @@
 
   .overlay-content-pure button{
  width: 25%;
- border-radius: 50px;
+ border-radius: 5px;
 }
 
 .overlay-content-pure{
@@ -139,7 +143,9 @@
   top: 30%;
 }
 .overlay-content-pure h2{
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
   font-size: 40px;
   margin-left: 20px;
 }
@@ -202,7 +208,7 @@
   height: 100%;
   margin: auto;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 5px;
 }
 
 
@@ -222,7 +228,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 40px;
+  border-radius: 5px;
 }
 
 

@@ -12,8 +12,8 @@
 }
 
 .fnb-page-hero-content-col-label-para{
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 14px;
     color: #ca2734;
     text-transform: uppercase;
@@ -21,16 +21,17 @@
 }
 
 .fnb-page-hero-content-col-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 55px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     padding-bottom: 15px;
 }
 
 .fnb-page-hero-content-col-desc-para{
-    font-family: var(--font-roboto);
-    font-weight: 500;
+   font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 16px;
     color: #44474C;
 }

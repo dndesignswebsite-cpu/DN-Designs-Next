@@ -5,16 +5,19 @@
 
 .animation-video-swipper-up h3{
     font-size: 40px;
-   font-family: var(--font-corbert);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     color: #000;
 }
 
 .animation-video-swipper-up-button{
     font-size: 16px;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+   font-weight: 400;
     background-color: #000;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 5px;
     width: 20%;
     height: 50px;
     border: none;
@@ -33,7 +36,8 @@ font-weight: 600;
 }
 
 .animation-video-swipper-bottom p{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.6em;
     padding-top: 30px;
@@ -159,7 +163,9 @@ font-weight: 600;
     }
     .website-design-video-swipper h2{
         font-size: 40px;
-         font-family: var(--font-corbert-bold);
+        font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
         color: #000;
         text-align: center;
     }
@@ -177,10 +183,11 @@ font-weight: 600;
         border: none;
         background-color: #fff;
         font-size: 18px;
-         font-family: var(--font-corbert);
+        font-family: var(--font-helvetica);
+
         cursor: pointer;
         color: #000;
-        font-weight: 600;
+        font-weight: 400;
     }
 
 
@@ -197,7 +204,8 @@ font-weight: 600;
         border: none;
         background-color: #fff;
         font-size: 16px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-helvetica);
+font-weight: 400;
         cursor: pointer;
         color: #000;
     }

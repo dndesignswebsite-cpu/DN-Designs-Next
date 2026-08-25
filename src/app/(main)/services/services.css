@@ -5,9 +5,10 @@
 
 .our-service h2 {
   color: #000;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -15,8 +16,9 @@
 .our {
   color: #ca2734;
   font-size: 70px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
 }
 .service-card {
   position: relative;
@@ -24,7 +26,7 @@
   height: 520px;
   overflow: hidden;
   border: none;
-  border-radius: 16px;
+  border-radius: 5px;
   cursor: pointer;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
 }
@@ -43,21 +45,22 @@
 .front img {
   width: 100%;
   border: 2px solid grey;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .front-img {
   width: 100%;
   border: 2px solid grey;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .front h3 {
   color: #000;
   padding: 20px 0px 8px 10px;
   font-size: 25px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   margin: 0px;
 }
 
@@ -65,8 +68,9 @@
   color: #000;
   padding: 0px 0px 10px 10px;
   font-size: 26px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   margin: 0px;
   padding-bottom: 10px;
 }
@@ -103,8 +107,9 @@
   color: #fff;
   padding: 20px 0px 8px 10px;
   font-size: 25px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   margin: 0px;
 }
 
@@ -112,8 +117,9 @@
   color: #fff;
   padding: 0px 0px 10px 10px;
   font-size: 26px;
- font-family: var(--font-corbert-bold);
-  font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   margin: 0px;
   padding-bottom: 10px;
 }
@@ -122,8 +128,8 @@
   color: White;
   padding: 20px 0px 8px 10px;
   font-size: 20px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+ font-family: var(--font-helvetica);
+  font-weight: 400;
   margin: 0px;
 }
 
@@ -206,8 +212,9 @@
 
 .appr-pro .appr-pro-main-head {
   font-size: 50px;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 15px;
 }
 
@@ -216,7 +223,8 @@
   color: #000;
   font-size: 18px;
   width: 100%;
- font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+  font-weight: 400;
   margin-bottom: 40px;
 }
 
@@ -242,7 +250,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
 }
 .appr-pro-row-main {
@@ -255,8 +263,9 @@
   padding-top: 110px;
   padding-bottom: 10px;
   font-size: 24px;
- font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   color: #ca2734;
 }
 
@@ -264,7 +273,8 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+     font-weight: 400;
 }
 
 
@@ -300,13 +310,15 @@
 
 .top-cap h2 {
   font-size: 50px;
- font-family: var(--font-corbert-bold);
-  font-weight: 700;
+font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
 }
 
 .top-cap p {
   color: #000;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+   
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
@@ -323,7 +335,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -393,7 +405,7 @@
 }
 
 .top-cap-btm h3{
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
   font-weight: 500;
 }
 

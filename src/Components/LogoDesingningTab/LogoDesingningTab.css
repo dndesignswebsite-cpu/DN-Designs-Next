@@ -6,11 +6,12 @@
 .custom-tabs .nav-link {
   border: none;
   color: #000;
-  font-weight: 700;
+
   padding: 14px 60px 15px 15px;
   background-color: #fff;
   font-size: 16px;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    font-weight: 400;
   border-bottom: 1px solid #000;
 }
 
@@ -35,8 +36,9 @@
 .custom-tab-content p {
   margin: 0;
   color: #000;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+ font-family: var(--font-helvetica);
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.7em;
 }
@@ -49,13 +51,15 @@
 
 .mobile-tab-heading {
   color: #000;
-  font-family: var(--font-corbert-bold);
-  font-weight: 700;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   font-size: 30px;
 }
 
 .mobile-tab-paragraph {
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+   font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;
   padding: 5px;

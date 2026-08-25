@@ -4,13 +4,16 @@
 }
 
 .brand-video-shoots-col-right h2{
-    font-family: var(--font-corbert-bold);
+     font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 56px;
     color: #000;
 }
 
 .brand-video-shoots-col-right p{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
@@ -18,8 +21,8 @@
 }
 
 .video-shoot-bold{
-    font-weight: 800;
-    font-family: var(--font-roboto);
+    font-weight: 500;
+     font-family: var(--font-helvetica);
 }
 
 @media(max-width:767px){
@@ -39,7 +42,9 @@
     padding: 10px;
 }
 .we-are-leading-left-col h3{
-    font-family: var(--font-corbert-bold);
+     font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 50px;
     color: #000;
 }
@@ -50,7 +55,8 @@
 }
 
 .we-are-leading-right-col p{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+ font-weight: 400;
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
@@ -69,14 +75,17 @@
 }
 
 .why-choose-us-row h3{
-   font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 50px;
     color: #000;
     padding: 20px 0;
 }
 
 .why-choose-us-row p{
-    font-family: var(--font-roboto);
+     font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9em;
     padding: 10px 0;
@@ -95,7 +104,9 @@
     padding: 60px 0;
 }
 .video-our-portfolio h3{
-   font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 50px;
     color: #000;
     padding: 20px 0;

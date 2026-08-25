@@ -5,12 +5,13 @@
 
 .hero button,
 .hero a {
-  font-family: var(--font-roboto);
+  /* font-family: var(--font-roboto); */
+  font-family: var(--font-helvetica);
   padding: 14px 60px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   border: none;
-  border-radius: 40px;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease;
   margin-right: 15px;
@@ -25,7 +26,7 @@
 .hero a::after {
   content: "\2192";
   padding-left: 10px;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 18px;
   padding-left: 6px;
   transform: rotate(-40deg);

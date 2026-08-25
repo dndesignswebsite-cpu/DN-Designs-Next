@@ -14,7 +14,8 @@ import Script from "next/script";
 
 
 const corbert = localFont({
-  src: "../../public/fonts/Corbert-Medium.woff2",
+  // src: "../../public/fonts/Corbert-Medium.woff2",
+   src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
   variable: "--font-corbert",
   display: "swap",
   preload: true,
@@ -22,7 +23,8 @@ const corbert = localFont({
 });
 
 const corbertBold = localFont({
-  src: "../../public/fonts/Corbert-Bold.woff2",
+  // src: "../../public/fonts/Corbert-Bold.woff2",
+   src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
   variable: "--font-corbert-bold",
   display: "swap",
   preload: true,
@@ -30,12 +32,26 @@ const corbertBold = localFont({
 });
 
 const roboto = localFont({
-  src: "../../public/fonts/Roboto-Regular.woff2",
+  // src: "../../public/fonts/Roboto-Regular.woff2",
+   src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
   variable: "--font-roboto",
  display: "swap",
   preload: true,
   adjustFontFallback: false,
 });
+
+
+const helvetica = localFont({
+  src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
+  variable: "--font-helvetica",
+ display: "swap",
+  preload: true,
+  adjustFontFallback: false,
+});
+
+
+
+// case studyy font
 
 const letsupfont = localFont({
   src: "../../public/fonts/CormorantGaramond-MediumItalic.woff2",
@@ -85,7 +101,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable}`}
+      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable} ${helvetica.variable}`}
     >
       <body suppressHydrationWarning>
         {/* =========================
