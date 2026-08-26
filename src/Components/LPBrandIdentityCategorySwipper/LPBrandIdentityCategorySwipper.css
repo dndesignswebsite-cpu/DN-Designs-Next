@@ -6,8 +6,8 @@
 }
 
 .industry-swipper-section-content-label-para{
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
@@ -15,9 +15,10 @@
 }
 
 .industry-swipper-section-content-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     width: 80%;
 }
@@ -30,7 +31,7 @@
 }
 
 .industry-swipper-section-content-right-col-para-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 16px;
     color: #fff;
     font-weight: 400;
@@ -60,18 +61,18 @@
 
 .swipper-slide-div{
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 5px;
     background-color: #fff;
     height: 100%;
 }
 
 .swipper-slide-div-img{
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .swipper-slide-div-head{
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    font-weight: 500;
     font-size: 20px;
     color: #000;
     padding-top: 25px;
@@ -79,7 +80,7 @@
 }
 
 .swipper-slide-div-para-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
     color: #000;
     font-weight: 400;
@@ -116,7 +117,7 @@
     flex-direction: column;
     height: 100%;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 5px;
     background: #fff;
 }
 

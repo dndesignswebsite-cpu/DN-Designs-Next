@@ -4,10 +4,10 @@
 }
 
 .lp-footer-para{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
     font-size: 16px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
    color: #fff;
 }
 
@@ -36,12 +36,12 @@
         
         /* background-color: #ca2734; */
         /* color: #fff; */
-        font-family: var(--font-corbert-bold);
-        font-weight: 700;
+       font-family: var(--font-helvetica);
+        font-weight: 400;
         font-size: 16px;
         padding: 10px 0;
         border: 1px solid #000;
-        border-radius: 35px;
+        border-radius: 5px;
     }
     .mobile-footer-btn-1{
         border: 1px solid #fff;

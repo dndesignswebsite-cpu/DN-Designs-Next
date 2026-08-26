@@ -88,8 +88,8 @@ Navigation
     text-decoration:none;
     color:#161616;
     font-size:16px;
-    font-family:var(--font-corbert-bold);
-    font-weight:700;
+    font-family: var(--font-helvetica);
+    font-weight:400;
 }
 
 .navlink-anchor-tag:hover{
@@ -110,16 +110,15 @@ Button
 .lets-connect-cta-btn{
 
     border:2px solid #ca2734;
-    border-radius:50px;
+    border-radius:5px;
     padding:8px 22px;
     background:white;
 
     color:#161616;
 
     font-size:16px;
-    font-weight:700;
-    font-family:var(--font-corbert-bold);
-
+    font-weight:400;
+   font-family: var(--font-helvetica);
     cursor:pointer;
 }
 
@@ -167,7 +166,7 @@ Hamburger
     width:30px;
     height:3px;
     background:#000;
-    border-radius:20px;
+    border-radius:5px;
 
 }
 
@@ -257,9 +256,8 @@ Drawer
     color:#161616;
 
     font-size:18px;
-    font-weight:700;
-    font-family:var(--font-corbert-bold);
-
+    font-weight:400;
+    font-family: var(--font-helvetica);
 }
 
 .menu-btn{

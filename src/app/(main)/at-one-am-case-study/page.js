@@ -373,7 +373,7 @@ async function page() {
       </section>
 
       {/* glb section */}
-      {/* <AtOneAmBoxBottle/> */}
+      <AtOneAmBoxBottle/>
 
       {/* skate board for mobile */}
       <section className='container-fluid-custom skate-board-mobile'>

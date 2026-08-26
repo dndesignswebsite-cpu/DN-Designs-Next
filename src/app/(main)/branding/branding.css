@@ -95,7 +95,7 @@
 .port-content p {
   color: #888888; 
   font-family: var(--font-helvetica);
-    letter-spacing: -0.9px;
+    /* letter-spacing: -0.9px; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4em;

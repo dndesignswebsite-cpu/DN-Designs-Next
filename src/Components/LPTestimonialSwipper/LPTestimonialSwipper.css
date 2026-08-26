@@ -18,7 +18,7 @@
 .client-img-para{
     font-size: 20px;
     color: #ca2734;
-    font-family: var(--font-corbert);
+   font-family: var(--font-helvetica);
     background-color: rgba(202, 39, 52, 0.2);
     font-weight: 400;
     padding: 12px 20px;
@@ -29,16 +29,16 @@
 }
 
 .client-name{
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     line-height: 1em;
 }
 
 .client-designation{
     color: rgba(18, 18, 18, 0.5);
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 12px;
     line-height: 1em;
@@ -54,14 +54,14 @@
 .lp-testimonial-swipper-slide-div{
     background-color: #fff;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     height: 100%;
 }
 
 .lp-testimonial-para{
     color: rgba(0, 0, 0, 0.8);
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 16px;
     font-weight: 400;
     padding: 25px 0 10px 0;
@@ -121,7 +121,7 @@
 
     background:#fff;
     width:24px;
-    border-radius:30px;
+    border-radius:5px;
 
     transition:.35s;
 
@@ -129,15 +129,16 @@
 
 .what-our-client-say-head{
     text-align: center;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     padding-bottom: 10px;
 }
 
 .what-our-client-say-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 16px;
     font-weight: 400;
     color: #fff;

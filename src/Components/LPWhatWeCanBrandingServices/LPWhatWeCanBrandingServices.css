@@ -6,22 +6,23 @@
 .what-we-do-lefty-col-para{
     color: #ca2734;
     text-transform: uppercase;
-    font-family:var(--font-roboto);
-    font-weight: 500;
+   font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 14px;
 }
 
 .what-we-do-lefty-col-head{
     color: #0A0A0A;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     width: 80%;
 }
 
 .what-we-do-right-col-para{
     color: #888888;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     width: 50%;
@@ -48,7 +49,7 @@
 
 /* cols css */
 .asthetic-para-label{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     color: #ca2734;
@@ -58,14 +59,15 @@
 
 .asthetic-head{
     color: #2A2320;
-    font-family: var(--font-corbert);
-    font-weight: 600;
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 36px;
     padding-bottom: 20px;
 }
 
 .asthetic-para-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 16px;
     color: #2A2320;
@@ -76,7 +78,7 @@
 }
 .what-we-can-do-col-left{
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -84,14 +86,14 @@ justify-content: space-between;
 }
 
 .what-we-can-do-col-left-img{
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 5px 5px;
 }
 
 .what-we-can-do-col-left-third-div{
       display: flex;
     align-items: stretch;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -105,7 +107,7 @@ justify-content: space-between;
 .what-we-can-do-col-left-img-third-row{
     width: 50%;
     object-fit: cover;
-      border-radius: 0 12px 12px 0px;
+      border-radius: 0 5px 5px 0px;
 }
 
 
@@ -159,6 +161,6 @@ justify-content: space-between;
 
 .what-we-can-do-col-left-img-third-row{
     width: 100%;
-    border-radius: 0 0 12px 12px !important;
+    border-radius: 0 0 5px 5px !important;
 }
 }

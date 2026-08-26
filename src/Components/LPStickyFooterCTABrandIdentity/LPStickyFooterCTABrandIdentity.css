@@ -20,28 +20,28 @@
     background-color: #fff;
     border: 1px solid #ca2734;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
+    border-radius: 5px;
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
 .fixed-cta-content-para{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
     font-size: 14px;
     color: rgba(202, 39, 52, 0.8);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .mobile-footer-btn-2-zz{
     background-color: #ca2734;
     border: 1px solid #ca2734;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     padding: 8px 16px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 

@@ -14,7 +14,7 @@ export default function OurWorkHomeSection() {
     <section className="our-work">
       <div className="container-fluid">
         <h2 className="text-center mb-4">
-          Our <span className="every-pr">Work</span>
+          Brands  <span className="every-pr">We’ve Built</span>
         </h2>
 
         <div id="always-visible">

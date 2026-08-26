@@ -9,8 +9,9 @@
 
 .thankyou-container-head{
     font-size: 80px;
-    font-weight: 700;
-    font-family: var(--font-corbert-bold);
+    font-weight: 500;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     color: #000;
     text-align: center;
     padding: 10px 0;
@@ -18,7 +19,7 @@
 
 .thankyou-container-para{
     color: rgba(136, 136, 136, 1);
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
     font-size: 18px;
     font-weight: 400;
     max-width: 450px;
@@ -31,10 +32,10 @@
 
 .return-to-homepage{
     background-color: #ca2734;
-    font-family: var(--font-roboto);
-    font-weight: 700;
+   font-family: var(--font-helvetica);
+    font-weight: 500;
     font-size: 16px;
-    border-radius: 14px;
+    border-radius: 5px;
     box-shadow: 0 4px 24px 0px rgba(202, 39, 52, 0.502);
     color: #fff;
     padding: 8px 18px;

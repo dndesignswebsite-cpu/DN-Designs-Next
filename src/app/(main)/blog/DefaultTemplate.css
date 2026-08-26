@@ -11,21 +11,21 @@ margin-bottom: 60px;
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .sstatic {
   font-size: 14px;
   color: #43464b;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
   font-weight: 400;
 }
 
 .dyna {
   font-size: 14px;
   color: #ca2734;
-  font-family: "Roboto", sans-serif;
+font-family: var(--font-helvetica);
   font-weight: 400;
   padding-left: 5px;
 }
@@ -33,11 +33,11 @@ margin-bottom: 60px;
 .single-blog-list-post-head-single{
   color: #000;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
 }
 
 .single-blog-list-post-para {
@@ -47,20 +47,21 @@ margin-bottom: 60px;
   padding-top: 0px;
   line-height: 2em;
   letter-spacing: 0.1px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
 }
 
 .blog-read-more-btn {
   background-color: #ca2734;
   color: #ffffff;
   padding: 15px 42px 16px 42px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
-  border-radius: 0.25em;
+  border-radius: 5px;
   border: none;
   transition: 0.5s;
   letter-spacing: 0.1px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
+
 }
 
 .blog-right-side {
@@ -81,21 +82,22 @@ margin-bottom: 60px;
 .blog-meta-text {
   color: #43464b;
   font-size: 16px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-family: var(--font-helvetica);
 }
 .blog-content {
  h1,h2,h3,h4,h5,h6 {
   color: #000000;
-  font-weight: 700;
-  font-family: var(--font-corbert);
+  font-weight: 500;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   margin-bottom: 15px;
 }
 p{
 color: #000000;
   font-size: 16px;
   font-weight: 400;
-  font-family:var(--font-roboto);
+  font-family: var(--font-helvetica);
   margin-bottom: 20px;
 }
 }
@@ -107,45 +109,45 @@ color: #000000;
   .single-blog-list-post-head-single{
   color: #000;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 400;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
 }
 }
 
 /* Recent Posts Sidebar Card */
 .recent-posts-box {
   background-color: #f5f5f7;
-  border-radius: 12px;
+  border-radius: 5px;
   margin-bottom: 30px;
 }
 
 .recent-posts-title {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
 }
 
 .recent-post-sidebar-thumb {
   width: 90px;
   height: 60px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 
 .recent-post-sidebar-name {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
   color: #000;
   margin: 0;
   transition: 0.3s;
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
 }
 
 .recent-post-sidebar-link:hover .recent-post-sidebar-name {
@@ -154,9 +156,11 @@ color: #000000;
 
 
 .blog-categories-label{
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
+    font-weight: 400;
 }
 
 .blog-category-tag{
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
+    font-weight: 400;
 }
