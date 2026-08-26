@@ -29,7 +29,8 @@
 
 
 .hero-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
     font-weight: 700;
     color: #161616;
@@ -40,7 +41,7 @@
 }
 
 .hero-para-desc{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 18px;
     font-weight: 400;
     color: #555555;
@@ -600,16 +601,17 @@
 }
 .brands-that-us-head{
     text-align: center;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 500;
     color: #161616;
     padding-bottom: 15px;
 }
 
 .brands-that-us-para{
     text-align: center;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     color: #888888;
     font-size: 16px;
     font-weight: 400;
@@ -658,22 +660,23 @@
 .what-we-do-lefty-col-para{
     color: #ca2734;
     text-transform: uppercase;
-    font-family:var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 14px;
 }
 
 .what-we-do-lefty-col-head{
     color: #0A0A0A;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     width: 80%;
 }
 
 .what-we-do-right-col-para{
     color: #888888;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     width: 50%;
@@ -688,7 +691,7 @@
 
 /* cols css */
 .asthetic-para-label{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     color: #ca2734;
@@ -698,14 +701,15 @@
 
 .asthetic-head{
     color: #2A2320;
-    font-family: var(--font-corbert);
-    font-weight: 600;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
     font-size: 36px;
     padding-bottom: 20px;
 }
 
 .asthetic-para-desc{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 16px;
     color: #2A2320;
@@ -716,7 +720,7 @@
 }
 .what-we-can-do-col-left{
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -724,14 +728,14 @@ justify-content: space-between;
 }
 
 .what-we-can-do-col-left-img{
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 5px 5px;
 }
 
 .what-we-can-do-col-left-third-div{
       display: flex;
     align-items: stretch;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 5px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -745,7 +749,7 @@ justify-content: space-between;
 .what-we-can-do-col-left-img-third-row{
     width: 50%;
     object-fit: cover;
-      border-radius: 0 12px 12px 0px;
+      border-radius: 0 5px 5px 0px;
 }
 
 
@@ -782,7 +786,7 @@ justify-content: space-between;
 }
 .what-we-can-do-col-left-img-third-row{
     width:100% !important;
-    border-radius: 0 0 12px 12px !important;
+    border-radius: 0 0 5px 5px !important;
 }
 }
 
@@ -868,7 +872,7 @@ justify-content: space-between;
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -899,9 +903,10 @@ justify-content: space-between;
   padding: 30px 0;
   text-align: center;
   color: #000;
-  font-family: var(--font-corbert-bold);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 20px;
 }
@@ -918,23 +923,25 @@ justify-content: space-between;
 
 .create-number{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 85px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create h2{
   color: #000;
-   font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 10px;
 }
 
 .card-body-create p{
       color: #888888;
-   font-family: var(--font-roboto);
-   font-weight: 500;
+   font-family: var(--font-helvetica);
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;
 }
@@ -983,9 +990,10 @@ justify-content: space-between;
 
 .our-brand-heading-a-mobile{
   color: #000;
- font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+  letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   padding-bottom: 40px;
 }
@@ -996,29 +1004,31 @@ justify-content: space-between;
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  border-radius: 5px;
   padding: 20px;
   margin: 10px 0;
 }
 
 .create-number-mobile{
   color: #ca2734;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-body-create-mobile h2{
       color: #000;
-   font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 0;
 }
 
 .card-body-create-mobile p{
   color: #888888;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.4em;
@@ -1075,14 +1085,15 @@ justify-content: space-between;
     color: #ca2734;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-weight: 400;
 }
 
 .everything-you-need-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     color: #0A0A0A;
     width: 80%;
 }
@@ -1096,7 +1107,7 @@ justify-content: space-between;
 }
 
 .everything-you-need-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 14px;
     color: #888888;
@@ -1108,11 +1119,11 @@ justify-content: space-between;
 }
 
 .foundation-col-img{
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .lp-packaging-video{
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 
@@ -1211,7 +1222,7 @@ justify-content: space-between;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .foundation-col:hover .overlay {
@@ -1252,15 +1263,16 @@ justify-content: space-between;
 }
 
 .overlay-title {
-  font-family: var(--font-corbert);
+font-family: var(--font-helvetica);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0px 0px 0px 10px;
 }
 
 .Pras {
   color: white;
-  font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+  font-weight: 400;
   margin: 0px 0px 0px 10px;
 }
 
@@ -1274,7 +1286,7 @@ justify-content: space-between;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .foundation-col:hover .overlay-video {

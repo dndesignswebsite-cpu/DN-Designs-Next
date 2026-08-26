@@ -15,7 +15,7 @@
   max-width: 1200px;
   height: 600px;
   border: 2px solid #000;
-  border-radius: 25px;
+  border-radius: 5px;
   display: flex;
   background: #ffffff;
   overflow: hidden;
@@ -35,7 +35,7 @@
 }
 
 .portfolio__left-para{
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
   font-size: 14px;
   font-weight: 400;
   color: #ca2734;
@@ -43,9 +43,10 @@
 }
 
 .portfolio__left-head{
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
 }
 
@@ -65,7 +66,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
   white-space: nowrap;
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
 }
 
 .portfolio__item:hover,
@@ -144,7 +145,7 @@
     flex-direction: column; 
     height: auto;
     min-height: 500px;
-    border-radius: 24px;
+    border-radius: 5px;
     padding: 30px 0;
   }
 
@@ -174,10 +175,11 @@
     font-size: 20px; 
     /* padding: 6px 14px; */
     /* border: 1px solid #eeeeee; */
-    border-radius: 30px;
+    border-radius: 5px;
     /* background: #fdfdfd; */
      color: rgba(189, 189, 189, 0.4);
-     font-family: var(--font-corbert-bold);
+     font-family: var(--font-helvetica);
+  font-weight: 400;
   }
 
   .portfolio__item.active {

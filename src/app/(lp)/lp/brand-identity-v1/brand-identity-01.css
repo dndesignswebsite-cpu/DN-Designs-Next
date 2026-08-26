@@ -20,15 +20,15 @@
 }
 
 .brand-identity-hero-section-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
-    /* padding-left: 8px; */
 }
 
 .brand-identity-hero-section-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 16px;
     color: #555555;
@@ -90,7 +90,7 @@
     top: 6px;
     right: 27%;
     z-index: 555;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
@@ -353,22 +353,24 @@
 }
 
 .marque-div-container-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 100px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
 }
 
 .marque-div-container-sub-head{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     width: 70%;
 }
 
 .marque-div-container-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
@@ -399,7 +401,7 @@
 
 .brand-identity-what-we-do-col-div-left-para-label{
     color: #CA2734;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -407,15 +409,16 @@
 
 .brand-identity-what-we-do-col-div-left-head{
     color: #0A0A0A;
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     width: 80%;
 }
 
 .brand-identity-what-we-do-col-div-left-para-desc{
     color: #888888;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 16px;
     width: 50%;
@@ -444,9 +447,9 @@
 }
 
 .category-div-para{
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
 }
 
@@ -519,7 +522,7 @@
 }
 
 .communication-strategy-label-para{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     color: #CA2734;
     font-size: 14px;
     font-weight: 400;
@@ -527,16 +530,17 @@
 }
 
 .communication-strategy-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     color: #0A0A0A;
     width: 90%;
 }
 
 .communication-strategy-desc-para{
     color: #888888;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 16px;
     font-weight: 400;
     width: 50%;
@@ -574,7 +578,7 @@
 }
 .communication-strategy-hover-col-upper{
     padding: 35px;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #F3F3F3;
     transition: all 0.4s ease;
     /* cursor: pointer; */
@@ -589,23 +593,24 @@
 }
 
 .communication-strategy-hover-col-upper-head-div-heading{
-    font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     transition: all 0.4s ease;
 }
 
 .communication-strategy-hover-col-upper-head-div-para{
-    font-family: var(--font-corbert);
+    font-family: var(--font-helvetica);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color:#000;
     transition: all 0.4s ease;
 }
 
 .communication-strategy-hover-col-video{
-    border-radius: 15px;
+    border-radius: 5px;
     /* visibility: hidden; */
 }
 .communication-strategy-hover-col-video-div{
@@ -668,7 +673,7 @@
 .communication-strategy-hover-col-bottom{
     padding: 35px;
     background-color: #F3F3F3;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-top: 10px;
     transition: all 0.4s ease;
     border-bottom: 4px solid #CA2734;
@@ -676,7 +681,7 @@
 }
 
 .communication-strategy-hover-col-bottom-para-desc{
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     color: #000;
@@ -691,11 +696,11 @@
 .communication-strategy-hover-col-bottom-btn{
     padding: 8px;
     background-color: #fff;
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #555555;
-    border-radius: 18px;
+    border-radius: 5px;
 }
 
 .communication-strategy-hover-col-circle-img{

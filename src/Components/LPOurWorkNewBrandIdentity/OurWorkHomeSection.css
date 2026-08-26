@@ -16,7 +16,7 @@
   display: block;
   height: 100%;
   /* border: 1px solid #d8d5d5; */
-  border-radius: 25px;
+  border-radius: 5px;
   /* cursor: pointer; */
 }
 
@@ -176,9 +176,10 @@
 
 .what-we-do-lefty-col-head{
     color: #0A0A0A;
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     width: 80%;
 }
 
@@ -203,16 +204,17 @@ width: 100%;
 .what-we-do-lefty-col-para{
     color: #ca2734;
     text-transform: uppercase;
-    font-family:var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 14px;
 }
 
 
 .talk-to-us {
   background-color: #ca2734;
-  font-family: var(--font-roboto);
-  border-radius: 100px 100px 100px 100px;
+  font-family: var(--font-helvetica);
+ font-weight: 400;
+  border-radius: 5px;
   padding: 10px 25px 10px 25px;
   color: #fff;
   border: none;
@@ -235,7 +237,7 @@ margin-bottom:20px
 }
 
 .foundation-col-img{
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .coldiv-what-we-do-right{
@@ -255,11 +257,11 @@ margin-bottom:20px
 }
 
 .lp-packaging-video{
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .what-we-do-right-col-para{
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
   font-size: 14px;
   font-weight: 400;
   color: #888888;

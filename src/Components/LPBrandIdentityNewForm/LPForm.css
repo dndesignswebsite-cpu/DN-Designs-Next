@@ -12,7 +12,7 @@
   /* background-color: #ca2734; */
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
-  border-radius: 0px 16px 16px 0px ;
+  border-radius: 0px 5px 5px 0px ;
   height: 100% !important;
   
 }
@@ -20,7 +20,7 @@
 
 
 .inpt label{
-    font-family: var(--font-roboto);
+   font-family: var(--font-helvetica);
         cursor: pointer;
         color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
@@ -41,8 +41,9 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
- font-family: var(--font-roboto);
+  border-radius: 5px;
+ font-family: var(--font-helvetica);
+  font-weight: 400;
   padding: 10px;
   font-size: 14px;
   margin:10px 0px;
@@ -54,8 +55,9 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
- font-family: var(--font-roboto);
+  border-radius: 5px;
+ font-family: var(--font-helvetica);
+   font-weight: 400;
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
@@ -69,7 +71,8 @@
 .inpt textarea::placeholder {
   color: rgba(0, 0, 0, 0.29);
   opacity: 1;
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
+  font-weight: 400;
 }
 
 .sbmt-btn {
@@ -79,10 +82,11 @@
   color: white;
   font-size: 15px;
   border: none;
-  border-radius: 15px;
-  font-weight: 600;
+  border-radius: 5px;
+  font-weight: 400;
   cursor: pointer;
- font-family: var(--font-roboto);
+font-family: var(--font-helvetica);
+    
 } 
 
 .form-box{
@@ -90,7 +94,7 @@
   /* background-color: #ca2734; */
   margin: 0;
   height: 100%;
-  border-radius: 12px;
+  border-radius: 5px;
   /* box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.102); */
   border-top: 4px solid #ca2634;
 box-shadow: 0 2px 11px -1px rgba(0, 0, 0, 0.102);
@@ -98,7 +102,7 @@ background-color: #fff;
 }
 
 .main-form{
-  border-radius: 16px;
+  border-radius: 5px;
   background-color: #fff;
   padding: 0px 20px 20px 20px;
   /* height: 100%; */
@@ -119,7 +123,7 @@ background-color: #fff;
 
 .form-main-content{
   background-color: #ffffff;
-  border-radius: 0px 16px 16px 0px ;
+  border-radius: 0px 5px 5px 0px ;
   padding: 25px;
   height: 100% !important;
   width: 100%;
@@ -130,18 +134,19 @@ background-color: #fff;
 
 .form-main-content h3{
     color: #000;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 20px;
     
 }
 
 .form-main-content p{
-       font-family: var(--font-roboto);
+       font-family: var(--font-helvetica);
         color: #000;
         line-height:1.6em;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18px;
 }
 /* .form-main-content.animate{
@@ -180,7 +185,8 @@ background-color: #fff;
 
 .succes-class-form{
   color: #ca2734;
-  font-family: "Roboto";
+  font-family: var(--font-helvetica);
+   font-weight: 400;
   font-size: 18px;
   margin-top: 10px;
 }
@@ -195,14 +201,15 @@ background-color: #fff;
 }
 
 .form-content-head{
-  font-family: var(--font-corbert-bold);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
 }
 
 .form-content-para{
-  font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   font-weight: 400;

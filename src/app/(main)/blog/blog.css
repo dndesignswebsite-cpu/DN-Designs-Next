@@ -10,13 +10,13 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .sstatic {
   font-size: 14px;
   color: #43464b;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
   font-weight: 400;
 }
 
@@ -31,7 +31,7 @@
 .dyna {
   font-size: 14px;
   color: #ca2734;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
   font-weight: 400;
   padding-left: 5px;
 }
@@ -39,11 +39,12 @@
 .single-blog-list-post-head {
   color: #000;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   margin-bottom: 30px;
 }
 
@@ -61,20 +62,20 @@
   padding-top: 0px;
   line-height: 2em;
   letter-spacing: 0.1px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
 }
 
 .blog-read-more-btn {
   background-color: #ca2734;
   color: #ffffff;
   padding: 15px 42px 16px 42px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
-  border-radius: 0.25em;
+  border-radius: 5px;
   border: none;
   transition: 0.5s;
   letter-spacing: 0.1px;
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
 }
 
 .blog-read-more-btn:hover {
@@ -86,13 +87,13 @@
   background-color: transparent;
   color: #ca2734;
   padding: 12px 30px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
-  border-radius: 0.25em;
+  border-radius: 5px;
   border: 2px solid #ca2734;
   transition: 0.5s;
   letter-spacing: 0.1px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
   cursor: pointer;
 }
 
@@ -120,20 +121,21 @@
   padding: 20px;
   background: #fdfdfd;
   border: 1px solid #eee;
-  border-radius: 8px;
+  border-radius: 5px;
   position: sticky;
   top: 100px;
 }
 
 .sidebar-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #43464b;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #ca2734;
   display: inline-block;
-  font-family: "Corbert";
+  font-family: var(--font-helvetica);
+    
 }
 
 .recent-post-link {
@@ -156,7 +158,7 @@
   text-decoration: none;
   margin-bottom: 20px;
   transition: all 0.3s ease;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
   background: #fff;
   border: 1px solid #eee;
@@ -176,12 +178,13 @@
 
 .recent-post-title {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: #43464b;
   margin: 12px 12px 8px 12px;
   line-height: 1.4;
   transition: 0.3s;
-  font-family: "Roboto";
+ font-family: var(--font-helvetica);
+
 }
 
 .recent-post-card:hover .recent-post-title {
@@ -193,7 +196,8 @@
   color: #999;
   font-size: 12px;
   margin: 0 12px 12px 12px;
-  font-family: "Roboto";
+font-family: var(--font-helvetica);
+font-weight: 400;
 }
 
 /* Scroll to Top Button */
@@ -247,7 +251,7 @@
   background-color: #fce8e9;
   color: #ca2734;
   padding: 4px 14px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 13px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -290,7 +294,7 @@
   background: #f8f9fa;
   padding: 5px 12px;
   border: 1px solid #e9ecef;
-  border-radius: 4px;
+  border-radius: 5px;
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -316,7 +320,7 @@
 .category-sidebar-list a {
   padding: 8px 12px;
   background: #f8f9fa;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 14px;
   font-weight: 500;
   border: 1px solid transparent;
@@ -341,5 +345,6 @@
 }
 
 .category-description{
-  font-family: "Roboto";
+  font-family: var(--font-helvetica);
+   font-weight: 400;
 }

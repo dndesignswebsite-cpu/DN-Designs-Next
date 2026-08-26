@@ -81,8 +81,8 @@ Navigation
     text-decoration:none;
     color:#161616;
     font-size:16px;
-    font-family:var(--font-corbert-bold);
-    font-weight:700;
+    font-family: var(--font-helvetica);
+    font-weight:500;
 }
 
 /*=========================
@@ -106,8 +106,8 @@ Button
     color:#161616;
 
     font-size:16px;
-    font-weight:700;
-    font-family:var(--font-corbert-bold);
+    font-weight:500;
+    font-family: var(--font-helvetica);
 
     cursor:pointer;
 }
@@ -252,9 +252,8 @@ Drawer
     color:#161616;
 
     font-size:18px;
-    font-weight:700;
-    font-family:var(--font-corbert-bold);
-
+    font-weight:500;
+    font-family: var(--font-helvetica);
 }
 
 .menu-btn{

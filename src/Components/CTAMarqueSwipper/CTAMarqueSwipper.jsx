@@ -46,7 +46,7 @@ function CTAMarqueSwipper() {
 
 
 
-{/* 2 */}
+{/* 1 */}
         <SwiperSlide>
           <div className='cta-swipper-slide  cta-swipper-slide-special'>
             <div className='row'>
@@ -54,9 +54,9 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">When Our Clients Win, We Win </p>
+                         <p className="cta-swipper-label-para">When Our Clients Win, We Win  </p>
 
-                        <h2 className="cta-swipper-heading">Q-commerce, retail. college campus. 1 AM is moving fast. </h2>
+                        <h2 className="cta-swipper-heading">Q-Commerce, Retail & College Campus. 1 AM Is Moving Fast.</h2>
 
 
                         <Link href="https://www.linkedin.com/posts/dn-designs-india_branding-brandidentity-packagingdesign-activity-7492826988022423552-kIio?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD2HA4YBoM8hp69NFIHiZnJ59fPIN18jdy8">
@@ -71,9 +71,12 @@ function CTAMarqueSwipper() {
               </div>
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
-                <div className='cta-col-img-div'>
+                <div className='cta-col-img-div cta-col-img-div-special'>
                   {/* <img src="https://dndesigns.co.in/uploads/pages/ctanewswipperjsimagesunny.jpg.jpeg" className='img-fluid cta-swipper-img'/> */}
-                  <video  src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4" className='img-fluid cta-swipper-img' autoPlay loop
+                  <video  src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4" className='img-fluid cta-swipper-img cta-swipper-img-desktop' autoPlay loop
+                  muted playsInline></video>
+
+                  <video  src="https://dndesigns.co.in/uploads/pages/ctaatoneamvideo1AM WEBSITE (2).mp4" className='img-fluid cta-swipper-img cta-swipper-img-mobile' autoPlay loop
                   muted playsInline></video>
                 </div>
               </div>
@@ -82,7 +85,7 @@ function CTAMarqueSwipper() {
         </SwiperSlide>
 
 
-          {/* 6 */}
+          {/* 2 */}
         <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
@@ -90,9 +93,9 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">Beyond The Brand Work </p>
+                         <p className="cta-swipper-label-para">Beyond The Brand Work  </p>
 
-                        <h2 className="cta-swipper-heading">Meaningful conversations unfold, leaving a lasting impact.  </h2>
+                        <h2 className="cta-swipper-heading">Meaningful Conversations Unfold, Leaving A Lasting Impact.   </h2>
 
 
 
@@ -109,7 +112,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperjhdbjfggh.jpg.jpeg" className='img-fluid cta-swipper-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperjhdbjfggh.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                   <img src="https://dndesigns.co.in/uploads/pages/ctamarque1781774709390.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>
@@ -117,7 +122,7 @@ function CTAMarqueSwipper() {
         </SwiperSlide>
 
 
-{/* 1 */}
+{/* 3 */}
         <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
@@ -125,9 +130,9 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">Celebrating Our Clients’ Success </p>
+                         <p className="cta-swipper-label-para">Celebrating Our Client’s Success  </p>
 
-                        <h2 className="cta-swipper-heading">Pureluxe turns up the star power with Sunny Singh. </h2>
+                        <h2 className="cta-swipper-heading">Pureluxe Turns Up The Star Power With Sunny Singh. </h2>
 
                         <Link href="https://www.instagram.com/reel/DY2CpSVq3Jy/?utm_source=ig_web_button_share_sheet&igsi=MzRlODBiNWFlZA==">
                         <div className="cta-swipper-para-icon-div">
@@ -142,7 +147,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/ctanewswipperjsimagesunny.jpg.jpeg" className='img-fluid cta-swipper-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctanewswipperjsimagesunny.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/ctamamarqueswiperrrjfsunny.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>
@@ -155,7 +162,7 @@ function CTAMarqueSwipper() {
 
 
 
-{/* 3 */}
+{/* 4 */}
         <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
@@ -165,7 +172,7 @@ function CTAMarqueSwipper() {
                       
                          <p className="cta-swipper-label-para">New Brand Launch Alert</p>
 
-                        <h2 className="cta-swipper-heading">We gave Doodh Soda its identity. Now it's live for everyone.  </h2>
+                        <h2 className="cta-swipper-heading">We Gave Doodh Soda Its Identity. Now It's Live For Everyone.    </h2>
 
                         {/* <div className="cta-swipper-para-icon-div">
                         <p className="cta-swipper-para-desc">Explore More </p>
@@ -177,7 +184,10 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+
+                  <img src="https://dndesigns.co.in/uploads/pages/cramobilerbfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>
@@ -193,9 +203,9 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">Something Exciting Is Brewing</p>
+                         <p className="cta-swipper-label-para">Something Exciting Is Brewing!</p>
 
-                        <h2 className="cta-swipper-heading">A new nutrition mix brand is taking shape behind the scenes. </h2>
+                        <h2 className="cta-swipper-heading">A New Nutrition Mix Brand Is Taking Shape Behind The Scenes. </h2>
 
                         {/* <div className="cta-swipper-para-icon-div">
                         <p className="cta-swipper-para-desc">Explore More </p>
@@ -207,14 +217,16 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/swiperrrfdkjrfnutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/swiperrrfdkjrfnutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/ctamarquemobilenutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
 
-   {/* 4 */}
+   {/* 6 */}
         <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
@@ -222,9 +234,9 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">Proudly Introducing</p>
+                         <p className="cta-swipper-label-para">Proudly Introducing </p>
 
-                        <h2 className="cta-swipper-heading">India's first productivity drink, branded end-to-end by DN.</h2>
+                        <h2 className="cta-swipper-heading">India's First Productivity Drink, Branded End-To-End By DN Designs.</h2>
 
                         {/* <div className="cta-swipper-para-icon-div">
                         <p className="cta-swipper-para-desc">Explore More </p>
@@ -236,7 +248,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperhjwewdfh8.jpg.jpeg" className='img-fluid cta-swipper-img'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperhjwewdfh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/newzenrehdfmobileejh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>

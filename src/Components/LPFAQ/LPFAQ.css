@@ -3,15 +3,16 @@
 }
 
 .lp-faq-images-col-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     color: #161616;
     padding-bottom: 50px;
 }
 
 .lp-faq-images{
-    border-radius: 16px;
+    border-radius: 5px;
 }
 .every-pr{
   color: #ca2734;
@@ -34,7 +35,7 @@ width: 45%;
 }
 
 .dn-video-lp{
-    border-radius: 16px;
+    border-radius: 5px;
 }
 
 

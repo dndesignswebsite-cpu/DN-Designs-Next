@@ -10,16 +10,17 @@
 }
 .brands-that-us-head{
     text-align: center;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 500;
     color: #161616;
     padding-bottom: 15px;
 }
 
 .brands-that-us-para{
     text-align: center;
-    font-family: var(--font-roboto);
+  font-family: var(--font-helvetica);
     color: #888888;
     font-size: 16px;
     font-weight: 400;
@@ -55,22 +56,24 @@
 .what-we-do-lefty-col-para{
     color: #ca2734;
     text-transform: uppercase;
-    font-family:var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+   
+    font-weight: 400;
     font-size: 14px;
 }
 
 .what-we-do-lefty-col-head{
     color: #0A0A0A;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     width: 80%;
 }
 
 .what-we-do-right-col-para{
     color: #888888;
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
     width: 50%;
@@ -101,25 +104,26 @@
     width: 100%;
     background: linear-gradient(360deg, #0A0A0A 0%, rgba(10, 10, 10, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
     padding: 20px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 5px 5px 0 0;
     flex-direction: column;
 }
 
 .overlay-head{
     color: #fff;
-    font-family: var(--font-corbert-bold);
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .what-we-do-box-div{
     background-color: #fff;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .what-we-do-box-div-img{
-    border-radius: 25px 25px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .what-we-do-box-div-content{
@@ -135,17 +139,18 @@
     margin-bottom: 10px;
 }
 .what-we-do-span{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #555555;
     background-color: #F5F5F5;
     padding: 5px 12px;
-    border-radius: 17px;
+    border-radius: 5px;
 }
 
 .what-we-do-box-div-content-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
+
     font-size: 14px;
     font-weight: 400;
     color: #666666;
@@ -158,8 +163,8 @@
 .overlay-para{
     color: #fff;
     text-transform: uppercase;
-    font-family:var(--font-roboto);
-    font-weight: 500;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
     font-size: 12px;
     letter-spacing: 2px;
 }
@@ -173,15 +178,16 @@
 .overlay-upper-number{
     color: rgba(255, 255, 255, 0.15);
     font-size: 50px;
-    font-family: var(--font-corbert-bold);
-    font-weight: 700;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-weight: 500;
 }
 
 .start-your-jouney-para{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     color: #ca2734;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding-top: 20px;
 }
 
@@ -230,7 +236,7 @@
    align-items: center;
    /* justify-content: space-between; */
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 5px;
   border: 1px solid #E5E7EB;
   height: 100%;
   background-color: #fff;
@@ -243,16 +249,17 @@
 .switch-on-div h3{
   font-size: 35px;
   color: #ca2734;
- font-family: var(--font-corbert-bold);
-  font-weight: 700;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
   padding-bottom: 5px;
 }
 
 .switch-on-div p{
   font-size: 18px;
   color: #000;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+  font-family: var(--font-helvetica);
+  font-weight: 400;
   line-height: 1em;
 }
 
@@ -313,7 +320,7 @@
     gap: 5px;
     border: 1px solid rgba(202, 39, 52, 0.2);
     background-color: rgba(202, 39, 52, 0.1);
-    border-radius: 16px;
+    border-radius: 5px;
     width: fit-content;
     align-items: center;
     justify-content: center;
@@ -322,7 +329,7 @@
 
 .hero-label-para{
     /* line-height: 1em; */
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 14px;
     color: #ca2734;
@@ -330,9 +337,10 @@
 }
 
 .hero-head{
-    font-family: var(--font-corbert-bold);
+   font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 500;
     color: #161616;
     /* padding-top: 50px; */
 }
@@ -342,7 +350,7 @@
 }
 
 .hero-para-desc{
-    font-family: var(--font-roboto);
+    font-family: var(--font-helvetica);
     font-size: 18px;
     font-weight: 400;
     color: #555555;

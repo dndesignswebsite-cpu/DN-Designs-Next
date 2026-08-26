@@ -778,7 +778,7 @@ async function page() {
             <div className="fmcg-industries-single-col-div">
               {/* <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/fmcgnewfoddandhediconMask group.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Beverages</p>
             </div>
@@ -786,7 +786,7 @@ async function page() {
             <div className="fmcg-industries-single-col-div">
               {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img> */}
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/dairyfmcgnewiconMask group.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Dairy</p>
             </div>
@@ -795,7 +795,7 @@ async function page() {
               {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img> */}
 
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/conf4ectionatrynewfmcgicon.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Confectionery</p>
             </div>
@@ -804,7 +804,7 @@ async function page() {
               {/* <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
 
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/stablesandgroceryfmcgnewicon.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Staples & Grocery</p>
             </div>
@@ -812,7 +812,7 @@ async function page() {
             <div className="fmcg-industries-single-col-div">
               {/* <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/personalcasreendXMLID_491_.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Personal Care</p>
             </div>
@@ -820,7 +820,7 @@ async function page() {
             <div className="fmcg-industries-single-col-div">
               {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img> */}
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/homecarefmcgewidhVector (2).svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Home Care</p>
             </div>
@@ -828,18 +828,22 @@ async function page() {
             <div className="fmcg-industries-single-col-div">
               {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img> */}
               <div className="fmcg-industries-icon-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgindustesersweservelogooneMaskgroup.svg" className="fmcg-industries-icon"></img>
+              <img src="https://dndesigns.co.in/uploads/pages/wehdbabycareejhd.svg" className="fmcg-industries-icon"></img>
               </div>
               <p className="fmcg-industries-para">Baby Care</p>
             </div>
             {/* 9 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/wellnessfmcgbraningicon.svg" className="fmcg-industries-icon"></img>
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/healthandwellnessewdkjVector(2).svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Health & Wellness</p>
             </div>
             {/* 10 */}
             <div className="fmcg-industries-single-col-div">
-              <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconpetcare.svg" className="fmcg-industries-icon"></img>
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/petcarefmcgnewicon.svg" className="fmcg-industries-icon"></img>
+              </div>
               <p className="fmcg-industries-para">Pet Care</p>
             </div>
           </div>

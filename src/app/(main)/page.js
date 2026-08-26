@@ -124,7 +124,7 @@ export default function Home() {
   // form content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
-    "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
+    "Whether you have a brand to build, a problem to solve, a big idea you can’t stop thinking about, or simply don’t know where to begin, let’s talk. No formalities, no long briefs, no need to have everything figured out. Just a good conversation, a little curiosity, and a cup of coffee. We’ll bring the questions, you bring the idea, and together, let’s see where the conversation takes us.";
 
   const imageUrl = "https://dndesigns.co.in/uploads/pages/";
 

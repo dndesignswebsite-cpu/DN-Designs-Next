@@ -7,29 +7,30 @@ margin-bottom: 60px;
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .temp-two .single-blog-list-post-head-temp-two {
   color: #000;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
 }
 
 @media screen and (max-width: 991px) {
   .temp-two .single-blog-list-post-head-temp-two{
   color: #000;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 400;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
 }
 }
 
@@ -42,41 +43,42 @@ margin-bottom: 60px;
   color: #43464b;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
 }
 
 /* Recent Posts Sidebar Styles */
 .recent-posts-box {
   background-color: #f5f5f7;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: none;
   border: none !important;
 }
 
 .recent-posts-title {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
+ font-family: var(--font-helvetica);
+
 }
 
 .recent-post-sidebar-thumb {
   width: 90px;
   height: 60px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 
 .recent-post-sidebar-name {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
   color: #000;
   margin: 0;
   transition: 0.3s;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-helvetica);
 }
 
 .recent-post-sidebar-link:hover .recent-post-sidebar-name {
@@ -86,15 +88,16 @@ margin-bottom: 60px;
 .blog-content {
  h1,h2,h3,h4,h5,h6 {
   color: #000000;
-  font-weight: 700;
-  font-family: var(--font-corbert);
+  font-weight: 500;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
   margin-bottom: 15px;
 }
 p{
 color: #000000;
   font-size: 16px;
   font-weight: 400;
-  font-family:var(--font-roboto);
+  font-family: var(--font-helvetica);
   margin-bottom: 20px;
 }
 }
@@ -104,10 +107,10 @@ color: #000000;
   .single-blog-list-post-head-temp-two{
   color: #000;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 400;
   transition: 0.5s;
   line-height: 1.2em;
   text-decoration: none;
-  font-family: var(--font-corbert);
+  font-family: var(--font-helvetica);
 }
 }
