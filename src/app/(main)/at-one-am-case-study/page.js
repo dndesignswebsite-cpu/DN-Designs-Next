@@ -174,7 +174,7 @@ async function page() {
       </section>
 
 
-      {/* section 1 for mobile */}
+      {/* section 1 for mobil */}
       <section className='section-one-for-mobile container-fluid-custom'>
         <div className='section-one-div-one'>
           <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
