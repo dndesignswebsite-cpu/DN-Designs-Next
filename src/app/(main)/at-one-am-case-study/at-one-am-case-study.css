@@ -12,6 +12,9 @@
 }
 
 /* banner-after-hero-img */
+.color-palate-video-section{
+    padding-top: 100px;
+}
 .banner-after-hero-div{
     display: flex;
     align-items: center;
@@ -567,4 +570,216 @@ font-size: 16px;
 }
 
 
+/* tarinatonevideo */
 
+.tarinatonevideo{
+    width: 80%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+
+/* color palete video */
+
+.color-palate-desktop-video{
+    height: 100%;
+    width: 100%;
+}
+
+.color-palate-mobile-video{
+        display: none;
+    }
+
+@media(max-width:767px){
+    .color-palate-desktop-video{
+        display: none;
+    }
+    .color-palate-mobile-video{
+        display: block;
+        height: 100%;
+    width: 100%;
+    }
+}
+
+
+/* footer-video-section */
+
+.footer-video-section{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-video{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* own-the-hour */
+.own-the-hour-section{
+    padding: 100px 0 60px 0;
+}
+.own-the-hour-images-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.own-the-hour-img-1{
+    height: 100%;
+    width: 55%;
+    z-index: 110;
+}
+.own-the-hour-img-2{
+    height: 100%;
+    width: 40%;
+    z-index: 110;
+}
+
+
+/* shot show reel video section  */
+.shot-show-reel-video{
+    width: 100%;
+    height: 100%;
+}
+
+.shot-show-reel-section{
+    padding: 80px 0;
+}
+
+.shot-show-reel-image-row{
+    display: flex;
+    gap: 20px;
+}
+
+.shot-show-reel-image-col-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.shot-show-reel-image-col-2{
+    width: 50%;
+}
+
+.shot-show-reel-img-2{
+    width: 60%;
+}
+
+
+/* shot show reel video section */
+.social-media-showcase-section{
+    margin: 80px 0;
+    padding: 80px 0;
+    /* background-color: #1154A8; */
+}
+
+.social-media-showcase-video{
+    height: 100%;
+    width: 100%;
+}
+
+/* social-media-showcase-image-section */
+.social-media-showcase-image-div{
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-showcase-image-section{
+    padding: 60px 0;
+}
+
+.social-media-showcase-image-1{
+    width: 40%;
+    height: 100%;
+}
+
+.social-media-showcase-image-2{
+    width: 40%;
+    height: 100%;
+}
+
+
+/* brewed for section */
+
+.brewed-for-section{
+    padding: 80px 0;
+}
+
+.brewed-for-image-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.brewed-for-image-1{
+    width: 40%;
+    height: 100%;
+    z-index: 110;
+}
+
+.brewed-for-image-2{
+    width: 43%;
+    height: 100%;
+    z-index: 110;
+}
+
+.brewed-for-image-3{
+    width: 35%;
+    height: 100%;
+    z-index: 110;
+}
+
+.brewed-for-image-4{
+    width: 45%;
+    height: 100%;
+    z-index: 110;
+}
+
+/* website-showcase-video */
+.website-showcase-video{
+    height: 100%;
+    width: 100%;
+}
+
+.website-showcase-section{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+/* vending machine div */
+.vending-machine-section{
+    padding: 60px 0;
+}
+
+.vending-machine-img-div-1, .vending-machine-img-div-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vending-machine-img-div-2{
+    margin-top: 30px;
+}
+
+.vending-machine-img-1{
+    height: 100%;
+    width: 35%;
+}
+
+.vending-machine-img-2{
+    height: 100%;
+    width: 45%;
+}
+
+.vending-machine-img-3{
+    height: 100%;
+    width: 35%;
+    padding-top: 60px;
+}
+
+.vending-machine-img-4{
+    height: 100%;
+    width: 35%;
+}
