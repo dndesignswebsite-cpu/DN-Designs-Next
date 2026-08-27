@@ -819,7 +819,7 @@ async function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandinggtm.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/fmcg-pagevisual-assets.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
@@ -841,7 +841,7 @@ async function page() {
                     </p>
                   </div>
                   <img
-                    src="https://dndesigns.co.in/uploads/pages/wellnessbrandingproduct-visual.jpg"
+                    src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedgtm.jpg"
                     className="img-fluid everything-a-food-section-col-img"
                   ></img>
                 </div>
