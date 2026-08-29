@@ -1197,14 +1197,14 @@ async function page() {
             <section className="looking-for-someone">
               <div className="container">
                 <div className="looking-for-someone-container">
-                  <p className="looking-for-someone-para">Ready to Bring Your Brand  <br></br> to Life? Get on a call with us.</p>
+                  <p className="looking-for-someone-para">Ready to Bring Your Brand       <br></br> to Life? Get on a call with us. </p>
                   <TalkToUs/>
                 </div>
               </div>
             </section>
 
       {/* Why DN Designs? desktop*/}
-      <section className="why-dn-designs">
+      {/* <section className="why-dn-designs">
         <div className="container">
           <div className="row">
             <div className="div-of-abs-img">
@@ -1263,7 +1263,9 @@ async function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <CTAMarqueSwipper/>
 
 
       {/* cta swipper */}
@@ -1273,7 +1275,7 @@ async function page() {
 
       {/* Why DN Designs? mobile*/}
 
-      <div className="why-dn-designs-mobile">
+      {/* <div className="why-dn-designs-mobile">
         <div className="container">
           <div className="why-dn-designs-mobile-content">
             <h2 className="why-dn-designs-mobile-head">Why Choose Us</h2>
@@ -1331,7 +1333,7 @@ async function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* faqs */}
       <section className="faqs">

@@ -16,6 +16,8 @@ import TalkToUs from '@/Components/TalkToUs/TalkToUs';
 // import Script from "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
 
 
 // meta   data
@@ -1137,19 +1139,19 @@ async function page() {
         <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
       </section>
 
-      {/* Looking for something */}
+     {/* Looking for something */}
       
             <section className="looking-for-someone">
               <div className="container">
                 <div className="looking-for-someone-container">
-                  <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
+                  <p className="looking-for-someone-para">Ready to Bring Your Brand       <br></br> to Life? Get on a call with us. </p>
                   <TalkToUs/>
                 </div>
               </div>
             </section>
 
       {/* Why DN Designs? desktop*/}
-      <section className="why-dn-designs">
+      {/* <section className="why-dn-designs">
         <div className="container">
           <div className="row">
             <div className="div-of-abs-img">
@@ -1208,11 +1210,11 @@ async function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why DN Designs? mobile*/}
 
-      <div className="why-dn-designs-mobile">
+      {/* <div className="why-dn-designs-mobile">
         <div className="container">
           <div className="why-dn-designs-mobile-content">
             <h2 className="why-dn-designs-mobile-head">Why Work With Us ?</h2>
@@ -1270,7 +1272,10 @@ async function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <CTAMarqueSwipper/>
+      <BookDirectCallCTA/>
 
       {/* faqs */}
       <section className="faqs">
