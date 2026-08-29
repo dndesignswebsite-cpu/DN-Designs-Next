@@ -18,6 +18,9 @@ import AOSProvider from "@/Components/AosProvider/AosProvider";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import IndustriesPageHero from "@/Components/IndustriesPageHero/IndustriesPageHero";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCTABtn from "@/Components/BookDirectCTABtn/BookDirectCTABtn";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 
 
@@ -724,14 +727,16 @@ async function page() {
 
       {/* Looking for something */}
 
-      <section className="looking-for-someone">
-        <div className="container">
-          <div className="looking-for-someone-container">
-            <p className="looking-for-someone-para">Looking for something else?<br></br> Click the button & get in touch!</p>
-            <TalkToUs/>
-          </div>
-        </div>
-      </section>
+      {/* Looking for something */}
+      
+            <section className="looking-for-someone">
+              <div className="container">
+                <div className="looking-for-someone-container">
+                  <p className="looking-for-someone-para">Ready to Bring Your Brand       <br></br> to Life? Get on a call with us. </p>
+                  <TalkToUs/>
+                </div>
+              </div>
+            </section>
 
 
       {/* OUR STRATEGIC FRAMEWORK desktop*/}
@@ -883,7 +888,7 @@ async function page() {
 
 
        {/* Why DN Designs? desktop*/}
-                  <section className="why-dn-designs">
+                  {/* <section className="why-dn-designs">
                     <div className="container">
                       <div className="row">
                        
@@ -935,10 +940,10 @@ async function page() {
                       </div>
                     </div>
                   </section>
-            
+             */}
                   {/* Why DN Designs? mobile*/}
             
-                  <div className="why-dn-designs-mobile">
+                  {/* <div className="why-dn-designs-mobile">
                     <div className="container">
                     <div className="why-dn-designs-mobile-content">
                     <h2 className="why-dn-designs-mobile-head">Why DN Designs?</h2>
@@ -992,7 +997,12 @@ async function page() {
             
                     </div>
                   </div>
-           
+            */}
+
+            <CTAMarqueSwipper/>
+
+            <BookDirectCallCTA/>
+
 
 
        {/* faqs */}

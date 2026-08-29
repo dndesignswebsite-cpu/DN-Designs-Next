@@ -12,7 +12,8 @@ function BookDirectCallCTA() {
             <div className='row '>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
                 <div className='book-a-direct-call-col'>
-                    <h2 className="book-a-direct-call-col-main-head">Book a call directly<br></br> with <span className='book-a-direct-call-col-main-head-span'>our founders</span></h2>
+                
+                    <h2 className="book-a-direct-call-col-main-head">Book a Call With <br></br>  <span className='book-a-direct-call-col-main-head-span'>Our Founders</span></h2>
                 </div>
             </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
