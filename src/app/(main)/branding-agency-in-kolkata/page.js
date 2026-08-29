@@ -21,6 +21,8 @@ import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSec
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 // meta data
 export async function generateMetadata() {
@@ -378,6 +380,9 @@ async function page() {
 
       {/* swipper */}
        <CityPagesSwipper cityPagesSlideData={cityPagesSlideData}/>
+
+       <CTAMarqueSwipper/>
+       <BookDirectCallCTA/>
 
       {/* faqs */}
       <section className="faqs">

@@ -24,11 +24,11 @@ function CTAMarqueSwipper() {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
-        speed= {1500}
+        speed= {1700}
         // navigation
         // pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000,
+          delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}

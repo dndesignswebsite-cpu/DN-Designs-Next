@@ -25,6 +25,8 @@ import { getPageById } from "@/lib/services/pageService.js";
 import AtOneAm from '@/Components/AtOneAm/AtOneAm';
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
 
 
 
@@ -787,7 +789,7 @@ async function page() {
 
 
       {/* Why DN Designs? desktop*/}
-            <section className="why-dn-designs">
+            {/* <section className="why-dn-designs">
               <div className="container">
                 <div className="row">
                  
@@ -839,10 +841,10 @@ async function page() {
                 </div>
               </div>
             </section>
-      
+       */}
             {/* Why DN Designs? mobile*/}
       
-            <div className="why-dn-designs-mobile">
+            {/* <div className="why-dn-designs-mobile">
               <div className="container">
               <div className="why-dn-designs-mobile-content">
               <h2 className="why-dn-designs-mobile-head">Why DN Designs?</h2>
@@ -896,13 +898,17 @@ async function page() {
       
               </div>
             </div>
-     
+      */}
+
+      <CTAMarqueSwipper/>
 
 
      {/*.....our-constant-companions...... */}
      <section className='our-constant-clients-section'>
       <OurConstant />
       </section>
+
+      <BookDirectCallCTA/>
 
        {/* faqs */}
       
