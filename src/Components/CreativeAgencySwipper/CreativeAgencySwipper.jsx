@@ -25,10 +25,12 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
           spaceBetween={15}
           navigation={true}
           pagination={false}
-          // autoplay={{
-          //   delay: 3000, 
-          //   disableOnInteraction: false,
-          // }}
+          speed={800}
+          autoplay={{
+            delay: 2000, 
+            disableOnInteraction: false,
+            pauseOnMouseEnter:true
+          }}
           modules={[Navigation, Autoplay]}
           breakpoints={{
             0: {

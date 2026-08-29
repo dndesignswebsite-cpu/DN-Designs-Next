@@ -14,6 +14,8 @@ import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 // meta data
 export async function generateMetadata() {
@@ -551,6 +553,11 @@ async function page() {
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
             {/* <HomePageIndustriesSwipper/> */}
+
+            {/* new cta and what brewing in dn */}
+                        <CTAMarqueSwipper/>
+                        <BookDirectCallCTA/>
+                        
          
 
       {/* faqs */}

@@ -17,6 +17,8 @@ import Form from '@/Components/Form/Form';
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
 
 
 
@@ -343,6 +345,9 @@ async function page() {
 
           {/* AboutUsHoverPage */}
         <AboutUsHoverPage/>
+
+        <CTAMarqueSwipper/>
+        <BookDirectCallCTA/>
 
         {/* faqs */}
       <section className="faqs">
