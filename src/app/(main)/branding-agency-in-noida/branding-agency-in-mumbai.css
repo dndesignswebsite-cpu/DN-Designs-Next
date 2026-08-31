@@ -1,0 +1,62 @@
+.city-pages-content-img-sec{
+    padding: 50px 0;
+}
+
+.content-box-city-page{
+    background-color: #ca2734;
+    height: 100%;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.content-box-city-page h2{
+    color: #fff;
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.content-box-city-page p{
+    color: #fff;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.image-box-city-page{
+    padding: 0;
+}
+.image-box-city-page img{
+    border-radius: 5px;
+}
+
+@media(max-width:1399.68px){
+    .content-box-city-page h2{
+        font-size: 28px;
+    }
+    .content-box-city-page p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1200px){
+    .image-box-city-page{
+    margin: 20px 0;
+}
+}
+
+
+/* image  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-box-city-page-img{
+    aspect-ratio: 1500 / 1000;
+}
