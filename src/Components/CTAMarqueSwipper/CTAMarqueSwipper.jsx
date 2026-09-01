@@ -123,7 +123,7 @@ function CTAMarqueSwipper() {
 
 
 {/* 3 */}
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
               <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
@@ -154,7 +154,7 @@ function CTAMarqueSwipper() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
 
 
@@ -251,6 +251,119 @@ function CTAMarqueSwipper() {
                   <img src="https://dndesigns.co.in/uploads/pages/ctaswipperhjwewdfh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
 
                   <img src="https://dndesigns.co.in/uploads/pages/newzenrehdfmobileejh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+
+        {/* 7 */}
+<SwiperSlide>
+          <div className='cta-swipper-slide  cta-swipper-slide-special'>
+            <div className='row'>
+              <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
+                <div className='cta-swipper-slide-col'>
+                   <div className="cta-col-content-div">
+                      
+                         <p className="cta-swipper-label-para">Our Work is Turning Heads </p>
+
+                        <h2 className="cta-swipper-heading">Rithm's Enlite Is Creating Quite a Buzz On Behance. 
+</h2>
+
+
+                        {/* <Link href="https://www.linkedin.com/posts/dn-designs-india_branding-brandidentity-packagingdesign-activity-7492826988022423552-kIio?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD2HA4YBoM8hp69NFIHiZnJ59fPIN18jdy8">
+                        <div className="cta-swipper-para-icon-div">
+                        <p className="cta-swipper-para-desc">Explore More </p>
+                        <FontAwesomeIcon icon={faArrowRight} size="18px" className="cta-swipper-fontAwesomeIcon-right-arrow" />
+                        </div>
+                        </Link> */}
+
+                        </div> 
+                </div>
+              </div>
+
+              <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
+                <div className='cta-col-img-div cta-col-img-div-special'>
+                  {/* <img src="https://dndesigns.co.in/uploads/pages/ctanewswipperjsimagesunny.jpg.jpeg" className='img-fluid cta-swipper-img'/> */}
+                  <video  src="https://dndesigns.co.in/uploads/videos/enli.mp4" className='img-fluid cta-swipper-img cta-swipper-img-desktop' autoPlay loop
+                  muted playsInline></video>
+
+                  <video  src="https://dndesigns.co.in/uploads/videos/whatbrewingindnCan (1).mp4" className='img-fluid cta-swipper-img cta-swipper-img-mobile' autoPlay loop
+                  muted playsInline></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+
+{/* 8 */}
+
+ <SwiperSlide>
+          <div className='cta-swipper-slide'>
+            <div className='row'>
+              <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
+                <div className='cta-swipper-slide-col'>
+                   <div className="cta-col-content-div">
+                      
+                         <p className="cta-swipper-label-para">There’s More On The Menu  </p>
+
+                        <h2 className="cta-swipper-heading">A Protein Noodles Brand Is Already In The Making. </h2>
+
+                        {/* <Link href="https://www.instagram.com/reel/DY2CpSVq3Jy/?utm_source=ig_web_button_share_sheet&igsi=MzRlODBiNWFlZA==">
+                        <div className="cta-swipper-para-icon-div">
+                        <p className="cta-swipper-para-desc">Explore More </p>
+                        <FontAwesomeIcon icon={faArrowRight} size="18px" className="cta-swipper-fontAwesomeIcon-right-arrow" />
+                        </div>
+                        </Link> */}
+
+                        </div> 
+                </div>
+              </div>
+
+              <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
+                <div className='cta-col-img-div'>
+                  <img src="https://dndesigns.co.in/uploads/pages/whatbrewingwedbjSwytch-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/wehjsdhwegudSwytch-1x1.5.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+{/* 9 */}
+
+ <SwiperSlide>
+          <div className='cta-swipper-slide'>
+            <div className='row'>
+              <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
+                <div className='cta-swipper-slide-col'>
+                   <div className="cta-col-content-div">
+                      
+                         <p className="cta-swipper-label-para">Something Dazzling Is On Its Way 
+  </p>
+
+                        <h2 className="cta-swipper-heading">A New Jewellery Brand Is Almost Ready To Shine.  </h2>
+
+                        {/* <Link href="https://www.instagram.com/reel/DY2CpSVq3Jy/?utm_source=ig_web_button_share_sheet&igsi=MzRlODBiNWFlZA==">
+                        <div className="cta-swipper-para-icon-div">
+                        <p className="cta-swipper-para-desc">Explore More </p>
+                        <FontAwesomeIcon icon={faArrowRight} size="18px" className="cta-swipper-fontAwesomeIcon-right-arrow" />
+                        </div>
+                        </Link> */}
+
+                        </div> 
+                </div>
+              </div>
+
+              
+              <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
+                <div className='cta-col-img-div'>
+                  <img src="https://dndesigns.co.in/uploads/pages/wesbdhjewvuuyjQaasa-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/keewdhjQaasa-1x1.5-2.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
               </div>
             </div>

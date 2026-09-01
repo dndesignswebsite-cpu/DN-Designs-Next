@@ -17,6 +17,7 @@ import Image from "next/image";
 import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
 import AtOneAmBoxBottle from '@/Components/AtOneAmBoxBottle/AtOneAmBoxBottle';
 import SkateboardAnimation from '@/Components/SkateboardAnimation/SkateboardAnimation';
+import BlockReveal from '@/Components/BlockReveal/BlockReveal';
 
 
 
@@ -150,31 +151,76 @@ async function page() {
         <div className='container-fluid-custom'>
 
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">FUEL YOUR</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">1AM SELF</MomentumSection>
           </div>
 
           <div className='sticky-section-img-div'>
             <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' alt="" />
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className='img-fluid sticky-section-img-right' alt="" />
+            <div className='sticky-section-img-right'>
+            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className='img-fluid ' alt="" />
+              <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+            </div>
           </div>
 
           <div className='sticky-section-img-div-two'>
+        
             <img src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className='img-fluid sticky-section-img-right' alt="" />
+           
+            
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' alt="" /> */}
             <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner'></video>
           </div>
 
           <div className='sticky-section-img-div-three'>
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid sticky-section-img-right' alt="" />
+          <div className='for-text'>
+            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid ' alt="" />
+          <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+             </div>
+
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-left' alt="" />
           </div>
 
         </div>
       </section>
 
-
       {/* section 1 for mobil */}
+      <section className="container-fluid-custom at-one-section-one-mobile">
+        <div className='img-one-div-1'>
+        <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">FUEL YOUR</MomentumSection>
+         <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' alt="" />
+        </div>
+
+
+         <div className='img-one-div-2'>
+         <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">1AM SELF</MomentumSection>
+         <div className='sticky-section-img-right'>
+            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className='img-fluid ' alt="" />
+              <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+            </div>
+        </div>
+
+
+        <div className="img-one-div-3">
+           <img src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className='img-fluid sticky-section-img-right' alt="" />
+        </div>
+
+        <div className="img-one-div-4">
+           <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner'></video>
+        </div>
+      </section>
       
 
 
@@ -375,8 +421,8 @@ async function page() {
       <section className='own-the-hour-section'>
         <div className='container-fluid-custom'>
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-7" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-7" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-7-1" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-7-" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
           </div>
 
           <div className="own-the-hour-images-div">
@@ -451,8 +497,8 @@ async function page() {
 <section className='brewed-for-section'>
   <div className='container-fluid-custom'>
     <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-8" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-8" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
           </div>
 
 <div>
