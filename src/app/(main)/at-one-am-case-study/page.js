@@ -175,29 +175,7 @@ async function page() {
 
 
       {/* section 1 for mobil */}
-      <section className='section-one-for-mobile container-fluid-custom'>
-        <div className='section-one-div-one'>
-          <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left-mobile' alt="" />
-        </div>
-
-        <div className='section-one-div-two'>
-          <MomentumSection triggerSelector="#sticky-parent-2" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className='img-fluid sticky-section-img-left-mobile-div-2' alt="" />
-            <p className='section-one-div-two-para-one'>VIBE OF THE BRAND & STRATEGY WITH 1:AM</p>
-        </div>
-
-        <div className='section-one-div-three'>
-        <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagefour.jpg" className='img-fluid sticky-section-img-right-mobile-div-3' alt="" />
-            {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner-for-mobile'></video>
-        </div>
-
-         <div className='section-one-div-four'>
-        <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid sticky-section-img-right' alt="" />
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-left' alt="" />
-        </div>
-      </section>
+      
 
 
 
@@ -260,33 +238,7 @@ async function page() {
       </section>
 
       {/* section 2 for mobile */}
-      <section className='section-two-for-mobile container-fluid-custom'>
-        <div className='section-two-div-one-mobile'>
-           <MomentumSection triggerSelector="#sticky-parent-4" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-           <img src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className='img-fluid sticky-section-img-left-section-2-mobile' alt="" />
-        </div>
-
-          <div className='section-two-div-two-mobile'>
-           <MomentumSection triggerSelector="#sticky-parent-4" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-           <video src="https://dndesigns.co.in/uploads/videos/daynightgif.mp4" autoPlay muted loop className='at-one-am-video-section-two-video-one'></video>
-            <p className='section-one-div-two-para-one'>VIBE OF THE BRAND & STRATEGY WITH 1:AM</p>
-        </div>
-
-
-        <div className='sticky-section-two-img-div-two'>
-            {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
-            
-            <div>
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
-            <div className="second-section-stack-img">
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-three.jpg" className='img-fluid sticky-section-img-left-mobile' alt="" />
-            </div>
-            </div>
-          </div>
-
-      </section>
-
+    
 
 
 
@@ -308,17 +260,7 @@ async function page() {
 
       {/* mobile view */}
 
-      <div className='alone-two-images alone-two-images-mobile'>
-      <div className='container-fluid-custom'>
-      <div className="alone-two-images-after-slider-div">
-       <img src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className='img-fluid sticky-section-img-right-alone' alt="" />
-       <div className="alone-two-images-after-slider-div-second-image-div">
-         <img src="https://dndesigns.co.in/uploads/videos/httpsdndesigns.co.inuploadsvideosatoneamsection2.5imageafter-imagetwo.jpg" className='img-fluid sticky-section-img-left-alone' alt="" /> 
-         </div>
-      </div>
-      </div>
-      </div>
-
+      
 
 
 
@@ -402,16 +344,15 @@ async function page() {
             </div>
             <div className='section-after-skate-and-box-div-child'>
               <img src="https://dndesigns.co.in/uploads/pages/section-after-skate-and-box-divimg-one.jpg" className='img-fluid section-after-skate-and-box-div-child-img-two'></img>
-            </div>
-
-           
-
-            
+            </div>  
           </div>
-
            <video src="https://dndesigns.co.in/uploads/videos/trainatonevideo%20(1).mp4"  autoPlay loop muted playsInline className='tarinatonevideo'></video>
         </div>
       </section>
+
+
+
+
 
 
       {/* color palete video */}
