@@ -150,7 +150,7 @@ function AtOneAmVideoOnScroll() {
         <video
           ref={videoRef}
           className="at-one-am-video-on-scroll "
-          src="https://dndesigns.co.in/uploads/videos/atoneamonscrollvideo.mp4"
+          src="https://dndesigns.co.in/uploads/videos/websiteatoneamiewughdsvideo.mp4"
           muted
           playsInline
           preload="auto"
