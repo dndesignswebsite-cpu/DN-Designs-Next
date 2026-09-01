@@ -115,12 +115,12 @@ async function page() {
     {
       question: "Why should I hire a branding agency instead of just a graphic designer? ",
       answer:
-        "A graphic designer can create excellent visuals for your brand; however, to ensure that your brand succeeds in a competitive environment, you need to look at the bigger picture. You need to establish your brand positioning, visual identity, messaging, communication style, and lastly, the overall customer experience. It's a job that’s broader in concept and execution. A branding agency is best suited for this job.",
+        (<>A graphic designer can create excellent visuals for your brand; however, to ensure that your brand succeeds in a competitive environment, you need to look at the bigger picture. You need to <Link href="/brand-positioning" className="faq-link">establish your brand positioning,</Link> visual identity, messaging, communication style, and lastly, the overall customer experience. It's a job that’s broader in concept and execution. A branding agency is best suited for this job.</>),
     },
     {
       question: "Do you work with new businesses and startups, or only established businesses? ",
       answer:
-        (<>Both. It doesn’t matter whether you’re a startup or an established business. At our branding and design agency in Noida, we love building a new brand from the ground up and rebranding your business for its next stage of growth. </>)
+        (<>Both. It doesn’t matter whether you’re a startup or an established business. At our branding and design agency in Noida, we love <Link href="/startup-branding-agency" className="faq-link">building a new brand</Link> from the ground up and <Link href="/rebranding" className="faq-link">rebranding your business</Link> for its next stage of growth. </>)
     },
     {
       question: "Can you help us rebrand an existing business?",
@@ -131,7 +131,7 @@ async function page() {
     {
       question: "What services does DN Designs offer as a branding company in Noida?  ",
       answer:
-        "Our branding company in Noida offers end-to-end branding services under one roof, including brand strategy, brand positioning, brand identity design, packaging design and GTM strategy. Other branding services you can avail of at our creative branding agency include catalogue design, website design, brand collateral design, digital marketing, photography and 3D brand video creation. Everything is built to create a consistent brand system that consumers recognise and choose.",
+        (<>Our branding company in Noida offers <Link href="/branding" className="faq-link">end-to-end branding services</Link> under one roof, including brand strategy, brand positioning, brand identity design, packaging design and GTM strategy. Other branding services you can avail of at our <Link href="/creative-branding-agency" className="faq-link">creative branding agency</Link> include catalogue design, website design, brand collateral design, digital marketing, photography and 3D brand video creation. Everything is built to create a consistent brand system that consumers recognise and choose.</>),
     },
     
     {
@@ -161,13 +161,13 @@ async function page() {
     {
       question: "What if I already have a logo but need a full brand identity?",
       answer:
-        "In this scenario, we can build your entire brand identity (colours, typography, etc.) around your logo. Alternatively, we can refine your logo so that it aligns with your brand vision and market positioning, and then build a complete brand identity system around it. In both cases, the ultimate goal is to make your brand feel impactful and consistent across platforms, without necessarily having to start from scratch. ",
+        (<>In this scenario, we can <Link href="/brand-identity-design-services" className="faq-link">build your entire brand identity</Link> (colours, typography, etc.) around your logo. Alternatively, we can refine your logo so that it aligns with your brand vision and market positioning, and then build a complete brand identity system around it. In both cases, the ultimate goal is to make your brand feel impactful and consistent across platforms, without necessarily having to start from scratch. </>),
     }
     ,
     {
       question: "How do I get started with DN Designs? ",
       answer:
-        "Begin by booking a consultation with us, either in our office or online. Talk to our branding experts and share details about your business. Tell us all about your vision and ambitions, and we can take it from there. Let’s get started on our exciting branding journey.",
+        (<>Begin by booking a consultation with us, either in our office or online. <Link href="/contact-us" className="faq-link">Talk to our branding experts</Link> and share details about your business. Tell us all about your vision and ambitions, and we can take it from there. Let’s get started on our exciting branding journey.</>),
     },
   ];
 
@@ -284,19 +284,23 @@ async function page() {
              
       {/*.....our-constant-companions...... */}
       <OurConstant />
-       <BookDirectCallCTA/>
+      
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
-            {/* IndustriesSectionNewLayout */}
-        <IndustriesSectionNewLayout/>
+           
          
         
       {/*.....Our work...... */}
       {/* <OurWorkHomeSection /> */}
       {/*.....Our work...... */}
-              <section id="ourworksection">
+              <section id="ourworksection" className="our-work-home-section">
               <OurWorkHomeSection />
               </section>
+
+               {/* IndustriesSectionNewLayout */}
+        <IndustriesSectionNewLayout/>
+
+         <BookDirectCallCTA/>
 
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
