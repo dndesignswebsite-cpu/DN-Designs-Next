@@ -2,4 +2,5 @@
     width: 40%;
     z-index: 30;
     position: relative;
+    z-index: 120;
 }

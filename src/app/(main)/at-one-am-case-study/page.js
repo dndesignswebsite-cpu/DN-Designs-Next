@@ -215,11 +215,24 @@ async function page() {
 
         <div className="img-one-div-3">
            <img src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className='img-fluid sticky-section-img-right' alt="" />
-        </div>
 
-        <div className="img-one-div-4">
            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner'></video>
         </div>
+
+        <div className='img-one-div-4'>
+        <div className='img-one-div-img-6'>
+            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid ' alt="" />
+          <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+             </div>
+
+          <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid img-one-div-img-7' alt="" />
+        </div>
+
+      
       </section>
       
 
@@ -377,7 +390,7 @@ async function page() {
 
 
        {/* glb section */}
-      <AtOneAmBoxBottle/>
+      {/* <AtOneAmBoxBottle/> */}
 
       {/* section after skate board */}
 
@@ -414,7 +427,7 @@ async function page() {
 
 
       {/* video on scroll box opening */}
-      {/* <AtOneAmVideoOnScroll/> */}
+      <AtOneAmVideoOnScroll/>
 
 
       {/* own-the-hour-section */}
