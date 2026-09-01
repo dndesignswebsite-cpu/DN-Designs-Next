@@ -204,7 +204,7 @@ export default function Home() {
       {/*.....points...... */}
       <Points />
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* form */}
       <Form FormHead={FormHead} FormPara={FormPara} pageName="Landing Page" />
     </>

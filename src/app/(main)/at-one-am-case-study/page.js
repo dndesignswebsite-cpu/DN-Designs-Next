@@ -181,12 +181,12 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid ' alt="" />
           <p className="one-am-para-text-left">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        1AM keeps its coffee fam coming back every day.
       </BlockReveal>
     </p>
              </div>
 
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-left' alt="" />
+            <img src="https://dndesigns.co.in/uploads/pages/newimagejwebdfnvvvvvv.jpg.jpeg" className='img-fluid sticky-section-img-left' alt="" />
           </div>
 
         </div>
@@ -229,7 +229,7 @@ async function page() {
     </p>
              </div>
 
-          <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid img-one-div-img-7' alt="" />
+          <img src="https://dndesigns.co.in/uploads/pages/newimagejwebdfnvvvvvv.jpg.jpeg" className='img-fluid img-one-div-img-7' alt="" />
         </div>
 
       
@@ -265,12 +265,19 @@ async function page() {
         <div className='container-fluid-custom'>
 
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">LOUD NOT MESSY</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">BUILT THE GRIND</MomentumSection>
           </div>
 
           <div className='sticky-section-img-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className='img-fluid sticky-section-img-left-section-2' alt="" />
+          <div className='sticky-section-img-left-section-2'>
+            <img src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className='img-fluid ' alt="" />
+               <p className="one-am-para-text-white">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+            </div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-right' alt="" /> */}
             <video src="https://dndesigns.co.in/uploads/videos/daynightgif.mp4" autoPlay muted loop className='at-one-am-video-section-two-video-one'></video>
           </div>
@@ -278,7 +285,14 @@ async function page() {
           <div className='sticky-section-two-img-div-two'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' alt="" /> */}
             {/* <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video> */}
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
+            <div className="atoneamsectionseond-image-two">
+            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid ' alt="" />
+                  <p className="one-am-para-text-white">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+    </div>
 
             <div className='video-in-end'>
             <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
@@ -309,7 +323,14 @@ async function page() {
       <div className='alone-two-images alone-two-images-desktop'>
       <div className='container-fluid-custom'>
       <div className="alone-two-images-after-slider-div">
-       <img src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className='img-fluid sticky-section-img-right' alt="" />
+      <div className='sticky-section-img-right'>
+       <img src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className='img-fluid' alt="" />
+             <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+       </div>
      
          <img src="https://dndesigns.co.in/uploads/videos/httpsdndesigns.co.inuploadsvideosatoneamsection2.5imageafter-imagetwo.jpg" className='img-fluid sticky-section-img-left' alt="" /> 
         
@@ -348,8 +369,8 @@ async function page() {
         <div className='container-fluid-custom'>
 
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-5" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-5" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-5" className="sticky-section-text at-one-am-font">DESIGNED</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-5" className="sticky-section-text at-one-am-font">FOR THE DROP</MomentumSection>
           </div>
 
           <div className='sticky-section-img-div'>
@@ -389,6 +410,12 @@ async function page() {
       </section>
 
 
+       {/* video on scroll box opening */}
+       
+      <AtOneAmVideoOnScroll/>
+      
+
+
        {/* glb section */}
       {/* <AtOneAmBoxBottle/> */}
 
@@ -426,20 +453,26 @@ async function page() {
       </section>
 
 
-      {/* video on scroll box opening */}
-      <AtOneAmVideoOnScroll/>
+     
 
 
       {/* own-the-hour-section */}
       <section className='own-the-hour-section'>
         <div className='container-fluid-custom'>
           <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-7-1" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-7-" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-7-1" className="sticky-section-text at-one-am-font">HOME OF THE</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-7-" className="sticky-section-text at-one-am-font">CLUB</MomentumSection>
           </div>
 
           <div className="own-the-hour-images-div">
-            <img src="https://dndesigns.co.in/uploads/pages/ownthehourfirstimage.jpg" className='img-fluid own-the-hour-img-1'></img>
+          <div className='own-the-hour-img-1'>
+            <img src="https://dndesigns.co.in/uploads/pages/ownthehourfirstimage.jpg" className='img-fluid '></img>
+                  <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+    </div>
             <img src="https://dndesigns.co.in/uploads/pages/own-thehourimg2e.jpg" className='img-fluid own-the-hour-img-2'></img>
           </div>
         </div>
@@ -447,11 +480,13 @@ async function page() {
 
 
       {/* shot show reel video section */}
-      <section className='shot-show-reel-section'>
+      <div className="container-fluid-custom">
+      <section className='shot-show-reel-section '>
         <div className='shot-show-reel-section-div'>
-           <video src="https://dndesigns.co.in/uploads/videos/showreelhjref1amfinalvideo.mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
+           <video src="https://dndesigns.co.in/uploads/videos/wekuwkued1amfinalvideo(1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
         </div>
       </section>
+      </div>
       {/* shot show reel image section */}
 
       <section className="shot-show-reel-image-section">
@@ -464,6 +499,11 @@ async function page() {
 
             <div className='shot-show-reel-image-col-2'>
               <img src="https://dndesigns.co.in/uploads/pages/at1amshowreelimage3.jpg" className='img-fluid shot-show-reel-img-3'></img>
+                    <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
             </div>
 
           </div>
@@ -489,8 +529,15 @@ async function page() {
       <section clasName="social-media-showcase-image-section">
         <div className='container-fluid-custom'>
           <div className='social-media-showcase-image-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/at1amshowreelimage3.jpg" className='img-fluid social-media-showcase-image-1'></img>
-              <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted className='img-fluid social-media-showcase-image-2'></video>
+            <img src="https://dndesigns.co.in/uploads/pages/socialmediaewidtablet.jpg.jpeg" className='img-fluid social-media-showcase-image-1'></img>
+            <div className='social-media-showcase-image-2'>
+              <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted className='img-fluid '></video>
+                    <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+              </div>
           </div>
         </div>
       </section>
@@ -510,19 +557,34 @@ async function page() {
 <section className='brewed-for-section'>
   <div className='container-fluid-custom'>
     <div className='sticky-section-div'>
-            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">BREWED FOR</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-9" className="sticky-section-text at-one-am-font">THE HUSTLER</MomentumSection>
           </div>
 
 <div>
           <div className='brewed-for-image-div'>
             <img src="https://dndesigns.co.in/uploads/pages/brewed-for-image-1.jpg" className='img-fluid brewed-for-image-1'></img>
-            <img src="https://dndesigns.co.in/uploads/pages/httpsdndesigns.co.inuploadspagesbr2systum.jpg" className='img-fluid brewed-for-image-2'></img>
+            <div className='brewed-for-image-2'>
+            <img src="https://dndesigns.co.in/uploads/pages/httpsdndesigns.co.inuploadspagesbr2systum.jpg" className='img-fluid '></img>
+                  <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+    </div>
           </div>
 
            <div className='brewed-for-image-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/nightmodeatoneamnie.jpg" className='img-fluid brewed-for-image-3'></img>
-            <img src="https://dndesigns.co.in/uploads/pages/skipbasicimagatoneamvvvv.jpg" className='img-fluid brewed-for-image-4'></img>
+           <div className='brewed-for-image-4'>
+            <img src="https://dndesigns.co.in/uploads/pages/skipbasicimagatoneamvvvv.jpg" className='img-fluid brewed-for-image-4-img'></img>
+            <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM keeps its coffee fam coming back every day.
+      </BlockReveal>
+    </p>
+            </div>
+
+            <video src="https://dndesigns.co.in/uploads/videos/ewkrhfjyug3erwpost2(1).mp4" muted loop autoPlay className='img-fluid brewed-for-image-video-3'></video>
           </div>
           </div>
   </div>
@@ -536,11 +598,26 @@ async function page() {
   <div className='container-fluid-custom'>
     <div className='vending-machine-img-div-1'>
       <img src="https://dndesigns.co.in/uploads/pages/cartenimgvendingmachineimg1.jpg" className='vending-machine-img-1'></img>
-      <img src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className='vending-machine-img-2'></img>
+      <div className='vending-machine-img-2'>
+      <img src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className='img-fluid'></img>
+            <p className="one-am-para-text-right">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+      </div>
     </div>
 
     <div className='vending-machine-img-div-2'>
-      <img src="https://dndesigns.co.in/uploads/pages/nightmodesectionimgfdjtshirt.jpg" className='vending-machine-img-3'></img>
+    <div className='vending-machine-img-3'>
+      <img src="https://dndesigns.co.in/uploads/pages/nightmodesectionimgfdjtshirt.jpg" className='img-fluid'></img>
+         <p className="one-am-para-text-left">
+      <BlockReveal>
+        1AM stands for momentum, not moderation
+      </BlockReveal>
+    </p>
+    </div>
+
       <video src="https://dndesigns.co.in/uploads/videos/atoneamwendingmachineimg4.mp4"  className='vending-machine-img-4' autoPlay muted loop></video>
       
     </div>
