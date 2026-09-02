@@ -146,6 +146,37 @@ async function page() {
         </div>
       </div>
 
+
+       {/* it beagan section  1*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            IT BEGAN
+            </h2>
+            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
+            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end */}
+
+
+
       {/* section 1 */}
       <section className="sticky-section-parent section-one-for-desktop" id="sticky-parent-1">
         <div className='container-fluid-custom'>
@@ -193,7 +224,7 @@ async function page() {
       </section>
 
       {/* section 1 for mobil */}
-      <section className="container-fluid-custom at-one-section-one-mobile">
+      {/* <section className="container-fluid-custom at-one-section-one-mobile">
         <div className='img-one-div-1'>
         <MomentumSection triggerSelector="#sticky-parent-1" className="sticky-section-text at-one-am-font">FUEL YOUR</MomentumSection>
          <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' alt="" />
@@ -233,7 +264,37 @@ async function page() {
         </div>
 
       
+      </section> */}
+
+ {/* it beagan section  2*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            IT BEGAN
+            </h2>
+            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
+            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
       </section>
+      {/* it beagan section end 2*/}
+
+      
       
 
 
@@ -295,7 +356,7 @@ async function page() {
     </div>
 
             <div className='video-in-end'>
-            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2 video-in-end-video-last'></video>
             </div>
             <div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
@@ -338,7 +399,36 @@ async function page() {
       </div>
       </div>
 
-      {/* mobile view */}
+     
+
+      {/* it beagan section  3*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            IT BEGAN
+            </h2>
+            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
+            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end 3*/}
+
 
       
 
@@ -438,6 +528,37 @@ async function page() {
 
 
 
+      {/* it beagan section  4*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            IT BEGAN
+            </h2>
+            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
+            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end 4*/}
+
+
+
+
 
 
 
@@ -477,6 +598,38 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+
+      {/* it beagan section  5 typography*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head-typography'>
+            typo <br></br>graphy
+            </h2>
+            <p className='it-began-left-col-para-1-typography'>neutronic <br></br>
+condensed </p>
+            <p className='it-began-left-col-para-2-typography'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end 5*/}
+
 
 
       {/* shot show reel video section */}
@@ -541,6 +694,43 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+
+      {/* it beagan section  6*/}
+      <section className="it-began-section">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            IT BEGAN
+            </h2>
+            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
+            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
+              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
+              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end 6*/}
+
+
+
+
+
+
+
 
 
       {/* website showcaase */}
