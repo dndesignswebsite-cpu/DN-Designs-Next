@@ -6,6 +6,7 @@ import BlogFromTempOne from "./BlogFormTempOne/BlogFormTempOne";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { slugify } from "@/lib/utils/slugify";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 function DefaultTemplate({ blog, recentPosts }) {
   if (!blog) return null;
@@ -119,6 +120,8 @@ function DefaultTemplate({ blog, recentPosts }) {
             </div>
           </div>
         </div>
+
+        <CTAMarqueSwipper/>
       </section>
     </div>
   );
