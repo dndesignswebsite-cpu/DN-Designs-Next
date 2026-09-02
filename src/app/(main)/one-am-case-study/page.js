@@ -128,7 +128,7 @@ async function page() {
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
           {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" /> */}
-          <video src="https://dndesigns.co.in/uploads/videos/atoneamshowreelasd.mp4" loop muted autoPlay className="img-fluid banner-after-hero-img"></video>
+          <video src="https://dndesigns.co.in/uploads/videos/atoneamherovideoewjde2whj.mp4" loop muted autoPlay className="img-fluid banner-after-hero-img"></video>
         </div>
       </div>
 
@@ -155,18 +155,21 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            IT BEGAN
+            The Making of
             </h2>
-            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
-            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            <p className='it-began-left-col-para-1'>A Cold Coffee 
+
+<br></br>Brand <span className='orange-at-one-color'>1 AM</span></p>
+            <p className='it-began-left-col-para-2'>Turning an Hour Into a Brand.</p>
             </div>
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
-              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
-              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+              <p className="it-began-right-col-para-1">The night looks different  <span className='orange-at-one-color'>when you're building something.</span></p>
+              <p className='it-began-right-col-para-2'>1 AM speaks to a generation that works late, thinks differently, and turns quiet hours into productive ones. We brought that attitude to life through a complete brand identity, creating the logo, visual language, can design, and website as one cohesive experience. </p>
+              {/* <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p> */}
+               <p className="it-began-right-col-para-3">The goal was simple: make the brand as memorable as its audience.</p>
             </div>
           </div>
 
@@ -274,18 +277,20 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            IT BEGAN
+            The Identity Design
             </h2>
-            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
-            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'>A Logo</span> With Many Layers<br></br> One Mark. Multiple<br></br> Meanings
+<br></br></p>
+            <p className='it-began-left-col-para-2'></p>
             </div>
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
-              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
-              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+              <p className="it-began-right-col-para-1">The challenge was turning an hour into an identity.</p>
+              <p className='it-began-right-col-para-2'>So we let the name lead. 1 AM became a timestamp - bold, minimal, and instantly recognisable. The monochrome palette kept it clean and timeless, while the radiating strokes added energy and movement. A ticking clock, a spark of inspiration, a mind switched on. The beauty was in not choosing just one.</p>
+              <p className="it-began-right-col-para-3">Because 1 AM means all of it.
+ </p>
             </div>
           </div>
 
@@ -316,7 +321,7 @@ async function page() {
     <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
         <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
-            Coffee is the medium. The real product is momentum. 1 AM transforms an everyday beverage into a badge of ambition for people whose most productive hours begin when the rest of the world switches off.
+            The 1AM mark had to read like a timestamp and a statement. Built around a clock-cue wordmark, a colour system loud enough to stop a scroll — then stripped to nothing but essentials.
           </MomentumSectionPara>
         </div>
       </div>
@@ -335,7 +340,8 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className='img-fluid ' alt="" />
                <p className="one-am-para-text-white">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        1 AM isn't a time on the clock. It's a state of mind.
+
       </BlockReveal>
     </p>
             </div>
@@ -350,7 +356,7 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid ' alt="" />
                   <p className="one-am-para-text-white">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        Everything We Built The Idea. The Insight. The Audience.
       </BlockReveal>
     </p>
     </div>
@@ -388,7 +394,7 @@ async function page() {
        <img src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className='img-fluid' alt="" />
              <p className="one-am-para-text-left">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        Every visual choice screams main character energy, period.
       </BlockReveal>
     </p>
        </div>
@@ -409,18 +415,22 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            IT BEGAN
+            Can Design
             </h2>
-            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
-            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            <p className='it-began-left-col-para-1'>Built to Command 
+<br></br>Attention 
+<span className='orange-at-one-color'> Shelf Impact</span></p>
+            <p className='it-began-left-col-para-2'>Minimal. Bold. Unmissable.</p>
             </div>
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
-              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
-              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+              <p className="it-began-right-col-para-1">We didn't design a can. We designed a mini billboard.</p>
+              <p className='it-began-right-col-para-2'>The idea wasn't to make 1 AM different. It was to make it impossible to miss. We kept the cans deliberately minimal, letting bold typography and vibrant colour create the impact. The product name takes centre stage, while each flavour gets a distinct colour personality. A consistent design system ties everything together, making every can instantly recognisable as part of 1 AM.</p>
+
+              <p className="it-began-right-col-para-3">Minimal design. Maximum shelf presence.
+</p>
             </div>
           </div>
 
@@ -449,7 +459,7 @@ async function page() {
     <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
         <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
-            Coffee is the medium. The real product is momentum. 1 AM transforms an everyday beverage into a badge of ambition for people whose most productive hours begin when the rest of the world switches off.
+            Six SKUs. Zero identity compromise. A strict visual hierarchy — flavour name dominant, format and claims beneath, one colour per variant. Bold enough to own a shelf. Flexible enough to tell a story.
           </MomentumSectionPara>
         </div>
       </div>
@@ -489,12 +499,12 @@ async function page() {
       {/* skate board for mobile */}
       <section className='container-fluid-custom skate-board-mobile'>
         <div className='skate-board-mobile-div-one'>
-          <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+          <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">DESIGNED</MomentumSection>
           <img src="https://dndesigns.co.in/uploads/videos/skatesectionimageoneatoneam.jpg" className='img-fluid skate-board-section-mobile-img-one' alt="" />
         </div>
 
         <div className='skate-board-mobile-div-two'>
-          <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">LOREM IPSUM</MomentumSection>
+          <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">FOR THE DROP</MomentumSection>
           <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid skate-board-section-mobile-img-one' alt="" />
         </div>
       </section>
@@ -502,7 +512,7 @@ async function page() {
 
        {/* video on scroll box opening */}
        
-      <AtOneAmVideoOnScroll/>
+      {/* <AtOneAmVideoOnScroll/> */}
       
 
 
@@ -536,18 +546,18 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            IT BEGAN
+            the color theory
             </h2>
-            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
-            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            <p className='it-began-left-col-para-1'>COLOUR WASN'T DECORATION.<br></br>IT WAS <span className='orange-at-one-color'>THE ALARM.</span></p>
+            <p className='it-began-left-col-para-2'>We didn't pick colours that looked good. <br></br> We picked colours that couldn't be ignored.</p>
             </div>
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
-              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
-              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+              <p className="it-began-right-col-para-1">Most brands choose colours. We chose weapons. <span className='orange-at-one-color'></span></p>
+              <p className='it-began-right-col-para-2'>The brief was simple walk past a refrigerator full of competing cans and stop at 1:AM before you even know why.That half-second of attention?That's where a brand lives or dies</p>
+              <p className="it-began-right-col-para-3">So every colour in the 1:AM palette was chosennot for beauty but for stopping power.</p>
             </div>
           </div>
 
@@ -590,7 +600,7 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/pages/ownthehourfirstimage.jpg" className='img-fluid '></img>
                   <p className="one-am-para-text-left">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        This feed was built for the ones who never log off.
       </BlockReveal>
     </p>
     </div>
@@ -601,8 +611,23 @@ async function page() {
 
 
 
-      {/* it beagan section  5 typography*/}
-      <section className="it-began-section">
+     
+
+
+      {/* shot show reel video section */}
+      <div className="container-fluid-custom">
+      <section className='shot-show-reel-section '>
+        <div className='shot-show-reel-section-div'>
+           <video src="https://dndesigns.co.in/uploads/videos/wekuwkued1amfinalvideo(1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
+        </div>
+      </section>
+      </div>
+
+
+
+
+       {/* it beagan section  5 typography*/}
+      {/* <section className="it-began-section">
       <div className='container-fluid-custom'>
         <div className="row">
 
@@ -627,19 +652,38 @@ condensed </p>
 
         </div>
       </div>
+      </section> */}
+
+
+      <section className='it-began-section'>
+        <div className="container-fluid-custom">
+        <div className='it-beagan-typo-graphy'>
+          <h2 className='typography-head-1'>FONT PALLATE</h2>
+          <p className='typography-para-2'>DISPLAY & HEADLINE TYPEFACE</p>
+          <p className='typography-para-3'>neutronic narrow &</p>
+          <p className="typography-para-4">neutronic condensed</p>
+          <p className='typography-para-5'>BOLD, CONDENSED AND UNAPOLOGERICALLY URBAN</p>
+           <p className='typography-para-6'>BODY & UI TYPEFACE</p>
+            <p className='typography-para-7'>NEUTRONIC</p>
+            <p className='typography-para-8'>THE BODY COMPANION. NEUTRONIC REGULAR KEEPS READABILITY EFFORTLESS AT SMALLER SIZES, INHERITING THE SAME DNA AS THE HEADLINE FONT FOR TOTAL VISUAL HARMONY.</p>
+            <p className='typography-para-9'>abcdefghijklmnopqrstuvwxyz</p>
+            <p className='typography-para-10'>abcdefghijklmnopqrstuvwxyz</p>
+        </div>
+
+        <div className='it-began-section-row'>
+          <div className='it-began-section-row-col-1'>
+            <p className='it-began-section-row-col-para-1'>aM</p>
+            <p className='it-began-section-row-col-para-2'>neutronic narrow</p>
+          </div>
+          <div className='it-began-section-row-col-2'>
+            <p className='it-began-section-row-col-para-3'>aM</p>
+            <p className="it-began-section-row-col-para-4">neutronic condensed</p>
+          </div>
+        </div>
+        </div>
       </section>
       {/* it beagan section end 5*/}
 
-
-
-      {/* shot show reel video section */}
-      <div className="container-fluid-custom">
-      <section className='shot-show-reel-section '>
-        <div className='shot-show-reel-section-div'>
-           <video src="https://dndesigns.co.in/uploads/videos/wekuwkued1amfinalvideo(1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
-        </div>
-      </section>
-      </div>
       {/* shot show reel image section */}
 
       <section className="shot-show-reel-image-section">
@@ -654,7 +698,8 @@ condensed </p>
               <img src="https://dndesigns.co.in/uploads/pages/at1amshowreelimage3.jpg" className='img-fluid shot-show-reel-img-3'></img>
                     <p className="one-am-para-text-right">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+       brewing dreams one can at a time.
+
       </BlockReveal>
     </p>
             </div>
@@ -687,7 +732,7 @@ condensed </p>
               <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted className='img-fluid '></video>
                     <p className="one-am-para-text-right">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        scoop. brew. pour. sip. Ahhh
       </BlockReveal>
     </p>
               </div>
@@ -705,18 +750,21 @@ condensed </p>
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            IT BEGAN
+            website design
             </h2>
-            <p className='it-began-left-col-para-1'>We Didn't Build a Coffee Brand.<br></br><span className='orange-at-one-color'>We Built an Hour.</span></p>
-            <p className='it-began-left-col-para-2'>The 1AM story how a timestamp<br></br> became a cultural identity.</p>
+            <p className='it-began-left-col-para-1'>Built to Keep the Energy Alive
+<br></br><span className='orange-at-one-color'>Digital Presence</span></p>
+            <p className='it-began-left-col-para-2'>Bold. Playful. Full of Energy. </p>
             </div>
           </div>
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">1:AM wasn't built to compete in the cold coffee category. <span className='orange-at-one-color'>It was built to own a feeling.</span></p>
-              <p className='it-began-right-col-para-2'>The feeling of being awake when everyone else has stopped. Of doing your best work after midnight. Of choosing momentum over comfort. We weren't briefed to make another beverage brand we were briefed to make cold coffee impossible to ignore, for a generation that ignores everything that doesn't earn their attention. This is that story.</p>
-              <p className="it-began-right-col-para-3">That's who <span className='at-one-am-orange-and-neutroinc'>1AM</span> was built for.</p>
+              <p className="it-began-right-col-para-1">The website couldn't be an afterthought to the can. </p>
+              <p className='it-began-right-col-para-2'>We translated the visual language into a bold digital experience, pairing oversized headers with dark, moody backdrops and expressive product moments. Rather than presenting every flavour the same way, we gave each one a distinct character and narrative creating a digital shelf that feels varied yet connected through one unmistakable 1 AM design system. Motion, colour, and copy work together so it feels just as alive, loud, and unmissable as the physical one. 
+</p>
+              <p className="it-began-right-col-para-3">The digital shelf matches the brand’s attitude.
+</p>
             </div>
           </div>
 
@@ -758,7 +806,7 @@ condensed </p>
             <img src="https://dndesigns.co.in/uploads/pages/httpsdndesigns.co.inuploadspagesbr2systum.jpg" className='img-fluid '></img>
                   <p className="one-am-para-text-right">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        Built to Keep the Energy Alive
       </BlockReveal>
     </p>
     </div>
@@ -769,7 +817,7 @@ condensed </p>
             <img src="https://dndesigns.co.in/uploads/pages/skipbasicimagatoneamvvvv.jpg" className='img-fluid brewed-for-image-4-img'></img>
             <p className="one-am-para-text-left">
       <BlockReveal>
-        1AM keeps its coffee fam coming back every day.
+        The digital shelf matches the brand’s attitude. 
       </BlockReveal>
     </p>
             </div>
@@ -792,7 +840,9 @@ condensed </p>
       <img src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className='img-fluid'></img>
             <p className="one-am-para-text-right">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        
+Turning an Hour Into a Brand
+
       </BlockReveal>
     </p>
       </div>
@@ -803,7 +853,7 @@ condensed </p>
       <img src="https://dndesigns.co.in/uploads/pages/nightmodesectionimgfdjtshirt.jpg" className='img-fluid'></img>
          <p className="one-am-para-text-left">
       <BlockReveal>
-        1AM stands for momentum, not moderation
+        The night looks different when you're building something.
       </BlockReveal>
     </p>
     </div>
@@ -881,14 +931,14 @@ condensed </p>
           <div className='col-12 col-sm-12 col-md-6'>
             <div className='btn-div-col'>
             <div className='btn-div'>
-              <span className='blue-footer-btn'>LOREM IPSUM</span>
-              <span className='orange-footer-btn'>LOREM IPSUM</span>
+              <span className='blue-footer-btn'>BRANDING</span>
+              <span className='orange-footer-btn'>STRATEGY</span>
               </div>
 
               <div className='btn-div'>
-              <span className='orange-footer-btn'>LOREM IPSUM</span>
-              <span className='blue-footer-btn'>LOREM IPSUM</span>
-              <span className='orange-footer-btn'>LOREM IPSUM</span>
+              <span className='orange-footer-btn'>IDENTITY</span>
+              <span className='blue-footer-btn'>PACKAGING</span>
+              <span className='orange-footer-btn'>MARKETING</span>
               </div>
             </div>
           </div>
