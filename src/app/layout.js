@@ -13,6 +13,18 @@ import Script from "next/script";
 
 
 
+const neutronicBold = localFont({
+  // src: "../../public/fonts/Corbert-Medium.woff2",
+  //  src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
+   src: "../../public/fonts/fonnts.com-Neutronic_Bold.woff2",
+
+  variable: "--font-neutronicBold",
+  display: "swap",
+  preload: true,
+  adjustFontFallback: false,
+});
+
+
 const corbert = localFont({
   // src: "../../public/fonts/Corbert-Medium.woff2",
    src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
@@ -101,7 +113,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable} ${helvetica.variable}`}
+      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable} ${helvetica.variable} ${neutronicBold.variable}`}
     >
       <body suppressHydrationWarning>
         {/* =========================

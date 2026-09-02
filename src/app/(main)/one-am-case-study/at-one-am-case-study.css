@@ -185,7 +185,7 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     gap: 7px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap !important; */
 }
 
 .blue-footer-btn{
@@ -196,7 +196,7 @@ justify-content: space-between;
 font-weight: 700;
 font-style: normal;
 font-size: 18px;
-padding: 8px 20px;
+padding: 8px 16px;
 border-radius: 8PX;
 }
 
@@ -208,13 +208,14 @@ border-radius: 8PX;
 font-weight: 700;
 font-style: normal;
 font-size: 18px;
-padding: 8px 20px;
+padding: 8px 16px;
 border-radius: 8PX;
 }
 
 .btn-div{
     display: flex;
     gap: 7px;
+    flex-wrap: wrap;
 }
 
 .footer-right-col{
@@ -309,7 +310,7 @@ border-radius: 8PX;
         font-size: 30px;
     }
     .negative-margin-text{
-      margin-top: -150px;
+      margin-top: -100px;
       padding: 0 30px;
       margin-bottom: 00px;
 }
@@ -916,7 +917,7 @@ font-size: 16px;
 .it-began-left-col-head{
    font-family: neutronic-condensed;
    color: #868686;
-   font-size: 60px;
+   font-size: 40px;
    font-weight: 700;
     text-transform: uppercase;
 
@@ -926,8 +927,8 @@ font-size: 16px;
     font-family: neutronic-condensed;
     font-weight: 700;
     color: #1154A8;
-    font-size: 50px;
-    line-height: 1.2em;
+    font-size: 70px;
+    line-height: 1em;
     text-transform: uppercase;
 }
 
@@ -943,7 +944,7 @@ font-size: 16px;
     font-family: var(--font-helvetica);
     font-size: 22px;
     font-weight: 400;
-    color: #414141;
+    color: #1154A8;
     padding-bottom: 5px;
 }
 .it-began-right-col-para-2{
@@ -957,7 +958,7 @@ font-size: 16px;
     font-family: var(--font-helvetica);
     font-size: 22px;
     font-weight: 400;
-    color: #414141;
+    color: #FC8342;
     padding-bottom: 5px;
 }
 
@@ -1015,6 +1016,192 @@ font-size: 16px;
          font-size: 18px;
     }
 }
+
+
+
+
+
+
+/* it-beagan-typo-graphy */
+
+
+.it-beagan-typo-graphy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.typography-head-1{
+    color: #868686;
+    font-family: neutronic-condensed;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 1000;
+}
+
+.typography-para-2{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 35px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+.typography-para-3{
+    color: #1154A8;
+    font-size: 64px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-neutronicBold);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      padding-top: 10px;
+}
+
+.typography-para-4{
+    color: #1154A8;
+    font-size: 120px;
+    font-family: neutronic-condensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      /* padding-top: 10px; */
+      margin-top: -20px;
+}
+
+.typography-para-5{
+    color: #868686;
+    font-size: 35px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #868686;
+}
+
+.typography-para-6{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 35px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+
+.typography-para-7{
+    font-family: var(--font-neutronicBold);
+    font-weight: 600;
+    font-size: 35px;
+    color: #F57646;
+    font-size: 80px;
+    line-height: 1em;
+}
+
+.typography-para-8{
+    color: #868686;
+    font-size: 24px;
+    /* font-family: neutronic-condensed; */
+    text-transform: uppercase;
+   font-family: var(--font-helvetica);
+    font-weight: 400;
+    width: 45%;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.typography-para-9{
+    color: #BABABA;
+     /* font-family: neutronic-condensed; */
+     font-family: var(--font-neutronicBold);
+     font-size: 60px;
+     font-weight: 700;
+     text-transform: uppercase;
+     border-bottom: 1px solid #BABABA;
+     line-height: 1em;
+     padding-bottom: 10px;
+}
+
+.typography-para-10{
+    color: #BABABA;
+     font-family: neutronic-condensed;
+     font-size: 110px;
+     font-weight: 700;
+     text-transform: uppercase;  
+     line-height: 1em;
+}
+
+.it-began-section-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding: 20px 20px 60px 20px;
+}
+
+.it-began-section-row-col-1{
+    width: 50%;
+    background-color: #F57646;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+
+.it-began-section-row-col-2{
+    width: 50%;
+    background-color: #1154A8;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.it-began-section-row-col-para-1{
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-neutronicBold);
+    font-weight: 700;
+    font-size: 250px;
+    color: #fff;
+    line-height: 1em;
+}
+
+.it-began-section-row-col-para-2{
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-neutronicBold);
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    line-height: 1em;
+}
+
+.it-began-section-row-col-para-3{
+    font-family: neutronic-condensed;
+    font-weight: 700;
+    font-size: 280px;
+    color: #fff;
+    line-height: 1em;
+}
+
+.it-began-section-row-col-para-4{
+    font-family: neutronic-condensed;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    line-height: 1em;
+}
+
+
+/* it-beagan-typo-graphy */
 
 
 
@@ -1144,4 +1331,133 @@ font-size: 16px;
     padding-top: 50px;
     padding-bottom: 10px;
 }
+
+.sticky-section-parent{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.sticky-section-img-div-two{
+    padding: 0 0;
+}
+
+.at-one-am-hero-img-sub-div{
+    width: 57% !important;
+}
+.at-one-am-hero-img-2{
+    width: 35% !important;
+}
+.at-one-am-hero-img-1 {
+    width: 40% !important;
+}
+    .banner-after-hero-div{
+        margin-top: -150px !important;
+    }
+
+
+
+    /* typography */
+    .typography-head-1{
+    color: #868686;
+    font-family: neutronic-condensed;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.typography-para-2{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 20px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+.typography-para-3{
+    color: #1154A8;
+    font-size: 35px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-neutronicBold);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      padding-top: 10px;
+}
+
+.typography-para-4{
+    color: #1154A8;
+    font-size: 60px;
+    font-family: neutronic-condensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      /* padding-top: 10px; */
+      margin-top: -20px;
+}
+
+.typography-para-5{
+    color: #868686;
+    font-size: 24px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #868686;
+}
+
+.typography-para-6{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 24px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+
+.typography-para-7{
+    font-family: var(--font-neutronicBold);
+    font-weight: 600;
+    font-size: 24px;
+    color: #F57646;
+    font-size: 80px;
+    line-height: 1em;
+}
+
+.typography-para-8{
+    color: #868686;
+    font-size: 20px;
+    /* font-family: neutronic-condensed; */
+    text-transform: uppercase;
+   font-family: var(--font-helvetica);
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.typography-para-9{
+    color: #BABABA;
+     /* font-family: neutronic-condensed; */
+     font-family: var(--font-neutronicBold);
+     font-size: 30px;
+     font-weight: 700;
+     text-transform: uppercase;
+     border-bottom: 1px solid #BABABA;
+     line-height: 1em;
+     padding-bottom: 10px;
+}
+
+.typography-para-10{
+    color: #BABABA;
+     font-family: neutronic-condensed;
+     font-size: 60px;
+     font-weight: 700;
+     text-transform: uppercase;  
+     line-height: 1em;
+}
+
 }
