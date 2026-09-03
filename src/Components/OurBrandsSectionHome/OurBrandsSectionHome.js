@@ -18,6 +18,33 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
             {heading1} <span className={`${styles["every-pr"]}`}>{heading2}</span>
           </h2>
           <ul className={`${styles["cards"]}`}>
+
+          
+             <Link href="/at1am-case-study" scroll={true}>
+              <li className={`${styles["card"]} ${styles["card-5"]}`}>
+                <div
+                  className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
+                >
+                  <div className={`${styles["brand-overlay"]}`}>
+                    <div className={`${styles["our-brand-content"]}`}>
+                      <h3 className="heading-corbert">At 1 Am</h3>
+                      <div className={`${styles["brand-buttons"]}`}>
+                        <button className="para-roboto">Brand Strategy</button>
+                        <button className="para-roboto">Brand Identity</button>
+                        <button className="para-roboto">Label Design</button>
+                        <button className="para-roboto">Website Design</button>
+                      </div>
+                      <p className="para-roboto">
+                       1 AM is built for an audience that comes alive when the rest of the world sleeps – creators, entrepreneurs, gamers and anyone who refuses to stop just because the clock says so. For the brand, we shaped an entire brand identity from the ground up – the logo, visual language, can and website design – to match the energy of its target audience. In the end, we didn't just design a brand; we turned an hour into one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </Link> 
+
+
+
             <Link href="/enlite-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-1"]}`}>
                 <div
@@ -185,6 +212,84 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
             </h2>
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
+
+
+
+               <Link
+                href="/at1am-case-study"
+                className={styles["mobile-casestudy-wrapper-link"]}
+                scroll={true}
+              >
+                <div
+                  className={`${styles["our-brand-mobile-div"]} col-12 col-sm-12 col-lg-6`}
+                >
+                  <div className={`${styles["our-brand-mobile-div-clield"]}`}>
+                  
+
+                    <Image
+                      // src={imageUrl + "grin care case study.webp"}
+
+               src="https://dndesigns.co.in/uploads/pages/2ehwrkjd3hjrekfh5iruphone.jpg.jpeg"
+                      className={`${styles["responsive-img"]}`}
+                      alt="home page image"
+                      width={1500}
+                      height={1000}
+                    />
+                    <div
+                      className={`${styles["our-brand-mobile-div-content"]}`}
+                    >
+                      <h3
+                        className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
+                      >
+                        At 1 Am
+                      </h3>
+                      <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          Brand Strategy
+                        </h4>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                         Brand Identity
+                        </h4>
+                      </div>
+                      <div className={`${styles["our-brand-mobile-btn-up"]}`}>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                          Label Design
+                        </h4>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} para-roboto`}
+                        >
+                         Website Design
+                        </h4>
+                      </div>
+                      {/* <div>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
+                        >
+                           Label Design
+                        </h4>
+                        <h4
+                          className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
+                        >
+                           Website Design
+                        </h4>
+                      </div> */}
+                      <p className="para-roboto">
+                        1 AM is built for an audience that comes alive when the rest of the world sleeps – creators, entrepreneurs, gamers and anyone who refuses to stop just because the clock says so. For the brand, we shaped an entire brand identity from the ground up – the logo, visual language, can and website design – to match the energy of its target audience. In the end, we didn't just design a brand; we turned an hour into one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link> 
+
+
+
+
               <Link
                 href="/enlite-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}

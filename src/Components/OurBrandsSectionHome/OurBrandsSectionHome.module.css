@@ -20,20 +20,20 @@
 }
 
 .card1 {
-  --index: 1;
-}
-.card2 {
   --index: 2;
 }
-.card3 {
+.card2 {
   --index: 3;
 }
-.card4 {
+.card3 {
   --index: 4;
+}
+.card4 {
+  --index: 5;
 }
 
 .card5 {
-  --index: 5;
+  --index: 1;
 }
 
 .card {
@@ -78,7 +78,7 @@
   background-repeat: no-repeat;
 }
 .card-body-grin {
-  background-image: url("https://dndesigns.co.in/uploads/pages/13.webp");
+  background-image: url("https://dndesigns.co.in/uploads/pages/atoneamcoveroimafedeslerkgj.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
