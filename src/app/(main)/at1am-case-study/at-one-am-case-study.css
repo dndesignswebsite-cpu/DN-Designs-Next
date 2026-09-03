@@ -811,7 +811,7 @@ font-size: 16px;
     text-align: right;
     font-weight: 500;
     padding-top: 10px;
-    line-height: 1em;
+    line-height: 1.2em;
     /* text-transform: lowercase; */
 }
 
@@ -822,7 +822,7 @@ font-size: 16px;
     text-align: left;
     font-weight: 500;
     padding-top: 10px;
-    line-height: 1em;
+    line-height: 1.2em;
     /* text-transform: lowercas; */
 }
 
@@ -833,7 +833,7 @@ font-size: 16px;
     text-align: left;
     font-weight: 500;
     padding-top: 10px;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 .for-text{
