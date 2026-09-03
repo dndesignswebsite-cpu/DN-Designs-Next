@@ -621,6 +621,20 @@ font-size: 16px;
     width: 100%;
 }
 
+.footer-video-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .footer-video-mobile{
+    display: block;
+}
+
+.footer-video-desktop{
+    display: none;
+}
+}
+
 
 /* own-the-hour */
 .own-the-hour-section{

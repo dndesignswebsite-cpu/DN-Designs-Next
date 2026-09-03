@@ -18,6 +18,7 @@ import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideo
 import AtOneAmBoxBottle from '@/Components/AtOneAmBoxBottle/AtOneAmBoxBottle';
 import SkateboardAnimation from '@/Components/SkateboardAnimation/SkateboardAnimation';
 import BlockReveal from '@/Components/BlockReveal/BlockReveal';
+import SkateBoardAnimationDesktop from '@/Components/SkateBoardAnimationDesktop/SkateBoardAnimationDesktop';
 
 
 
@@ -128,7 +129,7 @@ async function page() {
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
           {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" /> */}
-          <video src="https://dndesigns.co.in/uploads/videos/atoneamherovideoewjde2whj.mp4" loop muted autoPlay className="img-fluid banner-after-hero-img"></video>
+          <video src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img" ></video>
         </div>
       </div>
 
@@ -159,7 +160,7 @@ async function page() {
             </h2>
             <p className='it-began-left-col-para-1'>A Cold Coffee 
 
-<br></br>Brand <span className='orange-at-one-color'>1 AM</span></p>
+<br></br>Brand <span className='orange-at-one-color'>1 AM.</span></p>
             <p className='it-began-left-col-para-2'>Turning an Hour Into a Brand.</p>
             </div>
           </div>
@@ -207,7 +208,7 @@ async function page() {
            
             
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop className='at-one-am-video-after-banner'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop playsInline className='at-one-am-video-after-banner'></video>
           </div>
 
           <div className='sticky-section-img-div-three'>
@@ -279,7 +280,7 @@ async function page() {
             <h2 className='it-began-left-col-head'>
             The Identity Design
             </h2>
-            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'>A Logo</span> With Many Layers<br></br> One Mark. Multiple<br></br> Meanings
+            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'>A Logo</span> With Many Layers.<br></br> One Mark. Multiple<br></br> Meanings.
 <br></br></p>
             <p className='it-began-left-col-para-2'></p>
             </div>
@@ -288,8 +289,8 @@ async function page() {
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
               <p className="it-began-right-col-para-1">The challenge was turning an hour into an identity.</p>
-              <p className='it-began-right-col-para-2'>So we let the name lead. 1 AM became a timestamp - bold, minimal, and instantly recognisable. The monochrome palette kept it clean and timeless, while the radiating strokes added energy and movement. A ticking clock, a spark of inspiration, a mind switched on. The beauty was in not choosing just one.</p>
-              <p className="it-began-right-col-para-3">Because 1 AM means all of it.
+              <p className='it-began-right-col-para-2'>So we let the name lead. 1 AM became a timestamp: bold, minimal, and instantly recognisable. The monochrome palette kept it clean and timeless, while the radiating strokes added energy and movement. A ticking clock, a spark of inspiration, a mind switched on. The beauty was in not choosing just one.</p>
+              <p className="it-began-right-col-para-3">Because 1 AM means all of it. 
  </p>
             </div>
           </div>
@@ -332,7 +333,7 @@ async function page() {
 
           <div className='sticky-section-div'>
             <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">LOUD NOT MESSY</MomentumSection>
-            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">BUILT THE GRIND</MomentumSection>
+            <MomentumSection triggerSelector="#sticky-parent-3" className="sticky-section-text at-one-am-font at-one-am-font-white">BUILT FOR THE GRIND</MomentumSection>
           </div>
 
           <div className='sticky-section-img-div'>
@@ -346,7 +347,7 @@ async function page() {
     </p>
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/daynightgif.mp4" autoPlay muted loop className='at-one-am-video-section-two-video-one'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/daynightgif.mp4" autoPlay muted loop playsInline className='at-one-am-video-section-two-video-one'></video>
           </div>
 
           <div className='sticky-section-two-img-div-two'>
@@ -356,13 +357,13 @@ async function page() {
             <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid ' alt="" />
                   <p className="one-am-para-text-white">
       <BlockReveal>
-        Everything We Built The Idea. The Insight. The Audience.
+        Everything We Built: The Idea. The Insight. The Audience.
       </BlockReveal>
     </p>
     </div>
 
             <div className='video-in-end'>
-            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2 video-in-end-video-last'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay playsInline muted loop className='at-one-am-section-2-video-2 video-in-end-video-last'></video>
             </div>
             <div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' alt="" />
@@ -418,7 +419,7 @@ async function page() {
             Can Design
             </h2>
             <p className='it-began-left-col-para-1'>Built to Command 
-<br></br>Attention 
+<br></br>Attention.
 <span className='orange-at-one-color'> Shelf Impact</span></p>
             <p className='it-began-left-col-para-2'>Minimal. Bold. Unmissable.</p>
             </div>
@@ -479,7 +480,8 @@ async function page() {
           </div>
 
         <div className="skate-board-div">
-  <SkateboardAnimation />
+  {/* <SkateboardAnimation /> */}
+  <SkateBoardAnimationDesktop/>
 </div>
 
           {/* <div className='skate-board-div'>
@@ -516,7 +518,7 @@ async function page() {
 
        {/* video on scroll box opening */}
        
-      <AtOneAmVideoOnScroll/>
+      {/* <AtOneAmVideoOnScroll/> */}
       
 
 
@@ -530,7 +532,7 @@ async function page() {
           <div className='section-after-skate-and-box-div'>
             <div className='section-after-skate-and-box-div-child'>
             <img src="https://dndesigns.co.in/uploads/pages/wedfeoadspagessection-after-skate-and-box-divimg-two.jpg" className='img-fluid section-after-skate-and-box-div-child-img-one'></img>
-             <video src="https://dndesigns.co.in/uploads/videos/atoneamlogoimagevideosectionafterskate.mp4" autoPlay muted loop className='section-after-skate-and-box-div-child-video-one'></video>
+             <video src="https://dndesigns.co.in/uploads/videos/atoneamlogoimagevideosectionafterskate.mp4" autoPlay playsInline muted loop className='section-after-skate-and-box-div-child-video-one'></video>
             </div>
             <div className='section-after-skate-and-box-div-child'>
               <img src="https://dndesigns.co.in/uploads/pages/section-after-skate-and-box-divimg-one.jpg" className='img-fluid section-after-skate-and-box-div-child-img-two'></img>
@@ -560,7 +562,7 @@ async function page() {
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
               <p className="it-began-right-col-para-1">Most brands choose colours. We chose weapons. <span className='orange-at-one-color'></span></p>
-              <p className='it-began-right-col-para-2'>The brief was simple walk past a refrigerator full of competing cans and stop at 1:AM before you even know why. That half-second of attention? That's where a brand lives or dies.</p>
+              <p className='it-began-right-col-para-2'>The brief was simple: walk past a refrigerator full of competing cans and stop at 1:AM before you even know why. That half-second of attention? That's where a brand lives or dies.</p>
               <p className="it-began-right-col-para-3">So every colour in the 1:AM palette was chosen not for beauty but for stopping power.</p>
             </div>
           </div>
@@ -580,7 +582,7 @@ async function page() {
       <section className='color-palate-video-section'>
         <div className='container-fluid-custom'>
           <div className='color-palate-video-div'>
-            <video src="https://dndesigns.co.in/uploads/videos/color-palet-desktopWhatsApp Video 2026-08-20 at 17.54.41.mp4" className='color-palate-desktop-video' autoPlay loop muted playsInline></video>
+            <video src="https://dndesigns.co.in/uploads/videos/color-palet-desktopWhatsApp Video 2026-08-20 at 17.54.41.mp4" className='color-palate-desktop-video' autoPlay  loop muted playsInline></video>
 
             <video src="https://dndesigns.co.in/uploads/videos/color-palate-mobileWhatsApp Video 2026-08-20 at 17.54.40.mp4" className='color-palate-mobile-video' autoPlay loop muted playsInline></video>
           </div>
@@ -695,7 +697,7 @@ condensed </p>
           <div className='shot-show-reel-image-row'>
             <div className='shot-show-reel-image-col-1'>
               <img src="https://dndesigns.co.in/uploads/pages/shootshowreelimage-1new-2.jpg" className='img-fluid shot-show-reel-img-1'></img>
-              <video src="https://dndesigns.co.in/uploads/videos/atoneamvideog3dkjhjewdb.mp4" className='img-fluid shot-show-reel-img-2' autoPlay loop muted ></video>
+              <video src="https://dndesigns.co.in/uploads/videos/atoneamvideog3dkjhjewdb.mp4" className='img-fluid shot-show-reel-img-2' autoPlay loop muted playsInline></video>
             </div>
 
             <div className='shot-show-reel-image-col-2'>
@@ -733,10 +735,10 @@ condensed </p>
           <div className='social-media-showcase-image-div'>
             <img src="https://dndesigns.co.in/uploads/pages/socialmediaewidtablet.jpg.jpeg" className='img-fluid social-media-showcase-image-1'></img>
             <div className='social-media-showcase-image-2'>
-              <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted className='img-fluid '></video>
+              <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted playsInline className='img-fluid '></video>
                     <p className="one-am-para-text-right">
       <BlockReveal>
-        scoop. brew. pour. sip. Ahhh
+        scoop. brew. pour. sip. Ahhh!
       </BlockReveal>
     </p>
               </div>
@@ -756,7 +758,7 @@ condensed </p>
             <h2 className='it-began-left-col-head'>
             website design
             </h2>
-            <p className='it-began-left-col-para-1'>Built to Keep the Energy Alive
+            <p className='it-began-left-col-para-1'>Built to Keep the Energy Alive.
 <br></br><span className='orange-at-one-color'>Digital Presence</span></p>
             <p className='it-began-left-col-para-2'>Bold. Playful. Full of Energy. </p>
             </div>
@@ -788,7 +790,7 @@ condensed </p>
       {/* website showcaase */}
       <section className='website-showcase-section'>
       <div className='container-fluid-custom'>
-        <video className='website-showcase-video img-fluid' src="https://dndesigns.co.in/uploads/videos/websiteshowcasingvideoatoneamewhdj.mp4" loop muted autoPlay></video>
+        <video className='website-showcase-video img-fluid' src="https://dndesigns.co.in/uploads/videos/websiteshowcasingvideoatoneamewhdj.mp4" loop muted autoPlay playsInline></video>
       </div>
       </section>
 
@@ -826,7 +828,7 @@ condensed </p>
     </p>
             </div>
 
-            <video src="https://dndesigns.co.in/uploads/videos/ewkrhfjyug3erwpost2(1).mp4" muted loop autoPlay className='img-fluid brewed-for-image-video-3'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/ewkrhfjyug3erwpost2(1).mp4" muted loop autoPlay playsInline  className='img-fluid brewed-for-image-video-3'></video>
           </div>
           </div>
   </div>
@@ -862,7 +864,7 @@ Turning an Hour Into a Brand
     </p>
     </div>
 
-      <video src="https://dndesigns.co.in/uploads/videos/atoneamwendingmachineimg4.mp4"  className='vending-machine-img-4' autoPlay muted loop></video>
+      <video src="https://dndesigns.co.in/uploads/videos/atoneamwendingmachineimg4.mp4"  className='vending-machine-img-4' autoPlay muted loop playsInline></video>
       
     </div>
   </div>
@@ -921,7 +923,9 @@ Turning an Hour Into a Brand
       <section className='footer-video-section'>
         <div className='container-fluid-custom'>
           <div className='footer-video-div'>
-            <video src="https://dndesigns.co.in/uploads/videos/footervideoatoneamMotion3 (1).mp4" className='footer-video' autoPlay loop muted playsInline></video>
+            <video src="https://dndesigns.co.in/uploads/videos/footervideoatoneamMotion3 (1).mp4" className='footer-video footer-video-desktop' autoPlay loop muted playsInline></video>
+
+            <video src="https://dndesigns.co.in/uploads/videos/atoneamfootermobileMotion-2-1 (1).mp4" className='footer-video footer-video-mobile' autoPlay loop muted playsInline></video>
           </div>
         </div>
       </section>
