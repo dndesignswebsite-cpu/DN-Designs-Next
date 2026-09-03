@@ -459,7 +459,7 @@ async function page() {
     <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
         <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
-            Six SKUs. Zero identity compromise. A strict visual hierarchy — flavour name dominant, format and claims beneath, one colour per variant. Bold enough to own a shelf. Flexible enough to tell a story.
+            Five SKUs. Zero identity compromise. A strict visual hierarchy — flavour name dominant, format and claims beneath, one colour per variant. Bold enough to own a shelf. Flexible enough to tell a story.
           </MomentumSectionPara>
         </div>
       </div>
@@ -507,6 +507,10 @@ async function page() {
           <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">FOR THE DROP</MomentumSection>
           <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid skate-board-section-mobile-img-one' alt="" />
         </div>
+
+     <div className="skate-board-div-for-mobile">    
+  <SkateboardAnimation />
+</div>
       </section>
 
 
@@ -546,7 +550,7 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            the color theory
+            the colour theory
             </h2>
             <p className='it-began-left-col-para-1'>COLOUR WASN'T DECORATION.<br></br>IT WAS <span className='orange-at-one-color'>THE ALARM.</span></p>
             <p className='it-began-left-col-para-2'>We didn't pick colours that looked good. <br></br> We picked colours that couldn't be ignored.</p>
@@ -556,8 +560,8 @@ async function page() {
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
               <p className="it-began-right-col-para-1">Most brands choose colours. We chose weapons. <span className='orange-at-one-color'></span></p>
-              <p className='it-began-right-col-para-2'>The brief was simple walk past a refrigerator full of competing cans and stop at 1:AM before you even know why.That half-second of attention?That's where a brand lives or dies</p>
-              <p className="it-began-right-col-para-3">So every colour in the 1:AM palette was chosennot for beauty but for stopping power.</p>
+              <p className='it-began-right-col-para-2'>The brief was simple walk past a refrigerator full of competing cans and stop at 1:AM before you even know why. That half-second of attention? That's where a brand lives or dies.</p>
+              <p className="it-began-right-col-para-3">So every colour in the 1:AM palette was chosen not for beauty but for stopping power.</p>
             </div>
           </div>
 

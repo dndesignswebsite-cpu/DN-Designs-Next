@@ -1,6 +1,21 @@
-.skate-borad-img{
+/* .skate-borad-img{
     width: 40%;
     z-index: 30;
     position: relative;
     z-index: 120;
+} */
+
+
+.skate-board-animation {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skate-borad-img {
+  width: clamp(180px, 40vw, 600px);
+  height: auto;
+  position: relative;
+  z-index: 120;
+  display: block;
 }
