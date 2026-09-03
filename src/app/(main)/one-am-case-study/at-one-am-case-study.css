@@ -530,7 +530,7 @@ font-size: 16px;
 
 .section-after-skate-and-box{
     padding-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 .section-after-skate-and-box-div{
     display: flex;
@@ -1058,6 +1058,7 @@ font-size: 16px;
     text-transform: uppercase;
     line-height: 1em;
       padding-top: 10px;
+      text-align: center;
 }
 
 .typography-para-4{
@@ -1082,6 +1083,7 @@ font-size: 16px;
     padding-top: 10px;
     padding-bottom: 20px;
     border-bottom: 1px solid #868686;
+    text-align: center;
 }
 
 .typography-para-6{
@@ -1119,7 +1121,7 @@ font-size: 16px;
     color: #BABABA;
      /* font-family: neutronic-condensed; */
      font-family: var(--font-neutronicBold);
-     font-size: 60px;
+     font-size: 55px;
      font-weight: 700;
      text-transform: uppercase;
      border-bottom: 1px solid #BABABA;
@@ -1130,7 +1132,7 @@ font-size: 16px;
 .typography-para-10{
     color: #BABABA;
      font-family: neutronic-condensed;
-     font-size: 110px;
+     font-size: 100px;
      font-weight: 700;
      text-transform: uppercase;  
      line-height: 1em;
@@ -1182,6 +1184,7 @@ font-size: 16px;
     font-size: 35px;
     color: #fff;
     line-height: 1em;
+    text-align: center;
 }
 
 .it-began-section-row-col-para-3{
@@ -1189,7 +1192,7 @@ font-size: 16px;
     font-weight: 700;
     font-size: 280px;
     color: #fff;
-    line-height: 1em;
+    line-height: 0.9em;
 }
 
 .it-began-section-row-col-para-4{
@@ -1198,10 +1201,120 @@ font-size: 16px;
     font-size: 35px;
     color: #fff;
     line-height: 1em;
+    text-align: center;
 }
 
 
 /* it-beagan-typo-graphy */
+
+
+@media(max-width:991px){
+     /* typography responsive*/
+    .typography-head-1{
+    color: #868686;
+    font-family: neutronic-condensed;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.typography-para-2{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 20px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+.typography-para-3{
+    color: #1154A8;
+    font-size: 35px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-neutronicBold);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      padding-top: 10px;
+}
+
+.typography-para-4{
+    color: #1154A8;
+    font-size: 60px;
+    font-family: neutronic-condensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+      /* padding-top: 10px; */
+      margin-top: -20px;
+      text-align: center;
+}
+
+.typography-para-5{
+    color: #868686;
+    font-size: 24px;
+    /* font-family: neutronic-condensed; */
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #868686;
+}
+
+.typography-para-6{
+    color: #242424;
+    font-family: neutronic-condensed;
+    font-weight: 600;
+    font-size: 24px;
+    transform: rotate(-5deg);
+    padding-top: 30px;
+    line-height: 1em;
+}
+
+.typography-para-7{
+    font-family: var(--font-neutronicBold);
+    font-weight: 600;
+    font-size: 24px;
+    color: #F57646;
+    font-size: 80px;
+    line-height: 1em;
+}
+
+.typography-para-8{
+    color: #868686;
+    font-size: 20px;
+    /* font-family: neutronic-condensed; */
+    text-transform: uppercase;
+   font-family: var(--font-helvetica);
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.typography-para-9{
+    color: #BABABA;
+     /* font-family: neutronic-condensed; */
+     font-family: var(--font-neutronicBold);
+     font-size: 30px;
+     font-weight: 700;
+     text-transform: uppercase;
+     border-bottom: 1px solid #BABABA;
+     line-height: 1em;
+     padding-bottom: 10px;
+}
+
+.typography-para-10{
+    color: #BABABA;
+     font-family: neutronic-condensed;
+     font-size: 60px;
+     font-weight: 700;
+     text-transform: uppercase;  
+     line-height: 1em;
+}
+}
 
 
 
@@ -1249,7 +1362,7 @@ font-size: 16px;
         }
 
         .section-after-skate-and-box{
-            padding-top: 50px;
+            padding-top: 0px;
             padding-bottom: 30px;
         }
 
@@ -1334,7 +1447,7 @@ font-size: 16px;
 
 .sticky-section-parent{
     padding-top: 20px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
 }
 .sticky-section-img-div-two{
     padding: 0 0;
@@ -1355,7 +1468,7 @@ font-size: 16px;
 
 
 
-    /* typography */
+    /* typography responsive*/
     .typography-head-1{
     color: #868686;
     font-family: neutronic-condensed;
@@ -1421,7 +1534,7 @@ font-size: 16px;
 .typography-para-7{
     font-family: var(--font-neutronicBold);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 40px !important;
     color: #F57646;
     font-size: 80px;
     line-height: 1em;
@@ -1443,7 +1556,7 @@ font-size: 16px;
     color: #BABABA;
      /* font-family: neutronic-condensed; */
      font-family: var(--font-neutronicBold);
-     font-size: 30px;
+     font-size: 18px;
      font-weight: 700;
      text-transform: uppercase;
      border-bottom: 1px solid #BABABA;
@@ -1454,10 +1567,28 @@ font-size: 16px;
 .typography-para-10{
     color: #BABABA;
      font-family: neutronic-condensed;
-     font-size: 60px;
+     font-size: 35px;
      font-weight: 700;
      text-transform: uppercase;  
      line-height: 1em;
 }
 
+.it-began-section-row{
+    flex-direction: column;
+}
+.it-began-section-row-col-1, .it-began-section-row-col-2{
+    width: 90%;
+}
+
+.it-began-section-row-col-para-1{
+    font-size: 100px;
+}
+
+.it-began-section-row-col-para-3{
+    font-size: 120px;
+}
+
+.skate-board-div-for-mobile{
+    margin-top: -100px;
+}
 }
