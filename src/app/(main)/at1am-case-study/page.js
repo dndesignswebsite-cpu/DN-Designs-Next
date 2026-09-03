@@ -27,11 +27,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("at-one-am-case-study", null, false);
+    seo = await getPageById("at1am-case-study", null, false);
   } catch (error) {
-    console.log("At One Am Case Study Error", error);
+    console.log("@ One Am Case Study Error", error);
     return {
-      title: "At One Am Case Study",
+      title: "@ One Am Case Study",
       robots: "noindex, nofollow",
     };
   }
@@ -84,7 +84,7 @@ async function page() {
       await connectDB();
       let pageData;
       try {
-        pageData = await getPageById("at-one-am-case-study", null, true);
+        pageData = await getPageById("at1am-case-study", null, true);
       } catch (error) {
         notFound();
       }
@@ -112,7 +112,7 @@ async function page() {
      {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "at-one-am-case-study"}`}
+          key={`schema-page-${pageData._id || "at1am-case-study"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
@@ -500,7 +500,7 @@ async function page() {
       <section className='container-fluid-custom skate-board-mobile'>
         <div className='skate-board-mobile-div-one'>
           <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">DESIGNED</MomentumSection>
-          <img src="https://dndesigns.co.in/uploads/videos/skatesectionimageoneatoneam.jpg" className='img-fluid skate-board-section-mobile-img-one' alt="" />
+          <img src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className='img-fluid skate-board-section-mobile-img-one' alt="" />
         </div>
 
         <div className='skate-board-mobile-div-two'>
