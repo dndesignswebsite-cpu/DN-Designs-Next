@@ -129,7 +129,9 @@ async function page() {
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
           {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' alt="" /> */}
-          <video src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img" ></video>
+          <video src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img banner-after-hero-img-desktop" ></video>
+
+          <video src="https://dndesigns.co.in/uploads/pages/compressedatoneamherovideoewjde2whj (1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img banner-after-hero-img-mobile" ></video>
         </div>
       </div>
 
@@ -208,7 +210,7 @@ async function page() {
            
             
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagefourvideoFirst.mp4" autoPlay muted loop playsInline className='at-one-am-video-after-banner'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/compressedtinywow_atoneamsectionfirstimagefourvideoFirst (1)_91623144.mp4" autoPlay muted loop playsInline className='at-one-am-video-after-banner'></video>
           </div>
 
           <div className='sticky-section-img-div-three'>
@@ -347,7 +349,7 @@ async function page() {
     </p>
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-right' alt="" /> */}
-            <video src="https://dndesigns.co.in/uploads/videos/daynightgif.mp4" autoPlay muted loop playsInline className='at-one-am-video-section-two-video-one'></video>
+            <video src="https://dndesigns.co.in/uploads/videos/compressedtinywow_daynightgif_91623198.mp4" autoPlay muted loop playsInline className='at-one-am-video-section-two-video-one'></video>
           </div>
 
           <div className='sticky-section-two-img-div-two'>
@@ -511,7 +513,7 @@ async function page() {
         </div>
 
      <div className="skate-board-div-for-mobile">    
-  <SkateboardAnimation />
+  {/* <SkateboardAnimation /> */}
 </div>
       </section>
 
@@ -531,7 +533,7 @@ async function page() {
         <div className='container-fluid-custom'>
           <div className='section-after-skate-and-box-div'>
             <div className='section-after-skate-and-box-div-child'>
-            <img src="https://dndesigns.co.in/uploads/pages/wedfeoadspagessection-after-skate-and-box-divimg-two.jpg" className='img-fluid section-after-skate-and-box-div-child-img-one'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/wedfeoadspagessection-after-skate-and-box-divimg-two.jpg (1).jpeg" className='img-fluid section-after-skate-and-box-div-child-img-one'></img>
              <video src="https://dndesigns.co.in/uploads/videos/atoneamlogoimagevideosectionafterskate.mp4" autoPlay playsInline muted loop className='section-after-skate-and-box-div-child-video-one'></video>
             </div>
             <div className='section-after-skate-and-box-div-child'>
@@ -624,7 +626,7 @@ async function page() {
       <div className="container-fluid-custom">
       <section className='shot-show-reel-section '>
         <div className='shot-show-reel-section-div'>
-           <video src="https://dndesigns.co.in/uploads/videos/wekuwkued1amfinalvideo(1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
+           <video src="https://dndesigns.co.in/uploads/videos/compressedwekuwkued1amfinalvideo(1) (1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
         </div>
       </section>
       </div>
@@ -697,7 +699,7 @@ condensed </p>
           <div className='shot-show-reel-image-row'>
             <div className='shot-show-reel-image-col-1'>
               <img src="https://dndesigns.co.in/uploads/pages/shootshowreelimage-1new-2.jpg" className='img-fluid shot-show-reel-img-1'></img>
-              <video src="https://dndesigns.co.in/uploads/videos/atoneamvideog3dkjhjewdb.mp4" className='img-fluid shot-show-reel-img-2' autoPlay loop muted playsInline></video>
+              <video src="https://dndesigns.co.in/uploads/videos/compressedatoneamvideog3dkjhjewdb (1).mp4" className='img-fluid shot-show-reel-img-2' autoPlay loop muted playsInline></video>
             </div>
 
             <div className='shot-show-reel-image-col-2'>
@@ -724,7 +726,9 @@ condensed </p>
 
        <section className='social-media-showcase-section'>
         {/* <div className='container-fluid-custom'> */}
-           <video src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className='social-media-showcase-video' autoPlay loop muted playsInline></video>
+           <video src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className='social-media-showcase-video social-media-showcase-video-desktop' autoPlay loop muted playsInline></video>
+
+           <video src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className='social-media-showcase-video social-media-showcase-video-mobile' autoPlay loop muted playsInline></video>
         {/* </div> */}
       </section>
 
@@ -735,7 +739,7 @@ condensed </p>
           <div className='social-media-showcase-image-div'>
             <img src="https://dndesigns.co.in/uploads/pages/socialmediaewidtablet.jpg.jpeg" className='img-fluid social-media-showcase-image-1'></img>
             <div className='social-media-showcase-image-2'>
-              <video src="https://dndesigns.co.in/uploads/videos/socialmediaimg2ewjd.mp4" autoPlay loop muted playsInline className='img-fluid '></video>
+              <video src="https://dndesigns.co.in/uploads/videos/compressedsocialmediaimg2ewjd (1).mp4" autoPlay loop muted playsInline className='img-fluid '></video>
                     <p className="one-am-para-text-right">
       <BlockReveal>
         scoop. brew. pour. sip. Ahhh!
@@ -841,7 +845,7 @@ condensed </p>
 <section className='vending-machine-section'>
   <div className='container-fluid-custom'>
     <div className='vending-machine-img-div-1'>
-      <img src="https://dndesigns.co.in/uploads/pages/cartenimgvendingmachineimg1.jpg" className='vending-machine-img-1'></img>
+      <img src="https://dndesigns.co.in/uploads/pages/compressedcartenimgvendingmachineimg1.jpg.jpeg" className='vending-machine-img-1'></img>
       <div className='vending-machine-img-2'>
       <img src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className='img-fluid'></img>
             <p className="one-am-para-text-right">
@@ -864,7 +868,7 @@ Turning an Hour Into a Brand
     </p>
     </div>
 
-      <video src="https://dndesigns.co.in/uploads/videos/atoneamwendingmachineimg4.mp4"  className='vending-machine-img-4' autoPlay muted loop playsInline></video>
+      <video src="https://dndesigns.co.in/uploads/videos/compressedatoneamwendingmachineimg4 (1).mp4"  className='vending-machine-img-4' autoPlay muted loop playsInline></video>
       
     </div>
   </div>

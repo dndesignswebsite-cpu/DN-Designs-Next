@@ -27,6 +27,20 @@
     /* border-radius: 20px; */
 }
 
+.banner-after-hero-img-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+   .banner-after-hero-img-mobile{
+    display: block;
+} 
+
+.banner-after-hero-img-desktop{
+    display: none;
+}
+}
+
 /* para-desc-para-section */
 .para-desc-para-section{
     display: flex;
@@ -700,6 +714,19 @@ font-size: 16px;
 .social-media-showcase-video{
     height: 100%;
     width: 100%;
+}
+
+.social-media-showcase-video-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .social-media-showcase-video-mobile{
+    display: block;
+}
+.social-media-showcase-video-desktop{
+    display: none;
+}
 }
 
 /* social-media-showcase-image-section */
@@ -1376,7 +1403,7 @@ font-size: 16px;
         }
 
         .section-after-skate-and-box{
-            padding-top: 0px;
+            padding-top: 80px;
             padding-bottom: 30px;
         }
 
