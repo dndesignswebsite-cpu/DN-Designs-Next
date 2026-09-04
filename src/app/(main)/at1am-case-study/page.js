@@ -137,9 +137,13 @@ async function page() {
 
       <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
-        <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
+        <MomentumSectionPara as="p" className="para-desc-para at-one-am-font at-one-am-font-desktop" >
             Coffee is the medium. The real product is momentum. 1 AM transforms an everyday beverage into a badge of ambition for people whose most productive hours begin when the rest of the world switches off.
           </MomentumSectionPara>
+
+          <h2 className="para-desc-para at-one-am-font at-one-am-font-mobile" >
+            Coffee is the medium. The real product is momentum. 1 AM transforms an everyday beverage into a badge of ambition for people whose most productive hours begin when the rest of the world switches off.
+          </h2>
         </div>
       </div>
 
@@ -323,9 +327,17 @@ async function page() {
   <div className='negative-margin-text'>
     <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
-        <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
+        {/* <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
+            The 1AM mark had to read like a timestamp and a statement. Built around a clock-cue wordmark, a colour system loud enough to stop a scroll — then stripped to nothing but essentials.
+          </MomentumSectionPara> */}
+
+          <MomentumSectionPara as="p" className="para-desc-para at-one-am-font at-one-am-font-desktop" >
             The 1AM mark had to read like a timestamp and a statement. Built around a clock-cue wordmark, a colour system loud enough to stop a scroll — then stripped to nothing but essentials.
           </MomentumSectionPara>
+
+          <h2 className="para-desc-para at-one-am-font at-one-am-font-mobile" >
+            The 1AM mark had to read like a timestamp and a statement. Built around a clock-cue wordmark, a colour system loud enough to stop a scroll — then stripped to nothing but essentials.
+          </h2>
         </div>
       </div>
       </div>
@@ -461,9 +473,13 @@ async function page() {
   <div className='negative-margin-text'>
     <div className='container-fluid-custom'>
         <div className='para-desc-para-section'>
-        <MomentumSectionPara as="p" className="para-desc-para at-one-am-font" >
+        <MomentumSectionPara as="p" className="para-desc-para at-one-am-font at-one-am-font-desktop" >
             Five SKUs. Zero identity compromise. A strict visual hierarchy — flavour name dominant, format and claims beneath, one colour per variant. Bold enough to own a shelf. Flexible enough to tell a story.
           </MomentumSectionPara>
+
+          <h2 className="para-desc-para at-one-am-font at-one-am-font-mobile" >
+            Five SKUs. Zero identity compromise. A strict visual hierarchy — flavour name dominant, format and claims beneath, one colour per variant. Bold enough to own a shelf. Flexible enough to tell a story.
+          </h2>
         </div>
       </div>
       </div>
