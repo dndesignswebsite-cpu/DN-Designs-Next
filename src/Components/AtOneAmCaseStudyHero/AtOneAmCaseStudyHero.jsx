@@ -18,9 +18,13 @@ function AtOneAmCaseStudyHero() {
               <span className='nav-text-parent-span'>PACKAGING</span>
             </div>
              
-<MomentumSection as="h1" className="hero-heading hero-heading-1" playOnLoad>
+{/* <MomentumSection as="h1" className="hero-heading hero-heading-1" playOnLoad>
   COFFEE FOR THE ONES
-</MomentumSection>
+</MomentumSection> */}
+
+<h1  className="hero-heading hero-heading-1">
+  COFFEE FOR THE ONES
+</h1>
 
 </div>
                <img src="https://dndesigns.co.in/uploads/pages/atoneamheroimageone.jpeg" className='img-fluid at-one-am-hero-img at-one-am-hero-img-1'></img>
@@ -30,16 +34,24 @@ function AtOneAmCaseStudyHero() {
             <img src="https://dndesigns.co.in/uploads/pages/atoneamheroimagethree.jpeg"  className='img-fluid at-one-am-hero-img-2'></img>
             <div>
             
-<MomentumSection as="h1" className="hero-heading hero-heading-2" playOnLoad>
+{/* <MomentumSection as="h1" className="hero-heading hero-heading-2" playOnLoad>
   WHO CREATE WHEN THE
-</MomentumSection>
+</MomentumSection> */}
+
+<h1 className="hero-heading hero-heading-2">
+  WHO CREATE WHEN THE
+</h1>
             <div className='at-one-am-hero-heading-div-2-sub-div'>
             <img src="https://dndesigns.co.in/uploads/pages/atoneamheroimagetwo.jpeg" className='img-fluid at-one-am-hero-img-sub-div'></img>
            
            <div className='nav-text-parent-div-two'>
-<MomentumSection as="h1" className="hero-heading hero-heading-3" playOnLoad>
+{/* <MomentumSection as="h1" className="hero-heading hero-heading-3" playOnLoad>
   WORLD GOES QUIET
-</MomentumSection>
+</MomentumSection> */}
+
+<h1 className="hero-heading hero-heading-3">
+  WORLD GOES QUIET
+</h1>
 
 
 <div className='nav-text-child-div-two'>

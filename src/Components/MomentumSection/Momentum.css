@@ -1,12 +1,4 @@
-/* .animated-text-on-scroll {
-  color: #1154A8;
-  font-family: var(--font-corbert);
-  line-height: 1.2em;
-  font-weight: 700;
-  font-size: 55px;
-} */
-
-/* Word aur Space handlers */
+/* 
 .word-group {
   display: inline-block;
   white-space: nowrap;
@@ -16,7 +8,7 @@
   display: inline-block;
 }
 
-/* Character level clipping for letters */
+
 .char-wrapper {
   display: inline-block;
   overflow: hidden;
@@ -30,8 +22,6 @@
 
 
 .animated-text-on-scroll {
-  /* color: #1154A8; */
-  /* font-family: var(--font-corbert); */
   line-height: 1.2em;
   font-weight: 700;
 }
@@ -54,6 +44,33 @@
 .char-inner {
   display: inline-block;
   will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(110%);
+} */
+
+
+.animated-text-on-scroll {
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+.word-group {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.space-wrapper {
+  display: inline-block;
+}
+
+.char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.char-inner {
+  display: inline-block;
   opacity: 0;
   transform: translateY(110%);
 }
