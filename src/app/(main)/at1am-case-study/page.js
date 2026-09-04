@@ -946,7 +946,7 @@ Turning an Hour Into a Brand
 
 
 
-      {/* footer section */}
+      {/* footer sectio */}
       <section className='footer-section'>
       <div className='container-fluid-custom'>
         <div className='row'>
