@@ -392,6 +392,175 @@
 // export default MomentumSection;
 
 
+// "use client";
+
+// import React, { useEffect, useRef } from "react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import "./Momentum.css";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const MomentumSection = ({
+//   children,
+//   className = "",
+//   as: Tag = "h2",
+//   triggerSelector = null,
+//   start = "top 90%",
+//   end = "bottom 5%",
+//   playOnLoad = false,
+// }) => {
+//   const textRef = useRef(null);
+
+//   const extractText = (node) => {
+//     if (typeof node === "string" || typeof node === "number") {
+//       return String(node);
+//     }
+
+//     if (Array.isArray(node)) {
+//       return node.map(extractText).join(" ");
+//     }
+
+//     if (React.isValidElement(node) && node.props.children) {
+//       return extractText(node.props.children);
+//     }
+
+//     return "";
+//   };
+
+//   const rawText = extractText(children).trim();
+
+//   useEffect(() => {
+//     if (!textRef.current) return;
+
+//     let ctx;
+//     let cancelled = false;
+
+//     const fontsReady = document.fonts
+//       ? document.fonts.ready
+//       : Promise.resolve();
+
+//     fontsReady.then(() => {
+//       if (cancelled || !textRef.current) return;
+
+//       const element = textRef.current;
+
+//       const charContainers =
+//         element.querySelectorAll(".char-wrapper .char-inner");
+
+//       if (!charContainers.length) return;
+
+//       const triggerEl = triggerSelector
+//         ? document.querySelector(triggerSelector)
+//         : element;
+
+//       ctx = gsap.context(() => {
+//         if (playOnLoad) {
+//           const tl = gsap.timeline({
+//             paused: true,
+//           });
+
+//           tl.fromTo(
+//             charContainers,
+//             {
+//               y: "110%",
+//               opacity: 0,
+//             },
+//             {
+//               y: "0%",
+//               opacity: 1,
+//               duration: 0.8,
+//               stagger: 0.02,
+//               ease: "power3.out",
+//             }
+//           );
+
+//           tl.play();
+
+//           ScrollTrigger.create({
+//             trigger: triggerEl || element,
+//             start,
+//             end,
+
+//             onEnter: () => tl.play(),
+//             onEnterBack: () => tl.play(),
+
+//             onLeave: () => tl.reverse(),
+//             onLeaveBack: () => tl.reverse(),
+//           });
+//         } else {
+//           gsap.fromTo(
+//             charContainers,
+//             {
+//               y: "110%",
+//               opacity: 0,
+//             },
+//             {
+//               y: "0%",
+//               opacity: 1,
+//               duration: 0.8,
+//               stagger: 0.02,
+//               ease: "power3.out",
+
+//               scrollTrigger: {
+//                 trigger: triggerEl || element,
+//                 start,
+//                 end,
+//                 toggleActions: "play reverse play reverse",
+//                 invalidateOnRefresh: true,
+//               },
+//             }
+//           );
+//         }
+//       }, element);
+
+//       // Keep the refresh because your original animation
+//       // depends on correct ScrollTrigger positions.
+//       if (!playOnLoad) {
+//         ScrollTrigger.refresh();
+//       }
+//     });
+
+//     return () => {
+//       cancelled = true;
+
+//       if (ctx) {
+//         ctx.revert();
+//       }
+//     };
+//   }, [children, rawText, triggerSelector, start, end, playOnLoad]);
+
+//   const splitText = rawText.split(/\s+/).map((word, wordIndex, array) => (
+//     <React.Fragment key={wordIndex}>
+//       <span className="word-group">
+//         {word.split("").map((char, charIndex) => (
+//           <span key={charIndex} className="char-wrapper">
+//             <span className="char-inner">{char}</span>
+//           </span>
+//         ))}
+//       </span>
+
+//       {wordIndex < array.length - 1 && (
+//         <span className="space-wrapper">&nbsp;</span>
+//       )}
+//     </React.Fragment>
+//   ));
+
+//   return (
+//     <Tag
+//       ref={textRef}
+//       className={`animated-text-on-scroll ${className}`}
+//     >
+//       {splitText}
+//     </Tag>
+//   );
+// };
+
+// export default MomentumSection;
+
+
+
+
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -432,6 +601,13 @@ const MomentumSection = ({
 
   useEffect(() => {
     if (!textRef.current) return;
+
+    // Mobile:
+    // Don't initialize GSAP or ScrollTrigger.
+    // CSS will keep the text visible without animation.
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      return;
+    }
 
     let ctx;
     let cancelled = false;
@@ -514,8 +690,6 @@ const MomentumSection = ({
         }
       }, element);
 
-      // Keep the refresh because your original animation
-      // depends on correct ScrollTrigger positions.
       if (!playOnLoad) {
         ScrollTrigger.refresh();
       }
@@ -530,21 +704,23 @@ const MomentumSection = ({
     };
   }, [children, rawText, triggerSelector, start, end, playOnLoad]);
 
-  const splitText = rawText.split(/\s+/).map((word, wordIndex, array) => (
-    <React.Fragment key={wordIndex}>
-      <span className="word-group">
-        {word.split("").map((char, charIndex) => (
-          <span key={charIndex} className="char-wrapper">
-            <span className="char-inner">{char}</span>
-          </span>
-        ))}
-      </span>
+  const splitText = rawText
+    .split(/\s+/)
+    .map((word, wordIndex, array) => (
+      <React.Fragment key={wordIndex}>
+        <span className="word-group">
+          {word.split("").map((char, charIndex) => (
+            <span key={charIndex} className="char-wrapper">
+              <span className="char-inner">{char}</span>
+            </span>
+          ))}
+        </span>
 
-      {wordIndex < array.length - 1 && (
-        <span className="space-wrapper">&nbsp;</span>
-      )}
-    </React.Fragment>
-  ));
+        {wordIndex < array.length - 1 && (
+          <span className="space-wrapper">&nbsp;</span>
+        )}
+      </React.Fragment>
+    ));
 
   return (
     <Tag
