@@ -764,7 +764,7 @@ condensed </p>
               <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedsocialmediaimg2ewjd (1).mp4" className="img-fluid " eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
                     <p className="one-am-para-text-right">
       <BlockReveal>
-        scoop. brew. pour. sip. Ahhh!
+        Grab. Pop. Sip. Ahhh!
       </BlockReveal>
     </p>
               </div>
