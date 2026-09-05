@@ -74,3 +74,11 @@
   opacity: 0;
   transform: translateY(110%);
 }
+
+/* Mobile: text visible, no animation */
+@media (max-width: 767px) {
+  .char-inner {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
