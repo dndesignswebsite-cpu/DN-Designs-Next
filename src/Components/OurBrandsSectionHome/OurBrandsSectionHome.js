@@ -27,7 +27,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                 >
                   <div className={`${styles["brand-overlay"]}`}>
                     <div className={`${styles["our-brand-content"]}`}>
-                      <h3 className="heading-corbert">1 Am</h3>
+                      <h3 className="heading-corbert">1 AM</h3>
                       <div className={`${styles["brand-buttons"]}`}>
                         <button className="para-roboto">Brand Strategy</button>
                         <button className="para-roboto">Brand Identity</button>
@@ -241,7 +241,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                       <h3
                         className={`${styles["mobile-view-our-brand-h3"]} heading-corbert`}
                       >
-                        1 Am
+                        1 AM
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
                         <h4
