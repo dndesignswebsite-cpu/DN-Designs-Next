@@ -13,6 +13,8 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import BlockReveal from '@/Components/BlockReveal/BlockReveal';
 import SkateBoardAnimationDesktop from '@/Components/SkateBoardAnimationDesktop/SkateBoardAnimationDesktop';
+import Image from 'next/image';
+import LazyVideo from '@/Components/LazyVideo/LazyVideo';
 
 
 
@@ -123,9 +125,9 @@ async function page() {
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
           {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' loading="lazy" decoding="async" alt="" /> */}
-          <video preload="metadata" src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img banner-after-hero-img-desktop" ></video>
+          <LazyVideo src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-desktop" eager={true} media="(min-width: 768px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
 
-          <video preload="metadata" src="https://dndesigns.co.in/uploads/pages/compressedatoneamherovideoewjde2whj (1).mp4" loop muted autoPlay playsInline className="img-fluid banner-after-hero-img banner-after-hero-img-mobile" ></video>
+          <LazyVideo src="https://dndesigns.co.in/uploads/pages/compressedatoneamherovideoewjde2whj (1).mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-mobile" eager={true} media="(max-width: 767px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
         </div>
       </div>
 
@@ -143,7 +145,9 @@ async function page() {
 
       <div className='at-one-am-logo-section'>
         <div className='container-fluid-custom container-fluid-custom-for-logo'>
-          <img src="https://dndesigns.co.in/uploads/pages/1am.webp" className='img-fluid at-one-am-logo' loading="eager" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/pages/1am.webp" className="img-fluid at-one-am-logo" width={0} height={0} sizes="100vw" loading="eager" decoding="async" alt="" priority />
+
+         
         </div>
       </div>
 
@@ -191,9 +195,17 @@ async function page() {
           </div>
 
           <div className='sticky-section-img-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" />
+
+            {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" /> */}
+
+            <Image src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" 
+    height={100} width={100}
+     alt="" />
+
+
+
             <div className='sticky-section-img-right'>
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className='img-fluid ' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimagetwo.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
               <p className="one-am-para-text-right">
       <BlockReveal>
         1AM stands for momentum, not moderation
@@ -204,16 +216,16 @@ async function page() {
 
           <div className='sticky-section-img-div-two'>
         
-            <img src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className='img-fluid sticky-section-img-right' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/pages/stillbrewingwefjdb14.jpg.jpeg" className="img-fluid sticky-section-img-right" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
            
             
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" /> */}
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedtinywow_atoneamsectionfirstimagefourvideoFirst (1)_91623144.mp4" autoPlay muted loop playsInline className='at-one-am-video-after-banner'></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedtinywow_atoneamsectionfirstimagefourvideoFirst (1)_91623144.mp4" className="at-one-am-video-after-banner" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
           </div>
 
           <div className='sticky-section-img-div-three'>
           <div className='for-text'>
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className='img-fluid ' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesixdj.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
           <p className="one-am-para-text-left">
       <BlockReveal>
         1AM keeps its coffee fam coming back every day.
@@ -221,7 +233,7 @@ async function page() {
     </p>
              </div>
 
-            <img src="https://dndesigns.co.in/uploads/pages/newimagejwebdfnvvvvvv.jpg.jpeg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/pages/newimagejwebdfnvvvvvv.jpg.jpeg" className="img-fluid sticky-section-img-left" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
           </div>
 
         </div>
@@ -311,7 +323,7 @@ async function page() {
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneamnsecondsectionbabnnerbbbn.jpg.jpeg" className='img-fluid banner-after-hero-img' loading="lazy" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/pages/atoneamnsecondsectionbabnnerbbbn.jpg.jpeg" className="img-fluid banner-after-hero-img" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
         </div>
       </div>
       </div>
@@ -346,7 +358,7 @@ async function page() {
 
           <div className='sticky-section-img-div'>
           <div className='sticky-section-img-left-section-2'>
-            <img src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className='img-fluid ' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/pages/atoneamcoinimage.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                <p className="one-am-para-text-white">
       <BlockReveal>
         1 AM isn't a time on the clock. It's a state of mind.
@@ -355,14 +367,14 @@ async function page() {
     </p>
             </div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionfirstimagesevened.jpg" className='img-fluid sticky-section-img-right' loading="lazy" decoding="async" alt="" /> */}
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedtinywow_daynightgif_91623198.mp4" autoPlay muted loop playsInline className='at-one-am-video-section-two-video-one'></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedtinywow_daynightgif_91623198.mp4" className="at-one-am-video-section-two-video-one" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
           </div>
 
           <div className='sticky-section-two-img-div-two'>
             {/* <img src="https://dndesigns.co.in/uploads/pages/10.webp" className='img-fluid sticky-section-img-right' loading="lazy" decoding="async" alt="" /> */}
             {/* <video src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay muted loop className='at-one-am-section-2-video-2'></video> */}
             <div className="atoneamsectionseond-image-two">
-            <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid ' loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                   <p className="one-am-para-text-white">
       <BlockReveal>
         Everything We Built: The Idea. The Insight. The Audience.
@@ -371,7 +383,7 @@ async function page() {
     </div>
 
             <div className='video-in-end'>
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" autoPlay playsInline muted loop className='at-one-am-section-2-video-2 video-in-end-video-last'></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneam-watch-viedoComp 2-compressed.mp4" className="at-one-am-section-2-video-2 video-in-end-video-last" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
             </div>
             <div>
             {/* <img src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className='img-fluid atoneamsectionseond-image-two' loading="lazy" decoding="async" alt="" />
@@ -400,7 +412,7 @@ async function page() {
       <div className='container-fluid-custom'>
       <div className="alone-two-images-after-slider-div">
       <div className='sticky-section-img-right'>
-       <img src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className='img-fluid' loading="lazy" decoding="async" alt="" />
+       <Image src="https://dndesigns.co.in/uploads/videos/atoneamsection2.5imageafter-slider.jpg" className="img-fluid" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
              <p className="one-am-para-text-left">
       <BlockReveal>
         Every visual choice screams main character energy, period.
@@ -408,7 +420,7 @@ async function page() {
     </p>
        </div>
      
-         <img src="https://dndesigns.co.in/uploads/videos/httpsdndesigns.co.inuploadsvideosatoneamsection2.5imageafter-imagetwo.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" /> 
+         <Image src="https://dndesigns.co.in/uploads/videos/httpsdndesigns.co.inuploadsvideosatoneamsection2.5imageafter-imagetwo.jpg" className="img-fluid sticky-section-img-left" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" /> 
         
       </div>
       </div>
@@ -459,7 +471,7 @@ async function page() {
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <img src="https://dndesigns.co.in/uploads/pages/atoneewghdsvhblur.jpg.jpeg" className='img-fluid banner-after-hero-img' loading="lazy" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/pages/atoneewghdsvhblur.jpg.jpeg" className="img-fluid banner-after-hero-img" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
         </div>
       </div>
       </div>
@@ -487,8 +499,8 @@ async function page() {
           </div>
 
           <div className='sticky-section-img-div'>
-           <img src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className='img-fluid sticky-section-img-right' loading="lazy" decoding="async" alt="" />
-            <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" />
+           <Image src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className="img-fluid sticky-section-img-right" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
+            <Image src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className="img-fluid sticky-section-img-left" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
           </div>
 
         <div className="skate-board-div">
@@ -514,12 +526,12 @@ async function page() {
       <section className='container-fluid-custom skate-board-mobile'>
         <div className='skate-board-mobile-div-one'>
           <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">DESIGNED</MomentumSection>
-          <img src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className='img-fluid skate-board-section-mobile-img-one' loading="lazy" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/pages/glassewbdsj1-am-character-02.jpg.jpeg" className="img-fluid skate-board-section-mobile-img-one" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
         </div>
 
         <div className='skate-board-mobile-div-two'>
           <MomentumSection triggerSelector="#sticky-parent-6" className="sticky-section-text at-one-am-font">FOR THE DROP</MomentumSection>
-          <img src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className='img-fluid skate-board-section-mobile-img-one' loading="lazy" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/videos/skatesectionimagetwoatoneam.jpg" className="img-fluid skate-board-section-mobile-img-one" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
         </div>
 
      <div className="skate-board-div-for-mobile">    
@@ -543,14 +555,14 @@ async function page() {
         <div className='container-fluid-custom'>
           <div className='section-after-skate-and-box-div'>
             <div className='section-after-skate-and-box-div-child'>
-            <img src="https://dndesigns.co.in/uploads/pages/wedfeoadspagessection-after-skate-and-box-divimg-two.jpg (1).jpeg" className='img-fluid section-after-skate-and-box-div-child-img-one' loading="lazy" decoding="async"></img>
-             <video preload="none" src="https://dndesigns.co.in/uploads/videos/atoneamlogoimagevideosectionafterskate.mp4" autoPlay playsInline muted loop className='section-after-skate-and-box-div-child-video-one'></video>
+            <Image src="https://dndesigns.co.in/uploads/pages/wedfeoadspagessection-after-skate-and-box-divimg-two.jpg (1).jpeg" className="img-fluid section-after-skate-and-box-div-child-img-one" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
+             <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneamlogoimagevideosectionafterskate.mp4" className="section-after-skate-and-box-div-child-video-one" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
             </div>
             <div className='section-after-skate-and-box-div-child'>
-              <img src="https://dndesigns.co.in/uploads/pages/section-after-skate-and-box-divimg-one.jpg" className='img-fluid section-after-skate-and-box-div-child-img-two' loading="lazy" decoding="async"></img>
+              <Image src="https://dndesigns.co.in/uploads/pages/section-after-skate-and-box-divimg-one.jpg" className="img-fluid section-after-skate-and-box-div-child-img-two" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
             </div>  
           </div>
-           <video preload="none" src="https://dndesigns.co.in/uploads/videos/trainatonevideo%20(1).mp4"  autoPlay loop muted playsInline className='tarinatonevideo'></video>
+           <LazyVideo src="https://dndesigns.co.in/uploads/videos/trainatonevideo%20(1).mp4" className="tarinatonevideo" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
         </div>
       </section>
 
@@ -594,9 +606,9 @@ async function page() {
       <section className='color-palate-video-section'>
         <div className='container-fluid-custom'>
           <div className='color-palate-video-div'>
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/color-palet-desktopWhatsApp Video 2026-08-20 at 17.54.41.mp4" className='color-palate-desktop-video' autoPlay  loop muted playsInline></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/color-palet-desktopWhatsApp Video 2026-08-20 at 17.54.41.mp4" className="color-palate-desktop-video" eager={false} media="(min-width: 768px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
 
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/color-palate-mobileWhatsApp Video 2026-08-20 at 17.54.40.mp4" className='color-palate-mobile-video' autoPlay loop muted playsInline></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/color-palate-mobileWhatsApp Video 2026-08-20 at 17.54.40.mp4" className="color-palate-mobile-video" eager={false} media="(max-width: 767px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
           </div>
         </div>
       </section>
@@ -615,14 +627,14 @@ async function page() {
 
           <div className="own-the-hour-images-div">
           <div className='own-the-hour-img-1'>
-            <img src="https://dndesigns.co.in/uploads/pages/ownthehourfirstimage.jpg" className='img-fluid ' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/ownthehourfirstimage.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                   <p className="one-am-para-text-left">
       <BlockReveal>
         This feed was built for the ones who never log off.
       </BlockReveal>
     </p>
     </div>
-            <img src="https://dndesigns.co.in/uploads/pages/own-thehourimg2e.jpg" className='img-fluid own-the-hour-img-2' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/own-thehourimg2e.jpg" className="img-fluid own-the-hour-img-2" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
           </div>
         </div>
       </section>
@@ -636,7 +648,7 @@ async function page() {
       <div className="container-fluid-custom">
       <section className='shot-show-reel-section '>
         <div className='shot-show-reel-section-div'>
-           <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedwekuwkued1amfinalvideo(1) (1).mp4" className='shot-show-reel-video' autoPlay loop muted playsInline></video>
+           <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedwekuwkued1amfinalvideo(1) (1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
         </div>
       </section>
       </div>
@@ -708,12 +720,12 @@ condensed </p>
         <div className='container-fluid-custom'>
           <div className='shot-show-reel-image-row'>
             <div className='shot-show-reel-image-col-1'>
-              <img src="https://dndesigns.co.in/uploads/pages/shootshowreelimage-1new-2.jpg" className='img-fluid shot-show-reel-img-1' loading="lazy" decoding="async"></img>
-              <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedatoneamvideog3dkjhjewdb (1).mp4" className='img-fluid shot-show-reel-img-2' autoPlay loop muted playsInline></video>
+              <Image src="https://dndesigns.co.in/uploads/pages/shootshowreelimage-1new-2.jpg" className="img-fluid shot-show-reel-img-1" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
+              <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedatoneamvideog3dkjhjewdb (1).mp4" className="img-fluid shot-show-reel-img-2" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
             </div>
 
             <div className='shot-show-reel-image-col-2'>
-              <img src="https://dndesigns.co.in/uploads/pages/at1amshowreelimage3.jpg" className='img-fluid shot-show-reel-img-3' loading="lazy" decoding="async"></img>
+              <Image src="https://dndesigns.co.in/uploads/pages/at1amshowreelimage3.jpg" className="img-fluid shot-show-reel-img-3" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                     <p className="one-am-para-text-right">
       <BlockReveal>
        brewing dreams one can at a time.
@@ -736,9 +748,9 @@ condensed </p>
 
        <section className='social-media-showcase-section'>
         {/* <div className='container-fluid-custom'> */}
-           <video preload="none" src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className='social-media-showcase-video social-media-showcase-video-desktop' autoPlay loop muted playsInline></video>
+           <LazyVideo src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className="social-media-showcase-video social-media-showcase-video-desktop" eager={false} media="(min-width: 768px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
 
-           <video preload="none" src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className='social-media-showcase-video social-media-showcase-video-mobile' autoPlay loop muted playsInline></video>
+           <LazyVideo src="https://dndesigns.co.in/uploads/videos/socialmediashocasevideofivemb.mp4" className="social-media-showcase-video social-media-showcase-video-mobile" eager={false} media="(max-width: 767px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
         {/* </div> */}
       </section>
 
@@ -747,9 +759,9 @@ condensed </p>
       <section clasName="social-media-showcase-image-section">
         <div className='container-fluid-custom'>
           <div className='social-media-showcase-image-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/socialmediaewidtablet.jpg.jpeg" className='img-fluid social-media-showcase-image-1' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/socialmediaewidtablet.jpg.jpeg" className="img-fluid social-media-showcase-image-1" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
             <div className='social-media-showcase-image-2'>
-              <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedsocialmediaimg2ewjd (1).mp4" autoPlay loop muted playsInline className='img-fluid '></video>
+              <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedsocialmediaimg2ewjd (1).mp4" className="img-fluid " eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
                     <p className="one-am-para-text-right">
       <BlockReveal>
         scoop. brew. pour. sip. Ahhh!
@@ -804,7 +816,7 @@ condensed </p>
       {/* website showcaase */}
       <section className='website-showcase-section'>
       <div className='container-fluid-custom'>
-        <video preload="none" className='website-showcase-video img-fluid' src="https://dndesigns.co.in/uploads/videos/websiteshowcasingvideoatoneamewhdj.mp4" loop muted autoPlay playsInline></video>
+        <LazyVideo src="https://dndesigns.co.in/uploads/videos/websiteshowcasingvideoatoneamewhdj.mp4" className="website-showcase-video img-fluid" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
       </div>
       </section>
 
@@ -821,9 +833,9 @@ condensed </p>
 
 <div>
           <div className='brewed-for-image-div'>
-            <img src="https://dndesigns.co.in/uploads/pages/brewed-for-image-1.jpg" className='img-fluid brewed-for-image-1' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/brewed-for-image-1.jpg" className="img-fluid brewed-for-image-1" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
             <div className='brewed-for-image-2'>
-            <img src="https://dndesigns.co.in/uploads/pages/httpsdndesigns.co.inuploadspagesbr2systum.jpg" className='img-fluid ' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/httpsdndesigns.co.inuploadspagesbr2systum.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                   <p className="one-am-para-text-right">
       <BlockReveal>
         Built to Keep the Energy Alive
@@ -834,7 +846,7 @@ condensed </p>
 
            <div className='brewed-for-image-div'>
            <div className='brewed-for-image-4'>
-            <img src="https://dndesigns.co.in/uploads/pages/skipbasicimagatoneamvvvv.jpg" className='img-fluid brewed-for-image-4-img' loading="lazy" decoding="async"></img>
+            <Image src="https://dndesigns.co.in/uploads/pages/skipbasicimagatoneamvvvv.jpg" className="img-fluid brewed-for-image-4-img" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
             <p className="one-am-para-text-left">
       <BlockReveal>
         The digital shelf matches the brand’s attitude. 
@@ -842,7 +854,7 @@ condensed </p>
     </p>
             </div>
 
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/ewkrhfjyug3erwpost2(1).mp4" muted loop autoPlay playsInline  className='img-fluid brewed-for-image-video-3'></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/ewkrhfjyug3erwpost2(1).mp4" className="img-fluid brewed-for-image-video-3" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
           </div>
           </div>
   </div>
@@ -855,9 +867,9 @@ condensed </p>
 <section className='vending-machine-section'>
   <div className='container-fluid-custom'>
     <div className='vending-machine-img-div-1'>
-      <img src="https://dndesigns.co.in/uploads/pages/compressedcartenimgvendingmachineimg1.jpg.jpeg" className='vending-machine-img-1' loading="lazy" decoding="async"></img>
+      <Image src="https://dndesigns.co.in/uploads/pages/compressedcartenimgvendingmachineimg1.jpg.jpeg" className="vending-machine-img-1" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
       <div className='vending-machine-img-2'>
-      <img src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className='img-fluid' loading="lazy" decoding="async"></img>
+      <Image src="https://dndesigns.co.in/uploads/pages/have1amvendingmachineimg2.jpg" className="img-fluid" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
             <p className="one-am-para-text-right">
       <BlockReveal>
         
@@ -870,7 +882,7 @@ Turning an Hour Into a Brand
 
     <div className='vending-machine-img-div-2'>
     <div className='vending-machine-img-3'>
-      <img src="https://dndesigns.co.in/uploads/pages/nightmodesectionimgfdjtshirt.jpg" className='img-fluid' loading="lazy" decoding="async"></img>
+      <Image src="https://dndesigns.co.in/uploads/pages/nightmodesectionimgfdjtshirt.jpg" className="img-fluid" width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
          <p className="one-am-para-text-left">
       <BlockReveal>
         The night looks different when you're building something.
@@ -878,7 +890,7 @@ Turning an Hour Into a Brand
     </p>
     </div>
 
-      <video preload="none" src="https://dndesigns.co.in/uploads/videos/compressedatoneamwendingmachineimg4 (1).mp4"  className='vending-machine-img-4' autoPlay muted loop playsInline></video>
+      <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedatoneamwendingmachineimg4 (1).mp4" className="vending-machine-img-4" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
       
     </div>
   </div>
@@ -937,9 +949,9 @@ Turning an Hour Into a Brand
       <section className='footer-video-section'>
         <div className='container-fluid-custom'>
           <div className='footer-video-div'>
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/footervideoatoneamMotion3 (1).mp4" className='footer-video footer-video-desktop' autoPlay loop muted playsInline></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/footervideoatoneamMotion3 (1).mp4" className="footer-video footer-video-desktop" eager={false} media="(min-width: 768px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
 
-            <video preload="none" src="https://dndesigns.co.in/uploads/videos/atoneamfootermobileMotion-2-1 (1).mp4" className='footer-video footer-video-mobile' autoPlay loop muted playsInline></video>
+            <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneamfootermobileMotion-2-1 (1).mp4" className="footer-video footer-video-mobile" eager={false} media="(max-width: 767px)" preload="none" autoPlay loop muted playsInline rootMargin="600px" />
           </div>
         </div>
       </section>
