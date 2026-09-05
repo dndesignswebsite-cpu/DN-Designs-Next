@@ -199,7 +199,7 @@ async function page() {
             {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" alt="" /> */}
 
             <Image src="https://dndesigns.co.in/uploads/pages/atoneamsectionfirstimageone.jpg" className='img-fluid sticky-section-img-left' loading="lazy" decoding="async" 
-    height={100} width={100}
+    height={500} width={500}
      alt="" />
 
 
