@@ -126,9 +126,9 @@ async function page() {
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
           {/* <img src="https://dndesigns.co.in/uploads/pages/atoneamcasestidybannerafetrhero.jpeg" className='img-fluid banner-after-hero-img' loading="lazy" decoding="async" alt="" /> */}
-          <LazyVideo src="https://dndesigns.co.in/uploads/videos/startingvideosomehrwe1amreel(1)(1)(1).mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-desktop" eager={true} media="(min-width: 768px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
+          <LazyVideo src="https://dndesigns.co.in/uploads/videos/desktopnewatoneamhero=bannervideo.mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-desktop" eager={true} media="(min-width: 768px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
 
-          <LazyVideo src="https://dndesigns.co.in/uploads/pages/compressedatoneamherovideoewjde2whj (1).mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-mobile" eager={true} media="(max-width: 767px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
+          <LazyVideo src="https://dndesigns.co.in/uploads/videos/mobilenewatoneamhero=bannervideo (1).mp4" className="img-fluid banner-after-hero-img banner-after-hero-img-mobile" eager={true} media="(max-width: 767px)" preload="metadata" autoPlay loop muted playsInline rootMargin="600px" />
         </div>
       </div>
 
