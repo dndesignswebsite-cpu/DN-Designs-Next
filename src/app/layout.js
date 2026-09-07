@@ -25,23 +25,23 @@ const neutronicBold = localFont({
 });
 
 
-const corbert = localFont({
-  // src: "../../public/fonts/Corbert-Medium.woff2",
-   src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
-  variable: "--font-corbert",
-  display: "swap",
-  preload: true,
-  adjustFontFallback: false,
-});
+// const corbert = localFont({
+ 
+//    src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
+//   variable: "--font-corbert",
+//   display: "swap",
+//   preload: true,
+//   adjustFontFallback: false,
+// });
 
-const corbertBold = localFont({
-  // src: "../../public/fonts/Corbert-Bold.woff2",
-   src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
-  variable: "--font-corbert-bold",
-  display: "swap",
-  preload: true,
-  adjustFontFallback: false,
-});
+// const corbertBold = localFont({
+  
+//    src: "../../public/fonts/HelveticaNowDisplayMedium.woff2",
+//   variable: "--font-corbert-bold",
+//   display: "swap",
+//   preload: true,
+//   adjustFontFallback: false,
+// });
 
 const roboto = localFont({
   // src: "../../public/fonts/Roboto-Regular.woff2",
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${corbert.variable} ${corbertBold.variable} ${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable} ${helvetica.variable} ${neutronicBold.variable}`}
+      className={`${roboto.variable}  ${letsupfont.variable}  ${OutfitRegular.variable} ${OutfitLight.variable} ${helvetica.variable} ${neutronicBold.variable}`}
     >
       <body suppressHydrationWarning>
         {/* =========================

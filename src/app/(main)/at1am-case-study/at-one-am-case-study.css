@@ -556,6 +556,7 @@ font-size: 16px;
     flex-direction: column;
     gap: 20px;
     align-items: end;
+    width: 45%;
 
 }
 
@@ -1079,6 +1080,7 @@ font-size: 16px;
     text-align: center;
     font-size: 120px;
     font-weight: 1000;
+    text-transform: uppercase;
 }
 
 .typography-para-2{
@@ -1646,4 +1648,8 @@ font-size: 16px;
     display: block;
     line-height: 1.1em !important;
 }
+}
+
+.it-began-section-two{
+    padding-bottom:40px;
 }
