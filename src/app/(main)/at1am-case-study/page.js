@@ -15,6 +15,7 @@ import BlockReveal from '@/Components/BlockReveal/BlockReveal';
 import SkateBoardAnimationDesktop from '@/Components/SkateBoardAnimationDesktop/SkateBoardAnimationDesktop';
 import Image from 'next/image';
 import LazyVideo from '@/Components/LazyVideo/LazyVideo';
+import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
 
 
 
@@ -290,9 +291,9 @@ async function page() {
           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
           <div className="it-began-left-col">
             <h2 className='it-began-left-col-head'>
-            The Identity Design
+            The Thought Behind
             </h2>
-            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'>A Logo</span> With Many Layers.<br></br> One Mark. Multiple<br></br> Meanings.
+            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'> Everything</span> We Built.<br></br> The Idea. The Insight. <br></br>The Audience. Before the Brand Came Alive.
 <br></br></p>
             <p className='it-began-left-col-para-2'></p>
             </div>
@@ -300,9 +301,9 @@ async function page() {
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">The challenge was turning an hour into an identity.</p>
-              <p className='it-began-right-col-para-2'>So we let the name lead. 1 AM became a timestamp: bold, minimal, and instantly recognisable. The monochrome palette kept it clean and timeless, while the radiating strokes added energy and movement. A ticking clock, a spark of inspiration, a mind switched on. The beauty was in not choosing just one.</p>
-              <p className="it-began-right-col-para-3">Because 1 AM means all of it. 
+              <p className="it-began-right-col-para-1">1 AM isn't a time on the clock. It's a state of mind.</p>
+              <p className='it-began-right-col-para-2'>While other cold coffee brands leaned into familiar, functional territory, we looked at the people drinking it. The creators, founders, gamers, coders, and dreamers who don't wait for inspiration, they chase it. 1 AM is their moment: when ideas become startups, side hustles become businesses, and tomorrow becomes right now.</p>
+              <p className="it-began-right-col-para-3">1 AM was never about staying awake. It was about choosing to keep going. 
  </p>
             </div>
           </div>
@@ -347,6 +348,46 @@ async function page() {
         </div>
       </div>
       </div>
+
+
+
+
+
+
+{/* it beagan section  2.2*/}
+      <section className="it-began-section it-began-section-two">
+      <div className='container-fluid-custom'>
+        <div className="row">
+
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+          <div className="it-began-left-col">
+            <h2 className='it-began-left-col-head'>
+            The Identity Design
+            </h2>
+            <p className='it-began-left-col-para-1'><span className='orange-at-one-color'>A Logo</span> With Many Layers.<br></br> One Mark. Multiple<br></br> Meanings.
+<br></br></p>
+            <p className='it-began-left-col-para-2'></p>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className='it-began-right-col'>
+              <p className="it-began-right-col-para-1">The challenge was turning an hour into an identity.</p>
+              <p className='it-began-right-col-para-2'>So we let the name lead. 1 AM became a timestamp: bold, minimal, and instantly recognisable. The monochrome palette kept it clean and timeless, while the radiating strokes added energy and movement. A ticking clock, a spark of inspiration, a mind switched on. The beauty was in not choosing just one.</p>
+              <p className="it-began-right-col-para-3">Because 1 AM means all of it. 
+ </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+      {/* it beagan section end 2.2*/}
+
+
+
+
+
 
       <section className="sticky-section-parent section-two-for-desktop blue-background" id="sticky-parent-2">
         <div className='container-fluid-custom'>
@@ -544,6 +585,7 @@ async function page() {
        
       {/* <AtOneAmVideoOnScroll/> */}
       
+      
 
 
        {/* glb section */}
@@ -585,9 +627,10 @@ async function page() {
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             <div className='it-began-right-col'>
-              <p className="it-began-right-col-para-1">Most brands choose colours. We chose weapons. <span className='orange-at-one-color'></span></p>
-              <p className='it-began-right-col-para-2'>The brief was simple: walk past a refrigerator full of competing cans and stop at 1:AM before you even know why. That half-second of attention? That's where a brand lives or dies.</p>
-              <p className="it-began-right-col-para-3">So every colour in the 1:AM palette was chosen not for beauty but for stopping power.</p>
+              <p className="it-began-right-col-para-1">Most brands chose colours. We chose weapons. <span className='orange-at-one-color'></span></p>
+              <p className='it-began-right-col-para-2'>The brief was simple: win the first glance. On a crowded refrigerator shelf, looking good isn’t enough. 1 AM needed to cut through the noise, command attention, and create instant recognition. So we built a bold, high-impact colour palette designed to make the brand impossible to overlook. Each colour was chosen to create contrast, strengthen shelf presence, and give 1 AM a recognisable visual signature. 
+</p>
+              <p className="it-began-right-col-para-3">We didn’t just choose colours. We built a visual shortcut to the brand. </p>
             </div>
           </div>
 
@@ -688,11 +731,11 @@ condensed </p>
       <section className='it-began-section'>
         <div className="container-fluid-custom">
         <div className='it-beagan-typo-graphy'>
-          <h2 className='typography-head-1'>FONT PALLATE</h2>
+          <h2 className='typography-head-1'>FONT palette</h2>
           <p className='typography-para-2'>DISPLAY & HEADLINE TYPEFACE</p>
           <p className='typography-para-3'>neutronic narrow &</p>
           <p className="typography-para-4">neutronic condensed</p>
-          <p className='typography-para-5'>BOLD, CONDENSED AND UNAPOLOGERICALLY URBAN</p>
+          <p className='typography-para-5'>BOLD, CONDENSED AND Unapologetically URBAN</p>
            <p className='typography-para-6'>BODY & UI TYPEFACE</p>
             <p className='typography-para-7'>NEUTRONIC</p>
             <p className='typography-para-8'>THE BODY COMPANION. NEUTRONIC REGULAR KEEPS READABILITY EFFORTLESS AT SMALLER SIZES, INHERITING THE SAME DNA AS THE HEADLINE FONT FOR TOTAL VISUAL HARMONY.</p>

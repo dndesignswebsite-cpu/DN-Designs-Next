@@ -36,15 +36,15 @@ html {
 }
 
 /* fonts global */
-.heading-corbert {
+/* .heading-corbert {
   font-family: var(--font-corbert);
   font-weight: 600;
-}
+} */
 
-.heading-corbert-light {
+/* .heading-corbert-light {
   font-family: var(--font-corbert);
   font-weight: 400;
-}
+} */
 
 .para-roboto {
   font-family: var(--font-roboto);
