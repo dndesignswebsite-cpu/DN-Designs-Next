@@ -5,8 +5,6 @@ import "./AtOneAmVideoOnScroll.css";
 
 const DESKTOP_VIDEO =
   "https://dndesigns.co.in/uploads/videos/websiteatoneamiewughdsvideo.mp4";
-const MOBILE_VIDEO =
-  "https://dndesigns.co.in/uploads/videos/websiteatoneamiewughdsvideo.mp4";
 
 function AtOneAmVideoOnScroll() {
   const sectionRef = useRef(null);
@@ -14,12 +12,12 @@ function AtOneAmVideoOnScroll() {
   const [videoSrc, setVideoSrc] = useState("");
   const [isReady, setIsReady] = useState(false);
 
-  // pick source based on viewport
+  // Desktop-only section: below 767px we don't even set a src, so no
+  // bandwidth is wasted downloading a video that's hidden anyway.
   useEffect(() => {
     const handleSourceSwitch = () => {
-      const isMobile = window.innerWidth <= 768;
-      const selectedSrc = isMobile ? MOBILE_VIDEO : DESKTOP_VIDEO;
-      setVideoSrc((prev) => (prev !== selectedSrc ? selectedSrc : prev));
+      const isMobile = window.innerWidth <= 767;
+      setVideoSrc(isMobile ? "" : DESKTOP_VIDEO);
     };
     handleSourceSwitch();
     window.addEventListener("resize", handleSourceSwitch);

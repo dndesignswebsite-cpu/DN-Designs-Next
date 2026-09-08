@@ -49,3 +49,11 @@
   opacity: 1;
   transition: opacity 0.25s ease-out;
 }
+
+/* Desktop-only section. Below 767px it's fully removed from layout so it
+   takes no space and reserves no scroll distance (400vh) on mobile. */
+@media (max-width: 767px) {
+  .at-one-am-scroll-section {
+    display: none;
+  }
+}
