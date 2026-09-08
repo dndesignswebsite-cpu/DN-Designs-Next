@@ -418,7 +418,7 @@ async function page() {
             <Image src="https://dndesigns.co.in/uploads/videos/atoneamsectionseond-image-two.jpg" className="img-fluid " width={1000} height={1000} sizes="100vw" loading="lazy" decoding="async" alt="" />
                   <p className="one-am-para-text-white">
       <BlockReveal>
-        Everything We Built: The Idea. The Insight. The Audience.
+        A Brand Identity That Owns the Shelf.
       </BlockReveal>
     </p>
     </div>
@@ -583,8 +583,9 @@ async function page() {
 
        {/* video on scroll box opening */}
        
-      <AtOneAmVideoOnScroll/>
-      
+       {/* <div > */}
+      <AtOneAmVideoOnScroll className='at-one-am-video-on-scroll'/>
+      {/* </div> */}
       
 
 
