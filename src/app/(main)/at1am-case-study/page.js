@@ -324,7 +324,7 @@ async function page() {
      <div className='banner-image-section'>
       <div className='container-fluid-custom'>
         <div className='banner-after-hero-div'>
-          <Image src="https://dndesigns.co.in/uploads/pages/atoneamnsecondsectionbabnnerbbbn.jpg.jpeg" className="img-fluid banner-after-hero-img" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
+          <Image src="https://dndesigns.co.in/uploads/pages/revisedatoneamnsecondsectionbabnnerbbbn.jpeg" className="img-fluid banner-after-hero-img" width={0} height={0} sizes="100vw" loading="lazy" decoding="async" alt="" />
         </div>
       </div>
       </div>
@@ -583,7 +583,7 @@ async function page() {
 
        {/* video on scroll box opening */}
        
-      {/* <AtOneAmVideoOnScroll/> */}
+      <AtOneAmVideoOnScroll/>
       
       
 
@@ -691,7 +691,7 @@ async function page() {
       <div className="container-fluid-custom">
       <section className='shot-show-reel-section '>
         <div className='shot-show-reel-section-div'>
-           <LazyVideo src="https://dndesigns.co.in/uploads/videos/compressedwekuwkued1amfinalvideo(1) (1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
+           <LazyVideo src="https://dndesigns.co.in/uploads/videos/1AMFIANLREASONVIDEOCOMPRESSED.mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
         </div>
       </section>
       </div>
