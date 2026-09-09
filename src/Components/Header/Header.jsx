@@ -532,7 +532,7 @@ export default function Header() {
                             : ""
                         }`}
                       >
-                        AT 1 AM
+                        1 AM
                       </Link>
                     </li>
                     <li>
@@ -1386,7 +1386,7 @@ export default function Header() {
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
-                            AT 1 AM Case Study
+                            1 AM Case Study
                           </Link>
                         </li>
 
