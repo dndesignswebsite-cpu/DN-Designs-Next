@@ -613,6 +613,9 @@ async function page() {
                     <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />    
                   </section>
 
+
+                    <BookDirectCallCTA/>
+
                   {/* industries we serve */}
       {/* <LPBrandIdentityCategorySwipper/> */}
       {/* IndustriesSectionNewLayout */}
@@ -940,7 +943,7 @@ async function page() {
 
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
 
     
@@ -952,7 +955,7 @@ async function page() {
       </section>
 
 
-      <BookDirectCallCTA/>
+    
 
        {/* faqs */}
       

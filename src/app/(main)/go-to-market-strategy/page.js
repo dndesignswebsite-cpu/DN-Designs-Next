@@ -24,6 +24,8 @@ import "./go-to-market-strategy.css";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import BrandIdentityDesignServicesBanner from '@/Components/BrandIdentityDesignServicesBanner/BrandIdentityDesignServicesBanner';
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
 
 
 
@@ -884,6 +886,8 @@ async function page() {
       </section>
 
 
+
+
       
 
       
@@ -906,9 +910,9 @@ async function page() {
 
 
 
-      
+      <BookDirectCallCTA/>
       {/* Why DN Designs? desktop*/}
-            <section className="why-dn-designs">
+            {/* <section className="why-dn-designs">
               <div className="container">
                 <div className="row">
                  
@@ -961,7 +965,7 @@ async function page() {
               </div>
             </section>
       
-            {/* Why DN Designs? mobile*/}
+           
       
             <div className="why-dn-designs-mobile">
               <div className="container">
@@ -1016,7 +1020,9 @@ async function page() {
                 </div>
       
               </div>
-            </div>
+            </div> */}
+
+            <CTAMarqueSwipper/>
 
 
 

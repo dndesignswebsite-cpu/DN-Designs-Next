@@ -310,6 +310,9 @@ async function page() {
       </section>
 
 
+       <BookDirectCallCTA/>
+
+
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
             {/* IndustriesSectionNewLayout */}
@@ -785,7 +788,7 @@ async function page() {
 
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
 
       {/* Why DN Designs? desktop*/}
@@ -908,7 +911,7 @@ async function page() {
       <OurConstant />
       </section>
 
-      <BookDirectCallCTA/>
+     
 
        {/* faqs */}
       

@@ -211,6 +211,9 @@ async function page() {
         </div>
       </section>
 
+
+      <BookDirectCallCTA/>
+
       {/* Why Choose us? */}
 
       <section className="why-choose-us">
@@ -273,7 +276,7 @@ async function page() {
             {/* <HomePageIndustriesSwipper/> */}
 
             <CTAMarqueSwipper/>
-            <BookDirectCallCTA/>
+            
             
 
       {/* Our Portfolio,, */}

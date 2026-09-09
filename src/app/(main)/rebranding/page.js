@@ -22,6 +22,8 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
 
 
 
@@ -1050,7 +1052,7 @@ async function page() {
               </div>
             </section> */}
 
-
+            <BookDirectCallCTA/>
 
             {/* standalone section */}
             <section className="standalone-sec">
@@ -1071,11 +1073,11 @@ async function page() {
 
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
 
       {/* Why DN Designs? desktop*/}
-            <section className="why-dn-designs">
+            {/* <section className="why-dn-designs">
               <div className="container">
                 <div className="row">
                  
@@ -1128,7 +1130,7 @@ async function page() {
               </div>
             </section>
       
-            {/* Why DN Designs? mobile*/}
+           
       
             <div className="why-dn-designs-mobile">
               <div className="container">
@@ -1183,7 +1185,9 @@ async function page() {
                 </div>
       
               </div>
-            </div>
+            </div> */}
+
+            <CTAMarqueSwipper/>
      
 
 

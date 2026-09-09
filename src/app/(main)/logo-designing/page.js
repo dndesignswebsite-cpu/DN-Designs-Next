@@ -16,6 +16,8 @@ import Link from "next/link";
 import BrandIdentityServiceWhyDN from "@/Components/BrandIdentityServiceWhyDN/BrandIdentityServiceWhyDN";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 // meta tags
 export async function generateMetadata() {
@@ -1415,6 +1417,8 @@ async function page() {
         </div>
       </section>
 
+      <BookDirectCallCTA/>
+
       {/* The Wow-Making */}
       <section>
         <div className="container logo-design-parent ">
@@ -1504,6 +1508,8 @@ async function page() {
       </section>
 
       <LogoDesigningTab para1={para1} para2={para2} para3={para3} para4={para4} para5={para5}/>
+
+      <CTAMarqueSwipper/>
 
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}

@@ -16,6 +16,7 @@ import SkateBoardAnimationDesktop from '@/Components/SkateBoardAnimationDesktop/
 import Image from 'next/image';
 import LazyVideo from '@/Components/LazyVideo/LazyVideo';
 import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
+import AtOneAmCanGlbSection from '@/Components/AtOneAmCanGlbSection/AtOneAmCanGlbSection';
 
 
 
@@ -584,7 +585,8 @@ async function page() {
        {/* video on scroll box opening */}
        
        {/* <div > */}
-      <AtOneAmVideoOnScroll className='at-one-am-video-on-scroll'/>
+      {/* <AtOneAmVideoOnScroll className='at-one-am-video-on-scroll'/> */}
+      {/* <AtOneAmCanGlbSection/> */}
       {/* </div> */}
       
 

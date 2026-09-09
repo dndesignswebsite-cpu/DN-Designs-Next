@@ -15,6 +15,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import ConceptualPhotographyArrow from "@/Components/ConceptualPhotographyArrow/ConceptualPhotographyArrow";
 import BrandIdentityServiceWhyDN from "@/Components/BrandIdentityServiceWhyDN/BrandIdentityServiceWhyDN";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 
 
@@ -530,6 +531,8 @@ Your customers get a complete 360° product view.
           </div>
         </div>
       </section>
+
+      <CTAMarqueSwipper/>
 
       <section className="form">
          <Form FormHead={FormHead} FormPara={FormPara} />

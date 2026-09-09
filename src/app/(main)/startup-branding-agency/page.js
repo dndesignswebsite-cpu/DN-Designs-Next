@@ -27,6 +27,8 @@ import BrandIdentityDesignServicesBanner from '@/Components/BrandIdentityDesignS
 import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper';
 import HomePageIndustriesSwipper from '@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper';
 import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
+import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
+import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
 
 
 
@@ -728,6 +730,8 @@ async function page() {
         </div>
       </section>
 
+      <BookDirectCallCTA/>
+
 
 
       {/* standalone section */}
@@ -747,7 +751,7 @@ async function page() {
 
       
       {/* Why DN Designs? desktop*/}
-            <section className="why-dn-designs">
+            {/* <section className="why-dn-designs">
               <div className="container">
                 <div className="row">
                  
@@ -798,11 +802,11 @@ async function page() {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
       
             {/* Why DN Designs? mobile*/}
       
-            <div className="why-dn-designs-mobile">
+            {/* <div className="why-dn-designs-mobile">
               <div className="container">
               <div className="why-dn-designs-mobile-content">
               <h2 className="why-dn-designs-mobile-head">Why DN Designs</h2>
@@ -855,7 +859,10 @@ async function page() {
                 </div>
       
               </div>
-            </div>
+            </div> */}
+
+
+            <CTAMarqueSwipper/>
 
 
 

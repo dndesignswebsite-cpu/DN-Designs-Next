@@ -785,6 +785,8 @@ async function page() {
       {/* our constant */}
       <OurConstant />
 
+      <BookDirectCallCTA/>
+
       {/* marque */}
       <section className="marque-sec">
         <marquee className="noun-mar" direction="left" scrollamount="12">
@@ -999,7 +1001,7 @@ async function page() {
 
 
               <CTAMarqueSwipper/>
-              <BookDirectCallCTA/>
+              
       
 
       {/* faqs */}

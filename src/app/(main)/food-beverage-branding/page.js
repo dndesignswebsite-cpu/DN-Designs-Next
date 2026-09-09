@@ -857,6 +857,8 @@ async function page() {
         </div>
       </section> 
 
+       <BookDirectCallCTA/>
+
 
 
       {/* Book a call directly with our founders */}
@@ -1001,7 +1003,7 @@ async function page() {
 
             <CTAMarqueSwipper/>
 
-            <BookDirectCallCTA/>
+           
 
 
 
