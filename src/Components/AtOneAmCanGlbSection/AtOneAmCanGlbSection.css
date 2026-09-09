@@ -1,13 +1,17 @@
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
 .can-section {
   position: relative;
 
   width: 100%;
   min-height: 100vh;
 
-  margin: 0;
+  margin: 0px 0;
   padding: 0;
 
-  background: #f4f4f4;
+  background: #FEF3E3;
 
   box-sizing: border-box;
 
@@ -15,17 +19,23 @@
 }
 
 
+/* =========================================================
+   PINNED AREA
+   ========================================================= */
+
 .can-pin {
   position: relative;
 
   width: 100%;
   height: 100vh;
+
   min-height: 600px;
 
   margin: 0;
   padding: 0;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -35,6 +45,10 @@
 }
 
 
+/* =========================================================
+   CANVAS
+   ========================================================= */
+
 .can-canvas {
   position: absolute;
 
@@ -43,7 +57,7 @@
   width: 100%;
   height: 100%;
 
-  z-index: 1;
+  z-index: 2;
 
   pointer-events: none;
 }
@@ -58,14 +72,461 @@
 
 
 /* =========================================================
+   LEFT INFORMATION
+   ========================================================= */
+
+.can-info-wrapper {
+  position: absolute;
+
+  left: 8.5%;
+
+  top: 50%;
+
+  width: 27%;
+
+  transform: translateY(-50%);
+
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LEFT INDIVIDUAL TEXT
+   ========================================================= */
+
+.can-left-info {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+  opacity: 0;
+
+  transform: translateY(0);
+
+  pointer-events: none;
+}
+
+
+.can-eyebrow {
+  margin: 0 0 18px 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  font-weight: 400;
+
+  color: #1d1d1d;
+}
+
+
+.can-title {
+  margin: 0;
+
+  font-family:
+    "Arial Black",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(
+    42px,
+    4.2vw,
+    70px
+  );
+
+  line-height: 0.78;
+
+  letter-spacing: -3px;
+
+  font-weight: 900;
+
+  color: #1b1b1b;
+}
+
+
+.can-subtitle {
+  margin-top: 22px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 400;
+
+  color: #202020;
+}
+
+
+/* =========================================================
+   RIGHT INFORMATION
+   ========================================================= */
+
+.can-description-wrapper {
+  position: absolute;
+
+  right: 8.5%;
+
+  top: 45%;
+
+  width: 27%;
+
+  transform: translateY(-50%);
+
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   RIGHT INDIVIDUAL TEXT
+   ========================================================= */
+
+.can-right-info {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 100%;
+
+  opacity: 0;
+
+  transform: translateY(0);
+
+  pointer-events: none;
+}
+
+
+.can-description-title {
+  margin: 0 0 18px 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  color: #1c1c1c;
+}
+
+
+.can-description {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+
+  color: #262626;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+  .can-info-wrapper {
+    left: 10%;
+
+    width: 25%;
+  }
+
+
+  .can-description-wrapper {
+    right: 10%;
+
+    width: 25%;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   769px - 1100px
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+  .can-pin {
+    min-height: 650px;
+  }
+
+
+  /* -----------------------------------------------
+     LEFT TEXT
+     ----------------------------------------------- */
+
+  .can-info-wrapper {
+
+    left: 5%;
+
+    top: 20%;
+
+    width: 34%;
+
+    transform: none;
+
+  }
+
+
+  /* -----------------------------------------------
+     RIGHT TEXT
+     ----------------------------------------------- */
+
+  .can-description-wrapper {
+
+    right: 5%;
+
+    top: 45%;
+
+    bottom: 13%;
+
+    width: 34%;
+
+    transform: none;
+
+  }
+
+
+  .can-eyebrow {
+    font-size: 15px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .can-title {
+    font-size: clamp(
+      34px,
+      5vw,
+      52px
+    );
+
+    letter-spacing: -2px;
+  }
+
+
+  .can-subtitle {
+    margin-top: 14px;
+
+    font-size: 16px;
+  }
+
+
+  .can-description-title {
+    font-size: 15px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .can-description {
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+}
+
+
+/* =========================================================
    MOBILE
+   0 - 768px
    ========================================================= */
 
 @media (max-width: 768px) {
 
   .can-pin {
+
     height: 100svh;
-    min-height: 500px;
+
+    min-height: 560px;
+
+  }
+
+
+  /* =======================================================
+     LEFT TEXT / TOP
+     ======================================================= */
+
+  .can-info-wrapper {
+
+    left: 6%;
+
+    top: 7%;
+
+    width: 88%;
+
+    transform: none;
+
+    text-align: center;
+
+  }
+
+
+  .can-left-info {
+
+    width: 100%;
+
+  }
+
+
+  .can-eyebrow {
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+  }
+
+
+  .can-title {
+
+    font-size: clamp(
+      34px,
+      10vw,
+      46px
+    );
+
+    line-height: 0.82;
+
+    letter-spacing: -2px;
+
+  }
+
+
+  .can-subtitle {
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+  }
+
+
+  /* =======================================================
+     RIGHT TEXT / BOTTOM
+     ======================================================= */
+
+  .can-description-wrapper {
+
+    right: 6%;
+
+    bottom: 6%;
+
+    top: 84%;
+
+    width: 88%;
+
+    transform: none;
+
+    text-align: center;
+
+  }
+
+
+  .can-right-info {
+
+    width: 100%;
+
+  }
+
+
+  .can-description-title {
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+  }
+
+
+  .can-description {
+
+    font-size: 12px;
+
+    line-height: 1.35;
+
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .can-pin {
+
+    min-height: 520px;
+
+  }
+
+
+  .can-info-wrapper {
+
+    top: 6%;
+
+  }
+
+
+  .can-title {
+
+    font-size: 32px;
+
+  }
+
+
+  .can-subtitle {
+
+    font-size: 13px;
+
+  }
+
+
+  .can-description-wrapper {
+
+    bottom: 5%;
+
+  }
+
+
+  .can-description-title {
+
+    font-size: 12px;
+
+  }
+
+
+  .can-description {
+
+    font-size: 11.5px;
+
+    line-height: 1.3;
+
   }
 
 }

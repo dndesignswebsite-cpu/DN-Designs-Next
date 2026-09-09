@@ -20,12 +20,13 @@ function CTAMarqueSwipper() {
     <div className='swipper-slider-cta-head-div'>
       <h2 className='swipper-slider-cta-head'>Currently Brewing at DN </h2>
     </div>
+    <div className='brewing-at-dn-swipper'>
        <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         speed= {1700}
-        // navigation
+        navigation
         // pagination={{ clickable: true }}
         autoplay={{
           delay: 2000,
@@ -380,6 +381,7 @@ function CTAMarqueSwipper() {
 
 
       </Swiper>
+      </div>
     </div>
     </section>
     </div>
