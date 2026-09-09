@@ -1015,6 +1015,9 @@ async function page() {
         </div>
       </section>
 
+
+      <BookDirectCallCTA/>
+
       {/* stand alone hover section */}
       <section className="standalone-sec-pac">
         <div className="container">
@@ -1168,7 +1171,7 @@ async function page() {
       </div> */}
 
       <CTAMarqueSwipper/>
-      <BookDirectCallCTA/>
+      
 
       {/* faqs */}
       <section className="faqs">

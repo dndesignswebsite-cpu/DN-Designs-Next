@@ -18,6 +18,8 @@ import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSec
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -937,6 +939,8 @@ async function page() {
         </div>
       </section>
 
+      <BookDirectCallCTA/>
+
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
             {/* <HomePageIndustriesSwipper/> */}
@@ -960,6 +964,8 @@ async function page() {
         </div>
         <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
       </section>
+
+      <CTAMarqueSwipper/>
 
       {/* faqs */}
 

@@ -17,6 +17,8 @@ import Image from "next/image";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -629,11 +631,16 @@ async function page() {
 
        {/* IndustriesSectionNewLayout */}
         <IndustriesSectionNewLayout/>
+
+        <BookDirectCallCTA/>
       
 
       {/* our work service tabs */}
       <OurWorkServiceTabs />
 
+
+
+      <CTAMarqueSwipper/>
      
      
 

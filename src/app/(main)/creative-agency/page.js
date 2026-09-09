@@ -21,6 +21,8 @@ import TalkToUs from "@/Components/TalkToUs/TalkToUs";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 // meta data
 export async function generateMetadata() {
@@ -378,6 +380,7 @@ async function page() {
           </div>
         </div>
       </section>
+      <BookDirectCallCTA/>
 
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
@@ -392,7 +395,7 @@ async function page() {
       </section>
 
       {/* Why DN Designs? desktop*/}
-      <section className="why-dn-designs">
+      {/* <section className="why-dn-designs">
         <div className="container">
           <div className="row">
            
@@ -403,13 +406,7 @@ async function page() {
               className="abs-img abs-img-1"
             />
 
-             {/* <Image 
-             src={"https://dndesigns.co.in/uploads/pages/creative_agency_5.jpg"}
-              alt="why-dn-designs"
-              className="abs-img abs-img-1"
-              height={1500}
-              width={1500}
-            /> */}
+             
 
             <img
               src={"https://dndesigns.co.in/uploads/pages/creative_agency_1.jpeg"}
@@ -453,7 +450,7 @@ async function page() {
         </div>
       </section>
 
-      {/* Why DN Designs? mobile*/}
+     
 
       <div className="why-dn-designs-mobile">
         <div className="container">
@@ -508,8 +505,9 @@ async function page() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
+<CTAMarqueSwipper/>
 
 
 
@@ -521,7 +519,7 @@ async function page() {
       </section>
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Form FormHead={FormHead} FormPara={FormPara}  />
     </div>
   );

@@ -596,6 +596,9 @@ async function page() {
         </div>
       </section>
 
+
+       <BookDirectCallCTA/>
+
       {/* The Power of Animation */}
       <section className="power-of-animation">
         <div className="container">
@@ -755,7 +758,7 @@ async function page() {
 
             {/* new cta and what brewing in dn */}
             <CTAMarqueSwipper/>
-            <BookDirectCallCTA/>
+           
                   
 
       {/* faqs */}

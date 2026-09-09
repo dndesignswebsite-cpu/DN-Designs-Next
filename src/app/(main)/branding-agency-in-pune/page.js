@@ -268,6 +268,7 @@ async function page() {
             
       {/*.....our-constant-companions...... */}
       <OurConstant />
+      <BookDirectCallCTA/>
 
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
@@ -281,6 +282,7 @@ async function page() {
               <section id="ourworksection">
               <OurWorkHomeSection />
               </section>
+               <CTAMarqueSwipper/>
 
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
@@ -390,8 +392,7 @@ async function page() {
      {/* swipper */}
        <CityPagesSwipper cityPagesSlideData={cityPagesSlideData}/>
 
-       <CTAMarqueSwipper/>
-       <BookDirectCallCTA/>
+    
 
       {/* faqs */}
       <section className="faqs">
@@ -399,7 +400,7 @@ async function page() {
       </section>
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Form FormHead={FormHead} FormPara={FormPara} />
     </div>
   );

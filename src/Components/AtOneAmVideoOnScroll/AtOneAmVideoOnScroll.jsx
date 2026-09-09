@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./AtOneAmVideoOnScroll.css";
 
 const DESKTOP_VIDEO =
-  "https://dndesigns.co.in/uploads/videos/websiteatoneamiewughdsvideo.mp4";
+  "https://dndesigns.co.in/uploads/videos/1AMFIANLREASONVIDEOCOMPRESSED.mp4";
 
 function AtOneAmVideoOnScroll() {
   const sectionRef = useRef(null);

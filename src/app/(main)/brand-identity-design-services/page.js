@@ -999,7 +999,7 @@ async function page() {
 
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
 
     

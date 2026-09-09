@@ -286,6 +286,8 @@ async function page() {
       {/* Our constant companies */}
         <OurConstant />
 
+         <BookDirectCallCTA/>
+
     
 
 
@@ -347,7 +349,7 @@ async function page() {
         <AboutUsHoverPage/>
 
         <CTAMarqueSwipper/>
-        <BookDirectCallCTA/>
+       
 
         {/* faqs */}
       <section className="faqs">

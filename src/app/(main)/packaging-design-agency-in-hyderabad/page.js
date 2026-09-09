@@ -21,6 +21,8 @@ import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSec
 import HomePageHero from "@/Components/HomePageHero/HomePageHero";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 
 // meta data
 export async function generateMetadata() {
@@ -276,6 +278,7 @@ async function page() {
         
       {/*.....our-constant-companions...... */}
       <OurConstant />
+      <BookDirectCallCTA/>
         {/* industries we serve */}
             {/* <LPBrandIdentityCategorySwipper/> */}
             {/* IndustriesSectionNewLayout */}
@@ -288,6 +291,8 @@ async function page() {
               <section id="ourworksection">
               <OurWorkHomeSection />
               </section>
+
+              <CTAMarqueSwipper/>
 
       {/* next sectiion */}
       <section className="city-pages-content-img-sec">
@@ -413,7 +418,7 @@ async function page() {
       </section>
 
       {/* testimonial  */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Form FormHead={FormHead} FormPara={FormPara}  />
     </div>
   );

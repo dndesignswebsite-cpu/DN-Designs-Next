@@ -15,6 +15,8 @@ import Image from "next/image";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 // meta tags
 export async function generateMetadata() {
@@ -915,6 +917,8 @@ async function page() {
         </div>
       </section>
 
+      <BookDirectCallCTA/>
+
       {/* Types of Brand  */}
       <section>
         <div className="container logo-brand-parent">
@@ -1483,6 +1487,7 @@ async function page() {
             {/* IndustriesSectionNewLayout */}
         <IndustriesSectionNewLayout/>
         
+        <CTAMarqueSwipper/>
             
 
       {/* faqs */}

@@ -18,6 +18,8 @@ import Image from "next/image";
 import Link from "next/link";
 import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 
 // meta data
 export async function generateMetadata() {
@@ -647,6 +649,8 @@ async function page() {
         </div>
       </section>
 
+      <BookDirectCallCTA/>
+
       {/* stand alone section */}
 
       <section className="standalone-sec">
@@ -701,6 +705,8 @@ async function page() {
         {/* industries we serve */}
       {/* <LPBrandIdentityCategorySwipper/> */}
       {/* <HomePageIndustriesSwipper/> */}
+
+      <CTAMarqueSwipper/>
     
 
       {/* faqs */}
