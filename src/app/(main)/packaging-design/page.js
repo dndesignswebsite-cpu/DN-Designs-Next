@@ -265,24 +265,23 @@ async function page() {
             Our <span className="every-pr"> Work Portfolio</span>
           </h2>
           <div className="row port-row">
+          
             <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
-                {/* <img
-                  src={imageUrl + "3y4rfbrjbj.webp"}
-                  className="img-fluid"
-                /> */}
-                <Image
+                {/* <Image
                    src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp"
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
                   height={1500}
                   sizes="(max-width:767px) 100vw, 50vw"
-                />
+                /> */}
+                <video src="https://dndesigns.co.in/uploads/videos/compressedatoneamvideog3dkjhjewdb (1).mp4" loop muted playsInline autoPlay className="responsive-img port-div-img"
+                  alt="packaging design "></video>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>Pureluxe</h3>
+                      <h3>1 AM</h3>
                     </div>
                     <div className="our-port-btn-up">
                       <h4 className="our-port-btn">Brand Identity</h4>
@@ -291,17 +290,14 @@ async function page() {
                   </div>
 
                   <p>
-                    For the protein bar brand ‘Pureluxe’, we crafted a premium packaging design to appeal to its health-conscious and taste-driven consumers. The design captures the essence of indulgence and sophistication while balancing nutrition and flavour appeal. Each of the three variants reflects a modern and premium identity and creates a strong shelf presence.
+                    Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with. 
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
+
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
-                {/* <img
-                  src={imageUrl + "greenhorn-manu125.webp"}
-                  className="img-fluid"
-                /> */}
                 <Image
                    src="https://dndesigns.co.in/uploads/pages/fluke.webp"
                   className="responsive-img port-div-img"
@@ -326,11 +322,8 @@ async function page() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> */}
 
-
-          <div className="row port-row">
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                  <Image
@@ -358,11 +351,16 @@ async function page() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
+
+          </div>
+
+
+          <div className="row port-row">
+
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img src={imageUrl + "thames-5.webp"} className="img-fluid" /> */}
                  <Image
-                   src={imageUrl + "iorg.jpg"} 
+                   src={imageUrl + "let.jpg"} 
                   className="responsive-img port-div-img"
                   alt="packaging design "
                   width={1500}
@@ -372,24 +370,82 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>iOrganic</h3>
+                      <h3>Let's Supp</h3>
                     </div>
                     <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Label Design</h4>
-                      <h4 className="our-port-btn">Box Design</h4>
+                      <h4 className="our-port-btn">Packaging</h4>
+                      <h4 className="our-port-btn">Brand Identity</h4>
                     </div>
                   </div>
 
                   <p>
-                   For iOrganic’s festive and corporate gift boxes, we crafted thoughtful and premium packaging designs that blended intricate refinement with nature-inspired aesthetics. The ultimate objective was to enhance the gifting experience while staying true to the brand’s pure and organic philosophy.
+                    For the nutraceutical brand Let’s Supp, we designed a structured packaging with an intuitive information hierarchy, abstract infinity-led composition, and transparent containers. The goal was to simplify decision-making by reinforcing purity and delivering a calm, credible and effortless product experience.
+                  </p>
+                </div>
+              </div>
+            </div> */}
+
+             <div className="col-12 col-md-6 px-2 port-main-div ">
+              <div className="port-div">
+                <Image
+                   src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp"
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Pureluxe</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Label Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                    For the protein bar brand ‘Pureluxe’, we crafted a premium packaging design to appeal to its health-conscious and taste-driven consumers. The design captures the essence of indulgence and sophistication while balancing nutrition and flavour appeal. Each of the three variants reflects a modern and premium identity and creates a strong shelf presence.
                   </p>
                 </div>
               </div>
             </div>
+
+            <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className=" port-div">
+                 <Image
+                   src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" 
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Doodh Soda</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Label Design</h4>
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   India's First Milk Soda brand. We shaped a bold identity, playful packaging and a website that pours the same unapologetic, desi-fizzy energy into every scroll and sip.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <div className="row port-row">
-            <div className="col-12 col-md-6 px-2 port-main-div">
+
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
@@ -418,10 +474,39 @@ async function page() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img src={imageUrl + "thames-5.webp"} className="img-fluid" /> */}
+                 <Image
+                   src={imageUrl + "iorg.jpg"} 
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>iOrganic</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Label Design</h4>
+                      <h4 className="our-port-btn">Box Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                   For iOrganic’s festive and corporate gift boxes, we crafted thoughtful and premium packaging designs that blended intricate refinement with nature-inspired aesthetics. The ultimate objective was to enhance the gifting experience while staying true to the brand’s pure and organic philosophy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className=" port-div">
                  <Image
                    src={imageUrl + "thames-5.webp"} 
                   className="responsive-img port-div-img"
@@ -450,17 +535,42 @@ async function page() {
                   </p>
                 </div>
               </div>
+            </div> */}
+
+            <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className="port-div">
+                <Image
+                   src="https://dndesigns.co.in/uploads/pages/fluke.webp"
+                  className="responsive-img port-div-img"
+                  alt="packaging design "
+                  width={1500}
+                  height={1500}
+                  sizes="(max-width:767px) 100vw, 50vw"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Fluke</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Label Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                    For Fluke, a functional beverage brand, we created a clean, premium can design to resonate with its young & health-conscious audience. Through our design, we clearly highlighted key elements such as logo, functional benefits & flavour cues (accent colours behind the logo). With a white background, we created space for every element to shine.
+                  </p>
+                </div>
+              </div>
             </div>
+
           </div>
 
           <div className="row port-row">
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img
-                  src={imageUrl + "j3kefdbkjer.webp"}
-                  className="img-fluid"
-                /> */}
-
                 <Image
                    src={imageUrl + "nwjkebhdn.webp"}
                   className="responsive-img port-div-img"
@@ -490,7 +600,8 @@ async function page() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 px-2 port-main-div">
+
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
@@ -519,24 +630,11 @@ async function page() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> */}
 
-          <div className="row port-row">
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img
-                  src={imageUrl + "wyegrygfewj.webp"}
-                  className="img-fluid"
-                /> */}
-                 {/* <Image
-                   src={imageUrl + "wyegrygfewj.webp"}
-                  className="responsive-img port-div-img"
-                  alt="packaging design "
-                  width={1500}
-                  height={1500}
-                /> */}
-
                 <video className="img-fluid" autoPlay muted loop playsInline>
                   <source
                     src="https://dndesigns.co.in/uploads/videos/enli.mp4"
@@ -564,13 +662,43 @@ async function page() {
                 </div>
               </div>
             </div>
+
+          </div>
+
+          {/* <div className="row port-row">
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img
-                  src={imageUrl + "kalprishi-1.webp"}
-                  className="img-fluid"
-                /> */}
+                <video className="img-fluid" autoPlay muted loop playsInline>
+                  <source
+                    src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Enlite</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Label Design</h4>
+                    </div>
+                  </div>
 
+                  <p>
+                    Enlite’s healthy sparkling mineral water & prebiotic drinks
+                    come in a variety. Our can design for them included
+                    character creation around the brand name. We also used
+                    design elements to convey a sense of freshness and calmness.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 px-2 port-main-div">
+              <div className=" port-div">
                  <Image
                   src={imageUrl + "kalprishi-1.webp"}
                   className="responsive-img port-div-img"
@@ -599,7 +727,8 @@ async function page() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+
         </div>
       </section>
 

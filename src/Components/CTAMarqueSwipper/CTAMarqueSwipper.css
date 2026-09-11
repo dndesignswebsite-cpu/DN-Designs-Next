@@ -1,4 +1,4 @@
-.cta-swipper-section-parent-div{
+/* .cta-swipper-section-parent-div{
     padding: 80px 0;
 }
 
@@ -8,7 +8,7 @@
 }
 
 
-/* ewjhbsdj */
+
 
 .cta-marque-swipper {
   padding-top: 100px;
@@ -33,7 +33,7 @@
 
 .slide-cta {
   flex: 0 0 auto;
-  /* width: 800px; */
+
   max-width: 1300px;
   margin-right: 30px;
 }
@@ -68,17 +68,15 @@
 }
 
 
-/* cta-col-content-div */
-
 .cta-col-content-div{
-    /* background-color: #F6F6F6; */
+   
     height: 100%;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     padding: 20px 30px;
-    /* border-radius: 10px; */
+ 
     gap: 20px;
 }
 
@@ -180,15 +178,13 @@
 
 
 
-/* jeds */
+
 .cta-swipper-slide{
     background: #FFFFFF;
     border-radius: 5px;
 }
 
-/* .cta-swipper-slide-special{
-  
-} */
+
 
 .cta-swipper-img{
       border-radius: 0px 5px 5px 0;
@@ -213,7 +209,6 @@
 
 
 
-/* for mobile */
 
 .cta-swipper-img-mobile{
   display: none;
@@ -235,9 +230,7 @@
 }
 }
 
-/* .cta-swipper-slide-special{
-  margin-bottom: -50px;
-} */
+
 
 a{
   text-decoration: none;
@@ -277,13 +270,7 @@ a{
     background-color: #fff;
   color: #fff !important;
 }
-/* 
-.brewing-at-dn-swipper .swiper-button-next::after,
-.brewing-at-dn-swipper .swiper-button-prev::after {
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  color: #000 !important;
-} */
+
 
 
 .brewing-at-dn-swipper .swiper-button-next::after,
@@ -315,4 +302,473 @@ a{
 
 
 
+ */
+ 
 
+
+ .cta-swipper-section-parent-div {
+    padding: 80px 0;
+}
+
+.cta-swipper-section {
+    padding: 60px 0;
+    background: #121212;
+}
+
+
+/* ewjhbsdj */
+
+.cta-marque-swipper {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.slider-wrapper-cta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.slider-container-cta {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track-cta {
+    display: flex;
+    width: max-content;
+    animation: marquee 50s linear infinite;
+}
+
+.slide-cta {
+    flex: 0 0 auto;
+    /* width: 800px; */
+    max-width: 1300px;
+    margin-right: 30px;
+}
+
+.slide-cta img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50%));
+    }
+}
+
+@media (max-width: 767px) {
+    .slide-cta {
+        width: 350px;
+        margin-right: 20px;
+        height: 100%;
+    }
+}
+
+
+.slider-wrapper-cta:hover .slider-track-cta {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   CTA CONTENT
+   ========================================= */
+
+.cta-col-content-div {
+    /* background-color: #F6F6F6; */
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    /* border-radius: 10px; */
+    gap: 20px;
+}
+
+.cta-swipper-slide-col {
+    height: 100%;
+}
+
+.cta-swipper-fontAwesomeIcon-right-arrow {
+    transform: rotate(-40deg);
+    margin-bottom: 15px;
+    margin-left: 5px;
+    color: #4D4D4D;
+    transition: all 0.5s ease;
+}
+
+.cta-swipper-heading {
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #434343;
+}
+
+.cta-col-img-main {
+    border-radius: 5px;
+}
+
+.cta-swipper-para-desc {
+    display: inline-block;
+    border-bottom: 2px solid #4D4D4D;
+    padding-bottom: 2px;
+    color: #4D4D4D;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+}
+
+.cta-swipper-para-icon-div {
+    display: flex;
+    align-items: center;
+}
+
+.cta-swipper-label-para {
+    color: #ca2734;
+    font-family: var(--font-helvetica);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CTA HEADING
+   ========================================= */
+
+.swipper-slider-cta-head {
+    font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+}
+
+.swipper-slider-cta-head-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .cta-col-img-main {
+        margin-top: 20px;
+    }
+
+    .cta-swipper-heading {
+        font-size: 25px;
+    }
+
+    .swipper-slider-cta-head {
+        width: 100%;
+        font-size: 35px;
+    }
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.cta-swipper-para-icon-div:hover .cta-swipper-para-desc {
+    color: #ca2734;
+    border-bottom: 2px solid #ca2734;
+}
+
+.cta-swipper-para-icon-div:hover .cta-swipper-fontAwesomeIcon-right-arrow {
+    color: #ca2734;
+    transform: rotate(0);
+}
+
+
+/* =========================================
+   SLIDE
+   ========================================= */
+
+.cta-swipper-slide {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   IMAGE
+   ========================================= */
+
+.cta-swipper-img {
+    border-radius: 0px 5px 5px 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    .cta-swipper-img {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .cta-col-content-div {
+        gap: 10px;
+    }
+}
+
+
+.cta-col-img-div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* =========================================
+   MOBILE IMAGE
+   ========================================= */
+
+.cta-swipper-img-mobile {
+    display: none;
+}
+
+.cta-col-img-div-special {
+    margin-bottom: -5.5px;
+}
+
+@media (max-width: 767px) {
+
+    .cta-swipper-img-mobile {
+        display: block;
+    }
+
+    .cta-swipper-img-desktop {
+        display: none;
+    }
+
+    .cta-col-img-div-special {
+        margin-bottom: 0;
+    }
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   SWIPER NAVIGATION
+   ========================================================= */
+
+.brewing-at-dn-swipper {
+    position: relative;
+}
+
+
+/*
+   Existing 50px bottom space is preserved.
+   This does NOT change the card/layout.
+*/
+
+.brewing-at-dn-swipper .swiper {
+    padding-bottom: 70px;
+    position: relative;
+}
+
+
+/* =========================================
+   NAVIGATION BUTTONS
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-next,
+.brewing-at-dn-swipper .swiper-button-prev {
+
+    top: auto !important;
+    bottom: 0px !important;
+
+    width: 50px !important;
+    height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-color: #fff !important;
+
+    border-radius: 50% !important;
+
+    color: transparent !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 100 !important;
+
+    box-sizing: border-box !important;
+
+    pointer-events: auto !important;
+}
+
+
+/* =========================================
+   PREVIOUS BUTTON
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-prev {
+
+    left: calc(50% - 65px) !important;
+
+    right: auto !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================
+   NEXT BUTTON
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-next {
+
+    left: calc(50% + 15px) !important;
+
+    right: auto !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================
+   ARROW ICON
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-next::after,
+.brewing-at-dn-swipper .swiper-button-prev::after {
+
+    content: "" !important;
+
+    width: 11px !important;
+    height: 11px !important;
+
+    display: block !important;
+
+    border-top: 2.5px solid #000 !important;
+    border-right: 2.5px solid #000 !important;
+
+    font-size: 0 !important;
+
+    margin: 0 !important;
+
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 50% !important;
+}
+
+
+/* =========================================
+   NEXT ARROW
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-next::after {
+
+    transform: translate(-60%, -50%) rotate(45deg) !important;
+
+    margin-left: -2px !important;
+}
+
+
+/* =========================================
+   PREVIOUS ARROW
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-prev::after {
+
+    transform: translate(-40%, -50%) rotate(-135deg) !important;
+
+    margin-left: 2px !important;
+}
+
+
+/* =========================================
+   DISABLED STATE
+   ========================================= */
+
+.brewing-at-dn-swipper .swiper-button-disabled {
+
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .brewing-at-dn-swipper .swiper-button-next,
+    .brewing-at-dn-swipper .swiper-button-prev {
+
+        width: 40px !important;
+        height: 40px !important;
+
+        bottom: 0px !important;
+    }
+
+
+    /* Previous */
+
+    .brewing-at-dn-swipper .swiper-button-prev {
+
+        left: calc(50% - 50px) !important;
+
+        right: auto !important;
+
+        transform: none !important;
+    }
+
+
+    /* Next */
+
+    .brewing-at-dn-swipper .swiper-button-next {
+
+        left: calc(50% + 10px) !important;
+
+        right: auto !important;
+
+        transform: none !important;
+    }
+
+
+    /* Mobile arrow size */
+
+    .brewing-at-dn-swipper .swiper-button-next::after,
+    .brewing-at-dn-swipper .swiper-button-prev::after {
+
+        width: 9px !important;
+        height: 9px !important;
+    }
+}

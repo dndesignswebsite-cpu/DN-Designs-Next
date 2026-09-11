@@ -23,6 +23,7 @@ import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategory
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
 
 // meta data
 export async function generateMetadata() {
@@ -226,18 +227,26 @@ async function page() {
         <PagesHero heading={heading} subHeading={subHeading} para={para} />
       </section>
 
-      {/* creative agency swipper  */}
-      <CreativeAgencySwipper cityPagesSlideDataCreativeAgency={cityPagesSlideDataCreativeAgency}/>
 
-      {/* our brands section */}
+       {/* our brands section */}
       <section className="our-brands-section-home">
        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>
       </section>
+
 
       {/*.....our-constant-companions...... */}
       <section className="our-constant-companions">
         <OurConstant />
       </section>
+
+
+      <OurWorkHomeSection/>
+
+     
+
+     
+
+      
 
       {/* Our Process  desktop view */}
       <section className="creating-your-brand">
@@ -380,6 +389,12 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+       {/* creative agency swipper  */}
+      <CreativeAgencySwipper cityPagesSlideDataCreativeAgency={cityPagesSlideDataCreativeAgency}/>
+
+      
       <BookDirectCallCTA/>
 
         {/* industries we serve */}
@@ -390,9 +405,9 @@ async function page() {
             
 
       {/* our work tabs */}
-      <section className="our-work-tabs">
+      {/* <section className="our-work-tabs">
         <OurWorkServiceTabs />
-      </section>
+      </section> */}
 
       {/* Why DN Designs? desktop*/}
       {/* <section className="why-dn-designs">

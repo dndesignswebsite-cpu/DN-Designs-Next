@@ -28,6 +28,8 @@ import LPBrandIdentityCategorySwipper from '@/Components/LPBrandIdentityCategory
 import IndustriesSectionNewLayout from '@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout';
 import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
 import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
+import OurBrandsSectionHome from '@/Components/OurBrandsSectionHome/OurBrandsSectionHome';
+import BrandIdentityDesignsOurWork from '@/Components/BrandIdentityDesignsOurWork/BrandIdentityDesignsOurWork';
 
 
 
@@ -368,10 +370,11 @@ async function page() {
         </div>
       </section>
 
-        {/* industries we serve */}
-      {/* <LPBrandIdentityCategorySwipper/> */}
-      {/* IndustriesSectionNewLayout */}
-              <IndustriesSectionNewLayout/>
+         {/* case studies section */}
+            {/* case studies our brands section */}
+        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/> 
+
+  
               
       
 
@@ -616,6 +619,10 @@ async function page() {
           </div>
         </div>
       </section>
+
+   
+        
+        <BrandIdentityDesignsOurWork/>
 
 
       {/* standalone section */}
@@ -989,10 +996,17 @@ async function page() {
       
               </div>
             </div> */}
+                  {/* industries we serve */}
+      {/* <LPBrandIdentityCategorySwipper/> */}
+      {/* IndustriesSectionNewLayout */}
+              <IndustriesSectionNewLayout/>
 
-            <CTAMarqueSwipper/>
 
 
+     {/*.....our-constant-companions...... */}
+     <section className='our-constant-clients-section'>
+      <OurConstant />
+      </section>
 
      {/* creative agency swipper  */}
       <CreativeAgencySwipper cityPagesSlideDataCreativeAgency={cityPagesSlideDataCreativeAgency}/>
@@ -1005,12 +1019,11 @@ async function page() {
     
 
 
-     {/*.....our-constant-companions...... */}
-     <section className='our-constant-clients-section'>
-      <OurConstant />
-      </section>
 
-      <BookDirectCallCTA/>
+      {/* <BookDirectCallCTA/> */}
+
+      
+            <CTAMarqueSwipper/>
 
 
 

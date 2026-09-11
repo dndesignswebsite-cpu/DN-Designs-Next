@@ -24,6 +24,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./AtOneAmCanGlbSection.css";
+import AtOneAmSmoothScroll from "../AtOneAmSmoothScroll/AtOneAmSmoothScroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,16 +34,16 @@ gsap.registerPlugin(ScrollTrigger);
    ========================================================= */
 
 const CAN_URLS = [
-  "https://cdn.shopify.com/3d/models/f2514ce3b662efef/single_can_.glb",
-  "https://cdn.shopify.com/3d/models/483e157d6df7309e/can2_.glb",
-  "https://cdn.shopify.com/3d/models/f2514ce3b662efef/single_can_.glb",
-  "https://cdn.shopify.com/3d/models/f2514ce3b662efef/single_can_.glb",
-  "https://cdn.shopify.com/3d/models/f2514ce3b662efef/single_can_.glb",
+  "https://cdn.shopify.com/3d/models/4736f120088f934d/white-can.glb",
+  "https://cdn.shopify.com/3d/models/23b63ce912d63061/green-can-webp.glb",
+  "https://cdn.shopify.com/3d/models/63f965b2f7f54f83/purple-can.glb",
+  "https://cdn.shopify.com/3d/models/c6ce06913493cb12/dark-blue-draco.glb",
+  "https://cdn.shopify.com/3d/models/0b915d17c4a51689/brown-can-draco.glb",
 ];
 
 
 /* =========================================================
-   PRELOAD GLB
+   PRELOAD
    ========================================================= */
 
 CAN_URLS.forEach((url) => {
@@ -51,133 +52,609 @@ CAN_URLS.forEach((url) => {
 
 
 /* =========================================================
-   MODEL ORIENTATION
-   ========================================================= */
-
-const MODEL_ROTATION_OFFSET = {
-  x: Math.PI / 2 + Math.PI,
-  y: 0,
-  z: Math.PI,
-};
-
-
-/* =========================================================
-   MODEL SIZE
+   MODEL SETTINGS
    ========================================================= */
 
 const TARGET_HEIGHT = 2.8;
 
+const MODEL_SCALE_MULTIPLIER = 1;
+
 
 /* =========================================================
-   CAN TEXT CONTENT
+   HIGHLIGHT SETTINGS
+   ========================================================= */
+
+/*
+ * Keep this relatively low so the can stays glossy.
+ *
+ * 0.25 = more glossy
+ * 0.35 = balanced
+ * 0.45 = softer
+ * 0.65 = matte
+ */
+
+const MODEL_ROUGHNESS = 0.35;
+
+
+/*
+ * Physical materials support specularIntensity.
+ *
+ * Lower value = less sharp white highlight.
+ */
+
+const MODEL_SPECULAR_INTENSITY = 0.15;
+
+
+/* =========================================================
+   CAN TEXT
    ========================================================= */
 
 const CAN_TEXTS = [
 
-  /* =======================================================
-     CAN 1
-     ======================================================= */
-
   {
-    leftEyebrow: "Pre-Trade Energy",
+    leftEyebrow: "Function With Attitude",
 
-    leftTitle: "SOLANA SPLASH",
+    leftTitle: "BREWED PROTEIN",
 
     leftSubTitle:
-      "330ml with Zero Sugar",
+      "Built For More",
 
     rightTitle:
-      "INTRODUCTION TO DRINK",
+      "Branding With More Kick",
 
     rightDescription:
-      "Solana Splash by HydroFlow is the world's first tokenized energy drink, blending cutting-edge blockchain innovation with peak performance. Designed for the modern trader, Solana Splash combines refreshing taste with tokenized transparency, redefining how you hydrate and energize.",
+      "The oversized “BREWED PROTEIN” typography turns the functional proposition into the visual hero, with 18g protein reinforcing the product’s performance-led positioning. The cream-and-blue palette adds distinction, while handwritten “Coffee” brings back the playful 1:AM character. ",
   },
 
 
-  /* =======================================================
-     CAN 2
-     ======================================================= */
-
   {
-    leftEyebrow: "Performance Energy",
+    leftEyebrow: "A New Take On Classic ",
 
-    leftTitle: "SOLANA SPLASH",
+    leftTitle: "Lactose-Free Classic ",
 
     leftSubTitle:
-      "330ml with Zero Sugar",
+      "Same Classic. New Rules",
 
     rightTitle:
-      "BUILT FOR PERFORMANCE",
+      "Distinct Yet Familiar",
 
     rightDescription:
-      "A refreshing energy experience designed for people who move fast. Solana Splash combines modern performance with a bold new approach to everyday hydration.",
+      "The teal-and-cream palette gives the variant a distinct visual identity. More importantly, the oversized “LACTOSE FREE” puts the key product benefit front and centre, while the vertical “CLASSIC” badge keeps the flavour immediately identifiable.",
   },
 
 
-  /* =======================================================
-     CAN 3
-     ======================================================= */
+    {
+    leftEyebrow: "A Richer Shade Of Indulgence ",
 
-  {
-    leftEyebrow: "Next Generation",
-
-    leftTitle: "SOLANA SPLASH",
+    leftTitle: "Lactose-Free Hazelnut",
 
     leftSubTitle:
-      "330ml with Zero Sugar",
+      "Deep Flavour. Deeper Purple. ",
 
     rightTitle:
-      "THE NEW ENERGY",
+      "Premium, With Personality ",
 
     rightDescription:
-      "A new generation of energy drinks created around a modern digital lifestyle. Every detail is designed to feel fresh, simple and unmistakably different.",
+      "The deep purple palette gives Hazelnut the most distinctive colour territory in the range, creating a richer, more premium feel. The vertical “HAZELNUT” badge makes the flavour easy to spot, while the warm accents add a subtle sense of indulgence.",
   },
 
-
-  /* =======================================================
-     CAN 4
-     ======================================================= */
-
   {
-    leftEyebrow: "Modern Hydration",
+    leftEyebrow: "Bold By Design",
 
-    leftTitle: "SOLANA SPLASH",
+    leftTitle: "CLASSIC COLD",
 
     leftSubTitle:
-      "330ml with Zero Sugar",
+      "Made For 1 AM",
 
     rightTitle:
-      "REFRESH & ENERGIZE",
+      "Vibrant Coffee Branding ",
 
     rightDescription:
-      "Refresh your routine with a drink designed to keep up with your day. Clean visual language, bold flavor and a modern energy experience come together in one can.",
+      "The blue-and-orange palette lends a bright, energetic presence, while the oversized “CLASSIC COLD” makes the core product instantly recognisable. The handwritten “Coffee” feels playful and human, while the orange coffee-bean graphic introduces a subtle category cue.",
   },
 
+   {
+    leftEyebrow: "Richness, Reimagined",
 
-  /* =======================================================
-     CAN 5
-     ======================================================= */
-
-  {
-    leftEyebrow: "Final Experience",
-
-    leftTitle: "SOLANA SPLASH",
+    leftTitle: "Lactose-Free Mocha",
 
     leftSubTitle:
-      "330ml with Zero Sugar",
+      "Made For Indulgence",
 
     rightTitle:
-      "THE COMPLETE EXPERIENCE",
+      "A Richer Identity ",
 
     rightDescription:
-      "Solana Splash brings together energy, hydration and a forward-thinking identity. A drink made for the modern world and designed to stand out from every angle.",
+      "The warm mocha-brown palette visually cues the richer flavour profile, giving it a more indulgent personality. The vertical “MOCHA” badge clearly indicates the flavour, while the dominant Lactose-Free messaging keeps the product’s key distinction impossible to miss.",
   },
 
 ];
 
 
 /* =========================================================
-   SINGLE CAN MODEL
+   MATERIAL HIGHLIGHT CONTROL
+   ========================================================= */
+
+function tuneMaterial(material) {
+
+  if (!material) {
+    return;
+  }
+
+
+  /*
+   * Crossfade support.
+   */
+
+  material.transparent =
+    true;
+
+  material.depthWrite =
+    false;
+
+  material.depthTest =
+    true;
+
+
+  /*
+   * -----------------------------------------
+   * ROUGHNESS
+   * -----------------------------------------
+   *
+   * Only slightly increase roughness.
+   *
+   * This keeps the can glossy.
+   */
+
+  if (
+    "roughness" in material
+  ) {
+
+    material.roughness =
+      MODEL_ROUGHNESS;
+
+  }
+
+
+  /*
+   * -----------------------------------------
+   * SPECULAR INTENSITY
+   * -----------------------------------------
+   *
+   * Supported by MeshPhysicalMaterial.
+   */
+
+  if (
+    "specularIntensity" in material
+  ) {
+
+    material.specularIntensity =
+      MODEL_SPECULAR_INTENSITY;
+
+  }
+
+
+  /*
+   * -----------------------------------------
+   * CLEARCOAT
+   * -----------------------------------------
+   *
+   * If the GLB has clearcoat, remove the
+   * extra sharp reflection.
+   */
+
+  if (
+    "clearcoat" in material
+  ) {
+
+    material.clearcoat =
+      0;
+
+  }
+
+
+  if (
+    "clearcoatRoughness" in material
+  ) {
+
+    material.clearcoatRoughness =
+      1;
+
+  }
+
+}
+
+
+/* =========================================================
+   UNIVERSAL GLB NORMALIZER
+   ========================================================= */
+
+function buildNormalizedModel(scene) {
+
+  const normalizedRoot =
+    new THREE.Group();
+
+
+  /*
+   * Clone original GLB.
+   */
+
+  const clonedScene =
+    scene.clone(true);
+
+
+  /*
+   * Calculate all world transforms.
+   */
+
+  clonedScene.updateMatrixWorld(
+    true
+  );
+
+
+  /*
+   * Collect meshes.
+   */
+
+  const meshes = [];
+
+
+  clonedScene.traverse((child) => {
+
+    if (!child.isMesh) {
+      return;
+    }
+
+    meshes.push(child);
+
+  });
+
+
+  /*
+   * No mesh.
+   */
+
+  if (meshes.length === 0) {
+
+    return normalizedRoot;
+
+  }
+
+
+  /*
+   * =======================================================
+   * BAKE GLB TRANSFORMS
+   * =======================================================
+   */
+
+  meshes.forEach((originalMesh) => {
+
+    /*
+     * Clone geometry.
+     */
+
+    const geometry =
+      originalMesh.geometry.clone();
+
+
+    /*
+     * Bake complete world transform.
+     */
+
+    geometry.applyMatrix4(
+      originalMesh.matrixWorld
+    );
+
+
+    /*
+     * Clone mesh without children.
+     */
+
+    const mesh =
+      originalMesh.clone(false);
+
+
+    /*
+     * Use baked geometry.
+     */
+
+    mesh.geometry =
+      geometry;
+
+
+    /*
+     * =====================================================
+     * MATERIALS
+     * ===================================================== */
+
+    if (
+      Array.isArray(
+        originalMesh.material
+      )
+    ) {
+
+      mesh.material =
+        originalMesh.material.map(
+          (material) => {
+
+            const clonedMaterial =
+              material.clone();
+
+
+            tuneMaterial(
+              clonedMaterial
+            );
+
+
+            return clonedMaterial;
+
+          }
+        );
+
+    }
+
+    else if (
+      originalMesh.material
+    ) {
+
+      mesh.material =
+        originalMesh.material.clone();
+
+
+      tuneMaterial(
+        mesh.material
+      );
+
+    }
+
+
+    /*
+     * =====================================================
+     * RESET TRANSFORM
+     * ===================================================== */
+
+    mesh.position.set(
+      0,
+      0,
+      0
+    );
+
+    mesh.rotation.set(
+      0,
+      0,
+      0
+    );
+
+    mesh.scale.set(
+      1,
+      1,
+      1
+    );
+
+
+    /*
+     * Shadows.
+     */
+
+    mesh.castShadow =
+      true;
+
+    mesh.receiveShadow =
+      true;
+
+
+    /*
+     * Add to normalized root.
+     */
+
+    normalizedRoot.add(
+      mesh
+    );
+
+  });
+
+
+  /*
+   * =======================================================
+   * INITIAL BOUNDS
+   * ======================================================= */
+
+  normalizedRoot.updateMatrixWorld(
+    true
+  );
+
+
+  const initialBox =
+    new THREE.Box3().setFromObject(
+      normalizedRoot
+    );
+
+
+  const initialSize =
+    new THREE.Vector3();
+
+
+  initialBox.getSize(
+    initialSize
+  );
+
+
+  /*
+   * =======================================================
+   * AUTOMATIC UP AXIS
+   * ======================================================= */
+
+  const x =
+    initialSize.x;
+
+  const y =
+    initialSize.y;
+
+  const z =
+    initialSize.z;
+
+
+  /*
+   * Already Y-up.
+   */
+
+  if (
+    y >= x &&
+    y >= z
+  ) {
+
+    normalizedRoot.rotation.set(
+      0,
+      0,
+      0
+    );
+
+  }
+
+
+  /*
+   * X is longest.
+   */
+
+  else if (
+    x >= y &&
+    x >= z
+  ) {
+
+    normalizedRoot.rotation.set(
+      0,
+      0,
+      Math.PI / 2
+    );
+
+  }
+
+
+  /*
+   * Z is longest.
+   */
+
+  else {
+
+    normalizedRoot.rotation.set(
+      -Math.PI / 2,
+      0,
+      0
+    );
+
+  }
+
+
+  /*
+   * Update.
+   */
+
+  normalizedRoot.updateMatrixWorld(
+    true
+  );
+
+
+  /*
+   * =======================================================
+   * ORIENTED BOUNDS
+   * ======================================================= */
+
+  const orientedBox =
+    new THREE.Box3().setFromObject(
+      normalizedRoot
+    );
+
+
+  const orientedSize =
+    new THREE.Vector3();
+
+
+  const orientedCenter =
+    new THREE.Vector3();
+
+
+  orientedBox.getSize(
+    orientedSize
+  );
+
+
+  orientedBox.getCenter(
+    orientedCenter
+  );
+
+
+  /*
+   * =======================================================
+   * HEIGHT
+   * ======================================================= */
+
+  const actualHeight =
+    orientedSize.y;
+
+
+  if (
+    !Number.isFinite(
+      actualHeight
+    ) ||
+    actualHeight <= 0
+  ) {
+
+    return normalizedRoot;
+
+  }
+
+
+  const normalizedScale =
+    (
+      TARGET_HEIGHT /
+      actualHeight
+    ) *
+    MODEL_SCALE_MULTIPLIER;
+
+
+  /*
+   * Scale.
+   */
+
+  normalizedRoot.scale.setScalar(
+    normalizedScale
+  );
+
+
+  /*
+   * =======================================================
+   * TRUE CENTER
+   * ======================================================= */
+
+  normalizedRoot.position.set(
+
+    -orientedCenter.x *
+      normalizedScale,
+
+    -orientedCenter.y *
+      normalizedScale,
+
+    -orientedCenter.z *
+      normalizedScale
+
+  );
+
+
+  /*
+   * Final update.
+   */
+
+  normalizedRoot.updateMatrixWorld(
+    true
+  );
+
+
+  return normalizedRoot;
+}
+
+
+/* =========================================================
+   CAN MODEL
    ========================================================= */
 
 function CanModel({
@@ -185,242 +662,40 @@ function CanModel({
   state,
 }) {
 
-  const { scene } = useGLTF(url);
+  const { scene } =
+    useGLTF(url);
 
-  const { size } = useThree();
+
+  const { size } =
+    useThree();
+
+
+  /*
+   * Animation pivot.
+   */
 
   const pivotRef =
     useRef(null);
 
-  const modelRef =
-    useRef(null);
 
-  const correctionRef =
-    useRef(null);
+  /*
+   * Normalize once.
+   */
 
-  const normalizedRef =
-    useRef(false);
+  const normalizedScene =
+    useMemo(() => {
 
-
-  /* =======================================================
-     CLONE GLB
-     ======================================================= */
-
-  const clonedScene = useMemo(() => {
-
-    const clone =
-      scene.clone(true);
-
-
-    clone.traverse((child) => {
-
-      if (!child.isMesh) {
-        return;
-      }
-
-
-      child.castShadow = true;
-
-      child.receiveShadow = true;
-
-
-      if (child.material) {
-
-        /*
-         * Independent material for
-         * every can.
-         */
-
-        child.material =
-          child.material.clone();
-
-
-        /*
-         * Required for opacity control.
-         */
-
-        child.material.transparent =
-          true;
-
-
-        /*
-         * Hidden cans must not interfere
-         * with the visible can.
-         */
-
-        child.material.depthWrite =
-          false;
-
-        child.material.depthTest =
-          true;
-
-      }
-
-    });
-
-
-    return clone;
-
-  }, [scene]);
-
-
-  /* =======================================================
-     NORMALIZE + TRUE CENTER
-     ======================================================= */
-
-  useLayoutEffect(() => {
-
-    if (!modelRef.current) {
-      return;
-    }
-
-    if (!correctionRef.current) {
-      return;
-    }
-
-    if (normalizedRef.current) {
-      return;
-    }
-
-
-    /* -------------------------------------------------------
-       RESET
-       ------------------------------------------------------- */
-
-    modelRef.current.position.set(
-      0,
-      0,
-      0
-    );
-
-
-    modelRef.current.rotation.set(
-      0,
-      0,
-      0
-    );
-
-
-    modelRef.current.scale.set(
-      1,
-      1,
-      1
-    );
-
-
-    /* -------------------------------------------------------
-       FIXED ORIENTATION
-       ------------------------------------------------------- */
-
-    correctionRef.current.rotation.set(
-      MODEL_ROTATION_OFFSET.x,
-      MODEL_ROTATION_OFFSET.y,
-      MODEL_ROTATION_OFFSET.z
-    );
-
-
-    modelRef.current.updateMatrixWorld(
-      true
-    );
-
-
-    /* -------------------------------------------------------
-       BOUNDING BOX
-       ------------------------------------------------------- */
-
-    const box =
-      new THREE.Box3().setFromObject(
-        modelRef.current
+      return buildNormalizedModel(
+        scene
       );
 
-
-    const modelSize =
-      new THREE.Vector3();
-
-    const center =
-      new THREE.Vector3();
+    }, [scene]);
 
 
-    box.getSize(
-      modelSize
-    );
-
-
-    box.getCenter(
-      center
-    );
-
-
-    /* -------------------------------------------------------
-       MAX DIMENSION
-       ------------------------------------------------------- */
-
-    const maxDimension =
-      Math.max(
-        modelSize.x,
-        modelSize.y,
-        modelSize.z
-      );
-
-
-    if (
-      !Number.isFinite(
-        maxDimension
-      ) ||
-      maxDimension <= 0
-    ) {
-      return;
-    }
-
-
-    /* -------------------------------------------------------
-       NORMALIZED SCALE
-       ------------------------------------------------------- */
-
-    const normalizedScale =
-      TARGET_HEIGHT /
-      maxDimension;
-
-
-    /* -------------------------------------------------------
-       APPLY SCALE
-       ------------------------------------------------------- */
-
-    modelRef.current.scale.setScalar(
-      normalizedScale
-    );
-
-
-    /* -------------------------------------------------------
-       TRUE CENTER
-       ------------------------------------------------------- */
-
-    modelRef.current.position.set(
-      -center.x *
-        normalizedScale,
-
-      -center.y *
-        normalizedScale,
-
-      -center.z *
-        normalizedScale
-    );
-
-
-    modelRef.current.updateMatrixWorld(
-      true
-    );
-
-
-    normalizedRef.current =
-      true;
-
-  }, [clonedScene]);
-
-
-  /* =======================================================
-     THREE FRAME
-     ======================================================= */
+  /*
+   * =======================================================
+   * FRAME
+   * ======================================================= */
 
   useFrame(() => {
 
@@ -429,9 +704,11 @@ function CanModel({
     }
 
 
-    /* =====================================================
-       ROTATION
-       ===================================================== */
+    /*
+     * -----------------------------------------
+     * ROTATION
+     * -----------------------------------------
+     */
 
     pivotRef.current.rotation.x =
       state.rotationX;
@@ -439,17 +716,15 @@ function CanModel({
     pivotRef.current.rotation.y =
       state.rotationY;
 
-    /*
-     * Z remains locked.
-     */
-
     pivotRef.current.rotation.z =
       0;
 
 
-    /* =====================================================
-       POSITION
-       ===================================================== */
+    /*
+     * -----------------------------------------
+     * POSITION
+     * -----------------------------------------
+     */
 
     pivotRef.current.position.x =
       state.positionX;
@@ -461,22 +736,32 @@ function CanModel({
       state.positionZ;
 
 
-    /* =====================================================
-       RESPONSIVE SCALE
-       ===================================================== */
+    /*
+     * -----------------------------------------
+     * RESPONSIVE SCALE
+     * -----------------------------------------
+     */
 
     let responsiveScale = 1;
 
 
-    if (size.width >= 1200) {
+    if (
+      size.width >= 1200
+    ) {
 
       responsiveScale = 1;
 
-    } else if (size.width >= 769) {
+    }
+
+    else if (
+      size.width >= 769
+    ) {
 
       responsiveScale = 0.86;
 
-    } else {
+    }
+
+    else {
 
       responsiveScale = 0.68;
 
@@ -488,29 +773,32 @@ function CanModel({
     );
 
 
-    /* =====================================================
-       OPACITY
-       ===================================================== */
+    /*
+     * -----------------------------------------
+     * OPACITY
+     * -----------------------------------------
+     */
 
     const opacity =
       state.opacity;
 
 
-    clonedScene.traverse(
+    normalizedScene.traverse(
       (child) => {
 
         if (!child.isMesh) {
           return;
         }
 
+
         if (!child.material) {
           return;
         }
 
 
-        /* -------------------------------------------------
-           MULTIPLE MATERIALS
-           ------------------------------------------------- */
+        /*
+         * Multiple materials.
+         */
 
         if (
           Array.isArray(
@@ -521,33 +809,142 @@ function CanModel({
           child.material.forEach(
             (material) => {
 
+              material.opacity =
+                opacity;
+
+
               material.transparent =
                 true;
 
-              material.opacity =
-                opacity;
 
               material.depthWrite =
                 opacity > 0.99;
 
+
+              material.depthTest =
+                true;
+
+
+              /*
+               * Keep highlight tuning
+               * active.
+               */
+
+              if (
+                "roughness" in material
+              ) {
+
+                material.roughness =
+                  MODEL_ROUGHNESS;
+
+              }
+
+
+              if (
+                "specularIntensity" in
+                material
+              ) {
+
+                material.specularIntensity =
+                  MODEL_SPECULAR_INTENSITY;
+
+              }
+
+
+              if (
+                "clearcoat" in material
+              ) {
+
+                material.clearcoat =
+                  0;
+
+              }
+
+
+              if (
+                "clearcoatRoughness" in
+                material
+              ) {
+
+                material.clearcoatRoughness =
+                  1;
+
+              }
+
             }
           );
 
+        }
 
-        /* -------------------------------------------------
-           SINGLE MATERIAL
-           ------------------------------------------------- */
 
-        } else {
+        /*
+         * Single material.
+         */
 
-          child.material.transparent =
-            true;
+        else {
 
           child.material.opacity =
             opacity;
 
+
+          child.material.transparent =
+            true;
+
+
           child.material.depthWrite =
             opacity > 0.99;
+
+
+          child.material.depthTest =
+            true;
+
+
+          /*
+           * Highlight tuning.
+           */
+
+          if (
+            "roughness" in
+            child.material
+          ) {
+
+            child.material.roughness =
+              MODEL_ROUGHNESS;
+
+          }
+
+
+          if (
+            "specularIntensity" in
+            child.material
+          ) {
+
+            child.material.specularIntensity =
+              MODEL_SPECULAR_INTENSITY;
+
+          }
+
+
+          if (
+            "clearcoat" in
+            child.material
+          ) {
+
+            child.material.clearcoat =
+              0;
+
+          }
+
+
+          if (
+            "clearcoatRoughness" in
+            child.material
+          ) {
+
+            child.material.clearcoatRoughness =
+              1;
+
+          }
 
         }
 
@@ -563,21 +960,9 @@ function CanModel({
       ref={pivotRef}
     >
 
-      <group
-        ref={modelRef}
-      >
-
-        <group
-          ref={correctionRef}
-        >
-
-          <primitive
-            object={clonedScene}
-          />
-
-        </group>
-
-      </group>
+      <primitive
+        object={normalizedScene}
+      />
 
     </group>
 
@@ -595,26 +980,22 @@ export default function AtOneAmCanGlbSection() {
   const sectionRef =
     useRef(null);
 
+
   const pinRef =
     useRef(null);
 
-
-  /* =======================================================
-     TEXT REFS
-     ======================================================= */
 
   const textRefs =
     useRef([]);
 
 
-  /* =======================================================
-     CAN STATES
-     ======================================================= */
+  /*
+   * =======================================================
+   * CAN STATES
+   * ======================================================= */
 
   const canStates =
     useRef([
-
-      /* CAN 1 */
 
       {
         rotationX: 0,
@@ -628,7 +1009,17 @@ export default function AtOneAmCanGlbSection() {
       },
 
 
-      /* CAN 2 */
+      {
+        rotationX: 0,
+        rotationY: 0,
+
+        positionX: 0,
+        positionY: 0,
+        positionZ: 0,
+
+        opacity: 0,
+      },
+
 
       {
         rotationX: 0,
@@ -642,8 +1033,6 @@ export default function AtOneAmCanGlbSection() {
       },
 
 
-      /* CAN 3 */
-
       {
         rotationX: 0,
         rotationY: 0,
@@ -655,22 +1044,6 @@ export default function AtOneAmCanGlbSection() {
         opacity: 0,
       },
 
-
-      /* CAN 4 */
-
-      {
-        rotationX: 0,
-        rotationY: 0,
-
-        positionX: 0,
-        positionY: 0,
-        positionZ: 0,
-
-        opacity: 0,
-      },
-
-
-      /* CAN 5 */
 
       {
         rotationX: 0,
@@ -686,9 +1059,10 @@ export default function AtOneAmCanGlbSection() {
     ]);
 
 
-  /* =======================================================
-     GSAP + SCROLLTRIGGER
-     ======================================================= */
+  /*
+   * =======================================================
+   * GSAP
+   * ======================================================= */
 
   useLayoutEffect(() => {
 
@@ -703,7 +1077,9 @@ export default function AtOneAmCanGlbSection() {
       !section ||
       !pin
     ) {
+
       return;
+
     }
 
 
@@ -712,9 +1088,11 @@ export default function AtOneAmCanGlbSection() {
         () => {
 
 
-          /* =================================================
-             RESET CAN STATES
-             ================================================= */
+          /*
+           * -----------------------------------------------
+           * RESET CAN STATES
+           * -----------------------------------------------
+           */
 
           canStates.current.forEach(
             (
@@ -746,9 +1124,11 @@ export default function AtOneAmCanGlbSection() {
           );
 
 
-          /* =================================================
-             RESET TEXT
-             ================================================= */
+          /*
+           * -----------------------------------------------
+           * RESET TEXT
+           * -----------------------------------------------
+           */
 
           textRefs.current.forEach(
             (
@@ -764,12 +1144,14 @@ export default function AtOneAmCanGlbSection() {
               gsap.set(
                 item.left,
                 {
+
                   opacity:
                     index === 0
                       ? 1
                       : 0,
 
                   y: 0,
+
                 }
               );
 
@@ -777,12 +1159,14 @@ export default function AtOneAmCanGlbSection() {
               gsap.set(
                 item.right,
                 {
+
                   opacity:
                     index === 0
                       ? 1
                       : 0,
 
                   y: 0,
+
                 }
               );
 
@@ -790,9 +1174,11 @@ export default function AtOneAmCanGlbSection() {
           );
 
 
-          /* =================================================
-             MASTER TIMELINE
-             ================================================= */
+          /*
+           * -----------------------------------------------
+           * MASTER TIMELINE
+           * -----------------------------------------------
+           */
 
           const timeline =
             gsap.timeline({
@@ -806,9 +1192,11 @@ export default function AtOneAmCanGlbSection() {
             });
 
 
-          /* =================================================
-             CAN SEQUENCE
-             ================================================= */
+          /*
+           * -----------------------------------------------
+           * CAN SEQUENCE
+           * -----------------------------------------------
+           */
 
           canStates.current.forEach(
             (
@@ -817,24 +1205,16 @@ export default function AtOneAmCanGlbSection() {
             ) => {
 
 
-              /* =============================================
-                 FULL X + Y ROTATION
-                 ============================================= */
+              /*
+               * FULL ROTATION
+               */
 
               timeline.to(
                 currentCan,
                 {
 
-                  /*
-                   * One complete X flip.
-                   */
-
                   rotationX:
                     Math.PI * 2,
-
-                  /*
-                   * One complete Y rotation.
-                   */
 
                   rotationY:
                     Math.PI * 2,
@@ -849,9 +1229,9 @@ export default function AtOneAmCanGlbSection() {
               );
 
 
-              /* =============================================
-                 CHANGE TO NEXT CAN
-                 ============================================= */
+              /*
+               * NEXT CAN
+               */
 
               if (
                 index <
@@ -876,55 +1256,23 @@ export default function AtOneAmCanGlbSection() {
                   ];
 
 
-                /* =========================================
-                   IMPORTANT CAN TRANSITION
-                   =========================================
+                /*
+                 * Reset next can.
+                 */
 
-                   The next can starts rotating at the
-                   EXACT SAME TIME as the current can.
+                nextCan.rotationX =
+                  0;
 
-                   It stays invisible while rotating.
+                nextCan.rotationY =
+                  0;
 
-                   Because both cans use the SAME rotation
-                   duration + SAME easing, their orientation
-                   is identical throughout the animation.
-
-                   During the final 0.25 seconds we simply
-                   crossfade them.
-
-                   This makes the model swap almost invisible.
-                   ========================================= */
+                nextCan.opacity =
+                  0;
 
 
                 /*
-                 * Start next can from zero.
+                 * Next can rotates simultaneously.
                  */
-
-                nextCan.rotationX = 0;
-                nextCan.rotationY = 0;
-
-
-                /*
-                 * Next can stays invisible.
-                 */
-
-                nextCan.opacity = 0;
-
-
-                /* =========================================
-                   NEXT CAN ROTATION
-                   =========================================
-
-                   IMPORTANT:
-
-                   This starts at the SAME TIMELINE POSITION
-                   as the current can rotation.
-
-                   So both cans rotate together.
-
-                   The next can is simply hidden until the
-                   final part of the rotation.
-                   ========================================= */
 
                 timeline.to(
                   nextCan,
@@ -947,21 +1295,18 @@ export default function AtOneAmCanGlbSection() {
                 );
 
 
-                /* =========================================
-                   CAN CROSSFADE
-
-                   Starts during the LAST 0.25 SECOND
-                   of the rotation.
-
-                   At this point both cans are already
-                   almost at the exact same angle.
-                   ========================================= */
+                /*
+                 * -----------------------------------------
+                 * CAN CROSSFADE
+                 * -----------------------------------------
+                 */
 
                 timeline.to(
                   currentCan,
                   {
 
-                    opacity: 0,
+                    opacity:
+                      0,
 
                     duration:
                       0,
@@ -978,7 +1323,8 @@ export default function AtOneAmCanGlbSection() {
                   nextCan,
                   {
 
-                    opacity: 1,
+                    opacity:
+                      1,
 
                     duration:
                       0,
@@ -991,9 +1337,11 @@ export default function AtOneAmCanGlbSection() {
                 );
 
 
-                /* =========================================
-                   LEFT TEXT OUT
-                   ========================================= */
+                /*
+                 * -----------------------------------------
+                 * LEFT TEXT OUT
+                 * -----------------------------------------
+                 */
 
                 if (
                   currentText?.left
@@ -1003,7 +1351,8 @@ export default function AtOneAmCanGlbSection() {
                     currentText.left,
                     {
 
-                      opacity: 0,
+                      opacity:
+                        0,
 
                       y: 0,
 
@@ -1020,9 +1369,11 @@ export default function AtOneAmCanGlbSection() {
                 }
 
 
-                /* =========================================
-                   RIGHT TEXT OUT
-                   ========================================= */
+                /*
+                 * -----------------------------------------
+                 * RIGHT TEXT OUT
+                 * -----------------------------------------
+                 */
 
                 if (
                   currentText?.right
@@ -1032,7 +1383,8 @@ export default function AtOneAmCanGlbSection() {
                     currentText.right,
                     {
 
-                      opacity: 0,
+                      opacity:
+                        0,
 
                       y: 0,
 
@@ -1049,9 +1401,11 @@ export default function AtOneAmCanGlbSection() {
                 }
 
 
-                /* =========================================
-                   LEFT TEXT IN
-                   ========================================= */
+                /*
+                 * -----------------------------------------
+                 * LEFT TEXT IN
+                 * -----------------------------------------
+                 */
 
                 if (
                   nextText?.left
@@ -1061,7 +1415,8 @@ export default function AtOneAmCanGlbSection() {
                     nextText.left,
                     {
 
-                      opacity: 1,
+                      opacity:
+                        1,
 
                       y: 0,
 
@@ -1078,9 +1433,11 @@ export default function AtOneAmCanGlbSection() {
                 }
 
 
-                /* =========================================
-                   RIGHT TEXT IN
-                   ========================================= */
+                /*
+                 * -----------------------------------------
+                 * RIGHT TEXT IN
+                 * -----------------------------------------
+                 */
 
                 if (
                   nextText?.right
@@ -1090,7 +1447,8 @@ export default function AtOneAmCanGlbSection() {
                     nextText.right,
                     {
 
-                      opacity: 1,
+                      opacity:
+                        1,
 
                       y: 0,
 
@@ -1107,23 +1465,19 @@ export default function AtOneAmCanGlbSection() {
                 }
 
 
-                /* =========================================
-                   RESET NEXT CAN
-
-                   Both cans have now reached 2PI.
-
-                   2PI and 0 are visually identical.
-
-                   Reset happens AFTER the crossfade.
-                   ========================================= */
+                /*
+                 * Reset rotation.
+                 */
 
                 timeline.set(
                   nextCan,
                   {
 
-                    rotationX: 0,
+                    rotationX:
+                      0,
 
-                    rotationY: 0,
+                    rotationY:
+                      0,
 
                   }
                 );
@@ -1134,45 +1488,68 @@ export default function AtOneAmCanGlbSection() {
           );
 
 
-          /* =================================================
-             SCROLLTRIGGER
-             ================================================= */
+          /*
+           * -----------------------------------------------
+           * SCROLLTRIGGER
+           * -----------------------------------------------
+           */
+
+          // ScrollTrigger.create({
+
+          //   trigger:
+          //     section,
+
+          //   start:
+          //     "top top",
+
+          //   end:
+          //     "+=500%",
+
+          //   pin:
+          //     pin,
+
+          //   pinSpacing:
+          //     true,
+
+          //   scrub:
+          //     0.9,
+
+          //   animation:
+          //     timeline,
+
+          //   anticipatePin:
+          //     1,
+
+          //   invalidateOnRefresh:
+          //     true,
+
+          // });
+
 
           ScrollTrigger.create({
+  trigger: section,
 
-            trigger:
-              section,
+  start: "top top",
 
-            start:
-              "top top",
+  end: "+=700%",
 
-            end:
-              "+=500%",
+  pin: pin,
 
-            pin:
-              pin,
+  pinSpacing: true,
 
-            pinSpacing:
-              true,
+  scrub: 2.5,
 
-            scrub:
-              0.9,
+  animation: timeline,
 
-            animation:
-              timeline,
+  anticipatePin: 1,
 
-            anticipatePin:
-              1,
-
-            invalidateOnRefresh:
-              true,
-
-          });
+  invalidateOnRefresh: true,
+});
 
 
-          /* =================================================
-             INITIAL REFRESH
-             ================================================= */
+          /*
+           * Initial refresh.
+           */
 
           requestAnimationFrame(
             () => {
@@ -1196,9 +1573,9 @@ export default function AtOneAmCanGlbSection() {
       );
 
 
-    /* =====================================================
-       RESIZE
-       ===================================================== */
+    /*
+     * Resize.
+     */
 
     const handleResize =
       () => {
@@ -1216,9 +1593,9 @@ export default function AtOneAmCanGlbSection() {
     );
 
 
-    /* =====================================================
-       CLEANUP
-       ===================================================== */
+    /*
+     * Cleanup.
+     */
 
     return () => {
 
@@ -1235,12 +1612,15 @@ export default function AtOneAmCanGlbSection() {
   }, []);
 
 
-  /* =======================================================
-     JSX
-     ======================================================= */
+  /*
+   * =======================================================
+   * RENDER
+   * ======================================================= */
 
   return (
+<>
 
+{/* <AtOneAmSmoothScroll/> */}
     <section
       ref={sectionRef}
       className="can-section"
@@ -1253,7 +1633,7 @@ export default function AtOneAmCanGlbSection() {
 
 
         {/* =================================================
-            LEFT INFORMATION
+            LEFT TEXT
             ================================================= */}
 
         <div
@@ -1267,6 +1647,7 @@ export default function AtOneAmCanGlbSection() {
             ) => (
 
               <div
+
                 key={
                   `left-${index}`
                 }
@@ -1282,8 +1663,10 @@ export default function AtOneAmCanGlbSection() {
                     textRefs.current[
                       index
                     ] = {
+
                       left: null,
                       right: null,
+
                     };
 
                   }
@@ -1333,7 +1716,7 @@ export default function AtOneAmCanGlbSection() {
 
 
         {/* =================================================
-            RIGHT INFORMATION
+            RIGHT TEXT
             ================================================= */}
 
         <div
@@ -1347,6 +1730,7 @@ export default function AtOneAmCanGlbSection() {
             ) => (
 
               <div
+
                 key={
                   `right-${index}`
                 }
@@ -1362,8 +1746,10 @@ export default function AtOneAmCanGlbSection() {
                     textRefs.current[
                       index
                     ] = {
+
                       left: null,
                       right: null,
+
                     };
 
                   }
@@ -1404,7 +1790,7 @@ export default function AtOneAmCanGlbSection() {
 
 
         {/* =================================================
-            THREE.JS CANVAS
+            THREE CANVAS
             ================================================= */}
 
         <div
@@ -1412,6 +1798,7 @@ export default function AtOneAmCanGlbSection() {
         >
 
           <Canvas
+
             camera={{
               position: [
                 0,
@@ -1435,6 +1822,7 @@ export default function AtOneAmCanGlbSection() {
               powerPreference:
                 "high-performance",
             }}
+
           >
 
 
@@ -1442,23 +1830,33 @@ export default function AtOneAmCanGlbSection() {
                 LIGHTING
                 ============================================= */}
 
+
+            {/* Soft global light */}
+
             <ambientLight
-              intensity={1.2}
+              intensity={0.8}
             />
 
 
+            {/* Main key light */}
+
             <directionalLight
+
               position={[
                 5,
                 8,
                 6,
               ]}
 
-              intensity={2.5}
+              intensity={2.0}
+
             />
 
 
+            {/* Fill light */}
+
             <directionalLight
+
               position={[
                 -5,
                 2,
@@ -1466,11 +1864,18 @@ export default function AtOneAmCanGlbSection() {
               ]}
 
               intensity={1}
+
             />
 
 
+            {/* Studio environment */}
+
             <Environment
+
               preset="studio"
+
+              environmentIntensity={0.2}
+
             />
 
 
@@ -1479,6 +1884,7 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <CanModel
+
               url={
                 CAN_URLS[0]
               }
@@ -1486,6 +1892,7 @@ export default function AtOneAmCanGlbSection() {
               state={
                 canStates.current[0]
               }
+
             />
 
 
@@ -1494,6 +1901,7 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <CanModel
+
               url={
                 CAN_URLS[1]
               }
@@ -1501,6 +1909,7 @@ export default function AtOneAmCanGlbSection() {
               state={
                 canStates.current[1]
               }
+
             />
 
 
@@ -1509,6 +1918,7 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <CanModel
+
               url={
                 CAN_URLS[2]
               }
@@ -1516,6 +1926,7 @@ export default function AtOneAmCanGlbSection() {
               state={
                 canStates.current[2]
               }
+
             />
 
 
@@ -1524,6 +1935,7 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <CanModel
+
               url={
                 CAN_URLS[3]
               }
@@ -1531,6 +1943,7 @@ export default function AtOneAmCanGlbSection() {
               state={
                 canStates.current[3]
               }
+
             />
 
 
@@ -1539,6 +1952,7 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <CanModel
+
               url={
                 CAN_URLS[4]
               }
@@ -1546,6 +1960,7 @@ export default function AtOneAmCanGlbSection() {
               state={
                 canStates.current[4]
               }
+
             />
 
 
@@ -1554,19 +1969,21 @@ export default function AtOneAmCanGlbSection() {
                 ============================================= */}
 
             <ContactShadows
+
               position={[
                 0,
                 -1.6,
                 0,
               ]}
 
-              opacity={0}
+              opacity={0.4}
 
               scale={7}
 
               blur={2.5}
 
               far={4}
+
             />
 
           </Canvas>
@@ -1576,5 +1993,9 @@ export default function AtOneAmCanGlbSection() {
       </div>
 
     </section>
+
+    </>
+
   );
+
 }

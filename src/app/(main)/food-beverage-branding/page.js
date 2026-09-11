@@ -21,6 +21,7 @@ import IndustriesPageHero from "@/Components/IndustriesPageHero/IndustriesPageHe
 import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 import BookDirectCTABtn from "@/Components/BookDirectCTABtn/BookDirectCTABtn";
 import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
+import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
 
 
 
@@ -613,6 +614,11 @@ async function page() {
                 </div>
               </div>
             </section>
+
+
+            {/* case studies section */}
+            {/* case studies our brands section */}
+        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>  
 
             {/* everything-a-food */}
             <section className="everything-a-food-section">
