@@ -1976,7 +1976,7 @@ export default function AtOneAmCanGlbSection() {
                 0,
               ]}
 
-              opacity={0.4}
+              opacity={0}
 
               scale={7}
 
