@@ -17,6 +17,7 @@ import Image from 'next/image';
 import LazyVideo from '@/Components/LazyVideo/LazyVideo';
 import AtOneAmVideoOnScroll from '@/Components/AtOneAmVideoOnScroll/AtOneAmVideoOnScroll';
 import AtOneAmCanGlbSection from '@/Components/AtOneAmCanGlbSection/AtOneAmCanGlbSection';
+import AtOneAmSmoothScroll from '@/Components/AtOneAmSmoothScroll/AtOneAmSmoothScroll';
 
 
 
@@ -117,6 +118,8 @@ async function page() {
         />
       )}
       {/*schema ends here */}
+
+      <AtOneAmSmoothScroll/>
 
     <div className='at-one-am-case-study-page'>
 
@@ -483,7 +486,7 @@ async function page() {
             <p className='it-began-left-col-para-1'>Built to Command 
 <br></br>Attention.
 <span className='orange-at-one-color'> Shelf Impact</span></p>
-            <p className='it-began-left-col-para-2'>Minimal. Bold. Unmissable.</p>
+            <p className='it-began-left-col-para-2'>Bold. Unmissable.</p>
             </div>
           </div>
 
@@ -586,7 +589,7 @@ async function page() {
        
        {/* <div > */}
       {/* <AtOneAmVideoOnScroll className='at-one-am-video-on-scroll'/> */}
-      {/* <AtOneAmCanGlbSection/> */}
+      <AtOneAmCanGlbSection/>
       {/* </div> */}
       
 

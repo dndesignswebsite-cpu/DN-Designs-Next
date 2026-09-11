@@ -18,6 +18,7 @@ import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper';
 import BookDirectCallCTA from '@/Components/BookDirectCallCTA/BookDirectCallCTA';
+import OurBrandsSectionHome from '@/Components/OurBrandsSectionHome/OurBrandsSectionHome';
 
 
 // meta   data
@@ -717,6 +718,12 @@ async function page() {
           </div>
         </div>
       </section>
+
+
+      {/* case studies section */}
+                  {/* case studies our brands section */}
+              <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/> 
+              
 
 
        {/* FMCG Industries We Brand */}
