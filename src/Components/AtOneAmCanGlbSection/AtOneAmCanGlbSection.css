@@ -138,7 +138,7 @@
   font-family: "neutronic-condensed", sans-serif;
 
   font-size: clamp(
-    42px,
+    60px,
     4.2vw,
     100px
   );
