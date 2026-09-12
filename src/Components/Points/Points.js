@@ -6,7 +6,7 @@ import Link from "next/link";
 function Points() {
   return (
     <div>
-      {/*.....points...... */}
+      {/*.....points */}
 
       <section className="point">
         <div className="container point-cont">
