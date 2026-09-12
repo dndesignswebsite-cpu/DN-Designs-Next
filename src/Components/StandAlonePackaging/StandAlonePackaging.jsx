@@ -48,12 +48,12 @@ function StandAlonePackaging({ cards, mobileCrads }) {
                   onMouseEnter={() => setActiveIndex(index)}
                 >
                   <div className="col-lg-2 text-center">
-                    <h3 className="fw-bold packaging-point-number">
+                    <h3 className="packaging-point-number">
                       {card.point}
                     </h3>
                   </div>
                   <div className="col-lg-10 text-start">
-                    <h3 className="fw-semibold packaging-points-title">
+                    <h3 className="packaging-points-title">
                       {card.title}
                     </h3>
                     <p className="packaging-points-para m-0">
@@ -216,11 +216,11 @@ function StandAlonePackaging({ cards, mobileCrads }) {
             />
 
             <div className="d-flex align-items-center">
-              <h3 className="fw-bold packaging-point-number m-0">
+              <h3 className=" packaging-point-number m-0">
                 {card.point || String(index + 1).padStart(2, "0")}
               </h3>
 
-              <h4 className="fw-semibold packaging-points-title ms-4 text-start">
+              <h4 className=" packaging-points-title ms-4 text-start">
                 {card.title}
               </h4>
             </div>

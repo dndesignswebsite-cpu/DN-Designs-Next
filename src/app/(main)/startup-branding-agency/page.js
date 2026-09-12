@@ -277,8 +277,249 @@ async function page() {
       </section>
 
 
+
+        {/* work portfolio */}
+            <section className="portfolio">
+              <div className="container">
+                <h2 className="text-center">
+                  Our<span className="every-pr"> Work Portfolio</span>
+                </h2>
+
+                <div className="row port-row">
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Pureluxe</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          For the protein bar brand ‘Pureluxe’, we crafted a premium packaging design to appeal to its health-conscious and taste-driven consumers. The design captures the essence of indulgence and sophistication while balancing nutrition and flavour appeal. Each of the three variants reflects a modern and premium identity and creates a strong shelf presence.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+
+                        <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                             <video
+            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Enlite</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Label Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it a vibrant yet calming identity: a logo, a character and a can that fizzes with personality and freshness.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                       <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                         <video
+            src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Mr. Bomzy</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Packaging</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Cocktail bomb brand. From identity and packaging to website and social media strategy, we designed a brand as fun and explosive as the product itself.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/fluke.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Fluke</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          For Fluke, a functional beverage brand, we created a clean, premium can design to resonate with its young & health-conscious audience. Through our design, we clearly highlighted key elements such as logo, functional benefits & flavour cues (accent colours behind the logo). With a white background, we created space for every element to shine.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Wlue's</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Packaging</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                         Makhana brand. With a retro superhero-inspired identity and packaging, we gave it main-character energy, making it a Gen Z favourite and the snack aisle hero.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                          <div className="row port-row">
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      {/* <img src="https://dndesigns.co.in/uploads/pages/thames-5.webp" className="img-fluid" /> */}
+                                <video
+            src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>3Sisters</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Packaging</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Premium Non-Alcoholic Drinks Brand. We built the digital home for a full lineup of their non-alcoholic beverages that are anything but ordinary.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Wlue's</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Packaging</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Makhana brand Wlue’s wanted to establish itself as a premium snacking brand globally. Its target audience were Gen Zers. Accordingly, we created colourful and eye-catching packaging designs for all its variants to appeal to its young and fun-loving audience.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Pureluxe</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Premium Protein Bar Brand. We designed the packaging and digital experience that celebrates indulgence and taste while balancing nutrition and health.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                             <video
+            src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>1:AM </h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Web Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
       {/* brand positioni banner image */}
-      <section className="brand-positioning-banner-img">
+      {/* <section className="brand-positioning-banner-img">
         <div className='container'>
           <div className="brand-positioning-banner-img-desktop">
          
@@ -306,14 +547,14 @@ async function page() {
                         />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <BrandIdentityDesignServicesBanner/> */}
 
 
 
      {/* We Are The Leading Video */}
-      <section className="we-are-the-leading">
+      {/* <section className="we-are-the-leading">
         <div className="container">
           <div className="row">
             <h3>
@@ -335,15 +576,40 @@ async function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+       {/* why f and b */}
+                  <section className="why-fandb-section">
+                    <div className="container">
+                    <div className="why-fandb-section-head-div">
+                    <h2 className="why-fandb-section-head">Startup Branding  <span className="why-fandb-section-head-span"> Problem</span></h2>
+                    <TalkToUs/>
+                    </div>
+                      <div className="row">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                          <div className="why-fandb-section-col">
+                            <p className="why-fandb-section-col-para">Founders typically build their brand the way they build everything else in a startup: on instinct, with whoever's available. A cousin who does Canva. A logo from Fiverr. A colour palette was picked because it felt right. None of it is wrong exactly. But it creates a brand that looks assembled rather than purposeful. If your brand doesn't connect instantly, even a great product can't rescue a first impression that feels unprofessional. The result is a brand that struggles at every step - right from attracting customers to achieving sustainable growth.</p>
+                          </div>
+                        </div>
+      
+                         <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                          <div className="why-fandb-section-col">
+                            <p className="why-fandb-section-col-para"> The deeper issue is that branding decisions made at the start are expensive to undo. Packaging that doesn't work at retail. A website that confuses more than it converts. Visual language that doesn't scale. Inconsistent messaging on different platforms. By the time the gaps become obvious, the cost of lost customers, investor hesitation and redesign budgets becomes far higher than getting it right from the beginning. A branding agency for startups can help new businesses sidestep expensive branding errors and create a brand that stands out from day one. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+      
 
 
 
       {/* When to Rewrite Your
       Brand Story */}
-        <section className="characteristics-of-good">
+        {/* <section className="characteristics-of-good">
         <div className="container">
-          {/* 1st row */}
+          1st row
           <div className="row">
           <div className='rewrite-your-brand-story-head'>
             <h2 className="rewrite-your-brand-story-head-mian">
@@ -463,7 +729,7 @@ async function page() {
             </div>
           </div>
 
-          {/* 2nd row */}
+          2nd row
           <div className="row  characteristics-of-good-row-2">
             <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
               <div className=" characteristics-of-good-div m-3">
@@ -520,72 +786,165 @@ async function page() {
               />
             </div>
 
-            {/* <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
-              <div className="p-3 characteristics-of-good-div m-3">
-                <div className="text-center m-5">
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/jewrbhfjGroup 36813 (3).svg"
-                    className="cap-img"
-                  ></img>
-                </div>
-                <div className="characteristics-of-good-btm">
-                  <h3>Strategic Brand Roadmap </h3>
-                  <p>
-                     We build a structured plan connecting strategy to execution, so design, packaging
-                  </p>
-                </div>
-                <div className="characteristics-of-good-back-content">
-                  <h3>Strategic Brand Roadmap </h3>
-                  <p>
-                   We build a structured plan connecting strategy to execution, so design, packaging and campaigns down the line aren't built on guesswork.
-
-                  </p>
-                </div>
-              </div>
-              <img
-                className="characteristics-of-good-check-eye"
-                src={imageUrl + "imgi_2_Frame-427324112.webp"}
-              />
-            </div> */}
-
-            {/* <div className="col-12 col-md-6 col-xxl-3 px-2 characteristics-of-good-main-div">
-              <div className="p-3 characteristics-of-good-div m-3">
-                <div className="text-center m-5">
-                  <img
-                    src="https://dndesigns.co.in/uploads/pages/3relwshfddjvhFrame 427324112 (13).svg"
-                    className="cap-img"
-                  ></img>
-                </div>
-                <div className="characteristics-of-good-btm">
-                  <h3>Brand Tagline  </h3>
-                  <p>
-                     The final element of your brand identity is your tagline, which mostly appears with the brand name. It is a short, catchy phrase that easily sticks
-                  </p>
-                </div>
-                <div className="characteristics-of-good-back-content">
-                  <h3>Brand Tagline  </h3>
-                  <p>
-                The final element of your brand identity is your tagline, which mostly appears with the brand name. It is a short, catchy phrase that easily sticks in the customers’ minds. A good tagline is timeless and conveys the brand’s message, values or promise simply and clearly. 
-
-                  </p>
-                </div>
-              </div>
-              <img
-                className="characteristics-of-good-check-eye"
-                src={imageUrl + "imgi_2_Frame-427324112.webp"}
-              />
-            </div> */}
           </div>
         </div>
-      </section>
+      </section>  */}
 
 
-{/* industries we serve */}
-      {/* <LPBrandIdentityCategorySwipper/> */}
-      {/* <HomePageIndustriesSwipper/> */}
-      {/* IndustriesSectionNewLayout */}
-              <IndustriesSectionNewLayout/>
-              
+       {/* everything-a-food */}
+            <section className="everything-a-food-section">
+              <div className="container">
+                <div className="everything-a-food-section-head-div">
+                  <h2 className="everything-a-food-section-head">
+                    Our Services {" "}
+                    <span className="everything-a-food-section-head-span">
+                      {" "}
+                     Branding Solutions For Startups
+                    </span>
+                  </h2>
+                  <TalkToUs/>
+                </div>
+      
+                <div className="row">
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/brand-identity-design-services">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            01 / Identity
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                            Brand Identity Design
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                             From naming and logo to the full visual system. We build an identity that signals where you're going, not just where you are. One that earns its place in the market without needing an explanation. 
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedidentity.jpg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+      
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/packaging-design">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            02 / Packaging
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                            Packaging Design
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                             Retailers and customers see for three seconds. We design packaging that communicates clearly under that pressure, with the right structure, hierarchy, and shelf presence that converts browsers into buyers.  
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedpackaging-design.jpg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+      
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/website-designing-services-in-india">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            03 / Website
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                            Website Design
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                            Your website works when you don't. We design and build sites that load fast, communicate without friction, turn curiosity into enquiries, and guide the right visitors toward taking the desired next step. 
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/foodandbaveragesupdatedwebsite-design.jpg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+      
+                <div className="row">
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/digital-marketing-agency-in-noida">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            04 / Marketing
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                           Digital Marketing
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                            Today, a majority of your customers explore, engage, and shop online. We offer strategic digital marketing services, like social media and influencer marketing, that help you reach, engage, and convert the right audience. 
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/startupbrandingdigal-marketing.jpg.jpeg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+      
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/photography">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            05 / Photography
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                            Photography
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                            Visuals create connections in a way words alone cannot. We offer professional photography services to help you capture attention, build connection, and inspire action. Impactful in every way! 
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/fmcg-pagevisual-assets.jpg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+      
+                  <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+                    <Link href="/animation">
+                      <div className="everything-a-food-section-col">
+                        <div className="everything-a-food-section-col-content-div">
+                          <p className="everything-a-food-section-col-content-div-para-label">
+                            06 / Animation
+                          </p>
+                          <h2 className="everything-a-food-section-col-content-div-head">
+                            Animation
+                          </h2>
+                          <p className="everything-a-food-section-col-content-div-para-desc">
+                             Motion communicates what static design can't. We create brand animations that simplify complex ideas, add personality to digital touchpoints and give your startup a presence that feels considered and current. 
+                          </p>
+                        </div>
+                        <img
+                          src="https://dndesigns.co.in/uploads/pages/startupbarndigewvhsdanimation.jpg.jpeg"
+                          className="img-fluid everything-a-food-section-col-img"
+                        ></img>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+
+
 
       
 
@@ -746,6 +1105,15 @@ async function page() {
                     </div>
                     <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />    
                   </section>
+
+
+                  
+{/* industries we serve */}
+      {/* <LPBrandIdentityCategorySwipper/> */}
+      {/* <HomePageIndustriesSwipper/> */}
+      {/* IndustriesSectionNewLayout */}
+              <IndustriesSectionNewLayout/>
+              
 
 
 

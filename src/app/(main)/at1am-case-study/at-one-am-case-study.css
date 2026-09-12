@@ -896,6 +896,9 @@
 /* Mobile */
 
 @media (max-width: 767px) {
+    .at-one-am-can-glb-box-video{
+    padding-top: 80px;
+}
     .banner-after-hero-img-mobile,
     .color-palate-mobile-video,
     .footer-video-mobile,
@@ -1217,3 +1220,5 @@
         font-size: 120px;
     }
 }
+
+
