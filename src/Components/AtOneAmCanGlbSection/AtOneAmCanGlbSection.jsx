@@ -94,7 +94,7 @@ const CAN_TEXTS = [
   {
     leftEyebrow: "Function With Attitude",
 
-    leftTitle: "BREWED PROTEIN",
+    leftTitle: (<><span className="brwed-protien-1">BREWED PROTEIN</span></>),
 
     leftSubTitle:
       "Built For More",
@@ -110,7 +110,9 @@ const CAN_TEXTS = [
   {
     leftEyebrow: "A New Take On Classic ",
 
-    leftTitle: "Lactose-Free Classic ",
+    leftTitle: (<><span className="brwed-protien-2">Lactose-Free Classic </span></>),
+
+   
 
     leftSubTitle:
       "Same Classic. New Rules",
@@ -126,7 +128,9 @@ const CAN_TEXTS = [
     {
     leftEyebrow: "A Richer Shade Of Indulgence ",
 
-    leftTitle: "Lactose-Free Hazelnut",
+     leftTitle: (<><span className="brwed-protien-3">Lactose-Free Hazelnut </span></>),
+
+    
 
     leftSubTitle:
       "Deep Flavour. Deeper Purple. ",
@@ -141,7 +145,8 @@ const CAN_TEXTS = [
   {
     leftEyebrow: "Bold By Design",
 
-    leftTitle: "CLASSIC COLD",
+    leftTitle: (<><span className="brwed-protien-4">CLASSIC COLD </span></>),
+
 
     leftSubTitle:
       "Made For 1 AM",
@@ -156,7 +161,9 @@ const CAN_TEXTS = [
    {
     leftEyebrow: "Richness, Reimagined",
 
-    leftTitle: "Lactose-Free Mocha",
+    leftTitle: (<><span className="brwed-protien-5">Lactose-Free Mocha</span></>),
+
+   
 
     leftSubTitle:
       "Made For Indulgence",
