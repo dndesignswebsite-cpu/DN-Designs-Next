@@ -27,12 +27,14 @@ const UPLOAD_DIRS = {
 const FILE_SIZE_LIMITS = {
   image: 10 * 1024 * 1024, // 10MB for images
   video: 50 * 1024 * 1024, // 50MB for videos
+   model: 50 * 1024 * 1024,
   default: 10 * 1024 * 1024, // 10MB default
 };
 
 // Allowed file types
 const ALLOWED_IMAGE_TYPES = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"];
 const ALLOWED_VIDEO_TYPES = [".mp4", ".mov", ".avi", ".mkv", ".webm", ".m4v"];
+const ALLOWED_MODEL_TYPES = [".glb"];
 
 /**
  * Ensure upload directories exist
@@ -140,6 +142,16 @@ const getFileTypeFromBuffer = (buffer) => {
       return { extension: ".webp", type: "image" };
     }
   }
+
+  // Check for GLB / binary glTF
+const glbMagic = buffer.slice(0, 4).toString("ascii");
+
+if (glbMagic === "glTF") {
+  return {
+    extension: ".glb",
+    type: "model",
+  };
+}
 
   return { extension: ".bin", type: "unknown" };
 };
@@ -462,7 +474,7 @@ export const listFiles = async (folder = "images") => {
     }
 
     const files = await fs.promises.readdir(uploadDir);
-    const allowedExtensions = [...ALLOWED_IMAGE_TYPES, ...ALLOWED_VIDEO_TYPES];
+    const allowedExtensions = [...ALLOWED_IMAGE_TYPES, ...ALLOWED_VIDEO_TYPES,  ...ALLOWED_MODEL_TYPES]; 
 
     return files
       .filter((file) => {
@@ -501,4 +513,5 @@ export default {
   FILE_SIZE_LIMITS,
   ALLOWED_IMAGE_TYPES,
   ALLOWED_VIDEO_TYPES,
+  ALLOWED_MODEL_TYPES
 };
