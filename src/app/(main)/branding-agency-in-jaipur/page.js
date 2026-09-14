@@ -306,7 +306,7 @@ async function page() {
               <div className="image-box-city-page">
                 {/* <img src={imageUrl + "city.webp"} className="img-fluid" /> */}
                 <Image
-                  src={imageUrl + "city.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic11threepoints.jpeg"
                   className="responsive-img image-box-city-page-img"
                   alt="home city page image"
                   width={1500}
@@ -322,7 +322,7 @@ async function page() {
               <div className="image-box-city-page">
                 {/* <img src={imageUrl + "city-2.webp"} className="img-fluid" /> */}
                 <Image
-                  src={imageUrl + "city-2.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic22threepoints.jpeg"
                   className="responsive-img image-box-city-page-img"
                   alt="home city page image"
                   width={1500}
@@ -369,7 +369,7 @@ async function page() {
               <div className="image-box-city-page">
                 {/* <img src={imageUrl + "city-3.webp"} className="img-fluid" /> */}
                 <Image
-                  src={imageUrl + "city-3.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic33threepoints.jpeg"
                   className="responsive-img image-box-city-page-img"
                   alt="home city page image"
                   width={1500}
