@@ -34,10 +34,12 @@ gsap.registerPlugin(ScrollTrigger);
    ========================================================= */
 
 const CAN_URLS = [
+  
   "https://cdn.shopify.com/3d/models/4736f120088f934d/white-can.glb",
-  "https://cdn.shopify.com/3d/models/23b63ce912d63061/green-can-webp.glb",
-  "https://cdn.shopify.com/3d/models/63f965b2f7f54f83/purple-can.glb",
   "https://cdn.shopify.com/3d/models/c6ce06913493cb12/dark-blue-draco.glb",
+  "https://cdn.shopify.com/3d/models/23b63ce912d63061/green-can-webp.glb",
+  
+  "https://cdn.shopify.com/3d/models/63f965b2f7f54f83/purple-can.glb",
   "https://cdn.shopify.com/3d/models/0b915d17c4a51689/brown-can-draco.glb",
 ];
 
@@ -106,6 +108,24 @@ const CAN_TEXTS = [
       "The oversized “BREWED PROTEIN” typography turns the functional proposition into the visual hero, with 18g protein reinforcing the product’s performance-led positioning. The cream-and-blue palette adds distinction, while handwritten “Coffee” brings back the playful 1:AM character. ",
   },
 
+   {
+    leftEyebrow: "Bold By Design",
+
+    leftTitle: (<><span className="brwed-protien-4">CLASSIC COLD </span></>),
+
+
+    leftSubTitle:
+      "Made For 1 AM",
+
+    rightTitle:
+      "Vibrant Coffee Branding ",
+
+    rightDescription:
+      "The blue-and-orange palette lends a bright, energetic presence, while the oversized “CLASSIC COLD” makes the core product instantly recognisable. The handwritten “Coffee” feels playful and human, while the orange coffee-bean graphic introduces a subtle category cue.",
+  },
+
+ 
+
 
   {
     leftEyebrow: "A New Take On Classic ",
@@ -140,22 +160,6 @@ const CAN_TEXTS = [
 
     rightDescription:
       "The deep purple palette gives Hazelnut the most distinctive colour territory in the range, creating a richer, more premium feel. The vertical “HAZELNUT” badge makes the flavour easy to spot, while the warm accents add a subtle sense of indulgence.",
-  },
-
-  {
-    leftEyebrow: "Bold By Design",
-
-    leftTitle: (<><span className="brwed-protien-4">CLASSIC COLD </span></>),
-
-
-    leftSubTitle:
-      "Made For 1 AM",
-
-    rightTitle:
-      "Vibrant Coffee Branding ",
-
-    rightDescription:
-      "The blue-and-orange palette lends a bright, energetic presence, while the oversized “CLASSIC COLD” makes the core product instantly recognisable. The handwritten “Coffee” feels playful and human, while the orange coffee-bean graphic introduces a subtle category cue.",
   },
 
    {

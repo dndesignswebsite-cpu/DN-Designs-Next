@@ -151,7 +151,8 @@ export default function GalleryPage() {
                 multiple
                 style={{ display: "none" }}
                 onChange={handleFileChange}
-                accept="image/*,video/*"
+                // accept="image/*,video/*"
+                accept="image/*,video/*,.glb"
                 disabled={isUploading}
               />
             </label>
