@@ -35,12 +35,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const CAN_URLS = [
   
-  "https://cdn.shopify.com/3d/models/4736f120088f934d/white-can.glb",
-  "https://cdn.shopify.com/3d/models/c6ce06913493cb12/dark-blue-draco.glb",
-  "https://cdn.shopify.com/3d/models/23b63ce912d63061/green-can-webp.glb",
-  
-  "https://cdn.shopify.com/3d/models/63f965b2f7f54f83/purple-can.glb",
-  "https://cdn.shopify.com/3d/models/0b915d17c4a51689/brown-can-draco.glb",
+  "https://dndesigns.co.in/uploads/misc/white-can.glb",
+  "https://dndesigns.co.in/uploads/misc/dark-blue-draco.glb",
+  "https://dndesigns.co.in/uploads/misc/green-can-webp.glb",
+  "https://dndesigns.co.in/uploads/misc/purple-can.glb",
+  "https://dndesigns.co.in/uploads/misc/brown-can-draco.glb",
 ];
 
 
