@@ -26,11 +26,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("supplement-branding", null, false);
+    seo = await getPageById("skincare-branding", null, false);
   } catch (error) {
-    console.log("Supplement Branding", error);
+    console.log("Skincare Branding", error);
     return {
-      title: "Supplement Branding",
+      title: "Skincare Branding",
       robots: "noindex, nofollow",
     };
   }
@@ -79,7 +79,7 @@ async function page() {
           await connectDB();
           let pageData;
           try {
-            pageData = await getPageById("supplement-branding", null, true);
+            pageData = await getPageById("skincare-branding", null, true);
           } catch (error) {
             notFound();
           }
@@ -321,7 +321,7 @@ async function page() {
          {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "supplement-branding"}`}
+          key={`schema-page-${pageData._id || "skincare-branding"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />

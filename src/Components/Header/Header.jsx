@@ -524,7 +524,7 @@ export default function Header() {
 
                     <li>
                       <Link
-                        href="/at1am-case-study"
+                        href="/1am-case-study"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
                           pathname === "/grincare-case-study"
@@ -1382,7 +1382,7 @@ export default function Header() {
 
                         <li>
                           <Link
-                            href="/at1am-case-study"
+                            href="/1am-case-study"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >

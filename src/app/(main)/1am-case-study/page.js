@@ -27,11 +27,11 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("at1am-case-study", null, false);
+    seo = await getPageById("1am-case-study", null, false);
   } catch (error) {
-    console.log("@ One Am Case Study Error", error);
+    console.log("At One Am Case Study Error", error);
     return {
-      title: "@ One Am Case Study",
+      title: "At One Am Case Study",
       robots: "noindex, nofollow",
     };
   }
@@ -84,7 +84,7 @@ async function page() {
       await connectDB();
       let pageData;
       try {
-        pageData = await getPageById("at1am-case-study", null, true);
+        pageData = await getPageById("1am-case-study", null, true);
       } catch (error) {
         notFound();
       }
@@ -112,7 +112,7 @@ async function page() {
      {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "at1am-case-study"}`}
+          key={`schema-page-${pageData._id || "1am-case-study"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />

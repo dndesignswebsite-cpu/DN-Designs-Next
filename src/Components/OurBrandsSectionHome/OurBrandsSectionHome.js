@@ -20,7 +20,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
           <ul className={`${styles["cards"]}`}>
 
           
-             <Link href="/at1am-case-study" scroll={true}>
+             <Link href="/1am-case-study" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -216,7 +216,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
 
 
                <Link
-                href="/at1am-case-study"
+                href="/1am-case-study"
                 className={styles["mobile-casestudy-wrapper-link"]}
                 scroll={true}
               >
