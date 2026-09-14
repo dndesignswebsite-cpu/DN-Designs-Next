@@ -162,11 +162,211 @@ export const sendContactNotification = async (
     }
   });
 
-  return await sendEmail({
-    to: recipients,
-    subject: `New Contact Form Submission from ${name}`,
-    html: html,
+
+
+
+  // return await sendEmail({
+  //   to: recipients,
+  //   subject: `New Contact Form Submission from ${name}`,
+  //   html: html,
+  // });
+
+
+
+  // Send admin notification
+const adminEmailResult = await sendEmail({
+  to: recipients,
+  subject: `New Contact Form Submission from ${name}`,
+  html: html,
+});
+
+// Send thank-you email to the person who submitted the form
+try {
+  await sendEmail({
+    to: email,
+    subject: "Thank You for Contacting DN Designs",
+    html: `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+
+        <body style="
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f5;
+          font-family: Arial, Helvetica, sans-serif;
+        ">
+
+          <div style="
+            width: 100%;
+            padding: 40px 0;
+            background-color: #f4f4f5;
+          ">
+
+            <div style="
+              max-width: 600px;
+              margin: 0 auto;
+              background: #ffffff;
+              border-radius: 16px;
+              overflow: hidden;
+            ">
+
+              <!-- Header -->
+              <div style="
+                background: linear-gradient(135deg, #111827, #374151);
+                padding: 40px 30px;
+                text-align: center;
+              ">
+
+                <div style="
+                  font-size: 28px;
+                  font-weight: 800;
+                  color: #ffffff;
+                  margin-bottom: 8px;
+                ">
+                  DN Designs
+                </div>
+
+                <p style="
+                  margin: 0;
+                  color: #d1d5db;
+                  font-size: 14px;
+                ">
+                  Thank you for reaching out
+                </p>
+
+              </div>
+
+              <!-- Content -->
+              <div style="padding: 40px 30px;">
+
+                <h1 style="
+                  margin: 0 0 20px;
+                  font-size: 24px;
+                  color: #111827;
+                ">
+                  Thank You, ${name}!
+                </h1>
+
+                <p style="
+                  margin: 0 0 18px;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #374151;
+                ">
+                  Thank you for contacting DN Designs.
+                  We have successfully received your enquiry.
+                </p>
+
+                <p style="
+                  margin: 0 0 25px;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #374151;
+                ">
+                  Our team will review your requirements and
+                  get back to you shortly.
+                </p>
+
+                <!-- Message -->
+                <div style="
+                  background: #f9fafb;
+                  border-left: 4px solid #3b82f6;
+                  padding: 18px;
+                  border-radius: 8px;
+                  margin: 25px 0;
+                ">
+
+                  <p style="
+                    margin: 0 0 8px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #6b7280;
+                    font-weight: 700;
+                  ">
+                    Your Enquiry
+                  </p>
+
+                  <p style="
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #374151;
+                  ">
+                    ${message.replace(/\n/g, "<br>")}
+                  </p>
+
+                </div>
+
+                <p style="
+                  margin: 25px 0 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: #6b7280;
+                ">
+                  We appreciate your interest in working with us.
+                </p>
+
+                <p style="
+                  margin: 25px 0 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: #374151;
+                ">
+                  Best regards,<br>
+                  <strong>DN Designs Team</strong>
+                </p>
+
+              </div>
+
+              <!-- Footer -->
+              <div style="
+                background: #f9fafb;
+                padding: 24px;
+                text-align: center;
+                color: #9ca3af;
+                font-size: 12px;
+                border-top: 1px solid #e5e7eb;
+              ">
+                <p style="margin: 0 0 6px;">
+                  DN Designs
+                </p>
+
+                <p style="margin: 0;">
+                  This is an automated confirmation email.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </body>
+      </html>
+    `,
   });
+
+  console.log(
+    "✅ Contact thank-you email sent successfully to:",
+    email
+  );
+} catch (error) {
+  // Thank-you email failure should NOT fail the form submission
+  logError(error, {
+    function: "sendContactNotification",
+    operation: "sendContactThankYouEmail",
+    recipient: email,
+  });
+}
+
+return adminEmailResult;
+
+
+
 };
 
 /**
@@ -706,18 +906,266 @@ This is an automated notification.
       html: html,
     };
 
+    // const info = await transporter.sendMail(mailOptions);
+
+    // console.log(
+    //   "✅ Landing Page enquiry email sent successfully:",
+    //   info.messageId,
+    // );
+
+    // return {
+    //   success: true,
+    //   messageId: info.messageId,
+    //   recipients: recipients.length,
+    // };
+
+
+
+
     const info = await transporter.sendMail(mailOptions);
 
-    console.log(
-      "✅ Landing Page enquiry email sent successfully:",
-      info.messageId,
-    );
+console.log(
+  "✅ Landing Page enquiry email sent successfully:",
+  info.messageId,
+);
 
-    return {
-      success: true,
-      messageId: info.messageId,
-      recipients: recipients.length,
-    };
+// ==========================================
+// SEND THANK-YOU EMAIL TO LP FORM USER
+// ==========================================
+
+try {
+  await sendEmail({
+    to: email,
+    subject: "Thank You for Your Enquiry - DN Designs",
+    html: `
+      <!DOCTYPE html>
+      <html>
+
+        <head>
+          <meta charset="utf-8">
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          >
+        </head>
+
+        <body style="
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f5;
+          font-family: Arial, Helvetica, sans-serif;
+        ">
+
+          <div style="
+            width: 100%;
+            padding: 40px 0;
+            background-color: #f4f4f5;
+          ">
+
+            <div style="
+              max-width: 600px;
+              margin: 0 auto;
+              background: #ffffff;
+              border-radius: 16px;
+              overflow: hidden;
+            ">
+
+              <!-- Header -->
+              <div style="
+                background: linear-gradient(135deg, #111827, #374151);
+                padding: 45px 30px;
+                text-align: center;
+              ">
+
+                <div style="
+                  font-size: 28px;
+                  font-weight: 800;
+                  color: #ffffff;
+                  margin-bottom: 10px;
+                ">
+                  DN Designs
+                </div>
+
+                <p style="
+                  margin: 0;
+                  color: #d1d5db;
+                  font-size: 14px;
+                ">
+                  Let's build your brand
+                </p>
+
+              </div>
+
+              <!-- Content -->
+              <div style="padding: 40px 30px;">
+
+                <h1 style="
+                  margin: 0 0 20px;
+                  font-size: 24px;
+                  color: #111827;
+                ">
+                  Thank You, ${name}!
+                </h1>
+
+                <p style="
+                  margin: 0 0 18px;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #374151;
+                ">
+                  Thank you for reaching out to DN Designs.
+                  We have received your project enquiry.
+                </p>
+
+                <p style="
+                  margin: 0 0 25px;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #374151;
+                ">
+                  Our team will review your requirements and
+                  get back to you shortly.
+                </p>
+
+                <!-- Service -->
+                <div style="
+                  background: #f9fafb;
+                  padding: 18px;
+                  border-radius: 8px;
+                  margin-bottom: 15px;
+                ">
+
+                  <p style="
+                    margin: 0 0 7px;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #6b7280;
+                    font-weight: 700;
+                  ">
+                    Service You're Looking For
+                  </p>
+
+                  <p style="
+                    margin: 0;
+                    font-size: 16px;
+                    color: #111827;
+                    font-weight: 600;
+                  ">
+                    ${serviceRequired}
+                  </p>
+
+                </div>
+
+                <!-- Project Details -->
+                <div style="
+                  background: #f9fafb;
+                  border-left: 4px solid #3b82f6;
+                  padding: 18px;
+                  border-radius: 8px;
+                  margin-bottom: 25px;
+                ">
+
+                  <p style="
+                    margin: 0 0 8px;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #6b7280;
+                    font-weight: 700;
+                  ">
+                    Project Details
+                  </p>
+
+                  <p style="
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #374151;
+                  ">
+                    ${projectDetails.replace(/\n/g, "<br>")}
+                  </p>
+
+                </div>
+
+                <p style="
+                  margin: 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: #6b7280;
+                ">
+                  We appreciate your interest in working with us.
+                  We're excited to learn more about your project.
+                </p>
+
+                <p style="
+                  margin: 25px 0 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: #374151;
+                ">
+                  Best regards,<br>
+                  <strong>DN Designs Team</strong>
+                </p>
+
+              </div>
+
+              <!-- Footer -->
+              <div style="
+                background: #f9fafb;
+                padding: 24px;
+                text-align: center;
+                color: #9ca3af;
+                font-size: 12px;
+                border-top: 1px solid #e5e7eb;
+              ">
+
+                <p style="margin: 0 0 6px;">
+                  DN Designs
+                </p>
+
+                <p style="margin: 0;">
+                  This is an automated confirmation email.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </body>
+
+      </html>
+    `,
+  });
+
+  console.log(
+    "✅ LP thank-you email sent successfully to:",
+    email
+  );
+
+} catch (error) {
+
+  // Do NOT fail the LP form if thank-you email fails
+  logError(error, {
+    function: "sendLPFormEmail",
+    operation: "sendLPThankYouEmail",
+    recipient: email,
+  });
+
+}
+
+return {
+  success: true,
+  messageId: info.messageId,
+  recipients: recipients.length,
+};
+
+
+
+
+
   } catch (error) {
     logError(error, {
       function: "sendLPFormEmail",
