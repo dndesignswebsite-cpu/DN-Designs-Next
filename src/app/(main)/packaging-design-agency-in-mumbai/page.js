@@ -313,7 +313,7 @@ async function page() {
                   className="img-fluid"
                 /> */}
                 <Image
-                  src={imageUrl + "Packaging-Design.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesnextimagedesignpackaging11.jpeg"
                   className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
@@ -332,7 +332,7 @@ async function page() {
                   className="img-fluid"
                 /> */}
                 <Image
-                  src={imageUrl + "How-We-Help-Your-Product-Stand-Out.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesnextimagedesignpackaging22packaging-2.jpg.jpeg"
                   className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
@@ -384,7 +384,7 @@ async function page() {
                 /> */}
 
                 <Image
-                  src={imageUrl + "Ready-to-Win-Every-Heart.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/citypagesnextimagedesignpackaging33packaging-1.jpg.jpeg"
                   className="responsive-img image-box-city-page-img packaging-design-img-next-section"
                   alt="home city page image"
                   width={1500}
