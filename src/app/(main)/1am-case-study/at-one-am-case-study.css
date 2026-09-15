@@ -1015,7 +1015,7 @@
 
     .skate-board-mobile {
         display: block;
-        margin-bottom: 50px !important;
+        margin-bottom: 130px !important;
     }
 
     .skate-board-section-mobile-img-one {
@@ -1219,6 +1219,11 @@
     .it-began-section-row-col-para-3 {
         font-size: 120px;
     }
+}
+
+
+.at-one-am-can-glb-box-video{
+    margin-top: -200px;
 }
 
 
