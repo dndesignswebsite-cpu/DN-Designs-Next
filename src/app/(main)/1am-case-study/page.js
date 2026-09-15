@@ -587,7 +587,7 @@ async function page() {
       
 
       <div className="at-one-am-can-glb-box-video">
-      <LazyVideo src="https://dndesigns.co.in/uploads/videos/wevgsahdvwhevdhjBox2(1)(3)(1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
+      <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneamboxfinalfinalmustfinalvideowebsitevideo(1)(1)(1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
       </div>
 
 
@@ -784,7 +784,6 @@ condensed </p>
                     <p className="one-am-para-text-right">
       <BlockReveal>
        brewing dreams one can at a time.
-
       </BlockReveal>
     </p>
             </div>
