@@ -584,10 +584,10 @@ async function page() {
 </div>
       </section>
 
-      
 
-      <div className="at-one-am-can-glb-box-video">
-      <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneamboxfinalfinalmustfinalvideowebsitevideo(1)(1)(1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay loop muted playsInline rootMargin="600px" />
+      <div className='blue-background-section'></div>
+      <div className="at-one-am-can-glb-box-video container">
+      <LazyVideo src="https://dndesigns.co.in/uploads/videos/atoneamboxfinalfinalmustfinalvideowebsitevideo(1)(1)(1).mp4" className="shot-show-reel-video" eager={false} preload="none" autoPlay  muted playsInline rootMargin="600px" />
       </div>
 
 
