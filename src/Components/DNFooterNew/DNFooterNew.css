@@ -1,6 +1,6 @@
 .DNFooterNewSection{
     padding: 60px 0 0 0;
-    background-color: #272727;
+    background-color: #000;
 }
 
 .DNFooterNew-head-div{
@@ -11,12 +11,61 @@
 }
 
 .DNFooterNew-head{
-    width: 40%;
+    width: 38%;
+    color: #fff;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.DNFooterNew-para{
+     font-family: var(--font-helvetica);
+     font-size: 40px;
+     font-weight: 400;
+     color:#fff;
+}
+
+.DNFooterNew-footer-list-label{
     color: rgba(255, 255, 255, 0.5);
     font-family: var(--font-helvetica);
     font-weight: 400;
+    font-size: 20px;
 }
 
-/* .DNFooterNew-para{
+.DNFooterNew-footer-list-item-div{
+margin-left: 0;
+    padding-left: 0;
+}
 
-} */
+.DNFooterNew-footer-list-item{
+    color: #fff;
+    font-family: var(--font-helvetica);
+    font-weight: 300;
+    font-size: 20px;
+    list-style: none;
+}
+
+.footer-dn-logo-div{
+    padding-top: 60px;
+}
+
+.footer-dn-logo{
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:991px){
+    .DNFooterNew-head{
+        font-size: 30px;
+        width: 100%;
+    }
+    .DNFooterNew-para{
+        font-size: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .DNFooterNew-head-div{
+        flex-direction: column;
+        align-items: start;
+    }
+}
