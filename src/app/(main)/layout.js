@@ -11,6 +11,7 @@ import PageLoader from "@/Components/PageLoader/PageLoader";
 // add lp
 import TawkToChat from "@/Components/TawkToChat/TawkToChat";
 import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
+import Chatbot from "@/Components/Chatbot/Chatbot";
 
 /* =========================
    METADATA (HOME PAGE)
@@ -134,6 +135,7 @@ export default function MainLayout({ children }) {
 {/* lp */}
 <MicrosoftClarity />
       <TawkToChat />
+      {/* <Chatbot/> */}
 
     </>
   );

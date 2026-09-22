@@ -20,6 +20,7 @@ import {
   faTags,
   faPlus,
   faImage,
+  faComments,
 } from "@fortawesome/free-solid-svg-icons";
 import "./AdminSidebar.css";
 
@@ -111,6 +112,12 @@ export default function AdminSidebar({ user, onLogout, collapsed, onToggle }) {
       label: "Emails",
       show: true,
     },
+    {
+  path: "/admin/chats",
+  icon: faComments,
+  label: "Chats",
+  show: true,
+},
     {
       path: "/admin/users",
       icon: faAddressBook,
