@@ -346,143 +346,9 @@ async function page() {
                 </h2>
 
                 <div className="row port-row">
-               
-                        <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
-                    <div className="port-div">
-                             <video
-            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
-            width="100%"
-            autoPlay 
-            muted
-            loop
-            playsInline
-            className=""
-          />
-                      <div className="port-content">
-                        <div className="potfolio-div-btns">
-                          <div className="port-div-headg">
-                            <h3>Enlite</h3>
-                          </div>
-                          <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Label Design</h4>
-                            <h4 className="our-port-btn">Brand Identity</h4>
-                          </div>
-                        </div>
-      
-                        <p>
-                          Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it a vibrant yet calming identity: a logo, a character and a can that fizzes with personality and freshness.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
 
 
-                       <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
-                    <div className="port-div">
-                         <video
-            src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
-            width="100%"
-            autoPlay 
-            muted
-            loop
-            playsInline
-            className=""
-          />
-                      <div className="port-content">
-                        <div className="potfolio-div-btns">
-                          <div className="port-div-headg">
-                            <h3>Mr. Bomzy</h3>
-                          </div>
-                          <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Packaging</h4>
-                            <h4 className="our-port-btn">Web Design</h4>
-                          </div>
-                        </div>
-      
-                        <p>
-                        Cocktail bomb brand. From identity and packaging to website and social media strategy, we designed a brand as fun and explosive as the product itself.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
-                    <div className="port-div">
-                      <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
-                      <div className="port-content">
-                        <div className="potfolio-div-btns">
-                          <div className="port-div-headg">
-                            <h3>Wlue's</h3>
-                          </div>
-                          <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Brand Identity</h4>
-                            <h4 className="our-port-btn">Packaging</h4>
-                          </div>
-                        </div>
-      
-                        <p>
-                         Makhana brand. With a retro superhero-inspired identity and packaging, we gave it main-character energy, making it a Gen Z favourite and the snack aisle hero.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                          <div className="row port-row">
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
-                    <div className="port-div">
-                                <video
-            src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
-            width="100%"
-            autoPlay 
-            muted
-            loop
-            playsInline
-            className=""
-          />
-                      <div className="port-content">
-                        <div className="potfolio-div-btns">
-                          <div className="port-div-headg">
-                            <h3>3Sisters</h3>
-                          </div>
-                          <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Packaging</h4>
-                            <h4 className="our-port-btn">Web Design</h4>
-                          </div>
-                        </div>
-      
-                        <p>
-                        Premium Non-Alcoholic Drinks Brand. We built the digital home for a full lineup of their non-alcoholic beverages that are anything but ordinary.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-              
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
-                    <div className="port-div">
-                      <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" />
-                      <div className="port-content">
-                        <div className="potfolio-div-btns">
-                          <div className="port-div-headg">
-                            <h3>Pureluxe</h3>
-                          </div>
-                          <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Brand Identity</h4>
-                            <h4 className="our-port-btn">Label Design</h4>
-                          </div>
-                        </div>
-      
-                        <p>
-                          Premium Protein Bar Brand. We designed the packaging and digital experience that celebrates indulgence and taste while balancing nutrition and health.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
                     <div className="port-div">
                              <video
             src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4"
@@ -510,6 +376,178 @@ async function page() {
                       </div>
                     </div>
                   </div>
+               
+                         <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                             {/* <video
+            src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          /> */}
+
+          <img src="https://dndesigns.co.in/uploads/pages/let.jpg" className="img-fluid"/>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Let’s Supp</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Label Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                         Nutraceutical Brand. We built a cohesive identity, packaging, and digital design to reflect simplicity, consistency, and care - inspiring trust and making wellness a daily ritual.
+                        </p>
+                      </div>
+                    </div>
+                  </div> 
+
+
+                       {/* <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                         <video
+            src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Mr. Bomzy</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Packaging</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Cocktail bomb brand. From identity and packaging to website and social media strategy, we designed a brand as fun and explosive as the product itself.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Wlue's</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Packaging</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                         Makhana brand. With a retro superhero-inspired identity and packaging, we gave it main-character energy, making it a Gen Z favourite and the snack aisle hero.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                          <div className="row port-row">
+
+                            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                             {/* <video
+            src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          /> */}
+          <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"/>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>NectarPure</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Logo Design</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Whey protein brand. We crafted a clean, minimal identity and label design to position it as a lifestyle product, not another gym supplement. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                                <video
+            src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
+            width="100%"
+            autoPlay 
+            muted
+            loop
+            playsInline
+            className=""
+          />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>3Sisters</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">UI/UX</h4>
+                            <h4 className="our-port-btn">Web Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Premium Non-Alcoholic Drinks Brand. We built the digital home for a full lineup of their non-alcoholic beverages that are anything but ordinary.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+              
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/lppackgingorgainc.gif" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Iorganic</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          Organic Food & Dairy brand. We brought a refined, nature-inspired aesthetic to their festive and corporate gift boxes, ensuring the unboxing experience is as special as what's inside.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                
+
                 </div>
 
 
@@ -532,8 +570,8 @@ async function page() {
                             <h3>Kozu</h3>
                           </div>
                           <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Packaging</h4>
-                            <h4 className="our-port-btn">Web Design</h4>
+                            <h4 className="our-port-btn">Logo Design</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
                           </div>
                         </div>
       
@@ -554,7 +592,7 @@ async function page() {
                             <h3>Miatra</h3>
                           </div>
                           <div className="our-port-btn-up">
-                            <h4 className="our-port-btn">Brand Identity</h4>
+                            <h4 className="our-port-btn">Logo Design</h4>
                             <h4 className="our-port-btn">Label Design</h4>
                           </div>
                         </div>
