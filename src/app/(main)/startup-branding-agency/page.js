@@ -513,6 +513,76 @@ async function page() {
                     </div>
                   </div>
                 </div>
+
+
+                 <div className="row port-row">
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                        <img src="https://dndesigns.co.in/uploads/pages/ourbrandsworkindusrtrypageskozu.jpg" className="img-fluid"></img>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Kozu</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Logo Design</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Caffeinated water brand. For this first-of-its-kind beverage in India, we designed a bold and minimal brand identity and packaging to help it stand out, build trust and boost recall.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+              
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/rekwhrfdjbrrat_03.jpg.jpeg" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Brrat</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Label Design</h4>
+                            <h4 className="our-port-btn">Packaging</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                         For Brrat Energy drink, our work spanned brand identity, logo, can packaging and website design - each built to hit as hard and be as unapologetic as the drink itself.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                      
+           <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid'></img>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Doodh Soda</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Web Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          A category first: India’s first milk-based soda brand. We built a brand identity and label design that felt just as unexpected, bold, expressive, confident and fun as the product itself. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </section>
 
