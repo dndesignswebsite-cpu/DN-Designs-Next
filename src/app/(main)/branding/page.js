@@ -210,9 +210,9 @@ async function page() {
             Our<span className="every-pr"> Work Portfolio</span>
           </h2>
           <div className="row port-row">
-            <div className="col-12 col-md-6 px-2 port-main-div ">
+            {/* <div className="col-12 col-md-6 px-2 port-main-div ">
               <div className="port-div">
-                {/* <img src={imageUrl + "Enlite-3.webp"} className="img-fluid" /> */}
+               
 
                 <Image
                   src={imageUrl + "Enlite-3.webp"}
@@ -241,7 +241,42 @@ async function page() {
                   </p>
                 </div>
               </div>
+            </div> */}
+
+
+            <div className="col-12 col-md-6 px-2 port-main-div ">
+              <div className="port-div">
+                {/* <img src={imageUrl + "Enlite-3.webp"} className="img-fluid" /> */}
+
+                {/* <Image
+                  src={imageUrl + "Enlite-3.webp"}
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                    sizes="(max-width:768px) 100vw, 50vw"
+                /> */}
+
+                <video src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4" width="100%" autoPlay muted loop playsinline class="responsive-img port-div-img"></video>
+
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>1AM</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Label Design</h4>
+                      <h4 className="our-port-btn">Packaging</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                    Canned Cold Coffee Brand. From logo and identity to website and social media, we brewed a bold and pretty cool brand that Gen Z love vibing with.
+                  </p>
+                </div>
+              </div>
             </div>
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className="port-div">
                 {/* <img src={imageUrl + "I-organic.webp"} className="img-fluid" /> */}
@@ -311,7 +346,7 @@ async function page() {
                 {/* <img src={imageUrl + "Deeproots.webp"} className="img-fluid" /> */}
 
                 <Image
-                 src={imageUrl + "Deeproots.webp"} 
+                 src="https://dndesigns.co.in/uploads/pages/industrypagesiwehjdsmiatra.jpg.jpeg"
                   alt="branding page"
                   width={750}
                   height={750}
@@ -321,20 +356,16 @@ async function page() {
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
-                      <h3>Deeproot</h3>
+                      <h3>Miatra</h3>
                     </div>
                     <div className="our-port-btn-up">
-                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Logo Design</h4>
                       <h4 className="our-port-btn">Label Design</h4>
                     </div>
                   </div>
 
                   <p>
-                    Deeproot, offering wholesome snacks, collaborated with our
-                    creative design agency to strengthen their brand presence in
-                    the market. Our range of services for them included identity
-                    design, packaging design, UI/UX design and website
-                    development.
+                    For Miatra, a makhana brand from the Mithila region of Bihar, we crafted a complete visual identity and label design inspired by the famous Mithila art. The design reflects the art’s visual richness and Bihar’s makhana heritage.
                   </p>
                 </div>
               </div>
@@ -342,9 +373,9 @@ async function page() {
           </div>
 
           <div className="row port-row">
-            <div className="col-12 col-md-6 px-2 port-main-div">
+            {/* <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
-                {/* <img src={imageUrl + "Thames.webp"} className="img-fluid" /> */}
+                
                  <Image
                  src={imageUrl + "Thames.webp"} 
                   alt="branding page"
@@ -372,7 +403,41 @@ async function page() {
                   </p>
                 </div>
               </div>
+            </div> */}
+
+            <div className="col-12 col-md-6 px-2 port-main-div ">
+              <div className="port-div">
+               
+
+                <Image
+                  src={imageUrl + "Enlite-3.webp"}
+                  alt="branding page"
+                  width={750}
+                  height={750}
+                  className="responsive-img port-div-img"
+                    sizes="(max-width:768px) 100vw, 50vw"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Enlite</h3>
+                    </div>
+                    <div className="our-port-btn-up">
+                      <h4 className="our-port-btn">Brand Identity</h4>
+                      <h4 className="our-port-btn">Label Design</h4>
+                    </div>
+                  </div>
+
+                  <p>
+                    Enlite’s sparkling mineral water and prebiotic drink range,
+                    meant to refresh and rejuvenate customers, required a
+                    captivating brand identity, including can and logo design,
+                    to attract a young audience. We offered them just that.
+                  </p>
+                </div>
+              </div>
             </div>
+
             <div className="col-12 col-md-6 px-2 port-main-div">
               <div className=" port-div">
                 {/* <img src={imageUrl + "Smartyums.webp"} className="img-fluid" /> */}
@@ -424,6 +489,42 @@ async function page() {
               Our <span className="every-pr"> Breaks Through</span>
             </h2>
             <div className="our-brand-mobile-all-div row">
+
+
+            <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
+              <Link href="1am-case-study" className="pane-link">
+                <div className="our-brand-mobile-div-clield">
+                  <Image
+                  src="https://dndesigns.co.in/uploads/pages/2ehwrkjd3hjrekfh5iruphone.jpg.jpeg"
+                  alt="branding page"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img our-brand-mobile-div-img"
+                  sizes="100vw"
+                />
+                  <div className="our-brand-mobile-div-content">
+                    <h3 className="mobile-view-our-brand-h3">1 AM</h3>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Brand Strategy</h4>
+                      <h4 className="our-brand-mobile-btn">Brand Identity</h4>
+                    </div>
+                    <div className="our-brand-mobile-btn-up">
+                      <h4 className="our-brand-mobile-btn">Label Design</h4>
+                      <h4 className="our-brand-mobile-btn">Website Design</h4>
+                    </div>
+                    {/* <div>
+                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
+                        Communication Design
+                      </h4>
+                    </div> */}
+                    <p>
+                      1 AM is built for an audience that comes alive when the rest of the world sleeps – creators, entrepreneurs, gamers and anyone who refuses to stop just because the clock says so. For the brand, we shaped an entire brand identity from the ground up – the logo, visual language, can and website design – to match the energy of its target audience. In the end, we didn't just design a brand; we turned an hour into one.
+                    </p>
+                  </div>
+                </div>
+                </Link>
+              </div>
+
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
               <Link href="enlite-case-study" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
@@ -545,52 +646,7 @@ async function page() {
               </div>
 
 
-              <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="grincare-case-study" className="pane-link">
-                <div className="our-brand-mobile-div-clield">
-                  {/* <video className="img-fluid" autoPlay muted loop playsInline>
-                    <source
-                      src="https://dndesigns.co.in/wp-content/uploads/2019/02/GIF_1_1.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video> */}
-
-                  {/* <img
-                    src={imageUrl + "grin care case study.webp"}
-                    className="img-fluid"
-                  /> */}
-                  <Image
-                  src={imageUrl + "grin care case study.webp"}
-                  alt="branding page"
-                  width={1500}
-                  height={1000}
-                  className="responsive-img our-brand-mobile-div-img"
-                  sizes="100vw"
-                />
-                  <div className="our-brand-mobile-div-content">
-                    <h3 className="mobile-view-our-brand-h3">Grin Care</h3>
-                    <div className="our-brand-mobile-btn-up">
-                      <h4 className="our-brand-mobile-btn">Label Design</h4>
-                      <h4 className="our-brand-mobile-btn">Packaging</h4>
-                    </div>
-                    <div>
-                      <h4 className="our-brand-mobile-btn our-brand-mobile-btn-bottom text-center">
-                        Communication Design
-                      </h4>
-                    </div>
-                    <p>
-                      Grincare aspired to establish itself in the highly
-                      competitive oral care market. As a brand marketing agency,
-                      we worked to build their identity and a strong digital
-                      presence. We crafted their identity, designed their UI/UX
-                      and developed their website to establish them as a
-                      business offering premium oral care solutions.
-                    </p>
-                  </div>
-                </div>
-                </Link>
-              </div>
+              
               
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
               <Link href="nectarpure-case-study" className="pane-link">
@@ -630,6 +686,7 @@ async function page() {
                 </div>
                 </Link>
               </div>
+
             </div>
           </div>
         </div>

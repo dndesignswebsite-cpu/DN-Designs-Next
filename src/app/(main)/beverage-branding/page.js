@@ -516,6 +516,75 @@ async function page() {
               </div>
             </div>
           </div>
+
+
+           <div className="row port-row">
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                        <img src="https://dndesigns.co.in/uploads/pages/ourbrandsworkindusrtrypageskozu.jpg" className="img-fluid"></img>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Kozu</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Logo Design</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                        Caffeinated water brand. For this first-of-its-kind beverage in India, we designed a bold and minimal brand identity and packaging to help it stand out, build trust and boost recall.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+              
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+                    <div className="port-div">
+                      <img src="https://dndesigns.co.in/uploads/pages/ekosourportfoliograohicehbw.jpeg" className="img-fluid" />
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Ekos</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Logo Design</h4>
+                            <h4 className="our-port-btn">Label Design</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          India’s first ACV-powered prebiotic gut-reset soda brand. For it, we crafted a fresh, contemporary visual identity, packaging, catalogue and website design to connect with its modern, wellness-conscious consumer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+                    <div className="port-div">
+                      
+           <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid'></img>
+                      <div className="port-content">
+                        <div className="potfolio-div-btns">
+                          <div className="port-div-headg">
+                            <h3>Doodh Soda</h3>
+                          </div>
+                          <div className="our-port-btn-up">
+                            <h4 className="our-port-btn">Web Design</h4>
+                            <h4 className="our-port-btn">Brand Identity</h4>
+                          </div>
+                        </div>
+      
+                        <p>
+                          A category first: India’s first milk-based soda brand. We built a brand identity and label design that felt just as unexpected, bold, expressive, confident and fun as the product itself. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
       </section>
 

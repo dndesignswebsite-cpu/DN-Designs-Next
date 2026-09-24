@@ -10,6 +10,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 // horizontal scroll data
 const slidesData = [
+
+  {
+    title: "1 AM",
+    img: "https://dndesigns.co.in/uploads/pages/dekstopatoneachangedimagecoverrr.jpg.jpeg",
+    type: "image",
+    para: "1 AM is built for an audience that comes alive when the rest of the world sleeps – creators, entrepreneurs, gamers and anyone who refuses to stop just because the clock says so. For the brand, we shaped an entire brand identity from the ground up – the logo, visual language, can and website design – to match the energy of its target audience. In the end, we didn't just design a brand; we turned an hour into one.",
+    btn1: "Brand Strategy",
+    btn2: "Brand Identity",
+    btn3: "Label Design",
+    btn4: "Website Design",
+    link: "/1am-case-study",
+  },
   {
     title: "Rithm's Enlite",
     img: "https://dndesigns.co.in/uploads/pages/enlite.webp",
@@ -52,16 +64,7 @@ const slidesData = [
     btn3: "UI/UX Design",
     link: "/nectarpure-case-study",
   },
-  {
-    title: "Grin Care",
-    img: "https://dndesigns.co.in/uploads/pages/13.webp",
-    type: "image",
-    para: "Grincare aspired to establish itself in the highly competitive oral care market. As a brand marketing agency, we worked to build their identity and a strong digital presence. We crafted their identity, designed their UI/UX and developed their website to establish them as a business offering premium oral care solutions.",
-    btn1: "Brand Identity",
-    btn2: "Packaging Design",
-    btn3: "UI/UX Design",
-    link: "/grincare-case-study",
-  },
+  
   
   
 ];
@@ -227,6 +230,9 @@ export default function HorizontalScroll() {
                       <button>{item.btn1}</button>
                       <button>{item.btn2}</button>
                       <button>{item.btn3}</button>
+                    {item.btn4 ? (
+  <button>{item.btn4}</button>
+) : null}
                       <p>{item.para}</p>
                     </div>
                   </div>

@@ -25,7 +25,7 @@ const CHANNEL_NAME =
 const DEFAULT_MESSAGE = {
   role: "assistant",
   content:
-    "Hi 👋 How can I help you today?",
+    "Hello 👋, I’m Saloni Sardana from DN Designs. How can I help you today?",
 };
 
 export default function Chatbot() {
@@ -868,6 +868,181 @@ export default function Chatbot() {
     };
 
   // ==========================================
+  // RENDER MESSAGE CONTENT
+  // ==========================================
+
+  const renderMessageContent = (content) => {
+    if (typeof content !== "string") {
+      return null;
+    }
+
+    /*
+     * Supports:
+     * 1. Markdown links:
+     *    [Contact Us](https://dndesigns.co.in/contact-us)
+     *
+     * 2. Normal URLs:
+     *    https://dndesigns.co.in/contact-us
+     *
+     * 3. www URLs:
+     *    www.dndesigns.co.in
+     *
+     * Everything else remains normal text.
+     */
+
+    const linkPattern =
+      /(\[([^\]]+)\]\((https?:\/\/[^\s)]+)\))|(https?:\/\/[^\s<]+)|(www\.[^\s<]+)|(\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b)|(\+?\d[\d\s().-]{7,}\d)/gi;
+
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkPattern.exec(content)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push({
+          type: "text",
+          value: content.slice(lastIndex, match.index),
+        });
+      }
+
+      // Markdown link
+      if (match[1]) {
+        parts.push({
+          type: "link",
+          value: match[2],
+          href: match[3],
+        });
+      }
+      // Normal https/http URL
+      else if (match[4]) {
+        let url = match[4];
+
+        // Remove punctuation that commonly appears immediately after a URL.
+        let trailing = "";
+
+        while (/[.,!?;:)\]}>'"]$/.test(url)) {
+          trailing = url.slice(-1) + trailing;
+          url = url.slice(0, -1);
+        }
+
+        parts.push({
+          type: "link",
+          value: url,
+          href: url,
+        });
+
+        if (trailing) {
+          parts.push({
+            type: "text",
+            value: trailing,
+          });
+        }
+      }
+      // www URL
+      else if (match[5]) {
+        let url = match[5];
+        let trailing = "";
+
+        while (/[.,!?;:)\]}>'"]$/.test(url)) {
+          trailing = url.slice(-1) + trailing;
+          url = url.slice(0, -1);
+        }
+
+        parts.push({
+          type: "link",
+          value: url,
+          href: `https://${url}`,
+        });
+
+        if (trailing) {
+          parts.push({
+            type: "text",
+            value: trailing,
+          });
+        }
+      }
+      // Email address
+      else if (match[6]) {
+        parts.push({
+          type: "link",
+          value: match[6],
+          href: `mailto:${match[6]}`,
+          linkType: "email",
+        });
+      }
+      // Phone number
+      else if (match[7]) {
+        const phoneDisplay = match[7].trim();
+        const phoneHref = phoneDisplay.replace(/[^\d+]/g, "");
+
+        parts.push({
+          type: "link",
+          value: phoneDisplay,
+          href: `tel:${phoneHref}`,
+          linkType: "phone",
+        });
+      }
+
+      lastIndex = linkPattern.lastIndex;
+    }
+
+    if (lastIndex < content.length) {
+      parts.push({
+        type: "text",
+        value: content.slice(lastIndex),
+      });
+    }
+
+    if (parts.length === 0) {
+      parts.push({
+        type: "text",
+        value: content,
+      });
+    }
+
+    return parts.map((part, index) => {
+      if (part.type === "link") {
+        return (
+          <a
+            key={`message-link-${index}`}
+            href={part.href}
+            target="_self"
+            rel="noopener noreferrer"
+            className={`chatbot-message-link ${
+              part.linkType === "email"
+                ? "chatbot-email-link"
+                : ""
+            } ${
+              part.linkType === "phone"
+                ? "chatbot-phone-link"
+                : ""
+            }`}
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
+            {part.value}
+          </a>
+        );
+      }
+
+      /*
+       * Preserve line breaks from Gemini responses.
+       * Splitting here keeps the original message text safe and avoids
+       * injecting HTML into the chatbot.
+       */
+      const textParts = part.value.split("\n");
+
+      return textParts.map((textPart, lineIndex) => (
+        <span key={`message-text-${index}-${lineIndex}`}>
+          {textPart}
+          {lineIndex < textParts.length - 1 && <br />}
+        </span>
+      ));
+    });
+  };
+
+  // ==========================================
   // UI
   // ==========================================
 
@@ -878,16 +1053,13 @@ export default function Chatbot() {
       ==================================== */}
 
       {!isOpen && (
-        <button
-          type="button"
-          className="chatbot-button"
+        
+       <img src="https://dndesigns.co.in/uploads/avatars/1b8d1136-c722-4d06-8fbe-3659ce5fd563.png" className="img-fluid chatbot-button"
           onClick={() =>
             setIsOpen(true)
           }
-          aria-label="Open chatbot"
-        >
-          💬
-        </button>
+          aria-label="Open chatbot"></img>
+      
       )}
 
       {/* ====================================
@@ -901,7 +1073,7 @@ export default function Chatbot() {
           <div className="chatbot-header">
             <div className="chatbot-header-info">
               <div className="chatbot-title">
-                AI Assistant
+                DN Designs
               </div>
 
               <div className="chatbot-status">
@@ -950,9 +1122,9 @@ export default function Chatbot() {
                           : "assistant-message"
                       }`}
                     >
-                      {
+                      {renderMessageContent(
                         message.content
-                      }
+                      )}
                     </div>
                   )
                 )}
@@ -978,7 +1150,7 @@ export default function Chatbot() {
                 historyLoading
                   ? "Loading chat..."
                   : loading
-                  ? "AI is typing..."
+                  ? "typing..."
                   : "Type your message..."
               }
               value={input}

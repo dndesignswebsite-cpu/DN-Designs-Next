@@ -530,7 +530,7 @@ export default function ChatsPage() {
           SEARCH
       ====================================== */}
 
-      <div className="admin-card">
+      {/* <div className="admin-card">
 
         <form
           onSubmit={
@@ -575,7 +575,7 @@ export default function ChatsPage() {
 
         </form>
 
-      </div>
+      </div> */}
 
 
       {/* ======================================
@@ -957,6 +957,100 @@ export default function ChatsPage() {
 
 
               {/* ==================================
+                  MESSAGES
+              ================================== */}
+
+              <div className="conversation-messages">
+
+                {!selectedChat.messages ||
+                selectedChat.messages.length ===
+                  0 ? (
+
+                  <div className="admin-empty">
+
+                    <h3>
+                      No messages
+                    </h3>
+
+                    <p>
+                      No messages in this
+                      conversation.
+                    </p>
+
+                  </div>
+
+                ) : (
+
+                  selectedChat.messages.map(
+                    (
+                      message,
+                      index
+                    ) => {
+
+                      const isUser =
+                        message.role ===
+                        "user";
+
+                      return (
+                        <div
+                          key={
+                            message._id ||
+                            index
+                          }
+                          className={`message-row ${
+                            isUser
+                              ? "user-message"
+                              : "assistant-message"
+                          }`}
+                        >
+
+                          <div className="message-bubble">
+
+                            {/* Role */}
+
+                            <div className="message-role">
+
+                              {isUser
+                                ? "Visitor"
+                                : "AI Assistant"}
+
+                            </div>
+
+
+                            {/* Message */}
+
+                            <div className="message-content">
+
+                              {
+                                message.content
+                              }
+
+                            </div>
+
+
+                            {/* Time */}
+
+                            <div className="message-time">
+
+                              {formatDate(
+                                message.createdAt
+                              )}
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      );
+                    }
+                  )
+
+                )}
+
+              </div>
+
+
+              {/* ==================================
                   VISITOR LOCATION
               ================================== */}
 
@@ -1049,6 +1143,10 @@ export default function ChatsPage() {
                 )}
 
               </div>
+
+
+
+              
 
 
               {/* ==================================
@@ -1168,98 +1266,7 @@ export default function ChatsPage() {
               </div>
 
 
-              {/* ==================================
-                  MESSAGES
-              ================================== */}
-
-              <div className="conversation-messages">
-
-                {!selectedChat.messages ||
-                selectedChat.messages.length ===
-                  0 ? (
-
-                  <div className="admin-empty">
-
-                    <h3>
-                      No messages
-                    </h3>
-
-                    <p>
-                      No messages in this
-                      conversation.
-                    </p>
-
-                  </div>
-
-                ) : (
-
-                  selectedChat.messages.map(
-                    (
-                      message,
-                      index
-                    ) => {
-
-                      const isUser =
-                        message.role ===
-                        "user";
-
-                      return (
-                        <div
-                          key={
-                            message._id ||
-                            index
-                          }
-                          className={`message-row ${
-                            isUser
-                              ? "user-message"
-                              : "assistant-message"
-                          }`}
-                        >
-
-                          <div className="message-bubble">
-
-                            {/* Role */}
-
-                            <div className="message-role">
-
-                              {isUser
-                                ? "Visitor"
-                                : "AI Assistant"}
-
-                            </div>
-
-
-                            {/* Message */}
-
-                            <div className="message-content">
-
-                              {
-                                message.content
-                              }
-
-                            </div>
-
-
-                            {/* Time */}
-
-                            <div className="message-time">
-
-                              {formatDate(
-                                message.createdAt
-                              )}
-
-                            </div>
-
-                          </div>
-
-                        </div>
-                      );
-                    }
-                  )
-
-                )}
-
-              </div>
+              
 
             </>
           )}

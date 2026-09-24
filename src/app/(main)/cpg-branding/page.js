@@ -555,15 +555,7 @@ async function page() {
                            <div className="row port-row">
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
-                                {/* <video
-            src="https://dndesigns.co.in/uploads/videos/fmcg3sistersvideo.mp4"
-            width="100%"
-            autoPlay 
-            muted
-            loop
-            playsInline
-            className=""
-          /> */}<img src="https://dndesigns.co.in/uploads/pages/ourbrandsworkindusrtrypageskozu.jpg" className="img-fluid"></img>
+                        <img src="https://dndesigns.co.in/uploads/pages/ourbrandsworkindusrtrypageskozu.jpg" className="img-fluid"></img>
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
@@ -607,16 +599,7 @@ async function page() {
 
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
                     <div className="port-div">
-                             {/* <video
-            src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4"
-            width="100%"
-            autoPlay 
-            muted
-            loop
-            playsInline
-            className=""
-          />
-           */}
+                      
            <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid'></img>
                       <div className="port-content">
                         <div className="potfolio-div-btns">
