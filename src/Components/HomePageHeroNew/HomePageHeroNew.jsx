@@ -19,9 +19,9 @@ function HomePageHeroNew() {
 
     <div className='hero-banner-images-for-abs-div'>
     <div className='hero-banner-images'>
-    <img src="https://dndesigns.co.in/uploads/images/image 8.png" className="hero-red-ladder-img img-fluid"></img>
+    <img src="https://dndesigns.co.in/uploads/images/homepageladderredleftimahebhebd.svg" className="hero-red-ladder-img img-fluid"></img>
     <div className='ladder-image-home-page-hero-div'>
-      <img src="https://dndesigns.co.in/uploads/images/Groupwehgsbdjhe1000001511.png" className='ladder-image-home-page-hero img-fluid'></img>
+      <img src="https://dndesigns.co.in/uploads/images/homepagenewbannenrimagebackgsvg.svg" className='ladder-image-home-page-hero img-fluid'></img>
 </div>
      <div className='girl-image-home-page-hero-div'>
       <img src="https://dndesigns.co.in/uploads/images/hj 4.png" className='girl-image-home-page-hero img-fluid'></img>
@@ -36,12 +36,12 @@ function HomePageHeroNew() {
       {/* hero banner second section */}
       <section className='hero-banner-second-section'>
         <div className='hero-banner-second-div'>
-        <img src="https://dndesigns.co.in/uploads/images/image 8.png"  className=" img-fluid hero-banner-second-section-img-1"></img>
+        <img src="https://dndesigns.co.in/uploads/images/homepageladderredleftimahebhebd.svg"  className=" img-fluid hero-banner-second-section-img-1"></img>
           <h2 className='hero-banner-second-section-head'>#We Build <br></br><span className='hero-banner-second-section-head-span-1'>BRANDS</span> <br></br><span className='hero-banner-second-section-head-span-2'>THAT</span> <br></br><span className='hero-banner-second-section-head-span-3'>MEans business</span> </h2>
 
-           <img src="https://dndesigns.co.in/uploads/images/image 8 (1).png"  className=" img-fluid hero-banner-second-section-img-2"></img>
+           <img src="https://dndesigns.co.in/uploads/images/hoempageheronewgrayladderimage.svg"  className=" img-fluid hero-banner-second-section-img-3"></img>
 
-           <img src="https://dndesigns.co.in/uploads/images/image 8 (1).png"  className=" img-fluid hero-banner-second-section-img-2"></img>
+           <img src="https://dndesigns.co.in/uploads/images/redladderimagenewherobannerhimepage.svg"  className=" img-fluid hero-banner-second-section-img-2"></img>
 
         </div>
       </section>

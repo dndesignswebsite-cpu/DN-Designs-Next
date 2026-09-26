@@ -37,16 +37,17 @@
 }
 .talk-to-us-hero-btn{
    
-    padding: 10px 50px;
+    padding: 8px 50px 10px 50px;
     background-color: #DC2211;
     color: #fff;
     border: none;
     border-radius: 5px;
+  
 }
 
 .explore-our-work-hero-btn{
    
-     padding: 10px 50px;
+    padding: 8px 50px 10px 50px;
     background-color: #000;
     color: #fff;
     border: none;
@@ -106,7 +107,7 @@
 
 .home-page-hero-content-para{
     color: #1E1E1E;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
     font-family: var(--font-helvetica);
 }
@@ -149,6 +150,7 @@
 .hero-red-ladder-img{
   position: absolute;
   display: none;
+  width: 30%;
 }
 
 
@@ -215,7 +217,7 @@
 
 /* hero-banner-section-div */
 .hero-banner-second-section{
-  padding: 50px 0 200px 0;
+  padding: 100px 0 100px 0;
 }
 .hero-banner-second-div{
   display: flex;
@@ -228,13 +230,20 @@
 .hero-banner-second-section-img-1{
   position: absolute;
   left: 0;
-  top: 0;
+  top: -15%;
 }
 .hero-banner-second-section-img-2{
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 45%;
 }
+
+.hero-banner-second-section-img-3{
+  position: absolute;
+  right: 10%;
+  top: 0%;
+}
+
 
 .hero-banner-second-section-head{
   font-family: var(--font-helvetica);
@@ -254,7 +263,11 @@
 
 @media(max-width:991px){
   .hero-banner-second-section{
-  padding: 0px 0 200px 0;
+  padding: 100px 0 200px 0;
+}
+.hero-banner-second-section-img-3{
+  width: 18%;
+  top: -15%;
 }
 }
 
@@ -264,15 +277,18 @@
   }
   .hero-banner-second-section-head-span-1{
   margin-left: 120px;
-  font-size: 60px;
+  font-size: 45px;
 }
 .hero-banner-second-section-img-1{
-  top: -20%;
-  width: 20%;
+  top: -40%;
+  width: 25%;
 }
 
 .hero-banner-second-section-img-2{
-  width:20%;
-  top: 80%;
+  width:30%;
+  top: 100%;
 }
+
+
+
 }
