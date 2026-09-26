@@ -13,7 +13,7 @@ import Faqs from '@/Components/Faqs/Faqs';
 import Form from '@/Components/Form/Form';
 
 
-// import Script from "next/script";
+// import Script "next/script";
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import Image from "next/image";

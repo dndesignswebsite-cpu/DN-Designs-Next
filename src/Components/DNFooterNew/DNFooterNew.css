@@ -1,6 +1,6 @@
 .DNFooterNewSection{
-    padding: 60px 0 0 0;
-    background-color: #000;
+    padding-top: 60px;
+    background-color: #202020;
 }
 
 .DNFooterNew-head-div{
@@ -15,18 +15,19 @@
     color: #fff;
     font-family: var(--font-helvetica);
     font-weight: 400;
-    font-size: 40px;
+    font-size: 38px;
+    line-height: 1.2em;
 }
 
 .DNFooterNew-para{
      font-family: var(--font-helvetica);
-     font-size: 40px;
+     font-size: 38px;
      font-weight: 400;
      color:#fff;
 }
 
 .DNFooterNew-footer-list-label{
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     font-family: var(--font-helvetica);
     font-weight: 400;
     font-size: 20px;
@@ -35,6 +36,7 @@
 .DNFooterNew-footer-list-item-div{
 margin-left: 0;
     padding-left: 0;
+   
 }
 
 .DNFooterNew-footer-list-item{
@@ -43,6 +45,7 @@ margin-left: 0;
     font-weight: 300;
     font-size: 20px;
     list-style: none;
+    transition: all 1s ease;
 }
 
 .footer-dn-logo-div{
@@ -54,13 +57,41 @@ margin-left: 0;
     height: auto;
 }
 
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social-icon-div{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+.footer-social-icons{
+    width: 35px;
+}
+
+.DNFooterNew-para-mail{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+.web-designing-services-in-india-address{
+    padding-top: 10px;
+    /* border: 2px solid red; */
+}
+
+
+
 @media(max-width:991px){
     .DNFooterNew-head{
-        font-size: 30px;
+        font-size: 32px;
         width: 100%;
     }
     .DNFooterNew-para{
-        font-size: 30px;
+        font-size: 28px;
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -68,4 +99,49 @@ margin-left: 0;
         flex-direction: column;
         align-items: start;
     }
+    .DNFooterNew-footer-list-item{
+        font-size: 18px;
+    }
 }
+
+@media(max-width:767px){
+    .conatact-and-social-media{
+    display: flex;
+    flex-direction: row-reverse;
+}
+}
+
+
+.DNFooterNew-footer-list-item {
+    color: #fff;
+    font-family: var(--font-helvetica);
+    font-weight: 300;
+    font-size: 20px;
+    list-style: none;
+
+    position: relative;
+    display: block;
+    width: fit-content;
+
+    margin-bottom: 3px;
+}
+
+.DNFooterNew-footer-list-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    width: 100%;
+    height: 1.5px;
+    background: #fff;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.DNFooterNew-footer-list-item:hover::after {
+    transform: scaleX(1);
+}
+
