@@ -521,7 +521,7 @@ async function page() {
            <div className="row port-row">
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
-                        <img src="https://dndesigns.co.in/uploads/pages/ourbrandsworkindusrtrypageskozu.jpg" className="img-fluid"></img>
+                        <img src="https://dndesigns.co.in/uploads/pages/newupdatednbrendKozu.jpg.jpeg" className="img-fluid"></img>
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
