@@ -62,6 +62,79 @@ export default function Chatbot() {
     useRef(null);
 
   // ==========================================
+  // PUBLIC IP CACHE
+  // ==========================================
+
+  const publicIPRef =
+    useRef(null);
+
+  const publicIPPromiseRef =
+    useRef(null);
+
+  // ==========================================
+  // GET PUBLIC IP
+  // ==========================================
+
+  const getPublicIP = async () => {
+    // Already available
+    if (publicIPRef.current) {
+      return publicIPRef.current;
+    }
+
+    // If request is already running,
+    // reuse the same request.
+    if (publicIPPromiseRef.current) {
+      return publicIPPromiseRef.current;
+    }
+
+    publicIPPromiseRef.current =
+      (async () => {
+        try {
+          const response =
+            await fetch(
+              "https://api.ipify.org?format=json",
+              {
+                method: "GET",
+                cache: "no-store",
+              }
+            );
+
+          if (!response.ok) {
+            return null;
+          }
+
+          const data =
+            await response.json();
+
+          const ip =
+            typeof data?.ip ===
+            "string"
+              ? data.ip.trim()
+              : null;
+
+          if (ip) {
+            publicIPRef.current =
+              ip;
+          }
+
+          return ip;
+        } catch (error) {
+          console.error(
+            "Public IP lookup failed:",
+            error
+          );
+
+          return null;
+        } finally {
+          publicIPPromiseRef.current =
+            null;
+        }
+      })();
+
+    return publicIPPromiseRef.current;
+  };
+
+  // ==========================================
   // TRACK PAGE VISIT
   // ==========================================
 
@@ -77,6 +150,14 @@ export default function Chatbot() {
     }
 
     try {
+      // Get public IP before sending
+      // tracking request.
+      //
+      // If IP lookup fails, we still
+      // continue tracking the page.
+      const clientIP =
+        await getPublicIP();
+
       await fetch(
         "/api/chatbot/track",
         {
@@ -95,6 +176,9 @@ export default function Chatbot() {
 
             title:
               document.title || "",
+
+            clientIP:
+              clientIP || null,
           }),
 
           keepalive: true,
@@ -474,6 +558,7 @@ export default function Chatbot() {
      *
      * DEFAULT_MESSAGE alone does not count.
      */
+
     const conversationStarted =
       messages.some(
         (message) =>
@@ -871,13 +956,19 @@ export default function Chatbot() {
   // RENDER MESSAGE CONTENT
   // ==========================================
 
-  const renderMessageContent = (content) => {
-    if (typeof content !== "string") {
+  const renderMessageContent = (
+    content
+  ) => {
+    if (
+      typeof content !==
+      "string"
+    ) {
       return null;
     }
 
     /*
      * Supports:
+     *
      * 1. Markdown links:
      *    [Contact Us](https://dndesigns.co.in/contact-us)
      *
@@ -887,6 +978,12 @@ export default function Chatbot() {
      * 3. www URLs:
      *    www.dndesigns.co.in
      *
+     * 4. Email:
+     *    hello@example.com
+     *
+     * 5. Phone:
+     *    +91 9876543210
+     *
      * Everything else remains normal text.
      */
 
@@ -894,152 +991,273 @@ export default function Chatbot() {
       /(\[([^\]]+)\]\((https?:\/\/[^\s)]+)\))|(https?:\/\/[^\s<]+)|(www\.[^\s<]+)|(\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b)|(\+?\d[\d\s().-]{7,}\d)/gi;
 
     const parts = [];
+
     let lastIndex = 0;
+
     let match;
 
-    while ((match = linkPattern.exec(content)) !== null) {
-      if (match.index > lastIndex) {
+    while (
+      (match =
+        linkPattern.exec(
+          content
+        )) !== null
+    ) {
+      if (
+        match.index >
+        lastIndex
+      ) {
         parts.push({
           type: "text",
-          value: content.slice(lastIndex, match.index),
+
+          value:
+            content.slice(
+              lastIndex,
+              match.index
+            ),
         });
       }
 
-      // Markdown link
+      // ======================================
+      // MARKDOWN LINK
+      // ======================================
+
       if (match[1]) {
         parts.push({
           type: "link",
-          value: match[2],
-          href: match[3],
+
+          value:
+            match[2],
+
+          href:
+            match[3],
         });
       }
-      // Normal https/http URL
+
+      // ======================================
+      // NORMAL HTTPS / HTTP URL
+      // ======================================
+
       else if (match[4]) {
         let url = match[4];
 
-        // Remove punctuation that commonly appears immediately after a URL.
         let trailing = "";
 
-        while (/[.,!?;:)\]}>'"]$/.test(url)) {
-          trailing = url.slice(-1) + trailing;
-          url = url.slice(0, -1);
+        while (
+          /[.,!?;:)\]}>'"]$/.test(
+            url
+          )
+        ) {
+          trailing =
+            url.slice(-1) +
+            trailing;
+
+          url =
+            url.slice(0, -1);
         }
 
         parts.push({
           type: "link",
-          value: url,
-          href: url,
+
+          value:
+            url,
+
+          href:
+            url,
         });
 
         if (trailing) {
           parts.push({
             type: "text",
-            value: trailing,
+
+            value:
+              trailing,
           });
         }
       }
-      // www URL
+
+      // ======================================
+      // WWW URL
+      // ======================================
+
       else if (match[5]) {
         let url = match[5];
+
         let trailing = "";
 
-        while (/[.,!?;:)\]}>'"]$/.test(url)) {
-          trailing = url.slice(-1) + trailing;
-          url = url.slice(0, -1);
+        while (
+          /[.,!?;:)\]}>'"]$/.test(
+            url
+          )
+        ) {
+          trailing =
+            url.slice(-1) +
+            trailing;
+
+          url =
+            url.slice(0, -1);
         }
 
         parts.push({
           type: "link",
-          value: url,
-          href: `https://${url}`,
+
+          value:
+            url,
+
+          href:
+            `https://${url}`,
         });
 
         if (trailing) {
           parts.push({
             type: "text",
-            value: trailing,
+
+            value:
+              trailing,
           });
         }
       }
-      // Email address
+
+      // ======================================
+      // EMAIL ADDRESS
+      // ======================================
+
       else if (match[6]) {
         parts.push({
           type: "link",
-          value: match[6],
-          href: `mailto:${match[6]}`,
-          linkType: "email",
+
+          value:
+            match[6],
+
+          href:
+            `mailto:${match[6]}`,
+
+          linkType:
+            "email",
         });
       }
-      // Phone number
+
+      // ======================================
+      // PHONE NUMBER
+      // ======================================
+
       else if (match[7]) {
-        const phoneDisplay = match[7].trim();
-        const phoneHref = phoneDisplay.replace(/[^\d+]/g, "");
+        const phoneDisplay =
+          match[7].trim();
+
+        const phoneHref =
+          phoneDisplay.replace(
+            /[^\d+]/g,
+            ""
+          );
 
         parts.push({
           type: "link",
-          value: phoneDisplay,
-          href: `tel:${phoneHref}`,
-          linkType: "phone",
+
+          value:
+            phoneDisplay,
+
+          href:
+            `tel:${phoneHref}`,
+
+          linkType:
+            "phone",
         });
       }
 
-      lastIndex = linkPattern.lastIndex;
+      lastIndex =
+        linkPattern.lastIndex;
     }
 
-    if (lastIndex < content.length) {
+    if (
+      lastIndex <
+      content.length
+    ) {
       parts.push({
         type: "text",
-        value: content.slice(lastIndex),
+
+        value:
+          content.slice(
+            lastIndex
+          ),
       });
     }
 
     if (parts.length === 0) {
       parts.push({
         type: "text",
-        value: content,
+
+        value:
+          content,
       });
     }
 
-    return parts.map((part, index) => {
-      if (part.type === "link") {
-        return (
-          <a
-            key={`message-link-${index}`}
-            href={part.href}
-            target="_self"
-            rel="noopener noreferrer"
-            className={`chatbot-message-link ${
-              part.linkType === "email"
-                ? "chatbot-email-link"
-                : ""
-            } ${
-              part.linkType === "phone"
-                ? "chatbot-phone-link"
-                : ""
-            }`}
-            onClick={() => {
-              setIsOpen(false);
-            }}
-          >
-            {part.value}
-          </a>
+    return parts.map(
+      (part, index) => {
+        if (
+          part.type ===
+          "link"
+        ) {
+          return (
+            <a
+              key={`message-link-${index}`}
+              href={
+                part.href
+              }
+              target="_self"
+              rel="noopener noreferrer"
+              className={`chatbot-message-link ${
+                part.linkType ===
+                "email"
+                  ? "chatbot-email-link"
+                  : ""
+              } ${
+                part.linkType ===
+                "phone"
+                  ? "chatbot-phone-link"
+                  : ""
+              }`}
+              onClick={() => {
+                setIsOpen(
+                  false
+                );
+              }}
+            >
+              {part.value}
+            </a>
+          );
+        }
+
+        /*
+         * Preserve line breaks from Gemini responses.
+         * Splitting here keeps the original message text safe and avoids
+         * injecting HTML into the chatbot.
+         */
+
+        const textParts =
+          part.value.split(
+            "\n"
+          );
+
+        return textParts.map(
+          (
+            textPart,
+            lineIndex
+          ) => (
+            <span
+              key={`message-text-${index}-${lineIndex}`}
+            >
+              {textPart}
+
+              {lineIndex <
+                textParts.length -
+                  1 && (
+                <br />
+              )}
+            </span>
+          )
         );
       }
-
-      /*
-       * Preserve line breaks from Gemini responses.
-       * Splitting here keeps the original message text safe and avoids
-       * injecting HTML into the chatbot.
-       */
-      const textParts = part.value.split("\n");
-
-      return textParts.map((textPart, lineIndex) => (
-        <span key={`message-text-${index}-${lineIndex}`}>
-          {textPart}
-          {lineIndex < textParts.length - 1 && <br />}
-        </span>
-      ));
-    });
+    );
   };
 
   // ==========================================
@@ -1053,13 +1271,14 @@ export default function Chatbot() {
       ==================================== */}
 
       {!isOpen && (
-        
-       <img src="https://dndesigns.co.in/uploads/avatars/1b8d1136-c722-4d06-8fbe-3659ce5fd563.png" className="img-fluid chatbot-button"
+        <img
+          src="https://dndesigns.co.in/uploads/avatars/1b8d1136-c722-4d06-8fbe-3659ce5fd563.png"
+          className="img-fluid chatbot-button"
           onClick={() =>
             setIsOpen(true)
           }
-          aria-label="Open chatbot"></img>
-      
+          aria-label="Open chatbot"
+        />
       )}
 
       {/* ====================================
@@ -1073,9 +1292,14 @@ export default function Chatbot() {
           <div className="chatbot-header">
             <div className="chatbot-header-info">
 
-            <div className="chatbot-logo-div">
-              <img src="https://dndesigns.co.in/uploads/avatars/1769148711372-b9bf4acfd0783d33.png" className="img-fluid chatbot-logo"></img>
-            </div>
+              <div className="chatbot-logo-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/avatars/1769148711372-b9bf4acfd0783d33.png"
+                  className="img-fluid chatbot-logo"
+                  alt="DN Designs"
+                />
+              </div>
+
               <div className="chatbot-title">
                 DN Designs
               </div>
@@ -1084,6 +1308,7 @@ export default function Chatbot() {
                 <span className="status-dot"></span>
                 Online
               </div> */}
+
             </div>
 
             <button
@@ -1108,9 +1333,9 @@ export default function Chatbot() {
           >
             {historyLoading ? (
               <>
-              <div className="chat-message assistant-message">
-                Loading previous chat...
-              </div>
+                <div className="chat-message assistant-message">
+                  Loading previous chat...
+                </div>
               </>
             ) : (
               <>
@@ -1150,7 +1375,9 @@ export default function Chatbot() {
 
           <div className="chatbot-input-area">
             <input
-              ref={inputRef}
+              ref={
+                inputRef
+              }
               type="text"
               placeholder={
                 historyLoading
@@ -1160,9 +1387,12 @@ export default function Chatbot() {
                   : "Type your message..."
               }
               value={input}
-              onChange={(event) =>
+              onChange={(
+                event
+              ) =>
                 setInput(
-                  event.target.value
+                  event.target
+                    .value
                 )
               }
               onKeyDown={
@@ -1188,7 +1418,11 @@ export default function Chatbot() {
               aria-label="Send message"
               title="Send message"
             >
-              <img src="https://dndesigns.co.in/uploads/pages/chatbotnewiconwithfixes.svg" className="img-fluid"/>
+              <img
+                src="https://dndesigns.co.in/uploads/pages/chatbotnewiconwithfixes.svg"
+                className="img-fluid"
+                alt="Send"
+              />
             </button>
           </div>
         </div>
