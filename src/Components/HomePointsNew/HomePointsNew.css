@@ -1,10 +1,43 @@
- .home-page-points-new{
+/* =========================================================
+   CARD
+========================================================= */
+
+.home-page-points-new-card {
+    position: relative;
+    width: 100%;
+    background-color: #202020;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================================================
+   CARD LAYERING
+========================================================= */
+
+.home-page-points-new-card-1 {
+    z-index: 1;
+}
+
+.home-page-points-new-card-2 {
+    z-index: 2;
+}
+
+.home-page-points-new-card-3 {
+    z-index: 3;
+}
+
+
+/* wekjsd */
+
+.home-page-points-new{
     padding: 80px 0;
 }
 
 .home-page-points-new-container{
     background-color: #202020;
-    /* padding: 40px; */
     margin: 30px 0;
 }
 
@@ -52,7 +85,7 @@
     font-size: 24px;
     font-weight: 400;
     border-bottom: 1px solid #fff;
-    /* margin-bottom: 0; */
+    padding: 5px;
 }
 
 .home-page-new-points-underline-para-bottom{
@@ -76,40 +109,13 @@
 }
 
 
-/* animation */
-/* .home-page-points-new{
-    position: relative;
-}
-
-.home-page-points-new-1{
-    position: sticky;
-    top: 0px;
-    z-index: 5;
-}
-
-.home-page-points-new-2{
-    position: sticky;
-    top: 0px;
-    z-index: 6;
-}
-
-.home-page-points-new-3{
-    position: sticky;
-    top: 0px;
-    z-index: 7;
-} */
-
-
-/* =========================
-   STACKED STICKY CARDS
-========================= */
 
 .home-page-points-new {
     position: relative;
     padding: 80px 0;
 }
 
-/* Common card wrapper */
+
 .home-page-points-new-1,
 .home-page-points-new-2,
 .home-page-points-new-3 {
@@ -117,7 +123,7 @@
     top: 0;
 }
 
-/* Card layering */
+
 .home-page-points-new-1 {
     z-index: 5;
 }
@@ -131,9 +137,7 @@
 }
 
 
-/* =========================
-   CARD SPACING
-========================= */
+
 
 .home-page-points-new-1,
 .home-page-points-new-2,
@@ -142,9 +146,6 @@
 }
 
 
-/* =========================
-   CARD DESIGN
-========================= */
 
 .home-page-points-new-container {
     background-color: #202020;
@@ -234,3 +235,41 @@
 
 
 
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-page-points-new {
+        padding: 60px 0;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .home-page-points-new {
+        padding: 40px 0;
+    }
+
+    .home-page-points-new-card .container {
+        padding: 28px 16px 40px;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .home-page-points-new {
+        padding: 30px 0;
+    }
+
+}
