@@ -1072,14 +1072,18 @@ export default function Chatbot() {
 
           <div className="chatbot-header">
             <div className="chatbot-header-info">
+
+            <div className="chatbot-logo-div">
+              <img src="https://dndesigns.co.in/uploads/avatars/1769148711372-b9bf4acfd0783d33.png" className="img-fluid chatbot-logo"></img>
+            </div>
               <div className="chatbot-title">
                 DN Designs
               </div>
 
-              <div className="chatbot-status">
+              {/* <div className="chatbot-status">
                 <span className="status-dot"></span>
                 Online
-              </div>
+              </div> */}
             </div>
 
             <button
@@ -1103,9 +1107,11 @@ export default function Chatbot() {
             className="chatbot-messages"
           >
             {historyLoading ? (
+              <>
               <div className="chat-message assistant-message">
                 Loading previous chat...
               </div>
+              </>
             ) : (
               <>
                 {messages.map(
@@ -1182,7 +1188,7 @@ export default function Chatbot() {
               aria-label="Send message"
               title="Send message"
             >
-              ➤
+              <img src="https://dndesigns.co.in/uploads/pages/chatbotnewiconwithfixes.svg" className="img-fluid"/>
             </button>
           </div>
         </div>
