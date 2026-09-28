@@ -7,14 +7,13 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 // ==========================================
-// GET CLIENT IP
+// GET CLIENT IP FROM REQUEST HEADERS
 // ==========================================
 
 function getClientIP(request) {
-  const forwardedFor =
-    request.headers.get(
-      "x-forwarded-for"
-    );
+  const forwardedFor = request.headers.get(
+    "x-forwarded-for"
+  );
 
   if (forwardedFor) {
     return forwardedFor
@@ -22,10 +21,9 @@ function getClientIP(request) {
       .trim();
   }
 
-  const realIP =
-    request.headers.get(
-      "x-real-ip"
-    );
+  const realIP = request.headers.get(
+    "x-real-ip"
+  );
 
   if (realIP) {
     return realIP.trim();
@@ -35,64 +33,150 @@ function getClientIP(request) {
 }
 
 // ==========================================
+// CHECK PRIVATE / LOCAL IP
+// ==========================================
+
+function isPrivateOrLocalIP(ip) {
+  if (!ip) {
+    return true;
+  }
+
+  const normalizedIP = String(ip)
+    .trim()
+    .toLowerCase();
+
+  // IPv4 localhost
+  if (normalizedIP === "127.0.0.1") {
+    return true;
+  }
+
+  // IPv6 localhost
+  if (
+    normalizedIP === "::1" ||
+    normalizedIP === "0:0:0:0:0:0:0:1"
+  ) {
+    return true;
+  }
+
+  // Private IPv4 ranges
+  if (
+    normalizedIP.startsWith("10.") ||
+    normalizedIP.startsWith("192.168.") ||
+    normalizedIP.startsWith("172.16.") ||
+    normalizedIP.startsWith("172.17.") ||
+    normalizedIP.startsWith("172.18.") ||
+    normalizedIP.startsWith("172.19.") ||
+    normalizedIP.startsWith("172.20.") ||
+    normalizedIP.startsWith("172.21.") ||
+    normalizedIP.startsWith("172.22.") ||
+    normalizedIP.startsWith("172.23.") ||
+    normalizedIP.startsWith("172.24.") ||
+    normalizedIP.startsWith("172.25.") ||
+    normalizedIP.startsWith("172.26.") ||
+    normalizedIP.startsWith("172.27.") ||
+    normalizedIP.startsWith("172.28.") ||
+    normalizedIP.startsWith("172.29.") ||
+    normalizedIP.startsWith("172.30.") ||
+    normalizedIP.startsWith("172.31.")
+  ) {
+    return true;
+  }
+
+  return false;
+}
+
+// ==========================================
 // GET APPROXIMATE LOCATION FROM IP
 // ==========================================
 
 async function getLocationFromIP(
-  request
+  request,
+  clientIP = null
 ) {
   try {
+    // ----------------------------------------
+    // Prefer IP received from browser
+    // ----------------------------------------
+
     const ip =
+      clientIP ||
       getClientIP(request);
 
-    // Local development
-    if (
-      !ip ||
-      ip === "127.0.0.1" ||
-      ip === "::1" ||
-      ip.startsWith("192.168.") ||
-      ip.startsWith("10.")
-    ) {
+    // ----------------------------------------
+    // Ignore local/private IPs
+    // ----------------------------------------
+
+    if (isPrivateOrLocalIP(ip)) {
+      console.log(
+        "Location lookup skipped. Invalid/local IP:",
+        ip
+      );
+
       return null;
     }
 
-    const response =
-      await fetch(
-        `https://ipapi.co/${encodeURIComponent(
-          ip
-        )}/json/`,
-        {
-          cache: "no-store",
-        }
-      );
+    // ----------------------------------------
+    // IP LOCATION API
+    // ----------------------------------------
+
+    const response = await fetch(
+      `https://ipapi.co/${encodeURIComponent(
+        ip
+      )}/json/`,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!response.ok) {
+      console.error(
+        "IP location API failed:",
+        response.status,
+        response.statusText
+      );
+
       return null;
     }
 
     const data =
       await response.json();
 
+    // ----------------------------------------
+    // API ERROR RESPONSE
+    // ----------------------------------------
+
+    if (
+      data?.error ||
+      data?.reason
+    ) {
+      console.error(
+        "IP location API error:",
+        data?.reason ||
+          data?.error
+      );
+
+      return null;
+    }
+
+    // ----------------------------------------
+    // RETURN LOCATION
+    // ----------------------------------------
+
     return {
       country:
-        data.country_name ||
-        "",
+        data.country_name || "",
 
       countryCode:
-        data.country_code ||
-        "",
+        data.country_code || "",
 
       region:
-        data.region ||
-        "",
+        data.region || "",
 
       city:
-        data.city ||
-        "",
+        data.city || "",
 
       timezone:
-        data.timezone ||
-        "",
+        data.timezone || "",
     };
   } catch (error) {
     console.error(
@@ -122,6 +206,7 @@ export async function POST(
       visitorId,
       path,
       title,
+      clientIP,
     } = body;
 
     // ======================================
@@ -243,7 +328,8 @@ export async function POST(
     if (!chat.location) {
       const location =
         await getLocationFromIP(
-          request
+          request,
+          clientIP
         );
 
       if (location) {
@@ -260,6 +346,10 @@ export async function POST(
       new Date();
 
     await chat.save();
+
+    // ======================================
+    // RESPONSE
+    // ======================================
 
     return NextResponse.json({
       success: true,
