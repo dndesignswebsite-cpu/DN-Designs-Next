@@ -1081,7 +1081,7 @@ export default function Chatbot() {
               </div>
 
               {/* <div className="chatbot-status">
-                <span className="status-dot"></span>
+                <span ="status-dot"></span>
                 Online
               </div> */}
             </div>
