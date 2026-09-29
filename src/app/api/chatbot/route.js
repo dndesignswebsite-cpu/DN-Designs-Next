@@ -961,7 +961,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 // ==================================================
-// AI CLIENTS
+// AI CLIENT
 // ==================================================
 
 const groq = new Groq({
