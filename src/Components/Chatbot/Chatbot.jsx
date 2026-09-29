@@ -1098,7 +1098,7 @@ export default function Chatbot() {
             </button>
           </div>
 
-          {/* Messges */}
+          {/* Messages */}
 
           <div
             ref={
