@@ -14,16 +14,152 @@ import * as chatService from "@/lib/services/chatService.js";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+// ==========================================
+// GEMINI CLIENT
+// ==========================================
+
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
 // ==========================================
+// RETRY HELPERS
+// ==========================================
+
+function sleep(ms) {
+  return new Promise((resolve) =>
+    setTimeout(resolve, ms)
+  );
+}
+
+function getErrorStatus(error) {
+  return (
+    error?.status ||
+    error?.statusCode ||
+    error?.code ||
+    null
+  );
+}
+
+function isRetryableGeminiError(error) {
+  const status = getErrorStatus(error);
+
+  const errorMessage = String(
+    error?.message || ""
+  ).toLowerCase();
+
+  return (
+    status === 503 ||
+    status === "503" ||
+    status === 429 ||
+    status === "429" ||
+    errorMessage.includes("503") ||
+    errorMessage.includes("unavailable") ||
+    errorMessage.includes("resource exhausted") ||
+    errorMessage.includes("rate limit")
+  );
+}
+
+// ==========================================
+// GEMINI REQUEST WITH RETRY
+// ==========================================
+
+async function generateGeminiResponse({
+  contents,
+  systemInstruction,
+}) {
+  const maxRetries = 2;
+
+  for (
+    let attempt = 0;
+    attempt <= maxRetries;
+    attempt++
+  ) {
+    try {
+      const response =
+        await ai.models.generateContent({
+          model:
+            "gemini-3.5-flash-lite",
+
+          contents,
+
+          config: {
+            systemInstruction,
+
+            // Keep chatbot responses reasonably short
+            maxOutputTokens: 300,
+
+            // More consistent / natural responses
+            temperature: 0.4,
+
+            // We only need one response
+            candidateCount: 1,
+          },
+        });
+
+      return response;
+    } catch (error) {
+      const retryable =
+        isRetryableGeminiError(error);
+
+      // ----------------------------------------
+      // NON-RETRYABLE ERROR
+      // ----------------------------------------
+
+      if (
+        !retryable ||
+        attempt >= maxRetries
+      ) {
+        throw error;
+      }
+
+      // ----------------------------------------
+      // SHORT EXPONENTIAL BACKOFF
+      //
+      // Attempt 1 -> ~1 second
+      // Attempt 2 -> ~2 seconds
+      // ----------------------------------------
+
+      const baseDelay =
+        1000 *
+        Math.pow(2, attempt);
+
+      const jitter =
+        Math.floor(
+          Math.random() * 300
+        );
+
+      const delay =
+        baseDelay + jitter;
+
+      console.warn(
+        `Gemini temporary error. Retrying in ${delay}ms...`,
+        {
+          attempt: attempt + 1,
+          status: getErrorStatus(error),
+        }
+      );
+
+      await sleep(delay);
+    }
+  }
+
+  throw new Error(
+    "Gemini request failed after retries."
+  );
+}
+
+// ==========================================
 // CONTACT DETECTION
 // ==========================================
 
-function containsContactDetails(text = "") {
-  if (!text || typeof text !== "string") {
+function containsContactDetails(
+  text = ""
+) {
+  if (
+    !text ||
+    typeof text !== "string"
+  ) {
     return false;
   }
 
@@ -37,7 +173,9 @@ function containsContactDetails(text = "") {
 
   return (
     emailRegex.test(text) ||
-    phoneRegex.test(text.replace(/\s+/g, ""))
+    phoneRegex.test(
+      text.replace(/\s+/g, "")
+    )
   );
 }
 
@@ -45,11 +183,15 @@ function containsContactDetails(text = "") {
 // CHECK IF CONTACT DETAILS WERE PROVIDED
 // ==========================================
 
-function hasContactDetails(messages = []) {
+function hasContactDetails(
+  messages = []
+) {
   return messages.some(
     (message) =>
       message?.role === "user" &&
-      containsContactDetails(message?.content)
+      containsContactDetails(
+        message?.content
+      )
   );
 }
 
@@ -65,7 +207,9 @@ export async function GET(request) {
       new URL(request.url);
 
     const conversationId =
-      searchParams.get("conversationId");
+      searchParams.get(
+        "conversationId"
+      );
 
     if (!conversationId) {
       return NextResponse.json(
@@ -99,7 +243,8 @@ export async function GET(request) {
         {
           status: 200,
           headers: {
-            "Cache-Control": "no-store",
+            "Cache-Control":
+              "no-store",
           },
         }
       );
@@ -138,7 +283,8 @@ export async function GET(request) {
         status: 200,
 
         headers: {
-          "Cache-Control": "no-store",
+          "Cache-Control":
+            "no-store",
         },
       }
     );
@@ -172,7 +318,9 @@ export async function POST(request) {
     // 1. CHECK API KEY
     // ======================================
 
-    if (!process.env.GEMINI_API_KEY) {
+    if (
+      !process.env.GEMINI_API_KEY
+    ) {
       console.error(
         "GEMINI_API_KEY is missing."
       );
@@ -190,13 +338,12 @@ export async function POST(request) {
     }
 
     // ======================================
-    // 2. CONNECT DATABASE
-    // ======================================
-
-    await connectDB();
-
-    // ======================================
-    // 3. GET REQUEST BODY
+    // 2. GET REQUEST BODY
+    //
+    // IMPORTANT:
+    // We don't connect MongoDB here.
+    // Gemini does not need MongoDB to
+    // generate the response.
     // ======================================
 
     const body =
@@ -209,7 +356,7 @@ export async function POST(request) {
     } = body;
 
     // ======================================
-    // 4. VALIDATE CONVERSATION ID
+    // 3. VALIDATE CONVERSATION ID
     // ======================================
 
     if (!conversationId) {
@@ -226,7 +373,7 @@ export async function POST(request) {
     }
 
     // ======================================
-    // 5. VALIDATE VISITOR ID
+    // 4. VALIDATE VISITOR ID
     // ======================================
 
     if (!visitorId) {
@@ -243,7 +390,7 @@ export async function POST(request) {
     }
 
     // ======================================
-    // 6. VALIDATE MESSAGES
+    // 5. VALIDATE MESSAGES
     // ======================================
 
     if (
@@ -263,7 +410,7 @@ export async function POST(request) {
     }
 
     // ======================================
-    // 7. GET CURRENT USER MESSAGE
+    // 6. GET CURRENT USER MESSAGE
     // ======================================
 
     const lastMessage =
@@ -305,29 +452,24 @@ export async function POST(request) {
     };
 
     // ======================================
-    // 8. CONTACT STATUS
+    // 7. CONTACT STATUS
     // ======================================
-
-    /*
-     * Check the complete conversation.
-     *
-     * If the visitor has already provided
-     * a valid email or mobile number,
-     * we stop asking for contact details.
-     */
 
     const contactAlreadyProvided =
       hasContactDetails(messages);
 
     // ======================================
-    // 9. KEEP LATEST 15 MESSAGES FOR GEMINI
+    // 8. KEEP LATEST 8 MESSAGES
+    //
+    // Previously 15.
+    // Smaller context = less work per request.
     // ======================================
 
     const recentMessages =
-      messages.slice(-15);
+      messages.slice(-8);
 
     // ======================================
-    // 10. VALIDATE + CONVERT MESSAGES
+    // 9. VALIDATE + CONVERT MESSAGES
     // ======================================
 
     const contents =
@@ -358,13 +500,13 @@ export async function POST(request) {
               text:
                 message.content
                   .trim()
-                  .slice(0, 5000),
+                  .slice(0, 4000),
             },
           ],
         }));
 
     // ======================================
-    // 11. MAKE SURE VALID MESSAGES EXIST
+    // 10. MAKE SURE VALID MESSAGES EXIST
     // ======================================
 
     if (contents.length === 0) {
@@ -381,7 +523,7 @@ export async function POST(request) {
     }
 
     // ======================================
-    // 12. CONTACT BEHAVIOR INSTRUCTION
+    // 11. CONTACT BEHAVIOR INSTRUCTION
     // ======================================
 
     const contactInstruction =
@@ -444,18 +586,10 @@ IMPORTANT CONTACT FLOW:
 `;
 
     // ======================================
-    // 13. GEMINI REQUEST
+    // 12. SYSTEM INSTRUCTION
     // ======================================
 
-    const response =
-      await ai.models.generateContent({
-        model:
-          "gemini-3.5-flash-lite",
-
-        contents,
-
-        config: {
-          systemInstruction: `
+    const systemInstruction = `
 You are Saloni from DN Designs.
 
 You are the person visitors speak with when they contact DN Designs through the website.
@@ -573,8 +707,16 @@ ${websiteKnowledge}
 ==================================================
 END OF DN DESIGNS WEBSITE INFORMATION
 ==================================================
-          `,
-        },
+`;
+
+    // ======================================
+    // 13. GEMINI REQUEST
+    // ======================================
+
+    const response =
+      await generateGeminiResponse({
+        contents,
+        systemInstruction,
       });
 
     // ======================================
@@ -606,10 +748,19 @@ END OF DN DESIGNS WEBSITE INFORMATION
     }
 
     // ======================================
-    // 16. SAVE ONLY NEW MESSAGES
+    // 16. CONNECT DATABASE
+    //
+    // Only after Gemini has successfully
+    // generated the response.
     // ======================================
 
     try {
+      await connectDB();
+
+      // ====================================
+      // GET EXISTING CONVERSATION
+      // ====================================
+
       const existingChat =
         await chatService.getChatByConversationId(
           conversationId
@@ -699,25 +850,30 @@ END OF DN DESIGNS WEBSITE INFORMATION
     );
 
     // ======================================
+    // ERROR STATUS
+    // ======================================
+
+    const errorMessage = String(
+      error?.message || ""
+    ).toLowerCase();
+
+    const status =
+      getErrorStatus(error);
+
+    // ======================================
     // GEMINI RATE LIMIT
     // ======================================
 
-    const errorMessage =
-      error?.message || "";
-
     if (
-      error?.status === 429 ||
+      status === 429 ||
+      status === "429" ||
       errorMessage.includes("429") ||
-      errorMessage
-        .toLowerCase()
-        .includes(
-          "resource exhausted"
-        ) ||
-      errorMessage
-        .toLowerCase()
-        .includes(
-          "rate limit"
-        )
+      errorMessage.includes(
+        "resource exhausted"
+      ) ||
+      errorMessage.includes(
+        "rate limit"
+      )
     ) {
       return NextResponse.json(
         {
@@ -736,13 +892,12 @@ END OF DN DESIGNS WEBSITE INFORMATION
     // ======================================
 
     if (
-      error?.status === 503 ||
+      status === 503 ||
+      status === "503" ||
       errorMessage.includes("503") ||
-      errorMessage
-        .toLowerCase()
-        .includes(
-          "unavailable"
-        )
+      errorMessage.includes(
+        "unavailable"
+      )
     ) {
       return NextResponse.json(
         {
