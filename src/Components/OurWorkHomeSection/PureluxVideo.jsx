@@ -4,7 +4,7 @@ import React from 'react'
 import "./OurWorkHomeSection.css";
 import { useRef, useState } from "react";
 
-function PureluxVideo() {
+function PureluxVideo({vidoeUrl, title, desc}) {
 
     // js for video
       const greenHornVideoRef = useRef(null);
@@ -33,7 +33,8 @@ function PureluxVideo() {
     playsInline
   >
     <source
-      src="https://dndesigns.co.in/uploads/videos/IMG_1884.mp4"
+      // src="https://dndesigns.co.in/uploads/videos/IMG_1884.mp4"
+      src={vidoeUrl}
       type="video/mp4"
     />
   </video>
@@ -48,8 +49,8 @@ function PureluxVideo() {
   <div className="overlay"></div>
 
   <div className="overlay-box">
-    <div className="overlay-title">Pureluxe</div>
-    <p className="Pras">Where Purity Meets Power</p>
+    <div className="overlay-title">{title}</div>
+    <p className="Pras">{desc}</p>
   </div>
 </div>
     </div>
