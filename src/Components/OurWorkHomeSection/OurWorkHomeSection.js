@@ -23,13 +23,14 @@ export default function OurWorkHomeSection() {
               <div className="imag-cont">
                 
 
-                <Image
+                {/* <Image
                   src={imageUrl + "enlite graphic.webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
-                />
+                /> */}
+                <video src="https://dndesigns.co.in/uploads/videos/Can-2-1.mp4" playsInline loop muted autoPlay></video>
 
                 <div className="overlay"></div>
                 <div className="overlay-box">
@@ -38,24 +39,30 @@ export default function OurWorkHomeSection() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-12 col-md-3 our-work-div-unit">
-              <div className="imag-cont ">
-                
 
+
+
+           
+
+             <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit mt-lg-0">
+                <div className="imag-cont">
+                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
                  <Image
-                  src={imageUrl + "nectarpure graphic.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/newrowshowmoresectionmiatra.jpg.jpeg"
                   alt="blog"
-                  width={750}
-                  height={1050}
+                  width={1500}
+                  height={1000}
                   className="responsive-img image-cont-img"
                 />
                 <div className="overlay"></div>
                 <div className="overlay-box">
-                  <div className="overlay-title">NectarPure</div>
-                  <p className="Pras">A Revolution in Nutritional Absorption</p>
+                  <div className="overlay-title"> Miatra</div>
+                  <p className="Pras">Mithila’s Makhana, Made for Modern Snacking</p>
                 </div>
               </div>
-            </div>
+              </div>
+
+
             <div className="col-sm-12 col-md-3 our-work-div-unit">
               <div className="imag-cont">
                 
@@ -173,15 +180,14 @@ export default function OurWorkHomeSection() {
           {/*  Still server-rendered for SEO */}
           <div>
             <div className="row our-work-row">
-              <div className="col-sm-12 col-md-6">
-                <div className="imag-cont">
-                  {/* <img
-                    src={imageUrl + "the bobalist website.webp"}
-                    alt="demo"
-                  /> */}
 
+            
+
+                 <div className="col-sm-12 col-md-6 col-lg-6  mt-lg-0">
+                <div className="imag-cont">
+                 
                    <Image
-                  src={imageUrl + "the bobalist website.webp"}
+                  src="https://dndesigns.co.in/uploads/pages/showmoresectionkozu-home.jpg.jpeg"
                   alt="blog"
                   width={1500}
                   height={1000}
@@ -189,11 +195,16 @@ export default function OurWorkHomeSection() {
                 />
                   <div className="overlay"></div>
                   <div className="overlay-box">
-                    <div className="overlay-title">The Bobalist</div>
-                    <p className="Pras">Pop the boba, feel the Fun</p>
+                    <div className="overlay-title">Kozu</div>
+                    <p className="Pras">Hydration Meets Energy</p>
                   </div>
                 </div>
+
+          
               </div>
+
+
+
               <div className="col-sm-12 col-md-3 our-work-div-unit">
                 <div className="imag-cont">
                   {/* <img src={imageUrl + "i organic.webp"} alt="demo" /> */}
@@ -231,24 +242,18 @@ export default function OurWorkHomeSection() {
             </div>
 
             <div className="row our-work-row">
-              <div className="col-sm-12 col-md-3">
-                <div className="imag-cont">
-                  {/* <img src={imageUrl + "Deeproot logo.webp"} alt="demo" /> */}
 
-                   <Image
-                 src={imageUrl + "Deeproot logo.webp"}
-                  alt="blog"
-                  width={750}
-                  height={1050}
-                  className="responsive-img image-cont-img"
-                />
-                  <div className="overlay"></div>
-                  <div className="overlay-box">
-                    <div className="overlay-title">Deeproot</div>
-                    <p className="Pras">One crunch, many flavours</p>
-                  </div>
-                </div>
+             
+
+
+              <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit  mt-lg-0">
+                
+                    <div className="purelux-video-component">
+<PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/homepageshowmoresectionnewrowForwebsite2.mp4" title="Doodh Soda" desc="India's First Milk-Based Soda"/>
+</div>
               </div>
+
+
               <div className="col-sm-12 col-md-6 our-work-div-unit">
                 <div className="imag-cont">
                   <video className="img-fluid" autoPlay muted loop playsInline>
@@ -420,12 +425,13 @@ export default function OurWorkHomeSection() {
 
             {/* new row */}
 
-               <div className="row our-work-row">
-              <div className="col-sm-12 col-md-6 col-lg-6  mt-lg-0">
+               {/* <div className="row our-work-row">
+               <div className="col-sm-12 col-md-6">
                 <div className="imag-cont">
-                 
+                  
+
                    <Image
-                  src="https://dndesigns.co.in/uploads/pages/showmoresectionkozu-home.jpg.jpeg"
+                  src={imageUrl + "the bobalist website.webp"}
                   alt="blog"
                   width={1500}
                   height={1000}
@@ -433,54 +439,51 @@ export default function OurWorkHomeSection() {
                 />
                   <div className="overlay"></div>
                   <div className="overlay-box">
-                    <div className="overlay-title">Kozu</div>
-                    <p className="Pras">Hydration Meets Energy</p>
+                    <div className="overlay-title">The Bobalist</div>
+                    <p className="Pras">Pop the boba, feel the Fun</p>
                   </div>
                 </div>
-
-          
               </div>
 
-              <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit mt-4 mt-lg-0">
-                <div className="imag-cont">
-                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
-                 <Image
-                  src="https://dndesigns.co.in/uploads/pages/newrowshowmoresectionmiatra.jpg.jpeg"
-                  alt="blog"
-                  width={1500}
-                  height={1000}
-                  className="responsive-img image-cont-img"
-                />
-                <div className="overlay"></div>
-                <div className="overlay-box">
-                  <div className="overlay-title"> Miatra</div>
-                  <p className="Pras">Mithila’s Makhana, Made for Modern Snacking</p>
-                </div>
-              </div>
-              </div>
-
-
-               <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit mt-4 mt-lg-0">
-                {/* <div className="imag-cont">
+             <div className="col-sm-12 col-md-3 our-work-div-unit">
+              <div className="imag-cont ">
                 
+
                  <Image
-                  src={imageUrl + "kalprishi.webp"}
+                  src={imageUrl + "nectarpure graphic.webp"}
                   alt="blog"
-                  width={1500}
-                  height={1000}
+                  width={750}
+                  height={1050}
                   className="responsive-img image-cont-img"
                 />
                 <div className="overlay"></div>
                 <div className="overlay-box">
-                  <div className="overlay-title">Kalprishi</div>
-                  <p className="Pras">Flavours that celebrate</p>
+                  <div className="overlay-title">NectarPure</div>
+                  <p className="Pras">A Revolution in Nutritional Absorption</p>
                 </div>
-              </div> */}
-                    <div className="purelux-video-component">
-<PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/homepageshowmoresectionnewrowForwebsite2.mp4" title="Doodh Soda" desc="India's First Milk-Based Soda"/>
-</div>
               </div>
             </div>
+
+
+              <div className="col-sm-12 col-md-3">
+                <div className="imag-cont">
+                 
+
+                   <Image
+                 src={imageUrl + "Deeproot logo.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Deeproot</div>
+                    <p className="Pras">One crunch, many flavours</p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
 
 
 

@@ -562,6 +562,10 @@ a{
     .cta-col-img-div-special {
         margin-bottom: 0;
     }
+
+    .cta-swipper-section-parent-div {
+    padding: 0px 0 40px 0;
+}
 }
 
 

@@ -1,0 +1,48 @@
+.design-love-grow {
+  position: relative;
+
+  display: inline-block;
+
+  /* NO margin */
+  margin: 0;
+
+  /* NO padding */
+  padding: 0;
+
+  /* Important */
+  width: auto;
+  height: 1em;
+
+  vertical-align: baseline;
+
+  /* perspective: 800px; */
+}
+
+.animated-word {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  transform-style: preserve-3d;
+}
+
+.letter {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+  /* line-height: 1; */
+
+  transform-style: preserve-3d;
+
+  will-change: transform, opacity;
+}

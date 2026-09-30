@@ -16,6 +16,7 @@ import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategory
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 import HomePointsNew from "@/Components/HomePointsNew/HomePointsNew";
+import HomePageHeroNew from "@/Components/HomePageHeroNew/HomePageHeroNew";
 
 // schema
 // HOME PAGE SCHEMA
@@ -179,6 +180,8 @@ export default function Home() {
       </section> */}
 
       <HomePageHero title={title} description={description} />
+
+     {/* <HomePageHeroNew/> */}
      
 
      {/* our brands section */}
@@ -203,8 +206,8 @@ export default function Home() {
 
 
       {/*.....points...... */}
-      <Points />
-      {/* <HomePointsNew/> */}
+      {/* <Points /> */}
+      <HomePointsNew/>
       {/* testimonial  */}
       {/* <Testimonial /> */}
       {/* form */}
