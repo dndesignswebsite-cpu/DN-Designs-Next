@@ -214,11 +214,11 @@
 
   gap: 12px;
 
-  /* background: #fafafa; */
-  background-image: url("https://dndesigns.co.in/uploads/pages/chatbotbackgroundimagenewforchatbot.png");
+  background: #fafafa;
+  /* background-image: url("https://dndesigns.co.in/uploads/pages/chatbotbackgroundimagenewforchatbot.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
   /*
     Prevent scrolling from escaping
