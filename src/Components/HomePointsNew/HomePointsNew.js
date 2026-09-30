@@ -28,15 +28,16 @@ const POINTS_DATA = [
       "Rebranding",
     ],
 
-    url:[
-        "/brand-strategy",
-        "/brand-positioning",
-        "/brand-identity-design-services",
-        "/packaging-design",
-        "/rebranding",
+    url: [
+      "/brand-strategy",
+      "/brand-positioning",
+      "/brand-identity-design-services",
+      "/packaging-design",
+      "/rebranding",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/homepagepointsnewpointsimagebranding.jpg.jpeg",
+    image:
+      "https://dndesigns.co.in/uploads/pages/homepagepointsnewpointsimagebranding.jpg.jpeg",
   },
 
   {
@@ -57,15 +58,16 @@ const POINTS_DATA = [
       "Animation",
     ],
 
-     url:[
-        "/digital-marketing-agency-in-noida",
-         "/social-media-marketing",
-        "/influencer-marketing",
-        "/photography",
-        "/animation",
+    url: [
+      "/digital-marketing-agency-in-noida",
+      "/social-media-marketing",
+      "/influencer-marketing",
+      "/photography",
+      "/animation",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/homepagenewpoinstsimagecommunication.jpg.jpeg",
+    image:
+      "https://dndesigns.co.in/uploads/pages/homepagenewpoinstsimagecommunication.jpg.jpeg",
   },
 
   {
@@ -84,19 +86,19 @@ const POINTS_DATA = [
       "SEO",
     ],
 
-     url:[
-        "/ui-ux-design",
-        "/web-designing-services-in-india",
-        "/seo-marketing-agency-in-noida",
+    url: [
+      "/ui-ux-design",
+      "/web-designing-services-in-india",
+      "/seo-marketing-agency-in-noida",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/homepagenewpouinyswebsiteimageweb.jpg.jpeg",
+    image:
+      "https://dndesigns.co.in/uploads/pages/homepagenewpouinyswebsiteimageweb.jpg.jpeg",
   },
 ];
 
 function HomePointsNew() {
   const sectionRef = useRef(null);
-
   const cardRefs = useRef([]);
 
   const addCardRef = (element) => {
@@ -110,115 +112,207 @@ function HomePointsNew() {
 
     if (!section) return;
 
-    const ctx = gsap.context(() => {
-      const cards = cardRefs.current;
+    let ctx;
 
-      cards.forEach((card, index) => {
-        if (index === cards.length - 1) {
-          return;
-        }
+    const initAnimation = () => {
+      // Kill previous GSAP context if resize happened
+      if (ctx) {
+        ctx.revert();
+      }
 
-        const nextCard = cards[index + 1];
+      // Clear previous refs
+      cardRefs.current = Array.from(
+        section.querySelectorAll(".home-page-points-new-card")
+      );
 
-        gsap.fromTo(
-          card,
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
-          {
-            y: 0,
-          },
+      /*
+       * MOBILE
+       * No GSAP animation at all.
+       * Cards stay in normal document flow.
+       */
+      if (isMobile) {
+        gsap.set(cardRefs.current, {
+          clearProps: "transform",
+        });
 
-          {
-            y: 300,
+        return;
+      }
 
-            ease: "none",
+      /*
+       * DESKTOP
+       */
+      ctx = gsap.context(() => {
+        const cards = cardRefs.current;
 
-            scrollTrigger: {
-              trigger: nextCard,
+        cards.forEach((card, index) => {
+          if (index === cards.length - 1) {
+            return;
+          }
 
-              start: "top bottom",
+          const nextCard = cards[index + 1];
 
-              end: "top top",
-
-              scrub: true,
-
-              invalidateOnRefresh: true,
-            },
-          },
-        );
-      });
-
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh();
-      });
-
-      const images = section.querySelectorAll("img");
-
-      images.forEach((image) => {
-        if (!image.complete) {
-          image.addEventListener(
-            "load",
-            () => {
-              ScrollTrigger.refresh();
+          gsap.fromTo(
+            card,
+            {
+              y: 0,
             },
             {
-              once: true,
-            },
+              y: 300,
+              ease: "none",
+              scrollTrigger: {
+                trigger: nextCard,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                invalidateOnRefresh: true,
+              },
+            }
           );
+        });
+      }, section);
+
+      /*
+       * Refresh after browser has completed layout.
+       * This prevents the first-load position/glitch issue.
+       */
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          ScrollTrigger.refresh();
+        });
+      });
+    };
+
+    /*
+     * Wait for images before calculating ScrollTrigger positions.
+     */
+    const images = section.querySelectorAll("img");
+
+    const imageLoadPromises = Array.from(images).map((image) => {
+      if (image.complete) {
+        return Promise.resolve();
+      }
+
+      return new Promise((resolve) => {
+        image.addEventListener("load", resolve, {
+          once: true,
+        });
+
+        image.addEventListener("error", resolve, {
+          once: true,
+        });
+      });
+    });
+
+    /*
+     * Initialize after images/layout are ready.
+     */
+    Promise.all(imageLoadPromises).then(() => {
+      initAnimation();
+    });
+
+    /*
+     * Recalculate correctly when viewport changes.
+     */
+    let resizeTimer;
+
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(() => {
+        initAnimation();
+
+        if (!window.matchMedia("(max-width: 767px)").matches) {
+          ScrollTrigger.refresh();
+        }
+      }, 150);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    /*
+     * Cleanup
+     */
+    return () => {
+      clearTimeout(resizeTimer);
+
+      window.removeEventListener("resize", handleResize);
+
+      if (ctx) {
+        ctx.revert();
+      }
+
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (trigger.trigger && section.contains(trigger.trigger)) {
+          trigger.kill();
         }
       });
-    }, section);
 
-    return () => {
-      ctx.revert();
+      gsap.set(cardRefs.current, {
+        clearProps: "transform",
+      });
     };
   }, []);
 
-  /* 
-     JSX
-  */
-
   return (
-    <section ref={sectionRef} className="home-page-points-new container">
+    <section
+      ref={sectionRef}
+      className="home-page-points-new container"
+    >
       {POINTS_DATA.map((point, index) => (
         <div
           key={index}
           ref={addCardRef}
-          className={`home-page-points-new-card home-page-points-new-card-${index + 1}`}
+          className={`home-page-points-new-card home-page-points-new-card-${
+            index + 1
+          }`}
         >
           <div className="points-slide-home-page-div">
             <div className="points-slide-home-page">
 
-              {/* wensakdj */}
               <div className="home-page-points-new-1">
                 <div className="container">
                   <div className="home-page-points-new-container">
                     <div className="home-page-points-new-row row">
+
                       <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div className="home-page-points-new-row-col">
+
                           <div className="home-page-points-new-row-col-up-div">
                             <h2 className="home-page-points-new-up-row-col-div-number">
                               {point.number}
                             </h2>
+
                             <h3 className="home-page-points-new-up-row-col-div-head">
                               {point.title}
                             </h3>
                           </div>
+
                           <div className="home-page-points-new-row-col-bottom-div">
-                            <img src={point.image} className="img-fluid home-page-points-new-row-col-bottom-div-image"></img>
+                            <img
+                              src={point.image}
+                              className="img-fluid home-page-points-new-row-col-bottom-div-image"
+                              alt={point.title}
+                            />
                           </div>
+
                         </div>
                       </div>
 
                       <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div className="home-page-points-new-row-col">
+
                           <div className="home-page-points-new-row-col-up-div">
                             <h2 className="home-page-new-col-head-label">
                               {point.headline}
                             </h2>
+
                             <p className="home-page-new-new-para-desc-col">
                               {point.description}
                             </p>
                           </div>
+
                           <div className="home-page-points-new-row-col-bottom-div">
 
                             <p className="home-page-points-new-bottom-col-content-para-label">
@@ -226,56 +320,54 @@ function HomePointsNew() {
                             </p>
 
                             {point.includes[1] ? (
-                            <Link href={`${point.url[0]}`}> 
-                              <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
-                              {point.includes[1]}
-                            </p>
-                            </Link>
-                                 ):null}
+                              <Link href={point.url[0]}>
+                                <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
+                                  {point.includes[1]}
+                                </p>
+                              </Link>
+                            ) : null}
 
-                           {point.includes[2] ? (
-                            <Link href={`${point.url[1]}`}> 
-                               <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
-                              {point.includes[2]}
-                            </p>
-                            </Link>
-                                 ):null}
+                            {point.includes[2] ? (
+                              <Link href={point.url[1]}>
+                                <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
+                                  {point.includes[2]}
+                                </p>
+                              </Link>
+                            ) : null}
 
                             {point.includes[3] ? (
-                              <Link href={`${point.url[2]}`}> 
-                               <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
-                              {point.includes[3]}
-                            </p>
-                            </Link>
-                                 ):null}
+                              <Link href={point.url[2]}>
+                                <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
+                                  {point.includes[3]}
+                                </p>
+                              </Link>
+                            ) : null}
 
-                               {point.includes[4] ? (
-                                  <Link href={`${point.url[3]}`}> 
-                               <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
-                              {point.includes[4]}
-                            </p>
-                            </Link>
-                                 ):null}
+                            {point.includes[4] ? (
+                              <Link href={point.url[3]}>
+                                <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
+                                  {point.includes[4]}
+                                </p>
+                              </Link>
+                            ) : null}
 
-
-                                 {point.includes[5] ? (
-                                  <Link href={`${point.url[4]}`}> 
-                               <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
-                              {point.includes[5]}
-                            </p>
-                            </Link>
-                                 ):null}
-
-                           
+                            {point.includes[5] ? (
+                              <Link href={point.url[4]}>
+                                <p className="home-page-new-points-underline-para home-page-new-points-underline-para-bottom">
+                                  {point.includes[5]}
+                                </p>
+                              </Link>
+                            ) : null}
 
                           </div>
+
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
               </div>
-              {/* whjsbad */}
 
             </div>
           </div>
