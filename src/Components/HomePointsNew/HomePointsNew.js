@@ -36,7 +36,7 @@ const POINTS_DATA = [
         "/rebranding",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/13.webp",
+    image: "https://dndesigns.co.in/uploads/pages/homepagepointsnewpointsimagebranding.jpg.jpeg",
   },
 
   {
@@ -65,7 +65,7 @@ const POINTS_DATA = [
         "/animation",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/13.webp",
+    image: "https://dndesigns.co.in/uploads/pages/homepagenewpoinstsimagecommunication.jpg.jpeg",
   },
 
   {
@@ -90,7 +90,7 @@ const POINTS_DATA = [
         "/seo-marketing-agency-in-noida",
     ],
 
-    image: "https://dndesigns.co.in/uploads/pages/13.webp",
+    image: "https://dndesigns.co.in/uploads/pages/homepagenewpouinyswebsiteimageweb.jpg.jpeg",
   },
 ];
 
@@ -204,7 +204,7 @@ function HomePointsNew() {
                             </h3>
                           </div>
                           <div className="home-page-points-new-row-col-bottom-div">
-                            <img src={point.image} className="img-fluid"></img>
+                            <img src={point.image} className="img-fluid home-page-points-new-row-col-bottom-div-image"></img>
                           </div>
                         </div>
                       </div>
