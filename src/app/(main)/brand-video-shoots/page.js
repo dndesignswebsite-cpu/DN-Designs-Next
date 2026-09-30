@@ -291,7 +291,7 @@ async function page() {
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-4">
               <div className="ratio ratio-16x9 shoot-video-youtube">
                 <iframe
-                  src="https://www.youtube.com/embed/msHxJAch8AU?si=EpJgvW9k_c70HYLV"
+                  src="https://www.youtube.com/embed/XQXn_d7GHTw?si=hk-rgkYy3_mbA5L6" 
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -301,13 +301,13 @@ async function page() {
 
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-4">
               <div className="ratio ratio-16x9 shoot-video-youtube">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6oya1SnvRco?si=sL7POK03_AqkWXj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s-PQhgPFPjE?si=hh3qTJQiNxUs4kX6"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
 
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-4">
               <div className="ratio ratio-16x9 shoot-video-youtube">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/Fgz2YU4ut7A?si=TNKHzdwamrK5lDRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/vJMby5XhQ9Y?si=SUueL60DTB9Crfdc"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
