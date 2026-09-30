@@ -143,7 +143,8 @@ export default function OurWorkHomeSection() {
           <div className="row our-work-row">
             <div className="col-sm-12 col-md-12 col-lg-6">
 <div className="purelux-video-component">
-<PureluxVideo/>
+{/* <PureluxVideo/> */}
+<PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/IMG_1884.mp4" title="Pureluxe" desc="Where Purity Meets Power"/>
 </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 our-work-div-unit our-work-div-unit-purelux">
@@ -412,6 +413,72 @@ export default function OurWorkHomeSection() {
                   <p className="Pras">Flavours that celebrate</p>
                 </div>
               </div>
+              </div>
+            </div>
+
+
+
+            {/* new row */}
+
+               <div className="row our-work-row">
+              <div className="col-sm-12 col-md-6 col-lg-6  mt-lg-0">
+                <div className="imag-cont">
+                 
+                   <Image
+                  src="https://dndesigns.co.in/uploads/pages/showmoresectionkozu-home.jpg.jpeg"
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Kozu</div>
+                    <p className="Pras">Hydration Meets Energy</p>
+                  </div>
+                </div>
+
+          
+              </div>
+
+              <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit mt-4 mt-lg-0">
+                <div className="imag-cont">
+                {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
+                 <Image
+                  src="https://dndesigns.co.in/uploads/pages/newrowshowmoresectionmiatra.jpg.jpeg"
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+                <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title"> Miatra</div>
+                  <p className="Pras">Mithila’s Makhana, Made for Modern Snacking</p>
+                </div>
+              </div>
+              </div>
+
+
+               <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit mt-4 mt-lg-0">
+                {/* <div className="imag-cont">
+                
+                 <Image
+                  src={imageUrl + "kalprishi.webp"}
+                  alt="blog"
+                  width={1500}
+                  height={1000}
+                  className="responsive-img image-cont-img"
+                />
+                <div className="overlay"></div>
+                <div className="overlay-box">
+                  <div className="overlay-title">Kalprishi</div>
+                  <p className="Pras">Flavours that celebrate</p>
+                </div>
+              </div> */}
+                    <div className="purelux-video-component">
+<PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/homepageshowmoresectionnewrowForwebsite2.mp4" title="Doodh Soda" desc="India's First Milk-Based Soda"/>
+</div>
               </div>
             </div>
 
