@@ -16,9 +16,9 @@ function BrandAuditCta() {
   return (
     <div>
       <div className="talk-to-us-div">
-                      <button className="talk-to-us talk-to-us-Laptop" onClick={goToContact}>REACH OUT NOW<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button>
+                      <button className="talk-to-us talk-to-us-Laptop" onClick={goToContact}>Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button>
                     </div>
-                 <button className="talk-to-us talk-to-us-mobile" onClick={goToContact}>REACH OUT NOW<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button> 
+                 <button className="talk-to-us talk-to-us-mobile" onClick={goToContact}>Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button> 
     </div>
   )
 }
