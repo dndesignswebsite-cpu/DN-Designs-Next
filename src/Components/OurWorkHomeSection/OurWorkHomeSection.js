@@ -246,11 +246,30 @@ export default function OurWorkHomeSection() {
              
 
 
-              <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit  mt-lg-0">
+              {/* <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit  mt-lg-0">
                 
                     <div className="purelux-video-component">
 <PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/homepageshowmoresectionnewrowForwebsite2.mp4" title="Doodh Soda" desc="India's First Milk-Based Soda"/>
 </div>
+              </div> */}
+
+              <div className="col-sm-12 col-md-3 our-work-div-unit">
+                <div className="imag-cont">
+                  {/* <img src={imageUrl + "smartyums graphic.webp"} alt="demo" /> */}
+
+                   <Image
+                 src={imageUrl + "smartyums graphic.webp"}
+                  alt="blog"
+                  width={750}
+                  height={1050}
+                  className="responsive-img image-cont-img"
+                />
+                  <div className="overlay"></div>
+                  <div className="overlay-box">
+                    <div className="overlay-title">Smart Yums</div>
+                    <p className="Pras">Food of the Future</p>
+                  </div>
+                </div>
               </div>
 
 
@@ -270,23 +289,15 @@ export default function OurWorkHomeSection() {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-3 our-work-div-unit">
-                <div className="imag-cont">
-                  {/* <img src={imageUrl + "smartyums graphic.webp"} alt="demo" /> */}
 
-                   <Image
-                 src={imageUrl + "smartyums graphic.webp"}
-                  alt="blog"
-                  width={750}
-                  height={1050}
-                  className="responsive-img image-cont-img"
-                />
-                  <div className="overlay"></div>
-                  <div className="overlay-box">
-                    <div className="overlay-title">Smart Yums</div>
-                    <p className="Pras">Food of the Future</p>
-                  </div>
-                </div>
+
+              
+
+              <div className="col-sm-12 col-md-3 col-lg-3 our-work-div-unit  mt-lg-0">
+                
+                    <div className="purelux-video-component">
+<PureluxVideo vidoeUrl="https://dndesigns.co.in/uploads/videos/homepageshowmoresectionnewrowForwebsite2.mp4" title="Doodh Soda" desc="India's First Milk-Based Soda"/>
+</div>
               </div>
             </div>
 

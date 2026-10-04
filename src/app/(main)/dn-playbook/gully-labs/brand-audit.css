@@ -1,0 +1,574 @@
+/* brand audit hero */
+.brand-audit-hero-section{
+    padding: 60px 0;
+}
+
+.brand-audit-hero-section-head{
+    font-family: var(--font-helvetica);
+    font-size: 70px;
+    color: #000;
+    font-weight: 500;
+}
+
+.brand-audit-hero-section-para{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    color: #929292;
+    font-weight: 400;
+    padding-bottom:30px;
+}
+
+.hero-section-img-mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .hero-section-img-desktop{
+    display: none;
+}
+.hero-section-img-mobile{
+    display: block;
+}
+}
+
+/* table-of-content-section */
+.table-of-content-section{
+    position: relative;
+    padding: 60px 0;
+}
+
+.table-of-content-section-table{
+    position: sticky;
+    top: 60px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+}
+
+.table-of-content-section-table-head{
+    color: #000000;
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table-of-content-section-table-list li{
+    font-family: var(--font-helvetica);
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 2px 0;
+}
+
+.table-of-content-section-table-list-item{
+    text-decoration: none;
+     color: #000;
+    scroll-behavior: smooth;
+}
+
+
+.table-of-content-section-para-first{
+    color: #000000;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* table-of-content-2nd-para-div */
+.table-of-content-2nd-para-div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.table-of-content-2nd-para{
+    color: #747474;
+    font-size: 18px;
+    padding-top: 15px;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+}
+
+/* brand-at-glance */
+.brand-at-glance{
+    padding: 50px 0;
+}
+
+.brand-at-glance-head{
+    font-family: var(--font-helvetica);
+    font-size: 45px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.brand-at-glance-col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.brand-at-glance-text-div{
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.brand-at-glance-text-div-para{
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 18px;
+    color: #747474;
+    margin-bottom: 5px;
+}
+
+.brand-at-glance-text-div-head{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    /* text-align: center; */
+}
+
+.brand-at-glance-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Brand Elements */
+.brand-elements-section{
+    padding: 40px 0;
+}
+.brand-elements-main-head{
+    color: #000000;
+    font-family: var(--font-helvetica);
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.brand-element-col{
+    background-color: #272727;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.brand-element-col-para-label{
+    color: #8F8F8F;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.brand-element-col-ul li{
+    color: #EAEAEA;
+    font-family: var(--font-helvetica);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* gali-labs-section */
+.gali-labs-section{
+    padding: 40px 0;
+}
+
+/* [ Let’s Talk ] */
+.lets-talk-section{
+    padding: 40px 0;
+}
+.lets-talk-section-top-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lets-tak-label-para{
+    font-family: var(--font-helvetica);
+    font-size: 24px;
+    font-weight: 400;
+    color: #1F1F1F;
+    text-transform: uppercase;
+}
+
+.lets-tak-main-head{
+    color: #1F1F1F;
+    font-family: var(--font-helvetica);
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width:60%;
+}
+
+.brand-attributes-div{
+    padding:60px 0;
+}
+
+.brand-attributes-head{
+    font-family: var(--font-helvetica);
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+}
+
+.brand-attributes-para{
+    color: #747474;
+    font-family: var(--font-helvetica);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.brand-attributes-points-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brand-attributes-points{
+    background-color: #E2E2E2;
+    color: #272727;
+    font-size: 20px;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+/* swot-section */
+.swot-section{
+    padding: 40px 0;
+}
+
+.swot-section-head{
+    font-family: var(--font-helvetica);
+    font-size: 40px;
+    color: #000000;
+}
+
+.swot-section-col{
+    background-color: #272727;
+    padding: 20px;
+    height:100%;
+}
+
+/* stp-section */
+.stp-section{
+    padding: 40px 0;
+}
+
+.stp-section-main-head{
+    color: #000;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--font-helvetica);
+}
+
+.stp-section-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stp-section-col-div{
+    padding: 20px 0 20px 0;
+}
+
+.stp-section-col-div-middle{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.stp-img-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stp-section-col-div-label-para{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+
+.stp-section-col-div-desc-para{
+    font-family: var(--font-helvetica);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* PoPs & PoDs */
+.pop-pod-section{
+    padding: 40px 0;
+}
+.pop-pod-section-head{
+    color: #000000;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 40px;
+    /* padding-bottom: 30px; */
+}
+
+.pop-pod-section-col{
+    background-color: #272727;
+    padding: 30px 20px;
+    height: 100%;
+}
+.pop-pod-section-col-head{
+    color: #E7E7E7;
+    font-family: var(--font-helvetica);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* product-mix-section */
+.product-mix-section{
+    padding: 40px 0;
+}
+.product-mix-section-head{
+     color: #000000;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.product-mix-section-row-col{
+    background-color: #F9F9F9;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.product-mix-section-row-col-para{
+    color: #0F0F0F;
+    font-family: var(--font-helvetica);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* Pricing, Distribution & Campaigns */
+.pricing-distrubution-section{
+    padding: 40px 0;
+}
+.pricing-distrubution-section-main-head{
+    color: #000;
+    font-family: var(--font-helvetica);
+    font-size: 40px;
+    font-weight: 400;
+}
+.pricing-distrubution-section-col{
+    background-color: #272727;
+    padding: 20px 20px;
+    height: 100%;
+}
+
+.pricing-distrubution-section-col-head{
+    color: #CECECE;
+    font-family: var(--font-helvetica);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/* competitve-analysis-section */
+.competitve-analysis-section{
+    padding: 40px 0;
+}
+.competitve-analysis-section-head{
+    font-family: var(--font-helvetica);
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+.competive-analysis-table{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.competive-analysis-table-head-row{
+    background-color: #000;
+}
+.competive-analysis-table-head-row-text{
+    color: #FFFFFF;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.competive-analysis-table-data-row{
+    border: 1px solid #BEBEBE;
+    background-color: #F9F9F9;
+}
+
+.competive-analysis-table-data-row-text{
+    padding: 10px 10px;
+    vertical-align:text-top;
+    border-right: 1px solid #BEBEBE;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.table-data-main-para{
+    color: #888888;
+}
+
+.stratgic-note-para{
+    background-color: #FAF3EB;
+    font-family: var(--font-helvetica);
+    font-size: 16px;
+    color: #8C8C88;
+    padding: 10px;
+}
+
+.stratgic-note-para-span{
+    font-size: 16px;
+    color: #161616;
+}
+
+
+@media(max-width:767px){
+    .competive-analysis-table{
+        table-layout: initial;
+        /* overflow-x: scroll;  */
+    }
+    .competive-analysis-table{
+        margin-top: 20px;
+    }
+    .competive-analysis-table-wrapper{
+    overflow-x: scroll;
+}
+}
+
+/* suggestions-recommendations-head-para */
+.suggestions-recommendations-head-para{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 500;
+    color: #0F0F0F;
+    margin-bottom: 5px;
+}
+
+/* gali-labs-and-bluorng-section */
+.gali-labs-and-bluorng-section{
+    padding: 40px 0;
+}
+
+.gali-labs-and-bluorng-text-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gali-labs-and-bluorng-text{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 400;
+    color: #272727;
+    padding: 5px 0;
+}
+
+.gali-labs-and-bluorng-text-color{
+    color: #777777;
+}
+
+
+@media(max-width:991px){
+    .brand-audit-hero-section-head{
+        font-size: 40px;
+    }
+    .brand-audit-hero-section{
+        padding: 40px 0 0 0;
+    }
+
+    .table-of-content-2nd-para-div{
+        justify-content: start;
+        align-items: start;
+    }
+    .brand-at-glance-head{
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    .brand-at-glance-text-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .brand-at-glance-img{
+        padding: 20px 0;
+    }
+    .brand-elements-main-head{
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    
+    .lets-tak-main-head {
+        font-size: 40px;
+        width: 80%;
+    }
+    .brand-attributes-head{
+        font-size: 35px;
+    }
+    .brand-attributes-points{
+        font-size: 16px;
+    }
+    .swot-section-head {
+        font-size: 35px;
+    }
+    .swot-section{
+        padding: 0;
+    }
+
+    .stp-section-main-head{
+        font-size: 35px;
+    }
+    .pop-pod-section-head{
+        font-size: 35px;
+    }
+    .product-mix-section-head{
+        font-size: 35px;
+    }
+    .pricing-distrubution-section-main-head{
+        font-size: 35px;
+    }
+    .competitve-analysis-section-head{
+        font-size: 35px;
+    }
+    .product-mix-section-head{
+        padding-bottom: 10px;
+    }
+
+    .brand-at-glance-text-div-head{
+        text-align: center;
+    }
+}
+
+
+.disclaimer-section{
+    background-color: #121212;
+    padding: 10px;
+}
+
+.disclaimer-section-para{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+}
