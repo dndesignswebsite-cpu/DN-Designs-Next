@@ -16,7 +16,7 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("gully-labs", null, false);
+    seo = await getPageById("dn-playbook/gully-labs", null, false);
   } catch (error) {
     return {
       title: "Gully Labs",
@@ -68,7 +68,7 @@ async function page() {
       await connectDB();
       let pageData;
       try {
-        pageData = await getPageById("gully-labs", null, true);
+        pageData = await getPageById("dn-playbook/gully-labs", null, true);
       } catch (error) {
         notFound();
       }
@@ -97,7 +97,7 @@ async function page() {
      {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "gully-labs"}`}
+          key={`schema-page-${pageData._id || "dn-playbook/gully-labs"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />
