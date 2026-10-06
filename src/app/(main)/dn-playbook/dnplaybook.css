@@ -1,0 +1,98 @@
+.dn-playbook-parent-hero{
+    padding: 80px 0 50px 0;
+}
+
+.dn-playbook-parent-hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dn-playbook-parent-hero-head{
+    text-align: center;
+    color: #272727;
+    padding-bottom: 5px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: var(--font-helvetica);
+}
+
+.dn-playbook-parent-hero-para-desc{
+    text-align: center;
+    width: 90%;
+    color: #646464;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-helvetica);
+}
+
+
+/* parent-page-blocks */
+
+.parent-page-blocks-section{
+    padding-bottom: 30px;
+}
+
+.parent-page-blocks-col-head{
+    color: #000;
+    font-family: var(--font-helvetica);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.parent-page-blocks-col-para{
+    color: #646464;
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.parent-page-blocks-col-img{
+    padding-bottom: 10px;
+}
+
+.parant-page-row{
+    padding-top: 20px;
+}
+
+.parent-page-blocks-col-link {
+    text-decoration: none;
+}
+
+.parent-page-blocks-col-link{
+    cursor: url("https://dndesigns.co.in/uploads/pages/see-playbook-hover-icon.png"), auto;
+}
+
+/* responsive */
+
+@media(max-width:991px){
+    .dn-playbook-parent-hero-head{
+        font-size: 45px;
+    }
+
+    .dn-playbook-parent-hero-para-desc{
+        width: 100%;
+    }
+
+    .dn-playbook-parent-hero{
+    padding: 50px 0 10px 0;
+}
+.parent-page-blocks-col-head{
+    font-size: 30px;
+}
+
+.parant-page-row{
+    padding-top: 0px;
+}
+
+}
+
+@media(max-width:767px){
+     .dn-playbook-parent-hero-head{
+        font-size: 35px;
+    }
+    .parent-page-blocks-col-head{
+    font-size: 28px;
+}
+}

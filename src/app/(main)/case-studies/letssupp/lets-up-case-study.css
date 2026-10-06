@@ -20,14 +20,14 @@
 .lets-up-elevate-h1{
     color: #000;
      font-family: var(--font-corbert);
-     font-weight: 800;
+     font-weight: 500;
     font-size:75px;
 }
 
 .lets-up-elevate-h2{
     color: #068CA6;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--font-corbert);
 }
 
@@ -109,7 +109,7 @@
     .lets-up-elevate-h1{
     color: #000;
     font-family: var(--font-corbert);
-     font-weight: 800;
+     font-weight: 500;
     font-size:50px;
 }
 }
@@ -242,7 +242,7 @@
     .text-image-head{
         color: #000;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: var(--font-corbert);
     padding-top:30px;
     padding-bottom: 10px;
@@ -556,7 +556,7 @@
 
 .signing-off-head{
         font-size: 75px;
-    font-weight: 800;
+    font-weight: 500;
     font-family: var(--font-corbert);
     color: #000;
 }
@@ -564,7 +564,7 @@
 .signing-off-para{
         color: #17aaa6;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: var(--font-corbert);
 }
 

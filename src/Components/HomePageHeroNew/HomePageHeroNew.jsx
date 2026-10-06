@@ -37,7 +37,7 @@ function HomePageHeroNew() {
 
 
       {/* hero banner second section */}
-      <section className='hero-banner-second-section'>
+      {/* <section className='hero-banner-second-section'>
         <div className='hero-banner-second-div'>
         <img src="https://dndesigns.co.in/uploads/images/homepageladderredleftimahebhebd.svg"  className=" img-fluid hero-banner-second-section-img-1"></img>
           <h2 className='hero-banner-second-section-head'>#We Build <br></br><span className='hero-banner-second-section-head-span-1'><DesignLoveGrow/></span> <br></br><span className='hero-banner-second-section-head-span-2'>THAT</span> <br></br><span className='hero-banner-second-section-head-span-3'>MEans business</span> </h2>
@@ -48,7 +48,7 @@ function HomePageHeroNew() {
            <img src="https://dndesigns.co.in/uploads/images/redladderimagenewherobannerhimepage.svg"  className=" img-fluid hero-banner-second-section-img-2"></img>
 
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

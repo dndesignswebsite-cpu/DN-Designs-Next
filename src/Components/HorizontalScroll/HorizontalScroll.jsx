@@ -20,7 +20,7 @@ const slidesData = [
     btn2: "Brand Identity",
     btn3: "Label Design",
     btn4: "Website Design",
-    link: "/1am-case-study",
+    link: "/case-studies/1am",
   },
   {
     title: "Rithm's Enlite",
@@ -30,7 +30,7 @@ const slidesData = [
     btn1: "Brand Identity",
     btn2: "Packaging Design",
     btn3: "Communication Design",
-    link: "/enlite-case-study",
+    link: "/case-studies/enlite",
   },
 
   {
@@ -41,7 +41,7 @@ const slidesData = [
     btn1: "Brand Identity",
     btn2: "Packaging Design",
     btn3: "UI/UX Design",
-    link: "/letssupp-case-study",
+    link: "/case-studies/letssupp",
   },
 
   {
@@ -52,7 +52,7 @@ const slidesData = [
     btn1: "Brand Identity",
     btn2: "Packaging Design",
     btn3: "UI/UX Design",
-    link: "/wlues-case-study",
+    link: "/case-studies/wlues",
   },
   {
     title: "Nectarpure",
@@ -62,7 +62,7 @@ const slidesData = [
     btn1: "Brand Identity",
     btn2: "Label Design",
     btn3: "UI/UX Design",
-    link: "/nectarpure-case-study",
+    link: "/case-studies/nectarpure",
   },
   
   

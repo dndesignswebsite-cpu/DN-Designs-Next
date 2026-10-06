@@ -99,8 +99,9 @@ export default function Header() {
         <div className={`${styles["logo"]}`}>
           <Link href="/" onClick={handleLinkClick}>
             {/* <img
-              src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
+              src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
               alt="DN Designs Logo"
+              style={{width:"100px"}}
             /> */}
 
             <Image
@@ -496,10 +497,10 @@ export default function Header() {
                   <ul className={`${styles["nav-main-links"]}`}>
                     <li>
                       <Link
-                        href="/enlite-case-study"
+                        href="/case-studies/enlite"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
-                          pathname === "/enlite-case-study"
+                          pathname === "/case-studies/enlite"
                             ? styles["active"]
                             : ""
                         }`}
@@ -510,10 +511,10 @@ export default function Header() {
 
                     <li>
                       <Link
-                        href="/letssupp-case-study"
+                        href="/case-studies/letssupp"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
-                          pathname === "/letssupp-case-study"
+                          pathname === "/case-studies/letssupp"
                             ? styles["active"]
                             : ""
                         }`}
@@ -524,10 +525,10 @@ export default function Header() {
 
                     <li>
                       <Link
-                        href="/1am-case-study"
+                        href="/case-studies/1am"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
-                          pathname === "/grincare-case-study"
+                          pathname === "/case-studies/1am"
                             ? styles["active"]
                             : ""
                         }`}
@@ -537,10 +538,10 @@ export default function Header() {
                     </li>
                     <li>
                       <Link
-                        href="/nectarpure-case-study"
+                        href="/case-studies/nectarpure"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
-                          pathname === "/nectarpure-case-study"
+                          pathname === "/case-studies/nectarpure"
                             ? styles["active"]
                             : ""
                         }`}
@@ -551,10 +552,10 @@ export default function Header() {
 
                     <li>
                       <Link
-                        href="/wlues-case-study"
+                        href="/case-studies/wlues"
                         onClick={handleLinkClick}
                         className={`${styles["header-solo-link"]} ${
-                          pathname === "/wlues-case-study"
+                          pathname === "/case-studies/wlues"
                             ? styles["active"]
                             : ""
                         }`}
@@ -1362,7 +1363,7 @@ export default function Header() {
                       <ul className={`${styles["nav-main-links"]}`}>
                         <li>
                           <Link
-                            href="/enlite-case-study"
+                            href="/case-studies/enlite"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
@@ -1372,7 +1373,7 @@ export default function Header() {
 
                         <li>
                           <Link
-                            href="/letssupp-case-study"
+                            href="/case-studies/letssupp"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
@@ -1382,7 +1383,7 @@ export default function Header() {
 
                         <li>
                           <Link
-                            href="/1am-case-study"
+                            href="/case-studies/1am"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
@@ -1392,7 +1393,7 @@ export default function Header() {
 
                         <li>
                           <Link
-                            href="/nectarpure-case-study"
+                            href="/case-studies/nectarpure"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >
@@ -1402,7 +1403,7 @@ export default function Header() {
 
                         <li>
                           <Link
-                            href="/wlues-case-study"
+                            href="/case-studies/wlues"
                             onClick={handleLinkClick}
                             className={`${styles["header-solo-link"]}`}
                           >

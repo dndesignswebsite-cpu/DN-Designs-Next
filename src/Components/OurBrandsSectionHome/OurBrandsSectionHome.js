@@ -20,7 +20,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
           <ul className={`${styles["cards"]}`}>
 
           
-             <Link href="/1am-case-study" scroll={true}>
+             <Link href="/case-studies/1am" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
@@ -45,7 +45,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
 
 
 
-            <Link href="/enlite-case-study" scroll={true}>
+            <Link href="/case-studies/enlite" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-1"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
@@ -78,7 +78,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
             </Link>
 
 
-             <Link href="/letssupp-case-study" scroll={true}>
+             <Link href="/case-studies/letssupp" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-2"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-letssupp"]}`}
@@ -102,7 +102,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
             </Link>
 
 
-            <Link href="/wlues-case-study" scroll={true}>
+            <Link href="/case-studies/wlues" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-3"]}`}>
                 <div className={`${styles["card-body"]}`}>
                   <video className="img-fluid" autoPlay muted loop playsInline>
@@ -138,7 +138,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               </li>
             </Link>
 
-            <Link href="/nectarpure-case-study" scroll={true}>
+            <Link href="/case-studies/nectarpure" scroll={true}>
               <li className={`${styles["card"]} ${styles["card-4"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
@@ -216,7 +216,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
 
 
                <Link
-                href="/1am-case-study"
+                href="/case-studies/1am"
                 className={styles["mobile-casestudy-wrapper-link"]}
                 scroll={true}
               >
@@ -291,7 +291,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
 
 
               <Link
-                href="/enlite-case-study"
+                href="/case-studies/enlite"
                 className={styles["mobile-casestudy-wrapper-link"]}
                 scroll={true}
               >
@@ -353,7 +353,7 @@ Can Design
               </Link>
 
               <Link
-                href="/letssupp-case-study"
+                href="/case-studies/letssupp"
                className={styles["mobile-casestudy-wrapper-link"]}
                scroll={true}
               >
@@ -411,7 +411,7 @@ Can Design
               
 
               <Link
-                href="/wlues-case-study"
+                href="/case-studies/wlues"
                className={styles["mobile-casestudy-wrapper-link"]}
                scroll={true}
               >
@@ -479,7 +479,7 @@ Can Design
               </Link>
 
               <Link
-                href="/nectarpure-case-study"
+                href="/case-studies/nectarpure"
                 className={styles["mobile-casestudy-wrapper-link"]}
                 scroll={true}
               >

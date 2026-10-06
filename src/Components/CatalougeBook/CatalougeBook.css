@@ -19,3 +19,7 @@
 .catalougeBookFlip-img{
     aspect-ratio: 1600 / 1000;
 }
+
+.catalougeBookFlip-img-see-icon{
+     cursor: url("https://dndesigns.co.in/uploads/pages/see-Catalogue-hover-icon.png"), auto;
+}

@@ -128,7 +128,7 @@ async function page() {
             <div className='col-12 col-sm-12 col-md-12 col-lg-9 mt-4 order-2 order-lg-1'>
             {/* para div */}
                 <div className='table-of-content-section-first-para'>
-                <p className='table-of-content-section-para-first'>Can a two-year-old sneaker brand actually out-story companies that have been doing this for decades? And is "culturally inspired" still meaningful once you're the one hand-lasting every pair yourself?</p>
+                <p className='table-of-content-section-para-first'>Can a three-year-old sneaker brand actually out-story companies that have been doing this for decades? And is "culturally inspired" still meaningful once you're the one hand-lasting every pair yourself?</p>
                 </div>
                 <div className='table-of-content-2nd-para-div'>
                     <p className="table-of-content-2nd-para">That's the question Gully Labs put in front of us.</p>
@@ -283,7 +283,7 @@ async function page() {
                             <div className='brand-element-col'>
                                 <p className='brand-element-col-para-label'>Tagline</p>
                                 <ul className='brand-element-col-ul'>
-                                    <li>Not yet fixed, still forming as the brand matures past its first two years.</li>
+                                    <li>Not yet fixed, still forming as the brand matures past its first few years.</li>
                                     <li>Individual drop names currently do a tagline's job, each one carrying its own mini-story.</li>
                                     <li>A genuine gap, worth closing deliberately (see Recommendations).</li>
                                 </ul>
@@ -676,7 +676,7 @@ async function page() {
                         </div>
                     </div>  */}
 
-                     <p className='stratgic-note-para'><span className='stratgic-note-para-span'>Strategic Note:</span>    Strong on distinctiveness, still building on consistency and loyalty. The real equity test is whether a Gully Labs sneaker is recognisable without the logo or the founder story attached, on silhouette and material alone. It's not quite there yet. But it's closer than most two-year-old D2C brands manage.</p>
+                     <p className='stratgic-note-para'><span className='stratgic-note-para-span'>Strategic Note:</span>    Strong on distinctiveness, still building on consistency and loyalty. The real equity test is whether a Gully Labs sneaker is recognisable without the logo or the founder story attached, on silhouette and material alone. It's not quite there yet. But it's closer than most three-year-old D2C brands manage.</p>
                 </section>
 
 

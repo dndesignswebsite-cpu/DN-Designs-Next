@@ -249,10 +249,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>The Bobalist</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -281,10 +281,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Qualiteq</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -316,10 +316,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Mr. Bomzy</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -350,10 +350,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Foodsure </h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -386,10 +386,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>The Parda</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -420,10 +420,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Let's Supp </h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>

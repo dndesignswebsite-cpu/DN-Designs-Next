@@ -323,10 +323,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Enlite</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Label Design</h4>
                             <h4 className="our-port-btn">Brand Identity</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -353,10 +353,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Mr. Bomzy</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Packaging</h4>
                             <h4 className="our-port-btn">Web Design</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -395,10 +395,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Wlue's</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Brand Identity</h4>
                             <h4 className="our-port-btn">Packaging</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -428,10 +428,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>3Sisters</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Packaging</h4>
                             <h4 className="our-port-btn">Web Design</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -470,10 +470,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Pureluxe</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Brand Identity</h4>
                             <h4 className="our-port-btn">Label Design</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -500,10 +500,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>1:AM </h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Web Design</h4>
                             <h4 className="our-port-btn">Brand Identity</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -524,10 +524,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Kozu</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Logo Design</h4>
                             <h4 className="our-port-btn">Label Design</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -546,10 +546,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Brrat</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Label Design</h4>
                             <h4 className="our-port-btn">Packaging</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
@@ -570,10 +570,10 @@ async function page() {
                           <div className="port-div-headg">
                             <h3>Doodh Soda</h3>
                           </div>
-                          <div className="our-port-btn-up">
+                          {/* <div className="our-port-btn-up">
                             <h4 className="our-port-btn">Web Design</h4>
                             <h4 className="our-port-btn">Brand Identity</h4>
-                          </div>
+                          </div> */}
                         </div>
       
                         <p>
