@@ -12,6 +12,7 @@ import PageLoader from "@/Components/PageLoader/PageLoader";
 import TawkToChat from "@/Components/TawkToChat/TawkToChat";
 import MicrosoftClarity from "@/Components/MicrosoftClarity/MicrosoftClarity";
 import Chatbot from "@/Components/Chatbot/Chatbot";
+import DNFooterNew from "@/Components/DNFooterNew/DNFooterNew";
 
 /* =========================
    METADATA (HOME PAGE)
@@ -128,6 +129,7 @@ export default function MainLayout({ children }) {
     <main>{children}</main>
     <ScrollToTop />
     <Footer />
+    {/* <DNFooterNew/> */}
     <WhatsApp />
   </SmoothScroll>
 </PageLoader>

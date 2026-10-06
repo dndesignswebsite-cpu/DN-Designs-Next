@@ -255,10 +255,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Nature’s Balance</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -288,10 +288,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Koshish</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Label Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -324,10 +324,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Fluke</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Packaging</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -353,10 +353,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Wlue’s</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Packaging</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -401,10 +401,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Let’s Supp</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Web Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -433,10 +433,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Luxmi Cars</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Social Media</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -472,10 +472,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Gleephoria</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Brand Identity</h4>
                       <h4 className="brand-identity-btn">Website Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>
@@ -507,10 +507,10 @@ async function page() {
                     <div className="brand-identity-div-headg">
                       <h3>Deep Root</h3>
                     </div>
-                    <div className="brand-identity-btn-up">
+                    {/* <div className="brand-identity-btn-up">
                       <h4 className="brand-identity-btn">Rebranding</h4>
                       <h4 className="brand-identity-btn">Website Design</h4>
-                    </div>
+                    </div> */}
                   </div>
 
                   <p>

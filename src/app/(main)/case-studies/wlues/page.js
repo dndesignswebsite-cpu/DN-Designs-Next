@@ -13,7 +13,7 @@ export async function generateMetadata() {
   await connectDB();
   let seo;
   try {
-    seo = await getPageById("wlues-case-study", null, false);
+    seo = await getPageById("case-studies/wlues", null, false);
   } catch (error) {
     return {
       title: "Wlues Case Study",
@@ -64,7 +64,7 @@ async function page() {
   await connectDB();
   let pageData;
   try {
-    pageData = await getPageById("wlues-case-study", null, true);
+    pageData = await getPageById("case-studies/wlues", null, true);
   } catch (error) {
     notFound();
   }
@@ -92,7 +92,7 @@ async function page() {
       {/* schema */}
       {cleanSchema && (
         <script
-          key={`schema-page-${pageData._id || "wlues-case-study"}`}
+          key={`schema-page-${pageData._id || "case-studies/wlues"}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: cleanSchema }}
         />

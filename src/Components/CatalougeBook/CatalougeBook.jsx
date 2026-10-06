@@ -49,7 +49,7 @@ function CatalougeBook() {
                alt="Green Horn Catalogue"
                 width={1600} 
                 height={1000} 
-                className="responsive-img catalougeBookFlip-img" 
+                className="responsive-img catalougeBookFlip-img catalougeBookFlip-img-see-icon" 
                 sizes="(max-width:768px) 100vw, 50vw"
                 />
                 </div>
@@ -93,7 +93,7 @@ function CatalougeBook() {
                alt="Green Horn Catalogue"
                 width={1600} 
                 height={1000} 
-                className="responsive-img catalougeBookFlip-img" 
+                className="responsive-img catalougeBookFlip-img catalougeBookFlip-img-see-icon" 
                 sizes="(max-width:768px) 100vw, 50vw"
                 />
                 </div>
@@ -142,7 +142,7 @@ function CatalougeBook() {
                alt="Green Horn Catalogue"
                 width={1600} 
                 height={1000} 
-                className="responsive-img catalougeBookFlip-img" 
+                className="responsive-img catalougeBookFlip-img catalougeBookFlip-img-see-icon" 
                 sizes="(max-width:768px) 100vw, 50vw"
                 />
                 </div>

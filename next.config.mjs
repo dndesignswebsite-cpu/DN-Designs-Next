@@ -46,6 +46,53 @@ const nextConfig = {
       // },
 
 
+
+      // redirections for case new slugs studies 
+
+      {
+        source: "/enlite-case-study",
+        destination: "/case-studies/enlite",
+        permanent: true, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/letssupp-case-study",
+        destination: "/case-studies/letssupp",
+        permanent: true, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/1am-case-study",
+        destination: "/case-studies/1am",
+        permanent: true, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/nectarpure-case-study",
+        destination: "/case-studies/nectarpure",
+        permanent: true, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/wlues-case-study",
+        destination: "/case-studies/wlues",
+        permanent: true, // true = 301, false = 302
+      },
+
+
+      {
+        source: "/grincare-case-study",
+        destination: "/case-studies/grincare",
+        permanent: true, // true = 301, false = 302
+      },
+      // end
+
+
+
         {
         source: "/blog/techniques-for-stunning-product-photography-a-how-to-guide ",
         destination: "/blog/roi-of-rebranding",
