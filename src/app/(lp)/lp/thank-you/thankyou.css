@@ -31,7 +31,7 @@
 }
 
 .return-to-homepage{
-    background-color: #ca2734;
+    background-color: #DC2211;
    font-family: var(--font-helvetica);
     font-weight: 500;
     font-size: 16px;
@@ -39,7 +39,7 @@
     box-shadow: 0 4px 24px 0px rgba(202, 39, 52, 0.502);
     color: #fff;
     padding: 8px 18px;
-    border: 1px solid #ca2734;
+    border: 1px solid #DC2211;
 }
 
 

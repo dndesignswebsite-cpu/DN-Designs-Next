@@ -3,14 +3,14 @@ import "./HomePageHeroNew.css"
 import DesignLoveGrow from './DesignLoveGrow'
 import HomePageBtn from '../HomePageBtn/HomePageBtn'
 
-function HomePageHeroNew() {
+function HomePageHeroNew({ title, description }) {
   return (
     <div>
     <section className='home-page-hero-section'>
       <div className='container'>
       <div className='col-12 col-sm-12 col-md-12 col-lg-5 home-page-hero-content-div'>
-        <h1 className='home-page-hero-content-heading'>We Build Brands That Inspire Confidence and Drive Profit</h1>
-        <p className='home-page-hero-content-para'>Let’s collaborate and craft a truly standout brand for you.</p>
+        <h1 className='home-page-hero-content-heading'>{title}</h1>
+        <p className='home-page-hero-content-para'>{description}</p>
         <div className='home-page-hero-btn-div'>
         {/* <button className='talk-to-us-hero-btn'>Talk to Us</button>
         <button className='explore-our-work-hero-btn'>Explore Our Work</button> */}

@@ -45,7 +45,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .potfolio-div-btns {
@@ -56,7 +56,7 @@
 .our-port-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   padding: 7px 10px;
 font-family: var(--font-helvetica);
@@ -64,7 +64,7 @@ font-family: var(--font-helvetica);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   font-size: 12px;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-port-btn-up {
@@ -79,7 +79,7 @@ font-family: var(--font-helvetica);
  font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   font-size: 18px;
 }
@@ -88,7 +88,7 @@ font-family: var(--font-helvetica);
   padding: 20px 20px 20px 20px;
 }
 .port-div-headg h3 {
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -220,7 +220,7 @@ font-family: var(--font-helvetica);
     width: 60%;
 }
 .understanding-fmcg-head-span{
-    color: #ca2734;
+    color: #DC2211;
 }
 .understanding-fmcg-col-para{
    font-family: var(--font-helvetica);
@@ -304,7 +304,7 @@ font-weight: 400;
 font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .app-pro-div p {
@@ -343,7 +343,7 @@ font-family: var(--font-helvetica);
 }
 
 .appr-pro-anime-main-head-span{
-    color: #ca2734;
+    color: #DC2211;
 }
 
 
@@ -378,7 +378,7 @@ font-family: var(--font-helvetica);
 
 
 .everything-a-food-section-head-span{
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .everything-a-food-section-col{
@@ -394,7 +394,7 @@ font-family: var(--font-helvetica);
 }
 
 .everything-a-food-section-col:hover{
-   border: 3px solid #ca2734;
+   border: 3px solid #DC2211;
    cursor: pointer;
 }
 
@@ -420,7 +420,7 @@ font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-size: 32px;
   font-weight: 500;
-  color: #ca2734;
+  color: #DC2211;
   padding-bottom: 10px;
 }
 
@@ -464,7 +464,7 @@ a{
  font-family: var(--font-helvetica);
   font-size: 14px;
   text-transform: uppercase;
-  color: #ca2734;
+  color: #DC2211;
   letter-spacing: 2.4px;
   font-weight: 400;
   margin-bottom: 0;
@@ -480,7 +480,7 @@ font-family: var(--font-helvetica);
 }
 
 .our-stregetic-framework-head-span{
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-stregetic-framework{
@@ -504,7 +504,7 @@ font-family: var(--font-helvetica);
 }
 
 .our-stregetic-framework-col-content-div-label-para{
-  color: #ca2734;
+  color: #DC2211;
  font-family: var(--font-helvetica);
 
   font-size: 14px;
@@ -519,7 +519,7 @@ font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-size: 32px;
   font-weight: 500;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-stregetic-framework-col-content-div-desc-para{
@@ -537,7 +537,7 @@ font-family: var(--font-helvetica);
 }
 
 .our-stregetic-framework-col-content-div-list-item::marker{
- color: #ca2734;
+ color: #DC2211;
 }
 
 .our-stregetic-framework-col-content-div-list-item{
@@ -959,7 +959,7 @@ font-family: var(--font-helvetica);
 }
 
 .fmcg-industries-head-span {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 
@@ -1007,8 +1007,8 @@ font-family: var(--font-helvetica);
 
 .fmcg-industries-single-col-div:hover {
   cursor: pointer;
-  background-color: #ca2734;
-  border-color: #ca2734;
+  background-color: #DC2211;
+  border-color: #DC2211;
 }
 
 .fmcg-industries-single-col-div:hover .fmcg-industries-para {
@@ -1054,7 +1054,7 @@ font-family: var(--font-helvetica);
 }
 
 .every-pr{
-  color: #ca2734;
+  color: #DC2211;
 }
 
 

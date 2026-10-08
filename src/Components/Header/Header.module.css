@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ca2734;
+    --primary-color: #DC2211;
     --text-color: #000000;
     --nav-bg-color: #1a1a1a;
     --nav-link-color: #ffffff;
@@ -154,10 +154,10 @@
 }
 
 .header-solo-link:hover{
-    color: #ca2734 !important;
+    color: #DC2211 !important;
 }
 .active {
-  color: #ca2734   !important;
+  color: #DC2211   !important;
 }
 
 

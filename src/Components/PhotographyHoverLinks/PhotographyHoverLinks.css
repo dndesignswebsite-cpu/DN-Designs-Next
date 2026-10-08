@@ -47,7 +47,7 @@
 .hover-section-to-div:hover::after {
     color: white;
     transform: rotate(45deg);
-    color: #ca2734;
+    color: #DC2211;
 }
 
 .hover-section-to-div:nth-child(4) {

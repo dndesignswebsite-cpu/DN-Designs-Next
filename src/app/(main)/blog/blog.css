@@ -30,7 +30,7 @@
 
 .dyna {
   font-size: 14px;
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
   font-weight: 400;
   padding-left: 5px;
@@ -49,7 +49,7 @@
 }
 
 .single-blog-list-post-head:hover {
-  color: #ca2734;
+  color: #DC2211;
   transition: 0.5s;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .blog-read-more-btn {
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: #ffffff;
   padding: 15px 42px 16px 42px;
   font-weight: 400;
@@ -85,12 +85,12 @@
 
 .blog-load-more-btn {
   background-color: transparent;
-  color: #ca2734;
+  color: #DC2211;
   padding: 12px 30px;
   font-weight: 400;
   font-size: 16px;
   border-radius: 5px;
-  border: 2px solid #ca2734;
+  border: 2px solid #DC2211;
   transition: 0.5s;
   letter-spacing: 0.1px;
   font-family: var(--font-helvetica);
@@ -98,7 +98,7 @@
 }
 
 .blog-load-more-btn:hover:not(:disabled) {
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: #ffffff;
 }
 
@@ -132,7 +132,7 @@
   color: #43464b;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #ca2734;
+  border-bottom: 2px solid #DC2211;
   display: inline-block;
   font-family: var(--font-helvetica);
     
@@ -149,7 +149,7 @@
 }
 
 .recent-post-link:hover {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 /* Recent Post Card with Thumbnail */
@@ -188,7 +188,7 @@
 }
 
 .recent-post-card:hover .recent-post-title {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .recent-post-date {
@@ -207,7 +207,7 @@ font-weight: 400;
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: #ffffff;
   border: none;
   border-radius: 50%;
@@ -249,7 +249,7 @@ font-weight: 400;
 
 .blog-category-tag {
   background-color: #fce8e9;
-  color: #ca2734;
+  color: #DC2211;
   padding: 4px 14px;
   border-radius: 5px;
   font-size: 13px;
@@ -262,7 +262,7 @@ font-weight: 400;
 }
 
 .blog-category-tag:hover {
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: #fff;
 }
 
@@ -302,8 +302,8 @@ font-weight: 400;
 
 .blog-tag-item:hover {
   background: #fff;
-  border-color: #ca2734;
-  color: #ca2734;
+  border-color: #DC2211;
+  color: #DC2211;
   transform: translateY(-2px);
 }
 
@@ -314,7 +314,7 @@ font-weight: 400;
 }
 
 .hover-red:hover {
-  color: #ca2734 !important;
+  color: #DC2211 !important;
 }
 
 .category-sidebar-list a {
@@ -332,9 +332,9 @@ font-weight: 400;
 }
 
 .category-sidebar-list a:hover {
-  border-color: #ca2734;
+  border-color: #DC2211;
   background: #fff;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 

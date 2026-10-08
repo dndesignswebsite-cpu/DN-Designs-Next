@@ -29,13 +29,23 @@ function LPHeader() {
             <div className="col-2">
               <div className="head-brand-logo-div">
                 <Image
-                  src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
+                  src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
+                  alt="DN Designs Logo"
+                  width={1000}
+                  height={1000}
+                  priority
+                  className="head-brand-logo"
+                />
+
+                 {/* <img
+                  src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
                   alt="DN Designs Logo"
                   width={250}
                   height={250}
                   priority
                   className="head-brand-logo"
-                />
+                  style={{width:"100px"}}
+                /> */}
               </div>
             </div>
 
@@ -110,13 +120,23 @@ function LPHeader() {
               <div className="head-brand-logo-div">
 
                 <Image
-                  src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
+                  src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
                   alt="DN Designs Logo"
                   width={250}
                   height={250}
                   priority
                   className="head-brand-logo"
                 />
+
+                 {/* <img
+                  src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
+                  alt="DN Designs Logo"
+                  width={250}
+                  height={250}
+                  priority
+                  className="head-brand-logo"
+                  style={{width:"150px"}}
+                /> */}
 
               </div>
 

@@ -19,6 +19,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
 
 /* arrow */
@@ -34,24 +35,31 @@
 
 /* first button */
 .hero button:first-child {
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: white;
 }
 
 /* second button (anchor) */
 .hero a {
-  background-color: #000;
+  background-color: #202020;
   color: white;
 }
 
 @media (max-width: 992px) {
   .hero {
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 100%;
   }
 
   .hero button,
   .hero a {
     margin: 5px;
     width: 100%;
+  }
+}
+
+@media(max-width:767px){
+  .hero{
+    flex-direction: column;
   }
 }

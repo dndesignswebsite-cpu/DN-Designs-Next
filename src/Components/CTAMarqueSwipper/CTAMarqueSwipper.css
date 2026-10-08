@@ -312,7 +312,7 @@ a{
 
 .cta-swipper-section {
     padding: 60px 0;
-    background: #121212;
+    background: #202020;
 }
 
 
@@ -418,9 +418,9 @@ a{
 
 .cta-swipper-para-desc {
     display: inline-block;
-    border-bottom: 2px solid #4D4D4D;
+    border-bottom: 2px solid #202020;
     padding-bottom: 2px;
-    color: #4D4D4D;
+    color: #202020;
     font-family: var(--font-helvetica);
     font-weight: 400;
 }
@@ -431,7 +431,7 @@ a{
 }
 
 .cta-swipper-label-para {
-    color: #ca2734;
+    color: #DC2211;
     font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 500;
@@ -489,12 +489,12 @@ a{
    ========================================= */
 
 .cta-swipper-para-icon-div:hover .cta-swipper-para-desc {
-    color: #ca2734;
-    border-bottom: 2px solid #ca2734;
+    color: #DC2211;
+    border-bottom: 2px solid #DC2211;
 }
 
 .cta-swipper-para-icon-div:hover .cta-swipper-fontAwesomeIcon-right-arrow {
-    color: #ca2734;
+    color: #DC2211;
     transform: rotate(0);
 }
 
@@ -678,8 +678,8 @@ a {
 
     display: block !important;
 
-    border-top: 2.5px solid #000 !important;
-    border-right: 2.5px solid #000 !important;
+    border-top: 2.5px solid #202020 !important;
+    border-right: 2.5px solid #202020 !important;
 
     font-size: 0 !important;
 

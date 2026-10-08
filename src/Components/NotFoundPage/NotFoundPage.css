@@ -65,7 +65,7 @@
   width: 42px;
   height: 2px;
 
-  background: #ca2734;
+  background: #DC2211;
 
   display: block;
 }
@@ -120,7 +120,7 @@
 .dn-404-zero {
   position: relative;
 
-  color: #ca2734;
+  color: #DC2211;
 
   transform: rotate(-7deg);
 
@@ -180,7 +180,7 @@
 
   border-radius: 50%;
 
-  background: #ca2734;
+  background: #DC2211;
 
   opacity: 0.1;
 }
@@ -209,7 +209,7 @@
 
   font-size: 55px;
 
-  box-shadow: 8px 8px 0 #ca2734;
+  box-shadow: 8px 8px 0 #DC2211;
 
   animation: dn404Float 3s ease-in-out infinite;
 }
@@ -295,7 +295,7 @@
 
   letter-spacing: 2px;
 
-  color: #ca2734;
+  color: #DC2211;
 }
 
 
@@ -361,7 +361,7 @@ font-weight: 500;
 
   border-radius: 5px;
 
-  background: #ca2734;
+  background: #DC2211;
 
   color: #ffffff;
 
@@ -393,7 +393,7 @@ font-weight: 500;
 
   background: #ffffff;
 
-  color: #ca2734;
+  color: #DC2211;
 
   font-size: 17px;
 
@@ -447,7 +447,7 @@ font-weight: 500;
 
 
 .dn-404-bottom span:first-child {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 
@@ -540,7 +540,7 @@ font-weight: 500;
 
     font-size: 43px;
 
-    box-shadow: 6px 6px 0 #ca2734;
+    box-shadow: 6px 6px 0 #DC2211;
   }
 
 
@@ -639,7 +639,7 @@ font-weight: 500;
 
     border-width: 1.5px;
 
-    box-shadow: 5px 5px 0 #ca2734;
+    box-shadow: 5px 5px 0 #DC2211;
   }
 
 

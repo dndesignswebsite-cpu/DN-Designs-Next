@@ -23,7 +23,7 @@
 }
 
 .testi-left-content {
-  background-color: #ca2734;
+  background-color: #DC2211;
   padding: 40px;
   border-radius: 10px 10px 0 0;
   margin: 0;
@@ -208,7 +208,7 @@ font-family: var(--font-helvetica);
 .testimonial-swiper .swiper-button-prev {
   width: 35px;
   height: 35px;
-  background: #ca2734;
+  background: #DC2211;
   border-radius: 50%;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   color: #fff;

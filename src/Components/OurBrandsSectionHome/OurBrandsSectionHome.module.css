@@ -5,7 +5,7 @@
   padding-bottom: 30px;
 }
 .every-pr{
-  color: #ca2734;;
+  color: #DC2211;
 }
 :root {
   --cards: 4;
@@ -165,7 +165,7 @@
   font-family: var(--font-helvetica);
   font-weight: 500;
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: #202020;
   padding-bottom: 20px;
    letter-spacing: -0.9px;
 }
@@ -192,12 +192,12 @@
 
 .mobile-view-our-brand h2 {
   font-size: 40px;
-  color: #000;
+  color: #202020;
   padding-bottom: 40px;
 }
 
 .mobile-view-our-brand-h3 {
-  color: #ca2734;
+  color: #DC2211;
   font-size: 32px;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -216,7 +216,7 @@
   margin-bottom: 20px;
 }
 .our-brand-mobile-div-clield {
-  border: 1px solid #a8a8a8;
+  border: 1px solid #202020;
   border-radius: 5px;
   height: 100%;
   min-height: 350px;
@@ -236,7 +236,7 @@
 .our-brand-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color:#DC2211;
   border-radius: 5px 5px 5px 5px;
   padding: 5px;
 }
@@ -262,7 +262,7 @@
 
 .our-brand-mobile-div-content p {
   margin-top: 20px;
-  color: #888888;
+  color: #202020;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -275,7 +275,7 @@
 
 .mobile-casestudy-wrapper-link {
   text-decoration: none;
-  color: #000;
+  color: #202020;
 }
 
 /* image  */

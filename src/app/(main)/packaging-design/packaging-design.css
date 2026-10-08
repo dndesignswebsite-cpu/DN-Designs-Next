@@ -1,5 +1,5 @@
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
  /* Our Work Portfolio */
 
@@ -57,7 +57,7 @@
 .our-port-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   padding: 10px;
   font-family: var(--font-helvetica);
@@ -79,7 +79,7 @@
     font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius:5px;
   font-size: 18px;
 }
@@ -88,7 +88,7 @@
   padding: 20px;
 }
 .port-div-headg h3 {
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-size: 32px;
@@ -265,7 +265,7 @@
 }
 
 .create-number{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-corbert-bold);
     font-size: 85px;
     font-weight: 700;
@@ -353,7 +353,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number-mobile{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-corbert-bold);
     font-size: 40px;
     font-weight: 700;
@@ -478,7 +478,7 @@ font-family: var(--font-helvetica);
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: #DC2211;
   }
 
   .top-cap-back-content {

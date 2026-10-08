@@ -179,9 +179,9 @@ export default function Home() {
         </div>
       </section> */}
 
-      <HomePageHero title={title} description={description} />
+      {/* <HomePageHero title={title} description={description} /> */}
 
-     {/* <HomePageHeroNew/> */}
+     <HomePageHeroNew title={title} description={description}/>
      
 
      {/* our brands section */}

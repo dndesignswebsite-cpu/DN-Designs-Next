@@ -1,5 +1,5 @@
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 
@@ -89,7 +89,7 @@ font-family: var(--font-helvetica);
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .app-pro-div p {
@@ -128,7 +128,7 @@ font-family: var(--font-helvetica);
 }
 
 .e-catalogues-left{
-  background-color: #ca2734;
+  background-color: #DC2211;
   border-radius: 5px;
   color: #ffffff;
   padding: 20px;
@@ -292,7 +292,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 85px;
@@ -380,7 +380,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number-mobile{
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 40px;

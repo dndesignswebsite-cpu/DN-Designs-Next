@@ -47,7 +47,7 @@ font-family: var(--font-helvetica);
 }
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .brand-identity-div-btns {
@@ -58,7 +58,7 @@ font-family: var(--font-helvetica);
 .brand-identity-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   padding: 10px;
  font-family: var(--font-helvetica);
@@ -80,7 +80,7 @@ font-family: var(--font-helvetica);
    font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   font-size: 18px;
 }
@@ -89,7 +89,7 @@ font-family: var(--font-helvetica);
   padding: 20px;
 }
 .brand-identity-div-headg h3 {
- color: #ca2734;
+ color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -261,7 +261,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 85px;
@@ -348,7 +348,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number-mobile{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 40px;
@@ -456,7 +456,7 @@ font-family: var(--font-helvetica);
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: #DC2211;
   }
 
   .characteristics-of-good-back-content {

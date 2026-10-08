@@ -16,7 +16,7 @@
 }
 
 .every-pr{
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .brand-identity-hero-section-head{
@@ -37,7 +37,7 @@
 }
 
 .every-pr{
-    color: #CA2734;
+    color: #DC2211;
 }
 
 
@@ -400,7 +400,7 @@
 }
 
 .brand-identity-what-we-do-col-div-left-para-label{
-    color: #CA2734;
+    color: #DC2211;
    font-family: var(--font-helvetica);
     font-size: 14px;
     font-weight: 400;
@@ -454,12 +454,12 @@
 }
 
 .category-div:hover{
-    border-color: #ca2734;  
+    border-color: #DC2211;  
     cursor: pointer;
 }
 
 .category-div:hover .category-div-para{
-    color: #CA2734;
+    color: #DC2211;
 }
 
 
@@ -523,7 +523,7 @@
 
 .communication-strategy-label-para{
    font-family: var(--font-helvetica);
-    color: #CA2734;
+    color: #DC2211;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -676,7 +676,7 @@
     border-radius: 5px;
     margin-top: 10px;
     transition: all 0.4s ease;
-    border-bottom: 4px solid #CA2734;
+    border-bottom: 4px solid #DC2211;
     height: 100%;
 }
 
@@ -715,7 +715,7 @@
 
 /* hover changes */
 .communication-strategy-hover-col:hover .communication-strategy-hover-col-upper{
-    background-color: #CA2734;
+    background-color: #DC2211;
 }
 .communication-strategy-hover-col:hover .communication-strategy-hover-col-upper-head-div-heading{
     color: #fff;
@@ -743,7 +743,7 @@
 }
 
 .communication-strategy-hover-col:hover  .communication-strategy-hover-col-bottom{
-    background-color: #CA2734;
+    background-color: #DC2211;
 }
 
 .communication-strategy-hover-col:hover .communication-strategy-hover-col-bottom-para-desc{
@@ -790,7 +790,7 @@
 /* @media(max-width:991px){
 
  .communication-strategy-hover-col-upper{
-    background-color: #CA2734;
+    background-color: #DC2211;
 }
  .communication-strategy-hover-col-upper-head-div-heading{
     color: #fff;
@@ -818,7 +818,7 @@
 }
 
   .communication-strategy-hover-col-bottom{
-    background-color: #CA2734;
+    background-color: #DC2211;
 }
 
  .communication-strategy-hover-col-bottom-para-desc{

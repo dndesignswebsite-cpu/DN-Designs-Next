@@ -34,11 +34,11 @@ function DNFooterNew() {
               <div className='col-12 col-sm-12 col-md-6 col-lg-3 DNFooterNew-footer-list-div mt-4 order-2 order-md-2'>
               <p className='DNFooterNew-footer-list-label'>Case Studies</p>
               <ul className='DNFooterNew-footer-list-item-div'>
-                <li className='DNFooterNew-footer-list-item'><Link href="/1am-case-study">1 AM</Link></li>
+                <li className='DNFooterNew-footer-list-item'><Link href="/case-studies/1am">1 AM</Link></li>
 
-               <li className='DNFooterNew-footer-list-item'><Link href="/letssupp-case-study">Let's Supp</Link></li>
+               <li className='DNFooterNew-footer-list-item'><Link href="/case-studies/letssupp">Let's Supp</Link></li>
 
-                <li className='DNFooterNew-footer-list-item'><Link href="/enlite-case-study">Enlite</Link></li>
+                <li className='DNFooterNew-footer-list-item'><Link href="/case-studies/enlite">Enlite</Link></li>
               </ul>
               </div>
 

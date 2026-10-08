@@ -3,7 +3,7 @@
 .page-transition {
   position: fixed;
   inset: 0;
-  background: #ca2734;
+  background: #DC2211;
   z-index: 9999998;
   pointer-events: none;
 
@@ -37,7 +37,7 @@
 .page-transition {
   position: fixed;
   inset: 0;
-  background: #ca2734;
+  background: #DC2211;
   z-index: 9999998;
   pointer-events: none;
 

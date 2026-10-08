@@ -48,7 +48,7 @@
 .explore-our-work-hero-btn{
    
     padding: 8px 50px 10px 50px;
-    background-color: #000;
+    background-color: #202020;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -69,11 +69,11 @@
 
      background: linear-gradient(
     90deg,
-    #000000,
+    #202020,
     #3A090B,
     #DC2211,
     #3A090B,
-    #000000
+    #202020
   );
   background-size: 300% 50%;
   background-clip: text;
@@ -85,7 +85,7 @@
     letter-spacing: -.9px;
     margin-bottom: 30px;
 
-  animation: gradientMove 6s ease-in-out infinite;
+  animation: gradientMove 14s ease-in-out infinite;
 
 }
 
@@ -106,7 +106,7 @@
 
 
 .home-page-hero-content-para{
-    color: #1E1E1E;
+    color: #202020;
     font-size: 26px;
     font-weight: 400;
     font-family: var(--font-helvetica);
@@ -248,7 +248,7 @@
 .hero-banner-second-section-head{
   font-family: var(--font-helvetica);
   font-size: 60px;
-  color: #050505;
+  color: #202020;
   font-weight: 400;
   z-index: 5;
 }

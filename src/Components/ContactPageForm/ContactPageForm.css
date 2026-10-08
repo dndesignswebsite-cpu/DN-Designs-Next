@@ -23,7 +23,7 @@
 
 .form-col {
   padding: 60px 50px;
-  background-color: #ca2734;
+  background-color: #DC2211;
   margin: 0;
 }
 
@@ -102,7 +102,7 @@ font-family: var(--font-helvetica);
   margin-top: 40px;
   padding: 12px 30px;
   background-color: #fff;
-  color: #ca2734;
+  color: #DC2211;
   border: none;
   font-weight: 700;
   text-transform: uppercase;

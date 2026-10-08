@@ -346,11 +346,11 @@
 .city-swiper .swiper-button-next:hover,
 .city-swiper .swiper-button-prev:hover {
   
-   background-color: #ca2734;
+   background-color: #DC2211;
 }
 
 .every-pr{
-  color:#ca2734;
+  color:#DC2211;
 }
 
 
@@ -380,7 +380,7 @@
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ca2734;
+    color: #DC2211;
     line-height: 1em;
     margin-bottom: 10px;
 }
@@ -1061,7 +1061,7 @@ font-weight: 400;
 ========================================================= */
 
 .every-pr {
-    color: #ca2734;
+    color: #DC2211;
 }
 
 
@@ -1101,7 +1101,7 @@ font-weight: 400;
 
 .city-swiper .swiper-button-next:hover,
 .city-swiper .swiper-button-prev:hover {
-    background-color: #ca2734;
+    background-color: #DC2211;
 }
 
 
@@ -1124,7 +1124,7 @@ font-weight: 400;
 
     text-transform: uppercase;
 
-    color: #ca2734;
+    color: #DC2211;
 
     line-height: 1em;
 
@@ -1278,7 +1278,7 @@ font-weight: 400;
     
     font-size: 18px;
     text-transform: uppercase;
-    color: #ca2734;
+    color: #DC2211;
     letter-spacing: 1px;
    text-align: center;
    font-weight: 400;

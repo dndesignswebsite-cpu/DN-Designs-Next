@@ -44,7 +44,7 @@
 }
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .potfolio-div-btns {
@@ -55,14 +55,14 @@
 .our-port-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px 5px 5px 5px;
   padding: 7px 20px;
   font-family: var(--font-roboto);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   font-size: 16px;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-port-btn-up {
@@ -76,7 +76,7 @@
    font-weight: 400;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px;
   font-size: 18px;
 }
@@ -85,7 +85,7 @@
   padding: 20px 20px 20px 20px;
 }
 .port-div-headg h3 {
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -217,7 +217,7 @@
 }
 
 .mobile-view-our-brand-h3 {
-  color: #ca2734;
+  color: #DC2211;
  font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -258,7 +258,7 @@
 .our-brand-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius: 5px 5px 5px 5px;
   padding: 5px;
 }
@@ -313,7 +313,7 @@
 }
 
 .mobile-view-branding-that-h3 {
-  color: #ca2734;
+  color: #DC2211;
  font-family: var(--font-helvetica);
     font-weight: 400;
   font-size: 32px;
@@ -349,7 +349,7 @@
 .branding-that-mobile-btn {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #ca2734;
+  border-color: #DC2211;
   border-radius:5px;
   padding: 5px;
 }
@@ -578,7 +578,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 85px;
@@ -666,7 +666,7 @@ font-family: var(--font-helvetica);
 }
 
 .create-number-mobile{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 40px;
@@ -674,7 +674,7 @@ font-family: var(--font-helvetica);
 }
 
 .card-body-create-mobile h2{
-      color: #ca2734;
+      color: #DC2211;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 35px;

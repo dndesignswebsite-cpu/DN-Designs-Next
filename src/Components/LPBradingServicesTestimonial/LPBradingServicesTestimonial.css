@@ -1,6 +1,6 @@
 .lp-testimonial-swipper-bst{
     padding: 60px 0;
-    background: #ca2734;
+    background: #DC2211;
 }
 
 .rating-icons-bst {
@@ -17,7 +17,7 @@
 
 .client-img-para-bst{
     font-size: 20px;
-    color: #ca2734;
+    color: #DC2211;
     font-family: var(--font-helvetica);
     
     background-color: rgba(202, 39, 52, 0.2);
@@ -106,7 +106,7 @@
 
 .testimonial-prev-bst:hover svg path,
 .testimonial-next-bst:hover svg path{
-    stroke:#ca2734;
+    stroke:#DC2211;
 }
 
 .swiper-pagination{
