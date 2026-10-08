@@ -1,5 +1,5 @@
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 /* Designs that speak your industryis language */
@@ -170,7 +170,7 @@ font-weight: 500;
 }
 
 .create-number{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 85px;
@@ -258,7 +258,7 @@ font-weight: 500;
 }
 
 .create-number-mobile{
-  color: #ca2734;
+  color: #DC2211;
    font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
     font-size: 40px;
@@ -388,7 +388,7 @@ font-family: var(--font-helvetica);
   }
 
   .characteristics-of-good-div {
-    background-color: #ca2734;
+    background-color: #DC2211;
   }
 
   .characteristics-of-good-back-content {

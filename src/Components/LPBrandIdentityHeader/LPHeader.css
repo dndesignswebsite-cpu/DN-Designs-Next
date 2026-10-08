@@ -33,7 +33,8 @@ Logo
 =========================*/
 
 .head-brand-logo{
-    width:100%;
+    /* width:100%; */
+    width: 110px !important;
     height:auto;
     display:block;
 }
@@ -59,6 +60,13 @@ Logo
     display: flex;
     align-items: center;
     justify-content: center !important;
+}
+
+.head-brand-logo{
+    /* width:100%; */
+    width: 80px !important;
+    height:auto;
+    display:block;
 }
 
 
@@ -93,7 +101,7 @@ Navigation
 }
 
 .navlink-anchor-tag:hover{
-    color: #ca2734;
+    color: #DC2211;
 }
 
 /*=========================
@@ -109,7 +117,7 @@ Button
 
 .lets-connect-cta-btn{
 
-    border:2px solid #ca2734;
+    border:2px solid #DC2211;
     border-radius:5px;
     padding:8px 22px;
     background:white;

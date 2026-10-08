@@ -104,7 +104,7 @@ font-weight: 600;
 
 
 .swiper-pagination-bullet-active {
-  background: #ca2734; 
+  background: #DC2211; 
   transform: scale(1.3); 
 }
 
@@ -124,7 +124,7 @@ font-weight: 600;
     }
 
     .swiper-pagination-bullet-active {
-        color: #ca2734 !important;
+        color: #DC2211 !important;
          transform: scale(1);
     }
 
@@ -212,7 +212,7 @@ font-weight: 400;
     }
 
     .custom-buttons button.active {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 @media(max-width:767px){

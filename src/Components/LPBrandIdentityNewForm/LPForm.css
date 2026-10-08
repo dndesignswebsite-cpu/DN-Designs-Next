@@ -9,7 +9,7 @@
 }
 
 .form-row-new{
-  /* background-color: #ca2734; */
+  /* background-color: #DC2211; */
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
   border-radius: 0px 5px 5px 0px ;
@@ -34,7 +34,7 @@
 }
 
 .inpt label span{
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .inpt input {
@@ -78,7 +78,7 @@
 .sbmt-btn {
   width: 100%;
   padding: 14px;
-  background: #ca2734;
+  background: #DC2211;
   color: white;
   font-size: 15px;
   border: none;
@@ -91,7 +91,7 @@ font-family: var(--font-helvetica);
 
 .form-box{
   /* padding: 10px; */
-  /* background-color: #ca2734; */
+  /* background-color: #DC2211; */
   margin: 0;
   height: 100%;
   border-radius: 5px;
@@ -110,9 +110,9 @@ background-color: #fff;
 
 
 .form-left-content{
-  border-right: 10px solid #ca2734;
-  border-top: 10px solid #ca2734;
-  border-bottom: 10px solid #ca2734;
+  border-right: 10px solid #DC2211;
+  border-top: 10px solid #DC2211;
+  border-bottom: 10px solid #DC2211;
   padding: 0;
   margin: 0;
 }
@@ -184,7 +184,7 @@ background-color: #fff;
 }
 
 .succes-class-form{
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
    font-weight: 400;
   font-size: 18px;

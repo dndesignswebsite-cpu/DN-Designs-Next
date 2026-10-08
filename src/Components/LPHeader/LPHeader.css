@@ -33,9 +33,10 @@ Logo
 =========================*/
 
 .head-brand-logo{
-    width:100%;
+    /* width:100%; */
     height:auto;
     display:block;
+    width: 110px !important;
 }
 
 .head-brand-logo-div{
@@ -98,7 +99,7 @@ Button
 
 .lets-connect-cta-btn{
 
-    border:2px solid #ca2734;
+    border:2px solid #DC2211;
     border-radius:5px;
     padding:8px 22px;
     background:white;
@@ -129,6 +130,11 @@ Mobile Header
     display:flex;
     align-items:center;
     padding:10px;
+}
+
+.head-brand-logo{
+   
+    width: 80px !important;
 }
 
 }

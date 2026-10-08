@@ -18,7 +18,7 @@
 .fixed-cta-content{
     padding: 6px 16px;
     background-color: #fff;
-    border: 1px solid #ca2734;
+    border: 1px solid #DC2211;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
@@ -34,8 +34,8 @@
 }
 
 .mobile-footer-btn-2-zz{
-    background-color: #ca2734;
-    border: 1px solid #ca2734;
+    background-color: #DC2211;
+    border: 1px solid #DC2211;
     font-family: var(--font-helvetica);
     color: #fff;
     font-weight: 500;

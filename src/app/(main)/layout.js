@@ -128,8 +128,8 @@ export default function MainLayout({ children }) {
     <Header />
     <main>{children}</main>
     <ScrollToTop />
-    <Footer />
-    {/* <DNFooterNew/> */}
+    {/* <Footer /> */}
+    <DNFooterNew/>
     <WhatsApp />
   </SmoothScroll>
 </PageLoader>

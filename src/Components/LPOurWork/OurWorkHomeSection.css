@@ -1,6 +1,6 @@
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 .our-work{
   padding-top: 80px;
@@ -203,7 +203,7 @@ width: 100%;
 
 
 .what-we-do-lefty-col-para{
-    color: #ca2734;
+    color: #DC2211;
     text-transform: uppercase;
     font-family: var(--font-helvetica);
     font-weight: 400;
@@ -212,7 +212,7 @@ width: 100%;
 
 
 .talk-to-us {
-  background-color: #ca2734;
+  background-color: #DC2211;
   font-family: var(--font-helvetica);
     font-weight: 400;
   border-radius: 5px;

@@ -24,7 +24,7 @@ margin-bottom: 60px;
 
 .dyna {
   font-size: 14px;
-  color: #ca2734;
+  color: #DC2211;
 font-family: var(--font-helvetica);
   font-weight: 400;
   padding-left: 5px;
@@ -51,7 +51,7 @@ font-family: var(--font-helvetica);
 }
 
 .blog-read-more-btn {
-  background-color: #ca2734;
+  background-color: #DC2211;
   color: #ffffff;
   padding: 15px 42px 16px 42px;
   font-weight: 400;
@@ -75,7 +75,7 @@ font-family: var(--font-helvetica);
 }
 
 .blog-meta-icon {
-  color: #ca2734;
+  color: #DC2211;
   font-size: 16px;
 }
 
@@ -151,7 +151,7 @@ color: #000000;
 }
 
 .recent-post-sidebar-link:hover .recent-post-sidebar-name {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 

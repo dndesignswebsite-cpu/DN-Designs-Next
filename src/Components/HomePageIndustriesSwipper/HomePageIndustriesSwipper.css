@@ -41,7 +41,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  background: #202020;
   color: #fff;
   padding: 20px;
   height: 70px;                
@@ -174,7 +174,7 @@
 .city-swiper .swiper-button-prev {
   width: 50px;
   height: 50px;
- background-color: #000;
+ background-color: #202020;
   border-radius: 50%;
   color: #fff;
 }
@@ -188,11 +188,11 @@
 .city-swiper .swiper-button-next:hover,
 .city-swiper .swiper-button-prev:hover {
   
-   background-color: #ca2734;
+   background-color: #DC2211;
 }
 
 .every-pr{
-  color:#ca2734;
+  color:#DC2211;
 }
 
 /* images optimisation  */
@@ -223,7 +223,7 @@
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ca2734;
+    color: #DC2211;
     line-height: 1em;
     margin-bottom: 10px;
 }
@@ -233,7 +233,7 @@
     letter-spacing: -0.9px;
     font-size: 40px;
     font-weight: 500;
-    color: #0A0A0A;
+    color: #202020;
 }
 
 .homepageindusriesswipper-content-right-para-desc{
@@ -241,7 +241,7 @@
   
     font-weight: 400;
     font-size: 14px;
-    color: #888888;
+    color: #202020;
     width: 50%;
 }
 

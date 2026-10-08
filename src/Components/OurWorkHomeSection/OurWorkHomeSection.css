@@ -1,6 +1,6 @@
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 .our-work{
   padding-top: 80px;
@@ -8,7 +8,7 @@
 }
 
 .our-work h2{
-  color: #000;
+  color: #202020;
   /* font-family: var(--font-corbert-bold); */
   font-family: var(--font-helvetica);
   letter-spacing: -0.9px;

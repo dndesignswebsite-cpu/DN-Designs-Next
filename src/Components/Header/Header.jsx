@@ -98,20 +98,20 @@ export default function Header() {
       <header className={`${styles["header"]} container`}>
         <div className={`${styles["logo"]}`}>
           <Link href="/" onClick={handleLinkClick}>
-            {/* <img
+            <img
               src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
               alt="DN Designs Logo"
-              style={{width:"100px"}}
-            /> */}
+              style={{width:"120px"}}
+            />
 
-            <Image
+            {/* <Image
               src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
               alt="DN Designs Logo"
               width={250}
               height={250}
               priority
               className={`${styles["logo-image-dn"]}`}
-            />
+            /> */}
           </Link>
         </div>
 

@@ -6,7 +6,7 @@
     
   font-size: 14px;
   text-transform: uppercase;
-  color: #ca2734;
+  color: #DC2211;
   letter-spacing: 2.4px;
   font-weight: 500;
   margin-bottom: 0;
@@ -22,7 +22,7 @@
 }
 
 .our-stregetic-framework-head-span {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-stregetic-framework {
@@ -45,7 +45,7 @@
 }
 
 .our-stregetic-framework-col-content-div-label-para {
-  color: #ca2734;
+  color: #DC2211;
   font-family: var(--font-helvetica);
   
   font-size: 14px;
@@ -60,7 +60,7 @@
     letter-spacing: -0.9px;
   font-size: 32px;
   font-weight: 500;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-stregetic-framework-col-content-div-desc-para {
@@ -78,7 +78,7 @@ font-family: var(--font-helvetica);
 }
 
 .our-stregetic-framework-col-content-div-list-item::marker {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .our-stregetic-framework-col-content-div-list-item {

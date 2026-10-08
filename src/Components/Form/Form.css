@@ -6,7 +6,7 @@
 }
 
 .form-row{
-  background-color: #ca2734;
+  background-color: #202020;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px 5px 5px 0px ;
@@ -17,19 +17,19 @@
 .inpt label{
    font-family: var(--font-helvetica);
         cursor: pointer;
-        color: #000;
+        color: #202020;
         font-size: 16px;
         font-weight:400;
 }
 
 .inpt label span{
-  color: #ca2734;
+  color: #202020;
 }
 
 .inpt input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ADADAD;
+  border: 1px solid #202020;
   border-radius: 5px;
 font-family: var(--font-helvetica);
   font-weight: 400;
@@ -40,7 +40,7 @@ font-family: var(--font-helvetica);
 .inpt textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ADADAD;
+  border: 1px solid #202020;
   border-radius: 5px;
  font-family: var(--font-helvetica);
   font-weight: 400;
@@ -52,7 +52,7 @@ font-family: var(--font-helvetica);
 
 .inpt input::placeholder,
 .inpt textarea::placeholder {
-  color: #ADADAD;
+  color: #202020;
   opacity: 1;
  font-family: var(--font-helvetica);
  font-weight: 400;
@@ -61,7 +61,7 @@ font-family: var(--font-helvetica);
 .sbmt-btn {
   width: 100%;
   padding: 16px;
-  background: #ca2734;
+  background: #202020;
   color: white;
   font-size: 18px;
   border: none;
@@ -74,7 +74,7 @@ font-family: var(--font-helvetica);
 
 .form-box{
   padding: 10px;
-  background-color: #ca2734;
+  background-color: #202020;
   margin: 0;
   height: 100%;
 }
@@ -88,9 +88,9 @@ font-family: var(--font-helvetica);
 
 
 .form-left-content{
-  border-right: 5px solid #ca2734;
-  border-top: 10px solid #ca2734;
-  border-bottom: 10px solid #ca2734;
+  border-right: 5px solid #202020;
+  border-top: 10px solid #202020;
+  border-bottom: 10px solid #202020;
   padding: 0;
   margin: 0;
 }
@@ -111,7 +111,7 @@ font-family: var(--font-helvetica);
 
 
 .form-main-content h3{
-    color: #000;
+    color: #202020;
     font-family: var(--font-helvetica);
   letter-spacing: -0.9px;
     font-size: 50px;
@@ -123,7 +123,7 @@ font-family: var(--font-helvetica);
 .form-main-content p{
        font-family: var(--font-helvetica);
        font-weight: 400;
-        color: #000;
+        color: #202020;
         line-height:1.6em;
         font-weight: 500;
         font-size: 18px;
@@ -157,7 +157,7 @@ font-family: var(--font-helvetica);
 }
 
 .succes-class-form{
-  color: #ca2734;
+  color: #DC2211;
  font-family: var(--font-helvetica);
  font-weight: 400;
   font-size: 18px;

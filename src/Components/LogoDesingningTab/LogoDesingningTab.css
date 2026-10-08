@@ -16,13 +16,13 @@
 }
 
 .custom-tabs .nav-link.active {
-  color: #ca2734;
+  color: #DC2211;
   border: 1px solid #000;
   border-bottom: 1px solid #fff;
 }
 
 .custom-tabs .nav-link:hover {
-  color: #ca2734;
+  color: #DC2211;
   background-color: #fafafa;
 }
 

@@ -4,13 +4,13 @@
   font-family: var(--font-helvetica);
   cursor: pointer;
   font-weight: 400;
-  background-color: #ca2734;
-  border: 2px solid #ca2734;
+  background-color: #DC2211;
+  border: 2px solid #DC2211;
   padding: 7px 30px;
   border-radius: 5px 5px;
   color: #fff;
 }
 .showmore-btn:hover {
-  background-color: black;
-  border: 2px solid black;
+  background-color: #202020;
+  border: 2px solid #202020;
 }

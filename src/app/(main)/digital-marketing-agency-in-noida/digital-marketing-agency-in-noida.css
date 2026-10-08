@@ -17,7 +17,7 @@
 
 .switch-on-div h3{
   font-size: 43px;
-  color: #ca2734;
+  color: #DC2211;
 font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -123,7 +123,7 @@ padding: 0;
 
 
 .every-pr {
-  color: #ca2734;
+  color: #DC2211;
 }
 
 .we-are-the-leading{
@@ -275,7 +275,7 @@ padding: 0;
   }
 
   .top-cap-div {
-    background-color: #ca2734;
+    background-color: #DC2211;
   }
 
   .top-cap-back-content {
@@ -334,7 +334,7 @@ padding: 0;
 }
 
 .organic-sessions-row{
-    background-color: #ca2734;
+    background-color: #DC2211;
     border-radius: 5px;
     padding: 20px;
     display: flex;

@@ -51,13 +51,13 @@
 .dd::after{
   content: " \002D";
    font-size: 30px;
-   color: #ca2734;
+   color: #DC2211;
 }
 
 .aa::after{
   content: "\002B ";
   font-size: 30px;
-  color: #ca2734;
+  color: #DC2211;
 }
 
 
@@ -69,7 +69,7 @@
 }
 
 .icon {
-  color: #ca2734;
+  color: #DC2211;
   font-size: 20px;
   transition: transform 0.3s ease;
 }
@@ -106,6 +106,6 @@
 }
 
 .faq-link{
-    color: #ca2734;
+    color: #DC2211;
     text-decoration: none;
 }

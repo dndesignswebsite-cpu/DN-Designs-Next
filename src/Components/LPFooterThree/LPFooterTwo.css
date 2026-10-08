@@ -1,6 +1,6 @@
 .lp-footer{
     padding: 10px 0;
-    background-color: #ca2734;
+    background-color: #DC2211;
 }
 
 .lp-footer-para{
@@ -26,7 +26,7 @@
         bottom: 0;
         width:100%;
         z-index: 9999;
-        background-color: #ca2734;
+        background-color: #DC2211;
         padding: 10px 10px 0px 10px;
         gap: 10px;
         padding-bottom: 10px;
@@ -34,7 +34,7 @@
 
     .mobile-footer-btn{
         
-        /* background-color: #ca2734; */
+        /* background-color: #DC2211; */
         /* color: #fff; */
        font-family: var(--font-helvetica);
         font-weight: 400;
@@ -45,7 +45,7 @@
     }
     .mobile-footer-btn-1{
         border: 1px solid #fff;
-        background-color: #ca2734;
+        background-color: #DC2211;
         color: #fff;
         width: 100%;
     }
@@ -53,7 +53,7 @@
     .mobile-footer-btn-2{
          border: 1px solid #fff;
         background-color: #fff;
-        color: #ca2734;
+        color: #DC2211;
         width: 100%;
         /* margin-bottom: 10px;
         padding: 10px 0; */
