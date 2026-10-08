@@ -99,7 +99,7 @@
 
   padding: 10px 10px;
 
-  background: #DC2211;
+  background: #202020;
 
   color: #fff;
 
@@ -124,6 +124,7 @@
 
 .chatbot-logo{
   width: 45px;
+  border-radius: 50%;
 }
 
 .chatbot-title {
