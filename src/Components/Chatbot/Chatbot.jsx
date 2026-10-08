@@ -1054,7 +1054,7 @@ export default function Chatbot() {
 
       {!isOpen && (
         
-       <img src="https://dndesigns.co.in/uploads/avatars/chatbotnewicon.png" className="img-fluid chatbot-button"
+       <img src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png" className="img-fluid chatbot-button"
           onClick={() =>
             setIsOpen(true)
           }
