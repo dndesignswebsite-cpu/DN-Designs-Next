@@ -33,7 +33,7 @@ Logo
 =========================*/
 
 .head-brand-logo{
-    width:100%;
+    width:120px !important;
     height:auto;
     display:block;
 }
@@ -52,6 +52,10 @@ Logo
 
 .head-brand-logo-div img{
     width:60px;
+}
+
+.head-brand-logo{
+    width: 80px !important;
 }
 
 
