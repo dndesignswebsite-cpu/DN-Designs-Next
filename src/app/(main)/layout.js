@@ -39,7 +39,7 @@ export const metadata = {
     siteName: "DN Designs",
     images: [
       {
-        url: "https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg",
+        url: "https://dndesigns.co.in/uploads/avatars/dn-social-Icon.jpg",
         width: 1200,
         height: 1200,
         alt: "DN Designs SEO OG Image",
@@ -52,7 +52,7 @@ export const metadata = {
     title: "DN Designs | Creative Branding Agency & Brand Design Company",
     description:
       "DN Designs is a trusted branding and design agency with years of experience in brand design, packaging, web design, and marketing for global brands.",
-    images: ["https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg"],
+    images: ["https://dndesigns.co.in/uploads/avatars/dn-social-Icon.jpg"],
   },
 };
 
@@ -70,8 +70,8 @@ const schemaData = {
       "logo": {
         "@type": "ImageObject",
         "@id": "https://dndesigns.co.in/#logo",
-        "url": "https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg",
-        "contentUrl": "https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg",
+        "url": "https://dndesigns.co.in/uploads/avatars/dn-social-Icon.jpg",
+        "contentUrl": "https://dndesigns.co.in/uploads/avatars/dn-social-Icon.jpg",
         "width": 512,
         "height": 512
       },
