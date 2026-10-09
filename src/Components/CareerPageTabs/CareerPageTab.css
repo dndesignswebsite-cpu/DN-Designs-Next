@@ -1,5 +1,5 @@
 .uni-career-com{
-    background-color: #DC2211;
+    background-color: #202020;
     margin: 80px 0;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .career-tabs-links li active{
-    background-color: #DC2211 !important;
+    background-color: #202020 !important;
 }
 
 .career-tabs-links li a{
@@ -24,7 +24,7 @@
 
 
 .career-tabs-links .nav-link.active {
-    background-color: #DC2211 !important;
+    background-color: #202020 !important;
     color: #fff;
     border-radius: 0;
     border-width: 2px;
@@ -61,7 +61,7 @@
 
 .career-tabs-links .nav-link.active {
     border-right: none;
-    background-color: #DC2211 !important;
+    background-color: #202020 !important;
     color: #fff;
     border-radius: 0;
 }
@@ -126,7 +126,7 @@
 
     .mobile-view{
         display:block;
-        background-color: #DC2211;
+        background-color: #202020;
         margin: 50px 0;
     }
 
