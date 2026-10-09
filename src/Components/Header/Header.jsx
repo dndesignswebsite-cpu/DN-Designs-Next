@@ -101,7 +101,8 @@ export default function Header() {
             <img
               src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
               alt="DN Designs Logo"
-              style={{width:"120px"}}
+              // style={{width:"120px"}}
+              className={`${styles["logo-image-dn"]}`}
             />
 
             {/* <Image
