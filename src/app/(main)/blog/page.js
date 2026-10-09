@@ -38,7 +38,7 @@ export const metadata = {
     siteName: "DN Designs",
     images: [
       {
-        url: "https://dndesigns.co.in/uploads/pages/dn-logo.png",
+        url: "https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg",
         width: 1200,
         height: 1200,
         alt: "DN Designs SEO OG Image",
@@ -51,7 +51,7 @@ export const metadata = {
     title: "DN Designs Blog. Branding, Packaging & Strategy Insights",
     description:
       "Explore branding, packaging design, and brand strategy insights from DN Designs. Learn how to build strong, consistent brands that drive real growth.",
-    images: ["https://dndesigns.co.in/uploads/pages/dn-logo.png"],
+    images: ["https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg"],
   },
 };
 

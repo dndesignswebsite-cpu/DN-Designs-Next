@@ -1074,7 +1074,7 @@ export default function Chatbot() {
             <div className="chatbot-header-info">
 
             <div className="chatbot-logo-div">
-              <img src="https://dndesigns.co.in/uploads/avatars/cantboat-111.jpg" className="img-fluid chatbot-logo"></img>
+              <img src="https://dndesigns.co.in/uploads/avatars/DN-New-social-Icon.jpg.jpeg" className="img-fluid chatbot-logo"></img>
             </div>
               <div className="chatbot-title">
                 DN Designs
