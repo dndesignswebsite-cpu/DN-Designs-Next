@@ -1,6 +1,7 @@
 import React from 'react'
 import "./DNFooterNew.css"
 import Link from 'next/link'
+import DNNewFooterLogo from './DNNewFooterLogo'
 
 function DNFooterNew() {
   return (
@@ -107,6 +108,7 @@ function DNFooterNew() {
         <div className='footer-dn-logo-div'>
           <img src="https://dndesigns.co.in/uploads/avatars/dnnewlogoGroup37152.svg" className='img-fluid footer-dn-logo'></img>
         </div>
+        {/* <DNNewFooterLogo/> */}
       </section>
     </div>
   )

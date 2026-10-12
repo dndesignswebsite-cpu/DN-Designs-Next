@@ -1,0 +1,64 @@
+
+/* ===================================
+   DN NEW FOOTER LOGO + TORCH EFFECT
+=================================== */
+
+.DNNewFooterLogo-section {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+
+    background-color: #202020;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    cursor: default;
+}
+
+/* Original SVG logo */
+.DNNewFooterLogo-image {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 0;
+}
+
+/* Dark layer with a transparent flashlight cutout */
+.DNNewFooterLogo-torch {
+    --torch-x: -800px;
+    --torch-y: -800px;
+
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    pointer-events: none;
+    background-color: rgba(32, 32, 32, 0.9);
+
+    -webkit-mask-image: radial-gradient(
+        circle 220px at var(--torch-x) var(--torch-y),
+        transparent 0%,
+        rgba(0, 0, 0, 0.04) 40%,
+        rgba(0, 0, 0, 0.30) 65%,
+        black 100%
+    );
+
+    mask-image: radial-gradient(
+        circle 220px at var(--torch-x) var(--torch-y),
+        transparent 0%,
+        rgba(0, 0, 0, 0.04) 40%,
+        rgba(0, 0, 0, 0.30) 65%,
+        black 100%
+    );
+}
+
+/* Disable mouse interaction on touch devices */
+@media (hover: none) {
+    .DNNewFooterLogo-torch {
+        display: none;
+    }
+}
