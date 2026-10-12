@@ -23,5 +23,12 @@
 
 .breadCrump{
   font-family: var(--font-helvetica);
+  padding-top: 15px;
+}
+
+@media(max-width:767px){
+   .breadCrump{
+    padding-top: 0;
+   }
 }
 
