@@ -31,6 +31,7 @@
   font-size: 18px;
   padding-left: 6px;
   transform: rotate(-40deg);
+  transition: all 0.3s ease;
 }
 
 /* first button */
@@ -63,3 +64,22 @@
     flex-direction: column;
   }
 }
+
+
+.hero button:hover{
+  background-color: #202020;
+color: #fff;
+}
+.hero a:hover{
+  background-color: #DC2211;
+  color: #fff;
+}
+.hero button:hover::after{
+transform: rotate(0deg);
+}
+.hero a:hover::after{
+transform: rotate(0deg);
+}
+
+
+
