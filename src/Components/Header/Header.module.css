@@ -8,6 +8,11 @@
     --hamburger-right: 180px;
 }
 
+/* FIX: scrollbar hide/show hone par layout shift na ho */
+:global(html) {
+    scrollbar-gutter: stable;
+}
+
 .header {
     position: relative;
     top: 0;
@@ -23,6 +28,17 @@
 
 .logo img {
     width: 80px;
+}
+
+/* FIX: nav open hone par header ka stacking context hata do (z-index: auto).
+   Isse logo overlay ke PEECHE chhip jata hai, aur button (z-index: 10001)
+   overlay ke upar rehta hai, apni hi jagah par (jump nahi karta) */
+.header.nav-open {
+    z-index: auto;
+}
+
+.nav-toggle-btn {
+    pointer-events: auto; /* sirf button clickable */
 }
 
 .nav-toggle-btn {
@@ -41,6 +57,12 @@
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+}
+
+/* FIX: disabled (isLocked) ke time button ka look change na ho */
+.nav-toggle-btn:disabled {
+    opacity: 1;
+    cursor: default;
 }
 
 .nav-toggle-btn.is-active {
@@ -118,7 +140,7 @@
 .nav-content-wrapper {
     max-width: 1400px;
     width: 100%;
-    padding: 0px;
+    padding: 66px 0px 0px 0px;
     /* color: #000000; */
     opacity: 1;
     transition: none;
