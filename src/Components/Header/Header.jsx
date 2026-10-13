@@ -105,7 +105,7 @@ export default function Header() {
               className={`${styles["logo-image-dn"]}`}
             />
 
-            {/* <Image
+            {/*  <Image
               src="https://dndesigns.co.in/uploads/pages/dn-logo.png"
               alt="DN Designs Logo"
               width={250}
