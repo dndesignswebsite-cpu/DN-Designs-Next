@@ -27,8 +27,8 @@
 
 .nav-toggle-btn {
     position: relative;
-    top: 0px;
-    right: 10px;
+    top: 0px !important;
+    right: 0px !important;
     z-index: 10001;
     background-color: transparent;
     border: 2px solid #000;
@@ -46,8 +46,8 @@
 .nav-toggle-btn.is-active {
     border-color: #000;
     color: #ffffff;
-     top: 5px;
-    right: 7px;
+     top: 0px !important;
+    right: 0px !important;
 }
 
 .nav-toggle-btn.is-active .toggle-icon,

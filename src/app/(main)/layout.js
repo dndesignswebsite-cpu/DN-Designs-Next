@@ -6,6 +6,7 @@ import ScrollToTop from "@/Components/ScrollToTop/ScrollToTop";
 import WhatsApp from "@/Components/WhatsApp/WhatsApp";
 import Script from "next/script";
 import PageLoader from "@/Components/PageLoader/PageLoader";
+import NextTopLoader from "nextjs-toploader";
 
 
 // add lp
@@ -125,6 +126,13 @@ export default function MainLayout({ children }) {
 
      <PageLoader>
   <SmoothScroll>
+     <NextTopLoader
+          color="#DC2211"
+          height={3}
+          showSpinner={false}
+          crawl={true}
+          speed={200}
+        />
     <Header />
     <main>{children}</main>
     <ScrollToTop />
