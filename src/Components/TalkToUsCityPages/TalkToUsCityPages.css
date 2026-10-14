@@ -43,3 +43,12 @@
     display: block;
   }
 }
+
+.talk-to-us:hover{
+  background-color: #DC2211;
+  color: #fff;
+}
+
+.talk-to-us:hover .fontAwesomeIcon-right-arrow{
+  transform: rotate(0);
+}
