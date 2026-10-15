@@ -557,7 +557,7 @@
 .blue-footer-btn,
 .orange-footer-btn {
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 0px;
     font-family: "neutronic-condensed", sans-serif;
     font-size: 18px;
     font-style: normal;

@@ -106,7 +106,7 @@
     width: 100%;
     background: linear-gradient(360deg, #0A0A0A 0%, rgba(10, 10, 10, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
     padding: 20px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0;
     flex-direction: column;
 }
 
@@ -121,11 +121,11 @@
 .what-we-do-box-div{
     background-color: #fff;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .what-we-do-box-div-img{
-    border-radius: 5px 5px 0 0;
+    border-radius: 0;
 }
 
 .what-we-do-box-div-content{
@@ -147,7 +147,7 @@
     color: #555555;
     background-color: #F5F5F5;
     padding: 5px 12px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .what-we-do-box-div-content-para{
@@ -251,7 +251,7 @@
    align-items: center;
    /* justify-content: space-between; */
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   border: 1px solid #E5E7EB;
   height: 100%;
   background-color: #fff;
@@ -336,7 +336,7 @@ font-family: var(--font-helvetica);
     gap: 5px;
     border: 1px solid rgba(202, 39, 52, 0.2);
     background-color: rgba(202, 39, 52, 0.1);
-    border-radius: 5px;
+    border-radius: 0px;
     width: fit-content;
     align-items: center;
     justify-content: center;
@@ -562,7 +562,7 @@ font-family: var(--font-helvetica);
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -694,7 +694,7 @@ font-family: var(--font-helvetica);
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 20px;
   margin: 10px 0;
 }

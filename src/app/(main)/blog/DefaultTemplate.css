@@ -11,7 +11,7 @@ margin-bottom: 60px;
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 20px;
 }
 
@@ -56,7 +56,7 @@ font-family: var(--font-helvetica);
   padding: 15px 42px 16px 42px;
   font-weight: 400;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 0px;
   border: none;
   transition: 0.5s;
   letter-spacing: 0.1px;
@@ -120,7 +120,7 @@ color: #000000;
 /* Recent Posts Sidebar Card */
 .recent-posts-box {
   background-color: #f5f5f7;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 30px;
 }
 
@@ -136,7 +136,7 @@ color: #000000;
   width: 90px;
   height: 60px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0px;
   flex-shrink: 0;
 }
 

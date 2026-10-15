@@ -578,7 +578,7 @@
 }
 .communication-strategy-hover-col-upper{
     padding: 35px;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: #F3F3F3;
     transition: all 0.4s ease;
     /* cursor: pointer; */
@@ -610,7 +610,7 @@
 }
 
 .communication-strategy-hover-col-video{
-    border-radius: 5px;
+    border-radius: 0px;
     /* visibility: hidden; */
 }
 .communication-strategy-hover-col-video-div{
@@ -673,7 +673,7 @@
 .communication-strategy-hover-col-bottom{
     padding: 35px;
     background-color: #F3F3F3;
-    border-radius: 5px;
+    border-radius: 0px;
     margin-top: 10px;
     transition: all 0.4s ease;
     border-bottom: 4px solid #DC2211;
@@ -700,7 +700,7 @@
     font-size: 14px;
     font-weight: 400;
     color: #555555;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .communication-strategy-hover-col-circle-img{

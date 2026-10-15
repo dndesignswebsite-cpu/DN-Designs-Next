@@ -10,7 +10,7 @@
     will-change: transform;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 
@@ -156,7 +156,7 @@
 ========================================================= */
 
 .home-page-points-new-row-col-bottom-div-image {
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 

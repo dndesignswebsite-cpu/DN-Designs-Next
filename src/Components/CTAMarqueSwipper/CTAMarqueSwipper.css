@@ -413,7 +413,7 @@ a{
 }
 
 .cta-col-img-main {
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .cta-swipper-para-desc {
@@ -505,7 +505,7 @@ a{
 
 .cta-swipper-slide {
     background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 
@@ -514,14 +514,14 @@ a{
    ========================================= */
 
 .cta-swipper-img {
-    border-radius: 0px 5px 5px 0;
+    border-radius: 0px 0px 0px 0;
     width: 100%;
 }
 
 @media (max-width: 767px) {
 
     .cta-swipper-img {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 0px 0px;
     }
 
     .cta-col-content-div {

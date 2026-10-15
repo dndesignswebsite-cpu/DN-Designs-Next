@@ -42,7 +42,7 @@
     top: 60px;
     padding: 20px;
     background-color: #F9F9F9;
-    border-radius: 5px;
+    border-radius:0px;
 }
 
 .table-of-content-section-table-head{
@@ -111,7 +111,7 @@
 .brand-at-glance-text-div{
     background-color: #F9F9F9;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .brand-at-glance-text-div-para{
@@ -152,7 +152,7 @@
 .brand-element-col{
     background-color: #272727;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0px;
     margin: 20px 0;
 }
 
@@ -235,7 +235,7 @@
     font-family: var(--font-helvetica);
     font-weight: 400;
     padding: 6px 10px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 /* swot-section */
@@ -343,7 +343,7 @@
 .product-mix-section-row-col{
     background-color: #F9F9F9;
     padding: 20px 20px;
-    border-radius: 5px;
+    border-radius: 0px;
     margin: 20px 0;
 }
 

@@ -11,7 +11,7 @@
   position: relative;
   height: 100%;
   background-color: #202020;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .social-media-main-div{
@@ -22,7 +22,7 @@
   height: 100%;
   align-items: stretch;
   background-color: #202020;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .wrapper-content{
@@ -32,7 +32,7 @@
   position: relative;
   top: 50px;
   box-shadow: 0 0 10px #0000001a;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .social-media-content{
@@ -54,7 +54,7 @@
  top: 0px;
  padding-bottom: 0;
  bottom: 0;
- border-radius: 5px;
+ border-radius: 0px;
 }
 
 .social-media-image-div-img{
@@ -64,7 +64,7 @@
  top: 0px;
  padding-bottom: 0;
  bottom: 0;
- border-radius: 5px;
+ border-radius: 0px;
 }
 
 .social-media-content h2{
@@ -216,7 +216,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -361,7 +361,7 @@
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -494,7 +494,7 @@ font-family: var(--font-helvetica);
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius:0px;
   padding: 20px;
   margin: 10px 0;
 }
@@ -536,13 +536,13 @@ font-family: var(--font-helvetica);
 .projects-completed img{
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .projects-completed-img{
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .projects-completed-div-main-col{
   display: flex;
@@ -596,7 +596,7 @@ font-family: var(--font-helvetica);
 
 .projects-completed-div-box-sh{
   box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   border: 1px solid #E5E7EB;
 }
 
@@ -645,18 +645,18 @@ font-family: var(--font-helvetica);
 }
 
 .success-story{
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
     border: 1px solid #E5E7EB;
 }
 
 .success-story img{
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
 }
 
 .success-story-content{
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .success-story-content h3{

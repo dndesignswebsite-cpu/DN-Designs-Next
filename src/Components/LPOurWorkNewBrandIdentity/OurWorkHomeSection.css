@@ -16,7 +16,7 @@
   display: block;
   height: 100%;
   /* border: 1px solid #d8d5d5; */
-  border-radius: 5px;
+  border-radius: 0px;
   /* cursor: pointer; */
 }
 
@@ -214,7 +214,7 @@ width: 100%;
   background-color: #DC2211;
   font-family: var(--font-helvetica);
  font-weight: 400;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 10px 25px 10px 25px;
   color: #fff;
   border: none;
@@ -237,7 +237,7 @@ margin-bottom:20px
 }
 
 .foundation-col-img{
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .coldiv-what-we-do-right{
@@ -257,7 +257,7 @@ margin-bottom:20px
 }
 
 .lp-packaging-video{
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .what-we-do-right-col-para{

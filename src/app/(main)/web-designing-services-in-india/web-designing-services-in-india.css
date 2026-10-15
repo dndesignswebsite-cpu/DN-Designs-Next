@@ -9,26 +9,26 @@
 .brand-identity-div {
   border: 1px solid #a8a8a8;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 0px;
   height: 100%;
 }
 
 .brand-identity-div img {
   margin: 0;
   padding: 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0;
 }
 
 .brand-identity-div-img {
   margin: 0;
   padding: 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0;
 }
 
 .brand-identity-div video {
   margin: 0;
   padding: 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0;
   object-fit: cover;
 }
 
@@ -59,7 +59,7 @@ font-family: var(--font-helvetica);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #DC2211;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 10px;
  font-family: var(--font-helvetica);
    font-weight: 400;
@@ -81,7 +81,7 @@ font-family: var(--font-helvetica);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #DC2211;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 18px;
 }
 
@@ -212,7 +212,7 @@ font-family: var(--font-helvetica);
   position: sticky;
   top: 50%;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-top: 100px;
   list-style: none;
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
@@ -342,7 +342,7 @@ font-family: var(--font-helvetica);
 
 .creating-your-brand-mobile-box{
   box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 20px;
   margin: 10px 0;
 }
@@ -408,7 +408,7 @@ font-family: var(--font-helvetica);
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -507,11 +507,11 @@ font-family: var(--font-helvetica);
 }
 
 .our-technologies-img-div img{
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .our-technologies-img-div-img{
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 /* Make your brand click! */
