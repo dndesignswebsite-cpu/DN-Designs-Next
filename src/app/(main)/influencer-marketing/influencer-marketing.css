@@ -18,7 +18,7 @@
 .grow-your-bussiness-col-1{
        padding:50px 20px;
         box-shadow: 0 2px 11px -1px #0000001a;
-        border-radius: 5px;
+        border-radius: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -59,7 +59,7 @@
 .grow-your-bussiness-col-3{
        padding:50px 20px;
         box-shadow: 0 2px 11px -1px #0000001a;
-        border-radius: 5px;
+        border-radius: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -174,7 +174,7 @@
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   padding: 30px 20px;
 }

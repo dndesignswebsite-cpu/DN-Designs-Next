@@ -12,7 +12,7 @@
   /* background-color: #DC2211; */
   padding-top: 10px;
   /* padding-bottom: 10px; */
-  border-radius: 0px 5px 5px 0px ;
+  border-radius: 0 ;
   height: 100% !important;
   
 }
@@ -41,7 +41,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
  font-family: var(--font-helvetica);
   font-weight: 400;
   padding: 10px;
@@ -55,7 +55,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
  font-family: var(--font-helvetica);
    font-weight: 400;
   padding: 10px;
@@ -82,7 +82,7 @@
   color: white;
   font-size: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   font-weight: 400;
   cursor: pointer;
 font-family: var(--font-helvetica);
@@ -94,7 +94,7 @@ font-family: var(--font-helvetica);
   /* background-color: #DC2211; */
   margin: 0;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
   /* box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.102); */
   border-top: 4px solid #ca2634;
 box-shadow: 0 2px 11px -1px rgba(0, 0, 0, 0.102);
@@ -102,7 +102,7 @@ background-color: #fff;
 }
 
 .main-form{
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #fff;
   padding: 0px 20px 20px 20px;
   /* height: 100%; */
@@ -123,7 +123,7 @@ background-color: #fff;
 
 .form-main-content{
   background-color: #ffffff;
-  border-radius: 0px 5px 5px 0px ;
+  border-radius: 0 ;
   padding: 25px;
   height: 100% !important;
   width: 100%;

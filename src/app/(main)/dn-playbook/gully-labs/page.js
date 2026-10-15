@@ -9,6 +9,7 @@ import CTAMarqueSwipper from '@/Components/CTAMarqueSwipper/CTAMarqueSwipper'
 import connectDB from "@/lib/config/database.js";
 import { getPageById } from "@/lib/services/pageService.js";
 import { notFound } from "next/navigation";
+import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb';
 
 
 // meta tags
@@ -103,6 +104,10 @@ async function page() {
         />
       )}
       {/*schema ends here */}
+
+
+      {/* breadcrump */}
+      <Breadcrumb/>
 
 
     {/* brand audit hero */}

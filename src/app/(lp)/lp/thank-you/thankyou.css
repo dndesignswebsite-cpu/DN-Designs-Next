@@ -35,7 +35,7 @@
    font-family: var(--font-helvetica);
     font-weight: 500;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 4px 24px 0px rgba(202, 39, 52, 0.502);
     color: #fff;
     padding: 8px 18px;

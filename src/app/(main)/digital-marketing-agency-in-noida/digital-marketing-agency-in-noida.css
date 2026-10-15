@@ -8,7 +8,7 @@
    align-items: center;
    justify-content: space-between;
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   border: 1px solid #E5E7EB;
   height: 100%;
 }
@@ -95,21 +95,21 @@ padding: 0;
     font-weight: 500;
     padding: 18px;
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-    border-radius:5px;
+    border-radius:0px;
 }
 
 .switch-on-middle-div-img{
     box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 0px;
     
 }
 
 .main-switch-img img{
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .main-switch-img-img{
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .toggle-btn{
@@ -212,7 +212,7 @@ padding: 0;
   position: relative;
   height: 400px;
   transition: all 0.6s ease;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   padding: 30px 20px;
 }
@@ -335,7 +335,7 @@ padding: 0;
 
 .organic-sessions-row{
     background-color: #202020;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 20px;
     display: flex;
     align-items: center;

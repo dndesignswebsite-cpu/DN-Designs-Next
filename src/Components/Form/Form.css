@@ -9,7 +9,7 @@
   background-color: #202020;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 0px 5px 5px 0px ;
+  border-radius: 0px 0px 0px 0px ;
 }
 
 
@@ -30,7 +30,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #202020;
-  border-radius: 5px;
+  border-radius: 0px;
 font-family: var(--font-helvetica);
   font-weight: 400;
   padding: 10px;
@@ -41,7 +41,7 @@ font-family: var(--font-helvetica);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #202020;
-  border-radius: 5px;
+  border-radius: 0px;
  font-family: var(--font-helvetica);
   font-weight: 400;
   padding: 10px;
@@ -65,7 +65,7 @@ font-family: var(--font-helvetica);
   color: white;
   font-size: 18px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   font-weight: 600;
   cursor: pointer;
 font-family: var(--font-helvetica);
@@ -80,7 +80,7 @@ font-family: var(--font-helvetica);
 }
 
 .main-form{
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #fff;
   padding: 20px;
   height: 100%;
@@ -101,7 +101,7 @@ font-family: var(--font-helvetica);
 
 .form-main-content{
   background-color: #ffffff;
-  border-radius: 0px 5px 5px 0px ;
+  border-radius: 0px 0px 0px 0px ;
   padding: 25px;
   height: 100% !important;
   width: 100%;

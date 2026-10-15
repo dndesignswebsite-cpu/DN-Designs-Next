@@ -54,7 +54,7 @@
 .lp-testimonial-swipper-slide-div{
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     height: 100%;
 }
@@ -121,7 +121,7 @@
 
     background:#fff;
     width:24px;
-    border-radius:5px;
+    border-radius:0px;
 
     transition:.35s;
 

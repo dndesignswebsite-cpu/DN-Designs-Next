@@ -31,7 +31,7 @@ function LPPureluxVideo() {
     muted
     loop
     playsInline
-    style={{ borderRadius: "5px" }}
+    style={{ borderRadius: "0px" }}
   >
     <source
       src="https://dndesigns.co.in/uploads/videos/lppackgingvideonewsection.mp4"

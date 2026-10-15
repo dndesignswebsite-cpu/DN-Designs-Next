@@ -100,7 +100,7 @@ Button
 .lets-connect-cta-btn{
 
     border:2px solid #DC2211;
-    border-radius:5px;
+    border-radius:0px;
     padding:8px 22px;
     background:white;
 
@@ -161,7 +161,7 @@ Hamburger
     width:30px;
     height:3px;
     background:#000;
-    border-radius:5px;
+    border-radius:0px;
 
 }
 

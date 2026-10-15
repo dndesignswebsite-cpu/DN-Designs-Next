@@ -61,7 +61,7 @@
 
   background: #FEF2F3;
 
-  border-radius: 18px;
+  border-radius: 0px;
 
   overflow: hidden;
 
@@ -264,7 +264,7 @@
 .chatbot-messages::-webkit-scrollbar-thumb {
   background: #cfcfcf;
 
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .chatbot-messages::-webkit-scrollbar-thumb:hover {
@@ -281,7 +281,7 @@
 
   padding: 11px 14px;
 
-  border-radius: 14px;
+  border-radius: 0px;
 
   font-size: 16px;
   font-family: var(--font-helvetica);
@@ -429,7 +429,7 @@
 
   border: none;
 
-  border-radius: 10px;
+  border-radius: 0px;
 
   outline: none;
 
@@ -466,7 +466,7 @@
 
   border: none;
 
-  border-radius: 10px;
+  border-radius: 0px;
 
   /* background: #111; */
 
@@ -515,7 +515,7 @@
 
     max-height: 650px;
 
-    border-radius: 16px;
+    border-radius: 0px;
   }
 
   .chatbot-button {
@@ -563,7 +563,7 @@
 
     height: calc(100vh - 80px);
 
-    border-radius: 14px;
+    border-radius: 0px;
   }
 
   .chatbot-messages {

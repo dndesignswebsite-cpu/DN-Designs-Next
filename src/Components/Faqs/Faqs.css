@@ -20,7 +20,7 @@
 
 .accordio-item {
    box-shadow: 0px 2px 11px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 20px;
   overflow: hidden;
   transition: border-color 0.3s ease;

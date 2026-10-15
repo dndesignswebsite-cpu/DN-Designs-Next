@@ -20,7 +20,7 @@
     background-color: #fff;
     border: 1px solid #DC2211;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    border-radius: 0px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -41,7 +41,7 @@
     font-weight: 500;
     font-size: 14px;
     padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 
