@@ -316,6 +316,18 @@ font-family: var(--font-helvetica);
     font-weight: 400;
 }
 
+.why-fandb-new-para{
+  color: #515151;
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 2px 15px;
+  margin: 15px 0;
+  border-left: 10px solid;
+  border-image: linear-gradient(to bottom, #000 60%, #202020 40%) 1; 
+}
+
 @media(max-width:991px){
     .why-fandb-section-head{
         width: 100%;
@@ -849,5 +861,402 @@ font-family: var(--font-helvetica);
     padding: 25px;
   }
 }
+
+
+
+/* retail-screen-shelf-section */
+.retail-screen-shelf-section{
+  background-color: #202020;
+  padding: 60px 0;
+  margin: 40px 0;
+}
+
+.retail-screen-shelf-section-head-col{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.retail-screen-shelf-section-head-col-heading{
+  color: #F5F5F5;
+  font-family: var(--font-helvetica);
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.retail-screen-shelf-section-head-col-para{
+  color: #C8C8C8;
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+
+/* secod row */
+
+.retail-screen-shelf-section-second-row{
+  padding-top: 60px;
+}
+
+.retail-screen-shelf-section-second-row-col-white{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+  border: 0.5px solid #fff;
+  height: 100%;
+  transition: 0.4s all ease;
+   cursor: pointer;
+}
+
+.retail-screen-shelf-section-second-row-col-black{
+  background-color: #202020;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-direction: column;
+  border: 0.5px solid #fff;
+  height: 100%;
+  transition: 0.4s all ease;
+  cursor: pointer;
+}
+
+.retail-screen-shelf-section-second-row-col-black-head{
+  color: #F5F5F5;
+  font-family: var(--font-helvetica);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.retail-screen-shelf-section-second-row-col-black-para{
+  color: #C8C8C8;
+  font-family: var(--font-helvetica);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.retail-screen-shelf-section-second-row-col-white-head{
+  color: #000000;
+  font-family: var(--font-helvetica);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.retail-screen-shelf-section-second-row-col-white-para{
+  color: #737373;
+  font-family: var(--font-helvetica);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* hover */
+.retail-screen-shelf-section-second-row-col-black:hover {
+  background-color: #FFFFFF;
+}
+
+.retail-screen-shelf-section-second-row-col-black:hover .retail-screen-shelf-section-second-row-col-black-head{
+  color: #000000;
+}
+
+.retail-screen-shelf-section-second-row-col-black:hover .retail-screen-shelf-section-second-row-col-black-para{
+  color: #737373;
+}
+
+.retail-screen-shelf-section-second-row:has(
+  .retail-screen-shelf-section-second-row-col-black:hover
+) .retail-screen-shelf-section-second-row-col-white {
+  background-color: #202020;
+}
+
+
+.retail-screen-shelf-section-second-row:has(
+  .retail-screen-shelf-section-second-row-col-black:hover
+) .retail-screen-shelf-section-second-row-col-white-head {
+  color: #F5F5F5;
+}
+
+.retail-screen-shelf-section-second-row:has(
+  .retail-screen-shelf-section-second-row-col-black:hover
+) .retail-screen-shelf-section-second-row-col-white-para {
+  color: #C8C8C8;
+}
+
+@media(max-width:767px){
+  .retail-screen-shelf-section-head-col-heading{
+    font-size: 30px;
+  }
+}
+
+
+/* Businesses We Brand For */
+
+.bussiness-we-brand-section-head{
+  font-family: var(--font-helvetica);
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+
+.bussiness-we-brand-section{
+  padding: 80px 0;
+}
+
+.bussiness-we-brand-section-col-div-black{
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+   gap: 50px;
+   overflow: hidden;
+   position: relative;
+}
+
+.bussiness-we-brand-section-col-div-black-white{
+  background-color: rgba(32, 32, 32, 0.08);
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ewdj */
+.bussiness-we-brand-section-col-div-number-black{
+  color: #4C4C4C;
+  font-family: var(--font-helvetica);
+  font-size: 120px;
+  margin-left: -35px;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.bussiness-we-brand-section-col-div-bottom-black{
+  padding: 20px;
+  position: relative;
+}
+
+.bussiness-we-brand-section-col-div-bottom-head-black{
+  font-family: var(--font-helvetica);
+  font-size: 24px;
+  color: #F5F5F5;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.bussiness-we-brand-section-col-div-bottom-para-black{
+  font-family: var(--font-helvetica);
+  font-size: 16px;
+  font-weight: 400;
+  color: #C8C8C8;
+  margin-bottom: 0;
+  z-index: 5;
+  position: relative;
+}
+
+
+.bussiness-we-brand-section-col-div-bottom-white{
+  padding: 20px;
+  position: relative;
+}
+
+
+.bussiness-we-brand-section-col-div-bottom-head-white{
+   font-family: var(--font-helvetica);
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.bussiness-we-brand-section-col-div-bottom-para-white{
+  font-family: var(--font-helvetica);
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+  margin-bottom: 0;
+  z-index: 5;
+}
+
+
+.bussiness-we-brand-section-col-div-number-white{
+  color: #D1D1D1;
+  font-family: var(--font-helvetica);
+  font-size: 120px;
+  margin-left: -35px;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.foodandbevaragesevenimage{
+  position: absolute;
+  /* top: 0; */
+  width: 80%;
+  left: 20%;
+  z-index: 3;
+}
+
+.foodandbevaragesoddimage{
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 20%;
+  z-index: 3;
+}
+
+
+.BookADirectCallNewCTASection-padding{
+  padding: 60px 0;
+}
+
+
+@media(max-width:767px){
+  .bussiness-we-brand-section-col-div-black-white{
+   flex-direction: column-reverse;
+  }
+
+  .bussiness-we-brand-section-head{
+    font-size: 30px;
+  }
+
+  .BookADirectCallNewCTASection-padding{
+  padding: 0px 0;
+}
+
+}
+
+
+
+
+.fmcg-industries-we-section {
+  padding: 80px 0;
+}
+
+.fmcg-industries-head-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fmcg-industries-head {
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #1A1C1B;
+  text-align: center;
+}
+
+.fmcg-industries-head-span {
+  color: #DC2211;
+}
+
+
+.fmcg-industries-row-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+
+
+.fmcg-industries-single-col-div {
+  background-color: #F9F9F9;
+  border: 1px solid #E6E5E5;
+  border-radius: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex: 0 0 calc((100% - 60px) / 4);
+
+  box-sizing: border-box;
+
+  transition: all 0.5s ease;
+}
+
+
+.fmcg-industries-para {
+ font-family: var(--font-helvetica);
+  color: #6D6D6D;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-right: 10px;
+
+  white-space: nowrap;
+
+  transition: all 0.5s ease;
+}
+
+
+.fmcg-industries-single-col-div:hover {
+  cursor: pointer;
+  background-color: #DC2211;
+  border-color: #DC2211;
+}
+
+.fmcg-industries-single-col-div:hover .fmcg-industries-para {
+  color: #fff;
+}
+
+/* fmcg-industries-icon */
+.fmcg-industries-icon-div{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fmcg-industries-icon{
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.fmcg-industries-single-col-div:hover .fmcg-industries-icon {
+    filter: invert(35.64%) sepia(98.48%) saturate(267.63%)
+        hue-rotate(-53.46deg) brightness(65.31%) contrast(190.48%);
+}
+
+@media (max-width: 1299px) {
+  .fmcg-industries-single-col-div {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+}
+
+@media (max-width: 991px) {
+  .fmcg-industries-single-col-div {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .fmcg-industries-single-col-div {
+    flex: 0 0 100%;
+  }
+}
+
+.every-pr{
+  color: #DC2211;
+}
+
+
+
+
 
 

@@ -6,7 +6,7 @@
 }
 
 .form-row{
-  background-color: #202020;
+  /* background-color: #000; */
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px 0px 0px 0px ;
@@ -17,7 +17,7 @@
 .inpt label{
    font-family: var(--font-helvetica);
         cursor: pointer;
-        color: #202020;
+        color: #FFFFFF;
         font-size: 16px;
         font-weight:400;
 }
@@ -29,40 +29,59 @@
 .inpt input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #202020;
+  border-right:none ;
+  border-left:none ;
+  border-top:none ;
+  border-bottom: 1px solid #ABABAB;
   border-radius: 0px;
 font-family: var(--font-helvetica);
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 14px;
   margin:10px 0px;
+  color: #4B4B4B;
+  background-color: #000;
+  border-radius: 0;
 }
 .inpt textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #202020;
+  border-right:none ;
+  border-left:none ;
+  border-top:none ;
+  border-bottom: 1px solid #ABABAB;
   border-radius: 0px;
  font-family: var(--font-helvetica);
   font-weight: 400;
-  padding: 10px;
+  padding: 0px;
   font-size: 14px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+  border-radius: 0;
 }
 
 
 .inpt input::placeholder,
 .inpt textarea::placeholder {
-  color: #202020;
+ color: #4B4B4B !important;
+ opacity: 1;
+ font-family: var(--font-helvetica);
+ font-weight: 400;
+}
+
+.inpt textarea::placeholder{
+   color: #4B4B4B !important;
   opacity: 1;
  font-family: var(--font-helvetica);
  font-weight: 400;
 }
 
 .sbmt-btn {
-  width: 100%;
+  /* width: 100%; */
   padding: 16px;
-  background: #202020;
-  color: white;
+  background: #fff;
+  color: #000;
   font-size: 18px;
   border: none;
   border-radius: 0px;
@@ -70,27 +89,28 @@ font-family: var(--font-helvetica);
   cursor: pointer;
 font-family: var(--font-helvetica);
   font-weight: 400;
+  margin-top: 5px;
 } 
 
 .form-box{
-  padding: 10px;
-  background-color: #202020;
+  /* padding: 10px; */
+  background-color: #000;
   margin: 0;
   height: 100%;
 }
 
 .main-form{
   border-radius: 0px;
-  background-color: #fff;
+  background-color: #000;
   padding: 20px;
   height: 100%;
 }
 
 
 .form-left-content{
-  border-right: 5px solid #202020;
-  border-top: 10px solid #202020;
-  border-bottom: 10px solid #202020;
+  /* border-right: 5px solid #202020; */
+  /* border-top: 10px solid #202020; */
+  /* border-bottom: 10px solid #202020; */
   padding: 0;
   margin: 0;
 }
@@ -98,35 +118,64 @@ font-family: var(--font-helvetica);
   height: 100%;
 }
 
+.formsectionladderimage{
+ position: absolute;
+  width: 80%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+}
+
 
 .form-main-content{
-  background-color: #ffffff;
+  background-color: #202020;
   border-radius: 0px 0px 0px 0px ;
   padding: 25px;
   height: 100% !important;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+   /* Add these */
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  gap: 50px;
+}
 
+.inpt input {
+  color: #FFFFFF;
+}
+.inpt textarea {
+  color: #FFFFFF;
 }
 
 
 
 .form-main-content h3{
-    color: #202020;
-    font-family: var(--font-helvetica);
+  color: #F5F5F5;
+  font-family: var(--font-helvetica);
   letter-spacing: -0.9px;
-    font-size: 50px;
-    font-weight: 500;
-    padding-bottom: 20px;
-    
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  z-index: 60 !important;
+  position: relative;
+  z-index: 2;  
 }
 
 .form-main-content p{
-       font-family: var(--font-helvetica);
-       font-weight: 400;
-        color: #202020;
-        line-height:1.6em;
-        font-weight: 500;
-        font-size: 18px;
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  color: #C8C8C8;
+  line-height:1.6em;
+  font-weight: 500;
+  font-size: 18px;
+  z-index: 60 !important;
+  position: relative;
+  z-index: 2;
 }
 /* .form-main-content.animate{
   opacity: 0;
@@ -147,9 +196,9 @@ font-family: var(--font-helvetica);
 
 
 @media(max-width:1025px){
-  .form-box{
+  /* .form-box{
   padding: 10px 0px 10px 0px ;
-}
+} */
 
 .form-main-content h3{
   font-size: 40px;
@@ -157,11 +206,32 @@ font-family: var(--font-helvetica);
 }
 
 .succes-class-form{
-  color: #DC2211;
+  color: #fff;
  font-family: var(--font-helvetica);
  font-weight: 400;
   font-size: 18px;
   margin-top: 10px;
+}
+
+
+/* new css */
+.dn-design-form-logo{
+  width: 100px;
+  z-index: 2;
+}
+
+.inpt input:focus,
+.inpt textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.contact-form-star-span{
+  color: #fff !important;
 }
 
 
