@@ -1,0 +1,58 @@
+/* book-direct-call-founders-section-contaier */
+.book-direct-call-founders-section-contaier{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.book-direct-call-founders-section-head{
+  color: #FFFFFF;
+  font-family: var(--font-helvetica);
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.book-direct-call-founders-section-para{
+  color: #FFFFFF;
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.lets-talk-new-cta-section{
+    color: #232323;
+    font-family: var(--font-helvetica);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #F4F4F4;
+    padding: 12px 30px;
+}
+
+.lets-talk-new-cta-section:hover{
+    background-color: #DC2211;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lets-talk-new-cta-section:hover .fontAwesomeIcon-right-arrow{
+    transform: rotate(0);
+}
+
+@media(max-width:767px){
+    .book-direct-call-founders-section-head{
+        font-size: 30px;
+    }
+    .book-direct-call-founders-section-para{
+        width: 100%;
+    }
+}
+

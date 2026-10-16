@@ -49,7 +49,7 @@ useEffect(() => {
       return;
     }
 
-    // MESSAGE Validation
+    // MESSAGE  Validation
     if (!message.trim()) {
       setsuccessMessage("Message is required");
       return;
@@ -104,12 +104,17 @@ useEffect(() => {
     <div>
       <section className="all-page-form">
         <div className="container">
-          <div className="row form-row">
+          <div className="row form-row g-0">
             <div className="col-12 col-md-12 col-lg-5 form-left-content">
+             
               <div className="form-content-wrapper">
                 <div data-aos="fade-right" className="form-main-content">
+                   <img src="https://dndesigns.co.in/uploads/pages/formsectionladderimage.png" className="formsectionladderimage"></img>
+                  <img src="https://dndesigns.co.in/uploads/pages/label-form-contact-logo.png" className="img-fluid dn-design-form-logo"></img>
+                  <div>
                   <h3>{FormHead}</h3>
                   <p>{FormPara}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,9 +123,9 @@ useEffect(() => {
               <div className="form-box">
                 <form className="main-form" onSubmit={handleSubmit}>
                   <div className="frm-group row">
-                    <div className="inpt col-12 col-md-12 col-lg-6">
+                    <div className="inpt col-12 col-md-12 col-lg-12">
                       <label htmlFor="name">
-                        Name <span>*</span>
+                        Name <span className="contact-form-star-span">*</span>
                       </label>
                       <input
                         id="name"
@@ -132,9 +137,9 @@ useEffect(() => {
                       />
                     </div>
 
-                    <div className="inpt col-12 col-md-12 col-lg-6">
+                    <div className="inpt col-12 col-md-12 col-lg-12">
                       <label htmlFor="mobile">
-                        Mobile No. <span className="color">*</span>
+                        Mobile No. <span className="contact-form-star-span">*</span>
                       </label>
                       <input
                         id="mobile"

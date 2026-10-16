@@ -22,6 +22,7 @@ import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 import BookDirectCTABtn from "@/Components/BookDirectCTABtn/BookDirectCTABtn";
 import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
+import BookADirectCallNewCTASection from "@/Components/BookADirectCallNewCTASection/BookADirectCallNewCTASection";
 
 
 
@@ -599,6 +600,11 @@ async function page() {
               <h2 className="why-fandb-section-head">Why Food & Beverage Businesses <span className="why-fandb-section-head-span">Need A Branding Agency</span></h2>
               <TalkToUs/>
               </div>
+
+              {/* WHY F&B NEW PARA */}
+              <p className="why-fandb-new-para">
+                An f&b branding agency helps your business stand out in a crowded market, in both D2C and retail spaces. Food branding experts define positioning that creates a distinctive market space; craft visual identity that works across SKUs; and build a packaging system (not just packaging) that balances design with compliance. The aim is to build recognition and trust, and drive quick purchase decisions.
+              </p>
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
                     <div className="why-fandb-section-col">
@@ -616,9 +622,7 @@ async function page() {
             </section>
 
 
-            {/* case studies section */}
-            {/* case studies our brands section */}
-        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>  
+             
 
             {/* everything-a-food */}
             <section className="everything-a-food-section">
@@ -716,33 +720,245 @@ async function page() {
             </section>
 
 
-            {/* stand alone hover section */}
-            <section className="standalone-sec-pac">
+
+            
+      {/* Retail Shelf screen */}
+
+      <section className="retail-screen-shelf-section">
         <div className="container">
-          <div className="row headg-row-div">
-            <h2 className="text-center headg">
-              What Actually Changes {" "}
-              <span className="every-pr"> When Branding's Done Right </span>{" "}
-            </h2>
+
+          <div className="row retail-screen-shelf-section-head-row">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="retail-screen-shelf-section-head-col">
+                <h2 className="retail-screen-shelf-section-head-col-heading">Food & Beverage Packaging Design - Built for Shelf, Screen & Everywhere Else</h2>
+              </div>
+                </div>
+
+                 <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="retail-screen-shelf-section-head-col">
+                <p className="retail-screen-shelf-section-head-col-para">As a food & beverage packaging design agency, we make sure your packaging gets noticed and creates an impact on shelves, in apps, on feeds and at home. We design complete packaging systems with consistent colour, typography, hierarchy and product information that work across SKUs and adapt to platforms without losing the core identity.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* second row */}
+          <div className="row retail-screen-shelf-section-second-row">
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+              <div className="retail-screen-shelf-section-second-row-col-black">
+                <h2 className="retail-screen-shelf-section-second-row-col-black-head">
+                  Retail Shelf 
+                </h2>
+                <p className="retail-screen-shelf-section-second-row-col-black-para">
+               Great shelf presence makes customers stop, notice and choose your product amidst a sea of competitors. Experts at our food packaging design agency combine category knowledge, shopper insights and sharp design craft to make sure your pack is impossible to ignore and easy to choose.
+                </p>
+              </div>
+            </div>
+
+
+              <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+              <div className="retail-screen-shelf-section-second-row-col-white">
+                <h2 className="retail-screen-shelf-section-second-row-col-white-head">
+                  Screen
+                </h2>
+                <p className="retail-screen-shelf-section-second-row-col-white-para">
+              Customers may discover and purchase your products on a marketplace quick-commerce app, your own D2C site, or on a social media platform. As an experienced food packaging design company, we design packaging to pass that 100-pixel thumbnail test, so customers notice and tap on your product even before they have actually touched it.
+                </p>
+              </div>
+            </div>
+
+
+              <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
+              <div className="retail-screen-shelf-section-second-row-col-black">
+                <h2 className="retail-screen-shelf-section-second-row-col-black-head">
+                 Elsewhere
+                </h2>
+                <p className="retail-screen-shelf-section-second-row-col-black-para">
+                 Your F&B brand appears beyond the shelf and screen. It shows up at an event, a café counter, in a gifting box, on a delivery doorstep, and even in a vending machine, performing different jobs at different places. We build a flexible packaging design that adapts to the space it shows up at. It conveys your brand identity everywhere so you stay recognisable and memorable.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
-        <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      </section>
+
+
+        {/* FMCG Industries We Brand */}
+      <section className="fmcg-industries-we-section">
+        <div className="container">
+        <div className="fmcg-industries-head-content">
+          <h2 className="fmcg-industries-head">
+            Food and Beverage{" "}
+            <span className="fmcg-industries-head-span">Categories We Brand</span>
+          </h2>
+          </div>
+
+          <div className="fmcg-industries-row-div">
+          {/* 1 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgfoodandfirsticon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/packagedsnackshoverredimage.svg" className="fmcg-industries-icon"></img>
+              </div>
+
+              <p className="fmcg-industries-para">Packaged Snacks</p>
+            </div>
+            {/* 2 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/bevargegesfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/confectionnaryhoverimagered.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Confectionery</p>
+            </div>
+            {/* 3 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningicondaiiry.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/dairyandfrozenfoodhoverimagered.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Dairy & Frozen Foods</p>
+            </div>
+            {/* 4 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconconfectinary.svg" className="fmcg-industries-icon"></img> */}
+
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/readytoeatreadytocookhoverred.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Ready-to-eat and Ready-to-cook</p>
+            </div>
+            {/* 5 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/groceryfmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/juicesandsoftdrinkswedjf.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Juices & Soft Drinks</p>
+            </div>
+            {/* 6 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/personalcasrefmcgbraningicon.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/teaandcoffeeehoverimage.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Tea & Coffee</p>
+            </div>
+            {/* 7 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconhomecare.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/juicesandsoftdrinkswedjf.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Caffeinated Drinks</p>
+            </div>
+            {/* 8 */}
+            <div className="fmcg-industries-single-col-div">
+              {/* <img src="https://dndesigns.co.in/uploads/pages/fmcgbraningiconbabycare.svg" className="fmcg-industries-icon"></img> */}
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/packagedwatrhoverimage.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Packaged Water</p>
+            </div>
+            {/* 9 */}
+            <div className="fmcg-industries-single-col-div">
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/functinalbevaragesekhfkhover.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Functional Beverages</p>
+            </div>
+            {/* 10 */}
+            <div className="fmcg-industries-single-col-div">
+              <div className="fmcg-industries-icon-div">
+              <img src="https://dndesigns.co.in/uploads/pages/nutracuticalhealthewd.svg" className="fmcg-industries-icon"></img>
+              </div>
+              <p className="fmcg-industries-para">Nutraceuticals & Health Foods</p>
+            </div>
+          </div>
+        </div>
       </section>
 
 
 
-      {/* Looking for something */}
+       {/* Businesses We Brand For */}
 
-      {/* Looking for something */}
-      
-            <section className="looking-for-someone">
-              <div className="container">
-                <div className="looking-for-someone-container">
-                  <p className="looking-for-someone-para">Ready to Bring Your Brand       <br></br> to Life? Get on a call with us. </p>
-                  <TalkToUs/>
-                </div>
+      <section className="bussiness-we-brand-section">
+        <div className="container">
+          <h2 className="bussiness-we-brand-section-head">Businesses We Brand For</h2>
+          <div className="row">
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-3 mt-4">
+              <div className="bussiness-we-brand-section-col-div-black">
+                <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="img-fluid foodandbevaragesevenimage"></img>
+                 <h2 className="bussiness-we-brand-section-col-div-number-black">01</h2>
+                 <div className="bussiness-we-brand-section-col-div-bottom-black">
+                  <h3 className="bussiness-we-brand-section-col-div-bottom-head-black">Food & Beverage Startups</h3>
+                  <p className="bussiness-we-brand-section-col-div-bottom-para-black">
+                    Launch your new brand into the market with confidence. As a startup food & beverage branding agency, we build your brand from scratch. From brand strategy, naming, and positioning to visual identity and packaging designs, we craft a powerful brand that earns both attention and revenue. 
+                  </p>
+                 </div>
               </div>
-            </section>
+            </div>
+
+
+             <div className="col-12 col-sm-12 col-md-12 col-lg-3 mt-4">
+              <div className="bussiness-we-brand-section-col-div-black-white">
+                 <div className="bussiness-we-brand-section-col-div-bottom-white">
+                  <h3 className="bussiness-we-brand-section-col-div-bottom-head-white">Established Businesses Ready to Rebrand</h3>
+                  <p className="bussiness-we-brand-section-col-div-bottom-para-white">
+                    Give your brand a new identity so it stays relevant as times change. Introduce new SKUs and expand into new markets with clarity and conviction. We redesign your identity, packaging, and communication while ensuring the recognition you’ve built over the years stays intact.
+                  </p>
+                 </div>
+                  <h2 className="bussiness-we-brand-section-col-div-number-white">02</h2>
+                  <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesoddimage.png" className="img-fluid foodandbevaragesoddimage"></img>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-3 mt-4">
+              <div className="bussiness-we-brand-section-col-div-black">
+                <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="img-fluid foodandbevaragesevenimage"></img>
+                 <h2 className="bussiness-we-brand-section-col-div-number-black">03</h2>
+                 <div className="bussiness-we-brand-section-col-div-bottom-black">
+                  <h3 className="bussiness-we-brand-section-col-div-bottom-head-black">CPG & FMCG Brands</h3>
+                  <p className="bussiness-we-brand-section-col-div-bottom-para-black">
+                   Whether it’s a day-to-day product or a new category in the food and beverage industry, CPG and FMCG brands must ensure they capture attention and give customers a reason to choose them. At our food branding company, we craft brands that achieve exactly that in the fast-moving consumer market. 
+                  </p>
+                 </div>
+              </div>
+            </div>
+
+
+              <div className="col-12 col-sm-12 col-md-12 col-lg-3 mt-4">
+              <div className="bussiness-we-brand-section-col-div-black-white">
+                 <div className="bussiness-we-brand-section-col-div-bottom-white">
+                  <h3 className="bussiness-we-brand-section-col-div-bottom-head-white">D2C Brands</h3>
+                  <p className="bussiness-we-brand-section-col-div-bottom-para-white">
+                   Online competition for D2C food and beverage brands is fierce. Within a few seconds, they have to attract attention, communicate value and earn a place in the cart. We build D2C food and beverage brands that cut through the digital clutter and get chosen, repeatedly. Planning to move to the retail space? Our brand designs adapt to physical retail environments effortlessly.
+                  </p>
+                 </div>
+                  <h2 className="bussiness-we-brand-section-col-div-number-white">04</h2>
+                   <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesoddimage.png" className="img-fluid foodandbevaragesoddimage"></img>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Book a call directly with our founders */}
+      <div className="BookADirectCallNewCTASection-padding">
+      <BookADirectCallNewCTASection/>
+      </div>
+
+
+
+
+
+            
 
 
       {/* OUR STRATEGIC FRAMEWORK desktop*/}
@@ -862,6 +1078,52 @@ async function page() {
 
         </div>
       </section> 
+
+
+      {/* case studies section */}
+            {/* case studies our brands section */}
+        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/> 
+
+
+
+
+
+
+      {/* stand alone hover section */}
+            <section className="standalone-sec-pac">
+        <div className="container">
+          <div className="row headg-row-div">
+            <h2 className="text-center headg">
+              What Actually Changes {" "}
+              <span className="every-pr"> When Branding's Done Right </span>{" "}
+            </h2>
+          </div>
+        </div>
+        <StandAlonePackaging cards={cards} mobileCrads={mobileCrads} />
+      </section>
+
+
+
+
+
+     
+
+    
+
+
+
+      {/* Looking for something */}
+
+      {/* Looking for something */}
+{/*       
+            <section className="looking-for-someone">
+              <div className="container">
+                <div className="looking-for-someone-container">
+                  <p className="looking-for-someone-para">Ready to Bring Your Brand       <br></br> to Life? Get on a call with us. </p>
+                  <TalkToUs/>
+                </div>
+              </div>
+            </section> */}
 
        <BookDirectCallCTA/>
 
