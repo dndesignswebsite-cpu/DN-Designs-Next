@@ -109,7 +109,7 @@ useEffect(() => {
              
               <div className="form-content-wrapper">
                 <div data-aos="fade-right" className="form-main-content">
-                   <img src="https://dndesigns.co.in/uploads/pages/formsectionladderimage.png" className="formsectionladderimage"></img>
+                   {/* <img src="https://dndesigns.co.in/uploads/pages/formsectionladderimage.png" className="formsectionladderimage"></img> */}
                   <img src="https://dndesigns.co.in/uploads/pages/label-form-contact-logo.png" className="img-fluid dn-design-form-logo"></img>
                   <div>
                   <h3>{FormHead}</h3>

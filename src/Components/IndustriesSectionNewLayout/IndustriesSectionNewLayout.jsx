@@ -304,7 +304,7 @@ function IndustriesSectionNewLayout() {
        <Swiper
       modules={[Navigation, Autoplay]}
       navigation
-      // pagination={{ clickable: true }}
+      // pagination={{  clickable: true }}
       spaceBetween={20}
      slidesPerView={1}
       autoplay={{

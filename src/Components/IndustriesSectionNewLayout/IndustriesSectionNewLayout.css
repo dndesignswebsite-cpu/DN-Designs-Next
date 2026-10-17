@@ -1239,7 +1239,7 @@ font-weight: 400;
 .overlay-text-content{
     position: absolute;
     display: flex;
-    /* align-items: end; */
+    /* align-items:  end; */
     justify-content: end;
     top: 100%;
     flex-direction: column;
