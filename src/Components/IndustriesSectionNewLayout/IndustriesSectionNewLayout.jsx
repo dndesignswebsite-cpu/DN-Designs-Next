@@ -14,7 +14,7 @@ import Link from 'next/link';
 function IndustriesSectionNewLayout() {
     const [activeSlide, setActiveSlide] = useState(6);
     
-     // city pages slider data
+     // city pages  slider data
     let cityPagesSlideData = {
 
        CityPagesSwipper_heading : "Branding and Marketing Services That Build Trust and Admiration",
@@ -62,24 +62,9 @@ function IndustriesSectionNewLayout() {
     <p className='industreis-section-content-para-desc'>Providing end-to-end solutions to build brands across categories. </p>
     </div>
     
-      <section className='industries-section-layout-desktop'>
+      {/* <section className='industries-section-layout-desktop'>
         <div className='container'> 
-             <div className='industries-section-layout-images-div'>
-              {/*  <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img1 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img2 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img3 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img4 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img5 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img6 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img7 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img8 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img9 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img10 img'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/VEIKK.webp" className='img-fluid img11 img'></img>
-                */}
-           
-
-              
+             <div className='industries-section-layout-images-div'> 
              <div className={`citypagewiper-slide-i img1 img ${
         activeSlide === 1 ? "active" : ""
     }`}
@@ -309,7 +294,7 @@ function IndustriesSectionNewLayout() {
 
                            </div> 
         </div>
-      </section>
+      </section> */}
 
 
 

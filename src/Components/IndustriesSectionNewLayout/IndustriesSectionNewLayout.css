@@ -1213,18 +1213,18 @@ font-weight: 400;
 
 
 /* mobile view */
-.industry-mobile-view{
+/* .industry-mobile-view{
         display: none;
-    }
+    } */
 
-@media(max-width:767.68px){
+/* @media(max-width:767.68px){
     .industries-section-layout-desktop{
         display: none;
     }
     .industry-mobile-view{
         display: block;
     }
-}
+} */
 .slider-wrapper{
     position: relative;
 }
