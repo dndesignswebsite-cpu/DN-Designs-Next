@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import "./IndustriesSectionNewLayout.css"
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -302,11 +302,16 @@ function IndustriesSectionNewLayout() {
       <section className='industry-mobile-view'>
       <div className="container">
        <Swiper
-      modules={[Navigation]}
+      modules={[Navigation, Autoplay]}
       navigation
       // pagination={{ clickable: true }}
       spaceBetween={20}
      slidesPerView={1}
+      autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter:true
+  }}
   breakpoints={{
     640: {
       slidesPerView: 2,
