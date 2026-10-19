@@ -17,6 +17,15 @@
 .fontAwesomeIcon-right-arrow {
   padding-left: 6px;
   transform: rotate(-40deg);
+  transition: 0.3s all ease;
+}
+
+.talk-to-us:hover{
+ background-color: #202020;
+}
+
+.talk-to-us:hover .fontAwesomeIcon-right-arrow{
+  transform: rotate(0);
 }
 
 
