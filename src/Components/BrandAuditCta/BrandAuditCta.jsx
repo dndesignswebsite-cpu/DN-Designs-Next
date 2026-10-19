@@ -1,24 +1,24 @@
-"use client"
+
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useRouter, usePathname } from "next/navigation";
 import "./BrandAuditCta.css"
+import Link from 'next/link';
 
 function BrandAuditCta() {
-    const router = useRouter();
-      const pathname = usePathname();
     
-        const goToContact = () => {
-          sessionStorage.setItem("sourcePage", pathname);
-          router.push("/contact-us");
-        };
   return (
     <div>
-      <div className="talk-to-us-div">
-                      <button className="talk-to-us talk-to-us-Laptop" onClick={goToContact}>Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button>
+      <div className="talk-to-us-div" >
+        <Link href="/contact-us" className="talk-to-us talk-to-us-Laptop">
+                      Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" />
+                      </Link>
                     </div>
-                 <button className="talk-to-us talk-to-us-mobile" onClick={goToContact}>Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" /></button> 
+                     
+                     <Link href="/contact-us" className="talk-to-us talk-to-us-mobile">
+                Contact Us<FontAwesomeIcon icon={faArrowRight} size="18px" className="fontAwesomeIcon-right-arrow" />
+                 </Link>
+                
     </div>
   )
 }

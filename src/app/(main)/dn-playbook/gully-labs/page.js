@@ -760,7 +760,7 @@ async function page() {
                 </section>
 
                 <div className='disclaimer-section'>
-                    <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from Gully Labs official website. All copyrights and intellectual property rights in these images remain with Gully Labs and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>
+                    <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from the brand's official website. All copyrights and intellectual property rights in these images remain with the brand and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>
                    
                 </div>
 
