@@ -237,10 +237,10 @@ async function page() {
         {
           question: "What does a food and beverage branding agency actually do?",
           answer:
-            "A food and beverage branding agency helps create brands that stand out amidst tough competition and drive purchase. It's less about making things 'look pretty' and more about making decisions: what a brand says, how it looks, what its values and promises are, how it is different from competitors and why customers should choose it. A good agency makes your brand recognisable, memorable and scalable through identity, packaging and website design as well as a strong GTM strategy. ",
+            "A food and beverage branding agency helps create brands that stand out amidst tough competition and drive purchase. It's less about making things 'look pretty' and more about making decisions: what a brand says, how it looks, what its values and promises are, how it is different from competitors and why customers should choose it. A good F&B branding agency makes your brand recognisable, memorable and scalable through identity, packaging and website design as well as a strong GTM strategy.",
         },
         {
-          question: "Do you work with D2C food brands or only established FMCG companies?",
+          question: "Do you work with startup food & beverage brands or only established companies?",
           answer:
             "Both, and honestly we enjoy the contrast. Startups need someone to help shape an idea into something sellable. Legacy brands usually need someone to help them stop looking dated without losing what people already trust them for.",
         },
@@ -252,49 +252,105 @@ async function page() {
         },
     
         {
-          question: "Why is packaging design so important for food and beverage brands?",
+          question: "Can your food and beverage branding studio build a brand from scratch?",
           answer:
-            "Because for most products, packaging is the pitch. No salesperson exists to explain why it's worth buying (think of online stores and big retail stores). The pack has to do that job, fast, before someone's hand moves to a competitor's product instead.",
+            "Yes, definitely. If you’re planning to launch a new food or beverage product in the market, we can handle the branding process at our brand design studio. Our experts can ensure your product launches confidently with strong branding backing it.",
         },
     
         {
           question:
-            "Do your packaging designs adhere to food labelling regulations?",
+            "What does a food & drinks branding package include?",
           answer:
-            "Yes, as a food and drink branding agency, we ensure that our packaging designs effectively integrate legally required information on the label.",
+            "A food & drinks branding package includes end-to-end branding services, including strategy, positioning, visual identity design and packaging design. As per customers’ needs, a food branding agency can also design a catalogue, website, digital marketing strategy and animation. At DN Designs, we understand the founder’s requirements and build a customised food & drinks branding package.",
+        },
+
+         {
+          question:
+            "Why is food and beverage packaging design so important?",
+          answer:
+            "Because for most products, packaging is the pitch. No salesperson exists to explain why it's worth buying (think of online stores and big retail stores). The pack has to do that job, fast, before someone's hand moves to a competitor's product instead.",
+        },
+
+         {
+          question:
+            "How do you approach packaging as part of a food and beverage branding process?",
+          answer:
+            "At our creative brand design studio, packaging is not designed in isolation. For us, it’s not a simple container; it’s a brand touchpoint. That’s why we design packaging that works across retail and e-commerce. Our approach brings together consistent brand identity, clear information hierarchy, strong SKU differentiation, cohesive pack architecture and purposeful front-of-pack communication. ",
+        },
+
+         {
+          question:
+            "Do your food and beverage packaging designs adhere to food labelling regulations?",
+          answer:
+            "Yes, as a food packaging design company, we ensure that our packaging designs effectively integrate legally required information on the label.",
+        },
+
+         {
+          question:
+            "Can you help launch my food & beverage brand?",
+          answer:
+            "Surely, our GTM services are designed specifically for this. We help your brand prepare for the launch and expansion into different areas, regions and channels.",
         },
       ];
     
       const rightFaqs = [
         {
-          question: "Can you help launch my food & beverage brand?",
-          answer:
-            "Surely, our GTM services are designed specifically for this. We help your brand prepare for the launch and expansion into different areas, regions and channels.",
-        },
-        {
           question: "What specific industries within the larger food and beverage category do you work in?",
           answer:
             "As a food & beverage branding agency, we work across the entire sector, be it packaged food, popular beverages, functional beverages, dairy, snacks, bakery, confectionery, frozen foods, health foods, spices, condiments, ready-to-eat meals, and more. ",
         },
+        {
+          question: "Do you work with D2C food and beverage brands? ",
+          answer:
+            "Yes, we build D2C F&B brands that stand out and grow in the competitive online space. We keep retail expansion in mind while designing so the brand easily transitions from digital to physical shelves when the time comes. ",
+        },
     
         {
+          question:
+            "Do you work with functional beverage and wellness brands? ",
+          answer:
+            "Yes, at our F&B branding company, we have worked with multiple functional beverage and wellness brands. Branding for both these segments needs to strike a balance between creative design and conveying complex information (or benefits) clearly and simply. We help build functional beverage and wellness brands that have a distinctive identity, communicate clearly and work across physical and digital spaces.",
+        },
+    
+        {
+          question:
+            "What makes food and beverage branding different in the Indian market?",
+          answer:
+            "Indian F&B market is vast and diverse. Consumer preferences vary and regional influences are significant. Add an intensely competitive online and offline market, price-conscious consumers and regulatory requirements, and food & beverage branding becomes a complex space to navigate. An F&B branding agency excels in creating identities and packaging design with these realities in mind so the product caters to the target audience and works across both traditional and modern market formats.",
+        },
+    
+        {
+          question: "Do you work with international food and beverage brands? ",
+          answer:
+            (<>Yes, absolutely. We are a Noida-based food and beverage branding firm, but we work with brands globally. We adapt our strategy, design and communication to suit the target audience and market so the brand creates an impact and earns profit. </>)
+        },
+
+         {
           question:
             "Can you help rebrand an existing food or beverage product?",
           answer:
-            "Yes, we can certainly help rebrand an existing food or beverage product. And the tricky part here isn't the redesign; it's ensuring your customers who already know and buy the product aren’t confused and alienated. A rebrand done carelessly can lose trust faster than it builds it.",
+            "Yes, we can certainly help rebrand an existing food or beverage product. And the tricky part here isn't the redesign; it's ensuring your customers who already know and buy the product aren’t confused and alienated. A rebrand done carelessly can lose trust faster than it built it.",
         },
-    
-        {
+
+         {
           question:
-            "Can a branding agency help with both packaging and digital marketing?",
+            "Can a food branding agency help with both packaging and digital marketing?",
           answer:
             "Yes, definitely. At DN Designs, we offer both as part of our branding and marketing services.",
         },
-    
-        {
-          question: "How long does a typical food and beverage branding project take?",
+
+         {
+          question:
+            "Can you create visual content for our food and beverage brand? ",
           answer:
-            (<>It completely depends on the scope of work and the revisions required. </>)
+            "Yes, of course. Our range of branding and design services also includes visual content creation such as photography, video and animation. These services help bring your brand to life across websites, social media and ad campaigns.",
+        },
+
+         {
+          question:
+            "How long does a typical food and beverage branding project take?",
+          answer:
+            "It completely depends on the scope of work and the revisions required. ",
         },
       ];
     
