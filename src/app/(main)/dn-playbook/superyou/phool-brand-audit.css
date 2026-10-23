@@ -1,0 +1,163 @@
+/* brand-at-glance */
+.brand-at-glance-phool{
+    padding: 50px 0;
+}
+
+.brand-at-glance-head-phool{
+    font-family: var(--font-helvetica);
+    font-size: 45px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.brand-at-glance-col-1-phool{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.brand-at-glance-text-div-phool{
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.brand-at-glance-text-div-para-phool{
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 18px;
+    color: #747474;
+    margin-bottom: 5px;
+}
+
+.brand-at-glance-text-div-head-phool{
+    font-family: var(--font-helvetica);
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    /* text-align: center; */
+}
+
+.brand-at-glance-img-div-phool{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.brand-at-glance-text-div-phool-bottom{
+    margin-top: 15px;
+}
+
+.brand-at-glance-text-div-phool-bottom ul {
+    list-style: square;
+}
+
+
+
+
+/* brand at a glance */
+@media(max-width:991px){
+
+    .brand-at-glance-text-div-phool-img-col{
+        margin-bottom : 5px;
+    }
+
+    .brand-at-glance-text-div-phool-bottom{
+    margin-top: 5px;
+}
+
+.brand-at-glance-text-div-head-phool{
+    text-align: center;
+}
+   
+  
+    .brand-at-glance-head-phool{
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    .brand-at-glance-text-div-phool{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .brand-at-glance-img-phool{
+        padding: 20px 0;
+    }
+    .brand-elements-main-head{
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    
+    .lets-tak-main-head {
+        font-size: 40px;
+        width: 80%;
+    }
+    .brand-attributes-head{
+        font-size: 35px;
+    }
+    .brand-attributes-points{
+        font-size: 16px;
+    }
+    .swot-section-head {
+        font-size: 35px;
+    }
+    .swot-section{
+        padding: 0;
+    }
+
+    .stp-section-main-head{
+        font-size: 35px;
+    }
+    .pop-pod-section-head{
+        font-size: 35px;
+    }
+    .product-mix-section-head{
+        font-size: 35px;
+    }
+    .pricing-distrubution-section-main-head{
+        font-size: 35px;
+    }
+    .competitve-analysis-section-head{
+        font-size: 35px;
+    }
+    .product-mix-section-head{
+        padding-bottom: 10px;
+    }
+
+    .brand-at-glance-text-div-head{
+        text-align: center;
+    }
+}
+
+
+.disclaimer-section{
+    background-color: #121212;
+    padding: 10px;
+}
+
+.disclaimer-section-para{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+}
+
+
+
+.competive-analysis-table-data-row-text ul li{
+    padding-top: 5px;
+}
+
+.brand-at-glance-text-div-phool-bottom-row{
+    height: 100%;
+}
+
+.brand-at-glance-bottom-row{
+    padding-top: 15px;
+}
