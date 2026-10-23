@@ -344,7 +344,7 @@ async function page() {
           <div className="row mt-5">
             <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
               <div className="content-box-city-page">
-                <h2>EYour Brand Leaves a Lasting First Impression</h2>
+                <h2>Your Brand Leaves a Lasting First Impression</h2>
                 <p>
                   Good branding helps your brand communicate better with your
                   target audience as a consistent identity and a polished
