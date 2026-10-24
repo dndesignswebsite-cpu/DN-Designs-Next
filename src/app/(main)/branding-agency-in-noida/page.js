@@ -216,7 +216,7 @@ async function page() {
        slide_11_slide_para : "Your website is your online office or store. It must impress those who visit it. We, therefore, create SEO optimised websites that are visually appealing, functional, and reflect your brand identity. Our designs ensure a good user experience.",
 
        slide_12_slide_head : "UI/UX Design",
-       slide_12_slide_para : "Your website is your online office or store. It must impress those who visit it. We, therefore, create SEO optimised websites that are visually appealing, functional, and reflect your brand identity. Our designs ensure a good user experience.",
+       slide_12_slide_para : "Websites and app designs should be visually appealing and easy to use. We create exactly this by studying user behaviour, planning layouts, and designing interactions. We ensure your audience has a smooth experience with the website/app.",
 
        slide_13_slide_head : "Photography",
        slide_13_slide_para : "Visuals speak louder than words. We capture the essence of your brand through our professional photography service. We create visuals that highlight your brand’s personality, connect with your audience and leave an everlasting impression."
