@@ -159,13 +159,13 @@ async function page() {
 
                  <div className='row parant-page-row'>
                    <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                    {/* <Link href="/dn-playbook/gully-labs"  className="parent-page-blocks-col-link"> */}
+                    <Link href="/dn-playbook/superyou"  className="parent-page-blocks-col-link">
                         <div className='parent-page-blocks-col-div'>
                             <img src="https://dndesigns.co.in/uploads/pages/dnplaybookparentsyperyou.jpg.jpeg" className='img-fluid parent-page-blocks-col-img'></img>
                             <h2 className='parent-page-blocks-col-head'>Super You </h2>
                             <p className='parent-page-blocks-col-para'>Examining how the brand is bringing protein into the snacking conversation.</p>
                         </div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
 
                     <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
