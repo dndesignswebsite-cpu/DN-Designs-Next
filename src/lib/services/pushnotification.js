@@ -29,19 +29,18 @@ export const sendNewConversationNotification = async ({
       return;
     }
 
-    const messages = devices.map((device) => ({
-      to: device.token,
-      sound: "default",
-      title: "New Chat Conversation",
-      body: "A visitor has started a new conversation on DN Designs.",
-      data: {
-        type: "NEW_CONVERSATION",
-        conversationId,
-        visitorId,
-      },
-      priority: "high",
-      channelId: "new-chats",
-    }));
+  const messages = devices.map((device) => ({
+  to: device.token,
+  title: "New Chat Conversation",
+  body: "A visitor has started a new conversation on DN Designs.",
+  data: {
+    type: "NEW_CONVERSATION",
+    conversationId,
+    visitorId,
+  },
+  priority: "high",
+  channelId: "new-chats",
+}));
 
     const batches = chunkArray(messages, 100);
 
