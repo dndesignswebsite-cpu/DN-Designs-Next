@@ -10,6 +10,9 @@ import websiteKnowledge from "@/data/websiteKnowledge";
 
 import connectDB from "@/lib/config/database.js";
 import * as chatService from "@/lib/services/chatService.js";
+import {
+  sendNewConversationNotification,
+} from "@/lib/services/pushnotification.js";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -761,57 +764,116 @@ END OF DN DESIGNS WEBSITE INFORMATION
       // GET EXISTING CONVERSATION
       // ====================================
 
-      const existingChat =
-        await chatService.getChatByConversationId(
-          conversationId
-        );
+      // const existingChat =
+      //   await chatService.getChatByConversationId(
+      //     conversationId
+      //   );
 
-      // ====================================
-      // NEW CONVERSATION
-      // ====================================
+      // // ====================================
+      // // NEW CONVERSATION
+      // // ====================================
 
-      if (!existingChat) {
-        await chatService.createChat({
-          conversationId,
-          visitorId,
+      // if (!existingChat) {
+      //   await chatService.createChat({
+      //     conversationId,
+      //     visitorId,
 
-          messages: [
-            currentUserMessage,
+      //     messages: [
+      //       currentUserMessage,
 
-            {
-              role: "assistant",
+      //       {
+      //         role: "assistant",
 
-              content: aiMessage,
+      //         content: aiMessage,
 
-              createdAt:
-                new Date(),
-            },
-          ],
-        });
-      }
+      //         createdAt:
+      //           new Date(),
+      //       },
+      //     ],
+      //   });
+      // }
 
-      // ====================================
-      // EXISTING CONVERSATION
-      // ====================================
+      // // ====================================
+      // // EXISTING CONVERSATION
+      // // ====================================
 
-      else {
-        await chatService.addMessages(
-          conversationId,
+      // else {
+      //   await chatService.addMessages(
+      //     conversationId,
 
-          [
-            currentUserMessage,
+      //     [
+      //       currentUserMessage,
 
-            {
-              role: "assistant",
+      //       {
+      //         role: "assistant",
 
-              content: aiMessage,
+      //         content: aiMessage,
 
-              createdAt:
-                new Date(),
-            },
-          ]
-        );
-      }
+      //         createdAt:
+      //           new Date(),
+      //       },
+      //     ]
+      //   );
+      // }
+
+
+      
+const existingChat =
+  await chatService.getChatByConversationId(
+    conversationId
+  );
+
+// ====================================
+// NEW CONVERSATION
+// ====================================
+
+if (!existingChat) {
+  // First save the conversation in MongoDB
+  await chatService.createChat({
+    conversationId,
+    visitorId,
+    messages: [
+      currentUserMessage,
+      {
+        role: "assistant",
+        content: aiMessage,
+        createdAt: new Date(),
+      },
+    ],
+  });
+
+  // Send notification after successful save
+  try {
+    await sendNewConversationNotification({
+      conversationId,
+      visitorId,
+    });
+  } catch (notificationError) {
+    console.error(
+      "New conversation notification failed:",
+      notificationError
+    );
+  }
+}
+
+// ====================================
+// EXISTING CONVERSATION
+// ====================================
+
+else {
+  await chatService.addMessages(
+    conversationId,
+    [
+      currentUserMessage,
+      {
+        role: "assistant",
+        content: aiMessage,
+        createdAt: new Date(),
+      },
+    ]
+  );
+}
+
     } catch (saveError) {
       /*
        * Important:
