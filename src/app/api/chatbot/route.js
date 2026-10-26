@@ -757,6 +757,8 @@ END OF DN DESIGNS WEBSITE INFORMATION
     // generated the response.
     // ======================================
 
+    let pushDebug = null;
+
     try {
       await connectDB();
 
@@ -822,8 +824,6 @@ END OF DN DESIGNS WEBSITE INFORMATION
 //   await chatService.getChatByConversationId(
 //     conversationId
 //   );
-
-let pushDebug = null;
 
 const existingChat =
   await chatService.getChatByConversationId(
