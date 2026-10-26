@@ -818,6 +818,13 @@ END OF DN DESIGNS WEBSITE INFORMATION
 
 
       
+// const existingChat =
+//   await chatService.getChatByConversationId(
+//     conversationId
+//   );
+
+let pushDebug = null;
+
 const existingChat =
   await chatService.getChatByConversationId(
     conversationId
@@ -843,17 +850,45 @@ if (!existingChat) {
   });
 
   // Send notification after successful save
-  try {
-    await sendNewConversationNotification({
-      conversationId,
-      visitorId,
-    });
-  } catch (notificationError) {
-    console.error(
-      "New conversation notification failed:",
-      notificationError
-    );
-  }
+  // try {
+  //   await sendNewConversationNotification({
+  //     conversationId,
+  //     visitorId,
+  //   });
+  // } catch (notificationError) {
+  //   console.error(
+  //     "New conversation notification failed:",
+  //     notificationError
+  //   );
+  // }
+
+
+  // let pushDebug = null;
+
+try {
+  pushDebug = await sendNewConversationNotification({
+    conversationId,
+    visitorId,
+  });
+
+  console.log("[PUSH DEBUG]", pushDebug);
+} catch (notificationError) {
+  console.error(
+    "New conversation notification failed:",
+    notificationError
+  );
+
+  pushDebug = {
+    triggered: true,
+    errors: [
+      {
+        message: notificationError?.message || "Unknown push error",
+      },
+    ],
+  };
+}
+
+
 }
 
 // ====================================
@@ -891,20 +926,35 @@ else {
     // 17. RETURN SUCCESSFUL RESPONSE
     // ======================================
 
-    return NextResponse.json(
-      {
-        success: true,
-        message: aiMessage,
-      },
-      {
-        status: 200,
+    // return NextResponse.json(
+    //   {
+    //     success: true,
+    //     message: aiMessage,
+    //   },
+    //   {
+    //     status: 200,
 
-        headers: {
-          "Cache-Control":
-            "no-store",
-        },
-      }
-    );
+    //     headers: {
+    //       "Cache-Control":
+    //         "no-store",
+    //     },
+    //   }
+    // );
+
+    return NextResponse.json(
+  {
+    success: true,
+    message: aiMessage,
+
+    pushDebug: pushDebug,
+  },
+  {
+    status: 200,
+    headers: {
+      "Cache-Control": "no-store",
+    },
+  }
+);
   } catch (error) {
     console.error(
       "Gemini Chatbot Error:",

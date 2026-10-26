@@ -21,26 +21,39 @@ export const sendNewConversationNotification = async ({
   conversationId,
   visitorId,
 }) => {
+  const debug = {
+    triggered: true,
+    activeDevices: 0,
+    tickets: [],
+    errors: [],
+  };
+
   try {
+    console.log("[PUSH] New conversation notification triggered");
+
     const devices = await getActivePushTokens();
 
+    debug.activeDevices = devices.length;
+
+    console.log("[PUSH] Active devices:", devices.length);
+
     if (!devices.length) {
-      console.log("No active push devices registered.");
-      return;
+      console.log("[PUSH] No active devices found");
+      return debug;
     }
 
- const messages = devices.map((device) => ({
-  to: device.token,
-  title: "New Chat Conversation",
-  body: "A visitor has started a new conversation on DN Designs.",
-  data: {
-    type: "NEW_CONVERSATION",
-    conversationId,
-    visitorId,
-  },
-  priority: "high",
-  channelId: "new-chats-v2",
-}));
+    const messages = devices.map((device) => ({
+      to: device.token,
+      title: "New Chat Conversation",
+      body: "A visitor has started a new conversation on DN Designs.",
+      data: {
+        type: "NEW_CONVERSATION",
+        conversationId,
+        visitorId,
+      },
+      priority: "high",
+      channelId: "new-chats-v2",
+    }));
 
     const batches = chunkArray(messages, 100);
 
@@ -57,20 +70,20 @@ export const sendNewConversationNotification = async ({
 
       const result = await response.json();
 
+      console.log("[PUSH] Expo response:", result);
+
       if (!response.ok) {
-        console.error("Expo Push API error:", result);
+        debug.errors.push(result);
         continue;
       }
 
       const invalidTokens = [];
 
       (result.data || []).forEach((ticket, index) => {
+        debug.tickets.push(ticket);
+
         if (ticket.status === "error") {
-          console.error(
-            "Push notification error:",
-            ticket.message,
-            ticket.details
-          );
+          debug.errors.push(ticket);
 
           if (
             ticket.details?.error === "DeviceNotRegistered"
@@ -85,11 +98,16 @@ export const sendNewConversationNotification = async ({
       }
     }
 
-    console.log(
-      `New conversation notification processed for ${devices.length} devices.`
-    );
+    console.log("[PUSH] Final result:", debug);
+
+    return debug;
   } catch (error) {
-    // Notification failure must never break chatbot response.
-    console.error("Push notification service error:", error);
+    console.error("[PUSH] Service error:", error);
+
+    debug.errors.push({
+      message: error.message,
+    });
+
+    return debug;
   }
 };
