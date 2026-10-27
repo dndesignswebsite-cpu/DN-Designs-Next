@@ -11,6 +11,7 @@ import { getPageById } from "@/lib/services/pageService.js";
 import { notFound } from "next/navigation";
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb';
 import "./phool-brand-audit.css"
+import Form from '@/Components/Form/Form';
 
 
 // meta tags
@@ -92,6 +93,12 @@ async function page() {
         }
       }
       // --- SCHEMA CLEANING LOGIC END ---
+
+
+      // form content
+  const FormHead = "Let’s Discuss Over a Cup of Coffee";
+  const FormPara =
+    "Whether you have a brand to build, a problem to solve, a big idea you can’t stop thinking about, or simply don’t know where to begin, let’s talk. No formalities, no long briefs, no need to have everything figured out. Just a good conversation, a little curiosity, and a cup of coffee. We’ll bring the questions, you bring the idea, and together, let’s see where the conversation takes us.";
 
   return (
     <div>
@@ -910,6 +917,10 @@ async function page() {
                 <BrandAuditCta/>
                 </div>
                 </section> */}
+
+                    {/* Form */}
+      <Form FormHead={FormHead} FormPara={FormPara} />
+      
 
     </div>
   )
