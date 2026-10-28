@@ -113,7 +113,7 @@ async function page() {
       <div className="container wlue-winner">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 col-md-6">
-            <h2 id="caststudy-heading">Wlue's</h2>
+            <h1 id="caststudy-heading">Wlue's</h1>
             <p id="casestudy-span">#Onlyforwinners</p>
           </div>
 

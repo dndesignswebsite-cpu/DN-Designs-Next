@@ -119,10 +119,10 @@ async function page() {
                 />
             </div>
             <div className="col-lg-7 col-md-7 justify-content-space-between">
-              <h2 className="grincare-h1">
+              <h1 className="grincare-h1">
                 Designed an immersive brand universe for a leading oral care
                 innovator.
-              </h2>
+              </h1>
               <div className="nectarpurecase-study-wrapper">
                 <div className="grincarecase-study-points">GRAPHIC</div>
                 <div className="grincarecase-study-points">UI/UX</div>

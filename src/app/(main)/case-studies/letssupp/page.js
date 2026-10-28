@@ -173,7 +173,7 @@ async function page() {
               </p>
               <div className="overview-btn-div">
                 <span className="overview-btn-1">Nutraceuticals</span>
-                <sapn className="overview-btn-2">Health Supplements</sapn>
+                <span className="overview-btn-2">Health Supplements</span>
                 <span className="overview-btn-3">2025</span>
               </div>
             </div>

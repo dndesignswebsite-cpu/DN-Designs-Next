@@ -112,7 +112,7 @@ async function page() {
       <div className="container enlite-winner">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 col-md-6">
-            <h2 class="enlitecasestudy-heading">Enlite</h2>
+            <h1 class="enlitecasestudy-heading">Enlite</h1>
             <p id="enlitecasestudy-span">#Bubbleswithbenefits</p>
           </div>
 
