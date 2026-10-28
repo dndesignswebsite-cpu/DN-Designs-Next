@@ -492,7 +492,7 @@ async function page() {
 
 
             <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="1am-case-study" className="pane-link">
+              <Link href="/case-studies/1am" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   <Image
                   src="https://dndesigns.co.in/uploads/pages/2ehwrkjd3hjrekfh5iruphone.jpg.jpeg"
@@ -526,7 +526,7 @@ async function page() {
               </div>
 
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="enlite-case-study" className="pane-link">
+              <Link href="/case-studies/enlite" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "enlite main graphic.webp"}
@@ -566,7 +566,7 @@ async function page() {
 
 
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="letssupp-case-study" className="pane-link">
+              <Link href="/case-studies/letssupp" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "nature-balance-22.webp"}
@@ -603,7 +603,7 @@ async function page() {
 
 
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="wlues-case-study" className="pane-link">
+              <Link href="/case-studies/wlues" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "nature-balance-22.webp"}
@@ -649,7 +649,7 @@ async function page() {
               
               
               <div className="our-brand-mobile-div col-12 col-sm-12 col-md-12">
-              <Link href="nectarpure-case-study" className="pane-link">
+              <Link href="/case-studies/nectarpure" className="pane-link">
                 <div className="our-brand-mobile-div-clield">
                   {/* <img
                     src={imageUrl + "ewrfeferf.webp"}
