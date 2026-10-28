@@ -118,10 +118,10 @@ async function page() {
                 />
           </div>
           <div className="col-lg-8 col-md-7 justify-content-space-between">
-            <h2 className="nectarpure-h1">
+            <h1 className="nectarpure-h1">
               Created a premium package design for a whey protein brand to
               establish them in the market.
-            </h2>
+            </h1>
             <div className="nectarpurecase-study-wrapper">
               <div className="nectarpurecase-study-points">GRAPHIC</div>
               <div className="nectarpurecase-study-points">BRAND IDENTITY</div>
