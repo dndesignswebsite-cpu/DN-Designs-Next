@@ -38,9 +38,9 @@ function AtOneAmCaseStudyHero() {
   WHO CREATE WHEN THE
 </MomentumSection> */}
 
-<h1 className="hero-heading hero-heading-2">
+<h2 className="hero-heading hero-heading-2">
   WHO CREATE WHEN THE
-</h1>
+</h2>
             <div className='at-one-am-hero-heading-div-2-sub-div'>
             <img src="https://dndesigns.co.in/uploads/pages/atoneamheroimagetwo.jpeg" className='img-fluid at-one-am-hero-img-sub-div'></img>
            
@@ -49,9 +49,9 @@ function AtOneAmCaseStudyHero() {
   WORLD GOES QUIET
 </MomentumSection> */}
 
-<h1 className="hero-heading hero-heading-3">
+<h2 className="hero-heading hero-heading-3">
   WORLD GOES QUIET
-</h1>
+</h2>
 
 
 <div className='nav-text-child-div-two'>
