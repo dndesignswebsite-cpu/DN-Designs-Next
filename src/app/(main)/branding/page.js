@@ -257,7 +257,7 @@ async function page() {
                     sizes="(max-width:768px) 100vw, 50vw"
                 /> */}
 
-                <video src="https://at1am.com/wp-content/uploads/2026/03/IMG_5792_1.mp4" width="100%" autoPlay muted loop playsinline class="responsive-img port-div-img"></video>
+                <video src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4" width="100%" autoPlay muted loop playsinline class="responsive-img port-div-img"></video>
 
                 <div className="port-content">
                   <div className="potfolio-div-btns">

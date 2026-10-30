@@ -9,14 +9,15 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
     const imageUrl = "https://dndesigns.co.in/uploads/pages/";
   return (
     <div>
-       {/*.....our brands desktop view...... */}
-      <section className={`${styles["our-brand"]}`}>
-        <div className="container">
-          <h2
+      <h2
             className={`${styles["our-brand-heading"]} text-center heading-corbert`}
           >
             {heading1} <span className={`${styles["every-pr"]}`}>{heading2}</span>
           </h2>
+       {/*.....our brands desktop view...... */}
+      <section className={`${styles["our-brand"]}`}>
+        <div className="container">
+          
           <ul className={`${styles["cards"]}`}>
 
           
@@ -205,12 +206,12 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
       <section className={`${styles["mobile-view-our-brand"]}`}>
         <div className="container">
           <div className="row">
-            <h2
+            {/* <h2
               className={`${styles["our-brand-heading"]} text-center heading-corbert`}
             >
               Our{" "}
               <span className={`${styles["every-pr"]}`}>Brand Journals</span>
-            </h2>
+            </h2> */}
             <div className={`${styles["our-brand-mobile-all-div"]} row`}>
 
 
@@ -244,28 +245,28 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                         1 AM
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Brand Strategy
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                          Brand Identity
-                        </h4>
+                        </p>
                       </div>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Label Design
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                          Website Design
-                        </h4>
+                        </p>
                       </div>
                       {/* <div>
                         <h4
@@ -320,23 +321,23 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                         Rithm’s Enlite
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Branding
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
 Can Design
-                        </h4>
+                        </p>
                       </div>
                       <div>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
                         >
                           Communication Design
-                        </h4>
+                        </p>
                       </div>
                       <p className="para-roboto">
                         For Rithm’s Enlite, a brand with sparkling mineral water
@@ -377,28 +378,28 @@ Can Design
                         Let's Supp
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Brand Identity
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Packaging Design
-                        </h4>
+                        </p>
                       </div>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           UI/UX
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Website
-                        </h4>
+                        </p>
                       </div>
                       <p className="para-roboto">
                       Wellness should be simple, joyful and consistent. This is the core belief of the nutraceutical brand Let’s Supp, and to convey this, we created a complete identity and packaging system centred around the ‘continuity’ principle. This principle is expressed through the ‘infinity structure/symbol’, which is embedded in the logo and also governs the packaging design. This identity is also reflected in the interface design and brand communications we created for them. To win customers’ trust, our overall design focus was on clarity, consistency, honesty, and emotional resonance.
@@ -441,28 +442,28 @@ Can Design
                         Wlue's
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Brand Identity
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Packaging Design
-                        </h4>
+                        </p>
                       </div>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           UI/UX
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Website
-                        </h4>
+                        </p>
                       </div>
                       <p className="para-roboto">
                         Makhana brand Wlue’s approached us to launch and promote
@@ -507,23 +508,23 @@ Can Design
                         Nectarpure
                       </h3>
                       <div className={`${styles["our-brand-mobile-btn-up"]}`}>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto`}
                         >
                           Brand Identity
-                        </h4>
-                        <h4
+                        </p>
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} para-roboto `}
                         >
                           Label Design
-                        </h4>
+                        </p>
                       </div>
                       <div>
-                        <h4
+                        <p
                           className={`${styles["our-brand-mobile-btn"]} ${styles["our-brand-mobile-btn-bottom"]} text-center para-roboto`}
                         >
                           UI/UX
-                        </h4>
+                        </p>
                       </div>
                       <p className="para-roboto">
                         Nutraceutical brand NECTARPURE partnered with us

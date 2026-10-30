@@ -166,8 +166,9 @@
   font-weight: 500;
   font-size: 50px;
   color: #202020;
-  padding-bottom: 20px;
+  /* padding-bottom: -20px; */
    letter-spacing: -0.9px;
+   margin-bottom: -30px;
 }
 
 .mobile-view-our-brand {
@@ -175,6 +176,10 @@
 }
 
 @media (max-width: 991px) {
+
+  .our-brand-heading{
+    font-size: 35px;
+  }
   .our-brand {
     display: none;
   }
@@ -199,12 +204,13 @@
 .mobile-view-our-brand-h3 {
   color: #DC2211;
   font-size: 32px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-top: 5px;
   /* font-family: var(--font-corbert-bold); */
   font-family: var(--font-helvetica);
   font-weight: 500;
    letter-spacing: -0.9px;
+   /* margin-bottom: -10px; */
 }
 
 .our-brand-mobile-all-div {
@@ -239,6 +245,8 @@
   border-color:#DC2211;
   border-radius: 0;
   padding: 5px;
+  width: 100%;
+  text-align: center;
 }
 
 .our-brand-mobile-btn-up {
@@ -261,7 +269,7 @@
 }
 
 .our-brand-mobile-div-content p {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: #202020;
   font-size: 16px;
   line-height: 1.4em;
