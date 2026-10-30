@@ -1330,3 +1330,100 @@ font-weight: 400;
     top: 100%;
 }
 }
+
+
+
+/* new css */
+/* Heading Always Visible */
+
+.overlay-text-content {
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.85) 100%
+    );
+}
+
+/* Heading Always Visible */
+.overlay-text-content h3 {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-bottom: 0;
+}
+
+/* Paragraph Hidden Initially */
+.overlay-text-content p {
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+/* Show Paragraph on Hover */
+.slider-wrapper:hover .overlay-text-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.overlay-text-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    z-index: 2;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        transparent 70%
+    );
+}
+
+.overlay-text-content h3 {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+    margin-bottom: 0;
+}
+
+.overlay-text-content p {
+    color: #fff;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    margin: 0;
+}
+
+.slider-wrapper:hover .overlay-text-content h3 {
+    transform: translateY(-10px);
+}
+
+.slider-wrapper:hover .overlay-text-content p {
+    opacity: 1;
+    max-height: 150px;
+    transform: translateY(0);
+    margin-top: 8px;
+}
