@@ -606,7 +606,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Website Analysis</h2>
+                  <h3>Website Analysis</h3>
                   <p>
                     As an SEO company in India, our first step is to analyse the
                     existing website - its technical aspects, content, on-page
@@ -625,7 +625,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Keyword Research</h2>
+                  <h3>Keyword Research</h3>
                   <p>
                     Once we have a good idea about your website, we focus more
                     on the existing keywords' ranking. Additionally, our SEO
@@ -644,7 +644,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>On-Page SEO</h2>
+                  <h3>On-Page SEO</h3>
                   <p>
                     Now we begin with individual page optimisation. We
                     add/improve the content and integrate relevant keywords
@@ -663,7 +663,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Off-Page SEO</h2>
+                  <h3>Off-Page SEO</h3>
                   <p>
                     While your on-page optimisation activities focus on making
                     your website user and search engine friendly, the off-page
@@ -683,7 +683,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Technical SEO</h2>
+                  <h3>Technical SEO</h3>
                   <p>
                     This step is vital to ensure that the faulty technical
                     aspects and elements of your website do not break it down or
@@ -712,9 +712,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Website Analysis</h2>
+                  <h3>Website Analysis</h3>
                   <p>
                     As an SEO company in India, our first step is to analyse the
                     existing website - its technical aspects, content, on-page
@@ -731,9 +731,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Keyword Research</h2>
+                  <h3>Keyword Research</h3>
                   <p>
                     Once we have a good idea about your website, we focus more
                     on the existing keywords' ranking. Additionally, our SEO
@@ -750,9 +750,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>On-Page SEO</h2>
+                  <h3>On-Page SEO</h3>
                   <p>
                     Now we begin with individual page optimisation. We
                     add/improve the content and integrate relevant keywords
@@ -769,9 +769,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Off-Page SEO</h2>
+                  <h3>Off-Page SEO</h3>
                   <p>
                     While your on-page optimisation activities focus on making
                     your website user and search engine friendly, the off-page
@@ -789,9 +789,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Technical SEO</h2>
+                  <h3>Technical SEO</h3>
                   <p>
                     This step is vital to ensure that the faulty technical
                     aspects and elements of your website do not break it down or

@@ -1188,7 +1188,7 @@ export default function Chatbot() {
               aria-label="Send message"
               title="Send message"
             >
-              <img src="https://dndesigns.co.in/uploads/pages/chatbotnewiconwithfixes.svg" className="img-fluid"/>
+              <img src="https://dndesigns.co.in/uploads/pages/chatbotnewiconwithfixes.svg" className="img-fluid" alt="Open chat assistant"/>
             </button>
           </div>
         </div>

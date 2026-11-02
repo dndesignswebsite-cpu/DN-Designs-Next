@@ -1582,7 +1582,7 @@ export default function Header() {
           <Link href="/" onClick={handleLinkClick}>
             <img
               src="https://dndesigns.co.in/uploads/avatars/DN-new-logo.png"
-              alt="DN Designs Logo"
+              alt="DN Designs – home"
               // style={{width:"120px"}}
               className={`${styles["logo-image-dn"]}`}
             />
@@ -2176,7 +2176,7 @@ export default function Header() {
                 >
                   <Image
                     src="/Email.svg"
-                    alt="Phone"
+                    alt="Email"
                     width={40}
                     height={40}
                     className={`${styles["me-2"]}`}
@@ -2199,7 +2199,7 @@ export default function Header() {
                 >
                   <Image
                     src="/Address.svg"
-                    alt="Phone"
+                    alt="Office address"
                     width={40}
                     height={40}
                     className={`${styles["me-2"]}`}

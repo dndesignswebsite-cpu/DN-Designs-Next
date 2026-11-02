@@ -38,6 +38,7 @@ const POINTS_DATA = [
 
     image:
       "https://dndesigns.co.in/uploads/pages/homepagepointsnewpointsimagebranding.jpg.jpeg",
+      alt : "Brand identity and packaging work by DN Designs"
   },
 
   {
@@ -45,6 +46,7 @@ const POINTS_DATA = [
     title: "Communication Strategy",
 
     headline: "Connecting Brands With Audiences",
+    alt:"Brand communication and social media campaign visuals",
 
     description:
       "Your brand needs to communicate in a way that resonates with your target audience and makes you memorable. We build a communication frameworks that do exactly that. Contact us and let our experts devise a communication strategy for you.",
@@ -73,6 +75,7 @@ const POINTS_DATA = [
   {
     number: "03",
     title: "Web Design",
+    alt:"Website design shown on desktop and mobile screens",
 
     headline: "Designing Better Digital Experiences",
 
@@ -293,7 +296,7 @@ function HomePointsNew() {
                             <img
                               src={point.image}
                               className="img-fluid home-page-points-new-row-col-bottom-div-image"
-                              alt={point.title}
+                              alt={point.alt}
                             />
                           </div>
 

@@ -577,7 +577,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Understanding the Brand</h2>
+                  <h3>Understanding the Brand</h3>
                   <p>
                    This is where we start - exploring your brand’s core. We review your products and services, your vision and mission, as well as your strengths and challenges. These help us understand where your brand stands today, and where it aims to reach in future.
                   </p>
@@ -589,7 +589,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Analysing Market & Competitors</h2>
+                  <h3>Analysing Market & Competitors</h3>
                   <p>
                    In this next step, we dive deep into the competitive landscape and compile insights on the market and competitors. We understand the positioning strategies of the competitors and figure out marketing gaps and positioning opportunities. This stage enables us to determine the area where a strong positioning can be built.
                   </p>
@@ -601,7 +601,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Researching the Audience</h2>
+                  <h3>Researching the Audience</h3>
                   <p>
                   Here, the focus is solely on the target customers. What are their pain points? What exactly do they need? What prompts them to choose one product over the other? Insights like these are valuable when crafting a strong brand positioning strategy.
                   </p>
@@ -613,7 +613,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Defining Your Unique Value Proposition</h2>
+                  <h3>Defining Your Unique Value Proposition</h3>
                   <p>
                    What sets your brand apart from the competitors? Why should customers choose you? Identifying and defining this unique value is what we focus on doing in this step. Without this, moving forward and creating a strong positioning strategy is impossible.
                   </p>
@@ -625,7 +625,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Crafting a Brand Positioning Strategy</h2>
+                  <h3>Crafting a Brand Positioning Strategy</h3>
                   <p>
                    At this stage, we shape a comprehensive positioning strategy using all the data gathered earlier. It establishes how your brand should be perceived in the market and how all future branding, marketing and communication efforts should move. To elaborate, this strategic framework defines your brand’s core positioning direction, messaging themes, competitive differentiation, and overall personality and tone. 
                   </p>
@@ -637,7 +637,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Developing Brand Positioning Statement</h2>
+                  <h3>Developing Brand Positioning Statement</h3>
                   <p>
                  Now, we draft a clear, concise positioning statement that serves as a guide for your business’s internal functioning. In just 2-3 sentences, we define your target audience, category, unique value and key differentiating point. This statement gives your team a clear direction about what the brand stands for and how it thinks, speaks, and communicates in the market. This direction ensures your brand appears consistent everywhere.
                   </p>
@@ -649,7 +649,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>Creating a Clear Brand Messaging Framework</h2>
+                  <h3>Creating a Clear Brand Messaging Framework</h3>
                   <p>
                 Your brand needs to communicate its positioning with clarity and consistency. So, at this stage, we focus on developing key messaging pillars and communication guidelines. We work on the key brand messages, messaging hierarchy, tone of voice and communication guidelines.
                   </p>
@@ -661,7 +661,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">08</div>
                 <div className="col-10">
-                  <h2>Implementation and Brand Alignment  </h2>
+                  <h3>Implementation and Brand Alignment  </h3>
                   <p>
                  We have now reached the final stage. Here, we ensure that your positioning is clearly reflected across the brand, be it your visual identity, marketing materials, website content, and customer communications. The brand positioning process is now complete.
                   </p>
@@ -683,9 +683,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Understanding the Brand</h2>
+                  <h3>Understanding the Brand</h3>
                   <p>
                    This is where we start - exploring your brand’s core. We review your products and services, your vision and mission, as well as your strengths and challenges. These help us understand where your brand stands today, and where it aims to reach in future.
                   </p>
@@ -695,9 +695,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Analysing Market & Competitors</h2>
+                  <h3>Analysing Market & Competitors</h3>
                   <p>
                   In this next step, we dive deep into the competitive landscape and compile insights on the market and competitors. We understand the positioning strategies of the competitors and figure out marketing gaps and positioning opportunities. This stage enables us to determine the area where a strong positioning can be built.
                   </p>
@@ -707,9 +707,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Researching the Audience</h2>
+                  <h3>Researching the Audience</h3>
                   <p>
                   Here, the focus is solely on the target customers. What are their pain points? What exactly do they need? What prompts them to choose one product over the other? Insights like these are valuable when crafting a strong brand positioning strategy.
                   </p>
@@ -719,9 +719,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Defining Your Unique Value Proposition</h2>
+                  <h3>Defining Your Unique Value Proposition</h3>
                   <p>
                    What sets your brand apart from the competitors? Why should customers choose you? Identifying and defining this unique value is what we focus on doing in this step. Without this, moving forward and creating a strong positioning strategy is impossible.
                   </p>
@@ -731,9 +731,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Crafting a Brand Positioning Strategy</h2>
+                  <h3>Crafting a Brand Positioning Strategy</h3>
                   <p>
                     At this stage, we shape a comprehensive positioning strategy using all the data gathered earlier. It establishes how your brand should be perceived in the market and how all future branding, marketing and communication efforts should move. To elaborate, this strategic framework defines your brand’s core positioning direction, messaging themes, competitive differentiation, and overall personality and tone. 
                   </p>
@@ -743,9 +743,9 @@ async function page() {
 
                <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Developing Brand Positioning Statement</h2>
+                  <h3>Developing Brand Positioning Statement</h3>
                   <p>
                     Now, we draft a clear, concise positioning statement that serves as a guide for your business’s internal functioning. In just 2-3 sentences, we define your target audience, category, unique value and key differentiating point. This statement gives your team a clear direction about what the brand stands for and how it thinks, speaks, and communicates in the market. This direction ensures your brand appears consistent everywhere.
                   </p>
@@ -755,9 +755,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>Creating a Clear Brand Messaging Framework</h2>
+                  <h3>Creating a Clear Brand Messaging Framework</h3>
                   <p>
                     Your brand needs to communicate its positioning with clarity and consistency. So, at this stage, we focus on developing key messaging pillars and communication guidelines. We work on the key brand messages, messaging hierarchy, tone of voice and communication guidelines.
                   </p>
@@ -767,9 +767,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">08</h3>
+                <div className="create-number-mobile">08</div>
                 <div className="card-body-create-mobile">
-                  <h2>Implementation and Brand Alignment  </h2>
+                  <h3>Implementation and Brand Alignment  </h3>
                   <p>
                    We have now reached the final stage. Here, we ensure that your positioning is clearly reflected across the brand, be it your visual identity, marketing materials, website content, and customer communications. The brand positioning process is now complete.
                   </p>

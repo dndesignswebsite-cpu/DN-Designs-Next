@@ -437,7 +437,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Identifying & Setting Goals </h2>
+                  <h3>Identifying & Setting Goals </h3>
                   <p>
                     The first step in our process is to understand what you want
                     to achieve as a business from your social media marketing
@@ -454,7 +454,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Identifying Target Audience</h2>
+                  <h3>Identifying Target Audience</h3>
                   <p>
                     The next step in our process is to understand who your
                     target customers are. We conduct comprehensive research to
@@ -471,7 +471,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Selecting the Correct Platforms</h2>
+                  <h3>Selecting the Correct Platforms</h3>
                   <p>
                     With goal identification and extensive audience research
                     done, we now select the social media platform that will
@@ -488,7 +488,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Planning Content Strategy & Calendar </h2>
+                  <h3>Planning Content Strategy & Calendar </h3>
                   <p>
                     It is now time to establish our content themes (educational,
                     promotional), formats (blogs, videos, reels), brand voice
@@ -504,7 +504,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Planning For Community Engagement</h2>
+                  <h3>Planning For Community Engagement</h3>
                   <p>
                     For business, it is important to interact and engage with
                     their customers. Therefore, in this step, we define the ways
@@ -521,7 +521,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Plan Approval & Implementation</h2>
+                  <h3>Plan Approval & Implementation</h3>
                   <p>
                     Our social media marketing plan is now ready, and we submit
                     it to you for approval. We incorporate the changes you
@@ -538,7 +538,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>Analysing Performance</h2>
+                  <h3>Analysing Performance</h3>
                   <p>
                     Performance analysis is important to know whether we are
                     moving in the right direction or not. This includes
@@ -554,7 +554,7 @@ async function page() {
               <div class="card-body-create row">
                 <div className="col-2 create-number text-center">08</div>
                 <div className="col-10">
-                  <h2>Reporting & Revision</h2>
+                  <h3>Reporting & Revision</h3>
                   <p>
                     We share with you the headway we have made in this final
                     stage. We highlight our work, key achievements and future
@@ -580,9 +580,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Identifying & Setting Goals </h2>
+                  <h3>Identifying & Setting Goals </h3>
                   <p>
                     The first step in our process is to understand what you want
                     to achieve as a business from your social media marketing
@@ -597,9 +597,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Identifying Target Audience</h2>
+                  <h3>Identifying Target Audience</h3>
                   <p>
                     The next step in our process is to understand who your
                     target customers are. We conduct comprehensive research to
@@ -614,9 +614,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Selecting the Correct Platforms</h2>
+                  <h3>Selecting the Correct Platforms</h3>
                   <p>
                     With goal identification and extensive audience research
                     done, we now select the social media platform that will
@@ -631,9 +631,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Planning Content Strategy & Calendar </h2>
+                  <h3>Planning Content Strategy & Calendar </h3>
                   <p>
                     It is now time to establish our content themes (educational,
                     promotional), formats (blogs, videos, reels), brand voice
@@ -647,9 +647,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Planning For Community Engagement</h2>
+                  <h3>Planning For Community Engagement</h3>
                   <p>
                     For business, it is important to interact and engage with
                     their customers. Therefore, in this step, we define the ways
@@ -664,9 +664,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Plan Approval & Implementation</h2>
+                  <h3>Plan Approval & Implementation</h3>
                   <p>
                     Our social media marketing plan is now ready, and we submit
                     it to you for approval. We incorporate the changes you
@@ -681,9 +681,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>Analysing Performance </h2>
+                  <h3>Analysing Performance </h3>
                   <p>
                     Performance analysis is important to know whether we are
                     moving in the right direction or not. This includes
@@ -697,9 +697,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">08</h3>
+                <div className="create-number-mobile">08</div>
                 <div className="card-body-create-mobile">
-                  <h2>Reporting & Revision</h2>
+                  <h3>Reporting & Revision</h3>
                   <p>
                     We share with you the headway we have made in this final
                     stage. We highlight our work, key achievements and future

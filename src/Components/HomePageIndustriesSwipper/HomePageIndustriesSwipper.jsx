@@ -96,7 +96,7 @@ function HomePageIndustriesSwipper() {
             <Link href="/food-beverage-branding">
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionFOOD-AND-BEVERAGES.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Food and beverage brand packaging"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -116,7 +116,7 @@ function HomePageIndustriesSwipper() {
           <Link href="/fmcg-branding">
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/wjegdhvjFMCG.jpg.jpeg"}
-               alt="Green Horn Catalogue"
+               alt="FMCG product packaging on display"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -136,7 +136,7 @@ function HomePageIndustriesSwipper() {
           <Link href="/wellness-branding">
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionPERSONAL-WELLNESS.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Personal wellness product branding"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -155,7 +155,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/avatars/insdustriesnewoptimizedimageHEALTH.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Healthcare brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -174,7 +174,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionJEWLERY.jpg.jpeg"}
-               alt="Green Horn Catalogue"
+               alt="Jewellery brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -193,7 +193,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionSKIN-CARE.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Skincare product packaging"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -211,7 +211,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionFASHION.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Fashion brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -229,7 +229,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/homeindusrryehjEDUCATION.jpg.jpeg"}
-               alt="Green Horn Catalogue"
+               alt="Education brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -247,7 +247,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionTRAVELL.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Travel and hospitality brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -266,7 +266,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionTECHNOLOGY.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Technology brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -284,7 +284,7 @@ function HomePageIndustriesSwipper() {
           <SwiperSlide>
               <div className="citypagewiper-slide">
                  <Image src={"https://dndesigns.co.in/uploads/pages/industriessectionAUTOMOBILE.jpg"}
-               alt="Green Horn Catalogue"
+               alt="Automobile brand design"
                 width={750} 
                 height={1050} 
                 className="responsive-img city-page-swiperr-slide-img responsive-img" 

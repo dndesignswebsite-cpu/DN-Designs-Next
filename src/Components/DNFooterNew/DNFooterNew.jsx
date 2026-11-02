@@ -106,7 +106,7 @@ function DNFooterNew() {
 
 
         <div className='footer-dn-logo-div'>
-          <img src="https://dndesigns.co.in/uploads/avatars/dnnewlogoGroup37152.svg" className='img-fluid footer-dn-logo'></img>
+          <img src="https://dndesigns.co.in/uploads/avatars/dnnewlogoGroup37152.svg" className='img-fluid footer-dn-logo' alt='DN Designs'></img>
         </div>
         {/* <DNNewFooterLogo/> */}
       </section>

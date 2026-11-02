@@ -49,7 +49,7 @@ export default function OurWorkHomeSection() {
                 {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
                  <Image
                   src="https://dndesigns.co.in/uploads/pages/newrowshowmoresectionmiatra.jpg.jpeg"
-                  alt="blog"
+                  alt="Miatra Mithila makhana snack packaging"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -69,7 +69,7 @@ export default function OurWorkHomeSection() {
 
                 <Image
                   src={imageUrl + "brrat.jpg"}
-                  alt="blog"
+                  alt="BRRAT beverage branding and packaging"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -133,7 +133,7 @@ export default function OurWorkHomeSection() {
 
                  <Image
                   src={imageUrl + "VEIKK.webp"}
-                  alt="blog"
+                  alt="Veikk product photography by DN Designs"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -160,7 +160,7 @@ export default function OurWorkHomeSection() {
 
                     <Image
                  src={imageUrl + "lets (1).webp"}
-                  alt="blog"
+                  alt="Let's Supp wellness supplement range packaging"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -188,7 +188,7 @@ export default function OurWorkHomeSection() {
                  
                    <Image
                   src="https://dndesigns.co.in/uploads/pages/showmoresectionkozu-home.jpg.jpeg"
-                  alt="blog"
+                  alt="Kozu hydration and energy drink packaging"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -210,7 +210,7 @@ export default function OurWorkHomeSection() {
                   {/* <img src={imageUrl + "i organic.webp"} alt="demo" /> */}
                    <Image
                   src={imageUrl + "i organic.webp"}
-                  alt="blog"
+                  alt="iOrganic food product packaging"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -227,7 +227,7 @@ export default function OurWorkHomeSection() {
                   {/* <img src={imageUrl + "koshish.webp"} alt="demo" /> */}
                     <Image
                  src={imageUrl + "koshish.webp"}
-                  alt="blog"
+                  alt="Koshish brand design themed on 'Vasudhaiva Kutumbakam'"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -259,7 +259,7 @@ export default function OurWorkHomeSection() {
 
                    <Image
                  src={imageUrl + "smartyums graphic.webp"}
-                  alt="blog"
+                  alt="Smart Yums food packaging design"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -307,7 +307,7 @@ export default function OurWorkHomeSection() {
                   {/* <img src={imageUrl + "Wlues graphic.webp"} alt="demo" /> */}
                     <Image
                  src={imageUrl + "Wlues graphic.webp"}
-                  alt="blog"
+                  alt="Wlue's makhana packs with retro superhero design"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -325,7 +325,7 @@ export default function OurWorkHomeSection() {
 
                     <Image
                  src={imageUrl + "i orgainc gif.gif"}
-                  alt="blog"
+                  alt="Animated showcase of iOrganic product packaging"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -362,7 +362,7 @@ export default function OurWorkHomeSection() {
 
                       <Image
                  src={imageUrl + "DAVID graphic.webp"} 
-                  alt="blog"
+                  alt="David Morris, The London Jeweller, brand creative"
                   width={750}
                   height={1050}
                   className="responsive-img image-cont-img"
@@ -401,7 +401,7 @@ export default function OurWorkHomeSection() {
                   {/* <img src={imageUrl + "Wlues graphic.webp"} alt="demo" /> */}
                    <Image
                   src={imageUrl + "nature-balance (1).webp"}
-                  alt="blog"
+                  alt="Nature's Balance green nutrition product packaging"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"
@@ -418,7 +418,7 @@ export default function OurWorkHomeSection() {
                 {/* <img src={imageUrl + "kalprishi.webp"} alt="demo" /> */}
                  <Image
                   src={imageUrl + "kalprishi.webp"}
-                  alt="blog"
+                  alt="Kalprishi food brand packaging design"
                   width={1500}
                   height={1000}
                   className="responsive-img image-cont-img"

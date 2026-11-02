@@ -819,7 +819,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Brand Audit</h2>
+                  <h3>Brand Audit</h3>
                   <p>
                    ‘What went wrong?’ Or ‘What isn’t working?’ Finding answers to these is where our rebranding process begins. We conduct a brand audit to figure out where the brand stands in the current market and why it is not connecting with customers anymore. We understand its strengths and weaknesses and additionally analyse the market, target audience and competition to get a better sense of the problem.
                   </p>
@@ -831,7 +831,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Brand Strategy Development</h2>
+                  <h3>Brand Strategy Development</h3>
                   <p>
                    Valuable insights gained in the previous step give direction to our rebranding strategy. We now define the core of the brand - its vision, mission, values, principles, USP, positioning, as well as the target audience. Defining this core is essential because these foundational elements shape the brand's visual and verbal identity in the next step.
                   </p>
@@ -843,7 +843,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Building Visual & Verbal Identity</h2>
+                  <h3>Building Visual & Verbal Identity</h3>
                   <p>
                    It’s now time to establish the brand’s visual identity and communication style. For this, we design the brand’s logo and define its colours, typography, graphics, iconography and illustration styles. Along with these, we craft the brand’s story, taglines, key messages, and describe the voice, tone and guidelines for communication.
                   </p>
@@ -855,7 +855,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Building Design Systems</h2>
+                  <h3>Building Design Systems</h3>
                   <p>
                    No brand can ever succeed if it confuses its customers, so at this stage of our rebranding process, we work towards consistency. We create comprehensive brand guidelines and design systems (social media & presentation templates, marketing collateral, packaging guidelines) to ensure a cohesive brand experience across physical and digital touchpoints.
                   </p>
@@ -867,7 +867,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Updating & Internal Testing</h2>
+                  <h3>Updating & Internal Testing</h3>
                   <p>
                    We now update all your brand assets - website, packaging, marketing material and social media - to reflect the new brand identity. Thereafter, we introduce the new brand internally. The goal is to identify and fix issues before the final launch. Additionally, when the internal team understands the new brand better, communicating it to the customers post-launch becomes easier.
                   </p>
@@ -879,7 +879,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Launch, Monitoring & Optimisation</h2>
+                  <h3>Launch, Monitoring & Optimisation</h3>
                   <p>
                   Your new brand has finally launched. We closely monitor the feedback and progress, and make further changes accordingly. The rebranding process is now complete.
                   </p>
@@ -901,9 +901,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Audit</h2>
+                  <h3>Brand Audit</h3>
                   <p>
                    ‘What went wrong?’ Or ‘What isn’t working?’ Finding answers to these is where our rebranding process begins. We conduct a brand audit to figure out where the brand stands in the current market and why it is not connecting with customers anymore. We understand its strengths and weaknesses and additionally analyse the market, target audience and competition to get a better sense of the problem. 
                   </p>
@@ -913,9 +913,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Strategy Development</h2>
+                  <h3>Brand Strategy Development</h3>
                   <p>
                     Valuable insights gained in the previous step give direction to our rebranding strategy. We now define the core of the brand - its vision, mission, values, principles, USP, positioning, as well as the target audience. Defining this core is essential because these foundational elements shape the brand's visual and verbal identity in the next step.
                   </p>
@@ -925,9 +925,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Building Visual & Verbal Identity</h2>
+                  <h3>Building Visual & Verbal Identity</h3>
                   <p>
                    It’s now time to establish the brand’s visual identity and communication style. For this, we design the brand’s logo and define its colours, typography, graphics, iconography and illustration styles. Along with these, we craft the brand’s story, taglines, key messages, and describe the voice, tone and guidelines for communication.
                   </p>
@@ -937,9 +937,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Building Design Systems</h2>
+                  <h3>Building Design Systems</h3>
                   <p>
                    No brand can ever succeed if it confuses its customers, so at this stage of our rebranding process, we work towards consistency. We create comprehensive brand guidelines and design systems (social media & presentation templates, marketing collateral, packaging guidelines) to ensure a cohesive brand experience across physical and digital touchpoints.
                   </p>
@@ -949,9 +949,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Updating & Internal Testing</h2>
+                  <h3>Updating & Internal Testing</h3>
                   <p>
                     We now update all your brand assets - website, packaging, marketing material and social media - to reflect the new brand identity. Thereafter, we introduce the new brand internally. The goal is to identify and fix issues before the final launch. Additionally, when the internal team understands the new brand better, communicating it to the customers post-launch becomes easier.
                   </p>
@@ -961,9 +961,9 @@ async function page() {
 
                <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Launch, Monitoring & Optimisation</h2>
+                  <h3>Launch, Monitoring & Optimisation</h3>
                   <p>
                     Your new brand has finally launched. We closely monitor the feedback and progress, and make further changes accordingly. The rebranding process is now complete.
                   </p>

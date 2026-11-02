@@ -653,7 +653,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Brand Understanding</h2>
+                  <h3>Brand Understanding</h3>
                   <p>
                   We begin our process with a conversation with you. This conversation is aimed at understanding your brand and products thoroughly. What is the brand all about, and what makes it different from competitors? What are its vision, mission and values? Who are the target customers, and what are the growth aspirations and challenges? You can expect several questions from us at this stage.
                   </p>
@@ -665,7 +665,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Market & Audience Understanding</h2>
+                  <h3>Market & Audience Understanding</h3>
                   <p>
                    As important as it is to understand the brand, it is also important to research the market, competitors and the audience. So, we now roll up our sleeves and dive deeper to uncover valuable market insights. These include understanding audience preferences, design trends and patterns within your industry and lastly opportunities for differentiation. These insights help build an effective brand identity strategy in the next step.
                   </p>
@@ -677,7 +677,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Brand Strategy Development</h2>
+                  <h3>Brand Strategy Development</h3>
                   <p>
                   It’s now time to gather all the data and craft an effective brand strategy. We establish the brand positioning and define its personality, values, purpose and messaging. Together, these shape every decision that we take when designing your brand identity elements in the subsequent steps.
                   </p>
@@ -689,7 +689,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Visual Direction Exploration</h2>
+                  <h3>Visual Direction Exploration</h3>
                   <p>
                    Here in this stage, we explore the various creative visual directions we can take to express your brand identity. We seek design references, image styles, colour inspirations and typography options that can best represent your brand’s personality. We share the shortlisted design directions (with an explanation for each) with you for review, and finally, select one that aligns with your vision and brand.
                   </p>
@@ -701,7 +701,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Visual Identity Development</h2>
+                  <h3>Visual Identity Development</h3>
                   <p>
                    With visual direction locked, we now begin the actual work. Individual elements are designed and developed - logo, colour palette, typography, photographic style and graphics. These elements together set the visual language through which your brand can communicate consistently across various touchpoints.
                   </p>
@@ -713,7 +713,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Brand Messaging Development</h2>
+                  <h3>Brand Messaging Development</h3>
                   <p>
                  Even as we develop the brand’s visual identity, we don’t forget that the way the brand communicates is an equally important part of its identity. So, here in this step, we define your brand’s key messaging, tagline and voice & tone. 
                   </p>
@@ -725,7 +725,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>Testing & Refinement </h2>
+                  <h3>Testing & Refinement </h3>
                   <p>
                 Once the various elements are finalised, we test them across real-world brand touchpoints such as packaging, business cards, websites, social media posts and other marketing materials. The gaps and loopholes that emerge during this stage (regarding clarity, scalability, and alignment with brand strategy) help us refine and strengthen the design system. 
                   </p>
@@ -737,7 +737,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">08</div>
                 <div className="col-10">
-                  <h2>Brand Guidelines Development  </h2>
+                  <h3>Brand Guidelines Development  </h3>
                   <p>
                  Now, we focus on creating brand guidelines. This serves as a rulebook and ensures your brand identity stays consistent all over. Included in it are rules about how the logo should be (or should not be) used, as well as details about the colour system, typography, imagery, voice &tone, etc. These guidelines help both your internal team and external partners/stakeholders represent your brand correctly.
                   </p>
@@ -749,7 +749,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">09</div>
                 <div className="col-10">
-                  <h2>Final Implementation & Delivery  </h2>
+                  <h3>Final Implementation & Delivery  </h3>
                   <p>
                 In this final stage of our process, we help you implement the new identity confidently across all touch points - from packaging to website and from social media platforms to marketing collaterals. Additionally, we also deliver all brand assets in proper format so that you can use them wherever you need - in digital as well as print media.
                   </p>
@@ -773,9 +773,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Understanding</h2>
+                  <h3>Brand Understanding</h3>
                   <p>
                   We begin our process with a conversation with you. This conversation is aimed at understanding your brand and products thoroughly. What is the brand all about, and what makes it different from competitors? What are its vision, mission and values? Who are the target customers, and what are the growth aspirations and challenges? You can expect several questions from us at this stage.
                   </p>
@@ -787,7 +787,7 @@ async function page() {
               <div className="creating-your-brand-mobile-box">
                 <h3 className="create-number-mobile">02</h3>
                 <div className="card-body-create-mobile">
-                  <h2>Market & Audience Understanding</h2>
+                  <h3>Market & Audience Understanding</h3>
                   <p>
                  As important as it is to understand the brand, it is also important to research the market, competitors and the audience. So, we now roll up our sleeves and dive deeper to uncover valuable market insights. These include understanding audience preferences, design trends and patterns within your industry and lastly opportunities for differentiation. These insights help build an effective brand identity strategy in the next step.
                   </p>
@@ -797,9 +797,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Strategy Development</h2>
+                  <h3>Brand Strategy Development</h3>
                   <p>
                   It’s now time to gather all the data and craft an effective brand strategy. We establish the brand positioning and define its personality, values, purpose and messaging. Together, these shape every decision that we take when designing your brand identity elements in the subsequent steps.
                   </p>
@@ -809,9 +809,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Visual Direction Exploration</h2>
+                  <h3>Visual Direction Exploration</h3>
                   <p>
                    Here in this stage, we explore the various creative visual directions we can take to express your brand identity. We seek design references, image styles, colour inspirations and typography options that can best represent your brand’s personality. We share the shortlisted design directions (with an explanation for each) with you for review, and finally, select one that aligns with your vision and brand.
                   </p>
@@ -821,9 +821,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Visual Identity Development</h2>
+                  <h3>Visual Identity Development</h3>
                   <p>
                     With visual direction locked, we now begin the actual work. Individual elements are designed and developed - logo, colour palette, typography, photographic style and graphics. These elements together set the visual language through which your brand can communicate consistently across various touchpoints.
                   </p>
@@ -833,9 +833,9 @@ async function page() {
 
                <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Messaging Development</h2>
+                  <h3>Brand Messaging Development</h3>
                   <p>
                    Even as we develop the brand’s visual identity, we don’t forget that the way the brand communicates is an equally important part of its identity. So, here in this step, we define your brand’s key messaging, tagline and voice & tone. 
                   </p>
@@ -845,9 +845,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>Testing & Refinement </h2>
+                  <h3>Testing & Refinement </h3>
                   <p>
                     Once the various elements are finalised, we test them across real-world brand touchpoints such as packaging, business cards, websites, social media posts and other marketing materials. The gaps and loopholes that emerge during this stage (regarding clarity, scalability, and alignment with brand strategy) help us refine and strengthen the design system. 
                   </p>
@@ -857,9 +857,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">08</h3>
+                <div className="create-number-mobile">08</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Guidelines Development </h2>
+                  <h3>Brand Guidelines Development </h3>
                   <p>
                    Now, we focus on creating brand guidelines. This serves as a rulebook and ensures your brand identity stays consistent all over. Included in it are rules about how the logo should be (or should not be) used, as well as details about the colour system, typography, imagery, voice &tone, etc. These guidelines help both your internal team and external partners/stakeholders represent your brand correctly.
                   </p>
@@ -869,9 +869,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">09</h3>
+                <div className="create-number-mobile">09</div>
                 <div className="card-body-create-mobile">
-                  <h2>Final Implementation & Delivery  </h2>
+                  <h3>Final Implementation & Delivery  </h3>
                   <p>
                    In this final stage of our process, we help you implement the new identity confidently across all touch points - from packaging to website and from social media platforms to marketing collaterals. Additionally, we also deliver all brand assets in proper format so that you can use them wherever you need - in digital as well as print media.
                   </p>

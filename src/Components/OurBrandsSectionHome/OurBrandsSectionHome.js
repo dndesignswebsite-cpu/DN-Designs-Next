@@ -25,6 +25,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               <li className={`${styles["card"]} ${styles["card-5"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-grin"]}`}
+                  aria-label="1 AM energy drink can and brand identity designed by DN Designs" role="img"
                 >
                   <div className={`${styles["brand-overlay"]}`}>
                     <div className={`${styles["our-brand-content"]}`}>
@@ -50,6 +51,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               <li className={`${styles["card"]} ${styles["card-1"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-enlite"]}`}
+                  aria-label="Rithm's Enlite sparkling mineral water cans with brand character" role="img"
                 >
                   <div className={`${styles["brand-overlay"]}`}>
                     <div className={`${styles["our-brand-content"]}`}>
@@ -83,6 +85,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               <li className={`${styles["card"]} ${styles["card-2"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-letssupp"]}`}
+                  aria-label="Let's Supp nutraceutical packaging built around an infinity symbol" role="img"
                 >
                   <div className={`${styles["brand-overlay"]}`}>
                     <div className={`${styles["our-brand-content"]}`}>
@@ -143,6 +146,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
               <li className={`${styles["card"]} ${styles["card-4"]}`}>
                 <div
                   className={`${styles["card-body"]} ${styles["card-body-nectarpure"]}`}
+                  aria-label="Nectarpure FusionMax Whey Protein tub with premium label design" role="img"
                 >
                   <div className={`${styles["brand-overlay"]}`}>
                     <div className={`${styles["our-brand-content"]}`}>
@@ -232,7 +236,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
 
                src="https://dndesigns.co.in/uploads/pages/2ehwrkjd3hjrekfh5iruphone.jpg.jpeg"
                       className={`${styles["responsive-img"]}`}
-                      alt="home page image"
+                      alt="1 AM energy drink can and brand identity designed by DN Designs"
                       width={1500}
                       height={1000}
                     />
@@ -308,7 +312,7 @@ function OurBrandsSectionHome({ heading1, heading2 }) {
                     <Image
                       src={imageUrl + "enlite main graphic.webp"}
                       className={`${styles["responsive-img"]}`}
-                      alt="home page image"
+                      alt="Rithm's Enlite sparkling mineral water cans with brand character"
                       width={1500}
                       height={1000}
                     />
@@ -365,7 +369,7 @@ Can Design
                    <Image
                       src="https://dndesigns.co.in/uploads/pages/lestupcase12mobile.jpg.jpeg"
                       className={`${styles["responsive-img"]}`}
-                      alt="home page image"
+                      alt="Let's Supp nutraceutical packaging built around an infinity symbol"
                       width={1500}
                       height={1000}
                     />
@@ -495,7 +499,7 @@ Can Design
                     <Image
                       src={imageUrl + "nectarpure case study.webp"}
                       className={`${styles["responsive-img"]}`}
-                      alt="home page image"
+                      alt="Nectarpure FusionMax Whey Protein tub with premium label design"
                       width={1500}
                       height={1000}
                     />

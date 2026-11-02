@@ -339,7 +339,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>User Research & Analysis</h2>
+                  <h3>User Research & Analysis</h3>
                   <p>
                     Understanding your target audience forms the crucial first
                     step of our process. For this, we conduct comprehensive
@@ -355,7 +355,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Designing Information Architecture</h2>
+                  <h3>Designing Information Architecture</h3>
                   <p>
                     Users should be able to move between content seamlessly and
                     easily discover the information they are searching for. For
@@ -373,7 +373,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Crafting Visual Design</h2>
+                  <h3>Crafting Visual Design</h3>
                   <p>
                     A visually pleasing website can make your audience return to
                     your website again and again (thereby boosting the retention
@@ -390,7 +390,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Moving to Interaction Design</h2>
+                  <h3>Moving to Interaction Design</h3>
                   <p>
                     We now focus on creating user-friendly, smooth, and
                     efficient interactions. For this, we map out the series of
@@ -409,7 +409,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Usability Testing</h2>
+                  <h3>Usability Testing</h3>
                   <p>
                     Testing is important before launch to see if the user
                     interface and user experience design are easy to use. We
@@ -436,9 +436,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>User Research & Analysis</h2>
+                  <h3>User Research & Analysis</h3>
                   <p>
                     Understanding your target audience forms the crucial first
                     step of our process. For this, we conduct comprehensive
@@ -452,9 +452,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Designing Information Architecture</h2>
+                  <h3>Designing Information Architecture</h3>
                   <p>
                     Users should be able to move between content seamlessly and
                     easily discover the information they are searching for. For
@@ -470,9 +470,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Crafting Visual Design</h2>
+                  <h3>Crafting Visual Design</h3>
                   <p>
                     A visually pleasing website can make your audience return to
                     your website again and again (thereby boosting the retention
@@ -487,9 +487,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Moving to Interaction Design</h2>
+                  <h3>Moving to Interaction Design</h3>
                   <p>
                     We now focus on creating user-friendly, smooth, and
                     efficient interactions. For this, we map out the series of
@@ -506,9 +506,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Usability Testing</h2>
+                  <h3>Usability Testing</h3>
                   <p>
                     Testing is important before launch to see if the user
                     interface and user experience design are easy to use. We

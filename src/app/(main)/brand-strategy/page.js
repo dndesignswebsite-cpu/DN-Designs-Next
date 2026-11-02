@@ -638,7 +638,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Discovery & Listening</h2>
+                  <h3>Discovery & Listening</h3>
                   <p>
                   We start by listening, not presenting. Founders, leadership, sales teams, and sometimes customers, too. We talk to whoever has a real stake in how the brand is being perceived. The goal is to understand the business completely.
                   </p>
@@ -650,7 +650,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Market & Competitor Analysis</h2>
+                  <h3>Market & Competitor Analysis</h3>
                   <p>
                    We step outside your business and study the landscape around it. Who else is chasing the same customer? What are they saying, and what are the gaps? This mapping tells us where there's room to stand out instead of blending in.
                   </p>
@@ -662,7 +662,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Audience Definition</h2>
+                  <h3>Audience Definition</h3>
                   <p>
                   A brand can't speak to everyone. We narrow it to exactly who the strategy is built for. We understand their habits, motivations and the specific problems your brand solves for them. This becomes the filter for every later decision. 
                   </p>
@@ -674,7 +674,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Positioning & Differentiation</h2>
+                  <h3>Positioning & Differentiation</h3>
                   <p>
                    This is where we define the one thing your brand owns that nobody else can claim, quite the same way. Positioning isn't a tagline. It's a decision about where you sit in the customer's mind relative to various alternatives they have.
                   </p>
@@ -686,7 +686,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Brand Architecture & Messaging Framework</h2>
+                  <h3>Brand Architecture & Messaging Framework</h3>
                   <p>
                    With a clear, distinct positioning in place, we now help build a brand architecture and messaging framework. The latter revolves around the core messaging, brand pillars, tone and voice. This works as a map for your whole team to work.
                   </p>
@@ -698,7 +698,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Strategy Validation</h2>
+                  <h3>Strategy Validation</h3>
                   <p>
                 Before anything ships, we stress-test the thinking. Does it hold up against real customer feedback? Does it survive contact with your sales team's everyday conversations? We adjust before it's locked in, not after. 
                   </p>
@@ -710,7 +710,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>Handover & Activation Support </h2>
+                  <h3>Handover & Activation Support </h3>
                   <p>
                 A strategy that lives in a PDF nobody opens is wasted work. We hand it over with practical guidance on applying it across your website, marketing, sales conversations and any future design work so it actually gets used.
                   </p>
@@ -734,9 +734,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Discovery & Listening</h2>
+                  <h3>Discovery & Listening</h3>
                   <p>
                   We start by listening, not presenting. Founders, leadership, sales teams, and sometimes customers, too. We talk to whoever has a real stake in how the brand is being perceived. The goal is to understand the business completely.
                   </p>
@@ -746,9 +746,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Market & Competitor Analysis</h2>
+                  <h3>Market & Competitor Analysis</h3>
                   <p>
                  We step outside your business and study the landscape around it. Who else is chasing the same customer? What are they saying, and what are the gaps? This mapping tells us where there's room to stand out instead of blending in.
                   </p>
@@ -758,9 +758,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Audience Definition</h2>
+                  <h3>Audience Definition</h3>
                   <p>
                   A brand can't speak to everyone. We narrow it to exactly who the strategy is built for. We understand their habits, motivations and the specific problems your brand solves for them. This becomes the filter for every later decision.
                   </p>
@@ -770,9 +770,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Positioning & Differentiation</h2>
+                  <h3>Positioning & Differentiation</h3>
                   <p>
                    This is where we define the one thing your brand owns that nobody else can claim, quite the same way. Positioning isn't a tagline. It's a decision about where you sit in the customer's mind relative to various alternatives they have.
                   </p>
@@ -782,9 +782,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Architecture & Messaging Framework</h2>
+                  <h3>Brand Architecture & Messaging Framework</h3>
                   <p>
                     With a clear, distinct positioning in place, we now help build a brand architecture and messaging framework. The latter revolves around the core messaging, brand pillars, tone and voice. This works as a map for your whole team to work.
                   </p>
@@ -794,9 +794,9 @@ async function page() {
 
                <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Strategy Validation</h2>
+                  <h3>Strategy Validation</h3>
                   <p>
                    Before anything ships, we stress-test the thinking. Does it hold up against real customer feedback? Does it survive contact with your sales team's everyday conversations? We adjust before it's locked in, not after.
                   </p>
@@ -806,9 +806,9 @@ async function page() {
 
              <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>Handover & Activation Support </h2>
+                  <h3>Handover & Activation Support </h3>
                   <p>
                    A strategy that lives in a PDF nobody opens is wasted work. We hand it over with practical guidance on applying it across your website, marketing, sales conversations and any future design work so it actually gets used. 
                   </p>

@@ -302,10 +302,11 @@ function IndustriesSectionNewLayout() {
       <section className='industry-mobile-view'>
       <div className="container">
        <Swiper
-      modules={[Navigation, Autoplay]}
-      navigation
-      // pagination={{  clickable: true }}
+      modules={[Autoplay,Pagination]}
+      navigation={false}
+      pagination={{  clickable: true }}
       spaceBetween={20}
+      speed={900}
      slidesPerView={1}
       autoplay={{
     delay: 2500,
@@ -325,7 +326,7 @@ function IndustriesSectionNewLayout() {
       <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionFOOD-AND-BEVERAGES.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionFOOD-AND-BEVERAGES.jpg" className='img-fluid industies-section-img' alt="Food and beverage brand packaging"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_1_slide_head}</h3>
               <p>{cityPagesSlideData.slide_1_slide_para}</p>
@@ -337,7 +338,7 @@ function IndustriesSectionNewLayout() {
        <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/wjegdhvjFMCG.jpg.jpeg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/wjegdhvjFMCG.jpg.jpeg" className='img-fluid industies-section-img' alt="FMCG product packaging on display"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_2_slide_head}</h3>
               <p>{cityPagesSlideData.slide_2_slide_para}</p>
@@ -349,7 +350,7 @@ function IndustriesSectionNewLayout() {
        <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionPERSONAL-WELLNESS.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionPERSONAL-WELLNESS.jpg" className='img-fluid industies-section-img' alt="Personal wellness product branding"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_3_slide_head}</h3>
               <p>{cityPagesSlideData.slide_3_slide_para}</p>
@@ -361,7 +362,7 @@ function IndustriesSectionNewLayout() {
        <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/avatars/insdustriesnewoptimizedimageHEALTH.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/avatars/insdustriesnewoptimizedimageHEALTH.jpg" className='img-fluid industies-section-img' alt="Healthcare brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_4_slide_head}</h3>
               <p>{cityPagesSlideData.slide_4_slide_para}</p>
@@ -373,7 +374,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionJEWLERY.jpg.jpeg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionJEWLERY.jpg.jpeg" className='img-fluid industies-section-img' alt="Jewellery brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_5_slide_head}</h3>
               <p>{cityPagesSlideData.slide_5_slide_para}</p>
@@ -385,7 +386,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionSKIN-CARE.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionSKIN-CARE.jpg" className='img-fluid industies-section-img' alt="Skincare product packaging"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_6_slide_head}</h3>
               <p>{cityPagesSlideData.slide_6_slide_para}</p>
@@ -397,7 +398,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionFASHION.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionFASHION.jpg" className='img-fluid industies-section-img' alt="Fashion brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_7_slide_head}</h3>
               <p>{cityPagesSlideData.slide_7_slide_para}</p>
@@ -409,7 +410,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/homeindusrryehjEDUCATION.jpg.jpeg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/homeindusrryehjEDUCATION.jpg.jpeg" className='img-fluid industies-section-img' alt="Education brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_8_slide_head}</h3>
               <p>{cityPagesSlideData.slide_8_slide_para}</p>
@@ -421,7 +422,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionTRAVELL.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionTRAVELL.jpg" className='img-fluid industies-section-img' alt="Travel and hospitality brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_9_slide_head}</h3>
               <p>{cityPagesSlideData.slide_9_slide_para}</p>
@@ -433,7 +434,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionTECHNOLOGY.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionTECHNOLOGY.jpg" className='img-fluid industies-section-img' alt="Technology brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_10_slide_head}</h3>
               <p>{cityPagesSlideData.slide_10_slide_para}</p>
@@ -445,7 +446,7 @@ function IndustriesSectionNewLayout() {
              <SwiperSlide>
         <div className="slide">
           <div className='slider-wrapper'>
-            <img src="https://dndesigns.co.in/uploads/pages/industriessectionAUTOMOBILE.jpg" className='img-fluid industies-section-img'></img>
+            <img src="https://dndesigns.co.in/uploads/pages/industriessectionAUTOMOBILE.jpg" className='img-fluid industies-section-img' alt="Automobile brand design"></img>
             <div className='overlay-text-content'>
               <h3>{cityPagesSlideData.slide_11_slide_head}</h3>
               <p>{cityPagesSlideData.slide_11_slide_para}</p>

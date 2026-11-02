@@ -336,7 +336,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2> Where to Sell</h2>
+                  <h3> Where to Sell</h3>
                   <p>
                We map the channels that actually fit your product and buyer, not the trendy ones. Online, offline, marketplace, or all three, decided by data, not assumption.
                   </p>
@@ -348,7 +348,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2> Who to Sell To</h2>
+                  <h3> Who to Sell To</h3>
                   <p>
                 Real customer segmentation, not a vague "25-35, urban, tech-savvy" persona slide. We find your actual buyer and define what makes them act.
                   </p>
@@ -360,7 +360,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>How to Price</h2>
+                  <h3>How to Price</h3>
                   <p>
                Pricing isn't a guess based on competitors. We build it around perceived value, margin health, and what your category will actually bear.
                   </p>
@@ -372,7 +372,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>How to Distribute</h2>
+                  <h3>How to Distribute</h3>
                   <p>
                   From D2C to retail to quick commerce, we structure distribution to match demand rather than create supply chain headaches later.
                   </p>
@@ -384,7 +384,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>How to Acquire Customers</h2>
+                  <h3>How to Acquire Customers</h3>
                   <p>
                   We build the acquisition engine - paid, organic, or partnerships - sized to your budget. It’s built to compound, not just spike once.
                   </p>
@@ -397,7 +397,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>How to Scale</h2>
+                  <h3>How to Scale</h3>
                   <p>
                   Growth without a system breaks things. We build the playbook that lets you grow 2x or 10x without your operations falling apart.
                   </p>
@@ -410,7 +410,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>How to Retain</h2>
+                  <h3>How to Retain</h3>
                   <p>
                   Acquiring a customer is the easy half. We build the loop of experience, communication, and value that keeps them coming back.
                   </p>
@@ -438,9 +438,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Where to Sell</h2>
+                  <h3>Where to Sell</h3>
                   <p>
                  We map the channels that actually fit your product and buyer, not the trendy ones. Online, offline, marketplace, or all three, decided by data, not assumption.
                   </p>
@@ -450,9 +450,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2> Who to Sell To</h2>
+                  <h3> Who to Sell To</h3>
                   <p>
                 Real customer segmentation, not a vague "25-35, urban, tech-savvy" persona slide. We find your actual buyer and define what makes them act.
                   </p>
@@ -462,9 +462,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>How to Price</h2>
+                  <h3>How to Price</h3>
                   <p>
                  Pricing isn't a guess based on competitors. We build it around perceived value, margin health, and what your category will actually bear.
                   </p>
@@ -474,9 +474,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>How to Distribute</h2>
+                  <h3>How to Distribute</h3>
                   <p>
                    From D2C to retail to quick commerce, we structure distribution to match demand rather than create supply chain headaches later.
                   </p>
@@ -486,9 +486,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>How to Acquire Customers</h2>
+                  <h3>How to Acquire Customers</h3>
                   <p>
                    We build the acquisition engine - paid, organic, or partnerships - sized to your budget. It’s built to compound, not just spike once.
                   </p>
@@ -498,9 +498,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>How to Scale</h2>
+                  <h3>How to Scale</h3>
                   <p>
                    Growth without a system breaks things. We build the playbook that lets you grow 2x or 10x without your operations falling apart.
                   </p>
@@ -510,9 +510,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>How to Retain</h2>
+                  <h3>How to Retain</h3>
                   <p>
                   Acquiring a customer is the easy half. We build the loop of experience, communication, and value that keeps them coming back.
                   </p>

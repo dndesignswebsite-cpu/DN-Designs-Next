@@ -395,7 +395,7 @@ font-family: var(--font-helvetica);
     font-weight: 500;
 }
 
-.card-body-create h2{
+.card-body-create h3{
   color: #000;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
@@ -483,7 +483,7 @@ font-family: var(--font-helvetica);
     font-weight: 500;
 }
 
-.card-body-create-mobile h2{
+.card-body-create-mobile h3{
       color: #000;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;

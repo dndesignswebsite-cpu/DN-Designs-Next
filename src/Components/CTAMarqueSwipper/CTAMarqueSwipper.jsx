@@ -113,9 +113,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperjhdbjfggh.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperjhdbjfggh.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='DN Designs team in a client conversation'/>
 
-                   <img src="https://dndesigns.co.in/uploads/pages/ctamarque1781774709390.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                   <img src="https://dndesigns.co.in/uploads/pages/ctamarque1781774709390.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='DN Designs team in a client conversation'/>
                 </div>
               </div>
             </div>
@@ -185,10 +185,10 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/cta-swipperrewbdfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Doodh Soda milk-based soda branding'/>
 
 
-                  <img src="https://dndesigns.co.in/uploads/pages/cramobilerbfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/cramobilerbfjdoodh-soda.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Doodh Soda milk-based soda branding'/>
                 </div>
               </div>
             </div>
@@ -218,9 +218,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/swiperrrfdkjrfnutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/swiperrrfdkjrfnutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Teaser for an upcoming nutrition mix brand'/>
 
-                  <img src="https://dndesigns.co.in/uploads/pages/ctamarquemobilenutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctamarquemobilenutrition-mix.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Teaser for an upcoming nutrition mix brand'/>
                 </div>
               </div>
             </div>
@@ -249,7 +249,7 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperhjwewdfh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/ctaswipperhjwewdfh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt="India's first productivity drink, branded by DN Designs"/>
 
                   <img src="https://dndesigns.co.in/uploads/pages/newzenrehdfmobileejh8.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
                 </div>
@@ -325,9 +325,9 @@ function CTAMarqueSwipper() {
 
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/whatbrewingwedbjSwytch-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/whatbrewingwedbjSwytch-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Swytch protein noodles brand preview'/>
 
-                  <img src="https://dndesigns.co.in/uploads/pages/wehjsdhwegudSwytch-1x1.5.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/wehjsdhwegudSwytch-1x1.5.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Swytch protein noodles brand preview'/>
                 </div>
               </div>
             </div>
@@ -362,9 +362,9 @@ function CTAMarqueSwipper() {
               
               <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
                 <div className='cta-col-img-div'>
-                  <img src="https://dndesigns.co.in/uploads/pages/wesbdhjewvuuyjQaasa-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/wesbdhjewvuuyjQaasa-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Qaasa jewellery brand preview'/>
 
-                  <img src="https://dndesigns.co.in/uploads/pages/keewdhjQaasa-1x1.5-2.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile'/>
+                  <img src="https://dndesigns.co.in/uploads/pages/keewdhjQaasa-1x1.5-2.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Qaasa jewellery brand preview'/>
                 </div>
               </div>
             </div>
