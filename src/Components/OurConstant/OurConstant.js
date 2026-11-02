@@ -33,6 +33,35 @@ function OurConstant() {
     "3-sisters-logo-1.webp",
   ];
 
+
+  const logosAlt = [
+    "Holiday Inn logo",
+    "Audi logo",
+    "PB Business logo",
+    "iOrganic logo",
+    "Wlue's logo",
+    "1 AM logo",
+    "Rithm's Enlite logo",
+    "Nectarpure logo",
+    "Smart Yums logo",
+    "Thames logo",
+    "Veikk logo",
+    "Pureluxe logo",
+    "The Bobalist logo",
+    "Nature Balance logo",
+    "Bachpan logo",
+    "Qualiteq logo",
+    "Rungtas Logo",
+    "Let's Supp logo",
+    "David Morris logo",
+    "Ekos logo",
+    "BRRAT logo",
+    "Fluke logo",
+    "One Science logo",
+    "Mr. Bomzy logo",
+    "3 Sisters logo", 
+  ];
+
   return (
     <section className={styles["our-constant-companions"]}>
       <div className="container">
@@ -48,7 +77,7 @@ function OurConstant() {
             <div key={index} className={styles["company-item"]}>
               <Image
                 src={imageUrl + logo}
-                alt="company logo"
+                alt={logosAlt[index]}
                 width={150}
                 height={150}
                 sizes="(max-width: 767px) 50vw, 150px"

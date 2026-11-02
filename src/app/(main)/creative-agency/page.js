@@ -259,7 +259,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Discussion</h2>
+                  <h3>Discussion</h3>
                   <p>
                    Clarity comes first. So, our process begins with a detailed discussion with you. We ask questions and understand your business, products, and long-term goals. This clarity ensures that we adopt the right design approach. 
                   </p>
@@ -271,7 +271,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Research </h2>
+                  <h3>Research </h3>
                   <p>
                     Research forms the foundation of successful work. And we make sure that we are thorough in this phase. We explore the market, understand audience behaviour and analyse competition. Only then do we move to the next stage.
                   </p>
@@ -283,7 +283,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Ideation & Planning</h2>
+                  <h3>Ideation & Planning</h3>
                   <p>
                     This stage is all about brainstorming ideas, concepts, and strategies. Your opinions and feedback help us shortlist designs, and eventually lock the final one. As a creative agency, we ensure to bring innovative design ideas and concepts to the table at this stage.
                   </p>
@@ -295,7 +295,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Implementation & Review</h2>
+                  <h3>Implementation & Review</h3>
                   <p>
                    This is where the actual work is done. Our creative experts sit down to design your brand identity, packaging, UI/UX, or whatever your design needs are. Post-completion, we ask you to review the work once again. Based on your feedback, we make the necessary changes and finalise the design. 
                   </p>
@@ -307,7 +307,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>The Launch </h2>
+                  <h3>The Launch </h3>
                   <p>
                     This is the final stage, and so we perform a final round of testing to ensure our work is free from errors. Now comes the most exciting part - the launch. We unveil your brand, packaging, website, video or any other design. Cheers! They are now live and ready for the world to see and interact with.
                   </p>
@@ -329,9 +329,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Discussion</h2>
+                  <h3>Discussion</h3>
                   <p>
                    Clarity comes first. So, our process begins with a detailed discussion with you. We ask questions and understand your business, products, and long-term goals. This clarity ensures that we adopt the right design approach. 
                   </p>
@@ -341,9 +341,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Research </h2>
+                  <h3>Research </h3>
                   <p>
                     Research forms the foundation of successful work. And we make sure that we are thorough in this phase. We explore the market, understand audience behaviour and analyse competition. Only then do we move to the next stage.
                   </p>
@@ -353,9 +353,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Ideation & Planning</h2>
+                  <h3>Ideation & Planning</h3>
                   <p>
                     This stage is all about brainstorming ideas, concepts, and strategies. Your opinions and feedback help us shortlist designs, and eventually lock the final one. As a creative agency, we ensure to bring innovative design ideas and concepts to the table at this stage.
                   </p>
@@ -365,9 +365,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Implementation & Review</h2>
+                  <h3>Implementation & Review</h3>
                   <p>
                    This is where the actual work is done. Our creative experts sit down to design your brand identity, packaging, UI/UX, or whatever your design needs are. Post-completion, we ask you to review the work once again. Based on your feedback, we make the necessary changes and finalise the design. 
                   </p>
@@ -377,9 +377,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>The Launch </h2>
+                  <h3>The Launch </h3>
                   <p>
                     This is the final stage, and so we perform a final round of testing to ensure our work is free from errors. Now comes the most exciting part - the launch. We unveil your brand, packaging, website, video or any other design. Cheers! They are now live and ready for the world to see and interact with.
                   </p>
@@ -391,7 +391,7 @@ async function page() {
       </section>
 
 
-       {/* creative agency swipper  */}
+       {/* creative agency  swipper  */}
       <CreativeAgencySwipper cityPagesSlideDataCreativeAgency={cityPagesSlideDataCreativeAgency}/>
 
       

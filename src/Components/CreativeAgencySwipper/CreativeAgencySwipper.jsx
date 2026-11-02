@@ -55,7 +55,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
                 /> */}
 
                  <Image src="https://dndesigns.co.in/uploads/pages/branddevecity.webp"
-                               alt="Green Horn Catalogue"
+                               alt="Brand design work showing identity, packaging and collateral"
                                 width={750} 
                                 height={1050} 
                                 className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -80,7 +80,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/photographycity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Professional product photography for brands"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -108,7 +108,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/brandidentitycity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Logo and brand identity design"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -135,7 +135,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/packagingdesigncity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Product packaging design"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -162,7 +162,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/catalougecity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Product catalogue design spread"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -189,7 +189,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                 src="https://dndesigns.co.in/uploads/pages/digitalmarketing.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Digital marketing and social media creatives"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -216,7 +216,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/animationcity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Animated brand content"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -243,7 +243,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/man-recording-video-blog.jpg"
-                 alt="Green Horn Catalogue"
+                 alt="Brand video shoots"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -270,7 +270,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                  src="https://dndesigns.co.in/uploads/pages/webdesigncity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="Website design shown on screen"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 
@@ -297,7 +297,7 @@ function CityPagesSwipper({cityPagesSlideDataCreativeAgency}) {
 
                  <Image 
                 src="https://dndesigns.co.in/uploads/pages/uiuxcity.webp"
-                 alt="Green Horn Catalogue"
+                 alt="UI/UX design for app and web interfaces"
                  width={750} 
                  height={1050} 
                  className="responsive-img city-page-swiperr-slide-img responsive-img" 

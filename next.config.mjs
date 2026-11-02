@@ -6,6 +6,24 @@ const nextConfig = {
   // Server-side environment variables
   serverExternalPackages: ["mongoose", "bcryptjs", "nodemailer"],
 
+// hsts start fixes
+  // HSTS Security Header
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=31536000",
+          },
+        ],
+      },
+    ];
+  },
+
+  // end hsts header fixes
+
   // Image domains
   images: {
     remotePatterns: [

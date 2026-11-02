@@ -22,12 +22,12 @@ function HomePageHeroNew({ title, description }) {
 
     <div className='hero-banner-images-for-abs-div'>
     <div className='hero-banner-images'>
-    <img src="https://dndesigns.co.in/uploads/images/homepageladderredleftimahebhebd.svg" className="hero-red-ladder-img img-fluid"></img>
+    <img src="https://dndesigns.co.in/uploads/images/homepageladderredleftimahebhebd.svg" className="hero-red-ladder-img img-fluid" alt='growth ladder'></img>
     <div className='ladder-image-home-page-hero-div'>
-      <img src="https://dndesigns.co.in/uploads/images/homepagenewbannenrimagebackgsvg.svg" className='ladder-image-home-page-hero img-fluid'></img>
+      <img src="https://dndesigns.co.in/uploads/images/homepagenewbannenrimagebackgsvg.svg" className='ladder-image-home-page-hero img-fluid' alt='growth ladder'></img>
 </div>
      <div className='girl-image-home-page-hero-div'>
-      <img src="https://dndesigns.co.in/uploads/images/hj 4.png" className='girl-image-home-page-hero img-fluid'></img>
+      <img src="https://dndesigns.co.in/uploads/images/hj 4.png" className='girl-image-home-page-hero img-fluid' alt='Brand Growth DN Hero'></img>
       </div>
       </div>
       </div>

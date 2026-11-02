@@ -681,7 +681,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Evaluate and Understand the Brand</h2>
+                  <h3>Evaluate and Understand the Brand</h3>
                   <p>
                     A small design, nonetheless, a logo is pivotal to your
                     company’s identity. It is how consumers remember you, and
@@ -701,7 +701,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Research The Industry</h2>
+                  <h3>Research The Industry</h3>
                   <p>
                     Your business or product invariably has to compete with
                     other businesses or products in the same vertical/category.
@@ -721,7 +721,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Determine Logo Placement Needs</h2>
+                  <h3>Determine Logo Placement Needs</h3>
                   <p>
                     Business logos are used in multiple places. This could
                     include websites, social media, letterheads, documents,
@@ -739,7 +739,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Brainstorm & Sketch Creative Concepts</h2>
+                  <h3>Brainstorm & Sketch Creative Concepts</h3>
                   <p>
                     With all essential details in place, we now begin
                     brainstorming concepts and ideas. Our expert logo designers
@@ -758,7 +758,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Digitise the Shortlisted Concepts</h2>
+                  <h3>Digitise the Shortlisted Concepts</h3>
                   <p>
                     Till now, we have had the design sketches on paper, but now
                     we move forward to create digital drafts. In this stage, we
@@ -776,7 +776,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">06</div>
                 <div className="col-10">
-                  <h2>Ask For Feedback & Review</h2>
+                  <h3>Ask For Feedback & Review</h3>
                   <p>
                     Once we have finalised our digital drafts, it is now time to
                     share them with you for review. Based on the feedback we
@@ -793,7 +793,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">07</div>
                 <div className="col-10">
-                  <h2>Deliver The Final Logo</h2>
+                  <h3>Deliver The Final Logo</h3>
                   <p>
                     The work is now completed, and the only remaining part is
                     the final delivery. Depending on your requirement, we
@@ -818,9 +818,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Evaluate and Understand the Brand</h2>
+                  <h3>Evaluate and Understand the Brand</h3>
                   <p>
                     A small design, nonetheless, a logo is pivotal to your
                     company’s identity. It is how consumers remember you, and
@@ -838,9 +838,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Research The Industry</h2>
+                  <h3>Research The Industry</h3>
                   <p>
                     Your business or product invariably has to compete with
                     other businesses or products in the same vertical/category.
@@ -858,9 +858,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Determine Logo Placement Needs</h2>
+                  <h3>Determine Logo Placement Needs</h3>
                   <p>
                     Business logos are used in multiple places. This could
                     include websites, social media, letterheads, documents,
@@ -876,9 +876,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brainstorm & Sketch Creative Concepts</h2>
+                  <h3>Brainstorm & Sketch Creative Concepts</h3>
                   <p>
                     With all essential details in place, we now begin
                     brainstorming concepts and ideas. Our expert logo designers
@@ -895,9 +895,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Digitise the Shortlisted Concepts</h2>
+                  <h3>Digitise the Shortlisted Concepts</h3>
                   <p>
                     Till now, we have had the design sketches on paper, but now
                     we move forward to create digital drafts. In this stage, we
@@ -913,9 +913,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">06</h3>
+                <div className="create-number-mobile">06</div>
                 <div className="card-body-create-mobile">
-                  <h2>Ask For Feedback & Review</h2>
+                  <h3>Ask For Feedback & Review</h3>
                   <p>
                     Once we have finalised our digital drafts, it is now time to
                     share them with you for review. Based on the feedback we
@@ -930,9 +930,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">07</h3>
+                <div className="create-number-mobile">07</div>
                 <div className="card-body-create-mobile">
-                  <h2>Deliver The Final Logo</h2>
+                  <h3>Deliver The Final Logo</h3>
                   <p>
                     The work is now completed, and the only remaining part is
                     the final delivery. Depending on your requirement, we

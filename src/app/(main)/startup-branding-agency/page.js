@@ -1034,7 +1034,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2> Discovery</h2>
+                  <h3> Discovery</h3>
                   <p>
                 Before anything gets designed, we spend time understanding the business - what the product is, who you're selling to, who you're competing with, what you're actually trying to say and where the brand needs to perform. This isn't redundant paperwork. It's the foundation everything else sits on.
                   </p>
@@ -1046,7 +1046,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2> Strategy</h2>
+                  <h3> Strategy</h3>
                   <p>
                 Based on the above gathered data, we define the brand's positioning, personality, visual direction and core messages. This works as a brief that guides every creative decision later. So design choices aren't made on taste alone, but on what the brand needs to communicate.
                   </p>
@@ -1058,7 +1058,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Design</h2>
+                  <h3>Design</h3>
                   <p>
                  Identity, visuals, packaging, and digital touchpoints are conceptualised and designed as per the strategy and are refined with your feedback. We work in clear rounds, so feedback is structured, and the process moves without becoming a loop. 
                   </p>
@@ -1070,7 +1070,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Launch & Grow</h2>
+                  <h3>Launch & Grow</h3>
                   <p>
                   We review, adjust and finalise everything for a polished brand delivery. But we don't hand over files and disappear. Post-launch. We help you apply the brand across your website, social media, packaging and marketing assets. We also support your brand through digital marketing, SEO and performance tracking to ensure the brand that launched is the one that compounds.
                   </p>
@@ -1110,9 +1110,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Discovery</h2>
+                  <h3>Discovery</h3>
                   <p>
                   Before anything gets designed, we spend time understanding the business - what the product is, who you're selling to, who you're competing with, what you're actually trying to say and where the brand needs to perform. This isn't redundant paperwork. It's the foundation everything else sits on.
                   </p>
@@ -1122,9 +1122,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2> Strategy</h2>
+                  <h3> Strategy</h3>
                   <p>
                 Based on the above gathered data, we define the brand's positioning, personality, visual direction and core messages. This works as a brief that guides every creative decision later. So design choices aren't made on taste alone, but on what the brand needs to communicate.
                   </p>
@@ -1134,9 +1134,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Design</h2>
+                  <h3>Design</h3>
                   <p>
                  Identity, visuals, packaging, and digital touchpoints are conceptualised and designed as per the strategy and are refined with your feedback. We work in clear rounds, so feedback is structured, and the process moves without becoming a loop.
                   </p>
@@ -1146,9 +1146,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Launch & Grow</h2>
+                  <h3>Launch & Grow</h3>
                   <p>
                    We review, adjust and finalise everything for a polished brand delivery. But we don't hand over files and disappear. Post-launch. We help you apply the brand across your website, social media, packaging and marketing assets. We also support your brand through digital marketing, SEO and performance tracking to ensure the brand that launched is the one that compounds.
                   </p>

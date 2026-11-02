@@ -453,7 +453,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Research & Planning</h2>
+                  <h3>Research & Planning</h3>
                   <p>
                     We begin with research and planning. We sit down with our
                     clients to understand them - their business, vision and
@@ -471,7 +471,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>UI/UX Design</h2>
+                  <h3>UI/UX Design</h3>
                   <p>
                     In the next step, our expert website designers create the
                     UI/UX of the website. Our focus is on creating a responsive
@@ -488,7 +488,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Content Creation</h2>
+                  <h3>Content Creation</h3>
                   <p>
                     With the design ready, it is now time to develop content.
                     And, by content, we do not mean just the written text;
@@ -505,7 +505,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Website Development</h2>
+                  <h3>Website Development</h3>
                   <p>
                     Both the UI/UX design and content development work are now
                     complete; therefore, we proceed to the next stage in our
@@ -522,7 +522,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Review & Launch</h2>
+                  <h3>Review & Launch</h3>
                   <p>
                     Once the website is ready, we test it to make sure that it
                     works well on all devices. If there are mistakes, we correct
@@ -547,9 +547,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Research & Planning</h2>
+                  <h3>Research & Planning</h3>
                   <p>
                     We begin with research and planning. We sit down with our
                     clients to understand them - their business, vision and
@@ -565,9 +565,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>UI/UX Design</h2>
+                  <h3>UI/UX Design</h3>
                   <p>
                     In the next step, our expert website designers create the
                     UI/UX of the website. Our focus is on creating a responsive
@@ -582,9 +582,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Content Creation</h2>
+                  <h3>Content Creation</h3>
                   <p>
                     With the design ready, it is now time to develop content.
                     And, by content, we do not mean just the written text;
@@ -599,9 +599,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Website Development</h2>
+                  <h3>Website Development</h3>
                   <p>
                     Both the UI/UX design and content development work are now
                     complete; therefore, we proceed to the next stage in our
@@ -616,9 +616,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Review & Launch</h2>
+                  <h3>Review & Launch</h3>
                   <p>
                     Once the website is ready, we test it to make sure that it
                     works well on all devices. If there are mistakes, we correct

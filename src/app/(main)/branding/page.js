@@ -257,7 +257,7 @@ async function page() {
                     sizes="(max-width:768px) 100vw, 50vw"
                 /> */}
 
-                <video src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4" width="100%" autoPlay muted loop playsinline class="responsive-img port-div-img"></video>
+                <video src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4" width="100%" autoPlay muted loop playsInline class="responsive-img port-div-img"></video>
 
                 <div className="port-content">
                   <div className="potfolio-div-btns">
@@ -852,7 +852,7 @@ async function page() {
         </marquee>
       </section>
 
-      {/* Creating Your Brand desktop view */}
+      {/* Creating Your  Brand desktop view */}
       <section className="creating-your-brand">
         <div className="container sticky-con">
           <h2 className="text-center our-brand-heading-a">
@@ -867,7 +867,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Brand Understanding</h2>
+                  <h3>Brand Understanding</h3>
                   <p>
                     If anything has to stand the test of time, it needs to begin
                     with a firm footing. In branding, this beginning is
@@ -884,7 +884,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Competitor Analysis</h2>
+                  <h3>Competitor Analysis</h3>
                   <p>
                     You are not alone in the market; there are several other
                     products in the same category out there trying to build
@@ -904,7 +904,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Planning Your Brand</h2>
+                  <h3>Planning Your Brand</h3>
                   <p>
                     It’s now time to create your brand strategy. Every aspect of
                     branding is carefully thought out and discussed with you -
@@ -921,7 +921,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Implementing the Strategy</h2>
+                  <h3>Implementing the Strategy</h3>
                   <p>
                     Let’s turn words and ideas into action. We now sit down to
                     do the actual work - naming your brand, designing your logo,
@@ -937,7 +937,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Feedback & Launch</h2>
+                  <h3>Feedback & Launch</h3>
                   <p>
                     The final stage in our branding journey, this is where we
                     seek a review of our work. Based on your feedback, we make
@@ -962,9 +962,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Brand Understanding</h2>
+                  <h3>Brand Understanding</h3>
                   <p>
                     If anything has to stand the test of time, it needs to begin
                     with a firm footing. In branding, this beginning is
@@ -979,9 +979,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Competitor Analysis</h2>
+                  <h3>Competitor Analysis</h3>
                   <p>
                     You are not alone in the market; there are several other
                     products in the same category out there trying to build
@@ -999,9 +999,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Planning Your Brand</h2>
+                  <h3>Planning Your Brand</h3>
                   <p>
                     It’s now time to create your brand strategy. Every aspect of
                     branding is carefully thought out and discussed with you -
@@ -1016,9 +1016,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Implementing the Strategy</h2>
+                  <h3>Implementing the Strategy</h3>
                   <p>
                     Let’s turn words and ideas into action. We now sit down to
                     do the actual work - naming your brand, designing your logo,
@@ -1032,9 +1032,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Feedback & Launch</h2>
+                  <h3>Feedback & Launch</h3>
                   <p>
                     The final stage in our branding journey, this is where we
                     seek a review of our work. Based on your feedback, we make

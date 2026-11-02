@@ -870,7 +870,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Briefing & Interaction</h2>
+                  <h3>Briefing & Interaction</h3>
                   <p>
                     We get the ball rolling with a briefing and interaction
                     session. This is where we sit down to discuss your product,
@@ -889,7 +889,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Research & Analysis</h2>
+                  <h3>Research & Analysis</h3>
                   <p>
                     This is our research stage. Once we get a briefing from you,
                     we set out to explore the market, the competitors and the
@@ -908,7 +908,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Ideation & Planning</h2>
+                  <h3>Ideation & Planning</h3>
                   <p>
                     This is where we decide the KLD (key line dimension), colour
                     palette, typography, fonts, visuals, and other aspects of
@@ -928,7 +928,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Implementation & Review</h2>
+                  <h3>Implementation & Review</h3>
                   <p>
                     The creative process continues as we now finally move
                     towards actually designing your product packaging. We take
@@ -947,7 +947,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Finalising & Delivering</h2>
+                  <h3>Finalising & Delivering</h3>
                   <p>
                     Congratulations! You now have your beautiful design ready.
                     We share the final design files with you in AI, CDR, PDF
@@ -975,9 +975,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Briefing & Interaction</h2>
+                  <h3>Briefing & Interaction</h3>
                   <p>
                     We get the ball rolling with a briefing and interaction
                     session. This is where we sit down to discuss your product,
@@ -994,9 +994,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Research & Analysis</h2>
+                  <h3>Research & Analysis</h3>
                   <p>
                     This is our research stage. Once we get a briefing from you,
                     we set out to explore the market, the competitors and the
@@ -1013,9 +1013,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Ideation & Planning</h2>
+                  <h3>Ideation & Planning</h3>
                   <p>
                     This is where we decide the KLD (key line dimension), colour
                     palette, typography, fonts, visuals, and other aspects of
@@ -1033,9 +1033,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Implementation & Review</h2>
+                  <h3>Implementation & Review</h3>
                   <p>
                     The creative process continues as we now finally move
                     towards actually designing your product packaging. We take
@@ -1052,9 +1052,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Finalising & Delivering</h2>
+                  <h3>Finalising & Delivering</h3>
                   <p>
                     Congratulations! You now have your beautiful design ready.
                     We share the final design files with you in AI, CDR, PDF

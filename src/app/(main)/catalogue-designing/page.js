@@ -421,7 +421,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">01</div>
                 <div className="col-10">
-                  <h2>Understanding Purpose & Target Audience</h2>
+                  <h3>Understanding Purpose & Target Audience</h3>
                   <p>
                     Our professional catalogue design process begins with
                     answering a few questions. What is the purpose of the
@@ -440,7 +440,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">02</div>
                 <div className="col-10">
-                  <h2>Planning & Concept Development</h2>
+                  <h3>Planning & Concept Development</h3>
                   <p>
                     After a basic understanding is reached, we move to our next
                     stage and begin gathering relevant information. We figure
@@ -457,7 +457,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">03</div>
                 <div className="col-10">
-                  <h2>Designing the Catalogue</h2>
+                  <h3>Designing the Catalogue</h3>
                   <p>
                     Once we receive your approval on one of the designs, we
                     accelerate the process and begin the actual designing. Our
@@ -476,7 +476,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">04</div>
                 <div className="col-10">
-                  <h2>Content Creation & Integration</h2>
+                  <h3>Content Creation & Integration</h3>
                   <p>
                     At this stage, we begin to create content for your brochure
                     and catalogue. While creating content, we make sure that it
@@ -494,7 +494,7 @@ async function page() {
               <div className="card-body-create row">
                 <div className="col-2 create-number text-center">05</div>
                 <div className="col-10">
-                  <h2>Printing & Publishing</h2>
+                  <h3>Printing & Publishing</h3>
                   <p>
                     Your catalogue is almost ready. It is now time to review it.
                     We check it on our end and also seek your feedback. If there
@@ -520,9 +520,9 @@ async function page() {
           <div className="row creating-brand-mobile-row">
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">01</h3>
+                <div className="create-number-mobile">01</div>
                 <div className="card-body-create-mobile">
-                  <h2>Understanding Purpose & Target Audience</h2>
+                  <h3>Understanding Purpose & Target Audience</h3>
                   <p>
                     Our professional catalogue design process begins with
                     answering a few questions. What is the purpose of the
@@ -539,9 +539,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">02</h3>
+                <div className="create-number-mobile">02</div>
                 <div className="card-body-create-mobile">
-                  <h2>Planning & Concept Development</h2>
+                  <h3>Planning & Concept Development</h3>
                   <p>
                     After a basic understanding is reached, we move to our next
                     stage and begin gathering relevant information. We figure
@@ -556,9 +556,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">03</h3>
+                <div className="create-number-mobile">03</div>
                 <div className="card-body-create-mobile">
-                  <h2>Designing the Catalogue</h2>
+                  <h3>Designing the Catalogue</h3>
                   <p>
                     Once we receive your approval on one of the designs, we
                     accelerate the process and begin the actual designing. Our
@@ -575,9 +575,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">04</h3>
+                <div className="create-number-mobile">04</div>
                 <div className="card-body-create-mobile">
-                  <h2>Content Creation & Integration</h2>
+                  <h3>Content Creation & Integration</h3>
                   <p>
                     At this stage, we begin to create content for your brochure
                     and catalogue. While creating content, we make sure that it
@@ -593,9 +593,9 @@ async function page() {
 
             <div className="col-12">
               <div className="creating-your-brand-mobile-box">
-                <h3 className="create-number-mobile">05</h3>
+                <div className="create-number-mobile">05</div>
                 <div className="card-body-create-mobile">
-                  <h2>Printing & Publishing</h2>
+                  <h3>Printing & Publishing</h3>
                   <p>
                     Your catalogue is almost ready. It is now time to review it.
                     We check it on our end and also seek your feedback. If there
