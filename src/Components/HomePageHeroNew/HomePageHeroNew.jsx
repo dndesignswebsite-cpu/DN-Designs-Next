@@ -12,7 +12,7 @@ function HomePageHeroNew({ title, description }) {
         <h1 className='home-page-hero-content-heading'>{title}</h1>
         <p className='home-page-hero-content-para'>{description}</p>
         <div className='home-page-hero-btn-div'>
-        {/* <button className='talk-to-us-hero-btn'>Talk to Us</button>
+        {/* <button className=' talk-to-us-hero-btn'>Talk to Us</button>
         <button className='explore-our-work-hero-btn'>Explore Our Work</button> */}
         <HomePageBtn/>
         </div>
