@@ -124,7 +124,7 @@ export async function generateMetadata() {
         {
           question: "Are you able to redesign the packaging of an existing product?",
           answer:
-            (<>Yes, we can help you <Link href="/packaging-design" className='inter-linking-link'>redesign your existing product packaging design</Link> so it better suits changing market trends and customers’ expectations.</>),
+            (<>Yes, we can help you redesign your existing product packaging design so it better suits changing market trends and customers’ expectations.</>),
         },
         {
           question: "Do you take into account legal compliance when designing packaging?",
@@ -139,7 +139,7 @@ export async function generateMetadata() {
         {
           question: "How do I get started with DN Designs for packaging design?",
           answer:
-            "Call us, drop us an email or simply fill out our contact form. Tell us about your vision for the brand, and we will apply our experience and expertise to bring it to life.",
+            (<><a href="tel:+918683911100" className='inter-linking-link'>Call us,</a> drop us an <a href="mailto:info@dndesigns.co.in" className="inter-linking-link">email</a> or simply fill out our contact form. Tell us about your vision for the brand, and we will apply our experience and expertise to bring it to life.</>),
         },
       ];
 
@@ -162,7 +162,7 @@ export async function generateMetadata() {
           {
             question: " Does DN Designs provide packaging design for FMCG and food products?",
             answer:
-              "Yes. We create customised FMCG and food packaging design that reflects your brand identity and connects with your target audience.",
+              (<>Yes. We create customised FMCG and <Link href="/food-beverage-branding" className="inter-linking-link">food packaging design</Link> that reflects your brand identity and connects with your target audience.</>),
           },
           {
             question: "Do you only provide packaging design or packaging printing as well?",
@@ -233,7 +233,7 @@ export async function generateMetadata() {
                   playsInline
                   className=""
                 /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid"></img>
+                <img src="https://dndesigns.co.in/uploads/pages/fmcgnectarpure.jpg.jpeg" className="img-fluid" alt="Nectarpure whey protein brand packaging designed by DN Designs"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -265,7 +265,7 @@ export async function generateMetadata() {
                   playsInline
                   className=""
                 /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/let.jpg" className="img-fluid"></img>
+                <img src="https://dndesigns.co.in/uploads/pages/let.jpg" className="img-fluid" alt="Let's Supp nutraceutical brand identity and packaging design"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -313,7 +313,7 @@ export async function generateMetadata() {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp"
                   className="img-fluid"
-                />
+                 alt="Wlue's makhana snack packaging with retro superhero branding"/>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -400,7 +400,7 @@ export async function generateMetadata() {
                   playsInline
                   className=""
                 /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid"></img>
+                <img src="https://dndesigns.co.in/uploads/pages/Untitled-sunny-singh.webp" className="img-fluid" alt="Pureluxe premium protein bar packaging and brand identity"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -430,7 +430,7 @@ export async function generateMetadata() {
                   playsInline
                   className=""
                 /> */}
-                <img src="https://dndesigns.co.in/uploads/pages/egwdjjbjhewFLUKE.jpg.jpeg" className="img-fluid"></img>
+                <img src="https://dndesigns.co.in/uploads/pages/egwdjjbjhewFLUKE.jpg.jpeg" className="img-fluid" alt="Fluke functional energy drink can and brand identity design"></img>
                 <div className="port-content">
                   <div className="potfolio-div-btns">
                     <div className="port-div-headg">
@@ -453,7 +453,7 @@ export async function generateMetadata() {
            <div className="row port-row">
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
-                        <img src="https://dndesigns.co.in/uploads/pages/newupdatednbrendKozu.jpg.jpeg" className="img-fluid"></img>
+                        <img src="https://dndesigns.co.in/uploads/pages/newupdatednbrendKozu.jpg.jpeg" className="img-fluid" alt="Kozu caffeinated water bottle branding and packaging design"></img>
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
@@ -475,7 +475,7 @@ export async function generateMetadata() {
               
                   <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
                     <div className="port-div">
-                      <img src="https://dndesigns.co.in/uploads/pages/rekwhrfdjbrrat_03.jpg.jpeg" className="img-fluid" />
+                      <img src="https://dndesigns.co.in/uploads/pages/rekwhrfdjbrrat_03.jpg.jpeg" className="img-fluid" alt="Brrat energy drink can packaging and visual identity"/>
                       <div className="port-content">
                         <div className="potfolio-div-btns">
                           <div className="port-div-headg">
@@ -530,13 +530,13 @@ export async function generateMetadata() {
 
                 <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
                     <div className='why-you-should-work-section-col'>
-                        <img src="https://dndesigns.co.in/uploads/pages/packging-design-noida-hero-image.jpg.jpeg" className='why-you-should-work-section-img img-fluid'></img>
+                        <img src="https://dndesigns.co.in/uploads/pages/packging-design-noida-hero-image.jpg.jpeg" className='why-you-should-work-section-img img-fluid' alt="Creative packaging design solutions for brands by DN Designs in Noida"></img>
                     </div>
                 </div>
 
                 <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
                     <div className="why-you-should-work-section-col">
-                        <p className='why-you-should-work-section-para'>Each product has a story, and the packaging should present it well. It must also convey key information customers expect, simply. And visual appeal? That’s non-negotiable. Together, these elements help your product stand out and drive sales in a competitive market. At our packaging design studio in Noida, we do just that: craft captivating packaging design that gets noticed and earns revenue. Over the years, our expert team has delivered multiple successful product packaging design projects for Noida, Greater Noida or NCR based businesses.</p>
+                        <p className='why-you-should-work-section-para'>Each product has a story, and the packaging should present it well. It must also convey key information customers expect, simply. And visual appeal? That’s non-negotiable. Together, these elements help your product stand out and drive sales in a competitive market. At our packaging <Link href="/" className='inter-linking-link'>design studio</Link> in Noida, we do just that: craft captivating packaging design that gets noticed and earns revenue. Over the years, our expert team has delivered multiple successful product packaging design projects for Noida, Greater Noida or NCR based businesses.</p>
                         <p className='why-you-should-work-section-para'>Moreover, we aren’t just a design studio; we are a creative partner for your brand. From branding and packaging to website design, digital marketing, photography, and animation, we offer end-to-end branding and marketing services to help you build and launch a strong brand.</p>
                     </div>
                 </div>
@@ -552,7 +552,7 @@ export async function generateMetadata() {
                     <h2 className='our-packging-design-servics-section-head-row-head'>Our Packaging  <span className='our-packging-design-servics-section-head-row-head-span'>Design Services</span></h2>
                 </div>
                 <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-                    <p className='our-packging-design-servics-section-head-row-para'>From initial research to final design, we offer end-to-end packaging and label design services. Our goal? To craft packaging that reflects your brand’s personality and clearly communicates the product value, so your consumers understand what you’re offering and why they should choose you over others. </p>
+                    <p className='our-packging-design-servics-section-head-row-para'>From initial research to final design, we offer end-to-end <Link className='inter-linking-link' href="/packaging-design">packaging and label design services</Link>. Our goal? To craft packaging that reflects your brand’s personality and clearly communicates the product value, so your consumers understand what you’re offering and why they should choose you over others. </p>
                     {/* <p className='our-packging-design-servics-section-head-row-para'>Our services include: </p> */}
                 </div>
             </div>
@@ -589,7 +589,7 @@ export async function generateMetadata() {
 
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
               <div className='image-col'>
-                <img src="https://dndesigns.co.in/uploads/pages/packging-degn-across-packaging-design-agency-in-noida.jpg" className='img-fluid'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/packging-degn-across-packaging-design-agency-in-noida.jpg" className='img-fluid' alt="Packaging design projects and creative product branding by DN Designs"></img>
               </div>
             </div>
 
@@ -608,7 +608,7 @@ export async function generateMetadata() {
 
             <div className='col-12 cl-sm-12 col-md-12 col-lg-6'>
               <div className='packaging-design-india-consumers-section-col'>
-                   <img src="https://dndesigns.co.in/uploads/pages/packging-design-for-indian-packaging-design-agency-in-noida.jpg" className='packaging-design-india-consumers-section-col-img img-fluid'></img>
+                   <img src="https://dndesigns.co.in/uploads/pages/packging-design-for-indian-packaging-design-agency-in-noida.jpg" className='packaging-design-india-consumers-section-col-img img-fluid' alt="Indian product packaging design and brand identity portfolio"></img>
               </div>
             </div>
 
@@ -655,7 +655,7 @@ export async function generateMetadata() {
           <div className='row how-we-approach-section-row g-0'>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
               <div className='how-we-approach-section-col'>
-                <img src="https://dndesigns.co.in/uploads/pages/section-packaging-approach.jpg.jpeg" className='img-fluid'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/section-packaging-approach.jpg.jpeg" className='img-fluid' alt="DN Designs strategic approach to product packaging design"></img>
               </div>
             </div>
 
@@ -695,7 +695,7 @@ export async function generateMetadata() {
                    <div className='row'>
                   <div className='col-12 col-sm-12 col-md-12 col-lg-5 mt-4'>
                     <div className='your-packaging-design-noida-section-img-col'>
-                    <img src="https://dndesigns.co.in/uploads/pages/partener-in-noida-packaging-design-agency-in-noida.jpg" className='your-packaging-design-noida-section-img img-fluid'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/partener-in-noida-packaging-design-agency-in-noida.jpg" className='your-packaging-design-noida-section-img img-fluid' alt="Creative packaging design collaboration between DN Designs and brands"></img>
                     </div>
                   </div>
 
@@ -703,9 +703,9 @@ export async function generateMetadata() {
                     <div  className='your-packaging-design-noida-section-ewdjhe'>
                       <div>
                       <p className='your-packaging-design-noida-section-content-col'>Your product needs packaging that reflects its identity, communicates its value and inspires your audience to choose it over competitors’ products. Here, at DN Designs, we partner with FMCG, food, beverage, skin care, fashion and D2C brands to create strategic, compelling packaging that does exactly that. We design to win your audience. Our approach is to think outside the box while simultaneously understanding the demands of customers and the market. </p>
-                      <p className='your-packaging-design-noida-section-content-col'>So, if you’re searching for a packaging design agency that can create impactful product packaging designs, pause here. We are your packaging design partner in Noida. Reach out to us, and let’s discuss your project. </p>
+                      <p className='your-packaging-design-noida-section-content-col'>So, if you’re searching for a packaging design agency that can create impactful product packaging designs, pause here. We are your packaging design partner in Noida. <Link className="inter-linking-link" href="/contact-us">Reach out to us</Link>, and let’s discuss your project. </p>
                       </div>
-                      <img src="https://dndesigns.co.in/uploads/pages/partner-in-noida-egpackaging-design-agency-in-noida.jpg" className='your-packaging-design-noida-section-content-col-img img-fluid'></img>
+                      <img src="https://dndesigns.co.in/uploads/pages/partner-in-noida-egpackaging-design-agency-in-noida.jpg" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="DN Designs partnering with businesses for strategic packaging design"></img>
                     </div>
                   </div>
                 </div>

@@ -41,9 +41,9 @@ const PackagingDesignSwipper = () => {
           <span className="packging-design-swipper-swiper-slide-number packging-design-swipper-swiper-slide-number-dark">01.</span>
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-dark" >Research and Consultation</h3>
-          <img src="https://dndesigns.co.in/uploads/pages/research-and-consultaion-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/research-and-consultaion-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Packaging design research and market consultation by DN Designs"></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Food and beverage product packaging design concept"></img>
         </div>
       </SwiperSlide>
 
@@ -53,9 +53,9 @@ const PackagingDesignSwipper = () => {
           <span className="packging-design-swipper-swiper-slide-number packging-design-swipper-swiper-slide-number-light">02.</span>
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-light" >Packaging Architecture</h3>
-          <img src="https://dndesigns.co.in/uploads/pages/packaging-architure-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/packaging-architure-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Strategic packaging architecture and product packaging structure design"></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Decorative packaging design process ladder graphic"></img>
         </div>
       </SwiperSlide>
 
@@ -64,9 +64,9 @@ const PackagingDesignSwipper = () => {
           <span className="packging-design-swipper-swiper-slide-number packging-design-swipper-swiper-slide-number-dark">03.</span>
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-dark" >Packaging Design</h3>
-          <img src="https://dndesigns.co.in/uploads/pages/packging-design-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/packging-design-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Creative product packaging design for retail and consumer brands"></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Food and beverage product packaging design concept"></img>
         </div>
       </SwiperSlide>
 
@@ -75,9 +75,9 @@ const PackagingDesignSwipper = () => {
           <span className="packging-design-swipper-swiper-slide-number packging-design-swipper-swiper-slide-number-light">04.</span>
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-light" >Brand Identity Design</h3>
-          <img src="https://dndesigns.co.in/uploads/pages/brand-identity-design-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/brand-identity-design-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Brand identity and visual branding design for product packaging"></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Decorative packaging design process ladder graphic"></img>
         </div>
       </SwiperSlide>
 
@@ -87,9 +87,9 @@ const PackagingDesignSwipper = () => {
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-dark" >Product Photography</h3>
           
-          <img src="https://dndesigns.co.in/uploads/pages/legal-complinace-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/legal-complinace-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Professional product photography for branded packaging and advertising"></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/foodandbevaragesevenimage.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Food and beverage product packaging design concept"></img>
         </div>
       </SwiperSlide>
 
@@ -98,9 +98,9 @@ const PackagingDesignSwipper = () => {
           <span className="packging-design-swipper-swiper-slide-number packging-design-swipper-swiper-slide-number-light">06.</span>
           <div className="packging-design-swipper-swiper-slide-content">
           <h3 className="packging-design-swipper-swiper-slide-head packging-design-swipper-swiper-slide-head-light" >Legal Compliance </h3>
-          <img src="https://dndesigns.co.in/uploads/pages/product-photography-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/product-photography-packaging-design-agency-in-noida.jpg" className="img-fluid packging-design-swipper-swiper-slide-main-image" alt="Legal compliance and regulatory information on product packaging" ></img>
           </div>
-          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img"></img>
+          <img src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png" className="packging-design-swipper-swiper-slide-ladder-img" alt="Decorative packaging design process ladder graphic"></img>
         </div>
       </SwiperSlide>
 
