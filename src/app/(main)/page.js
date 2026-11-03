@@ -16,7 +16,7 @@ import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategory
 import HomePageIndustriesSwipper from "@/Components/HomePageIndustriesSwipper/HomePageIndustriesSwipper";
 import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
 import HomePointsNew from "@/Components/HomePointsNew/HomePointsNew";
-import HomePageHeroNew from "@/Components/HomePageHeroNew/HomePageHeroNew";
+import HomePageHeroNew from "@/Components/HomePageNewSeprateHeroSection/HomePageHeroNew";
 
 // schema
 // HOME PAGE SCHEMA

@@ -79,7 +79,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-      font-size: 56px;
+      font-size: 48px;
     font-weight: 500;
     font-family: var(--font-helvetica);
     letter-spacing: -.9px;
@@ -107,7 +107,7 @@
 
 .home-page-hero-content-para{
     color: #202020;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     font-family: var(--font-helvetica);
 }

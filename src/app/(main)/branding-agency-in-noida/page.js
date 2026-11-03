@@ -132,7 +132,7 @@ async function page() {
     {
       question: "What services does DN Designs offer as a branding company in Noida?  ",
       answer:
-        (<>Our branding company in Noida offers <Link href="/branding" className="faq-link">end-to-end branding services</Link> under one roof, including brand strategy, brand positioning, brand identity design, packaging design and GTM strategy. Other branding services you can avail of at our <Link href="/creative-branding-agency" className="faq-link">creative branding agency</Link> include catalogue design, website design, brand collateral design, digital marketing, photography and 3D brand video creation. Everything is built to create a consistent brand system that consumers recognise and choose.</>),
+        (<>Our branding company in Noida offers <Link href="/branding" className="faq-link">end-to-end branding services</Link> under one roof, including brand strategy, brand positioning, brand identity design, packaging design and GTM strategy. Other branding services you can avail of at our <Link href="/creative-agency" className="faq-link">creative branding agency</Link> include catalogue design, website design, brand collateral design, digital marketing, photography and 3D brand video creation. Everything is built to create a consistent brand system that consumers recognise and choose.</>),
     },
     
     {

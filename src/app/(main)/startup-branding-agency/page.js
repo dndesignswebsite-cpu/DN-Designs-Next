@@ -922,7 +922,7 @@ async function page() {
                   </div>
       
                   <div className="col-12 col-sm-12 col-md-12 col-lg-4 mt-4">
-                    <Link href="/website-designing-services-in-india">
+                    <Link href="/web-designing-services-in-india">
                       <div className="everything-a-food-section-col">
                         <div className="everything-a-food-section-col-content-div">
                           <p className="everything-a-food-section-col-content-div-para-label">
