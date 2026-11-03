@@ -1,0 +1,632 @@
+/* Our Portfolio */
+.port-row {
+  padding: 10px 0;
+}
+
+.port-div {
+  border: 1px solid #a8a8a8;
+  padding: 0;
+  border-radius: 0px;
+  height: 100%;
+ 
+}
+
+.port-div img {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.port-div-img {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.port-div video {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.portfolio {
+  padding: 80px 10px 30px 10px;
+}
+
+.portfolio h2 {
+  color: #000;
+ font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding-bottom: 40px;
+}
+
+.every-pr {
+  color: #DC2211;
+}
+
+.potfolio-div-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-port-btn {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #DC2211;
+  border-radius: 0px;
+  padding: 7px 10px;
+font-family: var(--font-helvetica);
+    font-weight: 400;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  font-size: 12px;
+  color: #DC2211;
+}
+
+.our-port-btn-up {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-port-btn-up button {
+  font-family: var(--font-helvetica);
+ font-weight: 400;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #DC2211;
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.port-content {
+  padding: 20px 20px 20px 20px;
+}
+.port-div-headg h3 {
+  color: #DC2211;
+  font-family: var(--font-helvetica);
+    letter-spacing: -0.9px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.port-content p {
+  color: #888888; 
+  font-family: var(--font-helvetica);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4em;
+  padding-top: 5px;
+  padding-bottom:0 ;
+}
+.port-main-div{
+  margin-top: 10px;
+}
+
+@media(max-width:991px){
+    .port-row{
+        padding: 0 0;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  
+  .portfolio {
+  padding: 50px 10px 30px 10px;
+}
+
+  .portfolio h2 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+  .our-port-btn-up button {
+    font-size: 14px;
+  }
+
+  .port-div-headg h3 {
+    font-size: 24px;
+  }
+  .our-port-btn {
+    padding: 5px;
+  }
+  .port-content {
+    padding: 15px;
+  }
+  .potfolio-div-btns {
+    flex-direction: column;
+  }
+
+  .port-div {
+    margin: 10px 0;
+  }
+
+  .port-row {
+  padding: 0px 0px;
+}
+
+.port-main-div{
+  margin-top: 10px;
+}
+}
+
+@media(max-width:1200px){
+      
+.port-div-headg h3 {
+  font-size: 25px;
+}
+}
+
+@media(max-width:1200px){
+.port-div-headg h3 {
+  font-size: 32px;
+   padding-bottom: 10px;
+}
+ .potfolio-div-btns{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .our-port-btn{
+  width: 50%;
+  text-align: center;
+ }
+ .our-port-btn-up{
+  margin: 0;
+  padding: 0;
+ }
+
+ .port-content p{
+  padding-top: 10px;
+ }
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.port-div-img{
+  aspect-ratio: 750 / 750;
+}
+
+.our-brand-mobile-div-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+.branding-that-mobile-div-img{
+  aspect-ratio: 1500 / 1000;
+}
+
+
+/* Why You Should Work With Us */
+.why-you-should-work-section{
+  padding: 60px 0;
+}
+
+.why-you-should-work-section-head{
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
+  width: 80%;
+}
+
+.why-you-should-work-section-head-span{
+  color: #DC2211;
+}
+
+.why-you-should-work-section-para{
+  color: #707070;
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.why-you-should-work-section-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media(max-width:767px){
+  .why-you-should-work-section-head{
+    font-size: 35px;
+    width: 100%;
+  }
+}
+
+
+/* Our Packaging Design Services */
+
+.our-packging-design-servics-section{
+  padding: 80px 0 140px 0;
+}
+.our-packging-design-servics-section-head-row-head{
+  font-family: var(--font-helvetica);
+  font-size: 50px;
+  font-weight: 500;
+  color: #000;
+}
+
+.our-packging-design-servics-section-head-row-head-span{
+  color: #DC2211
+}
+
+.our-packging-design-servics-section-head-row-para{
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  color: #707070;
+}
+
+@media(max-width:767px){
+  .our-packging-design-servics-section-head-row-head{
+    font-size: 35px;
+  }
+
+  .our-packging-design-servics-section{
+    padding: 30px 0 80px 0;
+  }
+}
+
+
+/* Packaging Design Across Industries */
+
+.packaging-design-across-section{
+  padding: 80px 0;
+}
+
+.packaging-design-across-section-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.packaging-design-across-section-col-points-div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.packaging-design-across-section-col-points{
+  color: #707070;
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #707070;
+  padding: 5px 16px;
+}
+
+.packaging-design-across-section-head{
+  font-family: var(--font-helvetica);
+  font-size: 50px;
+  font-weight: 500;
+  color: #000;
+}
+
+.packaging-design-across-section-head-span{
+  color: #DC2211;
+}
+
+.packaging-design-across-section-para{
+  font-family: var(--font-helvetica);
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+@media(max-width:991px){
+  .packaging-design-across-section-col-points{
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+
+  .packaging-design-across-section-col-points-div{
+    margin: 15px 0;
+  }
+
+  .packaging-design-across-section-head{
+    font-size: 35px;
+  }
+
+  .packaging-design-across-section{
+  padding: 50px 0;
+}
+}
+
+
+/* Packaging Design for Indian & International Consumers */
+.packaging-design-india-consumers-section-parent{
+  padding: 80px 0 100px 0;
+}
+.packaging-design-india-consumers-section-row{
+  background-color: rgba(32, 32, 32, 0.04);
+  padding: 20px;
+}
+.packaging-design-india-consumers-section-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.packaging-design-india-consumers-section-col-head{
+  font-family: var(--font-helvetica);
+  font-size: 50px;
+  font-weight: 500;
+  color: #000;
+  padding: 0 10px;
+}
+
+.packaging-design-india-consumers-section-col-head-span{
+  color: #DC2211;
+}
+
+.packaging-design-india-consumers-section-col-para{
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  color: #535353;
+  padding: 0 10px;
+}
+
+@media(max-width:991px){
+  .packaging-design-india-consumers-section-col-head{
+    font-size: 35px;
+    padding-top: 15px;
+  }
+  .packaging-design-india-consumers-section{
+  padding: 30px 0;
+}
+.packaging-design-india-consumers-section{
+  padding: 50px 0 60px 0;
+}
+.packaging-design-india-consumers-section-parent{
+  padding: 0px 0;
+}
+}
+
+/* key-elements-effective-section */
+.key-elements-effective-section{
+  margin: 60px 0 100px 0;
+  padding: 30px 0;
+  background-color: #202020;
+}
+
+.key-elements-effective-section-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 80px;
+}
+
+.key-elements-effective-section-container-para{
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  color: #C8C8C8;
+  text-align: center;
+  width: 90%;
+  padding: 10px 0;
+}
+
+.key-elements-effective-section-span-div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.key-elements-effective-section-span{
+  color: #C8C8C8;
+    font-family: var(--font-helvetica);
+    border: 1px solid #fff;
+    padding: 5px 16px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.key-elements-effective-section-container-heading{
+  color: #F5F5F5;
+  font-family: var(--font-helvetica);
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media(max-width:991px){
+  .key-elements-effective-section-container{
+    padding: 40px 0px;
+  }
+
+  .key-elements-effective-section-container-heading{
+    font-size: 35px;
+  }
+  .key-elements-effective-section-container-para{
+    width: 100%;
+  }
+}
+
+
+/* How We Approach Packaging Design */
+
+.how-we-approach-section{
+  padding: 40px 0;
+}
+
+.how-we-approach-section-row{
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.how-we-approach-section-col-content{
+  padding: 25px;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.how-we-approach-section-col-head{
+  font-family: var(--font-helvetica);
+  font-size: 45px;
+  font-weight: 500;
+  color: #000;
+}
+
+.how-we-approach-section-col-para{
+  color: #707070;
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.how-we-approach-section-col-list-item{
+   color: #707070;
+  font-family: var(--font-helvetica);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.how-we-approach-section-ladder-image{
+  position: absolute;
+  right: 00;
+  top: 0;
+  width: 50%;
+}
+
+@media(max-width:767px){
+  .how-we-approach-section-col-head{
+    font-size: 35px;
+  }
+}
+
+
+/* Your Packaging Design Partner in Noida */
+
+.your-packaging-design-noida-section{
+padding: 40px 0;
+}
+
+.your-packaging-design-noida-section-heading{
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
+  width: 50%;
+}
+
+.your-packaging-design-noida-section-heading-span{
+  color: #DC2211;
+}
+
+.your-packaging-design-noida-section-content-col{
+  color: #707070;
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.your-packaging-design-noida-section-ewdjhe{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media(max-width:767px){
+
+  .your-packaging-design-noida-section-heading{
+  font-size: 35px;
+  width: 100%;
+  }
+}
+
+.inter-linking-link{
+  color: #DC2211;
+  text-decoration: none;
+}
+
+
+/*  Like what you see? Let’s design packaging that gets your product picked. */
+
+.like-what-you-see-section{
+    padding: 100px 0;
+}
+
+.like-what-you-see-section-container{
+    background-color: rgba(32, 32, 32, 0.08);
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.like-what-you-see-section-heading{
+    font-size: 40px;
+    font-family: var(--font-helvetica);
+    font-weight: 500;
+    text-align: center;
+    width: 65%;
+}
+
+.like-what-you-see-section-heading-span{
+    color: #DC2211;
+}
+
+.like-what-you-see-section-button{
+    background-color: #202020;
+    padding: 10px 22px;
+    margin: 20px 0 10px 0;
+    display: block;
+    font-family: var(--font-helvetica0);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.18s ease;
+}
+
+.like-what-you-see-section-button:hover{
+    background-color:#DC2211 ;
+}
+
+.like-what-you-see-section-button:hover .fontAwesomeIcon-right-arrow{
+    transform: rotate(0);
+}
+
+@media(max-width:767px){
+    .like-what-you-see-section-heading{
+    font-size: 30px;
+    font-family: var(--font-helvetica);
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+.like-what-you-see-section{
+    padding: 0px 0;
+}
+}
