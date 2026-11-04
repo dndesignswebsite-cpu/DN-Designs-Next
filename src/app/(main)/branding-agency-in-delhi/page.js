@@ -2,28 +2,19 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 import React from "react";
-import styles from "../page.module.css";
-import Link from "next/link";
-import HomePageBtn from "@/Components/HomePageBtn/HomePageBtn";
-import OurConstant from "@/Components/OurConstant/OurConstant";
-import OurWorkHomeSection from "@/Components/OurWorkHomeSection/OurWorkHomeSection";
-import TalkToUsCityPages from "@/Components/TalkToUsCityPages/TalkToUsCityPages";
-import "./branding-agency-in-gurgaon.css";
-import CityPagesSwipper from "@/Components/CityPagesSwipper/CityPagesSwipper";
-import Faqs from "@/Components/Faqs/Faqs";
-import Testimonial from "@/Components/Testimonial/Testimonial";
-import Form from "@/Components/Form/Form";
-
-import connectDB from "@/lib/config/database.js";
-import { getPageById } from "@/lib/services/pageService.js";
-import Image from "next/image";
+import "./branding-agency-in-noida-v1.css";
+import HomePageHeroNew from "@/Components/HomePageHeroNew/HomePageHeroNew";
 import OurBrandsSectionHome from "@/Components/OurBrandsSectionHome/OurBrandsSectionHome";
-import HomePageHero from "@/Components/HomePageHero/HomePageHero";
-import LPBrandIdentityCategorySwipper from "@/Components/LPBrandIdentityCategorySwipper/LPBrandIdentityCategorySwipper";
+import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
 import IndustriesSectionNewLayout from "@/Components/IndustriesSectionNewLayout/IndustriesSectionNewLayout";
 import CTAMarqueSwipper from "@/Components/CTAMarqueSwipper/CTAMarqueSwipper";
-import BookDirectCallCTA from "@/Components/BookDirectCallCTA/BookDirectCallCTA";
-import HomePageHeroNew from "@/Components/HomePageHeroNew/HomePageHeroNew";
+import Link from "next/link";
+import Faqs from "@/Components/Faqs/Faqs";
+import Form from "@/Components/Form/Form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import connectDB from "@/lib/config/database.js";
+import { getPageById } from "@/lib/services/pageService.js";
 
 // meta data
 export async function generateMetadata() {
@@ -32,9 +23,9 @@ export async function generateMetadata() {
   try {
     seo = await getPageById("branding-agency-in-delhi", null, false);
   } catch (error) {
-    console.log("About Us Error", error);
+    console.log("Branding Design Agency In Delhi", error);
     return {
-      title: "Branding Agency in Delhi",
+      title: "Branding Design Agency in Delhi",
       robots: "noindex, nofollow",
     };
   }
@@ -77,14 +68,7 @@ export async function generateMetadata() {
 }
 // ends here
 
-async function page() {
-  const imageUrl = "https://dndesigns.co.in/uploads/pages/";
-
-  // home page hero content
-  const title = "Branding Agency in Delhi: Where Brands Find Their Voice";
-  const description =
-    "As the best branding agency in Delhi, we deliver end-to-end branding services to help you build an impactful business.";
-
+const Page = async () => {
   // ---
   await connectDB();
   let pageData;
@@ -112,95 +96,88 @@ async function page() {
   }
   // --- SCHEMA CLEANING LOGIC END ---
 
+  // home page hero content
+  const title = "Branding Agency in Delhi: Where Brands Find Their Voice";
+  const description =
+    "As the best branding agency in Delhi, we help your business become a brand which people recognise, remember and choose.";
+
+  // form section content
+  const FormHead = "Have a Brand Idea? Let's Talk!";
+  const FormPara =
+    "Every great brand starts with an idea, and we'd love to hear yours! Whether you're starting with a fresh concept or looking to take your existing brand in a new direction, we're here to help you figure things out. Tell us a little about what you're envisioning, what inspires you and where you'd like to take your brand. We'd love to get to know your story, exchange ideas and explore what we can create together!";
+
   // faqs content
   const leftFaqs = [
     {
-      question: "Why should I hire a professional branding agency in Delhi?",
-      answer:
-        "A professional branding company in Delhi can help create a memorable and consistent brand identity that connects with consumers. A company comes with a skilled team, deep market insights, great designs, and clear communication, which can really help you in your branding journey",
+      question:
+        "Why should I hire a professional branding agency in Delhi? ",
+      answer: (
+        <>
+          A professional branding company in Delhi can help create a memorable and consistent brand identity that connects with consumers. A company comes with expert skills, deep market insights, great design sensibilities, and clear communication, which can really help you in your branding journey. 
+        </>
+      ),
     },
     {
-      question: "What types of branding services do you offer?",
-      answer:
-        (<>Our branding services in Delhi, customised to fit your brand values and business goals, include <Link href="branding" className="faq-link">brand strategy design,</Link> logo design, brand name suggestions,<Link href="packaging-design-agency-in-delhi" className="faq-link"> packaging design,</Link> catalogue design, digital marketing, and web design.</>)
+      question:
+        "What types of branding services do you offer? ",
+      answer: (
+        <>
+          Our branding services in Delhi, customised to fit your brand values and business goals, include brand strategy design, logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. 
+        </>
+      ),
     },
     {
-      question: "How long does the branding process take?",
+      question: "What category of business do you specialise in? ",
       answer:
-        "The timeline varies based on the project scope. Typically, developing a brand can take 4 to 8 weeks. Rebranding projects may take longer, depending again on the project.",
+        "We work across a wide range of businesses, including food & beverage, FMCG, D2C, health & wellness, lifestyle, skincare, jewellery and fashion.",
+    },
+    {
+      question:
+        " How long does the branding process take?  ",
+      answer:
+        (<>The timeline varies based on the project scope. Typically, developing a brand can take 8-12 weeks from start to finish. Rebranding projects can take a similar timeline. </>),
+    },
+    {
+      question: "Can you help with rebranding my existing business in Delhi? ",
+      answer: (
+        <>
+          Absolutely. We specialise in rebranding, redefining positioning, and modernising so that your brand stays relevant in today’s market.
+        </>
+      ),
     },
   ];
 
   const rightFaqs = [
     {
-      question: "Can you help with rebranding my existing business in Delhi?",
+      question:
+        "Can you help businesses launch new products under an existing brand?",
       answer:
-        "Absolutely. We specialise in rebranding, redefining positioning, and modernising so that your brand stays relevant in today’s market.",
+        "Yes, we help businesses extend their existing brand into new product categories through strategic positioning, product branding and packaging design. We ensure new launches complement the parent brand while having their own distinct identity.",
     },
     {
-      question: "What makes your agency the best branding agency in Delhi?",
+      question: "Can you create branding for businesses targeting international markets?",
       answer:
-        (<>We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your identity. Every brand we create is backed by research. You can see our work <Link href="/" className="faq-link">here.</Link></>)
+        "Yes, we develop brand identities, packaging designs, website and communication systems for businesses looking to expand beyond India. Our approach involves understanding and strategising branding work keeping the local culture, legalities and audience expectations in mind. ",
     },
     {
-      question: "How can I get started with your branding services?",
-      answer:
-        (<>Just reach out through our contact form or schedule a consultation by emailing <a href="mailto:info@dndesigns.co.in" className="faq-link">info@dndesigns.co.in</a> or calling <a href="tel:9416011100" className="faq-link">9416011100</a>. Our team will get back to you as soon as possible.</>)
+      question:
+        "What makes your agency the best branding agency in Delhi? ",
+      answer: (
+        <>
+       We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your brand. Every design we create is backed by research. You can check out our case studies to see how we approach every project and make it a branding success story. 
+        </>
+      ),
+    },
+    {
+      question:
+        " How can I get started with your branding services?  ",
+      answer: (
+        <>
+          Just reach out through our contact form. Alternatively, schedule a consultation by emailing us at info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible. 
+        </>
+      ),
     },
   ];
-
-  // form section content
-  const FormHead = "Let’s Discuss Over a Cup of Coffee";
-  const FormPara =
-    "Some brands simply stand out! You recognise them, you trust them and you do not think twice before purchasing from them. That’s how powerful a brand can be! However, building such an influential brand is quite a task. No worries for you, though, for we are here to turn your dreams into reality. If you have the same vision for your brand, think no further. Just get in touch with us and tell us all you have in mind for your product.Let’s discuss how to make your brand something others love and envy.";
-  const pageName = "branding";
-
-
-  // city pages slider data
-    let cityPagesSlideData = {
-
-       CityPagesSwipper_heading : "Branding and Marketing Services That Build Trust and Admiration",
-       
-       slide_1_slide_head : "Brand Name Suggestion",
-       slide_1_slide_para : "   What’s in the name? We say, it’s quite significant, especially in branding. It reflects identity and evokes positive responses from consumers. We craft names that don't get lost in the shuffle and are remembered by your audience.",
-
-       slide_2_slide_head : "Brand Development",
-       slide_2_slide_para : "Without branding, your business will not be recognised, trusted or remembered. We are your one-stop solution for creating a strong brand. We craft your brand strategy, design your identity & establish your online brand presence.",
-
-       slide_3_slide_head : "Brand Identity Design",
-       slide_3_slide_para : "It is said that there is no second chance to make a first impression. And your logo is your first impression. We design logos that are versatile, unique, and clearly communicate your brand’s essence and values to your target audience.",
-
-       slide_4_slide_head : "Packaging Design",
-       slide_4_slide_para : "Want your product to impress your consumer at first glance? Designing attractive packaging can be your winning move. We create designs that don’t just wow your consumer but deeply show what your brand wants to say.",
-
-       slide_5_slide_head : "Catalogue Design",
-       slide_5_slide_para : "Your business & your product deserve all the spotlight. So, we create attractive and organised catalogues that reflect your brand and product with clarity, making it impossible to go unnoticed.",
-
-       slide_6_slide_head : "Digital Marketing",
-       slide_6_slide_para : "In this digital era, businesses cannot negate the importance of digital marketing. We create digital marketing strategies that target your online audience the right way, increase visibility, drive traffic, and generate measurable results.",
-
-       slide_7_slide_head : "Influencer Marketing",
-       slide_7_slide_para : "Influencers can boost your brand awareness and help generate revenue through their campaigns. We help you collaborate with the right influencers so that you can build trust among your target audience and drive engagement.",
-
-       slide_8_slide_head : "Social Media Marketing",
-       slide_8_slide_para : "To succeed, social media marketing is important. We are here to help you establish, manage and grow your social media presence. We provide comprehensive social media marketing services, from crafting a strategy to analysing performance.",
-
-       slide_9_slide_head : "Animation",
-       slide_9_slide_para : "Animations have the power to captivate and win hearts. We create stunning animations to bring your brand to life. Be it 2D or 3D animation, we create visuals that capture audience attention and leave an enduring impact.",
-
-       slide_10_slide_head : "SEO",
-       slide_10_slide_para : "Your website must appear prominently on search engines to improve your brand visibility, traffic and leads. We create and implement SEO strategies for this purpose. Be visible, attract customers and generate profit.",
-       
-       slide_11_slide_head : "Web Design",
-       slide_11_slide_para : "Your website is your online office or store. It must impress those who visit it. We, therefore, create SEO optimised websites that are visually appealing, functional, and reflect your brand identity. Our designs ensure a good user experience.",
-
-       slide_12_slide_head : "UI/UX Design",
-       slide_12_slide_para : "Websites and app designs should be visually appealing and easy to use. We create exactly this by studying user behaviour, planning layouts, and designing interactions. We ensure your audience has a smooth experience with the website/app.",
-
-       slide_13_slide_head : "Photography",
-       slide_13_slide_para : "Visuals speak louder than words. We capture the essence of your brand through our professional photography service. We create visuals that highlight your brand’s personality, connect with your audience and leave an everlasting impression."
-    }
-
 
   return (
     <div>
@@ -215,192 +192,556 @@ async function page() {
       {/*schema ends here */}
 
       {/*.....hero...... */}
-      {/* <section className={`${styles.hero}`}>
+      <HomePageHeroNew title={title} description={description} />
+
+      {/* work portfolio */}
+      <section className="portfolio">
         <div className="container">
-          <div className={`${styles["hero-rows"]} row`}>
-            <div className={`${styles["left-hero"]} col`}>
-              <h1>Branding Agency in Delhi: Where Brands Find Their Voice</h1>
-              <p className="para-roboto">
-                As the best branding agency in Delhi, we deliver end-to-end
-                branding services to help you build an impactful business.
-              </p>
-              <div>
-                <HomePageBtn />
+          <h2 className="text-center">
+            Our<span className="every-pr"> Work Portfolio</span>
+          </h2>
+
+          <div className="row port-row">
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                <video
+                  src="https://dndesigns.co.in/uploads/videos/enli.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Enlite</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    Sparkling Mineral Water & Prebiotic Drinks Brand. We gave it
+                    a vibrant yet calming identity: a logo, a character and a
+                    can that fizzes with personality and freshness.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className={`${styles["hero-img"]} col`}>
-          
 
-              <Image
-                src={imageUrl + "gkjeg.webp"}
-                className={`${styles["hero-bg-img"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={1000}
-                height={1000}
-                priority
-              />
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+              <div className="port-div">
+                <video
+                  src="https://dndesigns.co.in/uploads/videos/doodhsodavideoforindustrypageswjendewjdb.mp4"
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  className="img-fluid"
+                ></video>
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Doodh Soda</h3>
+                    </div>
+                  </div>
 
-            
+                  <p>
+                    A category first: India’s first milk-based soda brand. We
+                    built a brand identity and label design that felt just as
+                    unexpected, bold, expressive, confident and fun as the
+                    product itself.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-              <Image
-                src={imageUrl + "hgefef.webp"}
-                className={`${styles["hero-img-main"]} ${styles["responsive-img"]}`}
-                alt="home page image"
-                width={700}
-                height={700}
-                priority
-              />
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/newupdatednbrendKozu.jpg.jpeg"
+                  className="img-fluid"
+                  alt="Kozu caffeinated water bottle branding and packaging design"
+                ></img>
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Kozu</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    Caffeinated water brand. For this first-of-its-kind beverage
+                    in India, we designed a bold and minimal brand identity and
+                    packaging to help it stand out, build trust and boost
+                    recall.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row port-row">
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                <video
+                  src="https://dndesigns.co.in/uploads/videos/fmcgatoneamvideo.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>1 AM</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    Canned Cold Coffee Brand. From logo and identity to website
+                    and social media, we brewed a bold and pretty cool brand
+                    that Gen Z love vibing with.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+              <div className="port-div">
+                <video
+                  src="https://dndesigns.co.in/uploads/videos/3ewhbhfderbj.mp4"
+                  width="100%"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=""
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Mr. Bomzy</h3>
+                    </div>
+                  </div>
+                  <p>
+                    Cocktail bomb brand. From identity and packaging to website
+                    and social media strategy, we designed a brand as fun and
+                    explosive as the product itself.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/nwjkebhdn.webp"
+                  className="img-fluid"
+                  alt="Wlue's makhana snack packaging with retro superhero branding"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Wlue's</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    Makhana brand. With a retro superhero-inspired identity and
+                    packaging, we gave it main-character energy, making it a Gen
+                    Z favourite and the snack aisle hero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row port-row">
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+              <div className="port-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/let.jpg"
+                  className="img-fluid"
+                  alt="Let's Supp nutraceutical brand identity and packaging design"
+                ></img>
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Let’s Supp</h3>
+                    </div>
+                  </div>
+                  <p>
+                    Nutraceutical Brand. We built a cohesive identity,
+                    packaging, and digital design to reflect simplicity,
+                    consistency, and care - inspiring trust and making wellness
+                    a daily ritual.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div">
+              <div className="port-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/egwdjjbjhewFLUKE.jpg.jpeg"
+                  className="img-fluid"
+                  alt="Fluke functional energy drink can and brand identity design"
+                ></img>
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Fluke</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    For this functional beverage brand, we crafted a complete
+                    brand identity, including a minimal, premium logo and can
+                    design that communicates clarity, focus and functional
+                    energy at a glance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 px-2 port-main-div ">
+              <div className="port-div">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/rekwhrfdjbrrat_03.jpg.jpeg"
+                  className="img-fluid"
+                  alt="Brrat energy drink can packaging and visual identity"
+                />
+                <div className="port-content">
+                  <div className="potfolio-div-btns">
+                    <div className="port-div-headg">
+                      <h3>Brrat</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    For Brrat Energy drink, our work spanned brand identity,
+                    logo, can packaging and website design - each built to hit
+                    as hard and be as unapologetic as the drink itself.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      */}
 
-       {/*.....hero...... */}
-     {/* <HomePageHero title={title} description={description} /> */}
-     <HomePageHeroNew title={title} description={description}/>
-     
-     
-
-
-        {/* our brands section */}
-        <OurBrandsSectionHome heading1="Our " heading2="Brand Journals"/>
-     
-      {/*.....our-constant-companions...... */}
-      <OurConstant />
-      <BookDirectCallCTA/>
-
-        {/* industries we serve */}
-            {/* <LPBrandIdentityCategorySwipper/> */}
-            {/* IndustriesSectionNewLayout */}
-        <IndustriesSectionNewLayout/>
-        
-            
-      {/*.....Our work...... */}
-      {/* <OurWorkHomeSection /> */}
-      {/*.....Our work...... */}
-              <section id="ourworksection">
-              <OurWorkHomeSection />
-              </section>
-
-              <CTAMarqueSwipper/>
-
-      {/* next sectiion */}
-      <section className="city-pages-content-img-sec">
+      <section className="like-what-you-see-section">
         <div className="container">
-          <div className="row mt-5">
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
-              <div className="content-box-city-page">
-                <h2>Understanding Branding</h2>
-                <p>
-                  Branding is about creating the right image for your business.
-                  So it’s much more than your logo. Effective branding is what
-                  helps people build trust & emotional connection while also
-                  defining your brand’s purpose. This is what turns your
-                  business into an iconic brand, one that will leave a lasting
-                  legacy even in a fast-moving, competitive market.
-                </p>
-                <TalkToUsCityPages />
-              </div>
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
-              <div className="image-box-city-page">
-                {/* <img src={imageUrl + "city.webp"} className="img-fluid" /> */}
-                <Image
-                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic11threepoints.jpeg"
-                  className="responsive-img image-box-city-page-img"
-                  alt="home city page image"
-                  width={1500}
-                  height={1000}
-                  sizes="(max-width:1200px) 100vw, 50vw"
-                />
-              </div>
-            </div>
+          <div className="like-what-you-see-section-container">
+            <h2 className="like-what-you-see-section-heading">
+              Want to Be Our Next Big Brand Success{" "}
+              <span className="like-what-you-see-section-heading-span">
+                {" "}
+                Story? Let's Make It Happen.
+              </span>
+            </h2>
+            <Link href="/contact-us">
+              <span className="like-what-you-see-section-button">
+                Get in Touch
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="fontAwesomeIcon-right-arrow"
+                />{" "}
+              </span>
+            </Link>
           </div>
+        </div>
+      </section>
 
-          <div className="row flex-column-reverse flex-xl-row mt-5">
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
-              <div className="image-box-city-page">
-                {/* <img src={imageUrl + "city-2.webp"} className="img-fluid" /> */}
-                <Image
-                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic22threepoints.jpeg"
-                  className="responsive-img image-box-city-page-img"
-                  alt="home city page image"
-                  width={1500}
-                  height={1000}
-                  sizes="(max-width:1200px) 100vw, 50vw"
-                />
+      {/* Why You Should Work With Us */}
+      <section className="why-you-should-work-section ">
+        <div className="container why-you-should-work-section-upper">
+          <h2 className="why-you-should-work-section-head">
+            Why Branding Matters: From Simple {" "}
+            <span className="why-you-should-work-section-head-span">
+              Business to Iconic Brand 
+            </span>
+          </h2>
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+              <div className="why-you-should-work-section-col">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/Why-Branding-Matters-From-Simple-Business-to-Iconic-Brand.webp"
+                  className="why-you-should-work-section-img img-fluid"
+                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                ></img>
               </div>
             </div>
 
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
-              <div className="content-box-city-page">
-                <h2>Why Every Brand Needs Expert Branding Services</h2>
-                <p>
-                  In a world driven by first impressions, brands need
-                  professional branding services to achieve success. Expert
-                  branding helps shape identity and messaging and strengthens
-                  the positioning of the brand. Moreover, it attracts the right
-                  audience while building recognition and loyalty among them. In
-                  Delhi’s demanding market landscape, branding is a service that
-                  can turn humble businesses into big names.
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+              <div className="why-you-should-work-section-col">
+                <p className="why-you-should-work-section-para">
+                  Branding is about creating the right image for your business. It is an important part of your business and goes far beyond a logo, a colour palette and a tagline. Effective branding helps in creating trust and building an emotional connection with your customers while defining your brand’s purpose. This is what guides every decision you make, from the products you offer to the way you communicate. With time, it transforms an ordinary business into an iconic brand that leaves a lasting legacy in a competitive and fast moving market.
                 </p>
-                <TalkToUsCityPages />
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-5">
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-content-col">
-              <div className="content-box-city-page">
-                <h2>Powerful Brands Start Here</h2>
-                <p>
-                  As the leading branding agency in Delhi, we believe that the
-                  best results come from a perfect balance of creativity and
-                  strategy. From startups to established brands, we create
-                  identities that are always market-forward. Our brand-building
-                  company designs unique identities, clear messaging, and
-                  impactful visuals, especially for you, from scratch.
-                </p>
-                <TalkToUsCityPages />
-              </div>
-            </div>
-
-            <div className="col-12 col-md-12 col-lg-12 col-xl-6 city-image-col">
-              <div className="image-box-city-page">
-                {/* <img src={imageUrl + "city-3.webp"} className="img-fluid" /> */}
-                <Image
-                  src="https://dndesigns.co.in/uploads/pages/citypagesgraphic33threepoints.jpeg"
-                  className="responsive-img image-box-city-page-img"
-                  alt="home city page image"
-                  width={1500}
-                  height={1000}
-                  sizes="(max-width:1200px) 100vw, 50vw"
-                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* swipper */}
-      {/* swipper */}
-       <CityPagesSwipper cityPagesSlideData={cityPagesSlideData}/>
+      {/* Why You Should Work With Us */}
+      <section className="why-you-should-work-section">
+        <div className="container">
+          <h2 className="why-you-should-work-section-head">
+            Why Every Brand Needs {" "}
+            <span className="why-you-should-work-section-head-span">
+              Expert Branding Services
+            </span>
+          </h2>
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4 order-2 order-lg-1">
+              <div className="why-you-should-work-section-col">
+                <p className="why-you-should-work-section-para">
+                  In today's world, businesses need professional branding services to achieve success in a fiercely competitive marketplace. Expert branding helps shape identity and messaging and strengthens the positioning of the brand. Moreover, it helps attract the right audience while building recognition and loyalty among them. In Delhi's demanding market landscape, branding is a service that turns humble businesses into big names. A brand development agency in Delhi, like DN Designs, delivers strategic brand building solutions that help you reach your business goals.
+                </p>
+              </div>
+            </div>
 
-       
-       
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4 order-1 order-lg-2">
+              <div className="why-you-should-work-section-col">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/WhyEveryBrandNeedsExpertBrandingServices.webp"
+                  className="why-you-should-work-section-img img-fluid"
+                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* our brand jurnals */}
+      <OurBrandsSectionHome heading1="Our " heading2="Brand Journals" />
+
+      {/* Packaging Design Across Industries */}
+      <section className="packaging-design-across-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="packaging-design-across-section-col">
+                <h2 className="packaging-design-across-section-head">
+                  Powerful Brands {" "}
+                  <span className="packaging-design-across-section-head-span">
+                    Start Here
+                  </span>
+                </h2>
+                <p className="packaging-design-across-section-para">
+                  As the best branding agency in Delhi, our aim is to provide outstanding results by balancing creativity and strategic thinking. Regardless of whether you’re a start-up or a well-established brand, we create innovative solutions to give you an edge in your market. Our brand building company helps you create a unique brand identity, powerful messaging and stunning visuals that work equally well across platforms. The result is a brand that looks distinctive, sounds consistent and connects with people who matter most for your business. 
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="image-col">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/PowerfulBrandsStartHere.webp"
+                  className="img-fluid"
+                  alt="Packaging design projects and creative product branding by DN Designs"
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Packaging Design Across Industries */}
+      <section className="packaging-design-across-section">
+        <div className="container">
+          <div className="row ">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1">
+              <div className="image-col">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/BuildingBrandsForDelhisDiverseMarket.webp"
+                  className="img-fluid"
+                  alt="Packaging design projects and creative product branding by DN Designs"
+                ></img>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
+              <div className="packaging-design-across-section-col">
+                <h2 className="packaging-design-across-section-head">
+                  Building Brands For Delhi’s{" "}
+                  <span className="packaging-design-across-section-head-span">
+                    Diverse Market
+                  </span>
+                </h2>
+                <p className="packaging-design-across-section-para">
+                  Delhi has a competitive, diverse and dynamic market where tradition and modernity exist side by side. Successful branding here depends on understanding both, along with the local culture and buying behaviour of consumers. Businesses across the city, from new D2C startups and FMCG brands to existing retail and lifestyle brands, all operate in their own market, with varying levels of competition and expectations. A brand that works must be tailored to your business, category, and goals. Our team studies your audience, defines your positioning, and crafts a brand identity that feels relevant to both traditional buyers and digital-first consumers. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Like what you see? Let’s design packaging that gets your product picked. */}
+
+      <section className="like-what-you-see-section">
+        <div className="container">
+          <div className="like-what-you-see-section-container">
+            <h2 className="like-what-you-see-section-heading">
+              Let's Talk About Building{" "}
+              <span className="like-what-you-see-section-heading-span">
+                {" "}
+                a Brand That Stands Out.
+              </span>
+            </h2>
+            <Link href="/contact-us">
+              <span className="like-what-you-see-section-button">
+                Contact Us
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="fontAwesomeIcon-right-arrow"
+                />{" "}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Packaging Design for Indian & International Consumers */}
+      <div className="packaging-design-india-consumers-section-parent">
+        <section className="packaging-design-india-consumers-section">
+          <div className="container-fl">
+            <div className="row g-0">
+              <div className="col-12 cl-sm-12 col-md-12 col-lg-6">
+                <div className="packaging-design-india-consumers-section-col">
+                  <img
+                    src="https://dndesigns.co.in/uploads/pages/FromTheFirstSketchTTheFinalBrandTheBrandingProcess.webp"
+                    className="packaging-design-india-consumers-section-col-img img-fluid"
+                    alt="Indian product packaging design and brand identity portfolio"
+                  ></img>
+                </div>
+              </div>
+
+              <div className="col-12 cl-sm-12 col-md-12 col-lg-6 packaging-design-india-consumers-section-row">
+                <div className="packaging-design-india-consumers-section-col">
+                  <h2 className="packaging-design-india-consumers-section-col-head">
+                    From The First Sketch To The Final {" "}
+                    <span className="packaging-design-india-consumers-section-col-head-span">
+                      {" "}
+                      Brand (The Branding Process)
+                    </span>
+                  </h2>
+                  <p className="packaging-design-india-consumers-section-col-para">
+                   It takes more than just good ideas to make great brands. Careful research, creativity and thoughtful development are needed. That’s why we first take time to understand your business and what you want to achieve. We study your competitors and market, and based on the insights gained, we begin building your brand. This includes developing your positioning strategy, visual design, messaging and creative assets. Everything supports each other and the overall objective, so your brand has a strong sense of cohesion. By the launch date, you have a brand with a clear direction and solid potential for growth and revenue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Packaging Design for Indian & International Consumers */}
+        <section className="packaging-design-india-consumers-section">
+          <div className="container-fl">
+            <div className="row g-0">
+              <div className="col-12 cl-sm-12 col-md-12 col-lg-6 packaging-design-india-consumers-section-row order-2 order-lg-1">
+                <div className="packaging-design-india-consumers-section-col">
+                  <h2 className="packaging-design-india-consumers-section-col-head">
+                    {" "}
+                    When Your Brand Is Ready 
+                    <span className="packaging-design-india-consumers-section-col-head-span">
+                      {" "}
+                     For A New Chapter
+                    </span>
+                  </h2>
+                  <p className="packaging-design-india-consumers-section-col-para">
+                    As your business develops, your brand needs to grow too. The identity that once reflected your vision may now no longer represent your products, positioning or future goals. A well-planned rebrand can revive your brand and give it a new lease of life. At our branding and design studio, we make that transformation happen smoothly and effectively. From identity to messaging, we reshape every element of your brand so it feels fresh, relevant, and ready for today’s audience. Whether you are entering new markets or expanding your offering, we can help your brand match your future.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-12 cl-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
+                <div className="packaging-design-india-consumers-section-col">
+                  <img
+                    src="https://dndesigns.co.in/uploads/pages/WhenYourBrandIsReadyForANewChapter.webp"
+                    className="packaging-design-india-consumers-section-col-img img-fluid"
+                    alt="Indian product packaging design and brand identity portfolio"
+                  ></img>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Key Elements of Effective Packaging Design */}
+
+      <section className="key-elements-effective-section">
+        <div className="container">
+          <div className="key-elements-effective-section-container">
+            <h2 className="key-elements-effective-section-container-heading">
+              Every Touchpoint, One Consistent Brand 
+            </h2>
+            <p className="key-elements-effective-section-container-para">
+              A customer might discover your brand on a store shelf, on a quick commerce thumbail, browse it online, or come across it through a campaign. If your brand appears different in different places, customers lose clarity and your brand equity takes a hit. So, wherever that interaction happens, the experience should feel connected. Consistent visuals, messaging, and design choices help people recognise your brand across different channels without making every interaction look identical. Our team brings these elements together to create a cohesive brand presence, from product packaging and marketing materials to websites and digital communication.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Approach Packaging Design */}
+      <section className="how-we-approach-section">
+        <div className="container">
+          <div className="row how-we-approach-section-row g-0">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="how-we-approach-section-col">
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/CreatingBrandsThatGrowBeyondBoundaries.webp"
+                  className="img-fluid"
+                  alt="DN Designs strategic approach to product packaging design"
+                ></img>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className="how-we-approach-section-col-content">
+                <h2 className="how-we-approach-section-col-head">
+                 Creating Brands That Grow Beyond Boundaries
+                </h2>
+                <p className="how-we-approach-section-col-para">
+               As your business grows, you will naturally move into new markets, products and sales channels. This means that while your start might be in Delhi, the potential of your brand could take you far. But without room to grow, it can become rigid, inconsistent, and difficult to extend. As your strategic branding partner in Delhi, we help you by building a scalable brand system, one that helps you stay strong, recognisable and consistent as you grow. Whether you are launching a new product or expanding your existing brand into new markets, having a solid creative foundation will make taking your business forward much easier.
+                </p>
+                <img
+                  src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png"
+                  className="img-fluid how-we-approach-section-ladder-image"
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IndustriesSectionNewLayout */}
+      <IndustriesSectionNewLayout />
+
+      {/* book a call with founder */}
+      <BookDirectCallCTA />
+
+      {/* what brewing in dn */}
+      <CTAMarqueSwipper />
 
       {/* faqs */}
+
       <section className="faqs">
         <Faqs title="CONTACT FAQs" leftFaqs={leftFaqs} rightFaqs={rightFaqs} />
       </section>
 
-      {/* testimonial  */}
-      {/* <Testimonial /> */}
+      {/* Form */}
       <Form FormHead={FormHead} FormPara={FormPara} />
     </div>
   );
-}
+};
 
-export default page;
+export default Page;

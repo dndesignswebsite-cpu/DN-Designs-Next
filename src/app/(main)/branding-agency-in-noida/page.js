@@ -502,7 +502,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/branding-for-noida-branding-section.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                  alt="Branding and packaging design services by DN Designs in Noida"
                 ></img>
               </div>
             </div>
@@ -559,7 +559,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/End-to-End-Branding-Services-in-Noida.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                  alt="End-to-end branding services including brand strategy and visual identity in Noida"
                 ></img>
               </div>
             </div>
@@ -601,7 +601,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/From-Business-Vision-to-Brand-Identity.webp"
                   className="img-fluid"
-                  alt="Packaging design projects and creative product branding by DN Designs"
+                  alt="Product branding and packaging design transforming business vision into brand identity"
                 ></img>
               </div>
             </div>
@@ -618,7 +618,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/a-brand-built-cart-image.webp"
                   className="img-fluid"
-                  alt="Packaging design projects and creative product branding by DN Designs"
+                  alt="Creative product packaging and brand identity design portfolio by DN Designs"
                 ></img>
               </div>
             </div>
@@ -689,7 +689,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/One-Brand-Every-Shelf-and-Screen.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Indian product packaging design and brand identity portfolio"
+                    alt="Consistent product branding across retail shelves and digital platforms"
                   ></img>
                 </div>
               </div>
@@ -767,7 +767,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/Miatra_Makhana_Billboard_Above_Overpass.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Indian product packaging design and brand identity portfolio"
+                    alt="Miatra makhana brand billboard advertising and outdoor branding design"
                   ></img>
                 </div>
               </div>
@@ -812,7 +812,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Corporate_Cool__Enlite_Can_Contrast.webp"
                   className="img-fluid"
-                  alt="DN Designs strategic approach to product packaging design"
+                  alt="Enlite beverage packaging showcasing strategic brand identity and product design"
                 ></img>
               </div>
             </div>
