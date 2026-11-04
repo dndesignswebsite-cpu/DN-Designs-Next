@@ -627,10 +627,10 @@ const Page = async () => {
               <div className="col-12 cl-sm-12 col-md-12 col-lg-6 packaging-design-india-consumers-section-row">
                 <div className="packaging-design-india-consumers-section-col">
                   <h2 className="packaging-design-india-consumers-section-col-head">
-                    From The First Sketch To The Final {" "}
+                    From Strategy To The Final {" "}
                     <span className="packaging-design-india-consumers-section-col-head-span">
                       {" "}
-                      Brand (The Branding Process)
+                      Brand
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
@@ -650,10 +650,10 @@ const Page = async () => {
                 <div className="packaging-design-india-consumers-section-col">
                   <h2 className="packaging-design-india-consumers-section-col-head">
                     {" "}
-                    When Your Brand Is Ready 
+                    Outgrowing Your Identity? It's 
                     <span className="packaging-design-india-consumers-section-col-head-span">
                       {" "}
-                     For A New Chapter
+                     Time to Evolve
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
@@ -685,7 +685,10 @@ const Page = async () => {
               Every Touchpoint, One Consistent Brand 
             </h2>
             <p className="key-elements-effective-section-container-para">
-              A customer might discover your brand on a store shelf, on a quick commerce thumbail, browse it online, or come across it through a campaign. If your brand appears different in different places, customers lose clarity and your brand equity takes a hit. So, wherever that interaction happens, the experience should feel connected. Consistent visuals, messaging, and design choices help people recognise your brand across different channels without making every interaction look identical. Our team brings these elements together to create a cohesive brand presence, from product packaging and marketing materials to websites and digital communication.
+              A customer might discover your brand on a store shelf, on a quick commerce thumbail, browse it online, or come across it through a campaign. If your brand appears different in different places, customers lose clarity and your brand equity takes a hit. So, wherever that interaction happens, the experience should feel connected. 
+              </p>
+              <p className="key-elements-effective-section-container-para">
+              Consistent visuals, messaging, and design choices help people recognise your brand across different channels without making every interaction look identical. Our team brings these elements together to create a cohesive brand presence, from product packaging and marketing materials to websites and digital communication.
             </p>
           </div>
         </div>

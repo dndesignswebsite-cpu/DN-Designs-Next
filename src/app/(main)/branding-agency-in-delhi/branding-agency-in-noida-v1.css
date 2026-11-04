@@ -378,7 +378,7 @@ font-family: var(--font-helvetica);
 }
 .packaging-design-india-consumers-section-col{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   height: 100%;
