@@ -208,6 +208,8 @@ font-family: var(--font-helvetica);
 
 
 /* Why You Should Work With Us */
+
+
 .why-you-should-work-section{
   padding: 60px 0;
 }
@@ -245,6 +247,12 @@ font-family: var(--font-helvetica);
     font-size: 35px;
     width: 100%;
   }
+  .why-you-should-work-section-upper{
+  padding-top:50px;
+}
+.why-you-should-work-section{
+  padding: 40px 0;
+}
 }
 
 
@@ -330,7 +338,17 @@ font-family: var(--font-helvetica);
   color: #707070;
 }
 
+.packaging-design-across-section .image-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 @media(max-width:991px){
+  .packaging-design-across-section-col{
+    align-items: start;
+  }
   .packaging-design-across-section-col-points{
     font-size: 14px;
     padding: 3px 10px;
@@ -387,6 +405,9 @@ font-family: var(--font-helvetica);
 }
 
 @media(max-width:991px){
+  .packaging-design-india-consumers-section-col{
+    align-items: start;
+  }
   .packaging-design-india-consumers-section-col-head{
     font-size: 35px;
     padding-top: 15px;
@@ -474,6 +495,13 @@ font-family: var(--font-helvetica);
 
 .how-we-approach-section-row{
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+.how-we-approach-section-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .how-we-approach-section-col-content{
