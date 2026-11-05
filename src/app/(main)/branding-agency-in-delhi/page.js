@@ -122,14 +122,14 @@ const Page = async () => {
         "What types of branding services do you offer? ",
       answer: (
         <>
-          Our branding services in Delhi, customised to fit your brand values and business goals, include brand strategy design, logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. 
+          Our branding services in Delhi, customised to fit your brand values and business goals, include <Link href="/brand-strategy" className="inter-linking-link">brand strategy design</Link>, logo design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. 
         </>
       ),
     },
     {
       question: "What category of business do you specialise in? ",
       answer:
-        "We work across a wide range of businesses, including food & beverage, FMCG, D2C, health & wellness, lifestyle, skincare, jewellery and fashion.",
+        (<>We work across a wide range of businesses, including <Link href="/food-beverage-branding" className="inter-linking-link">food & beverage</Link>, FMCG, D2C, <Link href="/wellness-branding" className="inter-linking-link">health & wellness</Link>, lifestyle, skincare, jewellery and fashion.</>),
     },
     {
       question:
@@ -141,7 +141,7 @@ const Page = async () => {
       question: "Can you help with rebranding my existing business in Delhi? ",
       answer: (
         <>
-          Absolutely. We specialise in rebranding, redefining positioning, and modernising so that your brand stays relevant in today’s market.
+          Absolutely. We <Link href="/rebranding" className="inter-linking-link">specialise in rebranding</Link>, redefining positioning, and modernising so that your brand stays relevant in today’s market.
         </>
       ),
     },
@@ -157,14 +157,14 @@ const Page = async () => {
     {
       question: "Can you create branding for businesses targeting international markets?",
       answer:
-        "Yes, we develop brand identities, packaging designs, website and communication systems for businesses looking to expand beyond India. Our approach involves understanding and strategising branding work keeping the local culture, legalities and audience expectations in mind. ",
+        (<>Yes, we <Link href="/brand-identity-design-services" className="inter-linking-link">develop brand identities</Link>, packaging designs, website and communication systems for businesses looking to expand beyond India. Our approach involves understanding and strategising branding work keeping the local culture, legalities and audience expectations in mind. </>),
     },
     {
       question:
         "What makes your agency the best branding agency in Delhi? ",
       answer: (
         <>
-       We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your brand. Every design we create is backed by research. You can check out our case studies to see how we approach every project and make it a branding success story. 
+       We are among the top branding & marketing agencies, not just in Delhi but worldwide. We blend strategy, creative design, and market insight to build your brand. Every design we create is backed by research. You can <Link href="/case-studies" className="inter-linking-link">check out our case studies</Link> to see how we approach every project and make it a branding success story. 
         </>
       ),
     },
@@ -173,7 +173,7 @@ const Page = async () => {
         " How can I get started with your branding services?  ",
       answer: (
         <>
-          Just reach out through our contact form. Alternatively, schedule a consultation by emailing us at info@dndesigns.co.in or calling 9416011100. Our team will get back to you as soon as possible. 
+          Just reach out through our contact form. Alternatively, schedule a consultation by emailing us at <a href="mailto:info@dndesigns.co.in" className="inter-linking-link">info@dndesigns.co.in</a> or calling <a href="tel:9416011100" className="inter-linking-link">9416011100</a>. Our team will get back to you as soon as possible. 
         </>
       ),
     },
@@ -471,7 +471,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Why-Branding-Matters-From-Simple-Business-to-Iconic-Brand.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                  alt="Branding strategy and creative packaging design by DN Designs"
                 ></img>
               </div>
             </div>
@@ -500,7 +500,7 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4 order-2 order-lg-1">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  In today's world, businesses need professional branding services to achieve success in a fiercely competitive marketplace. Expert branding helps shape identity and messaging and strengthens the positioning of the brand. Moreover, it helps attract the right audience while building recognition and loyalty among them. In Delhi's demanding market landscape, branding is a service that turns humble businesses into big names. A brand development agency in Delhi, like DN Designs, delivers strategic brand building solutions that help you reach your business goals.
+                  In today's world, businesses need professional branding services to achieve success in a fiercely competitive marketplace. Expert branding helps shape identity and messaging and strengthens the positioning of the brand. Moreover, it helps attract the right audience while building recognition and loyalty among them. In Delhi's demanding market landscape, branding is a service that turns humble businesses into big names. A brand development agency in Delhi, like <Link href="/" className="inter-linking-link">DN Designs</Link>, delivers strategic brand building solutions that help you reach your business goals.
                 </p>
               </div>
             </div>
@@ -510,7 +510,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/WhyEveryBrandNeedsExpertBrandingServices.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Creative packaging design solutions for brands by DN Designs in Noida"
+                  alt="Professional branding services and brand identity design by DN Designs"
                 ></img>
               </div>
             </div>
@@ -534,7 +534,7 @@ const Page = async () => {
                   </span>
                 </h2>
                 <p className="packaging-design-across-section-para">
-                  As the best branding agency in Delhi, our aim is to provide outstanding results by balancing creativity and strategic thinking. Regardless of whether you’re a start-up or a well-established brand, we create innovative solutions to give you an edge in your market. Our brand building company helps you create a unique brand identity, powerful messaging and stunning visuals that work equally well across platforms. The result is a brand that looks distinctive, sounds consistent and connects with people who matter most for your business. 
+                  As the best branding agency in Delhi, our aim is to provide outstanding results by balancing creativity and strategic thinking. Regardless of whether you’re a start-up or a well-established brand, we create innovative solutions to give you an edge in your market. Our <Link href="/branding" className="inter-linking-link">brand building company</Link> helps you create a unique brand identity, powerful messaging and stunning visuals that work equally well across platforms. The result is a brand that looks distinctive, sounds consistent and connects with people who matter most for your business. 
                 </p>
               </div>
             </div>
@@ -544,7 +544,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/PowerfulBrandsStartHere.webp"
                   className="img-fluid"
-                  alt="Packaging design projects and creative product branding by DN Designs"
+                  alt="Brand strategy and creative packaging design by DN Designs"
                 ></img>
               </div>
             </div>
@@ -561,7 +561,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/BuildingBrandsForDelhisDiverseMarket.webp"
                   className="img-fluid"
-                  alt="Packaging design projects and creative product branding by DN Designs"
+                  alt="Brand identity and packaging design for Delhi's diverse market"
                 ></img>
               </div>
             </div>
@@ -619,7 +619,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/FromTheFirstSketchTTheFinalBrandTheBrandingProcess.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Indian product packaging design and brand identity portfolio"
+                    alt="Branding process from initial concept to final brand identity"
                   ></img>
                 </div>
               </div>
@@ -634,7 +634,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                   It takes more than just good ideas to make great brands. Careful research, creativity and thoughtful development are needed. That’s why we first take time to understand your business and what you want to achieve. We study your competitors and market, and based on the insights gained, we begin building your brand. This includes developing your positioning strategy, visual design, messaging and creative assets. Everything supports each other and the overall objective, so your brand has a strong sense of cohesion. By the launch date, you have a brand with a clear direction and solid potential for growth and revenue.
+                   It takes more than just good ideas to make great brands. Careful research, creativity and thoughtful development are needed. That’s why we first take time to understand your business and what you want to achieve. We study your competitors and market, and based on the insights gained, we begin building your brand. This includes <Link href="/brand-positioning" className="inter-linking-link">developing your positioning strategy</Link>, visual design, messaging and creative assets. Everything supports each other and the overall objective, so your brand has a strong sense of cohesion. By the launch date, you have a brand with a clear direction and solid potential for growth and revenue.
                   </p>
                 </div>
               </div>
@@ -657,7 +657,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                    As your business develops, your brand needs to grow too. The identity that once reflected your vision may now no longer represent your products, positioning or future goals. A well-planned rebrand can revive your brand and give it a new lease of life. At our branding and design studio, we make that transformation happen smoothly and effectively. From identity to messaging, we reshape every element of your brand so it feels fresh, relevant, and ready for today’s audience. Whether you are entering new markets or expanding your offering, we can help your brand match your future.
+                    As your business develops, your brand needs to grow too. The identity that once reflected your vision may now no longer represent your products, positioning or future goals. A well-planned rebrand can revive your brand and give it a new lease of life. At our <Link href="/" className="inter-linking-link">branding and design studio</Link>, we make that transformation happen smoothly and effectively. From identity to messaging, we reshape every element of your brand so it feels fresh, relevant, and ready for today’s audience. Whether you are entering new markets or expanding your offering, we can help your brand match your future.
                   </p>
                 </div>
               </div>
@@ -667,7 +667,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/WhenYourBrandIsReadyForANewChapter.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Indian product packaging design and brand identity portfolio"
+                    alt="Rebranding and brand identity design for growing businesses"
                   ></img>
                 </div>
               </div>
@@ -703,7 +703,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/CreatingBrandsThatGrowBeyondBoundaries.webp"
                   className="img-fluid"
-                  alt="DN Designs strategic approach to product packaging design"
+                  alt="Scalable brand identity and strategic branding by DN Designs"
                 ></img>
               </div>
             </div>

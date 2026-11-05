@@ -542,8 +542,8 @@ const Page = async () => {
                 <p className="why-you-should-work-section-para">
                   Wondering how we help your brand stand out and succeed in the
                   highly competitive market? It's by building every layer of
-                  your brand, not just its logo. We deliver <Link href="/branding" className="inter-linking-link">end-to-end branding </Link> 
-                   solutions combining strategy, creativity and execution under
+                  your brand, not just its logo. We deliver <Link href="/branding" className="inter-linking-link">end-to-end branding 
+                   solutions</Link>  combining strategy, creativity and execution under
                   one roof. Our branding service package includes brand strategy
                   & positioning, naming & brand messaging, logo & visual
                   identity design, packaging design, and brand guidelines. We
