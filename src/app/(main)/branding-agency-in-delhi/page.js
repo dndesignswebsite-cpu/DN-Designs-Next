@@ -173,7 +173,7 @@ const Page = async () => {
         " How can I get started with your branding services?  ",
       answer: (
         <>
-          Just reach out through our contact form. Alternatively, schedule a consultation by emailing us at <a href="mailto:info@dndesigns.co.in" className="inter-linking-link">info@dndesigns.co.in</a> or calling <a href="tel:9416011100" className="inter-linking-link">9416011100</a>. Our team will get back to you as soon as possible. 
+          Just reach out through our contact form. Alternatively, schedule a consultation by emailing us at <a href="mailto:info@dndesigns.co.in" className="inter-linking-link">info@dndesigns.co.in</a> or calling <a href="tel:8683911100" className="inter-linking-link">8683911100</a>/<a href="tel:7206605872" className="inter-linking-link">7206605872 </a> . Our team will get back to you as soon as possible. 
         </>
       ),
     },
