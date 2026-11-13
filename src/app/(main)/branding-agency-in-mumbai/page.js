@@ -122,7 +122,7 @@ const Page = async () => {
         "What types of branding services do you offer? ",
       answer: (
         <>
-          We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our services include brand strategy, brand positioning, logo and identity design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine. 
+          We offer a comprehensive range of branding services in Mumbai to help establish and accelerate your brand’s growth. Our <Link href="/brand-strategy" className="inter-linking-link">services include brand strategy</Link>, brand positioning, logo and identity design, brand name suggestions, packaging design, catalogue design, digital marketing, and web design. Essentially, everything your brand needs to shine. 
         </>
       ),
     },
@@ -135,7 +135,7 @@ const Page = async () => {
       question:
         "Can you help with rebranding my existing business in Mumbai? ",
       answer:
-        (<>Absolutely. We can help you rebrand your business by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market. </>),
+        (<>Absolutely. We can help you <Link href="/rebranding" className="inter-linking-link">rebrand your business</Link> by creating a fresh visual identity and positioning, and modernising your communication to keep you relevant and appealing even in a challenging market. </>),
     },
     {
       question: "Do you offer branding services outside Mumbai? ",
@@ -150,7 +150,7 @@ const Page = async () => {
       question: "How can I get started with your branding services? ",
       answer: (
         <>
-          To contact us, you can fill out our contact form, email us at info@dndesigns.co.in, or call <a href="tel:8683911100" className="inter-linking-link">8683911100</a>/<a href="tel:7206605872" className="inter-linking-link">7206605872</a> to schedule a consultation. Our team will get back to you shortly to discuss your needs. 
+          To contact us, you can fill out our contact form, email us at <a href="mailto:info@dndesigns.co.in" className="inter-linking-link">info@dndesigns.co.in</a>, or call <a href="tel:8683911100" className="inter-linking-link">8683911100</a>/<a href="tel:7206605872" className="inter-linking-link">7206605872</a> to schedule a consultation. Our team will get back to you shortly to discuss your needs. 
         </>
       ),
     },
@@ -159,7 +159,7 @@ const Page = async () => {
       question: "Do you provide branding services for FMCG and D2C businesses? ",
       answer: (
         <>
-          Yes. We provide branding services that can be tailored for FMCG, food and beverage, skincare, personal care, fashion, e-commerce and D2C businesses. 
+          Yes. We provide branding services that can be tailored for <Link href="/fmcg-branding" className="inter-linking-link">FMCG</Link>, food and beverage, skincare, personal care, fashion, e-commerce and <Link href="/d2c-branding" className="inter-linking-link">D2C businesses</Link>. 
         </>
       ),
     },
@@ -182,7 +182,7 @@ const Page = async () => {
         "Do you work with startups and SMEs?",
       answer: (
         <>
-       Yes, we work with startups and SMEs. We actually love shaping a brand from the ground up. 
+       Yes, <Link href="/startup-branding-agency" className="inter-linking-link">we work with startups</Link> and SMEs. We actually love shaping a brand from the ground up. 
         </>
       ),
     },
@@ -538,7 +538,7 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4 order-2 order-lg-1">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  As a founder, you have a million things to take care of, and branding can easily take a backseat. Partnering with a professional brand development agency helps you stay focused on your business while ensuring your brand identity, positioning and communication remain consistent and aligned with your long-term goals. In a jam-packed market like Mumbai’s, the right branding services can do wonders for your brand. It can help you establish a strong brand identity which is seen, remembered and chosen. It can help draw attention and create lasting recall among consumers while improving your credibility and ROI. Lastly, hiring the services of a professional branding company in Mumbai can help you stay ahead of the competition. 
+                  As a founder, you have a million things to take care of, and branding can easily take a backseat. Partnering with a <Link href="/branding" className="inter-linking-link">professional brand development agency</Link> helps you stay focused on your business while ensuring your brand identity, positioning and communication remain consistent and aligned with your long-term goals. In a jam-packed market like Mumbai’s, the right branding services can do wonders for your brand. It can help you establish a strong brand identity which is seen, remembered and chosen. It can help draw attention and create lasting recall among consumers while improving your credibility and ROI. Lastly, hiring the services of a professional branding company in Mumbai can help you stay ahead of the competition. 
                 </p>
               </div>
             </div>
@@ -628,7 +628,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/BrandDevelopmentAcrossIndustries.webp"
                   className="img-fluid"
-                  alt="Brand identity and packaging design for Delhi's diverse market"
+                  alt="Brand identity and packaging design across industries"
                 ></img>
               </div>
             </div>
@@ -642,7 +642,7 @@ const Page = async () => {
                   </span>
                 </h2>
                 <p className="packaging-design-across-section-para">
-                  Every industry has different branding goals. Whilst a snack brand might need eye-catching packaging to build desire, a skincare business may need to focus more on ingredients and benefits to build trust. Similarly, fashion and tech brands also have different branding requirements. As a complete brand-building studio, we have experience in bringing brands to life across industries. We know a one-size-fits-all approach doesn’t work, so we research the industry, understand the target audience's expectations, the market dynamics, the competitive landscape, communication style and industry regulations before we sit down to design your brand. Our goal is to create a brand that belongs to its industry but doesn't get lost in the crowd. 
+                  Every industry has different branding goals. Whilst a snack brand might need eye-catching packaging to build desire, a skincare business may need to focus more on ingredients and benefits to build trust. Similarly, fashion and tech brands also have different branding requirements. As a complete <Link href="/" className="inter-linking-link">brand-building studio</Link>, we have experience in bringing brands to life across industries. We know a one-size-fits-all approach doesn’t work, so we research the industry, understand the target audience's expectations, the market dynamics, the competitive landscape, communication style and industry regulations before we sit down to design your brand. Our goal is to create a brand that belongs to its industry but doesn't get lost in the crowd. 
                 </p>
               </div>
             </div>
@@ -652,7 +652,6 @@ const Page = async () => {
 
 
       {/* Like what you see? Let’s design packaging that gets your product picked. */}
-
       <section className="like-what-you-see-section">
         <div className="container">
           <div className="like-what-you-see-section-container">
@@ -686,7 +685,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/BuildingandRebuildingBrandsforMumbaiCompetitiveMarket.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Branding process from initial concept to final brand identity"
+                    alt="Brand development and rebranding for businesses in Mumbai"
                   ></img>
                 </div>
               </div>
@@ -701,7 +700,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                   Your brand should reflect where your business is today and where you want it to be tomorrow. If you're launching a new venture, you need an identity that helps people recognise and connect with it. However, if you've been in the market for years, your existing branding may need a refresh to keep pace with changing expectations and business goals. While the goal in the former is to establish a completely new identity and business, the challenge in the latter is all about identifying what works in your favour, preserving the trust you've built with your audience and refreshing what needs to evolve. We help businesses in Mumbai build their brands from the ground up or give established identities a new direction through thoughtful positioning, messaging and creative development. 
+                   Your brand should reflect where your business is today and where you want it to be tomorrow. If you're launching a new venture, you need an identity that helps people recognise and connect with it. However, if you've been in the market for years, your existing branding may need a refresh to keep pace with changing expectations and business goals. While the goal in the former is to establish a completely new identity and business, the challenge in the latter is all about identifying what works in your favour, preserving the trust you've built with your audience and refreshing what needs to evolve. We help businesses in Mumbai build their brands from the ground up or give established identities a new direction through thoughtful <Link href="/brand-positioning" className="inter-linking-link">positioning</Link>, messaging and creative development.
                   </p>
                 </div>
               </div>
@@ -724,7 +723,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                    Every great brand begins with a vision. If you have one, we can help bring it to life. At our branding company in Mumbai, we start by getting to know your business, audience and competitors to understand the gaps and opportunities in the market. This helps us define how your brand should be positioned in the market and what core values and messaging it should have. Moving further, we brainstorm design concepts and direction. Based on the shortlisted option, we then design your logo, visual identity and packaging. At every stage, we go through these with you, take your feedback and refine them to ensure they are right for your brand. Once everything is ready, we help you weave your brand identity across every customer touchpoint. 
+                    Every great brand begins with a vision. If you have one, we can help bring it to life. At our branding company in Mumbai, we start by getting to know your business, audience and competitors to understand the gaps and opportunities in the market. This helps us define how your brand should be positioned in the market and what core values and messaging it should have. Moving further, we brainstorm design concepts and direction. Based on the shortlisted option, we then design your logo, visual identity and packaging. At every stage, we go through these with you, take your feedback and refine them to ensure they are right for your brand. Once everything is ready, we help you weave your <Link href="/brand-identity-design-services" className="inter-linking-link">brand identity</Link> across every customer touchpoint. 
                   </p>
                 </div>
               </div>
@@ -734,7 +733,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/OurBrandingProcessFromDiscoverytoaunch.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Rebranding and brand identity design for growing businesses"
+                    alt="Branding process from discovery to launch by DN Designs"
                   ></img>
                 </div>
               </div>
@@ -754,7 +753,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/TakingYourBrandtotheRightMarket.webp"
                   className="img-fluid"
-                  alt="Scalable brand identity and strategic branding by DN Designs"
+                  alt="Strategic brand positioning and market entry by DN Designs"
                 ></img>
               </div>
             </div>
@@ -765,7 +764,7 @@ const Page = async () => {
                 Taking Your Brand to the Right Market
                 </h2>
                 <p className="how-we-approach-section-col-para">
-               Creating a strong brand identity is only one part; it alone cannot guarantee success. Launching in the right market and at the right time, price and platform is important too. A GTM strategy helps ensure you can do this effectively, and we help you build one that is strong. At DN Designs, we help businesses build a strong brand foundation while developing a strategic direction for their market entry. 
+               Creating a strong brand identity is only one part; it alone cannot guarantee success. Launching in the right market and at the right time, price and platform is important too. A <Link href="/go-to-market-strategy" className="inter-linking-link">GTM strategy</Link> helps ensure you can do this effectively, and we help you build one that is strong. At <Link href="/" className="inter-linking-link">DN Designs</Link>, we help businesses build a strong brand foundation while developing a strategic direction for their market entry. 
                 We ensure your brand positioning, packaging, product messaging and channel requirements are in line with your launch goals from the start. Our goal is to create a clear, compelling brand that enters the market strongly, ready for success. 
                 </p>
                 <img
@@ -795,7 +794,7 @@ const Page = async () => {
                          <div className='row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5 mt-4'>
                           <div className='your-packaging-design-noida-section-img-col'>
-                          <img src="https://dndesigns.co.in/uploads/pages/RootedinMumba,ReadyfortheWorld.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Creative packaging design collaboration between DN Designs and brands"></img>
+                          <img src="https://dndesigns.co.in/uploads/pages/RootedinMumba,ReadyfortheWorld.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Brand development for businesses in Mumbai and global markets"></img>
                           </div>
                         </div>
       
@@ -805,7 +804,7 @@ const Page = async () => {
                             <p className='your-packaging-design-noida-section-content-col'>As your business expands, you encounter new audiences, new markets and new opportunities to expand beyond your home base, Mumbai. Or perhaps, your brand was always meant to appeal to an audience in a different geography. Whatever the case may be, we specialise in strategic brand development to help businesses in Mumbai build a strong brand presence in the local market, pan-India, and on international shores. Our team also helps you keep a consistent brand identity across physical and digital platforms as you grow your product range. </p>
                             {/* <p className='your-packaging-design-noida-section-content-col'>So, if you’re searching for a packaging design agency that can create impactful product packaging designs, pause here. We are your packaging design partner in Noida. <Link className="inter-linking-link" href="/contact-us">Reach out to us</Link>, and let’s discuss your project. </p> */}
                             </div>
-                            <img src="https://dndesigns.co.in/uploads/pages/GlobaTimeCurtedWellnessDisplay.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="DN Designs partnering with businesses for strategic packaging design"></img>
+                            <img src="https://dndesigns.co.in/uploads/pages/GlobaTimeCurtedWellnessDisplay.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="Strategic brand development and packaging design by DN Designs"></img>
                           </div>
                         </div>
                       </div>
