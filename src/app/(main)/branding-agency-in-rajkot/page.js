@@ -528,8 +528,10 @@ const Page = async () => {
       </section>
 
       {/* our brand jurnals */}
+      <section id="ourworksection">
       <OurBrandsSectionHome heading1="Our " heading2="Brand Journals" />
-
+       </section>
+       
       {/* Packaging Design Across Industries */}
       <section className="packaging-design-across-section">
         <div className="container">
