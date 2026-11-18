@@ -1,60 +1,188 @@
-/* Container block framework */
-
-.at1amhero{
-    position: relative;
-}
-.scroll-container {
+.at1amhero {
   position: relative;
   width: 100%;
-  /* background-color: #000000; */
-  z-index: 1; /* Low base layout priority */
 }
 
-/* Fixed viewport mapping */
+
+/* =========================================
+   MAIN SCROLL AREA
+========================================= */
+
+.scroll-container {
+  position: relative;
+
+  width: 100%;
+
+  /*
+    100vh = viewport
+
+    300vh = animation scroll distance
+
+    Total = 400vh
+  */
+
+  height: 400vh;
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   STICKY CANVAS
+========================================= */
+
 .canvas-wrapper {
   position: sticky;
+
   top: 0;
-  left: 0;
-  width: 100vw;
+
+  width: 100%;
   height: 100vh;
-  z-index: 1; /* Content stack layer below HTML items */
+
+  z-index: 1;
+
   overflow: hidden;
+
   display: flex;
+
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
+
+/* =========================================
+   CANVAS
+========================================= */
+
 .canvas-wrapper canvas {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
+
   display: block;
 }
 
-/* UI Scroll Assist Tag */
+
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
 .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+
   left: 50%;
+  bottom: 40px;
+
   transform: translateX(-50%);
+
   color: #ffffff;
+
   font-family: sans-serif;
+
   font-size: 12px;
+
   letter-spacing: 3px;
+
   text-transform: uppercase;
+
   opacity: 0.7;
+
   pointer-events: none;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
+
   padding: 10px 20px;
-  border-radius: 0px;
+
   z-index: 10;
+
+  white-space: nowrap;
 }
 
-/* Scroll Trigger Area padding track */
+
+/* =========================================
+   TRIGGER ZONE
+========================================= */
+
 .trigger-zone {
-  position: relative;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
   width: 100%;
-  height: 330vh; 
+  height: 300vh;
+
   pointer-events: none;
-  /* Next contents ko system block stack up par force karne ke liye clear layout wrapper context setup kiya */
-  z-index: 2; 
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+  .scroll-container {
+    height: 350vh;
+  }
+
+  .trigger-zone {
+    height: 250vh;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .scroll-container {
+    height: 300vh;
+  }
+
+  .trigger-zone {
+    height: 200vh;
+  }
+
+  .scroll-indicator {
+    bottom: 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    padding: 8px 14px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .scroll-container {
+    height: 280vh;
+  }
+
+  .trigger-zone {
+    height: 180vh;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    padding: 7px 12px;
+  }
+
 }
