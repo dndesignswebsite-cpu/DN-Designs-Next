@@ -1,244 +1,666 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import {
+  Canvas,
+  useFrame,
+  useThree,
+} from "@react-three/fiber";
+
+import {
+  useGLTF,
+  useAnimations,
+} from "@react-three/drei";
+
 import * as THREE from "three";
+
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {
+  ScrollTrigger,
+} from "gsap/ScrollTrigger";
+
 import { useGSAP } from "@gsap/react";
+
 import "./AtOneAm.css";
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(
+  ScrollTrigger,
+  useGSAP
+);
 
 
-// ======================================================
-// GLB MODEL
-// ======================================================
+/* =========================================================
+   GLB URL
+========================================================= */
 
-function CharacterModel({ scrollProgress }) {
-  const { scene, animations } = useGLTF(
-    "https://dndesigns.co.in/uploads/avatars/1AM_casestudy_scene4_4mb.glb"
+const MODEL_URL =
+  "https://dndesigns.co.in/uploads/avatars/1AM_casestudy_scene4_4mb.glb";
+
+
+/* =========================================================
+   IMPORTANT ANIMATION CONTROL
+========================================================= */
+
+/*
+  This controls how much of the GLB animation is played.
+
+  1.00 = complete GLB animation
+  0.80 = 80%
+  0.70 = 70%
+  0.60 = 60%
+  0.50 = 50%
+
+  Because your cans are going too high,
+  we intentionally stop BEFORE the final part.
+
+  Start with 0.62.
+
+  If cans still go too high:
+  0.55
+
+  If box doesn't open enough:
+  0.68
+*/
+
+const ANIMATION_END = 0.62;
+
+
+/*
+  Bigger model.
+
+  Previous:
+  1.5
+
+  Now:
+  2.0
+*/
+
+const MODEL_SCALE = 2.0;
+
+
+/* =========================================================
+   CHARACTER MODEL
+========================================================= */
+
+function CharacterModel({
+  scrollProgress,
+}) {
+  const {
+    scene,
+    animations,
+  } = useGLTF(MODEL_URL);
+
+  const {
+    actions,
+    names,
+  } = useAnimations(
+    animations,
+    scene
   );
 
-  const { actions, names } = useAnimations(animations, scene);
+  const actionRef =
+    useRef(null);
 
-  const actionRef = useRef(null);
+  /*
+    Actual smooth animation progress.
+  */
 
-  // Smooth animation progress
-  const smoothProgress = useRef(0);
+  const smoothProgress =
+    useRef(0);
 
 
-  // ====================================================
-  // SETUP MODEL + ANIMATION
-  // ====================================================
+  /* =======================================================
+     INITIALIZE GLB
+  ======================================================= */
 
   useEffect(() => {
     if (!scene) return;
 
+
+    /*
+      Material settings
+    */
+
     scene.traverse((child) => {
+
       if (child.isMesh) {
-        child.material.wireframe = false;
-        child.material.needsUpdate = true;
+
+        child.material.wireframe =
+          false;
+
+        child.material.needsUpdate =
+          true;
+
 
         if (child.material.map) {
-          child.material.map.anisotropy = 8;
+
+          child.material.map.anisotropy =
+            8;
+
         }
+
       }
+
     });
 
 
+    /*
+      Animation setup
+    */
+
     if (names.length > 0) {
-      const action = actions[names[0]];
+
+      const action =
+        actions[names[0]];
 
       if (!action) return;
 
-      // Only ONE animation cycle
-      action.setLoop(THREE.LoopOnce, 1);
 
-      action.clampWhenFinished = true;
+      action.setLoop(
+        THREE.LoopOnce,
+        1
+      );
+
+      action.clampWhenFinished =
+        true;
+
 
       action.reset();
+
       action.play();
 
-      // We control time manually
+
+      /*
+        We control animation manually.
+      */
+
       action.paused = true;
 
-      actionRef.current = action;
+
+      actionRef.current =
+        action;
+
     }
-  }, [scene, actions, names]);
+
+  }, [
+    scene,
+    animations,
+    actions,
+    names,
+  ]);
 
 
-  // ====================================================
-  // SMOOTH SCROLL → ANIMATION
-  // ====================================================
+  /* =======================================================
+     FRAME LOOP
+  ======================================================= */
 
   useFrame((state, delta) => {
-    const action = actionRef.current;
+
+    const action =
+      actionRef.current;
 
     if (!action) return;
 
-    const duration = action.getClip().duration;
 
-    // Target progress coming from ScrollTrigger
-    const target = THREE.MathUtils.clamp(
-      scrollProgress.current,
-      0,
-      1
-    );
+    const duration =
+      action.getClip().duration;
 
 
     /*
-      IMPORTANT:
-
-      Don't directly do:
-
-      action.time = target * duration
-
-      because wheel/touch can jump.
-
-      Instead smoothly approach the target.
+      Scroll target
     */
 
-    const smoothSpeed = 4;
-
-    smoothProgress.current = THREE.MathUtils.damp(
-      smoothProgress.current,
-      target,
-      smoothSpeed,
-      delta
-    );
+    const target =
+      THREE.MathUtils.clamp(
+        scrollProgress.current,
+        0,
+        1
+      );
 
 
-    // Final animation position
-    action.time = smoothProgress.current * duration;
+    /*
+      VERY SLOW FOLLOWING
+
+      Lower number = slower.
+
+      0.6 = extremely slow.
+    */
+
+    const smoothSpeed =
+      0.6;
+
+
+    smoothProgress.current =
+      THREE.MathUtils.damp(
+        smoothProgress.current,
+        target,
+        smoothSpeed,
+        delta
+      );
+
+
+    /*
+      ======================================================
+      CRITICAL PART
+      ======================================================
+
+      We DO NOT play the full animation.
+
+      Example:
+
+      ANIMATION_END = 0.62
+
+      means:
+
+      Scroll 0 → 100%
+      maps to
+      GLB 0 → 62%
+
+      So the last 38% of the GLB animation
+      is never played.
+
+      This prevents the cans from flying
+      too far upward.
+    */
+
+    const animationProgress =
+      smoothProgress.current *
+      ANIMATION_END;
+
+
+    /*
+      Set animation time.
+    */
+
+    action.time =
+      animationProgress *
+      duration;
+
   });
 
+
+  /* =======================================================
+     MODEL
+  ======================================================= */
 
   return (
     <primitive
       object={scene}
 
-      // Model size
-      scale={1.25}
+      /*
+        BIGGER BOX
+      */
 
-      // Center position
-      position={[0, -0.8, 0]}
+      scale={MODEL_SCALE}
 
-      // Front side
-      rotation={[0, Math.PI, 0]}
+      /*
+        Vertical position
+      */
+
+      position={[
+        0,
+        -0.8,
+        0,
+      ]}
+
+      /*
+        Keep original orientation
+      */
+
+      rotation={[
+        0,
+        Math.PI,
+        0,
+      ]}
     />
   );
 }
 
 
-// ======================================================
-// CAMERA
-// ======================================================
+/* =========================================================
+   CAMERA RIG
+========================================================= */
 
-function CameraRig() {
-  const { camera, size } = useThree();
+function CameraRig({
+  scrollProgress,
+}) {
+
+  const {
+    camera,
+    size,
+  } = useThree();
+
+
+  const isMobile =
+    size.width < 768;
+
+
+  /*
+    Camera progress
+  */
+
+  const cameraProgress =
+    useRef(0);
+
+
+  /* =======================================================
+     START CAMERA
+     
+     High camera.
+     Top of box visible.
+  ======================================================= */
+
+  const startPosition =
+    useRef(
+      new THREE.Vector3(
+        0,
+      3,
+      1,
+
+
+        isMobile
+          ? 4.4
+          : 4.8,
+
+        isMobile
+          ? 3.8
+          : 3.6
+      )
+    );
+
+
+  /* =======================================================
+     END CAMERA
+
+     Close + front.
+  ======================================================= */
+
+  const endPosition =
+    useRef(
+      new THREE.Vector3(
+        0,
+        1,
+        1,
+
+        isMobile
+          ? 0.55
+          : 0.4,
+
+        isMobile
+          ? 2.6
+          : 2.4
+      )
+    );
+
+
+  /*
+    Start look target
+  */
+
+  const startLookAt =
+    useRef(
+      new THREE.Vector3(
+        0,
+        -0.3,
+        0
+      )
+    );
+
+
+  /*
+    End look target
+  */
+
+  const endLookAt =
+    useRef(
+      new THREE.Vector3(
+        0,
+        -0.55,
+        0
+      )
+    );
+
+
+  const currentPosition =
+    useRef(
+      new THREE.Vector3()
+    );
+
+
+  const currentLookAt =
+    useRef(
+      new THREE.Vector3()
+    );
+
+
+  /* =======================================================
+     CAMERA INITIALIZATION
+  ======================================================= */
 
   useEffect(() => {
 
-    const isMobile = size.width < 768;
+    camera.fov =
+      isMobile
+        ? 52
+        : 45;
 
-    camera.fov = isMobile ? 52 : 45;
 
-    camera.position.set(
-      0,
-      0,
-      isMobile ? 3.1 : 2.7
+    camera.position.copy(
+      startPosition.current
     );
 
-    camera.lookAt(0, -0.1, 0);
+
+    currentLookAt.current.copy(
+      startLookAt.current
+    );
+
+
+    camera.lookAt(
+      currentLookAt.current
+    );
+
 
     camera.updateProjectionMatrix();
 
-  }, [camera, size.width]);
+  }, [
+    camera,
+    isMobile,
+  ]);
+
+
+  /* =======================================================
+     CAMERA FRAME
+  ======================================================= */
+
+  useFrame((state, delta) => {
+
+    const target =
+      THREE.MathUtils.clamp(
+        scrollProgress.current,
+        0,
+        1
+      );
+
+
+    /*
+      VERY SLOW CAMERA RESPONSE
+    */
+
+    cameraProgress.current =
+      THREE.MathUtils.damp(
+        cameraProgress.current,
+        target,
+        0.45,
+        delta
+      );
+
+
+    /*
+      Camera transition happens
+      during first 50% of total scroll.
+
+      After that camera stays
+      in front.
+    */
+
+    const raw =
+      THREE.MathUtils.clamp(
+        cameraProgress.current /
+          0.5,
+
+        0,
+        1
+      );
+
+
+    /*
+      Cinematic easing
+    */
+
+    const eased =
+      THREE.MathUtils.smoothstep(
+        raw,
+        0,
+        1
+      );
+
+
+    /*
+      Camera position
+    */
+
+    currentPosition.current.lerpVectors(
+      startPosition.current,
+      endPosition.current,
+      eased
+    );
+
+
+    camera.position.copy(
+      currentPosition.current
+    );
+
+
+    /*
+      Camera target
+    */
+
+    currentLookAt.current.lerpVectors(
+      startLookAt.current,
+      endLookAt.current,
+      eased
+    );
+
+
+    camera.lookAt(
+      currentLookAt.current
+    );
+
+  });
 
 
   return null;
 }
 
 
-// ======================================================
-// MAIN COMPONENT
-// ======================================================
+/* =========================================================
+   MAIN COMPONENT
+========================================================= */
 
 export default function AtOneAm() {
 
-  const containerRef = useRef(null);
+  const containerRef =
+    useRef(null);
+
 
   /*
-    This is NOT the actual animation.
+    Scroll target.
 
-    This is only the target scroll progress.
+    0 = beginning
+    1 = end
   */
 
-  const scrollProgress = useRef(0);
+  const scrollProgress =
+    useRef(0);
 
 
-  // ====================================================
-  // GSAP SCROLL TRIGGER
-  // ====================================================
+  /* =======================================================
+     GSAP SCROLL
+  ======================================================= */
 
   useGSAP(
     () => {
 
-      const container = containerRef.current;
+      const container =
+        containerRef.current;
 
       if (!container) return;
 
 
-      const trigger = ScrollTrigger.create({
+      const trigger =
+        ScrollTrigger.create({
 
-        trigger: container,
+          trigger:
+            container,
 
-        start: "top top",
 
-        /*
-          More scroll distance.
+          start:
+            "top top",
 
-          GLB animation will take
-          around 300vh of page scrolling.
-        */
-
-        end: "+=300vh",
-
-        /*
-          Very smooth connection between
-          scroll and target progress.
-        */
-
-        scrub: 1.5,
-
-        onUpdate: (self) => {
 
           /*
-            Only update target.
+            =================================================
+            EXTREMELY LONG SCROLL
+            =================================================
 
-            CharacterModel will smoothly
-            approach this value.
+            2000vh
+
+            This means the animation progresses
+            very slowly while scrolling.
           */
 
-          scrollProgress.current = self.progress;
-        },
+          end:
+            "+=2000vh",
 
-      });
+
+          /*
+            High scrub gives smoother
+            scroll response.
+          */
+
+          scrub:
+            4,
+
+
+          onUpdate:
+            (self) => {
+
+              scrollProgress.current =
+                self.progress;
+
+            },
+
+        });
 
 
       return () => {
+
         trigger.kill();
+
       };
 
     },
 
     {
-      scope: containerRef,
+      scope:
+        containerRef,
     }
   );
 
+
+  /* =======================================================
+     RENDER
+  ======================================================= */
 
   return (
     <div className="at1amhero">
@@ -248,75 +670,120 @@ export default function AtOneAm() {
         className="scroll-container"
       >
 
-        {/* =========================================
-            STICKY CANVAS
-        ========================================= */}
-
         <div className="canvas-wrapper">
 
           <Canvas
-            dpr={[1, 1.5]}
+
+            dpr={[
+              1,
+              1.5,
+            ]}
+
 
             camera={{
-              position: [0, 0, 2.7],
+              position: [
+                0,
+                4.8,
+                3.6,
+              ],
+
               fov: 45,
             }}
 
+
             gl={{
-              antialias: true,
-              alpha: true,
-              powerPreference: "high-performance",
+              antialias:
+                true,
+
+              alpha:
+                true,
+
+              powerPreference:
+                "high-performance",
             }}
+
           >
 
-            {/* LIGHT */}
+            {/* =========================================
+                LIGHTING
+            ========================================= */}
 
-            <ambientLight intensity={2} />
+            <ambientLight
+              intensity={2}
+            />
+
 
             <directionalLight
-              position={[5, 5, 5]}
+              position={[
+                5,
+                5,
+                5,
+              ]}
               intensity={3}
             />
 
+
             <directionalLight
-              position={[-5, 5, -5]}
+              position={[
+                -5,
+                5,
+                -5,
+              ]}
               intensity={1.5}
             />
 
+
             <directionalLight
-              position={[0, -2, 5]}
+              position={[
+                0,
+                -2,
+                5,
+              ]}
               intensity={0.8}
             />
 
 
-            {/* CAMERA */}
+            {/* =========================================
+                CAMERA
+            ========================================= */}
 
-            <CameraRig />
+            <CameraRig
+              scrollProgress={
+                scrollProgress
+              }
+            />
 
 
-            {/* GLB */}
+            {/* =========================================
+                GLB
+            ========================================= */}
 
             <CharacterModel
-              scrollProgress={scrollProgress}
+              scrollProgress={
+                scrollProgress
+              }
             />
 
           </Canvas>
 
 
-          {/* =======================================
+          {/* =========================================
               SCROLL INDICATOR
-          ======================================= */}
+          ========================================= */}
 
           <div className="scroll-indicator">
-            SCROLL TO EXPLORE THE EXPERIENCE
+
+            SCROLL TO EXPLORE
+            THE EXPERIENCE
+
           </div>
 
         </div>
 
 
-        {/* =========================================
+        {/* =============================================
             SCROLL SPACE
-        ========================================= */}
+        ============================================= */}
 
         <div className="trigger-zone"></div>
 
@@ -327,10 +794,10 @@ export default function AtOneAm() {
 }
 
 
-// ======================================================
-// PRELOAD GLB
-// ======================================================
+/* =========================================================
+   PRELOAD
+========================================================= */
 
 useGLTF.preload(
-  "https://dndesigns.co.in/uploads/avatars/1AM_casestudy_scene4_4mb.glb"
+  MODEL_URL
 );
