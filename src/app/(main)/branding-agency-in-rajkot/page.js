@@ -477,7 +477,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/BrandingforRajkotsGrowingBusinessLandscape.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Branding strategy and creative packaging design by DN Designs"
+                  alt="	Branding strategy and creative packaging design for Rajkot businesses"
                 ></img>
               </div>
             </div>
@@ -485,10 +485,10 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  Rajkot has a diverse business ecosystem shaped by engineering, machine tools, automotive components, foundries and jewellery manufacturing. The city also has a strong presence in textiles, food processing and emerging consumer businesses. As companies explore new markets and customer segments, building a recognisable brand becomes increasingly important. A good product may open the door, but its identity, presentation and communication influence how customers perceive it.
+                Rajkot has a diverse business ecosystem shaped by engineering, machine tools, automotive components, foundries and jewellery manufacturing. The city also has a strong presence in textiles, <Link href="/fmcg-branding" className="inter-linking-link">FMCG</Link> and emerging consumer businesses. As companies explore new markets and customer segments, building a recognisable brand becomes increasingly important. A good product may open the door, but its identity, presentation and communication influence how customers perceive it.
                 </p>
                  <p className="why-you-should-work-section-para">
-                 As a branding company in Rajkot, we understand the need for brands to communicate their strengths, establish credibility and create a distinct market presence. Our approach combines brand strategy, visual identity and creative communication to help businesses move beyond simply selling products and start building lasting brand recognition.
+                 As a branding company in Rajkot, we understand the need for brands to communicate their strengths, establish credibility and create a distinct market presence. Our approach combines <Link href="/brand-strategy" className="inter-linking-link">brand strategy</Link>, visual identity and creative communication to help businesses move beyond simply selling products and start building lasting brand recognition.
                 </p>
               </div>
             </div>
@@ -509,7 +509,7 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4 order-2 order-lg-1">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  A successful brand is shaped by several elements working together. Its positioning, name, visual identity, messaging and customer experience all contribute to how people recognise and remember it. Our branding firm offers comprehensive branding services in Rajkot, covering brand strategy, naming, logo design, visual identity, packaging and brand guidelines. Our work also extends to website design and digital brand experiences, ensuring consistency across different platforms. Whether you're building a brand from the ground up or looking to improve an existing one, our branding solutions are developed around your business objectives, category and audience. At DN Designs, our team serves businesses across industries. We bring every brand element together to create a cohesive identity that reflects your business values and supports your growth.
+                  A successful brand is shaped by several elements working together. Its positioning, name, visual identity, messaging and customer experience all contribute to how people recognise and remember it. Our branding firm offers comprehensive branding services in Rajkot, covering brand strategy, naming, logo design, <Link href="/brand-identity-design-services" className="inter-linking-link">visual identity</Link>, packaging and brand guidelines. Our work also extends to website design and digital brand experiences, ensuring consistency across different platforms. Whether you're building a brand from the ground up or looking to improve an existing one, our branding solutions are developed around your business objectives, category and audience. At DN Designs, our team serves businesses across industries. We bring every brand element together to create a cohesive identity that reflects your business values and supports your growth.
                 </p>
               </div>
             </div>
@@ -519,7 +519,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/CompleteBrandingServicesinRajkot forGrowingBusinesses.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Professional branding services and brand identity design by DN Designs"
+                  alt="Complete branding services and brand identity design for Rajkot businesses"
                 ></img>
               </div>
             </div>
@@ -545,7 +545,7 @@ const Page = async () => {
                   </span>
                 </h2>
                 <p className="packaging-design-across-section-para">
-                 Every business has something that sets it apart. The challenge is communicating that difference in a way customers can understand and appreciate. Our branding process begins with understanding your business, audience, competitors and long-term objectives. These insights help shape your positioning, brand messaging and creative direction. From there, we develop the visual elements that bring your identity to life, including your logo, typography, colours and overall design language. 
+                 Every business has something that sets it apart. The challenge is communicating that difference in a way customers can understand and appreciate. Our <Link href="/branding" className="inter-linking-link">branding process</Link> begins with understanding your business, audience, competitors and long-term objectives. These insights help shape your positioning, brand messaging and creative direction. From there, we develop the visual elements that bring your identity to life, including your logo, typography, colours and overall design language. 
                 </p>
                  <p className="packaging-design-across-section-para">
                 As a top-notch 360 branding agency in Rajkot, we believe every creative decision should have a purpose. The result is a well-considered brand identity that reflects your business rather than following a passing design trend.
@@ -558,7 +558,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/AStrategicBrandingProcessThatBringsYourVisiontolife.webp"
                   className="img-fluid"
-                  alt="Brand strategy and creative packaging design by DN Designs"
+                  alt="Strategic brand development and creative branding process"
                 ></img>
               </div>
             </div>
@@ -589,7 +589,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/ConsistentBrandDesignAcrossEveryCustomerTouchpoint.webp"
                   className="img-fluid"
-                  alt="Brand identity and packaging design for Delhi's diverse market"
+                  alt="Consistent brand identity and visual design across customer touchpoints"
                 ></img>
               </div>
             </div>
@@ -603,7 +603,7 @@ const Page = async () => {
                   </span>
                 </h2>
                 <p className="packaging-design-across-section-para">
-                  Your brand appears in more places than you might realise. A product package, retail display, company catalogue, website or social media post can all shape a customer's impression. When these touchpoints look and communicate differently, it becomes harder for people to recognise your business. At DN Design studio, we ensure a consistent visual identity and communication system. From colours and typography to imagery and messaging, every detail follows a common direction. Our brand design solutions help businesses maintain this consistency, making their identity familiar wherever customers discover, explore or interact with their products.
+                  Your brand appears in more places than you might realise. A product package, retail display, <Link href="/catalogue-designing" className="inter-linking-link">company catalogue</Link>, website or social media post can all shape a customer's impression. When these touchpoints look and communicate differently, it becomes harder for people to recognise your business. At DN Design studio, we ensure a consistent visual identity and communication system. From colours and typography to imagery and messaging, every detail follows a common direction. Our brand design solutions help businesses maintain this consistency, making their identity familiar wherever customers discover, explore or interact with their products.
                 </p>
               </div>
             </div>
@@ -647,7 +647,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/BrandingandMarketingThatPrepareYourBusinessforGrowth.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Branding process from initial concept to final brand identity"
+                    alt="Branding and marketing strategy for business growth"
                   ></img>
                 </div>
               </div>
@@ -662,7 +662,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                   Taking a product to market involves several decisions beyond its design and packaging. Businesses need to understand their customers, evaluate competitors, establish pricing and identify the right distribution channels. As a branding and marketing agency serving Rajkot businesses, we bring these considerations together with your branding objectives. Our go-to-market services cover product positioning, audience understanding, packaging, communication and channel planning to prepare businesses for launch. Whether you're introducing a new FMCG, health and wellness, jewellery businesses or expanding an established manufacturing business or exploring e-commerce and quick commerce, we help create a clear market approach that connects your product with the right audience.
+                   Taking a product to market involves several decisions beyond its design and packaging. Businesses need to understand their customers, evaluate competitors, establish pricing and identify the right distribution channels. As a branding and marketing agency serving Rajkot businesses, we bring these considerations together with your branding objectives. Our go-to-market services cover <Link href="/brand-positioning" className="inter-linking-link">product positioning</Link>, audience understanding, packaging, communication and channel planning to prepare businesses for launch. Whether you're introducing a new FMCG, <Link href="/wellness-branding" className="inter-linking-link">health and wellness</Link>, jewellery businesses or expanding an established manufacturing business or exploring e-commerce and quick commerce, we help create a clear market approach that connects your product with the right audience.
                   </p>
                 </div>
               </div>
@@ -685,7 +685,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                    Rajkot businesses have built their reputation across manufacturing, engineering, jewellery and several consumer categories. Today, many have opportunities to reach customers beyond their immediate markets, whether across India or internationally. Making that move requires a brand that can communicate effectively to different audiences while retaining its core identity. At DN Designs, we bring together strategic thinking, design expertise and a wider market perspective to help businesses prepare for these opportunities. As a leading brand design company working with businesses across India, we help Rajkot brands develop identities that reflect their ambitions and support their next stage of growth.
+                    Rajkot businesses have built their reputation across manufacturing, engineering, jewellery, <Link href="/food-beverage-branding" className="inter-linking-link">F&B</Link> and several consumer categories. Today, many have opportunities to reach customers beyond their immediate markets, whether across India or internationally. Making that move requires a brand that can communicate effectively to different audiences while retaining its core identity. At DN Designs, we bring together strategic thinking, design expertise and a wider market perspective to help businesses prepare for these opportunities. As a leading brand design company working with businesses across India, we help Rajkot brands develop identities that reflect their ambitions and support their next stage of growth.
                   </p>
                 </div>
               </div>
@@ -695,7 +695,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/FromLocalBusinessStrengthtoGlobalBrandPresence.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Rebranding and brand identity design for growing businesses"
+                    alt="Brand identity strategy for expanding from local to global markets"
                   ></img>
                 </div>
               </div>
@@ -715,7 +715,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/RebrandingServicesinRajkotGiveYourBrandaFreshDirection.webp"
                   className="img-fluid"
-                  alt="Scalable brand identity and strategic branding by DN Designs"
+                  alt="Rebranding and brand identity design for Rajkot businesses"
                 ></img>
               </div>
             </div>
@@ -726,7 +726,7 @@ const Page = async () => {
                  Rebranding Services in Rajkot: Give Your Brand a Fresh Direction
                 </h2>
                 <p className="how-we-approach-section-col-para">
-              As a business grows, its brand may need to evolve alongside it. New product categories, changing customer expectations, market expansion or an outdated visual identity can all signal the need for a refresh. Rebranding doesn't always mean starting from zero. Sometimes, refining your logo, updating your messaging or revisiting your positioning can make a meaningful difference. Our rebranding services help businesses assess their existing identity and decide what needs to change. From a complete visual transformation to a few thoughtful updates, we create a direction that feels relevant while retaining the qualities customers already associate with your business.
+              As a business grows, its brand may need to evolve alongside it. New product categories, changing customer expectations, market expansion or an outdated visual identity can all signal the need for a refresh. Rebranding doesn't always mean starting from zero. Sometimes, refining your logo, updating your messaging or revisiting your positioning can make a meaningful difference. Our <Link className="inter-linking-link" href="/rebranding">rebranding services</Link> help businesses assess their existing identity and decide what needs to change. From a complete visual transformation to a few thoughtful updates, we create a direction that feels relevant while retaining the qualities customers already associate with your business.
                 </p>
                 <img
                   src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png"

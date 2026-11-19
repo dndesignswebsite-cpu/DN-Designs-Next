@@ -1,0 +1,73 @@
+.swot-tab-section {
+    width: 100%;
+    /* padding: 60px 20px; */
+}
+
+.swot-tab-wrapper {
+    width: 100%;
+}
+
+/* Tabs */
+.swot-tabs {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Tab Buttons */
+.swot-tab-button {
+    background-color:rgba(32, 32, 32, 0.08);
+    border: 1px solid rgba(32, 32, 32, 0.32);
+    outline: none;
+    cursor: pointer;
+    padding: 10px 24px;
+    transition: 0.3s ease;
+    font-size: 17px;
+    color: #222;
+    margin: 0 10px;
+    font-family: var(--font-helvetica);
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(32, 32, 32, 0.32);
+}
+
+.swot-tab-button:hover {
+    background-color: #ddd;
+}
+
+.swot-tab-button.active {
+    background-color: rgba(32, 32, 32, 1);
+    border: 1px solid #000;
+    color: #fff;
+}
+
+/* Tab Content */
+.swot-tab-content {
+    width: 100%;
+}
+
+/* Individual Panel */
+.swot-tab-panel {
+    display: none;
+    padding: 30px 25px;
+}
+
+.swot-tab-panel.active {
+    display: block;
+}
+
+
+/* Mobile */
+@media (max-width: 991px) {
+   
+    .swot-tabs {
+        overflow-x: auto;
+    }
+
+    .swot-tab-button {
+        flex: 0 0 auto;
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+
+}
