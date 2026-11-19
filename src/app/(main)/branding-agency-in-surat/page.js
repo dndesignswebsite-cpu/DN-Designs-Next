@@ -485,7 +485,7 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  Surat is one of India’s most enterprising business cities. Known for textiles, diamonds and a thriving food culture, it is now seeing a wave of new D2C, FMCG, wellness and skincare brands launching from its markets and manufacturing units. But more launches mean tougher competition. Your product may be excellent, yet shoppers decide in seconds, and a forgettable pack or an inconsistent message sends them elsewhere. Strong branding gives your business an identity that customers recognise, trust and return to. Looking for the best branding agency in Surat? We are here to help your products get noticed and chosen. 
+                  Surat is one of India’s most enterprising business cities. Known for textiles, diamonds and a thriving food culture, it is now seeing a wave of new <Link className="inter-linking-link" href="/d2c-branding">D2C</Link>, FMCG, wellness and skincare brands launching from its markets and manufacturing units. But more launches mean tougher competition. Your product may be excellent, yet shoppers decide in seconds, and a forgettable pack or an inconsistent message sends them elsewhere. Strong branding gives your business an identity that customers recognise, trust and return to. Looking for the best branding agency in Surat? We are here to help your products get noticed and chosen. 
                 </p>
               </div>
             </div>
@@ -571,7 +571,7 @@ const Page = async () => {
              Surat has its own way of doing business. Its markets are fast, price-aware and full of established names, and its buyers range from wholesale traders to young online shoppers. A borrowed template cannot handle that mix.
               </p>
                <p className="key-elements-effective-section-container-para">
-             So we study your category before we design anything. We look at what your customers value, how rival brands present themselves and where the gaps are that you can own. For food and beverage, FMCG, textile, wellness and skincare brands, this research guides every decision, from identity and messaging to packaging design and <Link href="/brand-positioning" className="inter-linking-link">market positioning</Link>, so your brand stands apart for reasons that are real and relevant.
+             So we study your category before we design anything. We look at what your customers value, how rival brands present themselves and where the gaps are that you can own. For <Link className="inter-linking-link" href="/food-beverage-branding">food and beverage</Link>, FMCG, textile, wellness and skincare brands, this research guides every decision, from identity and messaging to packaging design and <Link href="/brand-positioning" className="inter-linking-link">market positioning</Link>, so your brand stands apart for reasons that are real and relevant.
               </p>
           </div>
         </div>
