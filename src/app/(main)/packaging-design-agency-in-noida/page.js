@@ -687,8 +687,7 @@ export async function generateMetadata() {
              {/* IndustriesSectionNewLayout */}       
               <IndustriesSectionNewLayout/>
 
-              {/* Your Packaging Design Partner in Noida0 */}
-
+              {/* Your Packaging Design Partner in Noida */}
               <section className='your-packaging-design-noida-section'>
                 <div className='container'>
                   <h2 className='your-packaging-design-noida-section-heading'>Your Packaging Design <span className='your-packaging-design-noida-section-heading-span'>Partner in Noida</span></h2>

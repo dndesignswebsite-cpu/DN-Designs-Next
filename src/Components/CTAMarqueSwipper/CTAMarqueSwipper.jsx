@@ -334,8 +334,8 @@ function CTAMarqueSwipper() {
           </div>
         </SwiperSlide>
 
-{/* 9 */}
 
+{/* 9 */}
  <SwiperSlide>
           <div className='cta-swipper-slide'>
             <div className='row'>
@@ -343,8 +343,7 @@ function CTAMarqueSwipper() {
                 <div className='cta-swipper-slide-col'>
                    <div className="cta-col-content-div">
                       
-                         <p className="cta-swipper-label-para">Something Dazzling Is On Its Way 
-  </p>
+                         <p className="cta-swipper-label-para">Something Dazzling Is On Its Way </p>
 
                         <h2 className="cta-swipper-heading">A New Jewellery Brand Is Almost Ready To Shine.  </h2>
 
@@ -365,6 +364,61 @@ function CTAMarqueSwipper() {
                   <img src="https://dndesigns.co.in/uploads/pages/wesbdhjewvuuyjQaasa-1x1.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Qaasa jewellery brand preview'/>
 
                   <img src="https://dndesigns.co.in/uploads/pages/keewdhjQaasa-1x1.5-2.jpg.jpeg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Qaasa jewellery brand preview'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+
+
+        {/* 10 */}
+ <SwiperSlide>
+          <div className='cta-swipper-slide'>
+            <div className='row'>
+              <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
+                <div className='cta-swipper-slide-col'>
+                   <div className="cta-col-content-div">
+                      
+                         <p className="cta-swipper-label-para">Take a Look at Our Jelly Good Design Story</p>
+
+                        <h2 className="cta-swipper-heading">We brought India’s first functional jelly to life with playful, distinctive packaging.</h2>
+                        </div> 
+                </div>
+              </div>
+
+              
+              <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
+                <div className='cta-col-img-div'>
+                  <img src="https://dndesigns.co.in/uploads/pages/feechitakealookindiasfirstjelly.webp" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Qaasa jewellery brand preview'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/feechitakealookindiasfirstjellymobile.jpg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Qaasa jewellery brand preview'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+
+        {/* 11 */}
+ <SwiperSlide>
+          <div className='cta-swipper-slide'>
+            <div className='row'>
+              <div className='col-12 col-sm-12 col-md-8 col-lg-8'>
+                <div className='cta-swipper-slide-col'>
+                   <div className="cta-col-content-div">
+                      
+                         <p className="cta-swipper-label-para">Stepping Into Something New</p>
+
+                        <h2 className="cta-swipper-heading">We’re putting our creative spin on an exciting new footwear venture.</h2>
+                        </div> 
+                </div>
+              </div>
+              <div className='col-12 col-sm-12 col-md-4 col-lg-4'>
+                <div className='cta-col-img-div'>
+                  <img src="https://dndesigns.co.in/uploads/pages/mazewalkSteppingIntoSomethingNew.webp" className='img-fluid cta-swipper-img cta-swipper-img-desktop' alt='Qaasa jewellery brand preview'/>
+
+                  <img src="https://dndesigns.co.in/uploads/pages/mazewalkSteppingIntoSomethingNewmobile.jpg" className='img-fluid cta-swipper-img cta-swipper-img-mobile' alt='Qaasa jewellery brand preview'/>
                 </div>
               </div>
             </div>
