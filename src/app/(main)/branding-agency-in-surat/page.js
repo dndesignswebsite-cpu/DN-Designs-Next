@@ -477,7 +477,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/BrandingforSuratsFastMovingBusinesses.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Branding strategy and creative packaging design by DN Designs"
+                  alt="Branding strategy and creative packaging design for Surat businesses"
                 ></img>
               </div>
             </div>
@@ -516,7 +516,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/CompleteBrandingServicesforSuratBrands.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Professional branding services and brand identity design by DN Designs"
+                  alt="Complete branding services and brand identity design for Surat brands"
                 ></img>
               </div>
             </div>
@@ -552,7 +552,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/YourVisionShapedIntoaBrandIdentity.webp"
                   className="img-fluid"
-                  alt="Brand strategy and creative packaging design by DN Designs"
+                  alt="Brand identity and packaging design for Surat businesses"
                 ></img>
               </div>
             </div>
@@ -586,7 +586,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/ConsistentFromCountertoCart.webp"
                   className="img-fluid"
-                  alt="Brand identity and packaging design for Delhi's diverse market"
+                  alt="Consistent brand identity and packaging design across retail and digital channels"
                 ></img>
               </div>
             </div>
@@ -644,7 +644,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/LaunchReadyBrandingBackedbyGoToMarketThinking.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Branding process from initial concept to final brand identity"
+                    alt="Branding process from concept to go-to-market strategy"
                   ></img>
                 </div>
               </div>
