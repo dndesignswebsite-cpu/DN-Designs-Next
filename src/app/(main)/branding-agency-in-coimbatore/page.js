@@ -477,7 +477,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/BrandingforCoimbatoresAmbitiousBusinesses.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="	Branding strategy and creative packaging design for Rajkot businesses"
+                  alt="Branding strategy and creative packaging design for Coimbatore businesses"
                 ></img>
               </div>
             </div>
@@ -527,7 +527,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/CompleteBrandingServicesforCoimbatoreBrands.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Complete branding services and brand identity design for Rajkot businesses"
+                  alt="Complete branding services and brand identity design for Coimbatore brands"
                 ></img>
               </div>
             </div>
@@ -672,7 +672,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/ConsistencyFromStoreShelftoSmartphone.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Branding and marketing strategy for business growth"
+                    alt="Consistent brand identity across retail and digital touchpoints"
                   ></img>
                 </div>
               </div>
@@ -726,7 +726,7 @@ const Page = async () => {
                   <img
                     src="https://dndesigns.co.in/uploads/pages/BrandingThatsReadyforLaunchDay.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Brand identity strategy for expanding from local to global markets"
+                    alt="Go-to-market branding strategy for a successful product launch"
                   ></img>
                 </div>
               </div>
@@ -746,7 +746,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/FromLocalRootsToGlobalReach.webp"
                   className="img-fluid"
-                  alt="Rebranding and brand identity design for Rajkot businesses"
+                  alt="Brand identity strategy for expanding from local to global markets"
                 ></img>
               </div>
             </div>
@@ -784,7 +784,7 @@ const Page = async () => {
                          <div className='row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5 mt-4'>
                           <div className='your-packaging-design-noida-section-img-col'>
-                          <img src="https://dndesigns.co.in/uploads/pages/IsItTimeforaBrandRefreshoraFullRebrand.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Creative packaging design collaboration between DN Designs and brands"></img>
+                          <img src="https://dndesigns.co.in/uploads/pages/IsItTimeforaBrandRefreshoraFullRebrand.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Brand refresh and rebranding strategy for Coimbatore businesses"></img>
                           </div>
                         </div>
       
@@ -794,7 +794,7 @@ const Page = async () => {
                             <p className='your-packaging-design-noida-section-content-col'>Businesses grow, and sometimes their brands fall behind. Your audience may have changed, your product range may have expanded, or your current look may no longer match your ambitions. When that happens, the question is whether you need a refresh or a complete rebrand. We help you answer it by identifying what should evolve and what is worth keeping, so loyal customers stay with you while new ones connect easily. </p>
                             <p className='your-packaging-design-noida-section-content-col'>At DN Designs, we help established brands regain relevance and stay competitive through <Link href="/rebranding" className="inter-linking-link">strategic rebranding</Link>, from sharpening their positioning to refreshing their visual identity and communication. For long-standing Coimbatore businesses, this can help a trusted name stay relevant and move confidently into its next chapter. </p>
                             </div>
-                            <img src="https://dndesigns.co.in/uploads/pages/IsItTimeforaBrandRefreshoraFullRebrandsecond.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="DN Designs partnering with businesses for strategic packaging design"></img>
+                            <img src="https://dndesigns.co.in/uploads/pages/IsItTimeforaBrandRefreshoraFullRebrandsecond.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="Strategic rebranding and visual identity design by DN Designs"></img>
                           </div>
                         </div>
                       </div>
