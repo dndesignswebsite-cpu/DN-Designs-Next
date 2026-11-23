@@ -12,6 +12,8 @@ import { notFound } from "next/navigation";
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb';
 import "./phool-brand-audit.css"
 import Form from '@/Components/Form/Form';
+import TalkToUs from '@/Components/TalkToUsCityPages/TalkToUsCityPages';
+import SwotTabSectionBrandAudit from '@/Components/SwotTabSectionBrandAudit/SwotTabSectionBrandAudit';
 
 
 // meta tags
@@ -93,6 +95,61 @@ async function page() {
         }
       }
       // --- SCHEMA CLEANING LOGIC END ---
+
+
+      const tabs = [
+        {
+            id: "first_tab",
+            title: "Strengths",
+            heading: "Strengths",
+            points: [
+                "Distinctive input material (temple flowers) and a patented flowercycling process, run at a scale few competitors can match. ",
+
+                "Strong third-party validation: Fair for Life-Fairtrade and Ecocert certifications, UN awards, and Alia Bhatt as an investor. Its Fleather product also won PETA recognition.",
+
+                "A clear social impact story (women’s livelihoods) that is built into how the products are made, not added for marketing.",
+            ],
+        },
+
+        {
+            id: "sec_tab",
+            title: "Weaknesses",
+            heading: "Weaknesses",
+            points: [
+                "No officially stated brand mantra: the closest line, the homepage banner, is long and hard to repeat, so the verbal identity is less developed than the visual and product story. ",
+
+                "Reliant on a single hero narrative (temple waste) across a growing and diversifying product range, which risks category confusion as SKUs multiply.",
+
+                "Premium pricing in a category where mass-market incense sells for a fraction of the price. Frequent discounting can undercut the premium positioning.",
+            ],
+        },
+
+        {
+            id: "third_tab",
+            title: "Opportunities",
+            heading: "Opportunities",
+            points: [
+                "Fleather (Phool's flower-based vegan leather material) and its other biomaterials give Phool a credible path beyond incense into fashion, packaging and B2B materials, categories that could offer higher value than fragrance. ",
+
+                "Corporate and festive gifting (Diwali, Rakhi) is a proven high-AOV occasion the brand is already leaning into and can push harder.",
+
+                "Global wellness and clean-fragrance demand gives an opening to export the 'premium, modern-Indian' positioning.",
+            ],
+        },
+
+        {
+            id: "fourth_tab",
+            title: "Threats",
+            heading: "Threats",
+            points: [
+                "Legacy incense brands (Cycle, Mangaldeep) have decades of trade distribution and trust; something Phool cannot out-scale on price.",
+
+                "New D2C wellness and home-fragrance entrants can borrow Phool’s sustainability language, and genuine rivals such as Nirmalaya already offer a similar temple-flower story. Phool’s scale, certifications and patented process help it stay distinct. ",
+
+                "As more brands make “eco” claims, sustainability alone is becoming a weaker differentiator, which makes Phool’s focus on desirability and origin all the more important. ",
+            ],
+        },
+    ];
 
 
       // form content
@@ -354,12 +411,21 @@ async function page() {
 
                 {/* [ Let’s Talk ] */}
                 <section className='lets-talk-section'>
-                <div className='lets-talk-section-top-content'>
+                {/* <div className='lets-talk-section-top-content'>
                 <p className='lets-tak-label-para'>[ Still With Us? ]</p>
                 <h2 className='lets-tak-main-head'>Nobody's found your gaps yet. </h2>
-                {/* <TalkToUs/> */}
                 <BrandAuditCta/>
-                </div>
+                </div> */}
+
+                  {/* Ready For Your New Website? */}
+                                <div className='ready-for-your-new-website-section'>
+                                    <div className="ready-for-your-new-website-section-content">
+                                        <h2 className='ready-for-your-new-website-section-content-head'>Still With Us? Nobody's found your gaps yet. 
+                </h2>
+                                        <TalkToUs/>
+                                        
+                                    </div>
+                                </div>
 
                 <div className='brand-attributes-div' id='brand-attributes'>
                     <h2 className='brand-attributes-head'>Brand Attributes</h2>
@@ -379,7 +445,7 @@ async function page() {
                 </section>
 
                 {/* SWOT */}
-                <section className='swot-section' id='swot'>
+                {/* <section className='swot-section' id='swot'>
                     <h2 className='swot-section-head'>SWOT</h2>
                     <div className='row swot-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
@@ -428,7 +494,15 @@ async function page() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+
+
+                 {/*new SWOT */}
+                                <section className='swot-section' id='swot'>
+                                    <h2 className='swot-section-head'>SWOT</h2>
+                                    <SwotTabSectionBrandAudit tabs={tabs}/>
+                                </section>
+                                
 
 
                 {/* STP */}
@@ -461,14 +535,18 @@ async function page() {
                 </section>
 
 
-                {/* PoPs & PoDs */}
+                
+
+
+
+                  {/*new PoPs & PoDs */}
                 <section className='pop-pod-section' id='pops-and-pods'>
-                <h2 className='pop-pod-section-head'>PoPs and PoDs</h2>
+                <h2 className='pop-pod-section-head'>POPs and PODs</h2>
                     <div className='row pop-pod-section-row'>
                         <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
-                            <div className='pop-pod-section-col'>
-                                <h2 className='pop-pod-section-col-head'>Points of Parity</h2>
-                                 <ul className='brand-element-col-ul'>
+                            <div className='pop-pod-section-col-black'>
+                                <h2 className='pop-pod-section-col-head-black'>Points of Parity</h2>
+                                 <ul className='brand-element-col-ul-black'>
                                     <li>Serves the same core need as any incense brand: fragrance for ritual, meditation or ambient home use.</li>
                                     <li>Available through the same channels competitors use: D2C website, quick commerce, marketplaces, select retail stores.</li>
                                     <li>Offers standard incense formats of sticks, cones and dhoop, and extends into home-fragrance formats such as diffusers.</li>
@@ -477,9 +555,9 @@ async function page() {
                         </div>
 
                           <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
-                            <div className='pop-pod-section-col'>
-                                <h2 className='pop-pod-section-col-head'>Points of Difference</h2>
-                                 <ul className='brand-element-col-ul'>
+                            <div className='pop-pod-section-col-white'>
+                                <h2 className='pop-pod-section-col-head-white'>Points of Difference</h2>
+                                 <ul className='brand-element-col-ul-white'>
                                     <li>Made from recycled temple flowers using a patented process, and produced at a larger scale than other flower-recycling brands. </li>
                                     <li>Charcoal-free formulation, a real functional difference from most mass-market incense.</li>
                                     <li>Fair for Life-Fairtrade and Ecocert certified, and recognised with UN awards, credentials that few Indian incense brands hold. Its Fleather product has also won PETA recognition.</li>
@@ -490,14 +568,15 @@ async function page() {
                 </section>
 
 
+
                 {/* Product mix */}
-                <section className='product-mix-section' id='product-mix'>
+                {/* <section className='product-mix-section' id='product-mix'>
                     <h2 className='product-mix-section-head'>Product Mix</h2>
                     <div className='product-mix-section-img-div'>
                         <img src="https://dndesigns.co.in/uploads/pages/A-Vibrant-Diwali-Celebration-Still-Life.jpg.webp" className='img-fluid product-mix-section-img'></img>
                     </div>
                      
-                     {/* row 1 */}
+              
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -508,7 +587,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 2 */}
+              
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -519,7 +598,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 3 */}
+                 
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -530,7 +609,7 @@ async function page() {
                     </div>
 
                     
-                     {/* row 4 */}
+                   
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -539,10 +618,30 @@ async function page() {
                         </div>
                         </div>
                     </div>
+                </section> */}
+
+
+                 {/*new Product mix  */}
+                <section className='product-mix-section' id='product-mix'>
+                    <h2 className='product-mix-section-head'>Product Mix</h2>
+                    <div className='product-mix-section-img-div'>
+                        <img src="https://dndesigns.co.in/uploads/pages/A-Vibrant-Diwali-Celebration-Still-Life.jpg.webp" className='img-fluid product-mix-section-img'></img>
+                    </div>
+                    <div className='product-mix-list-div'>
+                        <ul className='product-mix-list'>
+                            <li className='product-mix-list-item'>Core incense range: sticks, cones, dhoop and bambooless incense across multiple fragrance families.</li>
+                            <li className='product-mix-list-item'>Ritual accessories: havan cups, and festive/devotional collections tied to specific deities and occasions.</li>
+                            <li className='product-mix-list-item'>Home and lifestyle extensions: reed diffusers, essential oils, car fresheners, candles, mosquito repellents.</li>
+
+                                  <li className='product-mix-list-item'>Gifting: curated boxes for occasions like Diwali & Rakhi. Corporate gifting, now a meaningful part of the catalogue.</li>
+                        </ul>
+                    </div>
                 </section>
 
+
+
                 {/* Pricing, Distribution & Campaigns */}
-                <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
+                {/* <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
                     <h2 className='pricing-distrubution-section-main-head'>Pricing, Distribution & Campaigns</h2>
 
                     <div className='row pricing-distrubution-section-row'>
@@ -572,6 +671,46 @@ async function page() {
                                 <ul className='brand-element-col-ul'>
                                     <li>Festive-led activity (Diwali, Rakhi, Holi) and temple-themed collections such as Banke Bihari, alongside an active Instagram presence.</li>
                                     <li>Story-led press and awards (UN, PETA for Fleather) supply much of the brand credibility.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
+
+
+                 {/*new Pricing, Distribution & Campaigns */}
+                <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
+                    <h2 className='pricing-distrubution-section-main-head'>Pricing, Distribution & Campaigns</h2>
+
+                    <div className='row pricing-distrubution-section-row'>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-black'>
+                                <h2 className="pricing-distrubution-section-col-head-black">Pricing</h2>
+                                <ul className='brand-element-col-ul-pdc-black'>
+                                    <li>Tiered clearly: everyday incense priced to compete with premium (not mass) shelf, gift sets priced as considered purchases.</li>
+                                    <li>Combo packs, refill packs, and bundling used to lift AOV, though discounts are also widely used across the range.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Distribution</h2>
+                                <ul className='brand-element-col-ul-white'>
+                                    <li>D2C-first through phool.co, supported by marketplace and quick commerce presence.</li>
+                                    <li>Expanding into corporate gifting as a distinct B2B-lite channel alongside consumer retail.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Campaigns</h2>
+                                <ul className='brand-element-col-ul-white'>
+                                    <li>Festive-led activity (Diwali, Rakhi, Holi) and temple-themed collections such as Banke Bihari, alongside an active Instagram presence. </li>
+                                    <li>Story-led press and awards (UN, PETA for Fleather) supply much of the brand credibility. </li>
                                 </ul>
                             </div>
                         </div>
@@ -737,99 +876,62 @@ async function page() {
 
 
 
-            {/* Suggestions & Recommendations */}
-                 <section className='product-mix-section' id='suggestions-recommendations'>
-                    <h2 className='product-mix-section-head'>Suggestions & Recommendations</h2>
-                     {/* row 1 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                        <p className='suggestions-recommendations-head-para'>Build A Proper Verbal Identity System. </p>
-                            <p className='product-mix-section-row-col-para'>The closest thing to a mantra, the 14-word homepage banner, is too long to travel. DN would develop a short, ownable line that carries the emotional promise (ritual, calm, modern India) alongside the logo tagline, “Made from temple flowers,” then codify tone of voice across packaging, web and social so every touchpoint sounds like one brand. </p>
+                  {/* new suggestion and recondation section */}
+                <section className="new-suggestions-recommendation-section" id='suggestions-recommendations'>
+                    <div className='container'>
+                        <h2 className='new-suggestions-recommendation-section-head'>Suggestions & Recommendations</h2>
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Build A Proper Verbal Identity System.</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The closest thing to a mantra, the 14-word homepage banner, is too long to travel. DN would develop a short, ownable line that carries the emotional promise (ritual, calm, modern India) alongside the logo tagline, “Made from temple flowers,” then codify tone of voice across packaging, web and social so every touchpoint sounds like one brand. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>01</span>
                         </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Give The Flowercyclers A Visual Identity.</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The women who make every product are the single most differentiating asset Phool has, and there's no character, illustration or consistent visual signature built around them. DN would design a recurring visual motif or character system rooted in the flowercyclers, giving the brand the "character" layer it's currently missing entirely.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>02</span>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Fix The Packaging Architecture Across The Expanding SKU Range.</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>Phool’s range now spans incense sticks and cones, dhoop, diffusers, candles, car fresheners, scarves and festive gift boxes, and the packaging uses a different visual language for each. The varied palettes give each range character, but the risk is fragmentation as the catalogue grows. DN would build a modular packaging and colour-coding system by fragrance family and occasion, so products stay recognisable on the shelf and online as the range scales. This is core packaging design work, exactly where a full-service agency adds value. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>03</span>
+                        </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Turn The Web Storytelling Into A Converting Asset.</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The site leans heavily on functional description and third-party press quotes, while its own narrative carries few sensory or emotional cues. DN would rebuild the homepage and product storytelling around SEO-structured, scroll-driven content that leads with fragrance and feeling, then backs it with the sustainability proof, aimed at improving organic discovery and time-on-site. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>04</span>
+                        </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Give Fleather Its Own Narrative. </h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>Fleather (Phool’s flower-based vegan leather material) is an award-winning innovation, but it has little visible presence on the site. Phool has already spoken of launching it as a separate brand selling to other businesses. DN can shape a distinct identity and communication strategy for that brand, so it can be positioned to fashion and materials buyers on its own terms and not be read through a home-fragrance lens. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>05</span>
+                        </div>
+
+
+                         <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Restructure Website Navigation. Add Occasion-Based Browsing.</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The main menu mixes product types (sticks, cones, diffusers, oils) with themed collections, and the only occasion-led entries are seasonal (such as Diwali and Diwali Corporate Gifting). DN would introduce dual navigation: shop by product and shop by occasion (daily ritual, festive celebration, gifting, wellness, home ambience), and turn corporate gifting into a year-round section, so discovery is easier and gifting has a permanent home. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>06</span>
+                        </div>
+
+
+                         <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Build A Loyalty Programme Around The Brand’s Mission</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>Phool’s refill packs and combos encourage repeat purchase, but there’s no visible loyalty programme beyond it. DN would design one that rewards customers with the brand’s story and not just discounts: members would follow the impact their purchases create, such as flowers recycled and women employed, and get early access to new launches and festive collections. This would turn one-off gifting buyers into year-round customers. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>07</span>
+                        </div>
                     </div>
-
-
-                     {/* row 2 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Give The Flowercyclers A Visual Identity.</p>
-                            <p className='product-mix-section-row-col-para'>The women who make every product are the single most differentiating asset Phool has, and there's no character, illustration or consistent visual signature built around them. DN would design a recurring visual motif or character system rooted in the flowercyclers, giving the brand the "character" layer it's currently missing entirely.</p>
-                        </div>
-                        </div>
-                    </div>
-
-
-                     {/* row 3 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Fix The Packaging Architecture Across The Expanding SKU Range. </p>
-                            <p className='product-mix-section-row-col-para'>Phool’s range now spans incense sticks and cones, dhoop, diffusers, candles, car fresheners, scarves and festive gift boxes, and the packaging uses a different visual language for each. The varied palettes give each range character, but the risk is fragmentation as the catalogue grows. DN would build a modular packaging and colour-coding system by fragrance family and occasion, so products stay recognisable on the shelf and online as the range scales. This is core packaging design work, exactly where a full-service agency adds value. </p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-                    {/* row 4 */}
-                    <div className='row product-mix-section-row'>
-                       <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Turn The Web Storytelling Into A Converting Asset.</p>
-                            <p className='product-mix-section-row-col-para'>The site leans heavily on functional description and third-party press quotes, while its own narrative carries few sensory or emotional cues. DN would rebuild the homepage and product storytelling around SEO-structured, scroll-driven content that leads with fragrance and feeling, then backs it with the sustainability proof, aimed at improving organic discovery and time-on-site. </p>
-                        </div>
-                        </div>
-                     
-                    </div>
-
-
-                       {/* row 5 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Give Fleather Its Own Narrative. </p>
-                            <p className='product-mix-section-row-col-para'>Fleather (Phool’s flower-based vegan leather material) is an award-winning innovation, but it has little visible presence on the site. Phool has already spoken of launching it as a separate brand selling to other businesses. DN can shape a distinct identity and communication strategy for that brand, so it can be positioned to fashion and materials buyers on its own terms and not be read through a home-fragrance lens. </p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-                         {/* row 6 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Restructure Website Navigation. Add Occasion-Based Browsing.</p>
-                            <p className='product-mix-section-row-col-para'>The main menu mixes product types (sticks, cones, diffusers, oils) with themed collections, and the only occasion-led entries are seasonal (such as Diwali and Diwali Corporate Gifting). DN would introduce dual navigation: shop by product and shop by occasion (daily ritual, festive celebration, gifting, wellness, home ambience), and turn corporate gifting into a year-round section, so discovery is easier and gifting has a permanent home.  </p>
-                        </div>
-                        </div>
-                        
-                    </div>
-
-
-                         {/* row 7 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Build A Loyalty Programme Around The Brand’s Mission</p>
-                            <p className='product-mix-section-row-col-para'>Phool’s refill packs and combos encourage repeat purchase, but there’s no visible loyalty programme beyond it. DN would design one that rewards customers with the brand’s story and not just discounts: members would follow the impact their purchases create, such as flowers recycled and women employed, and get early access to new launches and festive collections. This would turn one-off gifting buyers into year-round customers.  </p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-
-
-
                 </section>
+
+
 
                 <div className='disclaimer-section'>
                     <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from the brand's official website. All copyrights and intellectual property rights in these images remain with the brand and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>
