@@ -11,6 +11,9 @@ import { getPageById } from "@/lib/services/pageService.js";
 import { notFound } from "next/navigation";
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb';
 import Form from '@/Components/Form/Form';
+import TalkToUs from '@/Components/TalkToUsCityPages/TalkToUsCityPages';
+import SwotTabSectionBrandAudit from '@/Components/SwotTabSectionBrandAudit/SwotTabSectionBrandAudit';
+// import TalkToUs from '@/Components/TalkToUs/TalkToUs';
 
 
 // meta tags
@@ -94,6 +97,90 @@ async function page() {
       // --- SCHEMA CLEANING LOGIC END ---
 
 
+       const tabs = [
+        {
+            id: "first_tab",
+            title: "Strengths",
+            heading: "Strengths",
+            points: [
+                "Handcrafted positioning is genuinely hard to copy. It’s not just a marketing line. Every pair is hand-lasted, which most mass sneaker brands simply can't claim.",
+
+                "Cultural storytelling is built into the product itself (Phulkari-inspired patterns, a Victory Blue tribute to India's 1948 Olympic gold, a Royal Enfield collab) rather than bolted on later as a campaign.",
+
+                "Strong credibility loop between founders, Shark Tank exposure, and investors who've already built other successful Indian D2C brands (Bounce, Yogabar, Jar, Renee Cosmetics).",
+            ],
+        },
+
+        {
+            id: "sec_tab",
+            title: "Weaknesses",
+            heading: "Weaknesses",
+            points: [
+                "The retail footprint is still thin. Five physical stores nationally isn't enough to build the try-before-you-buy trust sneakers usually need.",
+
+                "Premium handcrafted pricing puts the brand above where most of India's sneaker-buying demographic actually spends.",
+
+                "Hand-lasted production and multi-week dispatch windows on some drops cap how fast they can scale without diluting the handmade promise.",
+            ],
+        },
+
+        {
+            id: "third_tab",
+            title: "Opportunities",
+            heading: "Opportunities",
+            points: [
+                "Global appetite for 'Made in India' storytelling is genuinely rising, and international expansion (US, UK) is already on their radar.",
+
+                "The collab model (Royal Enfield, independent designers like Lead-A) is a proven lever they can keep pulling with other culturally resonant Indian names.",
+
+                "The category still has room for a brand that owns 'premium Indian sneaker' the way Neeman's owns 'sustainable everyday shoe'.",
+            ],
+        },
+
+        {
+            id: "fourth_tab",
+            title: "Threats",
+            heading: "Threats",
+            points: [
+                "Neeman's and other funded D2C sneaker brands are chasing the same wallet, with more retail scale already in place.",
+
+                "Status buying in Indian sneaker culture still skews toward Nike, Adidas, and New Balance. Cultural storytelling has to work against that gravity, not just alongside it.",
+
+                "Scaling handcrafted production without a factory-line model is a real operational ceiling, not just a brand narrative to manage.",
+            ],
+        },
+    ];
+
+           const tabs_stp = [
+        {
+            id: "first_tab",
+            title: "Segmentation",
+            heading: "Segmentation",
+            points: [
+                "Urban, digitally native Indian consumers, mostly Gen Z and young millennials, who treat sneakers as identity rather than utility.",
+            ],
+        },
+
+        {
+            id: "sec_tab",
+            title: "Targeting",
+            heading: "Targeting",
+            points: [
+                "Sneakerheads and streetwear-adjacent buyers tired of choosing between global brands with no cultural relevance and local brands with no design credibility. Secondary audience: NRIs and international buyers curious about Indian culture and story, told through footwear.",
+            ],
+        },
+
+        {
+            id: "third_tab",
+            title: "Positioning",
+            heading: "Positioning",
+            points: [
+                "Not 'an affordable Indian alternative to Nike.' Positioned as its own category entirely: premium, story-led, handcrafted sneakers that are Indian. Not sneakers apologising for being Indian.",
+            ],
+        },
+    ];
+
+
       // form content
   const FormHead = "Let’s Discuss Over a Cup of Coffee";
   const FormPara =
@@ -113,7 +200,7 @@ async function page() {
       {/*schema ends here */}
 
 
-      {/* breadcrump */}
+      {/* breadcrump  */}
       <Breadcrumb/>
 
 
@@ -140,7 +227,7 @@ async function page() {
             <div className='col-12 col-sm-12 col-md-12 col-lg-9 mt-4 order-2 order-lg-1'>
             {/* para div */}
                 <div className='table-of-content-section-first-para'>
-                <p className='table-of-content-section-para-first'>Can a three-year-old sneaker brand actually out-story companies that have been doing this for decades? And is "culturally inspired" still meaningful once you're the one hand-lasting every pair yourself?</p>
+                <p className='table-of-content-section-para-first'>Can a two-year-old sneaker brand actually out-story companies that have been doing this for decades? And is "culturally inspired" still meaningful once you're the one hand-lasting every pair yourself?</p>
                 </div>
                 <div className='table-of-content-2nd-para-div'>
                     <p className="table-of-content-2nd-para">That's the question Gully Labs put in front of us.</p>
@@ -170,7 +257,7 @@ async function page() {
 
                             <div className='brand-at-glance-text-div'>
                                 <p className="brand-at-glance-text-div-para">Headquarters </p>
-                                <h3 className="brand-at-glance-text-div-head">New Delhi/Noida</h3>
+                                <h3 className="brand-at-glance-text-div-head">New Delhi/Noida </h3>
                             </div>
                             <div className='brand-at-glance-text-div'>
                                 <p className="brand-at-glance-text-div-para">Backing/Funding</p>
@@ -212,7 +299,7 @@ async function page() {
                 </div>
 
 
-                {/* Brand Elements */}
+                {/* Brand Elements  */}
                 <section className='brand-elements-section' id='brand-elements'>
                     <h2 className='brand-elements-main-head'>Brand Elements</h2>
                     {/* row 1 */}
@@ -295,7 +382,7 @@ async function page() {
                             <div className='brand-element-col'>
                                 <p className='brand-element-col-para-label'>Tagline</p>
                                 <ul className='brand-element-col-ul'>
-                                    <li>Not yet fixed, still forming as the brand matures past its first few years.</li>
+                                    <li>Not yet fixed, still forming as the brand matures past its first two years.</li>
                                     <li>Individual drop names currently do a tagline's job, each one carrying its own mini-story.</li>
                                     <li>A genuine gap, worth closing deliberately (see Recommendations).</li>
                                 </ul>
@@ -328,12 +415,23 @@ async function page() {
 
                 {/* [ Let’s Talk ] */}
                 <section className='lets-talk-section'>
-                <div className='lets-talk-section-top-content'>
+                {/* <div className='lets-talk-section-top-content'>
                 <p className='lets-tak-label-para'>[ Still With Us? ]</p>
                 <h2 className='lets-tak-main-head'>Nobody's found your gaps yet. </h2>
-                {/* <TalkToUs/> */}
                 <BrandAuditCta/>
+                </div> */}
+
+                 {/* Ready For Your New Website? */}
+                <div className='ready-for-your-new-website-section'>
+                    <div className="ready-for-your-new-website-section-content">
+                        <h2 className='ready-for-your-new-website-section-content-head'>Still With Us? Nobody's found your gaps yet. 
+</h2>
+                        <TalkToUs/>
+                    </div>
                 </div>
+
+
+
 
                 <div className='brand-attributes-div' id='brand-attributes'>
                     <h2 className='brand-attributes-head'>Brand Attributes</h2>
@@ -349,87 +447,33 @@ async function page() {
                         <span className='brand-attributes-points'>Anti-Colonial in Tone, Deliberately</span>
                     </div>
                 </div>
+
+
+               
                 </section>
 
                 {/* SWOT */}
                 <section className='swot-section' id='swot'>
                     <h2 className='swot-section-head'>SWOT</h2>
-                    <div className='row swot-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                            <div className='swot-section-col'>
-                                <p className='brand-element-col-para-label'>Strengths</p>
-                                <ul className='brand-element-col-ul'>
-                                    <li>Handcrafted positioning is genuinely hard to copy. It’s not just a marketing line. Every pair is hand-lasted, which most mass sneaker brands simply can't claim.</li>
-                                    <li>Cultural storytelling is built into the product itself (Phulkari-inspired patterns, a Victory Blue tribute to India's 1948 Olympic gold, a Royal Enfield collab) rather than bolted on later as a campaign.</li>
-                                    <li>Strong credibility loop between founders, Shark Tank exposure, and investors who've already built other successful Indian D2C brands (Bounce, Yogabar, Jar, Renee Cosmetics).</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                            <div className='swot-section-col'>
-                                <p className='brand-element-col-para-label'>Weaknesses</p>
-                                <ul className='brand-element-col-ul'>
-                                    <li>The retail footprint is still thin. Five physical stores nationally isn't enough to build the try-before-you-buy trust sneakers usually need.</li>
-                                    <li>Premium handcrafted pricing puts the brand above where most of India's sneaker-buying demographic actually spends.</li>
-                                    <li>Hand-lasted production and multi-week dispatch windows on some drops cap how fast they can scale without diluting the handmade promise.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                     <div className='row swot-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                            <div className='swot-section-col'>
-                                <p className='brand-element-col-para-label'>Opportunities</p>
-                                <ul className='brand-element-col-ul'>
-                                    <li>Global appetite for "Made in India" storytelling is genuinely rising, and international expansion (US, UK) is already on their radar.</li>
-                                    <li>The collab model (Royal Enfield, independent designers like Lead-A) is a proven lever they can keep pulling with other culturally resonant Indian names.</li>
-                                    <li>The category still has room for a brand that owns "premium Indian sneaker" the way Neeman's owns "sustainable everyday shoe".</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                            <div className='swot-section-col'>
-                                <p className='brand-element-col-para-label'>Threats</p>
-                                <ul className='brand-element-col-ul'>
-                                    <li>Neeman's and other funded D2C sneaker brands are chasing the same wallet, with more retail scale already in place.</li>
-                                    <li>Status buying in Indian sneaker culture still skews toward Nike, Adidas, and New Balance. Cultural storytelling has to work against that gravity, not just alongside it.</li>
-                                    <li>Scaling handcrafted production without a factory-line model is a real operational ceiling, not just a brand narrative to manage.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <SwotTabSectionBrandAudit tabs={tabs}/>
                 </section>
+
+               
 
 
                 {/* STP */}
                 <section className='stp-section' id='stp'>
-                <h2 className='stp-section-main-head'>
-                STP
-                </h2>
                     <div className='row stp-section-row'>
-                        <div className="col-12 col-sm-12 col-md-12 col-lg-4 stp-section-col order-2 order-lg-1">
-                            <div className="stp-section-col-div">
-                                <p className='stp-section-col-div-label-para'>Segmentation</p>
-                                <p className='stp-section-col-div-desc-para'>Urban, digitally native Indian consumers, mostly Gen Z and young millennials, who treat sneakers as identity rather than utility.</p>
-                            </div>
-
-                              <div className="stp-section-col-div stp-section-col-div-middle">
-                                <p className='stp-section-col-div-label-para'>Targeting </p>
-                                <p className='stp-section-col-div-desc-para'>Sneakerheads and streetwear-adjacent buyers tired of choosing between global brands with no cultural relevance and local brands with no design credibility. Secondary audience: NRIs and international buyers curious about Indian culture and story, told through footwear.</p>
-                            </div>
-
-                              <div className="stp-section-col-div">
-                                <p className='stp-section-col-div-label-para'>Positioning</p>
-                                <p className='stp-section-col-div-desc-para'>Not "an affordable Indian alternative to Nike." Positioned as its own category entirely: premium, story-led, handcrafted sneakers that are Indian. Not sneakers apologising for being Indian.</p>
-                            </div>
-                        </div>
-
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-8 order-1 order-lg-2 stp-img-col'>
+                         <div className='col-12 col-sm-12 col-md-12 col-lg-5 order-2 order-lg-1 stp-img-col'>
                             <img src="https://dndesigns.co.in/uploads/pages/stp-brand-audit-image-section.jpeg" className='img-fluid'></img>
                         </div>
+
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-7 stp-section-col order-1 order-lg-2">
+                            <h2 className='stp-section-main-head'>
+                STP
+                </h2>
+                            <SwotTabSectionBrandAudit tabs={tabs_stp}/>
+                        </div>   
                     </div>
                 </section>
 
@@ -439,9 +483,9 @@ async function page() {
                 <h2 className='pop-pod-section-head'>POPs and PODs</h2>
                     <div className='row pop-pod-section-row'>
                         <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
-                            <div className='pop-pod-section-col'>
-                                <h2 className='pop-pod-section-col-head'>Points of Parity - The Baseline To Even Compete</h2>
-                                 <ul className='brand-element-col-ul'>
+                            <div className='pop-pod-section-col-black'>
+                                <h2 className='pop-pod-section-col-head-black'>Points of Parity - The Baseline To Even Compete</h2>
+                                 <ul className='brand-element-col-ul-black'>
                                     <li>Comfort and durability that justify a premium price.</li>
                                     <li>Regular new drops to stay visible in a fast-moving sneaker culture.</li>
                                     <li>A social-first brand presence, since Instagram is where this category actually lives.</li>
@@ -450,11 +494,11 @@ async function page() {
                         </div>
 
                           <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
-                            <div className='pop-pod-section-col'>
-                                <h2 className='pop-pod-section-col-head'>Points of Difference - What's Genuinely Theirs</h2>
-                                 <ul className='brand-element-col-ul'>
+                            <div className='pop-pod-section-col-white'>
+                                <h2 className='pop-pod-section-col-head-white'>Points of Difference - What's Genuinely Theirs</h2>
+                                 <ul className='brand-element-col-ul-white'>
                                     <li>Hand-lasted construction at a price point where most competitors are still factory-made.</li>
-                                    <li>A design language rooted in specific cultural references, not vague "colourful patterns". From Olympic gold tributes and Phulkari embroidery to city-inspired silhouettes.</li>
+                                    <li>A design language rooted in specific cultural references, not vague "colourful patterns". From Olympic gold tributes and Phulkari embroidery to city-inspired silhouettes. </li>
                                     <li>Physical retail as brand theatre. The Panchsheel Park flagship, built with manhole covers, lakhori brick, and a giant shoe sculpture over the entrance, is doing brand work most D2C sneaker startups skip entirely.</li>
                                 </ul>
                             </div>
@@ -463,55 +507,32 @@ async function page() {
                 </section>
 
 
-                {/* Product mix */}
+                {/* Product mix  */}
                 <section className='product-mix-section' id='product-mix'>
                     <h2 className='product-mix-section-head'>Product Mix</h2>
                     <div className='product-mix-section-img-div'>
                         <img src="https://dndesigns.co.in/uploads/pages/product-mix-image-section.jpeg" className='img-fluid product-mix-section-img'></img>
                     </div>
-                     
-                     {/* row 1 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                            <p className='product-mix-section-row-col-para'>Core silhouettes: the Gully Number 001 and Number 002, reworked across seasonal drops.</p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-                     {/* row 2 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                            <p className='product-mix-section-row-col-para'>Named, themed collections (KULFI, Migration, BAAZ, 1948 Victory Blue) each with its own story, instead of a flat, undifferentiated catalogue. </p>
-                        </div>
-                        </div>
-                    </div>
-
-
-                     {/* row 3 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                            <p className='product-mix-section-row-col-para'>Designer collabs (Lead-A) and brand collabs (Royal Enfield) sit alongside the core range, extending the world without replacing it.</p>
-                        </div>
-                        </div>
-                        <div className='col-5'></div>
+                    <div className='product-mix-list-div'>
+                        <ul className='product-mix-list'>
+                            <li className='product-mix-list-item'>Core silhouettes: the Gully Number 001 and Number 002, reworked across seasonal drops.</li>
+                            <li className='product-mix-list-item'>Named, themed collections (KULFI, Migration, BAAZ, 1948 Victory Blue) each with its own story, instead of a flat, undifferentiated catalogue. </li>
+                            <li className='product-mix-list-item'>Designer collabs (Lead-A) and brand collabs (Royal Enfield) sit alongside the core range, extending the world without replacing it.</li>
+                        </ul>
                     </div>
                 </section>
+
 
                 {/* Pricing, Distribution & Campaigns */}
                 <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
                     <h2 className='pricing-distrubution-section-main-head'>Pricing, Distribution & Campaigns</h2>
 
                     <div className='row pricing-distrubution-section-row'>
+
                         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
-                            <div className='pricing-distrubution-section-col'>
-                                <h2 className="pricing-distrubution-section-col-head">Pricing</h2>
-                                <ul className='brand-element-col-ul'>
+                            <div className='pricing-distrubution-section-col-black'>
+                                <h2 className="pricing-distrubution-section-col-head-black">Pricing</h2>
+                                <ul className='brand-element-col-ul-pdc-black'>
                                     <li>Sits between ₹4,990 and ₹15,990. Above mass Indian sneaker brands, below international sportswear brands.</li>
                                     <li>Pricing broadly follows product complexity: core leather and suede styles sit lower, while statement materials and collaboration editions command a premium.</li>
                                 </ul>
@@ -519,9 +540,9 @@ async function page() {
                         </div>
 
                         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
-                            <div className='pricing-distrubution-section-col'>
-                                <h2 className="pricing-distrubution-section-col-head">Distribution</h2>
-                                <ul className='brand-element-col-ul'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Distribution</h2>
+                                <ul className='brand-element-col-ul-white'>
                                     <li>D2C-first through their own website; retail still early-stage across five cities.</li>
                                     <li>The flagship store reads less like a sales point and more like a brand museum right now, worth more in earned media than daily footfall.</li>
                                 </ul>
@@ -529,9 +550,9 @@ async function page() {
                         </div>
 
                         <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
-                            <div className='pricing-distrubution-section-col'>
-                                <h2 className="pricing-distrubution-section-col-head">Campaigns</h2>
-                                <ul className='brand-element-col-ul'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Campaigns</h2>
+                                <ul className='brand-element-col-ul-white'>
                                     <li>The Shark Tank appearance is their biggest campaign moment to date, national visibility plus a validation story they'll keep referencing.</li>
                                     <li>Drop-based marketing tied to cultural moments does the ongoing work in between.</li>
                                 </ul>
@@ -700,83 +721,63 @@ async function page() {
 
 
             {/* Suggestions & Recommendations */}
-                 <section className='product-mix-section' id='suggestions-recommendations'>
-                    <h2 className='product-mix-section-head'>Suggestions & Recommendations</h2>
-                     {/* row 1 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                        <p className='suggestions-recommendations-head-para'>Give The Packaging The Same Craft Story As The Shoe </p>
-                            <p className='product-mix-section-row-col-para'>The unboxing moment currently undersells the product inside it. A packaging system carrying the same embroidery motifs and colour-naming logic as the sneakers, insert cards, tissue, and the box itself would make the craft narrative continuous instead of stopping at the shoebox.</p>
+                     {/* new suggestion and recondation section */}
+                <section className="new-suggestions-recommendation-section" id='suggestions-recommendations'>
+                    <div className='container'>
+                        <h2 className='new-suggestions-recommendation-section-head'>Suggestions & Recommendations</h2>
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Give the packaging the same craft story as the shoe </h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The unboxing moment currently undersells the product inside it. A packaging system carrying the same embroidery motifs and colour-naming logic as the sneakers, insert cards, tissue, and the box itself would make the craft narrative continuous instead of stopping at the shoebox.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>01</span>
                         </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Turn The Manifesto Into One Fixed, Repeatable Tagline</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>Right now the brand's strongest line lives in interviews, not on the product. Codifying it into a single, ownable tagline gives every future touchpoint, packaging, ads and retail signage one consistent line to build recall around.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>02</span>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Put The Visual System Into A Formal Brand Guideline</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The colour-naming discipline and blue-anchored world already exist; they're just undocumented. Formalising them into a guideline is what keeps every future drop, collab, and vendor asset visually consistent as the team grows past its two founders.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>03</span>
+                        </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Build The Cultural Storytelling Into The Website Itself </h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The product pages currently lean on photography alone. Structured, SEO-forward storytelling blocks, per-drop origin stories, and material notes would let the same craft narrative that works in the flagship store convert browsers online too.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>04</span>
+                        </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Design A Scalable Pop-Up Kit To Extend The Flagship's Brand Theatre</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>One store can't carry the whole brand experience nationally. A modular pop-up or shop-in-shop kit, built once and reused across cities, would let smaller markets feel the same craft-forward theatre without full flagship capex.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>05</span>
+                        </div>
                     </div>
-
-
-                     {/* row 2 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Turn The Manifesto Into One Fixed, Repeatable Tagline </p>
-                            <p className='product-mix-section-row-col-para'>Right now the brand's strongest line lives in interviews, not on the product. Codifying it into a single, ownable tagline gives every future touchpoint, packaging, ads and retail signage one consistent line to build recall around.</p>
-                        </div>
-                        </div>
-                    </div>
-
-
-                     {/* row 3 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Put The Visual System Into A Formal Brand Guideline </p>
-                            <p className='product-mix-section-row-col-para'>The colour-naming discipline and blue-anchored world already exist; they're just undocumented. Formalising them into a guideline is what keeps every future drop, collab, and vendor asset visually consistent as the team grows past its two founders.</p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-                    {/* row 4 */}
-                    <div className='row product-mix-section-row'>
-                       <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Build The Cultural Storytelling Into The Website Itself  </p>
-                            <p className='product-mix-section-row-col-para'>The product pages currently lean on photography alone. Structured, SEO-forward storytelling blocks, per-drop origin stories, and material notes would let the same craft narrative that works in the flagship store convert browsers online too.</p>
-                        </div>
-                        </div>
-                     
-                    </div>
-
-
-                       {/* row 5 */}
-                    <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Design A Scalable Pop-Up Kit To Extend The Flagship's Brand Theatre </p>
-                            <p className='product-mix-section-row-col-para'>One store can't carry the whole brand experience nationally. A modular pop-up or shop-in-shop kit, built once and reused across cities, would let smaller markets feel the same craft-forward theatre without full flagship capex.</p>
-                        </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div>
-
-
-
                 </section>
 
+
+
                 <div className='disclaimer-section'>
-                    <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from the brand's official website. All copyrights and intellectual property rights in these images remain with the brand and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>
-                   
+                    <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from the brand's official website. All copyrights and intellectual property rights in these images remain with the brand and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>  
                 </div>
+
+
+
+            
 
                 
 
             </div>
 
 
-           {/* table of content */}
+           {/* table of content  */}
             <div className='col-12 col-sm-12 col-md-12 col-lg-3 mt-4 order-1 order-lg-2'>
             <div className='table-of-content-section-table'>
             <h2 className='table-of-content-section-table-head'>Table of Contents</h2>

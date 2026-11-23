@@ -12,6 +12,8 @@ import { notFound } from "next/navigation";
 import Breadcrumb from '@/Components/BreadCrumb/BreadCrumb';
 import "./phool-brand-audit.css"
 import Form from '@/Components/Form/Form';
+import TalkToUs from '@/Components/TalkToUsCityPages/TalkToUsCityPages';
+import SwotTabSectionBrandAudit from '@/Components/SwotTabSectionBrandAudit/SwotTabSectionBrandAudit';
 
 
 // meta tags
@@ -93,6 +95,92 @@ async function page() {
         }
       }
       // --- SCHEMA CLEANING LOGIC END ---
+
+
+    //  swot tabs
+        const tabs = [
+        {
+            id: "first_tab",
+            title: "Strengths",
+            heading: "Strengths",
+            points: [
+                "First-mover in a format it helped define. SuperYou launched what is billed as India’s first protein wafer bar, giving it a head start in building the format. ",
+
+                "A look that is recognisable at a glance, on the pack and on a quick-commerce screen. Stands apart from the muted palettes much of the category leans on. ",
+
+                "Celebrity co-founder brings instant top-of-funnel awareness most D2C brands spend years and lakhs trying to buy.",
+            ],
+        },
+
+        {
+            id: "sec_tab",
+            title: "Weaknesses",
+            heading: "Weaknesses",
+            points: [
+                "No single line travels with the logo on every pack. The brand has a distinctive voice in its campaigns, but not yet one repeatable phrase that anchors it. ",
+
+                "Marketing leans heavily on Ranveer Singh’s persona, so campaign momentum is exposed if his profile or availability changes. His face isn’t on the packs, which limits that risk without removing it.",
+
+                "The positioning stretches from chocolate alternative to performance supplement. That’s a powerful range, but it needs disciplined messaging so neither audience feels the brand isn’t for them.",
+            ],
+        },
+
+        {
+            id: "third_tab",
+            title: "Opportunities",
+            heading: "Opportunities",
+            points: [
+                "A name tied to no single product lets “SuperYou” travel without a rebrand. It has already moved from wafers to chips, powders and creatine, and the founders have named breakfast cereals and biscuits as next.",
+
+                "Quick commerce lets the brand launch and test new formats fast. The Mega Protein Wafer debuted exclusively on Instamart and the brand’s own site, with a wider rollout planned, which is typically quicker than a traditional retail listing. ",
+
+                "Creator-led, real-use content is already visible on the brand’s site, through a shoppable video carousel, an affiliate programme and refer-and-earn. Scaling it would add depth beyond celebrity-led films and ease the brand’s reliance on one face.",
+            ],
+        },
+
+        {
+            id: "fourth_tab",
+            title: "Threats",
+            heading: "Threats",
+            points: [
+                "Legacy FMCG brands acquiring other brands (Yoga Bar under ITC, Max Protein under Zydus) brings distribution muscle to competitors, which SuperYou doesn't have yet. SuperYou’s offline reach has grown quickly, but it competes against rivals with deeper corporate resources behind them. ",
+
+                "The category is getting crowded fast. Protein is being added to everything from water to sweets, diluting the novelty SuperYou built its launch on.",
+
+                "If Ranveer Singh's public profile shifts for any reason, the brand's awareness engine takes a direct hit even with the smart decision to keep his face off-pack.",
+            ],
+        },
+    ];
+
+           const tabs_stp = [
+        {
+            id: "first_tab",
+            title: "Segmentation",
+            heading: "Segmentation",
+            points: [
+                "The market splits into three tiers: hardcore fitness consumers who already buy whey and bars, health-conscious mainstream consumers put off by clinical supplement branding, and casual snackers who buy on taste and convenience with health as a secondary tick box. SuperYou segments on occasion and mindset rather than demographics, targeting the snacking moment itself, from the mid-meeting craving to the pre-class bite, with everyday personas such as office workers, college students and families as its face.",
+            ],
+        },
+
+        {
+            id: "sec_tab",
+            title: "Targeting",
+            heading: "Targeting",
+            points: [
+                "The brand primarily targets the third group, casual snackers who want something that feels like a treat first. This is a deliberate departure from the gym-goers and fitness influencers targeting many existing protein bar brands lean towards. Fitness buyers aren’t ignored either, since the Mega Wafer and Pro both speak to them, but the snack range is built to look nothing like a supplement. ",
+            ],
+        },
+
+        {
+            id: "third_tab",
+            title: "Positioning",
+            heading: "Positioning",
+            points: [
+                "SuperYou positions itself as the protein brand for people who don't identify as 'protein people.' It sits closer to confectionery in shelf presence and impulse-purchase behaviour than to sports nutrition, while still delivering functional protein numbers that satisfy the health-conscious buyer underneath the fun exterior.",
+            ],
+        },
+    ];
+
 
 
       // form content
@@ -373,12 +461,22 @@ async function page() {
 
                 {/* [ Let’s Talk ] */}
                 <section className='lets-talk-section'>
-                <div className='lets-talk-section-top-content'>
+                {/* <div className='lets-talk-section-top-content'>
                 <p className='lets-tak-label-para'>[ Still With Us? ]</p>
                 <h2 className='lets-tak-main-head'>Nobody's found your gaps yet. </h2>
-                {/* <TalkToUs/> */}
+               
                 <BrandAuditCta/>
-                </div>
+                </div> */}
+
+                  {/* Ready For Your New Website? */}
+                                <div className='ready-for-your-new-website-section'>
+                                    <div className="ready-for-your-new-website-section-content">
+                                        <h2 className='ready-for-your-new-website-section-content-head'>Still With Us? Nobody's found your gaps yet. 
+                </h2>
+                                        <TalkToUs/>
+                                        
+                                    </div>
+                                </div>
 
                 <div className='brand-attributes-div' id='brand-attributes'>
                     <h2 className='brand-attributes-head'>Brand Attributes</h2>
@@ -398,7 +496,7 @@ async function page() {
                 </section>
 
                 {/* SWOT */}
-                <section className='swot-section' id='swot'>
+                {/* <section className='swot-section' id='swot'>
                     <h2 className='swot-section-head'>SWOT</h2>
                     <div className='row swot-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
@@ -447,7 +545,13 @@ async function page() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+
+                 {/* SWOT */}
+                                <section className='swot-section' id='swot'>
+                                    <h2 className='swot-section-head'>SWOT</h2>
+                                    <SwotTabSectionBrandAudit tabs={tabs}/>
+                                </section>
 
 
                 {/* STP */}
@@ -480,8 +584,11 @@ async function page() {
                 </section>
 
 
+               
+
+
                 {/* PoPs & PoDs */}
-                <section className='pop-pod-section' id='pops-and-pods'>
+                {/* <section className='pop-pod-section' id='pops-and-pods'>
                 <h2 className='pop-pod-section-head'>PoPs and PoDs</h2>
                     <div className='row pop-pod-section-row'>
                         <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
@@ -506,17 +613,48 @@ async function page() {
                             </div>
                         </div>
                     </div>
+                </section> */}
+
+
+
+                
+                {/* PoPs & PoDs */}
+                <section className='pop-pod-section' id='pops-and-pods'>
+                <h2 className='pop-pod-section-head'>PoPs and PoDs</h2>
+                    <div className='row pop-pod-section-row'>
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                            <div className='pop-pod-section-col-black'>
+                                <h2 className='pop-pod-section-col-head-black'>Points of Parity</h2>
+                                 <ul className='brand-element-col-ul-black'>
+                                    <li>Delivers a protein claim of 10g or more per serving across most formats (10g in the wafers and chips, 20g in the Mega Wafer), in line with what shoppers expect from a protein product. </li>
+                                    <li>Positions on no added sugar, a claim also made by competitors such as RiteBite Max Protein and increasingly common in the better-for-you set. </li>
+                                    <li>Available across the same quick commerce and marketplace channels as many other challenger brands.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                          <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
+                            <div className='pop-pod-section-col-white'>
+                                <h2 className='pop-pod-section-col-head-white'>Points of Difference</h2>
+                                 <ul className='brand-element-col-ul-white'>
+                                    <li>A layered-wafer, chocolate-bar-style format that is India’s first protein wafer bar, giving protein a familiar snack shape. </li>
+                                    <li>Fermented yeast protein gives the wafers and Pro a different story from whey or plant protein: a source new to most Indian shoppers, paired with digestive enzymes and pitched as lighter on the stomach. </li>
+                                    <li>Wafers and chips are dressed as treats, built to sit beside chocolate bars and everyday chips, not supplements. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
 
                 {/* Product mix */}
-                <section className='product-mix-section' id='product-mix'>
+                {/* <section className='product-mix-section' id='product-mix'>
                     <h2 className='product-mix-section-head'>Product Mix</h2>
                     <div className='product-mix-section-img-div'>
                         <img src="https://dndesigns.co.in/uploads/pages/productmixsuperyouimageGemini_Generated_Image_nf0wb2nf0wb2nf0w.jpeg" className='img-fluid product-mix-section-img'></img>
                     </div>
                      
-                     {/* row 1 */}
+              
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -527,7 +665,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 2 */}
+                    
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -538,7 +676,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 3 */}
+                    
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -549,7 +687,7 @@ async function page() {
                     </div>
 
                     
-                     {/* row 4 */}
+                     
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -559,7 +697,7 @@ async function page() {
                         </div>
                     </div>
 
-                     {/* row 5 */}
+                    
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -568,10 +706,28 @@ async function page() {
                         </div>
                         <div className='col-5'></div>
                     </div>
+                </section> */}
+
+
+                 {/* new Product mix  */}
+                <section className='product-mix-section' id='product-mix'>
+                    <h2 className='product-mix-section-head'>Product Mix</h2>
+                    <div className='product-mix-section-img-div'>
+                        <img src="https://dndesigns.co.in/uploads/pages/productmixsuperyouimageGemini_Generated_Image_nf0wb2nf0wb2nf0w.jpeg" className='img-fluid product-mix-section-img'></img>
+                    </div>
+                    <div className='product-mix-list-div'>
+                        <ul className='product-mix-list'>
+                            <li className='product-mix-list-item'>Protein Wafers, the flagship format and still the bestseller, across chocolate, strawberry, cheese, choco peanut butter, coffee, and cookies & cream flavours.</li>
+                            <li className='product-mix-list-item'>Protein Wafer Minis, a smaller 5g-protein, under 100-calorie format aimed at more frequent, lower-commitment snacking occasions. Available in mango, cookies & cream, hazelnut, and orange flavours.</li>
+                            <li className='product-mix-list-item'>Multigrain protein chips (in super masala, sour cream & onion, cheese & tomato and pudina flavours) move the brand into savoury territory beyond the original sweet wafer.</li>
+                            <li className='product-mix-list-item'>Power Puffs, baked multigrain puffs with 13g of protein per pack, pitched as a family snack for any time of day. Available in maaad achari, cheesy cheese, chilli masala and pizza party flavours. </li>
+                            <li className='product-mix-list-item'>Fermented Yeast Protein Powders and a 20g "Mega" wafer extend the range toward the higher-intent, higher-protein-need buyer without abandoning the core snacker.</li>
+                        </ul>
+                    </div>
                 </section>
 
                 {/* Pricing, Distribution & Campaigns */}
-                <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
+                {/* <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
                     <h2 className='pricing-distrubution-section-main-head'>Pricing, Distribution & Campaigns</h2>
 
                     <div className='row pricing-distrubution-section-row'>
@@ -605,7 +761,46 @@ async function page() {
                             </div>
                         </div>
                     </div>
+                </section> */}
+
+
+                  <section className='pricing-distrubution-section' id="pricing-distribution-campaigns">
+                    <h2 className='pricing-distrubution-section-main-head'>Pricing, Distribution & Campaigns</h2>
+
+                    <div className='row pricing-distrubution-section-row'>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-black'>
+                                <h2 className="pricing-distrubution-section-col-head-black">Pricing</h2>
+                                <ul className='brand-element-col-ul-pdc-black'>
+                                    <li>Snacks sit on a tight ladder at list price: the 5g Minis at ₹30 a unit, the 10g wafer at ₹60 and the 20g Mega at ₹120–125, which works out to roughly ₹6 a gram of protein across the wafer formats. The 40g chips, with 10g of protein, list lower at ₹40.</li>
+                                    <li>Powders form a separate tier. Fermented yeast protein lists at ₹2,549–2,649 for a 1kg jar and ₹1,499 for a 500g jar, and creatine at ₹599. </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Distribution</h2>
+                                <ul className='brand-element-col-ul-white'>
+                                    <li>Sold through its own website, Amazon, Flipkart and the main quick-commerce apps (Blinkit, Instamart and Zepto), which gave it national reach and fast delivery from launch. The Mega Wafer debuted as an Instamart exclusive. </li>
+                                    <li>Offline presence has grown quickly, from select modern trade outlets at launch to more than 4,500 modern and general trade stores across metro and Tier II cities by November 2025, by the brand’s own count. </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 mt-4'>
+                            <div className='pricing-distrubution-section-col-white'>
+                                <h2 className="pricing-distrubution-section-col-head-white">Campaigns</h2>
+                                <ul className='brand-element-col-ul-white'>
+                                    <li>The launch film, part of the “Now You Know” campaign, made Ranveer Singh’s persona the hook. “My supply is now yours” answered the question everyone was asking, “What is he on?”, and revealed SuperYou as the secret behind his energy. </li>
+                                    <li>Off the film, the brand talks snacking, not training. Content stays with daily energy and everyday cravings, and the Swiggy tie-up meets people where they already order.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
 
 
                 {/* Competitve Analysis */}
@@ -808,9 +1003,9 @@ async function page() {
 
 
             {/* Suggestions & Recommendations */}
-                 <section className='product-mix-section' id='suggestions-recommendations'>
+                 {/* <section className='product-mix-section' id='suggestions-recommendations'>
                     <h2 className='product-mix-section-head'>Suggestions And Recommendations</h2>
-                     {/* row 1 */}
+           
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -822,7 +1017,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 2 */}
+            
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -834,7 +1029,7 @@ async function page() {
                     </div>
 
 
-                     {/* row 3 */}
+                 
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -846,7 +1041,7 @@ async function page() {
                     </div>
 
 
-                    {/* row 4 */}
+                   
                     <div className='row product-mix-section-row'>
                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
@@ -859,7 +1054,7 @@ async function page() {
                     </div>
 
 
-                       {/* row 5 */}
+                       
                     <div className='row product-mix-section-row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
                         <div className="product-mix-section-row-col">
@@ -869,37 +1064,50 @@ async function page() {
                         </div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
                     </div>
+                </section> */}
 
 
-                         {/* row 6 */}
-                    {/* <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Restructure Website Navigation. Add Occasion-Based Browsing.</p>
-                            <p className='product-mix-section-row-col-para'>The main menu mixes product types (sticks, cones, diffusers, oils) with themed collections, and the only occasion-led entries are seasonal (such as Diwali and Diwali Corporate Gifting). DN would introduce dual navigation: shop by product and shop by occasion (daily ritual, festive celebration, gifting, wellness, home ambience), and turn corporate gifting into a year-round section, so discovery is easier and gifting has a permanent home.  </p>
+                    {/* new suggestion and recondation section */}
+                <section className="new-suggestions-recommendation-section" id='suggestions-recommendations'>
+                    <div className='container'>
+                        <h2 className='new-suggestions-recommendation-section-head'>Suggestions & Recommendations</h2>
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Turn “Don’t Just Be You, Be SuperYou” Into One Fixed, Repeatable Tagline</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The brand has plenty of voice: a launch-film line, a name-play from the launch post and a recurring “maaad” tone. But no single line travels with the logo. Locking the name-play line, with a short voice guide for the “maaad” tone around it, gives pack, ads and site one consistent thing to build recall on. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>01</span>
                         </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Put The Visual System Into A Formal Brand Guideline </h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>One codified system for type, colour, flavour banding, claim placement and creator content keeps every future launch recognisably SuperYou, whoever makes the asset.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>02</span>
                         </div>
-                        
-                    </div> */}
 
 
-                         {/* row 7  */}
-                    {/* <div className='row product-mix-section-row'>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                        <div className="product-mix-section-row-col">
-                         <p className='suggestions-recommendations-head-para'>Build A Loyalty Programme Around The Brand’s Mission</p>
-                            <p className='product-mix-section-row-col-para'>Phool’s refill packs and combos encourage repeat purchase, but there’s no visible loyalty programme beyond it. DN would design one that rewards customers with the brand’s story and not just discounts: members would follow the impact their purchases create, such as flowers recycled and women employed, and get early access to new launches and festive collections. This would turn one-off gifting buyers into year-round customers.  </p>
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Build A Tiered Pack System So Pro Reads Credible Without Breaking The Brand</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The snack range is dressed as confectionery, with protein kept to a small tag. The Pro tubs and creatine pouch lead on performance claims and read as supplements. One master-brand system with format-specific rules, and a clear hierarchy for which claim leads on indulgent versus performance packs, lets each format look credible without diluting the snack-first positioning. On Pro, where nutrition leads, the fermented yeast story can lead too. On the snack range, it stays a quiet back-of-pack line in the brand’s own food-first voice.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>03</span>
                         </div>
+
+
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Give The Brand A Signature Sign-Off That Carries Recognition Without Ranveer Singh</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>The launch film turns on Ranveer Singh’s persona, and Biyani has said Singh is expected to drive awareness and attract consumer interest. A fixed brand sign-off, made up of the wordmark, the locked tagline and a flavour band, applied to every film, reel and creator clip, would attach recognition to SuperYou’s own cues, whoever is on screen.</p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>04</span>
                         </div>
-                        <div className='col-12 col-sm-12 col-md-12 col-lg-5'></div>
-                    </div> */}
 
 
-
-
-
+                        <div className='new-suggestions-recommendation-section-content-div'>
+                            <h3 className='new-suggestions-recommendation-section-content-div-head'>Give Every Flavour A Name That Sounds Like SuperYou</h3>
+                            <p className='new-suggestions-recommendation-section-content-div-para-desc'>Flavour names run in two registers. The wafers, minis, and chips use plain descriptors, while newer launches lean playful, from Maaad Achari and Pizza Party on Power Puffs to Orange Kick on creatine. A naming formula built on the “maaad” voice, paired with the flavour colour code, would make each new flavour a brand moment instead of a label. </p>
+                            <span className='new-suggestions-recommendation-section-content-div-number-span'>05</span>
+                        </div>
+                    </div>
                 </section>
+
 
                 <div className='disclaimer-section'>
                     <p className='disclaimer-section-para'>Disclaimer:  Many images featured on this page are sourced from the brand's official website. All copyrights and intellectual property rights in these images remain with the brand and/or their respective rights holders. DN Designs does not claim ownership of, or any rights to, these images.</p>
