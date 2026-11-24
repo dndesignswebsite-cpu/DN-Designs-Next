@@ -104,7 +104,7 @@ const Page = async () => {
   // form section content
   const FormHead = "Got a Brand Idea Brewing in Kovai? Let’s Talk! ";
   const FormPara =
-    (<>Coimbatore has always built things that last, and your brand deserves the same care. We bring research, strategy and creative thinking together to shape brands that stand out in Coimbatore and beyond. From defining your positioning to creating an identity that speaks to the right customers, we turn business ambitions into brands people remember. Whether you are launching something new or giving an established name a fresh direction, <Link className="inter-linking-link" href="/contact-us">share your project details</Link> and let’s start the conversation.</>);
+    (<>Coimbatore has always built things that last, and your brand deserves the same care. We bring research, strategy and creative thinking together to shape brands that stand out in Coimbatore and beyond. From defining your positioning to creating an identity that speaks to the right customers, we turn business ambitions into brands people remember. Whether you are launching something new or giving an established name a fresh direction, share your project details and let’s start the conversation.</>);
 
   // faqs content
   const leftFaqs = [
