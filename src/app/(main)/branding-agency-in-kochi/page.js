@@ -105,7 +105,7 @@ const Page = async () => {
   // form section content
   const FormHead = "Bring Your Brand Ashore, Then Take It Worldwide";
   const FormPara =
-    "Kochi has been a gateway to the world for centuries, and your brand can follow that same route. Start by making it unmistakable at home, on Kerala’s shelves, screens and storefronts. Then carry it across India and overseas. That journey needs the right strategy, planning and execution. If you are searching for a top branding agency in Kochi, we are ready to help. Our branding services give your FMCG, food and beverage, coconut or wellness brand a clear brand identity, sharp positioning and room to grow. Reach out today, share your vision and let us build a brand ready to sail far beyond the backwaters.";
+    (<>Kochi has been a gateway to the world for centuries, and your brand can follow that same route. Start by making it unmistakable at home, on Kerala’s shelves, screens and storefronts. Then carry it across India and overseas. That journey needs the right strategy, planning and execution. If you are searching for a top branding agency in Kochi, we are ready to help. <Link href="/branding" className="inter-linking-link">Our branding services</Link> give your FMCG, food and beverage, coconut or wellness brand a clear brand identity, sharp positioning and room to grow. Reach out today, share your vision and let us build a brand ready to sail far beyond the backwaters.</>);
 
   // faqs content
   const leftFaqs = [
@@ -123,20 +123,20 @@ const Page = async () => {
         "How do I choose the best branding agency in Kochi?",
       answer: (
         <>
-          Look for an agency that leads with strategy and shows relevant work in your category, such as FMCG, food and beverage or nutraceutical. A team that treats your brand as a long-term partnership is the best sign.
+          Look for an agency that leads with strategy and shows <Link href="/case-studies" className="inter-linking-link">relevant work in your category</Link>, such as FMCG, food and beverage or nutraceutical. A team that treats your brand as a long-term partnership is the best sign.
         </>
       ),
     },
     {
       question: "What branding services do you offer for Kochi businesses?",
       answer:
-        (<>Our branding services in Kochi include brand positioning, brand identity design, packaging design, rebranding and GTM strategy. We also offer website design, catalogues, photography and brand video shoots as part of our branding and marketing services.</>),
+        (<>Our branding services in Kochi include brand positioning, <Link href="/brand-identity-design-services" className="inter-linking-link">brand identity design</Link>, packaging design, rebranding and GTM strategy. We also offer website design, catalogues, photography and brand video shoots as part of our branding and marketing services.</>),
     },
     {
       question:
         "Do you work with food and beverage and FMCG brands in Kochi?",
       answer:
-        (<>Yes, these are core categories for us. We build food and beverage and FMCG brands that stand out on supermarket shelves, e-commerce and quick commerce.</>),
+        (<>Yes, these are core categories for us. We build food and beverage and <Link href="/fmcg-branding" className="inter-linking-link">FMCG brands</Link> that stand out on supermarket shelves, e-commerce and quick commerce.</>),
     },
     {
       question: "Can you help with coconut product branding?",
@@ -153,7 +153,7 @@ const Page = async () => {
       question:
         "Do you work with health, wellness and Ayurvedic product brands?",
       answer:
-        (<>Yes. We work with brands across Ayurvedic & herbal formulations, dietary supplements, vitamins, minerals, nutraceuticals, functional foods and wellness products. We create distinctive brand identities and packaging that communicate product value, build trust and stand out in the market.</>),
+        (<>Yes. We work with brands across Ayurvedic & herbal formulations, dietary supplements, vitamins, minerals, nutraceuticals, functional foods and <Link href="/wellness-branding" className="inter-linking-link">wellness products</Link>. We create distinctive brand identities and packaging that communicate product value, build trust and stand out in the market.</>),
     },
     {
       question: "When should a Kochi business consider rebranding?",
@@ -478,7 +478,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Branding_for_Kochi_s_Ambitious_Businesses_.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Branding strategy and creative packaging design for Surat businesses"
+                  alt="Branding strategy and creative packaging design for Kochi businesses"
                 ></img>
               </div>
             </div>
@@ -486,7 +486,7 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-4">
               <div className="why-you-should-work-section-col">
                 <p className="why-you-should-work-section-para">
-                  Kochi has always been a place where trade meets the world, and today that energy shows up in new food and beverage ventures, FMCG start-ups, coconut-based products, tea & coffee businesses, Ayurvedic labels and supplement brands. With established trade networks, a growing startup ecosystem and an expanding D2C market, competition on every shelf and screen is rising. A good product alone is no longer enough. If customers cannot recognise, remember or trust you, they will simply move on to the next option. 
+                  Kochi has always been a place where trade meets the world, and today that energy shows up in new <Link href="/food-beverage-branding" className="inter-linking-link">food and beverage </Link>ventures, FMCG start-ups, coconut-based products, tea & coffee businesses, Ayurvedic labels and <Link href="/supplement-branding" className="inter-linking-link">supplement brands</Link>. With established trade networks, a growing startup ecosystem and an expanding D2C market, competition on every shelf and screen is rising. A good product alone is no longer enough. If customers cannot recognise, remember or trust you, they will simply move on to the next option. 
                 </p>
 
                  <p className="why-you-should-work-section-para">
@@ -537,7 +537,7 @@ const Page = async () => {
                  Before any logo or label, there is an idea. Maybe it is a coconut-based snack, a spice blend or a new health sector service. Our role as your branding partner is to give that idea a shape people can recognise and remember. 
                 </p>
                  <p className="why-you-should-work-section-para">
-                 We begin by listening to your goals, audience and ambitions. Then we build a strategy that sets your brand positioning, finds the right words for your story and expresses it through a distinctive brand identity. The result is a cohesive brand that feels true to your product and stays in the minds of customers, from Fort Cochin to Kakkanad and well beyond.
+                 We begin by listening to your goals, audience and ambitions. Then we build a strategy that sets your <Link href="/brand-positioning" className="inter-linking-link">brand positioning</Link>, finds the right words for your story and expresses it through a distinctive brand identity. The result is a cohesive brand that feels true to your product and stays in the minds of customers, from Fort Cochin to Kakkanad and well beyond.
                 </p>
               </div>
             </div>
@@ -547,7 +547,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/The_Journey_from_Idea_to_Identity.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Complete branding services and brand identity design for Surat brands"
+                  alt="Branding journey from strategy to brand identity design"
                 ></img>
               </div>
             </div>
@@ -576,7 +576,7 @@ const Page = async () => {
                 Kerala's product landscape is as diverse as its heritage. From Ayurvedic formulations and coconut-based products to Wayanad coffee, Idukki spices and locally made chocolates, the region has no shortage of distinctive products and stories. The opportunity lies in translating these qualities into brands that connect with today's consumers.
                 </p>
                   <p className="packaging-design-across-section-para">
-                Whether you're taking a family-run coconut business into organised retail, launching an Ayurvedic range or building a coffee or chocolate brand, we bring your product's character to the forefront. Through thoughtful brand strategy, identity and packaging, we help turn what makes your business different into something customers can recognise and remember.
+                Whether you're taking a family-run coconut business into organised retail, launching an Ayurvedic range or building a coffee or chocolate brand, we bring your product's character to the forefront. Through thoughtful <Link href="/brand-strategy" className="inter-linking-link">brand strategy</Link>, identity and packaging, we help turn what makes your business different into something customers can recognise and remember.
                 </p>
               </div>
             </div>
@@ -586,7 +586,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/From_Ayurvedic_Roots_to_Coffee_Brews.webp"
                   className="img-fluid"
-                  alt="Brand identity and packaging design for Surat businesses"
+                  alt="Brand identity and packaging design for Kerala food and beverage brands"
                 ></img>
               </div>
             </div>
@@ -613,16 +613,16 @@ const Page = async () => {
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
               <div className="packaging-design-across-section-col">
                 <h2 className="packaging-design-across-section-head">
-                  Rooted in Kochi. Tailored for 
+                  Rooted in Kochi. Tailored for  {" "}
                   <span className="packaging-design-across-section-head-span">
-                    Your Market
+                     Your Market
                   </span>
                 </h2>
                 <p className="packaging-design-across-section-para">
                   No two markets behave alike, and neither do their consumers. What catches a shopper's eye in Kochi may not resonate with someone in another part of India or overseas. Buying habits, cultural sensibilities, category expectations and legal requirements all shape how a product needs to be presented. 
                 </p>
                   <p className="packaging-design-across-section-para">
-                 As a leading branding agency in Kochi, we bring these insights into every branding decision, from positioning and messaging to identity and packaging. Whether you're reaching customers across Kerala, expanding into new Indian markets or taking your products overseas, we create brand experiences that feel relevant, connect with the right audiences and meet market-specific requirements.
+                 As a leading branding agency in Kochi, we bring these insights into every branding decision, from positioning and messaging to <Link href="/packaging-design" className="inter-linking-link">packaging and identity</Link>. Whether you're reaching customers across Kerala, expanding into new Indian markets or taking your products overseas, we create brand experiences that feel relevant, connect with the right audiences and meet market-specific requirements.
                 </p>
               </div>
             </div>
@@ -642,7 +642,7 @@ const Page = async () => {
              Your brand lives in many places at once: a supermarket shelf in Edappally, a marketplace listing, an Instagram post, a hoarding on the highway or an export catalogue. Wherever people encounter it, they should experience the same brand. That consistency builds recognition, strengthens trust and gives customers a reason to return.
               </p>
                <p className="key-elements-effective-section-container-para">
-            At DN Designs, we bring your packaging, website and digital content together under one cohesive identity. From how your product appears on a retail shelf to how your business communicates online, every touchpoint works together to tell the same brand story.
+            At <Link href="/" className="inter-linking-link">DN Designs</Link>, we bring your packaging, website and digital content together under one cohesive identity. From how your product appears on a retail shelf to how your business communicates online, every touchpoint works together to tell the same brand story.
               </p>
           </div>
         </div>
@@ -699,7 +699,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                 A successful launch takes more than a good product and an attractive pack. It needs a clear plan for reaching the right customers and competing in the right markets. Our go-to-market (GTM) strategy is part of that journey from day one, bringing together brand positioning, packaging, messaging, pricing, channel selection and launch planning.
+                 A successful launch takes more than a good product and an attractive pack. It needs a clear plan for reaching the right customers and competing in the right markets. Our <Link href="/go-to-market-strategy" className="inter-linking-link">go-to-market (GTM) strategy</Link> is part of that journey from day one, bringing together brand positioning, packaging, messaging, pricing, channel selection and launch planning.
                   </p>
                   <p className="packaging-design-india-consumers-section-col-para">
                  We shape this strategy around where your products need to make their mark:
@@ -733,7 +733,7 @@ const Page = async () => {
                     </span>
                   </h2>
                   <p className="packaging-design-india-consumers-section-col-para">
-                    Every brand has its own starting point and its own idea of what's next. From new businesses preparing to make their mark to established names ready for a refresh or a bigger leap, we work with brands at every stage of growth. Wherever you are in your journey, we bring the strategy and creative thinking to help you move forward.
+                   Every brand has its own starting point and its own idea of what's next. From <Link href="/startup-branding-agency" className="inter-linking-link">new businesses and startups</Link> preparing to make their mark to established names ready for a refresh or a bigger leap, we work with brands at every stage of growth. Wherever you are in your journey, we bring the strategy and creative thinking to help you move forward.
                   </p>
                    <p className="packaging-design-india-consumers-section-col-para">
                     And distance doesn't have to slow that journey down. We collaborate with Kochi-based businesses through online consultations, shared project boards and regular feedback rounds, keeping conversations flowing, decisions clear, and projects moving. It's a straightforward, connected way to build your brand, wherever you're based.
@@ -766,7 +766,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Rebranding_Is_It_Time_for_a_New_Chapter.webp"
                   className="img-fluid"
-                  alt="Scalable brand identity and strategic branding by DN Designs"
+                  alt="Strategic rebranding and scalable brand identity design by DN Designs"
                 ></img>
               </div>
             </div>
@@ -777,7 +777,7 @@ const Page = async () => {
                  Rebranding: Is It Time for a New Chapter? 
                 </h2>
                 <p className="how-we-approach-section-col-para">
-            Brands age as businesses grow. Your audience may have shifted, your range may have expanded, or your look may no longer match your ambition. Rebranding or a smart refresh could be the push you need. The real question is how much should change. We help you decide what to modernise and what to keep, so loyal customers feel at home while new ones feel drawn in. 
+            Brands age as businesses grow. Your audience may have shifted, your range may have expanded, or your look may no longer match your ambition. <Link href="/rebranding" className="inter-linking-link">Rebranding or a smart refresh</Link> could be the push you need. The real question is how much should change. We help you decide what to modernise and what to keep, so loyal customers feel at home while new ones feel drawn in. 
                 </p>
                  <p className="how-we-approach-section-col-para">
           Many established Kochi businesses, from family-run coconut oil and coir makers to long-standing food, rubber and health sector names, carry strong legacy value. We sharpen brand positioning, refresh visuals and update communication to give them renewed momentum.
@@ -785,6 +785,7 @@ const Page = async () => {
                 <img
                   src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png"
                   className="img-fluid how-we-approach-section-ladder-image"
+                  alt=""
                 ></img>
               </div>
             </div>
