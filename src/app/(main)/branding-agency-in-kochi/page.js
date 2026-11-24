@@ -105,7 +105,7 @@ const Page = async () => {
   // form section content
   const FormHead = "Bring Your Brand Ashore, Then Take It Worldwide";
   const FormPara =
-    (<>Kochi has been a gateway to the world for centuries, and your brand can follow that same route. Start by making it unmistakable at home, on Kerala’s shelves, screens and storefronts. Then carry it across India and overseas. That journey needs the right strategy, planning and execution. If you are searching for a top branding agency in Kochi, we are ready to help. <Link href="/branding" className="inter-linking-link">Our branding services</Link> give your FMCG, food and beverage, coconut or wellness brand a clear brand identity, sharp positioning and room to grow. Reach out today, share your vision and let us build a brand ready to sail far beyond the backwaters.</>);
+    (<>Kochi has been a gateway to the world for centuries, and your brand can follow that same route. Start by making it unmistakable at home, on Kerala’s shelves, screens and storefronts. Then carry it across India and overseas. That journey needs the right strategy, planning and execution. If you are searching for a top branding agency in Kochi, we are ready to help. Our branding services give your FMCG, food and beverage, coconut or wellness brand a clear brand identity, sharp positioning and room to grow. Reach out today, share your vision and let us build a brand ready to sail far beyond the backwaters.</>);
 
   // faqs content
   const leftFaqs = [
