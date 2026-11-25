@@ -1,4 +1,4 @@
-/* our brand */
+/* our brand  */
 
 .our-brand {
   padding-top: 70px;
@@ -168,7 +168,8 @@
   color: #202020;
   /* padding-bottom: -20px; */
    letter-spacing: -0.9px;
-   margin-bottom: -30px;
+   margin-bottom: -70px;
+   padding-top: 10px;
 }
 
 .mobile-view-our-brand {
@@ -178,7 +179,8 @@
 @media (max-width: 991px) {
 
   .our-brand-heading{
-    font-size: 35px;
+    font-size: 38px;
+    margin-bottom: -15px;
   }
   .our-brand {
     display: none;

@@ -543,6 +543,7 @@ font-family: var(--font-helvetica);
   font-size: 18px;
   font-weight: 400;
   padding: 10px 0;
+  margin-bottom: 0;
 }
 
 .how-we-approach-section-col-list-item{
@@ -562,6 +563,9 @@ font-family: var(--font-helvetica);
 @media(max-width:767px){
   .how-we-approach-section-col-head{
     font-size: 35px;
+  }
+  .key-elements-effective-section{
+    margin: 0;
   }
 }
 
@@ -616,7 +620,7 @@ padding: 40px 0;
 /*  Like what you see? Let’s design packaging that gets your product picked. */
 
 .like-what-you-see-section{
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .like-what-you-see-section-container{
@@ -670,7 +674,7 @@ padding: 40px 0;
 }
 
 .like-what-you-see-section{
-    padding: 0px 0;
+    padding: 50px 5px 0 5px;
 }
 }
 

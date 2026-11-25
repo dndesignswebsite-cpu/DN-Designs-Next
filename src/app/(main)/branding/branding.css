@@ -110,8 +110,8 @@
 }
 
   .portfolio h2 {
-  font-size: 40px;
-  padding-bottom: 30px;
+  font-size: 38px;
+  padding-bottom: 10px;
 }
   .our-port-btn-up button {
     font-size: 14px;
@@ -674,10 +674,10 @@ font-family: var(--font-helvetica);
 }
 
 .card-body-create-mobile h3{
-      color: #DC2211;
+      color: #202020;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     padding: 5px 0;
 }
@@ -685,7 +685,6 @@ font-family: var(--font-helvetica);
 .card-body-create-mobile p{
   color: #888888;
     font-family: var(--font-helvetica);
-    letter-spacing: -0.9px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4em;

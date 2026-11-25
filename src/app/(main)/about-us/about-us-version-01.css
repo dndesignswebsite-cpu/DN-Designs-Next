@@ -118,7 +118,7 @@
 
 /* product and brand */
 .product-and-brand{
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 .product-and-brand-img-col {
@@ -186,6 +186,9 @@
     }
     .product-and-brand-content-col{
         padding: 20px;
+    }
+    .product-and-brand{
+        padding: 40px 0;
     }
 }
 

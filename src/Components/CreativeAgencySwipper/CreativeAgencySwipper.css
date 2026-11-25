@@ -1,5 +1,5 @@
 .citypagesswipper-h2{
-  font-size: 40px;
+  font-size: 50px;
   font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
   font-weight: 500;
@@ -115,6 +115,9 @@
 }
 .cityswiperoverlay h3 {
   font-size: 20px;
+}
+.citypagesswipper-h2{
+  font-size: 40px;
 }
 }
 
