@@ -111,7 +111,8 @@ font-family: var(--font-helvetica);
   padding: 35px 10px;
 }
   .brand-identity h2{
-    font-size: 40px;
+    font-size: 38px;
+    padding-bottom: 10px;
   }
   .brand-identity-btn-up button {
     font-size: 14px;

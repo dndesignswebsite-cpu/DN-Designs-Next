@@ -186,6 +186,143 @@ const Page = async () => {
     },
   ];
 
+// services swipper slides data
+  const brandingSlides = [
+  {
+    id: 1,
+    title: (
+      <>
+        Brand
+        <br />
+        Positioning
+      </>
+    ),
+    description: "A clear space for your brand in the market.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/01_brand-positioning.webp",
+    alt: "Brand positioning strategy for Kochi businesses",
+    theme: "dark",
+  },
+
+  {
+    id: 2,
+    title: (
+      <>
+        Naming and
+        <br />
+        Messaging
+      </>
+    ),
+    description: "The right words to tell your story.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/02_naming-and-messaging.webp",
+    alt: "Brand naming and messaging strategy for businesses",
+    theme: "light",
+  },
+
+  {
+    id: 3,
+    title: (
+      <>
+        Brand Identity
+        <br />
+        Design
+      </>
+    ),
+    description: "A distinctive look that people recognise.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/03_brand-identity-design.webp",
+    alt: "Brand identity design and visual branding",
+    theme: "dark",
+  },
+
+  {
+    id: 4,
+    title: (
+      <>
+        Packaging
+        <br />
+        Design
+      </>
+    ),
+    description: "Shelf-Ready packs that get picked up.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/04_packaging-design.webp",
+    alt: "Packaging design for FMCG and consumer brands",
+    theme: "light",
+  },
+
+  {
+    id: 5,
+    title: (
+      <>
+        Go-to-Market
+        <br />
+        Strategy
+      </>
+    ),
+    description: "A clear plan to launch your brand.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/05_go-to-market-strategy.webp",
+    alt: "Go-to-market strategy for new and growing brands",
+    theme: "dark",
+  },
+
+  {
+    id: 6,
+    title: "Photography",
+    description: "Visuals that bring your products to life.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/06_photography.webp",
+    alt: "Product photography for brand and packaging presentation",
+    theme: "light",
+  },
+
+  {
+    id: 7,
+    title: "Animation",
+    description: "Motion that makes your brand stand out.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/07_animation.webp",
+    alt: "Brand animation and visual communication",
+    theme: "dark",
+  },
+
+  {
+    id: 8,
+    title: (
+      <>
+        Brand
+        <br />
+        Guidelines
+      </>
+    ),
+    description:
+      "Simple rules that keep every touchpoint consistent.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/08_brand-guidelines.webp",
+    alt: "Brand guidelines for consistent visual identity",
+    theme: "light",
+  },
+
+  {
+    id: 9,
+    title: (
+      <>
+        Website and
+        <br />
+        Digital Presence
+      </>
+    ),
+    description:
+      "One connected system, online and offline.",
+    image:
+      "https://dndesigns.co.in/uploads/pages/09_website-and-digital-presence.webp",
+    alt: "Website and digital presence design for brands",
+    theme: "dark",
+  },
+];
+
   return (
     <div>
       {/* schema */}
@@ -514,7 +651,8 @@ const Page = async () => {
                   </div>
       
                   {/* <PackagingDesignSwipper/> */}
-                <CityBrandingPagesSwipper/>
+                {/* <CityBrandingPagesSwipper/> */}
+                <CityBrandingPagesSwipper slides={brandingSlides} />
             
               </div>
             </section>

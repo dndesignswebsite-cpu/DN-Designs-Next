@@ -116,7 +116,7 @@ async function page() {
     // city pages slider data
     let cityPagesSlideDataCreativeAgency = {
 
-       CityPagesSwipper_heading : "Our Services",
+       CityPagesSwipper_heading : (<>Our <span className="every-pr">Services</span></>),
        
        slide_1_slide_head : "Brand Design",
        slide_1_slide_para : "Collaborate with us to create a brand that leads. As a creative branding agency, we strategically design your visual and verbal identity, as well as your packaging, website, catalogue, and communication to help you connect with your customers and drive growth. ",

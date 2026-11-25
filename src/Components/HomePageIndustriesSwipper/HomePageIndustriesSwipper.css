@@ -9,8 +9,9 @@
   
 }
 
+
 .citypagesswipper{
-  padding: 40px 0;
+  padding: 40px 0 0px 0;
 }
 
 .citypagewiper-slide {
@@ -231,7 +232,7 @@
 .homepageindusriesswipper-content-left-head{
     font-family: var(--font-helvetica);
     letter-spacing: -0.9px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     color: #202020;
 }
@@ -240,7 +241,7 @@
     font-family: var(--font-helvetica);
   
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #202020;
     width: 50%;
 }
@@ -268,6 +269,6 @@
     padding-top:10px ;
 }
 .homepageindusriesswipper-content-left-head{
-    font-size: 30px;
+    font-size: 38px;
 }
 }
