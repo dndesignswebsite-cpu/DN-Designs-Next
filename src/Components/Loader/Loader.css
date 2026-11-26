@@ -1,4 +1,4 @@
-
+/* 
 
 body {
   overscroll-behavior: none;
@@ -55,8 +55,7 @@ body {
 
 
 .dot-loader span {
-  /* width: 26px;
-  height: 26px; */
+
    width: 70px;
   height: 70px;
 
@@ -131,9 +130,276 @@ body {
 
 @media(max-width:767px){
 .dot-loader span {
-  /* width: 26px;
-  height: 26px; */
+
    width: 50px;
   height: 50px;
 }
+} */
+
+/* =========================================================
+   DN LOADER
+========================================================= */
+
+.dn-loader-animation {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.dn-loader-mark {
+  position: relative;
+
+  width: min(58vw, 420px);
+  height: auto;
+
+  max-width: 90vw;
+
+  display: block;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+.dn-loader-block,
+.dn-loader-d {
+  fill: #202020;
+
+  transform-box: fill-box;
+}
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+.dn-loader-step {
+  transform-origin: 50% 100%;
+  transform: scaleY(0);
+}
+
+.dn-loader-stem-left,
+.dn-loader-stem-right {
+  transform-origin: 50% 100%;
+  transform: scaleY(0);
+}
+
+.dn-loader-d {
+  transform: translateY(101%);
+}
+
+
+/* =========================================================
+   START ANIMATION ONLY AFTER REACT MOUNT
+========================================================= */
+
+.dn-loader-start .dn-loader-step {
+  animation:
+    dnLoaderRise
+    0.75s
+    cubic-bezier(0.2, 0.8, 0.2, 1)
+    both;
+}
+
+
+/* =========================================================
+   STAIR TIMING
+========================================================= */
+
+.dn-loader-start .dn-loader-s1 {
+  animation-delay: 0.25s;
+}
+
+.dn-loader-start .dn-loader-s2 {
+  animation-delay: 0.42s;
+}
+
+.dn-loader-start .dn-loader-s3 {
+  animation-delay: 0.59s;
+}
+
+.dn-loader-start .dn-loader-s4 {
+  animation-delay: 0.76s;
+}
+
+.dn-loader-start .dn-loader-s5 {
+  animation-delay: 0.93s;
+}
+
+
+/* =========================================================
+   LEFT STEM
+========================================================= */
+
+.dn-loader-start .dn-loader-stem-left {
+  animation:
+    dnLoaderGrow
+    0.5s
+    cubic-bezier(0.3, 0.9, 0.2, 1)
+    1.2s
+    both;
+}
+
+
+/* =========================================================
+   RIGHT STEM
+========================================================= */
+
+.dn-loader-start .dn-loader-stem-right {
+  animation:
+    dnLoaderGrow
+    0.5s
+    cubic-bezier(0.3, 0.9, 0.2, 1)
+    1.3s
+    both;
+}
+
+
+/* =========================================================
+   D
+========================================================= */
+
+.dn-loader-start .dn-loader-d {
+  animation:
+    dnLoaderUp
+    0.6s
+    cubic-bezier(0.16, 1, 0.3, 1)
+    1.4s
+    both;
+}
+
+
+/* =========================================================
+   STAIR
+========================================================= */
+
+@keyframes dnLoaderRise {
+
+  0% {
+    transform: scaleY(0);
+    fill: #DC2211;
+  }
+
+  45% {
+    transform: scaleY(1);
+    fill: #DC2211;
+  }
+
+  100% {
+    transform: scaleY(1);
+    fill: #202020;
+  }
+
+}
+
+
+/* =========================================================
+   N STEM
+========================================================= */
+
+@keyframes dnLoaderGrow {
+
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+
+}
+
+
+/* =========================================================
+   D
+========================================================= */
+
+@keyframes dnLoaderUp {
+
+  from {
+    transform: translateY(101%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .dn-loader-mark {
+    width: 78vw;
+    max-width: 360px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .dn-loader-mark {
+    width: 82vw;
+    max-width: 340px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .dn-loader-mark {
+    width: 86vw;
+    max-width: 310px;
+  }
+
+}
+
+
+@media (
+  max-height: 500px
+) and (
+  orientation: landscape
+) {
+
+  .dn-loader-mark {
+    width: min(55vw, 320px);
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .dn-loader-step,
+  .dn-loader-stem-left,
+  .dn-loader-stem-right,
+  .dn-loader-d {
+    animation: none !important;
+    transform: none;
+  }
+
 }

@@ -143,7 +143,7 @@ async function page() {
                     </div>
 
                     <div className='col-12 col-sm-12 col-md-12 col-lg-6 mt-4'>
-                    {/* <Link href="/dn-playbook/gully-labs"  className="parent-page-blocks-col-link"> */}
+                    <Link href="/dn-playbook/snitch"  className="parent-page-blocks-col-link">
                         <div className='parent-page-blocks-col-div'>
                          <img src="https://dndesigns.co.in/uploads/pages/dnplaybookparentsnitch.jpg.jpeg" className='img-fluid parent-page-blocks-col-img'></img>
 
@@ -151,7 +151,7 @@ async function page() {
                             <h2 className='parent-page-blocks-col-head'>Snitch</h2>
                             <p className='parent-page-blocks-col-para'>Unpacking the strategic thinking behind a strong digital-first menswear brand. </p>
                         </div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
 
                 </div>
