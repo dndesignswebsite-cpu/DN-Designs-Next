@@ -1,4 +1,4 @@
-body {
+/* body {
   overscroll-behavior: none;
 }
 
@@ -49,8 +49,7 @@ body {
 
 
 .dot-loader span {
-  /* width: 26px;
-  height: 26px; */
+
   width: 70px;
   height: 70px;
 
@@ -124,9 +123,141 @@ body {
 
 @media(max-width:767px){
 .dot-loader span {
-  /* width: 26px;
-  height: 26px; */
+
    width: 50px;
   height: 50px;
 }
+} */
+
+
+/* =========================================================
+   PAGE LOADER OVERLAY
+========================================================= */
+
+body {
+  overscroll-behavior: none;
+}
+
+
+/* =========================================================
+   LOADER OVERLAY
+========================================================= */
+
+.loader-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+
+  height: 100vh;
+  height: 100dvh;
+
+  background: #ffffff;
+
+  z-index: 9999999;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  contain: layout paint;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   DVH FALLBACK
+========================================================= */
+
+@supports not (height: 100dvh) {
+
+  .loader-overlay {
+    height: 100vh;
+  }
+
+}
+
+
+/* =========================================================
+   LOADER EXIT
+========================================================= */
+
+.loader-exit {
+
+  animation:
+    slideUp
+    0.7s
+    cubic-bezier(0.77, 0, 0.175, 1)
+    forwards;
+
+}
+
+
+/* =========================================================
+   EXIT ANIMATION
+========================================================= */
+
+@keyframes slideUp {
+
+  to {
+
+    transform:
+      translate3d(0, -100%, 0);
+
+  }
+
+}
+
+
+/* =========================================================
+   ACTUAL WEBSITE CONTENT
+========================================================= */
+
+.site-content {
+
+  min-height: 100vh;
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .loader-overlay {
+
+    width: 100vw;
+
+    height: 100vh;
+    height: 100dvh;
+
+  }
+
+}
+
+
+/* =========================================================
+   FALLBACK
+========================================================= */
+
+@supports not (height: 100dvh) {
+
+  .loader-overlay {
+
+    height: 100vh;
+
+  }
+
 }

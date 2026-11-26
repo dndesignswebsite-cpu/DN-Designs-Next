@@ -218,7 +218,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Defining your audience, market space, brand personality and key differentiators.",
     image:
       "https://dndesigns.co.in/uploads/pages/01-brand-strategy-and-positioning.jpg",
-    alt: "Brand positioning strategy for Kochi businesses",
+    alt: "Brand strategy and positioning for Dubai businesses",
     theme: "dark",
   },
 
@@ -232,7 +232,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Developing distinctive names and brand lines that communicate your identity.",
     image:
       "https://dndesigns.co.in/uploads/pages/02-brand-naming-and-taglines.jpg",
-    alt: "Brand naming and messaging strategy for businesses",
+    alt: "Brand naming and tagline strategy for Dubai businesses",
     theme: "light",
   },
 
@@ -246,7 +246,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Creating logos, colour palettes, typography and visual systems that make your brand recognisable.",
     image:
       "https://dndesigns.co.in/uploads/pages/03-logo-and-visual-identity.jpg",
-    alt: "Brand identity design and visual branding",
+    alt: "Logo and visual identity design for Dubai brands",
     theme: "dark",
   },
 
@@ -260,7 +260,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Designing product packaging that balances functionality, shelf appeal and brand consistency.",
     image:
       "https://dndesigns.co.in/uploads/pages/04-packaging-design.jpg",
-    alt: "Packaging design for FMCG and consumer brands",
+    alt: "Packaging design for FMCG and consumer brands in Dubai",
     theme: "light",
   },
 
@@ -274,7 +274,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Establishing clear guidelines for applying your identity across different platforms and materials.",
     image:
       "https://dndesigns.co.in/uploads/pages/05-brand-guidelines.jpg",
-    alt: "Go-to-market strategy for new and growing brands",
+    alt: "Brand guidelines and visual identity system",
     theme: "dark",
   },
 
@@ -284,7 +284,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Developing the website and its content to communicate your offerings clearly.",
     image:
       "https://dndesigns.co.in/uploads/pages/06-website-development-and-brand-copywriting.jpg",
-    alt: "Product photography for brand and packaging presentation",
+    alt: "Website development and brand copywriting for Dubai businesses",
     theme: "light",
   },
 
@@ -294,7 +294,7 @@ A digital branding agency helps businesses establish a consistent identity acros
     description: "Refreshing existing identities, refining positioning and creating a more cohesive brand experience.",
     image:
       "https://dndesigns.co.in/uploads/pages/07-rebranding.webp",
-    alt: "Brand animation and visual communication",
+    alt: "Rebranding and visual identity design for Dubai businesses",
     theme: "dark",
   }
 ];
@@ -592,7 +592,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Creating_Brands_That_Stand_Out_in_Dubai.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Branding strategy and creative packaging design for Coimbatore businesses"
+                  alt="Branding strategy and creative packaging design for Dubai businesses"
                 ></img>
               </div>
             </div>
@@ -637,7 +637,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Understanding_Dubais_Evolving_Brand_Landscape.webp"
                   className="why-you-should-work-section-img img-fluid"
-                  alt="Complete branding services and brand identity design for Coimbatore brands"
+                  alt="Understanding Dubai's evolving brand landscape"
                 ></img>
               </div>
             </div>
@@ -690,7 +690,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Why_Brands_Struggle_to_Stand_Out_in_Dubai.webp"
                   className="img-fluid"
-                  alt="Strategic brand development and creative branding process"
+                  alt="Branding challenges faced by businesses in Dubai's competitive market"
                 ></img>
               </div>
             </div>
@@ -707,7 +707,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Branding_for_Different_Categories_in_Dubai.webp"
                   className="img-fluid"
-                  alt="Consistent brand identity and visual design across customer touchpoints"
+                  alt="Branding for different product categories in Dubai"
                 ></img>
               </div>
             </div>
@@ -812,7 +812,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                   <img
                     src="https://dndesigns.co.in/uploads/pages/08-end-to-end-branding-overview.webp"
                     className="packaging-design-india-consumers-section-col-img img-fluid"
-                    alt="Consistent brand identity across retail and digital touchpoints"
+                    alt="End-to-end branding services for Dubai businesses"
                   ></img>
                 </div>
               </div>
@@ -908,7 +908,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/Making_Your_Brand_Market-Ready.webp"
                   className="img-fluid"
-                  alt="Brand identity strategy for expanding from local to global markets"
+                  alt="Go-to-market branding strategy for entering the Dubai market"
                 ></img>
               </div>
             </div>
@@ -927,6 +927,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                 <img
                   src="https://dndesigns.co.in/uploads/pages/packgingdesignagecyswipperladder.png"
                   className="img-fluid how-we-approach-section-ladder-image"
+                  alt="Brand growth and go-to-market strategy illustration"
                 ></img>
               </div>
             </div>
@@ -946,7 +947,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                          <div className='row'>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-5 mt-4'>
                           <div className='your-packaging-design-noida-section-img-col'>
-                          <img src="https://dndesigns.co.in/uploads/pages/What_Makes_DN_Designs_the_Right_Branding_Partner.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Brand refresh and rebranding strategy for Coimbatore businesses"></img>
+                          <img src="https://dndesigns.co.in/uploads/pages/What_Makes_DN_Designs_the_Right_Branding_Partner.webp" className='your-packaging-design-noida-section-img img-fluid' alt="Why DN Designs is the right branding partner in Dubai"></img>
                           </div>
                         </div>
       
@@ -956,7 +957,7 @@ A digital branding agency helps businesses establish a consistent identity acros
                             <p className='your-packaging-design-noida-section-content-col'>Choosing a branding partner is about finding a team that understands where your business stands, what makes it different and where you want to take it. At <Link href="/" className="inter-linking-link">DN Designs</Link>, we bring market understanding, strategic thinking and creative expertise together to build brands with a clear direction. </p>
                             <p className='your-packaging-design-noida-section-content-col'>Our experience across food and beverage, FMCG, skincare, wellness and supplements gives us insight into the needs of different categories and audiences. With an integrated team and a collaborative approach, we connect every aspect of branding, from strategy and design to packaging and communication, to create identities that stay consistent and evolve with your business. </p>
                             </div>
-                            <img src="https://dndesigns.co.in/uploads/pages/IsItTimeforaBrandRefreshoraFullRebrandsecond.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="Strategic rebranding and visual identity design by DN Designs"></img>
+                            <img src="https://dndesigns.co.in/uploads/pages/whatmakesdndesignbestagecyforbrandingindubai.webp" className='your-packaging-design-noida-section-content-col-img img-fluid' alt="Strategic rebranding and visual identity design by DN Designs in Dubai"></img>
                           </div>
                         </div>
                       </div>

@@ -533,6 +533,10 @@
     .competive-analysis-table-wrapper{
     overflow-x: scroll;
 }
+
+.table-of-content-section-para-first{
+    font-size: 20px;
+}
 }
 
 /* suggestions-recommendations-head-para */
