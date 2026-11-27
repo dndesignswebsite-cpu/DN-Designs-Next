@@ -210,8 +210,8 @@ async function page() {
             <h1 className='brand-audit-hero-section-head'>The DN Playbook: SNITCH</h1>
             <p className='brand-audit-hero-section-para'>Built The “Zara Of India” Pitch. Can The Brand Keep Up With The Business?</p>
             <div className='hero-section-img-div'>
-                <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_hero_section.webp" className='hero-section-img hero-section-img-desktop img-fluid'></img>
-                <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_hero_section_mobile.webp" className='hero-section-img hero-section-img-mobile img-fluid'></img>
+                <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_hero_section.webp" className='hero-section-img hero-section-img-desktop img-fluid' alt="Snitch men's fast fashion brand audit hero image"></img>
+                <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_hero_section_mobile.webp" className='hero-section-img hero-section-img-mobile img-fluid' alt="Snitch men's fast fashion brand audit hero image"></img>
             </div>
         </div>
       </section>
@@ -272,7 +272,7 @@ $40M Series B (2025) led by 360 ONE Asset.</h3>
 
                         </div>
                         <div className="col-12 col-sm-12 col-md-12 col-lg-4 brand-at-glance-img-div">
-                            <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_brand_at_glance.webp" className='img-fluid brand-at-glance-img'></img>
+                            <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_brand_at_glance.webp" className='img-fluid brand-at-glance-img' alt="Snitch brand overview and men's fast fashion business profile"></img>
                         </div>
                         <div className='col-12 col-sm-12 col-md-12 col-lg-4 brand-at-glance-col-1'>
                             
@@ -421,7 +421,7 @@ $40M Series B (2025) led by 360 ONE Asset.</h3>
 
                 {/* gali labs image */}
                 <section className='gali-labs-section'>
-                    <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_brand_audit_website_showcasing.webp" className='img-fluid gali-labs-image'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_brand_audit_website_showcasing.webp" className='img-fluid gali-labs-image' alt="Snitch website showcasing men's fast fashion products and brand identity"></img>
                 </section>
 
                 {/* [ Let’s Talk ] */}
@@ -551,7 +551,7 @@ $40M Series B (2025) led by 360 ONE Asset.</h3>
                 <section className='product-mix-section' id='product-mix'>
                     <h2 className='product-mix-section-head'>Product Mix</h2>
                     <div className='product-mix-section-img-div'>
-                        <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_proct_mix.webp" className='img-fluid product-mix-section-img'></img>
+                        <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_proct_mix.webp" className='img-fluid product-mix-section-img' alt="Snitch men's fashion product mix including shirts, bottomwear and co-ord sets"></img>
                     </div>
                     <div className='product-mix-list-div'>
                         <ul className='product-mix-list'>
@@ -754,7 +754,7 @@ $40M Series B (2025) led by 360 ONE Asset.</h3>
 
                 {/* gali shoes image */}
                 <section className='gali-shoes-img-section'>
-                    <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_suggestion_recomdation.webp" className='img-fluid gali-shoes-img'></img>
+                    <img src="https://dndesigns.co.in/uploads/pages/snitch_brand_audit_suggestion_recomdation.webp" className='img-fluid gali-shoes-img' alt="Snitch brand strategy and visual identity recommendations by DN Designs"></img>
                 </section>
 
 
