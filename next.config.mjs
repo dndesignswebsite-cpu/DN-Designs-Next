@@ -81,6 +81,13 @@ const nextConfig = {
       },
 
 
+       {
+        source: "/blog/branding-agency-in-dubai",
+        destination: "/branding-agency-in-dubai",
+        permanent: true, // true = 301, false = 302
+      },
+
+
       {
         source: "/1am-case-study",
         destination: "/case-studies/1am",
